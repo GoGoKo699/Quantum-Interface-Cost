@@ -328,6 +328,15 @@ rate. The proposed SLD entropy converse remains conditional; its
 [source audit](SLD_ENTROPY_ROUTE_AUDIT.md) explains why two local arguments
 and the inspected prior metric theorems do not establish it.
 
+Further exclusions now cover all [two-qubit spectra with at most two
+distinct eigenvalues](ENTROPY_INEQUALITY_BOUNDARIES.md), counting zero,
+and the [kernel-and-spectrum certificates](TWO_QUBIT_KERNEL_CONVERSE.md).
+The latter includes every two-qubit state with a maximally entangled
+kernel vector. Neither exclusion evaluates this regularized minimum.
+The [local entanglement-calibration obstruction](ENTANGLEMENT_CALIBRATION_OBSTRUCTION.md)
+also shows that a sharp linear squashed-entanglement charge cannot prove
+the target through sitewise monogamy; the existing weaker bound is unaffected.
+
 ## 7. Prior ingredients and novelty boundary
 
 Schmidt typicality and the conversion of asymptotic rank to entropy are

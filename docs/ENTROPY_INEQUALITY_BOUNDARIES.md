@@ -605,3 +605,208 @@ proposed local steps without refuting the global entropy target.
 The deductions use the already identified Cheng–Hall theorem, elementary
 matrix algebra, and classical entropy identities. The unrestricted entropy
 inequality, its sharp rate consequence, and publication novelty remain open.
+
+## 6. Exact optimum with one distinguished eigenvalue
+
+This section is based on main
+`358d887058eb9fa2fe8bb899d0261ec811d42fa6`. It supplies an elementary
+analytical deduction, independently reconstructed within this workspace;
+publication novelty is not asserted.
+
+**Theorem.** Let `d=2^n`, `n>=1`, and let rho have spectrum
+`t,b,...,b`, where `0<=t<=1` and `b=(1-t)/(d-1)`. Then the exact maximum
+over all eigenvectors is
+
+$$
+\boxed{
+\max_{\|v\|=1}g\!\left(\sqrt{t|v\rangle\langle v|
++b(I-|v\rangle\langle v|)}\right)
+=2n\left[(d-2)b+\sqrt{4tb+\frac{(t-b)^2}{2}}\right].
+}
+\tag{17}
+$$
+
+In particular, every state in this spectral family satisfies the entropy
+inequality (1), including arbitrary entangled distinguished eigenvectors.
+The parameter t need not be the largest eigenvalue.
+
+To prove the formula, write `m_U=<v|U|v>` for a local X/Z query. The
+span of v and Uv is invariant under U. When `|m_U|<1`, choose its
+orthonormal basis to give
+
+$$
+U\big|_{\operatorname{span}\{v,Uv\}}
+=\begin{pmatrix}m_U&\sqrt{1-m_U^2}\\
+\sqrt{1-m_U^2}&-m_U\end{pmatrix}.
+$$
+
+The sandwiched two-dimensional block has trace `(t-b)m_U` and
+determinant `-tb`. Its trace norm is therefore
+`sqrt(4tb+(t-b)^2 m_U^2)`. On the orthogonal complement rho equals bI
+and U remains unitary, contributing `(d-2)b`. Consequently,
+
+$$
+\|\sqrt\rho U\sqrt\rho\|_1
+=(d-2)b+\sqrt{4tb+(t-b)^2m_U^2}.
+\tag{18}
+$$
+
+The degenerate case `|m_U|=1` follows by continuity, or directly since
+rho then commutes with U and both sides equal one. The same formula
+includes the endpoint spectra with zero eigenvalues.
+
+For each site, the Bloch-ball inequality gives `m_X^2+m_Z^2<=1`.
+Concavity and monotonicity of the square root then bound its two score
+terms by `2[(d-2)b+sqrt(4tb+(t-b)^2/2)]`. Summing proves the upper
+bound in (17). A product of pure X/Z bisectors has
+`m_X^2=m_Z^2=1/2` at every site, attaining the bound simultaneously.
+
+For this attaining choice, rho is diagonal in the associated tensor
+product basis. The [product-diagonal theorem](COMMUTING_SEED_BOUND.md)
+therefore bounds the exact maximum in (17) by
+
+$$
+\sqrt2 n+(2-\sqrt2)
+\bigl[h_2(t)+(1-t)\log_2(d-1)\bigr].
+$$
+
+Every other eigenbasis has the same entropy and no larger score, proving
+the entropy consequence. At t=0 this includes every flat corank-one
+state, while t=1 gives the pure-state endpoint. At n=2 it covers all
+spectra of multiplicity one plus three. It does not cover general
+nonuniform spectra with three or four distinct eigenvalues.
+
+## 7. Exact two-qubit optimum with two equally repeated eigenvalues
+
+This section has the same research base as Section 6. Its supplied proof
+was independently reconstructed within this workspace; publication novelty
+is unresolved.
+
+**Theorem.** Let P be any rank-two orthogonal projector on two qubits,
+let `-1<=delta<=1`, and put
+
+$$
+\rho=\frac{1+\delta}{4}P+
+\frac{1-\delta}{4}(I-P).
+$$
+
+Then the exact maximum over all P is
+
+$$
+\boxed{\max_P g(\sqrt\rho)=2+\sqrt{4-2\delta^2}.}
+\tag{19}
+$$
+
+The projector `P=|beta><beta|_i tensor I` attains (19), where beta
+is any pure X/Z bisector. Every state in this spectral family satisfies
+the entropy inequality (1).
+
+### From principal angles to Pauli weights
+
+Write `a=(1+delta)/4`, `b=(1-delta)/4`, and `z=delta^2`. For a query U,
+let `s_1,s_2` be the singular values of PUP on the range of P. The two
+equal-rank projectors P and UPU admit a principal-angle decomposition
+into two-dimensional blocks. On each block rho has eigenvalues a,b,
+and its conjugate U rho U has the same eigenvalues with angle cosine
+`s_k`. The squared root fidelity of that block is
+
+$$
+\operatorname{Tr}(\rho_k(U\rho U)_k)
++2\sqrt{\det\rho_k\det(U\rho U)_k}
+=4ab+(a-b)^2s_k^2.
+$$
+
+Since right multiplication by U preserves singular values,
+`||sqrt(rho)U sqrt(rho)||_1` is precisely this root fidelity summed
+over the blocks. Thus
+
+$$
+F_U=\frac12\sum_{k=1}^2\sqrt{1-z+zs_k^2}.
+\tag{20}
+$$
+
+Degenerate angles and zero eigenvalues follow by continuity; equivalently,
+the common and orthogonal intersections can be paired as limiting
+two-dimensional blocks. No nondegeneracy assumption is imposed on P.
+
+Set `R=2P-I`, expand the traceless reflection R in Pauli strings, and
+let `w_U` be its squared Pauli weight on strings anticommuting with U.
+The trace identity from the [flat-projector proof](FLAT_HALF_RANK_OPTIMALITY.md),
+Section 2, gives `(s_1^2+s_2^2)/2=1-w_U`. Concavity in (20) yields
+
+$$F_U\le\sqrt{1-zw_U}.\tag{21}$$
+
+Let `T=beta_1^2+beta_2^2` be the total squared singleton X/Z Pauli
+weight of R, with beta_i the Euclidean norm of the two coefficients
+at site i. Its singleton part is `L=beta_1 B_1+beta_2 B_2`, where
+the B_i are unit local X/Z directions. With `tau=Tr/4`,
+
+$$
+T=\tau(RL)\le\tau|L|=\max(\beta_1,\beta_2).
+$$
+
+The last equality is the exact average of
+`|beta_1 epsilon_1+beta_2 epsilon_2|` over two independent uniform
+signs. Every nonsingleton Pauli string anticommutes with at least two
+queries. Therefore, if W denotes the sum of w_U at the site with
+larger beta_i and V the sum at the other site, then
+
+$$W\ge T^2,\qquad W+V\ge2-T,\qquad 0\le T\le1.\tag{22}$$
+
+### Maximizing the two groups
+
+For z=0 every state equals I/4 and (19) is immediate. Suppose z>0.
+If `T<=9/10`, Cauchy--Schwarz in (21) gives
+
+$$
+g(\sqrt\rho)\le4\sqrt{1-z(2-T)/4}
+\le2+2\sqrt{1-z/2}.
+$$
+
+The second inequality is equivalent to
+`T<=3/2-1/(1+sqrt(1-z/2))`. Its right side is at least
+`sqrt(2)-1/2>9/10` throughout `0<z<=1`.
+
+For `T>9/10`, apply Cauchy--Schwarz separately to the two sites:
+
+$$
+g(\sqrt\rho)\le\sqrt{4-2zW}+\sqrt{4-2zV}.
+$$
+
+This decreases when either deficit increases. Under (22), its relaxed
+maximum has `W+V=2-T`. Along that line the expression decreases for
+`W>(2-T)/2`. Because `T^2>(2-T)/2`, its maximum is therefore at
+`W=T^2`, `V=2-T-T^2`. It remains to bound
+
+$$
+h(T)=\sqrt{4-2zT^2}+\sqrt{4-2z(2-T-T^2)}.
+$$
+
+On `9/10<T<=1` its derivative satisfies
+
+$$
+\begin{aligned}
+h'(T)
+&=-\frac{2zT}{\sqrt{4-2zT^2}}
++\frac{z(1+2T)}{\sqrt{4-2z(2-T-T^2)}}\\
+&\ge z\left[\frac{1+2T}{2}-\sqrt2 T\right]
+\ge z(3/2-\sqrt2)>0.
+\end{aligned}
+$$
+
+Here the first denominator is at least sqrt(2), while the second is
+at most two. Consequently `h(T)<=h(1)=2+sqrt(4-2z)`, proving the
+upper bound in (19). The stated bisector projector gives a product
+of a mixed bisector qubit and I/2; its score attains (19).
+
+The entropy is `S(rho)=1+h_2((1+delta)/2)`. Since the attaining state
+is product diagonal, the prior product-diagonal theorem bounds this
+exact maximum by (1), proving the entropy consequence for every P.
+
+Sections 6 and 7 together establish (1) for **every two-qubit state with
+at most two distinct eigenvalues, counting zero as an eigenvalue**.
+Their nontrivial multiplicities are one plus three or two plus two;
+the single-value spectrum is I/4. This does not include a general
+rank-three spectrum `(t,b,b,0)`: unless two of its displayed values
+coincide, it has three distinct eigenvalues and remains outside this
+particular theorem.

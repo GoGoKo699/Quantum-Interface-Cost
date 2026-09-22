@@ -33,6 +33,7 @@ python tools/check_product_diagonal_bound.py --output results/product-diagonal-r
 python tools/check_entropy_bounds.py --output results/entropy-bounds-rerun.json
 python tools/check_entropy_structure.py --output results/entropy-structure-rerun.json
 python tools/check_nonuniform_seeds.py --output results/nonuniform-rerun.json
+python tools/check_allocation_and_kernels.py --output results/allocation-kernels-rerun.json
 ```
 
 The bootstrap environment was Python 3.13.5 and NumPy 2.3.5. The audit
@@ -164,6 +165,39 @@ are checked analytically. No diagnostic computes the existential uniform
 neighborhood size, proves unrestricted optimality, or certifies novelty.
 The historical audit report and LICENSE are unchanged.
 
+## Accuracy-allocation and kernel diagnostics
+
+The continuation based on main
+`358d887058eb9fa2fe8bb899d0261ec811d42fa6` adds
+`tools/check_allocation_and_kernels.py` and
+`results/allocation_and_kernels.json`. All 14 deterministic cases pass at
+tolerance 1e-10 in Python 3.12.14 and NumPy 2.3.5. An independent rerun
+exactly reproduces the recorded JSON. Maximum matrix dimension is eight;
+maximum identity error and maximum positive inequality residual are both
+3.552713678800501e-15. There is no optimizer or random search.
+
+The script constructs a complete 48-branch, three-input instrument with
+unequal site-retention probabilities and unequal X/Z contrasts. It checks
+trace preservation, all six effective-observable identities, and the
+dimension-two output cap on every branch. A separate weighted seed attains
+the new support-function bound. Further cases check rank-three kernel
+inertia, the Pauli sum identity, adjugate and rearrangement certificates,
+one-distinguished-eigenvalue formulas and attainers through three inputs,
+and a two-doublet spectrum with an attaining projector.
+
+SLD values are compared with the exact integrated Fourier remainder using
+finite spectral sums, with no numerical quadrature. The nonphysical graph
+example is explicitly labeled as a failed relaxation, not a quantum-state
+counterexample. The near-Bell obstruction compares the proposed charge
+with the valid half-mutual-information upper bound; squashed entanglement
+is not numerically evaluated. Supplied spectral decompositions construct
+square roots directly, with no spectral clipping or inferred numerical rank.
+
+The complete proofs and primary-source mappings were independently checked
+within the workspace. These finite diagnostics do not prove the full accuracy
+region, settle the unrestricted entropy conjecture, or certify publication
+novelty. The historical audit report and LICENSE remain unchanged.
+
 ## Historical archive provenance
 
 The user-provided archive was Q1_Quantum_Interface_Dossier_v0_1.zip.
@@ -171,7 +205,7 @@ Its SHA-256 is
 `3f3538c0307f3a1131746d84410b21752b97aa0e87d8de1722392d3b114dd8ec`.
 The following three files were imported unchanged at bootstrap commit
 `eaf085a8cb299e6b297b11d2dc3c85e24f02779e`. These are historical hashes; the
-research note has subsequently been revised to version 0.5:
+research note has subsequently been revised to version 0.6:
 
 | File | SHA-256 |
 |---|---|

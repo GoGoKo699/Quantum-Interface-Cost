@@ -3,8 +3,8 @@
 Updated: 2026-09-22. The [commit-pinned audit](audits/PROOF_AND_NOVELTY_AUDIT.md)
 contains exact source versions, theorem/equation/page locators, resource maps,
 proof reconstructions, and counterexamples for the bootstrap dossier. The
-table below summarizes those completed targeted comparisons and adds the
-primary theorem used in the subsequent one-qubit result. It is not an
+table below summarizes those completed targeted comparisons; subsequent
+sections cover the later one-qubit and spectral results. It is not an
 exhaustive certification of publication novelty.
 
 ## Direct precedents and exact implications
@@ -24,6 +24,40 @@ The [one-qubit proof](ONE_QUBIT_OPTIMALITY.md) states all source assumptions
 and the exact CHSH operator substitution. The common-memory qubit and mixed
 three-qubit marginal hypotheses are essential. The older same-setting form
 alone does not justify independently chosen site decoders.
+
+## Complete one-qubit accuracy region: established local resource, global deduction
+
+The [allocation theorem](ONE_QUBIT_ALLOCATION_REGION.md) evaluates all 2n
+separate local contrasts under the same worst-case dimension-two cap:
+`sum_i w(eta_(i,X),eta_(i,Z))<=1`, where
+`w(x,z)=[x+z-1-sqrt(2(1-x)(1-z))]_+`. The local w is the established
+incompatibility weight, not a new resource definition. The new repository
+deduction is its exact global budget, proved through weighted Cheng–Hall
+monogamy, Kraus refinement and convex geometry, with a matching mixture of
+strategies retaining at most one site. It does not assert that every encoder
+has that form.
+
+Section 7 of that note records exact versions, dates and theorem locators:
+Yu–Liu–Li–Oh [0805.1538v2](https://arxiv.org/abs/0805.1538v2), Theorem 1 /
+Eq. (5), pp. 1–2, gives the orthogonal compatibility disk; Pusey
+[1502.03010v2](https://arxiv.org/abs/1502.03010v2), Eq. (15), p. 4, defines
+incompatibility weight. Cope–Uola
+[2207.05722v4](https://arxiv.org/abs/2207.05722v4), Section IV.C /
+Eqs. (13)–(14), pp. 7–8, relates it to average compression dimension.
+That average resource does not supply a cap on every collective branch.
+Their full-product-measurement subadditivity also does not supply this
+local-query-union converse. Ioannou et al.'s simulability model contains
+the task exactly, but its inspected Claim 3 / Eq. (13), p. 4, in
+[2202.12980v1](https://arxiv.org/abs/2202.12980v1) evaluates a different
+measurement family. Alves–Gigena–Kaniewski
+[2302.08494v3](https://arxiv.org/abs/2302.08494v3), Eq. (7), p. 3, and
+Lemma 4 / Eq. (30), p. 9, instead gives the sender a classical string;
+unlimited input-dependent classical records would trivialize that task.
+
+These inspected statements establish the ingredients and framework without
+settling subsumption of this evaluated region. Its publication novelty
+remains unresolved; the result is a short task-specific application of
+established monogamy, not a new general correlation inequality.
 
 ## Established proof ingredients
 
@@ -72,6 +106,26 @@ logarithmic-Sobolev inequality and entropy conditioning. Its projector
 arguments are elementary compression identities. These are separate scoped
 deductions; their presence does not certify an original general theorem.
 
+Sections 6–7 of the boundary note now optimize spectra `(t,b,...,b)` at every
+input size and `(a,a,b,b)` on two inputs. Their proofs use invariant
+two-dimensional blocks, principal angles, Pauli expansions and concavity;
+product-diagonal attainers transfer the already proved entropy inequality.
+Together they exclude all two-qubit spectra with at most two distinct
+eigenvalues, counting zero. The separate
+[kernel converse](TWO_QUBIT_KERNEL_CONVERSE.md) uses compression inertia,
+a Pauli sum identity and an adjugate bound to obtain further rank-three
+certificates, including all kernels containing a maximally entangled vector.
+These are independently reconstructed deductions, not a proof of the
+unrestricted entropy bound or certified original spectral inequalities.
+
+The [entanglement calibration obstruction](ENTANGLEMENT_CALIBRATION_OBSTRUCTION.md)
+uses Christandl–Winter [quant-ph/0308088v3](https://arxiv.org/abs/quant-ph/0308088v3),
+Definition 1, printed p. 1: taking a trivial extension gives
+`E_sq<=I(A:B)/2`. An exact near-Bell family then refutes a sharp affine
+local charge and every calibration with finite endpoint slope, sharp at the
+Bell endpoint `phi(2)=1`, and bounded by this upper bound. It leaves the existing weaker faithfulness
+converse valid and is not a counterexample to the seed entropy conjecture.
+
 ## Nonuniform spectra and the proposed SLD route
 
 The [support-inertia note](SUPPORT_INERTIA_CONVERSE.md) uses Sylvester inertia,
@@ -86,7 +140,7 @@ fidelity and a symmetry average. They disprove two proposed flattening steps,
 without supplying a collective advantage or a new general fidelity theorem.
 
 The [SLD audit](SLD_ENTROPY_ROUTE_AUDIT.md) supplies exact versioned locators
-and mathematical comparisons for five primary sources:
+and mathematical comparisons for the following primary sources:
 
 | Source and locator | Established statement | Missing transfer to the proposed local X/Z SLD entropy sum |
 |---|---|---|
@@ -95,6 +149,9 @@ and mathematical comparisons for five primary sources:
 | Bu–Gu–Jaffe, arXiv:2302.07841v3, Section IV.B, Theorem 15, p. 5 | Convolution inequality for local divergence Fisher information | The logarithmic eigenvalue kernel is not SLD, and convolution does not implement this encoder |
 | Toth, arXiv:1701.07461v5, Observation 3, p. 2; Section V | Averages over all traceless observables; an approximate entropy relation in Eq. (69) | Neither an all-directions average nor an approximation proves the fixed local-query inequality |
 | Rouze–Wirth–Zhang, arXiv:2209.07279v3, Section 6.4, pp. 33–34 | A quantum maximum-L1-influence bound; a classical sharp edge formula | The needed sharp total-L2 rank inequality is not an inspected theorem there |
+| Liu, arXiv:2303.01952v5, Definition 3.1, printed p. 13; Theorem 3.4 and footnote 22, printed p. 14 | An upper bound on quantum Jensen–Shannon divergence using a geometric-kernel triangular discrimination | This is not the measured harmonic-kernel SLD quantity; no finite universal entropy-to-single-pinching-SLD conversion exists |
+| Cheng–Hsieh, arXiv:1506.06801v2, Corollary 8, p. 10; normalized trace, p. 3 | A defective matrix logarithmic-Sobolev inequality | The dimension defect makes the direct Pauli-orbit substitution vacuous for the desired entropy deficit |
+| Chang–Li, arXiv:2601.01900v2, Corollary 4.1 / Eq. (36), pp. 23–24 | A strengthened influence lower bound | Substitution of `A=2P-I` gives a valid but weaker flat-state information bound than `log_2(1/t)` |
 
 Two exact counterexamples refute a local conditional-entropy charge and a
 unit-coefficient SLD bound on pinching entropy increase. Neither refutes the
@@ -103,6 +160,14 @@ distinguishes the three-Pauli projector energy from the X/Z query energy;
 they cannot be identified by dropping a normalization or a Y contribution.
 These comparisons are scoped to the inspected statements; subsumption by
 other prior work and publication novelty remain unresolved.
+
+The same audit now derives a commutator integral and an all-spectrum
+comparison between the X/Z and three-Pauli information sums. It reformulates
+the target as a rational entropy inequality on graphs induced by quantum
+eigenbases. An explicit nonphysical graph satisfies the elementary necessary
+constraints but violates the target, showing that those constraints alone
+lose essential structure. None of these steps proves or refutes the global
+quantum SLD candidate.
 
 ## Remaining comparisons and research target
 

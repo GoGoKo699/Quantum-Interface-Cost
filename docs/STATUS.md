@@ -1,7 +1,7 @@
 # Status and claim ledger
 
-Updated: 2026-09-22. Stage: support and spectral-tail converses for nonuniform seeds.
-Latest research base: `6ddc97a549316ed9edb7a14a110ceee70b87bdf9`, the merge of PR #6.
+Updated: 2026-09-22. Stage: complete one-qubit accuracy region and further spectral converses.
+Latest research base: `358d887058eb9fa2fe8bb899d0261ec811d42fa6`, the merge of PR #7.
 
 ## Evidence labels
 
@@ -25,6 +25,8 @@ is asserted.
 | Exact normalized-seed variational formulation | Derived and independently checked; not asserted novel | Seed reduction; audit Section 5 |
 | Seed twirl produces a valid uniform interface | Analytical proof checked; 10 finite construction diagnostics | results/seed_twirl.json |
 | Gamma(n,2)=2+sqrt(2)(n-1), for every n | Derived and independently checked from Cheng–Hall monogamy; subset strategy optimal with one retained qubit | ONE_QUBIT_OPTIMALITY.md |
+| Complete 2n-contrast region for worst-case dimension two | Derived and independently checked; sum of local incompatibility weights <=1, with matching weighted support function and implementation | ONE_QUBIT_ALLOCATION_REGION.md |
+| Local incompatibility weight and orthogonal-qubit compatibility disk | Established resource measure and joint-measurability criterion; exact noisy-pair value derived geometrically | ONE_QUBIT_ALLOCATION_REGION.md Section 7 |
 | All maximizing one-qubit seeds retain one site and project the rest onto product bisectors, up to output unitaries | Derived equality characterization; independently checked | ONE_QUBIT_OPTIMALITY.md Section 5 |
 | g(L)<=sqrt(2)n+(2-sqrt(2))S(L^dagger L) for product-diagonal Gram matrices | Derived and independently checked; arbitrary correlated spectra and local bases allowed; restricted-family result | COMMUTING_SEED_BOUND.md |
 | Same entropy bound for unrestricted Gram matrices | Unresolved; a proposed local conditional-entropy proof is explicitly refuted | COMMUTING_SEED_BOUND.md Section 6 |
@@ -42,7 +44,13 @@ is asserted.
 | Entropy-valid open neighborhood of the entire rank-at-most-two set at fixed n | Derived and independently checked; uniform neighborhood size existential, with separate explicit local criteria | LOW_RANK_ENTROPY_STABILITY.md |
 | Exact subset-core orthogonal-tail score gain <=2sqrt(2) epsilon | Derived and independently checked; first-order sharp coefficient, conservative explicit entropy cutoffs | LOW_RANK_ENTROPY_STABILITY.md |
 | Exact nonuniform optima on two small fixed supports | Derived and independently checked; refutes uniformization on fixed support, including rank four, without beating subset | NONUNIFORM_SUPPORT_OPTIMA.md |
+| Exact maximum for spectrum (t,b,...,b) at every n | Derived and independently checked; arbitrary distinguished eigenvector, product-bisector attainer, entropy inequality follows | ENTROPY_INEQUALITY_BOUNDARIES.md Section 6 |
+| Exact maximum for two-qubit spectrum (a,a,b,b) | Derived and independently checked; together with Section 6 excludes all two-qubit spectra with at most two distinct values, counting zeros | ENTROPY_INEQUALITY_BOUNDARIES.md Section 7 |
+| Two-qubit rank-three kernel-and-spectrum converse | Derived and independently checked; computable scalar and kernel-operator entropy certificates, including all eigenbases at spectrum (1/2,1/4,1/4,0) | TWO_QUBIT_KERNEL_CONVERSE.md |
+| Maximally entangled vector in a two-qubit kernel implies g<=2sqrt(2) | Derived and independently checked at every rank and kernel orientation; classwide sharp constant | TWO_QUBIT_KERNEL_CONVERSE.md |
+| Sharp linear local squashed-entanglement charge | Incorrect; exact near-Bell example and no finite endpoint slope for a calibration sharp at the Bell endpoint, phi(2)=1, and bounded by half mutual information | ENTANGLEMENT_CALIBRATION_OBSTRUCTION.md |
 | Global SLD sum >=n-S(rho) | Unresolved; two sufficient local steps explicitly refuted; inspected prior metric/influence results do not supply it | SLD_ENTROPY_ROUTE_AUDIT.md |
+| SLD commutator integral, all-spectrum X/Z versus three-Pauli comparison, and induced-graph reformulation | Derived and independently checked; a generic graph relaxation is explicitly refuted without a physical-state counterexample | SLD_ENTROPY_ROUTE_AUDIT.md Sections 5–6 |
 | Two-qubit local conditional-entropy proposal | Incorrect; explicit rank-two classical-quantum counterexample, without violating the global conjecture | CLASSICAL_FLAG_ENTROPY_BOUND.md Section 5 |
 | R(eta) equals the regularized minimum seed entropy at contrast eta | Derived and independently checked; worst-case dimension and uniform error preserved; no closed-form evaluation | ENTROPY_RATE_CHARACTERIZATION.md |
 | General sharp intermediate rate evaluation or collective advantage | Unresolved | Note Section 8 |
@@ -149,6 +157,40 @@ publication-novelty certification. All analytical deductions were independently
 reconstructed within this workspace. Sixteen deterministic matrix diagnostics
 also pass, with an exact independent rerun.
 
+## Complete accuracy region and further spectral exclusions
+
+The latest continuation evaluates the complete accuracy region when one
+qubit may cross the interface. For the existing local queries with separate
+contrasts, put `w(x,z)=[x+z-1-sqrt(2(1-x)(1-z))]_+`. Feasibility is
+exactly `sum_i w(eta_(i,X),eta_(i,Z))<=1`. Each local w is an established
+incompatibility weight. The supplied global budget is a weighted-monogamy
+and convexity deduction, with a constructive mixture retaining at most
+one input site. It refines the original uniform theorem and preserves
+uniformity over arbitrary states for each query. It does not characterize
+every physical encoder or settle memory dimensions greater than two.
+
+New spectral optimizations prove the entropy bound for every two-qubit
+state with at most two distinct eigenvalues, including zero in that count.
+One of the two spectral theorems holds at every n for a single distinguished
+eigenvalue and a repeated complementary value. The kernel converse supplies
+additional all-eigenbasis certificates for nonuniform rank three and rules
+out all two-qubit seeds with a maximally entangled vector in their kernel.
+These are proved families; the unrestricted entropy inequality remains open.
+
+The calibration obstruction shows why the existing monogamous entanglement
+argument cannot simply be sharpened to a linear charge matching the subset
+line. The SLD analysis now has an exact unrestricted integral and graph
+formulation, but a graph with only the necessary elementary constraints
+can fail the target and need not come from any quantum eigenbasis. Further
+primary-source comparisons distinguish prior incompatibility theory, biased
+random-access coding, matrix-entropy defects, and different triangular
+discriminations. Publication novelty remains unresolved.
+
+All 14 deterministic allocation, spectral, kernel, and obstruction diagnostics
+pass with matrix dimension at most eight; an independent rerun exactly
+reproduces the recorded JSON. Proof reconstruction and numerical evidence
+are recorded separately in [REPRODUCIBILITY.md](REPRODUCIBILITY.md).
+
 ## Research division and next target
 
 Issue #1 records the proof-and-novelty audit. Issue #2 coordinates the
@@ -178,6 +220,10 @@ remain open. Such a witness must be nonclassical on both sites, must not
 have both marginals maximally mixed, and, if full rank, must have condition
 number greater than 6.235819648070267. It must additionally stay outside
 the proved open neighborhood of the rank-at-most-two set at that fixed n.
+It must fail the new spectral and kernel certificates; in particular,
+a two-input witness cannot have a maximally entangled kernel vector or
+at most two distinct eigenvalues. The example `(t,b,b,0)` generally has
+three distinct eigenvalues and is not removed as a whole by that count.
 This is distinct from the n=3,q=2 finite-budget diagnostic:
 regularization can turn entropy below log(rank) into an asymptotic memory
 saving. No entropy witness or collective advantage has been found.

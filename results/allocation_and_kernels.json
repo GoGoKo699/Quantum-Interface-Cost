@@ -1,0 +1,1607 @@
+{
+  "status": "PASS",
+  "research_base": "358d887058eb9fa2fe8bb899d0261ec811d42fa6",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "tolerance": 1e-10,
+  "case_count": 14,
+  "maximum_matrix_dimension": 8,
+  "spectral_policy": "Use supplied orthonormal eigenbases and all nonnegative eigenvalues directly; no eigenvalue clipping or inferred numerical rank.",
+  "max_identity_error": 3.552713678800501e-15,
+  "max_inequality_violation": 3.552713678800501e-15,
+  "cases": [
+    {
+      "label": "n3_complete_anisotropic_allocation_instrument",
+      "matrix_dimension": 8,
+      "branch_count": 48,
+      "maximum_quantum_output_dimension": 2,
+      "retention_probabilities": [
+        0.5,
+        0.3,
+        0.2
+      ],
+      "discarded_contrasts": [
+        [
+          0.6,
+          0.8
+        ],
+        [
+          0.8,
+          0.6
+        ],
+        [
+          0.7071067811865475,
+          0.7071067811865475
+        ]
+      ],
+      "target_contrasts": [
+        [
+          0.8,
+          0.9
+        ],
+        [
+          0.8599999999999999,
+          0.72
+        ],
+        [
+          0.765685424949238,
+          0.765685424949238
+        ]
+      ],
+      "exact_allocation_costs": [
+        0.5000000000000002,
+        0.2999999999999997,
+        0.19999999999999984
+      ],
+      "classical_records": [
+        {
+          "retained_site": 0,
+          "discarded_signs": {
+            "1": [
+              -1,
+              -1
+            ],
+            "2": [
+              -1,
+              -1
+            ]
+          },
+          "normalized_kraus_weight": 0.031249999999999986
+        },
+        {
+          "retained_site": 0,
+          "discarded_signs": {
+            "1": [
+              -1,
+              -1
+            ],
+            "2": [
+              -1,
+              1
+            ]
+          },
+          "normalized_kraus_weight": 0.031249999999999986
+        },
+        {
+          "retained_site": 0,
+          "discarded_signs": {
+            "1": [
+              -1,
+              -1
+            ],
+            "2": [
+              1,
+              -1
+            ]
+          },
+          "normalized_kraus_weight": 0.031249999999999986
+        },
+        {
+          "retained_site": 0,
+          "discarded_signs": {
+            "1": [
+              -1,
+              -1
+            ],
+            "2": [
+              1,
+              1
+            ]
+          },
+          "normalized_kraus_weight": 0.031249999999999986
+        },
+        {
+          "retained_site": 0,
+          "discarded_signs": {
+            "1": [
+              -1,
+              1
+            ],
+            "2": [
+              -1,
+              -1
+            ]
+          },
+          "normalized_kraus_weight": 0.031249999999999986
+        },
+        {
+          "retained_site": 0,
+          "discarded_signs": {
+            "1": [
+              -1,
+              1
+            ],
+            "2": [
+              -1,
+              1
+            ]
+          },
+          "normalized_kraus_weight": 0.031249999999999986
+        },
+        {
+          "retained_site": 0,
+          "discarded_signs": {
+            "1": [
+              -1,
+              1
+            ],
+            "2": [
+              1,
+              -1
+            ]
+          },
+          "normalized_kraus_weight": 0.031249999999999986
+        },
+        {
+          "retained_site": 0,
+          "discarded_signs": {
+            "1": [
+              -1,
+              1
+            ],
+            "2": [
+              1,
+              1
+            ]
+          },
+          "normalized_kraus_weight": 0.031249999999999986
+        },
+        {
+          "retained_site": 0,
+          "discarded_signs": {
+            "1": [
+              1,
+              -1
+            ],
+            "2": [
+              -1,
+              -1
+            ]
+          },
+          "normalized_kraus_weight": 0.031249999999999986
+        },
+        {
+          "retained_site": 0,
+          "discarded_signs": {
+            "1": [
+              1,
+              -1
+            ],
+            "2": [
+              -1,
+              1
+            ]
+          },
+          "normalized_kraus_weight": 0.031249999999999986
+        },
+        {
+          "retained_site": 0,
+          "discarded_signs": {
+            "1": [
+              1,
+              -1
+            ],
+            "2": [
+              1,
+              -1
+            ]
+          },
+          "normalized_kraus_weight": 0.031249999999999986
+        },
+        {
+          "retained_site": 0,
+          "discarded_signs": {
+            "1": [
+              1,
+              -1
+            ],
+            "2": [
+              1,
+              1
+            ]
+          },
+          "normalized_kraus_weight": 0.031249999999999986
+        },
+        {
+          "retained_site": 0,
+          "discarded_signs": {
+            "1": [
+              1,
+              1
+            ],
+            "2": [
+              -1,
+              -1
+            ]
+          },
+          "normalized_kraus_weight": 0.031249999999999986
+        },
+        {
+          "retained_site": 0,
+          "discarded_signs": {
+            "1": [
+              1,
+              1
+            ],
+            "2": [
+              -1,
+              1
+            ]
+          },
+          "normalized_kraus_weight": 0.031249999999999986
+        },
+        {
+          "retained_site": 0,
+          "discarded_signs": {
+            "1": [
+              1,
+              1
+            ],
+            "2": [
+              1,
+              -1
+            ]
+          },
+          "normalized_kraus_weight": 0.031249999999999986
+        },
+        {
+          "retained_site": 0,
+          "discarded_signs": {
+            "1": [
+              1,
+              1
+            ],
+            "2": [
+              1,
+              1
+            ]
+          },
+          "normalized_kraus_weight": 0.031249999999999986
+        },
+        {
+          "retained_site": 1,
+          "discarded_signs": {
+            "0": [
+              -1,
+              -1
+            ],
+            "2": [
+              -1,
+              -1
+            ]
+          },
+          "normalized_kraus_weight": 0.01874999999999999
+        },
+        {
+          "retained_site": 1,
+          "discarded_signs": {
+            "0": [
+              -1,
+              -1
+            ],
+            "2": [
+              -1,
+              1
+            ]
+          },
+          "normalized_kraus_weight": 0.01874999999999999
+        },
+        {
+          "retained_site": 1,
+          "discarded_signs": {
+            "0": [
+              -1,
+              -1
+            ],
+            "2": [
+              1,
+              -1
+            ]
+          },
+          "normalized_kraus_weight": 0.01874999999999999
+        },
+        {
+          "retained_site": 1,
+          "discarded_signs": {
+            "0": [
+              -1,
+              -1
+            ],
+            "2": [
+              1,
+              1
+            ]
+          },
+          "normalized_kraus_weight": 0.01874999999999999
+        },
+        {
+          "retained_site": 1,
+          "discarded_signs": {
+            "0": [
+              -1,
+              1
+            ],
+            "2": [
+              -1,
+              -1
+            ]
+          },
+          "normalized_kraus_weight": 0.01874999999999999
+        },
+        {
+          "retained_site": 1,
+          "discarded_signs": {
+            "0": [
+              -1,
+              1
+            ],
+            "2": [
+              -1,
+              1
+            ]
+          },
+          "normalized_kraus_weight": 0.01874999999999999
+        },
+        {
+          "retained_site": 1,
+          "discarded_signs": {
+            "0": [
+              -1,
+              1
+            ],
+            "2": [
+              1,
+              -1
+            ]
+          },
+          "normalized_kraus_weight": 0.01874999999999999
+        },
+        {
+          "retained_site": 1,
+          "discarded_signs": {
+            "0": [
+              -1,
+              1
+            ],
+            "2": [
+              1,
+              1
+            ]
+          },
+          "normalized_kraus_weight": 0.01874999999999999
+        },
+        {
+          "retained_site": 1,
+          "discarded_signs": {
+            "0": [
+              1,
+              -1
+            ],
+            "2": [
+              -1,
+              -1
+            ]
+          },
+          "normalized_kraus_weight": 0.01874999999999999
+        },
+        {
+          "retained_site": 1,
+          "discarded_signs": {
+            "0": [
+              1,
+              -1
+            ],
+            "2": [
+              -1,
+              1
+            ]
+          },
+          "normalized_kraus_weight": 0.01874999999999999
+        },
+        {
+          "retained_site": 1,
+          "discarded_signs": {
+            "0": [
+              1,
+              -1
+            ],
+            "2": [
+              1,
+              -1
+            ]
+          },
+          "normalized_kraus_weight": 0.01874999999999999
+        },
+        {
+          "retained_site": 1,
+          "discarded_signs": {
+            "0": [
+              1,
+              -1
+            ],
+            "2": [
+              1,
+              1
+            ]
+          },
+          "normalized_kraus_weight": 0.01874999999999999
+        },
+        {
+          "retained_site": 1,
+          "discarded_signs": {
+            "0": [
+              1,
+              1
+            ],
+            "2": [
+              -1,
+              -1
+            ]
+          },
+          "normalized_kraus_weight": 0.01874999999999999
+        },
+        {
+          "retained_site": 1,
+          "discarded_signs": {
+            "0": [
+              1,
+              1
+            ],
+            "2": [
+              -1,
+              1
+            ]
+          },
+          "normalized_kraus_weight": 0.01874999999999999
+        },
+        {
+          "retained_site": 1,
+          "discarded_signs": {
+            "0": [
+              1,
+              1
+            ],
+            "2": [
+              1,
+              -1
+            ]
+          },
+          "normalized_kraus_weight": 0.01874999999999999
+        },
+        {
+          "retained_site": 1,
+          "discarded_signs": {
+            "0": [
+              1,
+              1
+            ],
+            "2": [
+              1,
+              1
+            ]
+          },
+          "normalized_kraus_weight": 0.01874999999999999
+        },
+        {
+          "retained_site": 2,
+          "discarded_signs": {
+            "0": [
+              -1,
+              -1
+            ],
+            "1": [
+              -1,
+              -1
+            ]
+          },
+          "normalized_kraus_weight": 0.012499999999999992
+        },
+        {
+          "retained_site": 2,
+          "discarded_signs": {
+            "0": [
+              -1,
+              -1
+            ],
+            "1": [
+              -1,
+              1
+            ]
+          },
+          "normalized_kraus_weight": 0.012499999999999992
+        },
+        {
+          "retained_site": 2,
+          "discarded_signs": {
+            "0": [
+              -1,
+              -1
+            ],
+            "1": [
+              1,
+              -1
+            ]
+          },
+          "normalized_kraus_weight": 0.012499999999999992
+        },
+        {
+          "retained_site": 2,
+          "discarded_signs": {
+            "0": [
+              -1,
+              -1
+            ],
+            "1": [
+              1,
+              1
+            ]
+          },
+          "normalized_kraus_weight": 0.012499999999999992
+        },
+        {
+          "retained_site": 2,
+          "discarded_signs": {
+            "0": [
+              -1,
+              1
+            ],
+            "1": [
+              -1,
+              -1
+            ]
+          },
+          "normalized_kraus_weight": 0.012499999999999992
+        },
+        {
+          "retained_site": 2,
+          "discarded_signs": {
+            "0": [
+              -1,
+              1
+            ],
+            "1": [
+              -1,
+              1
+            ]
+          },
+          "normalized_kraus_weight": 0.012499999999999992
+        },
+        {
+          "retained_site": 2,
+          "discarded_signs": {
+            "0": [
+              -1,
+              1
+            ],
+            "1": [
+              1,
+              -1
+            ]
+          },
+          "normalized_kraus_weight": 0.012499999999999992
+        },
+        {
+          "retained_site": 2,
+          "discarded_signs": {
+            "0": [
+              -1,
+              1
+            ],
+            "1": [
+              1,
+              1
+            ]
+          },
+          "normalized_kraus_weight": 0.012499999999999992
+        },
+        {
+          "retained_site": 2,
+          "discarded_signs": {
+            "0": [
+              1,
+              -1
+            ],
+            "1": [
+              -1,
+              -1
+            ]
+          },
+          "normalized_kraus_weight": 0.012499999999999992
+        },
+        {
+          "retained_site": 2,
+          "discarded_signs": {
+            "0": [
+              1,
+              -1
+            ],
+            "1": [
+              -1,
+              1
+            ]
+          },
+          "normalized_kraus_weight": 0.012499999999999992
+        },
+        {
+          "retained_site": 2,
+          "discarded_signs": {
+            "0": [
+              1,
+              -1
+            ],
+            "1": [
+              1,
+              -1
+            ]
+          },
+          "normalized_kraus_weight": 0.012499999999999992
+        },
+        {
+          "retained_site": 2,
+          "discarded_signs": {
+            "0": [
+              1,
+              -1
+            ],
+            "1": [
+              1,
+              1
+            ]
+          },
+          "normalized_kraus_weight": 0.012499999999999992
+        },
+        {
+          "retained_site": 2,
+          "discarded_signs": {
+            "0": [
+              1,
+              1
+            ],
+            "1": [
+              -1,
+              -1
+            ]
+          },
+          "normalized_kraus_weight": 0.012499999999999992
+        },
+        {
+          "retained_site": 2,
+          "discarded_signs": {
+            "0": [
+              1,
+              1
+            ],
+            "1": [
+              -1,
+              1
+            ]
+          },
+          "normalized_kraus_weight": 0.012499999999999992
+        },
+        {
+          "retained_site": 2,
+          "discarded_signs": {
+            "0": [
+              1,
+              1
+            ],
+            "1": [
+              1,
+              -1
+            ]
+          },
+          "normalized_kraus_weight": 0.012499999999999992
+        },
+        {
+          "retained_site": 2,
+          "discarded_signs": {
+            "0": [
+              1,
+              1
+            ],
+            "1": [
+              1,
+              1
+            ]
+          },
+          "normalized_kraus_weight": 0.012499999999999992
+        }
+      ],
+      "max_identity_error": 7.771561172376096e-16,
+      "max_inequality_violation": 0.0
+    },
+    {
+      "label": "n3_unequal_query_weight_attainer",
+      "matrix_dimension": 8,
+      "quantum_output_dimension": 2,
+      "weights": [
+        [
+          3.0,
+          0.2
+        ],
+        [
+          1.3,
+          1.1
+        ],
+        [
+          0.4,
+          2.0
+        ]
+      ],
+      "increments": [
+        0.19334072432541882,
+        0.6970613634073601,
+        0.36039219456288585
+      ],
+      "retained_site": 1,
+      "contrasts": [
+        [
+          0.997785157856609,
+          0.06651901052377394
+        ],
+        [
+          1.0,
+          1.0
+        ],
+        [
+          0.19611613513818402,
+          0.9805806756909201
+        ]
+      ],
+      "weighted_score": 7.446267081111694,
+      "exact_optimum": 7.446267081111695,
+      "max_identity_error": 1.1102230246251565e-15,
+      "max_inequality_violation": 0.0
+    },
+    {
+      "label": "n2_rank_three_kernel_generic_complex",
+      "matrix_dimension": 4,
+      "supplied_spectrum": [
+        0.65,
+        0.25,
+        0.1,
+        0.0
+      ],
+      "rank": 3,
+      "entropy": 1.2361602543738117,
+      "sld": {
+        "local_xyz_values": [
+          0.28361919451636,
+          0.4435222022466727,
+          0.36671774398679535,
+          0.3690730691210487,
+          0.42448459292545493,
+          0.4907016636977143
+        ],
+        "site_triangle_remainders": [
+          0.2068147362564826,
+          0.4352901398933081
+        ],
+        "xz_minus_half_xyz": 0.32105243807489536,
+        "laplace_fourier_remainder": 0.3210524380748952
+      },
+      "score": 3.008197250762935,
+      "entropy_line": 3.552553036491794,
+      "chi_y": 0.21649970780331163,
+      "kernel_m": 1.6083909769256723,
+      "marginal_bloch_lengths": [
+        0.5031219823819986,
+        0.5590449149359465
+      ],
+      "kernel_operator_eigenvalues": [
+        1.0273912760180606,
+        0.4271105661833076,
+        0.15388913472430504
+      ],
+      "scalar_squared_bound": 11.315817708793501,
+      "adjugate_squared_bound": 9.380546372921811,
+      "rearranged_squared_bound": 10.310969129154072,
+      "scalar_entropy_certificate": true,
+      "refined_entropy_certificate": true,
+      "query_details": [
+        {
+          "kernel_expectation": -0.6113060166549455,
+          "inertia_values": [
+            0.264259324461136,
+            -0.4937843351452754,
+            -0.07612799764333354
+          ],
+          "q": 0.5454791029497673,
+          "fidelity": 0.834171657249745,
+          "same_sign_product": 0.03759081270225455,
+          "adjugate_charge": 0.04153434738010995
+        },
+        {
+          "kernel_expectation": -0.5950638394933736,
+          "inertia_values": [
+            0.24065477081164777,
+            -0.4486206980161295,
+            -0.08956599254220522
+          ],
+          "q": 0.44586938957776345,
+          "fidelity": 0.7788414613699826,
+          "same_sign_product": 0.04018115809279156,
+          "adjugate_charge": 0.04486532058995957
+        },
+        {
+          "kernel_expectation": -0.27141795986844247,
+          "inertia_values": [
+            0.12498038011252312,
+            -0.5507693300299424,
+            -0.06407378175507904
+          ],
+          "q": 0.40617930376455735,
+          "fidelity": 0.7398234918975445,
+          "same_sign_product": 0.03528987384972963,
+          "adjugate_charge": 0.03920918780580939
+        },
+        {
+          "kernel_expectation": -0.13060316090891066,
+          "inertia_values": [
+            0.19504172876991066,
+            -0.4353230656834616,
+            -0.024995845792290448
+          ],
+          "q": 0.3859724959046008,
+          "fidelity": 0.6553606402456627,
+          "same_sign_product": 0.01088126821965093,
+          "adjugate_charge": 0.01480021948256227
+        }
+      ],
+      "max_identity_error": 6.661338147750939e-16,
+      "max_inequality_violation": 0.0
+    },
+    {
+      "label": "n2_rank_three_kernel_universal_spectrum",
+      "matrix_dimension": 4,
+      "supplied_spectrum": [
+        0.5,
+        0.25,
+        0.25,
+        0.0
+      ],
+      "rank": 3,
+      "entropy": 1.5,
+      "sld": {
+        "local_xyz_values": [
+          0.25063300017930656,
+          0.35488017479749223,
+          0.2868147356420957,
+          0.28089497426306276,
+          0.15513246670981845,
+          0.32027564559874383
+        ],
+        "site_triangle_remainders": [
+          0.18256756102391003,
+          0.4460381531519881
+        ],
+        "xz_minus_half_xyz": 0.31430285708794903,
+        "laplace_fourier_remainder": 0.314302857087949
+      },
+      "score": 3.2002392456297732,
+      "entropy_line": 3.7071067811865475,
+      "chi_y": 0.18109041735641485,
+      "kernel_m": 1.6083909769256723,
+      "marginal_bloch_lengths": [
+        0.4552253645962438,
+        0.32436324473702505
+      ],
+      "kernel_operator_eigenvalues": [
+        1.0273912760180606,
+        0.4271105661833076,
+        0.15388913472430504
+      ],
+      "scalar_squared_bound": 10.492420284425684,
+      "adjugate_squared_bound": 10.323309052956658,
+      "rearranged_squared_bound": 10.338531149701382,
+      "scalar_entropy_certificate": true,
+      "refined_entropy_certificate": true,
+      "query_details": [
+        {
+          "kernel_expectation": -0.6113060166549455,
+          "inertia_values": [
+            0.27114783529451086,
+            -0.40118919325852587,
+            -0.17561165036345786
+          ],
+          "q": 0.43720297673177233,
+          "fidelity": 0.8479486789164947,
+          "same_sign_product": 0.07045349633611397,
+          "adjugate_charge": 0.0719659436627948
+        },
+        {
+          "kernel_expectation": -0.5950638394933736,
+          "inertia_values": [
+            0.26239298478411205,
+            -0.3666178006679265,
+            -0.19330710386287245
+          ],
+          "q": 0.3927274100005591,
+          "fidelity": 0.8223178893149109,
+          "same_sign_product": 0.07086982527169274,
+          "adjugate_charge": 0.07185535779343415
+        },
+        {
+          "kernel_expectation": -0.27141795986844247,
+          "inertia_values": [
+            0.2642437922912796,
+            -0.4530743779549674,
+            -0.07084583235132624
+          ],
+          "q": 0.492808769297511,
+          "fidelity": 0.7881640025975732,
+          "same_sign_product": 0.03209843142327904,
+          "adjugate_charge": 0.0325554047329778
+        },
+        {
+          "kernel_expectation": -0.13060316090891066,
+          "inertia_values": [
+            0.3017093076325529,
+            -0.40685022532980164,
+            -0.03324914183843984
+          ],
+          "q": 0.49617042661374333,
+          "fidelity": 0.7418086748007945,
+          "same_sign_product": 0.013527420848991785,
+          "adjugate_charge": 0.014102713959688101
+        }
+      ],
+      "max_identity_error": 6.661338147750939e-16,
+      "max_inequality_violation": 0.0
+    },
+    {
+      "label": "n2_rank_three_kernel_singlet",
+      "matrix_dimension": 4,
+      "supplied_spectrum": [
+        0.55,
+        0.3,
+        0.15,
+        0.0
+      ],
+      "rank": 3,
+      "entropy": 1.4060075793123286,
+      "sld": {
+        "local_xyz_values": [
+          0.5642857142857142,
+          0.5642857142857142,
+          0.14999999999999994,
+          0.5642857142857142,
+          0.5642857142857142,
+          0.14999999999999994
+        ],
+        "site_triangle_remainders": [
+          0.1499999999999999,
+          0.1499999999999999
+        ],
+        "xz_minus_half_xyz": 0.1499999999999999,
+        "laplace_fourier_remainder": 0.14999999999999994
+      },
+      "score": 2.7099504938362076,
+      "entropy_line": 3.652047295907987,
+      "chi_y": 0.04499999999999998,
+      "kernel_m": 4.4742286341514763e-17,
+      "marginal_bloch_lengths": [
+        0.25,
+        0.2500000000000001
+      ],
+      "kernel_operator_eigenvalues": [
+        2.2371143170757382e-17,
+        2.2371143170757382e-17,
+        4.9673916470721343e-33
+      ],
+      "scalar_squared_bound": 7.82,
+      "adjugate_squared_bound": 7.82,
+      "rearranged_squared_bound": 7.82,
+      "scalar_entropy_certificate": true,
+      "refined_entropy_certificate": true,
+      "query_details": [
+        {
+          "kernel_expectation": 0.0,
+          "inertia_values": [
+            0.25248762345905196,
+            -0.25248762345905185,
+            -2.949029909160572e-17
+          ],
+          "q": 0.25499999999999995,
+          "fidelity": 0.5049752469181039,
+          "same_sign_product": 7.445935532736164e-18,
+          "adjugate_charge": 0.0
+        },
+        {
+          "kernel_expectation": -2.2371143170757382e-17,
+          "inertia_values": [
+            0.29999999999999993,
+            -0.55,
+            1.5406342565822422e-18
+          ],
+          "q": 0.7225000000000001,
+          "fidelity": 0.85,
+          "same_sign_product": -8.473488411202333e-19,
+          "adjugate_charge": 1.8456193115874843e-18
+        },
+        {
+          "kernel_expectation": 0.0,
+          "inertia_values": [
+            0.25248762345905196,
+            -0.25248762345905185,
+            -2.949029909160572e-17
+          ],
+          "q": 0.25499999999999995,
+          "fidelity": 0.5049752469181039,
+          "same_sign_product": 7.445935532736164e-18,
+          "adjugate_charge": 0.0
+        },
+        {
+          "kernel_expectation": 2.2371143170757382e-17,
+          "inertia_values": [
+            0.55,
+            -0.29999999999999993,
+            1.5406342565822422e-18
+          ],
+          "q": 0.7225000000000001,
+          "fidelity": 0.85,
+          "same_sign_product": -4.621902769746726e-19,
+          "adjugate_charge": 1.0067014426840826e-18
+        }
+      ],
+      "max_identity_error": 2.220446049250313e-16,
+      "max_inequality_violation": 5.551115123125783e-17
+    },
+    {
+      "label": "n2_rank_three_kernel_rotated_bell",
+      "matrix_dimension": 4,
+      "supplied_spectrum": [
+        0.7,
+        0.2,
+        0.1,
+        0.0
+      ],
+      "rank": 3,
+      "entropy": 1.1567796494470395,
+      "sld": {
+        "local_xyz_values": [
+          0.5750551296736912,
+          0.6916666666666668,
+          0.21661153699297558,
+          0.6916666666666667,
+          0.42265702223735824,
+          0.3690096444293083
+        ],
+        "site_triangle_remainders": [
+          0.09999999999999998,
+          0.6380192888586167
+        ],
+        "xz_minus_half_xyz": 0.36900964442930834,
+        "laplace_fourier_remainder": 0.3690096444293085
+      },
+      "score": 2.5275032237804824,
+      "entropy_line": 3.5060529547150714,
+      "chi_y": 0.30643843829374257,
+      "kernel_m": 5.201910087978856e-17,
+      "marginal_bloch_lengths": [
+        0.5,
+        0.49999999999999994
+      ],
+      "kernel_operator_eigenvalues": [
+        4.419172421699907e-17,
+        7.260976557735859e-18,
+        5.664001050536219e-19
+      ],
+      "scalar_squared_bound": 6.7742462468250295,
+      "adjugate_squared_bound": 6.7742462468250295,
+      "rearranged_squared_bound": 6.7742462468250295,
+      "scalar_entropy_certificate": true,
+      "refined_entropy_certificate": true,
+      "query_details": [
+        {
+          "kernel_expectation": -2.144700540425668e-18,
+          "inertia_values": [
+            0.38674355461393517,
+            -0.16476950113117525,
+            1.0583676675942483e-18
+          ],
+          "q": 0.3041666506573092,
+          "fidelity": 0.5515130557451103,
+          "same_sign_product": -1.743867126028698e-19,
+          "adjugate_charge": 1.5450321044317453e-19
+        },
+        {
+          "kernel_expectation": 2.3977457654596867e-17,
+          "inertia_values": [
+            0.6380884041744073,
+            -0.1900621554116446,
+            2.9098969869974234e-17
+          ],
+          "q": 0.6858333493426908,
+          "fidelity": 0.828150559586052,
+          "same_sign_product": -5.530612933745806e-18,
+          "adjugate_charge": 7.663305484954615e-19
+        },
+        {
+          "kernel_expectation": 1.9194850301691557e-18,
+          "inertia_values": [
+            0.21213203435596434,
+            -0.21213203435596437,
+            4.701845265752956e-18
+          ],
+          "q": 0.17999999999999997,
+          "fidelity": 0.42426406871192857,
+          "same_sign_product": -9.974120014511344e-19,
+          "adjugate_charge": 1.7755236529064686e-19
+        },
+        {
+          "kernel_expectation": 2.3977457654596867e-17,
+          "inertia_values": [
+            0.5464049095510928,
+            -0.17717063018629886,
+            -2.6516366413795872e-17
+          ],
+          "q": 0.5235615617062578,
+          "fidelity": 0.7235755397373917,
+          "same_sign_product": 4.697921347783024e-18,
+          "adjugate_charge": 1.1541509667422082e-18
+        }
+      ],
+      "max_identity_error": 4.440892098500626e-16,
+      "max_inequality_violation": 2.220446049250313e-16
+    },
+    {
+      "label": "n1_one_outlier_complex_vector",
+      "matrix_dimension": 2,
+      "supplied_spectrum": [
+        0.81,
+        0.18999999999999995
+      ],
+      "rank": 2,
+      "entropy": 0.7014714598838974,
+      "sld": {
+        "local_xyz_values": [
+          0.2269497599999999,
+          0.29583423999999997,
+          0.24601600000000004
+        ],
+        "site_triangle_remainders": [
+          0.17713151999999993
+        ],
+        "xz_minus_half_xyz": 0.08856575999999997,
+        "laplace_fourier_remainder": 0.08856576000000004
+      },
+      "outlier": 0.81,
+      "background": 0.18999999999999995,
+      "query_means": [
+        0.64,
+        -0.5999999999999996
+      ],
+      "query_scores": [
+        0.8792327564416601,
+        0.8683225207260259
+      ],
+      "exact_query_formulas": [
+        0.8792327564416603,
+        0.8683225207260259
+      ],
+      "score": 1.7475552771676859,
+      "exact_spectrum_optimum": 1.7975538934897055,
+      "max_identity_error": 2.220463850686204e-16,
+      "max_inequality_violation": 0.0
+    },
+    {
+      "label": "n2_one_outlier_complex_vector",
+      "matrix_dimension": 4,
+      "supplied_spectrum": [
+        0.03,
+        0.3233333333333333,
+        0.3233333333333333,
+        0.3233333333333333
+      ],
+      "rank": 4,
+      "entropy": 1.7318054835310976,
+      "sld": {
+        "local_xyz_values": [
+          0.1525190428863943,
+          0.21207804697002888,
+          0.15729063095993157,
+          0.10015319259993137,
+          0.22177682334305582,
+          0.19995770487336753
+        ],
+        "site_triangle_remainders": [
+          0.09773162687629697,
+          0.07833407413024307
+        ],
+        "xz_minus_half_xyz": 0.08803285050327002,
+        "laplace_fourier_remainder": 0.08803285050327009
+      },
+      "outlier": 0.03,
+      "background": 0.3233333333333333,
+      "query_means": [
+        0.6113060166549455,
+        0.5950638394933738,
+        0.7672877121916137,
+        0.42295707723384274
+      ],
+      "query_scores": [
+        0.9130393053227143,
+        0.9098556130631078,
+        0.945760269171193,
+        0.8794599699549156
+      ],
+      "exact_query_formulas": [
+        0.9130393053227139,
+        0.9098556130631076,
+        0.9457602691711926,
+        0.8794599699549155
+      ],
+      "score": 3.648115157511931,
+      "exact_spectrum_optimum": 3.7308500241559965,
+      "max_identity_error": 4.440892098500626e-16,
+      "max_inequality_violation": 0.0
+    },
+    {
+      "label": "n2_one_outlier_attainer",
+      "matrix_dimension": 4,
+      "supplied_spectrum": [
+        0.0,
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "rank": 3,
+      "entropy": 1.584962500721156,
+      "sld": {
+        "local_xyz_values": [
+          0.16666666666666663,
+          0.33333333333333337,
+          0.1666666666666667,
+          0.16666666666666669,
+          0.33333333333333337,
+          0.1666666666666668
+        ],
+        "site_triangle_remainders": [
+          0.0,
+          1.1102230246251565e-16
+        ],
+        "xz_minus_half_xyz": 5.551115123125783e-17,
+        "laplace_fourier_remainder": 0.0
+      },
+      "outlier": 0,
+      "background": 0.3333333333333333,
+      "query_means": [
+        0.7071067811865477,
+        0.7071067811865475,
+        0.7071067811865476,
+        0.7071067811865475
+      ],
+      "query_scores": [
+        0.9023689270621829,
+        0.9023689270621827,
+        0.9023689270621827,
+        0.9023689270621827
+      ],
+      "exact_query_formulas": [
+        0.9023689270621825,
+        0.9023689270621824,
+        0.9023689270621824,
+        0.9023689270621824
+      ],
+      "score": 3.609475708248731,
+      "exact_spectrum_optimum": 3.6094757082487297,
+      "max_identity_error": 1.3322676295501878e-15,
+      "max_inequality_violation": 1.3322676295501878e-15
+    },
+    {
+      "label": "n3_one_outlier_complex_vector",
+      "matrix_dimension": 8,
+      "supplied_spectrum": [
+        0.91,
+        0.012857142857142853,
+        0.012857142857142853,
+        0.012857142857142853,
+        0.012857142857142853,
+        0.012857142857142853,
+        0.012857142857142853,
+        0.012857142857142853
+      ],
+      "rank": 8,
+      "entropy": 0.6891317600492871,
+      "sld": {
+        "local_xyz_values": [
+          0.38612244868759077,
+          0.8440002601454624,
+          0.7705423101998664,
+          0.2533623450254491,
+          0.8620129375267579,
+          0.8651088664516682,
+          0.8681283526870744,
+          0.29373798375435634,
+          0.8583541124336822
+        ],
+        "site_triangle_remainders": [
+          0.31266449874199487,
+          0.25645827395035925,
+          1.4327444813664003
+        ],
+        "xz_minus_half_xyz": 1.0009336270293772,
+        "laplace_fourier_remainder": 1.000933627029377
+      },
+      "outlier": 0.91,
+      "background": 0.012857142857142853,
+      "query_means": [
+        0.7465069860279439,
+        -0.34131736526946105,
+        0.8423153692614768,
+        -0.08982035928143711,
+        0.06786427145708585,
+        -0.1257485029940119
+      ],
+      "query_scores": [
+        0.7809393094880037,
+        0.452062623600772,
+        0.8631759711302235,
+        0.30799651071689166,
+        0.3018801591832102,
+        0.3211245826106092
+      ],
+      "exact_query_formulas": [
+        0.7809393094880039,
+        0.45206262360077215,
+        0.8631759711302238,
+        0.3079965107168918,
+        0.3018801591832104,
+        0.3211245826106094
+      ],
+      "score": 3.0271791567297104,
+      "exact_spectrum_optimum": 4.484346358334921,
+      "max_identity_error": 4.440892098500626e-16,
+      "max_inequality_violation": 0.0
+    },
+    {
+      "label": "n3_one_outlier_attainer",
+      "matrix_dimension": 8,
+      "supplied_spectrum": [
+        0.67,
+        0.04714285714285714,
+        0.04714285714285714,
+        0.04714285714285714,
+        0.04714285714285714,
+        0.04714285714285714,
+        0.04714285714285714,
+        0.04714285714285714
+      ],
+      "rank": 8,
+      "entropy": 1.8413534970587369,
+      "sld": {
+        "local_xyz_values": [
+          0.27048377916903815,
+          0.5409675583380764,
+          0.2704837791690383,
+          0.27048377916903815,
+          0.5409675583380764,
+          0.27048377916903826,
+          0.2704837791690382,
+          0.5409675583380765,
+          0.2704837791690383
+        ],
+        "site_triangle_remainders": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "xz_minus_half_xyz": 0.0,
+        "laplace_fourier_remainder": 1.4431403028857705e-32
+      },
+      "outlier": 0.67,
+      "background": 0.04714285714285714,
+      "query_means": [
+        0.7071067811865478,
+        0.7071067811865477,
+        0.7071067811865477,
+        0.7071067811865477,
+        0.7071067811865477,
+        0.7071067811865477
+      ],
+      "query_scores": [
+        0.8488238974876064,
+        0.8488238974876063,
+        0.8488238974876066,
+        0.8488238974876064,
+        0.8488238974876066,
+        0.8488238974876063
+      ],
+      "exact_query_formulas": [
+        0.848823897487606,
+        0.848823897487606,
+        0.848823897487606,
+        0.848823897487606,
+        0.848823897487606,
+        0.848823897487606
+      ],
+      "score": 5.092943384925639,
+      "exact_spectrum_optimum": 5.092943384925635,
+      "max_identity_error": 3.552713678800501e-15,
+      "max_inequality_violation": 3.552713678800501e-15
+    },
+    {
+      "label": "d8_nonphysical_spectral_graph_relaxation",
+      "matrix_dimension": 8,
+      "graph_matrix": [
+        [
+          3.0,
+          1.5,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        [
+          1.5,
+          3.0,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        [
+          0.25,
+          0.25,
+          3.0,
+          1.5,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        [
+          0.25,
+          0.25,
+          1.5,
+          3.0,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          3.0,
+          1.5,
+          0.25,
+          0.25
+        ],
+        [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          1.5,
+          3.0,
+          0.25,
+          0.25
+        ],
+        [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          3.0,
+          1.5
+        ],
+        [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          1.5,
+          3.0
+        ]
+      ],
+      "laplacian_eigenvalues": [
+        -1.7763568394002505e-15,
+        1.9999999999999991,
+        2.0,
+        2.000000000000001,
+        4.499999999999999,
+        4.499999999999999,
+        4.500000000000001,
+        4.500000000000003
+      ],
+      "rational_energy": 1.5,
+      "entropy_deficit": 2.0,
+      "false_relaxation_gap": 0.5,
+      "physical_state_counterexample": false,
+      "nonphysical_reason": "Saturated diagonal 3 forces product X/Z-plane eigenvectors and off-diagonal entries at most 1, whereas paired entries are 1.5.",
+      "max_identity_error": 2.6645352591003757e-15,
+      "max_inequality_violation": 0.0
+    },
+    {
+      "label": "near_bell_false_linear_entanglement_charge",
+      "matrix_dimension": 4,
+      "supplied_spectrum": [
+        0.9970703125,
+        0.0009765625,
+        0.0009765625,
+        0.0009765625
+      ],
+      "rank": 4,
+      "entropy": 0.03351732319703582,
+      "epsilon": 0.0009765625,
+      "witness": 1.9921874999999996,
+      "half_mutual_information": 0.9832413384014821,
+      "proposed_linear_charge": 0.9866632282719794,
+      "obstruction_gap": 0.0034218898704972966,
+      "squashed_entanglement_evaluated": false,
+      "max_identity_error": 4.440892098500626e-16,
+      "max_inequality_violation": 0.0
+    },
+    {
+      "label": "n2_doublet_spectrum_generic_and_attainer",
+      "matrix_dimension": 4,
+      "supplied_spectrum": [
+        0.4,
+        0.4,
+        0.1,
+        0.1
+      ],
+      "rank": 4,
+      "entropy": 1.721928094887362,
+      "delta": 0.6,
+      "exact_spectrum_optimum": 3.8110770276274835,
+      "states": [
+        {
+          "kind": "generic",
+          "score": 3.629098348530805,
+          "query_scores": [
+            0.9537149922769135,
+            0.9195256768578055,
+            0.8859801479464774,
+            0.8698775314496086
+          ]
+        },
+        {
+          "kind": "attainer",
+          "score": 3.8110770276274826,
+          "query_scores": [
+            0.9055385138137416,
+            0.9055385138137414,
+            0.9999999999999999,
+            0.9999999999999999
+          ]
+        }
+      ],
+      "max_identity_error": 8.881784197001252e-16,
+      "max_inequality_violation": 0.0
+    }
+  ],
+  "scope": "Finite deterministic checks of complete-instrument identities, exact spectral formulas, stated inequalities and explicit obstructions. No optimization, unrestricted theorem certificate, entanglement evaluation or novelty certification."
+}

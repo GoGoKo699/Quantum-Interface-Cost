@@ -16,11 +16,14 @@ entropy characterization of the asymptotic rate. Evaluating that rate remains
 unresolved. A further converse derived from quantum logarithmic-Sobolev theory
 improves the quantitative memory lower bounds. The model is established measurement
 simulability, not a new framework: see [the literature comparison](docs/LITERATURE_COMPARISON.md).
-The latest finite-block result proves subset optimality for every flat
+An earlier finite-block result proves subset optimality for every flat
 half-rank seed on up to four input qubits, with exact equality cases.
 Further support and spectral-tail converses now exclude additional nonflat
 seeds. The unrestricted problem remains open; explicit examples show why
 replacing a seed by the uniform state on its support is not a valid shortcut.
+The one-qubit theorem now evaluates every separate local X/Z accuracy
+profile: the sum of the pairs' incompatibility weights must be at most one,
+and a mixture of strategies retaining at most one site attains the whole region.
 
 ## Start here
 
@@ -30,6 +33,7 @@ replacing a seed by the uniform state on its support is not a valid shortcut.
 | What is established, derived, or still a target | [STATUS](docs/STATUS.md) |
 | Unrestricted collective-encoding problem | [Seed reduction](docs/COLLECTIVE_ENCODING_REDUCTION.md) |
 | Exact optimum with one retained qubit | [One-qubit theorem and equality cases](docs/ONE_QUBIT_OPTIMALITY.md) |
+| Exact region for separate accuracies at every local query | [One-qubit allocation theorem](docs/ONE_QUBIT_ALLOCATION_REGION.md) |
 | A structured family that cannot beat the subset strategy | [Product-diagonal entropy bound](docs/COMMUTING_SEED_BOUND.md) |
 | Exact regularized formulation of the asymptotic rate | [Entropy-rate characterization](docs/ENTROPY_RATE_CHARACTERIZATION.md) |
 | Stronger bound for every collective encoder | [Logarithmic-Sobolev converse](docs/STRONG_ENTROPIC_CONVERSE.md) |
@@ -37,6 +41,8 @@ replacing a seed by the uniform state on its support is not a valid shortcut.
 | Sharp flat half-rank result through four input qubits | [Flat-seed theorem](docs/FLAT_HALF_RANK_OPTIMALITY.md) |
 | Further entropy exclusions and failed local proof route | [Classical flags](docs/CLASSICAL_FLAG_ENTROPY_BOUND.md), [locally mixed two-qubit states](docs/LOCALLY_MIXED_TWO_QUBIT_BOUND.md), [bounded spectral condition](docs/SPECTRAL_CONDITION_ENTROPY_BOUND.md) |
 | Converses covering nonuniform spectra | [Support inertia and geometric neighborhood](docs/SUPPORT_INERTIA_CONVERSE.md), [spectral-tail stability](docs/LOW_RANK_ENTROPY_STABILITY.md) |
+| Further exact spectral results and kernel certificates | [Two-level spectra](docs/ENTROPY_INEQUALITY_BOUNDARIES.md), [two-qubit kernel converse](docs/TWO_QUBIT_KERNEL_CONVERSE.md) |
+| Why a sharp local squashed-entanglement charge cannot work | [Calibration obstruction](docs/ENTANGLEMENT_CALIBRATION_OBSTRUCTION.md) |
 | Exact obstructions to proposed proof shortcuts | [Nonuniform fixed-support optima](docs/NONUNIFORM_SUPPORT_OPTIMA.md), [SLD source and proof-route audit](docs/SLD_ENTROPY_ROUTE_AUDIT.md) |
 | Commit-pinned independent proof and source review | [Audit report](docs/audits/PROOF_AND_NOVELTY_AUDIT.md) |
 | Closest precedents and unresolved translations | [Literature comparison](docs/LITERATURE_COMPARISON.md) |
@@ -119,6 +125,13 @@ rank-four subset support. Rank-three supports use the one-sided subspace
 distance stated in the proof. These are distinct finite-budget and entropy
 diagnostics. Publication novelty is not certified.
 
+Further exact spectrum optimizations establish the entropy inequality for
+every two-qubit state with at most two distinct eigenvalues, counting zeros.
+A separate kernel converse excludes every two-qubit seed whose kernel contains
+a maximally entangled vector, and supplies computable certificates for other
+rank-three spectra. These deductions still leave general rank-three and
+full-rank entropy witnesses unresolved.
+
 ## Essential boundary
 
 This is a single-specimen delayed-readout problem, not a general quantum
@@ -142,13 +155,14 @@ python tools/check_product_diagonal_bound.py --output results/product-diagonal-r
 python tools/check_entropy_bounds.py --output results/entropy-bounds-rerun.json
 python tools/check_entropy_structure.py --output results/entropy-structure-rerun.json
 python tools/check_nonuniform_seeds.py --output results/nonuniform-rerun.json
+python tools/check_allocation_and_kernels.py --output results/allocation-kernels-rerun.json
 ```
 
 The first command after installation checks 14 explicit subset constructions;
 the second checks 10 seed-to-interface constructions. The new scripts check
 43 one-qubit identities/examples, 10 product-diagonal cases, 22 entropy-bound
-and seed-family cases, 20 structure diagnostics, and 16 nonuniform-seed
-diagnostics. These finite
+and seed-family cases, 20 structure diagnostics, 16 nonuniform-seed
+diagnostics, and 14 allocation, spectral, kernel, and obstruction cases. These finite
 diagnostics supplement the analytical proofs. There is no numerical
 optimization or large simulation. No hosted CI run is claimed.
 
