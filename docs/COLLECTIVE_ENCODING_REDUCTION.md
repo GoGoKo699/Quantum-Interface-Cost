@@ -129,6 +129,13 @@ when q=1 and classifies all maximizing seeds. The
 Neither statement restricts the encoders in the unresolved general problem.
 The smallest remaining block is n=3,q=2, with threshold $g(L)=4+\sqrt2$.
 
+The [logarithmic-Sobolev converse](STRONG_ENTROPIC_CONVERSE.md) supplies a
+stronger global memory lower bound without evaluating this optimization.
+The [further boundary results](ENTROPY_INEQUALITY_BOUNDARIES.md) solve the
+score at every rank-two spectrum and exclude additional eigenbasis/projector
+families. They also distinguish the finite-block target from a possible
+two-input, nonuniform rank-three entropy witness for an asymptotic advantage.
+
 The same problem admits the spectral expression
 
 $$

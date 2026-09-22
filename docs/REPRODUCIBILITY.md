@@ -30,6 +30,7 @@ python checks.py --max-n 4 --output results/baseline-rerun.json
 python tools/check_seed_twirl.py --output results/seed-rerun.json
 python tools/check_one_qubit_tradeoff.py --output results/one-qubit-rerun.json
 python tools/check_product_diagonal_bound.py --output results/product-diagonal-rerun.json
+python tools/check_entropy_bounds.py --output results/entropy-bounds-rerun.json
 ```
 
 The bootstrap environment was Python 3.13.5 and NumPy 2.3.5. The audit
@@ -82,6 +83,32 @@ with the same maximum residuals as the recorded bootstrap outputs. The
 historical [audit report](audits/PROOF_AND_NOVELTY_AUDIT.md) remains pinned to
 its reviewed bootstrap commit.
 
+## Further converse and family diagnostics
+
+The continuation based on main
+`f9a5fc72d15e9d314f6deae65096605e955a2051` added
+`tools/check_entropy_bounds.py` and `results/entropy_bounds.json`. Its 22
+deterministic cases use matrices of dimension at most eight and no optimizer.
+They include rank-two spectrum attainers and complex eigenvectors, arbitrary
+flat rank-three complements, Bell/graph stabilizer eigenbases with nonuniform
+and zero eigenvalues, balanced flat projectors outside product-diagonal bases,
+general full-rank states, and endpoints.
+
+The Dirichlet form is computed independently through partial trace and Pauli
+twirling. The script checks their equality and the root-fidelity/affinity/
+energy/entropy chain, plus the proved formulas for each labeled family.
+The rate table is arithmetic evaluation of the analytical bounds. In
+Python 3.12.14 with NumPy 2.3.5, all 22 cases passed at tolerance 1e-10;
+maximum identity error was 5.551115123125783e-15 and maximum positive
+inequality residual was 1.7763568394002505e-15. Random seed: 20260924.
+Eigenvalues at most 1e-14 are treated as numerical zeros; reconstruction
+of each input matrix is separately checked against the stated tolerance.
+This numerical convention does not restrict the theorem's spectra.
+
+The complete analytical proofs were independently checked within the
+workspace. Finite examples do not prove the universal statements, settle
+the unrestricted subset conjecture, or certify publication novelty.
+
 ## Provenance
 
 The user-provided archive was Q1_Quantum_Interface_Dossier_v0_1.zip.
@@ -89,7 +116,7 @@ Its SHA-256 is
 `3f3538c0307f3a1131746d84410b21752b97aa0e87d8de1722392d3b114dd8ec`.
 The following three files were imported unchanged at bootstrap commit
 `eaf085a8cb299e6b297b11d2dc3c85e24f02779e`. These are historical hashes; the
-research note has subsequently been revised to version 0.2:
+research note has subsequently been revised to version 0.3:
 
 | File | SHA-256 |
 |---|---|

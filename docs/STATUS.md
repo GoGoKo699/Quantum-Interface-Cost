@@ -1,7 +1,7 @@
 # Status and claim ledger
 
-Updated: 2026-09-22. Stage: audited baseline and analytical finite-block results.
-Research base: `df45e2eaceb5669cfff9ac063d3da845d622dac3`, the merge of audit PR #3.
+Updated: 2026-09-22. Stage: stronger unrestricted converse and entropy-witness exclusions.
+Latest research base: `f9a5fc72d15e9d314f6deae65096605e955a2051`, the merge of PR #4.
 
 ## Evidence labels
 
@@ -18,6 +18,7 @@ is asserted.
 | q=0 iff eta<=1/sqrt(2) | Established threshold; elementary derivation checked | Note Section 3; audit |
 | Random-subset achievable contrast | Explicit construction; checked through n=4 | Note Section 4; checks.json |
 | Entropic memory lower bound | Standard-theorem application; independently checked | Note Section 5; audit Section 4.1 |
+| Logarithmic-Sobolev lower bound b(eta) on q/n and R(eta) | Derived and independently checked from Beigi and Audenaert et al.; unrestricted | STRONG_ENTROPIC_CONVERSE.md |
 | q=n for exact readout | Also a corollary of Ballester–Wehner–Winter Lemma 5.1 | Audit Section 6.1 |
 | Positive linear rate for fixed eta>1/sqrt(2) | Derived and independently checked, using corrected one-way-LOCC faithfulness | Note Section 6; audit Section 4.2 |
 | Existence of R(eta) by subadditivity | Derived and independently checked | Note Section 7; audit Section 4.3 |
@@ -27,6 +28,9 @@ is asserted.
 | All maximizing one-qubit seeds retain one site and project the rest onto product bisectors, up to output unitaries | Derived equality characterization; independently checked | ONE_QUBIT_OPTIMALITY.md Section 5 |
 | g(L)<=sqrt(2)n+(2-sqrt(2))S(L^dagger L) for product-diagonal Gram matrices | Derived and independently checked; arbitrary correlated spectra and local bases allowed; restricted-family result | COMMUTING_SEED_BOUND.md |
 | Same entropy bound for unrestricted Gram matrices | Unresolved; a proposed local conditional-entropy proof is explicitly refuted | COMMUTING_SEED_BOUND.md Section 6 |
+| Exact maximum score at fixed rank-two spectrum | Derived and independently checked; arbitrary eigenvectors allowed | ENTROPY_INEQUALITY_BOUNDARIES.md |
+| Entropy inequality for all stabilizer-basis spectra and all flat rank-three two-input states | Derived and independently checked; additional excluded families | ENTROPY_INEQUALITY_BOUNDARIES.md |
+| Subset bound for flat half-rank seeds with a maximally mixed complementary marginal | Derived and independently checked; a scoped converse, not the unrestricted n=3,q=2 result | ENTROPY_INEQUALITY_BOUNDARIES.md |
 | R(eta) equals the regularized minimum seed entropy at contrast eta | Derived and independently checked; worst-case dimension and uniform error preserved; no closed-form evaluation | ENTROPY_RATE_CHARACTERIZATION.md |
 | General sharp intermediate rate evaluation or collective advantage | Unresolved | Note Section 8 |
 | Exponential many-copy estimation speedup | Not claimed; easy classical control rules out that narrative here | Note Section 9 |
@@ -60,6 +64,23 @@ contrast slack. This proof was independently checked as well. A violation
 of the unrestricted seed entropy bound is now a sufficient certificate of
 an asymptotic collective advantage; no such violation has been established.
 
+## Further converse and exclusions
+
+The subsequent continuation derives an explicit unrestricted lower bound
+from Beigi's improved quantum logarithmic-Sobolev theorem. For example, at
+eta=0.8 it raises the necessary memory fraction from 0.06200881 to
+0.14144054; the achievable subset fraction remains 0.31715729. Near the
+classical threshold its coefficient scales as `4 t^2 log_2(1/t)+O(t^2)`
+for contrast advantage t. This is a task-specific consequence of prior
+functional inequalities, not new logarithmic-Sobolev mathematics.
+
+The exact rank-two spectrum envelope now excludes every rank-two Gram matrix
+from witnessing an entropy-based rate advantage. Further analytical exclusions
+cover arbitrary spectra in stabilizer eigenbases, flat rank-three two-input
+states, and a family of flat half-rank projectors extending beyond fixed
+product-diagonal bases. The notes supply proofs and preserve their family
+conditions explicitly.
+
 ## Research division and next target
 
 Issue #1 records the proof-and-novelty audit. Issue #2 coordinates the
@@ -77,6 +98,12 @@ one qubit: two Bell pairs explicitly violate its key pair bound.
 The all-contrast asymptotic subset-rate conjecture is equivalent to the seed
 entropy inequality holding for every Gram matrix, including entangled
 eigenbases. The established entropy formula does not itself evaluate the rate.
+
+The smallest possible entropy witness is a two-input state of rank three
+with nonuniform nonzero eigenvalues; general full-rank two-input states also
+remain open. This is distinct from the n=3,q=2 finite-budget diagnostic:
+regularization can turn entropy below log(rank) into an asymptotic memory
+saving. No entropy witness or collective advantage has been found.
 
 ## Publication gate
 

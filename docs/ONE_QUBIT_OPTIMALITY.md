@@ -145,6 +145,12 @@ with scalar amplitudes c_a subject to instrument completeness. A fine-grained op
 
 ## 6. Limits and next question
 
+The subsequent [rank-two spectrum theorem](ENTROPY_INEQUALITY_BOUNDARIES.md)
+refines this result: with nonzero Gram eigenvalues lambda and 1-lambda, the
+exact maximum is `sqrt(2)(n-1)+sqrt(2[1+4 lambda(1-lambda)])`. It excludes
+all rank-two seeds from an entropy-based asymptotic advantage, including
+arbitrary entangled eigenvectors.
+
 The central-qubit hypothesis cannot be dropped: two Bell pairs with a four-dimensional memory have `f_1=f_2=2`, so `f_1^2+f_2^2=8`, violating the pair inequality used here. Also, in higher dimension an extreme decoder can have unequal positive and negative eigenspace dimensions; the scalar/traceless qubit classification no longer holds. Artificially assigning each global decoder to one output qubit would restrict the model.
 
 The smallest unresolved nontrivial block is now `n=3,q=2`, asking whether `Gamma(3,4)` can exceed `4+sqrt(2)`. The general finite-block inequality and asymptotic rate remain open. The separate `COMMUTING_SEED_BOUND.md` rules out a broad class of seeds but does not restrict this unrestricted target.
