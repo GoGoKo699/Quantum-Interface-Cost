@@ -16,8 +16,9 @@ absolute matrix-entry residual: 3.1086244689504383e-15. The output is
 results/seed_twirl.json. This is fixed-seed reproducible construction testing,
 not an optimization or a search for a better code.
 
-No hosted CI run, independent proof audit, solver optimality certificate,
-large-register simulation, or hardware experiment is claimed.
+These were the bootstrap checks, before the independent proof audit. No
+hosted CI run, solver optimality certificate, large-register simulation, or
+hardware experiment is claimed.
 
 ## Commands
 
@@ -27,9 +28,12 @@ From the repository root, with Python 3.10 or later:
 python -m pip install -r requirements.txt
 python checks.py --max-n 4 --output results/baseline-rerun.json
 python tools/check_seed_twirl.py --output results/seed-rerun.json
+python tools/check_one_qubit_tradeoff.py --output results/one-qubit-rerun.json
+python tools/check_product_diagonal_bound.py --output results/product-diagonal-rerun.json
 ```
 
-For exact environment replay, use Python 3.13.5 and NumPy 2.3.5. The broader
+The bootstrap environment was Python 3.13.5 and NumPy 2.3.5. The audit
+reruns and new analytical diagnostics used Python 3.12.14 and NumPy 2.3.5. The broader
 requirements range is not a matrix of tested environments. Cross-platform
 floating-point residuals need not be byte-identical; compare tolerances and
 identities. The requirements installation needs package access, but the checks
@@ -50,12 +54,42 @@ identity implies agreement on arbitrary input states at those checked sizes;
 a finite numerical residual is not a general proof. The full proof attempt
 is in docs/COLLECTIVE_ENCODING_REDUCTION.md.
 
+## Subsequent analytical diagnostics
+
+On 2026-09-22, after audit integration at
+`df45e2eaceb5669cfff9ac063d3da845d622dac3`, the following were run with
+Python 3.12.14, NumPy 2.3.5 and tolerance 1e-10:
+
+| Script and recorded output | Cases and scope | Maximum identity residual |
+|---|---|---:|
+| `tools/check_one_qubit_tradeoff.py`; `results/one_qubit_tradeoff.json` | 43: ten attaining seeds at all retained sites for n=1,...,4; sixteen dense complex seeds; sixteen decoder-identity cases; one four-dimensional negative control | 1.7763568394002505e-15 |
+| `tools/check_product_diagonal_bound.py`; `results/product_diagonal_bound.json` | Ten n=2,3 spectra, with correlations, zeros, bisector equality cases, and local axes with Y components | 9.676811017052383e-15 |
+
+The first script checks normalization, the dual spectral score, extreme
+reflection decoders, the scalar/traceless cases, and the CHSH substitution.
+The four-dimensional negative control explicitly violates the pair bound
+outside its central-qubit hypothesis. Random seed: 20260923.
+
+The second independently compares full eigensolver trace norms to the exact
+edge formulas and checks the entropy chain. Its maximum norm-formula error
+is 7.771561172376096e-16. Neither script optimizes, proves a universal bound,
+or establishes publication novelty. The one-qubit and product-diagonal
+proofs were separately reconstructed by another workspace agent. This is
+internal independent checking, not external peer review.
+
+The earlier audit reran all 14 baseline and 10 seed-twirl cases successfully,
+with the same maximum residuals as the recorded bootstrap outputs. The
+historical [audit report](audits/PROOF_AND_NOVELTY_AUDIT.md) remains pinned to
+its reviewed bootstrap commit.
+
 ## Provenance
 
 The user-provided archive was Q1_Quantum_Interface_Dossier_v0_1.zip.
 Its SHA-256 is
 `3f3538c0307f3a1131746d84410b21752b97aa0e87d8de1722392d3b114dd8ec`.
-The following three files are imported unchanged:
+The following three files were imported unchanged at bootstrap commit
+`eaf085a8cb299e6b297b11d2dc3c85e24f02779e`. These are historical hashes; the
+research note has subsequently been revised to version 0.2:
 
 | File | SHA-256 |
 |---|---|
