@@ -1,7 +1,7 @@
 # Status and claim ledger
 
-Updated: 2026-09-22. Stage: complete one-qubit accuracy region and further spectral converses.
-Latest research base: `358d887058eb9fa2fe8bb899d0261ec811d42fa6`, the merge of PR #7.
+Updated: 2026-09-22. Stage: unequal-accuracy collective separation, two-qubit SLD minimum, and quantitative stability.
+Latest research base: `f761bbca3ba3c1b263a1914175e3bdab94be70a7`, the merge of PR #8.
 
 ## Evidence labels
 
@@ -49,11 +49,17 @@ is asserted.
 | Two-qubit rank-three kernel-and-spectrum converse | Derived and independently checked; computable scalar and kernel-operator entropy certificates, including all eigenbases at spectrum (1/2,1/4,1/4,0) | TWO_QUBIT_KERNEL_CONVERSE.md |
 | Maximally entangled vector in a two-qubit kernel implies g<=2sqrt(2) | Derived and independently checked at every rank and kernel orientation; classwide sharp constant | TWO_QUBIT_KERNEL_CONVERSE.md |
 | Sharp linear local squashed-entanglement charge | Incorrect; exact near-Bell example and no finite endpoint slope for a calibration sharp at the Bell endpoint, phi(2)=1, and bounded by half mutual information | ENTANGLEMENT_CALIBRATION_OBSTRUCTION.md |
-| Global SLD sum >=n-S(rho) | Unresolved; two sufficient local steps explicitly refuted; inspected prior metric/influence results do not supply it | SLD_ENTROPY_ROUTE_AUDIT.md |
+| Global SLD sum >=n-S(rho) | Proved for n<=2; unresolved for arbitrary n; two sufficient local steps explicitly refuted | TWO_QUBIT_SLD_SPECTRUM.md; SLD_ENTROPY_ROUTE_AUDIT.md |
 | SLD commutator integral, all-spectrum X/Z versus three-Pauli comparison, and induced-graph reformulation | Derived and independently checked; a generic graph relaxation is explicitly refuted without a physical-state counterexample | SLD_ENTROPY_ROUTE_AUDIT.md Sections 5–6 |
 | Two-qubit local conditional-entropy proposal | Incorrect; explicit rank-two classical-quantum counterexample, without violating the global conjecture | CLASSICAL_FLAG_ENTROPY_BOUND.md Section 5 |
 | R(eta) equals the regularized minimum seed entropy at contrast eta | Derived and independently checked; worst-case dimension and uniform error preserved; no closed-form evaluation | ENTROPY_RATE_CHARACTERIZATION.md |
-| General sharp intermediate rate evaluation or collective advantage | Unresolved | Note Section 8 |
+| Exact-axis optimum z_max=Lambda(n,D)/n | Derived and independently checked; unrestricted collective encoders reduce to an established induced-cube spectral problem, with a complete translation instrument | EXACT_AXIS_SPECTRAL_REDUCTION.md |
+| Original-site-retention region sum_i w(x_i,z_i)<=q | Derived and independently checked for the explicitly defined full comparison class, including joint measurements of discarded sites | EXACT_AXIS_SPECTRAL_REDUCTION.md |
+| Strict collective advantage for unequal X/Z accuracies at n=31,q=5 | Explicit construction and analytical separation, also at X contrast 9999/10000 and Z contrast 1/sqrt(31); no optimality claim at this size | EXACT_AXIS_SPECTRAL_REDUCTION.md |
+| Exact-axis value sqrt(D-1)/n for 105<=D<=n | Corollary of the supplied operational reduction and established Bollobás–Lee–Letzter Theorem 2 | EXACT_AXIS_SPECTRAL_REDUCTION.md |
+| Exact two-qubit minimum of local SLD sum at every spectrum | Derived and independently checked; yields I_XZ>=2-S, but not the sharper linear seed entropy bound | TWO_QUBIT_SLD_SPECTRUM.md |
+| Quantitative stability of one-qubit maximizing seeds | Derived and independently checked; dimension-independent normalized-seed bounds and specified branch-weighted consequences | ONE_QUBIT_STABILITY.md |
+| General sharp intermediate common-accuracy rate or common-accuracy collective advantage | Unresolved | Note Section 8 |
 | Exponential many-copy estimation speedup | Not claimed; easy classical control rules out that narrative here | Note Section 9 |
 
 ## What changed after the audit
@@ -191,6 +197,59 @@ pass with matrix dimension at most eight; an independent rerun exactly
 reproduces the recorded JSON. Proof reconstruction and numerical evidence
 are recorded separately in [REPRODUCIBILITY.md](REPRODUCIBILITY.md).
 
+## Unequal-accuracy separation, SLD minimum, and stability
+
+The [exact-axis theorem](EXACT_AXIS_SPECTRAL_REDUCTION.md) reconstructs
+the whole operational boundary when all X queries are exact. Every refined
+Gram matrix must commute with every X_i, so its support is an induced
+Boolean-cube subgraph in the product X basis. The maximum common Z contrast
+is exactly its best adjacency spectral radius divided by n, optimized over
+supports of size at most D. A complete translation instrument proves
+achievability; its normalization is not postselected.
+
+For the original-site-retention comparison class defined in that note,
+the complete region is `sum_i w(x_i,z_i)<=q`. It permits input-dependent
+branch probabilities, joint measurements of discarded sites, and arbitrary
+processing on retained sites, while fixing the branch factorization that
+defines this class. A collective star construction at n=31,D=32 has
+`x_i=1,z_i=1/sqrt(31)` and strictly violates the region. Reducing X contrast
+to `9999/10000` preserves the separation, with total weight about
+5.167575>5. The proof uses exact inequalities; this decimal is illustrative.
+The common-accuracy target and its entropy conjecture are not refuted.
+
+The graph optimization, star spectrum, local compatibility disk and local
+weight are prior ingredients. Combining the reduction with
+Bollobás–Lee–Letzter's established theorem gives an exact operational value
+`sqrt(D-1)/n` for `105<=D<=n`. The final author version uses 105; the earlier
+arXiv v1 uses 103. The stated common range avoids relying on the difference.
+The n=31,D=32 example falls outside that theorem's range and is not claimed
+optimal. Other inspected partial-compatibility and distributed-sampling
+frameworks are distinguished at the theorem level in the proof note.
+
+The [two-qubit spectral theorem](TWO_QUBIT_SLD_SPECTRUM.md) evaluates
+both the three-Pauli half-sum and X/Z SLD minimum at every spectrum as
+`k_12+k_13+k_24+k_34`. It supplies the complete two-qubit proof of
+`I_XZ>=2-S`. Spin flip, universal inversion and the kernel crossing
+inequality are established ingredients. The resulting square-root score
+bound does not close the sharp linear seed entropy conjecture or imply
+an all-n SLD inequality.
+
+The [stability theorem](ONE_QUBIT_STABILITY.md) proves that deficit
+delta<=1/48 from the one-qubit optimum implies squared overlap at least
+1-2delta/3 with an exact subset seed, and squared Frobenius distance at
+most 4delta/3 after phase alignment. The single global spectral gap avoids
+an error proportional to the number of discarded sites. Its instrument
+consequence uses normalized Kraus weights, which are outcome probabilities
+for the maximally mixed input; it does not assert all-input channel
+proximity or completeness after replacing individual branches.
+
+All three proofs were independently reconstructed within this workspace.
+The reconstructed 13 deterministic diagnostics pass with maximum matrix
+dimension 32. The 31-input example checks only its support graph and scalar
+arithmetic. No full 31-qubit matrix or instrument is enumerated.
+See [REPRODUCIBILITY.md](REPRODUCIBILITY.md) for actual residuals and scope.
+These checks do not certify the universal proofs or publication novelty.
+
 ## Research division and next target
 
 Issue #1 records the proof-and-novelty audit. Issue #2 coordinates the
@@ -226,7 +285,9 @@ at most two distinct eigenvalues. The example `(t,b,b,0)` generally has
 three distinct eigenvalues and is not removed as a whole by that count.
 This is distinct from the n=3,q=2 finite-budget diagnostic:
 regularization can turn entropy below log(rank) into an asymptotic memory
-saving. No entropy witness or collective advantage has been found.
+saving. No entropy witness or collective advantage for the original
+common-accuracy target has been found. The unequal-accuracy separation
+above is a distinct, proved operational result.
 
 ## Publication gate
 

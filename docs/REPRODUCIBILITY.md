@@ -34,6 +34,7 @@ python tools/check_entropy_bounds.py --output results/entropy-bounds-rerun.json
 python tools/check_entropy_structure.py --output results/entropy-structure-rerun.json
 python tools/check_nonuniform_seeds.py --output results/nonuniform-rerun.json
 python tools/check_allocation_and_kernels.py --output results/allocation-kernels-rerun.json
+python tools/check_entropy_geometry.py --output results/entropy-geometry-rerun.json
 ```
 
 The bootstrap environment was Python 3.13.5 and NumPy 2.3.5. The audit
@@ -198,6 +199,46 @@ within the workspace. These finite diagnostics do not prove the full accuracy
 region, settle the unrestricted entropy conjecture, or certify publication
 novelty. The historical audit report and LICENSE remain unchanged.
 
+## Exact-axis, SLD-spectrum, and stability diagnostics
+
+The continuation based on main
+`f761bbca3ba3c1b263a1914175e3bdab94be70a7` adds
+`tools/check_entropy_geometry.py` and `results/entropy_geometry.json`.
+The local checkout was unavailable after a workspace disconnection; these
+files and the three accompanying proof notes were reconstructed from the
+research checkpoint and checked again. This is a new recorded run, not a
+claim that the lost draft was recovered byte-for-byte.
+
+All 13 deterministic cases pass at tolerance 1e-10 in Python 3.12.14 and
+NumPy 2.3.5. Maximum identity residual is 2.6645352591003757e-15;
+maximum positive inequality residual is 1.7763568394002505e-15. An
+independent rerun exactly reproduces the recorded JSON. Maximum matrix
+dimension is 32. There is no optimizer, random search, spectral clipping,
+or inferred numerical rank.
+
+Two cases construct complete three-input translation instruments: an
+eight-branch star and a 24-branch asymmetric-support example with cyclic
+coordinate flags. They check trace preservation, exact-X intertwining,
+and all six effective-observable identities. A third case evaluates only
+the 32-vertex support graph, Perron vector and scalar separation for
+n=31,q=5. Its full input dimension is 2^31; no such input matrix or
+complete 2^31-branch instrument is built numerically.
+
+Six SLD cases cover pure, rank-two, two rank-three, unequal full-rank and
+uniform spectra. Each uses an explicit complex eigenbasis and the ordered
+product-basis attainer. They check spin flip, bistochastic transition
+weights, all 24 assignment costs, the SLD/entropy inequalities, and the
+seed score bound. Four stability cases at n=1,3,4,3 construct actual sign
+decoders and their dual Hamiltonian from perturbed seeds. They verify the
+spectral gap, an exact subset certificate, overlap and Frobenius-distance
+bounds. This is not a closest-seed optimization.
+
+The full analytical proofs were independently reconstructed within the
+workspace; primary ingredients and unresolved novelty are recorded in
+each proof note. No large simulation, hosted CI, external peer review,
+or publication-novelty certification is claimed. LICENSE and the
+historical commit-pinned audit are unchanged.
+
 ## Historical archive provenance
 
 The user-provided archive was Q1_Quantum_Interface_Dossier_v0_1.zip.
@@ -205,7 +246,7 @@ Its SHA-256 is
 `3f3538c0307f3a1131746d84410b21752b97aa0e87d8de1722392d3b114dd8ec`.
 The following three files were imported unchanged at bootstrap commit
 `eaf085a8cb299e6b297b11d2dc3c85e24f02779e`. These are historical hashes; the
-research note has subsequently been revised to version 0.6:
+research note has subsequently been revised to version 0.7:
 
 | File | SHA-256 |
 |---|---|

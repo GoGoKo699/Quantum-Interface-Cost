@@ -1,13 +1,16 @@
 # Audit of a proposed SLD entropy converse
 
 Date: 2026-09-22. Latest research base:
-`358d887058eb9fa2fe8bb899d0261ec811d42fa6`.
+`f761bbca3ba3c1b263a1914175e3bdab94be70a7`.
 The original audit used base
 `6ddc97a549316ed9edb7a14a110ceee70b87bdf9`.
 Status: targeted primary-source comparison, supplied exact reductions and
 explicit obstructions to proposed proof routes. The global inequality below
-remains unproved; neither the counterexamples nor the inspected prior results
-settle it. Publication novelty remains unresolved.
+remains unproved for arbitrary n. The subsequent
+[two-qubit spectral theorem](TWO_QUBIT_SLD_SPECTRUM.md) proves it for n=2
+and evaluates the exact minimum at each spectrum. Neither the counterexamples
+nor the inspected prior results settle the all-n question. Publication
+novelty remains unresolved.
 
 ## 1. The precise missing inequality
 
@@ -61,6 +64,12 @@ For pure states, (2) does hold: SLD information equals variance and
 `<X_i>^2+<Z_i>^2<=1` gives `I(X_i)+I(Z_i)>=1`.
 The maximally mixed state also satisfies it with equality. These checks
 do not establish the mixed-state statement.
+
+The later [fixed-spectrum theorem](TWO_QUBIT_SLD_SPECTRUM.md) supplies a
+complete mixed-state proof at n=2 through spin flip, a bistochastic
+assignment bound, and classical binary entropy. Together with the
+one-qubit case, (2) is now proved for n<=2. Its all-n extension and the
+sharper linear seed entropy conjecture remain open.
 
 ## 2. Two exact failed local arguments
 
@@ -447,8 +456,10 @@ source comparisons identify distinct metrics, operator averages and
 influence norms that cannot be interchanged without proof. The exact
 commutator integral now supplies an unrestricted comparison with the
 three-Pauli workload; the induced spectral-graph formulation identifies
-additional structure that a sharp proof must use. Neither deduction closes
-the entropy inequality or improves the established memory-rate bounds.
+additional structure that a sharp proof must use. The subsequent
+[two-qubit theorem](TWO_QUBIT_SLD_SPECTRUM.md) exploits that structure to
+settle (2) for n=2. It does not establish an all-n inequality or improve
+the established asymptotic memory-rate bounds.
 
 All of this analysis concerns virtual normalized seeds of the existing
 model. It preserves one arbitrary unknown specimen, one delayed query,
