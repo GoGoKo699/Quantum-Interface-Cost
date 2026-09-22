@@ -324,9 +324,15 @@ The compactness argument gives no dimension-uniform neighborhood or
 explicit global value for its radius. The [support converse](SUPPORT_INERTIA_CONVERSE.md)
 implies (9) whenever S(rho)>=a(P), where a(P) counts sites with both
 compressed queries indefinite. Neither theorem evaluates the unrestricted
-rate. The proposed SLD entropy converse remains conditional; its
+rate. The proposed all-n SLD entropy converse remains conditional; its
 [source audit](SLD_ENTROPY_ROUTE_AUDIT.md) explains why two local arguments
 and the inspected prior metric theorems do not establish it.
+The [two-qubit spectral theorem](TWO_QUBIT_SLD_SPECTRUM.md) now proves
+the SLD inequality at n=2, but its square-root score bound does not close
+the sharp linear entropy target. The
+[collective unequal-accuracy construction](EXACT_AXIS_SPECTRAL_REDUCTION.md)
+separates a different slice of the query-accuracy region from original-site
+retention; it does not evaluate the common-accuracy rate R(eta).
 
 Further exclusions now cover all [two-qubit spectra with at most two
 distinct eigenvalues](ENTROPY_INEQUALITY_BOUNDARIES.md), counting zero,

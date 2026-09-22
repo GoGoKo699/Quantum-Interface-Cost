@@ -1,0 +1,658 @@
+{
+  "status": "PASS",
+  "research_base": "f761bbca3ba3c1b263a1914175e3bdab94be70a7",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "tolerance": 1e-10,
+  "case_count": 13,
+  "maximum_matrix_dimension": 32,
+  "max_identity_error": 2.6645352591003757e-15,
+  "max_inequality_violation": 1.7763568394002505e-15,
+  "cases": [
+    {
+      "label": "n3_star_complete_translation_instrument",
+      "matrix_dimension": 8,
+      "input_qubits": 3,
+      "maximum_quantum_output_dimension": 4,
+      "branch_count": 8,
+      "original_support": [
+        0,
+        4,
+        2,
+        1
+      ],
+      "supplied_probabilities": [
+        0.5,
+        0.16666666666666666,
+        0.16666666666666666,
+        0.16666666666666666
+      ],
+      "cyclic_shifts": [
+        0
+      ],
+      "x_contrasts": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "z_contrasts": [
+        0.5773502691896258,
+        0.5773502691896258,
+        0.5773502691896258
+      ],
+      "normalized_kraus_weights": [
+        0.12499999999999996,
+        0.12499999999999996,
+        0.12499999999999996,
+        0.12499999999999996,
+        0.12499999999999996,
+        0.12499999999999996,
+        0.12499999999999996,
+        0.12499999999999996
+      ],
+      "scope": "Complete instrument, exact-X intertwining, and all six operator identities.",
+      "max_identity_error": 4.440892098500626e-16,
+      "max_inequality_violation": 0.0,
+      "identity_checks": 38,
+      "inequality_checks": 3
+    },
+    {
+      "label": "n3_asymmetric_complete_flagged_instrument",
+      "matrix_dimension": 8,
+      "input_qubits": 3,
+      "maximum_quantum_output_dimension": 3,
+      "branch_count": 24,
+      "original_support": [
+        0,
+        1,
+        3
+      ],
+      "supplied_probabilities": [
+        0.5,
+        0.3,
+        0.2
+      ],
+      "cyclic_shifts": [
+        0,
+        1,
+        2
+      ],
+      "x_contrasts": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "z_contrasts": [
+        0.42149820593270637,
+        0.42149820593270637,
+        0.42149820593270637
+      ],
+      "normalized_kraus_weights": [
+        0.04166666666666666,
+        0.04166666666666666,
+        0.04166666666666666,
+        0.04166666666666666,
+        0.04166666666666666,
+        0.04166666666666666,
+        0.04166666666666666,
+        0.04166666666666666,
+        0.04166666666666666,
+        0.04166666666666666,
+        0.04166666666666666,
+        0.04166666666666666,
+        0.04166666666666666,
+        0.04166666666666666,
+        0.04166666666666666,
+        0.04166666666666666,
+        0.04166666666666666,
+        0.04166666666666666,
+        0.04166666666666666,
+        0.04166666666666666,
+        0.04166666666666666,
+        0.04166666666666666,
+        0.04166666666666666,
+        0.04166666666666666
+      ],
+      "scope": "Complete instrument, exact-X intertwining, and all six operator identities.",
+      "max_identity_error": 6.661338147750939e-16,
+      "max_inequality_violation": 0.0,
+      "identity_checks": 94,
+      "inequality_checks": 9
+    },
+    {
+      "label": "n31_star_support_and_interior_separation",
+      "matrix_dimension": 32,
+      "input_qubits": 31,
+      "quantum_qubits": 5,
+      "support_size": 32,
+      "spectral_radius": 5.5677643628300215,
+      "exact_axis_contrast": 0.1796053020267749,
+      "interior_x_contrast": 0.9999,
+      "interior_z_contrast": 0.1796053020267749,
+      "interior_local_allocation_weight": 0.16669597184933682,
+      "total_interior_allocation_weight": 5.1675751273294415,
+      "original_site_retention_cap": 5,
+      "full_input_space_dimension": 2147483648,
+      "full_input_matrix_constructed": false,
+      "complete_instrument_enumerated": false,
+      "scope": "Only a 32-vertex graph and scalar arithmetic; no optimality claim at n=31,D=32.",
+      "max_identity_error": 8.881784197001252e-16,
+      "max_inequality_violation": 0.0,
+      "identity_checks": 5,
+      "inequality_checks": 0
+    },
+    {
+      "label": "two_qubit_sld_pure",
+      "matrix_dimension": 4,
+      "supplied_spectrum": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "supplied_nonzero_entries": 1,
+      "entropy_bits": 0.0,
+      "exact_orbit_minimum": 2.0,
+      "reverse_assignment_cost": 2.0,
+      "enumerated_assignment_count": 24,
+      "basis_checks": [
+        {
+          "basis": "fixed_complex_basis",
+          "xyz_sld_values": [
+            0.626304954001464,
+            0.8708783437044055,
+            0.6458990269274048,
+            0.4112695667197594,
+            0.9107054470957093,
+            0.8211073108178055
+          ],
+          "half_xyz_sum": 2.143082324633274,
+          "xz_sum": 2.5045808584664337,
+          "bistochastic_assignment_average": 1.7138353507334538,
+          "trace_norm_score": 2.3966146455737767
+        },
+        {
+          "basis": "product_basis_attainer",
+          "xyz_sld_values": [
+            1.0,
+            1.0,
+            0.0,
+            1.0,
+            1.0,
+            0.0
+          ],
+          "half_xyz_sum": 2.0,
+          "xz_sum": 2.0,
+          "bistochastic_assignment_average": 2.0,
+          "trace_norm_score": 2.0
+        }
+      ],
+      "scope": "Two explicit eigenbases, all 24 assignments, and exact product-basis attainment.",
+      "max_identity_error": 1.3322676295501878e-15,
+      "max_inequality_violation": 9.992007221626409e-16,
+      "identity_checks": 20,
+      "inequality_checks": 43
+    },
+    {
+      "label": "two_qubit_sld_rank_two",
+      "matrix_dimension": 4,
+      "supplied_spectrum": [
+        0.75,
+        0.25,
+        0.0,
+        0.0
+      ],
+      "supplied_nonzero_entries": 2,
+      "entropy_bits": 0.8112781244591328,
+      "exact_orbit_minimum": 1.25,
+      "reverse_assignment_cost": 2.0,
+      "enumerated_assignment_count": 24,
+      "basis_checks": [
+        {
+          "basis": "fixed_complex_basis",
+          "xyz_sld_values": [
+            0.3449673083050494,
+            0.5696695019837654,
+            0.48329252673017453,
+            0.4723577785846196,
+            0.7202261803395096,
+            0.6849276984888474
+          ],
+          "half_xyz_sum": 1.637720497215983,
+          "xz_sum": 1.985545312108691,
+          "bistochastic_assignment_average": 1.224559005568036,
+          "trace_norm_score": 2.6790445732631114
+        },
+        {
+          "basis": "product_basis_attainer",
+          "xyz_sld_values": [
+            1.0,
+            1.0,
+            0.0,
+            0.25,
+            0.25,
+            0.0
+          ],
+          "half_xyz_sum": 1.25,
+          "xz_sum": 1.25,
+          "bistochastic_assignment_average": 2.0,
+          "trace_norm_score": 2.8660254037844384
+        }
+      ],
+      "scope": "Two explicit eigenbases, all 24 assignments, and exact product-basis attainment.",
+      "max_identity_error": 1.1102230246251565e-15,
+      "max_inequality_violation": 6.661338147750939e-16,
+      "identity_checks": 20,
+      "inequality_checks": 43
+    },
+    {
+      "label": "two_qubit_sld_rank_three_unequal",
+      "matrix_dimension": 4,
+      "supplied_spectrum": [
+        0.5,
+        0.3,
+        0.2,
+        0.0
+      ],
+      "supplied_nonzero_entries": 3,
+      "entropy_bits": 1.4854752972273344,
+      "exact_orbit_minimum": 0.6785714285714286,
+      "reverse_assignment_cost": 1.04,
+      "enumerated_assignment_count": 24,
+      "basis_checks": [
+        {
+          "basis": "fixed_complex_basis",
+          "xyz_sld_values": [
+            0.22439702363005204,
+            0.3423809667968166,
+            0.27732915393124763,
+            0.3229137256632817,
+            0.19900920377983028,
+            0.3617511496266896
+          ],
+          "half_xyz_sum": 0.8638906117139589,
+          "xz_sum": 1.1863910528512709,
+          "bistochastic_assignment_average": 0.6693616337149404,
+          "trace_norm_score": 3.1609653554519452
+        },
+        {
+          "basis": "product_basis_attainer",
+          "xyz_sld_values": [
+            0.4285714285714286,
+            0.4285714285714286,
+            0.0,
+            0.25000000000000006,
+            0.25000000000000006,
+            0.0
+          ],
+          "half_xyz_sum": 0.6785714285714286,
+          "xz_sum": 0.6785714285714286,
+          "bistochastic_assignment_average": 1.04,
+          "trace_norm_score": 3.4070522012751594
+        }
+      ],
+      "scope": "Two explicit eigenbases, all 24 assignments, and exact product-basis attainment.",
+      "max_identity_error": 1.1102230246251565e-15,
+      "max_inequality_violation": 0.0,
+      "identity_checks": 20,
+      "inequality_checks": 43
+    },
+    {
+      "label": "two_qubit_sld_rank_three_repeated",
+      "matrix_dimension": 4,
+      "supplied_spectrum": [
+        0.5,
+        0.25,
+        0.25,
+        0.0
+      ],
+      "supplied_nonzero_entries": 3,
+      "entropy_bits": 1.5,
+      "exact_orbit_minimum": 0.6666666666666666,
+      "reverse_assignment_cost": 1.0,
+      "enumerated_assignment_count": 24,
+      "basis_checks": [
+        {
+          "basis": "fixed_complex_basis",
+          "xyz_sld_values": [
+            0.25063300017930656,
+            0.35488017479749223,
+            0.2868147356420957,
+            0.28089497426306276,
+            0.15513246670981845,
+            0.32027564559874383
+          ],
+          "half_xyz_sum": 0.8243154985952598,
+          "xz_sum": 1.1386183556832088,
+          "bistochastic_assignment_average": 0.6847023361428148,
+          "trace_norm_score": 3.2002392456297732
+        },
+        {
+          "basis": "product_basis_attainer",
+          "xyz_sld_values": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.0,
+            0.3333333333333333,
+            0.3333333333333333,
+            0.0
+          ],
+          "half_xyz_sum": 0.6666666666666666,
+          "xz_sum": 0.6666666666666666,
+          "bistochastic_assignment_average": 1.0,
+          "trace_norm_score": 3.414213562373095
+        }
+      ],
+      "scope": "Two explicit eigenbases, all 24 assignments, and exact product-basis attainment.",
+      "max_identity_error": 1.1102230246251565e-15,
+      "max_inequality_violation": 0.0,
+      "identity_checks": 20,
+      "inequality_checks": 43
+    },
+    {
+      "label": "two_qubit_sld_full_rank_unequal",
+      "matrix_dimension": 4,
+      "supplied_spectrum": [
+        0.55,
+        0.25,
+        0.15,
+        0.05
+      ],
+      "supplied_nonzero_entries": 4,
+      "entropy_bits": 1.6010143058068347,
+      "exact_orbit_minimum": 0.524404761904762,
+      "reverse_assignment_cost": 0.8833333333333333,
+      "enumerated_assignment_count": 24,
+      "basis_checks": [
+        {
+          "basis": "fixed_complex_basis",
+          "xyz_sld_values": [
+            0.17189789767475894,
+            0.2632264869753512,
+            0.22474631737507922,
+            0.20671927682556426,
+            0.2408583783684317,
+            0.2747034503482429
+          ],
+          "half_xyz_sum": 0.6910759037837141,
+          "xz_sum": 0.8780669422236453,
+          "bistochastic_assignment_average": 0.5499910495754298,
+          "trace_norm_score": 3.5154687429549645
+        },
+        {
+          "basis": "product_basis_attainer",
+          "xyz_sld_values": [
+            0.36190476190476195,
+            0.36190476190476195,
+            0.0,
+            0.16250000000000003,
+            0.16250000000000003,
+            0.0
+          ],
+          "half_xyz_sum": 0.524404761904762,
+          "xz_sum": 0.524404761904762,
+          "bistochastic_assignment_average": 0.8833333333333333,
+          "trace_norm_score": 3.712887991870236
+        }
+      ],
+      "scope": "Two explicit eigenbases, all 24 assignments, and exact product-basis attainment.",
+      "max_identity_error": 1.1102230246251565e-15,
+      "max_inequality_violation": 0.0,
+      "identity_checks": 20,
+      "inequality_checks": 43
+    },
+    {
+      "label": "two_qubit_sld_maximally_mixed",
+      "matrix_dimension": 4,
+      "supplied_spectrum": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "supplied_nonzero_entries": 4,
+      "entropy_bits": 2.0,
+      "exact_orbit_minimum": 0.0,
+      "reverse_assignment_cost": 0.0,
+      "enumerated_assignment_count": 24,
+      "basis_checks": [
+        {
+          "basis": "fixed_complex_basis",
+          "xyz_sld_values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "half_xyz_sum": 0.0,
+          "xz_sum": 0.0,
+          "bistochastic_assignment_average": 0.0,
+          "trace_norm_score": 4.000000000000002
+        },
+        {
+          "basis": "product_basis_attainer",
+          "xyz_sld_values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "half_xyz_sum": 0.0,
+          "xz_sum": 0.0,
+          "bistochastic_assignment_average": 0.0,
+          "trace_norm_score": 4.0
+        }
+      ],
+      "scope": "Two explicit eigenbases, all 24 assignments, and exact product-basis attainment.",
+      "max_identity_error": 1.1102230246251565e-15,
+      "max_inequality_violation": 1.7763568394002505e-15,
+      "identity_checks": 20,
+      "inequality_checks": 43
+    },
+    {
+      "label": "one_qubit_stability_1",
+      "matrix_dimension": 4,
+      "input_qubits": 1,
+      "retained_site": 0,
+      "supplied_perturbation_weight": 0.0003,
+      "output_rotation_angle": 0.17,
+      "seed_score": 1.9994193783679939,
+      "exact_optimum": 2.0,
+      "deficit": 0.0005806216320061175,
+      "active_sites": [
+        0
+      ],
+      "compressed_eigenvalues": [
+        [
+          -0.4831288925842971,
+          0.5168609970604272
+        ],
+        [
+          -0.5017991153924907,
+          0.49763037333077903
+        ]
+      ],
+      "actual_dual_hamiltonian_top_eigenvalue": 1.9999999950507261,
+      "actual_dual_hamiltonian_gap": 1.9998592929137256,
+      "exact_subset_certificate_score": 2.0,
+      "certificate_overlap_squared": 0.9997103970548002,
+      "phase_optimized_frobenius_distance_squared": 0.0002896239157028635,
+      "overlap_loss_bound": 0.0003870810880040783,
+      "distance_bound": 0.0007741621760081566,
+      "scope": "Actual sign decoders and Hamiltonian; an explicit exact-subset certificate, not a closest-seed optimization.",
+      "max_identity_error": 4.440917875158254e-16,
+      "max_inequality_violation": 0.0,
+      "identity_checks": 12,
+      "inequality_checks": 4
+    },
+    {
+      "label": "one_qubit_stability_2",
+      "matrix_dimension": 16,
+      "input_qubits": 3,
+      "retained_site": 0,
+      "supplied_perturbation_weight": 0.001,
+      "output_rotation_angle": 0.29,
+      "seed_score": 4.8249076487400195,
+      "exact_optimum": 4.82842712474619,
+      "deficit": 0.003519476006170308,
+      "active_sites": [
+        0
+      ],
+      "compressed_eigenvalues": [
+        [
+          -0.4808814849765031,
+          0.518645357068023
+        ],
+        [
+          -0.5049245145198518,
+          0.49379788788889256
+        ],
+        [
+          0.336723915998553,
+          0.37989445755194085
+        ],
+        [
+          0.3405407061244799,
+          0.3561860747335472
+        ],
+        [
+          0.3428698309039977,
+          0.38193511742652636
+        ],
+        [
+          0.3345385174044655,
+          0.3539697841432393
+        ]
+      ],
+      "actual_dual_hamiltonian_top_eigenvalue": 4.828427056108072,
+      "actual_dual_hamiltonian_gap": 1.9994759538248759,
+      "exact_subset_certificate_score": 4.828427124746189,
+      "certificate_overlap_squared": 0.9990454032816992,
+      "phase_optimized_frobenius_distance_squared": 0.0009548246408244143,
+      "overlap_loss_bound": 0.0023463173374468718,
+      "distance_bound": 0.0046926346748937435,
+      "scope": "Actual sign decoders and Hamiltonian; an explicit exact-subset certificate, not a closest-seed optimization.",
+      "max_identity_error": 1.3327852142273168e-15,
+      "max_inequality_violation": 0.0,
+      "identity_checks": 28,
+      "inequality_checks": 4
+    },
+    {
+      "label": "one_qubit_stability_3",
+      "matrix_dimension": 32,
+      "input_qubits": 4,
+      "retained_site": 2,
+      "supplied_perturbation_weight": 0.002,
+      "output_rotation_angle": 0.41,
+      "seed_score": 6.232613663145305,
+      "exact_optimum": 6.242640687119286,
+      "deficit": 0.01002702397398103,
+      "active_sites": [
+        2
+      ],
+      "compressed_eigenvalues": [
+        [
+          0.33266504019806575,
+          0.3859475601330146
+        ],
+        [
+          0.3418401469436549,
+          0.351008405984635
+        ],
+        [
+          0.33881904135838586,
+          0.38177610505660087
+        ],
+        [
+          0.33811710047239874,
+          0.3537031899430946
+        ],
+        [
+          -0.4827979212931006,
+          0.515123654348248
+        ],
+        [
+          -0.5073351590407268,
+          0.49054589198011267
+        ],
+        [
+          0.34040418396973565,
+          0.3790530649222938
+        ],
+        [
+          0.3380249678862605,
+          0.35545222961497563
+        ]
+      ],
+      "actual_dual_hamiltonian_top_eigenvalue": 6.242640550764095,
+      "actual_dual_hamiltonian_gap": 1.9992613375924622,
+      "exact_subset_certificate_score": 6.242640687119286,
+      "certificate_overlap_squared": 0.998091519271518,
+      "phase_optimized_frobenius_distance_squared": 0.001909392173099711,
+      "overlap_loss_bound": 0.0066846826493206874,
+      "distance_bound": 0.013369365298641375,
+      "scope": "Actual sign decoders and Hamiltonian; an explicit exact-subset certificate, not a closest-seed optimization.",
+      "max_identity_error": 8.883182085538852e-16,
+      "max_inequality_violation": 0.0,
+      "identity_checks": 36,
+      "inequality_checks": 4
+    },
+    {
+      "label": "one_qubit_stability_4",
+      "matrix_dimension": 16,
+      "input_qubits": 3,
+      "retained_site": 1,
+      "supplied_perturbation_weight": 0.004,
+      "output_rotation_angle": 0.63,
+      "seed_score": 4.812587138636235,
+      "exact_optimum": 4.82842712474619,
+      "deficit": 0.015839986109955184,
+      "active_sites": [
+        1
+      ],
+      "compressed_eigenvalues": [
+        [
+          0.3289514707227924,
+          0.40577606041581366
+        ],
+        [
+          0.32144743404730397,
+          0.352793804027905
+        ],
+        [
+          -0.4717268354548005,
+          0.5258201926922436
+        ],
+        [
+          -0.5185679384494516,
+          0.47710022458783635
+        ],
+        [
+          0.3313629194992973,
+          0.3997381523207312
+        ],
+        [
+          0.3233703352198911,
+          0.35593177119816827
+        ]
+      ],
+      "actual_dual_hamiltonian_top_eigenvalue": 4.82842458057366,
+      "actual_dual_hamiltonian_gap": 1.9968073643468958,
+      "exact_subset_certificate_score": 4.8284271247461925,
+      "certificate_overlap_squared": 0.9963214311256275,
+      "phase_optimized_frobenius_distance_squared": 0.0036819580781948247,
+      "overlap_loss_bound": 0.010559990739970123,
+      "distance_bound": 0.021119981479940247,
+      "scope": "Actual sign decoders and Hamiltonian; an explicit exact-subset certificate, not a closest-seed optimization.",
+      "max_identity_error": 2.6645352591003757e-15,
+      "max_inequality_violation": 0.0,
+      "identity_checks": 28,
+      "inequality_checks": 4
+    }
+  ],
+  "scope": "Finite deterministic identities only; no optimizer, random search, spectral clipping, numerical rank inference, proof certification, or novelty certification. The n=31 case constructs only its 32-vertex support graph."
+}

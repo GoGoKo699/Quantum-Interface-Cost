@@ -1,6 +1,6 @@
 # Q1 — Delayed local readout through a bounded quantum interface
 
-**Version:** 0.6, 2026-09-22
+**Version:** 0.7, 2026-09-22
 
 **Project:** Falling / Q1  
 **Status:** Baseline proofs and seed reduction independently checked within the audit workspace. New analytical results give the exact one-retained-qubit optimum for every block size, an entropy bound for product-diagonal seeds, and a regularized entropy characterization of the asymptotic rate. Further work supplies a logarithmic-Sobolev memory converse and the exact score at every rank-two spectrum. General rate evaluation and publication novelty remain unresolved. This is a research dossier, not external peer review or a claim of a new framework.
@@ -33,7 +33,10 @@ The general compression problem below is already present in the dimensional meas
 | Sharp local squashed-entanglement charge from the X/Z score | Incorrect; exact near-Bell obstruction, leaving the global entropy target unchanged. |
 | Positive linear memory for every fixed contrast above 1/sqrt(2) | Derivation below using a two-setting witness and faithful, monogamous squashed entanglement [5,6]. Independent novelty not established. |
 | Regularized entropy characterization of the asymptotic rate | Derived and independently checked; fixed-cap coding and scalar-contrast continuity are proved; no closed-form evaluation. |
-| Sharp evaluation of the asymptotic memory rate, or a strict collective-coding improvement | Candidate research target; not solved here and not yet certified absent from the literature. |
+| Exact-axis boundary and unequal-accuracy collective advantage | Supplied deduction: induced-cube spectral reduction and an explicit five-qubit-memory separation from the complete original-site-retention class. |
+| Two-qubit SLD minimum at every spectrum | Supplied deduction; proves the SLD entropy inequality for two inputs, without closing the sharp linear seed entropy target. |
+| Quantitative stability of the one-qubit optimum | Supplied deduction; normalized seeds and maximally-mixed-input branch weights, without a channel-distance claim. |
+| Sharp evaluation of the common-accuracy asymptotic memory rate, or a strict common-accuracy collective-coding improvement | Candidate research target; not solved here and not yet certified absent from the literature. |
 | Exponential sampling advantage or speedup for classical-data learning | Not established; the many-copy control in Section 9 is deliberately easy classically. |
 
 ## 2. Precise operational model
@@ -396,7 +399,7 @@ g(L)\le\sqrt2\,n+(2-\sqrt2)S(L^\dagger L)
 \le\sqrt2\,n+(2-\sqrt2)\log_2\operatorname{rank}(L)
 $$
 
-whenever the Gram matrix is diagonal in a fixed product of local one-qubit bases. Its eigenvalues may be correlated and nonuniform, and the axes may have Y components. Consequently, this entire structured family cannot improve the subset benchmark. The unrestricted problem has not been narrowed by assumption. A proposed extension using a local quantum conditional-entropy inequality is false; the note gives a two-qubit counterexample, separately from the unresolved global inequality.
+whenever the Gram matrix is diagonal in a fixed product of local one-qubit bases. Its eigenvalues may be correlated and nonuniform, and the axes may have Y components. Consequently, this entire structured family cannot improve the common-accuracy subset benchmark. The unrestricted problem has not been narrowed by assumption. A proposed extension using a local quantum conditional-entropy inequality is false; the note gives a two-qubit counterexample, separately from the unresolved global inequality.
 
 The [entropy-rate characterization](docs/ENTROPY_RATE_CHARACTERIZATION.md) additionally proves
 
@@ -430,7 +433,7 @@ Equality requires a pure X/Z bisector projector on one site tensor the identity 
 
 The entropy inequality is also closed under [local classical flags and tensor products](docs/CLASSICAL_FLAG_ENTROPY_BOUND.md). In particular, all two-input states classical on either qubit are excluded, even with noncommuting conditional states. All [two-input states with both marginals maximally mixed](docs/LOCALLY_MIXED_TWO_QUBIT_BOUND.md) satisfy a stronger bound, including arbitrary local rotations of Bell-diagonal states. A [spectral theorem](docs/SPECTRAL_CONDITION_ENTROPY_BOUND.md) excludes every full-rank Gram matrix with `lambda_max/lambda_min <= 6.235819648070267`, in any dimension and any eigenbasis. That sufficient threshold is not asserted optimal. An explicit two-qubit counterexample refutes a proposed local conditional-entropy route; it does not refute the global inequality.
 
-The smallest remaining finite-block diagnostic is n=3,q=2, with subset seed score `4+sqrt(2)`. Separate lower-rank estimates exclude every allowed flat seed from improving that finite-budget score. Any improvement must have rank three or four with nonuniform nonzero eigenvalues; a separate Ky Fan refinement also proves the entropy inequality for flat rank-three three-input states. No general lower-flat-rank entropy theorem is asserted. A two-input entropy witness must be nonclassical on both sites, must not have both marginals maximally mixed, and, if full rank, must exceed the stated condition-number threshold. The main target remains a sharp rate evaluation, or a proven collective advantage with meaningful converses. These deductions have independently checked proofs within the workspace, but their publication novelty is unestablished.
+The smallest remaining finite-block diagnostic is n=3,q=2, with subset seed score `4+sqrt(2)`. Separate lower-rank estimates exclude every allowed flat seed from improving that finite-budget score. Any improvement must have rank three or four with nonuniform nonzero eigenvalues; a separate Ky Fan refinement also proves the entropy inequality for flat rank-three three-input states. No general lower-flat-rank entropy theorem is asserted. A two-input entropy witness must be nonclassical on both sites, must not have both marginals maximally mixed, and, if full rank, must exceed the stated condition-number threshold. The main common-accuracy target remains a sharp rate evaluation, or a proven collective advantage with meaningful converses. These deductions have independently checked proofs within the workspace, but their publication novelty is unestablished.
 
 The [support-inertia converse](docs/SUPPORT_INERTIA_CONVERSE.md) now treats
 every spectrum on a given support P. Let a(P) count the sites where both
@@ -463,7 +466,7 @@ including at the unresolved rank-four budget. They do not beat the subset
 benchmark. The [SLD-route audit](docs/SLD_ENTROPY_ROUTE_AUDIT.md) gives exact
 counterexamples to two local proof steps and separates the proposed global
 SLD entropy bound from inspected convex-roof, tensorization, convolution and
-influence theorems. That global bound remains unresolved.
+influence theorems. That global bound remains unresolved for arbitrary n; the subsequent two-qubit result below settles n=2.
 
 Sections 6–7 of the [spectral note](docs/ENTROPY_INEQUALITY_BOUNDARIES.md)
 now optimize all eigenvectors exactly for a spectrum `(t,b,...,b)` at any n,
@@ -485,6 +488,42 @@ The SLD audit additionally proves an all-spectrum commutator representation
 and a graph reformulation, while identifying an exact nonphysical graph
 that defeats a relaxation of the quantum constraints. Neither supplies a
 new unrestricted rate bound.
+
+The latest [exact-axis theorem](docs/EXACT_AXIS_SPECTRAL_REDUCTION.md)
+allows separate X/Z accuracies, as in the one-qubit allocation region.
+If every X query is exact, the optimal common Z contrast under dimension D
+is `Lambda(n,D)/n`, where Lambda maximizes the adjacency spectral radius
+of an induced Boolean-cube subgraph with at most D vertices. The proof
+both constrains every collective branch and constructs a complete
+trace-preserving translation instrument. An established graph theorem
+then gives the exact value `sqrt(D-1)/n` for `105<=D<=n`.
+
+A star support on 31 inputs attains X contrast one and Z contrast
+`1/sqrt(31)` with memory dimension 32 (five qubits). The entire precisely
+defined original-site-retention class has contrast region
+`sum_i w(eta_(i,X),eta_(i,Z))<=q`. The collective construction exceeds it,
+even after reducing X contrast to `9999/10000`. The proof permits joint
+measurements of discarded sites and arbitrary processing on retained sites
+within that comparison class. The unrestricted operational model is
+preserved. This unequal-accuracy advantage does not refute the original
+common-accuracy subset conjecture or evaluate R(eta).
+
+The [two-qubit SLD theorem](docs/TWO_QUBIT_SLD_SPECTRUM.md) minimizes the
+local SLD sum exactly over every eigenbasis of every spectrum. Writing
+`k_ab=(lambda_a-lambda_b)^2/(lambda_a+lambda_b)` for decreasing eigenvalues
+(and zero for a zero denominator), its minimum is
+`E_*=k_12+k_13+k_24+k_34`. It proves `I_XZ>=2-S(rho)` for all two-qubit
+states. The resulting bound `g_2<=2sqrt(4-E_*)<=2sqrt(2+S)` remains weaker
+than the sharp linear entropy target at intermediate entropy. No all-n
+SLD claim follows.
+
+Finally, [one-qubit stability](docs/ONE_QUBIT_STABILITY.md) supplies a
+quantitative version of the equality characterization. A normalized seed
+with deficit `delta<=1/48` has squared overlap at least `1-2delta/3`
+with an exact subset seed, and squared Frobenius distance at most
+`4delta/3` after phase alignment. Its branch-averaged consequence uses
+the normalized Kraus weights; it does not assert channel-distance
+closeness or input-independent physical branch probabilities.
 
 The [primary-source audit](docs/audits/PROOF_AND_NOVELTY_AUDIT.md) establishes that the general framework [1,2] and exact endpoint [10] are prior. It gives an exact discrimination-task reduction, strict obstructions to importing full-outcome MUB or common-reconstruction converses, and a genuine achievability bridge from fixed-cap reconstruction codes [9]. It also identifies a false marginal-distortion invariance step in [9]; that is a source-proof gap, not a refutation of its theorem conclusion. See the [comparison ledger](docs/LITERATURE_COMPARISON.md) for locators and remaining novelty questions.
 

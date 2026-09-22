@@ -24,6 +24,11 @@ replacing a seed by the uniform state on its support is not a valid shortcut.
 The one-qubit theorem now evaluates every separate local X/Z accuracy
 profile: the sum of the pairs' incompatibility weights must be at most one,
 and a mixture of strategies retaining at most one site attains the whole region.
+The latest continuation proves a collective advantage when X and Z have
+unequal requested accuracies, an exact spectral reduction when every X
+query is perfect, a two-qubit SLD entropy inequality, and quantitative
+stability of the one-qubit optimum. The original common-accuracy rate
+remains open.
 
 ## Start here
 
@@ -34,6 +39,9 @@ and a mixture of strategies retaining at most one site attains the whole region.
 | Unrestricted collective-encoding problem | [Seed reduction](docs/COLLECTIVE_ENCODING_REDUCTION.md) |
 | Exact optimum with one retained qubit | [One-qubit theorem and equality cases](docs/ONE_QUBIT_OPTIMALITY.md) |
 | Exact region for separate accuracies at every local query | [One-qubit allocation theorem](docs/ONE_QUBIT_ALLOCATION_REGION.md) |
+| Collective advantage for unequal X/Z accuracies | [Exact-axis spectral reduction](docs/EXACT_AXIS_SPECTRAL_REDUCTION.md) |
+| Quantitative structure of nearly optimal one-qubit seeds | [One-qubit stability](docs/ONE_QUBIT_STABILITY.md) |
+| Exact two-qubit SLD minimum at every spectrum | [Two-qubit spectral theorem](docs/TWO_QUBIT_SLD_SPECTRUM.md) |
 | A structured family that cannot beat the subset strategy | [Product-diagonal entropy bound](docs/COMMUTING_SEED_BOUND.md) |
 | Exact regularized formulation of the asymptotic rate | [Entropy-rate characterization](docs/ENTROPY_RATE_CHARACTERIZATION.md) |
 | Stronger bound for every collective encoder | [Logarithmic-Sobolev converse](docs/STRONG_ENTROPIC_CONVERSE.md) |
@@ -101,7 +109,7 @@ This is a deduction from Beigi's established theorem and a standard fidelity
 inequality, not a new logarithmic-Sobolev theorem or a sharp rate claim.
 
 The main research target is a sharp finite-accuracy rate, or a proven
-collective-coding advantage with meaningful converse bounds. The smallest
+collective-coding advantage for the common-accuracy target with meaningful converse bounds. The smallest
 remaining diagnostic is n=3, q=2: can an unrestricted seed exceed the subset
 score `4+sqrt(2)` in the optimization `Gamma(3,4)`? Flat rank-four
 seeds now attain exactly that maximum, so a rank-four improvement would
@@ -132,6 +140,39 @@ a maximally entangled vector, and supplies computable certificates for other
 rank-three spectra. These deductions still leave general rank-three and
 full-rank entropy witnesses unresolved.
 
+## Collective advantage for unequal accuracies
+
+Allowing different requested X and Z contrasts, while preserving uniformity
+over all inputs and queries, reveals a strict collective advantage.
+For 31 input qubits, a 32-dimensional quantum memory (five qubits) can
+preserve every X query exactly and every Z query at contrast `1/sqrt(31)`.
+The same construction with X contrast `9999/10000` still exceeds the
+complete region of strategies that retain at most five original sites,
+even allowing branch-dependent retained sets, arbitrary processing on those
+sites, and joint measurements of the rest. The note defines that comparison
+class precisely and proves its region `sum_i w(x_i,z_i)<=q`.
+
+More generally, with every X query exact, the optimal common Z contrast is
+the largest adjacency eigenvalue of an induced Boolean-cube subgraph on at
+most D vertices, divided by n. Combining this reduction with an established
+graph theorem gives the exact value `sqrt(D-1)/n` for `105<=D<=n`.
+The 31-input example is an achievable separation, without a claim that it is
+optimal. This does not settle the original equal-X/Z-accuracy conjecture.
+
+The [proof](docs/EXACT_AXIS_SPECTRAL_REDUCTION.md) supplies the complete
+trace-preserving instrument analytically. Small diagnostics verify full
+three-input instruments and only the 32-vertex support calculation for the
+31-input example; no matrix of dimension `2^31` is simulated.
+
+The separate [two-qubit SLD result](docs/TWO_QUBIT_SLD_SPECTRUM.md) evaluates
+the minimum over all eigenbases at every spectrum and proves the proposed
+SLD entropy inequality for two inputs. Its resulting square-root score
+bound remains weaker than the sharp linear entropy target. The
+[stability theorem](docs/ONE_QUBIT_STABILITY.md) quantifies how nearly
+optimal one-qubit seeds approach the exact retaining-one-site form.
+These are supplied, internally checked deductions; publication novelty
+remains under investigation.
+
 ## Essential boundary
 
 This is a single-specimen delayed-readout problem, not a general quantum
@@ -156,13 +197,15 @@ python tools/check_entropy_bounds.py --output results/entropy-bounds-rerun.json
 python tools/check_entropy_structure.py --output results/entropy-structure-rerun.json
 python tools/check_nonuniform_seeds.py --output results/nonuniform-rerun.json
 python tools/check_allocation_and_kernels.py --output results/allocation-kernels-rerun.json
+python tools/check_entropy_geometry.py --output results/entropy-geometry-rerun.json
 ```
 
 The first command after installation checks 14 explicit subset constructions;
 the second checks 10 seed-to-interface constructions. The new scripts check
 43 one-qubit identities/examples, 10 product-diagonal cases, 22 entropy-bound
 and seed-family cases, 20 structure diagnostics, 16 nonuniform-seed
-diagnostics, and 14 allocation, spectral, kernel, and obstruction cases. These finite
+diagnostics, 14 allocation, spectral, kernel, and obstruction cases, and
+13 exact-axis, SLD-spectrum, and stability cases. These finite
 diagnostics supplement the analytical proofs. There is no numerical
 optimization or large simulation. No hosted CI run is claimed.
 

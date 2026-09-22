@@ -145,6 +145,12 @@ with scalar amplitudes c_a subject to instrument completeness. A fine-grained op
 
 ## 6. Limits and next question
 
+The subsequent [stability theorem](ONE_QUBIT_STABILITY.md) quantifies
+Section 5: a normalized seed within deficit delta<=1/48 of this optimum
+has squared overlap at least 1-2delta/3 with an exact subset seed.
+It also gives branch-weighted consequences for near-optimal protocols,
+without asserting proximity of complete channels in diamond norm.
+
 The subsequent [allocation theorem](ONE_QUBIT_ALLOCATION_REGION.md)
 evaluates the complete region of separate X/Z contrasts at every site.
 It gives the exact weighted support function and an explicit condition:

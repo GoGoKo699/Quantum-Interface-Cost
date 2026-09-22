@@ -59,6 +59,69 @@ settling subsumption of this evaluated region. Its publication novelty
 remains unresolved; the result is a short task-specific application of
 established monogamy, not a new general correlation inequality.
 
+## Exact-axis reduction and unequal-accuracy collective advantage
+
+The [exact-axis note](EXACT_AXIS_SPECTRAL_REDUCTION.md) proves that perfect
+X preservation forces every refined seed Gram matrix to be diagonal in the
+product X basis. The complementary-query optimum is exactly
+`Lambda(n,D)/n`, the induced-cube spectral-radius problem with support size
+at most D. A complete translation instrument proves the reverse direction.
+This is an operational reduction to an established graph problem.
+
+| Primary source and locator | Established ingredient and exact transfer |
+|---|---|
+| Bollobás–Lee–Letzter, [1605.06360v1](https://arxiv.org/pdf/1605.06360v1), Question 1 p. 2, Theorem 2 p. 3, Rayleigh quotient in Section 2 p. 4; [final author PDF](https://www.homepages.ucl.ac.uk/~ucahsle/papers/cube-evals.pdf), dated 7 August 2020, Theorem 2 p. 3 | The induced-cube spectral optimization is prior. The v1 theorem says 103<=D<=n; the later author version says 105<=D<=n. The repository uses their common range 105<=D<=n. Padding a smaller support and applying this theorem gives `z_max=sqrt(D-1)/n`. The graph theorem is not a new deduction. |
+| Avni–Samorodnitsky, [2411.14597v1](https://arxiv.org/pdf/2411.14597v1), 21 November 2024, Corollary 1.8 p. 6, Example 1.12 p. 8, Corollary 1.15 p. 11 | Gives Krawtchouk-root characterizations, the Hamming-ball/star spectrum, and asymptotic comparisons. These do not certify optimality of the separate n=31,D=32 construction. |
+| Guerini–Quintino–Aolita, [1904.08435v4](https://arxiv.org/pdf/1904.08435v4), 14 October 2019, Theorems 2–3 p. 4 | Trusted quantum-input distributed sampling relates classical simulation to joint measurability. It does not evaluate the present worst-case retained-quantum-dimension boundary. |
+| Lobo–Balanzó-Juandó–Pironio, [2605.16151v1](https://arxiv.org/pdf/2605.16151v1), 15 May 2026, Definitions 1–2 pp. 2–3, Eqs. (2)–(3), (9)–(11) | Partial input joint measurability permits selected settings to become classical while residual quantum information remains. The inspected definitions do not impose the dimension cap here or identify all collectively compressed protocols with mixtures retaining original sites. |
+
+The complete region of the explicitly defined original-site-retention class
+is `sum_i w(x_i,z_i)<=q`. A star seed at n=31,D=32 lies strictly outside it,
+also at X contrast 9999/10000 and Z contrast 1/sqrt(31). The constituent
+star spectrum, compatibility disk and local weight are established;
+the supplied operational reduction, full comparison-class converse and
+separation are repository deductions. Neither an original graph theorem nor
+an equal-X/Z-accuracy advantage is claimed. Prior subsumption of the precise
+operational separation remains an open novelty comparison.
+
+## Quantitative one-qubit stability
+
+The [stability note](ONE_QUBIT_STABILITY.md) turns the exact one-qubit
+equality form into explicit overlap and Frobenius-distance bounds using
+the established Cheng–Hall inequality and a spectral gap. Kaniewski,
+[1604.08176v3](https://arxiv.org/pdf/1604.08176v3), 11 August 2016,
+defines extraction fidelity on p. 2 and proves a CHSH extraction bound in
+Proposition 1 / Eq. (10), p. 3. That device-independent task permits
+arbitrary dimensions and local extraction channels. Here the input
+reference and output are fixed qubits, and the conclusion locates the
+entire normalized seed relative to a retaining-one-site form. No new
+general self-testing method or complete-channel distance bound is claimed.
+
+## Exact two-qubit SLD minimum
+
+The [fixed-spectrum theorem](TWO_QUBIT_SLD_SPECTRUM.md) evaluates the
+minimum local SLD sum and proves `I_XZ>=2-S` for all two-qubit states.
+It combines established ingredients with the special two-qubit identity.
+Wootters, [quant-ph/9709029v2](https://arxiv.org/pdf/quant-ph/9709029v2),
+Eqs. (4)–(5), p. 3, supplies the familiar spin flip; Rungta et al.,
+[quant-ph/0102040v2](https://arxiv.org/pdf/quant-ph/0102040v2), 10 June
+2001, Eq. (2.11), p. 7, gives its universal-inversion identity with unit
+normalization. Fiderer–Fraïsse–Braun,
+[1905.06101v2](https://arxiv.org/pdf/1905.06101v2), 27 December 2019,
+Theorem 1 / Eq. (3), p. 2, maximizes QFI over a unitary orbit for one
+fixed generator. Its Supplemental Lemma 3 proof, Eqs. (16)–(17), p. 8,
+already contains the relevant eigenvalue-kernel crossing inequality.
+The present deduction instead minimizes a fixed sum of local generators.
+
+Kim–Li–Kumar–Wu, [1711.02323v5](https://arxiv.org/pdf/1711.02323v5),
+Eq. (6), p. 2, uses the same SLD/4 normalization. Section III.A's
+definition before Theorem 1, p. 3, minimizes a sum over one party's
+orthonormal projectors with the state fixed, a different optimization.
+The full assumption map is in the new proof note. The resulting square-root
+score bound does not prove the sharp linear seed entropy conjecture, and
+the all-n SLD inequality remains unresolved. These targeted comparisons
+do not certify absence of the operational results from the literature.
+
 ## Established proof ingredients
 
 - Berta et al., [0909.0950](https://arxiv.org/abs/0909.0950), Eq. (2): quantum-memory uncertainty, combined here with Fano and conditional-entropy subadditivity.
