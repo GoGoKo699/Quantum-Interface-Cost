@@ -136,6 +136,14 @@ score at every rank-two spectrum and exclude additional eigenbasis/projector
 families. They also distinguish the finite-block target from a possible
 two-input, nonuniform rank-three entropy witness for an asymptotic advantage.
 
+The [flat half-rank theorem](FLAT_HALF_RANK_OPTIMALITY.md) settles the
+restricted optimization over `rho=P/2^(n-1)` for n through four. At
+`n=3,q=2`, separate lower-rank estimates also exclude every other allowed
+flat seed. A witness must have rank three or four with nonuniform nonzero
+eigenvalues. The general optimization above still allows every
+spectrum. Further entropy exclusions are collected in the
+[boundary note](ENTROPY_INEQUALITY_BOUNDARIES.md).
+
 The same problem admits the spectral expression
 
 $$

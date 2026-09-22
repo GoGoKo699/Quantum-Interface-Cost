@@ -16,6 +16,9 @@ entropy characterization of the asymptotic rate. Evaluating that rate remains
 unresolved. A further converse derived from quantum logarithmic-Sobolev theory
 improves the quantitative memory lower bounds. The model is established measurement
 simulability, not a new framework: see [the literature comparison](docs/LITERATURE_COMPARISON.md).
+The latest finite-block result proves subset optimality for every flat
+half-rank seed on up to four input qubits, with exact equality cases.
+Nonflat seeds remain part of the unrestricted problem.
 
 ## Start here
 
@@ -29,6 +32,8 @@ simulability, not a new framework: see [the literature comparison](docs/LITERATU
 | Exact regularized formulation of the asymptotic rate | [Entropy-rate characterization](docs/ENTROPY_RATE_CHARACTERIZATION.md) |
 | Stronger bound for every collective encoder | [Logarithmic-Sobolev converse](docs/STRONG_ENTROPIC_CONVERSE.md) |
 | Exact rank-two spectrum trade-off and excluded families | [Entropy-inequality boundaries](docs/ENTROPY_INEQUALITY_BOUNDARIES.md) |
+| Sharp flat half-rank result through four input qubits | [Flat-seed theorem](docs/FLAT_HALF_RANK_OPTIMALITY.md) |
+| Further entropy exclusions and failed local proof route | [Classical flags](docs/CLASSICAL_FLAG_ENTROPY_BOUND.md), [locally mixed two-qubit states](docs/LOCALLY_MIXED_TWO_QUBIT_BOUND.md), [bounded spectral condition](docs/SPECTRAL_CONDITION_ENTROPY_BOUND.md) |
 | Commit-pinned independent proof and source review | [Audit report](docs/audits/PROOF_AND_NOVELTY_AUDIT.md) |
 | Closest precedents and unresolved translations | [Literature comparison](docs/LITERATURE_COMPARISON.md) |
 | Run the small checks and understand their limits | [Reproducibility](docs/REPRODUCIBILITY.md) |
@@ -88,11 +93,18 @@ inequality, not a new logarithmic-Sobolev theorem or a sharp rate claim.
 The main research target is a sharp finite-accuracy rate, or a proven
 collective-coding advantage with meaningful converse bounds. The smallest
 remaining diagnostic is n=3, q=2: can an unrestricted seed exceed the subset
-score `4+sqrt(2)` in the optimization `Gamma(3,4)`? For the entropy route,
+score `4+sqrt(2)` in the optimization `Gamma(3,4)`? Flat rank-four
+seeds now attain exactly that maximum, so a rank-four improvement would
+require a nonuniform spectrum. Separate lower-rank bounds show that any
+finite-block improvement must have rank three or four with nonuniform
+nonzero eigenvalues. For the entropy route,
 even a two-input state of rank three could in principle certify a rate
 advantage: all rank-two states and all flat rank-three two-input states are
 now excluded, but nonuniform rank-three and general full-rank states remain
-open. These are distinct diagnostics. Publication novelty is not certified.
+open outside the excluded families. Any two-input witness must be
+nonclassical on both sites and cannot have both marginals maximally mixed.
+A full-rank witness must additionally have spectral condition number above
+6.235819648. These are distinct diagnostics. Publication novelty is not certified.
 
 ## Essential boundary
 
@@ -115,12 +127,13 @@ python tools/check_seed_twirl.py --output results/seed-rerun.json
 python tools/check_one_qubit_tradeoff.py --output results/one-qubit-rerun.json
 python tools/check_product_diagonal_bound.py --output results/product-diagonal-rerun.json
 python tools/check_entropy_bounds.py --output results/entropy-bounds-rerun.json
+python tools/check_entropy_structure.py --output results/entropy-structure-rerun.json
 ```
 
 The first command after installation checks 14 explicit subset constructions;
 the second checks 10 seed-to-interface constructions. The new scripts check
-43 one-qubit identities/examples, 10 product-diagonal cases, and 22 entropy-bound
-and seed-family cases. These finite
+43 one-qubit identities/examples, 10 product-diagonal cases, 22 entropy-bound
+and seed-family cases, and 20 subsequent structure diagnostics. These finite
 diagnostics supplement the analytical proofs. There is no numerical
 optimization or large simulation. No hosted CI run is claimed.
 

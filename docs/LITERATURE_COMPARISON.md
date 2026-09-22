@@ -74,6 +74,25 @@ deductions; their presence does not certify an original general theorem.
 
 ## Remaining comparisons and research target
 
+The [flat-seed comparison](FLAT_SEED_PRIOR_COMPARISON.md) now checks
+Montanaro–Osborne, arXiv:0810.2435v3, Proposition 57 and Theorem 58,
+p. 31, and Proposition 71 / Eq. (163), p. 37, together with their v5
+locators. Blecher–Gao–Xu, arXiv:2409.00224v1, Section 6, Lemma 6.1 and
+Theorem 6.2, supplies a later repair of a step in the original FKN proof.
+The exact mapping separates standard Pauli influence from the X/Z query
+energy and from compression trace norms. The inspected prior bounds do not
+by themselves give the sharp flat-seed value. The new proof supplies a
+four-sign spectrum calculation, grouped compression estimates, and separate
+lower-flat-rank estimates; it is not a new general FKN theorem. Possible
+subsumption by a different sharp result remains unresolved.
+
+The further classical-flag, locally mixed two-qubit, and bounded-condition
+entropy exclusions use standard fidelity monotonicity, elementary two-qubit
+spin-flip algebra, and the already identified Beigi inequality, respectively.
+Their proof notes supply the matrix steps explicitly. They are short
+task-specific deductions and do not establish a novel general framework
+or a new unrestricted rate formula.
+
 The [entropy-rate note](ENTROPY_RATE_CHARACTERIZATION.md) additionally compares
 Cope–Uola [2207.05722v4](https://arxiv.org/abs/2207.05722v4), Eq. (7) and
 Section VI / Eqs. (20)–(22), and Cope

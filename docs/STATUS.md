@@ -1,7 +1,7 @@
 # Status and claim ledger
 
-Updated: 2026-09-22. Stage: stronger unrestricted converse and entropy-witness exclusions.
-Latest research base: `f9a5fc72d15e9d314f6deae65096605e955a2051`, the merge of PR #4.
+Updated: 2026-09-22. Stage: sharp flat-seed theorem and further entropy exclusions.
+Latest research base: `87b6432cdd1f29bc4981f24bd6732bb933741193`, the merge of PR #5.
 
 ## Evidence labels
 
@@ -31,6 +31,13 @@ is asserted.
 | Exact maximum score at fixed rank-two spectrum | Derived and independently checked; arbitrary eigenvectors allowed | ENTROPY_INEQUALITY_BOUNDARIES.md |
 | Entropy inequality for all stabilizer-basis spectra and all flat rank-three two-input states | Derived and independently checked; additional excluded families | ENTROPY_INEQUALITY_BOUNDARIES.md |
 | Subset bound for flat half-rank seeds with a maximally mixed complementary marginal | Derived and independently checked; a scoped converse, not the unrestricted n=3,q=2 result | ENTROPY_INEQUALITY_BOUNDARIES.md |
+| Exact flat half-rank optimum and equality cases for n<=4 | Derived and independently checked; arbitrary n also covered with at most four singleton X/Z sites in the reflection | FLAT_HALF_RANK_OPTIMALITY.md |
+| No flat seed improves the q=n-1 subset score for n<=4 | Derived and independently checked for every allowed flat rank, including separate lower-rank estimates | FLAT_HALF_RANK_OPTIMALITY.md |
+| Entropy bound for all flat rank-three three-input states | Derived and independently checked via a Ky Fan refinement, g<=sqrt(53/2) | FLAT_HALF_RANK_OPTIMALITY.md Section 6 |
+| Entropy-bound closure under local classical flags and tensor products | Derived and independently checked; all two-input states classical on either qubit | CLASSICAL_FLAG_ENTROPY_BOUND.md |
+| Entropy bound for locally maximally mixed two-qubit states | Derived and independently checked; arbitrary local rotations, stronger entropy-deficit coefficient | LOCALLY_MIXED_TWO_QUBIT_BOUND.md |
+| Entropy bound for full-rank states of condition number <=6.235819648070267 | Derived and independently checked; all n and eigenvectors, sufficient threshold only | SPECTRAL_CONDITION_ENTROPY_BOUND.md |
+| Two-qubit local conditional-entropy proposal | Incorrect; explicit rank-two classical-quantum counterexample, without violating the global conjecture | CLASSICAL_FLAG_ENTROPY_BOUND.md Section 5 |
 | R(eta) equals the regularized minimum seed entropy at contrast eta | Derived and independently checked; worst-case dimension and uniform error preserved; no closed-form evaluation | ENTROPY_RATE_CHARACTERIZATION.md |
 | General sharp intermediate rate evaluation or collective advantage | Unresolved | Note Section 8 |
 | Exponential many-copy estimation speedup | Not claimed; easy classical control rules out that narrative here | Note Section 9 |
@@ -81,6 +88,27 @@ states, and a family of flat half-rank projectors extending beyond fixed
 product-diagonal bases. The notes supply proofs and preserve their family
 conditions explicitly.
 
+## Latest structural deductions
+
+Every flat half-rank seed on n<=4 inputs has score at most
+`2(n-1)+sqrt(2)`, with equality precisely for one pure bisector projector
+tensor the identity. The proof also applies for arbitrary n when the
+singleton X/Z projection of the reflection occupies at most four sites;
+higher-order Pauli terms are unrestricted. Separate flat-rank estimates
+exclude every lower allowed rank from improving the q=n-1 finite-budget
+score at these sizes. They do not establish the sharper entropy inequality
+at every lower rank. The [source comparison](FLAT_SEED_PRIOR_COMPARISON.md)
+distinguishes the result from prior Poincare/FKN statements and records a
+later repair of a prior FKN proof step.
+
+Local classical flags extend the entropy exclusion beyond fixed product
+eigenbases. Two-input states with both marginals maximally mixed are also
+excluded, as are all full-rank states with the stated bounded condition
+number. These are conditions on candidate Gram matrices, not constraints
+on admissible physical encoders. The spectral condition supplies no new
+unrestricted rate lower bound. All four proofs have been independently
+reconstructed within the workspace; publication novelty remains unresolved.
+
 ## Research division and next target
 
 Issue #1 records the proof-and-novelty audit. Issue #2 coordinates the
@@ -91,8 +119,11 @@ The original repository contained only LICENSE at
 `310a0730a04ada47eeda41bada41412414442ee1`.
 
 The smallest unresolved block is now `n=3,q=2`: prove
-`Gamma(3,4)<=4+sqrt(2)` or construct a violating seed. A collective advantage
-must use a Gram matrix outside the product-diagonal family. The one-qubit
+`Gamma(3,4)<=4+sqrt(2)` or construct a violating seed. Every allowed flat
+seed is now excluded from improving this finite-budget score. A witness
+must have rank three or four with nonuniform nonzero eigenvalues, outside
+the product-diagonal family. A separate Ky Fan refinement also proves the
+sharper entropy inequality for every flat rank-three three-input state. The one-qubit
 CHSH argument cannot be extended by treating a four-dimensional memory as
 one qubit: two Bell pairs explicitly violate its key pair bound.
 The all-contrast asymptotic subset-rate conjecture is equivalent to the seed
@@ -101,7 +132,9 @@ eigenbases. The established entropy formula does not itself evaluate the rate.
 
 The smallest possible entropy witness is a two-input state of rank three
 with nonuniform nonzero eigenvalues; general full-rank two-input states also
-remain open. This is distinct from the n=3,q=2 finite-budget diagnostic:
+remain open. Such a witness must be nonclassical on both sites, must not
+have both marginals maximally mixed, and, if full rank, must have condition
+number greater than 6.235819648070267. This is distinct from the n=3,q=2 finite-budget diagnostic:
 regularization can turn entropy below log(rank) into an asymptotic memory
 saving. No entropy witness or collective advantage has been found.
 
