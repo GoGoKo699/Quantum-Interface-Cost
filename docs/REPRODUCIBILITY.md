@@ -35,6 +35,7 @@ python tools/check_entropy_structure.py --output results/entropy-structure-rerun
 python tools/check_nonuniform_seeds.py --output results/nonuniform-rerun.json
 python tools/check_allocation_and_kernels.py --output results/allocation-kernels-rerun.json
 python tools/check_entropy_geometry.py --output results/entropy-geometry-rerun.json
+python tools/check_asymmetric_rate.py --output results/asymmetric-rate-rerun.json
 ```
 
 The bootstrap environment was Python 3.13.5 and NumPy 2.3.5. The audit
@@ -239,14 +240,51 @@ each proof note. No large simulation, hosted CI, external peer review,
 or publication-novelty certification is claimed. LICENSE and the
 historical commit-pinned audit are unchanged.
 
-## Historical archive provenance
+## Asymmetric entropy and exact-axis rate diagnostics
+
+The continuation based on main
+`9697d4d72cc34c52f4680fbf0c588b39af5c0471` adds
+`tools/check_asymmetric_rate.py` and `results/asymmetric_rate.json`.
+All 17 deterministic cases pass in Python 3.12.14 / NumPy 2.3.5, and an
+independent rerun exactly reproduces the JSON. Maximum matrix dimension
+is 16. At tolerance 1e-10, the maximum identity residual is
+3.3306690738754696e-15 and maximum positive inequality residual is
+8.881784197001252e-16.
+
+Twelve explicitly specified complex or equality-case seeds test the
+classical-quantum entropy identity, biased-prior Helstrom/Fano bounds,
+conditional-entropy chain, cube-flip overlaps, and asymmetric seed bound.
+Three of these assert equality for product bisectors, an exact-axis
+Bernoulli seed, and a maximally mixed endpoint. Four further cases build
+the complete translation instruments for small Bernoulli supports,
+including one full-support endpoint; all local effective observables,
+normalization, truncation trace distance and applicable support/tail
+estimates are checked. Small-block attainment of the asymptotic rate is
+not asserted.
+
+One scalar case checks the entropy curve, interior separation and displayed
+derivative formulas by centered differences. That derivative comparison
+has separate absolute allowance 2e-6 at step 1e-4; the algebraic identities
+and theorem inequalities use 1e-10. The scalar rate tables are evaluations
+of proved formulas, not simulation or optimization results.
+
+Every probability/positive-semidefinite endpoint adjustment is checked
+against 1e-12 and listed in the JSON: there are 42, with largest actual
+adjustment 2.220446049250313e-16. There is no numerical rank inference,
+unreported spectral clipping, random search, optimizer or large-block
+simulation. The proofs and primary-source mappings were independently
+checked within the workspace. These finite diagnostics certify neither
+the universal statements nor publication novelty. LICENSE and the
+historical audit are unchanged.
+
+## Original archive provenance
 
 The user-provided archive was Q1_Quantum_Interface_Dossier_v0_1.zip.
 Its SHA-256 is
 `3f3538c0307f3a1131746d84410b21752b97aa0e87d8de1722392d3b114dd8ec`.
 The following three files were imported unchanged at bootstrap commit
 `eaf085a8cb299e6b297b11d2dc3c85e24f02779e`. These are historical hashes; the
-research note has subsequently been revised to version 0.7:
+research note has subsequently been revised to version 0.8:
 
 | File | SHA-256 |
 |---|---|

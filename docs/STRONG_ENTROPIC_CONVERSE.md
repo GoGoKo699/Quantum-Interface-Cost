@@ -15,6 +15,12 @@ arbitrary-input error in [RESEARCH_NOTE.md](../RESEARCH_NOTE.md), Section 2.
 
 ## 1. Statement
 
+The later [asymmetric entropy converse](ASYMMETRIC_ENTROPIC_CONVERSE.md)
+gives another unrestricted bound and improves the near-classical-threshold
+onset to linear order. Take the maximum of the two bounds: the theorem
+here remains stronger extremely close to perfect accuracy. Its proof and
+historical formula below are unchanged.
+
 Write $\eta_0=1/\sqrt2$, and let $h_2$ denote binary entropy in bits. Define
 
 $$
@@ -321,7 +327,7 @@ example, at $u=0.1$, hence $s=h_2(0.1)\simeq0.46899559$, (3) permits
 $g/n\le\sqrt{3.2}\simeq1.78885438$. The conjectured linear upper bound
 $\sqrt2+(2-\sqrt2)s$ is approximately $1.68894$. Sharpness of the prior
 Dirichlet theorem therefore does not establish sharpness for this
-interface score, and the unrestricted linear entropy inequality remains
+interface score, and the sharp unrestricted linear entropy inequality remains
 open.
 
 `tools/check_entropy_bounds.py` checks the fidelity, energy and entropy chain

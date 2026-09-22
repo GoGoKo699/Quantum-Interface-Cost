@@ -1,9 +1,9 @@
 # Q1 — Delayed local readout through a bounded quantum interface
 
-**Version:** 0.7, 2026-09-22
+**Version:** 0.8, 2026-09-22
 
 **Project:** Falling / Q1  
-**Status:** Baseline proofs and seed reduction independently checked within the audit workspace. New analytical results give the exact one-retained-qubit optimum for every block size, an entropy bound for product-diagonal seeds, and a regularized entropy characterization of the asymptotic rate. Further work supplies a logarithmic-Sobolev memory converse and the exact score at every rank-two spectrum. General rate evaluation and publication novelty remain unresolved. This is a research dossier, not external peer review or a claim of a new framework.
+**Status:** Baseline proofs and seed reduction independently checked within the audit workspace. The latest analytical results prove an unrestricted asymmetric entropy converse, linear onset of the common-accuracy memory rate, and an exact asymptotic rate with X preserved perfectly. Earlier work supplies exact one-qubit optima, spectral converses, and collective unequal-accuracy separations. Primary graph, entropy and channel-cost ingredients are explicitly credited. General common-accuracy rate evaluation and publication novelty remain unresolved. This is a research dossier, not external peer review or a claim of a new framework.
 
 ## 1. Origin, scope, and claim ledger
 
@@ -22,6 +22,8 @@ The general compression problem below is already present in the dimensional meas
 | Entropy bound for product-diagonal Gram matrices | Derived and independently checked, allowing correlated spectra and arbitrary local bases; does not restrict unrestricted encoders. |
 | Entropic finite-error lower bound | Direct application of Berta et al. [4], Fano, and conditional-entropy inequalities. |
 | Stronger logarithmic-Sobolev converse throughout the nonclassical region | Derived and independently checked from Beigi [14] and the root-fidelity inequality [15]; unrestricted encoder bound. |
+| Asymmetric entropy converse and linear onset above the classical threshold | Derived and independently checked; combines established generalized QRAC and cube-entropy ingredients. The exact onset slope remains open. |
+| Exact-X asymptotic rate h_2((1-sqrt(1-z^2))/2) | Sharp operational corollary of established cube spectral/entropy results; complete finite instruments preserve exact X, with fixed interior collective separations as a consequence. |
 | Exact maximum score at any rank-two spectrum | Derived and independently checked for arbitrary eigenvectors; excludes all rank-two entropy witnesses. |
 | Exact flat half-rank optimum through four input qubits | Derived and independently checked, with equality cases; with separate lower-flat-rank estimates; nonflat cases remain unresolved. |
 | Further seed entropy exclusions | Derived and independently checked for local classical flags, locally maximally mixed two-qubit states, and condition number at most 6.235819648; restricted families. |
@@ -315,13 +317,29 @@ b(\eta)=h_2\!\left(
 \right).
 $$
 
-Then, with `L_new(eta)=max{L(eta),b(eta)}`,
+The subsequent [asymmetric entropy converse](docs/ASYMMETRIC_ENTROPIC_CONVERSE.md)
+defines
+
+$$
+f(c)=h_2\!\left(\frac{1-\sqrt{1-c^2}}2\right),\qquad
+\ell(\eta)=\left[f(\eta)-h_2((1-\eta)/2)\right]_+.
+$$
+
+It proves, for every normalized seed, the bound
+`S(L^dagger L)>=sum_i[f(F_(i,Z))-h_2((1-F_(i,X))/2)]`.
+The proof treats the X-basis columns as an auxiliary quantum random-access
+ensemble with correlated classical labels. Established entropy/decoding
+bounds control their entropy loss, while a classical cube inequality and
+the trace-norm triangle inequality control the complementary Z scores.
+No extra copy, simultaneous decoder or source promise is introduced.
+
+Then, with `L_new(eta)=max{L(eta),b(eta),ell(eta)}`,
 
 $$
 q_{\min}(n,\eta)\ge\lceil n L_{\rm new}(\eta)\rceil.
 $$
 
-This deduction applies Beigi's improved quantum logarithmic-Sobolev inequality [14, Theorem 2] to a normalized seed's square root, combines root fidelity squared with affinity [15, Appendix A, Theorem 6], and uses a Pauli-Fourier comparison. Each refined branch has entropy at most q, so the proof preserves worst-case dimension and unrestricted collective encoding. No typical-input promise or additional specimen is used. The hybrid construction still gives (6).
+The b term is obtained by applying Beigi's improved quantum logarithmic-Sobolev inequality [14, Theorem 2] to a normalized seed's square root, combining root fidelity squared with affinity [15, Appendix A, Theorem 6], and using a Pauli-Fourier comparison. Each refined branch has entropy at most q, so the proof preserves worst-case dimension and unrestricted collective encoding. No typical-input promise or additional specimen is used. The hybrid construction still gives (6).
 
 For fixed eta, product encoding of two blocks yields
 
@@ -345,23 +363,37 @@ L_{\rm new}(\eta)\le R(\eta)\le\frac{\eta-\eta_0}{1-\eta_0}.
 
 Numerical evaluation of these proved formulas, not simulation data:
 
-| Worst-case TV error epsilon | Contrast eta | Earlier baseline lower bound | Strengthened lower bound | Achievable upper bound |
-|---:|---:|---:|---:|---:|
-| 0 | 1 | 1 | 1 | 1 |
-| 0.01 | 0.98 | 0.8384137282 | 0.8872964169 | 0.9317157288 |
-| 0.05 | 0.90 | 0.4272060858 | 0.4929364851 | 0.6585786438 |
-| 0.10 | 0.80 | 0.0620088128 | 0.1414405425 | 0.3171572875 |
-| 0.14 | 0.72 | 0.0000149892 | 0.0043926999 | 0.0440202025 |
-| epsilon_0 | eta_0 | 0 | 0 | 0 |
+| Worst-case TV error epsilon | Contrast eta | Earlier baseline lower bound | Logarithmic-Sobolev bound | Current combined lower bound | Achievable upper bound |
+|---:|---:|---:|---:|---:|---:|
+| 0 | 1 | 1 | 1 | 1 | 1 |
+| 0.01 | 0.98 | 0.8384137282 | 0.8872964169 | 0.8904499196 | 0.9317157288 |
+| 0.05 | 0.90 | 0.4272060858 | 0.4929364851 | 0.5718389182 | 0.6585786438 |
+| 0.10 | 0.80 | 0.0620088128 | 0.1414405425 | 0.2529325013 | 0.3171572875 |
+| 0.14 | 0.72 | 0.0000149892 | 0.0043926999 | 0.0330903683 | 0.0440202025 |
+| epsilon_0 | eta_0 | 0 | 0 | 0 | 0 |
 
-The wide gap near eta_0 is real in the bounds, not evidence that the true rate is small or that the upper curve is optimal. For t down to zero, the new lower bound has
+For t down to zero, the earlier logarithmic-Sobolev bound has
 
 $$
 b(\eta_0+t)=4t^2\log_2(1/t)+O(t^2),
 \qquad b(1-t)=1-\frac4{\ln2}t+O(t^2).
 $$
 
-It improves the near-threshold quadratic baseline by a logarithmic factor and gives a linear approach to the exact-readout endpoint. These are asymptotics of a necessary bound, not an evaluation of R.
+The asymmetric converse strengthens the near-threshold scaling:
+
+$$
+\ell(\eta_0+t)=2\log_2(1+\sqrt2)t+O(t^2),\qquad
+2\log_2(1+\sqrt2)t\le R(\eta_0+t)\le(2+\sqrt2)t.
+$$
+
+The latter bound holds for the entire allowed interval 0<=t<=1-eta_0;
+convexity supplies the lower supporting tangent. In particular
+`R(eta_0+t)=Theta(t)` as t decreases to zero. This proves linear onset,
+without evaluating its exact coefficient or the full rate. Extremely close
+to eta=1 the earlier b can be stronger than ell, so the maximum is retained.
+The corresponding unrestricted seed bound is
+`g(L)<=sqrt(2)n+S(L^dagger L)/log_2(1+sqrt(2))`, whose entropy coefficient
+0.78643970 remains above the conjectured sharp value 2-sqrt(2).
 
 ## 8. Exact one-qubit result and the remaining target
 
@@ -507,6 +539,21 @@ measurements of discarded sites and arbitrary processing on retained sites
 within that comparison class. The unrestricted operational model is
 preserved. This unequal-accuracy advantage does not refute the original
 common-accuracy subset conjecture or evaluate R(eta).
+
+The [exact-axis rate theorem](docs/EXACT_AXIS_RATE.md) now sharpens that
+family asymptotically: with all X exact and common Z contrast z,
+`R_X(z)=f(z)`. It proves the finite heterogeneous converse
+`log_2D>=sum_i f(z_i)` and uses truncated auxiliary Bernoulli distributions
+in complete translation instruments to attain the rate. The truncation
+does not postselect the unknown specimen, and exact X is preserved at
+every finite block length. The rate curve and corresponding graph
+asymptotics are established prior ingredients; the same curve is also
+the dephasing-channel simulation cost under a stronger output requirement.
+Here it is derived with the weaker single-query converse explicitly proved.
+For every 0<z<1, f(z)<z, giving a strict saving over original-site retention.
+At the fixed interior profile X=0.99, Z=0.5, collective rate at most
+0.354579 beats that class's exact 0.39; the unrestricted interior optimum
+is not claimed evaluated.
 
 The [two-qubit SLD theorem](docs/TWO_QUBIT_SLD_SPECTRUM.md) minimizes the
 local SLD sum exactly over every eigenbasis of every spectrum. Writing

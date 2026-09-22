@@ -122,7 +122,35 @@ score bound does not prove the sharp linear seed entropy conjecture, and
 the all-n SLD inequality remains unresolved. These targeted comparisons
 do not certify absence of the operational results from the literature.
 
-## Established proof ingredients
+## Asymmetric entropy converse and the sharp exact-axis rate
+
+The [asymmetric converse](ASYMMETRIC_ENTROPIC_CONVERSE.md) combines known
+entropy ingredients with the normalized-seed reduction to prove
+`log_2D>=sum_i max{0,f(z_i)-h_2((1-x_i)/2),f(x_i)-h_2((1-z_i)/2)}`,
+where `f(c)=h_2((1-sqrt(1-c^2))/2)`. Its common-accuracy consequence
+improves the rate lower bound and proves linear onset above the classical
+threshold. The [exact-axis rate](EXACT_AXIS_RATE.md) evaluates R_X(z)=f(z),
+with complete instruments preserving X exactly at every finite block length.
+
+| Primary source and exact locator | Established result and operational comparison |
+|---|---|
+| Wehner–Christandl–Doherty, [0808.3960v2](https://arxiv.org/pdf/0808.3960v2), 20 November 2008, Lemma I.1 begins p. 2; proof and Corollary I.2 p. 3 | Already supplies `H(Q)>=H(U^n)-sum_i h(error_i)` for arbitrary correlated, nonuniform labels and separate coordinate decoders. In our proof the priors are squared X-basis column norms, the signal states are normalized columns, and `H(Q)=S(L^dagger L)`. This subsumes the quantum decoding ingredient exactly. The physical unknown specimen has not been replaced by a supplied classical string. |
+| Wootters, [quant-ph/9709029v2](https://arxiv.org/pdf/quant-ph/9709029v2), Eq. (8) and following text p. 4 | Defines the same scalar function, its monotonicity and convexity. Its use here does not identify a general many-qubit seed with two-qubit concurrence. |
+| Samorodnitsky, [0807.1679v1](https://arxiv.org/pdf/0807.1679v1), 10 July 2008, Theorem 1.2 / Eq. (7) p. 5; Theorem 1.4 begins p. 6, Eq. (10) p. 7 | The nonlinear cube entropy inequality and asymptotically sharp support-cardinality bound are prior. With a square-root probability vector, the Dirichlet quotient is `2(n-sum_i F_i)`; convert natural entropy to bits. Combined with our finite exact-axis reduction, these statements already imply R_X(z)=f(z). The asymptotic curve is a corollary, not new graph theory. |
+| Friedman–Tillich, *Generalized Alon–Boppana Theorems and Error-Correcting Codes*, [primary manuscript](https://gilkalai.wordpress.com/wp-content/uploads/2024/01/bounds.pdf), Proposition 8.5 p. 10 and Appendix C pp. 18–19, manuscript pagination | Supplies the asymptotic Hamming-ball spectral attainer, credited by Samorodnitsky. The repository instead spells out a truncated Bernoulli seed and its complete quantum instrument; neither Hamming-ball asymptotics nor support truncation is claimed as new mathematics. |
+| Wilde, [1807.11939v3](https://arxiv.org/pdf/1807.11939v3), 31 October 2018, Section II.A pp. 3–4; Section IV.B Eq. (65) p. 10 | The dephasing-channel entanglement cost is exactly f(z) after setting its dephasing parameter to `(1-z)/2` and conjugating by Hadamards. Its uniform channel simulation allows arbitrary inputs, including internally entangled inputs. Full reconstruction is stronger than answering one local query; its converse cannot simply be transferred, and approximate channel simulation does not ensure exact X at each finite n. |
+| Bagan–Bergou–Hillery, [2004.13573v1](https://arxiv.org/pdf/2004.13573v1), 28 April 2020, Eq. (30) p. 4; Eq. (31) p. 5 | A related wave–particle entropy bound reduces, for two alternatives and zero failure probability, to the binary entropy-loss penalty. Its coherence interpretation is prior; it does not supply the complete coordinatewise conjugate-score bound. |
+
+The new repository deduction is the combination of the cube-flip
+trace-norm comparison, these established entropy bounds, arbitrary Kraus
+averaging and restriction to selected input sites. This proves a useful
+unrestricted converse and its linear-onset corollary. The exact-axis result
+adds a sharp local-query converse and exact-axis finite construction to an
+already known rate curve. This is a substantial prior overlap, not a proof
+of identical operational subsumption or an originality certificate.
+The general common-accuracy optimum and publication novelty remain open.
+
+## Baseline uncertainty and entanglement ingredients
 
 - Berta et al., [0909.0950](https://arxiv.org/abs/0909.0950), Eq. (2): quantum-memory uncertainty, combined here with Fano and conditional-entropy subadditivity.
 - Brandao–Christandl–Yard, [1010.1750v5](https://arxiv.org/abs/1010.1750v5), Corollary 1 / Eq. (12), with the [erratum](https://doi.org/10.1007/s00220-012-1584-y): squared distance in the corrected one-way-LOCC norm, coefficient `1/(16 ln 2)`.

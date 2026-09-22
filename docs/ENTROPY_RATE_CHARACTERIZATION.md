@@ -345,6 +345,15 @@ the target through sitewise monogamy; the existing weaker bound is unaffected.
 
 ## 7. Prior ingredients and novelty boundary
 
+The later [asymmetric converse](ASYMMETRIC_ENTROPIC_CONVERSE.md) now gives
+a proved unrestricted linear seed-entropy bound, with coefficient
+`1/log_2(1+sqrt(2))`, about .78644. This is weaker than the target
+`2-sqrt(2)`, about .58579; the exact equivalence to that sharp conjecture
+is unchanged. It nevertheless proves linear onset of R above the
+classical threshold. The [exact-axis note](EXACT_AXIS_RATE.md) evaluates
+a separate rate with all X exact and Z contrast z. That evaluation does
+not determine the common-accuracy regularized minimum in this note.
+
 Schmidt typicality and the conversion of asymptotic rank to entropy are
 established ingredients. The supplied deduction combines them with the
 exact seed twirl and a scalar-contrast continuity argument; publication
