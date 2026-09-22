@@ -1,6 +1,6 @@
 # Q1 — Delayed local readout through a bounded quantum interface
 
-**Version:** 0.4, 2026-09-22
+**Version:** 0.5, 2026-09-22
 
 **Project:** Falling / Q1  
 **Status:** Baseline proofs and seed reduction independently checked within the audit workspace. New analytical results give the exact one-retained-qubit optimum for every block size, an entropy bound for product-diagonal seeds, and a regularized entropy characterization of the asymptotic rate. Further work supplies a logarithmic-Sobolev memory converse and the exact score at every rank-two spectrum. General rate evaluation and publication novelty remain unresolved. This is a research dossier, not external peer review or a claim of a new framework.
@@ -24,6 +24,9 @@ The general compression problem below is already present in the dimensional meas
 | Exact maximum score at any rank-two spectrum | Derived and independently checked for arbitrary eigenvectors; excludes all rank-two entropy witnesses. |
 | Exact flat half-rank optimum through four input qubits | Derived and independently checked, with equality cases; with separate lower-flat-rank estimates; nonflat cases remain unresolved. |
 | Further seed entropy exclusions | Derived and independently checked for local classical flags, locally maximally mixed two-qubit states, and condition number at most 6.235819648; restricted families. |
+| Support-inertia converse for arbitrary spectra | Derived and independently checked; an explicit neighborhood of every subset support cannot improve its finite-budget score. |
+| Stability near all rank-at-most-two seeds | Derived and independently checked; an open entropy-valid neighborhood exists at each fixed n, with separate quantitative spectral-tail criteria. |
+| Uniformizing a seed on its support | Invalid as a general optimization step; exact nonuniform fixed-support optima provide counterexamples. |
 | Positive linear memory for every fixed contrast above 1/sqrt(2) | Derivation below using a two-setting witness and faithful, monogamous squashed entanglement [5,6]. Independent novelty not established. |
 | Regularized entropy characterization of the asymptotic rate | Derived and independently checked; fixed-cap coding and scalar-contrast continuity are proved; no closed-form evaluation. |
 | Sharp evaluation of the asymptotic memory rate, or a strict collective-coding improvement | Candidate research target; not solved here and not yet certified absent from the literature. |
@@ -408,6 +411,39 @@ Equality requires a pure X/Z bisector projector on one site tensor the identity 
 The entropy inequality is also closed under [local classical flags and tensor products](docs/CLASSICAL_FLAG_ENTROPY_BOUND.md). In particular, all two-input states classical on either qubit are excluded, even with noncommuting conditional states. All [two-input states with both marginals maximally mixed](docs/LOCALLY_MIXED_TWO_QUBIT_BOUND.md) satisfy a stronger bound, including arbitrary local rotations of Bell-diagonal states. A [spectral theorem](docs/SPECTRAL_CONDITION_ENTROPY_BOUND.md) excludes every full-rank Gram matrix with `lambda_max/lambda_min <= 6.235819648070267`, in any dimension and any eigenbasis. That sufficient threshold is not asserted optimal. An explicit two-qubit counterexample refutes a proposed local conditional-entropy route; it does not refute the global inequality.
 
 The smallest remaining finite-block diagnostic is n=3,q=2, with subset seed score `4+sqrt(2)`. Separate lower-rank estimates exclude every allowed flat seed from improving that finite-budget score. Any improvement must have rank three or four with nonuniform nonzero eigenvalues; a separate Ky Fan refinement also proves the entropy inequality for flat rank-three three-input states. No general lower-flat-rank entropy theorem is asserted. A two-input entropy witness must be nonclassical on both sites, must not have both marginals maximally mixed, and, if full rank, must exceed the stated condition-number threshold. The main target remains a sharp rate evaluation, or a proven collective advantage with meaningful converses. These deductions have independently checked proofs within the workspace, but their publication novelty is unestablished.
+
+The [support-inertia converse](docs/SUPPORT_INERTIA_CONVERSE.md) now treats
+every spectrum on a given support P. Let a(P) count the sites where both
+compressed X/Z operators have positive and negative eigenvalues. Then
+
+$$
+g(\sqrt\rho)\le\sqrt2 n+(2-\sqrt2)a(P).
+$$
+
+Thus a(P)<=q excludes finite-budget advantage; equality in that class forces
+the flat subset seed. Every support with
+`||(I-P0)P||_infty<=sin(pi/8)` for a rank-2^q subset support P0 is excluded,
+without any spectral assumption. In particular, a three-input, two-memory-qubit
+improvement requires all six query compressions to be indefinite.
+
+The [spectral-tail theorem](docs/LOW_RANK_ENTROPY_STABILITY.md) proves that,
+for each fixed n, some delta_n>0 excludes entropy violations whenever
+`1-lambda_1(rho)-lambda_2(rho)<delta_n`. It uses nonzero query-compression
+gaps at the classified rank-two equality seeds and the entropy of an
+orthogonal mixture. The uniform delta_n is existential. Separate explicit
+tail criteria cover coherently rotated supports and arbitrary tail eigenvectors.
+For an exact subset core sigma with an orthogonal tail tau of weight epsilon,
+the score is at most `(1-epsilon)g(sqrt(sigma))+epsilon g(sqrt(tau))+2sqrt(2)epsilon`.
+The linear coefficient is first-order sharp; the resulting entropy cutoffs
+are sufficient bounds.
+
+Two [exact fixed-support optima](docs/NONUNIFORM_SUPPORT_OPTIMA.md) show that
+replacing a seed by the uniform state on its support can reduce its score,
+including at the unresolved rank-four budget. They do not beat the subset
+benchmark. The [SLD-route audit](docs/SLD_ENTROPY_ROUTE_AUDIT.md) gives exact
+counterexamples to two local proof steps and separates the proposed global
+SLD entropy bound from inspected convex-roof, tensorization, convolution and
+influence theorems. That global bound remains unresolved.
 
 The [primary-source audit](docs/audits/PROOF_AND_NOVELTY_AUDIT.md) establishes that the general framework [1,2] and exact endpoint [10] are prior. It gives an exact discrimination-task reduction, strict obstructions to importing full-outcome MUB or common-reconstruction converses, and a genuine achievability bridge from fixed-cap reconstruction codes [9]. It also identifies a false marginal-distortion invariance step in [9]; that is a source-proof gap, not a refutation of its theorem conclusion. See the [comparison ledger](docs/LITERATURE_COMPARISON.md) for locators and remaining novelty questions.
 

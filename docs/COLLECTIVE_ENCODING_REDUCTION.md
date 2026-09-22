@@ -144,6 +144,15 @@ eigenvalues. The general optimization above still allows every
 spectrum. Further entropy exclusions are collected in the
 [boundary note](ENTROPY_INEQUALITY_BOUNDARIES.md).
 
+The [support-inertia converse](SUPPORT_INERTIA_CONVERSE.md) applies without
+assuming a flat spectrum. A support with at most q sites having both
+compressed X/Z queries indefinite cannot beat the q-qubit subset score.
+It supplies an explicit neighborhood of every subset support where all
+spectra are excluded. Conversely, the [nonuniform examples](NONUNIFORM_SUPPORT_OPTIMA.md)
+prove that replacing a Gram matrix by its uniform support projector can
+decrease the objective, including at rank four. Uniformization is not part
+of this exact reduction and cannot be inserted without proof.
+
 The same problem admits the spectral expression
 
 $$
