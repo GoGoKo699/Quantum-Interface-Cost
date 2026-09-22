@@ -32,6 +32,7 @@ python tools/check_one_qubit_tradeoff.py --output results/one-qubit-rerun.json
 python tools/check_product_diagonal_bound.py --output results/product-diagonal-rerun.json
 python tools/check_entropy_bounds.py --output results/entropy-bounds-rerun.json
 python tools/check_entropy_structure.py --output results/entropy-structure-rerun.json
+python tools/check_nonuniform_seeds.py --output results/nonuniform-rerun.json
 ```
 
 The bootstrap environment was Python 3.13.5 and NumPy 2.3.5. The audit
@@ -136,6 +137,33 @@ is not a script assertion. Independent analytical reconstruction
 within the workspace carries the theorem claims. No external peer review
 or publication novelty certification is implied.
 
+## Nonuniform-seed diagnostics
+
+The continuation based on main
+`6ddc97a549316ed9edb7a14a110ceee70b87bdf9` adds
+`tools/check_nonuniform_seeds.py` and `results/nonuniform_seeds.json`.
+All 16 deterministic cases pass at tolerance 1e-10 in Python 3.12.14 and
+NumPy 2.3.5; an independent rerun exactly reproduces the JSON. Maximum
+matrix dimension is eight. Maximum identity residual is
+8.881784197001252e-16; maximum positive inequality residual is
+2.220446049250313e-16. No optimization or random search is performed.
+
+The cases check both exact fixed-support optima and flat comparisons,
+an explicitly averaged local-bisector twirl of a coherent state,
+support-inertia bounds and subset equality, supports below/at/above the
+pi/8 semidefinite-compression radius, a complex indefinite block trace-norm
+estimate, coherently rotated low-rank cores with spectral tails, and both
+failed local SLD steps. Supplied eigenvectors and positive eigenvalues are
+used directly to construct square roots. No spectral clipping or inferred
+numerical rank is used; one positive tail is 2^(-55), below machine epsilon.
+This checks the supplied decomposition in floating-point arithmetic, not
+resolution of that eigenvalue by numerical diagonalization.
+
+The exact subset-core sharpening and the compactness neighborhood theorem
+are checked analytically. No diagnostic computes the existential uniform
+neighborhood size, proves unrestricted optimality, or certifies novelty.
+The historical audit report and LICENSE are unchanged.
+
 ## Historical archive provenance
 
 The user-provided archive was Q1_Quantum_Interface_Dossier_v0_1.zip.
@@ -143,7 +171,7 @@ Its SHA-256 is
 `3f3538c0307f3a1131746d84410b21752b97aa0e87d8de1722392d3b114dd8ec`.
 The following three files were imported unchanged at bootstrap commit
 `eaf085a8cb299e6b297b11d2dc3c85e24f02779e`. These are historical hashes; the
-research note has subsequently been revised to version 0.4:
+research note has subsequently been revised to version 0.5:
 
 | File | SHA-256 |
 |---|---|

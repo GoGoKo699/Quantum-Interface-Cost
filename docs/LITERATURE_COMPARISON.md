@@ -72,6 +72,38 @@ logarithmic-Sobolev inequality and entropy conditioning. Its projector
 arguments are elementary compression identities. These are separate scoped
 deductions; their presence does not certify an original general theorem.
 
+## Nonuniform spectra and the proposed SLD route
+
+The [support-inertia note](SUPPORT_INERTIA_CONVERSE.md) uses Sylvester inertia,
+trace-norm duality and two anticommuting local Paulis to give an all-spectrum
+support converse and an explicit geometric neighborhood. The
+[spectral-tail note](LOW_RANK_ENTROPY_STABILITY.md) combines a supplied block
+trace-norm estimate with the already proved rank-two equality classification,
+orthogonal-mixture entropy and compactness. These are task-specific deductions
+with independent reconstruction; no absence from the literature is asserted.
+The [fixed-support optima](NONUNIFORM_SUPPORT_OPTIMA.md) use concavity of root
+fidelity and a symmetry average. They disprove two proposed flattening steps,
+without supplying a collective advantage or a new general fidelity theorem.
+
+The [SLD audit](SLD_ENTROPY_ROUTE_AUDIT.md) supplies exact versioned locators
+and mathematical comparisons for five primary sources:
+
+| Source and locator | Established statement | Missing transfer to the proposed local X/Z SLD entropy sum |
+|---|---|---|
+| Yu, arXiv:1302.5311v1, Eqs. (1),(4), p. 1 | SLD/4 is the convex roof of variance for one observable | Separately minimizing ensembles cannot be replaced by one common ensemble |
+| Cao–Lu, arXiv:1904.06562v2, Theorem 1, p. 2; Section 5.1, p. 17 | Chi-square contraction tensorizes under specified metric/channel hypotheses | SLD's weight lies outside the two stated cases; reference-state contraction is a different target |
+| Bu–Gu–Jaffe, arXiv:2302.07841v3, Section IV.B, Theorem 15, p. 5 | Convolution inequality for local divergence Fisher information | The logarithmic eigenvalue kernel is not SLD, and convolution does not implement this encoder |
+| Toth, arXiv:1701.07461v5, Observation 3, p. 2; Section V | Averages over all traceless observables; an approximate entropy relation in Eq. (69) | Neither an all-directions average nor an approximation proves the fixed local-query inequality |
+| Rouze–Wirth–Zhang, arXiv:2209.07279v3, Section 6.4, pp. 33–34 | A quantum maximum-L1-influence bound; a classical sharp edge formula | The needed sharp total-L2 rank inequality is not an inspected theorem there |
+
+Two exact counterexamples refute a local conditional-entropy charge and a
+unit-coefficient SLD bound on pinching entropy increase. Neither refutes the
+proposed global SLD sum or the sharp seed entropy conjecture. The audit
+distinguishes the three-Pauli projector energy from the X/Z query energy;
+they cannot be identified by dropping a normalization or a Y contribution.
+These comparisons are scoped to the inspected statements; subsumption by
+other prior work and publication novelty remain unresolved.
+
 ## Remaining comparisons and research target
 
 The [flat-seed comparison](FLAT_SEED_PRIOR_COMPARISON.md) now checks

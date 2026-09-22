@@ -318,6 +318,15 @@ and arbitrary full-rank states with [bounded spectral condition number](SPECTRAL
 The [flat half-rank result](FLAT_HALF_RANK_OPTIMALITY.md) settles that
 family through four input qubits. These results narrow possible witnesses
 without evaluating the unrestricted regularized entropy minimum.
+The [spectral-tail theorem](LOW_RANK_ENTROPY_STABILITY.md) now also excludes
+an open neighborhood of every rank-at-most-two seed at each fixed n.
+The compactness argument gives no dimension-uniform neighborhood or
+explicit global value for its radius. The [support converse](SUPPORT_INERTIA_CONVERSE.md)
+implies (9) whenever S(rho)>=a(P), where a(P) counts sites with both
+compressed queries indefinite. Neither theorem evaluates the unrestricted
+rate. The proposed SLD entropy converse remains conditional; its
+[source audit](SLD_ENTROPY_ROUTE_AUDIT.md) explains why two local arguments
+and the inspected prior metric theorems do not establish it.
 
 ## 7. Prior ingredients and novelty boundary
 

@@ -586,6 +586,22 @@ The marginal and Pauli-concentration conditions in Section 4 remain valid
 intermediate bounds. Artificially imposing flatness or a stabilizer
 basis on the unrestricted optimization would change the question.
 
+The [support-inertia converse](SUPPORT_INERTIA_CONVERSE.md) further requires
+every query compression of a three-input finite-budget witness to be
+indefinite. It excludes every spectrum on supports within the explicit
+one-sided distance `sin(pi/8)` of a subset support. Independently,
+[spectral-tail stability](LOW_RANK_ENTROPY_STABILITY.md) excludes an open
+neighborhood of the entire rank-at-most-two set from entropy violation at
+each fixed n. Its uniform neighborhood size is existential; separate local
+criteria are quantitative and allow coherent support rotations.
+
+The [fixed-support examples](NONUNIFORM_SUPPORT_OPTIMA.md) show why flat-seed
+bounds cannot simply be transferred by uniformizing the eigenvalues. Even
+at rank four, a nonuniform state can strictly improve on the flat state on
+the same support. These examples remain below the subset and entropy bounds.
+The [SLD-route audit](SLD_ENTROPY_ROUTE_AUDIT.md) separately refutes two
+proposed local steps without refuting the global entropy target.
+
 The deductions use the already identified Cheng–Hall theorem, elementary
 matrix algebra, and classical entropy identities. The unrestricted entropy
 inequality, its sharp rate consequence, and publication novelty remain open.

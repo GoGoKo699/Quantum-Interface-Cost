@@ -18,7 +18,9 @@ improves the quantitative memory lower bounds. The model is established measurem
 simulability, not a new framework: see [the literature comparison](docs/LITERATURE_COMPARISON.md).
 The latest finite-block result proves subset optimality for every flat
 half-rank seed on up to four input qubits, with exact equality cases.
-Nonflat seeds remain part of the unrestricted problem.
+Further support and spectral-tail converses now exclude additional nonflat
+seeds. The unrestricted problem remains open; explicit examples show why
+replacing a seed by the uniform state on its support is not a valid shortcut.
 
 ## Start here
 
@@ -34,6 +36,8 @@ Nonflat seeds remain part of the unrestricted problem.
 | Exact rank-two spectrum trade-off and excluded families | [Entropy-inequality boundaries](docs/ENTROPY_INEQUALITY_BOUNDARIES.md) |
 | Sharp flat half-rank result through four input qubits | [Flat-seed theorem](docs/FLAT_HALF_RANK_OPTIMALITY.md) |
 | Further entropy exclusions and failed local proof route | [Classical flags](docs/CLASSICAL_FLAG_ENTROPY_BOUND.md), [locally mixed two-qubit states](docs/LOCALLY_MIXED_TWO_QUBIT_BOUND.md), [bounded spectral condition](docs/SPECTRAL_CONDITION_ENTROPY_BOUND.md) |
+| Converses covering nonuniform spectra | [Support inertia and geometric neighborhood](docs/SUPPORT_INERTIA_CONVERSE.md), [spectral-tail stability](docs/LOW_RANK_ENTROPY_STABILITY.md) |
+| Exact obstructions to proposed proof shortcuts | [Nonuniform fixed-support optima](docs/NONUNIFORM_SUPPORT_OPTIMA.md), [SLD source and proof-route audit](docs/SLD_ENTROPY_ROUTE_AUDIT.md) |
 | Commit-pinned independent proof and source review | [Audit report](docs/audits/PROOF_AND_NOVELTY_AUDIT.md) |
 | Closest precedents and unresolved translations | [Literature comparison](docs/LITERATURE_COMPARISON.md) |
 | Run the small checks and understand their limits | [Reproducibility](docs/REPRODUCIBILITY.md) |
@@ -104,7 +108,16 @@ now excluded, but nonuniform rank-three and general full-rank states remain
 open outside the excluded families. Any two-input witness must be
 nonclassical on both sites and cannot have both marginals maximally mixed.
 A full-rank witness must additionally have spectral condition number above
-6.235819648. These are distinct diagnostics. Publication novelty is not certified.
+6.235819648. It must also stay outside an open neighborhood of the entire
+rank-at-most-two set at that fixed input size. The latter exclusion is proved
+analytically; its uniform neighborhood size is existential.
+
+For the three-input finite-budget target, every compressed X/Z query of an
+improving seed must have both positive and negative eigenvalues. This excludes
+all spectra on supports within operator-norm distance `sin(pi/8)` of a
+rank-four subset support. Rank-three supports use the one-sided subspace
+distance stated in the proof. These are distinct finite-budget and entropy
+diagnostics. Publication novelty is not certified.
 
 ## Essential boundary
 
@@ -128,12 +141,14 @@ python tools/check_one_qubit_tradeoff.py --output results/one-qubit-rerun.json
 python tools/check_product_diagonal_bound.py --output results/product-diagonal-rerun.json
 python tools/check_entropy_bounds.py --output results/entropy-bounds-rerun.json
 python tools/check_entropy_structure.py --output results/entropy-structure-rerun.json
+python tools/check_nonuniform_seeds.py --output results/nonuniform-rerun.json
 ```
 
 The first command after installation checks 14 explicit subset constructions;
 the second checks 10 seed-to-interface constructions. The new scripts check
 43 one-qubit identities/examples, 10 product-diagonal cases, 22 entropy-bound
-and seed-family cases, and 20 subsequent structure diagnostics. These finite
+and seed-family cases, 20 structure diagnostics, and 16 nonuniform-seed
+diagnostics. These finite
 diagnostics supplement the analytical proofs. There is no numerical
 optimization or large simulation. No hosted CI run is claimed.
 

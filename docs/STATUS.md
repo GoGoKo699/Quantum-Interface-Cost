@@ -1,7 +1,7 @@
 # Status and claim ledger
 
-Updated: 2026-09-22. Stage: sharp flat-seed theorem and further entropy exclusions.
-Latest research base: `87b6432cdd1f29bc4981f24bd6732bb933741193`, the merge of PR #5.
+Updated: 2026-09-22. Stage: support and spectral-tail converses for nonuniform seeds.
+Latest research base: `6ddc97a549316ed9edb7a14a110ceee70b87bdf9`, the merge of PR #6.
 
 ## Evidence labels
 
@@ -37,6 +37,12 @@ is asserted.
 | Entropy-bound closure under local classical flags and tensor products | Derived and independently checked; all two-input states classical on either qubit | CLASSICAL_FLAG_ENTROPY_BOUND.md |
 | Entropy bound for locally maximally mixed two-qubit states | Derived and independently checked; arbitrary local rotations, stronger entropy-deficit coefficient | LOCALLY_MIXED_TWO_QUBIT_BOUND.md |
 | Entropy bound for full-rank states of condition number <=6.235819648070267 | Derived and independently checked; all n and eigenvectors, sufficient threshold only | SPECTRAL_CONDITION_ENTROPY_BOUND.md |
+| g(rho)<=sqrt(2)n+(2-sqrt(2))a(P), where a(P) counts sites with both X/Z compressions indefinite | Derived and independently checked for every spectrum on support P; a(P)<=q excludes finite-budget advantage | SUPPORT_INERTIA_CONVERSE.md |
+| No improvement on supports within one-sided distance sin(pi/8) of a subset support | Derived and independently checked; all spectra; unique equality seed within the criterion | SUPPORT_INERTIA_CONVERSE.md |
+| Entropy-valid open neighborhood of the entire rank-at-most-two set at fixed n | Derived and independently checked; uniform neighborhood size existential, with separate explicit local criteria | LOW_RANK_ENTROPY_STABILITY.md |
+| Exact subset-core orthogonal-tail score gain <=2sqrt(2) epsilon | Derived and independently checked; first-order sharp coefficient, conservative explicit entropy cutoffs | LOW_RANK_ENTROPY_STABILITY.md |
+| Exact nonuniform optima on two small fixed supports | Derived and independently checked; refutes uniformization on fixed support, including rank four, without beating subset | NONUNIFORM_SUPPORT_OPTIMA.md |
+| Global SLD sum >=n-S(rho) | Unresolved; two sufficient local steps explicitly refuted; inspected prior metric/influence results do not supply it | SLD_ENTROPY_ROUTE_AUDIT.md |
 | Two-qubit local conditional-entropy proposal | Incorrect; explicit rank-two classical-quantum counterexample, without violating the global conjecture | CLASSICAL_FLAG_ENTROPY_BOUND.md Section 5 |
 | R(eta) equals the regularized minimum seed entropy at contrast eta | Derived and independently checked; worst-case dimension and uniform error preserved; no closed-form evaluation | ENTROPY_RATE_CHARACTERIZATION.md |
 | General sharp intermediate rate evaluation or collective advantage | Unresolved | Note Section 8 |
@@ -109,6 +115,40 @@ on admissible physical encoders. The spectral condition supplies no new
 unrestricted rate lower bound. All four proofs have been independently
 reconstructed within the workspace; publication novelty remains unresolved.
 
+## Nonuniform support and spectral-tail deductions
+
+The support-inertia converse is independent of a seed's nonzero eigenvalues.
+If both compressed queries are indefinite at only a(P) sites, its score is
+at most `sqrt(2)n+(2-sqrt(2))a(P)`. Within a(P)<=q, equality at the
+q-qubit subset score forces the usual flat subset seed. A geometric
+corollary excludes every spectrum on a support P with
+`||(I-P0)P||_infty<=sin(pi/8)`, where P0 is any rank-2^q subset support.
+The radius is sharp for the semidefinite-compression criterion; this does
+not assert that collective advantage begins outside that radius.
+
+An orthogonal block trace-norm estimate also controls higher-rank spectral
+tails. At each fixed n, the entropy inequality holds throughout an open
+neighborhood of every rank-at-most-two seed, and is strict there above
+rank two. Compactness gives an existential positive lower bound on a
+witness's third eigenvalue. There is no numerical uniform cutoff or
+dimension-independent neighborhood claim. For an exact subset core and an
+arbitrary orthogonal tail of weight epsilon, the excess score over the
+weighted component scores is at most `2sqrt(2)epsilon`, with a first-order
+sharp coefficient. This supplies additional explicit, conservative entropy
+cutoffs without assuming anything about the tail eigenvectors.
+
+Uniformization cannot bridge the remaining gap: on a particular rank-four
+three-input support the exact optimum is `3sqrt(3)`, attained at nonuniform
+weights and strictly above the flat state on that same support. It remains
+below `4+sqrt(2)`. A separate rank-three two-input example beats the maximum
+over all flat rank-three states. Neither example violates the entropy
+conjecture. The SLD-route audit refutes two local proof steps and checks five
+primary sources at the theorem level; its proposed global inequality remains
+unproved. These are supplied deductions and scoped source comparisons, not
+publication-novelty certification. All analytical deductions were independently
+reconstructed within this workspace. Sixteen deterministic matrix diagnostics
+also pass, with an exact independent rerun.
+
 ## Research division and next target
 
 Issue #1 records the proof-and-novelty audit. Issue #2 coordinates the
@@ -122,7 +162,9 @@ The smallest unresolved block is now `n=3,q=2`: prove
 `Gamma(3,4)<=4+sqrt(2)` or construct a violating seed. Every allowed flat
 seed is now excluded from improving this finite-budget score. A witness
 must have rank three or four with nonuniform nonzero eigenvalues, outside
-the product-diagonal family. A separate Ky Fan refinement also proves the
+the product-diagonal family. Every one of its six query compressions must
+be indefinite, and its support must lie outside the stated neighborhood
+of every subset support. A separate Ky Fan refinement also proves the
 sharper entropy inequality for every flat rank-three three-input state. The one-qubit
 CHSH argument cannot be extended by treating a four-dimensional memory as
 one qubit: two Bell pairs explicitly violate its key pair bound.
@@ -134,7 +176,9 @@ The smallest possible entropy witness is a two-input state of rank three
 with nonuniform nonzero eigenvalues; general full-rank two-input states also
 remain open. Such a witness must be nonclassical on both sites, must not
 have both marginals maximally mixed, and, if full rank, must have condition
-number greater than 6.235819648070267. This is distinct from the n=3,q=2 finite-budget diagnostic:
+number greater than 6.235819648070267. It must additionally stay outside
+the proved open neighborhood of the rank-at-most-two set at that fixed n.
+This is distinct from the n=3,q=2 finite-budget diagnostic:
 regularization can turn entropy below log(rank) into an asymptotic memory
 saving. No entropy witness or collective advantage has been found.
 
