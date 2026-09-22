@@ -31,6 +31,7 @@ python tools/check_seed_twirl.py --output results/seed-rerun.json
 python tools/check_one_qubit_tradeoff.py --output results/one-qubit-rerun.json
 python tools/check_product_diagonal_bound.py --output results/product-diagonal-rerun.json
 python tools/check_entropy_bounds.py --output results/entropy-bounds-rerun.json
+python tools/check_entropy_structure.py --output results/entropy-structure-rerun.json
 ```
 
 The bootstrap environment was Python 3.13.5 and NumPy 2.3.5. The audit
@@ -109,14 +110,40 @@ The complete analytical proofs were independently checked within the
 workspace. Finite examples do not prove the universal statements, settle
 the unrestricted subset conjecture, or certify publication novelty.
 
-## Provenance
+## Further structure diagnostics
+
+The continuation based on main
+`87b6432cdd1f29bc4981f24bd6732bb933741193` adds
+`tools/check_entropy_structure.py` and `results/entropy_structure.json`.
+Its 20 deterministic cases have matrix dimension at most 16 and use no
+optimizer. They check flat half-rank projectors through four qubits,
+the four-sign identity and equality examples, the non-half-rank compression
+normalization and rank-seven refinement, classical flags with noncommuting
+conditional states, the exact local conditional-entropy counterexample,
+rotated Bell spectra and their directional fidelity identity, and spectra
+on both sides of the sufficient condition-number threshold.
+
+All 20 cases pass at tolerance 1e-10 in Python 3.12.14 and NumPy 2.3.5.
+An independent rerun exactly reproduced the recorded JSON.
+Maximum identity residual: 3.552713678800501e-15. Maximum positive
+inequality residual: 4.440892098500626e-16. Random seed: 20260925.
+Eigenvalues at most 1e-14 are treated as numerical zero, with matrix
+reconstruction checked separately. The lower-flat-rank cases are labeled
+by the finite-budget estimates they test; those checks do not certify a
+general lower-rank entropy inequality. The separate Ky Fan refinement for
+flat rank-three three-input states was checked analytically; that refinement
+is not a script assertion. Independent analytical reconstruction
+within the workspace carries the theorem claims. No external peer review
+or publication novelty certification is implied.
+
+## Historical archive provenance
 
 The user-provided archive was Q1_Quantum_Interface_Dossier_v0_1.zip.
 Its SHA-256 is
 `3f3538c0307f3a1131746d84410b21752b97aa0e87d8de1722392d3b114dd8ec`.
 The following three files were imported unchanged at bootstrap commit
 `eaf085a8cb299e6b297b11d2dc3c85e24f02779e`. These are historical hashes; the
-research note has subsequently been revised to version 0.3:
+research note has subsequently been revised to version 0.4:
 
 | File | SHA-256 |
 |---|---|

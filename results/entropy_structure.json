@@ -1,0 +1,937 @@
+{
+  "status": "PASS",
+  "research_base": "87b6432cdd1f29bc4981f24bd6732bb933741193",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "random_seed": 20260925,
+  "tolerance": 1e-10,
+  "spectral_zero_threshold": 1e-14,
+  "case_count": 20,
+  "maximum_matrix_dimension": 16,
+  "max_identity_error": 3.552713678800501e-15,
+  "max_inequality_violation": 4.440892098500626e-16,
+  "cases": [
+    {
+      "label": "flat_bisector_site_zero",
+      "family": "flat_half_rank",
+      "n": 3,
+      "rank": 4,
+      "entropy": 2.0,
+      "score": 5.414213562373095,
+      "query_scores": [
+        0.7071067811865475,
+        0.7071067811865475,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "family_checks": {
+        "singleton_lengths": [
+          0.9999999999999999,
+          0.0,
+          0.0
+        ],
+        "singleton_squared_mass": 0.9999999999999998,
+        "expected_absolute_singleton_sum": 0.9999999999999999,
+        "singleton_trace_norm_over_dimension": 1.0,
+        "query_anticommuting_weights": [
+          0.4999999999999999,
+          0.4999999999999999,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "site_deficits": [
+          0.9999999999999998,
+          0.0,
+          0.0
+        ],
+        "region": "T > 3/4",
+        "region_score_bound": 5.414213562373095,
+        "singleton_closed_expression": 0.9999999999999999,
+        "global_flat_score_bound": 5.414213562373095,
+        "expected_exact_attainer": true
+      },
+      "max_identity_error": 2.220446049250313e-16,
+      "max_inequality_violation": 4.440892098500626e-16
+    },
+    {
+      "label": "flat_negative_bisector_site_two",
+      "family": "flat_half_rank",
+      "n": 3,
+      "rank": 4,
+      "entropy": 2.0,
+      "score": 5.414213562373094,
+      "query_scores": [
+        0.9999999999999998,
+        1.0,
+        0.9999999999999998,
+        1.0,
+        0.7071067811865475,
+        0.7071067811865475
+      ],
+      "family_checks": {
+        "singleton_lengths": [
+          0.0,
+          0.0,
+          0.9999999999999999
+        ],
+        "singleton_squared_mass": 0.9999999999999998,
+        "expected_absolute_singleton_sum": 0.9999999999999999,
+        "singleton_trace_norm_over_dimension": 1.0,
+        "query_anticommuting_weights": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.4999999999999999,
+          0.4999999999999999
+        ],
+        "site_deficits": [
+          0.0,
+          0.0,
+          0.9999999999999998
+        ],
+        "region": "T > 3/4",
+        "region_score_bound": 5.414213562373095,
+        "singleton_closed_expression": 0.9999999999999999,
+        "global_flat_score_bound": 5.414213562373095,
+        "expected_exact_attainer": true
+      },
+      "max_identity_error": 8.881784197001252e-16,
+      "max_inequality_violation": 4.440892098500626e-16
+    },
+    {
+      "label": "flat_near_attainer",
+      "family": "flat_half_rank",
+      "n": 3,
+      "rank": 4,
+      "entropy": 2.0,
+      "score": 5.413248085710001,
+      "query_scores": [
+        0.7065411711822991,
+        0.7071067811865477,
+        0.9999999999999998,
+        0.9996001333411548,
+        0.9999999999999997,
+        1.0000000000000004
+      ],
+      "family_checks": {
+        "singleton_lengths": [
+          0.9996001333411545,
+          2.5593805527787748e-17,
+          0.0
+        ],
+        "singleton_squared_mass": 0.9992004265756539,
+        "expected_absolute_singleton_sum": 0.9996001333411545,
+        "singleton_trace_norm_over_dimension": 0.9996001333411543,
+        "query_anticommuting_weights": [
+          0.5007995734243446,
+          0.49999999999999956,
+          2.0148328205292415e-67,
+          0.0007995734243451531,
+          0.0,
+          0.0
+        ],
+        "site_deficits": [
+          1.0007995734243442,
+          0.0007995734243451531,
+          0.0
+        ],
+        "region": "T > 3/4",
+        "region_score_bound": 5.414144206300428,
+        "singleton_closed_expression": 0.9996001333411545,
+        "global_flat_score_bound": 5.414213562373095,
+        "expected_exact_attainer": false
+      },
+      "max_identity_error": 1.3322676295501878e-15,
+      "max_inequality_violation": 4.440892098500626e-16
+    },
+    {
+      "label": "flat_controlled_rotation",
+      "family": "flat_half_rank",
+      "n": 3,
+      "rank": 4,
+      "entropy": 2.0,
+      "score": 4.662785551626373,
+      "query_scores": [
+        0.21624520971579336,
+        0.707106781186547,
+        0.9999999999999992,
+        0.7394335607240359,
+        0.9999999999999991,
+        0.9999999999999992
+      ],
+      "family_checks": {
+        "singleton_lengths": [
+          0.7394335607240363,
+          2.5131255877267287e-17,
+          0.0
+        ],
+        "singleton_squared_mass": 0.5467619907250271,
+        "expected_absolute_singleton_sum": 0.7394335607240363,
+        "singleton_trace_norm_over_dimension": 0.7394335607240363,
+        "query_anticommuting_weights": [
+          0.9532380092749717,
+          0.49999999999999956,
+          1.0199892368433264e-67,
+          0.4532380092749721,
+          0.0,
+          0.0
+        ],
+        "site_deficits": [
+          1.4532380092749713,
+          0.4532380092749721,
+          0.0
+        ],
+        "region": "T <= 3/4",
+        "region_score_bound": 5.223080694795952,
+        "singleton_closed_expression": 0.7394335607240363,
+        "global_flat_score_bound": 5.414213562373095,
+        "expected_exact_attainer": false
+      },
+      "max_identity_error": 8.881784197001252e-16,
+      "max_inequality_violation": 0.0
+    },
+    {
+      "label": "flat_majority_singleton_threshold",
+      "family": "flat_half_rank",
+      "n": 3,
+      "rank": 4,
+      "entropy": 1.9999999999999998,
+      "score": 4.499999999999998,
+      "query_scores": [
+        0.9999999999999996,
+        0.4999999999999999,
+        0.9999999999999996,
+        0.5,
+        0.9999999999999994,
+        0.5000000000000001
+      ],
+      "family_checks": {
+        "singleton_lengths": [
+          0.5,
+          0.49999999999999983,
+          0.5
+        ],
+        "singleton_squared_mass": 0.7499999999999998,
+        "expected_absolute_singleton_sum": 0.7499999999999999,
+        "singleton_trace_norm_over_dimension": 0.75,
+        "query_anticommuting_weights": [
+          7.624676055056797e-32,
+          0.4999999999999999,
+          2.8048359253708257e-32,
+          0.4999999999999997,
+          7.082265191416675e-32,
+          0.4999999999999999
+        ],
+        "site_deficits": [
+          0.4999999999999999,
+          0.4999999999999997,
+          0.4999999999999999
+        ],
+        "region": "T <= 3/4",
+        "region_score_bound": 5.338539126015656,
+        "singleton_closed_expression": 0.7499999999999999,
+        "global_flat_score_bound": 5.414213562373095,
+        "expected_exact_attainer": false
+      },
+      "max_identity_error": 7.324138308960948e-16,
+      "max_inequality_violation": 0.0
+    },
+    {
+      "label": "flat_complex_reflection_0",
+      "family": "flat_half_rank",
+      "n": 3,
+      "rank": 4,
+      "entropy": 1.9999999999999998,
+      "score": 3.8713405641157266,
+      "query_scores": [
+        0.7077906721799263,
+        0.6520929096158502,
+        0.6730125014349755,
+        0.5640678001403588,
+        0.6857438904045661,
+        0.5886327903400494
+      ],
+      "family_checks": {
+        "singleton_lengths": [
+          0.12291850363270805,
+          0.291593760860529,
+          0.1650759845040589
+        ],
+        "singleton_squared_mass": 0.12738596056807575,
+        "expected_absolute_singleton_sum": 0.291593760860529,
+        "singleton_trace_norm_over_dimension": 0.291593760860529,
+        "query_anticommuting_weights": [
+          0.4092114725049296,
+          0.45991689551588943,
+          0.40580973623990635,
+          0.555879653870311,
+          0.4456024457605064,
+          0.5462350722709536
+        ],
+        "site_deficits": [
+          0.869128368020819,
+          0.9616893901102174,
+          0.99183751803146
+        ],
+        "region": "T <= 3/4",
+        "region_score_bound": 4.976375765897151,
+        "singleton_closed_expression": 0.291593760860529,
+        "global_flat_score_bound": 5.414213562373095,
+        "expected_exact_attainer": false
+      },
+      "max_identity_error": 8.881784197001252e-16,
+      "max_inequality_violation": 0.0
+    },
+    {
+      "label": "flat_complex_reflection_1",
+      "family": "flat_half_rank",
+      "n": 3,
+      "rank": 4,
+      "entropy": 2.0,
+      "score": 3.5171042332893037,
+      "query_scores": [
+        0.5779111516598169,
+        0.4982705516820647,
+        0.5658616956814396,
+        0.6135767601781421,
+        0.5277601539950454,
+        0.7337239200927951
+      ],
+      "family_checks": {
+        "singleton_lengths": [
+          0.09305921809031008,
+          0.16930010942665527,
+          0.03319788327675084
+        ],
+        "singleton_squared_mass": 0.03842464457751412,
+        "expected_absolute_singleton_sum": 0.16930010942665527,
+        "singleton_trace_norm_over_dimension": 0.16930010942665524,
+        "query_anticommuting_weights": [
+          0.5285627914768325,
+          0.6125591849463146,
+          0.6115987372566144,
+          0.48527096205194764,
+          0.6193888758913974,
+          0.40813388574261794
+        ],
+        "site_deficits": [
+          1.141121976423147,
+          1.096869699308562,
+          1.0275227616340152
+        ],
+        "region": "T <= 3/4",
+        "region_score_bound": 4.922453439847358,
+        "singleton_closed_expression": 0.16930010942665527,
+        "global_flat_score_bound": 5.414213562373095,
+        "expected_exact_attainer": false
+      },
+      "max_identity_error": 4.440892098500626e-16,
+      "max_inequality_violation": 0.0
+    },
+    {
+      "label": "flat_three_qubit_rank_three",
+      "family": "flat_general_rank",
+      "n": 3,
+      "rank": 3,
+      "entropy": 1.584962500721156,
+      "score": 3.2066323133578294,
+      "query_scores": [
+        0.6194794461116329,
+        0.44064921180814887,
+        0.39684241005017473,
+        0.6304425869605519,
+        0.4821615210855114,
+        0.6370571373418098
+      ],
+      "family_checks": {
+        "query_anticommuting_weights": [
+          0.41177638534566674,
+          0.5002194628307368,
+          0.6288006076103424,
+          0.4370441469005421,
+          0.5277958864163256,
+          0.3628516643224984
+        ],
+        "normalized_compression_squares": [
+          0.4509648195391109,
+          0.33304071622568415,
+          0.1615991898528767,
+          0.4172744707992771,
+          0.2962721514448992,
+          0.5161977809033353
+        ],
+        "general_flat_rank_score_bound": 5.338539126015656,
+        "finite_memory_subset_score": 5.414213562373095,
+        "scope": "Finite-budget score bound only; no entropy-line claim for this family."
+      },
+      "max_identity_error": 2.7756795316273483e-16,
+      "max_inequality_violation": 0.0
+    },
+    {
+      "label": "flat_four_qubit_bisector_attainer",
+      "family": "flat_half_rank",
+      "n": 4,
+      "rank": 8,
+      "entropy": 3.0,
+      "score": 7.414213562373095,
+      "query_scores": [
+        0.9999999999999999,
+        1.0,
+        0.7071067811865477,
+        0.7071067811865477,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "family_checks": {
+        "singleton_lengths": [
+          0.0,
+          0.9999999999999999,
+          0.0,
+          0.0
+        ],
+        "singleton_squared_mass": 0.9999999999999998,
+        "expected_absolute_singleton_sum": 0.9999999999999999,
+        "singleton_trace_norm_over_dimension": 1.0,
+        "query_anticommuting_weights": [
+          0.0,
+          0.0,
+          0.4999999999999999,
+          0.4999999999999999,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "site_deficits": [
+          0.0,
+          0.9999999999999998,
+          0.0,
+          0.0
+        ],
+        "region": "T > 3/4",
+        "region_score_bound": 7.414213562373096,
+        "singleton_closed_expression": 0.9999999999999999,
+        "global_flat_score_bound": 7.414213562373095,
+        "expected_exact_attainer": true
+      },
+      "max_identity_error": 2.220446049250313e-16,
+      "max_inequality_violation": 4.440892098500626e-16
+    },
+    {
+      "label": "flat_four_qubit_complex_reflection",
+      "family": "flat_half_rank",
+      "n": 4,
+      "rank": 8,
+      "entropy": 3.0,
+      "score": 5.04080925909651,
+      "query_scores": [
+        0.6240828361356509,
+        0.642520018924396,
+        0.5270005895677731,
+        0.632243743633568,
+        0.6614940703809884,
+        0.6006621119637896,
+        0.6732320896042177,
+        0.6795737988861261
+      ],
+      "family_checks": {
+        "singleton_lengths": [
+          0.12214553521880075,
+          0.04732804120686392,
+          0.15516168319677762,
+          0.039281482728175
+        ],
+        "singleton_squared_mass": 0.042777658076147,
+        "expected_absolute_singleton_sum": 0.16856002718604313,
+        "singleton_trace_norm_over_dimension": 0.1685600271860431,
+        "query_anticommuting_weights": [
+          0.5184128878544765,
+          0.510748434849827,
+          0.6209959987471856,
+          0.49355522892937587,
+          0.46636398765102416,
+          0.5338356664162094,
+          0.4802897120988843,
+          0.4674301243390867
+        ],
+        "site_deficits": [
+          1.0291613227043035,
+          1.1145512276765615,
+          1.0001996540672335,
+          0.9477198364379711
+        ],
+        "region": "T <= 3/4",
+        "region_score_bound": 6.952857057685652,
+        "singleton_closed_expression": 0.16856002718604315,
+        "global_flat_score_bound": 7.414213562373095,
+        "expected_exact_attainer": false
+      },
+      "max_identity_error": 1.1102230246251565e-15,
+      "max_inequality_violation": 0.0
+    },
+    {
+      "label": "flat_four_qubit_rank_seven",
+      "family": "flat_general_rank",
+      "n": 4,
+      "rank": 7,
+      "entropy": 2.807354922057604,
+      "score": 4.758094490441161,
+      "query_scores": [
+        0.5618671610159552,
+        0.5534898479365141,
+        0.48748313728947845,
+        0.5625782510740678,
+        0.6543302014417599,
+        0.6058801410115007,
+        0.6692295333910456,
+        0.6632362172808397
+      ],
+      "family_checks": {
+        "query_anticommuting_weights": [
+          0.5364526366606365,
+          0.5344681675194967,
+          0.6045033653674762,
+          0.5309582182455633,
+          0.42909985789173455,
+          0.472799402447362,
+          0.4341233701348035,
+          0.4280590154977355
+        ],
+        "normalized_compression_squares": [
+          0.3869112723878442,
+          0.3891792371205754,
+          0.3091390110085987,
+          0.3931906077193563,
+          0.5096001624094464,
+          0.4596578257744435,
+          0.5038590055602248,
+          0.5107896965740166
+        ],
+        "general_flat_rank_score_bound": 7.416198487095663,
+        "finite_memory_subset_score": 7.414213562373095,
+        "scope": "Finite-budget score bound only; no entropy-line claim for this family.",
+        "singleton_lengths": [
+          0.15113032660478518,
+          0.02929010240480987,
+          0.11349809998688574,
+          0.09425149432307309
+        ],
+        "singleton_squared_mass": 0.04546344860131868,
+        "singleton_bias_cap": 0.875,
+        "nonidentity_squared_mass": 0.984375,
+        "expected_absolute_singleton_sum": 0.179439960457372,
+        "refined_anticommuting_weight_lower_bound": 1.09375,
+        "refined_flat_rank_score_bound": 7.3484692283495345
+      },
+      "max_identity_error": 2.220446049250313e-16,
+      "max_inequality_violation": 0.0
+    },
+    {
+      "label": "flag_noncommuting_rank_three",
+      "family": "classical_flag",
+      "n": 2,
+      "rank": 3,
+      "entropy": 1.4159207869178374,
+      "score": 3.1255001418400035,
+      "query_scores": [
+        0.7691626519393671,
+        0.8812048039347018,
+        0.5914423048785058,
+        0.8836903810874289
+      ],
+      "family_checks": {
+        "n": 2,
+        "entropy": 1.4159207869178374,
+        "score": 3.1255001418400035,
+        "flag_probability": 0.38,
+        "flag_score": 1.6503674558740689,
+        "marginal_flag_score": 1.958070180630281,
+        "flag_spectral_envelope": 1.970989599160787,
+        "conditional_states_commutator_norm": 0.291547594742265,
+        "conditional_entropy": 0.4578787646915378,
+        "children": [
+          {
+            "n": 1,
+            "entropy": -0.0,
+            "score": 1.0
+          },
+          {
+            "n": 1,
+            "entropy": 0.7385141365992546,
+            "score": 1.7663430418805417
+          }
+        ]
+      },
+      "max_identity_error": 6.661338147750939e-16,
+      "max_inequality_violation": 0.0
+    },
+    {
+      "label": "flag_noncommuting_full_rank",
+      "family": "classical_flag",
+      "n": 2,
+      "rank": 4,
+      "entropy": 1.6248226476558005,
+      "score": 3.606620144306031,
+      "query_scores": [
+        0.9145497403017083,
+        0.957569483529797,
+        0.8076634226937228,
+        0.9268374977808029
+      ],
+      "family_checks": {
+        "n": 2,
+        "entropy": 1.6248226476558005,
+        "score": 3.606620144306031,
+        "flag_probability": 0.61,
+        "flag_score": 1.8721192238315054,
+        "marginal_flag_score": 1.9756357675694525,
+        "flag_spectral_envelope": 1.9756517911818368,
+        "conditional_states_commutator_norm": 0.20408331631958548,
+        "conditional_entropy": 0.6600230991507137,
+        "children": [
+          {
+            "n": 1,
+            "entropy": 0.6098403047164005,
+            "score": 1.714142842854285
+          },
+          {
+            "n": 1,
+            "entropy": 0.7385141365992546,
+            "score": 1.7663430418805417
+          }
+        ]
+      },
+      "max_identity_error": 4.440892098500626e-16,
+      "max_inequality_violation": 0.0
+    },
+    {
+      "label": "flag_recursive_conditional_bases",
+      "family": "classical_flag",
+      "n": 3,
+      "rank": 8,
+      "entropy": 2.713585807858794,
+      "score": 5.531176429360653,
+      "query_scores": [
+        0.9095356742471896,
+        0.9469861708622853,
+        0.8980395928072664,
+        0.9436823793287281,
+        0.9180569708506703,
+        0.9148756412645132
+      ],
+      "family_checks": {
+        "n": 3,
+        "entropy": 2.713585807858794,
+        "score": 5.531176429360653,
+        "flag_probability": 0.44,
+        "flag_score": 1.856521845109475,
+        "marginal_flag_score": 1.9896053556016846,
+        "flag_spectral_envelope": 1.9927869931329842,
+        "conditional_states_commutator_norm": 0.03572879205559614,
+        "conditional_entropy": 1.7239982866367387,
+        "children": [
+          {
+            "n": 2,
+            "entropy": 1.7346762595653207,
+            "score": 3.756233689840636,
+            "flag_probability": 0.32,
+            "flag_score": 1.8770033953266405,
+            "marginal_flag_score": 1.9339923161739008,
+            "flag_spectral_envelope": 1.9341147845978532,
+            "conditional_states_commutator_norm": 0.12,
+            "conditional_entropy": 0.8302948018408269,
+            "children": [
+              {
+                "n": 1,
+                "entropy": 0.7219280948873623,
+                "score": 1.799999999999999
+              },
+              {
+                "n": 1,
+                "entropy": 0.8812908992306927,
+                "score": 1.9165151389911679
+              }
+            ]
+          },
+          {
+            "n": 2,
+            "entropy": 1.715608450764281,
+            "score": 3.610556715573743,
+            "flag_probability": 0.71,
+            "flag_score": 1.8140008539147703,
+            "marginal_flag_score": 1.8684188315764512,
+            "flag_spectral_envelope": 1.9097643833729856,
+            "conditional_states_commutator_norm": 0.05303300858899107,
+            "conditional_entropy": 0.8468872044248767,
+            "children": [
+              {
+                "n": 1,
+                "entropy": 0.8112781244591328,
+                "score": 1.7320508075688765
+              },
+              {
+                "n": 1,
+                "entropy": 0.934068055375491,
+                "score": 1.9544820285692066
+              }
+            ]
+          }
+        ]
+      },
+      "max_identity_error": 1.1102230246251565e-15,
+      "max_inequality_violation": 0.0
+    },
+    {
+      "label": "flag_entropy_line_attainer",
+      "family": "classical_flag",
+      "n": 2,
+      "rank": 2,
+      "entropy": 1.0,
+      "score": 3.414213562373093,
+      "query_scores": [
+        0.9999999999999996,
+        0.9999999999999993,
+        0.7071067811865472,
+        0.707106781186547
+      ],
+      "family_checks": {
+        "n": 2,
+        "entropy": 1.0,
+        "score": 3.414213562373093,
+        "flag_probability": 0.5,
+        "flag_score": 1.999999999999999,
+        "marginal_flag_score": 2.0000000000000004,
+        "flag_spectral_envelope": 2.0,
+        "conditional_states_commutator_norm": 0.0,
+        "conditional_entropy": 0.0,
+        "children": [
+          {
+            "n": 1,
+            "entropy": -0.0,
+            "score": 1.414213562373095
+          },
+          {
+            "n": 1,
+            "entropy": -0.0,
+            "score": 1.414213562373095
+          }
+        ]
+      },
+      "max_identity_error": 1.9984014443252818e-15,
+      "max_inequality_violation": 4.440892098500626e-16
+    },
+    {
+      "label": "failed_local_conditional_bound",
+      "family": "conditional_counterexample",
+      "n": 2,
+      "rank": 2,
+      "entropy": 0.9999999999999998,
+      "score": 3.2,
+      "query_scores": [
+        0.8000000000000002,
+        1.0,
+        0.6,
+        0.8000000000000003
+      ],
+      "family_checks": {
+        "conditional_entropy": 0.531004406410719,
+        "local_witness": 1.8000000000000003,
+        "false_local_upper_bound": 1.7252687419686195,
+        "strict_local_violation": 0.07473125803138081,
+        "global_entropy_bound": 3.414213562373095
+      },
+      "max_identity_error": 4.440892098500626e-16,
+      "max_inequality_violation": 0.0
+    },
+    {
+      "label": "spectral_condition_below_threshold",
+      "family": "spectral_condition",
+      "n": 2,
+      "rank": 4,
+      "entropy": 1.687555437512122,
+      "score": 3.6263893303763677,
+      "query_scores": [
+        0.9076408725984532,
+        0.908968969141986,
+        0.9088755234007646,
+        0.9009039652351639
+      ],
+      "family_checks": {
+        "condition_number": 6.235813412250615,
+        "threshold": 6.235819648070267,
+        "below_threshold": true,
+        "spectral_coefficient": 1.6902226268903529,
+        "entropy_deficit_coefficient": 0.5857865241738363,
+        "symmetric_information": [
+          0.17317117193303017,
+          0.17086806909069752,
+          0.1730455334453378,
+          0.1839834037451273
+        ],
+        "affinities": [
+          0.9063552143286933,
+          0.9047230342586381,
+          0.9074218485937076,
+          0.8947852907450924
+        ],
+        "depolarizing_energy": 0.16680941663150162,
+        "spectral_entropy_score_bound": 3.816974185743211
+      },
+      "max_identity_error": 3.552713678800501e-15,
+      "max_inequality_violation": 0.0
+    },
+    {
+      "label": "spectral_condition_above_threshold",
+      "family": "spectral_condition",
+      "n": 2,
+      "rank": 4,
+      "entropy": 1.6875546334747744,
+      "score": 3.6263884351586504,
+      "query_scores": [
+        0.9076405821857261,
+        0.9089688089956536,
+        0.9088752368721177,
+        0.9009038071051529
+      ],
+      "family_checks": {
+        "condition_number": 6.235825883889917,
+        "threshold": 6.235819648070267,
+        "below_threshold": false,
+        "spectral_coefficient": 1.690222127447296,
+        "entropy_deficit_coefficient": 0.5857863510800628,
+        "symmetric_information": [
+          0.1731716857844578,
+          0.17086835366806696,
+          0.17304604691326725,
+          0.1839836789279067
+        ],
+        "affinities": [
+          0.9063549203082963,
+          0.9047228535375891,
+          0.907421559036715,
+          0.8947851040287298
+        ],
+        "depolarizing_energy": 0.1668098206417773,
+        "spectral_entropy_score_bound": 3.8169737688313155
+      },
+      "max_identity_error": 2.6645352591003757e-15,
+      "max_inequality_violation": 0.0
+    },
+    {
+      "label": "locally_mixed_rotated_bell_rank_three",
+      "family": "locally_mixed",
+      "n": 2,
+      "rank": 3,
+      "entropy": 1.4645319088897142,
+      "score": 2.6465541104693364,
+      "query_scores": [
+        0.5710171249625924,
+        0.6703660368262927,
+        0.666284394899364,
+        0.7388865537810875
+      ],
+      "family_checks": {
+        "bell_spectrum": [
+          0.51,
+          0.31,
+          0.18,
+          0.0
+        ],
+        "axial_fidelities": [
+          0.6059702963017246,
+          0.4724404724407086,
+          0.7952358140828412
+        ],
+        "rotated_query_directions": [
+          [
+            0.8129734391692486,
+            0.5659400726245765,
+            -0.13706210783076708
+          ],
+          [
+            0.49089614183489116,
+            -0.5394997411646274,
+            0.6840767553534605
+          ],
+          [
+            0.8113638821228587,
+            -0.1841796114719224,
+            -0.5547670876183771
+          ],
+          [
+            0.5287483127387714,
+            -0.17339847723472904,
+            0.8308779632825629
+          ]
+        ],
+        "rotated_score_bound": 2.8278613827413803,
+        "entropy_deficit_coefficient": 0.8120724353026867,
+        "locally_mixed_entropy_bound": 3.5651611232251894
+      },
+      "max_identity_error": 1.3322676295501878e-15,
+      "max_inequality_violation": 0.0
+    },
+    {
+      "label": "locally_mixed_rotated_bell_full_rank",
+      "family": "locally_mixed",
+      "n": 2,
+      "rank": 4,
+      "entropy": 1.776796378670004,
+      "score": 3.6195612856743753,
+      "query_scores": [
+        0.8679544314914254,
+        0.9100297395539954,
+        0.9038172405225022,
+        0.9377598741064525
+      ],
+      "family_checks": {
+        "bell_spectrum": [
+          0.46,
+          0.28,
+          0.17,
+          0.09
+        ],
+        "axial_fidelities": [
+          0.8767754154921334,
+          0.8432882835729445,
+          0.9651606753341138
+        ],
+        "rotated_query_directions": [
+          [
+            0.8129734391692486,
+            0.5659400726245765,
+            -0.13706210783076708
+          ],
+          [
+            0.49089614183489116,
+            -0.5394997411646274,
+            0.6840767553534605
+          ],
+          [
+            0.8113638821228587,
+            -0.1841796114719224,
+            -0.5547670876183771
+          ],
+          [
+            0.5287483127387714,
+            -0.17339847723472904,
+            0.8308779632825629
+          ]
+        ],
+        "rotated_score_bound": 3.688110907684644,
+        "entropy_deficit_coefficient": 0.8120724353026867,
+        "locally_mixed_entropy_bound": 3.8187424916581714
+      },
+      "max_identity_error": 3.4416913763379853e-15,
+      "max_inequality_violation": 0.0
+    }
+  ],
+  "scope": "Finite diagnostics of proved identities, family inequalities, and a false local bound. No optimizer, unrestricted optimality certificate, or novelty certification."
+}

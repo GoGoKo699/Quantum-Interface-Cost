@@ -312,6 +312,12 @@ unrestricted entropy minimum from below but does not evaluate it.
 Inequality (9) for unrestricted states remains unresolved.
 The false local conditional-entropy argument in that
 note is an obstruction to one proposed proof, not a counterexample to (9).
+Subsequent exclusions also cover [local classical flags](CLASSICAL_FLAG_ENTROPY_BOUND.md),
+[locally maximally mixed two-input states](LOCALLY_MIXED_TWO_QUBIT_BOUND.md),
+and arbitrary full-rank states with [bounded spectral condition number](SPECTRAL_CONDITION_ENTROPY_BOUND.md).
+The [flat half-rank result](FLAT_HALF_RANK_OPTIMALITY.md) settles that
+family through four input qubits. These results narrow possible witnesses
+without evaluating the unrestricted regularized entropy minimum.
 
 ## 7. Prior ingredients and novelty boundary
 

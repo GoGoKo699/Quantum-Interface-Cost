@@ -30,6 +30,21 @@ arbitrarily correlated eigenvalues. Here are four further families:
 | Stabilizer eigenbasis | Stronger entropy-deficit bound with optimal coefficient `ln(2)` | Any fixed joint eigenbasis of a maximal commuting Pauli group; arbitrary eigenvalues |
 | Flat half-rank projector with one maximally mixed complementary marginal | Subset bound, hence (1) | `rho=P/2^(n-1)` and `Tr_i P=I` for at least one i |
 
+Subsequent results based on main `87b6432cdd1f29bc4981f24bd6732bb933741193`
+extend this ledger:
+
+| Further family | Proved scope |
+|---|---|
+| [Flat half-rank states](FLAT_HALF_RANK_OPTIMALITY.md) | Every such state for n<=4; arbitrary n if the reflection's singleton X/Z projection occupies at most four sites. Exact optimum and equality cases. |
+| [Flat rank-three states on three inputs](FLAT_HALF_RANK_OPTIMALITY.md) | A Ky Fan refinement gives g<=sqrt(53/2), strictly below the entropy line. |
+| [Local classical flags](CLASSICAL_FLAG_ENTROPY_BOUND.md) | Closure under orthogonal local flags and tensor products; all two-input states classical on either qubit, including noncommuting conditional states. |
+| [Locally maximally mixed two-input states](LOCALLY_MIXED_TWO_QUBIT_BOUND.md) | Both marginals I/2; arbitrary local rotations of Bell-diagonal states. |
+| [Bounded spectral condition](SPECTRAL_CONDITION_ENTROPY_BOUND.md) | Every full-rank state with eigenvalue ratio at most 6.235819648070267; all n and arbitrary eigenvectors. |
+
+The flat-seed note separately excludes every lower flat rank from improving
+the q=n-1 **finite-budget** score for n<=4. Those estimates do not assert
+the entropy inequality at every lower rank.
+
 The families overlap and are not assumptions about the physical encoder.
 The model remains one unknown quantum specimen, one delayed local query,
 arbitrary collective encoding, unlimited finite classical records,
@@ -563,12 +578,13 @@ witness family; **full-rank two-qubit states also remain unresolved** outside
 the proved families. This is not a claim that a witness must have rank three.
 
 The first unresolved finite integer-qubit budget is different:
-`n=3,q=2`, or `Gamma(3,4)>4+sqrt(2)`. Such a witness may be flat or
-nonflat; Section 4 applies only to the stated flat subset. A flat witness
-must have a nonmaximally mixed complementary marginal at every site and
-obey the Pauli-concentration condition. Artificially imposing either
-flatness or a stabilizer eigenbasis on the general optimization would
-change the question.
+`n=3,q=2`, or `Gamma(3,4)>4+sqrt(2)`. The subsequent
+[flat-seed theorem](FLAT_HALF_RANK_OPTIMALITY.md) now excludes the entire
+flat rank-four family and all lower flat ranks at this finite budget.
+A witness must have rank three or four with nonuniform nonzero eigenvalues.
+The marginal and Pauli-concentration conditions in Section 4 remain valid
+intermediate bounds. Artificially imposing flatness or a stabilizer
+basis on the unrestricted optimization would change the question.
 
 The deductions use the already identified Cheng–Hall theorem, elementary
 matrix algebra, and classical entropy identities. The unrestricted entropy
