@@ -8,10 +8,12 @@ module must release the input. How many qubits must cross that interface if
 classical records are free?
 
 **Status (22 September 2026): research in progress, not a manuscript or a
-novelty-certified result.** The repository contains explicit constructions,
-supplied baseline proofs, a new working variational reduction, and small
-reproducibility checks. Independent proof review and theorem-level novelty
-comparison are pending. The general model is established measurement
+novelty-certified result.** The baseline proofs and seed reduction have passed
+an independent workspace audit, including primary-source comparisons. Further
+analytical work proves the exact optimum with one retained qubit for every
+input block size, an entropy bound for product-diagonal seeds, and a regularized
+entropy characterization of the asymptotic rate. Evaluating that rate remains
+unresolved. The model is established measurement
 simulability, not a new framework: see [the literature comparison](docs/LITERATURE_COMPARISON.md).
 
 ## Start here
@@ -21,6 +23,10 @@ simulability, not a new framework: see [the literature comparison](docs/LITERATU
 | Exact assumptions and baseline proofs | [RESEARCH_NOTE.md](RESEARCH_NOTE.md), Sections 2–7 |
 | What is established, derived, or still a target | [STATUS](docs/STATUS.md) |
 | Unrestricted collective-encoding problem | [Seed reduction](docs/COLLECTIVE_ENCODING_REDUCTION.md) |
+| Exact optimum with one retained qubit | [One-qubit theorem and equality cases](docs/ONE_QUBIT_OPTIMALITY.md) |
+| A structured family that cannot beat the subset strategy | [Product-diagonal entropy bound](docs/COMMUTING_SEED_BOUND.md) |
+| Exact regularized formulation of the asymptotic rate | [Entropy-rate characterization](docs/ENTROPY_RATE_CHARACTERIZATION.md) |
+| Commit-pinned independent proof and source review | [Audit report](docs/audits/PROOF_AND_NOVELTY_AUDIT.md) |
 | Closest precedents and unresolved translations | [Literature comparison](docs/LITERATURE_COMPARISON.md) |
 | Run the small checks and understand their limits | [Reproducibility](docs/REPRODUCIBILITY.md) |
 | Instructions for the independent workspace | [Review brief](docs/WORKSPACE_REVIEW_BRIEF.md) |
@@ -42,7 +48,7 @@ Equivalently, the worst-case binary total-variation error is (1-eta)/2.
 There are no extra specimens, free entanglement links, source reaccess,
 postselected successes, or uncharged quantum systems crossing the interface.
 
-## Baseline bounds, not a sharp-rate claim
+## Bounds and a sharp finite-memory result
 
 Write eta_0 = 1/sqrt(2). The supplied proofs give a classical cutoff at eta_0,
 exact memory n at eta=1, and positive linear memory for each fixed eta>eta_0.
@@ -54,13 +60,27 @@ $$
 $$
 
 The lower bounds and their assumptions are in the research note. **The subset
-strategy is not known here to be optimal.** Passing tests does not settle that.
+strategy is optimal for q=1, for every n.** The analytical proof applies
+Cheng–Hall's established three-qubit CHSH monogamy theorem, including its
+independent-setting and mixed-state scope. It also characterizes all maximizing
+normalized seeds. The q=0 and q=n endpoints are established separately.
+
+For general `2<=q<n`, optimality remains unresolved. A separate entropy
+argument excludes every seed whose Gram matrix is diagonal in a fixed tensor
+product of local bases, allowing correlated spectra and arbitrary local axes.
+It does not assume that unrestricted optimizers have that form.
+
+The asymptotic rate also equals a regularized minimum of the seed's entropy
+at the requested contrast. The proof constructs a fixed-dimensional,
+trace-preserving interface; it does not change worst-case memory to average
+memory. This characterization turns any violation of the unrestricted entropy
+bound into a collective rate advantage, but does not yet evaluate the optimum.
 
 The main research target is a sharp finite-accuracy rate, or a proven
 collective-coding advantage with meaningful converse bounds. The smallest
-first diagnostic is n=2, q=1: can an unrestricted encoder exceed
-(1+1/sqrt(2))/2? This question is a research target, not a certified gap in the
-literature.
+remaining diagnostic is n=3, q=2: can an unrestricted seed exceed the subset
+score `4+sqrt(2)` in the optimization `Gamma(3,4)`? The earlier n=2, q=1 question is now settled. Publication
+novelty of the remaining target and of these deductions is not certified.
 
 ## Essential boundary
 
@@ -73,17 +93,21 @@ computational stage quantum.
 
 ## Reproduce locally
 
-Python 3.10 or later and NumPy are sufficient. The recorded environment is
-Python 3.13.5 with NumPy 2.3.5.
+Python 3.10 or later and NumPy are sufficient. The bootstrap used Python
+3.13.5; the audit and new checks used Python 3.12.14, both with NumPy 2.3.5.
 
 ```bash
 python -m pip install -r requirements.txt
 python checks.py --max-n 4 --output results/baseline-rerun.json
 python tools/check_seed_twirl.py --output results/seed-rerun.json
+python tools/check_one_qubit_tradeoff.py --output results/one-qubit-rerun.json
+python tools/check_product_diagonal_bound.py --output results/product-diagonal-rerun.json
 ```
 
 The first command after installation checks 14 explicit subset constructions;
-the second checks 10 seed-to-interface constructions. There is no numerical
+the second checks 10 seed-to-interface constructions. The new scripts check
+43 one-qubit identities/examples and 10 product-diagonal cases. These finite
+diagnostics supplement the analytical proofs. There is no numerical
 optimization or large simulation. No hosted CI run is claimed.
 
 ## Collaboration

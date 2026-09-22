@@ -1,8 +1,9 @@
 # Q1 — Delayed local readout through a bounded quantum interface
 
-**Version:** 0.1, 2026-09-22  
+**Version:** 0.2, 2026-09-22
+
 **Project:** Falling / Q1  
-**Status:** Explicit model, proved baseline bounds, deterministic construction checks. Main finite-accuracy rate and publication novelty remain unresolved. This is a research dossier, not a manuscript or a claim of a new framework.
+**Status:** Baseline proofs and seed reduction independently checked within the audit workspace. New analytical results give the exact one-retained-qubit optimum for every block size, an entropy bound for product-diagonal seeds, and a regularized entropy characterization of the asymptotic rate. Its general finite-accuracy evaluation and publication novelty remain unresolved. This is a research dossier, not external peer review or a claim of a new framework.
 
 ## 1. Origin, scope, and claim ledger
 
@@ -14,11 +15,14 @@ The general compression problem below is already present in the dimensional meas
 |---|---|
 | Arbitrary quantum encoding, unlimited classical side information, delayed measurement choice | Established framework [1,2]. |
 | Classical simulability equals joint measurability | Established framework [1,2]; elementary qubit construction below. |
-| Exact preservation of all local X/Z readouts requires n retained qubits | Derived below from standard uncertainty relations; not a novelty claim. |
-| Uniform-random-subset hybrid construction | Explicit elementary achievable strategy; not asserted optimal or novel. |
+| Exact preservation of all local X/Z readouts requires n retained qubits | Derived below; also subsumed by Ballester–Wehner–Winter [10], Lemma 5.1. |
+| Uniform-random-subset hybrid construction | Explicit elementary achievable strategy; optimal for q=1 by the subsequent all-n theorem, and at the endpoints. General optimality unresolved. |
+| Exact optimum and maximizing seeds with one retained qubit | Derived and independently checked from Cheng–Hall monogamy [11]; see Section 8 and the full proof. |
+| Entropy bound for product-diagonal Gram matrices | Derived and independently checked, allowing correlated spectra and arbitrary local bases; does not restrict unrestricted encoders. |
 | Entropic finite-error lower bound | Direct application of Berta et al. [4], Fano, and conditional-entropy inequalities. |
 | Positive linear memory for every fixed contrast above 1/sqrt(2) | Derivation below using a two-setting witness and faithful, monogamous squashed entanglement [5,6]. Independent novelty not established. |
-| Exact asymptotic memory rate, or a strict collective-coding improvement | Candidate research target; not solved here and not yet certified absent from the literature. |
+| Regularized entropy characterization of the asymptotic rate | Derived and independently checked; fixed-cap coding and scalar-contrast continuity are proved; no closed-form evaluation. |
+| Sharp evaluation of the asymptotic memory rate, or a strict collective-coding improvement | Candidate research target; not solved here and not yet certified absent from the literature. |
 | Exponential sampling advantage or speedup for classical-data learning | Not established; the many-copy control in Section 9 is deliberately easy classically. |
 
 ## 2. Precise operational model
@@ -128,7 +132,7 @@ q_{\min}(n,\eta)\le
 
 The rounded-up construction can be degraded by random output flips to the exact target eta. The classical record can contain the subset tag plus 2(n-q) signs. Its size is not charged in this model.
 
-No lower bound in this note assumes that the optimum retains individual input qubits. Arbitrary collective coding is allowed and is precisely the issue left unresolved by (6).
+No lower bound in this note assumes that the optimum retains individual input qubits. Arbitrary collective coding is allowed. The new theorem in Section 8 settles q=1; the general intermediate-memory optimization in (6) remains unresolved.
 
 ## 5. Entropic lower bound
 
@@ -189,7 +193,7 @@ Combining (9)-(10) proves (7). In particular,
 \tag{11}
 \]
 
-This proof is an application of established uncertainty and entropy results, not a new uncertainty relation. The entropic coefficient is positive only in the smaller-error part of the nonclassical region; a different argument is needed immediately above eta_0.
+The exact endpoint is also a direct corollary of the earlier postmeasurement-information result [10], Lemma 5.1: all local X/Z support projectors generate the full matrix algebra. See the [audit](docs/audits/PROOF_AND_NOVELTY_AUDIT.md), Section 6.1. This proof is an application of established uncertainty and entropy results, not a new uncertainty relation. The entropic coefficient is positive only in the smaller-error part of the nonclassical region; a different argument is needed immediately above eta_0.
 
 ## 6. A positive memory rate throughout the nonclassical region
 
@@ -260,7 +264,7 @@ E_{\rm sq}(R:CQ)_\omega
 
 Equations (13)-(16) prove (12). No assumption of product encoding or input independence was used. QED.
 
-This derivation has not received independent proof review. The cited entanglement theorems are established; the derivation in this task and its novelty status are separate matters. The coefficient is weak and is not offered as an optimal rate.
+This derivation was independently reconstructed in the [commit-pinned audit](docs/audits/PROOF_AND_NOVELTY_AUDIT.md), Section 4.2. The direction, corrected norm coefficient, monogamy and classical-flag dimension bound all check. This workspace review does not establish publication novelty. The coefficient is weak and is not offered as an optimal rate.
 
 ### Resource-threshold corollary
 
@@ -324,15 +328,43 @@ Numerical evaluation of these proved formulas, not simulation data:
 
 The wide gap near eta_0 is real in the bounds, not evidence that the true rate is small or that the upper curve is optimal.
 
-## 8. Candidate contribution and decisive next question
+## 8. Exact one-qubit result and the remaining target
 
-The specific candidate is **the sharp asymptotic quantum-interface rate for delayed local complementary readouts, with unlimited classical storage and arbitrary collective encoders**.
+The subsequent [one-qubit theorem](docs/ONE_QUBIT_OPTIMALITY.md) proves, for every n>=1,
 
-A useful next result would either show that collective coding beats the uniformly random subset construction or prove an optimal tradeoff over a nontrivial interval. The smallest diagnostic is n=2, q=1: the explicit construction gives eta=(1+1/sqrt(2))/2. Failure to improve it by a restricted ansatz would not prove optimality.
+$$
+\eta_{\max}(n,1)=\frac1{\sqrt2}+\frac1n\left(1-\frac1{\sqrt2}\right),
+\qquad \Gamma(n,2)=2+\sqrt2(n-1).
+$$
 
-The publication decision remains gated by a theorem-level novelty audit. The general framework [1], the state/measurement/steering equivalence [2], and the use of standard uncertainty or entanglement measures are not sufficient contributions on their own. Priority comparisons include bounded/noisy quantum storage, quantum random-access encodings, one-way steering dimension bounds, and quantum rate-distortion with free classical side information. In particular, Devetak and Berger [9] is an important additional lead; its entanglement-fidelity distortion and source model cannot be silently identified with the task-specific decoder model here. A full theorem-level translation has not yet been completed.
+The proof reduces extreme qubit decoders to scalar signs or Bloch observables, then uses Cheng–Hall's three-qubit CHSH monogamy [11]. Their theorem permits different measurement settings on the common qubit and mixed states, exactly as required for site-dependent decoders and three-qubit marginals. Equality forces every maximizing normalized seed to retain one site and project the rest onto product bisectors, up to output unitaries. This characterizes refined branch maps, without assuming that the retained site is chosen independently of the input.
 
-The present dossier gives a stable problem and checked proofs worth versioning. It does not establish that the remaining rate question is absent from all prior work, nor that the baseline threshold by itself warrants publication.
+Thus the former n=2,q=1 diagnostic is settled, including the entire two-input-qubit memory function. For general n, the first nonclassical interval has exact memory one. The argument does not extend to a higher-dimensional central memory: two Bell pairs provide an explicit counterexample to its key pair inequality.
+
+A separate [entropy argument](docs/COMMUTING_SEED_BOUND.md) proves
+
+$$
+g(L)\le\sqrt2\,n+(2-\sqrt2)S(L^\dagger L)
+\le\sqrt2\,n+(2-\sqrt2)\log_2\operatorname{rank}(L)
+$$
+
+whenever the Gram matrix is diagonal in a fixed product of local one-qubit bases. Its eigenvalues may be correlated and nonuniform, and the axes may have Y components. Consequently, this entire structured family cannot improve the subset benchmark. The unrestricted problem has not been narrowed by assumption. A proposed extension using a local quantum conditional-entropy inequality is false; the note gives a two-qubit counterexample, separately from the unresolved global inequality.
+
+The [entropy-rate characterization](docs/ENTROPY_RATE_CHARACTERIZATION.md) additionally proves
+
+$$
+R(\eta)=\inf_{n\ge1}\frac1n
+\min_{\rho:\ f_n(\rho)\ge\eta} S(\rho),
+\qquad
+f_n(\rho)=\frac1{2n}\sum_{i,b}
+\|\sqrt\rho P_{i,b}\sqrt\rho\|_1.
+$$
+
+This is unrestricted and retains the original worst-case dimension and uniform-error quantifiers. Typical Schmidt truncation constructs a new normalized seed; its full orbit supplies a trace-preserving protocol. A continuity argument removes strict contrast slack. A single violation of the unrestricted entropy inequality above would therefore prove a collective asymptotic advantage. Conversely, that inequality holding for every Gram matrix would establish the subset rate for the whole nonclassical interval. Related asymptotic dimension/entropy methods are prior work [12,13]; the note compares their complete-assemblage demands and average-dimension quantities with this task.
+
+The smallest remaining finite-block diagnostic is n=3,q=2, with subset seed score `4+sqrt(2)`. The main target remains a sharp rate evaluation, or a proven collective advantage with meaningful converses. These deductions have independently checked proofs within the workspace, but their publication novelty is unestablished.
+
+The [primary-source audit](docs/audits/PROOF_AND_NOVELTY_AUDIT.md) establishes that the general framework [1,2] and exact endpoint [10] are prior. It gives an exact discrimination-task reduction, strict obstructions to importing full-outcome MUB or common-reconstruction converses, and a genuine achievability bridge from fixed-cap reconstruction codes [9]. It also identifies a false marginal-distortion invariance step in [9]; that is a source-proof gap, not a refutation of its theorem conclusion. See the [comparison ledger](docs/LITERATURE_COMPARISON.md) for locators and remaining novelty questions.
 
 ## 9. Essential negative control: expectation estimation is easy classically
 
@@ -375,7 +407,7 @@ python checks.py --max-n 4 --output checks.json
 
 Recorded run: 14 (n,q) cases; largest input Hilbert dimension 16; maximum absolute matrix-entry residual 2.6645352591003757e-15, against tolerance 1e-10. Environment: Python 3.13.5, NumPy 2.3.5.
 
-These checks verify an explicit construction at small size. They do not prove the lower bounds, test unrestricted optimality, establish novelty, or simulate a many-qubit hardware architecture. The general statements depend on the proofs in Sections 3–7.
+These checks verify an explicit construction at small size. They do not prove the lower bounds, test unrestricted optimality, establish novelty, or simulate a many-qubit hardware architecture. The general statements depend on the analytical proofs. New scripts check 43 one-qubit identities/examples and 10 product-diagonal cases, using Python 3.12.14 and NumPy 2.3.5. Commands, recorded residuals and limits are in [REPRODUCIBILITY.md](docs/REPRODUCIBILITY.md).
 
 ## References and exact roles
 
@@ -395,4 +427,12 @@ These checks verify an explicit construction at small size. They do not prove th
 
 [8] Sitan Chen, Weiyuan Gong, Qi Ye, *Optimal tradeoffs for estimating Pauli observables*, arXiv:2404.19105 (2024). Broad prior theory for Pauli estimation and memory–sample tradeoffs. Not a source for an asserted solution to the single-specimen rate R(eta).
 
-[9] Igor Devetak, Toby Berger, *Quantum Rate-Distortion Theory for I.I.D. Sources*, arXiv:quant-ph/0011085. Additional audit lead: quantum compression with classical side information and entanglement-fidelity distortion. Abstract-level screening completed; full theorem comparison with the present target remains to be done.
+[9] Igor Devetak, Toby Berger, *Quantum Rate-Distortion Theory for I.I.D. Sources*, arXiv:quant-ph/0011085v3. Fixed-length reconstruction with free classical side information and marginal entanglement-fidelity distortion. Theorem-level comparison, an achievability bridge and a Theorem 3 proof caveat are in audit Section 6.5. Its rate must not be identified with this binary-decoder optimum.
+
+[10] Manuel A. Ballester, Stephanie Wehner, Andreas Winter, *State discrimination with post-measurement information*, arXiv:quant-ph/0608014v2. Section 5, Lemma 5.1 and Eq. (11), subsumes the exact endpoint. Audit Section 6.1 gives the exactly equivalent finite-error discrimination ensemble.
+
+[11] Shuming Cheng, Michael J. W. Hall, *Anisotropic invariance and the distribution of quantum correlations*, arXiv:1610.09302v3; Physical Review Letters 118, 010401 (2017). Eq. (1) and Eqs. (13)–(14), with the following mixed-state extension, supply independent-setting three-qubit CHSH monogamy for the one-retained-qubit result. The publisher's note, PRL 118, 059901, does not alter that inequality.
+
+[12] Thomas Cope, Roope Uola, *Quantifying the high-dimensionality of quantum devices*, arXiv:2207.05722v4. Eq. (7) compares worst-case compression; Section VI and Eqs. (20)–(22) give related state/assemblage entropy regularizations. Precise scope is compared in the entropy-rate note.
+
+[13] Thomas Cope, *Entanglement cost for steering assemblages*, arXiv:2102.02333v2. Eqs. (5)–(6) define an asymptotic complete-assemblage task; this must not be identified with a single delayed local query.

@@ -1,6 +1,7 @@
 # A normalized-seed formulation of the unrestricted interface
 
-Date: 2026-09-22. Status: internal derivation, independent review pending.
+Date: 2026-09-22. Status: derivation independently checked in the
+[commit-pinned audit](audits/PROOF_AND_NOVELTY_AUDIT.md), Section 5.
 This is an optimization reduction, not a solution of the optimization, and
 not asserted to be a novel theorem. Compare the established measurement
 simulability/steering framework in note references [1–2].
@@ -118,10 +119,15 @@ $$
 \Gamma(n,2^q)\stackrel{?}{\le}2q+\sqrt2(n-q).
 $$
 
-It is NOT proved here. Proving it for all n,q would establish the subset
+It remains unresolved for general `2<=q<n`. Proving it for all n,q would establish the subset
 strategy's finite-size optimality. Finding a seed that violates it would
 construct a genuine collective advantage after the orbit completion above.
-For n=2,q=1 the threshold to beat is $g(L)=2+\sqrt2$.
+The [one-qubit theorem](ONE_QUBIT_OPTIMALITY.md) now proves it for every n
+when q=1 and classifies all maximizing seeds. The
+[product-diagonal bound](COMMUTING_SEED_BOUND.md) proves it whenever
+`L^dagger L` is diagonal in a fixed local product basis, for arbitrary q.
+Neither statement restricts the encoders in the unresolved general problem.
+The smallest remaining block is n=3,q=2, with threshold $g(L)=4+\sqrt2$.
 
 The same problem admits the spectral expression
 
