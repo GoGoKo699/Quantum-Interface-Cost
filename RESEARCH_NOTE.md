@@ -1,6 +1,6 @@
 # Q1 — Delayed local readout through a bounded quantum interface
 
-**Version:** 0.5, 2026-09-22
+**Version:** 0.6, 2026-09-22
 
 **Project:** Falling / Q1  
 **Status:** Baseline proofs and seed reduction independently checked within the audit workspace. New analytical results give the exact one-retained-qubit optimum for every block size, an entropy bound for product-diagonal seeds, and a regularized entropy characterization of the asymptotic rate. Further work supplies a logarithmic-Sobolev memory converse and the exact score at every rank-two spectrum. General rate evaluation and publication novelty remain unresolved. This is a research dossier, not external peer review or a claim of a new framework.
@@ -18,6 +18,7 @@ The general compression problem below is already present in the dimensional meas
 | Exact preservation of all local X/Z readouts requires n retained qubits | Derived below; also subsumed by Ballester–Wehner–Winter [10], Lemma 5.1. |
 | Uniform-random-subset hybrid construction | Explicit elementary achievable strategy; optimal for q=1 by the subsequent all-n theorem, and at the endpoints. General optimality unresolved. |
 | Exact optimum and maximizing seeds with one retained qubit | Derived and independently checked from Cheng–Hall monogamy [11]; see Section 8 and the full proof. |
+| Exact complete local X/Z accuracy region with one retained qubit | Derived and independently checked: the sum of established local incompatibility weights is at most one; explicit matching allocation. |
 | Entropy bound for product-diagonal Gram matrices | Derived and independently checked, allowing correlated spectra and arbitrary local bases; does not restrict unrestricted encoders. |
 | Entropic finite-error lower bound | Direct application of Berta et al. [4], Fano, and conditional-entropy inequalities. |
 | Stronger logarithmic-Sobolev converse throughout the nonclassical region | Derived and independently checked from Beigi [14] and the root-fidelity inequality [15]; unrestricted encoder bound. |
@@ -27,6 +28,9 @@ The general compression problem below is already present in the dimensional meas
 | Support-inertia converse for arbitrary spectra | Derived and independently checked; an explicit neighborhood of every subset support cannot improve its finite-budget score. |
 | Stability near all rank-at-most-two seeds | Derived and independently checked; an open entropy-valid neighborhood exists at each fixed n, with separate quantitative spectral-tail criteria. |
 | Uniformizing a seed on its support | Invalid as a general optimization step; exact nonuniform fixed-support optima provide counterexamples. |
+| Exact maxima for one distinguished eigenvalue at all n and two double eigenvalues at n=2 | Derived and independently checked; all two-qubit spectra with at most two distinct eigenvalues satisfy the entropy inequality. |
+| Two-qubit kernel-sensitive entropy certificates | Derived and independently checked; maximally entangled kernel implies score at most the classical threshold. |
+| Sharp local squashed-entanglement charge from the X/Z score | Incorrect; exact near-Bell obstruction, leaving the global entropy target unchanged. |
 | Positive linear memory for every fixed contrast above 1/sqrt(2) | Derivation below using a two-setting witness and faithful, monogamous squashed entanglement [5,6]. Independent novelty not established. |
 | Regularized entropy characterization of the asymptotic rate | Derived and independently checked; fixed-cap coding and scalar-contrast continuity are proved; no closed-form evaluation. |
 | Sharp evaluation of the asymptotic memory rate, or a strict collective-coding improvement | Candidate research target; not solved here and not yet certified absent from the literature. |
@@ -369,6 +373,22 @@ The proof reduces extreme qubit decoders to scalar signs or Bloch observables, t
 
 Thus the former n=2,q=1 diagnostic is settled, including the entire two-input-qubit memory function. For general n, the first nonclassical interval has exact memory one. The argument does not extend to a higher-dimensional central memory: two Bell pairs provide an explicit counterexample to its key pair inequality.
 
+The [allocation theorem](docs/ONE_QUBIT_ALLOCATION_REGION.md) strengthens
+this to the complete profile of separate local contrasts. With
+
+$$
+w(x,z)=\left[x+z-1-\sqrt{2(1-x)(1-z)}\right]_+,
+$$
+
+an interface with worst-case quantum dimension at most two realizes the
+profile exactly if and only if `sum_i w(eta_(i,X),eta_(i,Z))<=1`.
+Each w is the established incompatibility weight of that noisy orthogonal
+Pauli pair. The new global condition follows from weighted CHSH monogamy
+and normalized Kraus averaging; a mixture retaining at most one site
+attains every feasible profile. All equal contrasts recover the original
+uniform theorem. The result describes effects on the specified query family,
+not a decomposition of every physical encoder into product operations.
+
 A separate [entropy argument](docs/COMMUTING_SEED_BOUND.md) proves
 
 $$
@@ -444,6 +464,27 @@ benchmark. The [SLD-route audit](docs/SLD_ENTROPY_ROUTE_AUDIT.md) gives exact
 counterexamples to two local proof steps and separates the proposed global
 SLD entropy bound from inspected convex-roof, tensorization, convolution and
 influence theorems. That global bound remains unresolved.
+
+Sections 6–7 of the [spectral note](docs/ENTROPY_INEQUALITY_BOUNDARIES.md)
+now optimize all eigenvectors exactly for a spectrum `(t,b,...,b)` at any n,
+and `(a,a,b,b)` on two qubits. Product-diagonal states attain the maxima;
+therefore every two-qubit state with at most two distinct eigenvalues,
+counting zero, obeys the entropy inequality. This does not cover a general
+rank-three spectrum `(t,b,b,0)`, which has three distinct values.
+The [kernel converse](docs/TWO_QUBIT_KERNEL_CONVERSE.md) further proves
+`g_2(rho)<=2sqrt(2)` whenever the kernel contains a maximally entangled
+vector. It also gives kernel-and-spectrum certificates for arbitrary
+rank-three eigenbases, including a spectrum-only exclusion at
+`(1/2,1/4,1/4,0)`.
+
+A proposed [sharp local entanglement calibration](docs/ENTANGLEMENT_CALIBRATION_OBSTRUCTION.md)
+is refuted near a Bell state: any calibration bounded by half the mutual
+information and sharp at the Bell endpoint must have infinite endpoint
+slope. This leaves the existing weak squashed-entanglement converse intact.
+The SLD audit additionally proves an all-spectrum commutator representation
+and a graph reformulation, while identifying an exact nonphysical graph
+that defeats a relaxation of the quantum constraints. Neither supplies a
+new unrestricted rate bound.
 
 The [primary-source audit](docs/audits/PROOF_AND_NOVELTY_AUDIT.md) establishes that the general framework [1,2] and exact endpoint [10] are prior. It gives an exact discrimination-task reduction, strict obstructions to importing full-outcome MUB or common-reconstruction converses, and a genuine achievability bridge from fixed-cap reconstruction codes [9]. It also identifies a false marginal-distortion invariance step in [9]; that is a source-proof gap, not a refutation of its theorem conclusion. See the [comparison ledger](docs/LITERATURE_COMPARISON.md) for locators and remaining novelty questions.
 

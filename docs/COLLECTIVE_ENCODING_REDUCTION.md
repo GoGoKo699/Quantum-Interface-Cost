@@ -153,6 +153,14 @@ prove that replacing a Gram matrix by its uniform support projector can
 decrease the objective, including at rank four. Uniformization is not part
 of this exact reduction and cannot be inserted without proof.
 
+The [one-qubit allocation theorem](ONE_QUBIT_ALLOCATION_REGION.md)
+uses the same normalized Kraus weights for arbitrary nonnegative query
+weights. It evaluates the complete feasible region of separate local
+contrasts when D=2. The converse bounds actual branch alignments by their
+trace norms before averaging; it does not assume input-independent
+physical branch probabilities. Explicit classical randomization of
+at-most-one-site retention attains the entire region.
+
 The same problem admits the spectral expression
 
 $$

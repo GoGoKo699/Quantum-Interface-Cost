@@ -145,6 +145,16 @@ with scalar amplitudes c_a subject to instrument completeness. A fine-grained op
 
 ## 6. Limits and next question
 
+The subsequent [allocation theorem](ONE_QUBIT_ALLOCATION_REGION.md)
+evaluates the complete region of separate X/Z contrasts at every site.
+It gives the exact weighted support function and an explicit condition:
+the sum of the noisy pairs' established incompatibility weights is at
+most one. The uniform contrast above is its diagonal slice. Its proof
+uses the same monogamy theorem with unequal query weights, without
+restricting collective encoders or replacing worst-case memory by an
+average. General boundary profiles do not inherit all the rigidity
+conditions proved in Section 5 for this uniform optimum.
+
 The subsequent [rank-two spectrum theorem](ENTROPY_INEQUALITY_BOUNDARIES.md)
 refines this result: with nonzero Gram eigenvalues lambda and 1-lambda, the
 exact maximum is `sqrt(2)(n-1)+sqrt(2[1+4 lambda(1-lambda)])`. It excludes
