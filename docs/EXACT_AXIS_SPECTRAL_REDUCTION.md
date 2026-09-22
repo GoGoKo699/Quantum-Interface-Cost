@@ -434,6 +434,12 @@ threshold. The product-diagonal entropy bound is therefore unaffected.
 
 ## 4. An exactly evaluated family from a prior graph theorem
 
+The subsequent [exact-axis rate theorem](EXACT_AXIS_RATE.md) evaluates
+the full asymptotic rate at every fixed Z contrast, using established
+cube entropy and spectral results. The finite graph identity above is
+unchanged. Its asymptotic separation also persists at fixed interior
+contrasts on both axes.
+
 Bollobas--Lee--Letzter, *Eigenvalues of subgraphs of the cube*,
 [author manuscript](https://www.homepages.ucl.ac.uk/~ucahsle/papers/cube-evals.pdf),
 dated 7 August 2020, Theorem 2 on printed p. 3, proves the star bound

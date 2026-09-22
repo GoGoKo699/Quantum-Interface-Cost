@@ -1,0 +1,1403 @@
+{
+  "status": "PASS",
+  "research_base": "9697d4d72cc34c52f4680fbf0c588b39af5c0471",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "tolerance": 1e-10,
+  "case_count": 17,
+  "maximum_matrix_dimension": 16,
+  "max_identity_error": 3.3306690738754696e-15,
+  "max_inequality_violation": 8.881784197001252e-16,
+  "endpoint_roundoff_bound": 1e-12,
+  "endpoint_adjustment_count": 42,
+  "cases": [
+    {
+      "label": "n1_fixed_complex_rank_1",
+      "matrix_dimension": 2,
+      "input_qubits": 1,
+      "supplied_rank": 1,
+      "supplied_spectrum": [
+        1.0
+      ],
+      "column_probabilities": [
+        0.6667435460704071,
+        0.33325645392959274
+      ],
+      "seed_entropy_bits": 0.0,
+      "classical_column_entropy_bits": 0.9182189354643371,
+      "full_conditional_entropy_given_Q": 0.9182189354643371,
+      "sum_single_bit_quantum_conditional_entropies": 0.9182189354643371,
+      "sum_fano_entropies": 0.918218935464337,
+      "sum_classical_conditional_entropies": 0.9182189354643367,
+      "sum_f_classical_flip": 0.9182189354643366,
+      "asymmetric_entropy_lower_bound": -0.0319998166864498,
+      "entropy_equality_asserted": false,
+      "sites": [
+        {
+          "site": 0,
+          "F_X": 0.33348709214081435,
+          "F_Z": 0.9200318734336411,
+          "classical_flip_overlap": 0.9427546655283461,
+          "helstrom_error": 0.3332564539295928,
+          "conditional_entropy_X_i_given_Q": 0.9182189354643371,
+          "fano_entropy": 0.918218935464337,
+          "conditional_entropy_X_i_given_rest": 0.9182189354643367,
+          "f_classical_flip": 0.9182189354643366,
+          "f_F_Z": 0.8862191187778872
+        }
+      ],
+      "scope": "Fixed normalized complex seed; full entropy, Helstrom/Fano, conditional-entropy, and flip-overlap chains.",
+      "roundoff_bound": 1e-12,
+      "endpoint_adjustments": [],
+      "max_identity_error": 2.220446049250313e-16,
+      "max_inequality_violation": 1.1102230246251565e-16,
+      "identity_checks": 7,
+      "inequality_checks": 12
+    },
+    {
+      "label": "n1_fixed_complex_rank_2",
+      "matrix_dimension": 2,
+      "input_qubits": 1,
+      "supplied_rank": 2,
+      "supplied_spectrum": [
+        0.7,
+        0.3
+      ],
+      "column_probabilities": [
+        0.5666974184281629,
+        0.4333025815718371
+      ],
+      "seed_entropy_bits": 0.8812908992306927,
+      "classical_column_entropy_bits": 0.9871258699513792,
+      "full_conditional_entropy_given_Q": 0.10583497072068648,
+      "sum_single_bit_quantum_conditional_entropies": 0.10583497072068648,
+      "sum_fano_entropies": 0.2279600060020979,
+      "sum_classical_conditional_entropies": 0.9871258699513792,
+      "sum_f_classical_flip": 0.9871258699513792,
+      "asymmetric_entropy_lower_bound": 0.7542456459374658,
+      "entropy_equality_asserted": false,
+      "sites": [
+        {
+          "site": 0,
+          "F_X": 0.9261717888706855,
+          "F_Z": 0.9876403108932981,
+          "classical_flip_overlap": 0.9910629735289651,
+          "helstrom_error": 0.03691410556465724,
+          "conditional_entropy_X_i_given_Q": 0.10583497072068648,
+          "fano_entropy": 0.2279600060020979,
+          "conditional_entropy_X_i_given_rest": 0.9871258699513792,
+          "f_classical_flip": 0.9871258699513792,
+          "f_F_Z": 0.9822056519395637
+        }
+      ],
+      "scope": "Fixed normalized complex seed; full entropy, Helstrom/Fano, conditional-entropy, and flip-overlap chains.",
+      "roundoff_bound": 1e-12,
+      "endpoint_adjustments": [],
+      "max_identity_error": 5.552146458282718e-17,
+      "max_inequality_violation": 0.0,
+      "identity_checks": 7,
+      "inequality_checks": 12
+    },
+    {
+      "label": "n2_fixed_complex_rank_1",
+      "matrix_dimension": 4,
+      "input_qubits": 2,
+      "supplied_rank": 1,
+      "supplied_spectrum": [
+        1.0
+      ],
+      "column_probabilities": [
+        0.519528904995223,
+        0.14721464107518437,
+        0.07358185848274115,
+        0.25967459544685156
+      ],
+      "seed_entropy_bits": 0.0,
+      "classical_column_entropy_bits": 1.6798381586597173,
+      "full_conditional_entropy_given_Q": 1.6798381586597173,
+      "sum_single_bit_quantum_conditional_entropies": 1.8930570912599278,
+      "sum_fano_entropies": 1.8930570912599278,
+      "sum_classical_conditional_entropies": 1.4666192260595068,
+      "sum_f_classical_flip": 1.4597524403031952,
+      "asymmetric_entropy_lower_bound": -0.49698160519132983,
+      "entropy_equality_asserted": false,
+      "sites": [
+        {
+          "site": 0,
+          "F_X": 0.3334870921408146,
+          "F_Z": 0.7818297937682397,
+          "classical_flip_overlap": 0.7820782811463514,
+          "helstrom_error": 0.3332564539295927,
+          "conditional_entropy_X_i_given_Q": 0.9182189354643369,
+          "fano_entropy": 0.9182189354643369,
+          "conditional_entropy_X_i_given_rest": 0.7050000028641263,
+          "f_classical_flip": 0.698133217107815,
+          "f_F_Z": 0.6978047257442118
+        },
+        {
+          "site": 1,
+          "F_X": 0.18622152695592817,
+          "F_Z": 0.7821823168995053,
+          "classical_flip_overlap": 0.8295671289073416,
+          "helstrom_error": 0.4068892365220359,
+          "conditional_entropy_X_i_given_Q": 0.974838155795591,
+          "fano_entropy": 0.974838155795591,
+          "conditional_entropy_X_i_given_rest": 0.7616192231953803,
+          "f_classical_flip": 0.7616192231953803,
+          "f_F_Z": 0.6982707603243861
+        }
+      ],
+      "scope": "Fixed normalized complex seed; full entropy, Helstrom/Fano, conditional-entropy, and flip-overlap chains.",
+      "roundoff_bound": 1e-12,
+      "endpoint_adjustments": [],
+      "max_identity_error": 2.220446049250313e-16,
+      "max_inequality_violation": 0.0,
+      "identity_checks": 13,
+      "inequality_checks": 17
+    },
+    {
+      "label": "n2_fixed_complex_rank_2",
+      "matrix_dimension": 4,
+      "input_qubits": 2,
+      "supplied_rank": 2,
+      "supplied_spectrum": [
+        0.7,
+        0.3
+      ],
+      "column_probabilities": [
+        0.4027892817623143,
+        0.1639081366658486,
+        0.10099290149933171,
+        0.3323096800725055
+      ],
+      "seed_entropy_bits": 0.8812908992306927,
+      "classical_column_entropy_bits": 1.8182879195729231,
+      "full_conditional_entropy_given_Q": 0.9369970203422304,
+      "sum_single_bit_quantum_conditional_entropies": 1.3815000428728594,
+      "sum_fano_entropies": 1.4259514324008387,
+      "sum_classical_conditional_entropies": 1.649491244834185,
+      "sum_f_classical_flip": 1.6478466824094973,
+      "asymmetric_entropy_lower_bound": -0.1978688946558278,
+      "entropy_equality_asserted": false,
+      "sites": [
+        {
+          "site": 0,
+          "F_X": 0.6960631519928568,
+          "F_Z": 0.8065112383256752,
+          "classical_flip_overlap": 0.8701487348305776,
+          "helstrom_error": 0.15196842400357158,
+          "conditional_entropy_X_i_given_Q": 0.590694589365931,
+          "fano_entropy": 0.614744443320693,
+          "conditional_entropy_X_i_given_rest": 0.818329195212641,
+          "f_classical_flip": 0.8169427108887513,
+          "f_F_Z": 0.7306228947463376
+        },
+        {
+          "site": 1,
+          "F_X": 0.5000897530771635,
+          "F_Z": 0.623748059391149,
+          "classical_flip_overlap": 0.8802816501474298,
+          "helstrom_error": 0.24995512346141824,
+          "conditional_entropy_X_i_given_Q": 0.7908054535069284,
+          "fano_entropy": 0.8112069890801458,
+          "conditional_entropy_X_i_given_rest": 0.8311620496215439,
+          "f_classical_flip": 0.830903971520746,
+          "f_F_Z": 0.4974596429986734
+        }
+      ],
+      "scope": "Fixed normalized complex seed; full entropy, Helstrom/Fano, conditional-entropy, and flip-overlap chains.",
+      "roundoff_bound": 1e-12,
+      "endpoint_adjustments": [],
+      "max_identity_error": 2.220446049250313e-16,
+      "max_inequality_violation": 0.0,
+      "identity_checks": 13,
+      "inequality_checks": 17
+    },
+    {
+      "label": "n2_fixed_complex_rank_4",
+      "matrix_dimension": 4,
+      "input_qubits": 2,
+      "supplied_rank": 4,
+      "supplied_spectrum": [
+        0.4,
+        0.3,
+        0.2,
+        0.1
+      ],
+      "column_probabilities": [
+        0.29665950111652417,
+        0.23668920809755728,
+        0.1810324174637828,
+        0.2856188733221358
+      ],
+      "seed_entropy_bits": 1.8464393446710154,
+      "classical_column_entropy_bits": 1.9748613391006304,
+      "full_conditional_entropy_given_Q": 0.128421994429615,
+      "sum_single_bit_quantum_conditional_entropies": 0.17821965065716672,
+      "sum_fano_entropies": 0.39614539927384884,
+      "sum_classical_conditional_entropies": 1.9543704015689367,
+      "sum_f_classical_flip": 1.9543088444807775,
+      "asymmetric_entropy_lower_bound": 1.4756496704741162,
+      "entropy_equality_asserted": false,
+      "sites": [
+        {
+          "site": 0,
+          "F_X": 0.9416175201882486,
+          "F_Z": 0.9700423385494343,
+          "classical_flip_overlap": 0.9834979002797242,
+          "helstrom_error": 0.029191239905875688,
+          "conditional_entropy_X_i_given_Q": 0.0849233280463968,
+          "fano_entropy": 0.19031960895788091,
+          "conditional_entropy_X_i_given_rest": 0.976297731676994,
+          "f_classical_flip": 0.9762584170746009,
+          "f_F_Z": 0.9569986466600973
+        },
+        {
+          "site": 1,
+          "F_X": 0.9353887661953241,
+          "F_Z": 0.9403334657197711,
+          "classical_flip_overlap": 0.9847467001686763,
+          "helstrom_error": 0.032305616902337964,
+          "conditional_entropy_X_i_given_Q": 0.09329632261076992,
+          "fano_entropy": 0.20582579031596793,
+          "conditional_entropy_X_i_given_rest": 0.9780726698919426,
+          "f_classical_flip": 0.9780504274061765,
+          "f_F_Z": 0.9147964230878678
+        }
+      ],
+      "scope": "Fixed normalized complex seed; full entropy, Helstrom/Fano, conditional-entropy, and flip-overlap chains.",
+      "roundoff_bound": 1e-12,
+      "endpoint_adjustments": [
+        {
+          "quantity": "sigma_0_0_eigenvalue_0",
+          "original": -6.877021154630027e-17,
+          "adjusted": 0.0
+        },
+        {
+          "quantity": "sigma_1_0_eigenvalue_0",
+          "original": -2.0910554977438207e-17,
+          "adjusted": 0.0
+        },
+        {
+          "quantity": "sigma_1_1_eigenvalue_0",
+          "original": -1.9225907733816552e-17,
+          "adjusted": 0.0
+        }
+      ],
+      "max_identity_error": 2.220446049250313e-16,
+      "max_inequality_violation": 0.0,
+      "identity_checks": 13,
+      "inequality_checks": 17
+    },
+    {
+      "label": "n3_fixed_complex_rank_2",
+      "matrix_dimension": 8,
+      "input_qubits": 3,
+      "supplied_rank": 2,
+      "supplied_spectrum": [
+        0.65,
+        0.35
+      ],
+      "column_probabilities": [
+        0.29304127454520795,
+        0.09029140334495478,
+        0.12332209039919496,
+        0.043368295531764356,
+        0.077072343674422,
+        0.028489064994341458,
+        0.25248657318119827,
+        0.09192895432891615
+      ],
+      "seed_entropy_bits": 0.934068055375491,
+      "classical_column_entropy_bits": 2.650021393717897,
+      "full_conditional_entropy_given_Q": 1.7159533383424062,
+      "sum_single_bit_quantum_conditional_entropies": 2.2421904043565517,
+      "sum_fano_entropies": 2.274989228453658,
+      "sum_classical_conditional_entropies": 2.4901274262053503,
+      "sum_f_classical_flip": 2.4887041347423136,
+      "asymmetric_entropy_lower_bound": -0.4055573936880612,
+      "entropy_equality_asserted": false,
+      "sites": [
+        {
+          "site": 0,
+          "F_X": 0.6755655026926823,
+          "F_Z": 0.7954863463277055,
+          "classical_flip_overlap": 0.8812015067706622,
+          "helstrom_error": 0.16221724865365883,
+          "conditional_entropy_X_i_given_Q": 0.6282203236476205,
+          "fano_entropy": 0.639587629153642,
+          "conditional_entropy_X_i_given_rest": 0.8331504042476651,
+          "f_classical_flip": 0.8321742125135028,
+          "f_F_Z": 0.7159162407159214
+        },
+        {
+          "site": 1,
+          "F_X": 0.49178435594218856,
+          "F_Z": 0.5792616288104551,
+          "classical_flip_overlap": 0.8867028676924449,
+          "helstrom_error": 0.2541078220289057,
+          "conditional_entropy_X_i_given_Q": 0.8017748113260672,
+          "fano_entropy": 0.8177241849197223,
+          "conditional_entropy_X_i_given_rest": 0.8401453196885527,
+          "f_classical_flip": 0.8397809414261566,
+          "f_F_Z": 0.44452647276181567
+        },
+        {
+          "site": 2,
+          "F_X": 0.4918445636000465,
+          "F_Z": 0.7902735989500629,
+          "classical_flip_overlap": 0.8700078318217571,
+          "helstrom_error": 0.2540777181999767,
+          "conditional_entropy_X_i_given_Q": 0.8121952693828638,
+          "fano_entropy": 0.8176774143802936,
+          "conditional_entropy_X_i_given_rest": 0.8168317022691326,
+          "f_classical_flip": 0.816748980802654,
+          "f_F_Z": 0.7089891212878596
+        }
+      ],
+      "scope": "Fixed normalized complex seed; full entropy, Helstrom/Fano, conditional-entropy, and flip-overlap chains.",
+      "roundoff_bound": 1e-12,
+      "endpoint_adjustments": [],
+      "max_identity_error": 2.220446049250313e-16,
+      "max_inequality_violation": 0.0,
+      "identity_checks": 24,
+      "inequality_checks": 22
+    },
+    {
+      "label": "n3_fixed_complex_rank_4",
+      "matrix_dimension": 8,
+      "input_qubits": 3,
+      "supplied_rank": 4,
+      "supplied_spectrum": [
+        0.4,
+        0.3,
+        0.2,
+        0.1
+      ],
+      "column_probabilities": [
+        0.20892162380089002,
+        0.08773787731563404,
+        0.14374508429617572,
+        0.09294412380138158,
+        0.09844675265643671,
+        0.08258566480734608,
+        0.19724247080068041,
+        0.0883764025214554
+      ],
+      "seed_entropy_bits": 1.8464393446710154,
+      "classical_column_entropy_bits": 2.898453113928682,
+      "full_conditional_entropy_given_Q": 1.0520137692576665,
+      "sum_single_bit_quantum_conditional_entropies": 1.7508044575423054,
+      "sum_fano_entropies": 1.9152624134100003,
+      "sum_classical_conditional_entropies": 2.8547590202663335,
+      "sum_f_classical_flip": 2.854132499510388,
+      "asymmetric_entropy_lower_bound": 0.21583536833490324,
+      "entropy_equality_asserted": false,
+      "sites": [
+        {
+          "site": 0,
+          "F_X": 0.8017692193552157,
+          "F_Z": 0.9052530253469835,
+          "classical_flip_overlap": 0.9751019573111518,
+          "helstrom_error": 0.09911539032239214,
+          "conditional_entropy_X_i_given_Q": 0.370508675776243,
+          "fano_entropy": 0.46618515875159106,
+          "conditional_entropy_X_i_given_rest": 0.9644315050318119,
+          "f_classical_flip": 0.9642302766185773,
+          "f_F_Z": 0.865553107220726
+        },
+        {
+          "site": 1,
+          "F_X": 0.7435192463021962,
+          "F_Z": 0.8084501051986738,
+          "classical_flip_overlap": 0.9767587866924823,
+          "helstrom_error": 0.12824037684890188,
+          "conditional_entropy_X_i_given_Q": 0.5163989177774431,
+          "fano_entropy": 0.552592587656051,
+          "conditional_entropy_X_i_given_rest": 0.9667357404064699,
+          "f_classical_flip": 0.9666011170086156,
+          "f_F_Z": 0.7332170274066927
+        },
+        {
+          "site": 2,
+          "F_X": 0.3742141514999821,
+          "F_Z": 0.6523350835422452,
+          "classical_flip_overlap": 0.9463460254213834,
+          "helstrom_error": 0.3128929242500089,
+          "conditional_entropy_X_i_given_Q": 0.8638968639886193,
+          "fano_entropy": 0.8964846670023583,
+          "conditional_entropy_X_i_given_rest": 0.9235917748280517,
+          "f_classical_flip": 0.923301105883195,
+          "f_F_Z": 0.5323276471174849
+        }
+      ],
+      "scope": "Fixed normalized complex seed; full entropy, Helstrom/Fano, conditional-entropy, and flip-overlap chains.",
+      "roundoff_bound": 1e-12,
+      "endpoint_adjustments": [],
+      "max_identity_error": 3.3306690738754696e-16,
+      "max_inequality_violation": 0.0,
+      "identity_checks": 24,
+      "inequality_checks": 22
+    },
+    {
+      "label": "n4_fixed_complex_rank_4",
+      "matrix_dimension": 16,
+      "input_qubits": 4,
+      "supplied_rank": 4,
+      "supplied_spectrum": [
+        0.4,
+        0.3,
+        0.2,
+        0.1
+      ],
+      "column_probabilities": [
+        0.09591369183204589,
+        0.11300793196884422,
+        0.034851047467773684,
+        0.052886829847860375,
+        0.053646759143367605,
+        0.09009832515280808,
+        0.029649541172351284,
+        0.06329458262903032,
+        0.034503978102579734,
+        0.063942774553857,
+        0.0231505747374482,
+        0.059435090069897875,
+        0.08256859645643173,
+        0.11467387434424871,
+        0.03342404941999737,
+        0.054952353101458
+      ],
+      "seed_entropy_bits": 1.8464393446710154,
+      "classical_column_entropy_bits": 3.8530626143180697,
+      "full_conditional_entropy_given_Q": 2.0066232696470543,
+      "sum_single_bit_quantum_conditional_entropies": 2.760049922248709,
+      "sum_fano_entropies": 2.952449213191131,
+      "sum_classical_conditional_entropies": 3.7968537939648583,
+      "sum_f_classical_flip": 3.7957518132103685,
+      "asymmetric_entropy_lower_bound": -0.012877502848473554,
+      "entropy_equality_asserted": false,
+      "sites": [
+        {
+          "site": 0,
+          "F_X": 0.782599900025391,
+          "F_Z": 0.897294438442702,
+          "classical_flip_overlap": 0.971321714503014,
+          "helstrom_error": 0.10870004998730448,
+          "conditional_entropy_X_i_given_Q": 0.4038170554621714,
+          "fano_entropy": 0.4959824220253113,
+          "conditional_entropy_X_i_given_rest": 0.9591752913571386,
+          "f_classical_flip": 0.9588260349042599,
+          "f_F_Z": 0.8544730031970875
+        },
+        {
+          "site": 1,
+          "F_X": 0.710396387077186,
+          "F_Z": 0.7866601887076323,
+          "classical_flip_overlap": 0.9732239958452745,
+          "helstrom_error": 0.144801806461407,
+          "conditional_entropy_X_i_given_Q": 0.5640223052401785,
+          "fano_entropy": 0.5966774666180982,
+          "conditional_entropy_X_i_given_rest": 0.9617384720710018,
+          "f_classical_flip": 0.961544652335125,
+          "f_F_Z": 0.7041973786405735
+        },
+        {
+          "site": 2,
+          "F_X": 0.3742141514999822,
+          "F_Z": 0.6523350835422456,
+          "classical_flip_overlap": 0.9447005308800023,
+          "helstrom_error": 0.3128929242500089,
+          "conditional_entropy_X_i_given_Q": 0.8638968639886193,
+          "fano_entropy": 0.8964846670023583,
+          "conditional_entropy_X_i_given_rest": 0.9213305301473308,
+          "f_classical_flip": 0.9209717257459461,
+          "f_F_Z": 0.5323276471174853
+        },
+        {
+          "site": 3,
+          "F_X": 0.22458352333600912,
+          "F_Z": 0.8930469326523647,
+          "classical_flip_overlap": 0.9682285971880853,
+          "helstrom_error": 0.3877082383319954,
+          "conditional_entropy_X_i_given_Q": 0.9283136975577397,
+          "fano_entropy": 0.9633046575453637,
+          "conditional_entropy_X_i_given_rest": 0.9546095003893873,
+          "f_classical_flip": 0.9544094002250377,
+          "f_F_Z": 0.8485736813875111
+        }
+      ],
+      "scope": "Fixed normalized complex seed; full entropy, Helstrom/Fano, conditional-entropy, and flip-overlap chains.",
+      "roundoff_bound": 1e-12,
+      "endpoint_adjustments": [],
+      "max_identity_error": 4.440892098500626e-16,
+      "max_inequality_violation": 0.0,
+      "identity_checks": 47,
+      "inequality_checks": 27
+    },
+    {
+      "label": "n4_fixed_complex_rank_16",
+      "matrix_dimension": 16,
+      "input_qubits": 4,
+      "supplied_rank": 16,
+      "supplied_spectrum": [
+        0.11764705882352941,
+        0.11029411764705882,
+        0.10294117647058823,
+        0.09558823529411764,
+        0.08823529411764706,
+        0.08088235294117647,
+        0.07352941176470588,
+        0.0661764705882353,
+        0.058823529411764705,
+        0.051470588235294115,
+        0.04411764705882353,
+        0.03676470588235294,
+        0.029411764705882353,
+        0.022058823529411766,
+        0.014705882352941176,
+        0.007352941176470588
+      ],
+      "column_probabilities": [
+        0.062044960985889686,
+        0.0773647924762927,
+        0.0477779980371416,
+        0.0765356311820067,
+        0.05206669171441448,
+        0.07417458332394686,
+        0.04601505607261861,
+        0.07382873009418398,
+        0.045379827134674824,
+        0.06682480611018392,
+        0.044619422770099386,
+        0.07289136088615442,
+        0.060105283183312666,
+        0.07815740615339883,
+        0.046734847731965776,
+        0.07547860214371568
+      ],
+      "seed_entropy_bits": 3.7612883163266817,
+      "classical_column_entropy_bits": 3.968219759661281,
+      "full_conditional_entropy_given_Q": 0.20693144333459923,
+      "sum_single_bit_quantum_conditional_entropies": 0.40700569704743117,
+      "sum_fano_entropies": 0.8521136862860229,
+      "sum_classical_conditional_entropies": 3.9628123920252927,
+      "sum_f_classical_flip": 3.962785143212864,
+      "asymmetric_entropy_lower_bound": 2.8587783847359574,
+      "entropy_equality_asserted": false,
+      "sites": [
+        {
+          "site": 0,
+          "F_X": 0.9616182428975302,
+          "F_Z": 0.9812340138499343,
+          "classical_flip_overlap": 0.9978628894597952,
+          "helstrom_error": 0.019190878551234913,
+          "conditional_entropy_X_i_given_Q": 0.05878738122404492,
+          "fano_entropy": 0.13687314109814527,
+          "conditional_entropy_X_i_given_rest": 0.9969210475538695,
+          "f_classical_flip": 0.9969179003509627,
+          "f_F_Z": 0.9730117231742573
+        },
+        {
+          "site": 1,
+          "F_X": 0.9505756652534758,
+          "F_Z": 0.9581332570116889,
+          "classical_flip_overlap": 0.9979648589131177,
+          "helstrom_error": 0.024712167373262095,
+          "conditional_entropy_X_i_given_Q": 0.075765615752597,
+          "fano_entropy": 0.16713715930007977,
+          "conditional_entropy_X_i_given_rest": 0.9970670892036092,
+          "f_classical_flip": 0.9970649087501298,
+          "f_F_Z": 0.9400277209969303
+        },
+        {
+          "site": 2,
+          "F_X": 0.9147772818692967,
+          "F_Z": 0.9334404262857532,
+          "classical_flip_overlap": 0.9978815914529415,
+          "helstrom_error": 0.04261135906535163,
+          "conditional_entropy_X_i_given_Q": 0.1243577629486774,
+          "fano_entropy": 0.25413966062600996,
+          "conditional_entropy_X_i_given_rest": 0.996947394356051,
+          "f_classical_flip": 0.9969448624627129,
+          "f_F_Z": 0.9050693334875815
+        },
+        {
+          "site": 3,
+          "F_X": 0.8964147092702935,
+          "F_Z": 0.9247087582473046,
+          "classical_flip_overlap": 0.9804287424481315,
+          "helstrom_error": 0.05179264536485323,
+          "conditional_entropy_X_i_given_Q": 0.14809493712211186,
+          "fano_entropy": 0.2939637252617878,
+          "conditional_entropy_X_i_given_rest": 0.9718768609117632,
+          "f_classical_flip": 0.9718574716490584,
+          "f_F_Z": 0.8927832933632112
+        }
+      ],
+      "scope": "Fixed normalized complex seed; full entropy, Helstrom/Fano, conditional-entropy, and flip-overlap chains.",
+      "roundoff_bound": 1e-12,
+      "endpoint_adjustments": [
+        {
+          "quantity": "sigma_0_0_eigenvalue_0",
+          "original": -2.058414472729836e-17,
+          "adjusted": 0.0
+        },
+        {
+          "quantity": "sigma_0_0_eigenvalue_1",
+          "original": -1.0188654404516473e-17,
+          "adjusted": 0.0
+        },
+        {
+          "quantity": "sigma_0_0_eigenvalue_2",
+          "original": -7.240092161624207e-18,
+          "adjusted": 0.0
+        },
+        {
+          "quantity": "sigma_0_0_eigenvalue_3",
+          "original": -7.613995294736263e-19,
+          "adjusted": 0.0
+        },
+        {
+          "quantity": "sigma_0_1_eigenvalue_0",
+          "original": -1.0538453208784695e-17,
+          "adjusted": 0.0
+        },
+        {
+          "quantity": "sigma_0_1_eigenvalue_1",
+          "original": -5.843492036988627e-18,
+          "adjusted": 0.0
+        },
+        {
+          "quantity": "sigma_0_1_eigenvalue_2",
+          "original": -4.8614791255876955e-18,
+          "adjusted": 0.0
+        },
+        {
+          "quantity": "sigma_1_0_eigenvalue_0",
+          "original": -2.626697515744715e-17,
+          "adjusted": 0.0
+        },
+        {
+          "quantity": "sigma_1_0_eigenvalue_1",
+          "original": -1.4223388897938266e-17,
+          "adjusted": 0.0
+        },
+        {
+          "quantity": "sigma_1_0_eigenvalue_2",
+          "original": -5.361914297224077e-18,
+          "adjusted": 0.0
+        },
+        {
+          "quantity": "sigma_1_0_eigenvalue_3",
+          "original": -2.4881069657013813e-18,
+          "adjusted": 0.0
+        },
+        {
+          "quantity": "sigma_1_1_eigenvalue_0",
+          "original": -2.863893252783808e-17,
+          "adjusted": 0.0
+        },
+        {
+          "quantity": "sigma_1_1_eigenvalue_1",
+          "original": -1.8583348069285576e-17,
+          "adjusted": 0.0
+        },
+        {
+          "quantity": "sigma_1_1_eigenvalue_2",
+          "original": -1.1574210490905631e-17,
+          "adjusted": 0.0
+        },
+        {
+          "quantity": "sigma_1_1_eigenvalue_3",
+          "original": -7.664240764965503e-18,
+          "adjusted": 0.0
+        },
+        {
+          "quantity": "sigma_1_1_eigenvalue_4",
+          "original": -2.9150257599801393e-18,
+          "adjusted": 0.0
+        },
+        {
+          "quantity": "sigma_2_0_eigenvalue_0",
+          "original": -2.6235353992014502e-17,
+          "adjusted": 0.0
+        },
+        {
+          "quantity": "sigma_2_0_eigenvalue_1",
+          "original": -1.0847220440367923e-17,
+          "adjusted": 0.0
+        },
+        {
+          "quantity": "sigma_2_0_eigenvalue_2",
+          "original": -7.778061097301718e-18,
+          "adjusted": 0.0
+        },
+        {
+          "quantity": "sigma_2_0_eigenvalue_3",
+          "original": -3.2309494955049477e-18,
+          "adjusted": 0.0
+        },
+        {
+          "quantity": "sigma_2_0_eigenvalue_4",
+          "original": -1.203313134925308e-18,
+          "adjusted": 0.0
+        },
+        {
+          "quantity": "sigma_2_0_eigenvalue_5",
+          "original": -1.9575248138321313e-19,
+          "adjusted": 0.0
+        },
+        {
+          "quantity": "sigma_2_1_eigenvalue_0",
+          "original": -1.8974056591067254e-17,
+          "adjusted": 0.0
+        },
+        {
+          "quantity": "sigma_2_1_eigenvalue_1",
+          "original": -4.298384153066995e-18,
+          "adjusted": 0.0
+        },
+        {
+          "quantity": "sigma_2_1_eigenvalue_2",
+          "original": -6.91944535638979e-19,
+          "adjusted": 0.0
+        },
+        {
+          "quantity": "sigma_3_0_eigenvalue_0",
+          "original": -2.679389484007043e-17,
+          "adjusted": 0.0
+        },
+        {
+          "quantity": "sigma_3_0_eigenvalue_1",
+          "original": -1.273560390515259e-17,
+          "adjusted": 0.0
+        },
+        {
+          "quantity": "sigma_3_0_eigenvalue_2",
+          "original": -7.164819484613337e-18,
+          "adjusted": 0.0
+        },
+        {
+          "quantity": "sigma_3_0_eigenvalue_3",
+          "original": -2.731076850670534e-18,
+          "adjusted": 0.0
+        },
+        {
+          "quantity": "sigma_3_0_eigenvalue_4",
+          "original": -9.741318573219055e-19,
+          "adjusted": 0.0
+        },
+        {
+          "quantity": "sigma_3_1_eigenvalue_0",
+          "original": -1.2383088476770681e-17,
+          "adjusted": 0.0
+        },
+        {
+          "quantity": "sigma_3_1_eigenvalue_1",
+          "original": -7.368751739694451e-18,
+          "adjusted": 0.0
+        },
+        {
+          "quantity": "sigma_3_1_eigenvalue_2",
+          "original": -2.5779820634025844e-18,
+          "adjusted": 0.0
+        },
+        {
+          "quantity": "sigma_3_1_eigenvalue_3",
+          "original": -2.2037574668835635e-18,
+          "adjusted": 0.0
+        },
+        {
+          "quantity": "sigma_3_1_eigenvalue_4",
+          "original": -9.329090357394536e-19,
+          "adjusted": 0.0
+        }
+      ],
+      "max_identity_error": 4.440892098500626e-16,
+      "max_inequality_violation": 0.0,
+      "identity_checks": 47,
+      "inequality_checks": 27
+    },
+    {
+      "label": "n3_pure_product_bisector_equality",
+      "matrix_dimension": 8,
+      "input_qubits": 3,
+      "supplied_rank": 1,
+      "supplied_spectrum": [
+        1.0
+      ],
+      "column_probabilities": [
+        0.6218592167691142,
+        0.10669417382415916,
+        0.10669417382415916,
+        0.018305826175840766,
+        0.10669417382415916,
+        0.018305826175840773,
+        0.018305826175840773,
+        0.0031407832308854556
+      ],
+      "seed_entropy_bits": 0.0,
+      "classical_column_entropy_bits": 1.8026281100785684,
+      "full_conditional_entropy_given_Q": 1.8026281100785684,
+      "sum_single_bit_quantum_conditional_entropies": 1.8026281100785702,
+      "sum_fano_entropies": 1.8026281100785702,
+      "sum_classical_conditional_entropies": 1.802628110078567,
+      "sum_f_classical_flip": 1.8026281100785668,
+      "asymmetric_entropy_lower_bound": -3.3306690738754696e-15,
+      "entropy_equality_asserted": true,
+      "sites": [
+        {
+          "site": 0,
+          "F_X": 0.7071067811865471,
+          "F_Z": 0.7071067811865471,
+          "classical_flip_overlap": 0.7071067811865471,
+          "helstrom_error": 0.14644660940672644,
+          "conditional_entropy_X_i_given_Q": 0.6008760366928567,
+          "fano_entropy": 0.6008760366928567,
+          "conditional_entropy_X_i_given_rest": 0.6008760366928557,
+          "f_classical_flip": 0.6008760366928556,
+          "f_F_Z": 0.6008760366928556
+        },
+        {
+          "site": 1,
+          "F_X": 0.7071067811865471,
+          "F_Z": 0.7071067811865471,
+          "classical_flip_overlap": 0.7071067811865471,
+          "helstrom_error": 0.14644660940672644,
+          "conditional_entropy_X_i_given_Q": 0.6008760366928567,
+          "fano_entropy": 0.6008760366928567,
+          "conditional_entropy_X_i_given_rest": 0.6008760366928557,
+          "f_classical_flip": 0.6008760366928556,
+          "f_F_Z": 0.6008760366928556
+        },
+        {
+          "site": 2,
+          "F_X": 0.707106781186547,
+          "F_Z": 0.7071067811865471,
+          "classical_flip_overlap": 0.7071067811865471,
+          "helstrom_error": 0.1464466094067265,
+          "conditional_entropy_X_i_given_Q": 0.6008760366928567,
+          "fano_entropy": 0.6008760366928567,
+          "conditional_entropy_X_i_given_rest": 0.6008760366928557,
+          "f_classical_flip": 0.6008760366928556,
+          "f_F_Z": 0.6008760366928556
+        }
+      ],
+      "scope": "Fixed normalized complex seed; full entropy, Helstrom/Fano, conditional-entropy, and flip-overlap chains.",
+      "roundoff_bound": 1e-12,
+      "endpoint_adjustments": [],
+      "max_identity_error": 3.3306690738754696e-15,
+      "max_inequality_violation": 0.0,
+      "identity_checks": 25,
+      "inequality_checks": 22
+    },
+    {
+      "label": "n3_full_rank_exact_axis_product_equality",
+      "matrix_dimension": 8,
+      "input_qubits": 3,
+      "supplied_rank": 8,
+      "supplied_spectrum": [
+        0.5120000000000001,
+        0.12800000000000003,
+        0.12800000000000003,
+        0.03200000000000001,
+        0.12800000000000003,
+        0.03200000000000001,
+        0.03200000000000001,
+        0.008000000000000002
+      ],
+      "column_probabilities": [
+        0.5120000000000001,
+        0.12800000000000003,
+        0.12800000000000003,
+        0.03200000000000001,
+        0.12800000000000003,
+        0.03200000000000001,
+        0.03200000000000001,
+        0.008000000000000002
+      ],
+      "seed_entropy_bits": 2.165784284662087,
+      "classical_column_entropy_bits": 2.165784284662087,
+      "full_conditional_entropy_given_Q": 0.0,
+      "sum_single_bit_quantum_conditional_entropies": 0.0,
+      "sum_fano_entropies": 0.0,
+      "sum_classical_conditional_entropies": 2.165784284662087,
+      "sum_f_classical_flip": 2.165784284662088,
+      "asymmetric_entropy_lower_bound": 2.165784284662088,
+      "entropy_equality_asserted": true,
+      "sites": [
+        {
+          "site": 0,
+          "F_X": 1.0,
+          "F_Z": 0.8000000000000002,
+          "classical_flip_overlap": 0.8000000000000002,
+          "helstrom_error": 0.0,
+          "conditional_entropy_X_i_given_Q": 0.0,
+          "fano_entropy": 0.0,
+          "conditional_entropy_X_i_given_rest": 0.7219280948873624,
+          "f_classical_flip": 0.7219280948873626,
+          "f_F_Z": 0.7219280948873626
+        },
+        {
+          "site": 1,
+          "F_X": 1.0,
+          "F_Z": 0.8000000000000002,
+          "classical_flip_overlap": 0.8000000000000002,
+          "helstrom_error": 0.0,
+          "conditional_entropy_X_i_given_Q": 0.0,
+          "fano_entropy": 0.0,
+          "conditional_entropy_X_i_given_rest": 0.7219280948873624,
+          "f_classical_flip": 0.7219280948873626,
+          "f_F_Z": 0.7219280948873626
+        },
+        {
+          "site": 2,
+          "F_X": 1.0,
+          "F_Z": 0.8000000000000002,
+          "classical_flip_overlap": 0.8000000000000002,
+          "helstrom_error": 0.0,
+          "conditional_entropy_X_i_given_Q": 0.0,
+          "fano_entropy": 0.0,
+          "conditional_entropy_X_i_given_rest": 0.7219280948873624,
+          "f_classical_flip": 0.7219280948873626,
+          "f_F_Z": 0.7219280948873626
+        }
+      ],
+      "scope": "Fixed normalized complex seed; full entropy, Helstrom/Fano, conditional-entropy, and flip-overlap chains.",
+      "roundoff_bound": 1e-12,
+      "endpoint_adjustments": [
+        {
+          "quantity": "F_X_0",
+          "original": 1.0000000000000002,
+          "adjusted": 1.0
+        },
+        {
+          "quantity": "F_X_1",
+          "original": 1.0000000000000002,
+          "adjusted": 1.0
+        },
+        {
+          "quantity": "F_X_2",
+          "original": 1.0000000000000002,
+          "adjusted": 1.0
+        }
+      ],
+      "max_identity_error": 8.881784197001252e-16,
+      "max_inequality_violation": 8.881784197001252e-16,
+      "identity_checks": 25,
+      "inequality_checks": 22
+    },
+    {
+      "label": "n2_maximally_mixed_endpoint",
+      "matrix_dimension": 4,
+      "input_qubits": 2,
+      "supplied_rank": 4,
+      "supplied_spectrum": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "column_probabilities": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "seed_entropy_bits": 2.0,
+      "classical_column_entropy_bits": 2.0,
+      "full_conditional_entropy_given_Q": 0.0,
+      "sum_single_bit_quantum_conditional_entropies": 0.0,
+      "sum_fano_entropies": 0.0,
+      "sum_classical_conditional_entropies": 2.0,
+      "sum_f_classical_flip": 2.0,
+      "asymmetric_entropy_lower_bound": 2.0,
+      "entropy_equality_asserted": true,
+      "sites": [
+        {
+          "site": 0,
+          "F_X": 1.0,
+          "F_Z": 1.0,
+          "classical_flip_overlap": 1.0,
+          "helstrom_error": 0.0,
+          "conditional_entropy_X_i_given_Q": 0.0,
+          "fano_entropy": 0.0,
+          "conditional_entropy_X_i_given_rest": 1.0,
+          "f_classical_flip": 1.0,
+          "f_F_Z": 1.0
+        },
+        {
+          "site": 1,
+          "F_X": 1.0,
+          "F_Z": 1.0,
+          "classical_flip_overlap": 1.0,
+          "helstrom_error": 0.0,
+          "conditional_entropy_X_i_given_Q": 0.0,
+          "fano_entropy": 0.0,
+          "conditional_entropy_X_i_given_rest": 1.0,
+          "f_classical_flip": 1.0,
+          "f_F_Z": 1.0
+        }
+      ],
+      "scope": "Fixed normalized complex seed; full entropy, Helstrom/Fano, conditional-entropy, and flip-overlap chains.",
+      "roundoff_bound": 1e-12,
+      "endpoint_adjustments": [],
+      "max_identity_error": 0.0,
+      "max_inequality_violation": 0.0,
+      "identity_checks": 14,
+      "inequality_checks": 17
+    },
+    {
+      "label": "n2_bernoulli_cutoff_1_complete_instrument",
+      "matrix_dimension": 4,
+      "input_qubits": 2,
+      "alpha": 0.15,
+      "hamming_weight_cutoff": 1,
+      "support": [
+        0,
+        1,
+        2
+      ],
+      "support_probability_mass": 0.9774999999999999,
+      "normalized_probabilities": [
+        0.7391304347826086,
+        0.13043478260869568,
+        0.13043478260869568
+      ],
+      "branch_count": 4,
+      "maximum_quantum_output_dimension": 3,
+      "qubit_cap": 2,
+      "x_contrast": 1.0,
+      "z_contrast": 0.6209937763950305,
+      "normalized_kraus_weights": [
+        0.24999999999999992,
+        0.24999999999999992,
+        0.24999999999999992,
+        0.24999999999999992
+      ],
+      "seed_entropy_bits": 1.0889252905968954,
+      "log_support_per_input": 0.792481250360578,
+      "exact_axis_rate_curve_at_achieved_contrast": 0.4941346627571611,
+      "discarded_probability": 0.022500000000000075,
+      "original_product_contrast": 0.714142842854285,
+      "original_to_truncated_pure_state_trace_norm": 0.3000000000000001,
+      "truncation_contrast_loss_bound": 0.3000000000000005,
+      "finite_support_certificate": {
+        "log2_support_upper_bound": 2.0,
+        "hoeffding_tail_upper_bound": 0.6126263941844161
+      },
+      "scope": "Complete finite translation instrument and all local operator identities; no asymptotic rate attainment claim for this block.",
+      "roundoff_bound": 1e-12,
+      "endpoint_adjustments": [],
+      "max_identity_error": 4.440892098500626e-16,
+      "max_inequality_violation": 0.0,
+      "identity_checks": 19,
+      "inequality_checks": 7
+    },
+    {
+      "label": "n3_bernoulli_cutoff_1_complete_instrument",
+      "matrix_dimension": 8,
+      "input_qubits": 3,
+      "alpha": 0.2,
+      "hamming_weight_cutoff": 1,
+      "support": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "support_probability_mass": 0.8960000000000002,
+      "normalized_probabilities": [
+        0.5714285714285714,
+        0.14285714285714285,
+        0.14285714285714285,
+        0.14285714285714285
+      ],
+      "branch_count": 8,
+      "maximum_quantum_output_dimension": 4,
+      "qubit_cap": 2,
+      "x_contrast": 1.0,
+      "z_contrast": 0.5714285714285714,
+      "normalized_kraus_weights": [
+        0.12499999999999992,
+        0.12499999999999992,
+        0.12499999999999992,
+        0.12499999999999992,
+        0.12499999999999992,
+        0.12499999999999992,
+        0.12499999999999992,
+        0.12499999999999992
+      ],
+      "seed_entropy_bits": 1.6644977792004612,
+      "log_support_per_input": 0.6666666666666666,
+      "exact_axis_rate_curve_at_achieved_contrast": 0.4353810577458985,
+      "discarded_probability": 0.10399999999999976,
+      "original_product_contrast": 0.8,
+      "original_to_truncated_pure_state_trace_norm": 0.6449806198638839,
+      "truncation_contrast_loss_bound": 0.6449806198638832,
+      "finite_support_certificate": {
+        "log2_support_upper_bound": 2.7548875021634687,
+        "hoeffding_tail_upper_bound": 0.8988252314716089
+      },
+      "scope": "Complete finite translation instrument and all local operator identities; no asymptotic rate attainment claim for this block.",
+      "roundoff_bound": 1e-12,
+      "endpoint_adjustments": [],
+      "max_identity_error": 7.771561172376096e-16,
+      "max_inequality_violation": 0.0,
+      "identity_checks": 38,
+      "inequality_checks": 8
+    },
+    {
+      "label": "n4_bernoulli_cutoff_2_complete_instrument",
+      "matrix_dimension": 16,
+      "input_qubits": 4,
+      "alpha": 0.25,
+      "hamming_weight_cutoff": 2,
+      "support": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        12
+      ],
+      "support_probability_mass": 0.94921875,
+      "normalized_probabilities": [
+        0.3333333333333333,
+        0.1111111111111111,
+        0.1111111111111111,
+        0.037037037037037035,
+        0.1111111111111111,
+        0.037037037037037035,
+        0.037037037037037035,
+        0.1111111111111111,
+        0.037037037037037035,
+        0.037037037037037035,
+        0.037037037037037035
+      ],
+      "branch_count": 16,
+      "maximum_quantum_output_dimension": 11,
+      "qubit_cap": 4,
+      "x_contrast": 1.0,
+      "z_contrast": 0.7698003589195009,
+      "normalized_kraus_weights": [
+        0.06249999999999993,
+        0.06249999999999993,
+        0.06249999999999993,
+        0.06249999999999993,
+        0.06249999999999993,
+        0.06249999999999993,
+        0.06249999999999993,
+        0.06249999999999993,
+        0.06249999999999993,
+        0.06249999999999993,
+        0.06249999999999993,
+        0.06249999999999993,
+        0.06249999999999993,
+        0.06249999999999993,
+        0.06249999999999993,
+        0.06249999999999993
+      ],
+      "seed_entropy_bits": 2.9938180569177395,
+      "log_support_per_input": 0.8648579046593243,
+      "exact_axis_rate_curve_at_achieved_contrast": 0.6819496316870194,
+      "discarded_probability": 0.05078125,
+      "original_product_contrast": 0.8660254037844386,
+      "original_to_truncated_pure_state_trace_norm": 0.4506939094329988,
+      "truncation_contrast_loss_bound": 0.45069390943299864,
+      "finite_support_certificate": {
+        "log2_support_upper_bound": 4.0,
+        "hoeffding_tail_upper_bound": 0.6065306597126334
+      },
+      "scope": "Complete finite translation instrument and all local operator identities; no asymptotic rate attainment claim for this block.",
+      "roundoff_bound": 1e-12,
+      "endpoint_adjustments": [],
+      "max_identity_error": 1.1102230246251565e-15,
+      "max_inequality_violation": 0.0,
+      "identity_checks": 81,
+      "inequality_checks": 9
+    },
+    {
+      "label": "n3_bernoulli_cutoff_3_complete_instrument",
+      "matrix_dimension": 8,
+      "input_qubits": 3,
+      "alpha": 0.2,
+      "hamming_weight_cutoff": 3,
+      "support": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "support_probability_mass": 1.0,
+      "normalized_probabilities": [
+        0.5120000000000001,
+        0.12800000000000003,
+        0.12800000000000003,
+        0.03200000000000001,
+        0.12800000000000003,
+        0.03200000000000001,
+        0.03200000000000001,
+        0.008000000000000002
+      ],
+      "branch_count": 8,
+      "maximum_quantum_output_dimension": 8,
+      "qubit_cap": 3,
+      "x_contrast": 1.0,
+      "z_contrast": 0.8000000000000003,
+      "normalized_kraus_weights": [
+        0.125,
+        0.125,
+        0.125,
+        0.125,
+        0.125,
+        0.125,
+        0.125,
+        0.125
+      ],
+      "seed_entropy_bits": 2.165784284662087,
+      "log_support_per_input": 1.0,
+      "exact_axis_rate_curve_at_achieved_contrast": 0.7219280948873628,
+      "discarded_probability": 0.0,
+      "original_product_contrast": 0.8,
+      "original_to_truncated_pure_state_trace_norm": 0.0,
+      "truncation_contrast_loss_bound": 0.0,
+      "finite_support_certificate": null,
+      "scope": "Complete finite translation instrument and all local operator identities; no asymptotic rate attainment claim for this block.",
+      "roundoff_bound": 1e-12,
+      "endpoint_adjustments": [
+        {
+          "quantity": "retained_Bernoulli_mass",
+          "original": 1.0000000000000002,
+          "adjusted": 1.0
+        }
+      ],
+      "max_identity_error": 5.551115123125783e-16,
+      "max_inequality_violation": 8.881784197001252e-16,
+      "identity_checks": 38,
+      "inequality_checks": 6
+    },
+    {
+      "label": "exact_axis_curve_and_strict_interior_rate_gap",
+      "matrix_dimension": 1,
+      "exact_axis_rate_table": [
+        {
+          "z_contrast": 0.0,
+          "bernoulli_parameter": 0.0,
+          "exact_axis_rate": 0.0,
+          "original_site_retention_rate": 0.0
+        },
+        {
+          "z_contrast": 0.1,
+          "bernoulli_parameter": 0.0025062814466900174,
+          "exact_axis_rate": 0.025266127727119954,
+          "original_site_retention_rate": 0.1
+        },
+        {
+          "z_contrast": 0.25,
+          "bernoulli_parameter": 0.015877081724072872,
+          "exact_axis_rate": 0.1176188737709179,
+          "original_site_retention_rate": 0.25
+        },
+        {
+          "z_contrast": 0.5,
+          "bernoulli_parameter": 0.0669872981077807,
+          "exact_axis_rate": 0.3545789026652699,
+          "original_site_retention_rate": 0.5
+        },
+        {
+          "z_contrast": 0.75,
+          "bernoulli_parameter": 0.16928108611692616,
+          "exact_axis_rate": 0.6560575629727147,
+          "original_site_retention_rate": 0.75
+        },
+        {
+          "z_contrast": 0.9,
+          "bernoulli_parameter": 0.2820550528229664,
+          "exact_axis_rate": 0.858235875301516,
+          "original_site_retention_rate": 0.9
+        },
+        {
+          "z_contrast": 1.0,
+          "bernoulli_parameter": 0.5,
+          "exact_axis_rate": 1.0,
+          "original_site_retention_rate": 1.0
+        }
+      ],
+      "derivative_step": 0.0001,
+      "derivative_absolute_tolerance": 2e-06,
+      "derivative_checks": [
+        {
+          "z": 0.125,
+          "first_derivative": 0.5032384242505852,
+          "second_derivative": 2.6242157238000936,
+          "centered_difference_first": 0.5032384063759221,
+          "centered_difference_second": 2.6242157863398674,
+          "first_difference_error": 1.7874663083006226e-08,
+          "second_difference_error": 6.253977380410447e-08
+        },
+        {
+          "z": 0.25,
+          "first_derivative": 0.7686349669944221,
+          "second_derivative": 1.7406344822279731,
+          "centered_difference_first": 0.7686349590555613,
+          "centered_difference_second": 1.7406345129145073,
+          "first_difference_error": 7.938860790979163e-09,
+          "second_difference_error": 3.068653420257306e-08
+        },
+        {
+          "z": 0.5,
+          "first_derivative": 1.0969473982231532,
+          "second_derivative": 1.001599674076458,
+          "centered_difference_first": 1.0969473951491504,
+          "centered_difference_second": 1.0015996754209056,
+          "first_difference_error": 3.0740028300613176e-09,
+          "second_difference_error": 1.3444476643087455e-09
+        },
+        {
+          "z": 0.75,
+          "first_derivative": 1.3011084622390787,
+          "second_derivative": 0.667694267649085,
+          "centered_difference_first": 1.301108460633471,
+          "centered_difference_second": 0.6676942665428953,
+          "first_difference_error": 1.6056076468373703e-09,
+          "second_difference_error": 1.1061896953989958e-09
+        },
+        {
+          "z": 0.875,
+          "first_derivative": 1.3776949593849517,
+          "second_derivative": 0.5624041989222825,
+          "centered_difference_first": 1.3776949581584264,
+          "centered_difference_second": 0.5624042009877428,
+          "first_difference_error": 1.2265253257481845e-09,
+          "second_difference_error": 2.0654602472802708e-09
+        }
+      ],
+      "interior_x": 0.99,
+      "interior_z": 0.5,
+      "asymmetric_entropic_lower_bound": 0.3091642103314758,
+      "inherited_exact_axis_achievable_rate": 0.3545789026652699,
+      "original_site_retention_rate": 0.38999999999999996,
+      "interior_separation_x_threshold": 0.9834040749784734,
+      "strict_rate_gap": 0.035421097334730034,
+      "scope": "Scalar identities and finite-difference diagnostics; these do not prove asymptotic coding or the general derivative formulas.",
+      "roundoff_bound": 1e-12,
+      "endpoint_adjustments": [],
+      "max_identity_error": 2.220446049250313e-16,
+      "max_inequality_violation": 0.0,
+      "identity_checks": 16,
+      "inequality_checks": 17
+    }
+  ],
+  "scope": "Finite deterministic seed inequalities, four complete small instruments, and scalar curve diagnostics. No search, optimizer, inferred rank, large-block simulation, proof certification, or novelty certification. Every endpoint roundoff adjustment is bounded and listed."
+}

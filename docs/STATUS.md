@@ -1,7 +1,7 @@
 # Status and claim ledger
 
-Updated: 2026-09-22. Stage: unequal-accuracy collective separation, two-qubit SLD minimum, and quantitative stability.
-Latest research base: `f761bbca3ba3c1b263a1914175e3bdab94be70a7`, the merge of PR #8.
+Updated: 2026-09-22. Stage: unrestricted asymmetric entropy converse, linear onset, and exact-axis rate.
+Latest research base: `9697d4d72cc34c52f4680fbf0c588b39af5c0471`, the merge of PR #9.
 
 ## Evidence labels
 
@@ -19,6 +19,9 @@ is asserted.
 | Random-subset achievable contrast | Explicit construction; checked through n=4 | Note Section 4; checks.json |
 | Entropic memory lower bound | Standard-theorem application; independently checked | Note Section 5; audit Section 4.1 |
 | Logarithmic-Sobolev lower bound b(eta) on q/n and R(eta) | Derived and independently checked from Beigi and Audenaert et al.; unrestricted | STRONG_ENTROPIC_CONVERSE.md |
+| Asymmetric profile bound log D>=sum_i kappa(x_i,z_i) | Derived and independently checked; combines generalized QRAC entropy and cube-entropy ingredients, preserves every collective branch | ASYMMETRIC_ENTROPIC_CONVERSE.md |
+| Common-accuracy rate R(eta_0+t)=Theta(t) as t decreases to zero | Derived and independently checked; coefficients bounded by 2log_2(1+sqrt(2)) and 2+sqrt(2), exact coefficient open | ASYMMETRIC_ENTROPIC_CONVERSE.md |
+| Unrestricted linear seed bound g<=sqrt(2)n+S/log_2(1+sqrt(2)) | Derived and independently checked; weaker than the conjectured sharp entropy coefficient | ASYMMETRIC_ENTROPIC_CONVERSE.md |
 | q=n for exact readout | Also a corollary of Ballester–Wehner–Winter Lemma 5.1 | Audit Section 6.1 |
 | Positive linear rate for fixed eta>1/sqrt(2) | Derived and independently checked, using corrected one-way-LOCC faithfulness | Note Section 6; audit Section 4.2 |
 | Existence of R(eta) by subadditivity | Derived and independently checked | Note Section 7; audit Section 4.3 |
@@ -57,6 +60,8 @@ is asserted.
 | Original-site-retention region sum_i w(x_i,z_i)<=q | Derived and independently checked for the explicitly defined full comparison class, including joint measurements of discarded sites | EXACT_AXIS_SPECTRAL_REDUCTION.md |
 | Strict collective advantage for unequal X/Z accuracies at n=31,q=5 | Explicit construction and analytical separation, also at X contrast 9999/10000 and Z contrast 1/sqrt(31); no optimality claim at this size | EXACT_AXIS_SPECTRAL_REDUCTION.md |
 | Exact-axis value sqrt(D-1)/n for 105<=D<=n | Corollary of the supplied operational reduction and established Bollobás–Lee–Letzter Theorem 2 | EXACT_AXIS_SPECTRAL_REDUCTION.md |
+| Exact-axis asymptotic rate R_X(z)=h_2((1-sqrt(1-z^2))/2) | Derived and independently checked operational corollary; scalar curve and asymptotic cube spectrum are established prior results, also matching known dephasing-channel cost | EXACT_AXIS_RATE.md |
+| Strict collective asymptotic saving for every exact-X profile with 0<z<1, extending to fixed interior profiles | Derived and independently checked; retention cost z exceeds R_X(z); at x=.99,z=.5 collective rate<=.354579 versus retention rate .39 | EXACT_AXIS_RATE.md |
 | Exact two-qubit minimum of local SLD sum at every spectrum | Derived and independently checked; yields I_XZ>=2-S, but not the sharper linear seed entropy bound | TWO_QUBIT_SLD_SPECTRUM.md |
 | Quantitative stability of one-qubit maximizing seeds | Derived and independently checked; dimension-independent normalized-seed bounds and specified branch-weighted consequences | ONE_QUBIT_STABILITY.md |
 | General sharp intermediate common-accuracy rate or common-accuracy collective advantage | Unresolved | Note Section 8 |
@@ -249,6 +254,56 @@ dimension 32. The 31-input example checks only its support graph and scalar
 arithmetic. No full 31-qubit matrix or instrument is enumerated.
 See [REPRODUCIBILITY.md](REPRODUCIBILITY.md) for actual residuals and scope.
 These checks do not certify the universal proofs or publication novelty.
+
+## Linear onset and exact-axis rate
+
+The new [asymmetric entropy converse](ASYMMETRIC_ENTROPIC_CONVERSE.md)
+applies to all collective encoders. Define
+`f(c)=h_2((1-sqrt(1-c^2))/2)` and
+`kappa(x,z)=max{0,f(z)-h_2((1-x)/2),f(x)-h_2((1-z)/2)}`.
+Every profile requires `log_2D>=sum_i kappa(x_i,z_i)`. Its proof connects
+a normalized seed's X-basis column ensemble to established arbitrary-prior
+quantum random-access bounds and a classical cube-entropy inequality.
+The normalized Kraus average retains the branchwise dimension cap.
+
+For the original common-accuracy problem, this gives
+`R(eta)>=ell(eta)=[f(eta)-h_2((1-eta)/2)]_+`. At eta=.8 the lower
+fraction rises from .14144054 to .25293250, while the subset upper fraction
+is .31715729. Convexity proves
+`2log_2(1+sqrt(2))t<=R(eta_0+t)<=(2+sqrt(2))t`, and hence linear onset
+as t decreases to zero. This resolves the onset order, not its exact
+coefficient or the complete rate. The earlier logarithmic-Sobolev bound
+is retained because it is stronger extremely close to eta=1.
+
+The state version yields the unrestricted bound
+`g(L)<=sqrt(2)n+S(L^dagger L)/log_2(1+sqrt(2))`. Its entropy coefficient
+.78643970 exceeds the desired .58578644, so the sharp entropy conjecture
+and the n=3,q=2 diagnostic remain open.
+
+The [exact-axis rate](EXACT_AXIS_RATE.md) is now completely evaluated:
+`R_X(z)=f(z)`. The finite heterogeneous converse is
+`log_2D>=sum_i f(z_i)`. Explicit auxiliary Bernoulli distributions truncated
+to Hamming balls give complete instruments with exact X at every block size,
+worst-case dimension and uniform Z operator identities. No physical input
+is postselected or assumed to be a product state. For every 0<z<1,
+`f(z)<z`, so collective encoding beats the entire defined original-site
+retention class asymptotically. At x=.99,z=.5, rate at most .354579 beats
+that class's exact .39 with fixed nonzero errors on both axes.
+
+The source audit identifies substantial prior overlap. Samorodnitsky's
+Theorems 1.2 and 1.4 supply the classical curve and graph asymptotics;
+Wilde's dephasing-channel cost is the same formula for a stronger
+reconstruction requirement. Wehner–Christandl–Doherty's Lemma I.1 and
+Corollary I.2 already supply the arbitrary-prior decoding entropy penalty.
+The supplied contributions are operational deductions with complete
+resource/error maps; publication novelty remains unresolved. The original
+common-accuracy optimum is not imported from channel reconstruction.
+
+Both new proofs passed independent reconstruction within this workspace.
+Finite deterministic diagnostics separately check the entropy chains,
+complete small translation instruments and scalar bounds. They do not
+certify the asymptotic theorem or novelty. Actual runs and scope are in
+[REPRODUCIBILITY.md](REPRODUCIBILITY.md).
 
 ## Research division and next target
 

@@ -27,8 +27,10 @@ and a mixture of strategies retaining at most one site attains the whole region.
 The latest continuation proves a collective advantage when X and Z have
 unequal requested accuracies, an exact spectral reduction when every X
 query is perfect, a two-qubit SLD entropy inequality, and quantitative
-stability of the one-qubit optimum. The original common-accuracy rate
-remains open.
+stability of the one-qubit optimum. A new asymmetric entropy converse now
+proves that the common-accuracy rate turns on linearly above the classical
+threshold. The exact-X boundary has an evaluated asymptotic rate; the full
+common-accuracy rate remains open.
 
 ## Start here
 
@@ -45,6 +47,8 @@ remains open.
 | A structured family that cannot beat the subset strategy | [Product-diagonal entropy bound](docs/COMMUTING_SEED_BOUND.md) |
 | Exact regularized formulation of the asymptotic rate | [Entropy-rate characterization](docs/ENTROPY_RATE_CHARACTERIZATION.md) |
 | Stronger bound for every collective encoder | [Logarithmic-Sobolev converse](docs/STRONG_ENTROPIC_CONVERSE.md) |
+| Linear onset of common-accuracy quantum memory | [Asymmetric entropy converse](docs/ASYMMETRIC_ENTROPIC_CONVERSE.md) |
+| Exact memory rate with every X query preserved | [Exact-axis rate](docs/EXACT_AXIS_RATE.md) |
 | Exact rank-two spectrum trade-off and excluded families | [Entropy-inequality boundaries](docs/ENTROPY_INEQUALITY_BOUNDARIES.md) |
 | Sharp flat half-rank result through four input qubits | [Flat-seed theorem](docs/FLAT_HALF_RANK_OPTIMALITY.md) |
 | Further entropy exclusions and failed local proof route | [Classical flags](docs/CLASSICAL_FLAG_ENTROPY_BOUND.md), [locally mixed two-qubit states](docs/LOCALLY_MIXED_TWO_QUBIT_BOUND.md), [bounded spectral condition](docs/SPECTRAL_CONDITION_ENTROPY_BOUND.md) |
@@ -102,11 +106,24 @@ trace-preserving interface; it does not change worst-case memory to average
 memory. This characterization turns any violation of the unrestricted entropy
 bound into a collective rate advantage, but does not yet evaluate the optimum.
 
-For example, at contrast eta=0.8 the new unrestricted converse requires at
-least 0.14144054 n retained qubits, improving the previous lower bound
-0.06200881 n; the subset construction uses asymptotically 0.31715729 n.
-This is a deduction from Beigi's established theorem and a standard fidelity
-inequality, not a new logarithmic-Sobolev theorem or a sharp rate claim.
+For example, at contrast eta=0.8 the new unrestricted entropy converse
+requires at least 0.25293250 n retained qubits, improving the previous
+logarithmic-Sobolev bound 0.14144054 n; the subset construction uses
+asymptotically 0.31715729 n. The new proof combines established quantum
+random-access and classical cube-entropy ingredients through normalized
+seeds. It preserves the original common-accuracy task.
+
+Writing t=eta-1/sqrt(2)>0, the same proof gives
+
+$$
+2\log_2(1+\sqrt2)\,t\le R(1/\sqrt2+t)\le(2+\sqrt2)t.
+$$
+
+Thus the memory fraction has **linear onset** at the classical threshold.
+The coefficients are approximately 2.54311 and 3.41421; the exact onset
+coefficient and full rate remain open. The full nonlinear lower bound
+improves on the displayed tangent bound. The earlier converse can be
+stronger extremely close to perfect accuracy, so both bounds are retained.
 
 The main research target is a sharp finite-accuracy rate, or a proven
 collective-coding advantage for the common-accuracy target with meaningful converse bounds. The smallest
@@ -159,6 +176,23 @@ graph theorem gives the exact value `sqrt(D-1)/n` for `105<=D<=n`.
 The 31-input example is an achievable separation, without a claim that it is
 optimal. This does not settle the original equal-X/Z-accuracy conjecture.
 
+The [exact-axis rate theorem](docs/EXACT_AXIS_RATE.md) now evaluates the
+asymptotic quantum-memory fraction when all X queries are exact and the
+common Z contrast is z:
+
+$$
+R_X(z)=h_2\!\left(\frac{1-\sqrt{1-z^2}}2\right).
+$$
+
+This is strictly below the original-site-retention fraction z for every
+0<z<1. The separation survives fixed error on both axes: at X contrast
+0.99 and Z contrast 0.5, a collective fraction at most 0.354579 suffices,
+while that retention class requires exactly 0.39. The unrestricted optimum
+with both axes noisy is not evaluated. The entropy curve and corresponding
+graph asymptotics are prior, and the same curve is an established dephasing
+channel cost. The supplied theorem proves the delayed-query converse and
+constructs complete instruments preserving X exactly at every block size.
+
 The [proof](docs/EXACT_AXIS_SPECTRAL_REDUCTION.md) supplies the complete
 trace-preserving instrument analytically. Small diagnostics verify full
 three-input instruments and only the 32-vertex support calculation for the
@@ -198,6 +232,7 @@ python tools/check_entropy_structure.py --output results/entropy-structure-rerun
 python tools/check_nonuniform_seeds.py --output results/nonuniform-rerun.json
 python tools/check_allocation_and_kernels.py --output results/allocation-kernels-rerun.json
 python tools/check_entropy_geometry.py --output results/entropy-geometry-rerun.json
+python tools/check_asymmetric_rate.py --output results/asymmetric-rate-rerun.json
 ```
 
 The first command after installation checks 14 explicit subset constructions;
@@ -205,7 +240,8 @@ the second checks 10 seed-to-interface constructions. The new scripts check
 43 one-qubit identities/examples, 10 product-diagonal cases, 22 entropy-bound
 and seed-family cases, 20 structure diagnostics, 16 nonuniform-seed
 diagnostics, 14 allocation, spectral, kernel, and obstruction cases, and
-13 exact-axis, SLD-spectrum, and stability cases. These finite
+13 exact-axis, SLD-spectrum, and stability cases. The latest script adds
+17 asymmetric-entropy and exact-axis-rate cases. These finite
 diagnostics supplement the analytical proofs. There is no numerical
 optimization or large simulation. No hosted CI run is claimed.
 
