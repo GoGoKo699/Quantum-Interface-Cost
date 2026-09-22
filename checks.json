@@ -1,0 +1,183 @@
+{
+  "status": "PASS",
+  "python": "3.13.5",
+  "numpy": "2.3.5",
+  "max_n": 4,
+  "tolerance": 1e-10,
+  "max_matrix_entry_error": 2.6645352591003757e-15,
+  "parent_min_eigenvalue": 2.7755575615628914e-17,
+  "parent_errors": {
+    "normalization": 0.0,
+    "x_marginal": 0.0,
+    "z_marginal": 0.0,
+    "x_estimator_mean": 5.551115123125783e-17,
+    "z_estimator_mean": 1.1102230246251565e-16,
+    "estimator_second_moment": 0.0,
+    "rank_one_factorization": 5.551115123125783e-17
+  },
+  "cases": [
+    {
+      "n": 1,
+      "q": 0,
+      "kraus_branches": 4,
+      "eta": 0.7071067811865475,
+      "normalization_max_abs_error": 0.0,
+      "observable_max_abs_error": 1.1102230246251565e-16
+    },
+    {
+      "n": 1,
+      "q": 1,
+      "kraus_branches": 1,
+      "eta": 1.0,
+      "normalization_max_abs_error": 0.0,
+      "observable_max_abs_error": 0.0
+    },
+    {
+      "n": 2,
+      "q": 0,
+      "kraus_branches": 16,
+      "eta": 0.7071067811865475,
+      "normalization_max_abs_error": 2.220446049250313e-16,
+      "observable_max_abs_error": 3.3306690738754696e-16
+    },
+    {
+      "n": 2,
+      "q": 1,
+      "kraus_branches": 8,
+      "eta": 0.8535533905932737,
+      "normalization_max_abs_error": 0.0,
+      "observable_max_abs_error": 2.220446049250313e-16
+    },
+    {
+      "n": 2,
+      "q": 2,
+      "kraus_branches": 1,
+      "eta": 1.0,
+      "normalization_max_abs_error": 0.0,
+      "observable_max_abs_error": 0.0
+    },
+    {
+      "n": 3,
+      "q": 0,
+      "kraus_branches": 64,
+      "eta": 0.7071067811865475,
+      "normalization_max_abs_error": 2.220446049250313e-16,
+      "observable_max_abs_error": 1.1102230246251565e-15
+    },
+    {
+      "n": 3,
+      "q": 1,
+      "kraus_branches": 48,
+      "eta": 0.8047378541243649,
+      "normalization_max_abs_error": 2.220446049250313e-16,
+      "observable_max_abs_error": 2.220446049250313e-16
+    },
+    {
+      "n": 3,
+      "q": 2,
+      "kraus_branches": 12,
+      "eta": 0.9023689270621824,
+      "normalization_max_abs_error": 1.1102230246251565e-16,
+      "observable_max_abs_error": 2.220446049250313e-16
+    },
+    {
+      "n": 3,
+      "q": 3,
+      "kraus_branches": 1,
+      "eta": 1.0,
+      "normalization_max_abs_error": 0.0,
+      "observable_max_abs_error": 0.0
+    },
+    {
+      "n": 4,
+      "q": 0,
+      "kraus_branches": 256,
+      "eta": 0.7071067811865475,
+      "normalization_max_abs_error": 4.440892098500626e-16,
+      "observable_max_abs_error": 2.220446049250313e-15
+    },
+    {
+      "n": 4,
+      "q": 1,
+      "kraus_branches": 256,
+      "eta": 0.7803300858899106,
+      "normalization_max_abs_error": 2.220446049250313e-16,
+      "observable_max_abs_error": 2.6645352591003757e-15
+    },
+    {
+      "n": 4,
+      "q": 2,
+      "kraus_branches": 96,
+      "eta": 0.8535533905932737,
+      "normalization_max_abs_error": 8.881784197001252e-16,
+      "observable_max_abs_error": 1.2212453270876722e-15
+    },
+    {
+      "n": 4,
+      "q": 3,
+      "kraus_branches": 16,
+      "eta": 0.9267766952966369,
+      "normalization_max_abs_error": 0.0,
+      "observable_max_abs_error": 1.1102230246251565e-16
+    },
+    {
+      "n": 4,
+      "q": 4,
+      "kraus_branches": 1,
+      "eta": 1.0,
+      "normalization_max_abs_error": 0.0,
+      "observable_max_abs_error": 0.0
+    }
+  ],
+  "rate_table": [
+    {
+      "epsilon": 0.0,
+      "eta": 1.0,
+      "lower_rate": 1.0,
+      "entropy_lower_rate": 1.0,
+      "squashed_lower_rate": 0.007735229258741638,
+      "achievable_rate_upper": 1.0
+    },
+    {
+      "epsilon": 0.01,
+      "eta": 0.98,
+      "lower_rate": 0.8384137282081776,
+      "entropy_lower_rate": 0.8384137282081776,
+      "squashed_lower_rate": 0.006714907649033426,
+      "achievable_rate_upper": 0.931715728752538
+    },
+    {
+      "epsilon": 0.05,
+      "eta": 0.9,
+      "lower_rate": 0.4272060857680875,
+      "entropy_lower_rate": 0.4272060857680875,
+      "squashed_lower_rate": 0.003354968730645065,
+      "achievable_rate_upper": 0.6585786437626906
+    },
+    {
+      "epsilon": 0.1,
+      "eta": 0.8,
+      "lower_rate": 0.06200881282143755,
+      "entropy_lower_rate": 0.06200881282143755,
+      "squashed_lower_rate": 0.0007780770036596964,
+      "achievable_rate_upper": 0.3171572875253813
+    },
+    {
+      "epsilon": 0.14,
+      "eta": 0.72,
+      "lower_rate": 1.4989158871467605e-05,
+      "entropy_lower_rate": 0.0,
+      "squashed_lower_rate": 1.4989158871467605e-05,
+      "achievable_rate_upper": 0.0440202025355335
+    },
+    {
+      "epsilon": 0.14644660940672627,
+      "eta": 0.7071067811865475,
+      "lower_rate": 0.0,
+      "entropy_lower_rate": 0.0,
+      "squashed_lower_rate": 0.0,
+      "achievable_rate_upper": 0.0
+    }
+  ],
+  "scope": "Checks an explicit construction and estimator identities only; not optimality or novelty."
+}
