@@ -46,6 +46,32 @@ counterexamples to the respective theorem conclusions. A later
 rate-distortion treatment's re-use of the same single-letter reduction does
 not repair it. See audit Sections 6.3 and 6.5 before importing a converse.
 
+## Further functional-inequality comparison
+
+Beigi, [2105.00462v2](https://arxiv.org/abs/2105.00462v2), Theorem 2,
+Eqs. (6)–(7), printed p. 4, provides a nonlinear entropy/Dirichlet inequality
+for arbitrary positive operators. Theorem 4, p. 6, gives its rank version.
+Audenaert–Nussbaum–Szkoła–Verstraete,
+[0708.4282v1](https://arxiv.org/abs/0708.4282v1), Appendix A, Theorem 6,
+Eq. (55), p. 32, bounds root fidelity squared by affinity. The
+[global converse](STRONG_ENTROPIC_CONVERSE.md) supplies the normalization,
+two-Pauli Fourier comparison and worst-case dimension reduction that turn
+these established ingredients into a stronger memory lower bound.
+
+This is a new deduction in the repository, with independent analytical
+checks, rather than a new logarithmic-Sobolev result. No prior theorem's
+sharpness transfers automatically through the fidelity inequality; the note
+quantifies the remaining loss. Whether this exact operational corollary has
+appeared before remains an open novelty comparison.
+
+The [boundary note](ENTROPY_INEQUALITY_BOUNDARIES.md) proves exact rank-two
+spectrum optimization and additional exclusions. Its rank-two proof uses
+the already identified Cheng–Hall theorem plus an elementary mixed-marginal
+correlation bound. Its stabilizer argument reduces to the classical two-point
+logarithmic-Sobolev inequality and entropy conditioning. Its projector
+arguments are elementary compression identities. These are separate scoped
+deductions; their presence does not certify an original general theorem.
+
 ## Remaining comparisons and research target
 
 The [entropy-rate note](ENTROPY_RATE_CHARACTERIZATION.md) additionally compares

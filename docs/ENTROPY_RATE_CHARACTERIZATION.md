@@ -301,8 +301,16 @@ The [product-diagonal theorem](COMMUTING_SEED_BOUND.md) proves (9) for
 Gram matrices diagonal in any fixed tensor product of local qubit bases,
 allowing correlated spectra and arbitrary local axes. Such states cannot
 witness a strict rate improvement, even after their entropy is converted
-to asymptotic rank by Section 4. Inequality (9) for unrestricted states
-remains unresolved. The false local conditional-entropy argument in that
+to asymptotic rank by Section 4. The subsequent
+[boundary results](ENTROPY_INEQUALITY_BOUNDARIES.md) also exclude all
+rank-two states, stabilizer-basis spectra, flat rank-three two-input states,
+and a scoped family of flat half-rank projectors. A two-input, nonuniform
+rank-three state is the smallest possible entropy witness; general full-rank
+two-input states also remain open. The
+[logarithmic-Sobolev converse](STRONG_ENTROPIC_CONVERSE.md) bounds this same
+unrestricted entropy minimum from below but does not evaluate it.
+Inequality (9) for unrestricted states remains unresolved.
+The false local conditional-entropy argument in that
 note is an obstruction to one proposed proof, not a counterexample to (9).
 
 ## 7. Prior ingredients and novelty boundary

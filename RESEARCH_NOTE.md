@@ -1,9 +1,9 @@
 # Q1 — Delayed local readout through a bounded quantum interface
 
-**Version:** 0.2, 2026-09-22
+**Version:** 0.3, 2026-09-22
 
 **Project:** Falling / Q1  
-**Status:** Baseline proofs and seed reduction independently checked within the audit workspace. New analytical results give the exact one-retained-qubit optimum for every block size, an entropy bound for product-diagonal seeds, and a regularized entropy characterization of the asymptotic rate. Its general finite-accuracy evaluation and publication novelty remain unresolved. This is a research dossier, not external peer review or a claim of a new framework.
+**Status:** Baseline proofs and seed reduction independently checked within the audit workspace. New analytical results give the exact one-retained-qubit optimum for every block size, an entropy bound for product-diagonal seeds, and a regularized entropy characterization of the asymptotic rate. Further work supplies a logarithmic-Sobolev memory converse and the exact score at every rank-two spectrum. General rate evaluation and publication novelty remain unresolved. This is a research dossier, not external peer review or a claim of a new framework.
 
 ## 1. Origin, scope, and claim ledger
 
@@ -20,6 +20,8 @@ The general compression problem below is already present in the dimensional meas
 | Exact optimum and maximizing seeds with one retained qubit | Derived and independently checked from Cheng–Hall monogamy [11]; see Section 8 and the full proof. |
 | Entropy bound for product-diagonal Gram matrices | Derived and independently checked, allowing correlated spectra and arbitrary local bases; does not restrict unrestricted encoders. |
 | Entropic finite-error lower bound | Direct application of Berta et al. [4], Fano, and conditional-entropy inequalities. |
+| Stronger logarithmic-Sobolev converse throughout the nonclassical region | Derived and independently checked from Beigi [14] and the root-fidelity inequality [15]; unrestricted encoder bound. |
+| Exact maximum score at any rank-two spectrum | Derived and independently checked for arbitrary eigenvectors; excludes all rank-two entropy witnesses. |
 | Positive linear memory for every fixed contrast above 1/sqrt(2) | Derivation below using a two-setting witness and faithful, monogamous squashed entanglement [5,6]. Independent novelty not established. |
 | Regularized entropy characterization of the asymptotic rate | Derived and independently checked; fixed-cap coding and scalar-contrast continuity are proved; no closed-form evaluation. |
 | Sharp evaluation of the asymptotic memory rate, or a strict collective-coding improvement | Candidate research target; not solved here and not yet certified absent from the literature. |
@@ -293,7 +295,21 @@ L(\eta)=\max\left\{
 \right\}.
 \]
 
-Then q_min(n,eta) >= ceil[n L(eta)]. The hybrid construction gives (6).
+The new [logarithmic-Sobolev converse](docs/STRONG_ENTROPIC_CONVERSE.md) gives an additional bound. Set b(eta)=0 for eta<=eta_0 and, for eta>=eta_0, define
+
+$$
+b(\eta)=h_2\!\left(
+\frac{1-\sqrt{1-(2\eta^2-1)^2}}2
+\right).
+$$
+
+Then, with `L_new(eta)=max{L(eta),b(eta)}`,
+
+$$
+q_{\min}(n,\eta)\ge\lceil n L_{\rm new}(\eta)\rceil.
+$$
+
+This deduction applies Beigi's improved quantum logarithmic-Sobolev inequality [14, Theorem 2] to a normalized seed's square root, combines root fidelity squared with affinity [15, Appendix A, Theorem 6], and uses a Pauli-Fourier comparison. Each refined branch has entropy at most q, so the proof preserves worst-case dimension and unrestricted collective encoding. No typical-input promise or additional specimen is used. The hybrid construction still gives (6).
 
 For fixed eta, product encoding of two blocks yields
 
@@ -311,22 +327,29 @@ R(\eta)=\lim_{n\to\infty}\frac{q_{\min}(n,\eta)}n
 exists. For eta > eta_0,
 
 \[
-L(\eta)\le R(\eta)\le\frac{\eta-\eta_0}{1-\eta_0}.
+L_{\rm new}(\eta)\le R(\eta)\le\frac{\eta-\eta_0}{1-\eta_0}.
 \tag{18}
 \]
 
 Numerical evaluation of these proved formulas, not simulation data:
 
-| Worst-case TV error epsilon | Contrast eta | Necessary asymptotic rate lower bound | Achievable rate upper bound |
-|---:|---:|---:|---:|
-| 0 | 1 | 1 | 1 |
-| 0.01 | 0.98 | 0.8384137282 | 0.9317157288 |
-| 0.05 | 0.90 | 0.4272060858 | 0.6585786438 |
-| 0.10 | 0.80 | 0.0620088128 | 0.3171572875 |
-| 0.14 | 0.72 | 0.0000149892 | 0.0440202025 |
-| epsilon_0 | eta_0 | 0 | 0 |
+| Worst-case TV error epsilon | Contrast eta | Earlier baseline lower bound | Strengthened lower bound | Achievable upper bound |
+|---:|---:|---:|---:|---:|
+| 0 | 1 | 1 | 1 | 1 |
+| 0.01 | 0.98 | 0.8384137282 | 0.8872964169 | 0.9317157288 |
+| 0.05 | 0.90 | 0.4272060858 | 0.4929364851 | 0.6585786438 |
+| 0.10 | 0.80 | 0.0620088128 | 0.1414405425 | 0.3171572875 |
+| 0.14 | 0.72 | 0.0000149892 | 0.0043926999 | 0.0440202025 |
+| epsilon_0 | eta_0 | 0 | 0 | 0 |
 
-The wide gap near eta_0 is real in the bounds, not evidence that the true rate is small or that the upper curve is optimal.
+The wide gap near eta_0 is real in the bounds, not evidence that the true rate is small or that the upper curve is optimal. For t down to zero, the new lower bound has
+
+$$
+b(\eta_0+t)=4t^2\log_2(1/t)+O(t^2),
+\qquad b(1-t)=1-\frac4{\ln2}t+O(t^2).
+$$
+
+It improves the near-threshold quadratic baseline by a logarithmic factor and gives a linear approach to the exact-readout endpoint. These are asymptotics of a necessary bound, not an evaluation of R.
 
 ## 8. Exact one-qubit result and the remaining target
 
@@ -361,6 +384,15 @@ f_n(\rho)=\frac1{2n}\sum_{i,b}
 $$
 
 This is unrestricted and retains the original worst-case dimension and uniform-error quantifiers. Typical Schmidt truncation constructs a new normalized seed; its full orbit supplies a trace-preserving protocol. A continuity argument removes strict contrast slack. A single violation of the unrestricted entropy inequality above would therefore prove a collective asymptotic advantage. Conversely, that inequality holding for every Gram matrix would establish the subset rate for the whole nonclassical interval. Related asymptotic dimension/entropy methods are prior work [12,13]; the note compares their complete-assemblage demands and average-dimension quantities with this task.
+
+The [entropy-inequality boundaries](docs/ENTROPY_INEQUALITY_BOUNDARIES.md) further prove the exact maximum at any rank-two spectrum:
+
+$$
+\max_{\operatorname{spec}\rho=(\lambda,1-\lambda,0,\ldots)}g(\sqrt\rho)
+=\sqrt2(n-1)+\sqrt{2[1+4\lambda(1-\lambda)]}.
+$$
+
+This holds for arbitrary entangled eigenvectors and implies the conjectured entropy inequality for every rank-two state. Also excluded are all states diagonal in a global Clifford stabilizer basis, all flat rank-three states on two inputs, and flat half-rank projectors with one maximally mixed complementary marginal. Each is a proved family inside the unrestricted optimization; none is an assumption about admissible encoders. The smallest possible entropy witness is therefore a two-input, nonuniform rank-three state, while general full-rank two-input states also remain unresolved. Such an entropy witness would certify an asymptotic advantage through regularization even though rank three consumes two qubits at that finite block size.
 
 The smallest remaining finite-block diagnostic is n=3,q=2, with subset seed score `4+sqrt(2)`. The main target remains a sharp rate evaluation, or a proven collective advantage with meaningful converses. These deductions have independently checked proofs within the workspace, but their publication novelty is unestablished.
 
@@ -436,3 +468,7 @@ These checks verify an explicit construction at small size. They do not prove th
 [12] Thomas Cope, Roope Uola, *Quantifying the high-dimensionality of quantum devices*, arXiv:2207.05722v4. Eq. (7) compares worst-case compression; Section VI and Eqs. (20)–(22) give related state/assemblage entropy regularizations. Precise scope is compared in the entropy-rate note.
 
 [13] Thomas Cope, *Entanglement cost for steering assemblages*, arXiv:2102.02333v2. Eqs. (5)–(6) define an asymptotic complete-assemblage task; this must not be identified with a single delayed local query.
+
+[14] Salman Beigi, *Improved Quantum Hypercontractivity Inequality for the Qubit Depolarizing Channel*, arXiv:2105.00462v2 (9 December 2021). Theorem 2, Eqs. (6)–(7), printed p. 4, supplies the nonlinear entropy/Dirichlet bound. Theorem 4, p. 6, supplies a direct rank-constrained alternative. These are established ingredients.
+
+[15] Koenraad M. R. Audenaert, Michael Nussbaum, Arleta Szkoła, Frank Verstraete, *Asymptotic Error Rates in Quantum Hypothesis Testing*, arXiv:0708.4282v1. Appendix A, Theorem 6, Eq. (55), printed p. 32, gives root fidelity squared at most affinity at exponent 1/2. Its use here is a matrix inequality, not an i.i.d. input assumption.

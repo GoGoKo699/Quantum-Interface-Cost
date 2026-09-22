@@ -13,7 +13,8 @@ an independent workspace audit, including primary-source comparisons. Further
 analytical work proves the exact optimum with one retained qubit for every
 input block size, an entropy bound for product-diagonal seeds, and a regularized
 entropy characterization of the asymptotic rate. Evaluating that rate remains
-unresolved. The model is established measurement
+unresolved. A further converse derived from quantum logarithmic-Sobolev theory
+improves the quantitative memory lower bounds. The model is established measurement
 simulability, not a new framework: see [the literature comparison](docs/LITERATURE_COMPARISON.md).
 
 ## Start here
@@ -26,6 +27,8 @@ simulability, not a new framework: see [the literature comparison](docs/LITERATU
 | Exact optimum with one retained qubit | [One-qubit theorem and equality cases](docs/ONE_QUBIT_OPTIMALITY.md) |
 | A structured family that cannot beat the subset strategy | [Product-diagonal entropy bound](docs/COMMUTING_SEED_BOUND.md) |
 | Exact regularized formulation of the asymptotic rate | [Entropy-rate characterization](docs/ENTROPY_RATE_CHARACTERIZATION.md) |
+| Stronger bound for every collective encoder | [Logarithmic-Sobolev converse](docs/STRONG_ENTROPIC_CONVERSE.md) |
+| Exact rank-two spectrum trade-off and excluded families | [Entropy-inequality boundaries](docs/ENTROPY_INEQUALITY_BOUNDARIES.md) |
 | Commit-pinned independent proof and source review | [Audit report](docs/audits/PROOF_AND_NOVELTY_AUDIT.md) |
 | Closest precedents and unresolved translations | [Literature comparison](docs/LITERATURE_COMPARISON.md) |
 | Run the small checks and understand their limits | [Reproducibility](docs/REPRODUCIBILITY.md) |
@@ -76,11 +79,20 @@ trace-preserving interface; it does not change worst-case memory to average
 memory. This characterization turns any violation of the unrestricted entropy
 bound into a collective rate advantage, but does not yet evaluate the optimum.
 
+For example, at contrast eta=0.8 the new unrestricted converse requires at
+least 0.14144054 n retained qubits, improving the previous lower bound
+0.06200881 n; the subset construction uses asymptotically 0.31715729 n.
+This is a deduction from Beigi's established theorem and a standard fidelity
+inequality, not a new logarithmic-Sobolev theorem or a sharp rate claim.
+
 The main research target is a sharp finite-accuracy rate, or a proven
 collective-coding advantage with meaningful converse bounds. The smallest
 remaining diagnostic is n=3, q=2: can an unrestricted seed exceed the subset
-score `4+sqrt(2)` in the optimization `Gamma(3,4)`? The earlier n=2, q=1 question is now settled. Publication
-novelty of the remaining target and of these deductions is not certified.
+score `4+sqrt(2)` in the optimization `Gamma(3,4)`? For the entropy route,
+even a two-input state of rank three could in principle certify a rate
+advantage: all rank-two states and all flat rank-three two-input states are
+now excluded, but nonuniform rank-three and general full-rank states remain
+open. These are distinct diagnostics. Publication novelty is not certified.
 
 ## Essential boundary
 
@@ -102,11 +114,13 @@ python checks.py --max-n 4 --output results/baseline-rerun.json
 python tools/check_seed_twirl.py --output results/seed-rerun.json
 python tools/check_one_qubit_tradeoff.py --output results/one-qubit-rerun.json
 python tools/check_product_diagonal_bound.py --output results/product-diagonal-rerun.json
+python tools/check_entropy_bounds.py --output results/entropy-bounds-rerun.json
 ```
 
 The first command after installation checks 14 explicit subset constructions;
 the second checks 10 seed-to-interface constructions. The new scripts check
-43 one-qubit identities/examples and 10 product-diagonal cases. These finite
+43 one-qubit identities/examples, 10 product-diagonal cases, and 22 entropy-bound
+and seed-family cases. These finite
 diagnostics supplement the analytical proofs. There is no numerical
 optimization or large simulation. No hosted CI run is claimed.
 
