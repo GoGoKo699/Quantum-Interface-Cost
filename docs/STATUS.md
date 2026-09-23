@@ -1,7 +1,7 @@
 # Status and claim ledger
 
-Updated: 2026-09-23. Stage: sharp two-qubit subspace bounds and complete equal-leading-eigenvalue entropy theorem; unrestricted optimality and publication originality remain open.
-Latest research base: `fa2443ca413a5c1935722db1c1415be0c7ad7266`, the merge of PR #22.
+Updated: 2026-09-23. Stage: coherent unequal-core transfer audit after the complete equal-leading-eigenvalue theorem; no additional excluded state family. Unrestricted optimality and publication originality remain open.
+Latest research base: `fab95daf5e1f9a7d42ef778e3494330fa8e1c73f`, the merge of PR #23.
 
 Critical assessment base: `81bcfefb2b545742d513c4f51364a7f72972451e`, the
 merge of PR #11. The [publication and optimality assessment](audits/PUBLICATION_AND_OPTIMALITY_ASSESSMENT.md)
@@ -92,6 +92,9 @@ is asserted.
 | Exact local-orbit minimum of two-qubit rank-two subspace coupling, with sharp universal floor 7/8 | Derived and independently checked for all complex subspaces; canonical coordinates and compression maps are prior Niu–Griffiths ingredients | audits/SHARP_SUBSPACE_AND_FLAT_CORE.md Section 1 |
 | Sharp subspace anisotropy bound with coefficient 2/sqrt(3) | Derived and independently checked with exact attainer; compares average coupling and its state dependence | audits/SHARP_SUBSPACE_AND_FLAT_CORE.md Section 1.3 |
 | Sharp seed entropy bound for every two-qubit state with lambda_1=lambda_2 | Derived and independently checked; arbitrary complex eigenvectors and remaining spectrum, one scalar polynomial majorant and existing gates | audits/SHARP_SUBSPACE_AND_FLAT_CORE.md Section 2 |
+| Coherent core/tail trace-norm bound | Elementary triangle-inequality consequence; preserves the exact zero-tail score, including singular compressions. Not proposed as novel | audits/COHERENT_TRANSFER_AUDIT.md Section 2 |
+| Three stronger quadratic decoder-deficit shortcuts | Incorrect; one exact physical m=1/4 core and rational decoder reflections refute all three. No entropy counterexample | audits/COHERENT_TRANSFER_AUDIT.md Section 4 |
+| Finite support-function target for unequal-core transfer | Unresolved; a proof on t<=1/sqrt(7), m>=1/5 would close n=2. Conditional entropy implication checked using the tail's actual entropy | audits/COHERENT_TRANSFER_AUDIT.md Section 3 |
 | Quantitative stability of one-qubit maximizing seeds | Derived and independently checked; dimension-independent normalized-seed bounds and specified branch-weighted consequences | ONE_QUBIT_STABILITY.md |
 | Full noisy-X/Z average-rank profile D_M=W=w | Exact specialization of Cope–Uola SDPs; the already proved C-versus-w phase boundary supplies its full entropy comparison | audits/ROOF_PROVENANCE_AND_JOINT_SCORE.md Section 3 |
 | Collective readout can improve joint score per copy of a product seed | Incorrect: product additivity follows from Wallden–Dunjko–Andersson Theorem 3; an explicit f_2-j_2=(sqrt(2)-1)/8 gap persists under powers | audits/ROOF_PROVENANCE_AND_JOINT_SCORE.md Section 4 |
@@ -596,6 +599,16 @@ close n=2; it is clearly labeled conjectural. The full all-n entropy
 conjecture and publication originality remain unresolved.
 
 ## Publication gate
+
+The [coherent-transfer audit](audits/COHERENT_TRANSFER_AUDIT.md) supplies
+a two-line block bound that retains within-core coherence. It also keeps
+the tail's score and entropy paired, avoiding an unnecessary loss in the
+sufficient interpolation bound. One exact physical example rules out three
+stronger decoder-deficit shortcuts. The resulting finite-parameter target
+is still unproved; local numerical screening is not a certificate. This
+continuation does not enlarge the proved entropy-valid family. A new
+same-support comparison with Holevo–Shirokov Proposition 1 supplies only
+a scalar entropy estimate, not the missing four-query score control.
 
 The [continuation pinned to PR #19](audits/JOINT_RESOURCE_FRONTIER.md)
 evaluates the full conditional E_F/ordinary-negativity frontier. Its

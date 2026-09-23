@@ -41,6 +41,7 @@ python tools/certify_profile_optimizer.py --output results/profile-optimizer-rer
 python tools/certify_two_qubit_tail.py
 python tools/certify_two_qubit_core.py
 python tools/check_two_qubit_flat_core.py
+python tools/check_coherent_transfer.py
 ```
 
 The bootstrap environment was Python 3.13.5 and NumPy 2.3.5. The audit
@@ -562,3 +563,19 @@ The script checks these algebraic ingredients, not the analytical reductions,
 full two-qubit optimality, or originality. The proved entropy scope is every
 complex two-qubit state with `lambda_1=lambda_2`, using the previously proved
 high-score-core and spectral-tail gates for the complementary cases.
+
+## Coherent-transfer audit
+
+The [report](audits/COHERENT_TRANSFER_AUDIT.md) reviews main
+`fab95daf5e1f9a7d42ef778e3494330fa8e1c73f`. The two-line block proof,
+physical decoder construction and conditional entropy implication were
+independently reconstructed within the workspace. No additional entropy
+theorem or originality claim results from this continuation.
+
+`tools/check_coherent_transfer.py` checks the counterexample's physical
+Pauli compressions, decoder reflections, radical score identities and
+rational sign certificates using exact arithmetic. Normal and optimized
+Python runs produce the same [recorded output](../results/coherent_transfer_check.json).
+The finite support-function inequality remains unproved; the checker
+does not test or certify it. The report separately labels the bounded local
+falsification screening, which is not used in a proof.

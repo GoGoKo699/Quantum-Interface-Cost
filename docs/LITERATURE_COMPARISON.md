@@ -7,6 +7,16 @@ table below summarizes those completed targeted comparisons; subsequent
 sections cover the later one-qubit and spectral results. It is not an
 exhaustive certification of publication novelty.
 
+The [coherent-transfer continuation](audits/COHERENT_TRANSFER_AUDIT.md)
+compares Holevo–Shirokov, [2609.12667v1](https://arxiv.org/abs/2609.12667v1),
+Proposition 1, Eqs. (14)–(15), printed p. 6. Its same-support rank-two
+specialization is `1-h_2(m)<=[1-2sqrt(m(1-m))]/ln(2)`; the source uses
+natural-log entropy and squared root fidelity. This established scalar
+bound supplies no four-query score estimate and does not evaluate the full
+two-parameter formation profile. The coherent block inequality used in the
+continuation is itself an elementary trace-norm triangle consequence, not
+a proposed novelty. The report makes no new publication-originality claim.
+
 The later [publication and optimality assessment](audits/PUBLICATION_AND_OPTIMALITY_ASSESSMENT.md),
 pinned to `81bcfefb2b545742d513c4f51364a7f72972451e`, narrows the paper claim
 and adds a prior CHSH derivation of the symmetric one-site entropy curve.
