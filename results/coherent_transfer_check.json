@@ -1,0 +1,11 @@
+{
+  "status": "pass",
+  "arithmetic": "exact multiquadratic and rational",
+  "physical_signed_conjugations": 4,
+  "decoder_involutions": 4,
+  "core_parameter_m": "1/4",
+  "refuted_intermediate_bounds": 3,
+  "quadratic_residual_lower_bound": "22/405",
+  "conditional_entropy_margin_coefficient": "3/220",
+  "scope": "physical counterexample and conditional algebra; no proof of the support-function target"
+}
