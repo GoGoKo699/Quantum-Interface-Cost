@@ -3,6 +3,13 @@
 Updated: 2026-09-23. Stage: exact product-diagonal profile rate and entropy-source audit.
 Latest research base: `3ebde02b2d9d5dcdcd0dd445e4a16b4f5aaf03b0`, the merge of PR #10.
 
+Critical assessment base: `81bcfefb2b545742d513c4f51364a7f72972451e`, the
+merge of PR #11. The [publication and optimality assessment](audits/PUBLICATION_AND_OPTIMALITY_ASSESSMENT.md)
+identifies further prior subsumption, proves the asymptotic rate dichotomy
+and rules out a direct deficit-superadditivity argument. Its judgment is
+a credible narrower paper candidate, with no proof of unrestricted optimality
+or certification of publication novelty.
+
 ## Evidence labels
 
 **Established ingredient** means an identified prior result. **Derived and
@@ -64,6 +71,9 @@ is asserted.
 | Exact rate C(x,z) for product-diagonal refined Kraus Grams | Derived and independently checked; arbitrary correlated spectra and branch-dependent local bases allowed; fixed-cap implementation from compatibility-disk and exact-axis generators | PRODUCT_DIAGONAL_PROFILE_RATE.md |
 | Exact boundary C<w at (1-x)/(1-z)<2(1/ln2-1)^2 | Derived and independently checked for 0<z<=x<1 outside the disk, with X/Z-symmetric version; a region of unrestricted achievability beating retention, not an unrestricted converse | PRODUCT_DIAGONAL_PROFILE_RATE.md |
 | C equals steering entanglement of formation of the noisy Pauli assemblage | Exact reduction to Cope's established resource; supplied explicit evaluation, publication novelty unresolved | ENTROPY_TRADEOFF_PRIOR_AUDIT.md |
+| Symmetric one-site C(eta,eta) is the subset line | Also a short corollary of prior Zhu–Zhang–Ma CHSH entanglement bound and Cope Theorem 2, with flagged endpoint attainment | audits/PUBLICATION_AND_OPTIMALITY_ASSESSMENT.md Section 2 |
+| Either R equals the subset line everywhere or lies strictly below it at every interior contrast | Elementary deduction from established convexity and endpoints; independently reconstructed. One interior equality or the conjectured sharp onset slope would settle the full curve | audits/PUBLICATION_AND_OPTIMALITY_ASSESSMENT.md Section 3 |
+| Sharp seed deficit is superadditive under taking site marginals | Incorrect; exact correlated product-bisector example at epsilon=1/1024. The global entropy conjecture itself is not refuted | audits/PUBLICATION_AND_OPTIMALITY_ASSESSMENT.md Section 4 |
 | Strict collective asymptotic saving for every exact-X profile with 0<z<1, extending to fixed interior profiles | Derived and independently checked; retention cost z exceeds R_X(z); at x=.99,z=.5 collective rate<=.354579 versus retention rate .39 | EXACT_AXIS_RATE.md |
 | Exact two-qubit minimum of local SLD sum at every spectrum | Derived and independently checked; yields I_XZ>=2-S, but not the sharper linear seed entropy bound | TWO_QUBIT_SLD_SPECTRUM.md |
 | Quantitative stability of one-qubit maximizing seeds | Derived and independently checked; dimension-independent normalized-seed bounds and specified branch-weighted consequences | ONE_QUBIT_STABILITY.md |
