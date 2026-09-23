@@ -1,6 +1,6 @@
 # Q1 — Delayed local readout through a bounded quantum interface
 
-**Version:** 0.17, 2026-09-23
+**Version:** 0.18, 2026-09-23
 
 **Project:** Falling / Q1  
 **Status:** Baseline proofs and seed reduction independently checked within the audit workspace. The full product-diagonal profile rate has a constructive optimizer. Its one-qubit cost is an established steering entanglement measure; a new theorem-level comparison proves strict separation from the full optimized weighted-CHSH bound family inspected, while crediting the prior mixture mechanism. The unrestricted rate equals regularized formation of a local-query assemblage, whose distinction from full tensor-product assemblages is explicit. Earlier converse and construction results remain as listed below. The complete two-qubit entropy inequality, general common-accuracy rate evaluation and publication novelty remain unresolved. This is a research dossier, not external peer review or a claim of a new framework.
@@ -55,6 +55,7 @@ The general compression problem below is already present in the dimensional meas
 | Regularized entropy characterization of the asymptotic rate | Derived and independently checked; fixed-cap coding and scalar-contrast continuity are proved; no closed-form evaluation. |
 | Exact-axis boundary and unequal-accuracy collective advantage | Supplied deduction: induced-cube spectral reduction and an explicit five-qubit-memory separation from the complete original-site-retention class. |
 | Two-qubit SLD minimum at every spectrum | Supplied deduction; proves the SLD entropy inequality for two inputs, without closing the sharp linear seed entropy target. |
+| Sharp two-qubit entropy bound when lambda_3+lambda_4>=1/29 | Derived and independently checked for all complex eigenbases, by analytical reduction and an exact rational certificate. Any remaining witness has top-two weight greater than 28/29. |
 | Quantitative stability of the one-qubit optimum | Supplied deduction; normalized seeds and maximally-mixed-input branch weights, without a channel-distance claim. |
 | Sharp evaluation of the common-accuracy asymptotic memory rate, or a strict common-accuracy collective-coding improvement | Candidate research target; not solved here and not yet certified absent from the literature. |
 | Exponential sampling advantage or speedup for classical-data learning | Not established; the many-copy control in Section 9 is deliberately easy classically. |
@@ -654,9 +655,20 @@ local SLD sum exactly over every eigenbasis of every spectrum. Writing
 `k_ab=(lambda_a-lambda_b)^2/(lambda_a+lambda_b)` for decreasing eigenvalues
 (and zero for a zero denominator), its minimum is
 `E_*=k_12+k_13+k_24+k_34`. It proves `I_XZ>=2-S(rho)` for all two-qubit
-states. The resulting bound `g_2<=2sqrt(4-E_*)<=2sqrt(2+S)` remains weaker
+states. Its entropy-only consequence `g_2<=2sqrt(2+S)` remains weaker
 than the sharp linear entropy target at intermediate entropy. No all-n
 SLD claim follows.
+
+The [spectral-tail continuation](docs/audits/TWO_QUBIT_SPECTRAL_TAIL_GATE.md)
+retains the full `E_*` and proves the sharp target for every complex
+two-qubit state with `lambda_3+lambda_4>=1/29`. The proof reduces arbitrary
+ordered spectra to balanced spectra through a two-variable quadratic
+comparison. A standard-library exact rational certificate checks 400
+interval enclosures; the high-tail region is handled analytically. This
+is a proof conditional on the supplied reductions, not floating-point
+sampling. Any remaining witness has top-two weight greater than `28/29`.
+The earlier existential low-rank neighborhood has no proved numerical
+radius overlapping this cutoff, so the two results do not settle n=2.
 
 Finally, [one-qubit stability](docs/ONE_QUBIT_STABILITY.md) supplies a
 quantitative version of the equality characterization. A normalized seed

@@ -38,6 +38,7 @@ python tools/check_entropy_geometry.py --output results/entropy-geometry-rerun.j
 python tools/check_asymmetric_rate.py --output results/asymmetric-rate-rerun.json
 python tools/check_profile_rate.py --output results/profile-rate-rerun.json
 python tools/certify_profile_optimizer.py --output results/profile-optimizer-rerun.json
+python tools/certify_two_qubit_tail.py
 ```
 
 The bootstrap environment was Python 3.13.5 and NumPy 2.3.5. The audit
@@ -461,6 +462,31 @@ No large simulation or new solver output underlies the results, and the
 unchanged repository diagnostics were not rerun. Local links, whitespace,
 and the identities of LICENSE and the historical audit were checked.
 
+## Two-qubit spectral-tail certificate
+
+The [partial entropy converse](audits/TWO_QUBIT_SPECTRAL_TAIL_GATE.md) is
+pinned to main `07f557be8d5863f27304b1060274a14bfee1cd50`, tree
+`de1570ec31021b198ffc5b53c93e9c447b550b98`. Its analytical reduction and
+finite certificate were independently reconstructed within this workspace.
+The certificate covers every ordered two-qubit spectrum with bottom-two
+weight at least `1/29`, without restricting complex eigenvectors.
+
+`tools/certify_two_qubit_tail.py` uses only standard-library rational and
+integer arithmetic for acceptance. It checks 400 closed interval enclosures
+on `[1/29,9/25]`, a balanced-spectrum endpoint, and the exact inequalities
+used for the remaining interval. Decimal output is diagnostic only.
+It was run with Python 3.12.14, both ordinary and `python -O`; explicit exceptions
+keep all acceptance checks active in both modes. The reported minimum
+determinant is approximately `0.00007866733984615593`, balanced margin
+`0.003513637500858673`, and high-tail margin `0.03165915412695304`.
+
+The certificate proves the finite scalar comparisons conditional on the
+analytical argument and the previously proved SLD envelope. It does not
+certify the unhandled low-tail region, arbitrary-block optimality, or
+originality. No large simulation or new solver output is used. Unchanged
+construction diagnostics were not rerun; the new certificate, local links,
+whitespace, and the protected file identities were checked.
+
 ## Original archive provenance
 
 The user-provided archive was Q1_Quantum_Interface_Dossier_v0_1.zip.
@@ -468,7 +494,7 @@ Its SHA-256 is
 `3f3538c0307f3a1131746d84410b21752b97aa0e87d8de1722392d3b114dd8ec`.
 The following three files were imported unchanged at bootstrap commit
 `eaf085a8cb299e6b297b11d2dc3c85e24f02779e`. These are historical hashes; the
-research note has subsequently been revised to version 0.17:
+research note has subsequently been revised to version 0.18:
 
 | File | SHA-256 |
 |---|---|
