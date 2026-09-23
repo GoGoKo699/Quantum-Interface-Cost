@@ -325,6 +325,26 @@ precedents detailed above.
 
 ## Remaining comparisons and research target
 
+The [optimizer/source follow-up](audits/FORMATION_OPTIMIZERS_AND_PRIOR.md)
+adds a closer direct precedent: Han–Li–Wang–Zhu,
+[2111.02800v2](https://arxiv.org/abs/2111.02800v2), 27 December 2021,
+Theorem 1 / Eqs. (5)–(6), p. 3, gives the full weighted pure-state
+guessing optimization against trusted qubit measurements. Theorem 2 /
+Eq. (10), p. 3, gives its exact mixed-concurrence counterpart; the
+orthogonal product/Bell supports in Eqs. (S49)–(S50), pp. 12–13,
+already require only untrusted dimension three. The central-phase qutrit
+construction is therefore an explicit prior specialization.
+
+Optimizing that entire weighted concurrence family gives minimum
+concurrence w(x,z). Its scalar entropy conversion f(w) is strictly below
+C at every point outside the disk with both contrasts below one, with
+equality exactly on the disk and exact axes. The audit also derives the
+existing C dual directly by entropy reweighting of the prior pure-state
+support. Thus the full entropy convexification and optimizer evaluation
+are the specific remaining calculations, not a new weighted guessing
+framework. The supplied saturation analysis additionally characterizes
+all qutrit entropy optimizers. Historical priority remains unresolved.
+
 The [two-correlation formation audit](audits/TWO_CORRELATION_FORMATION.md)
 identifies another direct prior ingredient. Verstraete–Wolf,
 [quant-ph/0112012v1](https://arxiv.org/abs/quant-ph/0112012v1), Eq. (2),

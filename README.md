@@ -74,11 +74,15 @@ dimension three on the other side attains C with one fixed readout pair.
 Dimension two has a strictly larger cost throughout the noisy nonclassical
 interior, given by the prior Verstraete–Wolf theorem. This comparison counts
 classical flags in the realization dimension; it is not a new memory bound
-for the original interface, where classical records are free. Two exact
-[proof-method obstructions](docs/audits/ENTROPY_PROOF_RELAXATIONS.md) leave
-unrestricted equal-accuracy optimality open. The raw qubit formula and flag
-mechanism are prior; originality of the full joint-data evaluation remains
-unresolved, with one specifically identified full-text source still unread.
+for the original interface, where classical records are free. The
+[optimizer and prior follow-up](docs/audits/FORMATION_OPTIMIZERS_AND_PRIOR.md)
+now proves that every entropy optimum in that interior must separate
+classical and entangled sectors, and classifies all qutrit optimizers.
+It also identifies Han et al.'s earlier weighted guessing theorem and
+product-plus-Bell qutrit construction. The full entropy profile strictly
+exceeds the scalar conversion of their complete concurrence bound in that
+interior. Unrestricted equal-accuracy optimality and publication originality
+remain open, including one specifically identified unread full-text source.
 
 ## Start here
 
@@ -101,6 +105,8 @@ unresolved, with one specifically identified full-text source still unread.
 | Publication case and the precise unrestricted-optimality obstacle | [Critical assessment](docs/audits/PUBLICATION_AND_OPTIMALITY_ASSESSMENT.md) |
 | Full-profile distinction from steering priors and exact remaining formation identity | [Profile source comparison](docs/audits/PROFILE_NOVELTY_AND_STEERING_REDUCTION.md) |
 | Exact two-correlation formation cost and minimum realization dimension | [Dimension and prior comparison](docs/audits/TWO_CORRELATION_FORMATION.md) |
+| All qutrit entropy optimizers and a closer weighted-guessing precedent | [Optimizer structure and source map](docs/audits/FORMATION_OPTIMIZERS_AND_PRIOR.md) |
+| An exact matrix certificate for the unresolved two-input joint entropy bound | [Common-state operator cover](docs/audits/FORMATION_OPTIMIZERS_AND_PRIOR.md#3-an-exact-matrix-certificate-for-the-unresolved-two-input-joint-bound) |
 | Why total Holevo budgets and rank-two interpolation do not close the entropy proof | [Proof-method obstructions](docs/audits/ENTROPY_PROOF_RELAXATIONS.md) |
 | Entropy-production, coherence and steering-cost precedents | [Entropy trade-off source audit](docs/ENTROPY_TRADEOFF_PRIOR_AUDIT.md) |
 | Exact rank-two spectrum trade-off and excluded families | [Entropy-inequality boundaries](docs/ENTROPY_INEQUALITY_BOUNDARIES.md) |

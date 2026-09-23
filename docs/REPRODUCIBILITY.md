@@ -398,6 +398,22 @@ matrix search or large simulation was used. Earlier diagnostics were
 unchanged and not rerun. These checks establish neither unrestricted
 optimality nor exhaustive originality.
 
+## Formation optimizer equality and weighted-guessing prior
+
+The further [optimizer/source audit](audits/FORMATION_OPTIMIZERS_AND_PRIOR.md)
+is pinned to `d3000ccc1f89fc357ebce7025bb166df2197e7d7`. Internal
+independent reconstruction checked the weighted concurrence support,
+strict entropy-conversion comparison, supporting-plane equality chain,
+all four classical sign sectors and the complete qutrit optimizer family.
+Han et al.'s primary arXiv version and supplement were inspected directly.
+Public OAI metadata supplied the canonical Tomassoli PDF link, but its
+full text still returned HTTP 403; no mathematical content is attributed
+to that unread source. The common-state operator-covering equivalence
+also received independent review of normalization, dual signs, Slater
+feasibility, attainment and singular-state limits. No numerical solver
+was used to claim a feasible or infeasible covering instance. No numerical
+search supports these deductions; unchanged diagnostics were not rerun.
+
 ## Original archive provenance
 
 The user-provided archive was Q1_Quantum_Interface_Dossier_v0_1.zip.
@@ -405,7 +421,7 @@ Its SHA-256 is
 `3f3538c0307f3a1131746d84410b21752b97aa0e87d8de1722392d3b114dd8ec`.
 The following three files were imported unchanged at bootstrap commit
 `eaf085a8cb299e6b297b11d2dc3c85e24f02779e`. These are historical hashes; the
-research note has subsequently been revised to version 0.14:
+research note has subsequently been revised to version 0.15:
 
 | File | SHA-256 |
 |---|---|
