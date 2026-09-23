@@ -61,6 +61,13 @@ proves a fixed-block dichotomy for full-tuple formation and distinguishes
 the complete profile from fixed qubit-output channel completion. The
 unrestricted local-query rate and exhaustive originality remain open.
 
+The [roof provenance and joint-score audit](docs/audits/ROOF_PROVENANCE_AND_JOINT_SCORE.md)
+identifies the symmetry method and abstract fixed-block dichotomy as direct
+applications of Vollbrecht–Werner. It maps Cope–Uola's average-rank cost to
+the full incompatibility-weight profile and proves an exact local/joint
+score gap that survives tensor repetition. The new two-qubit variational
+formula still leaves the all-state entropy bound unresolved.
+
 ## Start here
 
 | Purpose | Read |

@@ -325,6 +325,34 @@ precedents detailed above.
 
 ## Remaining comparisons and research target
 
+The [roof provenance audit](audits/ROOF_PROVENANCE_AND_JOINT_SCORE.md)
+supplies a direct subsumption map to Vollbrecht–Werner
+[quant-ph/0010095v2](https://arxiv.org/abs/quant-ph/0010095v2), Section IV.A,
+Eqs. (38)–(41), pp. 10–11, and IV.B, Eq. (42), p. 11. These prior results
+supply the symmetry convex-roof method and the abstract fixed-block
+affinity/dichotomy argument. The noisy-Pauli orbit minimum and product
+moment simplex are the task-specific substitutions. Their OO-invariant
+state formula is not an affine identification of C: its separable region
+is polygonal, while C vanishes on a quarter disk. This obstruction does
+not rule out arbitrary nonlinear reductions.
+
+Cope–Uola [2207.05722v4](https://arxiv.org/abs/2207.05722v4), Eqs. (8),
+(13)–(14), pp. 5, 7–8, specializes exactly to D_M=W=w for the entire
+independently noisy X/Z family. The report proves equality by twirling
+the whole SDP, preserving its worst-input average-rank objective. Thus
+the existing C-versus-w phase theorem also gives the full comparison with
+that prior measure; equal-accuracy slices coincide. This does not equate
+average log rank, formation entropy and maximum retained dimension.
+
+Wallden–Dunjko–Andersson
+[1312.5205v1](https://arxiv.org/abs/1312.5205v1), Theorem 3 / Eq. (74),
+p. 14, and Lemma 7, p. 15, subsumes product additivity of the joint score:
+the filtered ensemble factors with independent priors and additive Hamming
+loss. A correlated seed does not satisfy those hypotheses. An explicit
+exact local/joint score gap therefore persists under repetition despite
+collective readout. Neither this prior theorem nor the new one-effect
+formula supplies the missing all-state entropy inequality.
+
 The [tensor-formation and channel audit](audits/TENSOR_FORMATION_AND_CHANNEL_COMPARISON.md)
 follows the fixed-readout compression chain through Cope–Uola, Wootters and
 Wilde. Minimizing Choi formation entropy over all qubit channels with

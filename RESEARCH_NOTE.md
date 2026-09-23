@@ -1,6 +1,6 @@
 # Q1 — Delayed local readout through a bounded quantum interface
 
-**Version:** 0.12, 2026-09-23
+**Version:** 0.13, 2026-09-23
 
 **Project:** Falling / Q1  
 **Status:** Baseline proofs and seed reduction independently checked within the audit workspace. The full product-diagonal profile rate has a constructive optimizer. Its one-qubit cost is an established steering entanglement measure; a new theorem-level comparison proves strict separation from the full optimized weighted-CHSH bound family inspected, while crediting the prior mixture mechanism. The unrestricted rate equals regularized formation of a local-query assemblage, whose distinction from full tensor-product assemblages is explicit. Earlier converse and construction results remain as listed below. The complete two-qubit entropy inequality, general common-accuracy rate evaluation and publication novelty remain unresolved. This is a research dossier, not external peer review or a claim of a new framework.
@@ -29,8 +29,10 @@ The general compression problem below is already present in the dimensional meas
 | Full asymmetric profile versus weighted-CHSH formation bounds | Derived and independently checked: the complete optimized Zhu–Zhang–Ma affine family yields only the radial bound, strictly below C at every asymmetric point outside the disk. This comparison does not exhaust all prior results. |
 | Unrestricted rate as local-query steering formation | Derived and independently checked: R=inf_n E_FA(L_n)/n. The required local-query identity is stronger than ordinary tensor-power formation additivity; no evaluation is asserted. |
 | Exact dimension separation from joint product queries | Derived and independently checked: for two input qubits at eta=(1+1/sqrt(2))/2, local and tuple targets have minimum dimensions two and three. An explicit qutrit instrument attains the tuple target; no entropy-rate separation follows. |
-| Fixed-block full-tuple formation dichotomy | Derived and independently checked: one interior additivity point is equivalent to all-contrast additivity and a universal joint-decoder entropy inequality. This does not replace the stronger local-query inequality. |
+| Fixed-block full-tuple formation dichotomy | Task-specific application of Vollbrecht–Werner Eq. (42); one interior additivity point is equivalent to all-contrast additivity and a universal joint-decoder entropy inequality. This does not replace the stronger local-query inequality. |
 | Full profile versus fixed qubit-output channel completion | Derived and independently checked: the minimum Choi E_F is f([x+z-1]_+), strictly above C whenever x+z>1 and both x,z<1; agreement holds exactly on the remaining triangle and exact axes. |
+| Full profile versus Cope–Uola average-rank cost | Exact specialization D_M=W=w; the existing phase boundary identifies C<w. Worst-case quantum dimension remains a different resource. |
+| Product repetition removes the local/joint score distinction | Incorrect: a certified rank-two seed has f_2-j_2=(sqrt(2)-1)/8, preserved under all tensor powers. Product additivity of j is a prior minimum-cost measurement theorem; this seed violates no entropy bound. |
 | Exact maximum score at any rank-two spectrum | Derived and independently checked for arbitrary eigenvectors; excludes all rank-two entropy witnesses. |
 | Exact flat half-rank optimum through four input qubits | Derived and independently checked, with equality cases; with separate lower-flat-rank estimates; nonflat cases remain unresolved. |
 | Further seed entropy exclusions | Derived and independently checked for local classical flags, locally maximally mixed two-qubit states, and condition number at most 6.235819648; restricted families. |
@@ -614,6 +616,15 @@ the normalized Kraus weights; it does not assert channel-distance
 closeness or input-independent physical branch probabilities.
 
 The [primary-source audit](docs/audits/PROOF_AND_NOVELTY_AUDIT.md) establishes that the general framework [1,2] and exact endpoint [10] are prior. It gives an exact discrimination-task reduction, strict obstructions to importing full-outcome MUB or common-reconstruction converses, and a genuine achievability bridge from fixed-cap reconstruction codes [9]. It also identifies a false marginal-distortion invariance step in [9]; that is a source-proof gap, not a refutation of its theorem conclusion. See the [comparison ledger](docs/LITERATURE_COMPARISON.md) for locators and remaining novelty questions.
+
+The [roof and joint-score continuation](docs/audits/ROOF_PROVENANCE_AND_JOINT_SCORE.md)
+credits Vollbrecht–Werner's exact convex-roof principles, identifies the
+whole Cope–Uola average-rank profile with incompatibility weight, and proves
+that product repetition preserves an explicit local/joint score gap even
+with collective readout. It reduces each two-qubit joint context to one
+matrix-effect optimization, but does not solve the outer entropy problem.
+This strengthens provenance and excludes particular proof routes; it
+certifies neither publication originality nor unrestricted optimality.
 
 ## 9. Essential negative control: expectation estimation is easy classically
 
