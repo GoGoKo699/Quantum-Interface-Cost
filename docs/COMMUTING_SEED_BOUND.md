@@ -4,6 +4,12 @@ Date: 2026-09-22. Research base: `df45e2eaceb5669cfff9ac063d3da845d622dac3`.
 Status: supplied analytical deduction, independently checked within this
 workspace; publication novelty not certified.
 
+The subsequent [profile-rate theorem](PRODUCT_DIAGONAL_PROFILE_RATE.md)
+evaluates the full two-parameter asymptotic rate for this Gram family.
+It recovers the common-accuracy subset bound below and identifies precisely
+where unequal X/Z accuracies permit a lower rate than original-site retention.
+Both results keep the unrestricted encoder problem separate from this family.
+
 This note proves a restricted-family bound inside the unrestricted
 [normalized-seed formulation](COLLECTIVE_ENCODING_REDUCTION.md). It does
 not restrict the operational problem, prove the unrestricted candidate

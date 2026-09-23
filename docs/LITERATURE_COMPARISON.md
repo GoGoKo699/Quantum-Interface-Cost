@@ -1,6 +1,6 @@
 # Literature comparison and remaining novelty questions
 
-Updated: 2026-09-22. The [commit-pinned audit](audits/PROOF_AND_NOVELTY_AUDIT.md)
+Updated: 2026-09-23. The [commit-pinned audit](audits/PROOF_AND_NOVELTY_AUDIT.md)
 contains exact source versions, theorem/equation/page locators, resource maps,
 proof reconstructions, and counterexamples for the bootstrap dossier. The
 table below summarizes those completed targeted comparisons; subsequent
@@ -259,6 +259,30 @@ eigenbases. An explicit nonphysical graph satisfies the elementary necessary
 constraints but violates the target, showing that those constraints alone
 lose essential structure. None of these steps proves or refutes the global
 quantum SLD candidate.
+
+## Entropy and steering-cost identifications
+
+The [entropy trade-off audit](ENTROPY_TRADEOFF_PRIOR_AUDIT.md) adds two
+substantive source identifications. Roga–Fannes–Zyczkowski
+[1004.4782v1](https://arxiv.org/abs/1004.4782v1), Corollary 4 / Lemma 5 /
+Eq. (26), printed p. 4, already bounds binary entropy of mixing by root
+fidelity. Commuting pinching and relative-entropy data processing recover
+the quantum penalty in the asymmetric seed inequality. Coherence of
+formation superadditivity and its established qubit formula recover its
+classical flip-entropy term. Exact source versions and normalizations are
+recorded in that audit; these are alternative applications of prior results.
+
+The [profile theorem](PRODUCT_DIAGONAL_PROFILE_RATE.md) also evaluates
+Cope's established steering entanglement of formation for
+`sigma_(+/-|X)=(I+/-xX)/4`, `sigma_(+/-|Z)=(I+/-zZ)/4`.
+Cope [2102.02333v2](https://arxiv.org/abs/2102.02333v2), Eq. (10) and
+Theorem 2, printed p. 3, defines that resource and relates it to state
+entanglement of formation. The audit supplies both directions of the
+Kraus/assemblage reduction. The evaluated convex envelope, retention-saving
+phase boundary and product-diagonal tensorization are the supplied
+deductions; the underlying resource is prior. No regularized
+complete-assemblage cost is silently imported as the unrestricted local-query
+rate. Novelty of this explicit evaluation remains under comparison.
 
 ## Remaining comparisons and research target
 

@@ -36,6 +36,7 @@ python tools/check_nonuniform_seeds.py --output results/nonuniform-rerun.json
 python tools/check_allocation_and_kernels.py --output results/allocation-kernels-rerun.json
 python tools/check_entropy_geometry.py --output results/entropy-geometry-rerun.json
 python tools/check_asymmetric_rate.py --output results/asymmetric-rate-rerun.json
+python tools/check_profile_rate.py --output results/profile-rate-rerun.json
 ```
 
 The bootstrap environment was Python 3.13.5 and NumPy 2.3.5. The audit
@@ -277,6 +278,38 @@ checked within the workspace. These finite diagnostics certify neither
 the universal statements nor publication novelty. LICENSE and the
 historical audit are unchanged.
 
+## Product-diagonal profile diagnostics
+
+The continuation based on main
+`3ebde02b2d9d5dcdcd0dd445e4a16b4f5aaf03b0` adds
+`tools/check_profile_rate.py` and `results/profile_rate.json`.
+All 18 deterministic cases pass in Python 3.12.14 / NumPy 2.3.5;
+an independent rerun reproduces the recorded JSON exactly. The largest
+matrix dimension is eight. Maximum identity and positive inequality
+residuals are both 6.0443533557040756e-15 at tolerance 1e-10.
+
+Seven specified qubit states check the Bloch score formula, including Y
+components and pure/mixed endpoints. Four correlated product-diagonal
+states on two or three qubits check full-matrix trace norms against edge
+decompositions, conditional entropies and weighted profile bounds. Three
+zero-mass edges are explicitly omitted by the stated mathematical rule.
+Five scalar cases check the exact-axis conjugate and selected weighted
+supports. One case checks the rational mixture using exact Fraction
+arithmetic; its entropy is separately evaluated in floating point. The
+remaining case checks five fixed profiles against the analytic phase
+criterion, including its boundary.
+
+Conjugate maximizers use monotonicity of f' and ordinary floating-point
+bisection, with bracket widths at most 2e-14. The recorded derivative
+brackets are diagnostics, not directed-rounding certificates or optimizer
+proofs. Both endpoint roundoff adjustments are reported explicitly: each
+is 2.220446049250313e-16, below the allowance 1e-12. No numerical rank
+inference, random search, large-block simulation or new complete-instrument
+enumeration is used. The existing complete-orbit and truncation proofs
+carry achievability; the new analytical proof and phase boundary were
+independently reconstructed within the workspace. The source audit records
+established ingredients and unresolved publication novelty separately.
+
 ## Original archive provenance
 
 The user-provided archive was Q1_Quantum_Interface_Dossier_v0_1.zip.
@@ -284,7 +317,7 @@ Its SHA-256 is
 `3f3538c0307f3a1131746d84410b21752b97aa0e87d8de1722392d3b114dd8ec`.
 The following three files were imported unchanged at bootstrap commit
 `eaf085a8cb299e6b297b11d2dc3c85e24f02779e`. These are historical hashes; the
-research note has subsequently been revised to version 0.8:
+research note has subsequently been revised to version 0.9:
 
 | File | SHA-256 |
 |---|---|

@@ -1,0 +1,2298 @@
+{
+  "status": "PASS",
+  "research_base": "3ebde02b2d9d5dcdcd0dd445e4a16b4f5aaf03b0",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "tolerance": 1e-10,
+  "case_count": 18,
+  "maximum_matrix_dimension": 8,
+  "max_identity_error": 6.0443533557040756e-15,
+  "max_inequality_violation": 6.0443533557040756e-15,
+  "endpoint_roundoff_bound": 1e-12,
+  "endpoint_adjustment_count": 2,
+  "conjugate_bracket_width_target": 2e-14,
+  "cases": [
+    {
+      "label": "maximally_mixed_qubit",
+      "matrix_dimension": 2,
+      "supplied_bloch_radius": 0.0,
+      "normalized_bloch_direction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "supplied_spectrum": [
+        0.5,
+        0.5
+      ],
+      "trace_norm_scores": [
+        1.0,
+        1.0
+      ],
+      "formula_scores": [
+        1.0,
+        1.0
+      ],
+      "entropy_bits": 1.0,
+      "minimal_qubit_profile_entropy": 1.0,
+      "radial_mixture": {
+        "free_disk_point": [
+          0.7071067811865475,
+          0.7071067811865475
+        ],
+        "exact_axis_point": [
+          1.0,
+          1.0
+        ],
+        "exact_axis_weight": 1.0,
+        "ray_mixture_cost": 1.0
+      },
+      "weighted_support_checks": [
+        {
+          "orientation": "XZ",
+          "a": 0.7,
+          "b": 0.25,
+          "weighted_score_minus_entropy": -0.050000000000000044,
+          "profile_support_upper": 0.7433034373659252
+        },
+        {
+          "orientation": "ZX",
+          "a": 0.7,
+          "b": 0.25,
+          "weighted_score_minus_entropy": -0.050000000000000044,
+          "profile_support_upper": 0.7433034373659252
+        },
+        {
+          "orientation": "XZ",
+          "a": 1.2,
+          "b": 0.75,
+          "weighted_score_minus_entropy": 0.95,
+          "profile_support_upper": 1.4150971698084904
+        },
+        {
+          "orientation": "ZX",
+          "a": 1.2,
+          "b": 0.75,
+          "weighted_score_minus_entropy": 0.95,
+          "profile_support_upper": 1.4150971698084904
+        },
+        {
+          "orientation": "XZ",
+          "a": 1.4,
+          "b": 1.0,
+          "weighted_score_minus_entropy": 1.4,
+          "profile_support_upper": 1.7204650534085253
+        },
+        {
+          "orientation": "ZX",
+          "a": 1.4,
+          "b": 1.0,
+          "weighted_score_minus_entropy": 1.4,
+          "profile_support_upper": 1.7204650534085253
+        },
+        {
+          "orientation": "XZ",
+          "a": 1.8,
+          "b": 1.4,
+          "weighted_score_minus_entropy": 2.2,
+          "profile_support_upper": 2.280350850198276
+        },
+        {
+          "orientation": "ZX",
+          "a": 1.8,
+          "b": 1.4,
+          "weighted_score_minus_entropy": 2.2,
+          "profile_support_upper": 2.280350850198276
+        },
+        {
+          "orientation": "XZ",
+          "a": 2.0,
+          "b": 1.5,
+          "weighted_score_minus_entropy": 2.5,
+          "profile_support_upper": 2.5
+        },
+        {
+          "orientation": "ZX",
+          "a": 2.0,
+          "b": 1.5,
+          "weighted_score_minus_entropy": 2.5,
+          "profile_support_upper": 2.5
+        }
+      ],
+      "scope": "One supplied qubit state, including possible Y component; exact score and profile-entropy formulas and finite weighted inequalities.",
+      "roundoff_bound": 1e-12,
+      "endpoint_adjustments": [
+        {
+          "quantity": "F_X",
+          "original": 1.0000000000000002,
+          "adjusted": 1.0
+        },
+        {
+          "quantity": "F_Z",
+          "original": 1.0000000000000002,
+          "adjusted": 1.0
+        }
+      ],
+      "max_identity_error": 1.1102230246251565e-16,
+      "max_inequality_violation": 0.0,
+      "identity_checks": 8,
+      "inequality_checks": 12
+    },
+    {
+      "label": "pure_bisector",
+      "matrix_dimension": 2,
+      "supplied_bloch_radius": 1.0,
+      "normalized_bloch_direction": [
+        0.7071067811865475,
+        0.0,
+        0.7071067811865475
+      ],
+      "supplied_spectrum": [
+        1.0,
+        0.0
+      ],
+      "trace_norm_scores": [
+        0.7071067811865476,
+        0.7071067811865476
+      ],
+      "formula_scores": [
+        0.7071067811865475,
+        0.7071067811865475
+      ],
+      "entropy_bits": 0.0,
+      "minimal_qubit_profile_entropy": 2.9976021664879227e-15,
+      "radial_mixture": null,
+      "weighted_support_checks": [
+        {
+          "orientation": "XZ",
+          "a": 0.7,
+          "b": 0.25,
+          "weighted_score_minus_entropy": 0.6717514421272202,
+          "profile_support_upper": 0.7433034373659252
+        },
+        {
+          "orientation": "ZX",
+          "a": 0.7,
+          "b": 0.25,
+          "weighted_score_minus_entropy": 0.6717514421272202,
+          "profile_support_upper": 0.7433034373659252
+        },
+        {
+          "orientation": "XZ",
+          "a": 1.2,
+          "b": 0.75,
+          "weighted_score_minus_entropy": 1.3788582233137676,
+          "profile_support_upper": 1.4150971698084904
+        },
+        {
+          "orientation": "ZX",
+          "a": 1.2,
+          "b": 0.75,
+          "weighted_score_minus_entropy": 1.3788582233137676,
+          "profile_support_upper": 1.4150971698084904
+        },
+        {
+          "orientation": "XZ",
+          "a": 1.4,
+          "b": 1.0,
+          "weighted_score_minus_entropy": 1.6970562748477143,
+          "profile_support_upper": 1.7204650534085253
+        },
+        {
+          "orientation": "ZX",
+          "a": 1.4,
+          "b": 1.0,
+          "weighted_score_minus_entropy": 1.6970562748477143,
+          "profile_support_upper": 1.7204650534085253
+        },
+        {
+          "orientation": "XZ",
+          "a": 1.8,
+          "b": 1.4,
+          "weighted_score_minus_entropy": 2.262741699796952,
+          "profile_support_upper": 2.280350850198276
+        },
+        {
+          "orientation": "ZX",
+          "a": 1.8,
+          "b": 1.4,
+          "weighted_score_minus_entropy": 2.262741699796952,
+          "profile_support_upper": 2.280350850198276
+        },
+        {
+          "orientation": "XZ",
+          "a": 2.0,
+          "b": 1.5,
+          "weighted_score_minus_entropy": 2.474873734152917,
+          "profile_support_upper": 2.5
+        },
+        {
+          "orientation": "ZX",
+          "a": 2.0,
+          "b": 1.5,
+          "weighted_score_minus_entropy": 2.474873734152917,
+          "profile_support_upper": 2.5
+        }
+      ],
+      "scope": "One supplied qubit state, including possible Y component; exact score and profile-entropy formulas and finite weighted inequalities.",
+      "roundoff_bound": 1e-12,
+      "endpoint_adjustments": [],
+      "max_identity_error": 2.9976021664879227e-15,
+      "max_inequality_violation": 2.9976021664879227e-15,
+      "identity_checks": 6,
+      "inequality_checks": 11
+    },
+    {
+      "label": "pure_qubit_with_Y",
+      "matrix_dimension": 2,
+      "supplied_bloch_radius": 1.0,
+      "normalized_bloch_direction": [
+        0.6666666666666666,
+        0.6666666666666666,
+        0.3333333333333333
+      ],
+      "supplied_spectrum": [
+        1.0,
+        0.0
+      ],
+      "trace_norm_scores": [
+        0.6666666666666664,
+        0.3333333333333332
+      ],
+      "formula_scores": [
+        0.6666666666666666,
+        0.3333333333333333
+      ],
+      "entropy_bits": 0.0,
+      "minimal_qubit_profile_entropy": 0.0,
+      "radial_mixture": null,
+      "weighted_support_checks": [
+        {
+          "orientation": "XZ",
+          "a": 0.7,
+          "b": 0.25,
+          "weighted_score_minus_entropy": 0.5499999999999997,
+          "profile_support_upper": 0.7433034373659252
+        },
+        {
+          "orientation": "ZX",
+          "a": 0.7,
+          "b": 0.25,
+          "weighted_score_minus_entropy": 0.3999999999999998,
+          "profile_support_upper": 0.7433034373659252
+        },
+        {
+          "orientation": "XZ",
+          "a": 1.2,
+          "b": 0.75,
+          "weighted_score_minus_entropy": 1.0499999999999996,
+          "profile_support_upper": 1.4150971698084904
+        },
+        {
+          "orientation": "ZX",
+          "a": 1.2,
+          "b": 0.75,
+          "weighted_score_minus_entropy": 0.8999999999999997,
+          "profile_support_upper": 1.4150971698084904
+        },
+        {
+          "orientation": "XZ",
+          "a": 1.4,
+          "b": 1.0,
+          "weighted_score_minus_entropy": 1.2666666666666662,
+          "profile_support_upper": 1.7204650534085253
+        },
+        {
+          "orientation": "ZX",
+          "a": 1.4,
+          "b": 1.0,
+          "weighted_score_minus_entropy": 1.1333333333333329,
+          "profile_support_upper": 1.7204650534085253
+        },
+        {
+          "orientation": "XZ",
+          "a": 1.8,
+          "b": 1.4,
+          "weighted_score_minus_entropy": 1.666666666666666,
+          "profile_support_upper": 2.280350850198276
+        },
+        {
+          "orientation": "ZX",
+          "a": 1.8,
+          "b": 1.4,
+          "weighted_score_minus_entropy": 1.5333333333333328,
+          "profile_support_upper": 2.280350850198276
+        },
+        {
+          "orientation": "XZ",
+          "a": 2.0,
+          "b": 1.5,
+          "weighted_score_minus_entropy": 1.8333333333333326,
+          "profile_support_upper": 2.5
+        },
+        {
+          "orientation": "ZX",
+          "a": 2.0,
+          "b": 1.5,
+          "weighted_score_minus_entropy": 1.666666666666666,
+          "profile_support_upper": 2.5
+        }
+      ],
+      "scope": "One supplied qubit state, including possible Y component; exact score and profile-entropy formulas and finite weighted inequalities.",
+      "roundoff_bound": 1e-12,
+      "endpoint_adjustments": [],
+      "max_identity_error": 2.220446049250313e-16,
+      "max_inequality_violation": 0.0,
+      "identity_checks": 5,
+      "inequality_checks": 11
+    },
+    {
+      "label": "mixed_qubit_with_Y",
+      "matrix_dimension": 2,
+      "supplied_bloch_radius": 0.7,
+      "normalized_bloch_direction": [
+        0.4364357804719848,
+        0.8728715609439696,
+        -0.2182178902359924
+      ],
+      "supplied_spectrum": [
+        0.85,
+        0.15000000000000002
+      ],
+      "trace_norm_scores": [
+        0.7767453465154031,
+        0.7302967433402214
+      ],
+      "formula_scores": [
+        0.7767453465154028,
+        0.7302967433402214
+      ],
+      "entropy_bits": 0.6098403047164005,
+      "minimal_qubit_profile_entropy": 0.22089009421673647,
+      "radial_mixture": {
+        "free_disk_point": [
+          0.7285545887964093,
+          0.6849877452507416
+        ],
+        "exact_axis_point": [
+          1.0,
+          0.9402009894445367
+        ],
+        "exact_axis_weight": 0.1775338824307826,
+        "ray_mixture_cost": 0.16237413057763994
+      },
+      "weighted_support_checks": [
+        {
+          "orientation": "XZ",
+          "a": 0.7,
+          "b": 0.25,
+          "weighted_score_minus_entropy": 0.11645562367943696,
+          "profile_support_upper": 0.7433034373659252
+        },
+        {
+          "orientation": "ZX",
+          "a": 0.7,
+          "b": 0.25,
+          "weighted_score_minus_entropy": 0.09555375225060525,
+          "profile_support_upper": 0.7433034373659252
+        },
+        {
+          "orientation": "XZ",
+          "a": 1.2,
+          "b": 0.75,
+          "weighted_score_minus_entropy": 0.8699766686072492,
+          "profile_support_upper": 1.4150971698084904
+        },
+        {
+          "orientation": "ZX",
+          "a": 1.2,
+          "b": 0.75,
+          "weighted_score_minus_entropy": 0.8490747971784176,
+          "profile_support_upper": 1.4150971698084904
+        },
+        {
+          "orientation": "XZ",
+          "a": 1.4,
+          "b": 1.0,
+          "weighted_score_minus_entropy": 1.2078999237453851,
+          "profile_support_upper": 1.7204650534085253
+        },
+        {
+          "orientation": "ZX",
+          "a": 1.4,
+          "b": 1.0,
+          "weighted_score_minus_entropy": 1.1893204824753125,
+          "profile_support_upper": 1.7204650534085253
+        },
+        {
+          "orientation": "XZ",
+          "a": 1.8,
+          "b": 1.4,
+          "weighted_score_minus_entropy": 1.810716759687635,
+          "profile_support_upper": 2.280350850198276
+        },
+        {
+          "orientation": "ZX",
+          "a": 1.8,
+          "b": 1.4,
+          "weighted_score_minus_entropy": 1.7921373184175622,
+          "profile_support_upper": 2.280350850198276
+        },
+        {
+          "orientation": "XZ",
+          "a": 2.0,
+          "b": 1.5,
+          "weighted_score_minus_entropy": 2.039095503324738,
+          "profile_support_upper": 2.5
+        },
+        {
+          "orientation": "ZX",
+          "a": 2.0,
+          "b": 1.5,
+          "weighted_score_minus_entropy": 2.0158712017371467,
+          "profile_support_upper": 2.5
+        }
+      ],
+      "scope": "One supplied qubit state, including possible Y component; exact score and profile-entropy formulas and finite weighted inequalities.",
+      "roundoff_bound": 1e-12,
+      "endpoint_adjustments": [],
+      "max_identity_error": 2.220446049250313e-16,
+      "max_inequality_violation": 0.0,
+      "identity_checks": 7,
+      "inequality_checks": 12
+    },
+    {
+      "label": "mixed_XZ_qubit",
+      "matrix_dimension": 2,
+      "supplied_bloch_radius": 0.8,
+      "normalized_bloch_direction": [
+        0.6,
+        0.0,
+        0.8
+      ],
+      "supplied_spectrum": [
+        0.9,
+        0.09999999999999998
+      ],
+      "trace_norm_scores": [
+        0.7683749084919417,
+        0.8772684879784522
+      ],
+      "formula_scores": [
+        0.7683749084919418,
+        0.8772684879784524
+      ],
+      "entropy_bits": 0.4689955935892811,
+      "minimal_qubit_profile_entropy": 0.4689955935892808,
+      "radial_mixture": {
+        "free_disk_point": [
+          0.6588760483268635,
+          0.7522515223920629
+        ],
+        "exact_axis_point": [
+          0.8758720038634452,
+          1.0
+        ],
+        "exact_axis_weight": 0.5046124472426795,
+        "ray_mixture_cost": 0.41621505005364673
+      },
+      "weighted_support_checks": [
+        {
+          "orientation": "XZ",
+          "a": 0.7,
+          "b": 0.25,
+          "weighted_score_minus_entropy": 0.28818396434969107,
+          "profile_support_upper": 0.7433034373659252
+        },
+        {
+          "orientation": "ZX",
+          "a": 0.7,
+          "b": 0.25,
+          "weighted_score_minus_entropy": 0.33718607511862086,
+          "profile_support_upper": 0.7433034373659252
+        },
+        {
+          "orientation": "XZ",
+          "a": 1.2,
+          "b": 0.75,
+          "weighted_score_minus_entropy": 1.111005662584888,
+          "profile_support_upper": 1.4150971698084904
+        },
+        {
+          "orientation": "ZX",
+          "a": 1.2,
+          "b": 0.75,
+          "weighted_score_minus_entropy": 1.1600077733538179,
+          "profile_support_upper": 1.4150971698084904
+        },
+        {
+          "orientation": "XZ",
+          "a": 1.4,
+          "b": 1.0,
+          "weighted_score_minus_entropy": 1.4839977662778894,
+          "profile_support_upper": 1.7204650534085253
+        },
+        {
+          "orientation": "ZX",
+          "a": 1.4,
+          "b": 1.0,
+          "weighted_score_minus_entropy": 1.5275551980724937,
+          "profile_support_upper": 1.7204650534085253
+        },
+        {
+          "orientation": "XZ",
+          "a": 1.8,
+          "b": 1.4,
+          "weighted_score_minus_entropy": 2.142255124866047,
+          "profile_support_upper": 2.280350850198276
+        },
+        {
+          "orientation": "ZX",
+          "a": 1.8,
+          "b": 1.4,
+          "weighted_score_minus_entropy": 2.185812556660651,
+          "profile_support_upper": 2.280350850198276
+        },
+        {
+          "orientation": "XZ",
+          "a": 2.0,
+          "b": 1.5,
+          "weighted_score_minus_entropy": 2.38365695536228,
+          "profile_support_upper": 2.5
+        },
+        {
+          "orientation": "ZX",
+          "a": 2.0,
+          "b": 1.5,
+          "weighted_score_minus_entropy": 2.4381037451055354,
+          "profile_support_upper": 2.5
+        }
+      ],
+      "scope": "One supplied qubit state, including possible Y component; exact score and profile-entropy formulas and finite weighted inequalities.",
+      "roundoff_bound": 1e-12,
+      "endpoint_adjustments": [],
+      "max_identity_error": 3.3306690738754696e-16,
+      "max_inequality_violation": 0.0,
+      "identity_checks": 8,
+      "inequality_checks": 12
+    },
+    {
+      "label": "mixture_exact_axis_qubit",
+      "matrix_dimension": 2,
+      "supplied_bloch_radius": 0.8558395617924729,
+      "normalized_bloch_direction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "supplied_spectrum": [
+        0.9279197808962365,
+        0.07208021910376355
+      ],
+      "trace_norm_scores": [
+        0.9999999999999998,
+        0.517241379310345
+      ],
+      "formula_scores": [
+        1.0,
+        0.5172413793103448
+      ],
+      "entropy_bits": 0.3736391041765026,
+      "minimal_qubit_profile_entropy": 0.3736391041765024,
+      "radial_mixture": {
+        "free_disk_point": [
+          0.8882176431559489,
+          0.45942291887376685
+        ],
+        "exact_axis_point": [
+          1.0,
+          0.5172413793103451
+        ],
+        "exact_axis_weight": 0.9999999999999982,
+        "ray_mixture_cost": 0.37363910417650226
+      },
+      "weighted_support_checks": [
+        {
+          "orientation": "XZ",
+          "a": 0.7,
+          "b": 0.25,
+          "weighted_score_minus_entropy": 0.45567124065108344,
+          "profile_support_upper": 0.7433034373659252
+        },
+        {
+          "orientation": "ZX",
+          "a": 0.7,
+          "b": 0.25,
+          "weighted_score_minus_entropy": 0.23842986134073874,
+          "profile_support_upper": 0.7433034373659252
+        },
+        {
+          "orientation": "XZ",
+          "a": 1.2,
+          "b": 0.75,
+          "weighted_score_minus_entropy": 1.2142919303062558,
+          "profile_support_upper": 1.4150971698084904
+        },
+        {
+          "orientation": "ZX",
+          "a": 1.2,
+          "b": 0.75,
+          "weighted_score_minus_entropy": 0.9970505509959111,
+          "profile_support_upper": 1.4150971698084904
+        },
+        {
+          "orientation": "XZ",
+          "a": 1.4,
+          "b": 1.0,
+          "weighted_score_minus_entropy": 1.543602275133842,
+          "profile_support_upper": 1.7204650534085253
+        },
+        {
+          "orientation": "ZX",
+          "a": 1.4,
+          "b": 1.0,
+          "weighted_score_minus_entropy": 1.35049882685798,
+          "profile_support_upper": 1.7204650534085253
+        },
+        {
+          "orientation": "XZ",
+          "a": 1.8,
+          "b": 1.4,
+          "weighted_score_minus_entropy": 2.15049882685798,
+          "profile_support_upper": 2.280350850198276
+        },
+        {
+          "orientation": "ZX",
+          "a": 1.8,
+          "b": 1.4,
+          "weighted_score_minus_entropy": 1.9573953785821179,
+          "profile_support_upper": 2.280350850198276
+        },
+        {
+          "orientation": "XZ",
+          "a": 2.0,
+          "b": 1.5,
+          "weighted_score_minus_entropy": 2.402222964789014,
+          "profile_support_upper": 2.5
+        },
+        {
+          "orientation": "ZX",
+          "a": 2.0,
+          "b": 1.5,
+          "weighted_score_minus_entropy": 2.1608436544441867,
+          "profile_support_upper": 2.5
+        }
+      ],
+      "scope": "One supplied qubit state, including possible Y component; exact score and profile-entropy formulas and finite weighted inequalities.",
+      "roundoff_bound": 1e-12,
+      "endpoint_adjustments": [],
+      "max_identity_error": 2.220446049250313e-16,
+      "max_inequality_violation": 0.0,
+      "identity_checks": 8,
+      "inequality_checks": 12
+    },
+    {
+      "label": "mixture_free_circle_qubit",
+      "matrix_dimension": 2,
+      "supplied_bloch_radius": 1.0,
+      "normalized_bloch_direction": [
+        0.9230769230769231,
+        0.0,
+        0.38461538461538464
+      ],
+      "supplied_spectrum": [
+        1.0,
+        0.0
+      ],
+      "trace_norm_scores": [
+        0.9230769230769232,
+        0.3846153846153847
+      ],
+      "formula_scores": [
+        0.9230769230769231,
+        0.38461538461538464
+      ],
+      "entropy_bits": 0.0,
+      "minimal_qubit_profile_entropy": 6.0443533557040756e-15,
+      "radial_mixture": {
+        "free_disk_point": [
+          0.923076923076923,
+          0.3846153846153846
+        ],
+        "exact_axis_point": [
+          1.0,
+          0.4166666666666667
+        ],
+        "exact_axis_weight": 2.664535259100371e-15,
+        "ray_mixture_cost": 7.1098942215611635e-16
+      },
+      "weighted_support_checks": [
+        {
+          "orientation": "XZ",
+          "a": 0.7,
+          "b": 0.25,
+          "weighted_score_minus_entropy": 0.7423076923076923,
+          "profile_support_upper": 0.7433034373659252
+        },
+        {
+          "orientation": "ZX",
+          "a": 0.7,
+          "b": 0.25,
+          "weighted_score_minus_entropy": 0.5000000000000001,
+          "profile_support_upper": 0.7433034373659252
+        },
+        {
+          "orientation": "XZ",
+          "a": 1.2,
+          "b": 0.75,
+          "weighted_score_minus_entropy": 1.3961538461538463,
+          "profile_support_upper": 1.4150971698084904
+        },
+        {
+          "orientation": "ZX",
+          "a": 1.2,
+          "b": 0.75,
+          "weighted_score_minus_entropy": 1.153846153846154,
+          "profile_support_upper": 1.4150971698084904
+        },
+        {
+          "orientation": "XZ",
+          "a": 1.4,
+          "b": 1.0,
+          "weighted_score_minus_entropy": 1.6769230769230772,
+          "profile_support_upper": 1.7204650534085253
+        },
+        {
+          "orientation": "ZX",
+          "a": 1.4,
+          "b": 1.0,
+          "weighted_score_minus_entropy": 1.4615384615384617,
+          "profile_support_upper": 1.7204650534085253
+        },
+        {
+          "orientation": "XZ",
+          "a": 1.8,
+          "b": 1.4,
+          "weighted_score_minus_entropy": 2.2,
+          "profile_support_upper": 2.280350850198276
+        },
+        {
+          "orientation": "ZX",
+          "a": 1.8,
+          "b": 1.4,
+          "weighted_score_minus_entropy": 1.984615384615385,
+          "profile_support_upper": 2.280350850198276
+        },
+        {
+          "orientation": "XZ",
+          "a": 2.0,
+          "b": 1.5,
+          "weighted_score_minus_entropy": 2.4230769230769234,
+          "profile_support_upper": 2.5
+        },
+        {
+          "orientation": "ZX",
+          "a": 2.0,
+          "b": 1.5,
+          "weighted_score_minus_entropy": 2.153846153846154,
+          "profile_support_upper": 2.5
+        }
+      ],
+      "scope": "One supplied qubit state, including possible Y component; exact score and profile-entropy formulas and finite weighted inequalities.",
+      "roundoff_bound": 1e-12,
+      "endpoint_adjustments": [],
+      "max_identity_error": 6.0443533557040756e-15,
+      "max_inequality_violation": 6.0443533557040756e-15,
+      "identity_checks": 8,
+      "inequality_checks": 12
+    },
+    {
+      "label": "n2_correlated_XZ_product_diagonal",
+      "matrix_dimension": 4,
+      "input_qubits": 2,
+      "supplied_spectrum": [
+        0.07692307692307693,
+        0.15384615384615385,
+        0.23076923076923078,
+        0.5384615384615384
+      ],
+      "supplied_positive_entries": 4,
+      "normalized_local_directions": [
+        [
+          0.7071067811865475,
+          0.0,
+          0.7071067811865475
+        ],
+        [
+          0.6,
+          0.0,
+          0.8
+        ]
+      ],
+      "entropy_bits": 1.6691803368667308,
+      "sum_conditional_entropies": 1.6685191962218853,
+      "sites": [
+        {
+          "site": 0,
+          "full_matrix_scores": [
+            0.9244715434921046,
+            0.9244715434921048
+          ],
+          "edge_sum_scores": [
+            0.9244715434921049,
+            0.9244715434921049
+          ],
+          "conditional_entropy_bits": 0.7786886966472395,
+          "edges": [
+            {
+              "vertices": [
+                0,
+                2
+              ],
+              "mass": 0.3076923076923077,
+              "conditional_probabilities": [
+                0.25,
+                0.75
+              ],
+              "conditional_scores": [
+                0.9354143466934852,
+                0.9354143466934852
+              ],
+              "conditional_entropy_bits": 0.8112781244591328
+            },
+            {
+              "vertices": [
+                1,
+                3
+              ],
+              "mass": 0.6923076923076923,
+              "conditional_probabilities": [
+                0.22222222222222224,
+                0.7777777777777778
+              ],
+              "conditional_scores": [
+                0.9196080754026026,
+                0.9196080754026026
+              ],
+              "conditional_entropy_bits": 0.7642045065086203
+            }
+          ]
+        },
+        {
+          "site": 1,
+          "full_matrix_scores": [
+            0.9511955296016769,
+            0.9728551208422376
+          ],
+          "edge_sum_scores": [
+            0.9511955296016771,
+            0.9728551208422378
+          ],
+          "conditional_entropy_bits": 0.8898304995746457,
+          "edges": [
+            {
+              "vertices": [
+                0,
+                1
+              ],
+              "mass": 0.23076923076923078,
+              "conditional_probabilities": [
+                0.3333333333333333,
+                0.6666666666666666
+              ],
+              "conditional_scores": [
+                0.9637888196533972,
+                0.979795897113271
+              ],
+              "conditional_entropy_bits": 0.9182958340544896
+            },
+            {
+              "vertices": [
+                2,
+                3
+              ],
+              "mass": 0.7692307692307692,
+              "conditional_probabilities": [
+                0.30000000000000004,
+                0.7000000000000001
+              ],
+              "conditional_scores": [
+                0.9474175425861611,
+                0.9707728879609279
+              ],
+              "conditional_entropy_bits": 0.8812908992306926
+            }
+          ]
+        }
+      ],
+      "weighted_support_checks": [
+        {
+          "a": 0.7,
+          "b": 0.25,
+          "orientation": "XZ",
+          "sum_weighted_profile_entropy_lower_bound": 0.3006917425173822,
+          "profile_support_upper": 0.7433034373659252
+        },
+        {
+          "a": 0.7,
+          "b": 0.25,
+          "orientation": "ZX",
+          "sum_weighted_profile_entropy_lower_bound": 0.3104385585756346,
+          "profile_support_upper": 0.7433034373659252
+        },
+        {
+          "a": 1.2,
+          "b": 0.75,
+          "orientation": "XZ",
+          "sum_weighted_profile_entropy_lower_bound": 0.8436011463463136,
+          "profile_support_upper": 1.4150971698084904
+        },
+        {
+          "a": 1.2,
+          "b": 0.75,
+          "orientation": "ZX",
+          "sum_weighted_profile_entropy_lower_bound": 0.8533479624045659,
+          "profile_support_upper": 1.4150971698084904
+        },
+        {
+          "a": 1.4,
+          "b": 1.0,
+          "orientation": "XZ",
+          "sum_weighted_profile_entropy_lower_bound": 1.0823304598485861,
+          "profile_support_upper": 1.7204650534085253
+        },
+        {
+          "a": 1.4,
+          "b": 1.0,
+          "orientation": "ZX",
+          "sum_weighted_profile_entropy_lower_bound": 1.0909942963448103,
+          "profile_support_upper": 1.7204650534085253
+        },
+        {
+          "a": 1.8,
+          "b": 1.4,
+          "orientation": "XZ",
+          "sum_weighted_profile_entropy_lower_bound": 1.4717563612403337,
+          "profile_support_upper": 2.280350850198276
+        },
+        {
+          "a": 1.8,
+          "b": 1.4,
+          "orientation": "ZX",
+          "sum_weighted_profile_entropy_lower_bound": 1.4804201977365583,
+          "profile_support_upper": 2.280350850198276
+        },
+        {
+          "a": 2.0,
+          "b": 1.5,
+          "orientation": "XZ",
+          "sum_weighted_profile_entropy_lower_bound": 1.597324142689076,
+          "profile_support_upper": 2.5
+        },
+        {
+          "a": 2.0,
+          "b": 1.5,
+          "orientation": "ZX",
+          "sum_weighted_profile_entropy_lower_bound": 1.6081539383093566,
+          "profile_support_upper": 2.5
+        }
+      ],
+      "scope": "One correlated product-diagonal state with supplied spectrum and local bases; edge trace-norm identities, classical conditional-entropy chain, and profile support inequalities.",
+      "roundoff_bound": 1e-12,
+      "endpoint_adjustments": [],
+      "max_identity_error": 3.3306690738754696e-16,
+      "max_inequality_violation": 0.0,
+      "identity_checks": 15,
+      "inequality_checks": 21
+    },
+    {
+      "label": "n2_sparse_product_diagonal_with_Y",
+      "matrix_dimension": 4,
+      "input_qubits": 2,
+      "supplied_spectrum": [
+        0.35,
+        0.0,
+        0.0,
+        0.65
+      ],
+      "supplied_positive_entries": 2,
+      "normalized_local_directions": [
+        [
+          0.5773502691896258,
+          0.5773502691896258,
+          0.5773502691896258
+        ],
+        [
+          0.4364357804719848,
+          0.8728715609439696,
+          -0.2182178902359924
+        ]
+      ],
+      "entropy_bits": 0.934068055375491,
+      "sum_conditional_entropies": 0.0,
+      "sites": [
+        {
+          "site": 0,
+          "full_matrix_scores": [
+            0.5773502691896258,
+            0.5773502691896255
+          ],
+          "edge_sum_scores": [
+            0.5773502691896257,
+            0.5773502691896258
+          ],
+          "conditional_entropy_bits": 0.0,
+          "edges": [
+            {
+              "vertices": [
+                0,
+                2
+              ],
+              "mass": 0.35,
+              "conditional_probabilities": [
+                1.0,
+                0.0
+              ],
+              "conditional_scores": [
+                0.5773502691896257,
+                0.5773502691896257
+              ],
+              "conditional_entropy_bits": 0.0
+            },
+            {
+              "vertices": [
+                1,
+                3
+              ],
+              "mass": 0.65,
+              "conditional_probabilities": [
+                0.0,
+                1.0
+              ],
+              "conditional_scores": [
+                0.5773502691896257,
+                0.5773502691896258
+              ],
+              "conditional_entropy_bits": 0.0
+            }
+          ]
+        },
+        {
+          "site": 1,
+          "full_matrix_scores": [
+            0.4364357804719849,
+            0.21821789023599245
+          ],
+          "edge_sum_scores": [
+            0.4364357804719847,
+            0.21821789023599236
+          ],
+          "conditional_entropy_bits": 0.0,
+          "edges": [
+            {
+              "vertices": [
+                0,
+                1
+              ],
+              "mass": 0.35,
+              "conditional_probabilities": [
+                1.0,
+                0.0
+              ],
+              "conditional_scores": [
+                0.4364357804719849,
+                0.21821789023599236
+              ],
+              "conditional_entropy_bits": 0.0
+            },
+            {
+              "vertices": [
+                2,
+                3
+              ],
+              "mass": 0.65,
+              "conditional_probabilities": [
+                0.0,
+                1.0
+              ],
+              "conditional_scores": [
+                0.43643578047198467,
+                0.2182178902359924
+              ],
+              "conditional_entropy_bits": 0.0
+            }
+          ]
+        }
+      ],
+      "weighted_support_checks": [
+        {
+          "a": 0.7,
+          "b": 0.25,
+          "orientation": "XZ",
+          "sum_weighted_profile_entropy_lower_bound": -0.5780646001123185,
+          "profile_support_upper": 0.7433034373659252
+        },
+        {
+          "a": 0.7,
+          "b": 0.25,
+          "orientation": "ZX",
+          "sum_weighted_profile_entropy_lower_bound": -0.6762626507185152,
+          "profile_support_upper": 0.7433034373659252
+        },
+        {
+          "a": 1.2,
+          "b": 0.75,
+          "orientation": "XZ",
+          "sum_weighted_profile_entropy_lower_bound": -1.0169749604538345,
+          "profile_support_upper": 1.4150971698084904
+        },
+        {
+          "a": 1.2,
+          "b": 0.75,
+          "orientation": "ZX",
+          "sum_weighted_profile_entropy_lower_bound": -1.1151730110600315,
+          "profile_support_upper": 1.4150971698084904
+        },
+        {
+          "a": 1.4,
+          "b": 1.0,
+          "orientation": "XZ",
+          "sum_weighted_profile_entropy_lower_bound": -1.2260614778651777,
+          "profile_support_upper": 1.7204650534085253
+        },
+        {
+          "a": 1.4,
+          "b": 1.0,
+          "orientation": "ZX",
+          "sum_weighted_profile_entropy_lower_bound": -1.313348633959575,
+          "profile_support_upper": 1.7204650534085253
+        },
+        {
+          "a": 1.8,
+          "b": 1.4,
+          "orientation": "XZ",
+          "sum_weighted_profile_entropy_lower_bound": -1.6220913878097878,
+          "profile_support_upper": 2.280350850198276
+        },
+        {
+          "a": 1.8,
+          "b": 1.4,
+          "orientation": "ZX",
+          "sum_weighted_profile_entropy_lower_bound": -1.7093785439041849,
+          "profile_support_upper": 2.280350850198276
+        },
+        {
+          "a": 2.0,
+          "b": 1.5,
+          "orientation": "XZ",
+          "sum_weighted_profile_entropy_lower_bound": -1.7790756615383518,
+          "profile_support_upper": 2.5
+        },
+        {
+          "a": 2.0,
+          "b": 1.5,
+          "orientation": "ZX",
+          "sum_weighted_profile_entropy_lower_bound": -1.888184606656348,
+          "profile_support_upper": 2.5
+        }
+      ],
+      "scope": "One correlated product-diagonal state with supplied spectrum and local bases; edge trace-norm identities, classical conditional-entropy chain, and profile support inequalities.",
+      "roundoff_bound": 1e-12,
+      "endpoint_adjustments": [],
+      "max_identity_error": 3.3306690738754696e-16,
+      "max_inequality_violation": 0.0,
+      "identity_checks": 15,
+      "inequality_checks": 21
+    },
+    {
+      "label": "n3_correlated_product_diagonal_with_Y",
+      "matrix_dimension": 8,
+      "input_qubits": 3,
+      "supplied_spectrum": [
+        0.023809523809523808,
+        0.07142857142857142,
+        0.047619047619047616,
+        0.16666666666666666,
+        0.21428571428571427,
+        0.09523809523809523,
+        0.11904761904761904,
+        0.2619047619047619
+      ],
+      "supplied_positive_entries": 8,
+      "normalized_local_directions": [
+        [
+          0.5773502691896258,
+          0.5773502691896258,
+          0.5773502691896258
+        ],
+        [
+          0.4364357804719848,
+          0.8728715609439696,
+          -0.2182178902359924
+        ],
+        [
+          0.16169041669088868,
+          -0.5659164584181103,
+          0.8084520834544433
+        ]
+      ],
+      "entropy_bits": 2.7113868216122223,
+      "sum_conditional_entropies": 2.5785519471296254,
+      "sites": [
+        {
+          "site": 0,
+          "full_matrix_scores": [
+            0.9233990060327638,
+            0.9233990060327638
+          ],
+          "edge_sum_scores": [
+            0.9233990060327644,
+            0.9233990060327643
+          ],
+          "conditional_entropy_bits": 0.832900348443979,
+          "edges": [
+            {
+              "vertices": [
+                0,
+                4
+              ],
+              "mass": 0.23809523809523808,
+              "conditional_probabilities": [
+                0.1,
+                0.9
+              ],
+              "conditional_scores": [
+                0.7571877794400366,
+                0.7571877794400362
+              ],
+              "conditional_entropy_bits": 0.4689955935892812
+            },
+            {
+              "vertices": [
+                1,
+                5
+              ],
+              "mass": 0.16666666666666666,
+              "conditional_probabilities": [
+                0.42857142857142855,
+                0.5714285714285714
+              ],
+              "conditional_scores": [
+                0.9931739816482956,
+                0.9931739816482956
+              ],
+              "conditional_entropy_bits": 0.9852281360342515
+            },
+            {
+              "vertices": [
+                2,
+                6
+              ],
+              "mass": 0.16666666666666666,
+              "conditional_probabilities": [
+                0.2857142857142857,
+                0.7142857142857143
+              ],
+              "conditional_scores": [
+                0.9367769320431425,
+                0.9367769320431427
+              ],
+              "conditional_entropy_bits": 0.863120568566631
+            },
+            {
+              "vertices": [
+                3,
+                7
+              ],
+              "mass": 0.4285714285714286,
+              "conditional_probabilities": [
+                0.38888888888888884,
+                0.611111111111111
+              ],
+              "conditional_scores": [
+                0.9834013368408705,
+                0.9834013368408705
+              ],
+              "conditional_entropy_bits": 0.9640787648082292
+            }
+          ]
+        },
+        {
+          "site": 1,
+          "full_matrix_scores": [
+            0.93654904568505,
+            0.9248185299848035
+          ],
+          "edge_sum_scores": [
+            0.9365490456850506,
+            0.9248185299848042
+          ],
+          "conditional_entropy_bits": 0.8876526439280177,
+          "edges": [
+            {
+              "vertices": [
+                0,
+                2
+              ],
+              "mass": 0.07142857142857142,
+              "conditional_probabilities": [
+                0.3333333333333333,
+                0.6666666666666666
+              ],
+              "conditional_scores": [
+                0.9539669334169343,
+                0.9456108576893001
+              ],
+              "conditional_entropy_bits": 0.9182958340544896
+            },
+            {
+              "vertices": [
+                1,
+                3
+              ],
+              "mass": 0.23809523809523808,
+              "conditional_probabilities": [
+                0.3,
+                0.7
+              ],
+              "conditional_scores": [
+                0.9329931352781706,
+                0.9206622874969128
+              ],
+              "conditional_entropy_bits": 0.8812908992306927
+            },
+            {
+              "vertices": [
+                4,
+                6
+              ],
+              "mass": 0.3333333333333333,
+              "conditional_probabilities": [
+                0.6428571428571429,
+                0.35714285714285715
+              ],
+              "conditional_scores": [
+                0.9663935139022519,
+                0.9603408853798567
+              ],
+              "conditional_entropy_bits": 0.9402859586706311
+            },
+            {
+              "vertices": [
+                5,
+                7
+              ],
+              "mass": 0.35714285714285715,
+              "conditional_probabilities": [
+                0.26666666666666666,
+                0.7333333333333334
+              ],
+              "conditional_scores": [
+                0.9075812380738726,
+                0.89027669440045
+              ],
+              "conditional_entropy_bits": 0.8366407419411672
+            }
+          ]
+        },
+        {
+          "site": 2,
+          "full_matrix_scores": [
+            0.9023169922509251,
+            0.9665744641184232
+          ],
+          "edge_sum_scores": [
+            0.9023169922509253,
+            0.9665744641184233
+          ],
+          "conditional_entropy_bits": 0.857998954757629,
+          "edges": [
+            {
+              "vertices": [
+                0,
+                1
+              ],
+              "mass": 0.09523809523809523,
+              "conditional_probabilities": [
+                0.25,
+                0.75
+              ],
+              "conditional_scores": [
+                0.8697907493831016,
+                0.955718940280277
+              ],
+              "conditional_entropy_bits": 0.8112781244591328
+            },
+            {
+              "vertices": [
+                2,
+                3
+              ],
+              "mass": 0.21428571428571427,
+              "conditional_probabilities": [
+                0.2222222222222222,
+                0.7777777777777778
+              ],
+              "conditional_scores": [
+                0.836317580791685,
+                0.9450316428241092
+              ],
+              "conditional_entropy_bits": 0.7642045065086203
+            },
+            {
+              "vertices": [
+                4,
+                5
+              ],
+              "mass": 0.30952380952380953,
+              "conditional_probabilities": [
+                0.6923076923076923,
+                0.30769230769230765
+              ],
+              "conditional_scores": [
+                0.9251694064327152,
+                0.9740413866796249
+              ],
+              "conditional_entropy_bits": 0.8904916402194913
+            },
+            {
+              "vertices": [
+                6,
+                7
+              ],
+              "mass": 0.38095238095238093,
+              "conditional_probabilities": [
+                0.3125,
+                0.6875000000000001
+              ],
+              "conditional_scores": [
+                0.9290056353909995,
+                0.9753393074750353
+              ],
+              "conditional_entropy_bits": 0.8960382325345573
+            }
+          ]
+        }
+      ],
+      "weighted_support_checks": [
+        {
+          "a": 0.7,
+          "b": 0.25,
+          "orientation": "XZ",
+          "sum_weighted_profile_entropy_lower_bound": 0.4073732187143393,
+          "profile_support_upper": 0.7433034373659252
+        },
+        {
+          "a": 0.7,
+          "b": 0.25,
+          "orientation": "ZX",
+          "sum_weighted_profile_entropy_lower_bound": 0.43101034898960244,
+          "profile_support_upper": 0.7433034373659252
+        },
+        {
+          "a": 1.2,
+          "b": 0.75,
+          "orientation": "XZ",
+          "sum_weighted_profile_entropy_lower_bound": 1.180520543439008,
+          "profile_support_upper": 1.4150971698084904
+        },
+        {
+          "a": 1.2,
+          "b": 0.75,
+          "orientation": "ZX",
+          "sum_weighted_profile_entropy_lower_bound": 1.2041576737142716,
+          "profile_support_upper": 1.4150971698084904
+        },
+        {
+          "a": 1.4,
+          "b": 1.0,
+          "orientation": "XZ",
+          "sum_weighted_profile_entropy_lower_bound": 1.5205679014666493,
+          "profile_support_upper": 1.7204650534085253
+        },
+        {
+          "a": 1.4,
+          "b": 1.0,
+          "orientation": "ZX",
+          "sum_weighted_profile_entropy_lower_bound": 1.54157868393355,
+          "profile_support_upper": 1.7204650534085253
+        },
+        {
+          "a": 1.8,
+          "b": 1.4,
+          "orientation": "XZ",
+          "sum_weighted_profile_entropy_lower_bound": 2.0717333287392883,
+          "profile_support_upper": 2.280350850198276
+        },
+        {
+          "a": 1.8,
+          "b": 1.4,
+          "orientation": "ZX",
+          "sum_weighted_profile_entropy_lower_bound": 2.0927441112061893,
+          "profile_support_upper": 2.280350850198276
+        },
+        {
+          "a": 2.0,
+          "b": 1.5,
+          "orientation": "XZ",
+          "sum_weighted_profile_entropy_lower_bound": 2.246718088141463,
+          "profile_support_upper": 2.5
+        },
+        {
+          "a": 2.0,
+          "b": 1.5,
+          "orientation": "ZX",
+          "sum_weighted_profile_entropy_lower_bound": 2.2729815662250896,
+          "profile_support_upper": 2.5
+        }
+      ],
+      "scope": "One correlated product-diagonal state with supplied spectrum and local bases; edge trace-norm identities, classical conditional-entropy chain, and profile support inequalities.",
+      "roundoff_bound": 1e-12,
+      "endpoint_adjustments": [],
+      "max_identity_error": 6.67327626175087e-16,
+      "max_inequality_violation": 0.0,
+      "identity_checks": 27,
+      "inequality_checks": 21
+    },
+    {
+      "label": "n3_sparse_product_diagonal_with_zero_mass_edge",
+      "matrix_dimension": 8,
+      "input_qubits": 3,
+      "supplied_spectrum": [
+        0.14285714285714285,
+        0.0,
+        0.0,
+        0.35714285714285715,
+        0.0,
+        0.0,
+        0.5,
+        0.0
+      ],
+      "supplied_positive_entries": 3,
+      "normalized_local_directions": [
+        [
+          0.7071067811865475,
+          0.0,
+          0.7071067811865475
+        ],
+        [
+          0.6,
+          0.0,
+          0.8
+        ],
+        [
+          0.4364357804719848,
+          0.8728715609439696,
+          -0.2182178902359924
+        ]
+      ],
+      "entropy_bits": 1.4315602842833155,
+      "sum_conditional_entropies": 0.0,
+      "sites": [
+        {
+          "site": 0,
+          "full_matrix_scores": [
+            0.7071067811865474,
+            0.7071067811865474
+          ],
+          "edge_sum_scores": [
+            0.7071067811865476,
+            0.7071067811865475
+          ],
+          "conditional_entropy_bits": 0.0,
+          "edges": [
+            {
+              "vertices": [
+                0,
+                4
+              ],
+              "mass": 0.14285714285714285,
+              "conditional_probabilities": [
+                1.0,
+                0.0
+              ],
+              "conditional_scores": [
+                0.7071067811865476,
+                0.7071067811865476
+              ],
+              "conditional_entropy_bits": 0.0
+            },
+            {
+              "vertices": [
+                1,
+                5
+              ],
+              "mass": 0.0,
+              "skipped_zero_mass": true
+            },
+            {
+              "vertices": [
+                2,
+                6
+              ],
+              "mass": 0.5,
+              "conditional_probabilities": [
+                0.0,
+                1.0
+              ],
+              "conditional_scores": [
+                0.7071067811865476,
+                0.7071067811865475
+              ],
+              "conditional_entropy_bits": 0.0
+            },
+            {
+              "vertices": [
+                3,
+                7
+              ],
+              "mass": 0.35714285714285715,
+              "conditional_probabilities": [
+                1.0,
+                0.0
+              ],
+              "conditional_scores": [
+                0.7071067811865476,
+                0.7071067811865476
+              ],
+              "conditional_entropy_bits": 0.0
+            }
+          ]
+        },
+        {
+          "site": 1,
+          "full_matrix_scores": [
+            0.5999999999999998,
+            0.7999999999999998
+          ],
+          "edge_sum_scores": [
+            0.5999999999999999,
+            0.7999999999999999
+          ],
+          "conditional_entropy_bits": 0.0,
+          "edges": [
+            {
+              "vertices": [
+                0,
+                2
+              ],
+              "mass": 0.14285714285714285,
+              "conditional_probabilities": [
+                1.0,
+                0.0
+              ],
+              "conditional_scores": [
+                0.5999999999999998,
+                0.7999999999999999
+              ],
+              "conditional_entropy_bits": 0.0
+            },
+            {
+              "vertices": [
+                1,
+                3
+              ],
+              "mass": 0.35714285714285715,
+              "conditional_probabilities": [
+                0.0,
+                1.0
+              ],
+              "conditional_scores": [
+                0.5999999999999999,
+                0.7999999999999999
+              ],
+              "conditional_entropy_bits": 0.0
+            },
+            {
+              "vertices": [
+                4,
+                6
+              ],
+              "mass": 0.5,
+              "conditional_probabilities": [
+                0.0,
+                1.0
+              ],
+              "conditional_scores": [
+                0.5999999999999999,
+                0.7999999999999999
+              ],
+              "conditional_entropy_bits": 0.0
+            },
+            {
+              "vertices": [
+                5,
+                7
+              ],
+              "mass": 0.0,
+              "skipped_zero_mass": true
+            }
+          ]
+        },
+        {
+          "site": 2,
+          "full_matrix_scores": [
+            0.4364357804719848,
+            0.21821789023599228
+          ],
+          "edge_sum_scores": [
+            0.43643578047198484,
+            0.21821789023599236
+          ],
+          "conditional_entropy_bits": 0.0,
+          "edges": [
+            {
+              "vertices": [
+                0,
+                1
+              ],
+              "mass": 0.14285714285714285,
+              "conditional_probabilities": [
+                1.0,
+                0.0
+              ],
+              "conditional_scores": [
+                0.4364357804719849,
+                0.21821789023599236
+              ],
+              "conditional_entropy_bits": 0.0
+            },
+            {
+              "vertices": [
+                2,
+                3
+              ],
+              "mass": 0.35714285714285715,
+              "conditional_probabilities": [
+                0.0,
+                1.0
+              ],
+              "conditional_scores": [
+                0.43643578047198467,
+                0.2182178902359924
+              ],
+              "conditional_entropy_bits": 0.0
+            },
+            {
+              "vertices": [
+                4,
+                5
+              ],
+              "mass": 0.0,
+              "skipped_zero_mass": true
+            },
+            {
+              "vertices": [
+                6,
+                7
+              ],
+              "mass": 0.5,
+              "conditional_probabilities": [
+                1.0,
+                0.0
+              ],
+              "conditional_scores": [
+                0.4364357804719849,
+                0.21821789023599236
+              ],
+              "conditional_entropy_bits": 0.0
+            }
+          ]
+        }
+      ],
+      "weighted_support_checks": [
+        {
+          "a": 0.7,
+          "b": 0.25,
+          "orientation": "XZ",
+          "sum_weighted_profile_entropy_lower_bound": -0.5780993510811685,
+          "profile_support_upper": 0.7433034373659252
+        },
+        {
+          "a": 0.7,
+          "b": 0.25,
+          "orientation": "ZX",
+          "sum_weighted_profile_entropy_lower_bound": -0.5862974016873651,
+          "profile_support_upper": 0.7433034373659252
+        },
+        {
+          "a": 1.2,
+          "b": 0.75,
+          "orientation": "XZ",
+          "sum_weighted_profile_entropy_lower_bound": -0.8590469318683288,
+          "profile_support_upper": 1.4150971698084904
+        },
+        {
+          "a": 1.2,
+          "b": 0.75,
+          "orientation": "ZX",
+          "sum_weighted_profile_entropy_lower_bound": -0.8672449824745251,
+          "profile_support_upper": 1.4150971698084904
+        },
+        {
+          "a": 1.4,
+          "b": 1.0,
+          "orientation": "XZ",
+          "sum_weighted_profile_entropy_lower_bound": -0.9951109024810919,
+          "profile_support_upper": 1.7204650534085253
+        },
+        {
+          "a": 1.4,
+          "b": 1.0,
+          "orientation": "ZX",
+          "sum_weighted_profile_entropy_lower_bound": -1.002398058575489,
+          "profile_support_upper": 1.7204650534085253
+        },
+        {
+          "a": 1.8,
+          "b": 1.4,
+          "orientation": "XZ",
+          "sum_weighted_profile_entropy_lower_bound": -1.2872213996179156,
+          "profile_support_upper": 2.280350850198276
+        },
+        {
+          "a": 1.8,
+          "b": 1.4,
+          "orientation": "ZX",
+          "sum_weighted_profile_entropy_lower_bound": -1.2945085557123126,
+          "profile_support_upper": 2.280350850198276
+        },
+        {
+          "a": 2.0,
+          "b": 1.5,
+          "orientation": "XZ",
+          "sum_weighted_profile_entropy_lower_bound": -1.4249278695491268,
+          "profile_support_upper": 2.5
+        },
+        {
+          "a": 2.0,
+          "b": 1.5,
+          "orientation": "ZX",
+          "sum_weighted_profile_entropy_lower_bound": -1.4340368146671232,
+          "profile_support_upper": 2.5
+        }
+      ],
+      "scope": "One correlated product-diagonal state with supplied spectrum and local bases; edge trace-norm identities, classical conditional-entropy chain, and profile support inequalities.",
+      "roundoff_bound": 1e-12,
+      "endpoint_adjustments": [],
+      "max_identity_error": 3.3306690738754696e-16,
+      "max_inequality_violation": 0.0,
+      "identity_checks": 24,
+      "inequality_checks": 21
+    },
+    {
+      "label": "support_conjugate_a0.7_b0.25",
+      "matrix_dimension": 1,
+      "a": 0.7,
+      "b": 0.25,
+      "stationary_case": "interior_monotone_derivative_bracket",
+      "contrast_bracket": [
+        0.04585745786518203,
+        0.04585745786519624
+      ],
+      "bracket_width": 1.4210854715202004e-14,
+      "derivative_at_bracket": [
+        0.2499999999999604,
+        0.25000000000001704
+      ],
+      "conjugate_lower": 0.00497613697674916,
+      "conjugate_upper": 0.004976136976752638,
+      "free_disk_support": 0.7433034373659252,
+      "profile_support_lower": 0.7433034373659252,
+      "profile_support_upper": 0.7433034373659252,
+      "bracket_scope": "Floating-point check of the analytically monotone derivative; not an interval-arithmetic certificate.",
+      "fixed_contrast_checks": [
+        {
+          "contrast": 0.0,
+          "conjugate_objective": 0.0
+        },
+        {
+          "contrast": 0.1,
+          "conjugate_objective": -0.0002661277271199525
+        },
+        {
+          "contrast": 0.25,
+          "conjugate_objective": -0.0551188737709179
+        },
+        {
+          "contrast": 0.5,
+          "conjugate_objective": -0.22957890266526992
+        },
+        {
+          "contrast": 0.75,
+          "conjugate_objective": -0.46855756297271467
+        },
+        {
+          "contrast": 0.9,
+          "conjugate_objective": -0.633235875301516
+        },
+        {
+          "contrast": 1.0,
+          "conjugate_objective": -0.75
+        }
+      ],
+      "scope": "One-dimensional conjugate bracket and selected scalar support checks; analytic convexity carries the all-contrast result.",
+      "roundoff_bound": 1e-12,
+      "endpoint_adjustments": [],
+      "max_identity_error": 0.0,
+      "max_inequality_violation": 0.0,
+      "identity_checks": 0,
+      "inequality_checks": 18
+    },
+    {
+      "label": "support_conjugate_a1.2_b0.75",
+      "matrix_dimension": 1,
+      "a": 1.2,
+      "b": 0.75,
+      "stationary_case": "interior_monotone_derivative_bracket",
+      "contrast_bracket": [
+        0.23944919730548975,
+        0.23944919730550396
+      ],
+      "bracket_width": 1.4210854715202004e-14,
+      "derivative_at_bracket": [
+        0.7499999999999839,
+        0.7500000000000098
+      ],
+      "conjugate_lower": 0.06997991197531643,
+      "conjugate_upper": 0.0699799119753271,
+      "free_disk_support": 1.4150971698084904,
+      "profile_support_lower": 1.4150971698084904,
+      "profile_support_upper": 1.4150971698084904,
+      "bracket_scope": "Floating-point check of the analytically monotone derivative; not an interval-arithmetic certificate.",
+      "fixed_contrast_checks": [
+        {
+          "contrast": 0.0,
+          "conjugate_objective": 0.0
+        },
+        {
+          "contrast": 0.1,
+          "conjugate_objective": 0.04973387227288006
+        },
+        {
+          "contrast": 0.25,
+          "conjugate_objective": 0.0698811262290821
+        },
+        {
+          "contrast": 0.5,
+          "conjugate_objective": 0.020421097334730076
+        },
+        {
+          "contrast": 0.75,
+          "conjugate_objective": -0.09355756297271467
+        },
+        {
+          "contrast": 0.9,
+          "conjugate_objective": -0.18323587530151597
+        },
+        {
+          "contrast": 1.0,
+          "conjugate_objective": -0.25
+        }
+      ],
+      "scope": "One-dimensional conjugate bracket and selected scalar support checks; analytic convexity carries the all-contrast result.",
+      "roundoff_bound": 1e-12,
+      "endpoint_adjustments": [],
+      "max_identity_error": 0.0,
+      "max_inequality_violation": 0.0,
+      "identity_checks": 0,
+      "inequality_checks": 18
+    },
+    {
+      "label": "support_conjugate_a1.4_b1.0",
+      "matrix_dimension": 1,
+      "a": 1.4,
+      "b": 1.0,
+      "stationary_case": "interior_monotone_derivative_bracket",
+      "contrast_bracket": [
+        0.4111869556249701,
+        0.4111869556249843
+      ],
+      "bracket_width": 1.4210854715202004e-14,
+      "derivative_at_bracket": [
+        0.9999999999999952,
+        1.0000000000000122
+      ],
+      "conjugate_lower": 0.1498501666157558,
+      "conjugate_upper": 0.14985016661576994,
+      "free_disk_support": 1.7204650534085253,
+      "profile_support_lower": 1.7204650534085253,
+      "profile_support_upper": 1.7204650534085253,
+      "bracket_scope": "Floating-point check of the analytically monotone derivative; not an interval-arithmetic certificate.",
+      "fixed_contrast_checks": [
+        {
+          "contrast": 0.0,
+          "conjugate_objective": 0.0
+        },
+        {
+          "contrast": 0.1,
+          "conjugate_objective": 0.07473387227288006
+        },
+        {
+          "contrast": 0.25,
+          "conjugate_objective": 0.1323811262290821
+        },
+        {
+          "contrast": 0.5,
+          "conjugate_objective": 0.14542109733473008
+        },
+        {
+          "contrast": 0.75,
+          "conjugate_objective": 0.09394243702728533
+        },
+        {
+          "contrast": 0.9,
+          "conjugate_objective": 0.041764124698484006
+        },
+        {
+          "contrast": 1.0,
+          "conjugate_objective": 0.0
+        }
+      ],
+      "scope": "One-dimensional conjugate bracket and selected scalar support checks; analytic convexity carries the all-contrast result.",
+      "roundoff_bound": 1e-12,
+      "endpoint_adjustments": [],
+      "max_identity_error": 0.0,
+      "max_inequality_violation": 0.0,
+      "identity_checks": 0,
+      "inequality_checks": 18
+    },
+    {
+      "label": "support_conjugate_a1.8_b1.4",
+      "matrix_dimension": 1,
+      "a": 1.8,
+      "b": 1.4,
+      "stationary_case": "interior_monotone_derivative_bracket",
+      "contrast_bracket": [
+        0.9157155967642296,
+        0.9157155967642439
+      ],
+      "bracket_width": 1.4210854715202004e-14,
+      "derivative_at_bracket": [
+        1.3999999999999941,
+        1.4000000000000017
+      ],
+      "conjugate_lower": 0.40183046586816795,
+      "conjugate_upper": 0.40183046586818794,
+      "free_disk_support": 2.280350850198276,
+      "profile_support_lower": 2.280350850198276,
+      "profile_support_upper": 2.280350850198276,
+      "bracket_scope": "Floating-point check of the analytically monotone derivative; not an interval-arithmetic certificate.",
+      "fixed_contrast_checks": [
+        {
+          "contrast": 0.0,
+          "conjugate_objective": 0.0
+        },
+        {
+          "contrast": 0.1,
+          "conjugate_objective": 0.11473387227288004
+        },
+        {
+          "contrast": 0.25,
+          "conjugate_objective": 0.23238112622908208
+        },
+        {
+          "contrast": 0.5,
+          "conjugate_objective": 0.34542109733473003
+        },
+        {
+          "contrast": 0.75,
+          "conjugate_objective": 0.39394243702728515
+        },
+        {
+          "contrast": 0.9,
+          "conjugate_objective": 0.401764124698484
+        },
+        {
+          "contrast": 1.0,
+          "conjugate_objective": 0.3999999999999999
+        }
+      ],
+      "scope": "One-dimensional conjugate bracket and selected scalar support checks; analytic convexity carries the all-contrast result.",
+      "roundoff_bound": 1e-12,
+      "endpoint_adjustments": [],
+      "max_identity_error": 0.0,
+      "max_inequality_violation": 0.0,
+      "identity_checks": 0,
+      "inequality_checks": 18
+    },
+    {
+      "label": "support_conjugate_a2.0_b1.5",
+      "matrix_dimension": 1,
+      "a": 2.0,
+      "b": 1.5,
+      "stationary_case": "unit_contrast_endpoint",
+      "contrast_bracket": [
+        1.0,
+        1.0
+      ],
+      "bracket_width": 0.0,
+      "derivative_at_bracket": [
+        1.4426950408889634,
+        1.4426950408889634
+      ],
+      "conjugate_lower": 0.5,
+      "conjugate_upper": 0.5,
+      "free_disk_support": 2.5,
+      "profile_support_lower": 2.5,
+      "profile_support_upper": 2.5,
+      "bracket_scope": "Floating-point check of the analytically monotone derivative; not an interval-arithmetic certificate.",
+      "fixed_contrast_checks": [
+        {
+          "contrast": 0.0,
+          "conjugate_objective": 0.0
+        },
+        {
+          "contrast": 0.1,
+          "conjugate_objective": 0.12473387227288008
+        },
+        {
+          "contrast": 0.25,
+          "conjugate_objective": 0.2573811262290821
+        },
+        {
+          "contrast": 0.5,
+          "conjugate_objective": 0.3954210973347301
+        },
+        {
+          "contrast": 0.75,
+          "conjugate_objective": 0.46894243702728533
+        },
+        {
+          "contrast": 0.9,
+          "conjugate_objective": 0.4917641246984841
+        },
+        {
+          "contrast": 1.0,
+          "conjugate_objective": 0.5
+        }
+      ],
+      "scope": "One-dimensional conjugate bracket and selected scalar support checks; analytic convexity carries the all-contrast result.",
+      "roundoff_bound": 1e-12,
+      "endpoint_adjustments": [],
+      "max_identity_error": 0.0,
+      "max_inequality_violation": 0.0,
+      "identity_checks": 0,
+      "inequality_checks": 16
+    },
+    {
+      "label": "rational_profile_mixture",
+      "matrix_dimension": 1,
+      "exact_axis_weight": "87/100",
+      "exact_axis_point": [
+        "1",
+        "15/29"
+      ],
+      "free_circle_point": [
+        "12/13",
+        "5/13"
+      ],
+      "exact_rational_target": [
+        "99/100",
+        "1/2"
+      ],
+      "mixture_entropy_cost": 0.3250660206335574,
+      "original_site_retention_rate": 0.38999999999999996,
+      "inherited_exact_axis_rate": 0.3545789026652699,
+      "saving_over_retention": 0.06493397936644257,
+      "scope": "Exact Fraction arithmetic for the profile mixture and a floating-point entropy-cost check; the separate analytical proof establishes asymptotic achievability and the strict gap.",
+      "roundoff_bound": 1e-12,
+      "endpoint_adjustments": [],
+      "max_identity_error": 5.551115123125783e-17,
+      "max_inequality_violation": 0.0,
+      "identity_checks": 1,
+      "inequality_checks": 0
+    },
+    {
+      "label": "profile_phase_boundary",
+      "matrix_dimension": 1,
+      "phase_threshold": 0.39195779845536194,
+      "endpoint_curve_derivative": 1.4426950408889634,
+      "profiles": [
+        {
+          "x": 0.8,
+          "z": 0.8,
+          "retention_weight": 0.31715728752538114,
+          "deficit_ratio": 1.0,
+          "retention_circle_point": [
+            0.7071067811865476,
+            0.7071067811865476
+          ],
+          "retention_support_weights": [
+            1.7071067811865472,
+            1.7071067811865472
+          ],
+          "region": "retention_equality_side"
+        },
+        {
+          "x": 0.95,
+          "z": 0.9,
+          "retention_weight": 0.75,
+          "deficit_ratio": 0.5000000000000006,
+          "retention_circle_point": [
+            0.7999999999999998,
+            0.6000000000000001
+          ],
+          "retention_support_weights": [
+            2.0,
+            1.5000000000000004
+          ],
+          "region": "retention_equality_side"
+        },
+        {
+          "x": 0.99,
+          "z": 0.5,
+          "retention_weight": 0.38999999999999996,
+          "deficit_ratio": 0.020000000000000018,
+          "retention_circle_point": [
+            0.9836065573770492,
+            0.18032786885245905
+          ],
+          "retention_support_weights": [
+            6.000000000000001,
+            1.1000000000000005
+          ],
+          "region": "strict_improvement_side"
+        },
+        {
+          "x": 0.97,
+          "z": 0.7,
+          "retention_weight": 0.5358359213500125,
+          "deficit_ratio": 0.10000000000000007,
+          "retention_circle_point": [
+            0.935367682722768,
+            0.35367682722768123
+          ],
+          "retention_support_weights": [
+            3.236067977499789,
+            1.2236067977499792
+          ],
+          "region": "strict_improvement_side"
+        },
+        {
+          "x": 0.8432168806178553,
+          "z": 0.6,
+          "retention_weight": 0.08906084790668445,
+          "deficit_ratio": 0.3919577984553618,
+          "retention_circle_point": [
+            0.8278884829773087,
+            0.5608927346235916
+          ],
+          "retention_support_weights": [
+            2.129445676635464,
+            1.442695040888963
+          ],
+          "region": "analytic_boundary"
+        }
+      ],
+      "scope": "Five fixed profiles and the analytic boundary parameter; these samples do not prove the whole phase diagram.",
+      "roundoff_bound": 1e-12,
+      "endpoint_adjustments": [],
+      "max_identity_error": 1.1657341758564144e-15,
+      "max_inequality_violation": 0.0,
+      "identity_checks": 19,
+      "inequality_checks": 0
+    }
+  ],
+  "scope": "Finite deterministic qubit, product-diagonal, scalar-conjugate, rational-mixture, and phase-boundary checks. No optimizer, random search, numerical rank inference, complete-instrument enumeration, large-block simulation, asymptotic rate certification, unrestricted converse, or novelty certification. Every endpoint adjustment is bounded and listed; conjugate brackets use ordinary floating-point arithmetic."
+}

@@ -388,3 +388,10 @@ reconstruction within this workspace is not external peer review. The
 inspected statements identify substantial prior ingredients but do not
 resolve whether the combined operational corollary already appears
 elsewhere. Publication novelty remains unresolved.
+
+The subsequent [entropy trade-off audit](ENTROPY_TRADEOFF_PRIOR_AUDIT.md)
+supplies a second exact derivation of (7) from established entropy-of-mixture
+and coherence-of-formation theorems. It also identifies the separately
+evaluated product-diagonal profile envelope with a prior steering resource.
+This strengthens the ingredient-level subsumption map; it does not improve
+the unrestricted bound or certify novelty of its operational combination.
