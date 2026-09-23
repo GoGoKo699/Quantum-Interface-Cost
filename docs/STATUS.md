@@ -95,6 +95,8 @@ is asserted.
 | Every minimum-formation realization outside the disk with both contrasts below one has orthogonal classical and entangled sectors | Derived and independently checked equality theorem; all qutrit optima classified, with four possible classical signs and one entangled-block marginal parameter | audits/FORMATION_OPTIMIZERS_AND_PRIOR.md Section 2 |
 | Ordinary negativity minimum from the full two-correlation profile | N_min=w/2, supplied weighted proof; equal-weight line and flagged construction are prior. This is a separate realization resource, not retained memory | audits/RESOURCE_OPTIMA_AND_JOINT_DECODERS.md Section 1 |
 | Minimum E_F among minimum-negativity realizations in the noisy nonclassical interior | Exactly w, so C<w implies incompatible resource minimizers; exact axes have a distinct jointly optimal partially entangled realization | audits/RESOURCE_OPTIMA_AND_JOINT_DECODERS.md Section 2 |
+| Complete E_F versus ordinary-negativity budget frontier at fixed X/Z data | Derived and independently checked for arbitrary finite Alice dimension; all scalar prices, explicit phase boundary, unique scalar root and qutrit attainment. Auxiliary state resources, not interface memory | audits/JOINT_RESOURCE_FRONTIER.md Sections 2–4 |
+| Real matrices suffice for the unrestricted asymptotic interface rate | Derived from established realification: at most one extra retained qubit, arbitrary complex input and uniform error preserved. All-size real and complex entropy conjectures are equivalent; fixed-n reduction is not asserted | audits/JOINT_RESOURCE_FRONTIER.md Section 6 |
 | Two-input joint optimal decoder structure for arbitrary states | Every full-rank optimum is a rank-one PVM; singular states admit an optimal ambient PVM with possibly nonprojective support compression. One-effect maximum can be restricted to ambient rank-two projections | audits/RESOURCE_OPTIMA_AND_JOINT_DECODERS.md Section 4 |
 | Complete weighted guessing and the central-phase product-plus-Bell qutrit construction | Established ingredients in Han et al. 2111.02800v2 Theorems 1–2 and Eqs. (S49)–(S50); the prior pure support leads directly into the project's entropy convexification | audits/FORMATION_OPTIMIZERS_AND_PRIOR.md Section 1 |
 | Minimum convex-roof concurrence from the two data equals w | Exact specialization of Han et al.'s whole weighted family; C>f(w) exactly outside the disk with both contrasts below one | audits/FORMATION_OPTIMIZERS_AND_PRIOR.md Section 1.1 |
@@ -546,6 +548,18 @@ common-accuracy target has been found. The unequal-accuracy separation
 above is a distinct, proved operational result.
 
 ## Publication gate
+
+The [continuation pinned to PR #19](audits/JOINT_RESOURCE_FRONTIER.md)
+evaluates the full conditional E_F/ordinary-negativity frontier. Its
+mixed-state support bound is essential: the pure convex roof of
+f(c)+lambda c involves concurrence, not ordinary negativity. The exact
+all-dimensional frontier and phase calculation are the supplied deductions;
+the scalarization method, pure weighted geometry and flag constructions
+are established. This sharpens the candidate theorem, but a complete prior
+subsumption audit is still needed. The Tomassoli full-text gap remains,
+and a 2012 Nakahira–Usuda Bayes-rank theorem is a further explicit gap for
+the preceding decoder-projectivity result. No all-state entropy proof or
+admissible equal-accuracy violating seed was obtained in this continuation.
 
 The goal remains a publishable, analytically led theorem with a clear novelty
 case. These are task-specific deductions; neither familiar monogamy nor a
