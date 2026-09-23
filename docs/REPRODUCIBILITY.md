@@ -348,6 +348,20 @@ construction diagnostics were not rerun because their formulas and
 implementations were unchanged. Publication novelty and unrestricted
 optimality are outside this certificate's scope.
 
+## Tensor-formation and channel comparison
+
+The continuation pinned to main `3a668f92afe5145e3273c5796ee74e0120214e1f`
+is an analytical proof audit. Independent internal reconstructions checked
+the exact moment twirl and finite ensemble reduction, simplex compensation,
+one-qubit rigidity/parity contradiction, rank-three Kraus construction,
+compactness extension, Pauli-channel completion and full profile equality
+set. No new numerical optimization or large simulation was used. The
+explicit qutrit instrument is verified symbolically in the report; its
+rank, completeness and induced effects do not depend on a tolerance or
+solver output. Unchanged earlier diagnostics were not rerun. None of these
+checks establishes exhaustive novelty or the missing unrestricted entropy
+inequality. See [the complete proofs](audits/TENSOR_FORMATION_AND_CHANNEL_COMPARISON.md).
+
 ## Original archive provenance
 
 The user-provided archive was Q1_Quantum_Interface_Dossier_v0_1.zip.
@@ -355,7 +369,7 @@ Its SHA-256 is
 `3f3538c0307f3a1131746d84410b21752b97aa0e87d8de1722392d3b114dd8ec`.
 The following three files were imported unchanged at bootstrap commit
 `eaf085a8cb299e6b297b11d2dc3c85e24f02779e`. These are historical hashes; the
-research note has subsequently been revised to version 0.11:
+research note has subsequently been revised to version 0.12:
 
 | File | SHA-256 |
 |---|---|

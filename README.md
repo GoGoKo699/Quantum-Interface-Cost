@@ -53,6 +53,14 @@ expresses the unrestricted problem as a precise local-query formation
 identity. See [the theorem-level comparison](docs/audits/PROFILE_NOVELTY_AND_STEERING_REDUCTION.md);
 this is a concrete distinction from those sources, not a complete novelty claim.
 
+A further [tensor-formation and channel comparison](docs/audits/TENSOR_FORMATION_AND_CHANNEL_COMPARISON.md)
+proves an exact task separation: at a specified two-input contrast, one
+delayed local query needs dimension two, while a joint product query needs
+dimension three. An explicit qutrit instrument attains the latter. It also
+proves a fixed-block dichotomy for full-tuple formation and distinguishes
+the complete profile from fixed qubit-output channel completion. The
+unrestricted local-query rate and exhaustive originality remain open.
+
 ## Start here
 
 | Purpose | Read |

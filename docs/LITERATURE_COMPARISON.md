@@ -325,6 +325,23 @@ precedents detailed above.
 
 ## Remaining comparisons and research target
 
+The [tensor-formation and channel audit](audits/TENSOR_FORMATION_AND_CHANNEL_COMPARISON.md)
+follows the fixed-readout compression chain through Cope–Uola, Wootters and
+Wilde. Minimizing Choi formation entropy over all qubit channels with
+`Lambda*(X)=xX, Lambda*(Z)=zZ` gives exactly `f([x+z-1]_+)`. This exceeds
+the full profile C at every x+z>1 with both x,z<1; equality holds exactly
+on the triangle x+z<=1 and the exact axes. Wilde's covariant-channel
+theorem concerns regularized Choi entanglement cost; its dephasing special
+case supplies the familiar exact-axis curve. These ingredients and the
+general fixed-readout/direct-readout distinction are prior, while the
+supplied comparison rules out a precise proposed subsumption of C.
+
+The report also proves exact retained dimensions two versus three for
+local versus joint product queries at a specified two-input contrast,
+and a fixed-block all-or-nothing dichotomy for tensor formation. These
+are supplied task-specific deductions using established machinery, not
+claims of new resource theories or an unrestricted rate evaluation.
+
 The [full-profile follow-up audit](audits/PROFILE_NOVELTY_AND_STEERING_REDUCTION.md)
 supplies a complete comparison with Zhu–Zhang–Ma Theorem 2: optimizing its
 whole affine weighted-CHSH family gives only the radial bound, strictly
