@@ -1,7 +1,7 @@
 # Status and claim ledger
 
-Updated: 2026-09-23. Stage: precise roof provenance, average-rank profile comparison and persistent local/joint score gap.
-Latest research base: `b1f93ac69e4007f9d21df16ab16aa5bbecf94332`, the merge of PR #15.
+Updated: 2026-09-23. Stage: exact two-correlation formation dimensions, sharper prior attribution and two global proof-method obstructions.
+Latest research base: `d74f329605c9cf82707c09a3c0e925919e8512c0`, the merge of PR #16.
 
 Critical assessment base: `81bcfefb2b545742d513c4f51364a7f72972451e`, the
 merge of PR #11. The [publication and optimality assessment](audits/PUBLICATION_AND_OPTIMALITY_ASSESSMENT.md)
@@ -90,6 +90,11 @@ is asserted.
 | Full noisy-X/Z average-rank profile D_M=W=w | Exact specialization of Cope–Uola SDPs; the already proved C-versus-w phase boundary supplies its full entropy comparison | audits/ROOF_PROVENANCE_AND_JOINT_SCORE.md Section 3 |
 | Collective readout can improve joint score per copy of a product seed | Incorrect: product additivity follows from Wallden–Dunjko–Andersson Theorem 3; an explicit f_2-j_2=(sqrt(2)-1)/8 gap persists under powers | audits/ROOF_PROVENANCE_AND_JOINT_SCORE.md Section 4 |
 | Complete all-state two-qubit joint entropy inequality | Unresolved; an exact one-effect formula is proved, with the singular-state dual handled on its support | audits/ROOF_PROVENANCE_AND_JOINT_SCORE.md Section 5 |
+| Minimum E_F from two correlations for two qubits, with one trusted X/Z pair | E_2=gamma, a direct specialization of prior Verstraete–Wolf Theorem 1; general binary POVMs included | audits/TWO_CORRELATION_FORMATION.md Section 2.1 |
+| Same two-correlation minimum with larger untrusted dimension | E_d=C for every d>=3, attained by one fixed qutrit pair; strict E_2>E_3 outside the disk when both contrasts are below one. Flags are counted in this separate realization problem | audits/TWO_CORRELATION_FORMATION.md Section 2 |
+| Full X/Z probability table certifies C without trusting either party | Incorrect with unrestricted dimensions: an explicit local model reproduces the entire table at every profile | audits/TWO_CORRELATION_FORMATION.md Section 4 |
+| Exact priors and total Holevo information suffice for the sharp joint entropy line | Incorrect relaxation: exact classical channels exceed the line at every interior subset equality seed; those channels are not measurements of its filtered ensemble | audits/ENTROPY_PROOF_RELAXATIONS.md Section 2 |
+| Complete rank-two spectral bounds and norm four imply the all-state entropy-energy inequality | Incorrect relaxation, even with zero partial traces; explicit violating Hamiltonian contains forbidden trusted Pauli terms and is not a QIC counterexample | audits/ENTROPY_PROOF_RELAXATIONS.md Section 3 |
 | General sharp intermediate common-accuracy rate or common-accuracy collective advantage | Unresolved | Note Section 8 |
 | Exponential many-copy estimation speedup | Not claimed; easy classical control rules out that narrative here | Note Section 9 |
 
@@ -369,6 +374,29 @@ not identify complete-assemblage entanglement cost with the delayed-query
 rate. Prior subsumption of the full evaluated profile remains unresolved.
 
 ## Research division and next target
+
+The [two-correlation audit](audits/TWO_CORRELATION_FORMATION.md) sharpens
+both the exact result and its provenance. For a trusted qubit with only
+two specified correlations, the minimum formation entanglement is the
+raw gamma for a qubit partner and C for a qutrit or any larger partner.
+One fixed qutrit readout pair attains the whole profile; the minimum
+dimension attaining C is one on the disk, two on nonclassical exact axes
+and three elsewhere outside the disk. These dimensions count flags,
+unlike the original quantum memory cap. The raw qubit result is a direct
+specialization of Verstraete–Wolf, and Zhu–Zhang–Ma already exhibit the
+qualitative higher-dimension flag advantage. The complete two-parameter
+evaluation remains the candidate contribution, not either prior ingredient.
+A close 2024/25 Padua thesis by Tomassoli is identified but its full text
+remains inaccessible; no theorem-level exclusion of it is claimed.
+
+The companion [proof-method note](audits/ENTROPY_PROOF_RELAXATIONS.md)
+supplies two exact obstructions to global approaches: a total Holevo budget
+loses the filtered signals' information allocation, and interpolation of
+rank-two bounds loses the allowed trusted Pauli structure. Both relaxed
+problems violate the desired sharp line. Neither construction belongs to
+the genuine problem, so no all-state proof, admissible counterexample or
+unrestricted optimum results. This is an exact account of failed methods,
+not further family testing offered as evidence of optimality.
 
 The [roof provenance and joint-score audit](audits/ROOF_PROVENANCE_AND_JOINT_SCORE.md)
 identifies actual prior subsumption: Vollbrecht–Werner Eqs. (38)–(42) supply

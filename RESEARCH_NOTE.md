@@ -1,6 +1,6 @@
 # Q1 — Delayed local readout through a bounded quantum interface
 
-**Version:** 0.13, 2026-09-23
+**Version:** 0.14, 2026-09-23
 
 **Project:** Falling / Q1  
 **Status:** Baseline proofs and seed reduction independently checked within the audit workspace. The full product-diagonal profile rate has a constructive optimizer. Its one-qubit cost is an established steering entanglement measure; a new theorem-level comparison proves strict separation from the full optimized weighted-CHSH bound family inspected, while crediting the prior mixture mechanism. The unrestricted rate equals regularized formation of a local-query assemblage, whose distinction from full tensor-product assemblages is explicit. Earlier converse and construction results remain as listed below. The complete two-qubit entropy inequality, general common-accuracy rate evaluation and publication novelty remain unresolved. This is a research dossier, not external peer review or a claim of a new framework.
@@ -32,6 +32,8 @@ The general compression problem below is already present in the dimensional meas
 | Fixed-block full-tuple formation dichotomy | Task-specific application of Vollbrecht–Werner Eq. (42); one interior additivity point is equivalent to all-contrast additivity and a universal joint-decoder entropy inequality. This does not replace the stronger local-query inequality. |
 | Full profile versus fixed qubit-output channel completion | Derived and independently checked: the minimum Choi E_F is f([x+z-1]_+), strictly above C whenever x+z>1 and both x,z<1; agreement holds exactly on the remaining triangle and exact axes. |
 | Full profile versus Cope–Uola average-rank cost | Exact specialization D_M=W=w; the existing phase boundary identifies C<w. Worst-case quantum dimension remains a different resource. |
+| Minimum formation entanglement from two correlations with a trusted qubit | Exact E_2=gamma from the prior Verstraete–Wolf theorem; E_d=C for every d>=3, attained with one fixed qutrit pair. Realization dimension counts flags, unlike the interface memory cap. |
+| Sharp entropy proof from exact priors plus a total Holevo budget, or from rank-two interpolation alone | Both relaxations are refuted by explicit constructions; neither construction is an admissible counterexample to the original quantum entropy inequality. |
 | Product repetition removes the local/joint score distinction | Incorrect: a certified rank-two seed has f_2-j_2=(sqrt(2)-1)/8, preserved under all tensor powers. Product additivity of j is a prior minimum-cost measurement theorem; this seed violates no entropy bound. |
 | Exact maximum score at any rank-two spectrum | Derived and independently checked for arbitrary eigenvectors; excludes all rank-two entropy witnesses. |
 | Exact flat half-rank optimum through four input qubits | Derived and independently checked, with equality cases; with separate lower-flat-rank estimates; nonflat cases remain unresolved. |
@@ -474,6 +476,28 @@ Cope's established steering entanglement of formation for the corresponding
 noisy Pauli assemblage. The explicit evaluation and restricted tensorization
 are the supplied deductions; neither the entropy resource nor its general
 framework is new. Publication novelty remains unresolved.
+
+The [two-correlation comparison](docs/audits/TWO_CORRELATION_FORMATION.md)
+further proves that C is the minimum state entanglement of formation
+consistent with correlations x,z against a trusted qubit's X,Z, when the
+other system has dimension at least three. One fixed qutrit pair suffices
+for all profiles. If that system is itself a qubit, the exact cost is
+`gamma(x,z)=f(sqrt([x^2+z^2-1]_+))`, a direct application of the prior
+Verstraete–Wolf CHSH/concurrence bound. It exceeds C exactly outside the
+compatibility disk when both contrasts are below one. This separately
+defined realization dimension includes classical flags; it does not
+replace the interface's free-classical-record resource convention.
+The qualitative flag advantage is also prior. The candidate contribution
+remains the full two-parameter evaluation and the fixed-cap operational
+deduction, with exhaustive originality still unresolved.
+
+Two [exact proof-method obstructions](docs/audits/ENTROPY_PROOF_RELAXATIONS.md)
+show why the sharp all-state entropy bound does not follow from either
+exact basis priors with only a total Holevo budget or from the complete
+rank-two spectral envelope and a norm constraint alone. The first permits
+classical outputs that are not measurements of the filtered ensemble; the
+second permits forbidden trusted Pauli terms. Neither refutes the genuine
+quantum inequality, which remains open.
 
 The [entropy-rate characterization](docs/ENTROPY_RATE_CHARACTERIZATION.md) additionally proves
 

@@ -325,6 +325,38 @@ precedents detailed above.
 
 ## Remaining comparisons and research target
 
+The [two-correlation formation audit](audits/TWO_CORRELATION_FORMATION.md)
+identifies another direct prior ingredient. Verstraete–Wolf,
+[quant-ph/0112012v1](https://arxiv.org/abs/quant-ph/0112012v1), Eq. (2),
+p. 1 and Theorem 1, p. 2, gives the raw qubit minimum
+`gamma(x,z)=f(sqrt([x^2+z^2-1]_+))` through an explicit normalized-CHSH
+map. This formula should not be claimed new. Zhu–Zhang–Ma,
+[2303.08407v2](https://arxiv.org/abs/2303.08407v2), Eq. (24), p. 13 and
+the direct-sum example preceding Theorem 2, p. 14, already demonstrate
+the qualitative reduction in formation cost from higher dimensions and
+classical flags. Schneeloch–Howland,
+[PRA 97, 042338](https://link.aps.org/accepted/10.1103/PhysRevA.97.042338),
+Eqs. (2)–(3), printed p. 2, supplies an earlier conditional-entropy
+certificate from two complementary correlation distributions; its
+one-sided specialization is compared explicitly in the audit.
+
+The supplied exact comparison is E_2=gamma and E_d=C for all d>=3 when
+only x,z and Bob's trusted qubit X,Z are fixed. One universal qutrit
+readout pair attains C, and the complete strict/equality sets are proved.
+All flags count toward d here; this is separate from free classical
+records in the interface problem. The full matching/cross X/Z probability
+table is Bell local throughout the square, so unrestricted fully
+device-independent certification from that table cannot supply positive C.
+Neither that elementary distinction nor generic flagging is a novelty.
+
+A concrete outstanding comparison is Giacomo Tomassoli's 2024/25 thesis,
+*Certificatori di Entanglement per due qubit con due correlatori*,
+[Padua catalogue](https://thesis.unipd.it/handle/20.500.12608/84769).
+Metadata and abstract were retrieved, but primary full-text attempts
+returned HTTP 403. Its entanglement measure and formulas remain unverified;
+it is not excluded by its title. Exhaustive originality of the full
+two-parameter convexification remains open.
+
 The [roof provenance audit](audits/ROOF_PROVENANCE_AND_JOINT_SCORE.md)
 supplies a direct subsumption map to Vollbrecht–Werner
 [quant-ph/0010095v2](https://arxiv.org/abs/quant-ph/0010095v2), Section IV.A,

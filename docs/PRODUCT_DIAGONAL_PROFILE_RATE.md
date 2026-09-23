@@ -707,6 +707,18 @@ cost D_M equals w on this entire family. Thus the phase boundary above
 already specifies its exact comparison with the entropy cost. These
 identifications are not new resource definitions or new phase calculations.
 
+The raw qubit function gamma itself is also directly supplied by
+Verstraete–Wolf [quant-ph/0112012v1](https://arxiv.org/abs/quant-ph/0112012v1),
+Theorem 1, p. 2, via the normalized-CHSH map in the
+[two-correlation audit](audits/TWO_CORRELATION_FORMATION.md). That audit
+proves E_2=gamma and E_d=C for every d>=3 in the separate problem of
+minimum state formation entanglement from two correlations with a trusted
+qubit. A fixed qutrit pair attains the whole profile. Its dimension counts
+flags; the original interface memory cap does not. The qualitative flag
+advantage is prior as well. The full joint-data convexification and its
+operational evaluation remain the specific candidate contributions, with
+publication originality unresolved.
+
 The product-diagonal condition cannot be removed by diagonalizing a
 general seed: an arbitrary eigenbasis need not be a tensor product of
 local bases, and then the edge decomposition (9) is unavailable. General
