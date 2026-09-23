@@ -1,0 +1,98 @@
+{
+  "arithmetic": {
+    "arithmetic_decimal_places": 75,
+    "backend": "Python standard-library integers and fractions.Fraction; no floating-point arithmetic",
+    "log_method": "ln(r)=m*ln(2)+2*sum(t**(2*j+1)/(2*j+1)), r=2**m*a, 1<=a<2, t=(a-1)/(a+1)",
+    "log_remainder_bound": "2*t**(2*N+1)/((2*N+1)*(1-t*t)); 0<=t<=1/3",
+    "log_series_terms": 100,
+    "operation_rounding": "Outward to a fixed decimal lattice after each arithmetic operation",
+    "output_convention": "Every two-element decimal-string list is an outward rational enclosure.",
+    "output_decimal_places": 18,
+    "sqrt_decimal_places": 65,
+    "sqrt_method": "isqrt(floor(numerator*10**(2*digits)/denominator)), with exact upper endpoint check"
+  },
+  "comparison": {
+    "previous_explicit_mixture": "(87/100)*f(15/29)",
+    "previous_mixture_rate": [
+      "0.325066020633557333",
+      "0.325066020633557334"
+    ],
+    "strict_rate_saving": [
+      "0.000217781446980956",
+      "0.000217781447664310"
+    ]
+  },
+  "ln2": [
+    "0.693147180559945309",
+    "0.693147180559945310"
+  ],
+  "optimizer": {
+    "exact_axis_point": {
+      "x": "1",
+      "z": [
+        "0.525760132968700000",
+        "0.525760132968720000"
+      ]
+    },
+    "exact_axis_weight": [
+      "0.847805621234486136",
+      "0.847805621236177404"
+    ],
+    "free_disk_point": {
+      "x": [
+        "0.934294550947462021",
+        "0.934294550947522161"
+      ],
+      "z": [
+        "0.356502022532495620",
+        "0.356502022532675397"
+      ]
+    },
+    "rate": [
+      "0.324848239185893024",
+      "0.324848239186576377"
+    ],
+    "rate_interval_width_upper": "0.000000000000683353"
+  },
+  "profile": {
+    "x": "99/100",
+    "z": "1/2"
+  },
+  "research_base": "65fabd7d870df705193017cc61e7230fc4943a5b",
+  "root": {
+    "existence_and_uniqueness_basis": "Strict endpoint signs plus continuity and strict monotonicity proved in the accompanying analytical optimizer theorem.",
+    "lower_endpoint_gap": [
+      "0.000000000000007639",
+      "0.000000000000007640"
+    ],
+    "upper_endpoint_gap": [
+      "0.000000000000012488",
+      "0.000000000000012489"
+    ],
+    "v": [
+      "0.525760132968700000",
+      "0.525760132968720000"
+    ],
+    "z_x_at_lower_endpoint": [
+      "0.499999999999992360",
+      "0.499999999999992361"
+    ],
+    "z_x_at_upper_endpoint": [
+      "0.500000000000012488",
+      "0.500000000000012489"
+    ]
+  },
+  "scope": "Product-diagonal profile rate C(99/100,1/2); not an unrestricted quantum-memory converse or novelty certificate.",
+  "status": "Exact rational interval certificate for one scalar optimizer, conditional on the analytical profile theorem.",
+  "strict_saving_phase_threshold": [
+    "0.391957798455361966",
+    "0.391957798455361967"
+  ],
+  "verified_checks": [
+    "Profile is outside the compatibility disk and strictly inside the analytic saving wedge.",
+    "z_x(v_lower)<1/2<z_x(v_upper) by disjoint rational intervals.",
+    "All enclosed optimizer parameters lie in the physical interior, with 0<p<1 and u<x.",
+    "Rate enclosure has width below 1e-11.",
+    "Certified optimizer rate is strictly smaller than the previous explicit mixture rate."
+  ]
+}

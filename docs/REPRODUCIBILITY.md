@@ -37,6 +37,7 @@ python tools/check_allocation_and_kernels.py --output results/allocation-kernels
 python tools/check_entropy_geometry.py --output results/entropy-geometry-rerun.json
 python tools/check_asymmetric_rate.py --output results/asymmetric-rate-rerun.json
 python tools/check_profile_rate.py --output results/profile-rate-rerun.json
+python tools/certify_profile_optimizer.py --output results/profile-optimizer-rerun.json
 ```
 
 The bootstrap environment was Python 3.13.5 and NumPy 2.3.5. The audit
@@ -310,6 +311,43 @@ carry achievability; the new analytical proof and phase boundary were
 independently reconstructed within the workspace. The source audit records
 established ingredients and unresolved publication novelty separately.
 
+## Exact rational certificate for the constructive profile optimizer
+
+The continuation based on main
+`65fabd7d870df705193017cc61e7230fc4943a5b` adds
+`tools/certify_profile_optimizer.py` and
+`results/profile_optimizer_certificate.json`. The analytical theorem in
+[the profile note](PRODUCT_DIAGONAL_PROFILE_RATE.md), Section 5.1, proves
+global optimality within its stated comparison class and uniqueness of
+the scalar root. The script encloses that root and the rate at the single
+specified profile `(99/100,1/2)`; it does not prove the general theorem.
+
+This certificate uses only standard-library Python integers, `Fraction`
+and `isqrt`. There is no floating-point arithmetic. Each arithmetic
+operation rounds outward to a 75-place decimal lattice; square roots use
+65-place exact integer enclosures. Logarithms are range-reduced to an
+atanh argument in `[0,1/3]`; 100 series terms and an explicit rational
+positive remainder bound enclose their values. Decimal output endpoints
+are rounded outward to 18 places and represent exact rational numbers.
+
+The verified root bracket is `[0.52576013296870,0.52576013296872]`.
+The cost enclosure is
+`[0.324848239185893024,0.324848239186576377]`, of width below `6.834e-13`.
+The endpoint signs are separated from zero by exact rational intervals.
+All mixture parameters are certified physical, and the cost is strictly
+smaller than the earlier explicit mixture. These are genuine interval
+certificates for the stated scalar quantities, unlike the earlier
+floating-point bisection diagnostics.
+
+The script and interval formulas were independently read; a root-workspace
+rerun on Python 3.12.14 reproduced the recorded JSON byte for byte. Checks
+use explicit exceptions and remain enabled under `python -O`; the
+implementing agent also verified an identical optimized replay. No matrix
+optimizer, network call, GPU or large-block simulation is involved. Old
+construction diagnostics were not rerun because their formulas and
+implementations were unchanged. Publication novelty and unrestricted
+optimality are outside this certificate's scope.
+
 ## Original archive provenance
 
 The user-provided archive was Q1_Quantum_Interface_Dossier_v0_1.zip.
@@ -317,7 +355,7 @@ Its SHA-256 is
 `3f3538c0307f3a1131746d84410b21752b97aa0e87d8de1722392d3b114dd8ec`.
 The following three files were imported unchanged at bootstrap commit
 `eaf085a8cb299e6b297b11d2dc3c85e24f02779e`. These are historical hashes; the
-research note has subsequently been revised to version 0.9:
+research note has subsequently been revised to version 0.10:
 
 | File | SHA-256 |
 |---|---|

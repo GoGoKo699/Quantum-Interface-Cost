@@ -312,6 +312,17 @@ deductions; the underlying resource is prior. No regularized
 complete-assemblage cost is silently imported as the unrestricted local-query
 rate. Novelty of this explicit evaluation remains under comparison.
 
+Section 5.1 now makes that evaluation constructive: each strict-saving
+profile has a unique mixture of a compatible-circle point and a single
+exact-axis atom, determined by one scalar equation. Its proof uses explicit
+supporting planes, strict convexity and a monotone family of chords. These
+are standard convex-geometric tools applied to the already identified
+resource. The uniqueness is at the level of generating profile-cost atoms,
+not all assemblage decompositions or physical encoders. The source boundary
+is unchanged: the two-dimensional evaluation is the candidate contribution;
+the resource and its exact-axis and symmetric slices have the established
+precedents detailed above.
+
 ## Remaining comparisons and research target
 
 The [flat-seed comparison](FLAT_SEED_PRIOR_COMPARISON.md) now checks
