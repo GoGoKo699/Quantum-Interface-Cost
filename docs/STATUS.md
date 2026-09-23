@@ -1,7 +1,7 @@
 # Status and claim ledger
 
-Updated: 2026-09-23. Stage: explicit two-qubit low-rank neighborhood and complete high-score core stability; unrestricted optimality and publication originality remain open.
-Latest research base: `b653fe866930aa8d1c07ad3bf34629a14b41009a`, the merge of PR #21.
+Updated: 2026-09-23. Stage: sharp two-qubit subspace bounds and complete equal-leading-eigenvalue entropy theorem; unrestricted optimality and publication originality remain open.
+Latest research base: `fa2443ca413a5c1935722db1c1415be0c7ad7266`, the merge of PR #22.
 
 Critical assessment base: `81bcfefb2b545742d513c4f51364a7f72972451e`, the
 merge of PR #11. The [publication and optimality assessment](audits/PUBLICATION_AND_OPTIMALITY_ASSESSMENT.md)
@@ -89,6 +89,9 @@ is asserted.
 | Sharp seed entropy bound for every two-qubit state with lambda_3+lambda_4>=1/29 | Derived and independently checked for arbitrary complex eigenvectors; exact rational interval certificate accompanies the analytical reduction. Remaining witnesses have top-two spectral weight >28/29 | audits/TWO_QUBIT_SPECTRAL_TAIL_GATE.md |
 | Sharp entropy bound for every two-qubit state with lambda_3+lambda_4<=2^-20 | Derived and independently checked; first supplied explicit uniform two-qubit radius, with no eigenbasis restriction. It does not overlap the 1/29 gate | audits/TWO_QUBIT_CORE_STABILITY.md |
 | No two-qubit entropy witness has top-two core score >10/3 or normalized second core eigenvalue <=1/5 | Derived and independently checked; finite-angle high-score bridge with exact two-variable certificate, plus a separate analytical SLD spectral gate | audits/TWO_QUBIT_CORE_STABILITY.md |
+| Exact local-orbit minimum of two-qubit rank-two subspace coupling, with sharp universal floor 7/8 | Derived and independently checked for all complex subspaces; canonical coordinates and compression maps are prior Niu–Griffiths ingredients | audits/SHARP_SUBSPACE_AND_FLAT_CORE.md Section 1 |
+| Sharp subspace anisotropy bound with coefficient 2/sqrt(3) | Derived and independently checked with exact attainer; compares average coupling and its state dependence | audits/SHARP_SUBSPACE_AND_FLAT_CORE.md Section 1.3 |
+| Sharp seed entropy bound for every two-qubit state with lambda_1=lambda_2 | Derived and independently checked; arbitrary complex eigenvectors and remaining spectrum, one scalar polynomial majorant and existing gates | audits/SHARP_SUBSPACE_AND_FLAT_CORE.md Section 2 |
 | Quantitative stability of one-qubit maximizing seeds | Derived and independently checked; dimension-independent normalized-seed bounds and specified branch-weighted consequences | ONE_QUBIT_STABILITY.md |
 | Full noisy-X/Z average-rank profile D_M=W=w | Exact specialization of Cope–Uola SDPs; the already proved C-versus-w phase boundary supplies its full entropy comparison | audits/ROOF_PROVENANCE_AND_JOINT_SCORE.md Section 3 |
 | Collective readout can improve joint score per copy of a product seed | Incorrect: product additivity follows from Wallden–Dunjko–Andersson Theorem 3; an explicit f_2-j_2=(sqrt(2)-1)/8 gap persists under powers | audits/ROOF_PROVENANCE_AND_JOINT_SCORE.md Section 4 |
@@ -562,7 +565,7 @@ number greater than 6.235819648070267. It must additionally stay outside
 the proved open neighborhood of the rank-at-most-two set at that fixed n.
 It must fail the new spectral and kernel certificates; in particular,
 a two-input witness must have `2^-20<lambda_3+lambda_4<1/29`, normalized
-second core eigenvalue `lambda_2/(lambda_1+lambda_2)>1/5`, and normalized
+second core eigenvalue `1/5<lambda_2/(lambda_1+lambda_2)<1/2`, and normalized
 top-two core score at most `10/3`. In particular, its largest two
 eigenvalues sum to more than `28/29`. Also,
 a two-input witness cannot have a maximally entangled kernel vector or
@@ -573,6 +576,24 @@ regularization can turn entropy below log(rank) into an asymptotic memory
 saving. No entropy witness or collective advantage for the original
 common-accuracy target has been found. The unequal-accuracy separation
 above is a distinct, proved operational result.
+
+## Simple subspace theorem and flat-core closure
+
+The [subspace continuation](audits/SHARP_SUBSPACE_AND_FLAT_CORE.md) gives
+an exact minimum over local query-frame orientations for every rank-two
+support orbit, and sharp universal constants `7/8` and `2/sqrt(3)` for its
+coupling operator. The proof uses canonical two-qubit compression and
+scalar squares; Niu–Griffiths supplies the prior canonical machinery.
+A single polynomial majorant then closes the entire `lambda_1=lambda_2`
+face of the two-qubit entropy problem without interval partitions.
+
+The proof does not uniformize arbitrary cores. Even a product core with
+spectrum `(7/10,3/10)` has actual score below `10/3` while querywise CS
+pinching raises it to `2+sqrt(2)`. This lost coherence is the explicit
+obstruction to carrying over the flat-core moment cap. Section 3 states
+one sufficient coefficient-3 interpolation inequality whose proof would
+close n=2; it is clearly labeled conjectural. The full all-n entropy
+conjecture and publication originality remain unresolved.
 
 ## Publication gate
 

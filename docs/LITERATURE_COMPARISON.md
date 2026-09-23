@@ -566,3 +566,23 @@ existing Tomassoli thesis gap.
 Preserve exact source versions, locators, timing, resource accounting and
 quantifiers in every further comparison. Absence from this ledger is not
 evidence of absence from the literature.
+
+## Sharp subspace bounds and flat-core entropy closure
+
+The [subspace continuation](audits/SHARP_SUBSPACE_AND_FLAT_CORE.md) credits
+Niu–Griffiths, [quant-ph/9810008v2](https://arxiv.org/abs/quant-ph/9810008v2),
+29 April 1999, Section II.A theorem/Eq. (2.5), p. 4, and Section III
+Eqs. (3.5)–(3.7), p. 6. Those statements supply the canonical form of every
+complex two-dimensional two-qubit subspace and its compressed local Pauli
+maps. Rotating the subspace also rotates the physical query planes, whose
+orientations must still be optimized.
+
+The report supplies that exact local-orbit optimization, with a sharp
+universal `7/8` floor, and a separate sharp `2/sqrt(3)` relation between
+mean coupling and its state dependence. These evaluated constants are
+not stated in the inspected prior canonical/Bloch-map results. This is a
+scoped comparison, not an exhaustive absence claim. A common-frame scalar
+moment and an explicit polynomial majorant yield the entropy consequence
+for every two-qubit state with equal largest two eigenvalues. The preceding
+full-profile steering comparison, unrestricted equal-accuracy optimality,
+and publication originality remain open.

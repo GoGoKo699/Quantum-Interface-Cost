@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "arithmetic": "exact rational",
+  "positive_bernstein_coefficients": 9,
+  "interval_partitions": 0,
+  "affine_intercept": "3277/960",
+  "affine_slope": "595/192",
+  "entropy_endpoint_margin": "151/23312520",
+  "scope": "scalar identities and endpoints; analytical reductions required"
+}
