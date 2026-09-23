@@ -84,6 +84,16 @@ exceeds the scalar conversion of their complete concurrence bound in that
 interior. Unrestricted equal-accuracy optimality and publication originality
 remain open, including one specifically identified unread full-text source.
 
+The [resource-optimum and joint-decoder audit](docs/audits/RESOURCE_OPTIMA_AND_JOINT_DECODERS.md)
+adds a sharper distinction: the full minimum ordinary negativity is w/2,
+but any realization attaining it in the noisy nonclassical interior has
+formation entropy at least w. Therefore the phase C<w has no common
+minimizer for these two resources. It also proves that every full-rank
+two-input joint context optimum uses a projective readout; singular states
+admit one on the ambient four-dimensional space. Neither theorem evaluates
+the unrestricted memory rate. The general jointly optimized entanglement
+witness method is explicitly credited to the 2007 prior literature.
+
 ## Start here
 
 | Purpose | Read |
@@ -106,6 +116,7 @@ remain open, including one specifically identified unread full-text source.
 | Full-profile distinction from steering priors and exact remaining formation identity | [Profile source comparison](docs/audits/PROFILE_NOVELTY_AND_STEERING_REDUCTION.md) |
 | Exact two-correlation formation cost and minimum realization dimension | [Dimension and prior comparison](docs/audits/TWO_CORRELATION_FORMATION.md) |
 | All qutrit entropy optimizers and a closer weighted-guessing precedent | [Optimizer structure and source map](docs/audits/FORMATION_OPTIMIZERS_AND_PRIOR.md) |
+| Incompatible negativity/entropy optima and projective two-input joint decoders | [Resource optima and decoder structure](docs/audits/RESOURCE_OPTIMA_AND_JOINT_DECODERS.md) |
 | An exact matrix certificate for the unresolved two-input joint entropy bound | [Common-state operator cover](docs/audits/FORMATION_OPTIMIZERS_AND_PRIOR.md#3-an-exact-matrix-certificate-for-the-unresolved-two-input-joint-bound) |
 | Why total Holevo budgets and rank-two interpolation do not close the entropy proof | [Proof-method obstructions](docs/audits/ENTROPY_PROOF_RELAXATIONS.md) |
 | Entropy-production, coherence and steering-cost precedents | [Entropy trade-off source audit](docs/ENTROPY_TRADEOFF_PRIOR_AUDIT.md) |
@@ -316,8 +327,10 @@ and seed-family cases, 20 structure diagnostics, 16 nonuniform-seed
 diagnostics, 14 allocation, spectral, kernel, and obstruction cases, and
 13 exact-axis, SLD-spectrum, and stability cases, 17 asymmetric-entropy
 and exact-axis-rate cases, and 18 profile-rate cases. These finite
-diagnostics supplement the analytical proofs. There is no numerical
-optimization or large simulation. No hosted CI run is claimed.
+diagnostics supplement the analytical proofs and use no numerical
+optimization or large simulation. Separate bounded exploratory searches
+are documented with their limitations in the latest audit; they supplied
+no proof of optimality. No hosted CI run is claimed.
 
 ## Collaboration
 

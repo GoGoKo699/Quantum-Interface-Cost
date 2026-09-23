@@ -1,6 +1,6 @@
 # Q1 — Delayed local readout through a bounded quantum interface
 
-**Version:** 0.15, 2026-09-23
+**Version:** 0.16, 2026-09-23
 
 **Project:** Falling / Q1  
 **Status:** Baseline proofs and seed reduction independently checked within the audit workspace. The full product-diagonal profile rate has a constructive optimizer. Its one-qubit cost is an established steering entanglement measure; a new theorem-level comparison proves strict separation from the full optimized weighted-CHSH bound family inspected, while crediting the prior mixture mechanism. The unrestricted rate equals regularized formation of a local-query assemblage, whose distinction from full tensor-product assemblages is explicit. Earlier converse and construction results remain as listed below. The complete two-qubit entropy inequality, general common-accuracy rate evaluation and publication novelty remain unresolved. This is a research dossier, not external peer review or a claim of a new framework.
@@ -35,6 +35,8 @@ The general compression problem below is already present in the dimensional meas
 | Minimum formation entanglement from two correlations with a trusted qubit | Exact E_2=gamma from the prior Verstraete–Wolf theorem; E_d=C for every d>=3, attained with one fixed qutrit pair. Realization dimension counts flags, unlike the interface memory cap. |
 | Structure of every minimum-formation realization in the noisy nonclassical interior | Derived equality theorem: orthogonal classical and entangled sectors are necessary; all qutrit optimizers are classified, including a mixed-state family in the strict-saving phase. |
 | Full profile from scalar conversion of the exact prior concurrence cost | Incorrect in the noisy nonclassical interior: Han et al.'s weighted family gives minimum concurrence w, but C>f(w) throughout that region. Their pure weighted geometry and central-phase qutrit construction are prior ingredients. |
+| Ordinary negativity and formation can always share a two-correlation minimizer | Incorrect precisely in the interior phase C<w: minimum N=w/2, while minimum E_F among N-minimizers is w. Supplied weighted/equality proof; Pusey's equal-weight negativity line and flagged attainment are prior. |
+| Optimal two-input joint readouts require arbitrary nonprojective measurements at full rank | Incorrect: every full-rank context optimum is a rank-one PVM. An optimal ambient four-dimensional PVM exists at singular rank, but its support compression can be nonprojective. Supplied dual-complementarity proof; the entropy maximum remains unevaluated. |
 | Sharp entropy proof from exact priors plus a total Holevo budget, or from rank-two interpolation alone | Both relaxations are refuted by explicit constructions; neither construction is an admissible counterexample to the original quantum entropy inequality. |
 | Two-input joint entropy bound as a universal matrix cover | Exact equivalent SDP/entropy certificate; a failed cover supplies an admissible violating seed. No universal cover or failed instance has been proved, and the joint target is weaker than the local one. |
 | Product repetition removes the local/joint score distinction | Incorrect: a certified rank-two seed has f_2-j_2=(sqrt(2)-1)/8, preserved under all tensor powers. Product additivity of j is a prior minimum-cost measurement theorem; this seed violates no entropy bound. |
