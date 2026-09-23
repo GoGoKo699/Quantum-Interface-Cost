@@ -1,7 +1,7 @@
 # Status and claim ledger
 
-Updated: 2026-09-23. Stage: constructive profile optimizer after a bounded two-qubit proof attempt.
-Latest research base: `65fabd7d870df705193017cc61e7230fc4943a5b`, the merge of PR #12.
+Updated: 2026-09-23. Stage: full-profile source distinction and local-query steering reduction.
+Latest research base: `d691b21ec09546aa004cb1b1da3d5891779352c5`, the merge of PR #13.
 
 Critical assessment base: `81bcfefb2b545742d513c4f51364a7f72972451e`, the
 merge of PR #11. The [publication and optimality assessment](audits/PUBLICATION_AND_OPTIMALITY_ASSESSMENT.md)
@@ -74,6 +74,10 @@ is asserted.
 | Exact boundary C<w at (1-x)/(1-z)<2(1/ln2-1)^2 | Derived and independently checked for 0<z<=x<1 outside the disk, with X/Z-symmetric version; a region of unrestricted achievability beating retention, not an unrestricted converse | PRODUCT_DIAGONAL_PROFILE_RATE.md |
 | C equals steering entanglement of formation of the noisy Pauli assemblage | Exact reduction to Cope's established resource; supplied explicit evaluation, publication novelty unresolved | ENTROPY_TRADEOFF_PRIOR_AUDIT.md |
 | Symmetric one-site C(eta,eta) is the subset line | Also a short corollary of prior Zhu–Zhang–Ma CHSH entanglement bound and Cope Theorem 2, with flagged endpoint attainment | audits/PUBLICATION_AND_OPTIMALITY_ASSESSMENT.md Section 2 |
+| Full optimized Zhu–Zhang–Ma affine weighted-CHSH family yields only the radial formation bound | Derived and independently checked for all weights, trusted binary measurements, setting swaps and Bell-party orientations; strictly below C at every asymmetric point outside the disk | audits/PROFILE_NOVELTY_AND_STEERING_REDUCTION.md Section 3 |
+| R=inf_n A_n/n=lim_n A_n/n for local-query steering formation A_n | Derived and independently checked using the complete seed twirl and the established fixed-cap entropy theorem; no continuity of general E_FA assumed | audits/PROFILE_NOVELTY_AND_STEERING_REDUCTION.md Section 5 |
+| nR<=A_n<=B_n<=nC_eta, with B_n full tensor-product formation | Derived and independently checked; strict B_n<nC_eta would refute unrestricted subset optimality, while ordinary additivity alone is insufficient | audits/PROFILE_NOVELTY_AND_STEERING_REDUCTION.md Section 6 |
+| Commuting input queries always admit jointly trace-norm-optimal decoders | Incorrect; explicit normalized two-input seed has uniquely optimal sharp X and Z decoders. This is a branch-level obstruction, not a rate counterexample | audits/PROFILE_NOVELTY_AND_STEERING_REDUCTION.md Section 7 |
 | Either R equals the subset line everywhere or lies strictly below it at every interior contrast | Elementary deduction from established convexity and endpoints; independently reconstructed. One interior equality or the conjectured sharp onset slope would settle the full curve | audits/PUBLICATION_AND_OPTIMALITY_ASSESSMENT.md Section 3 |
 | Sharp seed deficit is superadditive under taking site marginals | Incorrect; exact correlated product-bisector example at epsilon=1/1024. The global entropy conjecture itself is not refuted | audits/PUBLICATION_AND_OPTIMALITY_ASSESSMENT.md Section 4 |
 | Strict collective asymptotic saving for every exact-X profile with 0<z<1, extending to fixed interior profiles | Derived and independently checked; retention cost z exceeds R_X(z); at x=.99,z=.5 collective rate<=.354579 versus retention rate .39 | EXACT_AXIS_RATE.md |
@@ -358,6 +362,26 @@ not identify complete-assemblage entanglement cost with the delayed-query
 rate. Prior subsumption of the full evaluated profile remains unresolved.
 
 ## Research division and next target
+
+The [latest source comparison](audits/PROFILE_NOVELTY_AND_STEERING_REDUCTION.md)
+turns two open comparisons into exact statements. The full asymmetric C
+strictly exceeds the complete optimized affine weighted-CHSH certificate
+family in Zhu–Zhang–Ma Theorem 2. Cope's numerical family fixes one exact
+measurement and cannot be identified with the two-noise square by the
+stated rank-preserving transformations; its qualitative mixing mechanism
+is nevertheless prior. Tóth–Moroder–Gühne's steering optimization uses
+linear entropy, and a proved flag obstruction rules out the naive scalar
+conversion to the formation-entropy answer. These comparisons support a
+specific analytic contribution, not an exhaustive originality claim.
+
+The unrestricted problem is now exactly regularized formation of the
+local-query assemblage L_n, with 2n binary settings. Full product
+assemblages demand complete setting/outcome tuples. A two-input seed
+shows why optimized branches need not extend to that larger task. The
+chain nR<=A_n<=B_n<=nC_eta specifies the missing equality and a possible
+certified-nonadditivity route to refutation. Neither equality nor strict
+separation has been established. These new deductions passed independent
+internal proof review; no new matrix search was used.
 
 The bounded two-qubit attempt after PR #12 did not prove the proposed
 fixed-spectrum envelope, close the entropy inequality, or produce a

@@ -46,6 +46,13 @@ and one exact-axis profile. See [the formula and proof](docs/PRODUCT_DIAGONAL_PR
 The bounded follow-up attempt on the full two-qubit entropy conjecture
 produced neither a proof nor a certified violation; its status is unchanged.
 
+The latest source comparison proves that the full asymmetric formula is
+strictly stronger than the entire optimized weighted-CHSH formation-bound
+family inspected. It credits the earlier steering mixture mechanism and
+expresses the unrestricted problem as a precise local-query formation
+identity. See [the theorem-level comparison](docs/audits/PROFILE_NOVELTY_AND_STEERING_REDUCTION.md);
+this is a concrete distinction from those sources, not a complete novelty claim.
+
 ## Start here
 
 | Purpose | Read |
@@ -65,6 +72,7 @@ produced neither a proof nor a certified violation; its status is unchanged.
 | Exact memory rate with every X query preserved | [Exact-axis rate](docs/EXACT_AXIS_RATE.md) |
 | Complete product-diagonal rate and unequal-accuracy phase boundary | [Profile rate theorem](docs/PRODUCT_DIAGONAL_PROFILE_RATE.md) |
 | Publication case and the precise unrestricted-optimality obstacle | [Critical assessment](docs/audits/PUBLICATION_AND_OPTIMALITY_ASSESSMENT.md) |
+| Full-profile distinction from steering priors and exact remaining formation identity | [Profile source comparison](docs/audits/PROFILE_NOVELTY_AND_STEERING_REDUCTION.md) |
 | Entropy-production, coherence and steering-cost precedents | [Entropy trade-off source audit](docs/ENTROPY_TRADEOFF_PRIOR_AUDIT.md) |
 | Exact rank-two spectrum trade-off and excluded families | [Entropy-inequality boundaries](docs/ENTROPY_INEQUALITY_BOUNDARIES.md) |
 | Sharp flat half-rank result through four input qubits | [Flat-seed theorem](docs/FLAT_HALF_RANK_OPTIMALITY.md) |

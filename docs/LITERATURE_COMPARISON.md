@@ -325,6 +325,24 @@ precedents detailed above.
 
 ## Remaining comparisons and research target
 
+The [full-profile follow-up audit](audits/PROFILE_NOVELTY_AND_STEERING_REDUCTION.md)
+supplies a complete comparison with Zhu–Zhang–Ma Theorem 2: optimizing its
+whole affine weighted-CHSH family gives only the radial bound, strictly
+below C at every asymmetric point outside the compatibility disk. It also
+distinguishes Cope's exact-first-measurement family by outcome ranks while
+crediting its earlier free/partially entangled mixture mechanism.
+Tóth–Moroder–Gühne's steering linear-entropy optimization, Cope–Osborne's
+extremal-decomposition algorithm and a 2026 convex-functional witness paper
+are compared at specific theorem/equation locators. None of these inspected
+statements is the claimed full entropy evaluation; that is a scoped finding.
+
+The same report proves R=inf_n E_FA(L_n)/n for the single-query assemblage
+and nR<=A_n<=B_n<=nC_eta for local-query versus full tensor-product formation.
+An explicit incompatible-decoder example blocks an automatic branchwise
+tuple extension. It explains why Cope–Uola's tensor-copy regularization or
+Kaur–Wang–Wilde's intrinsic-steerability superadditivity does not supply the
+missing unrestricted converse. It does not prove distinct optimal costs.
+
 The [flat-seed comparison](FLAT_SEED_PRIOR_COMPARISON.md) now checks
 Montanaro–Osborne, arXiv:0810.2435v3, Proposition 57 and Theorem 58,
 p. 31, and Proposition 71 / Eq. (163), p. 37, together with their v5

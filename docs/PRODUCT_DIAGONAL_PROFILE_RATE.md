@@ -704,3 +704,11 @@ separable Gram states also need not be product diagonal. Nothing here
 establishes the conjectured unrestricted sharp entropy inequality or
 its failure. Publication novelty of this operational specialization
 remains under primary-source comparison.
+
+The [follow-up source audit](audits/PROFILE_NOVELTY_AND_STEERING_REDUCTION.md)
+now proves that C strictly exceeds the whole optimized affine
+weighted-CHSH formation-bound family inspected at every asymmetric point
+outside the disk. It distinguishes Cope's two-parameter family but credits
+the prior mixture mechanism, and checks the linear-entropy and tensor-copy
+comparisons. This establishes specific theorem-level distinctions; it does
+not certify exhaustive originality or unrestricted optimality.
