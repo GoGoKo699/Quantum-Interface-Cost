@@ -414,6 +414,33 @@ feasibility, attainment and singular-state limits. No numerical solver
 was used to claim a feasible or infeasible covering instance. No numerical
 search supports these deductions; unchanged diagnostics were not rerun.
 
+## Resource optima and projective joint decoders
+
+The continuation pinned to `6367ab89601eb45485cba15df8feabb553e0fac1`
+supplies analytical proofs of the full ordinary-negativity profile,
+formation cost among negativity minimizers, and optimal two-input joint
+decoder structure. Independent internal reviews reconstructed the common
+reflection dilation, Jordan pinching, partial-transpose bound, equality
+contacts, exact-axis exception, SDP complementarity, singular compactness
+limit and rank-two projection reduction. Direct primary-source reads
+checked the Pusey, Guehne–Reimpell–Werner, Eisert–Brandao–Audenaert and
+Das et al. version/equation/page maps. These checks are not external review
+or historical-priority certification.
+
+Small exploratory computations were separate from those proofs. A
+common-state joint SDP used six deterministic initial states and eight
+updates per state, with CVXPY 1.9.3 / Clarabel 0.11.1 in a scratch-only
+environment. Forty of 48 outputs had `optimal_inaccurate` status; the
+smallest assemblage eigenvalue reached approximately -1.12e-8. No positive
+entropy excess was observed, and no output is a certified feasible cover
+or an upper bound. Separate bounded local-objective and fixed-spectrum
+searches likewise supplied no certified violation. These were exploratory
+attempts, not an extension of the repository's regression suite. No large
+simulation was run. The stated theorems require none of their numerical
+outputs. Unchanged construction diagnostics were not rerun.
+
+See [the proof report](audits/RESOURCE_OPTIMA_AND_JOINT_DECODERS.md).
+
 ## Original archive provenance
 
 The user-provided archive was Q1_Quantum_Interface_Dossier_v0_1.zip.
@@ -421,7 +448,7 @@ Its SHA-256 is
 `3f3538c0307f3a1131746d84410b21752b97aa0e87d8de1722392d3b114dd8ec`.
 The following three files were imported unchanged at bootstrap commit
 `eaf085a8cb299e6b297b11d2dc3c85e24f02779e`. These are historical hashes; the
-research note has subsequently been revised to version 0.15:
+research note has subsequently been revised to version 0.16:
 
 | File | SHA-256 |
 |---|---|

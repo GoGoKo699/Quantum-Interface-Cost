@@ -485,6 +485,29 @@ and rigidity statement, not a new correlation inequality.
 The remaining finite-block question starts at `n=3,q=2`. Search for a genuine
 collective advantage or a converse that handles higher-dimensional global
 decoders. A settling prior theorem would be a useful research result.
+The [resource-optimum continuation](audits/RESOURCE_OPTIMA_AND_JOINT_DECODERS.md)
+adds two closer primary comparisons. Pusey 1305.1767v1, Section IV / Figure 1,
+p. 4, already presents the equal-weight negativity line and its flagged
+endpoint attainment. A supplied analytical all-weight proof now evaluates
+ordinary N_min=w/2 on the full profile. Its equality analysis gives a
+different statement: in the noisy nonclassical interior, minimum E_F among
+negativity minimizers is w. Thus the established phase C<w requires distinct
+resource optima. This is not obtained by substituting negativity into Han's
+convex-roof concurrence theorem.
+
+Guehne–Reimpell–Werner quant-ph/0607163v2, Eq. (1), p. 1, Eqs. (6),(8),
+p. 2, and Eisert–Brandao–Audenaert quant-ph/0607167v4, Eqs. (21)–(30),
+p. 4, already supply tight joint Legendre optimization from several
+expectation values. Their framework directly applies to the fixed qutrit
+pair and gives the existing dual after its block evaluation. Generic
+two-correlation optimization is therefore not a new method. Explicit
+evaluation, unrestricted-readout universality, equality structure and the
+operational translation remain the specific calculations to assess for
+originality. Das et al. 1702.00672v5, Eq. (69), p. 8 / Theorem 2, p. 9,
+provides a close exact-axis box-weight example, whose value V differs from
+formation cost f(V). These are scoped comparisons; the unread Tomassoli
+source and exhaustive-priority question remain open.
+
 Preserve exact source versions, locators, timing, resource accounting and
 quantifiers in every further comparison. Absence from this ledger is not
 evidence of absence from the literature.
