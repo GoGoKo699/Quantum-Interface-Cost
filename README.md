@@ -68,6 +68,18 @@ the full incompatibility-weight profile and proves an exact local/joint
 score gap that survives tensor repetition. The new two-qubit variational
 formula still leaves the all-state entropy bound unresolved.
 
+The [two-correlation audit](docs/audits/TWO_CORRELATION_FORMATION.md) now
+gives C an exact state-realization interpretation: for one trusted qubit,
+dimension three on the other side attains C with one fixed readout pair.
+Dimension two has a strictly larger cost throughout the noisy nonclassical
+interior, given by the prior Verstraete–Wolf theorem. This comparison counts
+classical flags in the realization dimension; it is not a new memory bound
+for the original interface, where classical records are free. Two exact
+[proof-method obstructions](docs/audits/ENTROPY_PROOF_RELAXATIONS.md) leave
+unrestricted equal-accuracy optimality open. The raw qubit formula and flag
+mechanism are prior; originality of the full joint-data evaluation remains
+unresolved, with one specifically identified full-text source still unread.
+
 ## Start here
 
 | Purpose | Read |
@@ -88,6 +100,8 @@ formula still leaves the all-state entropy bound unresolved.
 | Complete product-diagonal rate and unequal-accuracy phase boundary | [Profile rate theorem](docs/PRODUCT_DIAGONAL_PROFILE_RATE.md) |
 | Publication case and the precise unrestricted-optimality obstacle | [Critical assessment](docs/audits/PUBLICATION_AND_OPTIMALITY_ASSESSMENT.md) |
 | Full-profile distinction from steering priors and exact remaining formation identity | [Profile source comparison](docs/audits/PROFILE_NOVELTY_AND_STEERING_REDUCTION.md) |
+| Exact two-correlation formation cost and minimum realization dimension | [Dimension and prior comparison](docs/audits/TWO_CORRELATION_FORMATION.md) |
+| Why total Holevo budgets and rank-two interpolation do not close the entropy proof | [Proof-method obstructions](docs/audits/ENTROPY_PROOF_RELAXATIONS.md) |
 | Entropy-production, coherence and steering-cost precedents | [Entropy trade-off source audit](docs/ENTROPY_TRADEOFF_PRIOR_AUDIT.md) |
 | Exact rank-two spectrum trade-off and excluded families | [Entropy-inequality boundaries](docs/ENTROPY_INEQUALITY_BOUNDARIES.md) |
 | Sharp flat half-rank result through four input qubits | [Flat-seed theorem](docs/FLAT_HALF_RANK_OPTIMALITY.md) |

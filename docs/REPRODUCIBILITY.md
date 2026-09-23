@@ -376,6 +376,28 @@ maps were reviewed separately. No new matrix search, solver certificate or
 large simulation was used; unchanged numerical diagnostics were not rerun.
 See [the exact proofs and limits](audits/ROOF_PROVENANCE_AND_JOINT_SCORE.md).
 
+## Two-correlation dimensions and proof-method obstructions
+
+The continuation pinned to `d74f329605c9cf82707c09a3c0e925919e8512c0`
+used exact proof reconstruction. Two independent internal reviews checked
+the qubit CHSH normalization, arbitrary binary contractions, signed
+pure-component converse, fixed qutrit pair, radial strictness and all
+dimension/equality cases. Primary-source review checked Verstraete–Wolf,
+Zhu–Zhang–Ma and Schneeloch–Howland at the locators recorded in
+[the dimension audit](audits/TWO_CORRELATION_FORMATION.md). Tomassoli's
+thesis was available only at metadata/abstract level; its unread full text
+remains an explicit source gap.
+
+Independent reviews also checked both exact constructions in
+[the proof-method note](audits/ENTROPY_PROOF_RELAXATIONS.md): the classical
+channel's prior, information and Hamming loss; and the larger-class
+Hamiltonian's spectrum, arbitrary-complex-rank-two bound, strict entropy
+violation and forbidden trusted-Pauli coefficient. Neither is an admissible
+counterexample to the quantum conjecture. No numerical optimization,
+matrix search or large simulation was used. Earlier diagnostics were
+unchanged and not rerun. These checks establish neither unrestricted
+optimality nor exhaustive originality.
+
 ## Original archive provenance
 
 The user-provided archive was Q1_Quantum_Interface_Dossier_v0_1.zip.
@@ -383,7 +405,7 @@ Its SHA-256 is
 `3f3538c0307f3a1131746d84410b21752b97aa0e87d8de1722392d3b114dd8ec`.
 The following three files were imported unchanged at bootstrap commit
 `eaf085a8cb299e6b297b11d2dc3c85e24f02779e`. These are historical hashes; the
-research note has subsequently been revised to version 0.13:
+research note has subsequently been revised to version 0.14:
 
 | File | SHA-256 |
 |---|---|
