@@ -1,7 +1,7 @@
 # Status and claim ledger
 
-Updated: 2026-09-23. Stage: full-profile source distinction and local-query steering reduction.
-Latest research base: `d691b21ec09546aa004cb1b1da3d5891779352c5`, the merge of PR #13.
+Updated: 2026-09-23. Stage: tensor-formation dichotomy, exact query-dimension separation and channel comparison.
+Latest research base: `3a668f92afe5145e3273c5796ee74e0120214e1f`, the merge of PR #14.
 
 Critical assessment base: `81bcfefb2b545742d513c4f51364a7f72972451e`, the
 merge of PR #11. The [publication and optimality assessment](audits/PUBLICATION_AND_OPTIMALITY_ASSESSMENT.md)
@@ -77,6 +77,10 @@ is asserted.
 | Full optimized Zhu–Zhang–Ma affine weighted-CHSH family yields only the radial formation bound | Derived and independently checked for all weights, trusted binary measurements, setting swaps and Bell-party orientations; strictly below C at every asymmetric point outside the disk | audits/PROFILE_NOVELTY_AND_STEERING_REDUCTION.md Section 3 |
 | R=inf_n A_n/n=lim_n A_n/n for local-query steering formation A_n | Derived and independently checked using the complete seed twirl and the established fixed-cap entropy theorem; no continuity of general E_FA assumed | audits/PROFILE_NOVELTY_AND_STEERING_REDUCTION.md Section 5 |
 | nR<=A_n<=B_n<=nC_eta, with B_n full tensor-product formation | Derived and independently checked; strict B_n<nC_eta would refute unrestricted subset optimality, while ordinary additivity alone is insufficient | audits/PROFILE_NOVELTY_AND_STEERING_REDUCTION.md Section 6 |
+| Exact n-moment formulation of B_n using at most n+1 seed orbits | Derived and independently checked; arbitrary collective tuple POVMs and flags retained | audits/TENSOR_FORMATION_AND_CHANNEL_COMPARISON.md Section 2 |
+| At each fixed n, one interior B_n additivity point forces every-contrast additivity | Derived and independently checked; equivalent to a joint-decoder entropy inequality, weaker than the unproved local-query inequality | audits/TENSOR_FORMATION_AND_CHANNEL_COMPARISON.md Section 3 |
+| Local and tuple targets have exact minimum dimensions two and three at n=2, eta=(1+1/sqrt(2))/2 | Derived and independently checked; rigidity lower bound and complete rank-three instrument. This is not an entropy-cost separation | audits/TENSOR_FORMATION_AND_CHANNEL_COMPARISON.md Section 4 |
+| Fixed qubit-output completion equals the full formation profile C | Incorrect except on x+z<=1 and exact axes; minimum Choi E_F=f([x+z-1]_+) is strictly above C elsewhere | audits/TENSOR_FORMATION_AND_CHANNEL_COMPARISON.md Section 5 |
 | Commuting input queries always admit jointly trace-norm-optimal decoders | Incorrect; explicit normalized two-input seed has uniquely optimal sharp X and Z decoders. This is a branch-level obstruction, not a rate counterexample | audits/PROFILE_NOVELTY_AND_STEERING_REDUCTION.md Section 7 |
 | Either R equals the subset line everywhere or lies strictly below it at every interior contrast | Elementary deduction from established convexity and endpoints; independently reconstructed. One interior equality or the conjectured sharp onset slope would settle the full curve | audits/PUBLICATION_AND_OPTIMALITY_ASSESSMENT.md Section 3 |
 | Sharp seed deficit is superadditive under taking site marginals | Incorrect; exact correlated product-bisector example at epsilon=1/1024. The global entropy conjecture itself is not refuted | audits/PUBLICATION_AND_OPTIMALITY_ASSESSMENT.md Section 4 |
@@ -363,6 +367,31 @@ rate. Prior subsumption of the full evaluated profile remains unresolved.
 
 ## Research division and next target
 
+The [tensor-formation continuation](audits/TENSOR_FORMATION_AND_CHANNEL_COMPARISON.md)
+proves an exact finite task separation. For two input qubits at
+`eta_*=(1+1/sqrt(2))/2`, a delayed local query needs retained dimension two,
+whereas the full product query needs dimension three. One-qubit rigidity
+forces a deficient parity moment in every dimension-two branch; an explicit
+sixteen-branch qutrit instrument gives the matching upper bound. Compactness
+extends the separation to some interval immediately below eta_*, without
+an explicit width. This is a worst-case dimension result, not a strict
+separation of formation entropies A_n and B_n.
+
+The same report reduces B_n exactly to n moments and at most n+1 seed
+orbits. At each fixed n, additivity at one interior contrast forces
+additivity throughout the interval; any violation of the corresponding
+joint-decoder entropy bound yields savings at every interior contrast,
+using an explicit simplex compensation. The joint score j_n is at most
+the local score f_n. Neither entropy inequality has been proved generally.
+
+The fixed qubit-output channel completion is evaluated exactly as
+`G(x,z)=f([x+z-1]_+)`. It equals C only on x+z<=1 or an exact axis; it is
+strictly larger everywhere else. This rules out that complete proposed
+reduction to known channel formulas, while crediting the prior distinction
+between reconstruction and arbitrary readout. It is not an exhaustive
+originality verdict. These deductions passed independent internal proof
+reconstruction; no matrix search was used.
+
 The [latest source comparison](audits/PROFILE_NOVELTY_AND_STEERING_REDUCTION.md)
 turns two open comparisons into exact statements. The full asymmetric C
 strictly exceeds the complete optimized affine weighted-CHSH certificate
@@ -380,7 +409,7 @@ assemblages demand complete setting/outcome tuples. A two-input seed
 shows why optimized branches need not extend to that larger task. The
 chain nR<=A_n<=B_n<=nC_eta specifies the missing equality and a possible
 certified-nonadditivity route to refutation. Neither equality nor strict
-separation has been established. These new deductions passed independent
+separation of these entropy costs has been established. These deductions passed independent
 internal proof review; no new matrix search was used.
 
 The bounded two-qubit attempt after PR #12 did not prove the proposed

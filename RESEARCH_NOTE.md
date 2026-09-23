@@ -1,6 +1,6 @@
 # Q1 — Delayed local readout through a bounded quantum interface
 
-**Version:** 0.11, 2026-09-23
+**Version:** 0.12, 2026-09-23
 
 **Project:** Falling / Q1  
 **Status:** Baseline proofs and seed reduction independently checked within the audit workspace. The full product-diagonal profile rate has a constructive optimizer. Its one-qubit cost is an established steering entanglement measure; a new theorem-level comparison proves strict separation from the full optimized weighted-CHSH bound family inspected, while crediting the prior mixture mechanism. The unrestricted rate equals regularized formation of a local-query assemblage, whose distinction from full tensor-product assemblages is explicit. Earlier converse and construction results remain as listed below. The complete two-qubit entropy inequality, general common-accuracy rate evaluation and publication novelty remain unresolved. This is a research dossier, not external peer review or a claim of a new framework.
@@ -28,6 +28,9 @@ The general compression problem below is already present in the dimensional meas
 | Constructive optimizer for the complete strict-saving phase | Derived and independently checked: one scalar root determines the unique reduced two-generator mixture. This is not uniqueness of encoders or unrestricted optimality. |
 | Full asymmetric profile versus weighted-CHSH formation bounds | Derived and independently checked: the complete optimized Zhu–Zhang–Ma affine family yields only the radial bound, strictly below C at every asymmetric point outside the disk. This comparison does not exhaust all prior results. |
 | Unrestricted rate as local-query steering formation | Derived and independently checked: R=inf_n E_FA(L_n)/n. The required local-query identity is stronger than ordinary tensor-power formation additivity; no evaluation is asserted. |
+| Exact dimension separation from joint product queries | Derived and independently checked: for two input qubits at eta=(1+1/sqrt(2))/2, local and tuple targets have minimum dimensions two and three. An explicit qutrit instrument attains the tuple target; no entropy-rate separation follows. |
+| Fixed-block full-tuple formation dichotomy | Derived and independently checked: one interior additivity point is equivalent to all-contrast additivity and a universal joint-decoder entropy inequality. This does not replace the stronger local-query inequality. |
+| Full profile versus fixed qubit-output channel completion | Derived and independently checked: the minimum Choi E_F is f([x+z-1]_+), strictly above C whenever x+z>1 and both x,z<1; agreement holds exactly on the remaining triangle and exact axes. |
 | Exact maximum score at any rank-two spectrum | Derived and independently checked for arbitrary eigenvectors; excludes all rank-two entropy witnesses. |
 | Exact flat half-rank optimum through four input qubits | Derived and independently checked, with equality cases; with separate lower-flat-rank estimates; nonflat cases remain unresolved. |
 | Further seed entropy exclusions | Derived and independently checked for local classical flags, locally maximally mixed two-qubit states, and condition number at most 6.235819648; restricted families. |
