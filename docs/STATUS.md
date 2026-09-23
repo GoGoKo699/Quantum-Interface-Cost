@@ -1,7 +1,7 @@
 # Status and claim ledger
 
-Updated: 2026-09-22. Stage: unrestricted asymmetric entropy converse, linear onset, and exact-axis rate.
-Latest research base: `9697d4d72cc34c52f4680fbf0c588b39af5c0471`, the merge of PR #9.
+Updated: 2026-09-23. Stage: exact product-diagonal profile rate and entropy-source audit.
+Latest research base: `3ebde02b2d9d5dcdcd0dd445e4a16b4f5aaf03b0`, the merge of PR #10.
 
 ## Evidence labels
 
@@ -61,6 +61,9 @@ is asserted.
 | Strict collective advantage for unequal X/Z accuracies at n=31,q=5 | Explicit construction and analytical separation, also at X contrast 9999/10000 and Z contrast 1/sqrt(31); no optimality claim at this size | EXACT_AXIS_SPECTRAL_REDUCTION.md |
 | Exact-axis value sqrt(D-1)/n for 105<=D<=n | Corollary of the supplied operational reduction and established Bollobás–Lee–Letzter Theorem 2 | EXACT_AXIS_SPECTRAL_REDUCTION.md |
 | Exact-axis asymptotic rate R_X(z)=h_2((1-sqrt(1-z^2))/2) | Derived and independently checked operational corollary; scalar curve and asymptotic cube spectrum are established prior results, also matching known dephasing-channel cost | EXACT_AXIS_RATE.md |
+| Exact rate C(x,z) for product-diagonal refined Kraus Grams | Derived and independently checked; arbitrary correlated spectra and branch-dependent local bases allowed; fixed-cap implementation from compatibility-disk and exact-axis generators | PRODUCT_DIAGONAL_PROFILE_RATE.md |
+| Exact boundary C<w at (1-x)/(1-z)<2(1/ln2-1)^2 | Derived and independently checked for 0<z<=x<1 outside the disk, with X/Z-symmetric version; a region of unrestricted achievability beating retention, not an unrestricted converse | PRODUCT_DIAGONAL_PROFILE_RATE.md |
+| C equals steering entanglement of formation of the noisy Pauli assemblage | Exact reduction to Cope's established resource; supplied explicit evaluation, publication novelty unresolved | ENTROPY_TRADEOFF_PRIOR_AUDIT.md |
 | Strict collective asymptotic saving for every exact-X profile with 0<z<1, extending to fixed interior profiles | Derived and independently checked; retention cost z exceeds R_X(z); at x=.99,z=.5 collective rate<=.354579 versus retention rate .39 | EXACT_AXIS_RATE.md |
 | Exact two-qubit minimum of local SLD sum at every spectrum | Derived and independently checked; yields I_XZ>=2-S, but not the sharper linear seed entropy bound | TWO_QUBIT_SLD_SPECTRUM.md |
 | Quantitative stability of one-qubit maximizing seeds | Derived and independently checked; dimension-independent normalized-seed bounds and specified branch-weighted consequences | ONE_QUBIT_STABILITY.md |
@@ -304,6 +307,43 @@ Finite deterministic diagnostics separately check the entropy chains,
 complete small translation instruments and scalar bounds. They do not
 certify the asymptotic theorem or novelty. Actual runs and scope are in
 [REPRODUCIBILITY.md](REPRODUCIBILITY.md).
+
+## Product-diagonal profile rate and sharper source map
+
+The [profile theorem](PRODUCT_DIAGONAL_PROFILE_RATE.md) evaluates a complete
+two-parameter benchmark C(x,z). It is the lower convex monotone envelope of
+zero-cost compatible profiles and the exact-axis curves of cost f(v).
+Its operational class consists of protocols with an individually refined
+Kraus representation whose every Gram matrix is diagonal in some tensor
+product of local bases. Local axes may depend on the branch; eigenvalues
+may be nonuniform and arbitrarily correlated. This class is explicitly
+scoped inside the unrestricted original model.
+
+The proof gives `S(rho)>=sum_i C(F_i^X,F_i^Z)` for every such Gram matrix.
+Worst-case dimension bounds follow on each branch before averaging. Conversely,
+deterministic block allocation, complete seed instruments and permutation
+equalization achieve C with a cap on every branch. This does not replace
+worst-case memory by a randomized average.
+
+For `0<z<=x<1` outside the compatibility disk, C is strictly below the
+retention cost exactly when `(1-x)/(1-z)<2(1/ln2-1)^2`, approximately
+0.39195780. Equality belongs to the retention-optimal side. The opposite
+half-square follows by swapping X and Z; the disk is free and the exact
+axes are handled separately. On x=z, C is exactly the subset rate. Thus no
+correlated product-diagonal construction improves the common-accuracy line.
+
+At x=.99,z=.5, an explicit rational mixture achieves rate
+`(87/100)f(15/29)=.3250660206...`, improving the previous .35457890
+upper bound. The unrestricted lower bound remains .30916421 and retention
+costs .39. The unrestricted interior optimum is still open.
+
+The [new source audit](ENTROPY_TRADEOFF_PRIOR_AUDIT.md) gives an exact
+identification with Cope's established steering entanglement of formation,
+plus a second derivation of the prior asymmetric seed bound using established
+entropy-of-mixture and coherence inequalities. The result is an explicit
+evaluation and operational deduction, not a new entropy resource. It does
+not identify complete-assemblage entanglement cost with the delayed-query
+rate. Prior subsumption of the full evaluated profile remains unresolved.
 
 ## Research division and next target
 

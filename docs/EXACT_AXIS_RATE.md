@@ -10,6 +10,12 @@ conclusion is a corollary of those ingredients and the
 [exact-axis reduction](EXACT_AXIS_SPECTRAL_REDUCTION.md). Publication novelty
 of the operational specialization remains unresolved.
 
+The subsequent [product-diagonal profile theorem](PRODUCT_DIAGONAL_PROFILE_RATE.md)
+uses this exact-axis curve to evaluate a complete restricted two-parameter
+rate and improves the interior construction in Section 6. The
+[entropy source audit](ENTROPY_TRADEOFF_PRIOR_AUDIT.md) also identifies the
+exact-axis atom in Cope's prior steering-entanglement calculation.
+
 ## 1. Statement and quantifiers
 
 One arbitrary unknown n-qubit specimen is encoded before one delayed local

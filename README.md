@@ -7,7 +7,7 @@ for just one local X or Z readout, but the question is not known when the first
 module must release the input. How many qubits must cross that interface if
 classical records are free?
 
-**Status (22 September 2026): research in progress, not a manuscript or a
+**Status (23 September 2026): research in progress, not a manuscript or a
 novelty-certified result.** The baseline proofs and seed reduction have passed
 an independent workspace audit, including primary-source comparisons. Further
 analytical work proves the exact optimum with one retained qubit for every
@@ -32,6 +32,14 @@ proves that the common-accuracy rate turns on linearly above the classical
 threshold. The exact-X boundary has an evaluated asymptotic rate; the full
 common-accuracy rate remains open.
 
+The latest profile theorem evaluates the asymptotic rate for encoders with
+product-diagonal refined Gram matrices, including correlated eigenvalues.
+It gives an exact boundary between retention-optimal and strictly improved
+unequal-accuracy profiles within that class. The original optimization still
+allows every collective encoder. The associated one-qubit entropy quantity
+is an established steering entanglement of formation, now explicitly mapped
+in the source audit.
+
 ## Start here
 
 | Purpose | Read |
@@ -49,6 +57,8 @@ common-accuracy rate remains open.
 | Stronger bound for every collective encoder | [Logarithmic-Sobolev converse](docs/STRONG_ENTROPIC_CONVERSE.md) |
 | Linear onset of common-accuracy quantum memory | [Asymmetric entropy converse](docs/ASYMMETRIC_ENTROPIC_CONVERSE.md) |
 | Exact memory rate with every X query preserved | [Exact-axis rate](docs/EXACT_AXIS_RATE.md) |
+| Complete product-diagonal rate and unequal-accuracy phase boundary | [Profile rate theorem](docs/PRODUCT_DIAGONAL_PROFILE_RATE.md) |
+| Entropy-production, coherence and steering-cost precedents | [Entropy trade-off source audit](docs/ENTROPY_TRADEOFF_PRIOR_AUDIT.md) |
 | Exact rank-two spectrum trade-off and excluded families | [Entropy-inequality boundaries](docs/ENTROPY_INEQUALITY_BOUNDARIES.md) |
 | Sharp flat half-rank result through four input qubits | [Flat-seed theorem](docs/FLAT_HALF_RANK_OPTIMALITY.md) |
 | Further entropy exclusions and failed local proof route | [Classical flags](docs/CLASSICAL_FLAG_ENTROPY_BOUND.md), [locally mixed two-qubit states](docs/LOCALLY_MIXED_TWO_QUBIT_BOUND.md), [bounded spectral condition](docs/SPECTRAL_CONDITION_ENTROPY_BOUND.md) |
@@ -186,12 +196,25 @@ $$
 
 This is strictly below the original-site-retention fraction z for every
 0<z<1. The separation survives fixed error on both axes: at X contrast
-0.99 and Z contrast 0.5, a collective fraction at most 0.354579 suffices,
+0.99 and Z contrast 0.5, a new explicit mixture reduces the achievable
+fraction from 0.354579 to 0.325067,
 while that retention class requires exactly 0.39. The unrestricted optimum
 with both axes noisy is not evaluated. The entropy curve and corresponding
 graph asymptotics are prior, and the same curve is an established dephasing
 channel cost. The supplied theorem proves the delayed-query converse and
 constructs complete instruments preserving X exactly at every block size.
+
+The [profile theorem](docs/PRODUCT_DIAGONAL_PROFILE_RATE.md) explains where
+these savings occur. For `0<z<=x<1` outside the classical disk, its exact
+product-diagonal rate is strictly below the retention cost precisely when
+
+$$
+\frac{1-x}{1-z}<2\left(\frac1{\ln2}-1\right)^2\simeq0.391958.
+$$
+
+This supplies collective advantages throughout that asymmetric region.
+On the common-accuracy line, the product-diagonal optimum is still the
+subset rate. Improving that line requires seeds outside this family.
 
 The [proof](docs/EXACT_AXIS_SPECTRAL_REDUCTION.md) supplies the complete
 trace-preserving instrument analytically. Small diagnostics verify full
@@ -233,6 +256,7 @@ python tools/check_nonuniform_seeds.py --output results/nonuniform-rerun.json
 python tools/check_allocation_and_kernels.py --output results/allocation-kernels-rerun.json
 python tools/check_entropy_geometry.py --output results/entropy-geometry-rerun.json
 python tools/check_asymmetric_rate.py --output results/asymmetric-rate-rerun.json
+python tools/check_profile_rate.py --output results/profile-rate-rerun.json
 ```
 
 The first command after installation checks 14 explicit subset constructions;
@@ -240,8 +264,8 @@ the second checks 10 seed-to-interface constructions. The new scripts check
 43 one-qubit identities/examples, 10 product-diagonal cases, 22 entropy-bound
 and seed-family cases, 20 structure diagnostics, 16 nonuniform-seed
 diagnostics, 14 allocation, spectral, kernel, and obstruction cases, and
-13 exact-axis, SLD-spectrum, and stability cases. The latest script adds
-17 asymmetric-entropy and exact-axis-rate cases. These finite
+13 exact-axis, SLD-spectrum, and stability cases, 17 asymmetric-entropy
+and exact-axis-rate cases, and 18 profile-rate cases. These finite
 diagnostics supplement the analytical proofs. There is no numerical
 optimization or large simulation. No hosted CI run is claimed.
 
