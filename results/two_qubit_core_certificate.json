@@ -1,0 +1,25 @@
+{
+  "certificate": "PASS",
+  "arithmetic": "integer endpoints / 2**80, outward rounded",
+  "bits": 80,
+  "log_terms": 72,
+  "leaf_counts": {
+    "no_high_score": 0,
+    "sld_excluded": 476,
+    "bridge_certified": 279
+  },
+  "split_count": 754,
+  "maximum_depth": 16,
+  "minimum_positive_margin_numerator": 12665039428067297599,
+  "margin_denominator": 1208925819614629174706176,
+  "domain": {
+    "epsilon": [
+      "1/100",
+      "1/29"
+    ],
+    "m": [
+      "3/10",
+      "9/20"
+    ]
+  }
+}

@@ -1,7 +1,7 @@
 # Status and claim ledger
 
-Updated: 2026-09-23. Stage: two-qubit sharp entropy bound outside a quantified low-rank region; unrestricted optimality and publication originality remain open.
-Latest research base: `07f557be8d5863f27304b1060274a14bfee1cd50`, the merge of PR #20.
+Updated: 2026-09-23. Stage: explicit two-qubit low-rank neighborhood and complete high-score core stability; unrestricted optimality and publication originality remain open.
+Latest research base: `b653fe866930aa8d1c07ad3bf34629a14b41009a`, the merge of PR #21.
 
 Critical assessment base: `81bcfefb2b545742d513c4f51364a7f72972451e`, the
 merge of PR #11. The [publication and optimality assessment](audits/PUBLICATION_AND_OPTIMALITY_ASSESSMENT.md)
@@ -87,6 +87,8 @@ is asserted.
 | Strict collective asymptotic saving for every exact-X profile with 0<z<1, extending to fixed interior profiles | Derived and independently checked; retention cost z exceeds R_X(z); at x=.99,z=.5 collective rate<=.354579 versus retention rate .39 | EXACT_AXIS_RATE.md |
 | Exact two-qubit minimum of local SLD sum at every spectrum | Derived and independently checked; yields I_XZ>=2-S, but not the sharper linear seed entropy bound | TWO_QUBIT_SLD_SPECTRUM.md |
 | Sharp seed entropy bound for every two-qubit state with lambda_3+lambda_4>=1/29 | Derived and independently checked for arbitrary complex eigenvectors; exact rational interval certificate accompanies the analytical reduction. Remaining witnesses have top-two spectral weight >28/29 | audits/TWO_QUBIT_SPECTRAL_TAIL_GATE.md |
+| Sharp entropy bound for every two-qubit state with lambda_3+lambda_4<=2^-20 | Derived and independently checked; first supplied explicit uniform two-qubit radius, with no eigenbasis restriction. It does not overlap the 1/29 gate | audits/TWO_QUBIT_CORE_STABILITY.md |
+| No two-qubit entropy witness has top-two core score >10/3 or normalized second core eigenvalue <=1/5 | Derived and independently checked; finite-angle high-score bridge with exact two-variable certificate, plus a separate analytical SLD spectral gate | audits/TWO_QUBIT_CORE_STABILITY.md |
 | Quantitative stability of one-qubit maximizing seeds | Derived and independently checked; dimension-independent normalized-seed bounds and specified branch-weighted consequences | ONE_QUBIT_STABILITY.md |
 | Full noisy-X/Z average-rank profile D_M=W=w | Exact specialization of Cope–Uola SDPs; the already proved C-versus-w phase boundary supplies its full entropy comparison | audits/ROOF_PROVENANCE_AND_JOINT_SCORE.md Section 3 |
 | Collective readout can improve joint score per copy of a product seed | Incorrect: product additivity follows from Wallden–Dunjko–Andersson Theorem 3; an explicit f_2-j_2=(sqrt(2)-1)/8 gap persists under powers | audits/ROOF_PROVENANCE_AND_JOINT_SCORE.md Section 4 |
@@ -288,6 +290,17 @@ analytical reduction; it is not a sample of states. Any two-qubit witness
 must be within trace distance less than `1/29` of its normalized top-two
 truncation. The earlier entropy-valid low-rank neighborhood has an
 existential uniform radius; no overlap reaching `1/29` has been proved.
+
+The [core-stability continuation](audits/TWO_QUBIT_CORE_STABILITY.md)
+now proves a uniform radius `2^-20` for n=2, strictly entropy-valid for
+positive tail weight. Its high-score branch covers every normalized
+rank-two core with score above `10/3` through tail weight `1/29`, without
+assuming flat eigenvalues or aligned supports. A separate analytical gate
+covers every core with smaller normalized eigenvalue at most `1/5`.
+The remaining low-score cores have entropy defect greater than `1/100`;
+a cross-block trace-norm bound then supplies the explicit small-tail radius.
+The scalar interval certificate covers 755 closed boxes, with exact outward
+arithmetic and no sampled-state inference. No full two-qubit closure follows.
 
 The [stability theorem](ONE_QUBIT_STABILITY.md) proves that deficit
 delta<=1/48 from the one-qubit optimum implies squared overlap at least
@@ -548,7 +561,9 @@ have both marginals maximally mixed, and, if full rank, must have condition
 number greater than 6.235819648070267. It must additionally stay outside
 the proved open neighborhood of the rank-at-most-two set at that fixed n.
 It must fail the new spectral and kernel certificates; in particular,
-a two-input witness must have `lambda_3+lambda_4<1/29`, so its largest two
+a two-input witness must have `2^-20<lambda_3+lambda_4<1/29`, normalized
+second core eigenvalue `lambda_2/(lambda_1+lambda_2)>1/5`, and normalized
+top-two core score at most `10/3`. In particular, its largest two
 eigenvalues sum to more than `28/29`. Also,
 a two-input witness cannot have a maximally entangled kernel vector or
 at most two distinct eigenvalues. The example `(t,b,b,0)` generally has
