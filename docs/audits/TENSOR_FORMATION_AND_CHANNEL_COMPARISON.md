@@ -15,12 +15,19 @@ records, a quantum dimension cap in every branch, and uniform accuracy over
 all input states and queries. The full-tuple and fixed-output-channel tasks
 below are explicitly defined comparisons, not replacement models.
 
+A subsequent [provenance audit](ROOF_PROVENANCE_AND_JOINT_SCORE.md), pinned
+to the merge of this report, identifies Vollbrecht–Werner Eqs. (38)–(42)
+as the direct prior source of the symmetry/roof method and the abstract
+fixed-block affinity argument below. The moment coordinates and physical
+applications are supplied deductions; the general principles are prior.
+No theorem or proof below is withdrawn by this attribution refinement.
+
 ## 1. Findings and limits
 
 | Statement | Verdict and implication |
 |---|---|
 | Exact full-tuple formation can be reduced to n moments and at most n+1 seed orbits | Derived below, retaining arbitrary collective decoders and classical flags. This is a finite reformulation, not an evaluated optimum. |
-| At fixed n, one interior tensor-formation additivity point forces additivity at every contrast | Derived below. Failure of a specific joint-decoder entropy inequality instead gives strict savings at every interior contrast, at the same n. |
+| At fixed n, one interior tensor-formation additivity point forces additivity at every contrast | Task-specific application of Vollbrecht–Werner Eq. (42), proved below. Failure of a specific joint-decoder entropy inequality instead gives strict savings at every interior contrast, at the same n. |
 | One delayed local query and the full product of noisy queries can require different worst-case memory | Derived below. For n=2 at contrast (1+1/sqrt(2))/2, the exact retained dimensions are two and three, or one and two integer qubits respectively. This does not prove different formation entropies or rates. |
 | A fixed qubit-output channel completion recovers the full profile cost C | Incorrect. Its minimum Choi formation entropy is G(x,z)=f([x+z-1]_+), strictly above C throughout x+z>1, x<1, z<1. The complete equality set is proved below. |
 | The full two-parameter evaluation is original in all prior literature | Unresolved. The exact comparisons rule out specified reductions; they do not constitute a complete citation census or peer review. |
@@ -477,6 +484,7 @@ and the inspected prior statements have the following exact scopes.
 
 | Primary source and locator | Relevant statement and assumption map |
 |---|---|
+| Vollbrecht–Werner, [quant-ph/0010095v2](https://arxiv.org/abs/quant-ph/0010095v2), Section IV.A, Eqs. (38)–(41), pp. 10–11; IV.B, Eq. (42), p. 11 | Direct prior general symmetry/roof reduction and affinity over optimal decomposition atoms. Sections 2–3 specialize these principles to tuple moments and the product simplex; see the follow-up provenance audit. |
 | Cope, [2102.02333v2](https://arxiv.org/abs/2102.02333v2), Eq. (10), Theorem 2, p. 3; Eqs. (5)-(6), p. 2 | The assemblage formation resource and realization interpretation are prior. B_n uses complete tuples, whereas the project's A_n uses 2n binary local settings. The preceding audit covers the full-profile comparison and credits the earlier mixture mechanism. |
 | Cope–Uola, [2207.05722v4](https://arxiv.org/abs/2207.05722v4), Section IV.A, Eqs. (5)-(8), pp. 4-5; Section VI.A, Eqs. (20)-(22), p. 11 | Explicitly distinguishes decompression with fixed readouts from arbitrary direct readouts. Its average log-rank measure and smoothed full-tuple regularization are established frameworks; neither automatically evaluates worst-case single-query memory. |
 | Cheng–Hall, [1610.09302v3](https://arxiv.org/abs/1610.09302v3), Eq. (1), p. 1, Eqs. (13)-(14), p. 3 | Three-qubit CHSH monogamy permits independently chosen common-qubit settings and mixed states. The repository's existing one-qubit rigidity, rechecked here, is the task-specific ingredient for the dimension separation. This is not a new monogamy theorem. |

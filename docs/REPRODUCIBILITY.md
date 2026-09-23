@@ -362,6 +362,20 @@ solver output. Unchanged earlier diagnostics were not rerun. None of these
 checks establishes exhaustive novelty or the missing unrestricted entropy
 inequality. See [the complete proofs](audits/TENSOR_FORMATION_AND_CHANNEL_COMPARISON.md).
 
+## Roof provenance and joint-score continuation
+
+The audit pinned to `b1f93ac69e4007f9d21df16ab16aa5bbecf94332` used
+primary theorem statements and exact mathematical reconstruction. Internal
+independent reviews checked the rank-two gap seed, all four primal/dual
+context certificates, product additivity including collective readout,
+and the single-effect variational formula for complex and singular states.
+Review caught and corrected a dual-attainment caveat: the full-space dual
+may only have an infimum for singular seeds; support compression gives an
+attained minimum. The Cope–Uola SDP twirl and Vollbrecht–Werner assumption
+maps were reviewed separately. No new matrix search, solver certificate or
+large simulation was used; unchanged numerical diagnostics were not rerun.
+See [the exact proofs and limits](audits/ROOF_PROVENANCE_AND_JOINT_SCORE.md).
+
 ## Original archive provenance
 
 The user-provided archive was Q1_Quantum_Interface_Dossier_v0_1.zip.
@@ -369,7 +383,7 @@ Its SHA-256 is
 `3f3538c0307f3a1131746d84410b21752b97aa0e87d8de1722392d3b114dd8ec`.
 The following three files were imported unchanged at bootstrap commit
 `eaf085a8cb299e6b297b11d2dc3c85e24f02779e`. These are historical hashes; the
-research note has subsequently been revised to version 0.12:
+research note has subsequently been revised to version 0.13:
 
 | File | SHA-256 |
 |---|---|

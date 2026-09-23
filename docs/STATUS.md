@@ -1,7 +1,7 @@
 # Status and claim ledger
 
-Updated: 2026-09-23. Stage: tensor-formation dichotomy, exact query-dimension separation and channel comparison.
-Latest research base: `3a668f92afe5145e3273c5796ee74e0120214e1f`, the merge of PR #14.
+Updated: 2026-09-23. Stage: precise roof provenance, average-rank profile comparison and persistent local/joint score gap.
+Latest research base: `b1f93ac69e4007f9d21df16ab16aa5bbecf94332`, the merge of PR #15.
 
 Critical assessment base: `81bcfefb2b545742d513c4f51364a7f72972451e`, the
 merge of PR #11. The [publication and optimality assessment](audits/PUBLICATION_AND_OPTIMALITY_ASSESSMENT.md)
@@ -77,8 +77,8 @@ is asserted.
 | Full optimized Zhu–Zhang–Ma affine weighted-CHSH family yields only the radial formation bound | Derived and independently checked for all weights, trusted binary measurements, setting swaps and Bell-party orientations; strictly below C at every asymmetric point outside the disk | audits/PROFILE_NOVELTY_AND_STEERING_REDUCTION.md Section 3 |
 | R=inf_n A_n/n=lim_n A_n/n for local-query steering formation A_n | Derived and independently checked using the complete seed twirl and the established fixed-cap entropy theorem; no continuity of general E_FA assumed | audits/PROFILE_NOVELTY_AND_STEERING_REDUCTION.md Section 5 |
 | nR<=A_n<=B_n<=nC_eta, with B_n full tensor-product formation | Derived and independently checked; strict B_n<nC_eta would refute unrestricted subset optimality, while ordinary additivity alone is insufficient | audits/PROFILE_NOVELTY_AND_STEERING_REDUCTION.md Section 6 |
-| Exact n-moment formulation of B_n using at most n+1 seed orbits | Derived and independently checked; arbitrary collective tuple POVMs and flags retained | audits/TENSOR_FORMATION_AND_CHANNEL_COMPARISON.md Section 2 |
-| At each fixed n, one interior B_n additivity point forces every-contrast additivity | Derived and independently checked; equivalent to a joint-decoder entropy inequality, weaker than the unproved local-query inequality | audits/TENSOR_FORMATION_AND_CHANNEL_COMPARISON.md Section 3 |
+| Exact n-moment formulation of B_n using at most n+1 seed orbits | Specific coordinates applying Vollbrecht–Werner symmetry reduction and standard finite convex geometry; arbitrary collective tuple POVMs and flags retained | audits/TENSOR_FORMATION_AND_CHANNEL_COMPARISON.md Section 2 |
+| At each fixed n, one interior B_n additivity point forces every-contrast additivity | Direct task-specific application of Vollbrecht–Werner Eq. (42); equivalent to a joint-decoder entropy inequality, weaker than the unproved local-query inequality | audits/TENSOR_FORMATION_AND_CHANNEL_COMPARISON.md Section 3 |
 | Local and tuple targets have exact minimum dimensions two and three at n=2, eta=(1+1/sqrt(2))/2 | Derived and independently checked; rigidity lower bound and complete rank-three instrument. This is not an entropy-cost separation | audits/TENSOR_FORMATION_AND_CHANNEL_COMPARISON.md Section 4 |
 | Fixed qubit-output completion equals the full formation profile C | Incorrect except on x+z<=1 and exact axes; minimum Choi E_F=f([x+z-1]_+) is strictly above C elsewhere | audits/TENSOR_FORMATION_AND_CHANNEL_COMPARISON.md Section 5 |
 | Commuting input queries always admit jointly trace-norm-optimal decoders | Incorrect; explicit normalized two-input seed has uniquely optimal sharp X and Z decoders. This is a branch-level obstruction, not a rate counterexample | audits/PROFILE_NOVELTY_AND_STEERING_REDUCTION.md Section 7 |
@@ -87,6 +87,9 @@ is asserted.
 | Strict collective asymptotic saving for every exact-X profile with 0<z<1, extending to fixed interior profiles | Derived and independently checked; retention cost z exceeds R_X(z); at x=.99,z=.5 collective rate<=.354579 versus retention rate .39 | EXACT_AXIS_RATE.md |
 | Exact two-qubit minimum of local SLD sum at every spectrum | Derived and independently checked; yields I_XZ>=2-S, but not the sharper linear seed entropy bound | TWO_QUBIT_SLD_SPECTRUM.md |
 | Quantitative stability of one-qubit maximizing seeds | Derived and independently checked; dimension-independent normalized-seed bounds and specified branch-weighted consequences | ONE_QUBIT_STABILITY.md |
+| Full noisy-X/Z average-rank profile D_M=W=w | Exact specialization of Cope–Uola SDPs; the already proved C-versus-w phase boundary supplies its full entropy comparison | audits/ROOF_PROVENANCE_AND_JOINT_SCORE.md Section 3 |
+| Collective readout can improve joint score per copy of a product seed | Incorrect: product additivity follows from Wallden–Dunjko–Andersson Theorem 3; an explicit f_2-j_2=(sqrt(2)-1)/8 gap persists under powers | audits/ROOF_PROVENANCE_AND_JOINT_SCORE.md Section 4 |
+| Complete all-state two-qubit joint entropy inequality | Unresolved; an exact one-effect formula is proved, with the singular-state dual handled on its support | audits/ROOF_PROVENANCE_AND_JOINT_SCORE.md Section 5 |
 | General sharp intermediate common-accuracy rate or common-accuracy collective advantage | Unresolved | Note Section 8 |
 | Exponential many-copy estimation speedup | Not claimed; easy classical control rules out that narrative here | Note Section 9 |
 
@@ -366,6 +369,26 @@ not identify complete-assemblage entanglement cost with the delayed-query
 rate. Prior subsumption of the full evaluated profile remains unresolved.
 
 ## Research division and next target
+
+The [roof provenance and joint-score audit](audits/ROOF_PROVENANCE_AND_JOINT_SCORE.md)
+identifies actual prior subsumption: Vollbrecht–Werner Eqs. (38)–(42) supply
+the symmetry/roof reduction and abstract fixed-block dichotomy. Specific
+orbit coordinates and the evaluated profile remain supplied applications.
+The full Cope–Uola average-rank measurement profile equals w, so the
+existing phase boundary also gives its exact comparison with C. An affine
+identification with the inspected OO-invariant state family is impossible
+because the zero sets have different geometry; nonlinear subsumption is
+not excluded. None of these statements certifies historical originality.
+
+For the entropy problem, joint scores are additive on product seeds by
+Wallden–Dunjko–Andersson's prior Bayesian decision theorem. An exact
+rank-two seed has a strict local/joint score gap that persists under every
+tensor power, while satisfying both entropy bounds. A new exact
+one-effect formula for each two-qubit joint context leaves the outer
+entropy optimization unresolved. Context averaging cannot be exchanged
+with a concave roof, and the earlier deficit-superadditivity obstruction
+also survives joint decoding. These are specific blocked routes, not
+counterexamples to the unrestricted conjecture.
 
 The [tensor-formation continuation](audits/TENSOR_FORMATION_AND_CHANNEL_COMPARISON.md)
 proves an exact finite task separation. For two input qubits at

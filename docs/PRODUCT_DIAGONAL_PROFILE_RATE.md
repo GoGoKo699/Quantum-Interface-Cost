@@ -697,6 +697,16 @@ entropy resource is being defined here. The fixed-cap multi-input result
 (4) additionally requires the product-diagonal converse and the complete
 encoding construction proved above.
 
+The general convex-roof reduction itself is an exact specialization of
+Vollbrecht–Werner [quant-ph/0010095v2](https://arxiv.org/abs/quant-ph/0010095v2),
+Section IV.A, Eqs. (38)–(41), pp. 10–11. For the Pauli/outcome twirl the
+orbit minimum is zero on the disk and `f(sqrt(x^2+z^2-1))` outside it;
+C is its convexification. The [provenance audit](audits/ROOF_PROVENANCE_AND_JOINT_SCORE.md)
+gives the full assumption map and also proves Cope–Uola's average-rank
+cost D_M equals w on this entire family. Thus the phase boundary above
+already specifies its exact comparison with the entropy cost. These
+identifications are not new resource definitions or new phase calculations.
+
 The product-diagonal condition cannot be removed by diagonalizing a
 general seed: an arbitrary eigenbasis need not be a tensor product of
 local bases, and then the edge decomposition (9) is unavailable. General
