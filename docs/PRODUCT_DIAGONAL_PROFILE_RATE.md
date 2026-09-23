@@ -719,6 +719,17 @@ advantage is prior as well. The full joint-data convexification and its
 operational evaluation remain the specific candidate contributions, with
 publication originality unresolved.
 
+The [optimizer/source follow-up](audits/FORMATION_OPTIMIZERS_AND_PRIOR.md)
+gives an even closer route from Han et al. 2111.02800v2 Theorem 1's
+weighted pure guessing support to this note's entropy dual. Their
+Theorem 2 and Eqs. (S49)–(S50) already supply the product-plus-Bell
+qutrit construction. Their complete concurrence family evaluates w,
+while C>f(w) throughout the noisy nonclassical interior. These findings
+further narrow the candidate novelty to the evaluated entropy
+convexification and operational deductions. The follow-up proves a
+separate equality theorem for all qutrit formation optimizers; it does
+not remove the product-diagonal assumption in the rate theorem.
+
 The product-diagonal condition cannot be removed by diagonalizing a
 general seed: an arbitrary eigenbasis need not be a tensor product of
 local bases, and then the edge decomposition (9) is unavailable. General

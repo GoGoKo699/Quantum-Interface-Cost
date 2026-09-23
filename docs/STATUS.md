@@ -1,7 +1,7 @@
 # Status and claim ledger
 
-Updated: 2026-09-23. Stage: exact two-correlation formation dimensions, sharper prior attribution and two global proof-method obstructions.
-Latest research base: `d74f329605c9cf82707c09a3c0e925919e8512c0`, the merge of PR #16.
+Updated: 2026-09-23. Stage: complete qutrit optimizer structure and an exact comparison with prior weighted-guessing concurrence bounds.
+Latest research base: `d3000ccc1f89fc357ebce7025bb166df2197e7d7`, the merge of PR #17.
 
 Critical assessment base: `81bcfefb2b545742d513c4f51364a7f72972451e`, the
 merge of PR #11. The [publication and optimality assessment](audits/PUBLICATION_AND_OPTIMALITY_ASSESSMENT.md)
@@ -92,6 +92,10 @@ is asserted.
 | Complete all-state two-qubit joint entropy inequality | Unresolved; an exact one-effect formula is proved, with the singular-state dual handled on its support | audits/ROOF_PROVENANCE_AND_JOINT_SCORE.md Section 5 |
 | Minimum E_F from two correlations for two qubits, with one trusted X/Z pair | E_2=gamma, a direct specialization of prior Verstraete–Wolf Theorem 1; general binary POVMs included | audits/TWO_CORRELATION_FORMATION.md Section 2.1 |
 | Same two-correlation minimum with larger untrusted dimension | E_d=C for every d>=3, attained by one fixed qutrit pair; strict E_2>E_3 outside the disk when both contrasts are below one. Flags are counted in this separate realization problem | audits/TWO_CORRELATION_FORMATION.md Section 2 |
+| Every minimum-formation realization outside the disk with both contrasts below one has orthogonal classical and entangled sectors | Derived and independently checked equality theorem; all qutrit optima classified, with four possible classical signs and one entangled-block marginal parameter | audits/FORMATION_OPTIMIZERS_AND_PRIOR.md Section 2 |
+| Complete weighted guessing and the central-phase product-plus-Bell qutrit construction | Established ingredients in Han et al. 2111.02800v2 Theorems 1–2 and Eqs. (S49)–(S50); the prior pure support leads directly into the project's entropy convexification | audits/FORMATION_OPTIMIZERS_AND_PRIOR.md Section 1 |
+| Minimum convex-roof concurrence from the two data equals w | Exact specialization of Han et al.'s whole weighted family; C>f(w) exactly outside the disk with both contrasts below one | audits/FORMATION_OPTIMIZERS_AND_PRIOR.md Section 1.1 |
+| Universal four-context operator cover is equivalent to the all-state two-input joint entropy bound | Derived and independently checked SDP/entropy application; failed cover yields an admissible violating state. Universal feasibility and any failed instance remain unresolved | audits/FORMATION_OPTIMIZERS_AND_PRIOR.md Section 3 |
 | Full X/Z probability table certifies C without trusting either party | Incorrect with unrestricted dimensions: an explicit local model reproduces the entire table at every profile | audits/TWO_CORRELATION_FORMATION.md Section 4 |
 | Exact priors and total Holevo information suffice for the sharp joint entropy line | Incorrect relaxation: exact classical channels exceed the line at every interior subset equality seed; those channels are not measurements of its filtered ensemble | audits/ENTROPY_PROOF_RELAXATIONS.md Section 2 |
 | Complete rank-two spectral bounds and norm four imply the all-state entropy-energy inequality | Incorrect relaxation, even with zero partial traces; explicit violating Hamiltonian contains forbidden trusted Pauli terms and is not a QIC counterexample | audits/ENTROPY_PROOF_RELAXATIONS.md Section 3 |
@@ -374,6 +378,24 @@ not identify complete-assemblage entanglement cost with the delayed-query
 rate. Prior subsumption of the full evaluated profile remains unresolved.
 
 ## Research division and next target
+
+The [optimizer follow-up](audits/FORMATION_OPTIMIZERS_AND_PRIOR.md)
+strengthens the one-site equality result: every entropy optimum in the
+noisy nonclassical interior has orthogonal classical and entangled
+sectors, and all qutrit optima have an explicit form. This does not
+assert uniqueness of encoders. It further narrows provenance: Han et al.
+already supply the weighted pure guessing geometry and a product-plus-Bell
+qutrit realization. Their full mixed-concurrence family gives w; scalar
+conversion gives f(w), strictly below C in that interior. The remaining
+candidate is the complete entropy evaluation and its specific operational
+deductions. The collective entropy inequality remains unproved.
+
+The same report gives an exact operator-covering equivalent for the
+weaker two-input joint entropy inequality. Its SDP retains the common
+state across contexts, has an attained dual, and detects singular
+violating seeds through positive-definite entropy potentials. This is
+an admissible certificate target, not a solution of its outer universal
+quantifier or a new general duality method.
 
 The [two-correlation audit](audits/TWO_CORRELATION_FORMATION.md) sharpens
 both the exact result and its provenance. For a trusted qubit with only
