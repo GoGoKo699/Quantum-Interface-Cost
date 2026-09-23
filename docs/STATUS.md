@@ -1,7 +1,7 @@
 # Status and claim ledger
 
-Updated: 2026-09-23. Stage: coherent unequal-core transfer audit after the complete equal-leading-eigenvalue theorem; no additional excluded state family. Unrestricted optimality and publication originality remain open.
-Latest research base: `fab95daf5e1f9a7d42ef778e3494330fa8e1c73f`, the merge of PR #23.
+Updated: 2026-09-23. Stage: sharp all-size parity readout bound, unequal parity-core entropy closure, and a sharper decoder classification. Unrestricted optimality and publication originality remain open.
+Latest research base: `ef3a6c9f62f7b9b591b56503ba5d24e0b10d2c12`, the merge of PR #24.
 
 Critical assessment base: `81bcfefb2b545742d513c4f51364a7f72972451e`, the
 merge of PR #11. The [publication and optimality assessment](audits/PUBLICATION_AND_OPTIMALITY_ASSESSMENT.md)
@@ -95,6 +95,10 @@ is asserted.
 | Coherent core/tail trace-norm bound | Elementary triangle-inequality consequence; preserves the exact zero-tail score, including singular compressions. Not proposed as novel | audits/COHERENT_TRANSFER_AUDIT.md Section 2 |
 | Three stronger quadratic decoder-deficit shortcuts | Incorrect; one exact physical m=1/4 core and rational decoder reflections refute all three. No entropy counterexample | audits/COHERENT_TRANSFER_AUDIT.md Section 4 |
 | Finite support-function target for unequal-core transfer | Unresolved; a proof on t<=1/sqrt(7), m>=1/5 would close n=2. Conditional entropy implication checked using the tail's actual entropy | audits/COHERENT_TRANSFER_AUDIT.md Section 3 |
+| g_n<=n sqrt(2+8q(1-q)) for all states commuting with product parity of weight q | Sharp direct specialization of prior fidelity theory, independently checked; uniform parity blocks attain every individual local-query bound | audits/PARITY_READOUT_BOUND.md Section 1 |
+| Two-qubit entropy bound when a top-two spectral projector is a local product-parity sector | Derived and independently checked; unequal coherent cores allowed, residual-strip margin >1/16. Does not include every parity-commuting state | audits/PARITY_READOUT_BOUND.md Section 2 |
+| Coherent-transfer target on parity supports | Proved with the sharp envelope S_t<=2sqrt(2+2t^2) for 0<=t<=1, arbitrary core/tail spectra and coherences | audits/PARITY_READOUT_BOUND.md Section 3 |
+| Exact mixed-decoder operator envelope, with maximum below sqrt(21/2) | Derived and independently checked; improves decoder classification only. The later high-score tail certificate is not extended | audits/MIXED_DECODER_PATTERN_BOUND.md |
 | Quantitative stability of one-qubit maximizing seeds | Derived and independently checked; dimension-independent normalized-seed bounds and specified branch-weighted consequences | ONE_QUBIT_STABILITY.md |
 | Full noisy-X/Z average-rank profile D_M=W=w | Exact specialization of Cope–Uola SDPs; the already proved C-versus-w phase boundary supplies its full entropy comparison | audits/ROOF_PROVENANCE_AND_JOINT_SCORE.md Section 3 |
 | Collective readout can improve joint score per copy of a product seed | Incorrect: product additivity follows from Wallden–Dunjko–Andersson Theorem 3; an explicit f_2-j_2=(sqrt(2)-1)/8 gap persists under powers | audits/ROOF_PROVENANCE_AND_JOINT_SCORE.md Section 4 |
@@ -599,6 +603,17 @@ close n=2; it is clearly labeled conjectural. The full all-n entropy
 conjecture and publication originality remain unresolved.
 
 ## Publication gate
+
+The [parity continuation](audits/PARITY_READOUT_BOUND.md) supplies a short
+all-size score theorem from a binary symmetry witness and prior fidelity
+theory. It closes the full two-qubit family whose leading spectral
+subspace is a parity sector, including unequal complex cores. Any remaining
+witness must also avoid that support class. The exact
+[mixed-decoder envelope](audits/MIXED_DECODER_PATTERN_BOUND.md) improves
+the classification constant but does not lower the existing certified
+high-score tail threshold. Neither result establishes the general transfer
+bound. The first is an elementary prior-theorem specialization; originality
+of the auxiliary operator evaluation has not been established.
 
 The [coherent-transfer audit](audits/COHERENT_TRANSFER_AUDIT.md) supplies
 a two-line block bound that retains within-core coherence. It also keeps

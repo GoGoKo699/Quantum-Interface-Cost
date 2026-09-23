@@ -596,3 +596,48 @@ moment and an explicit polynomial majorant yield the entropy consequence
 for every two-qubit state with equal largest two eigenvalues. The preceding
 full-profile steering comparison, unrestricted equal-accuracy optimality,
 and publication originality remain open.
+
+## Product parity: an elementary fidelity specialization
+
+The [parity proof](audits/PARITY_READOUT_BOUND.md) uses Fuchs–van de Graaf,
+[quant-ph/9712042v2](https://arxiv.org/abs/quant-ph/9712042v2), 3 April 1998:
+Definition 8 and Proposition 4, Eqs. (23)–(24), printed p. 13, identify
+root fidelity with the minimum classical Bhattacharyya coefficient over
+measurements, crediting Fuchs–Caves. Theorem 1, Eq. (46), p. 17, is an
+equivalent route via half trace distance. The explicit observable
+`A=(R-URU)/(2sqrt(1-z^2))` gives swapped binary laws for a parity-invariant
+state and its local-query conjugate. This immediately proves the sharp
+single-query bound; the all-n sum, simultaneous attainer and two-qubit
+entropy-family consequence are supplied deductions. This is not a new
+fidelity principle or an originality certificate. The separate mixed-decoder
+operator evaluation has an internal proof review but no completed
+primary-source subsumption comparison.
+
+## Further full-profile comparison: complementary mutual information
+
+Wang–Wang–Chen, *Complementary Quantum Correlations Are Universal for Qubits*,
+[2608.04916v1](https://arxiv.org/abs/2608.04916v1), 5 August 2026,
+Eq. (1), printed p. 1, bounds two complementary classical mutual informations
+by quantum mutual information. The arbitrary-qubit-ensemble lemma is Eq. (2),
+p. 2; Eqs. (16)–(17), p. 3, give distillation/capacity lower bounds.
+The printed scope on pp. 3–4 requires both systems to be qubits and both
+readout pairs to be calibrated complementary projective measurements.
+
+Those assumptions differ from our formation minimization: Alice may have
+arbitrary finite dimension and flags, and her binary measurements are
+optimized. At x=z=1/sqrt(2), our profile C is zero, whereas a separable
+two-qubit state with calibrated complementary Pauli readouts obeys
+`|<X_A X_B>|+|<Z_A Z_B>|<=1` by the product Bloch-vector Cauchy inequality
+and convexity. Thus imposing the additional readout conditions changes
+the realization problem.
+
+Even when the source's hypotheses hold, its printed distillation certificate
+at unbiased matching correlations gives only
+`[1-h_2((1-x)/2)-h_2((1-z)/2)]_+`. At x=z=3/4 this is zero, while
+our already evaluated `C=(2-sqrt(2))/4>0`. The first claim follows exactly
+from `h_2(1/8)>1/2`, since `8^7>2*7^7`. Hence these inspected statements
+do not evaluate the full formation profile or prove the unrestricted seed
+entropy bound. This is a scoped comparison, not an exhaustive novelty claim.
+The previously identified Tomassoli full-text comparison remains unresolved;
+renewed primary retrieval attempts returned HTTP 403, and neighboring theses
+do not determine that source's objective or formulas.

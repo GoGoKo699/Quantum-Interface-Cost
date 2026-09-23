@@ -134,6 +134,7 @@ or publication originality.
 | Two-qubit sharp entropy bound when the bottom two eigenvalues sum to at least 1/29 | [All-eigenbasis spectral-tail converse and exact certificate](docs/audits/TWO_QUBIT_SPECTRAL_TAIL_GATE.md) |
 | Explicit two-qubit low-rank neighborhood and high-score core stability | [Core-stability theorem and exact scalar certificate](docs/audits/TWO_QUBIT_CORE_STABILITY.md) |
 | Sharp two-qubit subspace bounds and all equal-leading-eigenvalue entropy cases | [Subspace theorem and flat-core proof](docs/audits/SHARP_SUBSPACE_AND_FLAT_CORE.md) |
+| Sharp all-size parity readout bound and unequal parity-core entropy closure | [Parity theorem and short fidelity proof](docs/audits/PARITY_READOUT_BOUND.md) |
 | A structured family that cannot beat the subset strategy | [Product-diagonal entropy bound](docs/COMMUTING_SEED_BOUND.md) |
 | Exact regularized formulation of the asymptotic rate | [Entropy-rate characterization](docs/ENTROPY_RATE_CHARACTERIZATION.md) |
 | Stronger bound for every collective encoder | [Logarithmic-Sobolev converse](docs/STRONG_ENTROPIC_CONVERSE.md) |
@@ -329,8 +330,15 @@ two eigenvalues**, with arbitrary complex eigenvectors and arbitrary remaining
 spectrum. Its supporting theorem gives sharp bounds on the four local Pauli
 couplings across any two-dimensional subspace, including the universal
 constant `7/8`. The flat-core proof uses one scalar polynomial majorant and no interval
-partition. Unequal leading eigenvalues and the all-block-size conjecture
+partition. Generic unequal-core states and the all-block-size conjecture
 remain open.
+
+A [parity theorem](docs/audits/PARITY_READOUT_BOUND.md) now gives the sharp
+score `g_n<=n sqrt(2+8q(1-q))` for every state commuting with a product
+parity of weight q. One binary measurement and established fidelity theory
+prove it. This closes another two-qubit entropy family: an arbitrary
+unequal coherent core whose top-two spectral support is a parity sector.
+It does not prove the entropy bound for every parity-commuting state.
 
 ## Essential boundary
 

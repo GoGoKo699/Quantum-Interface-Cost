@@ -42,6 +42,7 @@ python tools/certify_two_qubit_tail.py
 python tools/certify_two_qubit_core.py
 python tools/check_two_qubit_flat_core.py
 python tools/check_coherent_transfer.py
+python tools/check_parity_and_decoder.py
 ```
 
 The bootstrap environment was Python 3.13.5 and NumPy 2.3.5. The audit
@@ -527,7 +528,7 @@ Its SHA-256 is
 `3f3538c0307f3a1131746d84410b21752b97aa0e87d8de1722392d3b114dd8ec`.
 The following three files were imported unchanged at bootstrap commit
 `eaf085a8cb299e6b297b11d2dc3c85e24f02779e`. These are historical hashes; the
-research note has subsequently been revised to version 0.19:
+research note has subsequently been revised to version 0.21:
 
 | File | SHA-256 |
 |---|---|
@@ -579,3 +580,22 @@ Python runs produce the same [recorded output](../results/coherent_transfer_chec
 The finite support-function inequality remains unproved; the checker
 does not test or certify it. The report separately labels the bounded local
 falsification screening, which is not used in a proof.
+
+## Parity and mixed-decoder continuation
+
+The [parity report](audits/PARITY_READOUT_BOUND.md) and
+[operator note](audits/MIXED_DECODER_PATTERN_BOUND.md) review main
+`ef3a6c9f62f7b9b591b56503ba5d24e0b10d2c12`. Their arguments were
+independently reconstructed within this workspace, including the binary
+fidelity witness, complex-state scope, all-n attainer, two-qubit entropy
+case split, decoder canonicalization and characteristic-root comparison.
+
+`tools/check_parity_and_decoder.py` uses standard-library exact rational
+sparse polynomials. It expands the 4x4 determinant by its 24 permutation
+terms and verifies the orientation derivative, endpoint residual, scalar
+majorant, witness reflection/sign flip and rational entropy margin 25/348.
+Normal and `python -O` runs on Python 3.12.14 produce identical
+[recorded output](../results/parity_and_decoder_check.json). There is no
+floating-point acceptance or interval partition. These checks support the
+displayed analytical reductions; they do not certify unrestricted entropy
+optimality, extend the tail certificate, or establish publication novelty.
