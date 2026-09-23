@@ -1,7 +1,7 @@
 # Status and claim ledger
 
-Updated: 2026-09-23. Stage: complete qutrit optimizer structure and an exact comparison with prior weighted-guessing concurrence bounds.
-Latest research base: `d3000ccc1f89fc357ebce7025bb166df2197e7d7`, the merge of PR #17.
+Updated: 2026-09-23. Stage: two-qubit sharp entropy bound outside a quantified low-rank region; unrestricted optimality and publication originality remain open.
+Latest research base: `07f557be8d5863f27304b1060274a14bfee1cd50`, the merge of PR #20.
 
 Critical assessment base: `81bcfefb2b545742d513c4f51364a7f72972451e`, the
 merge of PR #11. The [publication and optimality assessment](audits/PUBLICATION_AND_OPTIMALITY_ASSESSMENT.md)
@@ -86,6 +86,7 @@ is asserted.
 | Sharp seed deficit is superadditive under taking site marginals | Incorrect; exact correlated product-bisector example at epsilon=1/1024. The global entropy conjecture itself is not refuted | audits/PUBLICATION_AND_OPTIMALITY_ASSESSMENT.md Section 4 |
 | Strict collective asymptotic saving for every exact-X profile with 0<z<1, extending to fixed interior profiles | Derived and independently checked; retention cost z exceeds R_X(z); at x=.99,z=.5 collective rate<=.354579 versus retention rate .39 | EXACT_AXIS_RATE.md |
 | Exact two-qubit minimum of local SLD sum at every spectrum | Derived and independently checked; yields I_XZ>=2-S, but not the sharper linear seed entropy bound | TWO_QUBIT_SLD_SPECTRUM.md |
+| Sharp seed entropy bound for every two-qubit state with lambda_3+lambda_4>=1/29 | Derived and independently checked for arbitrary complex eigenvectors; exact rational interval certificate accompanies the analytical reduction. Remaining witnesses have top-two spectral weight >28/29 | audits/TWO_QUBIT_SPECTRAL_TAIL_GATE.md |
 | Quantitative stability of one-qubit maximizing seeds | Derived and independently checked; dimension-independent normalized-seed bounds and specified branch-weighted consequences | ONE_QUBIT_STABILITY.md |
 | Full noisy-X/Z average-rank profile D_M=W=w | Exact specialization of Cope–Uola SDPs; the already proved C-versus-w phase boundary supplies its full entropy comparison | audits/ROOF_PROVENANCE_AND_JOINT_SCORE.md Section 3 |
 | Collective readout can improve joint score per copy of a product seed | Incorrect: product additivity follows from Wallden–Dunjko–Andersson Theorem 3; an explicit f_2-j_2=(sqrt(2)-1)/8 gap persists under powers | audits/ROOF_PROVENANCE_AND_JOINT_SCORE.md Section 4 |
@@ -278,6 +279,15 @@ both the three-Pauli half-sum and X/Z SLD minimum at every spectrum as
 inequality are established ingredients. The resulting square-root score
 bound does not close the sharp linear seed entropy conjecture or imply
 an all-n SLD inequality.
+
+The [spectral-tail continuation](audits/TWO_QUBIT_SPECTRAL_TAIL_GATE.md)
+now extracts the sharp linear entropy bound from the full spectral envelope
+whenever `lambda_3+lambda_4>=1/29`, with no eigenbasis restriction. An exact
+rational certificate verifies 400 interval enclosures after a supplied
+analytical reduction; it is not a sample of states. Any two-qubit witness
+must be within trace distance less than `1/29` of its normalized top-two
+truncation. The earlier entropy-valid low-rank neighborhood has an
+existential uniform radius; no overlap reaching `1/29` has been proved.
 
 The [stability theorem](ONE_QUBIT_STABILITY.md) proves that deficit
 delta<=1/48 from the one-qubit optimum implies squared overlap at least
@@ -538,6 +548,8 @@ have both marginals maximally mixed, and, if full rank, must have condition
 number greater than 6.235819648070267. It must additionally stay outside
 the proved open neighborhood of the rank-at-most-two set at that fixed n.
 It must fail the new spectral and kernel certificates; in particular,
+a two-input witness must have `lambda_3+lambda_4<1/29`, so its largest two
+eigenvalues sum to more than `28/29`. Also,
 a two-input witness cannot have a maximally entangled kernel vector or
 at most two distinct eigenvalues. The example `(t,b,b,0)` generally has
 three distinct eigenvalues and is not removed as a whole by that count.

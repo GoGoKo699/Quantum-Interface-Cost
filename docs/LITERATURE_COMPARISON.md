@@ -150,6 +150,15 @@ score bound does not prove the sharp linear seed entropy conjecture, and
 the all-n SLD inequality remains unresolved. These targeted comparisons
 do not certify absence of the operational results from the literature.
 
+The [spectral-tail corollary](audits/TWO_QUBIT_SPECTRAL_TAIL_GATE.md) now
+proves the sharp two-qubit seed entropy target for every complex eigenbasis
+when `lambda_3+lambda_4>=1/29`. It uses this same SLD envelope, the standard
+binary entropy series, and an explicit exact rational interval certificate.
+The additional supplied deduction is this scalar spectral implication;
+neither its ingredients nor the general SLD framework are claimed new.
+The remaining low-tail region, all-block optimality, and prior subsumption
+of the separate two-parameter steering-formation result remain unresolved.
+
 ## Asymmetric entropy converse and the sharp exact-axis rate
 
 The [asymmetric converse](ASYMMETRIC_ENTROPIC_CONVERSE.md) combines known

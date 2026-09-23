@@ -45,6 +45,11 @@ unique scalar root specifies the optimal mixture of one compatible profile
 and one exact-axis profile. See [the formula and proof](docs/PRODUCT_DIAGONAL_PROFILE_RATE.md#51-a-complete-constructive-optimizer-from-one-scalar-root).
 The bounded follow-up attempt on the full two-qubit entropy conjecture
 produced neither a proof nor a certified violation; its status is unchanged.
+The latest [spectral-tail converse](docs/audits/TWO_QUBIT_SPECTRAL_TAIL_GATE.md)
+now proves the target for every complex two-qubit state whose two smallest
+eigenvalues sum to at least `1/29`. Any remaining two-qubit counterexample
+must put more than `28/29` of its spectral weight in its top two eigenvectors.
+The low-tail region and the arbitrary-block problem remain unresolved.
 
 The latest source comparison proves that the full asymmetric formula is
 strictly stronger than the entire optimized weighted-CHSH formation-bound
@@ -117,6 +122,7 @@ or publication originality.
 | Collective advantage for unequal X/Z accuracies | [Exact-axis spectral reduction](docs/EXACT_AXIS_SPECTRAL_REDUCTION.md) |
 | Quantitative structure of nearly optimal one-qubit seeds | [One-qubit stability](docs/ONE_QUBIT_STABILITY.md) |
 | Exact two-qubit SLD minimum at every spectrum | [Two-qubit spectral theorem](docs/TWO_QUBIT_SLD_SPECTRUM.md) |
+| Two-qubit sharp entropy bound when the bottom two eigenvalues sum to at least 1/29 | [All-eigenbasis spectral-tail converse and exact certificate](docs/audits/TWO_QUBIT_SPECTRAL_TAIL_GATE.md) |
 | A structured family that cannot beat the subset strategy | [Product-diagonal entropy bound](docs/COMMUTING_SEED_BOUND.md) |
 | Exact regularized formulation of the asymptotic rate | [Entropy-rate characterization](docs/ENTROPY_RATE_CHARACTERIZATION.md) |
 | Stronger bound for every collective encoder | [Logarithmic-Sobolev converse](docs/STRONG_ENTROPIC_CONVERSE.md) |
@@ -296,8 +302,11 @@ three-input instruments and only the 32-vertex support calculation for the
 
 The separate [two-qubit SLD result](docs/TWO_QUBIT_SLD_SPECTRUM.md) evaluates
 the minimum over all eigenbases at every spectrum and proves the proposed
-SLD entropy inequality for two inputs. Its resulting square-root score
-bound remains weaker than the sharp linear entropy target. The
+SLD entropy inequality for two inputs. Its entropy-only square-root bound
+remains weaker than the sharp linear target. Retaining the full spectrum
+now proves that target whenever `lambda_3+lambda_4>=1/29`, by an
+[analytical reduction and exact rational certificate](docs/audits/TWO_QUBIT_SPECTRAL_TAIL_GATE.md).
+This does not close the remaining region. The
 [stability theorem](docs/ONE_QUBIT_STABILITY.md) quantifies how nearly
 optimal one-qubit seeds approach the exact retaining-one-site form.
 These are supplied, internally checked deductions; publication novelty
