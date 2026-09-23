@@ -7,6 +7,12 @@ table below summarizes those completed targeted comparisons; subsequent
 sections cover the later one-qubit and spectral results. It is not an
 exhaustive certification of publication novelty.
 
+The later [publication and optimality assessment](audits/PUBLICATION_AND_OPTIMALITY_ASSESSMENT.md),
+pinned to `81bcfefb2b545742d513c4f51364a7f72972451e`, narrows the paper claim
+and adds a prior CHSH derivation of the symmetric one-site entropy curve.
+Its convexity consequences and exact failed-tensorization example explain
+why the unrestricted rate question needs a new global argument.
+
 ## Direct precedents and exact implications
 
 | Primary source | Checked locator and relationship | Consequence |
@@ -58,6 +64,28 @@ These inspected statements establish the ingredients and framework without
 settling subsumption of this evaluated region. Its publication novelty
 remains unresolved; the result is a short task-specific application of
 established monogamy, not a new general correlation inequality.
+
+## Additional prior derivation of the symmetric formation-entropy curve
+
+Zhu–Zhang–Ma, *Interplay among entanglement, measurement incompatibility,
+and nonlocality*, [2303.08407v2](https://arxiv.org/pdf/2303.08407v2),
+20 June 2025, Theorem 2 / Eq. (25), printed p. 14, gives the
+dimension-independent CHSH lower bound `E_F >= (S_CHSH-2)/(2sqrt(2)-2)`
+at alpha=1. Their convention is Eq. (2), p. 5; Appendix A.1,
+pp. 28–29, supplies the dimension reduction. For the assemblage
+`sigma_(+/-|X)=(I+/-eta X)/4`, `sigma_(+/-|Z)=(I+/-eta Z)/4`, trusted
+observables `(X+Z)/sqrt(2)` and `(X-Z)/sqrt(2)` give
+`S_CHSH=2sqrt(2)eta`. Cope 2102.02333v2, Theorem 2, p. 3, then gives
+`E_FA >= [(eta-1/sqrt(2))/(1-1/sqrt(2))]_+`. A flagged mixture of the
+compatible and Bell endpoints attains it. Thus this symmetric one-site
+formula is a short exact corollary of prior results.
+
+The [assessment](audits/PUBLICATION_AND_OPTIMALITY_ASSESSMENT.md), Section 2,
+supplies the explicit normalization and attainment. This further narrows
+the novelty candidate to the full two-parameter evaluation, phase boundary
+and scoped product-diagonal tensorization. It does not establish the
+unrestricted many-site entropy inequality: summing local formation costs
+against one global entropy budget is not justified by the source theorem.
 
 ## Exact-axis reduction and unequal-accuracy collective advantage
 
