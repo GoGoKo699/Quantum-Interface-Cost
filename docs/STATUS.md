@@ -1,7 +1,7 @@
 # Status and claim ledger
 
-Updated: 2026-09-23. Stage: exact product-diagonal profile rate and entropy-source audit.
-Latest research base: `3ebde02b2d9d5dcdcd0dd445e4a16b4f5aaf03b0`, the merge of PR #10.
+Updated: 2026-09-23. Stage: constructive profile optimizer after a bounded two-qubit proof attempt.
+Latest research base: `65fabd7d870df705193017cc61e7230fc4943a5b`, the merge of PR #12.
 
 Critical assessment base: `81bcfefb2b545742d513c4f51364a7f72972451e`, the
 merge of PR #11. The [publication and optimality assessment](audits/PUBLICATION_AND_OPTIMALITY_ASSESSMENT.md)
@@ -69,6 +69,8 @@ is asserted.
 | Exact-axis value sqrt(D-1)/n for 105<=D<=n | Corollary of the supplied operational reduction and established Bollobás–Lee–Letzter Theorem 2 | EXACT_AXIS_SPECTRAL_REDUCTION.md |
 | Exact-axis asymptotic rate R_X(z)=h_2((1-sqrt(1-z^2))/2) | Derived and independently checked operational corollary; scalar curve and asymptotic cube spectrum are established prior results, also matching known dephasing-channel cost | EXACT_AXIS_RATE.md |
 | Exact rate C(x,z) for product-diagonal refined Kraus Grams | Derived and independently checked; arbitrary correlated spectra and branch-dependent local bases allowed; fixed-cap implementation from compatibility-disk and exact-axis generators | PRODUCT_DIAGONAL_PROFILE_RATE.md |
+| Complete constructive optimizer for C throughout the strict-saving phase | Derived and independently reconstructed: one scalar equation specifies the unique reduced two-generator mixture. No uniqueness of physical encoders or unrestricted rate claim | PRODUCT_DIAGONAL_PROFILE_RATE.md Section 5.1 |
+| C(.99,.5) lies between .324848239185893024 and .324848239186576377 | Exact rational interval certificate conditional on the analytical optimizer theorem, independently reproduced; stronger unrestricted achievable upper bound | results/profile_optimizer_certificate.json |
 | Exact boundary C<w at (1-x)/(1-z)<2(1/ln2-1)^2 | Derived and independently checked for 0<z<=x<1 outside the disk, with X/Z-symmetric version; a region of unrestricted achievability beating retention, not an unrestricted converse | PRODUCT_DIAGONAL_PROFILE_RATE.md |
 | C equals steering entanglement of formation of the noisy Pauli assemblage | Exact reduction to Cope's established resource; supplied explicit evaluation, publication novelty unresolved | ENTROPY_TRADEOFF_PRIOR_AUDIT.md |
 | Symmetric one-site C(eta,eta) is the subset line | Also a short corollary of prior Zhu–Zhang–Ma CHSH entanglement bound and Cope Theorem 2, with flagged endpoint attainment | audits/PUBLICATION_AND_OPTIMALITY_ASSESSMENT.md Section 2 |
@@ -356,6 +358,26 @@ not identify complete-assemblage entanglement cost with the delayed-query
 rate. Prior subsumption of the full evaluated profile remains unresolved.
 
 ## Research division and next target
+
+The bounded two-qubit attempt after PR #12 did not prove the proposed
+fixed-spectrum envelope, close the entropy inequality, or produce a
+certified violating seed. Direct stationarity and exterior-square routes
+give reformulations but no complete global estimate. Small exploratory
+4-by-4 searches found no violation; this negative outcome is not a proof
+and is not added to the theorem ledger. Numerical expansion was stopped.
+Neither the adjacent-Schmidt-pair CHSH construction nor a quadratic SLD
+bound was imported as a sharp joint trace-norm theorem.
+
+Following the assessment's stopping criterion, work returned to the
+complete profile evaluation. Section 5.1 now constructs its optimizer
+through a unique scalar root and proves uniqueness of the reduced
+generating profiles. The full strict-saving region is covered, not an
+additional exceptional seed family. The explicit point `(.99,.5)` is
+certified with rational intervals, giving `C approximately 0.324848239186`; this is
+the exact restricted rate and an unrestricted upper bound. The proof had
+three independent within-workspace reconstructions; the certificate had
+an independent byte-identical rerun. These are internal checks, not
+external peer review or novelty certification.
 
 Issue #1 records the proof-and-novelty audit. Issue #2 coordinates the
 unrestricted finite-block/rate investigation. The user subsequently authorized

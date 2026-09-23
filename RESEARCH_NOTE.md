@@ -1,9 +1,9 @@
 # Q1 — Delayed local readout through a bounded quantum interface
 
-**Version:** 0.9, 2026-09-23
+**Version:** 0.10, 2026-09-23
 
 **Project:** Falling / Q1  
-**Status:** Baseline proofs and seed reduction independently checked within the audit workspace. The latest result evaluates the full product-diagonal profile rate and its strict-saving phase boundary, improving an unequal-accuracy construction. Its one-qubit cost is identified with an established steering entanglement measure. Earlier work proves an unrestricted asymmetric converse, linear common-accuracy onset, an exact-axis rate, one-qubit optima and spectral exclusions. General common-accuracy rate evaluation and publication novelty remain unresolved. This is a research dossier, not external peer review or a claim of a new framework.
+**Status:** Baseline proofs and seed reduction independently checked within the audit workspace. The full product-diagonal profile rate now has a constructive optimizer: a unique scalar equation specifies its optimal two-generator mixture throughout the strict-saving phase. Its one-qubit cost is an established steering entanglement measure. Earlier work proves an unrestricted asymmetric converse, linear common-accuracy onset, an exact-axis rate, one-qubit optima and spectral exclusions. A bounded attempt at the complete two-qubit entropy inequality produced neither a proof nor a certified violation. General common-accuracy rate evaluation and publication novelty remain unresolved. This is a research dossier, not external peer review or a claim of a new framework.
 
 ## 1. Origin, scope, and claim ledger
 
@@ -25,6 +25,7 @@ The general compression problem below is already present in the dimensional meas
 | Asymmetric entropy converse and linear onset above the classical threshold | Derived and independently checked; combines established generalized QRAC and cube-entropy ingredients. The exact onset slope remains open. |
 | Exact-X asymptotic rate h_2((1-sqrt(1-z^2))/2) | Sharp operational corollary of established cube spectral/entropy results; complete finite instruments preserve exact X, with fixed interior collective separations as a consequence. |
 | Exact product-diagonal rate for separate X/Z contrasts | Derived profile theorem with arbitrary correlated spectra; compatibility disk and exact-axis seeds generate its full convex rate, with an explicit strict-saving phase boundary. The unrestricted rate is not identified with this class. |
+| Constructive optimizer for the complete strict-saving phase | Derived and independently checked: one scalar root determines the unique reduced two-generator mixture. This is not uniqueness of encoders or unrestricted optimality. |
 | Exact maximum score at any rank-two spectrum | Derived and independently checked for arbitrary eigenvectors; excludes all rank-two entropy witnesses. |
 | Exact flat half-rank optimum through four input qubits | Derived and independently checked, with equality cases; with separate lower-flat-rank estimates; nonflat cases remain unresolved. |
 | Further seed entropy exclusions | Derived and independently checked for local classical flags, locally maximally mixed two-qubit states, and condition number at most 6.235819648; restricted families. |

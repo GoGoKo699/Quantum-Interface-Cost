@@ -2,6 +2,8 @@
 
 Date: 23 September 2026. Research base:
 `3ebde02b2d9d5dcdcd0dd445e4a16b4f5aaf03b0`.
+The constructive optimizer in Section 5.1 is based on main
+`65fabd7d870df705193017cc61e7230fc4943a5b`.
 
 **Status:** supplied analytical deduction, independently reconstructed within
 this workspace. This evaluates a defined family of collective encoders and
@@ -318,7 +320,7 @@ enlarging that construction to the full exact-axis curve improves it.
 **Theorem 2.** Put
 
 $$
-\tau_*=2(1/\ln2-1)^2=0.39195779845536194\ldots.
+\tau_*=2(1/\ln2-1)^2\simeq0.391957798455362.
 \tag{14}
 $$
 
@@ -378,6 +380,163 @@ Thus all product-diagonal spectra, arbitrary rotations of qubit seeds,
 and their convex combinations give exactly the subset common-accuracy
 rate. The unrestricted common-accuracy rate is still open.
 
+### 5.1 A complete constructive optimizer from one scalar root
+
+The convex envelope can be evaluated without a two-dimensional optimization.
+The result also identifies precisely which two generating profiles are
+needed in the strict-saving phase. It concerns the same C, not a new
+resource or an unrestricted converse.
+
+For `0<v<=1` define
+
+\[
+ b(v)=f'(v),\qquad k(v)=v-\frac{f(v)}{f'(v)},\qquad
+ u(v)=\frac{1-k(v)^2}{1+k(v)^2},\qquad
+ s(v)=\frac{2k(v)}{1+k(v)^2}.
+\tag{17a}
+\]
+
+Here s is the Z coordinate of a compatible profile, not an entropy.
+At zero use the continuous limits `k(0)=0`, `u(0)=1`, `s(0)=0`.
+Write `u_*=u(1)` and `s_*=s(1)`, where `k(1)=1-ln2`.
+
+**Theorem 3 (constructive evaluation).** Interchange x and z if necessary
+so that `x>=z`. The following cases evaluate C throughout the unit square:
+
+1. If `x^2+z^2<=1`, then `C(x,z)=0`.
+2. If `x=1`, then `C(1,z)=f(z)`.
+3. Outside the disk, if `x<1` and `(1-x)/(1-z)>=tau_*`, then
+   `C(x,z)=w(x,z)`.
+4. In the remaining strict-saving region, there is exactly one root
+   `v in (z,1)` of
+
+   \[
+   z=v-(1-x)\frac{v-s(v)}{1-u(v)}.
+   \tag{17b}
+   \]
+
+   It satisfies `u(v)<x`. Set
+
+   \[
+   p=\frac{x-u(v)}{1-u(v)}.
+   \]
+
+   Then `0<p<1`, and
+
+   \[
+   \boxed{(x,z)=p(1,v)+(1-p)(u(v),s(v)),\qquad C(x,z)=p f(v).}
+   \tag{17c}
+   \]
+
+The generating profile-cost decomposition in case 4 is unique, up to
+repeated identical atoms and zero weights. This is not uniqueness of
+physical encoders, quantum states or assemblage decompositions realizing
+those profiles. The original fixed-cap implementation in Section 4 applies
+to (17c) through deterministic site proportions, compression and complete
+instruments; it does not replace the dimension cap by a branch average.
+
+**Location and monotonicity of the contact point.** Strict convexity of f,
+with `f(0)=0`, gives `v f'(v)>f(v)>0`. In the interior,
+
+\[
+ k'(v)=\frac{f(v)f''(v)}{f'(v)^2}>0.
+\tag{17d}
+\]
+
+Consequently u strictly decreases and s strictly increases. To prove the
+additional fact `s(v)<v`, put `t=sqrt(1-v^2)`. Differentiation of binary
+entropy gives `f'(v)=v atanh(t)/(t ln2)`. The exact identity
+
+\[
+ (\ln2)f(v)-(1-t)\operatorname{atanh}t
+ =\ln\frac2{1+t}>0
+\]
+
+implies `f(v)/f'(v)>v t/(1+t)` and hence
+`0<k(v)<v/(1+t)`. The increasing map `y -> 2y/(1+y^2)` sends
+`v/(1+t)` to v, proving `s(v)<v`. The endpoints follow by continuity;
+in particular `k(v)->0` at zero. These identities prove
+`0<k(v)<=1-ln2<sqrt(2)-1`, so `u(v)>s(v)`. For the last strict bound,
+`ln2=2 atanh(1/3)>2/3` gives `1-ln2<1/3<sqrt(2)-1`.
+
+**Matching global support certificate.** For a fixed `0<v<=1`, abbreviate
+`b=b(v)`, `k=k(v)`, and put
+
+\[
+ a=\frac{b(1-k^2)}{2k},\qquad
+ R=\frac{b(1+k^2)}{2k}=\sqrt{a^2+b^2}.
+\]
+
+Then `a>b>0`, `(a/R,b/R)=(u,s)`, and
+`R-a=bk=bv-f(v)`. The plane
+
+\[
+ \text{cost}\ \ge ax+bz-R
+\tag{17e}
+\]
+
+supports every generator of C. On the free disk this is Cauchy--Schwarz,
+with contact only at `(u,s,0)`. On exact-X atoms, convexity gives
+`a+bt-f(t)<=a+bv-f(v)=R`. An exact-Z atom obeys
+`at+b-f(t)<=a+bt-f(t)<=R`, since `a>=b` and `t<=1`.
+The support inequality survives convex mixing and coordinatewise weakening
+because a,b are positive. Both atoms in (17c) attain it; their mixture
+therefore gives the exact cost, not merely an upper bound.
+
+For `v<1`, strict convexity of f makes the exact-X contact unique. An
+exact-Z contact would require `t=1`, which fails the strict tangent
+inequality because `t!=v`. Thus only the two displayed generator atoms
+contact the plane. Every minimizing generator decomposition must be
+supported there, and its weight p is fixed by x. Positive a,b also exclude
+coordinate-degradation slack in an optimum. This proves the stated
+uniqueness without restricting how either atom is physically realized.
+
+**Existence and uniqueness of the scalar root.** Let
+`M(v)=(v-s(v))/(1-u(v))>0`. At the upper endpoint,
+
+\[
+ M(1)=\frac{(\ln2)^2}{2(1-\ln2)^2}=\frac1{\tau_*}.
+\]
+
+The line `z=1-(1-x)/tau_*` intersects the positive compatibility-circle
+graph `sqrt(1-x^2)` at `x=u_*`. The line increases with x and the graph
+decreases. A strict-saving point outside the disk must consequently have
+`u_*<x<1`. There is a unique `v_0 in (0,1)` with `u(v_0)=x`.
+
+For fixed x and `v in [v_0,1]` define
+
+\[
+ p_x(v)=\frac{x-u(v)}{1-u(v)},\qquad
+ Z_x(v)=p_x(v)v+(1-p_x(v))s(v).
+\]
+
+On this interval `p_x>=0`, `p_x<1` and
+`p_x'=-(1-x)u'/(1-u)^2>0`. Therefore
+
+\[
+ Z_x'(v)=p_x+(1-p_x)s'+p_x'(v-s)>0.
+\]
+
+Its endpoint values are exactly
+
+\[
+ Z_x(v_0)=\sqrt{1-x^2},\qquad
+ Z_x(1)=1-\frac{1-x}{\tau_*}.
+\]
+
+These bracket precisely the strict-saving region, so the root exists and
+is unique in the physical interval. For `v<v_0`, one has `p_x<0` and
+`Z_x(v)=s(v)+p_x(v)(v-s(v))<s(v)<s(v_0)<z`; no extra root occurs there.
+Finally `Z_x(z)=z-(1-x)M(z)<z`, whereas `Z_x(1)>z`. Thus `(z,1)` itself
+is an explicit bracket, and one scalar bisection suffices; computing
+`v_0` is not necessary. Strict monotonicity was only needed and proved on
+the physical interval.
+
+At the compatible boundary p tends to zero. At the saving-phase boundary
+v tends to one and the construction reduces to the retention mixture.
+At `x=1`, the formula directly reduces to `v=z`, `p=1`. Together with
+the established free and retention cases, this completes the evaluation.
+
 ## 6. A fully specified interior improvement
 
 Take a proportion `87/100` of exact-axis seed blocks with profile
@@ -397,7 +556,7 @@ $$
 R(99/100,1/2)
 &\le C(99/100,1/2)\\
 &\le\frac{87}{100}f(15/29)
-=0.32506602063355716\ldots.
+\simeq0.325066020634.
 \end{aligned}
 \tag{18}
 $$
@@ -447,6 +606,55 @@ above follow, for example, from the series
 `ln2=2 sum_{k>=0} 1/((2k+1)3^(2k+1))` and
 `exp(8/3)>sum_{k=0}^6 (8/3)^k/k!>10000/721`.
 
+### 6.1 The exact optimizer and a rational interval certificate
+
+Theorem 3 replaces the convenient rational mixture above by the optimum
+over the entire product-diagonal class. For `(x,z)=(99/100,1/2)`, it gives
+the following rigorous decimal intervals (their endpoints are rationals):
+
+\[
+ 0.52576013296870 < v_* < 0.52576013296872,
+\]
+
+\[
+ \boxed{0.324848239185893024
+ \le C(99/100,1/2)
+ \le0.324848239186576377.}
+\tag{19}
+\]
+
+The exact prescription is still (17a)–(17c), not the rounded numbers.
+Approximately, it uses weight `p=0.847805621235` of profile
+`(1,0.525760132969)` and the remaining weight of the compatible-circle
+profile `(0.934294550947,0.356502022533)`. The exact root gives the target
+coordinates exactly; rounded values are only for orientation.
+
+[certify_profile_optimizer.py](../tools/certify_profile_optimizer.py)
+certifies both endpoint signs in (17b), all physical mixture inequalities,
+and the cost enclosure using only integer and rational arithmetic.
+Square roots are enclosed by integer square roots. Logarithms are reduced
+to `ln r=m ln2+2 atanh(t)`, `0<=t<=1/3`, with the explicit positive
+series remainder
+
+\[
+ 0\le 2\operatorname{atanh}t-
+ 2\sum_{j=0}^{N-1}\frac{t^{2j+1}}{2j+1}
+ \le\frac{2t^{2N+1}}{(2N+1)(1-t^2)}.
+\]
+
+Every arithmetic rounding is outward. The small
+[certificate](../results/profile_optimizer_certificate.json) records the
+parameters and enclosures; no floating-point optimizer or matrix search
+is part of this certification. Root uniqueness and global optimality
+within the comparison class come from the analytical theorem, not from
+the script. The certificate also strictly separates (19) from the earlier
+explicit mixture, whose rate is between `0.325066020633557333` and
+`0.325066020633557334`.
+
+For the unrestricted profile rate this remains an upper bound:
+`R(99/100,1/2)<=C(99/100,1/2)`. It is not an unrestricted converse or an
+equal-accuracy advantage.
+
 ## 7. Ingredients and novelty boundary
 
 The compatibility disk and exact-axis scalar curve are established
@@ -457,7 +665,11 @@ convexification, Shannon conditioning, and Schmidt typicality are likewise
 standard mathematical tools. The supplied additions here are the complete
 profile benchmark for the specified product-diagonal Gram class, its
 support formula, the exact region (15) where it improves original-site
-retention, and the explicit interior construction.
+retention, and the explicit interior construction. Section 5.1 adds a
+constructive evaluation throughout that region and uniqueness of the two
+generating profile-cost atoms. Supporting planes and strict convexity are
+standard tools; this is a further evaluation of the same established
+resource, not a new formation measure or general convex-roof theorem.
 
 The one-qubit cost C also evaluates an established resource quantity.
 For the qubit steering assemblage

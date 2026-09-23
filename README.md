@@ -40,6 +40,12 @@ allows every collective encoder. The associated one-qubit entropy quantity
 is an established steering entanglement of formation, now explicitly mapped
 in the source audit.
 
+The profile optimum is now constructive: in its strict-saving phase, a
+unique scalar root specifies the optimal mixture of one compatible profile
+and one exact-axis profile. See [the formula and proof](docs/PRODUCT_DIAGONAL_PROFILE_RATE.md#51-a-complete-constructive-optimizer-from-one-scalar-root).
+The bounded follow-up attempt on the full two-qubit entropy conjecture
+produced neither a proof nor a certified violation; its status is unchanged.
+
 ## Start here
 
 | Purpose | Read |
@@ -58,6 +64,7 @@ in the source audit.
 | Linear onset of common-accuracy quantum memory | [Asymmetric entropy converse](docs/ASYMMETRIC_ENTROPIC_CONVERSE.md) |
 | Exact memory rate with every X query preserved | [Exact-axis rate](docs/EXACT_AXIS_RATE.md) |
 | Complete product-diagonal rate and unequal-accuracy phase boundary | [Profile rate theorem](docs/PRODUCT_DIAGONAL_PROFILE_RATE.md) |
+| Publication case and the precise unrestricted-optimality obstacle | [Critical assessment](docs/audits/PUBLICATION_AND_OPTIMALITY_ASSESSMENT.md) |
 | Entropy-production, coherence and steering-cost precedents | [Entropy trade-off source audit](docs/ENTROPY_TRADEOFF_PRIOR_AUDIT.md) |
 | Exact rank-two spectrum trade-off and excluded families | [Entropy-inequality boundaries](docs/ENTROPY_INEQUALITY_BOUNDARIES.md) |
 | Sharp flat half-rank result through four input qubits | [Flat-seed theorem](docs/FLAT_HALF_RANK_OPTIMALITY.md) |
