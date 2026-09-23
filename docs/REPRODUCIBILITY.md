@@ -441,6 +441,26 @@ outputs. Unchanged construction diagnostics were not rerun.
 
 See [the proof report](audits/RESOURCE_OPTIMA_AND_JOINT_DECODERS.md).
 
+## Joint resource frontier and real encoding
+
+The [continuation report](audits/JOINT_RESOURCE_FRONTIER.md) is pinned to
+main `f5c2486d5fee236eb4d2c0f15f5b1a80b5ef6306` and tree
+`24fc783fb7d9dfb77686d7df67a732806da96450`. Its analytical checks cover
+the mixed ordinary-negativity support bound, every nonnegative resource
+price, endpoint derivatives, the explicit phase/root calculation, and
+convex separation over a compact generator hull without assuming a bound
+on Alice's dimension. A separate adversarial reconstruction found no
+substantive flaw. The Kraus realification, uniform error on arbitrary
+complex inputs, and tensor-seed/global-real-part argument were separately
+checked. These are internal proof reviews, not external peer review.
+
+Primary-source reads cover the versions and theorem locators stated in
+the report. Tomassoli's thesis and the 2012 Nakahira–Usuda rank theorem
+remain full-text gaps; no absence-of-prior-art conclusion is certified.
+No large simulation or new solver output underlies the results, and the
+unchanged repository diagnostics were not rerun. Local links, whitespace,
+and the identities of LICENSE and the historical audit were checked.
+
 ## Original archive provenance
 
 The user-provided archive was Q1_Quantum_Interface_Dossier_v0_1.zip.
@@ -448,7 +468,7 @@ Its SHA-256 is
 `3f3538c0307f3a1131746d84410b21752b97aa0e87d8de1722392d3b114dd8ec`.
 The following three files were imported unchanged at bootstrap commit
 `eaf085a8cb299e6b297b11d2dc3c85e24f02779e`. These are historical hashes; the
-research note has subsequently been revised to version 0.16:
+research note has subsequently been revised to version 0.17:
 
 | File | SHA-256 |
 |---|---|

@@ -508,6 +508,36 @@ provides a close exact-axis box-weight example, whose value V differs from
 formation cost f(V). These are scoped comparisons; the unread Tomassoli
 source and exhaustive-priority question remain open.
 
+The [joint-resource continuation](audits/JOINT_RESOURCE_FRONTIER.md)
+extends the separate-resource comparison to the complete conditional
+E_F/ordinary-negativity Pareto frontier. Verstraete et al.,
+quant-ph/0108021v1, Theorems 1–2 and Eq. (14), already give the unconditional
+two-qubit concurrence/negativity range; their negativity equals twice the
+ordinary negativity used here. Their mixed states demonstrate why a pure
+convex-roof substitution would compute E_F+lambda concurrence instead of
+E_F+lambda(2N). The supplied mixed-state support proof, lambda-dependent
+phase/root evaluation and arbitrary-dimension Pareto exhaustion address
+that distinction. Han's weighted geometry and flagged constructions,
+Pusey's equal-weight negativity endpoint, and the GRW/EBA convex-duality
+method remain established ingredients. No inspected statement evaluates
+the same complete conditional frontier, but historical priority is unverified.
+
+McKague–Mosca–Gisin 0810.1923v1, Section II A–B, Eqs. (1)–(3), p. 2,
+supplies the established real simulation representation. The continuation
+specializes it to unchanged arbitrary complex inputs with real target
+effects, proving an at-most-one-qubit worst-case overhead and equal
+asymptotic interface rates. Real-only fixed-size entropy searches are
+still not exhaustive.
+
+For the preceding decoder theorem, Nakahira–Kato–Usuda 1501.05744v2,
+Theorems 1–2, and Eldar–Megretski–Verghese quant-ph/0205178v1,
+Eqs. (24)–(27)/Theorem 2, directly supply the SDP and low-rank
+complementarity machinery. The new report excludes a common-positive-shift
+reduction to pure minimum-error hypotheses, but the sufficient rank
+condition in Nakahira–Usuda, PRA 86, 062305 (2012), remains unread in full.
+This is an explicit unresolved subsumption question, alongside the
+existing Tomassoli thesis gap.
+
 Preserve exact source versions, locators, timing, resource accounting and
 quantifiers in every further comparison. Absence from this ledger is not
 evidence of absence from the literature.

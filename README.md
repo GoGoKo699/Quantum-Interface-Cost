@@ -94,6 +94,17 @@ admit one on the ambient four-dimensional space. Neither theorem evaluates
 the unrestricted memory rate. The general jointly optimized entanglement
 witness method is explicitly credited to the 2007 prior literature.
 
+The [joint-resource continuation](docs/audits/JOINT_RESOURCE_FRONTIER.md)
+now evaluates the complete formation-entropy/ordinary-negativity tradeoff
+at fixed X/Z correlations, including the minimum entropy under every
+negativity budget. Qutrit realizations attain the entire frontier, even
+when arbitrary finite Alice dimension is allowed. This is an auxiliary
+state-resource theorem, not a memory converse. The same report proves
+that real encoders have the unrestricted complex rate with at most one
+extra retained qubit at finite size, while preserving arbitrary complex
+inputs and uniform error. Neither result closes equal-accuracy optimality
+or publication originality.
+
 ## Start here
 
 | Purpose | Read |
@@ -117,6 +128,7 @@ witness method is explicitly credited to the 2007 prior literature.
 | Exact two-correlation formation cost and minimum realization dimension | [Dimension and prior comparison](docs/audits/TWO_CORRELATION_FORMATION.md) |
 | All qutrit entropy optimizers and a closer weighted-guessing precedent | [Optimizer structure and source map](docs/audits/FORMATION_OPTIMIZERS_AND_PRIOR.md) |
 | Incompatible negativity/entropy optima and projective two-input joint decoders | [Resource optima and decoder structure](docs/audits/RESOURCE_OPTIMA_AND_JOINT_DECODERS.md) |
+| Complete simultaneous formation/negativity frontier and real-encoder rate equality | [Joint resource frontier](docs/audits/JOINT_RESOURCE_FRONTIER.md) |
 | An exact matrix certificate for the unresolved two-input joint entropy bound | [Common-state operator cover](docs/audits/FORMATION_OPTIMIZERS_AND_PRIOR.md#3-an-exact-matrix-certificate-for-the-unresolved-two-input-joint-bound) |
 | Why total Holevo budgets and rank-two interpolation do not close the entropy proof | [Proof-method obstructions](docs/audits/ENTROPY_PROOF_RELAXATIONS.md) |
 | Entropy-production, coherence and steering-cost precedents | [Entropy trade-off source audit](docs/ENTROPY_TRADEOFF_PRIOR_AUDIT.md) |
