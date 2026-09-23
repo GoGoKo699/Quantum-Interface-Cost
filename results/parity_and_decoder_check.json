@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "arithmetic": "exact rational sparse polynomials",
+  "checks": [
+    "four-by-four characteristic polynomial (24-permutation determinant)",
+    "orientation derivative",
+    "principal-axis endpoint residual",
+    "weighted-Cauchy square decomposition",
+    "uniform scalar majorant and strictness",
+    "21/2 < (13/4)^2 < (10/3)^2",
+    "binary symmetry witness reflection and sign flip",
+    "parity entropy and support-function rational comparisons"
+  ],
+  "parity_residual_strip_margin": "25/348",
+  "scope": "Algebra supporting the supplied restricted proofs; does not certify unrestricted optimality or publication novelty."
+}
