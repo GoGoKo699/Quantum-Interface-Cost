@@ -40,6 +40,7 @@ python tools/check_profile_rate.py --output results/profile-rate-rerun.json
 python tools/certify_profile_optimizer.py --output results/profile-optimizer-rerun.json
 python tools/certify_two_qubit_tail.py
 python tools/certify_two_qubit_core.py
+python tools/check_two_qubit_flat_core.py
 ```
 
 The bootstrap environment was Python 3.13.5 and NumPy 2.3.5. The audit
@@ -543,3 +544,21 @@ The user's original repository main was
 `310a0730a04ada47eeda41bada41412414442ee1` (LICENSE only).
 The existing license blob `e17a781bf47c4aadf18b68fc593846a1193b86c1`
 is preserved rather than recreated during the GitHub tree update.
+
+## Sharp subspace and flat-core continuation
+
+The [report](audits/SHARP_SUBSPACE_AND_FLAT_CORE.md) reviews main commit
+`fa2443ca413a5c1935722db1c1415be0c7ad7266`. Its canonical compressions,
+sharp subspace bounds, exact attainers, fidelity pinching and entropy
+reduction were independently reconstructed within the workspace.
+
+`tools/check_two_qubit_flat_core.py` uses only standard-library rational
+arithmetic. It expands the scalar proof's polynomial identities, verifies
+nine positive Bernstein coefficients, and checks the exact endpoint margin
+`151/23312520`. It uses no interval subdivision, matrix sampling, solver,
+or floating-point acceptance tolerance. Run it normally or with `python -O`;
+both produce the same [recorded output](../results/two_qubit_flat_core_check.json).
+The script checks these algebraic ingredients, not the analytical reductions,
+full two-qubit optimality, or originality. The proved entropy scope is every
+complex two-qubit state with `lambda_1=lambda_2`, using the previously proved
+high-score-core and spectral-tail gates for the complementary cases.

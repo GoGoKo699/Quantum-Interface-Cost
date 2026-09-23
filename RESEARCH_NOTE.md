@@ -1,6 +1,6 @@
 # Q1 — Delayed local readout through a bounded quantum interface
 
-**Version:** 0.19, 2026-09-23
+**Version:** 0.20, 2026-09-23
 
 **Project:** Falling / Q1  
 **Status:** Baseline proofs and seed reduction independently checked within the audit workspace. The full product-diagonal profile rate has a constructive optimizer. Its one-qubit cost is an established steering entanglement measure; a new theorem-level comparison proves strict separation from the full optimized weighted-CHSH bound family inspected, while crediting the prior mixture mechanism. The unrestricted rate equals regularized formation of a local-query assemblage, whose distinction from full tensor-product assemblages is explicit. Earlier converse and construction results remain as listed below. The complete two-qubit entropy inequality, general common-accuracy rate evaluation and publication novelty remain unresolved. This is a research dossier, not external peer review or a claim of a new framework.
@@ -58,6 +58,7 @@ The general compression problem below is already present in the dimensional meas
 | Sharp two-qubit entropy bound when lambda_3+lambda_4>=1/29 | Derived and independently checked for all complex eigenbases, by analytical reduction and an exact rational certificate. Any remaining witness has top-two weight greater than 28/29. |
 | Explicit two-qubit entropy-valid neighborhood lambda_3+lambda_4<=2^-20 | Derived and independently checked for all complex eigenbases. The proof combines high-score core stability, an unbalanced-spectrum gate, and a uniform low-score-core entropy margin. The cutoff is sufficient, not sharp. |
 | Two-qubit entropy witnesses require core score <=10/3 and normalized second core eigenvalue >1/5 | Derived and independently checked; finite support-angle estimates plus an exact two-variable certificate handle high-score cores. A nonempty low-score region remains. |
+| Sharp two-qubit subspace coupling and entropy bound whenever lambda_1=lambda_2 | Derived and independently checked; exact local-orbit coupling minimum, sharp 7/8 universal floor and 2/sqrt(3) anisotropy coefficient. One scalar majorant closes the remaining flat-core cases without interval partitions; unequal cores remain open. |
 | Quantitative stability of the one-qubit optimum | Supplied deduction; normalized seeds and maximally-mixed-input branch weights, without a channel-distance claim. |
 | Sharp evaluation of the common-accuracy asymptotic memory rate, or a strict common-accuracy collective-coding improvement | Candidate research target; not solved here and not yet certified absent from the literature. |
 | Exponential sampling advantage or speedup for classical-data learning | Not established; the many-copy control in Section 9 is deliberately easy classically. |

@@ -133,6 +133,7 @@ or publication originality.
 | Exact two-qubit SLD minimum at every spectrum | [Two-qubit spectral theorem](docs/TWO_QUBIT_SLD_SPECTRUM.md) |
 | Two-qubit sharp entropy bound when the bottom two eigenvalues sum to at least 1/29 | [All-eigenbasis spectral-tail converse and exact certificate](docs/audits/TWO_QUBIT_SPECTRAL_TAIL_GATE.md) |
 | Explicit two-qubit low-rank neighborhood and high-score core stability | [Core-stability theorem and exact scalar certificate](docs/audits/TWO_QUBIT_CORE_STABILITY.md) |
+| Sharp two-qubit subspace bounds and all equal-leading-eigenvalue entropy cases | [Subspace theorem and flat-core proof](docs/audits/SHARP_SUBSPACE_AND_FLAT_CORE.md) |
 | A structured family that cannot beat the subset strategy | [Product-diagonal entropy bound](docs/COMMUTING_SEED_BOUND.md) |
 | Exact regularized formulation of the asymptotic rate | [Entropy-rate characterization](docs/ENTROPY_RATE_CHARACTERIZATION.md) |
 | Stronger bound for every collective encoder | [Logarithmic-Sobolev converse](docs/STRONG_ENTROPIC_CONVERSE.md) |
@@ -321,6 +322,15 @@ This does not close the remaining region. The
 optimal one-qubit seeds approach the exact retaining-one-site form.
 These are supplied, internally checked deductions; publication novelty
 remains under investigation.
+
+The [sharp subspace continuation](docs/audits/SHARP_SUBSPACE_AND_FLAT_CORE.md)
+now proves the entropy target for **every two-qubit state with equal largest
+two eigenvalues**, with arbitrary complex eigenvectors and arbitrary remaining
+spectrum. Its supporting theorem gives sharp bounds on the four local Pauli
+couplings across any two-dimensional subspace, including the universal
+constant `7/8`. The flat-core proof uses one scalar polynomial majorant and no interval
+partition. Unequal leading eigenvalues and the all-block-size conjecture
+remain open.
 
 ## Essential boundary
 
