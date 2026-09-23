@@ -51,6 +51,15 @@ eigenvalues sum to at least `1/29`. Any remaining two-qubit counterexample
 must put more than `28/29` of its spectral weight in its top two eigenvectors.
 The low-tail region and the arbitrary-block problem remain unresolved.
 
+The [core-stability continuation](docs/audits/TWO_QUBIT_CORE_STABILITY.md)
+now proves an explicit uniform two-qubit neighborhood: bottom-two spectral
+weight at most `2^-20` always satisfies the target. It also excludes every
+remaining state whose normalized top-two core has score above `10/3`, and
+every core with smaller normalized eigenvalue at most `1/5`. Thus a possible
+witness must meet all three complementary conditions stated in that report.
+These are further central-proof deductions; the remaining region is nonempty
+and unrestricted optimality is still open.
+
 The latest source comparison proves that the full asymmetric formula is
 strictly stronger than the entire optimized weighted-CHSH formation-bound
 family inspected. It credits the earlier steering mixture mechanism and
@@ -123,6 +132,7 @@ or publication originality.
 | Quantitative structure of nearly optimal one-qubit seeds | [One-qubit stability](docs/ONE_QUBIT_STABILITY.md) |
 | Exact two-qubit SLD minimum at every spectrum | [Two-qubit spectral theorem](docs/TWO_QUBIT_SLD_SPECTRUM.md) |
 | Two-qubit sharp entropy bound when the bottom two eigenvalues sum to at least 1/29 | [All-eigenbasis spectral-tail converse and exact certificate](docs/audits/TWO_QUBIT_SPECTRAL_TAIL_GATE.md) |
+| Explicit two-qubit low-rank neighborhood and high-score core stability | [Core-stability theorem and exact scalar certificate](docs/audits/TWO_QUBIT_CORE_STABILITY.md) |
 | A structured family that cannot beat the subset strategy | [Product-diagonal entropy bound](docs/COMMUTING_SEED_BOUND.md) |
 | Exact regularized formulation of the asymptotic rate | [Entropy-rate characterization](docs/ENTROPY_RATE_CHARACTERIZATION.md) |
 | Stronger bound for every collective encoder | [Logarithmic-Sobolev converse](docs/STRONG_ENTROPIC_CONVERSE.md) |

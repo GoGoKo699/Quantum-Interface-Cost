@@ -159,6 +159,22 @@ neither its ingredients nor the general SLD framework are claimed new.
 The remaining low-tail region, all-block optimality, and prior subsumption
 of the separate two-parameter steering-formation result remain unresolved.
 
+The [core-stability continuation](audits/TWO_QUBIT_CORE_STABILITY.md)
+additionally uses Cheng--Hall, [1610.09302v3](https://arxiv.org/pdf/1610.09302v3),
+25 January 2017, printed p. 3, Eqs. (10) and (14). These established
+identities relate optimized CHSH parameters to local purities and bound
+their sum with independent measurement settings. Applied to the pure
+three-qubit purification of a rank-two core, they give the stronger
+active-score bound `f_A^2<=2(1+r_B^2-r_Q^2)`. They are not applied to the
+full state's four-dimensional purifying system.
+
+The supplied consequences are a finite-tail theorem for all high-score
+rank-two cores, an analytical exclusion of sufficiently unbalanced core
+spectra, and an explicit uniform n=2 entropy-valid radius `2^-20`.
+Block trace inequalities, principal-angle geometry and interval arithmetic
+are standard ingredients. These deductions neither close the all-state
+inequality nor certify a new monogamy theorem or publication originality.
+
 ## Asymmetric entropy converse and the sharp exact-axis rate
 
 The [asymmetric converse](ASYMMETRIC_ENTROPIC_CONVERSE.md) combines known

@@ -39,6 +39,7 @@ python tools/check_asymmetric_rate.py --output results/asymmetric-rate-rerun.jso
 python tools/check_profile_rate.py --output results/profile-rate-rerun.json
 python tools/certify_profile_optimizer.py --output results/profile-optimizer-rerun.json
 python tools/certify_two_qubit_tail.py
+python tools/certify_two_qubit_core.py
 ```
 
 The bootstrap environment was Python 3.13.5 and NumPy 2.3.5. The audit
@@ -487,6 +488,36 @@ originality. No large simulation or new solver output is used. Unchanged
 construction diagnostics were not rerun; the new certificate, local links,
 whitespace, and the protected file identities were checked.
 
+## Two-qubit core stability and explicit neighborhood
+
+The [core-stability report](audits/TWO_QUBIT_CORE_STABILITY.md) is pinned to
+main `b653fe866930aa8d1c07ad3bf34629a14b41009a`, tree
+`fb3049fa092eda007d470bad8873038787638c30`. Independent workspace
+reconstruction covered the noncommutative block inequality, decoder
+classification, coupled support angles, Cheng--Hall normalization, finite
+stability constants, scalar reductions and their domain coverage. The
+unbalanced-core exclusion and uniform entropy margin were separately
+checked analytically. No external peer review is claimed.
+
+`tools/certify_two_qubit_core.py` uses integer endpoints divided by `2^80`,
+outward-rounded arithmetic, integer square roots, and a 72-term positive
+logarithm series with an explicit remainder bound. It certifies a scalar
+disjunction over every point of 755 closed boxes, after the analytical
+reduction in the report. There are 476 strict SLD exclusions and 279
+strict stability certificates, 754 subdivisions, and maximum depth 16.
+The smallest positive stability-margin numerator is `12665039428067297599`
+with denominator `1208925819614629174706176`. The recorded output is
+[results/two_qubit_core_certificate.json](../results/two_qubit_core_certificate.json).
+
+The script was run with Python 3.12.14, ordinarily and with `-O`; both
+reproduced the same output. Acceptance uses explicit exceptions, with no
+floating-point decisions, random state sampling, optimization solver or
+large simulation. The explicit full n=2 radius `2^-20` additionally uses
+the separately supplied analytical core-gap and cross-block estimates;
+that conclusion cannot be inferred from the interval script alone.
+Whitespace, local links, LICENSE and historical-audit identities were
+checked. Unchanged construction diagnostics were not rerun.
+
 ## Original archive provenance
 
 The user-provided archive was Q1_Quantum_Interface_Dossier_v0_1.zip.
@@ -494,7 +525,7 @@ Its SHA-256 is
 `3f3538c0307f3a1131746d84410b21752b97aa0e87d8de1722392d3b114dd8ec`.
 The following three files were imported unchanged at bootstrap commit
 `eaf085a8cb299e6b297b11d2dc3c85e24f02779e`. These are historical hashes; the
-research note has subsequently been revised to version 0.18:
+research note has subsequently been revised to version 0.19:
 
 | File | SHA-256 |
 |---|---|
