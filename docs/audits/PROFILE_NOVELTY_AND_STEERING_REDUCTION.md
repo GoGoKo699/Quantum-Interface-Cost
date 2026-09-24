@@ -11,6 +11,15 @@ not an exhaustive originality certificate. The unrestricted rate has an
 exact formulation using an existing steering resource; its evaluation is
 still open.
 
+**24 September follow-up:** the
+[nonlinear-source audit](NONLINEAR_CHSH_SUBSUMPTION.md) proves that
+Zhu–Zhang–Ma's qubit negativity theorem, applied blockwise before
+convexification, implies the full mixed-state support and joint-resource
+minimum-cost hull. Section 3's comparison with the affine certificate
+remains correct; it is not a separation from all consequences of that
+paper. The explicit evaluation and equality analysis are the narrower
+calculations whose originality remains to be assessed.
+
 The report separates primary results from supplied deductions. It preserves
 one arbitrary unknown specimen, one delayed binary local query, unrestricted
 collective encoders, free finite classical records, worst-case quantum
@@ -191,6 +200,12 @@ certificates. It does not exclude stronger deductions retaining several
 correlation constraints jointly, other Bell inequalities, or other
 one-sided entanglement bounds. The qubit-only formulas in the same paper
 cannot be applied directly to arbitrary untrusted classical flags.
+
+The subsequent [nonlinear comparison](NONLINEAR_CHSH_SUBSUMPTION.md)
+does apply its negativity theorem to each qubit block separately, then
+uses flags. That stronger reduction supplies the sharp resource support
+and its hull. The direct-application caveat above is therefore not an
+obstruction to all deductions from that source.
 
 ## 4. Why linear-entropy optimization does not already give C
 

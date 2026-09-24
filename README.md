@@ -81,12 +81,17 @@ correlations. Its scalar boundary and exact-axis construction are prior
 ingredients; generic optimization from multiple witnesses is also prior.
 The comparison closes this source gap, not exhaustive originality.
 
-The latest source comparison proves that the full asymmetric formula is
-strictly stronger than the entire optimized weighted-CHSH formation-bound
-family inspected. It credits the earlier steering mixture mechanism and
-expresses the unrestricted problem as a precise local-query formation
-identity. See [the theorem-level comparison](docs/audits/PROFILE_NOVELTY_AND_STEERING_REDUCTION.md);
-this is a concrete distinction from those sources, not a complete novelty claim.
+The full asymmetric formula is strictly stronger than the optimized
+**affine** weighted-CHSH formation-bound family in
+[the earlier comparison](docs/audits/PROFILE_NOVELTY_AND_STEERING_REDUCTION.md).
+The [nonlinear-source follow-up](docs/audits/NONLINEAR_CHSH_SUBSUMPTION.md)
+now proves a stronger prior implication: Zhu–Zhang–Ma's qubit negativity
+theorem yields our full mixed-state support and, with standard block and
+convexity arguments, the entire joint-resource convex-hull characterization.
+The candidate contribution is narrowed to its explicit evaluation,
+optimizer/equality analysis and operational consequences. A new support
+inequality or separation from all consequences of that source is not claimed.
+The unrestricted problem still has its precise local-query formation identity.
 
 A further [tensor-formation and channel comparison](docs/audits/TENSOR_FORMATION_AND_CHANNEL_COMPARISON.md)
 proves an exact task separation: at a specified two-input contrast, one
@@ -138,7 +143,10 @@ state-resource theorem, not a memory converse. The same report proves
 that real encoders have the unrestricted complex rate with at most one
 extra retained qubit at finite size, while preserving arbitrary complex
 inputs and uniform error. Neither result closes equal-accuracy optimality
-or publication originality.
+or publication originality. The sharp all-price support and abstract hull
+are now explicitly credited as short consequences of prior nonlinear
+CHSH bounds; the phase/root and conditional-budget formulas are further
+supplied evaluations.
 
 ## Start here
 

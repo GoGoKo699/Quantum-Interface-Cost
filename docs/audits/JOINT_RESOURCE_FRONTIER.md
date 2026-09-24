@@ -19,6 +19,14 @@ This is a continuation of the historical
 The original audit and LICENSE are preserved. Independent checking below
 means separate derivations within this workspace, not external peer review.
 
+**24 September provenance correction:** the
+[nonlinear CHSH audit](NONLINEAR_CHSH_SUBSUMPTION.md) derives the
+mixed-state bound (9) directly from Zhu–Zhang–Ma Corollary 1. With
+standard block reduction and convexity it also gives (10)–(11) and
+Theorem 1's minimum-cost hull. Those are prior-derived corollaries;
+the explicit phase/root/budget and optimizer calculations below remain
+separate supplied evaluations. The formulas and proofs are unchanged.
+
 ## 1. Two different resource questions
 
 The interface still receives one arbitrary unknown n-qubit specimen, encodes
@@ -108,6 +116,10 @@ sum p f(c)>=f(sum p c)>=f(V(tau)); take the infimum. Ordinary negativity
 has not been replaced by convex-roof concurrence in this step.
 
 ### 2.2 Sharp mixed-state support bound
+
+The bound (9) is also a direct prior-theorem corollary; see the
+full parameter map in [the follow-up](NONLINEAR_CHSH_SUBSUMPTION.md#2-the-full-mixed-state-support-is-an-optimized-prior-corollary).
+The following is an alternative elementary proof.
 
 Take a>=b>=0, R=sqrt(a^2+b^2). On an irreducible Jordan block, local
 rotations give the weighted correlation operator the form
@@ -352,11 +364,14 @@ point. On a pure state V equals concurrence. On a mixed two-qubit state
 it can be strictly smaller. Therefore the pure-state convex roof of
 f(c)+lambda c is generally **not** E_F+lambda V. Simply changing the
 axis cost in a prior pure-state proof would not establish Theorem 1.
-The mixed-state Bell-projector estimate (9), combined with (7), supplies
-the needed lower bound. The flags then make that lower bound attainable.
+The mixed-state estimate (9), combined with (7), supplies the needed
+lower bound. It is already implied by a nonlinear prior CHSH theorem,
+as established in the follow-up. The flags make the bound attainable;
+the full sharp support and abstract hull are short prior corollaries.
 
 | Primary source and exact locator | What it supplies; what remains distinct |
 |---|---|
+| Zhu–Zhang–Ma, [2303.08407v2](https://arxiv.org/abs/2303.08407v2), Corollary 1 / Eq. (30), pp. 15–16 | The nonlinear two-qubit ordinary-negativity theorem implies the entire B_v in (9) by optimizing an auxiliary CHSH weight. Combined with (7), radial concavity and Jordan/flag reduction it gives every scalarized support and the hull in Theorem 1. This is stronger than the earlier comparison with its affine formation certificate; explicit phase/root/budget evaluation is further calculation. |
 | Han–Li–Wang–Zhu, [2111.02800v2](https://arxiv.org/abs/2111.02800v2), Theorems 1–2 p. 3; supplement Eqs. (S49)–(S50) p. 13, Eq. (S102) p. 19 | The pure weighted optimization underlying B_v and the central product-plus-Bell qutrit construction are prior. Their concurrence optimization gives w. Theorem 1 here needs a bound at fixed **ordinary negativity** for mixed blocks; the complete simultaneous E_F/V budget curve is the supplied evaluation, not a new guessing inequality. |
 | Verstraete–Audenaert–Dehaene–De Moor, [quant-ph/0108021v1](https://arxiv.org/abs/quant-ph/0108021v1), Theorem 1 p. 1; Eq. (14), Theorem 2 p. 3 | Their negativity is V in our convention. They prove V<=concurrence and its sharp two-qubit range. Their state p Bell+(1-p)\|01><01\| has concurrence p and V=sqrt((1-p)^2+p^2)-(1-p)<p for 0<p<1. This demonstrates the convex-roof distinction above. Their theorem fixes concurrence, not the two observed correlations or arbitrary flagged Alice dimension. |
 | Pusey, [1305.1767v1](https://arxiv.org/abs/1305.1767v1), Section IV/Figure 1 and accompanying text, p. 4 | The equal-weight negativity line and separable/Bell attainment are prior. That inspected statement does not evaluate the asymmetric, simultaneous formation/negativity budget. |

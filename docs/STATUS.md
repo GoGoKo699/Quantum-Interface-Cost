@@ -1,7 +1,7 @@
 # Status and claim ledger
 
-Updated: 2026-09-24. Stage: the user-supplied Tomassoli thesis is now read and the specified full-text comparison is completed. The finite paired-query transfer closes the core-score >13/4 gate through tail weight 1/29. Unrestricted optimality and publication originality remain open.
-Latest research base: `c2857e9b912ceae47d3067a62aa1f07f4acb1cf2`, the merge of PR #27.
+Updated: 2026-09-24. Stage: nonlinear weighted-CHSH prior bounds are shown to imply the full mixed-state support and joint-resource convex-hull characterization. The candidate novelty is narrowed to explicit evaluation, equality analysis and operational consequences. Unrestricted optimality and publication originality remain open.
+Latest research base: `ac0bf7cebd5a8a346d8b64371edab7b2c30ca271`, the merge of PR #28.
 
 Critical assessment base: `81bcfefb2b545742d513c4f51364a7f72972451e`, the
 merge of PR #11. The [publication and optimality assessment](audits/PUBLICATION_AND_OPTIMALITY_ASSESSMENT.md)
@@ -75,6 +75,7 @@ is asserted.
 | C equals steering entanglement of formation of the noisy Pauli assemblage | Exact reduction to Cope's established resource; supplied explicit evaluation, publication novelty unresolved | ENTROPY_TRADEOFF_PRIOR_AUDIT.md |
 | Symmetric one-site C(eta,eta) is the subset line | Also a short corollary of prior Zhu–Zhang–Ma CHSH entanglement bound and Cope Theorem 2, with flagged endpoint attainment | audits/PUBLICATION_AND_OPTIMALITY_ASSESSMENT.md Section 2 |
 | Full optimized Zhu–Zhang–Ma affine weighted-CHSH family yields only the radial formation bound | Derived and independently checked for all weights, trusted binary measurements, setting swaps and Bell-party orientations; strictly below C at every asymmetric point outside the disk | audits/PROFILE_NOVELTY_AND_STEERING_REDUCTION.md Section 3 |
+| Nonlinear Zhu–Zhang–Ma negativity theorem implies B_v and the all-price joint-resource support | Direct prior corollary, independently reconstructed: optimize the nonlinear qubit theorem before Jordan-block mixing. Also supplies the abstract disk-plus-axis hull; explicit phase/root/equality evaluation is separate | audits/NONLINEAR_CHSH_SUBSUMPTION.md |
 | R=inf_n A_n/n=lim_n A_n/n for local-query steering formation A_n | Derived and independently checked using the complete seed twirl and the established fixed-cap entropy theorem; no continuity of general E_FA assumed | audits/PROFILE_NOVELTY_AND_STEERING_REDUCTION.md Section 5 |
 | nR<=A_n<=B_n<=nC_eta, with B_n full tensor-product formation | Derived and independently checked; strict B_n<nC_eta would refute unrestricted subset optimality, while ordinary additivity alone is insufficient | audits/PROFILE_NOVELTY_AND_STEERING_REDUCTION.md Section 6 |
 | Exact n-moment formulation of B_n using at most n+1 seed orbits | Specific coordinates applying Vollbrecht–Werner symmetry reduction and standard finite convex geometry; arbitrary collective tuple POVMs and flags retained | audits/TENSOR_FORMATION_AND_CHANNEL_COMPARISON.md Section 2 |
@@ -660,10 +661,12 @@ a scalar entropy estimate, not the missing four-query score control.
 The [continuation pinned to PR #19](audits/JOINT_RESOURCE_FRONTIER.md)
 evaluates the full conditional E_F/ordinary-negativity frontier. Its
 mixed-state support bound is essential: the pure convex roof of
-f(c)+lambda c involves concurrence, not ordinary negativity. The exact
-all-dimensional frontier and phase calculation are the supplied deductions;
-the scalarization method, pure weighted geometry and flag constructions
-are established. This sharpens the candidate theorem, but a complete prior
+f(c)+lambda c involves concurrence, not ordinary negativity. The explicit
+frontier and phase calculation are supplied evaluations. The
+[nonlinear-source follow-up](audits/NONLINEAR_CHSH_SUBSUMPTION.md) now
+identifies the mixed-state support and full abstract convex-hull
+characterization as short prior corollaries, including standard block
+reduction and flags. This narrows the candidate novelty; a complete prior
 subsumption audit is still needed. Both the
 [Tomassoli full-text comparison](audits/TOMASSOLI_FULL_TEXT_COMPARISON.md)
 and the [2012 Nakahira–Usuda comparison](audits/BAYES_RANK_PRIOR_COMPARISON.md)
