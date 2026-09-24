@@ -1,6 +1,6 @@
 # Q1 — Delayed local readout through a bounded quantum interface
 
-**Version:** 0.28, 2026-09-24
+**Version:** 0.29, 2026-09-24
 
 **Project:** Falling / Q1  
 **Status:** Baseline proofs and seed reduction independently checked within the audit workspace. The full product-diagonal profile rate has a constructive optimizer and evaluates an established steering entanglement measure. It exceeds the inspected affine weighted-CHSH formation bounds, but the nonlinear-source follow-up now derives its full mixed-state support and joint-resource convex-hull characterization from prior inequalities. The candidate contribution is the explicit evaluation, equality analysis and operational consequences. The unrestricted rate equals regularized formation of a local-query assemblage, whose distinction from full tensor-product assemblages is explicit. The complete two-qubit entropy inequality, general common-accuracy rate evaluation and publication novelty remain unresolved. This is a research dossier, not external peer review or a claim of a new framework.
@@ -15,6 +15,13 @@ proves the full retention accuracy region for pairwise commuting or
 anticommuting reflection readouts at every n,q, with an unrestricted encoder.
 It covers all nonnegative query weights and separate accuracy profiles.
 The explicit readout hypothesis cannot be assumed for arbitrary optimized seeds.
+
+The [spin-flip purity theorem](docs/audits/SPIN_FLIP_PURITY_BOUND.md)
+subsequently proves `sum_j f_j(rho)^2<=5-4 Tr(rho^2)` for invariant
+three-qubit seeds of rank at most four, sharply at every allowed purity.
+It gives the exact score `2sqrt(6)` for readouts odd under a common
+square-minus-one antiunitary. That continuous class does not exhaust
+general balanced readouts.
 
 ## 1. Origin, scope, and claim ledger
 
@@ -32,6 +39,8 @@ The general compression problem below is already present in the dimensional meas
 | Exact complete local X/Z accuracy region with one retained qubit | Derived and independently checked: the sum of established local incompatibility weights is at most one; explicit matching allocation. |
 | Equal-accuracy optimum for pairwise commuting/anticommuting reflection readouts at all n,q | Derived and independently checked from prior graph-Clifford dimension algebra and an elementary matching argument; unrestricted encoders, explicit decoder restriction. |
 | Full accuracy region for the same readout class at all n,q | Derived and independently checked: threshold matching and finite operator levels give sum_i w(x_i,z_i)<=q, with sharp support for every nonnegative query weighting. |
+| Sharp three-qubit spin-flip purity bound at rank at most four | Derived and independently checked: sum of six squared root fidelities is at most 5-4 Tr(rho^2), with equality at every allowed purity; all nonuniform invariant seeds are covered. |
+| Common Kramers-odd ququart readout class has exact uniform score 2sqrt(6) | Derived and independently checked via a symmetry-fixed extremal eigenvector; arbitrary original seeds allowed, but not every balanced readout family shares this symmetry. |
 | Entropy bound for product-diagonal Gram matrices | Derived and independently checked, allowing correlated spectra and arbitrary local bases; does not restrict unrestricted encoders. |
 | Entropic finite-error lower bound | Direct application of Berta et al. [4], Fano, and conditional-entropy inequalities. |
 | Stronger logarithmic-Sobolev converse throughout the nonclassical region | Derived and independently checked from Beigi [14] and the root-fidelity inequality [15]; unrestricted encoder bound. |

@@ -762,3 +762,12 @@ methods, including Xu et al. 2511.13531v1, Section IX.1 Eq. (37).
 The supplied threshold ordering and finite operator levels evaluate the
 original-pair allocation bound. Its broader priority remains unresolved;
 the theorem explicitly restricts the readout algebra, not the encoder.
+
+## Spin-flip purity bound
+
+The [source comparison](audits/SPIN_FLIP_PURITY_BOUND.md), Section 7,
+credits Uhlmann's published PRA 62, 032307 (2000) for the exact
+three-qubit conjugation family and individual fidelity roofs. The
+corrected version was checked. The supplied joint six-score purity
+inequality and its readout consequence are separate deductions;
+exhaustive originality and publication significance remain unresolved.
