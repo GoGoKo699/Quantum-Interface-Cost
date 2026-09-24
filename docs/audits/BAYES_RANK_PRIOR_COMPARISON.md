@@ -12,6 +12,11 @@ specified source gap, not the exhaustive originality question. The
 Tomassoli full-text comparison remains open and is a useful human-access
 request.
 
+**Subsequent full-text follow-up, 24 September 2026:** the user supplied
+the requested PDF. The [completed thesis comparison](TOMASSOLI_FULL_TEXT_COMPARISON.md)
+closes that request and credits the overlapping calibrated boundary and
+axis family. The access status below is historical to this report's base.
+
 ## 1. Primary theorem and assumptions
 
 Kenji Nakahira and Tsuyoshi Sasaki Usuda, *Minimum-Bayes-cost
@@ -109,6 +114,10 @@ fails. A general full-rank correlated seed need not be a symmetric
 ensemble, so Section IV cannot be assumed applicable.
 
 ## 3. The remaining human-access request
+
+**Resolved by the user's upload:** see the full-text follow-up above.
+The following records the request that led to that source becoming
+available, rather than a current request to upload it again.
 
 Giacomo Tomassoli, *Certificatori di Entanglement per due qubit con due
 correlatori*, Università degli Studi di Padova, bachelor's thesis,

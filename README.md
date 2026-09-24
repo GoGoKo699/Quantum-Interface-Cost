@@ -73,8 +73,13 @@ and finite tangent bounds without singular compression inverses.
 The [2012 Bayes-rank source comparison](docs/audits/BAYES_RANK_PRIOR_COMPARISON.md)
 is now complete: that theorem's entire weighted certificate gives rank
 two under the natural reduction, whereas our joint-decoder result gives
-rank one. This closes one specific comparison, not publication originality;
-the identified Tomassoli thesis remains unread.
+rank one. This closes one specific comparison, not publication originality.
+The user-supplied [Tomassoli thesis is now read](docs/audits/TOMASSOLI_FULL_TEXT_COMPARISON.md).
+Its fixed orthogonal two-qubit witness has a different optimum from our
+optimized-readout profile, even after extending it to two independent
+correlations. Its scalar boundary and exact-axis construction are prior
+ingredients; generic optimization from multiple witnesses is also prior.
+The comparison closes this source gap, not exhaustive originality.
 
 The latest source comparison proves that the full asymmetric formula is
 strictly stronger than the entire optimized weighted-CHSH formation-bound
@@ -112,7 +117,7 @@ It also identifies Han et al.'s earlier weighted guessing theorem and
 product-plus-Bell qutrit construction. The full entropy profile strictly
 exceeds the scalar conversion of their complete concurrence bound in that
 interior. Unrestricted equal-accuracy optimality and publication originality
-remain open, including one specifically identified unread full-text source.
+remain open. The previously identified thesis comparison is now completed.
 
 The [resource-optimum and joint-decoder audit](docs/audits/RESOURCE_OPTIMA_AND_JOINT_DECODERS.md)
 adds a sharper distinction: the full minimum ordinary negativity is w/2,

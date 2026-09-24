@@ -1,7 +1,7 @@
 # Status and claim ledger
 
-Updated: 2026-09-24. Stage: finite paired-query transfer closes the core-score >13/4 gate through tail weight 1/29; one prior rank-theorem comparison is completed. Unrestricted optimality and publication originality remain open.
-Latest research base: `3964f9b97766463a2aff65233560c9dcdf60c297`, the merge of PR #26.
+Updated: 2026-09-24. Stage: the user-supplied Tomassoli thesis is now read and the specified full-text comparison is completed. The finite paired-query transfer closes the core-score >13/4 gate through tail weight 1/29. Unrestricted optimality and publication originality remain open.
+Latest research base: `c2857e9b912ceae47d3067a62aa1f07f4acb1cf2`, the merge of PR #27.
 
 Critical assessment base: `81bcfefb2b545742d513c4f51364a7f72972451e`, the
 merge of PR #11. The [publication and optimality assessment](audits/PUBLICATION_AND_OPTIMALITY_ASSESSMENT.md)
@@ -103,6 +103,7 @@ is asserted.
 | Entropy bound for top-two core score >13/4 and tail weight <=1/29 | Derived and independently checked; finite paired scalar-query gain plus imbalanced SLD certificate, 5,324 exact leaves. Generic lower-score cores remain unresolved | audits/CURVED_CORE_TRANSFER.md |
 | Squared fixed-core/tail transfer sum is concave in squared tail parameter | Derived and independently checked for arbitrary complex 2x2 blocks; finite tangents at positive parameter, sharp product-support envelope. No uniform arbitrary-state envelope | audits/FINITE_TAIL_STRUCTURE.md |
 | Nakahira–Usuda 2012 full weighted rank theorem under the natural Hamming reduction | Completed scoped comparison: best certificate has rank two, so it does not directly subsume the supplied rank-one projectivity theorem. Other reductions and exhaustive originality remain open | audits/BAYES_RANK_PRIOR_COMPARISON.md |
+| Tomassoli 2024/25 two-correlator thesis | Full text read; scalar calibrated concurrence boundary and axis family are prior. Exact calibrated lift G differs from optimized-readout C, with a rational separator. Ordinary-negativity normalization repaired; specified source gap closed, exhaustive novelty open | audits/TOMASSOLI_FULL_TEXT_COMPARISON.md |
 | Quantitative stability of one-qubit maximizing seeds | Derived and independently checked; dimension-independent normalized-seed bounds and specified branch-weighted consequences | ONE_QUBIT_STABILITY.md |
 | Full noisy-X/Z average-rank profile D_M=W=w | Exact specialization of Cope–Uola SDPs; the already proved C-versus-w phase boundary supplies its full entropy comparison | audits/ROOF_PROVENANCE_AND_JOINT_SCORE.md Section 3 |
 | Collective readout can improve joint score per copy of a product seed | Incorrect: product additivity follows from Wallden–Dunjko–Andersson Theorem 3; an explicit f_2-j_2=(sqrt(2)-1)/8 gap persists under powers | audits/ROOF_PROVENANCE_AND_JOINT_SCORE.md Section 4 |
@@ -450,8 +451,11 @@ unlike the original quantum memory cap. The raw qubit result is a direct
 specialization of Verstraete–Wolf, and Zhu–Zhang–Ma already exhibit the
 qualitative higher-dimension flag advantage. The complete two-parameter
 evaluation remains the candidate contribution, not either prior ingredient.
-A close 2024/25 Padua thesis by Tomassoli is identified but its full text
-remains inaccessible; no theorem-level exclusion of it is claimed.
+The user supplied the close 2024/25 Padua thesis by Tomassoli. Its
+[full-text comparison](audits/TOMASSOLI_FULL_TEXT_COMPARISON.md) now
+distinguishes its calibrated two-qubit problem from C, even after the
+strongest two-parameter/weighted extension. Its scalar boundary and
+axis family are prior; no exhaustive originality conclusion follows.
 
 The companion [proof-method note](audits/ENTROPY_PROOF_RELAXATIONS.md)
 supplies two exact obstructions to global approaches: a total Holevo budget
@@ -660,9 +664,10 @@ f(c)+lambda c involves concurrence, not ordinary negativity. The exact
 all-dimensional frontier and phase calculation are the supplied deductions;
 the scalarization method, pure weighted geometry and flag constructions
 are established. This sharpens the candidate theorem, but a complete prior
-subsumption audit is still needed. The Tomassoli full-text gap remains,
-while the [2012 Nakahira–Usuda comparison](audits/BAYES_RANK_PRIOR_COMPARISON.md)
-is now completed: its whole weighted rank-certificate family gives only
+subsumption audit is still needed. Both the
+[Tomassoli full-text comparison](audits/TOMASSOLI_FULL_TEXT_COMPARISON.md)
+and the [2012 Nakahira–Usuda comparison](audits/BAYES_RANK_PRIOR_COMPARISON.md)
+are now completed. The latter's whole weighted rank-certificate family gives only
 rank two for the natural Hamming ensemble. No all-state entropy proof or
 admissible equal-accuracy violating seed was obtained in this continuation.
 

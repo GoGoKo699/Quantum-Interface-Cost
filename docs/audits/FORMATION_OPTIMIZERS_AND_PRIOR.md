@@ -388,6 +388,12 @@ a primal certificate within the original quantum state/POVM constraints.
 
 ## 4. Source gap and unrestricted proof status
 
+**Full-text follow-up, 24 September 2026:** the user has now supplied
+this PDF. The [completed comparison](TOMASSOLI_FULL_TEXT_COMPARISON.md)
+distinguishes its calibrated scalar problem and credits the overlapping
+axis family. The access account below records this report's original
+research base; it is no longer an outstanding source request.
+
 The public OAI-PMH metadata for Tomassoli's Padua thesis was retrieved
 successfully using the repository's advertised ORE/DIDL formats:
 [public record](https://thesis.unipd.it/oai/request?verb=GetRecord&identifier=oai:thesis.unipd.it:20.500.12608/84769&metadataPrefix=ore).
