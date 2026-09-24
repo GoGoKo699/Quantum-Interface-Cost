@@ -753,3 +753,12 @@ first. The candidate contribution is the explicit phase/root/budget
 and equality evaluation with its operational consequences; its novelty
 and publication significance remain open. Neither reduction sums costs
 across trusted sites sharing one memory register.
+
+## Weighted allocation within the decoder algebra
+
+The [all-budget weighted proof](audits/WEIGHTED_DECODER_ALLOCATION.md),
+Section 6, credits prior graph-Clifford dimension and weighted graph-norm
+methods, including Xu et al. 2511.13531v1, Section IX.1 Eq. (37).
+The supplied threshold ordering and finite operator levels evaluate the
+original-pair allocation bound. Its broader priority remains unresolved;
+the theorem explicitly restricts the readout algebra, not the encoder.

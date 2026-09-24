@@ -1,6 +1,6 @@
 # Q1 — Delayed local readout through a bounded quantum interface
 
-**Version:** 0.27, 2026-09-24
+**Version:** 0.28, 2026-09-24
 
 **Project:** Falling / Q1  
 **Status:** Baseline proofs and seed reduction independently checked within the audit workspace. The full product-diagonal profile rate has a constructive optimizer and evaluates an established steering entanglement measure. It exceeds the inspected affine weighted-CHSH formation bounds, but the nonlinear-source follow-up now derives its full mixed-state support and joint-resource convex-hull characterization from prior inequalities. The candidate contribution is the explicit evaluation, equality analysis and operational consequences. The unrestricted rate equals regularized formation of a local-query assemblage, whose distinction from full tensor-product assemblages is explicit. The complete two-qubit entropy inequality, general common-accuracy rate evaluation and publication novelty remain unresolved. This is a research dossier, not external peer review or a claim of a new framework.
@@ -10,11 +10,11 @@ allocation theorem and a finite collective advantage for unequal accuracies,
 with self-contained proofs and primary-source attribution. This presentation
 does not change the theorem ledger or assert publication originality.
 
-The [decoder-algebra theorem](docs/audits/DECODER_ALGEBRA_AND_THREE_INPUT.md)
-subsequently proves exact retention optimality for pairwise commuting or
-anticommuting reflection readouts at all n,q, with an unrestricted encoder.
-For `q=n-1` it also covers every separate accuracy profile. The explicit
-readout hypothesis cannot be assumed for arbitrary optimized seeds.
+The [weighted decoder theorem](docs/audits/WEIGHTED_DECODER_ALLOCATION.md)
+proves the full retention accuracy region for pairwise commuting or
+anticommuting reflection readouts at every n,q, with an unrestricted encoder.
+It covers all nonnegative query weights and separate accuracy profiles.
+The explicit readout hypothesis cannot be assumed for arbitrary optimized seeds.
 
 ## 1. Origin, scope, and claim ledger
 
@@ -31,7 +31,7 @@ The general compression problem below is already present in the dimensional meas
 | Exact optimum and maximizing seeds with one retained qubit | Derived and independently checked from Cheng–Hall monogamy [11]; see Section 8 and the full proof. |
 | Exact complete local X/Z accuracy region with one retained qubit | Derived and independently checked: the sum of established local incompatibility weights is at most one; explicit matching allocation. |
 | Equal-accuracy optimum for pairwise commuting/anticommuting reflection readouts at all n,q | Derived and independently checked from prior graph-Clifford dimension algebra and an elementary matching argument; unrestricted encoders, explicit decoder restriction. |
-| Full accuracy region for the same readout class when q=n-1 | Derived and independently checked: weighted matching converse gives sum_i w(x_i,z_i)<=n-1. No all-q weighted extension is asserted. |
+| Full accuracy region for the same readout class at all n,q | Derived and independently checked: threshold matching and finite operator levels give sum_i w(x_i,z_i)<=q, with sharp support for every nonnegative query weighting. |
 | Entropy bound for product-diagonal Gram matrices | Derived and independently checked, allowing correlated spectra and arbitrary local bases; does not restrict unrestricted encoders. |
 | Entropic finite-error lower bound | Direct application of Berta et al. [4], Fano, and conditional-entropy inequalities. |
 | Stronger logarithmic-Sobolev converse throughout the nonclassical region | Derived and independently checked from Beigi [14] and the root-fidelity inequality [15]; unrestricted encoder bound. |

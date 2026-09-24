@@ -9,6 +9,10 @@ readout reflections pairwise commute or anticommute. The encoder is
 unrestricted. This includes Pauli readouts in any common memory basis.
 The proof was independently reconstructed within this workspace.
 
+The subsequent [weighted theorem](WEIGHTED_DECODER_ALLOCATION.md) extends
+Section 4 to every memory budget, giving the entire accuracy region for
+the same readout class. The original proof below is retained.
+
 The unrestricted three-input, two-qubit-memory problem is still open.
 Its unresolved part is exactly ten compact continuous optimizations over
 four-dimensional readout reflections. A bounded numerical investigation
@@ -204,9 +208,9 @@ w(x,z)=\left[x+z-1-\sqrt{2(1-x)(1-z)}\right]_+.
 \tag{7}
 $$
 
-This full-profile conclusion is proved here for `q=n-1`; the all-q
-theorem in Section 1 concerns the equal-weight score. No general
-all-q weighted extension is asserted.
+This section proves the full-profile conclusion for `q=n-1`. The later
+[finite-level proof](WEIGHTED_DECODER_ALLOCATION.md) extends it to every
+q under the identical readout hypothesis.
 
 ## 5. Why the readout hypothesis is substantive
 
