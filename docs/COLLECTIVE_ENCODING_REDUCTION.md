@@ -129,6 +129,13 @@ when q=1 and classifies all maximizing seeds. The
 Neither statement restricts the encoders in the unresolved general problem.
 The smallest remaining block is n=3,q=2, with threshold $g(L)=4+\sqrt2$.
 
+The [decoder-algebra theorem](audits/DECODER_ALGEBRA_AND_THREE_INPUT.md)
+proves the subset bound for every n,q when an optimal reflection decoder
+family pairwise commutes or anticommutes. This is an explicit sufficient
+condition on readouts, not a restriction inserted into the unrestricted
+maximum above. It also reduces the unresolved three-input spectral
+optimization exactly to ten continuous nonscalar reflection sectors.
+
 The [logarithmic-Sobolev converse](STRONG_ENTROPIC_CONVERSE.md) supplies a
 stronger global memory lower bound without evaluating this optimization.
 The [further boundary results](ENTROPY_INEQUALITY_BOUNDARIES.md) solve the

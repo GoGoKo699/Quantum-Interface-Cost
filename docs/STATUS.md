@@ -1,7 +1,7 @@
 # Status and claim ledger
 
-Updated: 2026-09-24. Stage: a [short core argument](CORE_ARGUMENT.md) now presents the exact one-qubit allocation theorem and a finite collective advantage for unequal accuracies, with proofs and explicit prior attribution. The nonlinear weighted-CHSH subsumption remains in force: full mixed-state support and the abstract joint-resource hull follow from prior inequalities. Unrestricted equal-accuracy optimality and publication originality remain open.
-Latest research base: `e197699d87171635028d1639e025c8e5759e5c68`, the merge of PR #29.
+Updated: 2026-09-24. Stage: the [decoder-algebra continuation](audits/DECODER_ALGEBRA_AND_THREE_INPUT.md) proves exact retention optimality at all n,q for pairwise commuting/anticommuting reflection readouts, with unrestricted encoders; it gives the full accuracy region for that class at q=n-1. The unrestricted three-input case reduces to ten continuous decoder sectors; bounded searches found no violating seed. Unrestricted equal-accuracy optimality and publication originality remain open. The prior nonlinear-CHSH subsumption remains in force.
+Latest research base: `f46ed69785ace49d6f3f52645fefbb9dbdc99f1f`, the merge of PR #30.
 
 Critical assessment base: `81bcfefb2b545742d513c4f51364a7f72972451e`, the
 merge of PR #11. The [publication and optimality assessment](audits/PUBLICATION_AND_OPTIMALITY_ASSESSMENT.md)
@@ -36,6 +36,9 @@ is asserted.
 | Seed twirl produces a valid uniform interface | Analytical proof checked; 10 finite construction diagnostics | results/seed_twirl.json |
 | Gamma(n,2)=2+sqrt(2)(n-1), for every n | Derived and independently checked from Cheng–Hall monogamy; subset strategy optimal with one retained qubit | ONE_QUBIT_OPTIMALITY.md |
 | Complete 2n-contrast region for worst-case dimension two | Derived and independently checked; sum of local incompatibility weights <=1, with matching weighted support function and implementation | ONE_QUBIT_ALLOCATION_REGION.md |
+| Exact equal-accuracy retention bound at every n,q with pairwise commuting/anticommuting reflection readouts | Derived and independently checked from prior graph-Clifford rank and elementary matching; arbitrary encoders, explicit decoder hypothesis | audits/DECODER_ALGEBRA_AND_THREE_INPUT.md |
+| Full region sum_i w(x_i,z_i)<=n-1 under that readout hypothesis at q=n-1 | Derived and independently checked; weighted original-pair/alternating-cycle proof and matching retention implementation | audits/DECODER_ALGEBRA_AND_THREE_INPUT.md Section 4 |
+| Unrestricted Gamma(3,4) is the maximum of the subset value and ten nonscalar reflection-sector optima | Exact discrete reduction; the continuous optimizations remain unresolved. 248 bounded numerical starts found no violation | audits/DECODER_ALGEBRA_AND_THREE_INPUT.md; results/three_input_decoders.json |
 | Local incompatibility weight and orthogonal-qubit compatibility disk | Established resource measure and joint-measurability criterion; exact noisy-pair value derived geometrically | ONE_QUBIT_ALLOCATION_REGION.md Section 7 |
 | All maximizing one-qubit seeds retain one site and project the rest onto product bisectors, up to output unitaries | Derived equality characterization; independently checked | ONE_QUBIT_OPTIMALITY.md Section 5 |
 | g(L)<=sqrt(2)n+(2-sqrt(2))S(L^dagger L) for product-diagonal Gram matrices | Derived and independently checked; arbitrary correlated spectra and local bases allowed; restricted-family result | COMMUTING_SEED_BOUND.md |
