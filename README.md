@@ -17,8 +17,14 @@ now proves the full retention accuracy region at every block size and memory bud
 when memory readout reflections pairwise commute or anticommute, with
 arbitrary collective encoders. A threshold matching argument and finite
 weight decomposition give every weighted support, including unequal
-accuracies. The unrestricted three-input case still has ten continuous
-decoder sectors and remains open.
+accuracies. The unrestricted three-input case remains open.
+
+A [Jordan-block converse](docs/audits/JORDAN_BLOCK_CONVERSE.md) now
+excludes every three-input seed of rank at most three from beating the
+two-retained-qubit benchmark, without a symmetry or spectrum assumption.
+The proof also closes four of the ten nonscalar ququart readout patterns.
+Any improvement in this block requires a nonflat rank-four seed, with
+six continuous signature patterns still unresolved.
 
 A [sharp spin-flip purity bound](docs/audits/SPIN_FLIP_PURITY_BOUND.md)
 now excludes every invariant three-qubit seed of rank at most four,

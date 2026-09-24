@@ -49,6 +49,7 @@ python tools/certify_curved_core.py
 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python tools/check_three_input_decoders.py --output results/three-input-rerun.json
 python tools/check_spin_flip_purity.py --output results/spin-flip-purity-rerun.json
 python tools/check_antiunitary_readouts.py --output results/antiunitary-readouts-rerun.json
+python tools/check_jordan_block_converse.py --output results/jordan-block-converse-rerun.json
 ```
 
 The bootstrap environment was Python 3.13.5 and NumPy 2.3.5. The audit
@@ -868,3 +869,46 @@ not acceptance evidence. Unchanged numerical certificates were not rerun.
 Local links, whitespace, LICENSE and the original historical audit blob
 were checked. No third-party papers or private exploratory files are
 committed. Publication priority and unrestricted optimality remain open.
+
+## Jordan-block converse
+
+The [report](audits/JORDAN_BLOCK_CONVERSE.md) is pinned to main
+`012bafa1895a66e22eac676ba1702a2bde531881`. Independent internal
+reconstructions checked the local spectral majorant, Bell eigenvector,
+arbitrary complex memory planes, weighted Gram estimate, norm symmetry,
+zero-weight cases, full trace-norm and normalized-Kraus transfer, and
+four-excluded/six-remaining signature count. A separate review of the
+actual draft found no proof gap. The two primary PDFs were checked at
+the version and equation/page locators in the report. Internal review
+does not establish external peer review or publication priority.
+
+`tools/check_jordan_block_converse.py` records 84 weighted constructions
+in `results/jordan_block_converse.json`: eight dense complex qutrit
+families, four qutrit controls with scalar readouts, and sixteen dense
+ququart families, four for each excluded signature pattern. Each uses
+uniform, unequal, and zero-containing weight vectors. The checks cover
+reflection identities, the unique possible local excess direction,
+its Bell marginal, the local positive-semidefinite majorant, overlap at
+most one half, the weighted projector sum, and the full Hamiltonian norm.
+
+A separate exact negative control gives the mixed-rank projector norm
+`(5+sqrt(13))/4=2.1513878188659974`, refuting the naive projector extension.
+Its actual interface Hamiltonian has norm `4.739640107280844`, below the
+independently proved upper bound `2+2sqrt(2)` and below the benchmark.
+It is not an interface counterexample.
+
+The run passed with Python 3.12.14, NumPy 2.3.5, random seed 2026092405,
+tolerance 1e-10, and Hamiltonian dimension at most 32. Maximum Bell-marginal
+error: 8.98415317816539e-15. Maximum local-majorant violation:
+1.4571813044708227e-15. Maximum inter-reference projector overlap:
+0.5000000000000007. Source SHA-256:
+`fd1dae777b365f9f626ea5d1e5f1e8c3dbaa88e2d2007bb6671e3639a8f28c69`.
+The parent workspace independently reran the script and reproduced the
+JSON byte-for-byte. No optimizer or broad numerical search is used.
+
+The proof covers all qutrit binary POVMs by convexity; the finite checks
+use reflection constructions and do not prove that extension. Unchanged
+certificates were not rerun. Local links, whitespace, LICENSE and the
+original historical audit blob were checked. No third-party papers or
+private exploratory files are committed. The general balanced quadratic
+conjecture, unrestricted optimality, and publication originality remain open.
