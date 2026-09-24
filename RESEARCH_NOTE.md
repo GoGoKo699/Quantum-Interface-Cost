@@ -1,6 +1,6 @@
 # Q1 — Delayed local readout through a bounded quantum interface
 
-**Version:** 0.30, 2026-09-24
+**Version:** 0.31, 2026-09-24
 
 **Project:** Falling / Q1  
 **Status:** Baseline proofs and seed reduction independently checked within the audit workspace. The full product-diagonal profile rate has a constructive optimizer and evaluates an established steering entanglement measure. It exceeds the inspected affine weighted-CHSH formation bounds, but the nonlinear-source follow-up now derives its full mixed-state support and joint-resource convex-hull characterization from prior inequalities. The candidate contribution is the explicit evaluation, equality analysis and operational consequences. The unrestricted rate equals regularized formation of a local-query assemblage, whose distinction from full tensor-product assemblages is explicit. The complete two-qubit entropy inequality, general common-accuracy rate evaluation and publication novelty remain unresolved. This is a research dossier, not external peer review or a claim of a new framework.
@@ -30,6 +30,14 @@ even with nonscalar square and nonprojective decoding. The square-plus-one
 case reduces to two commuting qubit algebras. A common symmetry is still
 an explicit restriction, not a property of every balanced readout family.
 
+The [Jordan-block converse](docs/audits/JORDAN_BLOCK_CONVERSE.md) proves
+`Gamma(3,3)<=4+sqrt(2)` for all complex rank-at-most-three seeds,
+including arbitrary nonuniform spectra and full trace-norm scores.
+It also excludes four of the ten nonscalar ququart signature patterns.
+A strict improvement at `(n,q)=(3,2)` requires a nonflat rank-four seed
+and a readout pair with two noncommuting Jordan blocks. Six signature
+patterns, the entropy bound, and unrestricted rate optimality remain open.
+
 ## 1. Origin, scope, and claim ledger
 
 Page 24 of the user-supplied *【马兆】坠落.pdf* describes a fictional progression from a quantum solver to a quantum-resident workflow because repeated classical–quantum interfaces become costly. The present model is our proposed scientific extraction; its assumptions and conclusions are not claims made by the fiction.
@@ -49,6 +57,8 @@ The general compression problem below is already present in the dimensional meas
 | Sharp three-qubit spin-flip purity bound at rank at most four | Derived and independently checked: sum of six squared root fidelities is at most 5-4 Tr(rho^2), with equality at every allowed purity; all nonuniform invariant seeds are covered. |
 | Common Kramers-odd ququart readout class has exact uniform score 2sqrt(6) | Derived and independently checked via a symmetry-fixed extremal eigenvector; arbitrary original seeds allowed, but not every balanced readout family shares this symmetry. |
 | Every common antiunitary-odd ququart binary-readout class obeys 2||w||_2, with classwide uniform maximum 2sqrt(6) | Derived and independently checked: +I reduces to two commuting Pauli algebras and qubit monogamy; nonscalar squares reduce to blocks of dimension at most two. General Hermitian contractions are included; arbitrary balanced readouts remain open. |
+| Every three-input seed of rank at most three obeys Gamma(3,3)<=4+sqrt(2) | Derived and independently checked for arbitrary spectra and full trace norms, with no antiunitary condition; the complete weighted two-site-retention support is an upper bound, not an evaluated qutrit optimum. |
+| Four of ten nonscalar ququart signature patterns obey the retention benchmark | Derived and independently checked from one noncommuting Jordan block per pair and a prior Bell-projector overlap method; six patterns remain unresolved. |
 | Entropy bound for product-diagonal Gram matrices | Derived and independently checked, allowing correlated spectra and arbitrary local bases; does not restrict unrestricted encoders. |
 | Entropic finite-error lower bound | Direct application of Berta et al. [4], Fano, and conditional-entropy inequalities. |
 | Stronger logarithmic-Sobolev converse throughout the nonclassical region | Derived and independently checked from Beigi [14] and the root-fidelity inequality [15]; unrestricted encoder bound. |

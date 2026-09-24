@@ -1,0 +1,1581 @@
+{
+  "environment": {
+    "numpy": "2.3.5",
+    "python": "3.12.14"
+  },
+  "families": [
+    {
+      "memory_dimension": 3,
+      "name": "qutrit_dense_0",
+      "negative_ranks": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        2
+      ],
+      "reflection_error": 9.40124030134525e-16,
+      "weights": {
+        "unequal": {
+          "local_excess_ranks": [
+            1,
+            1,
+            1
+          ],
+          "max_local_majorant_violation": 1.19991486488593e-15,
+          "max_projector_overlap": 0.5000000000000002,
+          "max_top_marginal_error": 4.470916016921884e-16,
+          "norm_minus_gram_bound": -1.2328846588536613,
+          "operator_norm": 3.8612351310442468,
+          "weighted_projector_norm": 0.9813061326732174
+        },
+        "uniform": {
+          "local_excess_ranks": [
+            1,
+            1,
+            1
+          ],
+          "max_local_majorant_violation": 4.3889764072050485e-16,
+          "max_projector_overlap": 0.5000000000000002,
+          "max_top_marginal_error": 5.930779435801824e-16,
+          "norm_minus_gram_bound": -1.1984623613183931,
+          "operator_norm": 4.215751201054703,
+          "weighted_projector_norm": 1.1657665618368538
+        },
+        "with_zero": {
+          "local_excess_ranks": [
+            0,
+            1,
+            0
+          ],
+          "max_local_majorant_violation": 5.3300187381246976e-17,
+          "max_projector_overlap": 0.0,
+          "max_top_marginal_error": 1.1590632145971082e-15,
+          "norm_minus_gram_bound": -0.1689383207326438,
+          "operator_norm": 2.0310616792673564,
+          "weighted_projector_norm": 0.24559962546824687
+        }
+      }
+    },
+    {
+      "memory_dimension": 3,
+      "name": "qutrit_dense_1",
+      "negative_ranks": [
+        1,
+        1,
+        2,
+        1,
+        2,
+        2
+      ],
+      "reflection_error": 1.058128319431736e-15,
+      "weights": {
+        "unequal": {
+          "local_excess_ranks": [
+            1,
+            1,
+            1
+          ],
+          "max_local_majorant_violation": 5.202612016970847e-16,
+          "max_projector_overlap": 0.4999999999999999,
+          "max_top_marginal_error": 1.0843263675698825e-15,
+          "norm_minus_gram_bound": -1.0736702231391613,
+          "operator_norm": 4.020449566758747,
+          "weighted_projector_norm": 0.9814642633179366
+        },
+        "uniform": {
+          "local_excess_ranks": [
+            1,
+            1,
+            1
+          ],
+          "max_local_majorant_violation": 3.989308432261682e-17,
+          "max_projector_overlap": 0.5000000000000001,
+          "max_top_marginal_error": 5.648207503320642e-16,
+          "norm_minus_gram_bound": -1.3857519428247578,
+          "operator_norm": 4.028461619548338,
+          "weighted_projector_norm": 1.1637690259720797
+        },
+        "with_zero": {
+          "local_excess_ranks": [
+            0,
+            1,
+            0
+          ],
+          "max_local_majorant_violation": 4.608600920844728e-16,
+          "max_projector_overlap": 0.0,
+          "max_top_marginal_error": 4.033158658385204e-16,
+          "norm_minus_gram_bound": -0.23901941837212992,
+          "operator_norm": 1.9609805816278703,
+          "weighted_projector_norm": 0.24559962546824685
+        }
+      }
+    },
+    {
+      "memory_dimension": 3,
+      "name": "qutrit_dense_2",
+      "negative_ranks": [
+        1,
+        1,
+        1,
+        2,
+        1,
+        1
+      ],
+      "reflection_error": 1.3496636370036318e-15,
+      "weights": {
+        "unequal": {
+          "local_excess_ranks": [
+            1,
+            1,
+            1
+          ],
+          "max_local_majorant_violation": 1.4949777215366767e-16,
+          "max_projector_overlap": 0.5000000000000004,
+          "max_top_marginal_error": 7.937266558604945e-16,
+          "norm_minus_gram_bound": -0.8415858611522671,
+          "operator_norm": 4.252533928745641,
+          "weighted_projector_norm": 0.9823301085726576
+        },
+        "uniform": {
+          "local_excess_ranks": [
+            1,
+            1,
+            1
+          ],
+          "max_local_majorant_violation": 6.39868109023973e-16,
+          "max_projector_overlap": 0.5000000000000002,
+          "max_top_marginal_error": 6.433619482964917e-16,
+          "norm_minus_gram_bound": -1.1815304014121404,
+          "operator_norm": 4.232683160960955,
+          "weighted_projector_norm": 1.1662025124172601
+        },
+        "with_zero": {
+          "local_excess_ranks": [
+            0,
+            1,
+            0
+          ],
+          "max_local_majorant_violation": 7.297928196729465e-16,
+          "max_projector_overlap": 0.0,
+          "max_top_marginal_error": 4.4403110086221973e-16,
+          "norm_minus_gram_bound": -0.21972582320865852,
+          "operator_norm": 1.9802741767913417,
+          "weighted_projector_norm": 0.24559962546824693
+        }
+      }
+    },
+    {
+      "memory_dimension": 3,
+      "name": "qutrit_dense_3",
+      "negative_ranks": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "reflection_error": 1.2686116364919928e-15,
+      "weights": {
+        "unequal": {
+          "local_excess_ranks": [
+            1,
+            1,
+            1
+          ],
+          "max_local_majorant_violation": 2.984388355130322e-16,
+          "max_projector_overlap": 0.5000000000000006,
+          "max_top_marginal_error": 1.0920629371409877e-15,
+          "norm_minus_gram_bound": -1.219410769322641,
+          "operator_norm": 3.874709020575267,
+          "weighted_projector_norm": 0.9648405844888083
+        },
+        "uniform": {
+          "local_excess_ranks": [
+            1,
+            1,
+            1
+          ],
+          "max_local_majorant_violation": 1.1045065779351746e-16,
+          "max_projector_overlap": 0.5000000000000003,
+          "max_top_marginal_error": 5.107541876118494e-16,
+          "norm_minus_gram_bound": -1.261501774980709,
+          "operator_norm": 4.152711787392387,
+          "weighted_projector_norm": 1.1082024744743468
+        },
+        "with_zero": {
+          "local_excess_ranks": [
+            0,
+            1,
+            0
+          ],
+          "max_local_majorant_violation": 6.067344249192389e-16,
+          "max_projector_overlap": 0.0,
+          "max_top_marginal_error": 1.5272705506510037e-15,
+          "norm_minus_gram_bound": -0.19025199421673022,
+          "operator_norm": 2.00974800578327,
+          "weighted_projector_norm": 0.245599625468247
+        }
+      }
+    },
+    {
+      "memory_dimension": 3,
+      "name": "qutrit_dense_4",
+      "negative_ranks": [
+        1,
+        1,
+        2,
+        2,
+        2,
+        1
+      ],
+      "reflection_error": 2.091523755641628e-15,
+      "weights": {
+        "unequal": {
+          "local_excess_ranks": [
+            1,
+            1,
+            1
+          ],
+          "max_local_majorant_violation": -9.620673337507374e-17,
+          "max_projector_overlap": 0.5000000000000007,
+          "max_top_marginal_error": 1.2493689430130442e-15,
+          "norm_minus_gram_bound": -1.2408703197191393,
+          "operator_norm": 3.8532494701787687,
+          "weighted_projector_norm": 0.9761257652285238
+        },
+        "uniform": {
+          "local_excess_ranks": [
+            1,
+            1,
+            1
+          ],
+          "max_local_majorant_violation": -3.148659824721876e-17,
+          "max_projector_overlap": 0.5000000000000002,
+          "max_top_marginal_error": 5.20324958076592e-16,
+          "norm_minus_gram_bound": -1.3480059657648917,
+          "operator_norm": 4.066207596608204,
+          "weighted_projector_norm": 1.1453403959416388
+        },
+        "with_zero": {
+          "local_excess_ranks": [
+            0,
+            1,
+            0
+          ],
+          "max_local_majorant_violation": 1.3075247340969676e-15,
+          "max_projector_overlap": 0.0,
+          "max_top_marginal_error": 3.1726721583091576e-16,
+          "norm_minus_gram_bound": -0.18210515382286596,
+          "operator_norm": 2.017894846177134,
+          "weighted_projector_norm": 0.245599625468247
+        }
+      }
+    },
+    {
+      "memory_dimension": 3,
+      "name": "qutrit_dense_5",
+      "negative_ranks": [
+        1,
+        2,
+        1,
+        2,
+        2,
+        1
+      ],
+      "reflection_error": 1.2318779911579667e-15,
+      "weights": {
+        "unequal": {
+          "local_excess_ranks": [
+            1,
+            1,
+            1
+          ],
+          "max_local_majorant_violation": -1.0589441457411214e-16,
+          "max_projector_overlap": 0.5000000000000002,
+          "max_top_marginal_error": 8.371256484336129e-16,
+          "norm_minus_gram_bound": -0.8201649235987372,
+          "operator_norm": 4.273954866299171,
+          "weighted_projector_norm": 0.9679838353454701
+        },
+        "uniform": {
+          "local_excess_ranks": [
+            1,
+            1,
+            1
+          ],
+          "max_local_majorant_violation": -6.707998264438275e-17,
+          "max_projector_overlap": 0.5000000000000004,
+          "max_top_marginal_error": 1.5646732932665328e-15,
+          "norm_minus_gram_bound": -1.1317758591481386,
+          "operator_norm": 4.282437703224957,
+          "weighted_projector_norm": 1.117788704863844
+        },
+        "with_zero": {
+          "local_excess_ranks": [
+            0,
+            1,
+            0
+          ],
+          "max_local_majorant_violation": 2.22044604925032e-16,
+          "max_projector_overlap": 0.0,
+          "max_top_marginal_error": 3.3006609889410326e-16,
+          "norm_minus_gram_bound": -0.10467813756399691,
+          "operator_norm": 2.0953218624360033,
+          "weighted_projector_norm": 0.24559962546824698
+        }
+      }
+    },
+    {
+      "memory_dimension": 3,
+      "name": "qutrit_dense_6",
+      "negative_ranks": [
+        2,
+        2,
+        2,
+        1,
+        1,
+        2
+      ],
+      "reflection_error": 1.1563793362363298e-15,
+      "weights": {
+        "unequal": {
+          "local_excess_ranks": [
+            1,
+            1,
+            1
+          ],
+          "max_local_majorant_violation": 9.716748778898645e-17,
+          "max_projector_overlap": 0.5000000000000004,
+          "max_top_marginal_error": 1.0471918379383148e-15,
+          "norm_minus_gram_bound": -0.9555116519555753,
+          "operator_norm": 4.138608137942333,
+          "weighted_projector_norm": 0.9771020876551467
+        },
+        "uniform": {
+          "local_excess_ranks": [
+            1,
+            1,
+            1
+          ],
+          "max_local_majorant_violation": -4.5020412193798095e-17,
+          "max_projector_overlap": 0.49999999999999994,
+          "max_top_marginal_error": 7.62525119756611e-16,
+          "norm_minus_gram_bound": -1.2015521938011071,
+          "operator_norm": 4.212661368571989,
+          "weighted_projector_norm": 1.1490879759143726
+        },
+        "with_zero": {
+          "local_excess_ranks": [
+            0,
+            1,
+            0
+          ],
+          "max_local_majorant_violation": 8.504660242942076e-16,
+          "max_projector_overlap": 0.0,
+          "max_top_marginal_error": 6.594565247431006e-16,
+          "norm_minus_gram_bound": -0.2482360098956864,
+          "operator_norm": 1.9517639901043138,
+          "weighted_projector_norm": 0.24559962546824704
+        }
+      }
+    },
+    {
+      "memory_dimension": 3,
+      "name": "qutrit_dense_7",
+      "negative_ranks": [
+        1,
+        1,
+        2,
+        1,
+        2,
+        2
+      ],
+      "reflection_error": 1.3957444722821405e-15,
+      "weights": {
+        "unequal": {
+          "local_excess_ranks": [
+            1,
+            1,
+            1
+          ],
+          "max_local_majorant_violation": 1.6427321084978623e-16,
+          "max_projector_overlap": 0.5000000000000003,
+          "max_top_marginal_error": 9.290795922875327e-16,
+          "norm_minus_gram_bound": -1.1055234603102457,
+          "operator_norm": 3.9885963295876623,
+          "weighted_projector_norm": 0.9587792446564192
+        },
+        "uniform": {
+          "local_excess_ranks": [
+            1,
+            1,
+            1
+          ],
+          "max_local_majorant_violation": 2.851739176676686e-16,
+          "max_projector_overlap": 0.49999999999999983,
+          "max_top_marginal_error": 6.342000217231447e-16,
+          "norm_minus_gram_bound": -1.1144057553591118,
+          "operator_norm": 4.299807807013984,
+          "weighted_projector_norm": 1.108144754500527
+        },
+        "with_zero": {
+          "local_excess_ranks": [
+            0,
+            1,
+            0
+          ],
+          "max_local_majorant_violation": 1.8914341003430648e-16,
+          "max_projector_overlap": 0.0,
+          "max_top_marginal_error": 2.277538031288951e-15,
+          "norm_minus_gram_bound": -0.20167924324018527,
+          "operator_norm": 1.998320756759815,
+          "weighted_projector_norm": 0.2455996254682468
+        }
+      }
+    },
+    {
+      "memory_dimension": 3,
+      "name": "qutrit_1_scalar_readouts",
+      "negative_ranks": [
+        0,
+        1,
+        2,
+        1,
+        2,
+        1
+      ],
+      "reflection_error": 1.4347157085649622e-15,
+      "weights": {
+        "unequal": {
+          "local_excess_ranks": [
+            0,
+            1,
+            1
+          ],
+          "max_local_majorant_violation": -1.2686760256690284e-16,
+          "max_projector_overlap": 0.4999999999999999,
+          "max_top_marginal_error": 4.622665116114987e-16,
+          "norm_minus_gram_bound": -0.9150392111109307,
+          "operator_norm": 4.179080578786977,
+          "weighted_projector_norm": 0.9239462584607588
+        },
+        "uniform": {
+          "local_excess_ranks": [
+            0,
+            1,
+            1
+          ],
+          "max_local_majorant_violation": 7.182034851006955e-16,
+          "max_projector_overlap": 0.5000000000000003,
+          "max_top_marginal_error": 6.932139797394546e-16,
+          "norm_minus_gram_bound": -1.0496934924704933,
+          "operator_norm": 4.3645200699026026,
+          "weighted_projector_norm": 0.8786796564403581
+        },
+        "with_zero": {
+          "local_excess_ranks": [
+            0,
+            1,
+            0
+          ],
+          "max_local_majorant_violation": -0.0,
+          "max_projector_overlap": 0.0,
+          "max_top_marginal_error": 1.1531317175917758e-16,
+          "norm_minus_gram_bound": -0.2126996558585892,
+          "operator_norm": 1.987300344141411,
+          "weighted_projector_norm": 0.24559962546824693
+        }
+      }
+    },
+    {
+      "memory_dimension": 3,
+      "name": "qutrit_2_scalar_readouts",
+      "negative_ranks": [
+        3,
+        0,
+        2,
+        1,
+        1,
+        2
+      ],
+      "reflection_error": 1.0180419972343474e-15,
+      "weights": {
+        "unequal": {
+          "local_excess_ranks": [
+            0,
+            1,
+            1
+          ],
+          "max_local_majorant_violation": 3.3273947327512098e-16,
+          "max_projector_overlap": 0.5,
+          "max_top_marginal_error": 1.0126480396215646e-15,
+          "norm_minus_gram_bound": -0.7015846740317677,
+          "operator_norm": 4.39253511586614,
+          "weighted_projector_norm": 0.9239462584607591
+        },
+        "uniform": {
+          "local_excess_ranks": [
+            0,
+            1,
+            1
+          ],
+          "max_local_majorant_violation": 1.6696786958314775e-16,
+          "max_projector_overlap": 0.5000000000000002,
+          "max_top_marginal_error": 6.781250569386844e-16,
+          "norm_minus_gram_bound": -0.9291759720329189,
+          "operator_norm": 4.485037590340177,
+          "weighted_projector_norm": 0.8786796564403576
+        },
+        "with_zero": {
+          "local_excess_ranks": [
+            0,
+            1,
+            0
+          ],
+          "max_local_majorant_violation": -0.0,
+          "max_projector_overlap": 0.0,
+          "max_top_marginal_error": 5.047855022517388e-16,
+          "norm_minus_gram_bound": -0.005898085247330709,
+          "operator_norm": 2.1941019147526695,
+          "weighted_projector_norm": 0.24559962546824696
+        }
+      }
+    },
+    {
+      "memory_dimension": 3,
+      "name": "qutrit_4_scalar_readouts",
+      "negative_ranks": [
+        0,
+        3,
+        3,
+        3,
+        1,
+        2
+      ],
+      "reflection_error": 1.7941613718130273e-15,
+      "weights": {
+        "unequal": {
+          "local_excess_ranks": [
+            0,
+            0,
+            1
+          ],
+          "max_local_majorant_violation": 6.509963064820541e-16,
+          "max_projector_overlap": 0.0,
+          "max_top_marginal_error": 2.409323686673376e-16,
+          "norm_minus_gram_bound": -0.4264774330530887,
+          "operator_norm": 4.667642356844819,
+          "weighted_projector_norm": 0.5686792084172034
+        },
+        "uniform": {
+          "local_excess_ranks": [
+            0,
+            0,
+            1
+          ],
+          "max_local_majorant_violation": 5.904358191940609e-16,
+          "max_projector_overlap": 0.0,
+          "max_top_marginal_error": 6.938278906042307e-16,
+          "norm_minus_gram_bound": -0.596701029069342,
+          "operator_norm": 4.817512533303754,
+          "weighted_projector_norm": 0.5857864376269054
+        },
+        "with_zero": {
+          "local_excess_ranks": [
+            0,
+            0,
+            0
+          ],
+          "max_local_majorant_violation": 3.3218546342373394e-16,
+          "max_projector_overlap": 0.0,
+          "max_top_marginal_error": 0.0,
+          "norm_minus_gram_bound": -0.24559962546824554,
+          "operator_norm": 1.9544003745317546,
+          "weighted_projector_norm": 0.0
+        }
+      }
+    },
+    {
+      "memory_dimension": 3,
+      "name": "qutrit_6_scalar_readouts",
+      "negative_ranks": [
+        3,
+        0,
+        3,
+        0,
+        0,
+        3
+      ],
+      "reflection_error": 1.3875067676548947e-15,
+      "weights": {
+        "unequal": {
+          "local_excess_ranks": [
+            0,
+            0,
+            0
+          ],
+          "max_local_majorant_violation": 9.891493828019137e-16,
+          "max_projector_overlap": 0.0,
+          "max_top_marginal_error": 0.0,
+          "norm_minus_gram_bound": -0.9841605709159875,
+          "operator_norm": 4.1099592189819205,
+          "weighted_projector_norm": 0.0
+        },
+        "uniform": {
+          "local_excess_ranks": [
+            0,
+            0,
+            0
+          ],
+          "max_local_majorant_violation": 4.887941172552406e-16,
+          "max_projector_overlap": 0.0,
+          "max_top_marginal_error": 0.0,
+          "norm_minus_gram_bound": -1.1715728752538066,
+          "operator_norm": 4.242640687119289,
+          "weighted_projector_norm": 0.0
+        },
+        "with_zero": {
+          "local_excess_ranks": [
+            0,
+            0,
+            0
+          ],
+          "max_local_majorant_violation": 7.709406386791697e-16,
+          "max_projector_overlap": 0.0,
+          "max_top_marginal_error": 0.0,
+          "norm_minus_gram_bound": -0.24559962546824488,
+          "operator_norm": 1.9544003745317553,
+          "weighted_projector_norm": 0.0
+        }
+      }
+    },
+    {
+      "memory_dimension": 4,
+      "name": "ququart_0_mixed_pairs_0",
+      "negative_ranks": [
+        3,
+        1,
+        3,
+        1,
+        1,
+        3
+      ],
+      "reflection_error": 1.4121879363858698e-15,
+      "weights": {
+        "unequal": {
+          "local_excess_ranks": [
+            1,
+            1,
+            1
+          ],
+          "max_local_majorant_violation": 2.012652581484194e-16,
+          "max_projector_overlap": 0.4692243323304533,
+          "max_top_marginal_error": 1.0000551890173067e-15,
+          "norm_minus_gram_bound": -0.810442504233924,
+          "operator_norm": 4.283677285663984,
+          "weighted_projector_norm": 0.9317470722938617
+        },
+        "uniform": {
+          "local_excess_ranks": [
+            1,
+            1,
+            1
+          ],
+          "max_local_majorant_violation": 1.7380788546957608e-16,
+          "max_projector_overlap": 0.4692243323304544,
+          "max_top_marginal_error": 9.306339981350492e-16,
+          "norm_minus_gram_bound": -1.021912346493636,
+          "operator_norm": 4.39230121587946,
+          "weighted_projector_norm": 1.0435455839526895
+        },
+        "with_zero": {
+          "local_excess_ranks": [
+            0,
+            1,
+            0
+          ],
+          "max_local_majorant_violation": 3.485584744973989e-16,
+          "max_projector_overlap": 0.0,
+          "max_top_marginal_error": 8.923114310416707e-16,
+          "norm_minus_gram_bound": -0.12489801187930283,
+          "operator_norm": 2.0751019881206973,
+          "weighted_projector_norm": 0.24559962546824674
+        }
+      }
+    },
+    {
+      "memory_dimension": 4,
+      "name": "ququart_0_mixed_pairs_1",
+      "negative_ranks": [
+        1,
+        3,
+        3,
+        3,
+        1,
+        1
+      ],
+      "reflection_error": 1.6621536634746431e-15,
+      "weights": {
+        "unequal": {
+          "local_excess_ranks": [
+            1,
+            1,
+            1
+          ],
+          "max_local_majorant_violation": 1.8074097677664638e-16,
+          "max_projector_overlap": 0.46372131372041264,
+          "max_top_marginal_error": 1.6643991328936565e-15,
+          "norm_minus_gram_bound": -0.7068890473561718,
+          "operator_norm": 4.387230742541736,
+          "weighted_projector_norm": 0.9277122340018411
+        },
+        "uniform": {
+          "local_excess_ranks": [
+            1,
+            1,
+            1
+          ],
+          "max_local_majorant_violation": 1.2683490506237021e-16,
+          "max_projector_overlap": 0.4637213137204118,
+          "max_top_marginal_error": 9.047974487333392e-16,
+          "norm_minus_gram_bound": -0.9675898338346531,
+          "operator_norm": 4.446623728538443,
+          "weighted_projector_norm": 1.0877853440878942
+        },
+        "with_zero": {
+          "local_excess_ranks": [
+            0,
+            1,
+            0
+          ],
+          "max_local_majorant_violation": 4.1653465088356983e-17,
+          "max_projector_overlap": 0.0,
+          "max_top_marginal_error": 6.784630703316316e-16,
+          "norm_minus_gram_bound": -0.21378297329497387,
+          "operator_norm": 1.9862170267050263,
+          "weighted_projector_norm": 0.24559962546824715
+        }
+      }
+    },
+    {
+      "memory_dimension": 4,
+      "name": "ququart_0_mixed_pairs_2",
+      "negative_ranks": [
+        1,
+        3,
+        1,
+        3,
+        1,
+        3
+      ],
+      "reflection_error": 1.938301863320555e-15,
+      "weights": {
+        "unequal": {
+          "local_excess_ranks": [
+            1,
+            1,
+            1
+          ],
+          "max_local_majorant_violation": 9.950165286158423e-16,
+          "max_projector_overlap": 0.4915943179754404,
+          "max_top_marginal_error": 1.4246854687232952e-15,
+          "norm_minus_gram_bound": -0.8755939044886558,
+          "operator_norm": 4.218525885409252,
+          "weighted_projector_norm": 0.9527151914975532
+        },
+        "uniform": {
+          "local_excess_ranks": [
+            1,
+            1,
+            1
+          ],
+          "max_local_majorant_violation": 1.145523424774119e-15,
+          "max_projector_overlap": 0.4915943179754413,
+          "max_top_marginal_error": 2.1909445843402843e-15,
+          "norm_minus_gram_bound": -0.9233750388692181,
+          "operator_norm": 4.490838523503878,
+          "weighted_projector_norm": 1.0682731357941284
+        },
+        "with_zero": {
+          "local_excess_ranks": [
+            0,
+            1,
+            0
+          ],
+          "max_local_majorant_violation": 9.106209383472727e-16,
+          "max_projector_overlap": 0.0,
+          "max_top_marginal_error": 2.862620281754017e-16,
+          "norm_minus_gram_bound": -0.2299686324170669,
+          "operator_norm": 1.9700313675829333,
+          "weighted_projector_norm": 0.24559962546824687
+        }
+      }
+    },
+    {
+      "memory_dimension": 4,
+      "name": "ququart_0_mixed_pairs_3",
+      "negative_ranks": [
+        1,
+        3,
+        1,
+        3,
+        3,
+        3
+      ],
+      "reflection_error": 1.2261736508303145e-15,
+      "weights": {
+        "unequal": {
+          "local_excess_ranks": [
+            1,
+            1,
+            1
+          ],
+          "max_local_majorant_violation": 3.3307474427464086e-16,
+          "max_projector_overlap": 0.4935396583787179,
+          "max_top_marginal_error": 1.013787343202499e-15,
+          "norm_minus_gram_bound": -0.7329871205564356,
+          "operator_norm": 4.3611326693414725,
+          "weighted_projector_norm": 0.9688819316752533
+        },
+        "uniform": {
+          "local_excess_ranks": [
+            1,
+            1,
+            1
+          ],
+          "max_local_majorant_violation": 2.9743575516309673e-16,
+          "max_projector_overlap": 0.4935396583787182,
+          "max_top_marginal_error": 7.611951478025579e-16,
+          "norm_minus_gram_bound": -1.071529410575958,
+          "operator_norm": 4.342684151797138,
+          "weighted_projector_norm": 1.1375420695061753
+        },
+        "with_zero": {
+          "local_excess_ranks": [
+            0,
+            1,
+            0
+          ],
+          "max_local_majorant_violation": 3.0542080563821386e-16,
+          "max_projector_overlap": 0.0,
+          "max_top_marginal_error": 1.0273477745107726e-15,
+          "norm_minus_gram_bound": -0.18745786581555812,
+          "operator_norm": 2.012542134184442,
+          "weighted_projector_norm": 0.24559962546824696
+        }
+      }
+    },
+    {
+      "memory_dimension": 4,
+      "name": "ququart_1_mixed_pairs_0",
+      "negative_ranks": [
+        3,
+        2,
+        1,
+        1,
+        3,
+        1
+      ],
+      "reflection_error": 2.4189266913404627e-15,
+      "weights": {
+        "unequal": {
+          "local_excess_ranks": [
+            1,
+            1,
+            1
+          ],
+          "max_local_majorant_violation": 1.1220105456279532e-15,
+          "max_projector_overlap": 0.4793220741109013,
+          "max_top_marginal_error": 8.98415317816539e-15,
+          "norm_minus_gram_bound": -0.8504027135923522,
+          "operator_norm": 4.243717076305556,
+          "weighted_projector_norm": 0.9314215253695791
+        },
+        "uniform": {
+          "local_excess_ranks": [
+            1,
+            1,
+            1
+          ],
+          "max_local_majorant_violation": 9.664920246576183e-16,
+          "max_projector_overlap": 0.47932207411090133,
+          "max_top_marginal_error": 3.3310994808609235e-15,
+          "norm_minus_gram_bound": -0.9890045678950425,
+          "operator_norm": 4.425208994478053,
+          "weighted_projector_norm": 1.0828072727333908
+        },
+        "with_zero": {
+          "local_excess_ranks": [
+            0,
+            1,
+            0
+          ],
+          "max_local_majorant_violation": 9.80211611002797e-17,
+          "max_projector_overlap": 0.0,
+          "max_top_marginal_error": 4.2821515943698955e-16,
+          "norm_minus_gram_bound": -0.21060282823398868,
+          "operator_norm": 1.9893971717660115,
+          "weighted_projector_norm": 0.24559962546824693
+        }
+      }
+    },
+    {
+      "memory_dimension": 4,
+      "name": "ququart_1_mixed_pairs_1",
+      "negative_ranks": [
+        3,
+        2,
+        3,
+        3,
+        3,
+        3
+      ],
+      "reflection_error": 1.2388426272071663e-15,
+      "weights": {
+        "unequal": {
+          "local_excess_ranks": [
+            1,
+            1,
+            1
+          ],
+          "max_local_majorant_violation": 2.7248868880384405e-16,
+          "max_projector_overlap": 0.49510094712008873,
+          "max_top_marginal_error": 7.006966259475041e-16,
+          "norm_minus_gram_bound": -0.8428786336743173,
+          "operator_norm": 4.251241156223591,
+          "weighted_projector_norm": 0.9403173643169258
+        },
+        "uniform": {
+          "local_excess_ranks": [
+            1,
+            1,
+            1
+          ],
+          "max_local_majorant_violation": 6.392457832816629e-16,
+          "max_projector_overlap": 0.4951009471200889,
+          "max_top_marginal_error": 8.560829480149996e-16,
+          "norm_minus_gram_bound": -1.0273945617648543,
+          "operator_norm": 4.3868190006082415,
+          "weighted_projector_norm": 1.108002776966439
+        },
+        "with_zero": {
+          "local_excess_ranks": [
+            0,
+            1,
+            0
+          ],
+          "max_local_majorant_violation": 3.989877360236028e-16,
+          "max_projector_overlap": 0.0,
+          "max_top_marginal_error": 3.8511583613467504e-16,
+          "norm_minus_gram_bound": -0.24409013830129545,
+          "operator_norm": 1.9559098616987047,
+          "weighted_projector_norm": 0.24559962546824693
+        }
+      }
+    },
+    {
+      "memory_dimension": 4,
+      "name": "ququart_1_mixed_pairs_2",
+      "negative_ranks": [
+        3,
+        2,
+        3,
+        1,
+        1,
+        1
+      ],
+      "reflection_error": 1.7679958192684979e-15,
+      "weights": {
+        "unequal": {
+          "local_excess_ranks": [
+            1,
+            1,
+            1
+          ],
+          "max_local_majorant_violation": 1.4571813044708227e-15,
+          "max_projector_overlap": 0.4859651920832497,
+          "max_top_marginal_error": 1.3666524414161205e-15,
+          "norm_minus_gram_bound": -0.8948750315969267,
+          "operator_norm": 4.199244758300981,
+          "weighted_projector_norm": 0.9113684128343347
+        },
+        "uniform": {
+          "local_excess_ranks": [
+            1,
+            1,
+            1
+          ],
+          "max_local_majorant_violation": 4.272271920773577e-16,
+          "max_projector_overlap": 0.48596519208324934,
+          "max_top_marginal_error": 1.2213659622555445e-15,
+          "norm_minus_gram_bound": -0.8426006321627142,
+          "operator_norm": 4.571612930210382,
+          "weighted_projector_norm": 1.027223858387836
+        },
+        "with_zero": {
+          "local_excess_ranks": [
+            0,
+            1,
+            0
+          ],
+          "max_local_majorant_violation": 2.234682689892715e-16,
+          "max_projector_overlap": 0.0,
+          "max_top_marginal_error": 4.828319170770995e-16,
+          "norm_minus_gram_bound": -0.11125943428999374,
+          "operator_norm": 2.0887405657100064,
+          "weighted_projector_norm": 0.245599625468247
+        }
+      }
+    },
+    {
+      "memory_dimension": 4,
+      "name": "ququart_1_mixed_pairs_3",
+      "negative_ranks": [
+        3,
+        2,
+        1,
+        3,
+        3,
+        3
+      ],
+      "reflection_error": 1.1602405306458274e-15,
+      "weights": {
+        "unequal": {
+          "local_excess_ranks": [
+            1,
+            1,
+            1
+          ],
+          "max_local_majorant_violation": 9.761938463996961e-16,
+          "max_projector_overlap": 0.47014701448073415,
+          "max_top_marginal_error": 5.766844280076032e-16,
+          "norm_minus_gram_bound": -0.8626084936480414,
+          "operator_norm": 4.231511296249867,
+          "weighted_projector_norm": 0.8973356916559396
+        },
+        "uniform": {
+          "local_excess_ranks": [
+            1,
+            1,
+            1
+          ],
+          "max_local_majorant_violation": 2.0129820486402776e-16,
+          "max_projector_overlap": 0.4701470144807344,
+          "max_top_marginal_error": 9.86054992919788e-16,
+          "norm_minus_gram_bound": -1.0260062541168704,
+          "operator_norm": 4.388207308256225,
+          "weighted_projector_norm": 1.0615722058520765
+        },
+        "with_zero": {
+          "local_excess_ranks": [
+            0,
+            1,
+            0
+          ],
+          "max_local_majorant_violation": 5.062465831569526e-16,
+          "max_projector_overlap": 0.0,
+          "max_top_marginal_error": 1.09053924837596e-15,
+          "norm_minus_gram_bound": -0.2053943704134038,
+          "operator_norm": 1.9946056295865964,
+          "weighted_projector_norm": 0.24559962546824668
+        }
+      }
+    },
+    {
+      "memory_dimension": 4,
+      "name": "ququart_2_mixed_pairs_0",
+      "negative_ranks": [
+        1,
+        2,
+        1,
+        2,
+        3,
+        1
+      ],
+      "reflection_error": 1.4822547820990077e-15,
+      "weights": {
+        "unequal": {
+          "local_excess_ranks": [
+            1,
+            1,
+            1
+          ],
+          "max_local_majorant_violation": 8.949109565820767e-16,
+          "max_projector_overlap": 0.4956130529002432,
+          "max_top_marginal_error": 1.055676275041224e-15,
+          "norm_minus_gram_bound": -0.9667503718770618,
+          "operator_norm": 4.127369418020846,
+          "weighted_projector_norm": 0.9567724180112263
+        },
+        "uniform": {
+          "local_excess_ranks": [
+            1,
+            1,
+            1
+          ],
+          "max_local_majorant_violation": 5.490874674542897e-16,
+          "max_projector_overlap": 0.49561305290024277,
+          "max_top_marginal_error": 6.486490831070574e-16,
+          "norm_minus_gram_bound": -1.1600487380775721,
+          "operator_norm": 4.254164824295524,
+          "weighted_projector_norm": 1.127000392706048
+        },
+        "with_zero": {
+          "local_excess_ranks": [
+            0,
+            1,
+            0
+          ],
+          "max_local_majorant_violation": 2.308131961611789e-16,
+          "max_projector_overlap": 0.0,
+          "max_top_marginal_error": 7.384119971544435e-16,
+          "norm_minus_gram_bound": -0.23344907729205477,
+          "operator_norm": 1.9665509227079454,
+          "weighted_projector_norm": 0.24559962546824668
+        }
+      }
+    },
+    {
+      "memory_dimension": 4,
+      "name": "ququart_2_mixed_pairs_1",
+      "negative_ranks": [
+        3,
+        2,
+        3,
+        2,
+        1,
+        1
+      ],
+      "reflection_error": 1.7816018274149108e-15,
+      "weights": {
+        "unequal": {
+          "local_excess_ranks": [
+            1,
+            1,
+            1
+          ],
+          "max_local_majorant_violation": 3.537769852031401e-16,
+          "max_projector_overlap": 0.49006598685246455,
+          "max_top_marginal_error": 1.2081789029063786e-15,
+          "norm_minus_gram_bound": -0.9921152575107097,
+          "operator_norm": 4.102004532387198,
+          "weighted_projector_norm": 0.9635689972458141
+        },
+        "uniform": {
+          "local_excess_ranks": [
+            1,
+            1,
+            1
+          ],
+          "max_local_majorant_violation": 8.083066791993403e-16,
+          "max_projector_overlap": 0.4900659868524642,
+          "max_top_marginal_error": 3.5005174875048724e-16,
+          "norm_minus_gram_bound": -1.093114321490714,
+          "operator_norm": 4.321099240882382,
+          "weighted_projector_norm": 1.1182695058973224
+        },
+        "with_zero": {
+          "local_excess_ranks": [
+            0,
+            1,
+            0
+          ],
+          "max_local_majorant_violation": 1.062360371870602e-15,
+          "max_projector_overlap": 0.0,
+          "max_top_marginal_error": 1.1159078998365192e-15,
+          "norm_minus_gram_bound": -0.21083316465795066,
+          "operator_norm": 1.9891668353420495,
+          "weighted_projector_norm": 0.24559962546824668
+        }
+      }
+    },
+    {
+      "memory_dimension": 4,
+      "name": "ququart_2_mixed_pairs_2",
+      "negative_ranks": [
+        3,
+        2,
+        3,
+        2,
+        1,
+        1
+      ],
+      "reflection_error": 1.799883272198598e-15,
+      "weights": {
+        "unequal": {
+          "local_excess_ranks": [
+            1,
+            1,
+            1
+          ],
+          "max_local_majorant_violation": 3.9083832199068927e-16,
+          "max_projector_overlap": 0.4612908279812461,
+          "max_top_marginal_error": 6.668174425342434e-16,
+          "norm_minus_gram_bound": -1.0005578132059094,
+          "operator_norm": 4.093561976691999,
+          "weighted_projector_norm": 0.9294220370054731
+        },
+        "uniform": {
+          "local_excess_ranks": [
+            1,
+            1,
+            1
+          ],
+          "max_local_majorant_violation": 4.47158530898006e-16,
+          "max_projector_overlap": 0.461290827981246,
+          "max_top_marginal_error": 1.5059925903583968e-15,
+          "norm_minus_gram_bound": -1.1321620250434057,
+          "operator_norm": 4.28205153732969,
+          "weighted_projector_norm": 1.0499635772869946
+        },
+        "with_zero": {
+          "local_excess_ranks": [
+            0,
+            1,
+            0
+          ],
+          "max_local_majorant_violation": 1.129624199428226e-16,
+          "max_projector_overlap": 0.0,
+          "max_top_marginal_error": 4.79760800683856e-16,
+          "norm_minus_gram_bound": -0.2123450957751596,
+          "operator_norm": 1.9876549042248406,
+          "weighted_projector_norm": 0.24559962546824693
+        }
+      }
+    },
+    {
+      "memory_dimension": 4,
+      "name": "ququart_2_mixed_pairs_3",
+      "negative_ranks": [
+        3,
+        2,
+        3,
+        2,
+        3,
+        3
+      ],
+      "reflection_error": 2.2273609580907576e-15,
+      "weights": {
+        "unequal": {
+          "local_excess_ranks": [
+            1,
+            1,
+            1
+          ],
+          "max_local_majorant_violation": 4.4243498120547e-16,
+          "max_projector_overlap": 0.4993004510751739,
+          "max_top_marginal_error": 8.01258514607341e-16,
+          "norm_minus_gram_bound": -0.9223103908229788,
+          "operator_norm": 4.171809399074929,
+          "weighted_projector_norm": 0.9006872691789861
+        },
+        "uniform": {
+          "local_excess_ranks": [
+            1,
+            1,
+            1
+          ],
+          "max_local_majorant_violation": 4.972616664059614e-16,
+          "max_projector_overlap": 0.4993004510751739,
+          "max_top_marginal_error": 9.548285922699384e-16,
+          "norm_minus_gram_bound": -1.1828892520085477,
+          "operator_norm": 4.231324310364548,
+          "weighted_projector_norm": 1.0601808384876013
+        },
+        "with_zero": {
+          "local_excess_ranks": [
+            0,
+            1,
+            0
+          ],
+          "max_local_majorant_violation": 6.106226635438361e-16,
+          "max_projector_overlap": 0.0,
+          "max_top_marginal_error": 2.579333559784905e-16,
+          "norm_minus_gram_bound": -0.21023428718432635,
+          "operator_norm": 1.9897657128156738,
+          "weighted_projector_norm": 0.24559962546824707
+        }
+      }
+    },
+    {
+      "memory_dimension": 4,
+      "name": "ququart_3_mixed_pairs_0",
+      "negative_ranks": [
+        1,
+        2,
+        3,
+        2,
+        3,
+        2
+      ],
+      "reflection_error": 1.4578532547618102e-15,
+      "weights": {
+        "unequal": {
+          "local_excess_ranks": [
+            1,
+            1,
+            1
+          ],
+          "max_local_majorant_violation": 2.7648855493531646e-16,
+          "max_projector_overlap": 0.4507030907011855,
+          "max_top_marginal_error": 8.375097543027217e-16,
+          "norm_minus_gram_bound": -0.9344911658757322,
+          "operator_norm": 4.159628624022176,
+          "weighted_projector_norm": 0.8976416679287826
+        },
+        "uniform": {
+          "local_excess_ranks": [
+            1,
+            1,
+            1
+          ],
+          "max_local_majorant_violation": 4.0678687547563364e-16,
+          "max_projector_overlap": 0.4507030907011856,
+          "max_top_marginal_error": 7.428649822479061e-16,
+          "norm_minus_gram_bound": -1.1120727037052802,
+          "operator_norm": 4.302140858667816,
+          "weighted_projector_norm": 1.0031785731753828
+        },
+        "with_zero": {
+          "local_excess_ranks": [
+            0,
+            1,
+            0
+          ],
+          "max_local_majorant_violation": 4.2434182301059084e-16,
+          "max_projector_overlap": 0.0,
+          "max_top_marginal_error": 9.954533244233924e-16,
+          "norm_minus_gram_bound": -0.24781533047420656,
+          "operator_norm": 1.9521846695257936,
+          "weighted_projector_norm": 0.24559962546824674
+        }
+      }
+    },
+    {
+      "memory_dimension": 4,
+      "name": "ququart_3_mixed_pairs_1",
+      "negative_ranks": [
+        3,
+        2,
+        3,
+        2,
+        3,
+        2
+      ],
+      "reflection_error": 1.965144331317274e-15,
+      "weights": {
+        "unequal": {
+          "local_excess_ranks": [
+            1,
+            1,
+            1
+          ],
+          "max_local_majorant_violation": 5.691001391045687e-16,
+          "max_projector_overlap": 0.4762689826336878,
+          "max_top_marginal_error": 8.442191673248108e-16,
+          "norm_minus_gram_bound": -1.073662375012228,
+          "operator_norm": 4.02045741488568,
+          "weighted_projector_norm": 0.9374194151618884
+        },
+        "uniform": {
+          "local_excess_ranks": [
+            1,
+            1,
+            1
+          ],
+          "max_local_majorant_violation": 7.897802354326996e-16,
+          "max_projector_overlap": 0.47626898263368733,
+          "max_top_marginal_error": 1.4411357008468887e-15,
+          "norm_minus_gram_bound": -1.130020996470285,
+          "operator_norm": 4.284192565902811,
+          "weighted_projector_norm": 1.0363320266338292
+        },
+        "with_zero": {
+          "local_excess_ranks": [
+            0,
+            1,
+            0
+          ],
+          "max_local_majorant_violation": 6.386648696930792e-16,
+          "max_projector_overlap": 0.0,
+          "max_top_marginal_error": 4.124263230783233e-16,
+          "norm_minus_gram_bound": -0.18173305597840983,
+          "operator_norm": 2.0182669440215903,
+          "weighted_projector_norm": 0.245599625468247
+        }
+      }
+    },
+    {
+      "memory_dimension": 4,
+      "name": "ququart_3_mixed_pairs_2",
+      "negative_ranks": [
+        1,
+        2,
+        3,
+        2,
+        1,
+        2
+      ],
+      "reflection_error": 2.276263100623466e-15,
+      "weights": {
+        "unequal": {
+          "local_excess_ranks": [
+            1,
+            1,
+            1
+          ],
+          "max_local_majorant_violation": 1.0645473220816166e-15,
+          "max_projector_overlap": 0.4775821669932029,
+          "max_top_marginal_error": 4.69843035238821e-16,
+          "norm_minus_gram_bound": -0.9894634541146452,
+          "operator_norm": 4.104656335783263,
+          "weighted_projector_norm": 0.9482662638256756
+        },
+        "uniform": {
+          "local_excess_ranks": [
+            1,
+            1,
+            1
+          ],
+          "max_local_majorant_violation": 1.3349136722244457e-15,
+          "max_projector_overlap": 0.4775821669932026,
+          "max_top_marginal_error": 6.461140555212572e-16,
+          "norm_minus_gram_bound": -1.1347075812154834,
+          "operator_norm": 4.279505981157612,
+          "weighted_projector_norm": 1.0763235193469938
+        },
+        "with_zero": {
+          "local_excess_ranks": [
+            0,
+            1,
+            0
+          ],
+          "max_local_majorant_violation": 4.479024021461148e-16,
+          "max_projector_overlap": 0.0,
+          "max_top_marginal_error": 4.451396392565464e-16,
+          "norm_minus_gram_bound": -0.22461205923604433,
+          "operator_norm": 1.9753879407639559,
+          "weighted_projector_norm": 0.24559962546824676
+        }
+      }
+    },
+    {
+      "memory_dimension": 4,
+      "name": "ququart_3_mixed_pairs_3",
+      "negative_ranks": [
+        1,
+        2,
+        3,
+        2,
+        1,
+        2
+      ],
+      "reflection_error": 1.9852152188434073e-15,
+      "weights": {
+        "unequal": {
+          "local_excess_ranks": [
+            1,
+            1,
+            1
+          ],
+          "max_local_majorant_violation": 3.726085755461879e-16,
+          "max_projector_overlap": 0.4685017365190756,
+          "max_top_marginal_error": 5.588237011927949e-16,
+          "norm_minus_gram_bound": -1.0442684773267654,
+          "operator_norm": 4.049851312571143,
+          "weighted_projector_norm": 0.9172075072456711
+        },
+        "uniform": {
+          "local_excess_ranks": [
+            1,
+            1,
+            1
+          ],
+          "max_local_majorant_violation": -2.2647960960697742e-17,
+          "max_projector_overlap": 0.46850173651907584,
+          "max_top_marginal_error": 1.5255449380535942e-15,
+          "norm_minus_gram_bound": -1.1040424250292018,
+          "operator_norm": 4.310171137343894,
+          "weighted_projector_norm": 1.0517210417855292
+        },
+        "with_zero": {
+          "local_excess_ranks": [
+            0,
+            1,
+            0
+          ],
+          "max_local_majorant_violation": 3.1162308029097614e-16,
+          "max_projector_overlap": 0.0,
+          "max_top_marginal_error": 5.246811037972608e-16,
+          "norm_minus_gram_bound": -0.23443878175498178,
+          "operator_norm": 1.9655612182450184,
+          "weighted_projector_norm": 0.24559962546824682
+        }
+      }
+    }
+  ],
+  "family_count": 28,
+  "maximum_hamiltonian_dimension": 32,
+  "maximum_local_majorant_violation": 1.4571813044708227e-15,
+  "maximum_projector_overlap": 0.5000000000000007,
+  "maximum_top_marginal_error": 8.98415317816539e-15,
+  "mixed_projector_negative_control": {
+    "actual_hamiltonian_analytic_upper_bound": 4.82842712474619,
+    "actual_hamiltonian_norm": 4.739640107280844,
+    "exact_projector_sum_norm": 2.1513878188659974,
+    "explanation": "Only the mixed-rank projector shortcut fails. Conditional on Q1, the last two sites obey either the two-active-site qubit bound or the scalar bound 2 sqrt(2); adding the first site gives 2+2 sqrt(2).",
+    "projector_sum_norm": 2.151387818865997,
+    "projector_sum_norm_minus_two": 0.15138781886599695
+  },
+  "random_seed": 2026092405,
+  "research_base": "012bafa1895a66e22eac676ba1702a2bde531881",
+  "scope": "Finite construction diagnostics, not an optimizer, universal proof, or novelty certificate.",
+  "source_sha256": "fd1dae777b365f9f626ea5d1e5f1e8c3dbaa88e2d2007bb6671e3639a8f28c69",
+  "status": "PASS",
+  "tolerance": 1e-10,
+  "weight_data": {
+    "unequal": {
+      "coarse_gram_bound": 5.134918636148123,
+      "gram_bound": 5.094119789897908,
+      "two_largest_deltas_bound": 5.33851648071345,
+      "weights": [
+        0.2,
+        0.5,
+        1.0,
+        1.3,
+        0.7,
+        1.8
+      ]
+    },
+    "uniform": {
+      "coarse_gram_bound": 5.414213562373096,
+      "gram_bound": 5.414213562373096,
+      "two_largest_deltas_bound": 5.414213562373096,
+      "weights": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "with_zero": {
+      "coarse_gram_bound": 2.2,
+      "gram_bound": 2.2,
+      "two_largest_deltas_bound": 2.2,
+      "weights": [
+        0.0,
+        1.1,
+        0.8,
+        0.3,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "weighted_case_count": 84
+}

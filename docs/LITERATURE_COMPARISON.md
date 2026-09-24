@@ -783,3 +783,29 @@ is invoked only after a valid reduction of the readouts or memory blocks.
 The supplied deduction is the resulting common-antiunitary bound; no new
 monogamy principle or exhaustive priority claim is made. The full balanced
 sector remains outside the conclusion.
+
+## Jordan-block converse and established singlet monogamy
+
+The [qutrit and four-sector converse](audits/JORDAN_BLOCK_CONVERSE.md)
+uses established Bell-projector overlap geometry. Kay–Kaszlikowski–Ramanathan,
+*Optimal Cloning and Singlet Monogamy*, PRL 103, 050501 (2009),
+[0901.3626v3](https://arxiv.org/pdf/0901.3626), Eqs. (3)–(6), printed
+pp. 2–3, supplies the weighted overlap mechanism. That version does not
+prove its fully general asymmetric ansatz; the present direct Gram upper
+bound uses no unproved part.
+
+Jorquera et al., *Monogamy of Entanglement Bounds and Improved Approximation
+Algorithms for Qudit Hamiltonians*, Quantum 10, 2088 (2026),
+[2410.15544v4](https://arxiv.org/pdf/2410.15544), Lemma 3.4/Eq. (8),
+p. 7, Proposition 3.6/Eq. (18), p. 8, and Theorem 3.7, p. 9, already
+gives the equal-dimensional star-projector bound and unweighted attainment.
+These locators follow the PDF marked v4, 20 April 2026. Its qubit,
+three-edge constant is two. The interface proof permits distinct embedded
+memory planes and proves the needed ordinary-operator estimate directly;
+it does not extend the source's pseudo-density/SOS conclusion.
+
+The supplied deduction is the local Jordan-block spectral majorant and
+its interface application: all three-input rank-at-most-three seeds and
+four ququart signature patterns obey the two-site-retention benchmark.
+This is not a new general monogamy theorem. Exhaustive priority,
+publication significance, and unrestricted optimality remain open.
