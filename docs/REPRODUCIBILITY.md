@@ -50,6 +50,7 @@ OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python tools/check_three_input_decoders
 python tools/check_spin_flip_purity.py --output results/spin-flip-purity-rerun.json
 python tools/check_antiunitary_readouts.py --output results/antiunitary-readouts-rerun.json
 python tools/check_jordan_block_converse.py --output results/jordan-block-converse-rerun.json
+python tools/check_jordan_spectral_budget.py --output results/jordan-spectral-budget-rerun.json
 ```
 
 The bootstrap environment was Python 3.13.5 and NumPy 2.3.5. The audit
@@ -912,3 +913,51 @@ certificates were not rerun. Local links, whitespace, LICENSE and the
 original historical audit blob were checked. No third-party papers or
 private exploratory files are committed. The general balanced quadratic
 conjecture, unrestricted optimality, and publication originality remain open.
+
+## Jordan spectral budget
+
+The [all-block report](audits/JORDAN_SPECTRAL_BUDGET.md) is pinned to
+main `780605b723919defd382d88c8adb09ed1fd8d204`. Independent internal
+reconstructions checked the actual block excesses, same-site orthogonality,
+cross-site Gram comparison, rank-one-update equivalence, scalar fractions,
+and exact signed counterexample for every finite penalty. Actual-draft
+review corrected the all-zero-excess quantifier to require positive Lambda.
+The independent review is internal, not external peer review or priority
+certification. Primary PDFs were read at the locators stated in the report.
+
+`tools/check_jordan_spectral_budget.py` writes
+`results/jordan_spectral_budget.json`. It checks 48 weighted constructions:
+all eight ordered one/two-block patterns, each in canonical and independently
+rotated complex memory coordinates, with uniform, unequal and zero-containing
+weight vectors. Top Bell vectors are obtained within the known two-dimensional
+blocks, avoiding arbitrary diagonalization of degenerate global eigenspaces.
+The tests cover reflection identities, top eigenvalues, Bell marginals,
+local spectral caps, insertion overlaps, the comparison bound, the scalar
+criterion and full Hamiltonian norms, with largest dimension 32.
+
+Two additional explicit constructions check strict improvements over the
+triangle bound. One double pair with excesses `(delta/2,delta/2)` and two
+maximal single pairs has comparison eigenvalue `(1+sqrt(3)/2)delta`.
+Three double pairs each with `(9delta/10,delta/5)` have budget `138/145`
+and comparison eigenvalue `(11+sqrt(67))delta/10`; even the coarse
+total-excess certificate fails in this example. Here `delta=2-sqrt(2)`.
+Four signed-projector cases at kappa=1, 2+2sqrt(2), 10 and 100 agree with
+the exact formula and exceed two. Their shared actual Hamiltonian has
+norm about 4.7396401073, below its analytical bound `2+2sqrt(2)`.
+
+The run passed with Python 3.12.14, NumPy 2.3.5, random seed 2026092406,
+and tolerance 1e-10. Maximum Bell-marginal error: 3.447104417482014e-15;
+local-majorant violation: 1.734760030792195e-15; same-site overlap:
+1.7554167342883506e-16; cross-site overlap: 0.5000000000000019.
+Source SHA-256:
+`2f51bada38ee8552795d4be69690347bce0231c4d7490bf44ec635fe7d72aac2`.
+The parent workspace reran the final script and reproduced the JSON
+byte-for-byte. A separate geometry reviewer also reran the repository
+version and obtained the identical JSON. No optimizer or large simulation
+enters this diagnostic.
+
+Unchanged certificates were not rerun. Local links, whitespace, LICENSE,
+and the historical audit blob were checked. No third-party source text,
+papers or private exploratory files are committed. All six remaining
+signature sectors, unrestricted rate optimality, and publication priority
+retain their stated unresolved status.

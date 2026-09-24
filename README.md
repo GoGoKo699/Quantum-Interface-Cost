@@ -26,6 +26,12 @@ The proof also closes four of the ten nonscalar ququart readout patterns.
 Any improvement in this block requires a nonflat rank-four seed, with
 six continuous signature patterns still unresolved.
 
+The [spectral-budget extension](docs/audits/JORDAN_SPECTRAL_BUDGET.md)
+now retains every Jordan block and gives a scalar sufficient test for the
+benchmark, including families with two noncommuting blocks at every site.
+An exact obstruction shows why any finite penalty on only the most negative
+Bell vectors cannot finish the proof. All six sectors retain open regions.
+
 A [sharp spin-flip purity bound](docs/audits/SPIN_FLIP_PURITY_BOUND.md)
 now excludes every invariant three-qubit seed of rank at most four,
 including nonuniform spectra. Its sum-of-squares proof also settles a
