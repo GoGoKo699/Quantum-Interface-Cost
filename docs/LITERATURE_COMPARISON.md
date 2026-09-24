@@ -911,3 +911,26 @@ and uniform error quantifiers are preserved. The new sufficient
 readout condition is not imposed on the unrestricted optimization.
 Publication originality, the full equal-accuracy optimum, and the
 two-parameter profile's priority remain open.
+
+## Noncommuting subsystem families
+
+The [noncommuting-family report](audits/NONCOMMUTING_QUERY_FAMILIES.md)
+supplies two further finite deductions: a sharp partial-SWAP projector
+sum with equality classification, and a sharp-pair converse requiring
+only two mixed cross commutators to vanish. Spin addition, Pauli
+representation theory, Schur complements and the preceding full
+resolvent method are established ingredients. The theorem hypotheses
+restrict decoder families, not the collective encoder.
+
+Section 9 makes a focused theorem-level comparison with constrained
+quantum random access and entanglement sampling. In particular, the
+closest bounded-entanglement/free-classical-communication comparison
+must distinguish a single rank-one Bell test from the rank-two
+`Phi tensor I` test induced by discarding a memory auxiliary.
+Two stored Bell pairs give an exact separator. The source's
+larger-dimension remark is explicitly considered, not omitted.
+
+This does not establish that either finite theorem is absent from all
+prior work. Arbitrary independent subsystem embeddings, all three
+complete remaining signatures, unrestricted equal-accuracy optimality,
+and publication originality remain open.

@@ -1,0 +1,19 @@
+{
+  "arithmetic": "exact rational combinations of squarefree integer square roots",
+  "checks": {
+    "diagonal_sum_coefficients": 23,
+    "highest_weight_vectors": 9,
+    "memory_swap_eigenvectors": 9,
+    "off_diagonal_coefficients": 27,
+    "orthonormality_entries": 41,
+    "projector_invariant_vectors": 27,
+    "status": "pass",
+    "symmetric_projector_actions": 3
+  },
+  "limitations": "does not replace the continuous Schur-complement proof or establish the arbitrary-U(4) case",
+  "python_version": "3.12.14",
+  "schema_version": 1,
+  "scope": "finite SU(2) multiplicity matrices and the memory-SWAP phase convention",
+  "source_sha256": "ac9fa40a027b2a95077960c972df34e7d8fca8d629b2f0512059a948ceefab60",
+  "verifier": "check_partial_swap_basis.py"
+}

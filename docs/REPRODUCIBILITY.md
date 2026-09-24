@@ -1068,3 +1068,62 @@ these checks. They supplement the symbolic proof and do not establish the
 all-size bound on their own. The three remaining ququart signatures,
 unrestricted equal-accuracy optimality, and publication originality remain
 unresolved. Unchanged diagnostics were not rerun.
+
+## Noncommuting query families
+
+The [report](audits/NONCOMMUTING_QUERY_FAMILIES.md) is pinned to main
+`e8fffa3ccac4b03b354d354101e20302fc934616`. Independent internal
+reconstruction checked both proofs, including the complete exceptional
+representations and all endpoint cases. This is not external review.
+
+Run the two new checks:
+
+```bash
+python tools/check_partial_swap_basis.py --output results/partial_swap_basis.json
+python tools/check_noncommuting_families.py --output results/noncommuting_families.json
+```
+
+The first uses exact rational combinations of square roots, with only
+the Python standard library. It constructs the nine highest-weight
+vectors in the computational basis; checks their spin, orthonormality,
+memory-SWAP signs and invariant-subspace actions; verifies all 27
+off-diagonal coefficients and 23 diagonal-sum coefficients; and checks
+the zero symmetric block. This makes the finite coefficient calculation
+reproducible. The continuous-angle Schur-complement positivity remains
+the supplied analytic proof.
+
+The second independently builds physical matrices of dimension at most
+32 from Pauli matrices. Twelve two-angle query constructions include
+seven simple and five degenerate top eigenvalues, signed angles, and
+complex memory rotations. It checks the Cartesian spectrum, explicit
+maximally entangled top vector, full spectral cap, two mixed cross
+commutators, and both permitted nonzero same-axis commutators.
+There are 108 third-reflection cases, 63 full resolvent evaluations,
+and 12 attenuated/general-contraction cases. All 16 exceptional joint
+sign patterns are checked, with 144 third-reflection constructions.
+
+Twelve partial-SWAP angle triples check the two reduced spin matrices
+against the complete physical operator, including its full spectrum,
+the Schur determinant and the sharp projector bound. Forty-eight
+associated physical Hamiltonians use unequal angles between sites
+while keeping equal spectra within each site's two Jordan blocks.
+Thirty scalar constructions check the polynomial identities at
+interior points and endpoints. Projector attainment at 5/2 and physical
+attainment of 4+sqrt(2) in the two-cross-commutator family are separate
+checks; no attainment in the partial-SWAP physical subclass is asserted.
+
+Both scripts passed with Python 3.12.14; the matrix check used NumPy
+2.3.5, seed 2026092409 and tolerance 2e-9. Its maximum positive
+residual was 7.105427357601002e-15. The exact verifier has no numerical
+tolerance. Source SHA-256 values:
+
+- `check_partial_swap_basis.py`:
+  `ac9fa40a027b2a95077960c972df34e7d8fca8d629b2f0512059a948ceefab60`.
+- `check_noncommuting_families.py`:
+  `5865167f54a948754a2d89f00ebed82aec51eba75580149c52014278f39d2c1a`.
+
+The final repository scripts were rerun into separate scratch outputs
+and reproduced the recorded JSON byte-for-byte. These finite checks
+and exact coefficient calculations do not prove arbitrary-U(4)
+geometry, a complete remaining signature, unrestricted optimality,
+or originality. No optimizer or large simulation was used.

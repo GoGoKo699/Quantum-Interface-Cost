@@ -37,6 +37,14 @@ For three inputs, any two commuting query algebras already rule out
 an advantage. Thus a violation must make all three algebras pairwise
 noncommuting; all three complete signature patterns remain open.
 
+The [noncommuting-family continuation](docs/audits/NONCOMMUTING_QUERY_FAMILIES.md)
+now reaches beyond that commuting case. Two sharp complementary query
+pairs need only two mixed cross commutators to vanish; the third pair
+remains unrestricted. A separate sharp Bell-subspace bound proves
+`sum_i P_i<=5I/2` for arbitrary partial-SWAP subsystem choices, with
+an exact equality classification. These are continuous-family converses,
+not a full remaining-signature closure or an originality certification.
+
 The [spectral-budget extension](docs/audits/JORDAN_SPECTRAL_BUDGET.md)
 now retains every Jordan block and gives a scalar sufficient test for the
 benchmark, including families with two noncommuting blocks at every site.
