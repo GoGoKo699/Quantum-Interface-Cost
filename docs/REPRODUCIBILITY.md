@@ -44,6 +44,8 @@ python tools/check_two_qubit_flat_core.py
 python tools/check_coherent_transfer.py
 python tools/check_parity_and_decoder.py
 python tools/certify_extended_core.py
+python tools/check_finite_tail_structure.py
+python tools/certify_curved_core.py
 ```
 
 The bootstrap environment was Python 3.13.5 and NumPy 2.3.5. The audit
@@ -529,7 +531,7 @@ Its SHA-256 is
 `3f3538c0307f3a1131746d84410b21752b97aa0e87d8de1722392d3b114dd8ec`.
 The following three files were imported unchanged at bootstrap commit
 `eaf085a8cb299e6b297b11d2dc3c85e24f02779e`. These are historical hashes; the
-research note has subsequently been revised to version 0.22:
+research note has subsequently been revised to version 0.23:
 
 | File | SHA-256 |
 |---|---|
@@ -628,3 +630,51 @@ scalar certificates conditional on the supplied proof, not tests of the
 unrestricted conjecture. The report separately gives an entirely elementary
 `1/201` tail cutoff. Local links, whitespace and protected file identities
 were checked; unrelated numerical construction diagnostics were not rerun.
+
+## Finite-tail structure and Bayes-rank source comparison
+
+The [matrix report](audits/FINITE_TAIL_STRUCTURE.md) and
+[source comparison](audits/BAYES_RANK_PRIOR_COMPARISON.md) review main
+`3964f9b97766463a2aff65233560c9dcdf60c297`. Independent workspace
+reconstruction checked contraction completion, both concavity reductions,
+the variational root ordering, positive-parameter tangent, product-support
+attainers, and the entire weighted Bayes-rank obstruction. The prior paper
+was read from its official publisher PDF; it is not redistributed.
+
+`tools/check_finite_tail_structure.py` verifies exact rational polynomial
+identities for the block characteristic polynomial, Vieta discriminant,
+scalar-root second derivative and determinant square decomposition. It also
+checks Bayes normalization and the incompatible strict weight conditions
+for all four decisions. Normal and `python -O` runs produce the same
+[record](../results/finite_tail_structure_check.json). There is no interval
+partition, floating-point acceptance or state sampling in this checker.
+The continuum claims rely on the supplied analytical proofs, and the
+general four-query transfer target remains unproved.
+
+## Curved core transfer through the full high-score strip
+
+The [proof](audits/CURVED_CORE_TRANSFER.md), pinned to the same main
+`3964f9b97766463a2aff65233560c9dcdf60c297`, was independently reconstructed
+for root-fidelity pinching, definite core/tail score preservation, the
+convex chord and endpoint-mass tangent, active finite-tail curvature,
+the imbalanced SLD disk, and elimination of the tail eigenvalue parameter.
+The theorem concerns normalized top-two cores; all operational quantifiers
+remain unchanged.
+
+`tools/certify_curved_core.py` imports the previously checked 80-bit
+outward-rounded integer interval arithmetic and positive-series logarithm
+enclosures. It exhausts the closed four-variable scalar enlargement in
+10,647 visited boxes: 5,324 terminal leaves, with 1,868 strict transfer
+certificates, 2,898 strict SLD certificates and 558 infeasible boxes.
+Maximum depth is 20. The minimum positive transfer and SLD margin
+numerators are `416550709650178248` and `1311935999616578036`, over `2^80`.
+These deliberately conservative bounds include impossible parameter
+combinations; no simultaneous physical saturation is assumed.
+
+Every arithmetic and subdivision comparison uses integers. Unresolved
+boxes, exhausted budgets or subdivision failures raise exceptions under
+both normal and optimized Python. Both runs on Python 3.12.14 reproduce
+the same [record](../results/curved_core_certificate.json). Earlier floating-
+point scalar probes motivated the reduction but are not its proof or part
+of the certificate. No large state simulation or solver is used. Local
+links, whitespace, LICENSE and historical-audit identities were checked.

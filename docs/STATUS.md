@@ -1,7 +1,7 @@
 # Status and claim ledger
 
-Updated: 2026-09-24. Stage: short anticommutation decoder proof and a genuine small-tail extension to core score >13/4. Unrestricted optimality and publication originality remain open.
-Latest research base: `449984f346ed396f515c885cb0c5921cb7739735`, the merge of PR #25.
+Updated: 2026-09-24. Stage: finite paired-query transfer closes the core-score >13/4 gate through tail weight 1/29; one prior rank-theorem comparison is completed. Unrestricted optimality and publication originality remain open.
+Latest research base: `3964f9b97766463a2aff65233560c9dcdf60c297`, the merge of PR #26.
 
 Critical assessment base: `81bcfefb2b545742d513c4f51364a7f72972451e`, the
 merge of PR #11. The [publication and optimality assessment](audits/PUBLICATION_AND_OPTIMALITY_ASSESSMENT.md)
@@ -99,7 +99,10 @@ is asserted.
 | Two-qubit entropy bound when a top-two spectral projector is a local product-parity sector | Derived and independently checked; unequal coherent cores allowed, residual-strip margin >1/16. Does not include every parity-commuting state | audits/PARITY_READOUT_BOUND.md Section 2 |
 | Coherent-transfer target on parity supports | Proved with the sharp envelope S_t<=2sqrt(2+2t^2) for 0<=t<=1, arbitrary core/tail spectra and coherences | audits/PARITY_READOUT_BOUND.md Section 3 |
 | Exact mixed-decoder operator envelope, with maximum below sqrt(21/2) | Derived and independently checked; improves decoder classification only. A short prior-method corollary gives 13/4 without a characteristic polynomial | audits/MIXED_DECODER_PATTERN_BOUND.md; audits/EXTENDED_CORE_TRANSFER.md Section 2 |
-| Entropy bound for core score >13/4 and tail weight <=1/99 | Derived and independently checked; stronger angle inequality, finite inverse bounds and a 97-leaf exact scalar certificate. Entirely elementary through <=1/201; no full-strip extension | audits/EXTENDED_CORE_TRANSFER.md |
+| Entropy bound for core score >13/4 and tail weight <=1/99 | Earlier partial result, derived and independently checked; stronger angle inequality and 97 exact intervals. Entirely elementary through <=1/201; extended by the next row | audits/EXTENDED_CORE_TRANSFER.md |
+| Entropy bound for top-two core score >13/4 and tail weight <=1/29 | Derived and independently checked; finite paired scalar-query gain plus imbalanced SLD certificate, 5,324 exact leaves. Generic lower-score cores remain unresolved | audits/CURVED_CORE_TRANSFER.md |
+| Squared fixed-core/tail transfer sum is concave in squared tail parameter | Derived and independently checked for arbitrary complex 2x2 blocks; finite tangents at positive parameter, sharp product-support envelope. No uniform arbitrary-state envelope | audits/FINITE_TAIL_STRUCTURE.md |
+| Nakahira–Usuda 2012 full weighted rank theorem under the natural Hamming reduction | Completed scoped comparison: best certificate has rank two, so it does not directly subsume the supplied rank-one projectivity theorem. Other reductions and exhaustive originality remain open | audits/BAYES_RANK_PRIOR_COMPARISON.md |
 | Quantitative stability of one-qubit maximizing seeds | Derived and independently checked; dimension-independent normalized-seed bounds and specified branch-weighted consequences | ONE_QUBIT_STABILITY.md |
 | Full noisy-X/Z average-rank profile D_M=W=w | Exact specialization of Cope–Uola SDPs; the already proved C-versus-w phase boundary supplies its full entropy comparison | audits/ROOF_PROVENANCE_AND_JOINT_SCORE.md Section 3 |
 | Collective readout can improve joint score per copy of a product seed | Incorrect: product additivity follows from Wallden–Dunjko–Andersson Theorem 3; an explicit f_2-j_2=(sqrt(2)-1)/8 gap persists under powers | audits/ROOF_PROVENANCE_AND_JOINT_SCORE.md Section 4 |
@@ -574,7 +577,8 @@ the proved open neighborhood of the rank-at-most-two set at that fixed n.
 It must fail the new spectral and kernel certificates; in particular,
 a two-input witness must have `2^-20<lambda_3+lambda_4<1/29`, normalized
 second core eigenvalue `1/5<lambda_2/(lambda_1+lambda_2)<1/2`, and normalized
-top-two core score at most `10/3`. In particular, its largest two
+top-two core score at most `13/4`, using the later
+[finite-tail theorem](audits/CURVED_CORE_TRANSFER.md). In particular, its largest two
 eigenvalues sum to more than `28/29`. Also,
 a two-input witness cannot have a maximally entangled kernel vector or
 at most two distinct eigenvalues. The example `(t,b,b,0)` generally has
@@ -605,6 +609,16 @@ conjecture and publication originality remain unresolved.
 
 ## Publication gate
 
+The [curved-transfer theorem](audits/CURVED_CORE_TRANSFER.md) extends
+the preceding `13/4` gate through the full tail interval `epsilon<=1/29`.
+Its key improvements are a paired, finite scalar-query gain and an SLD
+bound retaining the active/inactive score imbalance. An exact four-variable
+certificate covers 5,324 closed leaves after the analytical reduction.
+The numerical cutoffs remain sufficient rather than optimal. The separate
+[matrix report](audits/FINITE_TAIL_STRUCTURE.md) proves squared concavity
+and a sharp product-support envelope; these alone are no new entropy
+exclusion. Neither result closes the generic low-score or all-n problems.
+
 The [extended-core continuation](audits/EXTENDED_CORE_TRANSFER.md) supplies
 a shorter decoder bound using three anticommuting sets and a genuinely
 larger entropy-valid region: `g(sigma)>13/4`, `epsilon<=1/99`.
@@ -613,8 +627,9 @@ from the coupled principal-angle estimate. The entirely elementary proof
 covers `epsilon<=1/201`; the sharper cutoff uses 97 exact scalar intervals.
 The source audit credits Kurzyński et al., 1010.2012v2 Eq. (1), for the
 anticommutation principle and grouping method. No priority claim follows.
-For the newly admitted cores, tails between `1/99` and `1/29` remain open;
-low-score cores and the all-n problem are also unresolved.
+Its formerly unhandled tails between `1/99` and `1/29` are now covered
+by the curved-transfer theorem above; low-score cores and the all-n
+problem remain unresolved.
 
 The [parity continuation](audits/PARITY_READOUT_BOUND.md) supplies a short
 all-size score theorem from a binary symmetry witness and prior fidelity
@@ -646,8 +661,9 @@ all-dimensional frontier and phase calculation are the supplied deductions;
 the scalarization method, pure weighted geometry and flag constructions
 are established. This sharpens the candidate theorem, but a complete prior
 subsumption audit is still needed. The Tomassoli full-text gap remains,
-and a 2012 Nakahira–Usuda Bayes-rank theorem is a further explicit gap for
-the preceding decoder-projectivity result. No all-state entropy proof or
+while the [2012 Nakahira–Usuda comparison](audits/BAYES_RANK_PRIOR_COMPARISON.md)
+is now completed: its whole weighted rank-certificate family gives only
+rank two for the natural Hamming ensemble. No all-state entropy proof or
 admissible equal-accuracy violating seed was obtained in this continuation.
 
 The goal remains a publishable, analytically led theorem with a clear novelty

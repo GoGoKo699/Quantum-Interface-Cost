@@ -1,0 +1,40 @@
+{
+  "certificate": "PASS",
+  "scope": "scalar transfer/SLD reduction for normalized top-two spectral cores",
+  "arithmetic": "integer endpoints / 2**80, outward rounded",
+  "closed_domain": {
+    "epsilon": [
+      "1/99",
+      "1/29"
+    ],
+    "m": [
+      "7/32",
+      "1/2"
+    ],
+    "u": [
+      "0",
+      "1/10"
+    ],
+    "L": [
+      "0",
+      "1/6"
+    ]
+  },
+  "necessary_constraints": [
+    "d0=max(m*B(m)*u,2*sqrt(2)*m*u+L)<=G(m)-13/4",
+    "a_min^2<=2*S0"
+  ],
+  "visited_boxes": 10647,
+  "terminal_leaves": 5324,
+  "leaf_counts": {
+    "transfer": 1868,
+    "sld": 2898,
+    "empty": 558
+  },
+  "maximum_depth": 20,
+  "minimum_positive_margin_numerators": {
+    "transfer": 416550709650178248,
+    "sld": 1311935999616578036
+  },
+  "margin_denominator": 1208925819614629174706176
+}

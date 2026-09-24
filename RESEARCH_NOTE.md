@@ -1,6 +1,6 @@
 # Q1 — Delayed local readout through a bounded quantum interface
 
-**Version:** 0.22, 2026-09-24
+**Version:** 0.23, 2026-09-24
 
 **Project:** Falling / Q1  
 **Status:** Baseline proofs and seed reduction independently checked within the audit workspace. The full product-diagonal profile rate has a constructive optimizer. Its one-qubit cost is an established steering entanglement measure; a new theorem-level comparison proves strict separation from the full optimized weighted-CHSH bound family inspected, while crediting the prior mixture mechanism. The unrestricted rate equals regularized formation of a local-query assemblage, whose distinction from full tensor-product assemblages is explicit. Earlier converse and construction results remain as listed below. The complete two-qubit entropy inequality, general common-accuracy rate evaluation and publication novelty remain unresolved. This is a research dossier, not external peer review or a claim of a new framework.
@@ -62,7 +62,9 @@ The general compression problem below is already present in the dimensional meas
 | Sharp score at every fixed product-parity weight and every block size | Direct symmetry specialization of prior fidelity theory, with an explicit simultaneous attainer; g_n<=n sqrt(2+8q(1-q)). See the [parity proof](docs/audits/PARITY_READOUT_BOUND.md). |
 | Two-qubit entropy bound when the top-two spectral subspace is a local product-parity sector | Derived and independently checked; arbitrary unequal eigenvalues and complex intrablock coherences. This is not all parity-commuting states. |
 | Sharp operator envelope for a mixed scalar/traceless inactive decoder site | Derived and independently checked; classification threshold improves to below sqrt(21/2). A later short anticommutation corollary gives 13/4 without the sharp-envelope machinery. |
-| Two-qubit entropy bound when core score >13/4 and tail weight <=1/99 | Derived and independently checked; strengthened angle inequality and a 97-leaf exact scalar certificate. The entirely elementary version covers <=1/201; the larger-tail strip remains unresolved. See [the extension](docs/audits/EXTENDED_CORE_TRANSFER.md). |
+| Two-qubit entropy bound when core score >13/4 and tail weight <=1/99 | Earlier partial result, derived and independently checked; strengthened angle inequality and a 97-leaf exact scalar certificate. Entirely elementary through <=1/201; extended by the next row. See [the small-tail proof](docs/audits/EXTENDED_CORE_TRANSFER.md). |
+| Two-qubit entropy bound when top-two core score >13/4 and tail weight <=1/29 | Derived and independently checked; paired finite scalar-query gains, active curvature and an imbalanced SLD bound close the larger-tail strip using 5,324 exact scalar leaves. [Full-strip proof](docs/audits/CURVED_CORE_TRANSFER.md). Lower-score cores remain unresolved. |
+| Square of fixed-core, fixed-tail transfer sum is concave in squared tail parameter | Derived and independently checked for arbitrary complex two-dimensional blocks, including singular blocks; finite positive-parameter tangents. Maximizing over states need not preserve concavity. [Matrix proof](docs/audits/FINITE_TAIL_STRUCTURE.md). |
 | Quantitative stability of the one-qubit optimum | Supplied deduction; normalized seeds and maximally-mixed-input branch weights, without a channel-distance claim. |
 | Sharp evaluation of the common-accuracy asymptotic memory rate, or a strict common-accuracy collective-coding improvement | Candidate research target; not solved here and not yet certified absent from the literature. |
 | Exponential sampling advantage or speedup for classical-data learning | Not established; the many-copy control in Section 9 is deliberately easy classically. |
@@ -694,8 +696,12 @@ is at most `1/99`. It retains the stronger angular estimate
 `L>=m(sqrt(u)-sqrt(v))^2`; a three-set anticommutation proof supplies the
 decoder classification. An elementary argument proves the result through
 `1/201`, and an exact one-variable certificate sharpens it to `1/99`.
-It does not extend that threshold to all tails through `1/29`, or establish
-unrestricted optimality or priority of the full two-parameter profile.
+The subsequent [curved-transfer theorem](docs/audits/CURVED_CORE_TRANSFER.md)
+extends the same threshold through `1/29`: paired scalar-query gains and
+the active/inactive score imbalance avoid the earlier inverse-bound loss.
+Thus every remaining two-qubit witness has core score at most `13/4`.
+No unrestricted all-size optimum or priority of the full two-parameter
+profile is established.
 
 Finally, [one-qubit stability](docs/ONE_QUBIT_STABILITY.md) supplies a
 quantitative version of the equality characterization. A normalized seed
