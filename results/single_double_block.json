@@ -1,0 +1,2033 @@
+{
+  "construction_cases": [
+    {
+      "angles": [
+        [
+          1.5707963267948966,
+          0.0
+        ],
+        [
+          1.5707963267948966
+        ],
+        [
+          1.5707963267948966
+        ]
+      ],
+      "asymmetric_largest_eigenvalue": 2.3880896718813434,
+      "d0": 1.0,
+      "d1": 1.895269253967044e-16,
+      "name": "11-11-angles0-rotation0",
+      "physical_hamiltonian_norm": 4.242640687119286,
+      "residuals": {
+        "K_norm": 0.0,
+        "asymmetric_converse": -0.19769676574556172,
+        "h1_positive_spectrum_cap": 8.825958089782673e-16,
+        "other_local_caps": 8.788884114140478e-16,
+        "physical_converse": -1.1715728752538093,
+        "rank_one_compression": 5.551115123125783e-16,
+        "rank_two_compression": -0.24999999999999956,
+        "resolvent_chord": 6.418930696707227e-16,
+        "scalar_conclusion": -4.440892098500626e-16,
+        "weighted_compression": 4.440892098500626e-16
+      },
+      "signatures": [
+        "22",
+        "11",
+        "11"
+      ],
+      "u0": 2.0,
+      "u1": 1.4142135623730951,
+      "v": 1.414213562373095,
+      "weighted_comparison": 0.5,
+      "weighted_compression_norm": 0.5000000000000004
+    },
+    {
+      "angles": [
+        [
+          1.5707963267948966,
+          0.0
+        ],
+        [
+          1.5707963267948966
+        ],
+        [
+          1.5707963267948966
+        ]
+      ],
+      "asymmetric_largest_eigenvalue": 2.3437416210440816,
+      "d0": 1.0,
+      "d1": 1.895269253967044e-16,
+      "name": "11-11-angles0-rotation1",
+      "physical_hamiltonian_norm": 4.413351475957774,
+      "residuals": {
+        "K_norm": -0.06859524653995486,
+        "asymmetric_converse": -0.2420448165828235,
+        "h1_positive_spectrum_cap": 1.4425534917541503e-15,
+        "other_local_caps": 4.367468755240526e-16,
+        "physical_converse": -1.0008620864153208,
+        "rank_one_compression": -0.03417856969571298,
+        "rank_two_compression": -0.12710217500040388,
+        "resolvent_chord": 2.476331716160255e-16,
+        "scalar_conclusion": -4.440892098500626e-16,
+        "weighted_compression": -0.03417856969571276
+      },
+      "signatures": [
+        "22",
+        "11",
+        "11"
+      ],
+      "u0": 2.0,
+      "u1": 1.4142135623730951,
+      "v": 1.414213562373095,
+      "weighted_comparison": 0.5,
+      "weighted_compression_norm": 0.46582143030428724
+    },
+    {
+      "angles": [
+        [
+          1.5707963267948966,
+          0.0
+        ],
+        [
+          1.5707963267948966
+        ],
+        [
+          1.5707963267948966
+        ]
+      ],
+      "asymmetric_largest_eigenvalue": 2.3676212198906317,
+      "d0": 1.0,
+      "d1": 1.895269253967044e-16,
+      "name": "11-11-angles0-rotation2",
+      "physical_hamiltonian_norm": 4.356725675490726,
+      "residuals": {
+        "K_norm": -0.005382913314724291,
+        "asymmetric_converse": -0.2181652177362734,
+        "h1_positive_spectrum_cap": 8.952605089482415e-16,
+        "other_local_caps": 1.300925729793451e-15,
+        "physical_converse": -1.0574878868823685,
+        "rank_one_compression": -0.013892234277249338,
+        "rank_two_compression": -0.19101540591016108,
+        "resolvent_chord": 3.639474329885524e-16,
+        "scalar_conclusion": -4.440892098500626e-16,
+        "weighted_compression": -0.01389223427724956
+      },
+      "signatures": [
+        "22",
+        "11",
+        "11"
+      ],
+      "u0": 2.0,
+      "u1": 1.4142135623730951,
+      "v": 1.414213562373095,
+      "weighted_comparison": 0.5,
+      "weighted_compression_norm": 0.48610776572275044
+    },
+    {
+      "angles": [
+        [
+          1.5707963267948966,
+          0.0
+        ],
+        [
+          1.5707963267948966
+        ],
+        [
+          1.5707963267948966
+        ]
+      ],
+      "asymmetric_largest_eigenvalue": 2.307992757111514,
+      "d0": 1.0,
+      "d1": 1.895269253967044e-16,
+      "name": "11-11-angles0-rotation3",
+      "physical_hamiltonian_norm": 4.586372204477945,
+      "residuals": {
+        "K_norm": -0.00502256191174677,
+        "asymmetric_converse": -0.2777936805153911,
+        "h1_positive_spectrum_cap": 5.894174463038051e-16,
+        "other_local_caps": 7.138224670217065e-16,
+        "physical_converse": -0.8278413578951502,
+        "rank_one_compression": -0.12854454562300777,
+        "rank_two_compression": -0.18177882026095338,
+        "resolvent_chord": 3.1341219591042003e-16,
+        "scalar_conclusion": -4.440892098500626e-16,
+        "weighted_compression": -0.131018224640703
+      },
+      "signatures": [
+        "22",
+        "11",
+        "11"
+      ],
+      "u0": 2.0,
+      "u1": 1.4142135623730951,
+      "v": 1.414213562373095,
+      "weighted_comparison": 0.5,
+      "weighted_compression_norm": 0.368981775359297
+    },
+    {
+      "angles": [
+        [
+          1.5707963267948966,
+          1.5707963267948966
+        ],
+        [
+          0.63
+        ],
+        [
+          1.07
+        ]
+      ],
+      "asymmetric_largest_eigenvalue": 2.3880896718813442,
+      "d0": 3.4142135623730945,
+      "d1": 3.4142135623730945,
+      "name": "11-11-angles1-rotation0",
+      "physical_hamiltonian_norm": 4.828427124746192,
+      "residuals": {
+        "K_norm": 0.0,
+        "asymmetric_converse": -0.19769676574556083,
+        "h1_positive_spectrum_cap": 8.252972982691643e-16,
+        "other_local_caps": 7.18262990841491e-16,
+        "physical_converse": -0.5857864376269033,
+        "rank_one_compression": 2.220446049250313e-16,
+        "rank_two_compression": -0.2499999999999999,
+        "resolvent_chord": 8.428237196701857e-17,
+        "scalar_conclusion": -0.20710678118654835,
+        "weighted_compression": -0.8535533905932735
+      },
+      "signatures": [
+        "22",
+        "11",
+        "11"
+      ],
+      "u0": 2.0,
+      "u1": 2.0,
+      "v": 0.0,
+      "weighted_comparison": 2.560660171779821,
+      "weighted_compression_norm": 1.7071067811865475
+    },
+    {
+      "angles": [
+        [
+          1.5707963267948966,
+          1.5707963267948966
+        ],
+        [
+          0.63
+        ],
+        [
+          1.07
+        ]
+      ],
+      "asymmetric_largest_eigenvalue": 2.396851632130568,
+      "d0": 3.4142135623730945,
+      "d1": 3.4142135623730945,
+      "name": "11-11-angles1-rotation1",
+      "physical_hamiltonian_norm": 4.665289904534674,
+      "residuals": {
+        "K_norm": -0.01990580970042566,
+        "asymmetric_converse": -0.1889348054963369,
+        "h1_positive_spectrum_cap": 1.0235869800407806e-15,
+        "other_local_caps": 1.9966277025315366e-15,
+        "physical_converse": -0.7489236578384206,
+        "rank_one_compression": -0.07711628288781142,
+        "rank_two_compression": -0.19987194017871412,
+        "resolvent_chord": 6.956195958963382e-17,
+        "scalar_conclusion": -0.20710678118654835,
+        "weighted_compression": -0.6824054888959905
+      },
+      "signatures": [
+        "22",
+        "11",
+        "11"
+      ],
+      "u0": 2.0,
+      "u1": 2.0,
+      "v": 0.0,
+      "weighted_comparison": 2.560660171779821,
+      "weighted_compression_norm": 1.8782546828838305
+    },
+    {
+      "angles": [
+        [
+          1.5707963267948966,
+          1.5707963267948966
+        ],
+        [
+          0.63
+        ],
+        [
+          1.07
+        ]
+      ],
+      "asymmetric_largest_eigenvalue": 2.3880577744534848,
+      "d0": 3.4142135623730945,
+      "d1": 3.4142135623730945,
+      "name": "11-11-angles1-rotation2",
+      "physical_hamiltonian_norm": 4.470000173891585,
+      "residuals": {
+        "K_norm": -0.03473146928845616,
+        "asymmetric_converse": -0.1977286631734203,
+        "h1_positive_spectrum_cap": 9.043822699841418e-16,
+        "other_local_caps": 1.2768476693663848e-15,
+        "physical_converse": -0.9442133884815096,
+        "rank_one_compression": -0.11486866326228978,
+        "rank_two_compression": -0.1824289825704184,
+        "resolvent_chord": 4.0379315379185194e-17,
+        "scalar_conclusion": -0.20710678118654835,
+        "weighted_compression": -0.6228515064618474
+      },
+      "signatures": [
+        "22",
+        "11",
+        "11"
+      ],
+      "u0": 2.0,
+      "u1": 2.0,
+      "v": 0.0,
+      "weighted_comparison": 2.560660171779821,
+      "weighted_compression_norm": 1.9378086653179736
+    },
+    {
+      "angles": [
+        [
+          1.5707963267948966,
+          1.5707963267948966
+        ],
+        [
+          0.63
+        ],
+        [
+          1.07
+        ]
+      ],
+      "asymmetric_largest_eigenvalue": 2.484309383905399,
+      "d0": 3.4142135623730945,
+      "d1": 3.4142135623730945,
+      "name": "11-11-angles1-rotation3",
+      "physical_hamiltonian_norm": 4.5271550404497045,
+      "residuals": {
+        "K_norm": -0.004508878169465547,
+        "asymmetric_converse": -0.10147705372150595,
+        "h1_positive_spectrum_cap": 1.0043541744393022e-15,
+        "other_local_caps": 9.859266935627809e-16,
+        "physical_converse": -0.8870585219233904,
+        "rank_one_compression": -0.007946116438735107,
+        "rank_two_compression": -0.05416612508745611,
+        "resolvent_chord": 7.48396847633354e-17,
+        "scalar_conclusion": -0.20710678118654835,
+        "weighted_compression": -0.18493471889479052
+      },
+      "signatures": [
+        "22",
+        "11",
+        "11"
+      ],
+      "u0": 2.0,
+      "u1": 2.0,
+      "v": 0.0,
+      "weighted_comparison": 2.560660171779821,
+      "weighted_compression_norm": 2.3757254528850305
+    },
+    {
+      "angles": [
+        [
+          0.31,
+          1.11
+        ],
+        [
+          1.5707963267948966
+        ],
+        [
+          1.5707963267948966
+        ]
+      ],
+      "asymmetric_largest_eigenvalue": 2.1074759272622487,
+      "d0": 1.2029058816335332,
+      "d1": 0.45006446601708905,
+      "name": "11-11-angles2-rotation0",
+      "physical_hamiltonian_norm": 4.7755782157917945,
+      "residuals": {
+        "K_norm": 0.0,
+        "asymmetric_converse": -0.4783105103646563,
+        "h1_positive_spectrum_cap": 1.1957240998459543e-15,
+        "other_local_caps": 8.788884114140478e-16,
+        "physical_converse": -0.6386353465813004,
+        "rank_one_compression": 6.661338147750939e-16,
+        "rank_two_compression": -0.24999999999999956,
+        "resolvent_chord": 1.794315541259011e-16,
+        "scalar_conclusion": -0.10994051409872457,
+        "weighted_compression": -0.4889368243124942
+      },
+      "signatures": [
+        "22",
+        "11",
+        "11"
+      ],
+      "u0": 1.9471510910456065,
+      "u1": 1.6155857367799726,
+      "v": 1.1789328764238924,
+      "weighted_comparison": 0.7139690573210389,
+      "weighted_compression_norm": 0.22503223300854472
+    },
+    {
+      "angles": [
+        [
+          0.31,
+          1.11
+        ],
+        [
+          1.5707963267948966
+        ],
+        [
+          1.5707963267948966
+        ]
+      ],
+      "asymmetric_largest_eigenvalue": 2.315942092811183,
+      "d0": 1.2029058816335332,
+      "d1": 0.45006446601708905,
+      "name": "11-11-angles2-rotation1",
+      "physical_hamiltonian_norm": 4.36942978611261,
+      "residuals": {
+        "K_norm": -0.0473780046754666,
+        "asymmetric_converse": -0.26984434481572217,
+        "h1_positive_spectrum_cap": 9.39531701846274e-16,
+        "other_local_caps": 1.3584083931479743e-15,
+        "physical_converse": -1.044783776260485,
+        "rank_one_compression": -0.03450404161093723,
+        "rank_two_compression": -0.19811296987236482,
+        "resolvent_chord": 1.3180637039536785e-16,
+        "scalar_conclusion": -0.10994051409872457,
+        "weighted_compression": -0.11880507389255768
+      },
+      "signatures": [
+        "22",
+        "11",
+        "11"
+      ],
+      "u0": 1.9471510910456065,
+      "u1": 1.6155857367799726,
+      "v": 1.1789328764238924,
+      "weighted_comparison": 0.7139690573210389,
+      "weighted_compression_norm": 0.5951639834284812
+    },
+    {
+      "angles": [
+        [
+          0.31,
+          1.11
+        ],
+        [
+          1.5707963267948966
+        ],
+        [
+          1.5707963267948966
+        ]
+      ],
+      "asymmetric_largest_eigenvalue": 2.2160990866003014,
+      "d0": 1.2029058816335332,
+      "d1": 0.45006446601708905,
+      "name": "11-11-angles2-rotation2",
+      "physical_hamiltonian_norm": 4.465111114486605,
+      "residuals": {
+        "K_norm": -0.2511930273422236,
+        "asymmetric_converse": -0.36968735102660366,
+        "h1_positive_spectrum_cap": 6.192882016280982e-16,
+        "other_local_caps": 1.3321657951174161e-15,
+        "physical_converse": -0.9491024478864896,
+        "rank_one_compression": -0.14449666191919752,
+        "rank_two_compression": -0.29312903103062476,
+        "resolvent_chord": 1.9653669509895495e-16,
+        "scalar_conclusion": -0.10994051409872457,
+        "weighted_compression": -0.25675479391947564
+      },
+      "signatures": [
+        "22",
+        "11",
+        "11"
+      ],
+      "u0": 1.9471510910456065,
+      "u1": 1.6155857367799726,
+      "v": 1.1789328764238924,
+      "weighted_comparison": 0.7139690573210389,
+      "weighted_compression_norm": 0.45721426340156324
+    },
+    {
+      "angles": [
+        [
+          0.31,
+          1.11
+        ],
+        [
+          1.5707963267948966
+        ],
+        [
+          1.5707963267948966
+        ]
+      ],
+      "asymmetric_largest_eigenvalue": 2.273795650018687,
+      "d0": 1.2029058816335332,
+      "d1": 0.45006446601708905,
+      "name": "11-11-angles2-rotation3",
+      "physical_hamiltonian_norm": 4.397028681988115,
+      "residuals": {
+        "K_norm": -0.02793980865159984,
+        "asymmetric_converse": -0.31199078760821797,
+        "h1_positive_spectrum_cap": 5.196353919955077e-16,
+        "other_local_caps": 8.768275314293897e-16,
+        "physical_converse": -1.0171848803849803,
+        "rank_one_compression": -0.1251998007213283,
+        "rank_two_compression": -0.205212708692186,
+        "resolvent_chord": 2.1814445730855726e-16,
+        "scalar_conclusion": -0.10994051409872457,
+        "weighted_compression": -0.20316357811894636
+      },
+      "signatures": [
+        "22",
+        "11",
+        "11"
+      ],
+      "u0": 1.9471510910456065,
+      "u1": 1.6155857367799726,
+      "v": 1.1789328764238924,
+      "weighted_comparison": 0.7139690573210389,
+      "weighted_compression_norm": 0.5108054792020925
+    },
+    {
+      "angles": [
+        [
+          2.41,
+          0.72
+        ],
+        [
+          0.63
+        ],
+        [
+          1.07
+        ]
+      ],
+      "asymmetric_largest_eigenvalue": 2.2452072072792433,
+      "d0": 1.3185257102660424,
+      "d1": 1.3041009783159216,
+      "name": "11-11-angles3-rotation0",
+      "physical_hamiltonian_norm": 4.650176104145643,
+      "residuals": {
+        "K_norm": 0.0,
+        "asymmetric_converse": -0.3405792303476618,
+        "h1_positive_spectrum_cap": 1.0580122159200629e-15,
+        "other_local_caps": 7.18262990841491e-16,
+        "physical_converse": -0.7640374582274516,
+        "rank_one_compression": -1.6653345369377348e-16,
+        "rank_two_compression": -0.24999999999999956,
+        "resolvent_chord": 8.898186648683345e-17,
+        "scalar_conclusion": -0.3045713925650506,
+        "weighted_compression": -0.3260252445789802
+      },
+      "signatures": [
+        "22",
+        "11",
+        "11"
+      ],
+      "u0": 1.8265024464349842,
+      "u1": 1.8217489793994524,
+      "v": 0.8253669826550211,
+      "weighted_comparison": 0.9852880997120016,
+      "weighted_compression_norm": 0.6592628551330214
+    },
+    {
+      "angles": [
+        [
+          2.41,
+          0.72
+        ],
+        [
+          0.63
+        ],
+        [
+          1.07
+        ]
+      ],
+      "asymmetric_largest_eigenvalue": 2.296373054387126,
+      "d0": 1.3185257102660424,
+      "d1": 1.3041009783159216,
+      "name": "11-11-angles3-rotation1",
+      "physical_hamiltonian_norm": 4.365048321316929,
+      "residuals": {
+        "K_norm": -0.0132146840770484,
+        "asymmetric_converse": -0.28941338323977917,
+        "h1_positive_spectrum_cap": 1.1532941432849642e-15,
+        "other_local_caps": 6.388997895305505e-16,
+        "physical_converse": -1.0491652410561656,
+        "rank_one_compression": -0.021100997340407934,
+        "rank_two_compression": -0.11232903250332082,
+        "resolvent_chord": 7.701940165182007e-17,
+        "scalar_conclusion": -0.3045713925650506,
+        "weighted_compression": -0.15108111555078163
+      },
+      "signatures": [
+        "22",
+        "11",
+        "11"
+      ],
+      "u0": 1.8265024464349842,
+      "u1": 1.8217489793994524,
+      "v": 0.8253669826550211,
+      "weighted_comparison": 0.9852880997120016,
+      "weighted_compression_norm": 0.83420698416122
+    },
+    {
+      "angles": [
+        [
+          2.41,
+          0.72
+        ],
+        [
+          0.63
+        ],
+        [
+          1.07
+        ]
+      ],
+      "asymmetric_largest_eigenvalue": 2.2695323920551247,
+      "d0": 1.3185257102660424,
+      "d1": 1.3041009783159216,
+      "name": "11-11-angles3-rotation2",
+      "physical_hamiltonian_norm": 4.3789714299035625,
+      "residuals": {
+        "K_norm": -0.05524655254071931,
+        "asymmetric_converse": -0.3162540455717804,
+        "h1_positive_spectrum_cap": 7.650467328227692e-16,
+        "other_local_caps": 1.0028816745507117e-15,
+        "physical_converse": -1.0352421324695325,
+        "rank_one_compression": -0.017802968166908295,
+        "rank_two_compression": -0.125035761987625,
+        "resolvent_chord": 8.490837811435271e-17,
+        "scalar_conclusion": -0.3045713925650506,
+        "weighted_compression": -0.16414301416028643
+      },
+      "signatures": [
+        "22",
+        "11",
+        "11"
+      ],
+      "u0": 1.8265024464349842,
+      "u1": 1.8217489793994524,
+      "v": 0.8253669826550211,
+      "weighted_comparison": 0.9852880997120016,
+      "weighted_compression_norm": 0.8211450855517152
+    },
+    {
+      "angles": [
+        [
+          2.41,
+          0.72
+        ],
+        [
+          0.63
+        ],
+        [
+          1.07
+        ]
+      ],
+      "asymmetric_largest_eigenvalue": 2.204870669158213,
+      "d0": 1.3185257102660424,
+      "d1": 1.3041009783159216,
+      "name": "11-11-angles3-rotation3",
+      "physical_hamiltonian_norm": 4.359672114406009,
+      "residuals": {
+        "K_norm": -0.07256679297157453,
+        "asymmetric_converse": -0.38091576846869213,
+        "h1_positive_spectrum_cap": 1.2742999575279365e-15,
+        "other_local_caps": 9.992007221626409e-16,
+        "physical_converse": -1.054541447967086,
+        "rank_one_compression": -0.13384154958749994,
+        "rank_two_compression": -0.2412892519277151,
+        "resolvent_chord": 1.1808907738535059e-16,
+        "scalar_conclusion": -0.3045713925650506,
+        "weighted_compression": -0.3173265537522759
+      },
+      "signatures": [
+        "22",
+        "11",
+        "11"
+      ],
+      "u0": 1.8265024464349842,
+      "u1": 1.8217489793994524,
+      "v": 0.8253669826550211,
+      "weighted_comparison": 0.9852880997120016,
+      "weighted_compression_norm": 0.6679615459597257
+    },
+    {
+      "angles": [
+        [
+          1.5707963267948966,
+          0.0
+        ],
+        [
+          1.5707963267948966
+        ],
+        [
+          1.5707963267948966
+        ]
+      ],
+      "asymmetric_largest_eigenvalue": 2.3880896718813434,
+      "d0": 1.0,
+      "d1": 1.895269253967044e-16,
+      "name": "11-12-angles0-rotation0",
+      "physical_hamiltonian_norm": 4.2426406871192865,
+      "residuals": {
+        "K_norm": 0.0,
+        "asymmetric_converse": -0.19769676574556172,
+        "h1_positive_spectrum_cap": 8.825958089782673e-16,
+        "other_local_caps": 6.631029206798736e-16,
+        "physical_converse": -1.1715728752538084,
+        "rank_one_compression": 5.551115123125783e-16,
+        "rank_two_compression": -0.24999999999999956,
+        "resolvent_chord": 6.418930696707227e-16,
+        "scalar_conclusion": -4.440892098500626e-16,
+        "weighted_compression": 4.440892098500626e-16
+      },
+      "signatures": [
+        "22",
+        "11",
+        "12"
+      ],
+      "u0": 2.0,
+      "u1": 1.4142135623730951,
+      "v": 1.414213562373095,
+      "weighted_comparison": 0.5,
+      "weighted_compression_norm": 0.5000000000000004
+    },
+    {
+      "angles": [
+        [
+          1.5707963267948966,
+          0.0
+        ],
+        [
+          1.5707963267948966
+        ],
+        [
+          1.5707963267948966
+        ]
+      ],
+      "asymmetric_largest_eigenvalue": 2.3135236054661674,
+      "d0": 1.0,
+      "d1": 1.895269253967044e-16,
+      "name": "11-12-angles0-rotation1",
+      "physical_hamiltonian_norm": 4.470673498082899,
+      "residuals": {
+        "K_norm": -0.004319798578345191,
+        "asymmetric_converse": -0.27226283216073766,
+        "h1_positive_spectrum_cap": 5.992680606596619e-16,
+        "other_local_caps": 9.70624322827217e-16,
+        "physical_converse": -0.9435400642901959,
+        "rank_one_compression": -0.01642844758363665,
+        "rank_two_compression": -0.1433000850595848,
+        "resolvent_chord": 2.7601860110374154e-16,
+        "scalar_conclusion": -4.440892098500626e-16,
+        "weighted_compression": -0.09909211425274106
+      },
+      "signatures": [
+        "22",
+        "11",
+        "12"
+      ],
+      "u0": 2.0,
+      "u1": 1.4142135623730951,
+      "v": 1.414213562373095,
+      "weighted_comparison": 0.5,
+      "weighted_compression_norm": 0.40090788574725894
+    },
+    {
+      "angles": [
+        [
+          1.5707963267948966,
+          0.0
+        ],
+        [
+          1.5707963267948966
+        ],
+        [
+          1.5707963267948966
+        ]
+      ],
+      "asymmetric_largest_eigenvalue": 2.307003743880452,
+      "d0": 1.0,
+      "d1": 1.895269253967044e-16,
+      "name": "11-12-angles0-rotation2",
+      "physical_hamiltonian_norm": 4.262208191689006,
+      "residuals": {
+        "K_norm": -0.01504087004223642,
+        "asymmetric_converse": -0.27878269374645326,
+        "h1_positive_spectrum_cap": 1.5622839659773114e-15,
+        "other_local_caps": 1.0029929772872395e-15,
+        "physical_converse": -1.1520053706840887,
+        "rank_one_compression": -0.02301815479191438,
+        "rank_two_compression": -0.14831158135941314,
+        "resolvent_chord": 3.5572560417556494e-16,
+        "scalar_conclusion": -4.440892098500626e-16,
+        "weighted_compression": -0.13579837114855037
+      },
+      "signatures": [
+        "22",
+        "11",
+        "12"
+      ],
+      "u0": 2.0,
+      "u1": 1.4142135623730951,
+      "v": 1.414213562373095,
+      "weighted_comparison": 0.5,
+      "weighted_compression_norm": 0.36420162885144963
+    },
+    {
+      "angles": [
+        [
+          1.5707963267948966,
+          0.0
+        ],
+        [
+          1.5707963267948966
+        ],
+        [
+          1.5707963267948966
+        ]
+      ],
+      "asymmetric_largest_eigenvalue": 2.357773504989572,
+      "d0": 1.0,
+      "d1": 1.895269253967044e-16,
+      "name": "11-12-angles0-rotation3",
+      "physical_hamiltonian_norm": 4.287894912862768,
+      "residuals": {
+        "K_norm": -0.01174871236680941,
+        "asymmetric_converse": -0.22801293263733324,
+        "h1_positive_spectrum_cap": 6.190630556656046e-16,
+        "other_local_caps": 1.4338019475794809e-15,
+        "physical_converse": -1.1263186495103268,
+        "rank_one_compression": -0.03979539087890749,
+        "rank_two_compression": -0.13043395247651945,
+        "resolvent_chord": 2.6754471506855694e-16,
+        "scalar_conclusion": -4.440892098500626e-16,
+        "weighted_compression": -0.03979539087890738
+      },
+      "signatures": [
+        "22",
+        "11",
+        "12"
+      ],
+      "u0": 2.0,
+      "u1": 1.4142135623730951,
+      "v": 1.414213562373095,
+      "weighted_comparison": 0.5,
+      "weighted_compression_norm": 0.4602046091210926
+    },
+    {
+      "angles": [
+        [
+          1.5707963267948966,
+          1.5707963267948966
+        ],
+        [
+          0.63
+        ],
+        [
+          1.07
+        ]
+      ],
+      "asymmetric_largest_eigenvalue": 2.3880896718813442,
+      "d0": 3.4142135623730945,
+      "d1": 3.4142135623730945,
+      "name": "11-12-angles1-rotation0",
+      "physical_hamiltonian_norm": 4.65028153987289,
+      "residuals": {
+        "K_norm": 0.0,
+        "asymmetric_converse": -0.19769676574556083,
+        "h1_positive_spectrum_cap": 8.252972982691643e-16,
+        "other_local_caps": 7.18262990841491e-16,
+        "physical_converse": -0.7639320225002049,
+        "rank_one_compression": 2.220446049250313e-16,
+        "rank_two_compression": -0.2499999999999999,
+        "resolvent_chord": 8.428237196701857e-17,
+        "scalar_conclusion": -0.20710678118654835,
+        "weighted_compression": -0.8535533905932735
+      },
+      "signatures": [
+        "22",
+        "11",
+        "12"
+      ],
+      "u0": 2.0,
+      "u1": 2.0,
+      "v": 0.0,
+      "weighted_comparison": 2.560660171779821,
+      "weighted_compression_norm": 1.7071067811865475
+    },
+    {
+      "angles": [
+        [
+          1.5707963267948966,
+          1.5707963267948966
+        ],
+        [
+          0.63
+        ],
+        [
+          1.07
+        ]
+      ],
+      "asymmetric_largest_eigenvalue": 2.39708283323814,
+      "d0": 3.4142135623730945,
+      "d1": 3.4142135623730945,
+      "name": "11-12-angles1-rotation1",
+      "physical_hamiltonian_norm": 4.495686164621368,
+      "residuals": {
+        "K_norm": -0.07809880453492513,
+        "asymmetric_converse": -0.1887036043887651,
+        "h1_positive_spectrum_cap": 1.001688226883603e-15,
+        "other_local_caps": 1.1856706863239376e-15,
+        "physical_converse": -0.9185273977517268,
+        "rank_one_compression": -0.06108990413413545,
+        "rank_two_compression": -0.16506069619020824,
+        "resolvent_chord": 1.1221448896992868e-16,
+        "scalar_conclusion": -0.20710678118654835,
+        "weighted_compression": -0.5635524675473544
+      },
+      "signatures": [
+        "22",
+        "11",
+        "12"
+      ],
+      "u0": 2.0,
+      "u1": 2.0,
+      "v": 0.0,
+      "weighted_comparison": 2.560660171779821,
+      "weighted_compression_norm": 1.9971077042324665
+    },
+    {
+      "angles": [
+        [
+          1.5707963267948966,
+          1.5707963267948966
+        ],
+        [
+          0.63
+        ],
+        [
+          1.07
+        ]
+      ],
+      "asymmetric_largest_eigenvalue": 2.4350815347397976,
+      "d0": 3.4142135623730945,
+      "d1": 3.4142135623730945,
+      "name": "11-12-angles1-rotation2",
+      "physical_hamiltonian_norm": 4.707370395225898,
+      "residuals": {
+        "K_norm": -0.10507303898502296,
+        "asymmetric_converse": -0.15070490288710747,
+        "h1_positive_spectrum_cap": 1.0417923561517441e-15,
+        "other_local_caps": 1.821755653866588e-15,
+        "physical_converse": -0.7068431671471966,
+        "rank_one_compression": -0.06084157647906174,
+        "rank_two_compression": -0.10625812912673238,
+        "resolvent_chord": 4.234589892257546e-17,
+        "scalar_conclusion": -0.20710678118654835,
+        "weighted_compression": -0.3627879455768812
+      },
+      "signatures": [
+        "22",
+        "11",
+        "12"
+      ],
+      "u0": 2.0,
+      "u1": 2.0,
+      "v": 0.0,
+      "weighted_comparison": 2.560660171779821,
+      "weighted_compression_norm": 2.1978722262029398
+    },
+    {
+      "angles": [
+        [
+          1.5707963267948966,
+          1.5707963267948966
+        ],
+        [
+          0.63
+        ],
+        [
+          1.07
+        ]
+      ],
+      "asymmetric_largest_eigenvalue": 2.405244498748308,
+      "d0": 3.4142135623730945,
+      "d1": 3.4142135623730945,
+      "name": "11-12-angles1-rotation3",
+      "physical_hamiltonian_norm": 4.361311948799197,
+      "residuals": {
+        "K_norm": -0.04494546982041814,
+        "asymmetric_converse": -0.18054193887859693,
+        "h1_positive_spectrum_cap": 1.0082156591868765e-15,
+        "other_local_caps": 1.5130908000974858e-15,
+        "physical_converse": -1.0529016135738978,
+        "rank_one_compression": -0.06695920683725742,
+        "rank_two_compression": -0.17606518464788212,
+        "resolvent_chord": 9.03106198740672e-17,
+        "scalar_conclusion": -0.20710678118654835,
+        "weighted_compression": -0.6011241412865234
+      },
+      "signatures": [
+        "22",
+        "11",
+        "12"
+      ],
+      "u0": 2.0,
+      "u1": 2.0,
+      "v": 0.0,
+      "weighted_comparison": 2.560660171779821,
+      "weighted_compression_norm": 1.9595360304932976
+    },
+    {
+      "angles": [
+        [
+          0.31,
+          1.11
+        ],
+        [
+          1.5707963267948966
+        ],
+        [
+          1.5707963267948966
+        ]
+      ],
+      "asymmetric_largest_eigenvalue": 2.1074759272622487,
+      "d0": 1.2029058816335332,
+      "d1": 0.45006446601708905,
+      "name": "11-12-angles2-rotation0",
+      "physical_hamiltonian_norm": 4.6141074610249255,
+      "residuals": {
+        "K_norm": 0.0,
+        "asymmetric_converse": -0.4783105103646563,
+        "h1_positive_spectrum_cap": 1.1957240998459543e-15,
+        "other_local_caps": 6.631029206798736e-16,
+        "physical_converse": -0.8001061013481694,
+        "rank_one_compression": 6.661338147750939e-16,
+        "rank_two_compression": -0.24999999999999956,
+        "resolvent_chord": 1.794315541259011e-16,
+        "scalar_conclusion": -0.10994051409872457,
+        "weighted_compression": -0.4889368243124942
+      },
+      "signatures": [
+        "22",
+        "11",
+        "12"
+      ],
+      "u0": 1.9471510910456065,
+      "u1": 1.6155857367799726,
+      "v": 1.1789328764238924,
+      "weighted_comparison": 0.7139690573210389,
+      "weighted_compression_norm": 0.22503223300854472
+    },
+    {
+      "angles": [
+        [
+          0.31,
+          1.11
+        ],
+        [
+          1.5707963267948966
+        ],
+        [
+          1.5707963267948966
+        ]
+      ],
+      "asymmetric_largest_eigenvalue": 2.3255444997808565,
+      "d0": 1.2029058816335332,
+      "d1": 0.45006446601708905,
+      "name": "11-12-angles2-rotation1",
+      "physical_hamiltonian_norm": 4.354855953482319,
+      "residuals": {
+        "K_norm": -0.03737835737875228,
+        "asymmetric_converse": -0.26024193784604854,
+        "h1_positive_spectrum_cap": 1.2092876501212274e-15,
+        "other_local_caps": 1.6702217463164513e-15,
+        "physical_converse": -1.0593576088907763,
+        "rank_one_compression": -0.017003765352111344,
+        "rank_two_compression": -0.12186585975087705,
+        "resolvent_chord": 1.844124523088747e-16,
+        "scalar_conclusion": -0.10994051409872457,
+        "weighted_compression": -0.1292395240433596
+      },
+      "signatures": [
+        "22",
+        "11",
+        "12"
+      ],
+      "u0": 1.9471510910456065,
+      "u1": 1.6155857367799726,
+      "v": 1.1789328764238924,
+      "weighted_comparison": 0.7139690573210389,
+      "weighted_compression_norm": 0.5847295332776793
+    },
+    {
+      "angles": [
+        [
+          0.31,
+          1.11
+        ],
+        [
+          1.5707963267948966
+        ],
+        [
+          1.5707963267948966
+        ]
+      ],
+      "asymmetric_largest_eigenvalue": 2.293352469121485,
+      "d0": 1.2029058816335332,
+      "d1": 0.45006446601708905,
+      "name": "11-12-angles2-rotation2",
+      "physical_hamiltonian_norm": 4.379220387179012,
+      "residuals": {
+        "K_norm": -0.02933959396610719,
+        "asymmetric_converse": -0.29243396850542025,
+        "h1_positive_spectrum_cap": 9.716055703714551e-16,
+        "other_local_caps": 1.06095685707787e-15,
+        "physical_converse": -1.0349931751940833,
+        "rank_one_compression": -0.0605136346579796,
+        "rank_two_compression": -0.13489784299983387,
+        "resolvent_chord": 8.10662197556035e-17,
+        "scalar_conclusion": -0.10994051409872457,
+        "weighted_compression": -0.15107818488081726
+      },
+      "signatures": [
+        "22",
+        "11",
+        "12"
+      ],
+      "u0": 1.9471510910456065,
+      "u1": 1.6155857367799726,
+      "v": 1.1789328764238924,
+      "weighted_comparison": 0.7139690573210389,
+      "weighted_compression_norm": 0.5628908724402216
+    },
+    {
+      "angles": [
+        [
+          0.31,
+          1.11
+        ],
+        [
+          1.5707963267948966
+        ],
+        [
+          1.5707963267948966
+        ]
+      ],
+      "asymmetric_largest_eigenvalue": 2.2941963434717385,
+      "d0": 1.2029058816335332,
+      "d1": 0.45006446601708905,
+      "name": "11-12-angles2-rotation3",
+      "physical_hamiltonian_norm": 4.198073357073247,
+      "residuals": {
+        "K_norm": -0.14303962509430268,
+        "asymmetric_converse": -0.29159009415516657,
+        "h1_positive_spectrum_cap": 1.1728822578717213e-15,
+        "other_local_caps": 7.71014394358128e-16,
+        "physical_converse": -1.2161402052998476,
+        "rank_one_compression": -0.06117974308681445,
+        "rank_two_compression": -0.1821876401430894,
+        "resolvent_chord": 6.702812285092641e-17,
+        "scalar_conclusion": -0.10994051409872457,
+        "weighted_compression": -0.1334718725833185
+      },
+      "signatures": [
+        "22",
+        "11",
+        "12"
+      ],
+      "u0": 1.9471510910456065,
+      "u1": 1.6155857367799726,
+      "v": 1.1789328764238924,
+      "weighted_comparison": 0.7139690573210389,
+      "weighted_compression_norm": 0.5804971847377204
+    },
+    {
+      "angles": [
+        [
+          2.41,
+          0.72
+        ],
+        [
+          0.63
+        ],
+        [
+          1.07
+        ]
+      ],
+      "asymmetric_largest_eigenvalue": 2.2452072072792433,
+      "d0": 1.3185257102660424,
+      "d1": 1.3041009783159216,
+      "name": "11-12-angles3-rotation0",
+      "physical_hamiltonian_norm": 4.527769296225226,
+      "residuals": {
+        "K_norm": 0.0,
+        "asymmetric_converse": -0.3405792303476618,
+        "h1_positive_spectrum_cap": 1.0580122159200629e-15,
+        "other_local_caps": 7.18262990841491e-16,
+        "physical_converse": -0.8864442661478691,
+        "rank_one_compression": -1.6653345369377348e-16,
+        "rank_two_compression": -0.24999999999999956,
+        "resolvent_chord": 8.898186648683345e-17,
+        "scalar_conclusion": -0.3045713925650506,
+        "weighted_compression": -0.3260252445789802
+      },
+      "signatures": [
+        "22",
+        "11",
+        "12"
+      ],
+      "u0": 1.8265024464349842,
+      "u1": 1.8217489793994524,
+      "v": 0.8253669826550211,
+      "weighted_comparison": 0.9852880997120016,
+      "weighted_compression_norm": 0.6592628551330214
+    },
+    {
+      "angles": [
+        [
+          2.41,
+          0.72
+        ],
+        [
+          0.63
+        ],
+        [
+          1.07
+        ]
+      ],
+      "asymmetric_largest_eigenvalue": 2.2298498291827618,
+      "d0": 1.3185257102660424,
+      "d1": 1.3041009783159216,
+      "name": "11-12-angles3-rotation1",
+      "physical_hamiltonian_norm": 4.4031633100905125,
+      "residuals": {
+        "K_norm": -0.055171208989375,
+        "asymmetric_converse": -0.3559366084441433,
+        "h1_positive_spectrum_cap": 1.242456778568673e-15,
+        "other_local_caps": 1.3287644001734336e-15,
+        "physical_converse": -1.0110502522825824,
+        "rank_one_compression": -0.022373447186965045,
+        "rank_two_compression": -0.18099871349159913,
+        "resolvent_chord": 9.965994419627303e-17,
+        "scalar_conclusion": -0.3045713925650506,
+        "weighted_compression": -0.24157307137693995
+      },
+      "signatures": [
+        "22",
+        "11",
+        "12"
+      ],
+      "u0": 1.8265024464349842,
+      "u1": 1.8217489793994524,
+      "v": 0.8253669826550211,
+      "weighted_comparison": 0.9852880997120016,
+      "weighted_compression_norm": 0.7437150283350616
+    },
+    {
+      "angles": [
+        [
+          2.41,
+          0.72
+        ],
+        [
+          0.63
+        ],
+        [
+          1.07
+        ]
+      ],
+      "asymmetric_largest_eigenvalue": 2.2399847183380586,
+      "d0": 1.3185257102660424,
+      "d1": 1.3041009783159216,
+      "name": "11-12-angles3-rotation2",
+      "physical_hamiltonian_norm": 4.215430630553378,
+      "residuals": {
+        "K_norm": -0.014315821495371583,
+        "asymmetric_converse": -0.3458017192888465,
+        "h1_positive_spectrum_cap": 9.564435721012379e-16,
+        "other_local_caps": 9.412775815938215e-16,
+        "physical_converse": -1.198782931819717,
+        "rank_one_compression": -0.06131524816938394,
+        "rank_two_compression": -0.19293414836275202,
+        "resolvent_chord": 8.021795946457981e-17,
+        "scalar_conclusion": -0.3045713925650506,
+        "weighted_compression": -0.25325484114852115
+      },
+      "signatures": [
+        "22",
+        "11",
+        "12"
+      ],
+      "u0": 1.8265024464349842,
+      "u1": 1.8217489793994524,
+      "v": 0.8253669826550211,
+      "weighted_comparison": 0.9852880997120016,
+      "weighted_compression_norm": 0.7320332585634804
+    },
+    {
+      "angles": [
+        [
+          2.41,
+          0.72
+        ],
+        [
+          0.63
+        ],
+        [
+          1.07
+        ]
+      ],
+      "asymmetric_largest_eigenvalue": 2.2899113911868283,
+      "d0": 1.3185257102660424,
+      "d1": 1.3041009783159216,
+      "name": "11-12-angles3-rotation3",
+      "physical_hamiltonian_norm": 4.438252822662447,
+      "residuals": {
+        "K_norm": -0.012890938697992738,
+        "asymmetric_converse": -0.2958750464400768,
+        "h1_positive_spectrum_cap": 1.0188645855451265e-15,
+        "other_local_caps": 1.5255990654469841e-15,
+        "physical_converse": -0.975960739710648,
+        "rank_one_compression": -0.04362354647412903,
+        "rank_two_compression": -0.11270805756207958,
+        "resolvent_chord": 6.988066440307459e-17,
+        "scalar_conclusion": -0.3045713925650506,
+        "weighted_compression": -0.1506537110782742
+      },
+      "signatures": [
+        "22",
+        "11",
+        "12"
+      ],
+      "u0": 1.8265024464349842,
+      "u1": 1.8217489793994524,
+      "v": 0.8253669826550211,
+      "weighted_comparison": 0.9852880997120016,
+      "weighted_compression_norm": 0.8346343886337274
+    },
+    {
+      "angles": [
+        [
+          1.5707963267948966,
+          0.0
+        ],
+        [
+          1.5707963267948966
+        ],
+        [
+          1.5707963267948966
+        ]
+      ],
+      "asymmetric_largest_eigenvalue": 2.3880896718813434,
+      "d0": 1.0,
+      "d1": 1.895269253967044e-16,
+      "name": "12-12-angles0-rotation0",
+      "physical_hamiltonian_norm": 4.2426406871192865,
+      "residuals": {
+        "K_norm": 0.0,
+        "asymmetric_converse": -0.19769676574556172,
+        "h1_positive_spectrum_cap": 8.825958089782673e-16,
+        "other_local_caps": 6.573089581144386e-16,
+        "physical_converse": -1.1715728752538084,
+        "rank_one_compression": 5.551115123125783e-16,
+        "rank_two_compression": -0.24999999999999956,
+        "resolvent_chord": 6.418930696707227e-16,
+        "scalar_conclusion": -4.440892098500626e-16,
+        "weighted_compression": 4.440892098500626e-16
+      },
+      "signatures": [
+        "22",
+        "12",
+        "12"
+      ],
+      "u0": 2.0,
+      "u1": 1.4142135623730951,
+      "v": 1.414213562373095,
+      "weighted_comparison": 0.5,
+      "weighted_compression_norm": 0.5000000000000004
+    },
+    {
+      "angles": [
+        [
+          1.5707963267948966,
+          0.0
+        ],
+        [
+          1.5707963267948966
+        ],
+        [
+          1.5707963267948966
+        ]
+      ],
+      "asymmetric_largest_eigenvalue": 2.3538240918638715,
+      "d0": 1.0,
+      "d1": 1.895269253967044e-16,
+      "name": "12-12-angles0-rotation1",
+      "physical_hamiltonian_norm": 4.518199323448441,
+      "residuals": {
+        "K_norm": -0.0818104611461723,
+        "asymmetric_converse": -0.23196234576303354,
+        "h1_positive_spectrum_cap": 1.3550492970895266e-15,
+        "other_local_caps": 4.3349385011482557e-16,
+        "physical_converse": -0.8960142389246535,
+        "rank_one_compression": -0.07225565035542048,
+        "rank_two_compression": -0.12187443819939103,
+        "resolvent_chord": 3.2352984416129253e-16,
+        "scalar_conclusion": -4.440892098500626e-16,
+        "weighted_compression": -0.07225565035542059
+      },
+      "signatures": [
+        "22",
+        "12",
+        "12"
+      ],
+      "u0": 2.0,
+      "u1": 1.4142135623730951,
+      "v": 1.414213562373095,
+      "weighted_comparison": 0.5,
+      "weighted_compression_norm": 0.4277443496445794
+    },
+    {
+      "angles": [
+        [
+          1.5707963267948966,
+          0.0
+        ],
+        [
+          1.5707963267948966
+        ],
+        [
+          1.5707963267948966
+        ]
+      ],
+      "asymmetric_largest_eigenvalue": 2.345125496492737,
+      "d0": 1.0,
+      "d1": 1.895269253967044e-16,
+      "name": "12-12-angles0-rotation2",
+      "physical_hamiltonian_norm": 4.268678812683871,
+      "residuals": {
+        "K_norm": -0.017763899307903896,
+        "asymmetric_converse": -0.24066094113416803,
+        "h1_positive_spectrum_cap": 9.459855010628343e-16,
+        "other_local_caps": 1.4317913959753988e-15,
+        "physical_converse": -1.145534749689224,
+        "rank_one_compression": -0.09174963677922504,
+        "rank_two_compression": -0.18553694442071444,
+        "resolvent_chord": 1.5946833633930905e-16,
+        "scalar_conclusion": -4.440892098500626e-16,
+        "weighted_compression": -0.09174963677922521
+      },
+      "signatures": [
+        "22",
+        "12",
+        "12"
+      ],
+      "u0": 2.0,
+      "u1": 1.4142135623730951,
+      "v": 1.414213562373095,
+      "weighted_comparison": 0.5,
+      "weighted_compression_norm": 0.4082503632207748
+    },
+    {
+      "angles": [
+        [
+          1.5707963267948966,
+          0.0
+        ],
+        [
+          1.5707963267948966
+        ],
+        [
+          1.5707963267948966
+        ]
+      ],
+      "asymmetric_largest_eigenvalue": 2.3107135834042984,
+      "d0": 1.0,
+      "d1": 1.895269253967044e-16,
+      "name": "12-12-angles0-rotation3",
+      "physical_hamiltonian_norm": 4.234081500830039,
+      "residuals": {
+        "K_norm": -0.0506259046519566,
+        "asymmetric_converse": -0.27507285422260663,
+        "h1_positive_spectrum_cap": 1.7636814329896129e-15,
+        "other_local_caps": 8.938647667127147e-16,
+        "physical_converse": -1.1801320615430555,
+        "rank_one_compression": -0.10945914625912267,
+        "rank_two_compression": -0.2629401329024969,
+        "resolvent_chord": 3.035963614497819e-16,
+        "scalar_conclusion": -4.440892098500626e-16,
+        "weighted_compression": -0.10945914625912267
+      },
+      "signatures": [
+        "22",
+        "12",
+        "12"
+      ],
+      "u0": 2.0,
+      "u1": 1.4142135623730951,
+      "v": 1.414213562373095,
+      "weighted_comparison": 0.5,
+      "weighted_compression_norm": 0.3905408537408773
+    },
+    {
+      "angles": [
+        [
+          1.5707963267948966,
+          1.5707963267948966
+        ],
+        [
+          0.63
+        ],
+        [
+          1.07
+        ]
+      ],
+      "asymmetric_largest_eigenvalue": 2.3880896718813442,
+      "d0": 3.4142135623730945,
+      "d1": 3.4142135623730945,
+      "name": "12-12-angles1-rotation0",
+      "physical_hamiltonian_norm": 4.493959207434935,
+      "residuals": {
+        "K_norm": 0.0,
+        "asymmetric_converse": -0.19769676574556083,
+        "h1_positive_spectrum_cap": 8.252972982691643e-16,
+        "other_local_caps": 1.956539803612629e-15,
+        "physical_converse": -0.9202543549381597,
+        "rank_one_compression": 2.220446049250313e-16,
+        "rank_two_compression": -0.2499999999999999,
+        "resolvent_chord": 8.428237196701857e-17,
+        "scalar_conclusion": -0.20710678118654835,
+        "weighted_compression": -0.8535533905932735
+      },
+      "signatures": [
+        "22",
+        "12",
+        "12"
+      ],
+      "u0": 2.0,
+      "u1": 2.0,
+      "v": 0.0,
+      "weighted_comparison": 2.560660171779821,
+      "weighted_compression_norm": 1.7071067811865475
+    },
+    {
+      "angles": [
+        [
+          1.5707963267948966,
+          1.5707963267948966
+        ],
+        [
+          0.63
+        ],
+        [
+          1.07
+        ]
+      ],
+      "asymmetric_largest_eigenvalue": 2.3960083016040796,
+      "d0": 3.4142135623730945,
+      "d1": 3.4142135623730945,
+      "name": "12-12-angles1-rotation1",
+      "physical_hamiltonian_norm": 4.296886142732301,
+      "residuals": {
+        "K_norm": -0.10084410624098705,
+        "asymmetric_converse": -0.18977813602282545,
+        "h1_positive_spectrum_cap": 1.1737364745503706e-15,
+        "other_local_caps": 6.314407314395284e-16,
+        "physical_converse": -1.1173274196407936,
+        "rank_one_compression": -0.06479474329467094,
+        "rank_two_compression": -0.1362671987147711,
+        "resolvent_chord": 8.390711557140517e-17,
+        "scalar_conclusion": -0.20710678118654835,
+        "weighted_compression": -0.4652453179585616
+      },
+      "signatures": [
+        "22",
+        "12",
+        "12"
+      ],
+      "u0": 2.0,
+      "u1": 2.0,
+      "v": 0.0,
+      "weighted_comparison": 2.560660171779821,
+      "weighted_compression_norm": 2.0954148538212594
+    },
+    {
+      "angles": [
+        [
+          1.5707963267948966,
+          1.5707963267948966
+        ],
+        [
+          0.63
+        ],
+        [
+          1.07
+        ]
+      ],
+      "asymmetric_largest_eigenvalue": 2.438145870870805,
+      "d0": 3.4142135623730945,
+      "d1": 3.4142135623730945,
+      "name": "12-12-angles1-rotation2",
+      "physical_hamiltonian_norm": 4.326241180141465,
+      "residuals": {
+        "K_norm": -0.05081466289479564,
+        "asymmetric_converse": -0.14764056675610027,
+        "h1_positive_spectrum_cap": 1.0538816289836006e-15,
+        "other_local_caps": 1.3331539538505952e-15,
+        "physical_converse": -1.08797238223163,
+        "rank_one_compression": -0.05444656337913878,
+        "rank_two_compression": -0.13992418901289472,
+        "resolvent_chord": 3.5049054652122567e-17,
+        "scalar_conclusion": -0.20710678118654835,
+        "weighted_compression": -0.477731063831881
+      },
+      "signatures": [
+        "22",
+        "12",
+        "12"
+      ],
+      "u0": 2.0,
+      "u1": 2.0,
+      "v": 0.0,
+      "weighted_comparison": 2.560660171779821,
+      "weighted_compression_norm": 2.08292910794794
+    },
+    {
+      "angles": [
+        [
+          1.5707963267948966,
+          1.5707963267948966
+        ],
+        [
+          0.63
+        ],
+        [
+          1.07
+        ]
+      ],
+      "asymmetric_largest_eigenvalue": 2.3979469460554,
+      "d0": 3.4142135623730945,
+      "d1": 3.4142135623730945,
+      "name": "12-12-angles1-rotation3",
+      "physical_hamiltonian_norm": 4.283870359913287,
+      "residuals": {
+        "K_norm": -0.018474662725356028,
+        "asymmetric_converse": -0.18783949157150515,
+        "h1_positive_spectrum_cap": 8.941975972618692e-16,
+        "other_local_caps": 1.0547522824345758e-15,
+        "physical_converse": -1.130343202459808,
+        "rank_one_compression": -0.049178425797282266,
+        "rank_two_compression": -0.18804656350143423,
+        "resolvent_chord": 6.370806130712445e-17,
+        "scalar_conclusion": -0.20710678118654835,
+        "weighted_compression": -0.6420311274642494
+      },
+      "signatures": [
+        "22",
+        "12",
+        "12"
+      ],
+      "u0": 2.0,
+      "u1": 2.0,
+      "v": 0.0,
+      "weighted_comparison": 2.560660171779821,
+      "weighted_compression_norm": 1.9186290443155716
+    },
+    {
+      "angles": [
+        [
+          0.31,
+          1.11
+        ],
+        [
+          1.5707963267948966
+        ],
+        [
+          1.5707963267948966
+        ]
+      ],
+      "asymmetric_largest_eigenvalue": 2.1074759272622487,
+      "d0": 1.2029058816335332,
+      "d1": 0.45006446601708905,
+      "name": "12-12-angles2-rotation0",
+      "physical_hamiltonian_norm": 4.475087578481657,
+      "residuals": {
+        "K_norm": 0.0,
+        "asymmetric_converse": -0.4783105103646563,
+        "h1_positive_spectrum_cap": 1.1957240998459543e-15,
+        "other_local_caps": 6.573089581144386e-16,
+        "physical_converse": -0.9391259838914383,
+        "rank_one_compression": 6.661338147750939e-16,
+        "rank_two_compression": -0.24999999999999956,
+        "resolvent_chord": 1.794315541259011e-16,
+        "scalar_conclusion": -0.10994051409872457,
+        "weighted_compression": -0.4889368243124942
+      },
+      "signatures": [
+        "22",
+        "12",
+        "12"
+      ],
+      "u0": 1.9471510910456065,
+      "u1": 1.6155857367799726,
+      "v": 1.1789328764238924,
+      "weighted_comparison": 0.7139690573210389,
+      "weighted_compression_norm": 0.22503223300854472
+    },
+    {
+      "angles": [
+        [
+          0.31,
+          1.11
+        ],
+        [
+          1.5707963267948966
+        ],
+        [
+          1.5707963267948966
+        ]
+      ],
+      "asymmetric_largest_eigenvalue": 2.2673954859476644,
+      "d0": 1.2029058816335332,
+      "d1": 0.45006446601708905,
+      "name": "12-12-angles2-rotation1",
+      "physical_hamiltonian_norm": 4.225780783478539,
+      "residuals": {
+        "K_norm": -0.11547789974327416,
+        "asymmetric_converse": -0.3183909516792407,
+        "h1_positive_spectrum_cap": 9.950647413176986e-16,
+        "other_local_caps": 1.23120846496839e-15,
+        "physical_converse": -1.1884327788945557,
+        "rank_one_compression": -0.04632111126857941,
+        "rank_two_compression": -0.13522439604053182,
+        "resolvent_chord": 1.4057450610256238e-16,
+        "scalar_conclusion": -0.10994051409872457,
+        "weighted_compression": -0.2020786710513638
+      },
+      "signatures": [
+        "22",
+        "12",
+        "12"
+      ],
+      "u0": 1.9471510910456065,
+      "u1": 1.6155857367799726,
+      "v": 1.1789328764238924,
+      "weighted_comparison": 0.7139690573210389,
+      "weighted_compression_norm": 0.5118903862696751
+    },
+    {
+      "angles": [
+        [
+          0.31,
+          1.11
+        ],
+        [
+          1.5707963267948966
+        ],
+        [
+          1.5707963267948966
+        ]
+      ],
+      "asymmetric_largest_eigenvalue": 2.2679660280193703,
+      "d0": 1.2029058816335332,
+      "d1": 0.45006446601708905,
+      "name": "12-12-angles2-rotation2",
+      "physical_hamiltonian_norm": 4.234858222282726,
+      "residuals": {
+        "K_norm": -0.0768648913717842,
+        "asymmetric_converse": -0.31782040960753477,
+        "h1_positive_spectrum_cap": 8.22209665585605e-16,
+        "other_local_caps": 1.0521880818545053e-15,
+        "physical_converse": -1.1793553400903694,
+        "rank_one_compression": -0.09751648764169929,
+        "rank_two_compression": -0.18991984454681976,
+        "resolvent_chord": 9.129651089574555e-17,
+        "scalar_conclusion": -0.10994051409872457,
+        "weighted_compression": -0.17779977143584802
+      },
+      "signatures": [
+        "22",
+        "12",
+        "12"
+      ],
+      "u0": 1.9471510910456065,
+      "u1": 1.6155857367799726,
+      "v": 1.1789328764238924,
+      "weighted_comparison": 0.7139690573210389,
+      "weighted_compression_norm": 0.5361692858851909
+    },
+    {
+      "angles": [
+        [
+          0.31,
+          1.11
+        ],
+        [
+          1.5707963267948966
+        ],
+        [
+          1.5707963267948966
+        ]
+      ],
+      "asymmetric_largest_eigenvalue": 2.2860310293082264,
+      "d0": 1.2029058816335332,
+      "d1": 0.45006446601708905,
+      "name": "12-12-angles2-rotation3",
+      "physical_hamiltonian_norm": 4.23240297562961,
+      "residuals": {
+        "K_norm": -0.002246808157588376,
+        "asymmetric_converse": -0.29975540831867864,
+        "h1_positive_spectrum_cap": 2.2055387616855085e-16,
+        "other_local_caps": 4.2095915943369884e-16,
+        "physical_converse": -1.1818105867434845,
+        "rank_one_compression": -0.08639404049221522,
+        "rank_two_compression": -0.18053480612781814,
+        "resolvent_chord": 1.5072120927530777e-16,
+        "scalar_conclusion": -0.10994051409872457,
+        "weighted_compression": -0.19617542018778944
+      },
+      "signatures": [
+        "22",
+        "12",
+        "12"
+      ],
+      "u0": 1.9471510910456065,
+      "u1": 1.6155857367799726,
+      "v": 1.1789328764238924,
+      "weighted_comparison": 0.7139690573210389,
+      "weighted_compression_norm": 0.5177936371332494
+    },
+    {
+      "angles": [
+        [
+          2.41,
+          0.72
+        ],
+        [
+          0.63
+        ],
+        [
+          1.07
+        ]
+      ],
+      "asymmetric_largest_eigenvalue": 2.2452072072792433,
+      "d0": 1.3185257102660424,
+      "d1": 1.3041009783159216,
+      "name": "12-12-angles3-rotation0",
+      "physical_hamiltonian_norm": 4.427084105284897,
+      "residuals": {
+        "K_norm": 0.0,
+        "asymmetric_converse": -0.3405792303476618,
+        "h1_positive_spectrum_cap": 1.0580122159200629e-15,
+        "other_local_caps": 1.956539803612629e-15,
+        "physical_converse": -0.9871294570881979,
+        "rank_one_compression": -1.6653345369377348e-16,
+        "rank_two_compression": -0.24999999999999956,
+        "resolvent_chord": 8.898186648683345e-17,
+        "scalar_conclusion": -0.3045713925650506,
+        "weighted_compression": -0.3260252445789802
+      },
+      "signatures": [
+        "22",
+        "12",
+        "12"
+      ],
+      "u0": 1.8265024464349842,
+      "u1": 1.8217489793994524,
+      "v": 0.8253669826550211,
+      "weighted_comparison": 0.9852880997120016,
+      "weighted_compression_norm": 0.6592628551330214
+    },
+    {
+      "angles": [
+        [
+          2.41,
+          0.72
+        ],
+        [
+          0.63
+        ],
+        [
+          1.07
+        ]
+      ],
+      "asymmetric_largest_eigenvalue": 2.2746178662424104,
+      "d0": 1.3185257102660424,
+      "d1": 1.3041009783159216,
+      "name": "12-12-angles3-rotation1",
+      "physical_hamiltonian_norm": 4.2414145844254225,
+      "residuals": {
+        "K_norm": -0.004227135049604813,
+        "asymmetric_converse": -0.3111685713844947,
+        "h1_positive_spectrum_cap": 1.2595818696450324e-15,
+        "other_local_caps": 4.544978692460761e-16,
+        "physical_converse": -1.1727989779476724,
+        "rank_one_compression": -0.012668244502129444,
+        "rank_two_compression": -0.1139280204815315,
+        "resolvent_chord": 1.1040735865007302e-16,
+        "scalar_conclusion": -0.3045713925650506,
+        "weighted_compression": -0.15239725411720118
+      },
+      "signatures": [
+        "22",
+        "12",
+        "12"
+      ],
+      "u0": 1.8265024464349842,
+      "u1": 1.8217489793994524,
+      "v": 0.8253669826550211,
+      "weighted_comparison": 0.9852880997120016,
+      "weighted_compression_norm": 0.8328908455948004
+    },
+    {
+      "angles": [
+        [
+          2.41,
+          0.72
+        ],
+        [
+          0.63
+        ],
+        [
+          1.07
+        ]
+      ],
+      "asymmetric_largest_eigenvalue": 2.2751105635069298,
+      "d0": 1.3185257102660424,
+      "d1": 1.3041009783159216,
+      "name": "12-12-angles3-rotation2",
+      "physical_hamiltonian_norm": 4.0679509139431405,
+      "residuals": {
+        "K_norm": -0.10463697921772175,
+        "asymmetric_converse": -0.3106758741199753,
+        "h1_positive_spectrum_cap": 1.0467609018951298e-15,
+        "other_local_caps": 6.10801968754187e-16,
+        "physical_converse": -1.3462626484299545,
+        "rank_one_compression": -0.018557111167107176,
+        "rank_two_compression": -0.09554331104101987,
+        "resolvent_chord": 1.4016498109082444e-16,
+        "scalar_conclusion": -0.3045713925650506,
+        "weighted_compression": -0.12857493771533324
+      },
+      "signatures": [
+        "22",
+        "12",
+        "12"
+      ],
+      "u0": 1.8265024464349842,
+      "u1": 1.8217489793994524,
+      "v": 0.8253669826550211,
+      "weighted_comparison": 0.9852880997120016,
+      "weighted_compression_norm": 0.8567131619966684
+    },
+    {
+      "angles": [
+        [
+          2.41,
+          0.72
+        ],
+        [
+          0.63
+        ],
+        [
+          1.07
+        ]
+      ],
+      "asymmetric_largest_eigenvalue": 2.236890109213523,
+      "d0": 1.3185257102660424,
+      "d1": 1.3041009783159216,
+      "name": "12-12-angles3-rotation3",
+      "physical_hamiltonian_norm": 4.148047845295057,
+      "residuals": {
+        "K_norm": -0.030856342523967628,
+        "asymmetric_converse": -0.34889632841338214,
+        "h1_positive_spectrum_cap": 7.425281279174185e-16,
+        "other_local_caps": 1.104642777130845e-15,
+        "physical_converse": -1.2661657170780378,
+        "rank_one_compression": -0.0342053057428191,
+        "rank_two_compression": -0.19522079332750297,
+        "resolvent_chord": 1.2266339851734309e-16,
+        "scalar_conclusion": -0.3045713925650506,
+        "weighted_compression": -0.2555912522559247
+      },
+      "signatures": [
+        "22",
+        "12",
+        "12"
+      ],
+      "u0": 1.8265024464349842,
+      "u1": 1.8217489793994524,
+      "v": 0.8253669826550211,
+      "weighted_comparison": 0.9852880997120016,
+      "weighted_compression_norm": 0.7296968474560769
+    }
+  ],
+  "family_count": 48,
+  "max_residuals": {
+    "K_norm": 0.0,
+    "asymmetric_converse": -0.10147705372150595,
+    "h1_positive_spectrum_cap": 1.7636814329896129e-15,
+    "other_local_caps": 1.9966277025315366e-15,
+    "physical_converse": -0.5857864376269033,
+    "rank_one_compression": 6.661338147750939e-16,
+    "rank_two_compression": -0.05416612508745611,
+    "resolvent_chord": 6.418930696707227e-16,
+    "scalar_conclusion": -4.440892098500626e-16,
+    "weighted_compression": 4.440892098500626e-16
+  },
+  "maximum_hamiltonian_dimension": 32,
+  "mixed_Choi_cases": [
+    {
+      "central_dimension": 2,
+      "cross_Gram_norm": 0.4564722025585912,
+      "environment_dimensions": [
+        2,
+        3
+      ],
+      "star_norm": 1.0742684073380453
+    },
+    {
+      "central_dimension": 2,
+      "cross_Gram_norm": 0.4412556810670845,
+      "environment_dimensions": [
+        3,
+        4
+      ],
+      "star_norm": 0.9591332977532044
+    },
+    {
+      "central_dimension": 3,
+      "cross_Gram_norm": 0.41930430625227627,
+      "environment_dimensions": [
+        2,
+        3
+      ],
+      "star_norm": 1.0529033934745728
+    },
+    {
+      "central_dimension": 3,
+      "cross_Gram_norm": 0.37476384838653026,
+      "environment_dimensions": [
+        3,
+        4
+      ],
+      "star_norm": 0.8369639716814868
+    }
+  ],
+  "mixed_Choi_count": 4,
+  "numpy": "2.3.5",
+  "python": "3.12.14",
+  "reviewed_main": "ac5863e1e026a8a9432a27385e6ee9491b423e92",
+  "scope": "Finite construction diagnostics supplement the supplied proof; no optimizer, unrestricted optimum, or priority certification.",
+  "seed": 2026092407,
+  "source_sha256": "bee740469ad919af6d908a2df765b9275647b08852d1e9b55e3f8347f690e3ad",
+  "status": "PASS",
+  "tolerance": 1e-10
+}

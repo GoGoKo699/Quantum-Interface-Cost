@@ -51,6 +51,7 @@ python tools/check_spin_flip_purity.py --output results/spin-flip-purity-rerun.j
 python tools/check_antiunitary_readouts.py --output results/antiunitary-readouts-rerun.json
 python tools/check_jordan_block_converse.py --output results/jordan-block-converse-rerun.json
 python tools/check_jordan_spectral_budget.py --output results/jordan-spectral-budget-rerun.json
+python tools/check_single_double_block.py --output results/single-double-block-rerun.json
 ```
 
 The bootstrap environment was Python 3.13.5 and NumPy 2.3.5. The audit
@@ -961,3 +962,50 @@ and the historical audit blob were checked. No third-party source text,
 papers or private exploratory files are committed. All six remaining
 signature sectors, unrestricted rate optimality, and publication priority
 retain their stated unresolved status.
+
+## Single double-block converse
+
+The [supplied report](audits/SINGLE_DOUBLE_BLOCK_CONVERSE.md) is pinned to main
+`ac5863e1e026a8a9432a27385e6ee9491b423e92`. The supplied proof excludes
+all three ququart signature patterns with exactly one `(22)` query pair,
+including unequal angles and arbitrary relative memory orientations.
+Two independent internal reconstructions checked the mixed-Choi star lemma,
+the rank-one and rank-two compression bounds, the positive-spectrum cap,
+resolvent comparison, weighted compression estimate, scalar conclusion,
+and operational transfer. This is internal proof checking, not external
+peer review or publication-priority certification.
+
+`tools/check_single_double_block.py` writes
+`results/single_double_block.json`. Its 48 constructions are the three
+other-pair signatures `(11)(11)`, `(11)(12)`, and `(12)(12)`, four angle
+pairs for the exceptional query, and four choices of memory coordinates:
+canonical and three independently rotated dense complex families.
+The angle cases include one commuting block, two maximally noncommuting
+blocks, and two unequal-angle pairs. Bell vectors are constructed inside
+the known two-dimensional blocks; at commuting degeneracies, an explicit
+maximally entangled top vector is selected analytically.
+
+The diagnostics check reflection identities, the local positive-spectrum
+majorant, `K<=3I/2`, compression bounds `P_k K P_k<=P_k/2` and
+`P K P<=3P/4`, the resolvent chord, weighted comparison, scalar criterion,
+the asymmetric intermediate bound, and the actual interface Hamiltonian.
+Four additional mixed-Choi constructions check the cross-Gram bound one
+half and star bound three halves for random trace-preserving channels.
+These use central dimensions two and three; the latter checks the broader
+algebraic lemma and is not an additional hypothesis of the ququart theorem.
+
+All 48 construction cases and four mixed-Choi cases passed with Python
+3.12.14, NumPy 2.3.5, random seed 2026092407, tolerance 1e-10, and
+Hamiltonian dimension at most 32. The largest positive recorded inequality
+residual was 1.9966277025315366e-15; the exceptional-pair spectral-cap
+residual was 1.7636814329896129e-15. Source SHA-256:
+`bee740469ad919af6d908a2df765b9275647b08852d1e9b55e3f8347f690e3ad`.
+The repository script was rerun into a separate scratch output, reproducing
+the recorded JSON byte-for-byte. Cross-platform floating-point
+outputs need only satisfy the stated tolerance.
+
+No optimizer or large simulation enters this diagnostic, and unchanged
+certificates were not rerun. Finite construction checks supplement the
+symbolic proof; they do not establish a universal bound or originality.
+Three signature sectors, unrestricted equal-accuracy optimality, and
+publication novelty remain unresolved.
