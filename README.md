@@ -26,6 +26,12 @@ including nonuniform spectra. Its sum-of-squares proof also settles a
 continuous class of readouts sharing a common Kramers antiunitary.
 General readouts need not have that symmetry.
 
+The [unified antiunitary bound](docs/audits/ANTIUNITARY_READOUT_BOUND.md)
+extends the readout result to every common antiunitary that negates the
+six readouts, including nonscalar squares and general binary POVMs.
+Its exact classwide score is `2sqrt(6)`. A concrete balanced sextuple
+admits no such antiunitary, so the unrestricted problem remains open.
+
 **Status (24 September 2026): research in progress, not a manuscript or a
 novelty-certified result.** The baseline proofs and seed reduction have passed
 an independent workspace audit, including primary-source comparisons. Further

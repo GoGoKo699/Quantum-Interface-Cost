@@ -48,6 +48,7 @@ python tools/check_finite_tail_structure.py
 python tools/certify_curved_core.py
 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python tools/check_three_input_decoders.py --output results/three-input-rerun.json
 python tools/check_spin_flip_purity.py --output results/spin-flip-purity-rerun.json
+python tools/check_antiunitary_readouts.py --output results/antiunitary-readouts-rerun.json
 ```
 
 The bootstrap environment was Python 3.13.5 and NumPy 2.3.5. The audit
@@ -830,3 +831,40 @@ optimality, or publication novelty. Unchanged numerical certificates were
 not rerun. Local links, whitespace, LICENSE and the original audit blob
 were checked. No third-party PDF, extracted source text or private
 exploratory material is committed.
+
+## Every common antiunitary readout symmetry
+
+The [unified theorem](audits/ANTIUNITARY_READOUT_BOUND.md) is pinned to
+main `0730608b9daa9ba09a27843d57b47134a5852fd4`. Independent internal
+reconstructions checked the two commuting Pauli algebras, every split-site
+assignment, the arbitrary-square eigenspace argument, the contraction
+extension, the stronger +I equal-weight estimate, and normalized Kraus
+transfer. The actual report was reviewed with general binary POVMs and
+uniform errors retained. This is internal review, not external peer review.
+
+`tools/check_antiunitary_readouts.py` records its finite construction
+checks in `results/antiunitary_readouts.json`. All 64 assignments of six
++I-class reflection readouts to the two Pauli factors are checked with
+three weight vectors each. A cyclic -I attainer and a nonscalar-square
+paired-sector example are each checked with those three vectors, for
+198 Hamiltonian eigensystems of dimension 32. The script separately
+checks the logical factor identification, an exact quadratic attainer,
+and a balanced sextuple whose antiunitary-intertwiner system has only
+the zero solution. That last control is not a score-bound violation.
+
+The run passed with Python 3.12.14, NumPy 2.3.5, random seed 2026092404,
+and tolerance 1e-10. The maximum +I readout identity error is
+4.440892098500626e-16; the nonscalar example's maximum exact-norm error
+is 2.6645352591003757e-15. Source SHA-256:
+`92a77489cdc0ae6b9d2e48a929f813e5e5c884e202e952a41b753d2466b9066a`.
+The parent workspace independently reran the script and reproduced the
+JSON byte-for-byte. Convexity extends the analytic proof to contractions;
+the finite diagnostic uses reflection constructions and does not certify
+that extension or a universal optimum.
+
+No optimizer enters the committed diagnostic. Separate small exploratory
+searches supplied neither a counterexample nor a general proof and are
+not acceptance evidence. Unchanged numerical certificates were not rerun.
+Local links, whitespace, LICENSE and the original historical audit blob
+were checked. No third-party papers or private exploratory files are
+committed. Publication priority and unrestricted optimality remain open.
