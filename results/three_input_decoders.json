@@ -1,0 +1,772 @@
+{
+  "status": "finite numerical evidence only; no global upper-bound or novelty certificate",
+  "research_base_main_sha": "f46ed69785ace49d6f3f52645fefbb9dbdc99f1f",
+  "source_sha256": "b46958c71366830a2f5992e3da46c8504eca89096e7936652b7f2003a0e1c857",
+  "python_version": "3.12.14",
+  "numpy_version": "2.3.5",
+  "objective": "sum_j ||L P_j L^dagger||_1, Frobenius norm(L)=1, six local X/Z queries",
+  "query_order": [
+    "X1",
+    "Z1",
+    "X2",
+    "Z2",
+    "X3",
+    "Z3"
+  ],
+  "benchmark": 5.414213562373095,
+  "configuration": {
+    "free_random_seed": 20260924,
+    "sector_random_seed": 2026092401,
+    "dense_starts_per_output_dimension": 48,
+    "subset_perturbation_scales": [
+      0.03,
+      0.1,
+      0.3,
+      1.0
+    ],
+    "starts_per_scale": 8,
+    "starts_per_signature": 12,
+    "free_iteration_limit": 600,
+    "sector_iteration_limit": 1500,
+    "score_step_stopping_tolerance": 2e-13,
+    "numerical_rank_and_inertia_tolerance": 1e-08,
+    "candidate_margin_tolerance": 1e-09
+  },
+  "known_controls": {
+    "subset": {
+      "score": 5.414213562373095,
+      "score_minus_benchmark": 0.0,
+      "frobenius_norm_squared": 1.0,
+      "output_dimension": 4,
+      "numerical_gram_rank": 4,
+      "gram_eigenvalues_ascending": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "compression_inertias_positive_negative_zero": [
+        [
+          2,
+          2,
+          0
+        ],
+        [
+          2,
+          2,
+          0
+        ],
+        [
+          2,
+          2,
+          0
+        ],
+        [
+          2,
+          2,
+          0
+        ],
+        [
+          4,
+          0,
+          0
+        ],
+        [
+          4,
+          0,
+          0
+        ]
+      ],
+      "all_six_compressions_indefinite": false,
+      "known_exact_expression": "4+sqrt(2)",
+      "numerical_error": 0.0
+    },
+    "nonuniform_bisector_star": {
+      "score": 5.196152422706632,
+      "score_minus_benchmark": -0.2180611396664629,
+      "frobenius_norm_squared": 1.0,
+      "output_dimension": 4,
+      "numerical_gram_rank": 4,
+      "gram_eigenvalues_ascending": [
+        0.20412414523193145,
+        0.20412414523193148,
+        0.20412414523193154,
+        0.38762756430420553
+      ],
+      "compression_inertias_positive_negative_zero": [
+        [
+          3,
+          1,
+          0
+        ],
+        [
+          3,
+          1,
+          0
+        ],
+        [
+          3,
+          1,
+          0
+        ],
+        [
+          3,
+          1,
+          0
+        ],
+        [
+          3,
+          1,
+          0
+        ],
+        [
+          3,
+          1,
+          0
+        ]
+      ],
+      "all_six_compressions_indefinite": true,
+      "known_exact_expression": "3*sqrt(3)",
+      "numerical_error": 0.0
+    },
+    "rank_three_product": {
+      "score": 5.050762722761053,
+      "score_minus_benchmark": -0.3634508396120415,
+      "frobenius_norm_squared": 0.9999999999999998,
+      "output_dimension": 3,
+      "numerical_gram_rank": 3,
+      "gram_eigenvalues_ascending": [
+        0.2857142857142857,
+        0.2857142857142857,
+        0.4285714285714286
+      ],
+      "compression_inertias_positive_negative_zero": [
+        [
+          2,
+          1,
+          0
+        ],
+        [
+          2,
+          1,
+          0
+        ],
+        [
+          2,
+          1,
+          0
+        ],
+        [
+          2,
+          1,
+          0
+        ],
+        [
+          3,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0
+        ]
+      ],
+      "all_six_compressions_indefinite": false,
+      "known_exact_expression": "25*sqrt(2)/7",
+      "numerical_error": 8.881784197001252e-16
+    }
+  },
+  "free_search": {
+    "iterations": {
+      "runs": 128,
+      "converged": 128,
+      "hit_iteration_cap": 0,
+      "minimum_eigenvector_updates": 3,
+      "maximum_eigenvector_updates": 266,
+      "minimum_score_step": -7.105427357601002e-15
+    },
+    "groups": [
+      {
+        "name": "dense_complex_dimension_3",
+        "iterations": {
+          "runs": 48,
+          "converged": 48,
+          "hit_iteration_cap": 0,
+          "minimum_eigenvector_updates": 37,
+          "maximum_eigenvector_updates": 88,
+          "minimum_score_step": 0.0
+        },
+        "best": {
+          "score": 4.936082822422777,
+          "score_minus_benchmark": -0.4781307399503181,
+          "frobenius_norm_squared": 1.0000000000000018,
+          "output_dimension": 3,
+          "numerical_gram_rank": 3,
+          "gram_eigenvalues_ascending": [
+            0.21002081408288775,
+            0.3533309130021234,
+            0.43664827291499086
+          ],
+          "compression_inertias_positive_negative_zero": [
+            [
+              2,
+              1,
+              0
+            ],
+            [
+              2,
+              1,
+              0
+            ],
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              0,
+              3,
+              0
+            ],
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              2,
+              1,
+              0
+            ]
+          ],
+          "all_six_compressions_indefinite": false
+        }
+      },
+      {
+        "name": "dense_complex_dimension_4",
+        "iterations": {
+          "runs": 48,
+          "converged": 48,
+          "hit_iteration_cap": 0,
+          "minimum_eigenvector_updates": 4,
+          "maximum_eigenvector_updates": 195,
+          "minimum_score_step": -4.440892098500626e-15
+        },
+        "best": {
+          "score": 5.4142135623730985,
+          "score_minus_benchmark": 3.552713678800501e-15,
+          "frobenius_norm_squared": 1.0000000000000004,
+          "output_dimension": 4,
+          "numerical_gram_rank": 4,
+          "gram_eigenvalues_ascending": [
+            0.24999999999999967,
+            0.25000000000000017,
+            0.2500000000000002,
+            0.2500000000000004
+          ],
+          "compression_inertias_positive_negative_zero": [
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ]
+          ],
+          "all_six_compressions_indefinite": false
+        }
+      },
+      {
+        "name": "perturbed_subset",
+        "iterations": {
+          "runs": 32,
+          "converged": 32,
+          "hit_iteration_cap": 0,
+          "minimum_eigenvector_updates": 3,
+          "maximum_eigenvector_updates": 266,
+          "minimum_score_step": -7.105427357601002e-15
+        },
+        "best": {
+          "score": 5.414213562373099,
+          "score_minus_benchmark": 4.440892098500626e-15,
+          "frobenius_norm_squared": 1.0000000000000007,
+          "output_dimension": 4,
+          "numerical_gram_rank": 4,
+          "gram_eigenvalues_ascending": [
+            0.2499999999999999,
+            0.24999999999999997,
+            0.25000000000000033,
+            0.2500000000000004
+          ],
+          "compression_inertias_positive_negative_zero": [
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              4,
+              0,
+              0
+            ]
+          ],
+          "all_six_compressions_indefinite": false
+        }
+      }
+    ]
+  },
+  "signature_search": {
+    "fixed_iterations": {
+      "runs": 120,
+      "converged": 120,
+      "hit_iteration_cap": 0,
+      "minimum_eigenvector_updates": 12,
+      "maximum_eigenvector_updates": 891,
+      "minimum_score_step": 0.0
+    },
+    "release_iterations": {
+      "runs": 120,
+      "converged": 120,
+      "hit_iteration_cap": 0,
+      "minimum_eigenvector_updates": 1,
+      "maximum_eigenvector_updates": 22,
+      "minimum_score_step": -1.9539925233402755e-14
+    },
+    "patterns": [
+      {
+        "positive_eigenspace_ranks": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "best_fixed_sector_score": 5.196152422706643,
+        "largest_actual_trace_norm_before_release": 5.196152422706643,
+        "best_trace_norm_after_unrestricted_release": 5.196152422706644,
+        "fixed_sector_iterations": {
+          "runs": 12,
+          "converged": 12,
+          "hit_iteration_cap": 0,
+          "minimum_eigenvector_updates": 12,
+          "maximum_eigenvector_updates": 14,
+          "minimum_score_step": 0.0
+        },
+        "release_iterations": {
+          "runs": 12,
+          "converged": 12,
+          "hit_iteration_cap": 0,
+          "minimum_eigenvector_updates": 1,
+          "maximum_eigenvector_updates": 1,
+          "minimum_score_step": -4.440892098500626e-15
+        }
+      },
+      {
+        "positive_eigenspace_ranks": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ],
+        "best_fixed_sector_score": 5.179252536360475,
+        "largest_actual_trace_norm_before_release": 5.179252536360475,
+        "best_trace_norm_after_unrestricted_release": 5.179252536360476,
+        "fixed_sector_iterations": {
+          "runs": 12,
+          "converged": 12,
+          "hit_iteration_cap": 0,
+          "minimum_eigenvector_updates": 13,
+          "maximum_eigenvector_updates": 16,
+          "minimum_score_step": 0.0
+        },
+        "release_iterations": {
+          "runs": 12,
+          "converged": 12,
+          "hit_iteration_cap": 0,
+          "minimum_eigenvector_updates": 1,
+          "maximum_eigenvector_updates": 1,
+          "minimum_score_step": -4.440892098500626e-15
+        }
+      },
+      {
+        "positive_eigenspace_ranks": [
+          1,
+          1,
+          1,
+          1,
+          2,
+          2
+        ],
+        "best_fixed_sector_score": 5.16376321307981,
+        "largest_actual_trace_norm_before_release": 5.16376321307981,
+        "best_trace_norm_after_unrestricted_release": 5.163763213079821,
+        "fixed_sector_iterations": {
+          "runs": 12,
+          "converged": 12,
+          "hit_iteration_cap": 0,
+          "minimum_eigenvector_updates": 19,
+          "maximum_eigenvector_updates": 22,
+          "minimum_score_step": 0.0
+        },
+        "release_iterations": {
+          "runs": 12,
+          "converged": 12,
+          "hit_iteration_cap": 0,
+          "minimum_eigenvector_updates": 1,
+          "maximum_eigenvector_updates": 1,
+          "minimum_score_step": 0.0
+        }
+      },
+      {
+        "positive_eigenspace_ranks": [
+          1,
+          1,
+          1,
+          2,
+          1,
+          2
+        ],
+        "best_fixed_sector_score": 5.136480489368377,
+        "largest_actual_trace_norm_before_release": 5.136480489368377,
+        "best_trace_norm_after_unrestricted_release": 5.136480489368395,
+        "fixed_sector_iterations": {
+          "runs": 12,
+          "converged": 12,
+          "hit_iteration_cap": 0,
+          "minimum_eigenvector_updates": 23,
+          "maximum_eigenvector_updates": 29,
+          "minimum_score_step": 0.0
+        },
+        "release_iterations": {
+          "runs": 12,
+          "converged": 12,
+          "hit_iteration_cap": 0,
+          "minimum_eigenvector_updates": 1,
+          "maximum_eigenvector_updates": 1,
+          "minimum_score_step": 0.0
+        }
+      },
+      {
+        "positive_eigenspace_ranks": [
+          1,
+          1,
+          1,
+          2,
+          2,
+          2
+        ],
+        "best_fixed_sector_score": 5.105158806893213,
+        "largest_actual_trace_norm_before_release": 5.105158806893213,
+        "best_trace_norm_after_unrestricted_release": 5.105158806893314,
+        "fixed_sector_iterations": {
+          "runs": 12,
+          "converged": 12,
+          "hit_iteration_cap": 0,
+          "minimum_eigenvector_updates": 51,
+          "maximum_eigenvector_updates": 104,
+          "minimum_score_step": 0.0
+        },
+        "release_iterations": {
+          "runs": 12,
+          "converged": 12,
+          "hit_iteration_cap": 0,
+          "minimum_eigenvector_updates": 1,
+          "maximum_eigenvector_updates": 1,
+          "minimum_score_step": 0.0
+        }
+      },
+      {
+        "positive_eigenspace_ranks": [
+          1,
+          1,
+          2,
+          2,
+          2,
+          2
+        ],
+        "best_fixed_sector_score": 5.087587734291345,
+        "largest_actual_trace_norm_before_release": 5.144538996455485,
+        "best_trace_norm_after_unrestricted_release": 5.414213562373105,
+        "fixed_sector_iterations": {
+          "runs": 12,
+          "converged": 12,
+          "hit_iteration_cap": 0,
+          "minimum_eigenvector_updates": 237,
+          "maximum_eigenvector_updates": 528,
+          "minimum_score_step": 0.0
+        },
+        "release_iterations": {
+          "runs": 12,
+          "converged": 12,
+          "hit_iteration_cap": 0,
+          "minimum_eigenvector_updates": 3,
+          "maximum_eigenvector_updates": 3,
+          "minimum_score_step": -1.9539925233402755e-14
+        }
+      },
+      {
+        "positive_eigenspace_ranks": [
+          1,
+          2,
+          1,
+          2,
+          1,
+          2
+        ],
+        "best_fixed_sector_score": 5.072989004633509,
+        "largest_actual_trace_norm_before_release": 5.072989004633509,
+        "best_trace_norm_after_unrestricted_release": 5.072989004633605,
+        "fixed_sector_iterations": {
+          "runs": 12,
+          "converged": 12,
+          "hit_iteration_cap": 0,
+          "minimum_eigenvector_updates": 46,
+          "maximum_eigenvector_updates": 65,
+          "minimum_score_step": 0.0
+        },
+        "release_iterations": {
+          "runs": 12,
+          "converged": 12,
+          "hit_iteration_cap": 0,
+          "minimum_eigenvector_updates": 1,
+          "maximum_eigenvector_updates": 1,
+          "minimum_score_step": 0.0
+        }
+      },
+      {
+        "positive_eigenspace_ranks": [
+          1,
+          2,
+          1,
+          2,
+          2,
+          2
+        ],
+        "best_fixed_sector_score": 5.07341283026526,
+        "largest_actual_trace_norm_before_release": 5.07341283026526,
+        "best_trace_norm_after_unrestricted_release": 5.136480489368392,
+        "fixed_sector_iterations": {
+          "runs": 12,
+          "converged": 12,
+          "hit_iteration_cap": 0,
+          "minimum_eigenvector_updates": 74,
+          "maximum_eigenvector_updates": 90,
+          "minimum_score_step": 0.0
+        },
+        "release_iterations": {
+          "runs": 12,
+          "converged": 12,
+          "hit_iteration_cap": 0,
+          "minimum_eigenvector_updates": 1,
+          "maximum_eigenvector_updates": 22,
+          "minimum_score_step": 0.0
+        }
+      },
+      {
+        "positive_eigenspace_ranks": [
+          1,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "best_fixed_sector_score": 5.008623643346434,
+        "largest_actual_trace_norm_before_release": 5.083565757823088,
+        "best_trace_norm_after_unrestricted_release": 5.2391658042047355,
+        "fixed_sector_iterations": {
+          "runs": 12,
+          "converged": 12,
+          "hit_iteration_cap": 0,
+          "minimum_eigenvector_updates": 394,
+          "maximum_eigenvector_updates": 483,
+          "minimum_score_step": 0.0
+        },
+        "release_iterations": {
+          "runs": 12,
+          "converged": 12,
+          "hit_iteration_cap": 0,
+          "minimum_eigenvector_updates": 11,
+          "maximum_eigenvector_updates": 13,
+          "minimum_score_step": 0.0
+        }
+      },
+      {
+        "positive_eigenspace_ranks": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "best_fixed_sector_score": 4.8989794855663185,
+        "largest_actual_trace_norm_before_release": 4.8989794855663185,
+        "best_trace_norm_after_unrestricted_release": 4.8989794855663416,
+        "fixed_sector_iterations": {
+          "runs": 12,
+          "converged": 12,
+          "hit_iteration_cap": 0,
+          "minimum_eigenvector_updates": 30,
+          "maximum_eigenvector_updates": 891,
+          "minimum_score_step": 0.0
+        },
+        "release_iterations": {
+          "runs": 12,
+          "converged": 12,
+          "hit_iteration_cap": 0,
+          "minimum_eigenvector_updates": 1,
+          "maximum_eigenvector_updates": 1,
+          "minimum_score_step": 0.0
+        }
+      }
+    ]
+  },
+  "total_initializations": 248,
+  "unrestricted_best": {
+    "score": 5.414213562373105,
+    "score_minus_benchmark": 9.769962616701378e-15,
+    "frobenius_norm_squared": 1.0000000000000018,
+    "output_dimension": 4,
+    "numerical_gram_rank": 4,
+    "gram_eigenvalues_ascending": [
+      0.25000000000000006,
+      0.25000000000000033,
+      0.2500000000000005,
+      0.2500000000000006
+    ],
+    "compression_inertias_positive_negative_zero": [
+      [
+        0,
+        4,
+        0
+      ],
+      [
+        0,
+        4,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ]
+    ],
+    "all_six_compressions_indefinite": false
+  },
+  "all_six_indefinite_best_found": {
+    "score": 5.196152422706644,
+    "score_minus_benchmark": -0.21806113966645135,
+    "frobenius_norm_squared": 1.0000000000000022,
+    "output_dimension": 4,
+    "numerical_gram_rank": 4,
+    "gram_eigenvalues_ascending": [
+      0.20412414522961733,
+      0.2041241452319387,
+      0.20412414523423805,
+      0.3876275643042081
+    ],
+    "compression_inertias_positive_negative_zero": [
+      [
+        1,
+        3,
+        0
+      ],
+      [
+        1,
+        3,
+        0
+      ],
+      [
+        1,
+        3,
+        0
+      ],
+      [
+        1,
+        3,
+        0
+      ],
+      [
+        1,
+        3,
+        0
+      ],
+      [
+        1,
+        3,
+        0
+      ]
+    ],
+    "all_six_compressions_indefinite": true
+  },
+  "candidates_above_benchmark_plus_tolerance": 0,
+  "interpretation": [
+    "Values are attained local-search scores, not certified signature-sector maxima.",
+    "No found violation does not establish optimality or rule out other basins.",
+    "A strict seed witness requires the complete orbit instrument for operational use.",
+    "Roundoff and numerical rank classifications may vary across linear algebra libraries."
+  ]
+}

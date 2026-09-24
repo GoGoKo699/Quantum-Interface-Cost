@@ -46,6 +46,7 @@ python tools/check_parity_and_decoder.py
 python tools/certify_extended_core.py
 python tools/check_finite_tail_structure.py
 python tools/certify_curved_core.py
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python tools/check_three_input_decoders.py --output results/three-input-rerun.json
 ```
 
 The bootstrap environment was Python 3.13.5 and NumPy 2.3.5. The audit
@@ -746,3 +747,29 @@ run or needed. Unchanged numerical certificates were not rerun. Local
 Markdown links, whitespace, LICENSE and the original audit identity were
 checked. This is internal independent proof reconstruction, not external
 peer review or certification of priority.
+
+## Decoder algebra and the three-input continuation
+
+The [report](audits/DECODER_ALGEBRA_AND_THREE_INPUT.md) is pinned to main
+`f46ed69785ace49d6f3f52645fefbb9dbdc99f1f`. Independent internal proof
+reconstructions checked the prior graph-Clifford dimension bound, the
+alternating-matrix matching argument, normalized Kraus transfer, the
+weighted q=n-1 extension, and the explicit obstruction to replacing every
+seed's optimal readouts by pairwise commuting/anticommuting reflections.
+Primary-source comparisons distinguish established algebra from the
+supplied operational deductions.
+
+`tools/check_three_input_decoders.py` runs 248 small complex initializations:
+128 unrestricted seeds and 12 in each of ten nonscalar decoder-signature
+sectors, with subsequent unrestricted release. Its largest Bell matrix
+is 32 by 32. Python/NumPy versions, fixed seeds, tolerances, source hash,
+iteration counts, known analytical controls and sector summaries are
+recorded in `results/three_input_decoders.json`. No candidate exceeded
+the subset benchmark by the stated 1e-9 detection tolerance. This is
+bounded numerical evidence, not an upper-bound or optimality certificate.
+
+The parent workspace reran this diagnostic independently and reproduced
+the JSON byte-for-byte with Python 3.12.14 and NumPy 2.3.5. Unchanged
+entropy certificates were not rerun. Local links, whitespace, the LICENSE
+blob and the historical audit blob were checked. No primary-source PDFs,
+extracted text, or unreported numerical candidates are committed.

@@ -12,6 +12,13 @@ qubit has an exact allocation rule, while a five-qubit collective encoder
 beats original-site retention for unequal accuracies. The note supplies
 both proofs and identifies their established ingredients.
 
+The [decoder-algebra continuation](docs/audits/DECODER_ALGEBRA_AND_THREE_INPUT.md)
+now proves the retention benchmark at every block size and memory budget
+when memory readout reflections pairwise commute or anticommute, with
+arbitrary collective encoders. It also gives the full accuracy region
+under that readout condition when `q=n-1`. The unrestricted three-input
+case reduces to ten continuous decoder sectors and remains open.
+
 **Status (24 September 2026): research in progress, not a manuscript or a
 novelty-certified result.** The baseline proofs and seed reduction have passed
 an independent workspace audit, including primary-source comparisons. Further
