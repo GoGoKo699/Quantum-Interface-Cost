@@ -29,6 +29,14 @@ angles. Any improvement in this block requires a nonflat rank-four seed
 and at least two optimal query pairs with two noncommuting Jordan blocks.
 Exactly three continuous signature patterns remain unresolved.
 
+The [separate-query theorem](docs/audits/COMMUTING_QUERY_ALGEBRAS.md)
+now proves the exact retention contrast for `n=q+1` whenever q query
+pairs address distinct memory qubits, with the remaining pair allowed
+arbitrary joint-memory readout. The encoder remains unrestricted.
+For three inputs, any two commuting query algebras already rule out
+an advantage. Thus a violation must make all three algebras pairwise
+noncommuting; all three complete signature patterns remain open.
+
 The [spectral-budget extension](docs/audits/JORDAN_SPECTRAL_BUDGET.md)
 now retains every Jordan block and gives a scalar sufficient test for the
 benchmark, including families with two noncommuting blocks at every site.

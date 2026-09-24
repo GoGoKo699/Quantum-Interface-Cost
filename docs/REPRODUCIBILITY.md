@@ -52,6 +52,7 @@ python tools/check_antiunitary_readouts.py --output results/antiunitary-readouts
 python tools/check_jordan_block_converse.py --output results/jordan-block-converse-rerun.json
 python tools/check_jordan_spectral_budget.py --output results/jordan-spectral-budget-rerun.json
 python tools/check_single_double_block.py --output results/single-double-block-rerun.json
+python tools/check_commuting_query_algebras.py --output results/commuting-query-algebras-rerun.json
 ```
 
 The bootstrap environment was Python 3.13.5 and NumPy 2.3.5. The audit
@@ -1009,3 +1010,61 @@ certificates were not rerun. Finite construction checks supplement the
 symbolic proof; they do not establish a universal bound or originality.
 Three signature sectors, unrestricted equal-accuracy optimality, and
 publication novelty remain unresolved.
+
+## Commuting query algebras
+
+The [supplied report](audits/COMMUTING_QUERY_ALGEBRAS.md) is pinned to main
+`a383214b357ccbd83a62ae0c94660083cb8b090e`. The all-size theorem bounds
+`norm(H)<=2q+sqrt(2)` at `n=q+1` when q original query pairs act on
+separate memory-qubit factors and the final pair is arbitrary. At q=2,
+the finite-dimensional algebra classification and the prior one-double
+converse imply that any two cross-commuting original query algebras suffice.
+These are explicit decoder hypotheses, not an unrestricted optimality proof.
+An independent internal reconstruction checked the spectral gap, product-Bell
+compression, normalized Jordan-block counts, scalar inequalities, endpoint
+and contraction extensions, algebra classification, and uniform operational
+transfer. Internal review does not certify originality or external acceptance.
+
+`tools/check_commuting_query_algebras.py` writes
+`results/commuting_query_algebras.json`. The diagnostic performs 140
+factor constructions for q=1,2,3, with Hamiltonian dimension at most 128.
+The first q pairs include commuting endpoints, maximally noncommuting
+angles, different angles between sites, and an angle of 1e-4 near a
+commuting endpoint. Each construction uses canonical coordinates or a
+common dense complex memory rotation defining the dedicated factors;
+the last pair has an independently chosen complex memory orientation.
+The last-pair families include scalar and commuting reflections,
+one active block with different scalar complements, and multiple active
+blocks with unequal angles. Scalar final readouts with maximal first-pair
+angles check exact attainment of `2q+sqrt(2)`.
+
+The construction checks cover reflection identities, cross-commutators,
+the product-Bell isometry and marginal, the dedicated-query spectral cap,
+the partial-trace resolvent identity, its Jordan-block bound, the two
+scalar inequalities, the positive-rank-update criterion, and the actual
+Hamiltonian norm. The resolvent identity uses relative operator error,
+normalized by the larger of one and the compressed-resolvent norm;
+this avoids treating its large norm near a commuting endpoint as an
+absolute-error requirement. All inequality residuals are absolute.
+Four additional ququart constructions cover the separate two-dimensional
+summand case of the algebra classification and the direct triangle case
+with an internally commuting query pair. The exact cap obstruction is
+also checked: the two-Bell-pair Rayleigh value is
+`4+(2-sqrt(2))/8 = 4.0732233047033635`, already above four.
+
+All construction checks passed with Python 3.12.14, NumPy 2.3.5, random
+seed 2026092408, and tolerance 1e-9. The largest positive recorded residual
+was 1.921629522172452e-12; maximum relative resolvent-identity error was
+1.4932836252197592e-12; maximum spectral-cap residual was
+1.8021548755309465e-14. The largest actual benchmark excess was
+5.329070518200751e-15. Source SHA-256:
+`badb5e00a55f0b6e334d32a4634d4de6d8e18822569b0fc911cf7f04692be05d`.
+The final repository script was rerun into a separate scratch output and
+reproduced the recorded JSON byte-for-byte. Cross-platform outputs need
+only satisfy the stated tolerances.
+
+No optimizer, large simulation, or source-distribution restriction enters
+these checks. They supplement the symbolic proof and do not establish the
+all-size bound on their own. The three remaining ququart signatures,
+unrestricted equal-accuracy optimality, and publication originality remain
+unresolved. Unchanged diagnostics were not rerun.

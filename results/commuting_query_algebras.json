@@ -1,0 +1,4126 @@
+{
+  "cap_obstruction": {
+    "Rayleigh_lower_bound": 4.0732233047033635,
+    "actual_capped_eigenvalue": 4.088321685903391,
+    "compression_residual": 2.7755575615628914e-17,
+    "delta": 0.5857864376269049
+  },
+  "extra_ququart_cases": [
+    {
+      "kind": "direct_sum",
+      "orientation": 0,
+      "physical_hamiltonian_norm": 4.433418181404334,
+      "residuals": {
+        "cross_commutators": 0.0,
+        "physical_converse": -0.9807953809687611
+      }
+    },
+    {
+      "kind": "direct_sum",
+      "orientation": 1,
+      "physical_hamiltonian_norm": 4.370677913855349,
+      "residuals": {
+        "cross_commutators": 8.940808316139723e-16,
+        "physical_converse": -1.0435356485177456
+      }
+    },
+    {
+      "kind": "internally_commuting",
+      "orientation": 0,
+      "physical_hamiltonian_norm": 4.0551820736480755,
+      "residuals": {
+        "commuting_local_norm": 0.0,
+        "internally_commuting_pair": 0.0,
+        "physical_converse": -1.3590314887250194
+      }
+    },
+    {
+      "kind": "internally_commuting",
+      "orientation": 1,
+      "physical_hamiltonian_norm": 3.9373475940264893,
+      "residuals": {
+        "commuting_local_norm": 6.661338147750939e-16,
+        "internally_commuting_pair": 5.882916599698212e-16,
+        "physical_converse": -1.4768659683466057
+      }
+    }
+  ],
+  "factor_case_count": 140,
+  "factor_cases": [
+    {
+      "Hamiltonian_dimension": 8,
+      "angles": [
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "scalar",
+      "m": 1.414213562373095,
+      "name": "q1_angles_0_scalar_rotation_0",
+      "physical_hamiltonian_norm": 2.8284271247461903,
+      "q": 1,
+      "residuals": {
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 1.9428902930942498e-16,
+        "physical_converse": -0.5857864376269046,
+        "product_Bell_isometry": 3.3306690738754696e-16,
+        "product_Bell_marginal": 1.7384451763158188e-16,
+        "reflection_identities": 0.0,
+        "zero_c_triangle": 0.0
+      },
+      "t": 2.0,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 8,
+      "angles": [
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "scalar",
+      "m": 1.414213562373095,
+      "name": "q1_angles_0_scalar_rotation_1",
+      "physical_hamiltonian_norm": 2.8284271247461907,
+      "q": 1,
+      "residuals": {
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 6.999777811902753e-16,
+        "physical_converse": -0.5857864376269042,
+        "product_Bell_isometry": 1.1104255051817715e-16,
+        "product_Bell_marginal": 1.1587234096747383e-16,
+        "reflection_identities": 7.012727782481324e-16,
+        "zero_c_triangle": 0.0
+      },
+      "t": 2.0,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 8,
+      "angles": [
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "commuting",
+      "m": 1.414213562373095,
+      "name": "q1_angles_0_commuting_rotation_0",
+      "physical_hamiltonian_norm": 2.8284271247461903,
+      "q": 1,
+      "residuals": {
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 1.9428902930942498e-16,
+        "physical_converse": -0.5857864376269046,
+        "product_Bell_isometry": 3.3306690738754696e-16,
+        "product_Bell_marginal": 1.7384451763158188e-16,
+        "reflection_identities": 0.0,
+        "zero_c_triangle": 0.0
+      },
+      "t": 2.0,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 8,
+      "angles": [
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "commuting",
+      "m": 1.414213562373095,
+      "name": "q1_angles_0_commuting_rotation_1",
+      "physical_hamiltonian_norm": 2.209702218101539,
+      "q": 1,
+      "residuals": {
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 1.3385260980261458e-15,
+        "physical_converse": -1.2045113442715558,
+        "product_Bell_isometry": 2.221272142874663e-16,
+        "product_Bell_marginal": 1.1375533671415797e-16,
+        "reflection_identities": 7.718179960680868e-16,
+        "zero_c_triangle": 0.0
+      },
+      "t": 2.0,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 8,
+      "angles": [
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "full_blocks",
+      "m": 1.414213562373095,
+      "name": "q1_angles_0_full_blocks_rotation_0",
+      "physical_hamiltonian_norm": 2.7320508075688776,
+      "q": 1,
+      "residuals": {
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 1.9428902930942498e-16,
+        "physical_converse": -0.6821627548042173,
+        "product_Bell_isometry": 3.3306690738754696e-16,
+        "product_Bell_marginal": 1.7384451763158188e-16,
+        "reflection_identities": 0.0,
+        "zero_c_triangle": 0.0
+      },
+      "t": 2.0,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 8,
+      "angles": [
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "full_blocks",
+      "m": 1.414213562373095,
+      "name": "q1_angles_0_full_blocks_rotation_1",
+      "physical_hamiltonian_norm": 2.730645156495346,
+      "q": 1,
+      "residuals": {
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 2.4916671691522083e-16,
+        "physical_converse": -0.6835684058777489,
+        "product_Bell_isometry": 4.440901848231438e-16,
+        "product_Bell_marginal": 3.920930374090718e-16,
+        "reflection_identities": 7.992075278616872e-16,
+        "zero_c_triangle": 0.0
+      },
+      "t": 2.0,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 8,
+      "active_bracket": 0.7387961250362586,
+      "angles": [
+        1.5707963267948966
+      ],
+      "c": 2.0,
+      "last_kind": "scalar",
+      "m": 0.0,
+      "name": "q1_angles_1_scalar_rotation_0",
+      "physical_hamiltonian_norm": 3.4142135623730945,
+      "q": 1,
+      "residuals": {
+        "Jordan_resolvent_cap": -2.220446049250313e-16,
+        "active_scalar_inequality": -0.18469903125906462,
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 6.349841192255434e-16,
+        "physical_converse": -4.440892098500626e-16,
+        "positive_rank_update": -8.881784197001252e-16,
+        "product_Bell_isometry": 0.0,
+        "product_Bell_marginal": 3.135167165043419e-16,
+        "rank_update_criterion": 0.0,
+        "reflection_identities": 0.0,
+        "resolvent_compression_relative_error": 5.551115123125783e-17,
+        "scalar_attainment": 4.440892098500626e-16,
+        "scalar_block_inequality": 2.220446049250313e-16
+      },
+      "resolvent_compression_norm": 1.0,
+      "scalar_bracket": 1.0000000000000002,
+      "t": 3.414213562373095,
+      "t0": 3.414213562373095
+    },
+    {
+      "Hamiltonian_dimension": 8,
+      "active_bracket": 0.7387961250362586,
+      "angles": [
+        1.5707963267948966
+      ],
+      "c": 2.0,
+      "last_kind": "scalar",
+      "m": 0.0,
+      "name": "q1_angles_1_scalar_rotation_1",
+      "physical_hamiltonian_norm": 3.414213562373096,
+      "q": 1,
+      "residuals": {
+        "Jordan_resolvent_cap": -2.220446049250313e-16,
+        "active_scalar_inequality": -0.18469903125906462,
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 8.878685174007144e-16,
+        "physical_converse": 8.881784197001252e-16,
+        "positive_rank_update": -4.440892098500626e-16,
+        "product_Bell_isometry": 2.222674461287575e-16,
+        "product_Bell_marginal": 4.2626208745731253e-16,
+        "rank_update_criterion": 0.0,
+        "reflection_identities": 1.1898877330016533e-15,
+        "resolvent_compression_relative_error": 1.8952702307620436e-16,
+        "scalar_attainment": 8.881784197001252e-16,
+        "scalar_block_inequality": 2.220446049250313e-16
+      },
+      "resolvent_compression_norm": 1.0,
+      "scalar_bracket": 1.0000000000000002,
+      "t": 3.414213562373095,
+      "t0": 3.414213562373095
+    },
+    {
+      "Hamiltonian_dimension": 8,
+      "active_bracket": 0.7387961250362586,
+      "angles": [
+        1.5707963267948966
+      ],
+      "c": 2.0,
+      "last_kind": "commuting",
+      "m": 0.0,
+      "name": "q1_angles_1_commuting_rotation_0",
+      "physical_hamiltonian_norm": 2.7320508075688776,
+      "q": 1,
+      "residuals": {
+        "Jordan_resolvent_cap": -0.29289321881345265,
+        "active_scalar_inequality": -0.18469903125906462,
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 6.349841192255434e-16,
+        "physical_converse": -0.6821627548042173,
+        "positive_rank_update": -0.6821627548042182,
+        "product_Bell_isometry": 0.0,
+        "product_Bell_marginal": 3.135167165043419e-16,
+        "rank_update_criterion": -0.2928932188134524,
+        "reflection_identities": 0.0,
+        "resolvent_compression_relative_error": 8.51666285724079e-17,
+        "scalar_block_inequality": 2.220446049250313e-16
+      },
+      "resolvent_compression_norm": 0.7071067811865476,
+      "scalar_bracket": 1.0000000000000002,
+      "t": 3.414213562373095,
+      "t0": 3.414213562373095
+    },
+    {
+      "Hamiltonian_dimension": 8,
+      "active_bracket": 0.7387961250362586,
+      "angles": [
+        1.5707963267948966
+      ],
+      "c": 2.0,
+      "last_kind": "commuting",
+      "m": 0.0,
+      "name": "q1_angles_1_commuting_rotation_1",
+      "physical_hamiltonian_norm": 2.5822102053784293,
+      "q": 1,
+      "residuals": {
+        "Jordan_resolvent_cap": -0.29289321881345254,
+        "active_scalar_inequality": -0.18469903125906462,
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 8.521150769680324e-16,
+        "physical_converse": -0.8320033569946657,
+        "positive_rank_update": -0.6821627548042164,
+        "product_Bell_isometry": 1.0664754160065557e-17,
+        "product_Bell_marginal": 3.1576921562298633e-16,
+        "rank_update_criterion": -0.2928932188134523,
+        "reflection_identities": 5.504393770732429e-16,
+        "resolvent_compression_relative_error": 6.602771726077415e-17,
+        "scalar_block_inequality": 2.220446049250313e-16
+      },
+      "resolvent_compression_norm": 0.7071067811865477,
+      "scalar_bracket": 1.0000000000000002,
+      "t": 3.414213562373095,
+      "t0": 3.414213562373095
+    },
+    {
+      "Hamiltonian_dimension": 8,
+      "active_bracket": 0.7387961250362586,
+      "angles": [
+        1.5707963267948966
+      ],
+      "c": 2.0,
+      "last_kind": "full_blocks",
+      "m": 0.0,
+      "name": "q1_angles_1_full_blocks_rotation_0",
+      "physical_hamiltonian_norm": 2.8284271247461907,
+      "q": 1,
+      "residuals": {
+        "Jordan_resolvent_cap": 0.0,
+        "active_scalar_inequality": -0.18469903125906462,
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 6.349841192255434e-16,
+        "physical_converse": -0.5857864376269042,
+        "positive_rank_update": -0.5110016364615415,
+        "product_Bell_isometry": 0.0,
+        "product_Bell_marginal": 3.135167165043419e-16,
+        "rank_update_criterion": -0.2612038749637414,
+        "reflection_identities": 0.0,
+        "resolvent_compression_relative_error": 8.659039691899595e-17,
+        "scalar_block_inequality": 2.220446049250313e-16
+      },
+      "resolvent_compression_norm": 0.7387961250362586,
+      "scalar_bracket": 1.0000000000000002,
+      "t": 3.414213562373095,
+      "t0": 3.414213562373095
+    },
+    {
+      "Hamiltonian_dimension": 8,
+      "active_bracket": 0.7387961250362586,
+      "angles": [
+        1.5707963267948966
+      ],
+      "c": 2.0,
+      "last_kind": "full_blocks",
+      "m": 0.0,
+      "name": "q1_angles_1_full_blocks_rotation_1",
+      "physical_hamiltonian_norm": 2.7391430965451953,
+      "q": 1,
+      "residuals": {
+        "Jordan_resolvent_cap": 1.1102230246251565e-16,
+        "active_scalar_inequality": -0.18469903125906462,
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 7.014227810796475e-16,
+        "physical_converse": -0.6750704658278996,
+        "positive_rank_update": -0.5110016364615397,
+        "product_Bell_isometry": 4.442079117515013e-16,
+        "product_Bell_marginal": 5.490570732615695e-16,
+        "rank_update_criterion": -0.2612038749637413,
+        "reflection_identities": 1.0020781049420906e-15,
+        "resolvent_compression_relative_error": 2.1079617972955404e-16,
+        "scalar_block_inequality": 2.220446049250313e-16
+      },
+      "resolvent_compression_norm": 0.7387961250362587,
+      "scalar_bracket": 1.0000000000000002,
+      "t": 3.414213562373095,
+      "t0": 3.414213562373095
+    },
+    {
+      "Hamiltonian_dimension": 8,
+      "active_bracket": 0.5849410797136186,
+      "angles": [
+        0.3
+      ],
+      "c": 0.42267486735974247,
+      "last_kind": "scalar",
+      "m": 1.1869960348195443,
+      "name": "q1_angles_2_scalar_rotation_0",
+      "physical_hamiltonian_norm": 3.023884464552383,
+      "q": 1,
+      "residuals": {
+        "Jordan_resolvent_cap": 0.0,
+        "active_scalar_inequality": -0.33855407658170455,
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 2.83502778645285e-16,
+        "physical_converse": -0.3903290978207119,
+        "positive_rank_update": -0.39032909782071323,
+        "product_Bell_isometry": 2.220446049250313e-16,
+        "product_Bell_marginal": 1.5470774542200816e-16,
+        "rank_update_criterion": -0.48010724982635855,
+        "reflection_identities": 1.2039312779645972e-16,
+        "resolvent_compression_relative_error": 1.9921692791872564e-16,
+        "scalar_block_inequality": -0.48010724982635855
+      },
+      "resolvent_compression_norm": 0.5198927501736414,
+      "scalar_bracket": 0.5198927501736414,
+      "t": 2.2272175275535506,
+      "t0": 2.2272175275535506
+    },
+    {
+      "Hamiltonian_dimension": 8,
+      "active_bracket": 0.5849410797136186,
+      "angles": [
+        0.3
+      ],
+      "c": 0.42267486735974247,
+      "last_kind": "scalar",
+      "m": 1.1869960348195443,
+      "name": "q1_angles_2_scalar_rotation_1",
+      "physical_hamiltonian_norm": 3.023884464552382,
+      "q": 1,
+      "residuals": {
+        "Jordan_resolvent_cap": -2.220446049250313e-16,
+        "active_scalar_inequality": -0.33855407658170455,
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 2.2598041054687935e-16,
+        "physical_converse": -0.3903290978207128,
+        "positive_rank_update": -0.3903290978207128,
+        "product_Bell_isometry": 7.879477393581359e-18,
+        "product_Bell_marginal": 1.1858323383529897e-16,
+        "rank_update_criterion": -0.4801072498263588,
+        "reflection_identities": 1.0855479703480532e-15,
+        "resolvent_compression_relative_error": 1.9499242747511738e-16,
+        "scalar_block_inequality": -0.48010724982635855
+      },
+      "resolvent_compression_norm": 0.5198927501736412,
+      "scalar_bracket": 0.5198927501736414,
+      "t": 2.2272175275535506,
+      "t0": 2.2272175275535506
+    },
+    {
+      "Hamiltonian_dimension": 8,
+      "active_bracket": 0.5849410797136186,
+      "angles": [
+        0.3
+      ],
+      "c": 0.42267486735974247,
+      "last_kind": "commuting",
+      "m": 1.1869960348195443,
+      "name": "q1_angles_2_commuting_rotation_0",
+      "physical_hamiltonian_norm": 2.8206546979063343,
+      "q": 1,
+      "residuals": {
+        "Jordan_resolvent_cap": -0.2019094581547668,
+        "active_scalar_inequality": -0.33855407658170455,
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 2.83502778645285e-16,
+        "physical_converse": -0.5935588644667606,
+        "positive_rank_update": -0.5859627847699698,
+        "product_Bell_isometry": 2.220446049250313e-16,
+        "product_Bell_marginal": 1.5470774542200816e-16,
+        "rank_update_criterion": -0.6820167079811253,
+        "reflection_identities": 1.2039312779645972e-16,
+        "resolvent_compression_relative_error": 2.225204526756539e-16,
+        "scalar_block_inequality": -0.48010724982635855
+      },
+      "resolvent_compression_norm": 0.31798329201887465,
+      "scalar_bracket": 0.5198927501736414,
+      "t": 2.2272175275535506,
+      "t0": 2.2272175275535506
+    },
+    {
+      "Hamiltonian_dimension": 8,
+      "active_bracket": 0.5849410797136186,
+      "angles": [
+        0.3
+      ],
+      "c": 0.42267486735974247,
+      "last_kind": "commuting",
+      "m": 1.1869960348195443,
+      "name": "q1_angles_2_commuting_rotation_1",
+      "physical_hamiltonian_norm": 2.356688297631346,
+      "q": 1,
+      "residuals": {
+        "Jordan_resolvent_cap": -0.2019094581547668,
+        "active_scalar_inequality": -0.33855407658170455,
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 1.0251954017297128e-15,
+        "physical_converse": -1.057525264741749,
+        "positive_rank_update": -0.5859627847699693,
+        "product_Bell_isometry": 6.661619745032265e-16,
+        "product_Bell_marginal": 5.443144362449242e-16,
+        "rank_update_criterion": -0.6820167079811253,
+        "reflection_identities": 1.1328355913146111e-15,
+        "resolvent_compression_relative_error": 6.157373843020084e-16,
+        "scalar_block_inequality": -0.48010724982635855
+      },
+      "resolvent_compression_norm": 0.31798329201887465,
+      "scalar_bracket": 0.5198927501736414,
+      "t": 2.2272175275535506,
+      "t0": 2.2272175275535506
+    },
+    {
+      "Hamiltonian_dimension": 8,
+      "active_bracket": 0.5849410797136186,
+      "angles": [
+        0.3
+      ],
+      "c": 0.42267486735974247,
+      "last_kind": "full_blocks",
+      "m": 1.1869960348195443,
+      "name": "q1_angles_2_full_blocks_rotation_0",
+      "physical_hamiltonian_norm": 2.7411970333956006,
+      "q": 1,
+      "residuals": {
+        "Jordan_resolvent_cap": -1.1102230246251565e-16,
+        "active_scalar_inequality": -0.33855407658170455,
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 2.83502778645285e-16,
+        "physical_converse": -0.6730165289774943,
+        "positive_rank_update": -0.10641291207562764,
+        "product_Bell_isometry": 2.220446049250313e-16,
+        "product_Bell_marginal": 1.5470774542200816e-16,
+        "rank_update_criterion": -0.41505892028638147,
+        "reflection_identities": 1.2039312779645972e-16,
+        "resolvent_compression_relative_error": 3.2110918009165583e-16,
+        "scalar_block_inequality": -0.48010724982635855
+      },
+      "resolvent_compression_norm": 0.5849410797136185,
+      "scalar_bracket": 0.5198927501736414,
+      "t": 2.2272175275535506,
+      "t0": 2.2272175275535506
+    },
+    {
+      "Hamiltonian_dimension": 8,
+      "active_bracket": 0.5849410797136186,
+      "angles": [
+        0.3
+      ],
+      "c": 0.42267486735974247,
+      "last_kind": "full_blocks",
+      "m": 1.1869960348195443,
+      "name": "q1_angles_2_full_blocks_rotation_1",
+      "physical_hamiltonian_norm": 2.721990690094046,
+      "q": 1,
+      "residuals": {
+        "Jordan_resolvent_cap": 3.3306690738754696e-16,
+        "active_scalar_inequality": -0.33855407658170455,
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 3.9186092860743893e-16,
+        "physical_converse": -0.6922228722790491,
+        "positive_rank_update": -0.1064129120756272,
+        "product_Bell_isometry": 2.2207033319049574e-16,
+        "product_Bell_marginal": 2.7017093463847007e-16,
+        "rank_update_criterion": -0.41505892028638103,
+        "reflection_identities": 5.700393816168162e-16,
+        "resolvent_compression_relative_error": 6.517590511290287e-16,
+        "scalar_block_inequality": -0.48010724982635855
+      },
+      "resolvent_compression_norm": 0.584941079713619,
+      "scalar_bracket": 0.5198927501736414,
+      "t": 2.2272175275535506,
+      "t0": 2.2272175275535506
+    },
+    {
+      "Hamiltonian_dimension": 8,
+      "active_bracket": 0.5000316930794243,
+      "angles": [
+        0.0001
+      ],
+      "c": 0.00014142135617811746,
+      "last_kind": "scalar",
+      "m": 1.414142849927239,
+      "name": "q1_angles_3_scalar_rotation_0",
+      "physical_hamiltonian_norm": 2.8284978336565123,
+      "q": 1,
+      "residuals": {
+        "Jordan_resolvent_cap": -2.710505431213761e-20,
+        "active_scalar_inequality": -0.4234634632158989,
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 5.30807710328743e-16,
+        "physical_converse": -0.5857157287165826,
+        "positive_rank_update": -0.5857157287165835,
+        "product_Bell_isometry": 4.440892098500626e-16,
+        "product_Bell_marginal": 6.556422084869702e-13,
+        "rank_update_criterion": -0.9997586077832104,
+        "reflection_identities": 1.87416736397661e-21,
+        "resolvent_compression_relative_error": 4.2278086314883576e-16,
+        "scalar_block_inequality": -0.9997586077832104
+      },
+      "resolvent_compression_norm": 0.00024139221678962786,
+      "scalar_bracket": 0.00024139221678962788,
+      "t": 2.000070712445856,
+      "t0": 2.000070712445856
+    },
+    {
+      "Hamiltonian_dimension": 8,
+      "active_bracket": 0.5000316930794243,
+      "angles": [
+        0.0001
+      ],
+      "c": 0.00014142135617811746,
+      "last_kind": "scalar",
+      "m": 1.414142849927239,
+      "name": "q1_angles_3_scalar_rotation_1",
+      "physical_hamiltonian_norm": 2.8284978336565127,
+      "q": 1,
+      "residuals": {
+        "Jordan_resolvent_cap": -8.131516293641283e-20,
+        "active_scalar_inequality": -0.4234634632158989,
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 6.407296088042377e-16,
+        "physical_converse": -0.5857157287165822,
+        "positive_rank_update": -0.5857157287165826,
+        "product_Bell_isometry": 3.3320142583745174e-16,
+        "product_Bell_marginal": 6.556191786366657e-13,
+        "rank_update_criterion": -0.9997586077832104,
+        "reflection_identities": 1.0861443237306439e-15,
+        "resolvent_compression_relative_error": 1.821833863819551e-16,
+        "scalar_block_inequality": -0.9997586077832104
+      },
+      "resolvent_compression_norm": 0.0002413922167896278,
+      "scalar_bracket": 0.00024139221678962788,
+      "t": 2.000070712445856,
+      "t0": 2.000070712445856
+    },
+    {
+      "Hamiltonian_dimension": 8,
+      "active_bracket": 0.5000316930794243,
+      "angles": [
+        0.0001
+      ],
+      "c": 0.00014142135617811746,
+      "last_kind": "commuting",
+      "m": 1.414142849927239,
+      "name": "q1_angles_3_commuting_rotation_0",
+      "physical_hamiltonian_norm": 2.8284271238623067,
+      "q": 1,
+      "residuals": {
+        "Jordan_resolvent_cap": -9.9985859218855e-05,
+        "active_scalar_inequality": -0.4234634632158989,
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 5.30807710328743e-16,
+        "physical_converse": -0.5857864385107883,
+        "positive_rank_update": -0.5857864376269049,
+        "product_Bell_isometry": 4.440892098500626e-16,
+        "product_Bell_marginal": 6.556422084869702e-13,
+        "rank_update_criterion": -0.9998585936424292,
+        "reflection_identities": 1.87416736397661e-21,
+        "resolvent_compression_relative_error": 9.271746461213409e-13,
+        "scalar_block_inequality": -0.9997586077832104
+      },
+      "resolvent_compression_norm": 0.00014140635757077288,
+      "scalar_bracket": 0.00024139221678962788,
+      "t": 2.000070712445856,
+      "t0": 2.000070712445856
+    },
+    {
+      "Hamiltonian_dimension": 8,
+      "active_bracket": 0.5000316930794243,
+      "angles": [
+        0.0001
+      ],
+      "c": 0.00014142135617811746,
+      "last_kind": "commuting",
+      "m": 1.414142849927239,
+      "name": "q1_angles_3_commuting_rotation_1",
+      "physical_hamiltonian_norm": 2.0640187928143927,
+      "q": 1,
+      "residuals": {
+        "Jordan_resolvent_cap": -9.998585921885489e-05,
+        "active_scalar_inequality": -0.4234634632158989,
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 5.89707713585351e-16,
+        "physical_converse": -1.3501947695587022,
+        "positive_rank_update": -0.5857864376269046,
+        "product_Bell_isometry": 4.443822079019676e-16,
+        "product_Bell_marginal": 6.556370005864772e-13,
+        "rank_update_criterion": -0.9998585936424292,
+        "reflection_identities": 9.673077633052851e-16,
+        "resolvent_compression_relative_error": 6.048973721225616e-14,
+        "scalar_block_inequality": -0.9997586077832104
+      },
+      "resolvent_compression_norm": 0.000141406357570773,
+      "scalar_bracket": 0.00024139221678962788,
+      "t": 2.000070712445856,
+      "t0": 2.000070712445856
+    },
+    {
+      "Hamiltonian_dimension": 8,
+      "active_bracket": 0.5000316930794243,
+      "angles": [
+        0.0001
+      ],
+      "c": 0.00014142135617811746,
+      "last_kind": "full_blocks",
+      "m": 1.414142849927239,
+      "name": "q1_angles_3_full_blocks_rotation_0",
+      "physical_hamiltonian_norm": 2.7320508086255013,
+      "q": 1,
+      "residuals": {
+        "Jordan_resolvent_cap": 1.6697754290362354e-13,
+        "active_scalar_inequality": -0.4234634632158989,
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 5.30807710328743e-16,
+        "physical_converse": -0.6821627537475936,
+        "positive_rank_update": -3.535554426647991e-05,
+        "product_Bell_isometry": 4.440892098500626e-16,
+        "product_Bell_marginal": 6.556422084869702e-13,
+        "rank_update_criterion": -0.4999683069204087,
+        "reflection_identities": 1.87416736397661e-21,
+        "resolvent_compression_relative_error": 1.3110304556743576e-12,
+        "scalar_block_inequality": -0.9997586077832104
+      },
+      "resolvent_compression_norm": 0.5000316930795913,
+      "scalar_bracket": 0.00024139221678962788,
+      "t": 2.000070712445856,
+      "t0": 2.000070712445856
+    },
+    {
+      "Hamiltonian_dimension": 8,
+      "active_bracket": 0.5000316930794243,
+      "angles": [
+        0.0001
+      ],
+      "c": 0.00014142135617811746,
+      "last_kind": "full_blocks",
+      "m": 1.414142849927239,
+      "name": "q1_angles_3_full_blocks_rotation_1",
+      "physical_hamiltonian_norm": 2.50482923349939,
+      "q": 1,
+      "residuals": {
+        "Jordan_resolvent_cap": -2.3979707108878756e-12,
+        "active_scalar_inequality": -0.4234634632158989,
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 5.157487647733118e-16,
+        "physical_converse": -0.9093843288737049,
+        "positive_rank_update": -3.535554426603582e-05,
+        "product_Bell_isometry": 4.441552179051156e-16,
+        "product_Bell_marginal": 6.556593542389492e-13,
+        "rank_update_criterion": -0.49996830692297367,
+        "reflection_identities": 5.175041263203932e-16,
+        "resolvent_compression_relative_error": 1.4817546443573926e-12,
+        "scalar_block_inequality": -0.9997586077832104
+      },
+      "resolvent_compression_norm": 0.5000316930770263,
+      "scalar_bracket": 0.00024139221678962788,
+      "t": 2.000070712445856,
+      "t0": 2.000070712445856
+    },
+    {
+      "Hamiltonian_dimension": 8,
+      "angles": [
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "scalar",
+      "m": 1.414213562373095,
+      "name": "q1_angles_4_scalar_rotation_0",
+      "physical_hamiltonian_norm": 2.8284271247461903,
+      "q": 1,
+      "residuals": {
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 1.9428902930942498e-16,
+        "physical_converse": -0.5857864376269046,
+        "product_Bell_isometry": 3.3306690738754696e-16,
+        "product_Bell_marginal": 1.7384451763158188e-16,
+        "reflection_identities": 0.0,
+        "zero_c_triangle": 0.0
+      },
+      "t": 2.0,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 8,
+      "angles": [
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "scalar",
+      "m": 1.414213562373095,
+      "name": "q1_angles_4_scalar_rotation_1",
+      "physical_hamiltonian_norm": 2.8284271247461903,
+      "q": 1,
+      "residuals": {
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 1.135587763169905e-15,
+        "physical_converse": -0.5857864376269046,
+        "product_Bell_isometry": 1.122011469492236e-16,
+        "product_Bell_marginal": 1.2535265065652263e-16,
+        "reflection_identities": 2.3160350221089724e-16,
+        "zero_c_triangle": 0.0
+      },
+      "t": 2.0,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 8,
+      "angles": [
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "commuting",
+      "m": 1.414213562373095,
+      "name": "q1_angles_4_commuting_rotation_0",
+      "physical_hamiltonian_norm": 2.8284271247461903,
+      "q": 1,
+      "residuals": {
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 1.9428902930942498e-16,
+        "physical_converse": -0.5857864376269046,
+        "product_Bell_isometry": 3.3306690738754696e-16,
+        "product_Bell_marginal": 1.7384451763158188e-16,
+        "reflection_identities": 0.0,
+        "zero_c_triangle": 0.0
+      },
+      "t": 2.0,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 8,
+      "angles": [
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "commuting",
+      "m": 1.414213562373095,
+      "name": "q1_angles_4_commuting_rotation_1",
+      "physical_hamiltonian_norm": 2.733619292907945,
+      "q": 1,
+      "residuals": {
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 3.567968384259092e-16,
+        "physical_converse": -0.6805942694651499,
+        "product_Bell_isometry": 3.3307074803167166e-16,
+        "product_Bell_marginal": 2.1396244397754957e-16,
+        "reflection_identities": 6.749697685798382e-16,
+        "zero_c_triangle": 0.0
+      },
+      "t": 2.0,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 8,
+      "angles": [
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "full_blocks",
+      "m": 1.414213562373095,
+      "name": "q1_angles_4_full_blocks_rotation_0",
+      "physical_hamiltonian_norm": 2.7320508075688776,
+      "q": 1,
+      "residuals": {
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 1.9428902930942498e-16,
+        "physical_converse": -0.6821627548042173,
+        "product_Bell_isometry": 3.3306690738754696e-16,
+        "product_Bell_marginal": 1.7384451763158188e-16,
+        "reflection_identities": 0.0,
+        "zero_c_triangle": 0.0
+      },
+      "t": 2.0,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 8,
+      "angles": [
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "full_blocks",
+      "m": 1.414213562373095,
+      "name": "q1_angles_4_full_blocks_rotation_1",
+      "physical_hamiltonian_norm": 2.707760150823185,
+      "q": 1,
+      "residuals": {
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 7.721943852140558e-16,
+        "physical_converse": -0.7064534115499099,
+        "product_Bell_isometry": 7.539260588668722e-19,
+        "product_Bell_marginal": 1.0188139538396314e-16,
+        "reflection_identities": 6.334300194573572e-16,
+        "zero_c_triangle": 0.0
+      },
+      "t": 2.0,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 32,
+      "angles": [
+        0.0,
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "scalar",
+      "m": 2.82842712474619,
+      "name": "q2_angles_0_scalar_rotation_0",
+      "physical_hamiltonian_norm": 4.242640687119286,
+      "q": 2,
+      "residuals": {
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 1.4329233629808196e-15,
+        "physical_converse": -1.1715728752538093,
+        "product_Bell_isometry": 5.551115123125783e-16,
+        "product_Bell_marginal": 1.7170451101000713e-16,
+        "reflection_identities": 0.0,
+        "zero_c_triangle": -0.5857864376269051
+      },
+      "t": 2.585786437626905,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 32,
+      "angles": [
+        0.0,
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "scalar",
+      "m": 2.82842712474619,
+      "name": "q2_angles_0_scalar_rotation_1",
+      "physical_hamiltonian_norm": 4.2426406871192865,
+      "q": 2,
+      "residuals": {
+        "cross_commutators": 7.608391850369002e-16,
+        "dedicated_query_spectral_cap": 1.900963689404866e-15,
+        "physical_converse": -1.1715728752538084,
+        "product_Bell_isometry": 5.551263609135849e-16,
+        "product_Bell_marginal": 2.664412964804612e-16,
+        "reflection_identities": 1.3209997670974354e-15,
+        "zero_c_triangle": -0.5857864376269051
+      },
+      "t": 2.585786437626905,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 32,
+      "angles": [
+        0.0,
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "commuting",
+      "m": 2.82842712474619,
+      "name": "q2_angles_0_commuting_rotation_0",
+      "physical_hamiltonian_norm": 4.2426406871192865,
+      "q": 2,
+      "residuals": {
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 1.4329233629808196e-15,
+        "physical_converse": -1.1715728752538084,
+        "product_Bell_isometry": 5.551115123125783e-16,
+        "product_Bell_marginal": 1.7170451101000713e-16,
+        "reflection_identities": 0.0,
+        "zero_c_triangle": -0.5857864376269051
+      },
+      "t": 2.585786437626905,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 32,
+      "angles": [
+        0.0,
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "commuting",
+      "m": 2.82842712474619,
+      "name": "q2_angles_0_commuting_rotation_1",
+      "physical_hamiltonian_norm": 4.159145913131647,
+      "q": 2,
+      "residuals": {
+        "cross_commutators": 4.593165329526689e-16,
+        "dedicated_query_spectral_cap": 1.3446447531794562e-15,
+        "physical_converse": -1.2550676492414476,
+        "product_Bell_isometry": 4.440904007794792e-16,
+        "product_Bell_marginal": 1.6708221074589201e-16,
+        "reflection_identities": 1.3350575913112747e-15,
+        "zero_c_triangle": -0.5857864376269051
+      },
+      "t": 2.585786437626905,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 32,
+      "angles": [
+        0.0,
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "full_blocks",
+      "m": 2.82842712474619,
+      "name": "q2_angles_0_full_blocks_rotation_0",
+      "physical_hamiltonian_norm": 4.229717676443743,
+      "q": 2,
+      "residuals": {
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 1.4329233629808196e-15,
+        "physical_converse": -1.1844958859293522,
+        "product_Bell_isometry": 5.551115123125783e-16,
+        "product_Bell_marginal": 1.7170451101000713e-16,
+        "reflection_identities": 2.1631857035887533e-17,
+        "zero_c_triangle": -0.5857864376269051
+      },
+      "t": 2.585786437626905,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 32,
+      "angles": [
+        0.0,
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "full_blocks",
+      "m": 2.82842712474619,
+      "name": "q2_angles_0_full_blocks_rotation_1",
+      "physical_hamiltonian_norm": 3.9041988908854113,
+      "q": 2,
+      "residuals": {
+        "cross_commutators": 2.3793876327805943e-16,
+        "dedicated_query_spectral_cap": 1.4371745641103304e-15,
+        "physical_converse": -1.5100146714876836,
+        "product_Bell_isometry": 2.2204496279670237e-16,
+        "product_Bell_marginal": 1.958225806151222e-16,
+        "reflection_identities": 1.1547501564094213e-15,
+        "zero_c_triangle": -0.5857864376269051
+      },
+      "t": 2.585786437626905,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 32,
+      "angles": [
+        0.0,
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "one_plus",
+      "m": 2.82842712474619,
+      "name": "q2_angles_0_one_plus_rotation_0",
+      "physical_hamiltonian_norm": 4.242640687119286,
+      "q": 2,
+      "residuals": {
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 1.4329233629808196e-15,
+        "physical_converse": -1.1715728752538093,
+        "product_Bell_isometry": 5.551115123125783e-16,
+        "product_Bell_marginal": 1.7170451101000713e-16,
+        "reflection_identities": 0.0,
+        "zero_c_triangle": -0.5857864376269051
+      },
+      "t": 2.585786437626905,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 32,
+      "angles": [
+        0.0,
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "one_plus",
+      "m": 2.82842712474619,
+      "name": "q2_angles_0_one_plus_rotation_1",
+      "physical_hamiltonian_norm": 4.183158859255041,
+      "q": 2,
+      "residuals": {
+        "cross_commutators": 3.297234629171229e-16,
+        "dedicated_query_spectral_cap": 2.2485107591373177e-15,
+        "physical_converse": -1.2310547031180539,
+        "product_Bell_isometry": 7.771637023468664e-16,
+        "product_Bell_marginal": 2.1046172251230035e-16,
+        "reflection_identities": 1.0888742962771194e-15,
+        "zero_c_triangle": -0.5857864376269051
+      },
+      "t": 2.585786437626905,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 32,
+      "angles": [
+        0.0,
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "one_mixed",
+      "m": 2.82842712474619,
+      "name": "q2_angles_0_one_mixed_rotation_0",
+      "physical_hamiltonian_norm": 4.242640687119285,
+      "q": 2,
+      "residuals": {
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 1.4329233629808196e-15,
+        "physical_converse": -1.1715728752538102,
+        "product_Bell_isometry": 5.551115123125783e-16,
+        "product_Bell_marginal": 1.7170451101000713e-16,
+        "reflection_identities": 0.0,
+        "zero_c_triangle": -0.5857864376269051
+      },
+      "t": 2.585786437626905,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 32,
+      "angles": [
+        0.0,
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "one_mixed",
+      "m": 2.82842712474619,
+      "name": "q2_angles_0_one_mixed_rotation_1",
+      "physical_hamiltonian_norm": 3.9658601736238053,
+      "q": 2,
+      "residuals": {
+        "cross_commutators": 6.701776788137479e-16,
+        "dedicated_query_spectral_cap": 1.980125959568546e-15,
+        "physical_converse": -1.4483533887492896,
+        "product_Bell_isometry": 6.662646541732262e-16,
+        "product_Bell_marginal": 1.872005281318438e-16,
+        "reflection_identities": 1.1568071816952322e-15,
+        "zero_c_triangle": -0.5857864376269051
+      },
+      "t": 2.585786437626905,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 32,
+      "active_bracket": 0.7387961250362586,
+      "angles": [
+        1.5707963267948966,
+        1.5707963267948966
+      ],
+      "c": 2.0,
+      "last_kind": "scalar",
+      "m": 2.0,
+      "name": "q2_angles_1_scalar_rotation_0",
+      "physical_hamiltonian_norm": 5.414213562373096,
+      "q": 2,
+      "residuals": {
+        "Jordan_resolvent_cap": -2.220446049250313e-16,
+        "active_scalar_inequality": -0.18469903125906462,
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 1.883421985787735e-15,
+        "physical_converse": 8.881784197001252e-16,
+        "positive_rank_update": 0.0,
+        "product_Bell_isometry": 0.0,
+        "product_Bell_marginal": 3.0364658985745874e-16,
+        "rank_update_criterion": 0.0,
+        "reflection_identities": 0.0,
+        "resolvent_compression_relative_error": 5.878725253121983e-17,
+        "scalar_attainment": 8.881784197001252e-16,
+        "scalar_block_inequality": 2.220446049250313e-16
+      },
+      "resolvent_compression_norm": 1.0,
+      "scalar_bracket": 1.0000000000000002,
+      "t": 3.414213562373095,
+      "t0": 3.414213562373095
+    },
+    {
+      "Hamiltonian_dimension": 32,
+      "active_bracket": 0.7387961250362586,
+      "angles": [
+        1.5707963267948966,
+        1.5707963267948966
+      ],
+      "c": 2.0,
+      "last_kind": "scalar",
+      "m": 2.0,
+      "name": "q2_angles_1_scalar_rotation_1",
+      "physical_hamiltonian_norm": 5.414213562373095,
+      "q": 2,
+      "residuals": {
+        "Jordan_resolvent_cap": -2.220446049250313e-16,
+        "active_scalar_inequality": -0.18469903125906462,
+        "cross_commutators": 6.298859289756685e-16,
+        "dedicated_query_spectral_cap": 2.4192331020389194e-15,
+        "physical_converse": 0.0,
+        "positive_rank_update": -8.881784197001252e-16,
+        "product_Bell_isometry": 3.3307076315277606e-16,
+        "product_Bell_marginal": 3.3943272196608945e-16,
+        "rank_update_criterion": 0.0,
+        "reflection_identities": 8.752283394178811e-16,
+        "resolvent_compression_relative_error": 4.606557202764439e-17,
+        "scalar_attainment": 0.0,
+        "scalar_block_inequality": 2.220446049250313e-16
+      },
+      "resolvent_compression_norm": 1.0,
+      "scalar_bracket": 1.0000000000000002,
+      "t": 3.414213562373095,
+      "t0": 3.414213562373095
+    },
+    {
+      "Hamiltonian_dimension": 32,
+      "active_bracket": 0.7387961250362586,
+      "angles": [
+        1.5707963267948966,
+        1.5707963267948966
+      ],
+      "c": 2.0,
+      "last_kind": "commuting",
+      "m": 2.0,
+      "name": "q2_angles_1_commuting_rotation_0",
+      "physical_hamiltonian_norm": 5.068965740909119,
+      "q": 2,
+      "residuals": {
+        "Jordan_resolvent_cap": -0.14644660940672627,
+        "active_scalar_inequality": -0.18469903125906462,
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 1.883421985787735e-15,
+        "physical_converse": -0.3452478214639756,
+        "positive_rank_update": -0.3132105727576371,
+        "product_Bell_isometry": 0.0,
+        "product_Bell_marginal": 3.0364658985745874e-16,
+        "rank_update_criterion": -0.14644660940672605,
+        "reflection_identities": 0.0,
+        "resolvent_compression_relative_error": 1.2415377052439476e-16,
+        "scalar_block_inequality": 2.220446049250313e-16
+      },
+      "resolvent_compression_norm": 0.853553390593274,
+      "scalar_bracket": 1.0000000000000002,
+      "t": 3.414213562373095,
+      "t0": 3.414213562373095
+    },
+    {
+      "Hamiltonian_dimension": 32,
+      "active_bracket": 0.7387961250362586,
+      "angles": [
+        1.5707963267948966,
+        1.5707963267948966
+      ],
+      "c": 2.0,
+      "last_kind": "commuting",
+      "m": 2.0,
+      "name": "q2_angles_1_commuting_rotation_1",
+      "physical_hamiltonian_norm": 5.010538059082731,
+      "q": 2,
+      "residuals": {
+        "Jordan_resolvent_cap": -0.14644660940672638,
+        "active_scalar_inequality": -0.18469903125906462,
+        "cross_commutators": 6.589173215621932e-16,
+        "dedicated_query_spectral_cap": 2.790388445006736e-15,
+        "physical_converse": -0.40367550329036384,
+        "positive_rank_update": -0.31321057275763664,
+        "product_Bell_isometry": 1.1103389679952493e-16,
+        "product_Bell_marginal": 3.175614675142655e-16,
+        "rank_update_criterion": -0.14644660940672616,
+        "reflection_identities": 5.747153373286554e-16,
+        "resolvent_compression_relative_error": 4.49844451146009e-17,
+        "scalar_block_inequality": 2.220446049250313e-16
+      },
+      "resolvent_compression_norm": 0.8535533905932738,
+      "scalar_bracket": 1.0000000000000002,
+      "t": 3.414213562373095,
+      "t0": 3.414213562373095
+    },
+    {
+      "Hamiltonian_dimension": 32,
+      "active_bracket": 0.7387961250362586,
+      "angles": [
+        1.5707963267948966,
+        1.5707963267948966
+      ],
+      "c": 2.0,
+      "last_kind": "full_blocks",
+      "m": 2.0,
+      "name": "q2_angles_1_full_blocks_rotation_0",
+      "physical_hamiltonian_norm": 4.750932230613899,
+      "q": 2,
+      "residuals": {
+        "Jordan_resolvent_cap": -0.013638992574128594,
+        "active_scalar_inequality": -0.18469903125906462,
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 1.883421985787735e-15,
+        "physical_converse": -0.6632813317591957,
+        "positive_rank_update": -0.5727963716857216,
+        "product_Bell_isometry": 0.0,
+        "product_Bell_marginal": 3.0364658985745874e-16,
+        "rank_update_criterion": -0.27484286753787,
+        "reflection_identities": 2.1631857035887533e-17,
+        "resolvent_compression_relative_error": 1.297628202770566e-16,
+        "scalar_block_inequality": 2.220446049250313e-16
+      },
+      "resolvent_compression_norm": 0.72515713246213,
+      "scalar_bracket": 1.0000000000000002,
+      "t": 3.414213562373095,
+      "t0": 3.414213562373095
+    },
+    {
+      "Hamiltonian_dimension": 32,
+      "active_bracket": 0.7387961250362586,
+      "angles": [
+        1.5707963267948966,
+        1.5707963267948966
+      ],
+      "c": 2.0,
+      "last_kind": "full_blocks",
+      "m": 2.0,
+      "name": "q2_angles_1_full_blocks_rotation_1",
+      "physical_hamiltonian_norm": 4.52185404071134,
+      "q": 2,
+      "residuals": {
+        "Jordan_resolvent_cap": -0.013638992574128594,
+        "active_scalar_inequality": -0.18469903125906462,
+        "cross_commutators": 6.526801317446495e-16,
+        "dedicated_query_spectral_cap": 1.639077538802918e-15,
+        "physical_converse": -0.8923595216617546,
+        "positive_rank_update": -0.5727963716857203,
+        "product_Bell_isometry": 2.22167194235478e-16,
+        "product_Bell_marginal": 3.2309727844660657e-16,
+        "rank_update_criterion": -0.27484286753787,
+        "reflection_identities": 7.387998023916796e-16,
+        "resolvent_compression_relative_error": 4.168395130571445e-17,
+        "scalar_block_inequality": 2.220446049250313e-16
+      },
+      "resolvent_compression_norm": 0.72515713246213,
+      "scalar_bracket": 1.0000000000000002,
+      "t": 3.414213562373095,
+      "t0": 3.414213562373095
+    },
+    {
+      "Hamiltonian_dimension": 32,
+      "active_bracket": 0.7387961250362586,
+      "angles": [
+        1.5707963267948966,
+        1.5707963267948966
+      ],
+      "c": 2.0,
+      "last_kind": "one_plus",
+      "m": 2.0,
+      "name": "q2_angles_1_one_plus_rotation_0",
+      "physical_hamiltonian_norm": 5.079876766361173,
+      "q": 2,
+      "residuals": {
+        "Jordan_resolvent_cap": 0.0,
+        "active_scalar_inequality": -0.18469903125906462,
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 1.883421985787735e-15,
+        "physical_converse": -0.3343367960119217,
+        "positive_rank_update": -0.26288157796272094,
+        "product_Bell_isometry": 0.0,
+        "product_Bell_marginal": 3.0364658985745874e-16,
+        "rank_update_criterion": -0.13060193748187054,
+        "reflection_identities": 0.0,
+        "resolvent_compression_relative_error": 5.551115123125783e-17,
+        "scalar_block_inequality": 2.220446049250313e-16
+      },
+      "resolvent_compression_norm": 0.8693980625181295,
+      "scalar_bracket": 1.0000000000000002,
+      "t": 3.414213562373095,
+      "t0": 3.414213562373095
+    },
+    {
+      "Hamiltonian_dimension": 32,
+      "active_bracket": 0.7387961250362586,
+      "angles": [
+        1.5707963267948966,
+        1.5707963267948966
+      ],
+      "c": 2.0,
+      "last_kind": "one_plus",
+      "m": 2.0,
+      "name": "q2_angles_1_one_plus_rotation_1",
+      "physical_hamiltonian_norm": 4.996531488568703,
+      "q": 2,
+      "residuals": {
+        "Jordan_resolvent_cap": 0.0,
+        "active_scalar_inequality": -0.18469903125906462,
+        "cross_commutators": 5.9624397449614505e-16,
+        "dedicated_query_spectral_cap": 1.7427975640222415e-15,
+        "physical_converse": -0.41768207380439204,
+        "positive_rank_update": -0.26288157796272005,
+        "product_Bell_isometry": 2.220671702068539e-16,
+        "product_Bell_marginal": 3.338882749665908e-16,
+        "rank_update_criterion": -0.13060193748187054,
+        "reflection_identities": 1.3940867569975176e-15,
+        "resolvent_compression_relative_error": 2.6757620010234077e-17,
+        "scalar_block_inequality": 2.220446049250313e-16
+      },
+      "resolvent_compression_norm": 0.8693980625181295,
+      "scalar_bracket": 1.0000000000000002,
+      "t": 3.414213562373095,
+      "t0": 3.414213562373095
+    },
+    {
+      "Hamiltonian_dimension": 32,
+      "active_bracket": 0.7387961250362586,
+      "angles": [
+        1.5707963267948966,
+        1.5707963267948966
+      ],
+      "c": 2.0,
+      "last_kind": "one_mixed",
+      "m": 2.0,
+      "name": "q2_angles_1_one_mixed_rotation_0",
+      "physical_hamiltonian_norm": 4.954484202968679,
+      "q": 2,
+      "residuals": {
+        "Jordan_resolvent_cap": -0.04289321881345254,
+        "active_scalar_inequality": -0.18469903125906462,
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 1.883421985787735e-15,
+        "physical_converse": -0.45972935940441584,
+        "positive_rank_update": -0.35418788944778967,
+        "product_Bell_isometry": 0.0,
+        "product_Bell_marginal": 3.0364658985745874e-16,
+        "rank_update_criterion": -0.17349515629532308,
+        "reflection_identities": 0.0,
+        "resolvent_compression_relative_error": 5.594315114139762e-17,
+        "scalar_block_inequality": 2.220446049250313e-16
+      },
+      "resolvent_compression_norm": 0.8265048437046769,
+      "scalar_bracket": 1.0000000000000002,
+      "t": 3.414213562373095,
+      "t0": 3.414213562373095
+    },
+    {
+      "Hamiltonian_dimension": 32,
+      "active_bracket": 0.7387961250362586,
+      "angles": [
+        1.5707963267948966,
+        1.5707963267948966
+      ],
+      "c": 2.0,
+      "last_kind": "one_mixed",
+      "m": 2.0,
+      "name": "q2_angles_1_one_mixed_rotation_1",
+      "physical_hamiltonian_norm": 4.899671840062882,
+      "q": 2,
+      "residuals": {
+        "Jordan_resolvent_cap": -0.04289321881345254,
+        "active_scalar_inequality": -0.18469903125906462,
+        "cross_commutators": 6.806138947739523e-16,
+        "dedicated_query_spectral_cap": 1.1615280510402653e-15,
+        "physical_converse": -0.5145417223102129,
+        "positive_rank_update": -0.3541878894477848,
+        "product_Bell_isometry": 1.1109179843242537e-16,
+        "product_Bell_marginal": 3.6234693929203917e-16,
+        "rank_update_criterion": -0.17349515629532308,
+        "reflection_identities": 1.1790308809949068e-15,
+        "resolvent_compression_relative_error": 1.1468981628510402e-16,
+        "scalar_block_inequality": 2.220446049250313e-16
+      },
+      "resolvent_compression_norm": 0.8265048437046769,
+      "scalar_bracket": 1.0000000000000002,
+      "t": 3.414213562373095,
+      "t0": 3.414213562373095
+    },
+    {
+      "Hamiltonian_dimension": 32,
+      "active_bracket": 0.5849410797136186,
+      "angles": [
+        0.3,
+        0.5
+      ],
+      "c": 0.42267486735974247,
+      "last_kind": "scalar",
+      "m": 2.9071271569170447,
+      "name": "q2_angles_2_scalar_rotation_0",
+      "physical_hamiltonian_norm": 4.744015586649883,
+      "q": 2,
+      "residuals": {
+        "Jordan_resolvent_cap": 0.0,
+        "active_scalar_inequality": -0.33855407658170455,
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 2.6795278568295577e-16,
+        "physical_converse": -0.6701979757232115,
+        "positive_rank_update": -0.3903290978207141,
+        "product_Bell_isometry": 2.220446049250313e-16,
+        "product_Bell_marginal": 3.2480854517641293e-16,
+        "rank_update_criterion": -0.48010724982635855,
+        "reflection_identities": 1.2039312779645974e-16,
+        "resolvent_compression_relative_error": 2.642002234283067e-16,
+        "scalar_block_inequality": -0.48010724982635855
+      },
+      "resolvent_compression_norm": 0.5198927501736414,
+      "scalar_bracket": 0.5198927501736414,
+      "t": 2.50708640545605,
+      "t0": 2.2272175275535506
+    },
+    {
+      "Hamiltonian_dimension": 32,
+      "active_bracket": 0.5849410797136186,
+      "angles": [
+        0.3,
+        0.5
+      ],
+      "c": 0.42267486735974247,
+      "last_kind": "scalar",
+      "m": 2.9071271569170447,
+      "name": "q2_angles_2_scalar_rotation_1",
+      "physical_hamiltonian_norm": 4.744015586649884,
+      "q": 2,
+      "residuals": {
+        "Jordan_resolvent_cap": 1.1102230246251565e-16,
+        "active_scalar_inequality": -0.33855407658170455,
+        "cross_commutators": 5.633381258469389e-16,
+        "dedicated_query_spectral_cap": 1.641024125530826e-15,
+        "physical_converse": -0.6701979757232106,
+        "positive_rank_update": -0.39032909782071346,
+        "product_Bell_isometry": 2.2205675638440193e-16,
+        "product_Bell_marginal": 3.1535799990510943e-16,
+        "rank_update_criterion": -0.48010724982635844,
+        "reflection_identities": 1.18173888409855e-15,
+        "resolvent_compression_relative_error": 1.9951582374730545e-16,
+        "scalar_block_inequality": -0.48010724982635855
+      },
+      "resolvent_compression_norm": 0.5198927501736416,
+      "scalar_bracket": 0.5198927501736414,
+      "t": 2.50708640545605,
+      "t0": 2.2272175275535506
+    },
+    {
+      "Hamiltonian_dimension": 32,
+      "active_bracket": 0.5849410797136186,
+      "angles": [
+        0.3,
+        0.5
+      ],
+      "c": 0.42267486735974247,
+      "last_kind": "commuting",
+      "m": 2.9071271569170447,
+      "name": "q2_angles_2_commuting_rotation_0",
+      "physical_hamiltonian_norm": 4.595551019137047,
+      "q": 2,
+      "residuals": {
+        "Jordan_resolvent_cap": -0.1009547290773834,
+        "active_scalar_inequality": -0.33855407658170455,
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 2.6795278568295577e-16,
+        "physical_converse": -0.8186625432360479,
+        "positive_rank_update": -0.4850176651030236,
+        "product_Bell_isometry": 2.220446049250313e-16,
+        "product_Bell_marginal": 3.2480854517641293e-16,
+        "rank_update_criterion": -0.5810619789037419,
+        "reflection_identities": 1.2039312779645974e-16,
+        "resolvent_compression_relative_error": 3.6082248300317583e-16,
+        "scalar_block_inequality": -0.48010724982635855
+      },
+      "resolvent_compression_norm": 0.41893802109625805,
+      "scalar_bracket": 0.5198927501736414,
+      "t": 2.50708640545605,
+      "t0": 2.2272175275535506
+    },
+    {
+      "Hamiltonian_dimension": 32,
+      "active_bracket": 0.5849410797136186,
+      "angles": [
+        0.3,
+        0.5
+      ],
+      "c": 0.42267486735974247,
+      "last_kind": "commuting",
+      "m": 2.9071271569170447,
+      "name": "q2_angles_2_commuting_rotation_1",
+      "physical_hamiltonian_norm": 4.40450099971761,
+      "q": 2,
+      "residuals": {
+        "Jordan_resolvent_cap": -0.1009547290773834,
+        "active_scalar_inequality": -0.33855407658170455,
+        "cross_commutators": 5.744893597526864e-16,
+        "dedicated_query_spectral_cap": 1.3131194165758198e-16,
+        "physical_converse": -1.0097125626554853,
+        "positive_rank_update": -0.48501766510302224,
+        "product_Bell_isometry": 1.5971988989601869e-18,
+        "product_Bell_marginal": 3.141276625752436e-16,
+        "rank_update_criterion": -0.5810619789037419,
+        "reflection_identities": 1.2196059271452667e-15,
+        "resolvent_compression_relative_error": 2.5010808411803343e-16,
+        "scalar_block_inequality": -0.48010724982635855
+      },
+      "resolvent_compression_norm": 0.41893802109625805,
+      "scalar_bracket": 0.5198927501736414,
+      "t": 2.50708640545605,
+      "t0": 2.2272175275535506
+    },
+    {
+      "Hamiltonian_dimension": 32,
+      "active_bracket": 0.5849410797136186,
+      "angles": [
+        0.3,
+        0.5
+      ],
+      "c": 0.42267486735974247,
+      "last_kind": "full_blocks",
+      "m": 2.9071271569170447,
+      "name": "q2_angles_2_full_blocks_rotation_0",
+      "physical_hamiltonian_norm": 4.3926855920145265,
+      "q": 2,
+      "residuals": {
+        "Jordan_resolvent_cap": -0.12224991092460152,
+        "active_scalar_inequality": -0.33855407658170455,
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 2.6795278568295577e-16,
+        "physical_converse": -1.0215279703585685,
+        "positive_rank_update": -0.15403626737951592,
+        "product_Bell_isometry": 2.220446049250313e-16,
+        "product_Bell_marginal": 3.2480854517641293e-16,
+        "rank_update_criterion": -0.5373088312109828,
+        "reflection_identities": 1.2039312779645974e-16,
+        "resolvent_compression_relative_error": 8.880468162424463e-16,
+        "scalar_block_inequality": -0.48010724982635855
+      },
+      "resolvent_compression_norm": 0.4626911687890171,
+      "scalar_bracket": 0.5198927501736414,
+      "t": 2.50708640545605,
+      "t0": 2.2272175275535506
+    },
+    {
+      "Hamiltonian_dimension": 32,
+      "active_bracket": 0.5849410797136186,
+      "angles": [
+        0.3,
+        0.5
+      ],
+      "c": 0.42267486735974247,
+      "last_kind": "full_blocks",
+      "m": 2.9071271569170447,
+      "name": "q2_angles_2_full_blocks_rotation_1",
+      "physical_hamiltonian_norm": 4.105242139425545,
+      "q": 2,
+      "residuals": {
+        "Jordan_resolvent_cap": -0.12224991092460086,
+        "active_scalar_inequality": -0.33855407658170455,
+        "cross_commutators": 1.208409598076819e-15,
+        "dedicated_query_spectral_cap": 3.417119172717365e-16,
+        "physical_converse": -1.3089714229475495,
+        "positive_rank_update": -0.15403626737951814,
+        "product_Bell_isometry": 6.579188950271334e-18,
+        "product_Bell_marginal": 3.100009082429758e-16,
+        "rank_update_criterion": -0.5373088312109822,
+        "reflection_identities": 2.2061193057120607e-15,
+        "resolvent_compression_relative_error": 4.481683108357184e-16,
+        "scalar_block_inequality": -0.48010724982635855
+      },
+      "resolvent_compression_norm": 0.4626911687890178,
+      "scalar_bracket": 0.5198927501736414,
+      "t": 2.50708640545605,
+      "t0": 2.2272175275535506
+    },
+    {
+      "Hamiltonian_dimension": 32,
+      "active_bracket": 0.5849410797136186,
+      "angles": [
+        0.3,
+        0.5
+      ],
+      "c": 0.42267486735974247,
+      "last_kind": "one_plus",
+      "m": 2.9071271569170447,
+      "name": "q2_angles_2_one_plus_rotation_0",
+      "physical_hamiltonian_norm": 4.597256417949973,
+      "q": 2,
+      "residuals": {
+        "Jordan_resolvent_cap": -1.1102230246251565e-16,
+        "active_scalar_inequality": -0.33855407658170455,
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 2.6795278568295577e-16,
+        "physical_converse": -0.8169571444231218,
+        "positive_rank_update": -0.14218498422537973,
+        "product_Bell_isometry": 2.220446049250313e-16,
+        "product_Bell_marginal": 3.2480854517641293e-16,
+        "rank_update_criterion": -0.4475830850563701,
+        "reflection_identities": 1.2039312779645974e-16,
+        "resolvent_compression_relative_error": 5.919628463050744e-16,
+        "scalar_block_inequality": -0.48010724982635855
+      },
+      "resolvent_compression_norm": 0.5524169149436299,
+      "scalar_bracket": 0.5198927501736414,
+      "t": 2.50708640545605,
+      "t0": 2.2272175275535506
+    },
+    {
+      "Hamiltonian_dimension": 32,
+      "active_bracket": 0.5849410797136186,
+      "angles": [
+        0.3,
+        0.5
+      ],
+      "c": 0.42267486735974247,
+      "last_kind": "one_plus",
+      "m": 2.9071271569170447,
+      "name": "q2_angles_2_one_plus_rotation_1",
+      "physical_hamiltonian_norm": 4.411828570176613,
+      "q": 2,
+      "residuals": {
+        "Jordan_resolvent_cap": 3.3306690738754696e-16,
+        "active_scalar_inequality": -0.33855407658170455,
+        "cross_commutators": 8.005359766680887e-16,
+        "dedicated_query_spectral_cap": 9.708334669411137e-17,
+        "physical_converse": -1.0023849921964816,
+        "positive_rank_update": -0.1421849842253784,
+        "product_Bell_isometry": 4.44090157554945e-16,
+        "product_Bell_marginal": 3.601385391781353e-16,
+        "rank_update_criterion": -0.4475830850563697,
+        "reflection_identities": 1.7857180536972354e-15,
+        "resolvent_compression_relative_error": 5.458867255452564e-16,
+        "scalar_block_inequality": -0.48010724982635855
+      },
+      "resolvent_compression_norm": 0.5524169149436303,
+      "scalar_bracket": 0.5198927501736414,
+      "t": 2.50708640545605,
+      "t0": 2.2272175275535506
+    },
+    {
+      "Hamiltonian_dimension": 32,
+      "active_bracket": 0.5849410797136186,
+      "angles": [
+        0.3,
+        0.5
+      ],
+      "c": 0.42267486735974247,
+      "last_kind": "one_mixed",
+      "m": 2.9071271569170447,
+      "name": "q2_angles_2_one_mixed_rotation_0",
+      "physical_hamiltonian_norm": 4.521089388984181,
+      "q": 2,
+      "residuals": {
+        "Jordan_resolvent_cap": -0.029568955553915033,
+        "active_scalar_inequality": -0.33855407658170455,
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 2.6795278568295577e-16,
+        "physical_converse": -0.8931241733889141,
+        "positive_rank_update": -0.14675735646944688,
+        "product_Bell_isometry": 2.220446049250313e-16,
+        "product_Bell_marginal": 3.2480854517641293e-16,
+        "rank_update_criterion": -0.47715204061028504,
+        "reflection_identities": 1.2039312779645974e-16,
+        "resolvent_compression_relative_error": 6.282598083669228e-16,
+        "scalar_block_inequality": -0.48010724982635855
+      },
+      "resolvent_compression_norm": 0.522847959389715,
+      "scalar_bracket": 0.5198927501736414,
+      "t": 2.50708640545605,
+      "t0": 2.2272175275535506
+    },
+    {
+      "Hamiltonian_dimension": 32,
+      "active_bracket": 0.5849410797136186,
+      "angles": [
+        0.3,
+        0.5
+      ],
+      "c": 0.42267486735974247,
+      "last_kind": "one_mixed",
+      "m": 2.9071271569170447,
+      "name": "q2_angles_2_one_mixed_rotation_1",
+      "physical_hamiltonian_norm": 4.220908466853809,
+      "q": 2,
+      "residuals": {
+        "Jordan_resolvent_cap": -0.0295689555539147,
+        "active_scalar_inequality": -0.33855407658170455,
+        "cross_commutators": 7.714074165028079e-16,
+        "dedicated_query_spectral_cap": 7.585527079844075e-18,
+        "physical_converse": -1.1933050955192863,
+        "positive_rank_update": -0.14675735646944865,
+        "product_Bell_isometry": 5.9730542805230805e-18,
+        "product_Bell_marginal": 2.5494801452255145e-16,
+        "rank_update_criterion": -0.4771520406102847,
+        "reflection_identities": 1.9940511330402773e-15,
+        "resolvent_compression_relative_error": 1.758778011603685e-16,
+        "scalar_block_inequality": -0.48010724982635855
+      },
+      "resolvent_compression_norm": 0.5228479593897153,
+      "scalar_bracket": 0.5198927501736414,
+      "t": 2.50708640545605,
+      "t0": 2.2272175275535506
+    },
+    {
+      "Hamiltonian_dimension": 32,
+      "active_bracket": 0.5000316930794243,
+      "angles": [
+        0.0001,
+        1.1
+      ],
+      "c": 0.00014142135617811746,
+      "last_kind": "scalar",
+      "m": 3.3589859593123816,
+      "name": "q2_angles_3_scalar_rotation_0",
+      "physical_hamiltonian_norm": 4.773340943041657,
+      "q": 2,
+      "residuals": {
+        "Jordan_resolvent_cap": -2.710505431213761e-20,
+        "active_scalar_inequality": -0.4234634632158989,
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 1.661504005109371e-15,
+        "physical_converse": -0.6408726193314376,
+        "positive_rank_update": -0.5857157287165844,
+        "product_Bell_isometry": 6.661338147750939e-16,
+        "product_Bell_marginal": 3.279335708110066e-13,
+        "rank_update_criterion": -0.9997586077832104,
+        "reflection_identities": 1.5089539797652098e-17,
+        "resolvent_compression_relative_error": 8.621919017246465e-16,
+        "scalar_block_inequality": -0.9997586077832104
+      },
+      "resolvent_compression_norm": 0.00024139221678962786,
+      "scalar_bracket": 0.00024139221678962788,
+      "t": 2.0552276030607133,
+      "t0": 2.000070712445856
+    },
+    {
+      "Hamiltonian_dimension": 32,
+      "active_bracket": 0.5000316930794243,
+      "angles": [
+        0.0001,
+        1.1
+      ],
+      "c": 0.00014142135617811746,
+      "last_kind": "scalar",
+      "m": 3.3589859593123816,
+      "name": "q2_angles_3_scalar_rotation_1",
+      "physical_hamiltonian_norm": 4.773340943041655,
+      "q": 2,
+      "residuals": {
+        "Jordan_resolvent_cap": -2.168404344971009e-19,
+        "active_scalar_inequality": -0.4234634632158989,
+        "cross_commutators": 5.692956014018061e-16,
+        "dedicated_query_spectral_cap": 1.5033810992568423e-15,
+        "physical_converse": -0.6408726193314402,
+        "positive_rank_update": -0.5857157287165842,
+        "product_Bell_isometry": 9.992798927553669e-16,
+        "product_Bell_marginal": 3.2805404041192795e-13,
+        "rank_update_criterion": -0.9997586077832104,
+        "reflection_identities": 1.8731888591847523e-15,
+        "resolvent_compression_relative_error": 1.262314339947651e-15,
+        "scalar_block_inequality": -0.9997586077832104
+      },
+      "resolvent_compression_norm": 0.00024139221678962767,
+      "scalar_bracket": 0.00024139221678962788,
+      "t": 2.0552276030607133,
+      "t0": 2.000070712445856
+    },
+    {
+      "Hamiltonian_dimension": 32,
+      "active_bracket": 0.5000316930794243,
+      "angles": [
+        0.0001,
+        1.1
+      ],
+      "c": 0.00014142135617811746,
+      "last_kind": "commuting",
+      "m": 3.3589859593123816,
+      "name": "q2_angles_3_commuting_rotation_0",
+      "physical_hamiltonian_norm": 4.612574807196811,
+      "q": 2,
+      "residuals": {
+        "Jordan_resolvent_cap": -4.9992929609427554e-05,
+        "active_scalar_inequality": -0.4234634632158989,
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 1.661504005109371e-15,
+        "physical_converse": -0.8016387551762838,
+        "positive_rank_update": -0.5857510827298353,
+        "product_Bell_isometry": 6.661338147750939e-16,
+        "product_Bell_marginal": 3.279335708110066e-13,
+        "rank_update_criterion": -0.9998086007128199,
+        "reflection_identities": 1.5089539797652098e-17,
+        "resolvent_compression_relative_error": 3.429983088519173e-13,
+        "scalar_block_inequality": -0.9997586077832104
+      },
+      "resolvent_compression_norm": 0.00019139928718020033,
+      "scalar_bracket": 0.00024139221678962788,
+      "t": 2.0552276030607133,
+      "t0": 2.000070712445856
+    },
+    {
+      "Hamiltonian_dimension": 32,
+      "active_bracket": 0.5000316930794243,
+      "angles": [
+        0.0001,
+        1.1
+      ],
+      "c": 0.00014142135617811746,
+      "last_kind": "commuting",
+      "m": 3.3589859593123816,
+      "name": "q2_angles_3_commuting_rotation_1",
+      "physical_hamiltonian_norm": 4.380815132952613,
+      "q": 2,
+      "residuals": {
+        "Jordan_resolvent_cap": -4.999292960942769e-05,
+        "active_scalar_inequality": -0.4234634632158989,
+        "cross_commutators": 7.720091455455863e-16,
+        "dedicated_query_spectral_cap": 1.7262213857826202e-15,
+        "physical_converse": -1.0333984294204823,
+        "positive_rank_update": -0.585751082729836,
+        "product_Bell_isometry": 1.2212455889644878e-15,
+        "product_Bell_marginal": 3.280531022838094e-13,
+        "rank_update_criterion": -0.9998086007128199,
+        "reflection_identities": 1.6994752990556185e-15,
+        "resolvent_compression_relative_error": 1.046037984489609e-13,
+        "scalar_block_inequality": -0.9997586077832104
+      },
+      "resolvent_compression_norm": 0.0001913992871802002,
+      "scalar_bracket": 0.00024139221678962788,
+      "t": 2.0552276030607133,
+      "t0": 2.000070712445856
+    },
+    {
+      "Hamiltonian_dimension": 32,
+      "active_bracket": 0.5000316930794243,
+      "angles": [
+        0.0001,
+        1.1
+      ],
+      "c": 0.00014142135617811746,
+      "last_kind": "full_blocks",
+      "m": 3.3589859593123816,
+      "name": "q2_angles_3_full_blocks_rotation_0",
+      "physical_hamiltonian_norm": 4.224154567299839,
+      "q": 2,
+      "residuals": {
+        "Jordan_resolvent_cap": -0.24993320086644405,
+        "active_scalar_inequality": -0.4234634632158989,
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 1.661504005109371e-15,
+        "physical_converse": -1.1900589950732563,
+        "positive_rank_update": -5.303292436709128e-05,
+        "product_Bell_isometry": 6.661338147750939e-16,
+        "product_Bell_marginal": 3.279335708110066e-13,
+        "rank_update_criterion": -0.7499015077870197,
+        "reflection_identities": 2.1631857035887533e-17,
+        "resolvent_compression_relative_error": 1.3111854407134507e-12,
+        "scalar_block_inequality": -0.9997586077832104
+      },
+      "resolvent_compression_norm": 0.25009849221298025,
+      "scalar_bracket": 0.00024139221678962788,
+      "t": 2.0552276030607133,
+      "t0": 2.000070712445856
+    },
+    {
+      "Hamiltonian_dimension": 32,
+      "active_bracket": 0.5000316930794243,
+      "angles": [
+        0.0001,
+        1.1
+      ],
+      "c": 0.00014142135617811746,
+      "last_kind": "full_blocks",
+      "m": 3.3589859593123816,
+      "name": "q2_angles_3_full_blocks_rotation_1",
+      "physical_hamiltonian_norm": 4.081308052104762,
+      "q": 2,
+      "residuals": {
+        "Jordan_resolvent_cap": -0.24993320086680215,
+        "active_scalar_inequality": -0.4234634632158989,
+        "cross_commutators": 4.647087764585702e-16,
+        "dedicated_query_spectral_cap": 1.2454131191555115e-15,
+        "physical_converse": -1.3329055102683327,
+        "positive_rank_update": -5.3032924366203105e-05,
+        "product_Bell_isometry": 1.1102584863194303e-15,
+        "product_Bell_marginal": 3.27942511282384e-13,
+        "rank_update_criterion": -0.7499015077873779,
+        "reflection_identities": 1.1399748450602944e-15,
+        "resolvent_compression_relative_error": 9.2477641640066e-13,
+        "scalar_block_inequality": -0.9997586077832104
+      },
+      "resolvent_compression_norm": 0.25009849221262215,
+      "scalar_bracket": 0.00024139221678962788,
+      "t": 2.0552276030607133,
+      "t0": 2.000070712445856
+    },
+    {
+      "Hamiltonian_dimension": 32,
+      "active_bracket": 0.5000316930794243,
+      "angles": [
+        0.0001,
+        1.1
+      ],
+      "c": 0.00014142135617811746,
+      "last_kind": "one_plus",
+      "m": 3.3589859593123816,
+      "name": "q2_angles_3_one_plus_rotation_0",
+      "physical_hamiltonian_norm": 4.773270238738775,
+      "q": 2,
+      "residuals": {
+        "Jordan_resolvent_cap": 8.337774914934926e-14,
+        "active_scalar_inequality": -0.4234634632158989,
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 1.661504005109371e-15,
+        "physical_converse": -0.6409433236343203,
+        "positive_rank_update": -5.303225153241442e-05,
+        "product_Bell_isometry": 6.661338147750939e-16,
+        "product_Bell_marginal": 3.279335708110066e-13,
+        "rank_update_criterion": -0.7498634573518097,
+        "reflection_identities": 1.5089539797652098e-17,
+        "resolvent_compression_relative_error": 1.3111369034602339e-12,
+        "scalar_block_inequality": -0.9997586077832104
+      },
+      "resolvent_compression_norm": 0.25013654264819035,
+      "scalar_bracket": 0.00024139221678962788,
+      "t": 2.0552276030607133,
+      "t0": 2.000070712445856
+    },
+    {
+      "Hamiltonian_dimension": 32,
+      "active_bracket": 0.5000316930794243,
+      "angles": [
+        0.0001,
+        1.1
+      ],
+      "c": 0.00014142135617811746,
+      "last_kind": "one_plus",
+      "m": 3.3589859593123816,
+      "name": "q2_angles_3_one_plus_rotation_1",
+      "physical_hamiltonian_norm": 4.543931494274976,
+      "q": 2,
+      "residuals": {
+        "Jordan_resolvent_cap": 1.921629522172452e-12,
+        "active_scalar_inequality": -0.4234634632158989,
+        "cross_commutators": 6.6118587688898e-16,
+        "dedicated_query_spectral_cap": 2.61325516961262e-15,
+        "physical_converse": -0.8702820680981187,
+        "positive_rank_update": -5.303225153152624e-05,
+        "product_Bell_isometry": 1.3322769754011044e-15,
+        "product_Bell_marginal": 3.279940424960274e-13,
+        "rank_update_criterion": -0.7498634573499714,
+        "reflection_identities": 8.122121889823743e-16,
+        "resolvent_compression_relative_error": 1.2456818286990738e-12,
+        "scalar_block_inequality": -0.9997586077832104
+      },
+      "resolvent_compression_norm": 0.2501365426500286,
+      "scalar_bracket": 0.00024139221678962788,
+      "t": 2.0552276030607133,
+      "t0": 2.000070712445856
+    },
+    {
+      "Hamiltonian_dimension": 32,
+      "active_bracket": 0.5000316930794243,
+      "angles": [
+        0.0001,
+        1.1
+      ],
+      "c": 0.00014142135617811746,
+      "last_kind": "one_mixed",
+      "m": 3.3589859593123816,
+      "name": "q2_angles_3_one_mixed_rotation_0",
+      "physical_hamiltonian_norm": 4.612524815620408,
+      "q": 2,
+      "residuals": {
+        "Jordan_resolvent_cap": -1.464258998779e-05,
+        "active_scalar_inequality": -0.4234634632158989,
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 1.661504005109371e-15,
+        "physical_converse": -0.8016887467526868,
+        "positive_rank_update": -5.303251047683588e-05,
+        "product_Bell_isometry": 6.661338147750939e-16,
+        "product_Bell_marginal": 3.279335708110066e-13,
+        "rank_update_criterion": -0.7498780999418808,
+        "reflection_identities": 1.5089539797652098e-17,
+        "resolvent_compression_relative_error": 1.31106285576109e-12,
+        "scalar_block_inequality": -0.9997586077832104
+      },
+      "resolvent_compression_norm": 0.2501219000581192,
+      "scalar_bracket": 0.00024139221678962788,
+      "t": 2.0552276030607133,
+      "t0": 2.000070712445856
+    },
+    {
+      "Hamiltonian_dimension": 32,
+      "active_bracket": 0.5000316930794243,
+      "angles": [
+        0.0001,
+        1.1
+      ],
+      "c": 0.00014142135617811746,
+      "last_kind": "one_mixed",
+      "m": 3.3589859593123816,
+      "name": "q2_angles_3_one_mixed_rotation_1",
+      "physical_hamiltonian_norm": 4.4744629449714415,
+      "q": 2,
+      "residuals": {
+        "Jordan_resolvent_cap": -1.464259231481746e-05,
+        "active_scalar_inequality": -0.4234634632158989,
+        "cross_commutators": 7.282561261832316e-16,
+        "dedicated_query_spectral_cap": 3.655449418287435e-15,
+        "physical_converse": -0.9397506174016534,
+        "positive_rank_update": -5.30325104759477e-05,
+        "product_Bell_isometry": 6.66137106415556e-16,
+        "product_Bell_marginal": 3.279042488860156e-13,
+        "rank_update_criterion": -0.7498780999442078,
+        "reflection_identities": 1.2340664605542955e-15,
+        "resolvent_compression_relative_error": 1.184161961499687e-12,
+        "scalar_block_inequality": -0.9997586077832104
+      },
+      "resolvent_compression_norm": 0.25012190005579216,
+      "scalar_bracket": 0.00024139221678962788,
+      "t": 2.0552276030607133,
+      "t0": 2.000070712445856
+    },
+    {
+      "Hamiltonian_dimension": 32,
+      "angles": [
+        1.5707963267948966,
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "scalar",
+      "m": 3.414213562373095,
+      "name": "q2_angles_4_scalar_rotation_0",
+      "physical_hamiltonian_norm": 4.8284271247461925,
+      "q": 2,
+      "residuals": {
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 2.7823523560307384e-16,
+        "physical_converse": -0.5857864376269024,
+        "product_Bell_isometry": 2.220446049250313e-16,
+        "product_Bell_marginal": 2.1796665404783217e-16,
+        "reflection_identities": 0.0,
+        "zero_c_triangle": 0.0
+      },
+      "t": 2.0,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 32,
+      "angles": [
+        1.5707963267948966,
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "scalar",
+      "m": 3.414213562373095,
+      "name": "q2_angles_4_scalar_rotation_1",
+      "physical_hamiltonian_norm": 4.828427124746189,
+      "q": 2,
+      "residuals": {
+        "cross_commutators": 1.1680083751507867e-15,
+        "dedicated_query_spectral_cap": 1.603993271422142e-15,
+        "physical_converse": -0.585786437626906,
+        "product_Bell_isometry": 5.551617337419097e-16,
+        "product_Bell_marginal": 3.422174336760384e-16,
+        "reflection_identities": 1.4065346139949042e-15,
+        "zero_c_triangle": 0.0
+      },
+      "t": 2.0,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 32,
+      "angles": [
+        1.5707963267948966,
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "commuting",
+      "m": 3.414213562373095,
+      "name": "q2_angles_4_commuting_rotation_0",
+      "physical_hamiltonian_norm": 4.650281539872888,
+      "q": 2,
+      "residuals": {
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 2.7823523560307384e-16,
+        "physical_converse": -0.7639320225002066,
+        "product_Bell_isometry": 2.220446049250313e-16,
+        "product_Bell_marginal": 2.1796665404783217e-16,
+        "reflection_identities": 0.0,
+        "zero_c_triangle": 0.0
+      },
+      "t": 2.0,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 32,
+      "angles": [
+        1.5707963267948966,
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "commuting",
+      "m": 3.414213562373095,
+      "name": "q2_angles_4_commuting_rotation_1",
+      "physical_hamiltonian_norm": 4.599260782208984,
+      "q": 2,
+      "residuals": {
+        "cross_commutators": 1.1552413377512524e-15,
+        "dedicated_query_spectral_cap": 6.238274527313549e-16,
+        "physical_converse": -0.814952780164111,
+        "product_Bell_isometry": 6.661356060153348e-16,
+        "product_Bell_marginal": 4.326768092243307e-16,
+        "reflection_identities": 1.652661304788282e-15,
+        "zero_c_triangle": 0.0
+      },
+      "t": 2.0,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 32,
+      "angles": [
+        1.5707963267948966,
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "full_blocks",
+      "m": 3.414213562373095,
+      "name": "q2_angles_4_full_blocks_rotation_0",
+      "physical_hamiltonian_norm": 4.727768561654487,
+      "q": 2,
+      "residuals": {
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 2.7823523560307384e-16,
+        "physical_converse": -0.6864450007186083,
+        "product_Bell_isometry": 2.220446049250313e-16,
+        "product_Bell_marginal": 2.1796665404783217e-16,
+        "reflection_identities": 2.1631857035887533e-17,
+        "zero_c_triangle": 0.0
+      },
+      "t": 2.0,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 32,
+      "angles": [
+        1.5707963267948966,
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "full_blocks",
+      "m": 3.414213562373095,
+      "name": "q2_angles_4_full_blocks_rotation_1",
+      "physical_hamiltonian_norm": 4.054601829203779,
+      "q": 2,
+      "residuals": {
+        "cross_commutators": 7.346235518666691e-16,
+        "dedicated_query_spectral_cap": 4.0091553573156246e-15,
+        "physical_converse": -1.3596117331693156,
+        "product_Bell_isometry": 3.331583204223381e-16,
+        "product_Bell_marginal": 2.808228885765748e-16,
+        "reflection_identities": 1.1554494641283284e-15,
+        "zero_c_triangle": 0.0
+      },
+      "t": 2.0,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 32,
+      "angles": [
+        1.5707963267948966,
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "one_plus",
+      "m": 3.414213562373095,
+      "name": "q2_angles_4_one_plus_rotation_0",
+      "physical_hamiltonian_norm": 4.7097680193453275,
+      "q": 2,
+      "residuals": {
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 2.7823523560307384e-16,
+        "physical_converse": -0.7044455430277674,
+        "product_Bell_isometry": 2.220446049250313e-16,
+        "product_Bell_marginal": 2.1796665404783217e-16,
+        "reflection_identities": 0.0,
+        "zero_c_triangle": 0.0
+      },
+      "t": 2.0,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 32,
+      "angles": [
+        1.5707963267948966,
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "one_plus",
+      "m": 3.414213562373095,
+      "name": "q2_angles_4_one_plus_rotation_1",
+      "physical_hamiltonian_norm": 4.672130748435422,
+      "q": 2,
+      "residuals": {
+        "cross_commutators": 1.114360610421552e-15,
+        "dedicated_query_spectral_cap": 2.287520927648719e-16,
+        "physical_converse": -0.7420828139376727,
+        "product_Bell_isometry": 5.551188403964786e-16,
+        "product_Bell_marginal": 4.566757836679425e-16,
+        "reflection_identities": 2.100247675269763e-15,
+        "zero_c_triangle": 0.0
+      },
+      "t": 2.0,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 32,
+      "angles": [
+        1.5707963267948966,
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "one_mixed",
+      "m": 3.414213562373095,
+      "name": "q2_angles_4_one_mixed_rotation_0",
+      "physical_hamiltonian_norm": 4.7094199218190935,
+      "q": 2,
+      "residuals": {
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 2.7823523560307384e-16,
+        "physical_converse": -0.7047936405540014,
+        "product_Bell_isometry": 2.220446049250313e-16,
+        "product_Bell_marginal": 2.1796665404783217e-16,
+        "reflection_identities": 0.0,
+        "zero_c_triangle": 0.0
+      },
+      "t": 2.0,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 32,
+      "angles": [
+        1.5707963267948966,
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "one_mixed",
+      "m": 3.414213562373095,
+      "name": "q2_angles_4_one_mixed_rotation_1",
+      "physical_hamiltonian_norm": 4.529442440612716,
+      "q": 2,
+      "residuals": {
+        "cross_commutators": 3.4079029056823126e-16,
+        "dedicated_query_spectral_cap": 3.0205583634564736e-15,
+        "physical_converse": -0.8847711217603793,
+        "product_Bell_isometry": 3.330669895141413e-16,
+        "product_Bell_marginal": 2.501167567995526e-16,
+        "reflection_identities": 1.214652339024742e-15,
+        "zero_c_triangle": 0.0
+      },
+      "t": 2.0,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "angles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "scalar",
+      "m": 4.242640687119286,
+      "name": "q3_angles_0_scalar_rotation_0",
+      "physical_hamiltonian_norm": 5.656854249492382,
+      "q": 3,
+      "residuals": {
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 2.430800426576201e-15,
+        "physical_converse": -1.7573593128807126,
+        "product_Bell_isometry": 7.771561172376096e-16,
+        "product_Bell_marginal": 1.3461497030571974e-16,
+        "reflection_identities": 0.0,
+        "zero_c_triangle": -1.1715728752538093
+      },
+      "t": 3.1715728752538093,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "angles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "scalar",
+      "m": 4.242640687119286,
+      "name": "q3_angles_0_scalar_rotation_1",
+      "physical_hamiltonian_norm": 5.656854249492383,
+      "q": 3,
+      "residuals": {
+        "cross_commutators": 1.5072676448444159e-15,
+        "dedicated_query_spectral_cap": 5.355587618806654e-15,
+        "physical_converse": -1.7573593128807117,
+        "product_Bell_isometry": 1.3322782444155173e-15,
+        "product_Bell_marginal": 2.522151705793762e-16,
+        "reflection_identities": 1.855437234113245e-15,
+        "zero_c_triangle": -1.1715728752538093
+      },
+      "t": 3.1715728752538093,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "angles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "commuting",
+      "m": 4.242640687119286,
+      "name": "q3_angles_0_commuting_rotation_0",
+      "physical_hamiltonian_norm": 5.656854249492381,
+      "q": 3,
+      "residuals": {
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 2.430800426576201e-15,
+        "physical_converse": -1.7573593128807143,
+        "product_Bell_isometry": 7.771561172376096e-16,
+        "product_Bell_marginal": 1.3461497030571974e-16,
+        "reflection_identities": 0.0,
+        "zero_c_triangle": -1.1715728752538093
+      },
+      "t": 3.1715728752538093,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "angles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "commuting",
+      "m": 4.242640687119286,
+      "name": "q3_angles_0_commuting_rotation_1",
+      "physical_hamiltonian_norm": 5.541709373832609,
+      "q": 3,
+      "residuals": {
+        "cross_commutators": 8.501353627230005e-16,
+        "dedicated_query_spectral_cap": 6.339569398642606e-15,
+        "physical_converse": -1.8725041885404856,
+        "product_Bell_isometry": 9.99206583175592e-16,
+        "product_Bell_marginal": 1.9260947855854647e-16,
+        "reflection_identities": 2.1483270735555725e-15,
+        "zero_c_triangle": -1.1715728752538093
+      },
+      "t": 3.1715728752538093,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "angles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "full_blocks",
+      "m": 4.242640687119286,
+      "name": "q3_angles_0_full_blocks_rotation_0",
+      "physical_hamiltonian_norm": 5.643931238816842,
+      "q": 3,
+      "residuals": {
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 2.430800426576201e-15,
+        "physical_converse": -1.7702823235562528,
+        "product_Bell_isometry": 7.771561172376096e-16,
+        "product_Bell_marginal": 1.3461497030571974e-16,
+        "reflection_identities": 2.1631857035887533e-17,
+        "zero_c_triangle": -1.1715728752538093
+      },
+      "t": 3.1715728752538093,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "angles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "full_blocks",
+      "m": 4.242640687119286,
+      "name": "q3_angles_0_full_blocks_rotation_1",
+      "physical_hamiltonian_norm": 5.295777712943611,
+      "q": 3,
+      "residuals": {
+        "cross_commutators": 1.0363458610399525e-15,
+        "dedicated_query_spectral_cap": 5.028220006639374e-15,
+        "physical_converse": -2.118435849429484,
+        "product_Bell_isometry": 6.661405934054756e-16,
+        "product_Bell_marginal": 2.2600758500135294e-16,
+        "reflection_identities": 1.7161544166994913e-15,
+        "zero_c_triangle": -1.1715728752538093
+      },
+      "t": 3.1715728752538093,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "angles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "one_plus",
+      "m": 4.242640687119286,
+      "name": "q3_angles_0_one_plus_rotation_0",
+      "physical_hamiltonian_norm": 5.656854249492387,
+      "q": 3,
+      "residuals": {
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 2.430800426576201e-15,
+        "physical_converse": -1.7573593128807081,
+        "product_Bell_isometry": 7.771561172376096e-16,
+        "product_Bell_marginal": 1.3461497030571974e-16,
+        "reflection_identities": 0.0,
+        "zero_c_triangle": -1.1715728752538093
+      },
+      "t": 3.1715728752538093,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "angles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "one_plus",
+      "m": 4.242640687119286,
+      "name": "q3_angles_0_one_plus_rotation_1",
+      "physical_hamiltonian_norm": 5.6293978646781975,
+      "q": 3,
+      "residuals": {
+        "cross_commutators": 1.0392629085984935e-15,
+        "dedicated_query_spectral_cap": 8.916177641964964e-15,
+        "physical_converse": -1.7848156976948975,
+        "product_Bell_isometry": 4.440910002120136e-16,
+        "product_Bell_marginal": 2.0962803105058528e-16,
+        "reflection_identities": 2.7372594928004703e-15,
+        "zero_c_triangle": -1.1715728752538093
+      },
+      "t": 3.1715728752538093,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "angles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "one_mixed",
+      "m": 4.242640687119286,
+      "name": "q3_angles_0_one_mixed_rotation_0",
+      "physical_hamiltonian_norm": 5.656854249492383,
+      "q": 3,
+      "residuals": {
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 2.430800426576201e-15,
+        "physical_converse": -1.7573593128807117,
+        "product_Bell_isometry": 7.771561172376096e-16,
+        "product_Bell_marginal": 1.3461497030571974e-16,
+        "reflection_identities": 0.0,
+        "zero_c_triangle": -1.1715728752538093
+      },
+      "t": 3.1715728752538093,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "angles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "one_mixed",
+      "m": 4.242640687119286,
+      "name": "q3_angles_0_one_mixed_rotation_1",
+      "physical_hamiltonian_norm": 5.465855716024962,
+      "q": 3,
+      "residuals": {
+        "cross_commutators": 8.068678860432882e-16,
+        "dedicated_query_spectral_cap": 5.553268076171356e-15,
+        "physical_converse": -1.9483578463481326,
+        "product_Bell_isometry": 9.992025416127536e-16,
+        "product_Bell_marginal": 2.0661173930599264e-16,
+        "reflection_identities": 1.8584500107322598e-15,
+        "zero_c_triangle": -1.1715728752538093
+      },
+      "t": 3.1715728752538093,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "angles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "two_blocks",
+      "m": 4.242640687119286,
+      "name": "q3_angles_0_two_blocks_rotation_0",
+      "physical_hamiltonian_norm": 5.656854249492384,
+      "q": 3,
+      "residuals": {
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 2.430800426576201e-15,
+        "physical_converse": -1.7573593128807108,
+        "product_Bell_isometry": 7.771561172376096e-16,
+        "product_Bell_marginal": 1.3461497030571974e-16,
+        "reflection_identities": 2.1631857035887533e-17,
+        "zero_c_triangle": -1.1715728752538093
+      },
+      "t": 3.1715728752538093,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "angles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "two_blocks",
+      "m": 4.242640687119286,
+      "name": "q3_angles_0_two_blocks_rotation_1",
+      "physical_hamiltonian_norm": 5.464650519270875,
+      "q": 3,
+      "residuals": {
+        "cross_commutators": 7.088128816232573e-16,
+        "dedicated_query_spectral_cap": 3.757951202285139e-15,
+        "physical_converse": -1.94956304310222,
+        "product_Bell_isometry": 1.3322680338976298e-15,
+        "product_Bell_marginal": 2.2182480869416383e-16,
+        "reflection_identities": 1.9150215086722578e-15,
+        "zero_c_triangle": -1.1715728752538093
+      },
+      "t": 3.1715728752538093,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "active_bracket": 0.7387961250362586,
+      "angles": [
+        1.5707963267948966,
+        1.5707963267948966,
+        1.5707963267948966
+      ],
+      "c": 2.0,
+      "last_kind": "scalar",
+      "m": 4.0,
+      "name": "q3_angles_1_scalar_rotation_0",
+      "physical_hamiltonian_norm": 7.4142135623731,
+      "q": 3,
+      "residuals": {
+        "Jordan_resolvent_cap": -2.220446049250313e-16,
+        "active_scalar_inequality": -0.18469903125906462,
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 8.020274863974552e-15,
+        "physical_converse": 5.329070518200751e-15,
+        "positive_rank_update": -5.773159728050814e-15,
+        "product_Bell_isometry": 0.0,
+        "product_Bell_marginal": 2.2510958189701484e-16,
+        "rank_update_criterion": 0.0,
+        "reflection_identities": 0.0,
+        "resolvent_compression_relative_error": 3.5272351518731887e-16,
+        "scalar_attainment": 5.329070518200751e-15,
+        "scalar_block_inequality": 2.220446049250313e-16
+      },
+      "resolvent_compression_norm": 1.0,
+      "scalar_bracket": 1.0000000000000002,
+      "t": 3.414213562373095,
+      "t0": 3.414213562373095
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "active_bracket": 0.7387961250362586,
+      "angles": [
+        1.5707963267948966,
+        1.5707963267948966,
+        1.5707963267948966
+      ],
+      "c": 2.0,
+      "last_kind": "scalar",
+      "m": 4.0,
+      "name": "q3_angles_1_scalar_rotation_1",
+      "physical_hamiltonian_norm": 7.414213562373098,
+      "q": 3,
+      "residuals": {
+        "Jordan_resolvent_cap": -3.3306690738754696e-16,
+        "active_scalar_inequality": -0.18469903125906462,
+        "cross_commutators": 1.1665111975336483e-15,
+        "dedicated_query_spectral_cap": 7.013908812005117e-15,
+        "physical_converse": 2.6645352591003757e-15,
+        "positive_rank_update": 1.7763568394002505e-15,
+        "product_Bell_isometry": 2.2205960444127277e-16,
+        "product_Bell_marginal": 2.473443062640517e-16,
+        "rank_update_criterion": -1.1102230246251565e-16,
+        "reflection_identities": 2.0830669062031205e-15,
+        "resolvent_compression_relative_error": 2.2275041189452982e-16,
+        "scalar_attainment": 2.6645352591003757e-15,
+        "scalar_block_inequality": 2.220446049250313e-16
+      },
+      "resolvent_compression_norm": 0.9999999999999999,
+      "scalar_bracket": 1.0000000000000002,
+      "t": 3.414213562373095,
+      "t0": 3.414213562373095
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "active_bracket": 0.7387961250362586,
+      "angles": [
+        1.5707963267948966,
+        1.5707963267948966,
+        1.5707963267948966
+      ],
+      "c": 2.0,
+      "last_kind": "commuting",
+      "m": 4.0,
+      "name": "q3_angles_1_commuting_rotation_0",
+      "physical_hamiltonian_norm": 7.224473268038082,
+      "q": 3,
+      "residuals": {
+        "Jordan_resolvent_cap": -0.07322330470336336,
+        "active_scalar_inequality": -0.18469903125906462,
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 8.020274863974552e-15,
+        "physical_converse": -0.18974029433501283,
+        "positive_rank_update": -0.15118012391938063,
+        "product_Bell_isometry": 0.0,
+        "product_Bell_marginal": 2.2510958189701484e-16,
+        "rank_update_criterion": -0.07322330470336313,
+        "reflection_identities": 0.0,
+        "resolvent_compression_relative_error": 3.9467164140418973e-16,
+        "scalar_block_inequality": 2.220446049250313e-16
+      },
+      "resolvent_compression_norm": 0.9267766952966369,
+      "scalar_bracket": 1.0000000000000002,
+      "t": 3.414213562373095,
+      "t0": 3.414213562373095
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "active_bracket": 0.7387961250362586,
+      "angles": [
+        1.5707963267948966,
+        1.5707963267948966,
+        1.5707963267948966
+      ],
+      "c": 2.0,
+      "last_kind": "commuting",
+      "m": 4.0,
+      "name": "q3_angles_1_commuting_rotation_1",
+      "physical_hamiltonian_norm": 7.1851410300552265,
+      "q": 3,
+      "residuals": {
+        "Jordan_resolvent_cap": -0.07322330470336347,
+        "active_scalar_inequality": -0.18469903125906462,
+        "cross_commutators": 1.0456073033894696e-15,
+        "dedicated_query_spectral_cap": 1.959219849195113e-15,
+        "physical_converse": -0.2290725323178684,
+        "positive_rank_update": -0.15118012391938196,
+        "product_Bell_isometry": 1.221245913801318e-15,
+        "product_Bell_marginal": 2.918718813695352e-16,
+        "rank_update_criterion": -0.07322330470336325,
+        "reflection_identities": 1.9316699416286433e-15,
+        "resolvent_compression_relative_error": 2.8458376357946814e-16,
+        "scalar_block_inequality": 2.220446049250313e-16
+      },
+      "resolvent_compression_norm": 0.9267766952966368,
+      "scalar_bracket": 1.0000000000000002,
+      "t": 3.414213562373095,
+      "t0": 3.414213562373095
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "active_bracket": 0.7387961250362586,
+      "angles": [
+        1.5707963267948966,
+        1.5707963267948966,
+        1.5707963267948966
+      ],
+      "c": 2.0,
+      "last_kind": "full_blocks",
+      "m": 4.0,
+      "name": "q3_angles_1_full_blocks_rotation_0",
+      "physical_hamiltonian_norm": 6.750932230613905,
+      "q": 3,
+      "residuals": {
+        "Jordan_resolvent_cap": -0.013638992574128594,
+        "active_scalar_inequality": -0.18469903125906462,
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 8.020274863974552e-15,
+        "physical_converse": -0.6632813317591904,
+        "positive_rank_update": -0.5727963716857198,
+        "product_Bell_isometry": 0.0,
+        "product_Bell_marginal": 2.2510958189701484e-16,
+        "rank_update_criterion": -0.27484286753787,
+        "reflection_identities": 2.1631857035887533e-17,
+        "resolvent_compression_relative_error": 1.6917489929559896e-16,
+        "scalar_block_inequality": 2.220446049250313e-16
+      },
+      "resolvent_compression_norm": 0.72515713246213,
+      "scalar_bracket": 1.0000000000000002,
+      "t": 3.414213562373095,
+      "t0": 3.414213562373095
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "active_bracket": 0.7387961250362586,
+      "angles": [
+        1.5707963267948966,
+        1.5707963267948966,
+        1.5707963267948966
+      ],
+      "c": 2.0,
+      "last_kind": "full_blocks",
+      "m": 4.0,
+      "name": "q3_angles_1_full_blocks_rotation_1",
+      "physical_hamiltonian_norm": 6.395545073371698,
+      "q": 3,
+      "residuals": {
+        "Jordan_resolvent_cap": -0.01363899257412815,
+        "active_scalar_inequality": -0.18469903125906462,
+        "cross_commutators": 1.708417742293155e-15,
+        "dedicated_query_spectral_cap": 6.5563244723992045e-15,
+        "physical_converse": -1.0186684890013966,
+        "positive_rank_update": -0.572796371685719,
+        "product_Bell_isometry": 3.3306697985717245e-16,
+        "product_Bell_marginal": 2.1299463082955567e-16,
+        "rank_update_criterion": -0.2748428675378696,
+        "reflection_identities": 2.219436028712452e-15,
+        "resolvent_compression_relative_error": 1.117603978260998e-16,
+        "scalar_block_inequality": 2.220446049250313e-16
+      },
+      "resolvent_compression_norm": 0.7251571324621304,
+      "scalar_bracket": 1.0000000000000002,
+      "t": 3.414213562373095,
+      "t0": 3.414213562373095
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "active_bracket": 0.7387961250362586,
+      "angles": [
+        1.5707963267948966,
+        1.5707963267948966,
+        1.5707963267948966
+      ],
+      "c": 2.0,
+      "last_kind": "one_plus",
+      "m": 4.0,
+      "name": "q3_angles_1_one_plus_rotation_0",
+      "physical_hamiltonian_norm": 7.232226122518952,
+      "q": 3,
+      "residuals": {
+        "Jordan_resolvent_cap": -1.1102230246251565e-16,
+        "active_scalar_inequality": -0.18469903125906462,
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 8.020274863974552e-15,
+        "physical_converse": -0.18198743985414279,
+        "positive_rank_update": -0.13140393123336125,
+        "product_Bell_isometry": 0.0,
+        "product_Bell_marginal": 2.2510958189701484e-16,
+        "rank_update_criterion": -0.06530096874093527,
+        "reflection_identities": 0.0,
+        "resolvent_compression_relative_error": 2.2478061961313084e-16,
+        "scalar_block_inequality": 2.220446049250313e-16
+      },
+      "resolvent_compression_norm": 0.9346990312590647,
+      "scalar_bracket": 1.0000000000000002,
+      "t": 3.414213562373095,
+      "t0": 3.414213562373095
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "active_bracket": 0.7387961250362586,
+      "angles": [
+        1.5707963267948966,
+        1.5707963267948966,
+        1.5707963267948966
+      ],
+      "c": 2.0,
+      "last_kind": "one_plus",
+      "m": 4.0,
+      "name": "q3_angles_1_one_plus_rotation_1",
+      "physical_hamiltonian_norm": 7.179050624927401,
+      "q": 3,
+      "residuals": {
+        "Jordan_resolvent_cap": -4.440892098500626e-16,
+        "active_scalar_inequality": -0.18469903125906462,
+        "cross_commutators": 1.6280232209276385e-15,
+        "dedicated_query_spectral_cap": 4.823642486620262e-15,
+        "physical_converse": -0.23516293744569428,
+        "positive_rank_update": -0.13140393123336125,
+        "product_Bell_isometry": 2.4650109489189354e-19,
+        "product_Bell_marginal": 2.4467299751263892e-16,
+        "rank_update_criterion": -0.0653009687409356,
+        "reflection_identities": 2.4106537033756454e-15,
+        "resolvent_compression_relative_error": 1.680125594051611e-16,
+        "scalar_block_inequality": 2.220446049250313e-16
+      },
+      "resolvent_compression_norm": 0.9346990312590644,
+      "scalar_bracket": 1.0000000000000002,
+      "t": 3.414213562373095,
+      "t0": 3.414213562373095
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "active_bracket": 0.7387961250362586,
+      "angles": [
+        1.5707963267948966,
+        1.5707963267948966,
+        1.5707963267948966
+      ],
+      "c": 2.0,
+      "last_kind": "one_mixed",
+      "m": 4.0,
+      "name": "q3_angles_1_one_mixed_rotation_0",
+      "physical_hamiltonian_norm": 7.127554453011825,
+      "q": 3,
+      "residuals": {
+        "Jordan_resolvent_cap": -0.03298638434399004,
+        "active_scalar_inequality": -0.18469903125906462,
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 8.020274863974552e-15,
+        "physical_converse": -0.2866591093612696,
+        "positive_rank_update": -0.20036956535373696,
+        "product_Bell_isometry": 0.0,
+        "product_Bell_marginal": 2.2510958189701484e-16,
+        "rank_update_criterion": -0.0982873530849252,
+        "reflection_identities": 0.0,
+        "resolvent_compression_relative_error": 7.109737278934244e-17,
+        "scalar_block_inequality": 2.220446049250313e-16
+      },
+      "resolvent_compression_norm": 0.9017126469150748,
+      "scalar_bracket": 1.0000000000000002,
+      "t": 3.414213562373095,
+      "t0": 3.414213562373095
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "active_bracket": 0.7387961250362586,
+      "angles": [
+        1.5707963267948966,
+        1.5707963267948966,
+        1.5707963267948966
+      ],
+      "c": 2.0,
+      "last_kind": "one_mixed",
+      "m": 4.0,
+      "name": "q3_angles_1_one_mixed_rotation_1",
+      "physical_hamiltonian_norm": 7.062239162534034,
+      "q": 3,
+      "residuals": {
+        "Jordan_resolvent_cap": -0.03298638434399004,
+        "active_scalar_inequality": -0.18469903125906462,
+        "cross_commutators": 1.1153482523155746e-15,
+        "dedicated_query_spectral_cap": 5.6343818499726694e-15,
+        "physical_converse": -0.35197439983906076,
+        "positive_rank_update": -0.20036956535373251,
+        "product_Bell_isometry": 4.440954279212801e-16,
+        "product_Bell_marginal": 2.542993963029857e-16,
+        "rank_update_criterion": -0.0982873530849252,
+        "reflection_identities": 2.3179003119997044e-15,
+        "resolvent_compression_relative_error": 1.779384987522634e-16,
+        "scalar_block_inequality": 2.220446049250313e-16
+      },
+      "resolvent_compression_norm": 0.9017126469150748,
+      "scalar_bracket": 1.0000000000000002,
+      "t": 3.414213562373095,
+      "t0": 3.414213562373095
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "active_bracket": 0.7387961250362586,
+      "angles": [
+        1.5707963267948966,
+        1.5707963267948966,
+        1.5707963267948966
+      ],
+      "c": 2.0,
+      "last_kind": "two_blocks",
+      "m": 4.0,
+      "name": "q3_angles_1_two_blocks_rotation_0",
+      "physical_hamiltonian_norm": 7.066498074072623,
+      "q": 3,
+      "residuals": {
+        "Jordan_resolvent_cap": -0.006819496287064464,
+        "active_scalar_inequality": -0.18469903125906462,
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 8.020274863974552e-15,
+        "physical_converse": -0.34771548830047205,
+        "positive_rank_update": -0.28363438338924807,
+        "product_Bell_isometry": 0.0,
+        "product_Bell_marginal": 2.2510958189701484e-16,
+        "rank_update_criterion": -0.137421433768935,
+        "reflection_identities": 2.1631857035887533e-17,
+        "resolvent_compression_relative_error": 1.1470774936953914e-16,
+        "scalar_block_inequality": 2.220446049250313e-16
+      },
+      "resolvent_compression_norm": 0.862578566231065,
+      "scalar_bracket": 1.0000000000000002,
+      "t": 3.414213562373095,
+      "t0": 3.414213562373095
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "active_bracket": 0.7387961250362586,
+      "angles": [
+        1.5707963267948966,
+        1.5707963267948966,
+        1.5707963267948966
+      ],
+      "c": 2.0,
+      "last_kind": "two_blocks",
+      "m": 4.0,
+      "name": "q3_angles_1_two_blocks_rotation_1",
+      "physical_hamiltonian_norm": 6.916582436853935,
+      "q": 3,
+      "residuals": {
+        "Jordan_resolvent_cap": -0.006819496287064575,
+        "active_scalar_inequality": -0.18469903125906462,
+        "cross_commutators": 1.123398856546928e-15,
+        "dedicated_query_spectral_cap": 7.005451239645011e-15,
+        "physical_converse": -0.49763112551915967,
+        "positive_rank_update": -0.2836343833892476,
+        "product_Bell_isometry": 3.3307080821633013e-16,
+        "product_Bell_marginal": 2.401175535284223e-16,
+        "rank_update_criterion": -0.13742143376893512,
+        "reflection_identities": 1.3648235327588757e-15,
+        "resolvent_compression_relative_error": 1.7620854146091577e-16,
+        "scalar_block_inequality": 2.220446049250313e-16
+      },
+      "resolvent_compression_norm": 0.8625785662310649,
+      "scalar_bracket": 1.0000000000000002,
+      "t": 3.414213562373095,
+      "t0": 3.414213562373095
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "active_bracket": 0.5849410797136186,
+      "angles": [
+        0.3,
+        0.5,
+        0.7
+      ],
+      "c": 0.42267486735974247,
+      "last_kind": "scalar",
+      "m": 4.720531517360513,
+      "name": "q3_angles_2_scalar_rotation_0",
+      "physical_hamiltonian_norm": 6.557419947093354,
+      "q": 3,
+      "residuals": {
+        "Jordan_resolvent_cap": 1.1102230246251565e-16,
+        "active_scalar_inequality": -0.33855407658170455,
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 1.885999245241356e-15,
+        "physical_converse": -0.8567936152797406,
+        "positive_rank_update": -0.3903290978207119,
+        "product_Bell_isometry": 2.220446049250313e-16,
+        "product_Bell_marginal": 1.5670917845895713e-16,
+        "rank_update_criterion": -0.48010724982635844,
+        "reflection_identities": 1.2039312779645974e-16,
+        "resolvent_compression_relative_error": 2.366044952542205e-16,
+        "scalar_block_inequality": -0.48010724982635855
+      },
+      "resolvent_compression_norm": 0.5198927501736416,
+      "scalar_bracket": 0.5198927501736414,
+      "t": 2.693682045012582,
+      "t0": 2.2272175275535506
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "active_bracket": 0.5849410797136186,
+      "angles": [
+        0.3,
+        0.5,
+        0.7
+      ],
+      "c": 0.42267486735974247,
+      "last_kind": "scalar",
+      "m": 4.720531517360513,
+      "name": "q3_angles_2_scalar_rotation_1",
+      "physical_hamiltonian_norm": 6.557419947093348,
+      "q": 3,
+      "residuals": {
+        "Jordan_resolvent_cap": -4.440892098500626e-16,
+        "active_scalar_inequality": -0.33855407658170455,
+        "cross_commutators": 1.253562424421089e-15,
+        "dedicated_query_spectral_cap": 3.066766593955784e-15,
+        "physical_converse": -0.8567936152797468,
+        "positive_rank_update": -0.3903290978207137,
+        "product_Bell_isometry": 5.551138259634192e-16,
+        "product_Bell_marginal": 1.7579629349668137e-16,
+        "rank_update_criterion": -0.480107249826359,
+        "reflection_identities": 2.1323625818695113e-15,
+        "resolvent_compression_relative_error": 2.708192775008692e-16,
+        "scalar_block_inequality": -0.48010724982635855
+      },
+      "resolvent_compression_norm": 0.519892750173641,
+      "scalar_bracket": 0.5198927501736414,
+      "t": 2.693682045012582,
+      "t0": 2.2272175275535506
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "active_bracket": 0.5849410797136186,
+      "angles": [
+        0.3,
+        0.5,
+        0.7
+      ],
+      "c": 0.42267486735974247,
+      "last_kind": "commuting",
+      "m": 4.720531517360513,
+      "name": "q3_angles_2_commuting_rotation_0",
+      "physical_hamiltonian_norm": 6.44886094051124,
+      "q": 3,
+      "residuals": {
+        "Jordan_resolvent_cap": -0.05047736453869167,
+        "active_scalar_inequality": -0.33855407658170455,
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 1.885999245241356e-15,
+        "physical_converse": -0.9653526218618547,
+        "positive_rank_update": -0.4369634056677485,
+        "product_Bell_isometry": 2.220446049250313e-16,
+        "product_Bell_marginal": 1.5670917845895713e-16,
+        "rank_update_criterion": -0.5305846143650502,
+        "reflection_identities": 1.2039312779645974e-16,
+        "resolvent_compression_relative_error": 2.0956123366825633e-16,
+        "scalar_block_inequality": -0.48010724982635855
+      },
+      "resolvent_compression_norm": 0.4694153856349498,
+      "scalar_bracket": 0.5198927501736414,
+      "t": 2.693682045012582,
+      "t0": 2.2272175275535506
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "active_bracket": 0.5849410797136186,
+      "angles": [
+        0.3,
+        0.5,
+        0.7
+      ],
+      "c": 0.42267486735974247,
+      "last_kind": "commuting",
+      "m": 4.720531517360513,
+      "name": "q3_angles_2_commuting_rotation_1",
+      "physical_hamiltonian_norm": 6.3458657127185205,
+      "q": 3,
+      "residuals": {
+        "Jordan_resolvent_cap": -0.05047736453869178,
+        "active_scalar_inequality": -0.33855407658170455,
+        "cross_commutators": 1.7627238672455155e-15,
+        "dedicated_query_spectral_cap": 1.0644836868219495e-14,
+        "physical_converse": -1.0683478496545744,
+        "positive_rank_update": -0.4369634056677467,
+        "product_Bell_isometry": 2.710223956621526e-18,
+        "product_Bell_marginal": 2.860317014837616e-16,
+        "rank_update_criterion": -0.5305846143650503,
+        "reflection_identities": 3.0457111427354262e-15,
+        "resolvent_compression_relative_error": 4.413836863330322e-16,
+        "scalar_block_inequality": -0.48010724982635855
+      },
+      "resolvent_compression_norm": 0.46941538563494967,
+      "scalar_bracket": 0.5198927501736414,
+      "t": 2.693682045012582,
+      "t0": 2.2272175275535506
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "active_bracket": 0.5849410797136186,
+      "angles": [
+        0.3,
+        0.5,
+        0.7
+      ],
+      "c": 0.42267486735974247,
+      "last_kind": "full_blocks",
+      "m": 4.720531517360513,
+      "name": "q3_angles_2_full_blocks_rotation_0",
+      "physical_hamiltonian_norm": 6.110868913058341,
+      "q": 3,
+      "residuals": {
+        "Jordan_resolvent_cap": -0.12224991092460163,
+        "active_scalar_inequality": -0.33855407658170455,
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 1.885999245241356e-15,
+        "physical_converse": -1.303344649314754,
+        "positive_rank_update": -0.15403626737951903,
+        "product_Bell_isometry": 2.220446049250313e-16,
+        "product_Bell_marginal": 1.5670917845895713e-16,
+        "rank_update_criterion": -0.537308831210983,
+        "reflection_identities": 1.2039312779645974e-16,
+        "resolvent_compression_relative_error": 4.1398736641629615e-16,
+        "scalar_block_inequality": -0.48010724982635855
+      },
+      "resolvent_compression_norm": 0.462691168789017,
+      "scalar_bracket": 0.5198927501736414,
+      "t": 2.693682045012582,
+      "t0": 2.2272175275535506
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "active_bracket": 0.5849410797136186,
+      "angles": [
+        0.3,
+        0.5,
+        0.7
+      ],
+      "c": 0.42267486735974247,
+      "last_kind": "full_blocks",
+      "m": 4.720531517360513,
+      "name": "q3_angles_2_full_blocks_rotation_1",
+      "physical_hamiltonian_norm": 5.692529626365188,
+      "q": 3,
+      "residuals": {
+        "Jordan_resolvent_cap": -0.12224991092460114,
+        "active_scalar_inequality": -0.33855407658170455,
+        "cross_commutators": 1.3791288601680556e-15,
+        "dedicated_query_spectral_cap": 3.00660778617179e-15,
+        "physical_converse": -1.7216839360079073,
+        "positive_rank_update": -0.15403626737951814,
+        "product_Bell_isometry": 6.661339712729126e-16,
+        "product_Bell_marginal": 2.0297208799609073e-16,
+        "rank_update_criterion": -0.5373088312109825,
+        "reflection_identities": 2.401422347964967e-15,
+        "resolvent_compression_relative_error": 6.23315113071217e-16,
+        "scalar_block_inequality": -0.48010724982635855
+      },
+      "resolvent_compression_norm": 0.4626911687890175,
+      "scalar_bracket": 0.5198927501736414,
+      "t": 2.693682045012582,
+      "t0": 2.2272175275535506
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "active_bracket": 0.5849410797136186,
+      "angles": [
+        0.3,
+        0.5,
+        0.7
+      ],
+      "c": 0.42267486735974247,
+      "last_kind": "one_plus",
+      "m": 4.720531517360513,
+      "name": "q3_angles_2_one_plus_rotation_0",
+      "physical_hamiltonian_norm": 6.462858109417991,
+      "q": 3,
+      "residuals": {
+        "Jordan_resolvent_cap": 0.0,
+        "active_scalar_inequality": -0.33855407658170455,
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 1.885999245241356e-15,
+        "physical_converse": -0.951355452955104,
+        "positive_rank_update": -0.17144588265048144,
+        "product_Bell_isometry": 2.220446049250313e-16,
+        "product_Bell_marginal": 1.5670917845895713e-16,
+        "rank_update_criterion": -0.4638451674413643,
+        "reflection_identities": 1.2039312779645974e-16,
+        "resolvent_compression_relative_error": 1.4161656963587245e-16,
+        "scalar_block_inequality": -0.48010724982635855
+      },
+      "resolvent_compression_norm": 0.5361548325586357,
+      "scalar_bracket": 0.5198927501736414,
+      "t": 2.693682045012582,
+      "t0": 2.2272175275535506
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "active_bracket": 0.5849410797136186,
+      "angles": [
+        0.3,
+        0.5,
+        0.7
+      ],
+      "c": 0.42267486735974247,
+      "last_kind": "one_plus",
+      "m": 4.720531517360513,
+      "name": "q3_angles_2_one_plus_rotation_1",
+      "physical_hamiltonian_norm": 6.341668307932266,
+      "q": 3,
+      "residuals": {
+        "Jordan_resolvent_cap": 4.440892098500626e-16,
+        "active_scalar_inequality": -0.33855407658170455,
+        "cross_commutators": 1.3604401117906916e-15,
+        "dedicated_query_spectral_cap": -1.2212226657506523e-15,
+        "physical_converse": -1.0725452544408292,
+        "positive_rank_update": -0.17144588265048188,
+        "product_Bell_isometry": 1.1102784024353294e-16,
+        "product_Bell_marginal": 2.202228361868302e-16,
+        "rank_update_criterion": -0.46384516744136384,
+        "reflection_identities": 1.8456360995241197e-15,
+        "resolvent_compression_relative_error": 2.1197784875962863e-16,
+        "scalar_block_inequality": -0.48010724982635855
+      },
+      "resolvent_compression_norm": 0.5361548325586362,
+      "scalar_bracket": 0.5198927501736414,
+      "t": 2.693682045012582,
+      "t0": 2.2272175275535506
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "active_bracket": 0.5849410797136186,
+      "angles": [
+        0.3,
+        0.5,
+        0.7
+      ],
+      "c": 0.42267486735974247,
+      "last_kind": "one_mixed",
+      "m": 4.720531517360513,
+      "name": "q3_angles_2_one_mixed_rotation_0",
+      "physical_hamiltonian_norm": 6.389339688139056,
+      "q": 3,
+      "residuals": {
+        "Jordan_resolvent_cap": -0.022739560227312383,
+        "active_scalar_inequality": -0.33855407658170455,
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 1.885999245241356e-15,
+        "physical_converse": -1.0248738742340393,
+        "positive_rank_update": -0.17455498463526098,
+        "product_Bell_isometry": 2.220446049250313e-16,
+        "product_Bell_marginal": 1.5670917845895713e-16,
+        "rank_update_criterion": -0.48658472766867666,
+        "reflection_identities": 1.2039312779645974e-16,
+        "resolvent_compression_relative_error": 2.4052528049369016e-16,
+        "scalar_block_inequality": -0.48010724982635855
+      },
+      "resolvent_compression_norm": 0.5134152723313233,
+      "scalar_bracket": 0.5198927501736414,
+      "t": 2.693682045012582,
+      "t0": 2.2272175275535506
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "active_bracket": 0.5849410797136186,
+      "angles": [
+        0.3,
+        0.5,
+        0.7
+      ],
+      "c": 0.42267486735974247,
+      "last_kind": "one_mixed",
+      "m": 4.720531517360513,
+      "name": "q3_angles_2_one_mixed_rotation_1",
+      "physical_hamiltonian_norm": 6.253914343185358,
+      "q": 3,
+      "residuals": {
+        "Jordan_resolvent_cap": -0.022739560227312716,
+        "active_scalar_inequality": -0.33855407658170455,
+        "cross_commutators": 1.316441199470061e-15,
+        "dedicated_query_spectral_cap": 2.4754381092790586e-15,
+        "physical_converse": -1.1602992191877366,
+        "positive_rank_update": -0.17455498463526053,
+        "product_Bell_isometry": 4.440950801404928e-16,
+        "product_Bell_marginal": 2.3013737644069934e-16,
+        "rank_update_criterion": -0.486584727668677,
+        "reflection_identities": 2.3017556615891305e-15,
+        "resolvent_compression_relative_error": 5.743026735334437e-16,
+        "scalar_block_inequality": -0.48010724982635855
+      },
+      "resolvent_compression_norm": 0.513415272331323,
+      "scalar_bracket": 0.5198927501736414,
+      "t": 2.693682045012582,
+      "t0": 2.2272175275535506
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "active_bracket": 0.5849410797136186,
+      "angles": [
+        0.3,
+        0.5,
+        0.7
+      ],
+      "c": 0.42267486735974247,
+      "last_kind": "two_blocks",
+      "m": 4.720531517360513,
+      "name": "q3_angles_2_two_blocks_rotation_0",
+      "physical_hamiltonian_norm": 6.405965442868426,
+      "q": 3,
+      "residuals": {
+        "Jordan_resolvent_cap": -0.06112495546230079,
+        "active_scalar_inequality": -0.33855407658170455,
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 1.885999245241356e-15,
+        "physical_converse": -1.0082481195046693,
+        "positive_rank_update": -0.17679855267421418,
+        "product_Bell_isometry": 2.220446049250313e-16,
+        "product_Bell_marginal": 1.5670917845895713e-16,
+        "rank_update_criterion": -0.5087080405186708,
+        "reflection_identities": 1.2039312779645974e-16,
+        "resolvent_compression_relative_error": 5.736085896332257e-16,
+        "scalar_block_inequality": -0.48010724982635855
+      },
+      "resolvent_compression_norm": 0.4912919594813292,
+      "scalar_bracket": 0.5198927501736414,
+      "t": 2.693682045012582,
+      "t0": 2.2272175275535506
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "active_bracket": 0.5849410797136186,
+      "angles": [
+        0.3,
+        0.5,
+        0.7
+      ],
+      "c": 0.42267486735974247,
+      "last_kind": "two_blocks",
+      "m": 4.720531517360513,
+      "name": "q3_angles_2_two_blocks_rotation_1",
+      "physical_hamiltonian_norm": 6.112775765232059,
+      "q": 3,
+      "residuals": {
+        "Jordan_resolvent_cap": -0.061124955462300845,
+        "active_scalar_inequality": -0.33855407658170455,
+        "cross_commutators": 1.1326555481478056e-15,
+        "dedicated_query_spectral_cap": 3.1572724040494657e-15,
+        "physical_converse": -1.3014377971410358,
+        "positive_rank_update": -0.17679855267421551,
+        "product_Bell_isometry": 1.6222677212754226e-19,
+        "product_Bell_marginal": 1.7880941278650627e-16,
+        "rank_update_criterion": -0.5087080405186708,
+        "reflection_identities": 1.990654562414379e-15,
+        "resolvent_compression_relative_error": 4.0091950837885914e-16,
+        "scalar_block_inequality": -0.48010724982635855
+      },
+      "resolvent_compression_norm": 0.49129195948132914,
+      "scalar_bracket": 0.5198927501736414,
+      "t": 2.693682045012582,
+      "t0": 2.2272175275535506
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "active_bracket": 0.5000316930794243,
+      "angles": [
+        0.0001,
+        1.1,
+        1.1
+      ],
+      "c": 0.00014142135617811746,
+      "last_kind": "scalar",
+      "m": 5.3038290686975245,
+      "name": "q3_angles_3_scalar_rotation_0",
+      "physical_hamiltonian_norm": 6.718184052426796,
+      "q": 3,
+      "residuals": {
+        "Jordan_resolvent_cap": -8.131516293641283e-20,
+        "active_scalar_inequality": -0.4234634632158989,
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 1.8021548755309465e-14,
+        "physical_converse": -0.6960295099462988,
+        "positive_rank_update": -0.5857157287165831,
+        "product_Bell_isometry": 1.6653345369377348e-15,
+        "product_Bell_marginal": 1.640672475596605e-13,
+        "rank_update_criterion": -0.9997586077832104,
+        "reflection_identities": 1.5089539797652098e-17,
+        "resolvent_compression_relative_error": 1.0247014911486016e-15,
+        "scalar_block_inequality": -0.9997586077832104
+      },
+      "resolvent_compression_norm": 0.0002413922167896278,
+      "scalar_bracket": 0.00024139221678962788,
+      "t": 2.1103844936755705,
+      "t0": 2.000070712445856
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "active_bracket": 0.5000316930794243,
+      "angles": [
+        0.0001,
+        1.1,
+        1.1
+      ],
+      "c": 0.00014142135617811746,
+      "last_kind": "scalar",
+      "m": 5.3038290686975245,
+      "name": "q3_angles_3_scalar_rotation_1",
+      "physical_hamiltonian_norm": 6.718184052426797,
+      "q": 3,
+      "residuals": {
+        "Jordan_resolvent_cap": -2.710505431213761e-20,
+        "active_scalar_inequality": -0.4234634632158989,
+        "cross_commutators": 1.7462901619572797e-15,
+        "dedicated_query_spectral_cap": 5.113119501372504e-15,
+        "physical_converse": -0.6960295099462979,
+        "positive_rank_update": -0.5857157287165826,
+        "product_Bell_isometry": 1.5543124039226142e-15,
+        "product_Bell_marginal": 1.6412002464356293e-13,
+        "rank_update_criterion": -0.9997586077832104,
+        "reflection_identities": 1.8783989507600175e-15,
+        "resolvent_compression_relative_error": 1.7673959583343748e-15,
+        "scalar_block_inequality": -0.9997586077832104
+      },
+      "resolvent_compression_norm": 0.00024139221678962786,
+      "scalar_bracket": 0.00024139221678962788,
+      "t": 2.1103844936755705,
+      "t0": 2.000070712445856
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "active_bracket": 0.5000316930794243,
+      "angles": [
+        0.0001,
+        1.1,
+        1.1
+      ],
+      "c": 0.00014142135617811746,
+      "last_kind": "commuting",
+      "m": 5.3038290686975245,
+      "name": "q3_angles_3_commuting_rotation_0",
+      "physical_hamiltonian_norm": 6.588674019768251,
+      "q": 3,
+      "residuals": {
+        "Jordan_resolvent_cap": -2.4996464804713818e-05,
+        "active_scalar_inequality": -0.4234634632158989,
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 1.8021548755309465e-14,
+        "physical_converse": -0.8255395426048437,
+        "positive_rank_update": -0.5857334056127357,
+        "product_Bell_isometry": 1.6653345369377348e-15,
+        "product_Bell_marginal": 1.640672475596605e-13,
+        "rank_update_criterion": -0.999783604248015,
+        "reflection_identities": 1.5089539797652098e-17,
+        "resolvent_compression_relative_error": 1.5205972262870896e-13,
+        "scalar_block_inequality": -0.9997586077832104
+      },
+      "resolvent_compression_norm": 0.00021639575198491407,
+      "scalar_bracket": 0.00024139221678962788,
+      "t": 2.1103844936755705,
+      "t0": 2.000070712445856
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "active_bracket": 0.5000316930794243,
+      "angles": [
+        0.0001,
+        1.1,
+        1.1
+      ],
+      "c": 0.00014142135617811746,
+      "last_kind": "commuting",
+      "m": 5.3038290686975245,
+      "name": "q3_angles_3_commuting_rotation_1",
+      "physical_hamiltonian_norm": 6.511505856192786,
+      "q": 3,
+      "residuals": {
+        "Jordan_resolvent_cap": -2.4996464804713682e-05,
+        "active_scalar_inequality": -0.4234634632158989,
+        "cross_commutators": 1.1704671247872756e-15,
+        "dedicated_query_spectral_cap": 3.792264315627723e-15,
+        "physical_converse": -0.9027077061803093,
+        "positive_rank_update": -0.5857334056127372,
+        "product_Bell_isometry": 1.443289949643656e-15,
+        "product_Bell_marginal": 1.6409487553093873e-13,
+        "rank_update_criterion": -0.999783604248015,
+        "reflection_identities": 2.4416856738744927e-15,
+        "resolvent_compression_relative_error": 6.538378632098516e-14,
+        "scalar_block_inequality": -0.9997586077832104
+      },
+      "resolvent_compression_norm": 0.0002163957519849142,
+      "scalar_bracket": 0.00024139221678962788,
+      "t": 2.1103844936755705,
+      "t0": 2.000070712445856
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "active_bracket": 0.5000316930794243,
+      "angles": [
+        0.0001,
+        1.1,
+        1.1
+      ],
+      "c": 0.00014142135617811746,
+      "last_kind": "full_blocks",
+      "m": 5.3038290686975245,
+      "name": "q3_angles_3_full_blocks_rotation_0",
+      "physical_hamiltonian_norm": 6.13024470386919,
+      "q": 3,
+      "residuals": {
+        "Jordan_resolvent_cap": -0.24993320086644405,
+        "active_scalar_inequality": -0.4234634632158989,
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 1.8021548755309465e-14,
+        "physical_converse": -1.283968858503905,
+        "positive_rank_update": -5.303292435909768e-05,
+        "product_Bell_isometry": 1.6653345369377348e-15,
+        "product_Bell_marginal": 1.640672475596605e-13,
+        "rank_update_criterion": -0.7499015077870197,
+        "reflection_identities": 2.1631857035887533e-17,
+        "resolvent_compression_relative_error": 1.9303015128063355e-15,
+        "scalar_block_inequality": -0.9997586077832104
+      },
+      "resolvent_compression_norm": 0.25009849221298025,
+      "scalar_bracket": 0.00024139221678962788,
+      "t": 2.1103844936755705,
+      "t0": 2.000070712445856
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "active_bracket": 0.5000316930794243,
+      "angles": [
+        0.0001,
+        1.1,
+        1.1
+      ],
+      "c": 0.00014142135617811746,
+      "last_kind": "full_blocks",
+      "m": 5.3038290686975245,
+      "name": "q3_angles_3_full_blocks_rotation_1",
+      "physical_hamiltonian_norm": 5.885521881920911,
+      "q": 3,
+      "residuals": {
+        "Jordan_resolvent_cap": -0.24993320086536058,
+        "active_scalar_inequality": -0.4234634632158989,
+        "cross_commutators": 1.3560876254435922e-15,
+        "dedicated_query_spectral_cap": 9.78408194438402e-16,
+        "physical_converse": -1.5286916804521837,
+        "positive_rank_update": -5.30329243622063e-05,
+        "product_Bell_isometry": 1.3322679431961865e-15,
+        "product_Bell_marginal": 1.6410007968635674e-13,
+        "rank_update_criterion": -0.7499015077859363,
+        "reflection_identities": 1.832974550240238e-15,
+        "resolvent_compression_relative_error": 7.631671595663015e-13,
+        "scalar_block_inequality": -0.9997586077832104
+      },
+      "resolvent_compression_norm": 0.2500984922140637,
+      "scalar_bracket": 0.00024139221678962788,
+      "t": 2.1103844936755705,
+      "t0": 2.000070712445856
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "active_bracket": 0.5000316930794243,
+      "angles": [
+        0.0001,
+        1.1,
+        1.1
+      ],
+      "c": 0.00014142135617811746,
+      "last_kind": "one_plus",
+      "m": 5.3038290686975245,
+      "name": "q3_angles_3_one_plus_rotation_0",
+      "physical_hamiltonian_norm": 6.718113356137861,
+      "q": 3,
+      "residuals": {
+        "Jordan_resolvent_cap": 4.171663015029026e-14,
+        "active_scalar_inequality": -0.4234634632158989,
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 1.8021548755309465e-14,
+        "physical_converse": -0.6961002062352337,
+        "positive_rank_update": -6.187191272433168e-05,
+        "product_Bell_isometry": 1.6653345369377348e-15,
+        "product_Bell_marginal": 1.640672475596605e-13,
+        "rank_update_criterion": -0.87481103256751,
+        "reflection_identities": 1.5089539797652098e-17,
+        "resolvent_compression_relative_error": 1.311022134385678e-12,
+        "scalar_block_inequality": -0.9997586077832104
+      },
+      "resolvent_compression_norm": 0.12518896743249,
+      "scalar_bracket": 0.00024139221678962788,
+      "t": 2.1103844936755705,
+      "t0": 2.000070712445856
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "active_bracket": 0.5000316930794243,
+      "angles": [
+        0.0001,
+        1.1,
+        1.1
+      ],
+      "c": 0.00014142135617811746,
+      "last_kind": "one_plus",
+      "m": 5.3038290686975245,
+      "name": "q3_angles_3_one_plus_rotation_1",
+      "physical_hamiltonian_norm": 6.543455516070743,
+      "q": 3,
+      "residuals": {
+        "Jordan_resolvent_cap": -5.680456105494613e-13,
+        "active_scalar_inequality": -0.4234634632158989,
+        "cross_commutators": 1.29137227663112e-15,
+        "dedicated_query_spectral_cap": 4.487036202143192e-15,
+        "physical_converse": -0.8707580463023517,
+        "positive_rank_update": -6.187191272610804e-05,
+        "product_Bell_isometry": 1.4432901121563907e-15,
+        "product_Bell_marginal": 1.6410553985699142e-13,
+        "rank_update_criterion": -0.8748110325681198,
+        "reflection_identities": 2.4738098627088555e-15,
+        "resolvent_compression_relative_error": 1.2761802549953307e-12,
+        "scalar_block_inequality": -0.9997586077832104
+      },
+      "resolvent_compression_norm": 0.12518896743188024,
+      "scalar_bracket": 0.00024139221678962788,
+      "t": 2.1103844936755705,
+      "t0": 2.000070712445856
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "active_bracket": 0.5000316930794243,
+      "angles": [
+        0.0001,
+        1.1,
+        1.1
+      ],
+      "c": 0.00014142135617811746,
+      "last_kind": "one_mixed",
+      "m": 5.3038290686975245,
+      "name": "q3_angles_3_one_mixed_rotation_0",
+      "physical_hamiltonian_norm": 6.588609300808679,
+      "q": 3,
+      "residuals": {
+        "Jordan_resolvent_cap": -1.1260663467377308e-05,
+        "active_scalar_inequality": -0.4234634632158989,
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 1.8021548755309465e-14,
+        "physical_converse": -0.8256042615644157,
+        "positive_rank_update": -6.187201230511974e-05,
+        "product_Bell_isometry": 1.6653345369377348e-15,
+        "product_Bell_marginal": 1.640672475596605e-13,
+        "rank_update_criterion": -0.8748222932310191,
+        "reflection_identities": 1.5089539797652098e-17,
+        "resolvent_compression_relative_error": 1.311140010483498e-12,
+        "scalar_block_inequality": -0.9997586077832104
+      },
+      "resolvent_compression_norm": 0.1251777067689809,
+      "scalar_bracket": 0.00024139221678962788,
+      "t": 2.1103844936755705,
+      "t0": 2.000070712445856
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "active_bracket": 0.5000316930794243,
+      "angles": [
+        0.0001,
+        1.1,
+        1.1
+      ],
+      "c": 0.00014142135617811746,
+      "last_kind": "one_mixed",
+      "m": 5.3038290686975245,
+      "name": "q3_angles_3_one_mixed_rotation_1",
+      "physical_hamiltonian_norm": 6.497188789723551,
+      "q": 3,
+      "residuals": {
+        "Jordan_resolvent_cap": -1.1260665157858396e-05,
+        "active_scalar_inequality": -0.4234634632158989,
+        "cross_commutators": 1.541193982598961e-15,
+        "dedicated_query_spectral_cap": 9.7844667874465e-15,
+        "physical_converse": -0.917024772649544,
+        "positive_rank_update": -6.187201230378747e-05,
+        "product_Bell_isometry": 1.3322698004392942e-15,
+        "product_Bell_marginal": 1.6407451669521594e-13,
+        "rank_update_criterion": -0.8748222932327095,
+        "reflection_identities": 1.951011188589187e-15,
+        "resolvent_compression_relative_error": 6.081043043291218e-13,
+        "scalar_block_inequality": -0.9997586077832104
+      },
+      "resolvent_compression_norm": 0.12517770676729043,
+      "scalar_bracket": 0.00024139221678962788,
+      "t": 2.1103844936755705,
+      "t0": 2.000070712445856
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "active_bracket": 0.5000316930794243,
+      "angles": [
+        0.0001,
+        1.1,
+        1.1
+      ],
+      "c": 0.00014142135617811746,
+      "last_kind": "two_blocks",
+      "m": 5.3038290686975245,
+      "name": "q3_angles_3_two_blocks_rotation_0",
+      "physical_hamiltonian_norm": 6.718113347821708,
+      "q": 3,
+      "residuals": {
+        "Jordan_resolvent_cap": -0.12496660043322208,
+        "active_scalar_inequality": -0.4234634632158989,
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 1.8021548755309465e-14,
+        "physical_converse": -0.6961002145513868,
+        "positive_rank_update": -6.187208095465024e-05,
+        "product_Bell_isometry": 1.6653345369377348e-15,
+        "product_Bell_marginal": 1.640672475596605e-13,
+        "rank_update_criterion": -0.8748300577851151,
+        "reflection_identities": 2.1631857035887533e-17,
+        "resolvent_compression_relative_error": 1.3110742037369082e-12,
+        "scalar_block_inequality": -0.9997586077832104
+      },
+      "resolvent_compression_norm": 0.1251699422148849,
+      "scalar_bracket": 0.00024139221678962788,
+      "t": 2.1103844936755705,
+      "t0": 2.000070712445856
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "active_bracket": 0.5000316930794243,
+      "angles": [
+        0.0001,
+        1.1,
+        1.1
+      ],
+      "c": 0.00014142135617811746,
+      "last_kind": "two_blocks",
+      "m": 5.3038290686975245,
+      "name": "q3_angles_3_two_blocks_rotation_1",
+      "physical_hamiltonian_norm": 6.358260910995952,
+      "q": 3,
+      "residuals": {
+        "Jordan_resolvent_cap": -0.12496660043280838,
+        "active_scalar_inequality": -0.4234634632158989,
+        "cross_commutators": 1.5353368141189114e-15,
+        "dedicated_query_spectral_cap": -7.012746199672761e-16,
+        "physical_converse": -1.055952651377143,
+        "positive_rank_update": -6.187208095287389e-05,
+        "product_Bell_isometry": 1.554312535703177e-15,
+        "product_Bell_marginal": 1.6408459664043926e-13,
+        "rank_update_criterion": -0.8748300577847015,
+        "reflection_identities": 2.1063575473699313e-15,
+        "resolvent_compression_relative_error": 1.4932836252197592e-12,
+        "scalar_block_inequality": -0.9997586077832104
+      },
+      "resolvent_compression_norm": 0.1251699422152986,
+      "scalar_bracket": 0.00024139221678962788,
+      "t": 2.1103844936755705,
+      "t0": 2.000070712445856
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "angles": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "scalar",
+      "m": 5.414213562373095,
+      "name": "q3_angles_4_scalar_rotation_0",
+      "physical_hamiltonian_norm": 6.828427124746194,
+      "q": 3,
+      "residuals": {
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 5.127991812797977e-15,
+        "physical_converse": -0.5857864376269006,
+        "product_Bell_isometry": 0.0,
+        "product_Bell_marginal": 1.9583047495432555e-16,
+        "reflection_identities": 0.0,
+        "zero_c_triangle": 0.0
+      },
+      "t": 2.0,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "angles": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "scalar",
+      "m": 5.414213562373095,
+      "name": "q3_angles_4_scalar_rotation_1",
+      "physical_hamiltonian_norm": 6.828427124746189,
+      "q": 3,
+      "residuals": {
+        "cross_commutators": 1.0389422091699658e-15,
+        "dedicated_query_spectral_cap": 7.993605777301127e-15,
+        "physical_converse": -0.585786437626906,
+        "product_Bell_isometry": 2.220522611271331e-16,
+        "product_Bell_marginal": 2.4888137056839387e-16,
+        "reflection_identities": 2.1604548657587707e-15,
+        "zero_c_triangle": 0.0
+      },
+      "t": 2.0,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "angles": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "commuting",
+      "m": 5.414213562373095,
+      "name": "q3_angles_4_commuting_rotation_0",
+      "physical_hamiltonian_norm": 6.686477544826474,
+      "q": 3,
+      "residuals": {
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 5.127991812797977e-15,
+        "physical_converse": -0.7277360175466212,
+        "product_Bell_isometry": 0.0,
+        "product_Bell_marginal": 1.9583047495432555e-16,
+        "reflection_identities": 0.0,
+        "zero_c_triangle": 0.0
+      },
+      "t": 2.0,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "angles": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "commuting",
+      "m": 5.414213562373095,
+      "name": "q3_angles_4_commuting_rotation_1",
+      "physical_hamiltonian_norm": 6.635933337160003,
+      "q": 3,
+      "residuals": {
+        "cross_commutators": 1.1086802705860123e-15,
+        "dedicated_query_spectral_cap": 5.6527914287911344e-15,
+        "physical_converse": -0.7782802252130923,
+        "product_Bell_isometry": 9.992071349812867e-16,
+        "product_Bell_marginal": 2.1679514159488272e-16,
+        "reflection_identities": 1.8749025177731945e-15,
+        "zero_c_triangle": 0.0
+      },
+      "t": 2.0,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "angles": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "full_blocks",
+      "m": 5.414213562373095,
+      "name": "q3_angles_4_full_blocks_rotation_0",
+      "physical_hamiltonian_norm": 6.727768561654486,
+      "q": 3,
+      "residuals": {
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 5.127991812797977e-15,
+        "physical_converse": -0.6864450007186091,
+        "product_Bell_isometry": 0.0,
+        "product_Bell_marginal": 1.9583047495432555e-16,
+        "reflection_identities": 2.1631857035887533e-17,
+        "zero_c_triangle": 0.0
+      },
+      "t": 2.0,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "angles": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "full_blocks",
+      "m": 5.414213562373095,
+      "name": "q3_angles_4_full_blocks_rotation_1",
+      "physical_hamiltonian_norm": 6.0808117499268,
+      "q": 3,
+      "residuals": {
+        "cross_commutators": 1.1954729987231499e-15,
+        "dedicated_query_spectral_cap": 5.363605726308455e-15,
+        "physical_converse": -1.3334018124462945,
+        "product_Bell_isometry": 2.2204559436600894e-16,
+        "product_Bell_marginal": 2.441868978168298e-16,
+        "reflection_identities": 1.1808946650806714e-15,
+        "zero_c_triangle": 0.0
+      },
+      "t": 2.0,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "angles": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "one_plus",
+      "m": 5.414213562373095,
+      "name": "q3_angles_4_one_plus_rotation_0",
+      "physical_hamiltonian_norm": 6.748943891214738,
+      "q": 3,
+      "residuals": {
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 5.127991812797977e-15,
+        "physical_converse": -0.6652696711583568,
+        "product_Bell_isometry": 0.0,
+        "product_Bell_marginal": 1.9583047495432555e-16,
+        "reflection_identities": 0.0,
+        "zero_c_triangle": 0.0
+      },
+      "t": 2.0,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "angles": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "one_plus",
+      "m": 5.414213562373095,
+      "name": "q3_angles_4_one_plus_rotation_1",
+      "physical_hamiltonian_norm": 6.685578210941152,
+      "q": 3,
+      "residuals": {
+        "cross_commutators": 1.1638338167174637e-15,
+        "dedicated_query_spectral_cap": 1.5105986754267615e-15,
+        "physical_converse": -0.7286353514319428,
+        "product_Bell_isometry": 4.440975096887054e-16,
+        "product_Bell_marginal": 2.686241262062605e-16,
+        "reflection_identities": 1.564953017409358e-15,
+        "zero_c_triangle": 0.0
+      },
+      "t": 2.0,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "angles": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "one_mixed",
+      "m": 5.414213562373095,
+      "name": "q3_angles_4_one_mixed_rotation_0",
+      "physical_hamiltonian_norm": 6.748907686490256,
+      "q": 3,
+      "residuals": {
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 5.127991812797977e-15,
+        "physical_converse": -0.6653058758828392,
+        "product_Bell_isometry": 0.0,
+        "product_Bell_marginal": 1.9583047495432555e-16,
+        "reflection_identities": 0.0,
+        "zero_c_triangle": 0.0
+      },
+      "t": 2.0,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "angles": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "one_mixed",
+      "m": 5.414213562373095,
+      "name": "q3_angles_4_one_mixed_rotation_1",
+      "physical_hamiltonian_norm": 6.543805757392104,
+      "q": 3,
+      "residuals": {
+        "cross_commutators": 1.112799864651445e-15,
+        "dedicated_query_spectral_cap": -2.4402701293375494e-15,
+        "physical_converse": -0.8704078049809914,
+        "product_Bell_isometry": 2.220546929324425e-16,
+        "product_Bell_marginal": 2.288337992350128e-16,
+        "reflection_identities": 1.2659846815201932e-15,
+        "zero_c_triangle": 0.0
+      },
+      "t": 2.0,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "angles": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "two_blocks",
+      "m": 5.414213562373095,
+      "name": "q3_angles_4_two_blocks_rotation_0",
+      "physical_hamiltonian_norm": 6.751020561361488,
+      "q": 3,
+      "residuals": {
+        "cross_commutators": 0.0,
+        "dedicated_query_spectral_cap": 5.127991812797977e-15,
+        "physical_converse": -0.6631930010116065,
+        "product_Bell_isometry": 0.0,
+        "product_Bell_marginal": 1.9583047495432555e-16,
+        "reflection_identities": 2.1631857035887533e-17,
+        "zero_c_triangle": 0.0
+      },
+      "t": 2.0,
+      "t0": 2.0
+    },
+    {
+      "Hamiltonian_dimension": 128,
+      "angles": [
+        1.5707963267948966,
+        1.5707963267948966,
+        0.0
+      ],
+      "c": 2.220446049250313e-16,
+      "last_kind": "two_blocks",
+      "m": 5.414213562373095,
+      "name": "q3_angles_4_two_blocks_rotation_1",
+      "physical_hamiltonian_norm": 6.416284329587962,
+      "q": 3,
+      "residuals": {
+        "cross_commutators": 1.2887568876361267e-15,
+        "dedicated_query_spectral_cap": -7.461157182792307e-16,
+        "physical_converse": -0.9979292327851326,
+        "product_Bell_isometry": 2.2205071817779373e-16,
+        "product_Bell_marginal": 2.2181637439867506e-16,
+        "reflection_identities": 1.892690202371006e-15,
+        "zero_c_triangle": 0.0
+      },
+      "t": 2.0,
+      "t0": 2.0
+    }
+  ],
+  "numpy": "2.3.5",
+  "python": "3.12.14",
+  "reviewed_main": "a383214b357ccbd83a62ae0c94660083cb8b090e",
+  "seed": 2026092408,
+  "source_sha256": "badb5e00a55f0b6e334d32a4634d4de6d8e18822569b0fc911cf7f04692be05d",
+  "status": "PASS",
+  "tolerance": 1e-09
+}
