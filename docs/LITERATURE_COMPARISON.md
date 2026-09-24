@@ -863,3 +863,51 @@ dimension. The equal-dimensional pullback above does not by itself
 subsume that broader formulation; its priority is not established.
 Neither formulation evaluates unrestricted `Gamma(3,4)` or the general
 equal-accuracy rate. Publication originality remains unresolved.
+
+## Commuting query algebras and one unrestricted joint-memory query
+
+The [commuting-algebra continuation](audits/COMMUTING_QUERY_ALGEBRAS.md)
+proves `||H||<=2q+sqrt(2)` at `n=q+1` when q query pairs act on
+distinct qubit factors of the memory and the remaining pair acts
+arbitrarily on the entire memory. Internal angles are unrestricted;
+general binary POVM readouts are included. The factor assumption
+concerns the decoder, not the input state or collective encoder.
+At three inputs and dimension four, a separate algebra decomposition
+shows that any two elementwise-commuting query algebras suffice, with
+the third pair unrestricted. These claims require no all-readout
+Pauli commutation pattern or common antiunitary symmetry.
+
+Jordan's lemma, the structure of finite-dimensional C*-algebras and
+their commutants, maximally entangled partial-trace compression, and
+the positive rank-update criterion are established ingredients. The
+supplied deduction retains the full final-pair resolvent and bounds
+its normalized partial trace independently of memory dimension. The
+dimension-four commutant classification also invokes the preceding
+one-double-block theorem in its disjoint-active-block case. No new
+general algebra decomposition or monogamy principle is claimed.
+
+Bermejo Morán–Pozas-Kerstjens–Huber, *Bell inequalities with overlapping
+measurements*, PRL 131, 080201 (2023),
+[2303.02127v3](https://arxiv.org/pdf/2303.02127v3), Eq. (2), printed
+p. 2, and Eqs. (7)–(9), p. 3, defines overlapping-CHSH K_2.
+For q=2, identify Alice with `R_1 R_2 R_3`, Bob and Charlie with
+the memory factors, and Dave with their joint memory. Each trusted
+rotated X/Z pair acts on its own reference qubit, yielding h_i.
+The source permits Alice to reuse measurements across pairs; our
+distinct reference factors exclude this.
+
+Table I, p. 3, and Appendix C, p. 7, attain K_2=6 at dimensions
+`(4,2,2)`. Padding Alice preserves six at reference dimension eight.
+Its dimension-two Alice value `4+sqrt(2)` therefore does not apply.
+Its ququart J_2 bound four, Eq. (1)/Table I, also gives only six
+after adding the third term. Neither displayed bound subsumes the
+supplied theorem.
+
+The three complete signatures `(22)^2(11)`, `(22)^2(12)`, and
+`(22)^3` remain unresolved: their general query algebras need not
+commute. Arbitrary collective encoding, the single specimen and
+delayed query, unlimited classical records, worst-case dimension,
+and uniform error quantifiers are preserved. The new sufficient
+readout condition is not imposed on the unrestricted optimization.
+Publication originality, the full equal-accuracy optimum, and the
+two-parameter profile's priority remain open.
