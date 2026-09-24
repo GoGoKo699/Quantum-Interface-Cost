@@ -108,7 +108,7 @@ This is an operational reduction to an established graph problem.
 
 | Primary source and locator | Established ingredient and exact transfer |
 |---|---|
-| Bollobás–Lee–Letzter, [1605.06360v1](https://arxiv.org/pdf/1605.06360v1), Question 1 p. 2, Theorem 2 p. 3, Rayleigh quotient in Section 2 p. 4; [final author PDF](https://www.homepages.ucl.ac.uk/~ucahsle/papers/cube-evals.pdf), dated 7 August 2020, Theorem 2 p. 3 | The induced-cube spectral optimization is prior. The v1 theorem says 103<=D<=n; the later author version says 105<=D<=n. The repository uses their common range 105<=D<=n. Padding a smaller support and applying this theorem gives `z_max=sqrt(D-1)/n`. The graph theorem is not a new deduction. |
+| Bollobás–Lee–Letzter, [1605.06360v1](https://arxiv.org/pdf/1605.06360v1), Question 1 p. 2, Theorem 2 p. 3, Rayleigh quotient in Section 2 p. 4; [final author PDF](https://www.homepages.ucl.ac.uk/~ucahsle/papers/cube-evals.pdf), dated 7 August 2020, Theorem 2 p. 3 | The induced-cube spectral optimization is prior. The thresholds are `10^3=1000` in v1 and `10^5=100000` in the later author version, not 103 and 105. The common range is `100000<=D<=n`. Padding smaller supports gives `z_max=sqrt(D-1)/n`. |
 | Avni–Samorodnitsky, [2411.14597v1](https://arxiv.org/pdf/2411.14597v1), 21 November 2024, Corollary 1.8 p. 6, Example 1.12 p. 8, Corollary 1.15 p. 11 | Gives Krawtchouk-root characterizations, the Hamming-ball/star spectrum, and asymptotic comparisons. These do not certify optimality of the separate n=31,D=32 construction. |
 | Guerini–Quintino–Aolita, [1904.08435v4](https://arxiv.org/pdf/1904.08435v4), 14 October 2019, Theorems 2–3 p. 4 | Trusted quantum-input distributed sampling relates classical simulation to joint measurability. It does not evaluate the present worst-case retained-quantum-dimension boundary. |
 | Lobo–Balanzó-Juandó–Pironio, [2605.16151v1](https://arxiv.org/pdf/2605.16151v1), 15 May 2026, Definitions 1–2 pp. 2–3, Eqs. (2)–(3), (9)–(11) | Partial input joint measurability permits selected settings to become classical while residual quantum information remains. The inspected definitions do not impose the dimension cap here or identify all collectively compressed protocols with mixtures retaining original sites. |
@@ -958,3 +958,31 @@ It is not subsumed by the particular monogamy-game rigidity theorem
 compared in the report, but this focused comparison does not certify
 priority. Global arbitrary-subsystem optimality and publication
 originality remain open.
+
+## Exact elimination of the final readout pair
+
+The [resolvent report](audits/EXACT_LAST_QUERY_RESOLVENT.md) evaluates the
+weighted last-site resolvent over every binary POVM pair in every even
+memory dimension. The result pairs extreme marginal eigenvalues and gives
+an exact convex-quartic decision rule. It tests a rank-one spectral upper
+bound; it does not establish unrestricted interface optimality.
+
+Section 11 attributes Jordan reduction to the stated Masanes lemma, inverse
+convexity to the established operator Jensen framework, and trace alignment
+to the usual eigenvalue rearrangement. Extreme pairing follows from
+Lorentz's rearrangement theorem after submodularity is checked; it is not
+new pairing mathematics. The supplied deduction is the particular block
+support function, simultaneous attainment and exact resolvent formula.
+The inspected ingredient theorems do not themselves state that formula.
+
+Section 10 gives an exact unitary-subsystem counterexample to a proposed
+logarithmic Bell budget and a separate counterexample to a broader CPTP
+linear budget. The cube-star spectral behavior is established and credited
+to the primary source. Neither example beats the original X/Z benchmark.
+The CPTP example is not balanced and leaves the balanced relaxation open.
+
+The next proof target is the joint relation between the earlier operator's
+spectrum and its top-vector memory marginal. Separate bounds permit
+unrealizable data that fail the new certificate. This isolates an obstacle
+without resolving a complete remaining signature or certifying publication
+priority, significance, or PRL suitability.

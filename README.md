@@ -53,6 +53,14 @@ with projector sum at most `5/2`. The report also identifies the individual
 recovery functional as prior work and disproves a proposed min-entropy
 shortcut. Distant subsystem configurations remain unresolved.
 
+The [exact last-site readout reduction](docs/audits/EXACT_LAST_QUERY_RESOLVENT.md)
+now eliminates an entire decoder optimization in every even memory dimension,
+including arbitrary binary POVMs. Extreme eigenvalue pairing and a convex
+quartic replace the search over matrices and angles. Its application is exact
+for a stated spectral upper bound; the missing relation between the earlier
+terms' spectrum and their top eigenvector remains explicit. A simple exact
+counterexample also rules out a proposed general Bell-recovery budget.
+
 The [spectral-budget extension](docs/audits/JORDAN_SPECTRAL_BUDGET.md)
 now retains every Jordan block and gives a scalar sufficient test for the
 benchmark, including families with two noncommuting blocks at every site.
@@ -368,7 +376,7 @@ class precisely and proves its region `sum_i w(x_i,z_i)<=q`.
 More generally, with every X query exact, the optimal common Z contrast is
 the largest adjacency eigenvalue of an induced Boolean-cube subgraph on at
 most D vertices, divided by n. Combining this reduction with an established
-graph theorem gives the exact value `sqrt(D-1)/n` for `105<=D<=n`.
+graph theorem gives the exact value `sqrt(D-1)/n` for `100000<=D<=n`.
 The 31-input example is an achievable separation, without a claim that it is
 optimal. This does not settle the original equal-X/Z-accuracy conjecture.
 

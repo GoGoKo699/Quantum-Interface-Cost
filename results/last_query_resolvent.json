@@ -1,0 +1,1832 @@
+{
+  "constructions": [
+    {
+      "dimension": 2,
+      "pairs": [
+        {
+          "a": 1.0,
+          "kind": "block",
+          "weights": [
+            0.5,
+            0.5
+          ]
+        }
+      ],
+      "spectrum": 0,
+      "t": 2.05,
+      "value": 5.305630834086139
+    },
+    {
+      "dimension": 2,
+      "pairs": [
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.5,
+            0.5
+          ]
+        }
+      ],
+      "spectrum": 0,
+      "t": 2.6,
+      "value": 0.8433221769691376
+    },
+    {
+      "dimension": 2,
+      "pairs": [
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.5,
+            0.5
+          ]
+        }
+      ],
+      "spectrum": 0,
+      "t": 3.414213562373095,
+      "value": 0.5000000000000001
+    },
+    {
+      "dimension": 2,
+      "pairs": [
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.5,
+            0.5
+          ]
+        }
+      ],
+      "spectrum": 0,
+      "t": 4.5,
+      "value": 0.32406649656838876
+    },
+    {
+      "dimension": 2,
+      "pairs": [
+        {
+          "a": 1.00031580153611,
+          "kind": "block",
+          "weights": [
+            0.6802721088435374,
+            0.31972789115646255
+          ]
+        }
+      ],
+      "spectrum": 1,
+      "t": 2.05,
+      "value": 7.086109655474699
+    },
+    {
+      "dimension": 2,
+      "pairs": [
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.6802721088435374,
+            0.31972789115646255
+          ]
+        }
+      ],
+      "spectrum": 1,
+      "t": 2.6,
+      "value": 0.8433221769691376
+    },
+    {
+      "dimension": 2,
+      "pairs": [
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.6802721088435374,
+            0.31972789115646255
+          ]
+        }
+      ],
+      "spectrum": 1,
+      "t": 3.414213562373095,
+      "value": 0.5000000000000001
+    },
+    {
+      "dimension": 2,
+      "pairs": [
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.6802721088435374,
+            0.31972789115646255
+          ]
+        }
+      ],
+      "spectrum": 1,
+      "t": 4.5,
+      "value": 0.32406649656838876
+    },
+    {
+      "dimension": 2,
+      "pairs": [
+        {
+          "a": 1.0005954069092322,
+          "kind": "block",
+          "weights": [
+            1.0,
+            0.0
+          ]
+        }
+      ],
+      "spectrum": 2,
+      "t": 2.05,
+      "value": 10.24397329921369
+    },
+    {
+      "dimension": 2,
+      "pairs": [
+        {
+          "a": 1.0572751379458487,
+          "kind": "block",
+          "weights": [
+            1.0,
+            0.0
+          ]
+        }
+      ],
+      "spectrum": 2,
+      "t": 2.6,
+      "value": 1.0299727761065764
+    },
+    {
+      "dimension": 2,
+      "pairs": [
+        {
+          "a": 1.2168453354374753,
+          "kind": "block",
+          "weights": [
+            1.0,
+            0.0
+          ]
+        }
+      ],
+      "spectrum": 2,
+      "t": 3.414213562373095,
+      "value": 0.509932000910298
+    },
+    {
+      "dimension": 2,
+      "pairs": [
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            1.0,
+            0.0
+          ]
+        }
+      ],
+      "spectrum": 2,
+      "t": 4.5,
+      "value": 0.32406649656838876
+    },
+    {
+      "dimension": 2,
+      "pairs": [
+        {
+          "a": 1.0004736098691094,
+          "kind": "block",
+          "weights": [
+            0.83,
+            0.17
+          ]
+        }
+      ],
+      "spectrum": 3,
+      "t": 2.05,
+      "value": 8.564927292050356
+    },
+    {
+      "dimension": 2,
+      "pairs": [
+        {
+          "a": 1.0465749214955307,
+          "kind": "block",
+          "weights": [
+            0.83,
+            0.17
+          ]
+        }
+      ],
+      "spectrum": 3,
+      "t": 2.6,
+      "value": 0.9047699291620429
+    },
+    {
+      "dimension": 2,
+      "pairs": [
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.83,
+            0.17
+          ]
+        }
+      ],
+      "spectrum": 3,
+      "t": 3.414213562373095,
+      "value": 0.5000000000000001
+    },
+    {
+      "dimension": 2,
+      "pairs": [
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.83,
+            0.17
+          ]
+        }
+      ],
+      "spectrum": 3,
+      "t": 4.5,
+      "value": 0.32406649656838876
+    },
+    {
+      "dimension": 4,
+      "pairs": [
+        {
+          "a": 1.0,
+          "kind": "block",
+          "weights": [
+            0.25,
+            0.25
+          ]
+        },
+        {
+          "a": 1.0,
+          "kind": "block",
+          "weights": [
+            0.25,
+            0.25
+          ]
+        }
+      ],
+      "spectrum": 0,
+      "t": 2.05,
+      "value": 5.305630834086139
+    },
+    {
+      "dimension": 4,
+      "pairs": [
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.25,
+            0.25
+          ]
+        },
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.25,
+            0.25
+          ]
+        }
+      ],
+      "spectrum": 0,
+      "t": 2.6,
+      "value": 0.8433221769691376
+    },
+    {
+      "dimension": 4,
+      "pairs": [
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.25,
+            0.25
+          ]
+        },
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.25,
+            0.25
+          ]
+        }
+      ],
+      "spectrum": 0,
+      "t": 3.414213562373095,
+      "value": 0.5000000000000001
+    },
+    {
+      "dimension": 4,
+      "pairs": [
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.25,
+            0.25
+          ]
+        },
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.25,
+            0.25
+          ]
+        }
+      ],
+      "spectrum": 0,
+      "t": 4.5,
+      "value": 0.32406649656838876
+    },
+    {
+      "dimension": 4,
+      "pairs": [
+        {
+          "a": 1.0005336777278826,
+          "kind": "block",
+          "weights": [
+            0.5571890481149459,
+            0.05784903854243802
+          ]
+        },
+        {
+          "a": 1.00031580153611,
+          "kind": "block",
+          "weights": [
+            0.26187885261402455,
+            0.12308306072859153
+          ]
+        }
+      ],
+      "spectrum": 1,
+      "t": 2.05,
+      "value": 8.45695567232067
+    },
+    {
+      "dimension": 4,
+      "pairs": [
+        {
+          "a": 1.0519045559336808,
+          "kind": "block",
+          "weights": [
+            0.5571890481149459,
+            0.05784903854243802
+          ]
+        },
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.26187885261402455,
+            0.12308306072859153
+          ]
+        }
+      ],
+      "spectrum": 1,
+      "t": 2.6,
+      "value": 0.9154927211613945
+    },
+    {
+      "dimension": 4,
+      "pairs": [
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.5571890481149459,
+            0.05784903854243802
+          ]
+        },
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.26187885261402455,
+            0.12308306072859153
+          ]
+        }
+      ],
+      "spectrum": 1,
+      "t": 3.414213562373095,
+      "value": 0.5000000000000001
+    },
+    {
+      "dimension": 4,
+      "pairs": [
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.5571890481149459,
+            0.05784903854243802
+          ]
+        },
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.26187885261402455,
+            0.12308306072859153
+          ]
+        }
+      ],
+      "spectrum": 1,
+      "t": 4.5,
+      "value": 0.32406649656838876
+    },
+    {
+      "dimension": 4,
+      "pairs": [
+        {
+          "a": 1.0005954069092322,
+          "kind": "block",
+          "weights": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "a": null,
+          "kind": "zero",
+          "weights": [
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "spectrum": 2,
+      "t": 2.05,
+      "value": 10.24397329921369
+    },
+    {
+      "dimension": 4,
+      "pairs": [
+        {
+          "a": 1.0572751379458487,
+          "kind": "block",
+          "weights": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "a": null,
+          "kind": "zero",
+          "weights": [
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "spectrum": 2,
+      "t": 2.6,
+      "value": 1.0299727761065764
+    },
+    {
+      "dimension": 4,
+      "pairs": [
+        {
+          "a": 1.2168453354374753,
+          "kind": "block",
+          "weights": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "a": null,
+          "kind": "zero",
+          "weights": [
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "spectrum": 2,
+      "t": 3.414213562373095,
+      "value": 0.509932000910298
+    },
+    {
+      "dimension": 4,
+      "pairs": [
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "a": null,
+          "kind": "zero",
+          "weights": [
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "spectrum": 2,
+      "t": 4.5,
+      "value": 0.32406649656838876
+    },
+    {
+      "dimension": 4,
+      "pairs": [
+        {
+          "a": 1.0005954069092322,
+          "kind": "block",
+          "weights": [
+            0.5714285714285714,
+            0.0
+          ]
+        },
+        {
+          "a": 1.0005954069092322,
+          "kind": "block",
+          "weights": [
+            0.42857142857142855,
+            0.0
+          ]
+        }
+      ],
+      "spectrum": 3,
+      "t": 2.05,
+      "value": 10.24397329921369
+    },
+    {
+      "dimension": 4,
+      "pairs": [
+        {
+          "a": 1.0572751379458487,
+          "kind": "block",
+          "weights": [
+            0.5714285714285714,
+            0.0
+          ]
+        },
+        {
+          "a": 1.0572751379458487,
+          "kind": "block",
+          "weights": [
+            0.42857142857142855,
+            0.0
+          ]
+        }
+      ],
+      "spectrum": 3,
+      "t": 2.6,
+      "value": 1.0299727761065762
+    },
+    {
+      "dimension": 4,
+      "pairs": [
+        {
+          "a": 1.2168453354374753,
+          "kind": "block",
+          "weights": [
+            0.5714285714285714,
+            0.0
+          ]
+        },
+        {
+          "a": 1.2168453354374753,
+          "kind": "block",
+          "weights": [
+            0.42857142857142855,
+            0.0
+          ]
+        }
+      ],
+      "spectrum": 3,
+      "t": 3.414213562373095,
+      "value": 0.509932000910298
+    },
+    {
+      "dimension": 4,
+      "pairs": [
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.5714285714285714,
+            0.0
+          ]
+        },
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.42857142857142855,
+            0.0
+          ]
+        }
+      ],
+      "spectrum": 3,
+      "t": 4.5,
+      "value": 0.3240664965683887
+    },
+    {
+      "dimension": 6,
+      "pairs": [
+        {
+          "a": 1.0,
+          "kind": "block",
+          "weights": [
+            0.16666666666666669,
+            0.16666666666666669
+          ]
+        },
+        {
+          "a": 1.0,
+          "kind": "block",
+          "weights": [
+            0.16666666666666669,
+            0.16666666666666669
+          ]
+        },
+        {
+          "a": 1.0,
+          "kind": "block",
+          "weights": [
+            0.16666666666666669,
+            0.16666666666666669
+          ]
+        }
+      ],
+      "spectrum": 0,
+      "t": 2.05,
+      "value": 5.30563083408614
+    },
+    {
+      "dimension": 6,
+      "pairs": [
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.16666666666666669,
+            0.16666666666666669
+          ]
+        },
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.16666666666666669,
+            0.16666666666666669
+          ]
+        },
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.16666666666666669,
+            0.16666666666666669
+          ]
+        }
+      ],
+      "spectrum": 0,
+      "t": 2.6,
+      "value": 0.8433221769691377
+    },
+    {
+      "dimension": 6,
+      "pairs": [
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.16666666666666669,
+            0.16666666666666669
+          ]
+        },
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.16666666666666669,
+            0.16666666666666669
+          ]
+        },
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.16666666666666669,
+            0.16666666666666669
+          ]
+        }
+      ],
+      "spectrum": 0,
+      "t": 3.414213562373095,
+      "value": 0.5000000000000001
+    },
+    {
+      "dimension": 6,
+      "pairs": [
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.16666666666666669,
+            0.16666666666666669
+          ]
+        },
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.16666666666666669,
+            0.16666666666666669
+          ]
+        },
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.16666666666666669,
+            0.16666666666666669
+          ]
+        }
+      ],
+      "spectrum": 0,
+      "t": 4.5,
+      "value": 0.3240664965683888
+    },
+    {
+      "dimension": 6,
+      "pairs": [
+        {
+          "a": 1.0005817726639,
+          "kind": "block",
+          "weights": [
+            0.5357752366437287,
+            0.012287737539848256
+          ]
+        },
+        {
+          "a": 1.0005336777278826,
+          "kind": "block",
+          "weights": [
+            0.25181436122255246,
+            0.02614412242520906
+          ]
+        },
+        {
+          "a": 1.00031580153611,
+          "kind": "block",
+          "weights": [
+            0.11835274977459966,
+            0.05562579239406183
+          ]
+        }
+      ],
+      "spectrum": 1,
+      "t": 2.05,
+      "value": 9.314990905985544
+    },
+    {
+      "dimension": 6,
+      "pairs": [
+        {
+          "a": 1.0560978568623378,
+          "kind": "block",
+          "weights": [
+            0.5357752366437287,
+            0.012287737539848256
+          ]
+        },
+        {
+          "a": 1.0519045559336808,
+          "kind": "block",
+          "weights": [
+            0.25181436122255246,
+            0.02614412242520906
+          ]
+        },
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.11835274977459966,
+            0.05562579239406183
+          ]
+        }
+      ],
+      "spectrum": 1,
+      "t": 2.6,
+      "value": 0.9691770277778379
+    },
+    {
+      "dimension": 6,
+      "pairs": [
+        {
+          "a": 1.2131513851380404,
+          "kind": "block",
+          "weights": [
+            0.5357752366437287,
+            0.012287737539848256
+          ]
+        },
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.25181436122255246,
+            0.02614412242520906
+          ]
+        },
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.11835274977459966,
+            0.05562579239406183
+          ]
+        }
+      ],
+      "spectrum": 1,
+      "t": 3.414213562373095,
+      "value": 0.5018983434893604
+    },
+    {
+      "dimension": 6,
+      "pairs": [
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.5357752366437287,
+            0.012287737539848256
+          ]
+        },
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.25181436122255246,
+            0.02614412242520906
+          ]
+        },
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.11835274977459966,
+            0.05562579239406183
+          ]
+        }
+      ],
+      "spectrum": 1,
+      "t": 4.5,
+      "value": 0.32406649656838876
+    },
+    {
+      "dimension": 6,
+      "pairs": [
+        {
+          "a": 1.0005954069092322,
+          "kind": "block",
+          "weights": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "a": null,
+          "kind": "zero",
+          "weights": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "a": null,
+          "kind": "zero",
+          "weights": [
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "spectrum": 2,
+      "t": 2.05,
+      "value": 10.24397329921369
+    },
+    {
+      "dimension": 6,
+      "pairs": [
+        {
+          "a": 1.0572751379458487,
+          "kind": "block",
+          "weights": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "a": null,
+          "kind": "zero",
+          "weights": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "a": null,
+          "kind": "zero",
+          "weights": [
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "spectrum": 2,
+      "t": 2.6,
+      "value": 1.0299727761065764
+    },
+    {
+      "dimension": 6,
+      "pairs": [
+        {
+          "a": 1.2168453354374753,
+          "kind": "block",
+          "weights": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "a": null,
+          "kind": "zero",
+          "weights": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "a": null,
+          "kind": "zero",
+          "weights": [
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "spectrum": 2,
+      "t": 3.414213562373095,
+      "value": 0.509932000910298
+    },
+    {
+      "dimension": 6,
+      "pairs": [
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "a": null,
+          "kind": "zero",
+          "weights": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "a": null,
+          "kind": "zero",
+          "weights": [
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "spectrum": 2,
+      "t": 4.5,
+      "value": 0.32406649656838876
+    },
+    {
+      "dimension": 6,
+      "pairs": [
+        {
+          "a": 1.0005954069092322,
+          "kind": "block",
+          "weights": [
+            0.3333333333333333,
+            0.0
+          ]
+        },
+        {
+          "a": 1.0005954069092322,
+          "kind": "block",
+          "weights": [
+            0.2777777777777778,
+            0.0
+          ]
+        },
+        {
+          "a": 1.0001490298186697,
+          "kind": "block",
+          "weights": [
+            0.2222222222222222,
+            0.16666666666666666
+          ]
+        }
+      ],
+      "spectrum": 3,
+      "t": 2.05,
+      "value": 8.597856192627551
+    },
+    {
+      "dimension": 6,
+      "pairs": [
+        {
+          "a": 1.0572751379458487,
+          "kind": "block",
+          "weights": [
+            0.3333333333333333,
+            0.0
+          ]
+        },
+        {
+          "a": 1.0572751379458487,
+          "kind": "block",
+          "weights": [
+            0.2777777777777778,
+            0.0
+          ]
+        },
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.2222222222222222,
+            0.16666666666666666
+          ]
+        }
+      ],
+      "spectrum": 3,
+      "t": 2.6,
+      "value": 0.9573864319975725
+    },
+    {
+      "dimension": 6,
+      "pairs": [
+        {
+          "a": 1.2168453354374753,
+          "kind": "block",
+          "weights": [
+            0.3333333333333333,
+            0.0
+          ]
+        },
+        {
+          "a": 1.2168453354374753,
+          "kind": "block",
+          "weights": [
+            0.2777777777777778,
+            0.0
+          ]
+        },
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.2222222222222222,
+            0.16666666666666666
+          ]
+        }
+      ],
+      "spectrum": 3,
+      "t": 3.414213562373095,
+      "value": 0.5060695561118488
+    },
+    {
+      "dimension": 6,
+      "pairs": [
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.3333333333333333,
+            0.0
+          ]
+        },
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.2777777777777778,
+            0.0
+          ]
+        },
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.2222222222222222,
+            0.16666666666666666
+          ]
+        }
+      ],
+      "spectrum": 3,
+      "t": 4.5,
+      "value": 0.3240664965683887
+    },
+    {
+      "dimension": 8,
+      "pairs": [
+        {
+          "a": 1.0,
+          "kind": "block",
+          "weights": [
+            0.125,
+            0.125
+          ]
+        },
+        {
+          "a": 1.0,
+          "kind": "block",
+          "weights": [
+            0.125,
+            0.125
+          ]
+        },
+        {
+          "a": 1.0,
+          "kind": "block",
+          "weights": [
+            0.125,
+            0.125
+          ]
+        },
+        {
+          "a": 1.0,
+          "kind": "block",
+          "weights": [
+            0.125,
+            0.125
+          ]
+        }
+      ],
+      "spectrum": 0,
+      "t": 2.05,
+      "value": 5.305630834086139
+    },
+    {
+      "dimension": 8,
+      "pairs": [
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.125,
+            0.125
+          ]
+        },
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.125,
+            0.125
+          ]
+        },
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.125,
+            0.125
+          ]
+        },
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.125,
+            0.125
+          ]
+        }
+      ],
+      "spectrum": 0,
+      "t": 2.6,
+      "value": 0.8433221769691376
+    },
+    {
+      "dimension": 8,
+      "pairs": [
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.125,
+            0.125
+          ]
+        },
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.125,
+            0.125
+          ]
+        },
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.125,
+            0.125
+          ]
+        },
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.125,
+            0.125
+          ]
+        }
+      ],
+      "spectrum": 0,
+      "t": 3.414213562373095,
+      "value": 0.5000000000000001
+    },
+    {
+      "dimension": 8,
+      "pairs": [
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.125,
+            0.125
+          ]
+        },
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.125,
+            0.125
+          ]
+        },
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.125,
+            0.125
+          ]
+        },
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.125,
+            0.125
+          ]
+        }
+      ],
+      "spectrum": 0,
+      "t": 4.5,
+      "value": 0.32406649656838876
+    },
+    {
+      "dimension": 8,
+      "pairs": [
+        {
+          "a": 1.000592395188805,
+          "kind": "block",
+          "weights": [
+            0.53126501034547,
+            0.002691511373340299
+          ]
+        },
+        {
+          "a": 1.0005817726639,
+          "kind": "block",
+          "weights": [
+            0.24969455486237088,
+            0.005726619943277232
+          ]
+        },
+        {
+          "a": 1.0005336777278826,
+          "kind": "block",
+          "weights": [
+            0.11735644078531432,
+            0.012184297751653686
+          ]
+        },
+        {
+          "a": 1.0003158015361096,
+          "kind": "block",
+          "weights": [
+            0.05515752716909773,
+            0.025924037769475928
+          ]
+        }
+      ],
+      "spectrum": 1,
+      "t": 2.05,
+      "value": 9.784443714081535
+    },
+    {
+      "dimension": 8,
+      "pairs": [
+        {
+          "a": 1.057015510529086,
+          "kind": "block",
+          "weights": [
+            0.53126501034547,
+            0.002691511373340299
+          ]
+        },
+        {
+          "a": 1.0560978568623378,
+          "kind": "block",
+          "weights": [
+            0.24969455486237088,
+            0.005726619943277232
+          ]
+        },
+        {
+          "a": 1.0519045559336808,
+          "kind": "block",
+          "weights": [
+            0.11735644078531432,
+            0.012184297751653686
+          ]
+        },
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.05515752716909773,
+            0.025924037769475928
+          ]
+        }
+      ],
+      "spectrum": 1,
+      "t": 2.6,
+      "value": 0.9996550778841214
+    },
+    {
+      "dimension": 8,
+      "pairs": [
+        {
+          "a": 1.2160322668502288,
+          "kind": "block",
+          "weights": [
+            0.53126501034547,
+            0.002691511373340299
+          ]
+        },
+        {
+          "a": 1.2131513851380404,
+          "kind": "block",
+          "weights": [
+            0.24969455486237088,
+            0.005726619943277232
+          ]
+        },
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.11735644078531432,
+            0.012184297751653686
+          ]
+        },
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.05515752716909773,
+            0.025924037769475928
+          ]
+        }
+      ],
+      "spectrum": 1,
+      "t": 3.414213562373095,
+      "value": 0.5054111709576802
+    },
+    {
+      "dimension": 8,
+      "pairs": [
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.53126501034547,
+            0.002691511373340299
+          ]
+        },
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.24969455486237088,
+            0.005726619943277232
+          ]
+        },
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.11735644078531432,
+            0.012184297751653686
+          ]
+        },
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.05515752716909773,
+            0.025924037769475928
+          ]
+        }
+      ],
+      "spectrum": 1,
+      "t": 4.5,
+      "value": 0.3240664965683888
+    },
+    {
+      "dimension": 8,
+      "pairs": [
+        {
+          "a": 1.0005954069092322,
+          "kind": "block",
+          "weights": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "a": null,
+          "kind": "zero",
+          "weights": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "a": null,
+          "kind": "zero",
+          "weights": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "a": null,
+          "kind": "zero",
+          "weights": [
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "spectrum": 2,
+      "t": 2.05,
+      "value": 10.24397329921369
+    },
+    {
+      "dimension": 8,
+      "pairs": [
+        {
+          "a": 1.0572751379458487,
+          "kind": "block",
+          "weights": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "a": null,
+          "kind": "zero",
+          "weights": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "a": null,
+          "kind": "zero",
+          "weights": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "a": null,
+          "kind": "zero",
+          "weights": [
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "spectrum": 2,
+      "t": 2.6,
+      "value": 1.0299727761065764
+    },
+    {
+      "dimension": 8,
+      "pairs": [
+        {
+          "a": 1.2168453354374753,
+          "kind": "block",
+          "weights": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "a": null,
+          "kind": "zero",
+          "weights": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "a": null,
+          "kind": "zero",
+          "weights": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "a": null,
+          "kind": "zero",
+          "weights": [
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "spectrum": 2,
+      "t": 3.414213562373095,
+      "value": 0.509932000910298
+    },
+    {
+      "dimension": 8,
+      "pairs": [
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "a": null,
+          "kind": "zero",
+          "weights": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "a": null,
+          "kind": "zero",
+          "weights": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "a": null,
+          "kind": "zero",
+          "weights": [
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "spectrum": 2,
+      "t": 4.5,
+      "value": 0.32406649656838876
+    },
+    {
+      "dimension": 8,
+      "pairs": [
+        {
+          "a": 1.0005954069092322,
+          "kind": "block",
+          "weights": [
+            0.24242424242424243,
+            0.0
+          ]
+        },
+        {
+          "a": 1.0005954069092322,
+          "kind": "block",
+          "weights": [
+            0.21212121212121213,
+            0.0
+          ]
+        },
+        {
+          "a": 1.0002979402590242,
+          "kind": "block",
+          "weights": [
+            0.18181818181818182,
+            0.09090909090909091
+          ]
+        },
+        {
+          "a": 1.0001192334365654,
+          "kind": "block",
+          "weights": [
+            0.15151515151515152,
+            0.12121212121212122
+          ]
+        }
+      ],
+      "spectrum": 3,
+      "t": 2.05,
+      "value": 8.14891398387726
+    },
+    {
+      "dimension": 8,
+      "pairs": [
+        {
+          "a": 1.0572751379458487,
+          "kind": "block",
+          "weights": [
+            0.24242424242424243,
+            0.0
+          ]
+        },
+        {
+          "a": 1.0572751379458487,
+          "kind": "block",
+          "weights": [
+            0.21212121212121213,
+            0.0
+          ]
+        },
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.18181818181818182,
+            0.09090909090909091
+          ]
+        },
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.15151515151515152,
+            0.12121212121212122
+          ]
+        }
+      ],
+      "spectrum": 3,
+      "t": 2.6,
+      "value": 0.9281633583952461
+    },
+    {
+      "dimension": 8,
+      "pairs": [
+        {
+          "a": 1.2168453354374753,
+          "kind": "block",
+          "weights": [
+            0.24242424242424243,
+            0.0
+          ]
+        },
+        {
+          "a": 1.2168453354374753,
+          "kind": "block",
+          "weights": [
+            0.21212121212121213,
+            0.0
+          ]
+        },
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.18181818181818182,
+            0.09090909090909091
+          ]
+        },
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.15151515151515152,
+            0.12121212121212122
+          ]
+        }
+      ],
+      "spectrum": 3,
+      "t": 3.414213562373095,
+      "value": 0.5045145458683172
+    },
+    {
+      "dimension": 8,
+      "pairs": [
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.24242424242424243,
+            0.0
+          ]
+        },
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.21212121212121213,
+            0.0
+          ]
+        },
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.18181818181818182,
+            0.09090909090909091
+          ]
+        },
+        {
+          "a": null,
+          "kind": "scalar",
+          "weights": [
+            0.15151515151515152,
+            0.12121212121212122
+          ]
+        }
+      ],
+      "spectrum": 3,
+      "t": 4.5,
+      "value": 0.32406649656838876
+    }
+  ],
+  "counts": {
+    "attainment_cases": 64,
+    "block_pairs": 64,
+    "cap_cases": 4,
+    "clipped_right_cases": 16,
+    "contraction_convexity_cases": 128,
+    "exact_inverse_identity_cases": 6,
+    "exact_quartic_identity_cases": 24,
+    "interior_cubic_cases": 80,
+    "jordan_identity_cases": 16,
+    "pairing_cases": 1984,
+    "quartic_identity_cases": 64,
+    "scalar_pairs": 72,
+    "zero_pairs": 24
+  },
+  "exact_arithmetic": "fractions.Fraction",
+  "maximum_absolute_errors": {
+    "attainment": 1.971756091734278e-13,
+    "cubic_stationarity": 8.881784197001252e-15,
+    "hermiticity": 2.1725365436071925e-14,
+    "jordan_inverse": 1.766894742878634e-14,
+    "quartic_identity": 1.509903313490213e-14,
+    "reflection": 4.136175486968058e-15,
+    "support_boundary": 3.552713678800501e-15
+  },
+  "minimum_comparison_margins": {
+    "contraction_convexity": -5.638153142354613e-17,
+    "pairing": -1.7763568394002505e-15
+  },
+  "numpy_version": "2.3.5",
+  "python_version": "3.12.14",
+  "scope": "Exact rational identities and finite floating diagnostics supplement the supplied proof; floating bisection is not interval certification and no global interface optimum or novelty is certified.",
+  "seed": 2026092507,
+  "source_sha256": "c2cce42590e62ca89c94020f73dcf69a9484b8d6d40ebaecefa43f7d6c8b0084",
+  "status": "passed",
+  "tolerance": 2e-09
+}
