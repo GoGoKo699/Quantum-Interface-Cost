@@ -223,6 +223,15 @@ different mixed-state function. Its lower bound here needs (2); it does
 not follow merely by replacing concurrence with twice negativity in
 Han's theorem. The construction used for attainment is prior.
 
+**24 September provenance correction:** the
+[nonlinear CHSH follow-up](NONLINEAR_CHSH_SUBSUMPTION.md) supplies a
+direct reduction from Zhu–Zhang–Ma Corollary 1 / Eq. (30) to the
+mixed-state weighted support. With Jordan blocks it gives the complete
+weighted negativity inequality used here. Thus the inequality is a short
+prior consequence; the geometric evaluation and equality analysis are
+separate deductions. This does not justify replacing concurrence by
+negativity in Han's theorem: the correct prior source directly bounds N.
+
 Guehne–Reimpell–Werner, *Estimating entanglement measures in experiments*,
 [quant-ph/0607163v2](https://arxiv.org/abs/quant-ph/0607163v2),
 12 March 2007, Eq. (1), p. 1, and Eqs. (6),(8), p. 2, already characterize

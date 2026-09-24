@@ -704,3 +704,27 @@ simulation or solver result. Unchanged entropy certificates were not
 rerun. Repository links, whitespace and protected-file identities were
 checked. Historical access-failure accounts are retained with follow-up
 links; the request for the thesis is resolved by the user's upload.
+
+## Nonlinear CHSH theorem and the sharp resource hull
+
+The [subsumption audit](audits/NONLINEAR_CHSH_SUBSUMPTION.md) reviews
+main `ac0bf7cebd5a8a346d8b64371edab7b2c30ca271`. The official
+Zhu–Zhang–Ma arXiv v2 PDF and its HTML were read at the specified
+definition, theorem and dimension-reduction locators. The ordinary-N
+factor and Corollary 1 were also checked against rendered PDF pages.
+
+Independent workspace derivations checked the auxiliary-angle map,
+subthreshold case, minimizing alpha>=1, zero-weight endpoints, all
+nonnegative resource prices, common-space reflection dilation, Jordan
+pinching, flag identities and exact support attainers. They confirm a
+stronger prior implication than the earlier affine-only comparison:
+the mixed-state support and full minimum-cost convex hull are short
+prior corollaries. The explicit phase/root formulas are unchanged.
+
+The source comparison needs no simulation or numerical acceptance test.
+Unchanged entropy certificates were not rerun. Separate small exploratory
+four-dimensional searches of a possible spectral-product reduction and
+finite-tail envelope yielded no proof or admissible counterexample; they
+are not used in the report's deductions or any optimality claim. Local
+links, whitespace, LICENSE and the original audit identity were checked.
+No primary paper, extracted text or rendered page is committed.

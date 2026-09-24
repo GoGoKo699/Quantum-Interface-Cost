@@ -15,6 +15,16 @@ short consequences of prior work. More excluded seed families do not, by
 themselves, strengthen the publication case or demonstrate proximity to a
 general proof.
 
+**24 September update to the novelty judgment:** the
+[nonlinear-source comparison](NONLINEAR_CHSH_SUBSUMPTION.md) now
+derives the full mixed-state resource support and its all-price
+minimum-cost hull from prior CHSH inequalities and standard block/duality
+arguments. The formation-profile candidate is therefore an explicit
+evaluation with optimizer/equality and operational consequences, not
+a new support inequality or convex-hull principle. Its publication
+significance remains a judgment to establish; this report's earlier
+affine-only comparison cannot certify it.
+
 This is an internal mathematical and source assessment, not external peer
 review or an acceptance prediction. The operational problem remains one
 arbitrary unknown specimen, one delayed local query, arbitrary collective

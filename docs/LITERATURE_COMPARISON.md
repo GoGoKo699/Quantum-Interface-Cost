@@ -557,8 +557,11 @@ E_F+lambda(2N). The supplied mixed-state support proof, lambda-dependent
 phase/root evaluation and arbitrary-dimension Pareto exhaustion address
 that distinction. Han's weighted geometry and flagged constructions,
 Pusey's equal-weight negativity endpoint, and the GRW/EBA convex-duality
-method remain established ingredients. No inspected statement evaluates
-the same complete conditional frontier, but historical priority is unverified.
+method remain established ingredients. The nonlinear-source follow-up
+below now derives the mixed-state support and entire sharp resource hull
+from Zhu–Zhang–Ma's qubit negativity theorem. The explicit phase/root
+and conditional-budget evaluation is a further calculation whose
+historical priority and significance remain unverified.
 
 McKague–Mosca–Gisin 0810.1923v1, Section II A–B, Eqs. (1)–(3), p. 2,
 supplies the established real simulation representation. The continuation
@@ -714,3 +717,39 @@ explicit evaluated profile, universality over readouts, and equality
 structure; having two parameters or using convex duality is not novelty.
 The thesis access gap is closed. Exhaustive subsumption, publication
 significance, and unrestricted memory optimality remain unresolved.
+
+## Nonlinear weighted-CHSH subsumption of the resource support
+
+The [new exact source map](audits/NONLINEAR_CHSH_SUBSUMPTION.md), pinned
+to main `ac0bf7cebd5a8a346d8b64371edab7b2c30ca271`, strengthens the
+earlier affine-only comparison with Zhu–Zhang–Ma,
+[2303.08407v2](https://arxiv.org/abs/2303.08407v2). Corollary 1 /
+Eq. (30), printed pp. 15–16, gives the nonlinear two-qubit bound
+`2N>=sqrt(S_alpha^2/4-alpha^2)`. Its measurement convention is Eq. (2),
+p. 5, with alpha>=1 and ordinary negativity.
+
+For correlation weights a>=b>0, set
+`t^2=a^2/alpha^2+b^2`, `cos(theta)=a/(alpha*t)`,
+`sin(theta)=b/t`, and `B_±=cos(theta)X±sin(theta)Z`.
+Then `S_alpha=2(ax+bz)/t`. At fixed v=2N the source yields
+`ax+bz<=sqrt((a^2/alpha^2+b^2)(alpha^2+v^2))` even below the
+violation threshold. Minimizing at `alpha^2=max(1,av/b)` gives exactly
+the two branches of B_v in the joint-resource report. Thus that entire
+mixed-state lemma is a direct prior corollary.
+
+Using E_F>=f(V), radial concavity, Jordan pinching and orthogonal flags
+then gives the sharp support for every nonnegative price mu,lambda:
+`max{sqrt(a^2+b^2),a+max_v[bv-mu*f(v)-lambda*v]}`. Product and
+exact-axis states attain it. Consequently the full minimum-cost hull,
+not just an isolated scalar line, is a short consequence of prior
+theorems and standard convexity. This includes the weighted negativity
+inequality underlying min N=w/2. No new mixed-state support principle
+should be claimed.
+
+This does not invalidate the earlier strict comparison with the source's
+affine Eq. (25). Optimizing its nonlinear qubit theorem before mixing
+blocks retains information lost by taking the scalar affine certificate
+first. The candidate contribution is the explicit phase/root/budget
+and equality evaluation with its operational consequences; its novelty
+and publication significance remain open. Neither reduction sums costs
+across trusted sites sharing one memory register.
