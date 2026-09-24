@@ -1,6 +1,6 @@
 # Q1 — Delayed local readout through a bounded quantum interface
 
-**Version:** 0.34, 2026-09-24
+**Version:** 0.35, 2026-09-24
 
 **Project:** Falling / Q1  
 **Status:** Baseline proofs and seed reduction independently checked within the audit workspace. The full product-diagonal profile rate has a constructive optimizer and evaluates an established steering entanglement measure. It exceeds the inspected affine weighted-CHSH formation bounds, but the nonlinear-source follow-up now derives its full mixed-state support and joint-resource convex-hull characterization from prior inequalities. The candidate contribution is the explicit evaluation, equality analysis and operational consequences. The unrestricted rate equals regularized formation of a local-query assemblage, whose distinction from full tensor-product assemblages is explicit. The complete two-qubit entropy inequality, general common-accuracy rate evaluation and publication novelty remain unresolved. This is a research dossier, not external peer review or a claim of a new framework.
@@ -60,6 +60,17 @@ any strict advantage must make all three algebras pairwise noncommuting.
 No additional full signature pattern, general rate or originality
 question is settled.
 
+The [noncommuting-family theorem](docs/audits/NONCOMMUTING_QUERY_FAMILIES.md)
+allows two sharp internally anticommuting pairs with only
+`[B1,D2]=[D1,B2]=0`; their same-axis cross commutators may both
+be nonzero, and the third pair is arbitrary. A separate theorem proves
+the sharp projector bound `sum_i P_i<=5I/2` for three independently
+partial-SWAP-rotated memory subsystems. Equality is completely classified.
+With equal spectra within each site's two Jordan blocks, this gives
+the physical converse `||H||<=4+sqrt(2)` for that geometry.
+Neither theorem closes a full remaining signature; arbitrary subsystem
+embeddings and unequal block spectra still matter.
+
 ## 1. Origin, scope, and claim ledger
 
 Page 24 of the user-supplied *【马兆】坠落.pdf* describes a fictional progression from a quantum solver to a quantum-resident workflow because repeated classical–quantum interfaces become costly. The present model is our proposed scientific extraction; its assumptions and conclusions are not claims made by the fiction.
@@ -84,6 +95,8 @@ The general compression problem below is already present in the dimensional meas
 | At most one double-block query pair obeys the three-input retention benchmark | Derived and independently checked for arbitrary complex orientations and unequal angles; uses an established mixed-Choi monogamy corollary plus two simultaneous compression bounds. |
 | At n=q+1, q dedicated qubit query pairs plus one arbitrary joint-memory query pair have exact retention optimum | Derived and independently checked for all q>=1, arbitrary binary POVMs and collective encoders; a product-Bell spectral cap and normalized resolvent trace give the sharp norm 2q+sqrt(2). |
 | At n=3,D=4, any two commuting original query algebras forbid an advantage | Derived and independently checked by finite-dimensional commutant classification and the preceding factor/one-double-block converses; every violating optimal family must make all three algebras pairwise noncommuting. |
+| Two sharp internally anticommuting pairs with two mixed cross commutators zero forbid an advantage | Derived and independently checked: complete ququart algebra classification, a two-angle maximally entangled top eigenvector and the full third-pair resolvent; same-axis cross commutators may be nonzero. |
+| Three partial-SWAP Bell-subspace projectors sum to at most 5I/2 | Derived and independently checked, with exact equality classification; gives the retention converse for equal spectra within each site's two Jordan blocks. Arbitrary independent U(4) embeddings remain open. |
 | Arbitrary reflection families admit an all-Jordan-block scalar spectral certificate | Derived and independently checked; actual excesses and same-site orthogonality give a sufficient bound, including regions in all three remaining ququart patterns. |
 | A finite negative-top Bell-projector penalty repairs the bound two | Incorrect for every finite coefficient at least one; exact signed spectra on the existing mixed-rank example. This refutes the relaxation, not the interface conjecture. |
 | Entropy bound for product-diagonal Gram matrices | Derived and independently checked, allowing correlated spectra and arbitrary local bases; does not restrict unrestricted encoders. |
