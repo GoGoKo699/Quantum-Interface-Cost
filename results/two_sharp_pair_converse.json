@@ -1,0 +1,23 @@
+{
+  "arithmetic": "Fraction and integer isqrt only; no floating-point certificate arithmetic",
+  "closed_cells": 400,
+  "mixed_bound_selection_counts": {
+    "cap": 201,
+    "moment": 199
+  },
+  "mixed_uniform_upper_bound": "999/1000",
+  "not_claimed": "unrestricted three-input optimum or arbitrary earlier Jordan angles",
+  "parameter": "x=z/(sqrt(2)-1), 0<=x<=1",
+  "python": "3.12.14",
+  "scalar_branch": "bounded analytically by one from U<=4",
+  "scope": "scalar reduction for two sharp anticommuting ququart pairs and one arbitrary final pair",
+  "source_sha256": "e0aeb3cb992c5bea15d9008028fa7d9dbaa023d9012c857d866d0b43f2761ab0",
+  "sqrt_denominator": "100000000000000000000000000000000000",
+  "sqrt_method": "integer isqrt on exact Fraction endpoints, outward enclosure",
+  "status": "exact rational interval certificate passed",
+  "two_block_uniform_upper_bound": "999/1000",
+  "worst_mixed_cell_zero_based": 198,
+  "worst_mixed_rational_upper_ceiling": "498252169/500000000",
+  "worst_two_block_cell_zero_based": 298,
+  "worst_two_block_rational_upper_ceiling": "950194781/1000000000"
+}

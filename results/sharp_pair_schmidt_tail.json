@@ -1,0 +1,46 @@
+{
+  "exact_scalar_checks": {
+    "new_tuple_resolvent_excess_exact_coefficients": [
+      "4807647/17821405",
+      "-670588/3564281"
+    ],
+    "new_tuple_resolvent_lower_witness": 1.0036963291152832,
+    "new_tuple_spectral_circle_excess_exact_coefficients": [
+      "489/50",
+      "-34/5"
+    ],
+    "new_tuple_tail_sld_and_fixed_spectrum_constraints_pass": true,
+    "old_tuple_spectral_circle_excess_exact_coefficients": [
+      "17/2",
+      "-6"
+    ],
+    "old_tuple_weak_tail_score": "49/15 > 3",
+    "scalar_rational_pairs": 231
+  },
+  "fixed_center_checks": {
+    "explicit_attainers": 2,
+    "max_center_marginal_residual": 7.774001792892007e-15,
+    "max_sum_eigenvalue": 1.5000000000000013,
+    "min_spectral_envelope_gap": -1.1102230246251565e-15,
+    "random_positive_pairs": 48
+  },
+  "numpy": "2.3.5",
+  "python": "3.12.14",
+  "script_sha256": "2f4c0785d9d15a5696043273ea792369cdbe3bc4c093e763b502147abdce1612",
+  "seed": 2026092407,
+  "sharp_pair_checks": {
+    "max_chiral_residual": 0.0,
+    "max_rank_two_compression_norm": 2.8280432383708667,
+    "max_singular_remainder_norm_excess": 4.440892098500626e-15,
+    "max_spectral_circle_value": 4.0,
+    "min_singular_compression_test_gap": 0.0018520789956424366,
+    "min_top_rank_one_gap": 0.5880883485971165,
+    "min_top_tail_gap": 0.1738747862240206,
+    "rank_one_compressions": 80,
+    "rank_two_attaining_score": 3,
+    "rank_two_compressions": 80,
+    "sharp_pair_families": 40
+  },
+  "status": "all checks passed; symbolic proof is separate",
+  "tolerance": 3e-10
+}

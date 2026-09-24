@@ -65,9 +65,18 @@ The [joint-spectrum continuation](docs/audits/JOINT_SPECTRUM_NORMAL_FORM.md)
 now represents every two-sharp-pair ququart configuration using three
 Cartan angles and two sphere directions. An eight-dimensional singular-value
 problem retains both the full spectrum and the actual top memory marginal.
-An exact full-rank example shows why the available separate spectral and
+An exact full-rank example shows why the earlier separate spectral and
 score bounds cannot replace this joint constraint. The reduction uses
-established Cartan decomposition; the sharp-pair converse remains unproved.
+established Cartan decomposition.
+
+The [two-sharp-pair converse](docs/audits/TWO_SHARP_PAIR_CONVERSE.md)
+now proves `||H||<=4+sqrt(2)` for any two internally anticommuting sharp
+ququart query pairs and an arbitrary third binary-POVM pair. No cross
+commutator is assumed to vanish. New joint spectral-tail constraints and
+the sharp circle `(U-2)^2+(m-2)^2<=4` reduce the exact resolvent test to
+one scalar variable; 400 closed rational intervals certify the remaining
+inequality. This closes the sharp-pair target. General nonorthogonal pairs
+and all three complete reflection signatures remain open.
 
 The [spectral-budget extension](docs/audits/JORDAN_SPECTRAL_BUDGET.md)
 now retains every Jordan block and gives a scalar sufficient test for the
@@ -237,6 +246,7 @@ supplied evaluations.
 | Exact assumptions and baseline proofs | [RESEARCH_NOTE.md](RESEARCH_NOTE.md), Sections 2–7 |
 | What is established, derived, or still a target | [STATUS](docs/STATUS.md) |
 | Unrestricted collective-encoding problem | [Seed reduction](docs/COLLECTIVE_ENCODING_REDUCTION.md) |
+| Two sharp ququart query pairs and an arbitrary third pair obey the retention bound | [Complete sharp-pair converse and exact scalar certificate](docs/audits/TWO_SHARP_PAIR_CONVERSE.md) |
 | Exact optimum with one retained qubit | [One-qubit theorem and equality cases](docs/ONE_QUBIT_OPTIMALITY.md) |
 | Exact region for separate accuracies at every local query | [One-qubit allocation theorem](docs/ONE_QUBIT_ALLOCATION_REGION.md) |
 | Collective advantage for unequal X/Z accuracies | [Exact-axis spectral reduction](docs/EXACT_AXIS_SPECTRAL_REDUCTION.md) |
