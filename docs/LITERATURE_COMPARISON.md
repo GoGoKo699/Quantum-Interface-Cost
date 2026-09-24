@@ -404,13 +404,16 @@ table is Bell local throughout the square, so unrestricted fully
 device-independent certification from that table cannot supply positive C.
 Neither that elementary distinction nor generic flagging is a novelty.
 
-A concrete outstanding comparison is Giacomo Tomassoli's 2024/25 thesis,
+A completed full-text comparison is Giacomo Tomassoli's 2024/25 thesis,
 *Certificatori di Entanglement per due qubit con due correlatori*,
 [Padua catalogue](https://thesis.unipd.it/handle/20.500.12608/84769).
-Metadata and abstract were retrieved, but primary full-text attempts
-returned HTTP 403. Its entanglement measure and formulas remain unverified;
-it is not excluded by its title. Exhaustive originality of the full
-two-parameter convexification remains open.
+After earlier primary retrieval attempts returned HTTP 403, the user
+supplied the PDF. The [source audit](audits/TOMASSOLI_FULL_TEXT_COMPARISON.md)
+reads its definitions and formulas and proves the strongest calibrated
+two-parameter extension. Its scalar concurrence boundary and exact-axis
+family are prior ingredients; its printed negativity needs a factor-two
+correction. Fixed orthogonal readouts give G=f([x+z-1]_+), distinct from
+the optimized-readout profile C. Exhaustive originality remains open.
 
 The [roof provenance audit](audits/ROOF_PROVENANCE_AND_JOINT_SCORE.md)
 supplies a direct subsumption map to Vollbrecht–Werner
@@ -540,8 +543,8 @@ evaluation, unrestricted-readout universality, equality structure and the
 operational translation remain the specific calculations to assess for
 originality. Das et al. 1702.00672v5, Eq. (69), p. 8 / Theorem 2, p. 9,
 provides a close exact-axis box-weight example, whose value V differs from
-formation cost f(V). These are scoped comparisons; the unread Tomassoli
-source and exhaustive-priority question remain open.
+formation cost f(V). These are scoped comparisons. The Tomassoli source
+has since been read; the exhaustive-priority question remains open.
 
 The [joint-resource continuation](audits/JOINT_RESOURCE_FRONTIER.md)
 extends the separate-resource comparison to the complete conditional
@@ -573,8 +576,9 @@ condition in Nakahira–Usuda, PRA 86, 062305 (2012), was initially unread.
 The [completed comparison](audits/BAYES_RANK_PRIOR_COMPARISON.md) now checks
 Theorem 2 and its entire weighted extension: under the natural Hamming
 ensemble, their best rank certificate is two, whereas our theorem proves
-rank one. This closes that specific comparison; other reductions and
-the existing Tomassoli thesis gap remain open.
+rank one. This closes that specific comparison; other reductions remain
+open. The Tomassoli thesis has also since been read, as recorded below.
+Exhaustive originality remains open.
 
 Preserve exact source versions, locators, timing, resource accounting and
 quantifiers in every further comparison. Absence from this ledger is not
@@ -641,9 +645,10 @@ our already evaluated `C=(2-sqrt(2))/4>0`. The first claim follows exactly
 from `h_2(1/8)>1/2`, since `8^7>2*7^7`. Hence these inspected statements
 do not evaluate the full formation profile or prove the unrestricted seed
 entropy bound. This is a scoped comparison, not an exhaustive novelty claim.
-The previously identified Tomassoli full-text comparison remains unresolved;
-renewed primary retrieval attempts returned HTTP 403, and neighboring theses
-do not determine that source's objective or formulas.
+At that comparison's research base, renewed Tomassoli retrieval attempts
+returned HTTP 403. The user has since supplied the source; the
+[full-text audit](audits/TOMASSOLI_FULL_TEXT_COMPARISON.md) resolves its
+objective and formulas directly.
 
 ## A shorter mixed-decoder proof from prior anticommutation
 
@@ -663,7 +668,7 @@ The stronger angular estimate and the partial finite-tail exclusion are
 supplied deductions. The source does not state the task's full sharp
 mixed-decoder envelope or two-parameter formation evaluation; their
 historical priority remains unverified. This focused comparison closes
-neither the existing unread-source gap nor the all-n entropy conjecture.
+neither exhaustive originality nor the all-n entropy conjecture.
 
 ## Nakahira–Usuda's full weighted rank theorem
 
@@ -680,5 +685,32 @@ requires opposite strict weight inequalities, so every selected sum has
 rank at least two; an endpoint weight attains two. Thus the printed
 certificate does not directly subsume rank-one projectivity under this
 reduction. It remains established measurement theory, and a different
-reduction is not ruled out. The Tomassoli thesis is still unread; obtaining
-that one PDF is a concrete useful request for human help.
+reduction is not ruled out. The user subsequently supplied the Tomassoli
+PDF, resolving that specific request for human help.
+
+## Tomassoli's full text: calibrated witnesses versus optimized readouts
+
+The [commit-pinned comparison](audits/TOMASSOLI_FULL_TEXT_COMPARISON.md)
+reads all 27 pages and visually checks the defining equations. Eq. (1.8),
+printed p. 6, fixes one scalar expectation on two qubits; Section 1.3,
+p. 7, fixes orthogonal Pauli readouts on both sides. Eq. (2.15), p. 15,
+gives [abs(s)-1]_+ for concurrence, also valid for twice ordinary
+negativity. Eq. (1.14), p. 9, instead defines ordinary negativity, so
+the printed negativity bound has a factor-two mismatch.
+
+The supplied exact extension fixes both XX and ZZ separately and
+minimizes E_F to G(x,z)=f([abs(x)+abs(z)-1]_+). Bell-diagonal states
+simultaneously minimize concurrence and ordinary negativity. All weighted
+calibrated witnesses have the same underlying geometry. At x=z=2/3,
+G=f(1/3)>0, whereas our arbitrary-readout gamma=C=0 via a product state.
+Thus this source does not evaluate C or its joint E_F/N frontier. Its
+Eq. (2.14), p. 15, does already give the (1,v) exact-axis generator.
+
+The source's reference 25, Eisert–Brandao–Audenaert quant-ph/0607167v4,
+Eq. (2), p. 2, and Eqs. (24)–(30), p. 4, already treats multiple fixed
+witness constraints and tight formation bounds. That machinery applies
+directly to our fixed qutrit pair. The candidate contribution must be the
+explicit evaluated profile, universality over readouts, and equality
+structure; having two parameters or using convex duality is not novelty.
+The thesis access gap is closed. Exhaustive subsumption, publication
+significance, and unrestricted memory optimality remain unresolved.

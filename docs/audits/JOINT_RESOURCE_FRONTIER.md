@@ -371,6 +371,14 @@ subsumed, sufficiently substantial, or publishable remains unresolved.
 The previously identified [Tomassoli thesis full-text gap](FORMATION_OPTIMIZERS_AND_PRIOR.md#4-source-gap-and-unrestricted-proof-status)
 also remains open; the source metadata cannot settle its mathematical content.
 
+**24 September full-text follow-up:** the user supplied the thesis.
+The [completed audit](TOMASSOLI_FULL_TEXT_COMPARISON.md) proves its
+strongest calibrated two-parameter extension and compares it to the
+frontier here. The calibrated problem always has simultaneous resource
+minimizers; it does not give this optimized-readout frontier. Its scalar
+boundary and exact-axis family are prior. This closes the specified
+access gap, not exhaustive subsumption.
+
 ## 6. Real encoders: one extra qubit, the same asymptotic rate
 
 **Proposition 4.** For the original real X/Z target effects, let q_C and

@@ -269,6 +269,11 @@ in (5). This is a specific comparison, not an exhaustive originality claim.
 The previously identified Tomassoli full-text gap remains unresolved.
 No new attempt to bypass its access restriction was made.
 
+**24 September follow-up:** the user subsequently supplied the PDF.
+The [full-text comparison](TOMASSOLI_FULL_TEXT_COMPARISON.md) closes
+this specific gap, with an exact calibrated benchmark and explicit
+prior axis-family overlap. Exhaustive originality remains unresolved.
+
 ## 4. Every full-rank two-input joint optimum is projective
 
 There is also an all-state structural deduction for the weaker joint-query

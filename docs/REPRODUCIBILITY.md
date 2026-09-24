@@ -393,8 +393,8 @@ pure-component converse, fixed qutrit pair, radial strictness and all
 dimension/equality cases. Primary-source review checked Verstraete–Wolf,
 Zhu–Zhang–Ma and Schneeloch–Howland at the locators recorded in
 [the dimension audit](audits/TWO_CORRELATION_FORMATION.md). Tomassoli's
-thesis was available only at metadata/abstract level; its unread full text
-remains an explicit source gap.
+thesis was available only at metadata/abstract level at that research
+base. The full-text comparison is now completed in the follow-up below.
 
 Independent reviews also checked both exact constructions in
 [the proof-method note](audits/ENTROPY_PROOF_RELAXATIONS.md): the classical
@@ -464,7 +464,8 @@ checked. These are internal proof reviews, not external peer review.
 
 Primary-source reads cover the versions and theorem locators stated in
 the report. Tomassoli's thesis and the 2012 Nakahira–Usuda rank theorem
-remain full-text gaps; no absence-of-prior-art conclusion is certified.
+were then full-text gaps; both have since been read in the follow-ups
+below. No absence-of-prior-art conclusion is certified.
 No large simulation or new solver output underlies the results, and the
 unchanged repository diagnostics were not rerun. Local links, whitespace,
 and the identities of LICENSE and the historical audit were checked.
@@ -678,3 +679,28 @@ the same [record](../results/curved_core_certificate.json). Earlier floating-
 point scalar probes motivated the reduction but are not its proof or part
 of the certificate. No large state simulation or solver is used. Local
 links, whitespace, LICENSE and historical-audit identities were checked.
+
+## User-supplied Tomassoli thesis: full-text comparison
+
+The [source audit](audits/TOMASSOLI_FULL_TEXT_COMPARISON.md) reviews
+main `c2857e9b912ceae47d3067a62aa1f07f4acb1cf2`. The user's 27-page,
+3,085,312-byte PDF has SHA-256
+`0c84d0246528c900559b678c54a1f63393f6d18e54be377b88fa653254c2b7ab`.
+It was read directly from the supplied attachment. Title and authorship
+match the institutional record; byte identity with an independently
+downloaded institutional copy was not asserted. No third-party PDF,
+render or extracted text is committed.
+
+All pages were read, with visual checks of defining and disputed equations
+against rendered pages. Two independent internal reconstructions checked
+the corrected scalar minima, Bell-diagonal two-parameter attainers, all
+weighted calibrated witnesses, rational product-state separator, exact-axis
+overlap and printed counterexamples. Eisert–Brandao–Audenaert's primary
+arXiv PDF was also read at the specified equation/page locators. These
+checks close the named source gap, not exhaustive originality.
+
+This is an exact proof and source-comparison change; it introduces no
+simulation or solver result. Unchanged entropy certificates were not
+rerun. Repository links, whitespace and protected-file identities were
+checked. Historical access-failure accounts are retained with follow-up
+links; the request for the thesis is resolved by the user's upload.
