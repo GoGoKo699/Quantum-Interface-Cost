@@ -773,3 +773,22 @@ the JSON byte-for-byte with Python 3.12.14 and NumPy 2.3.5. Unchanged
 entropy certificates were not rerun. Local links, whitespace, the LICENSE
 blob and the historical audit blob were checked. No primary-source PDFs,
 extracted text, or unreported numerical candidates are committed.
+
+## Full weighted decoder allocation
+
+The [follow-up proof](audits/WEIGHTED_DECODER_ALLOCATION.md) is pinned to
+`98fa6f4bb9849d6d8317cd93cc14626d288a9ec5`. Independent internal
+reconstructions checked the threshold-ordering lemma, strict triangularity
+over `F_2`, threshold equality, active-site restrictions, finite operator
+decomposition, zero and repeated deficits, endpoint budgets, sharp weighted
+attainment, and normalized Kraus transfer. This extends the full accuracy
+region from q=n-1 to every integer memory budget for the same explicit
+readout class. It needs no numerical optimizer or new computational gate.
+
+The simultaneous weighted-matching conjecture was not proved and is not
+used: different operator levels may have different matchings. The separate
+unrestricted balanced-sector attempt yielded no universal nonflat proof;
+an exact GHZ counterexample refutes one proposed intermediate shortcut.
+Neither that failed shortcut nor finite search evidence is a claim about
+the unrestricted optimum. Local links, whitespace, LICENSE and the original
+audit blob were checked. Unchanged numerical certificates were not rerun.
