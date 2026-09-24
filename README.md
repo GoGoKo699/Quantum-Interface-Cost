@@ -60,14 +60,21 @@ witness must meet all three complementary conditions stated in that report.
 These are further central-proof deductions; the remaining region is nonempty
 and unrestricted optimality is still open.
 
-A [shorter decoder proof and extended tail theorem](docs/audits/EXTENDED_CORE_TRANSFER.md)
-now lower the core-score threshold to `13/4` when bottom-two weight is
-at most `1/99`. Three anticommuting sets suffice for the decoder bound;
-an improved support-angle estimate transfers it to the entropy inequality.
-The entirely elementary version covers weight at most `1/201`; a small
-exact scalar certificate gives `1/99`. Larger tails and all-size optimality
-remain unresolved. The anticommutation method is established prior work,
-not an originality claim.
+A [finite-tail theorem](docs/audits/CURVED_CORE_TRANSFER.md) now lowers
+the core-score threshold to `13/4` throughout bottom-two weight at most
+`1/29`. It retains the paired X/Z gains and uses the imbalance between
+the two sites in the spectral bound. This extends the earlier
+[small-tail proof](docs/audits/EXTENDED_CORE_TRANSFER.md), whose simple
+decoder argument uses three anticommuting sets. Generic lower-score cores
+and all-size optimality remain unresolved. A separate
+[matrix lemma](docs/audits/FINITE_TAIL_STRUCTURE.md) gives squared concavity
+and finite tangent bounds without singular compression inverses.
+
+The [2012 Bayes-rank source comparison](docs/audits/BAYES_RANK_PRIOR_COMPARISON.md)
+is now complete: that theorem's entire weighted certificate gives rank
+two under the natural reduction, whereas our joint-decoder result gives
+rank one. This closes one specific comparison, not publication originality;
+the identified Tomassoli thesis remains unread.
 
 The latest source comparison proves that the full asymmetric formula is
 strictly stronger than the entire optimized weighted-CHSH formation-bound

@@ -569,9 +569,12 @@ Theorems 1–2, and Eldar–Megretski–Verghese quant-ph/0205178v1,
 Eqs. (24)–(27)/Theorem 2, directly supply the SDP and low-rank
 complementarity machinery. The new report excludes a common-positive-shift
 reduction to pure minimum-error hypotheses, but the sufficient rank
-condition in Nakahira–Usuda, PRA 86, 062305 (2012), remains unread in full.
-This is an explicit unresolved subsumption question, alongside the
-existing Tomassoli thesis gap.
+condition in Nakahira–Usuda, PRA 86, 062305 (2012), was initially unread.
+The [completed comparison](audits/BAYES_RANK_PRIOR_COMPARISON.md) now checks
+Theorem 2 and its entire weighted extension: under the natural Hamming
+ensemble, their best rank certificate is two, whereas our theorem proves
+rank one. This closes that specific comparison; other reductions and
+the existing Tomassoli thesis gap remain open.
 
 Preserve exact source versions, locators, timing, resource accounting and
 quantifiers in every further comparison. Absence from this ledger is not
@@ -661,3 +664,21 @@ supplied deductions. The source does not state the task's full sharp
 mixed-decoder envelope or two-parameter formation evaluation; their
 historical priority remains unverified. This focused comparison closes
 neither the existing unread-source gap nor the all-n entropy conjecture.
+
+## Nakahira–Usuda's full weighted rank theorem
+
+The official primary text of *Minimum-Bayes-cost discrimination for
+symmetric quantum states*, [PRA 86, 062305 (2012)](https://doi.org/10.1103/PhysRevA.86.062305),
+is now read. Theorem 2, Eqs. (8)–(9), printed p. 062305-2, and its
+weighted extension Eq. (14), p. 062305-3, apply without ensemble symmetry.
+For our prior-weighted pure hypotheses `sqrt(rho)Pi_t sqrt(rho)`, Remark 1
+gives the nonnegative Bayes matrix `C_st=(2-d_H(s,t))/4`.
+
+The [exact comparison](audits/BAYES_RANK_PRIOR_COMPARISON.md) exhausts
+all competing-decision weights. Excluding the two neighboring hypotheses
+requires opposite strict weight inequalities, so every selected sum has
+rank at least two; an endpoint weight attains two. Thus the printed
+certificate does not directly subsume rank-one projectivity under this
+reduction. It remains established measurement theory, and a different
+reduction is not ruled out. The Tomassoli thesis is still unread; obtaining
+that one PDF is a concrete useful request for human help.

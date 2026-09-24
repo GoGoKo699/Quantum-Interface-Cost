@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "arithmetic": "exact rational sparse polynomials",
+  "checks": [
+    "two-by-two-block characteristic polynomial",
+    "D_z-b C_z square identity, including complex off-diagonal modulus",
+    "Vieta discriminant factorization",
+    "scalar-root second derivative numerator",
+    "Bayes coefficient normalization",
+    "opposite strict weight inequalities and rank-two attainers for all four decisions"
+  ],
+  "scope": "Algebra supporting supplied analytical proofs; no uniform entropy or originality certificate."
+}

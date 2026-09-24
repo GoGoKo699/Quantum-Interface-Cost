@@ -10,6 +10,12 @@ Not external peer review, unrestricted optimality, or publication originality.
 This continues the historical [proof audit](PROOF_AND_NOVELTY_AUDIT.md)
 without rewriting it.
 
+**Later continuation on the same date:** the
+[curved-transfer proof](CURVED_CORE_TRANSFER.md) extends the `13/4` gate
+through the entire tail interval `epsilon<=1/29`. It supplies additional
+paired-query and imbalanced-spectral estimates. The small-tail proof and
+its limitations below are preserved as the preceding result.
+
 ## 1. Result and its limits
 
 For a complex two-qubit density matrix define

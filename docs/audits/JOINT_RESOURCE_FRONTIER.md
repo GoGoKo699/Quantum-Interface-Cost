@@ -489,6 +489,12 @@ Its primary abstract announces a sufficient rank condition for optimal
 Bayes measurements. Public retrieval did not supply the full theorem.
 Its relation to the signed-payoff argument is an explicit originality gap.
 
+**24 September follow-up:** the primary PDF is now read. The
+[Bayes-rank comparison](BAYES_RANK_PRIOR_COMPARISON.md) proves that
+Theorem 2, including all weights in Eq. (14), yields only rank at most
+two for the natural Hamming ensemble. This closes the specified unread
+theorem comparison; it is not an exhaustive originality certificate.
+
 Neither projectivity nor the new joint resource frontier bounds the
 entropy of a general two-qubit seed. The next exact local target remains
 

@@ -106,6 +106,8 @@ sets, credited to the prior correlation-complementarity method. It also
 supplies the additional angle and inverse analysis proving entropy validity
 for `g(sigma)>13/4` and tail weight at most `1/99`. This is not an extension
 over the old theorem's entire tail interval through `1/29`.
+The subsequent [curved-transfer proof](CURVED_CORE_TRANSFER.md) supplies
+that further extension, with additional finite-tail estimates.
 
 ## 5. Verification and remaining novelty boundary
 
