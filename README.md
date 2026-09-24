@@ -22,15 +22,19 @@ accuracies. The unrestricted three-input case remains open.
 A [Jordan-block converse](docs/audits/JORDAN_BLOCK_CONVERSE.md) now
 excludes every three-input seed of rank at most three from beating the
 two-retained-qubit benchmark, without a symmetry or spectrum assumption.
-The proof also closes four of the ten nonscalar ququart readout patterns.
-Any improvement in this block requires a nonflat rank-four seed, with
-six continuous signature patterns still unresolved.
+That proof closes four of the ten nonscalar ququart readout patterns.
+The [one-double-block converse](docs/audits/SINGLE_DOUBLE_BLOCK_CONVERSE.md)
+closes three more, for arbitrary complex orientations and unequal block
+angles. Any improvement in this block requires a nonflat rank-four seed
+and at least two optimal query pairs with two noncommuting Jordan blocks.
+Exactly three continuous signature patterns remain unresolved.
 
 The [spectral-budget extension](docs/audits/JORDAN_SPECTRAL_BUDGET.md)
 now retains every Jordan block and gives a scalar sufficient test for the
 benchmark, including families with two noncommuting blocks at every site.
 An exact obstruction shows why any finite penalty on only the most negative
-Bell vectors cannot finish the proof. All six sectors retain open regions.
+Bell vectors cannot finish the proof. The scalar test still excludes
+continuous regions in each of the three remaining patterns.
 
 A [sharp spin-flip purity bound](docs/audits/SPIN_FLIP_PURITY_BOUND.md)
 now excludes every invariant three-qubit seed of rank at most four,

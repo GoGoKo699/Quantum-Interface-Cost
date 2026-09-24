@@ -1,6 +1,6 @@
 # Q1 — Delayed local readout through a bounded quantum interface
 
-**Version:** 0.32, 2026-09-24
+**Version:** 0.33, 2026-09-24
 
 **Project:** Falling / Q1  
 **Status:** Baseline proofs and seed reduction independently checked within the audit workspace. The full product-diagonal profile rate has a constructive optimizer and evaluates an established steering entanglement measure. It exceeds the inspected affine weighted-CHSH formation bounds, but the nonlinear-source follow-up now derives its full mixed-state support and joint-resource convex-hull characterization from prior inequalities. The candidate contribution is the explicit evaluation, equality analysis and operational consequences. The unrestricted rate equals regularized formation of a local-query assemblage, whose distinction from full tensor-product assemblages is explicit. The complete two-qubit entropy inequality, general common-accuracy rate evaluation and publication novelty remain unresolved. This is a research dossier, not external peer review or a claim of a new framework.
@@ -34,16 +34,21 @@ The [Jordan-block converse](docs/audits/JORDAN_BLOCK_CONVERSE.md) proves
 `Gamma(3,3)<=4+sqrt(2)` for all complex rank-at-most-three seeds,
 including arbitrary nonuniform spectra and full trace-norm scores.
 It also excludes four of the ten nonscalar ququart signature patterns.
-A strict improvement at `(n,q)=(3,2)` requires a nonflat rank-four seed
-and a readout pair with two noncommuting Jordan blocks. Six signature
-patterns, the entropy bound, and unrestricted rate optimality remain open.
+A strict improvement at `(n,q)=(3,2)` requires a nonflat rank-four seed.
+The [one-double-block converse](docs/audits/SINGLE_DOUBLE_BLOCK_CONVERSE.md)
+now closes three more complete patterns, allowing arbitrary complex
+orientations and unequal Jordan angles. Any improvement requires at
+least two optimal query pairs with two noncommuting blocks. Three
+signature patterns, the entropy bound, and unrestricted rate optimality
+remain open.
 
 The [all-block spectral certificate](docs/audits/JORDAN_SPECTRAL_BUDGET.md)
-extends the converse to explicit continuous families in all six remaining
-sectors. It keeps actual block excesses and reduces a comparison-matrix
-bound to one scalar test. Its failure does not imply a physical violation.
+extends the converse to explicit continuous families, including in all
+three still-unresolved sectors. It keeps actual block excesses and reduces
+a comparison-matrix bound to one scalar test. Its failure does not imply a physical violation.
 The proposed repair using only negative top eigenvectors is false for every
-finite penalty coefficient. No additional whole sector or general rate is settled.
+finite penalty coefficient. That certificate alone did not settle an
+additional whole sector or the general rate.
 
 ## 1. Origin, scope, and claim ledger
 
@@ -65,8 +70,9 @@ The general compression problem below is already present in the dimensional meas
 | Common Kramers-odd ququart readout class has exact uniform score 2sqrt(6) | Derived and independently checked via a symmetry-fixed extremal eigenvector; arbitrary original seeds allowed, but not every balanced readout family shares this symmetry. |
 | Every common antiunitary-odd ququart binary-readout class obeys 2||w||_2, with classwide uniform maximum 2sqrt(6) | Derived and independently checked: +I reduces to two commuting Pauli algebras and qubit monogamy; nonscalar squares reduce to blocks of dimension at most two. General Hermitian contractions are included; arbitrary balanced readouts remain open. |
 | Every three-input seed of rank at most three obeys Gamma(3,3)<=4+sqrt(2) | Derived and independently checked for arbitrary spectra and full trace norms, with no antiunitary condition; the complete weighted two-site-retention support is an upper bound, not an evaluated qutrit optimum. |
-| Four of ten nonscalar ququart signature patterns obey the retention benchmark | Derived and independently checked from one noncommuting Jordan block per pair and a prior Bell-projector overlap method; six patterns remain unresolved. |
-| Arbitrary reflection families admit an all-Jordan-block scalar spectral certificate | Derived and independently checked; actual excesses and same-site orthogonality give a sufficient bound, including genuinely double-block ququart families. All six signature sectors retain unresolved regions. |
+| Seven of ten nonscalar ququart signature patterns obey the retention benchmark | Derived and independently checked: the one-block theorem excludes four, and the positive-spectrum resolvent argument excludes three more. Exactly three remain unresolved. |
+| At most one double-block query pair obeys the three-input retention benchmark | Derived and independently checked for arbitrary complex orientations and unequal angles; uses an established mixed-Choi monogamy corollary plus two simultaneous compression bounds. |
+| Arbitrary reflection families admit an all-Jordan-block scalar spectral certificate | Derived and independently checked; actual excesses and same-site orthogonality give a sufficient bound, including regions in all three remaining ququart patterns. |
 | A finite negative-top Bell-projector penalty repairs the bound two | Incorrect for every finite coefficient at least one; exact signed spectra on the existing mixed-rank example. This refutes the relaxation, not the interface conjecture. |
 | Entropy bound for product-diagonal Gram matrices | Derived and independently checked, allowing correlated spectra and arbitrary local bases; does not restrict unrestricted encoders. |
 | Entropic finite-error lower bound | Direct application of Berta et al. [4], Fano, and conditional-entropy inequalities. |

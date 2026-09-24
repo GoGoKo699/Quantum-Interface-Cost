@@ -821,3 +821,45 @@ representation as a qubit subsystem; site-dependent subsystem choices
 remain unconstrained. The supplied all-block Gram application and exact
 failure of every finite negative-top penalty do not establish publication
 originality or unrestricted optimality.
+
+## One double-block pair: full-spectrum converse and prior Choi bound
+
+The [full-spectrum continuation](audits/SINGLE_DOUBLE_BLOCK_CONVERSE.md)
+excludes the three entire patterns `(22)(11)^2`, `(22)(11)(12)`, and
+`(22)(12)^2`. Combined with the earlier four-pattern exclusion, three
+nonscalar signatures remain unresolved. Its supplied deduction is the
+positive-spectrum resolvent estimate and its interface application;
+the mixed qubit-Choi inequality used inside it is a prior-theorem corollary.
+
+Specifically, let A,C,B all have dimension d and let the positive,
+trace-one operators rho_AB and sigma_CB obey
+`Tr_B rho=I_A/d` and `Tr_B sigma=I_C/d`. In the output-first Choi
+convention, `J(T)=d rho` and `J(U)=d sigma` define unital completely
+positive maps. Applying `T_A tensor U_C tensor id_B` to the pure
+Bell-star inequality gives
+`rho_AB+sigma_CB<=(1+1/d)I`, with spectator identities understood.
+The maps act on different leaves. No simultaneous choice of memory
+factors, pure-state decomposition into Bell vectors, or unital
+Schrodinger-picture channel is required.
+
+The pure inequality is supplied by Jorquera et al.,
+[2410.15544v4](https://arxiv.org/pdf/2410.15544), Proposition 3.6,
+Eq. (18), printed p. 8, specialized to two edges. These locators refer
+to the PDF marked 20 April 2026. The pullback establishes an ordinary
+operator inequality; no extension of its pseudo-density/SOS certificate
+is asserted. At d=2 this yields the mixed-Choi bound 3/2 and, after
+the report's compression identity, the required bound 3/4.
+
+Renes, *Better bounds on optimal measurement and entanglement recovery,
+with applications to uncertainty and monogamy relations*, PRA 96, 042328
+(2017), [1707.01114v1](https://arxiv.org/pdf/1707.01114), Section 3.2,
+Eqs. (17)–(18), printed p. 4, independently supplies a stronger
+local-recovery fidelity region. Taking the recovery channels to be
+the adjoints of T and U gives the same sum bound. The retrieved arXiv
+version is dated 4 July 2017; its equation numbering is used here.
+
+The report also supplies a direct Kraus/Gram proof for arbitrary center
+dimension. The equal-dimensional pullback above does not by itself
+subsume that broader formulation; its priority is not established.
+Neither formulation evaluates unrestricted `Gamma(3,4)` or the general
+equal-accuracy rate. Publication originality remains unresolved.
