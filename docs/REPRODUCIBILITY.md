@@ -1156,3 +1156,40 @@ byte-for-byte. Its source SHA-256 is
 These checks support the stated local calculation. They do not prove
 the arbitrary-subsystem conjecture, classify remote equality cases,
 or establish publication originality.
+
+## Exact last-query resolvent
+
+The [readout-elimination report](audits/EXACT_LAST_QUERY_RESOLVENT.md)
+is pinned to main `3befc9a6ad1ec64859ffd5d36a4a98ea32488cf9`. Run:
+
+```bash
+python tools/check_last_query_resolvent.py --output results/last_query_resolvent.json
+```
+
+Six inverse identities and 24 quartic identities are checked with exact
+rational arithmetic. Floating checks include 16 Jordan inverse identities,
+64 quartic identities, 64 attaining constructions in memory dimensions
+2, 4, 6, 8, all 1,984 small matching comparisons, 128 contraction-convexity
+comparisons, and four explicit passing/failing rank-one updates. Complex
+memory rotations, zero eigenvalues, scalar blocks, interior cubic roots
+and clipped endpoints are included. No optimizer or large simulation is
+used. The support-value bisections approximate the analytic decision rule;
+they are not interval certificates.
+
+All checks passed with Python 3.12.14 and NumPy 2.3.5, seed 2026092507,
+and floating tolerance 2e-9. The maximum absolute residual was
+1.971756091734278e-13; the minimum comparison margin was
+-1.7763568394002505e-15. Source SHA-256:
+`c2cce42590e62ca89c94020f73dcf69a9484b8d6d40ebaecefa43f7d6c8b0084`.
+An independent internal reviewer checked the proof and verifier. The final
+repository script was rerun into a separate scratch output and reproduced
+the recorded JSON byte-for-byte. Cross-platform results need only meet the
+stated tolerance. Source-overwrite and optimized-Python invocation guards
+are present.
+
+The theorem supplies the continuous optimization argument; these finite
+checks do not prove it. The two Bell-budget counterexamples in Section 10
+were independently reconstructed using exact amplitudes, without expanding
+their large reference spaces. No complete remaining signature,
+unrestricted equal-accuracy optimum, or publication priority is certified.
+Unchanged diagnostics were not rerun.

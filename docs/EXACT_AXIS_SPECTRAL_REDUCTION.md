@@ -444,11 +444,11 @@ Bollobas--Lee--Letzter, *Eigenvalues of subgraphs of the cube*,
 [author manuscript](https://www.homepages.ucl.ac.uk/~ucahsle/papers/cube-evals.pdf),
 dated 7 August 2020, Theorem 2 on printed p. 3, proves the star bound
 for induced subgraphs with m vertices in an n-dimensional cube when
-`105<=m<=n`. Combining that established theorem with (2) gives
+`100000<=m<=n`. Combining that established theorem with (2) gives
 
 $$
 \boxed{z_{\max}(n,D\mid X\text{ exact})=\frac{\sqrt{D-1}}n,
-\qquad105\le D\le n.}
+\qquad100000\le D\le n.}
 \tag{26}
 $$
 
@@ -459,15 +459,20 @@ support. The prior bound therefore controls every support allowed in
 Lambda. A D-vertex star exists because `D-1<=n`, attains `sqrt(D-1)`,
 and Section 2 equalizes its coordinate contrasts, proving equality.
 
-For `D=2^q`, `q>=7`, and `n>=2^q`, this gives the exact law
+For `D=2^q`, `q>=17`, and `n>=2^q`, this gives the exact law
 `z_max=sqrt(2^q-1)/n`. The subclass (17) on this face has exact optimum
-`q/n`, so the gap is strict. Here `2^q-1>q^2` follows at q=7 and
+`q/n`, so the gap is strict. Here `2^q-1>q^2` follows at q=17 and
 persists by induction since the increment `2^q` exceeds `2q+1`.
 
 **Version qualification.** Theorem 2 in
 [arXiv:1605.06360v1](https://arxiv.org/pdf/1605.06360v1), whose arXiv
-stamp is 20 May 2016, instead prints the literal threshold 103. The
-later author manuscript prints 105. We use the common range `D>=105`.
+stamp is 20 May 2016, prints `10^3=1000`. The later author manuscript
+prints `10^5=100000`. We use the common range `D>=100000`.
+The earlier repository text lost both superscripts, incorrectly stating
+103 and 105 and extending this corollary to `q>=7`. The graph-theorem
+corollary supports `q>=17`; its previous wider range is withdrawn, not
+proved false. The elementary star-versus-retention separation itself
+requires no graph upper bound.
 Neither range covers the 31-input, 32-dimensional example: it also
 fails `D<=n`. That example's construction and separation require no
 graph optimality theorem.

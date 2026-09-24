@@ -1,7 +1,7 @@
 # Status and claim ledger
 
-Updated: 2026-09-24. Stage: the [local Bell-subspace stability theorem](audits/BELL_SUBSPACE_LOCAL_STABILITY.md) proves a quantitative open neighborhood around the known 5/2 attainers for all eighteen transverse subsystem directions. Its exact negative Hessian and explicit remainder establish lambda_max<=5/2-epsilon^2/16 at epsilon<=2^-10. The physical consequence retains the equal-within-pair block-spectrum hypothesis. The individual optimized recovery functional is prior work; an exact counterexample refutes an additive min-entropy dimension shortcut. Distant subsystem geometries, unequal block spectra, and all three complete remaining signature patterns remain unresolved. A strict unrestricted improvement still requires a nonflat rank-four seed, at least two double-block optimal pairs, and all three query algebras pairwise noncommuting. Unrestricted equal-accuracy optimality and publication originality remain unresolved; the prior nonlinear-CHSH subsumption remains in force.
-Latest research base: `6612c8fb66eed17be00b4df12b74663236e7a86e`, the merge of PR #39.
+Updated: 2026-09-24. Stage: the [exact last-site readout reduction](audits/EXACT_LAST_QUERY_RESOLVENT.md) eliminates all added binary decoder matrices, orientations and Jordan angles in every even memory dimension. Extreme spectral pairing and a convex-quartic test with one cubic root give the exact worst weighted resolvent. The resulting condition is exact for the stated rank-one spectral upper bound; the joint constraint on the earlier spectrum and its actual top memory marginal remains unproved. A simple exact subsystem construction refutes a proposed general logarithmic Bell-recovery budget but does not violate the original X/Z benchmark. The preceding local stability theorem remains valid. All three complete signature patterns, unrestricted equal-accuracy optimality and publication originality remain unresolved; the prior nonlinear-CHSH subsumption remains in force.
+Latest research base: `3befc9a6ad1ec64859ffd5d36a4a98ea32488cf9`, the merge of PR #40.
 
 Critical assessment base: `81bcfefb2b545742d513c4f51364a7f72972451e`, the
 merge of PR #11. The [publication and optimality assessment](audits/PUBLICATION_AND_OPTIMALITY_ASSESSMENT.md)
@@ -47,6 +47,8 @@ is asserted.
 | Two sharp internally anticommuting pairs with two mixed cross commutators zero forbid an advantage | Derived and independently checked; complete ququart classification and a maximally entangled top vector permit an unrestricted third pair | audits/NONCOMMUTING_QUERY_FAMILIES.md Section 7 |
 | Three partial-SWAP Bell-subspace projectors obey the sharp sum bound 5/2 | Derived and independently checked, including all equality cases; the physical converse also assumes equal spectra within each site's two Jordan blocks | audits/NONCOMMUTING_QUERY_FAMILIES.md Sections 1–6 |
 | Every sufficiently small change of subsystem geometry around the known projector attainers obeys the 5/2 bound | Derived and independently checked in all eighteen transverse directions; exact negative quadratic form and radius 2^-10. No global optimality or global rigidity statement | audits/BELL_SUBSPACE_LOCAL_STABILITY.md Sections 1–5 |
+| Exact worst rho-weighted resolvent of one original site's X/Z decoder pair in every even memory dimension | Derived and independently checked for all Hermitian contractions: extreme eigenvalue pairing and a convex quartic eliminate the decoder optimization; the corresponding rank-one spectral criterion is sufficient for the original Hamiltonian | audits/EXACT_LAST_QUERY_RESOLVENT.md |
+| General subsystem Bell-projector budget sum_i P_i<=(n+log_2 M)I/2 | Incorrect: an exact n=64, M=128 construction has expectation 36>71/2. Its original X/Z score is below the retention benchmark | audits/EXACT_LAST_QUERY_RESOLVENT.md |
 | Sum_i H_min(R_i given Q)>=-log_2(dim Q) for arbitrary three-qubit references | Incorrect, including pure global states at dim Q=4; an exact recovery construction gives a product at least 9/2>4 | audits/BELL_SUBSPACE_LOCAL_STABILITY.md |
 | All Jordan blocks give a weighted scalar certificate B(Lambda)<=1 for norm(H)<=sum r_i+Lambda | Derived and independently checked for arbitrary reflection pairs and memory dimension; positive Lambda must exceed every excess. Exact equivalence for the comparison matrix, sufficient only for the physical Hamiltonian | audits/JORDAN_SPECTRAL_BUDGET.md Sections 1–2 |
 | At n=3,D=4, sum_i (x_i+y_i-x_i y_i)/(4-x_i-y_i)<=1 excludes a benchmark violation | Derived and independently checked; x_i,y_i are actual block excesses divided by 2-sqrt(2), padded by zero. Covers open double-block families beyond the triangle bound; this scalar test alone did not close a full sector | audits/JORDAN_SPECTRAL_BUDGET.md Section 3 |
@@ -84,7 +86,7 @@ is asserted.
 | Exact-axis optimum z_max=Lambda(n,D)/n | Derived and independently checked; unrestricted collective encoders reduce to an established induced-cube spectral problem, with a complete translation instrument | EXACT_AXIS_SPECTRAL_REDUCTION.md |
 | Original-site-retention region sum_i w(x_i,z_i)<=q | Derived and independently checked for the explicitly defined full comparison class, including joint measurements of discarded sites | EXACT_AXIS_SPECTRAL_REDUCTION.md |
 | Strict collective advantage for unequal X/Z accuracies at n=31,q=5 | Explicit construction and analytical separation, also at X contrast 9999/10000 and Z contrast 1/sqrt(31); no optimality claim at this size | EXACT_AXIS_SPECTRAL_REDUCTION.md |
-| Exact-axis value sqrt(D-1)/n for 105<=D<=n | Corollary of the supplied operational reduction and established Bollobás–Lee–Letzter Theorem 2 | EXACT_AXIS_SPECTRAL_REDUCTION.md |
+| Exact-axis value sqrt(D-1)/n for 100000<=D<=n | Corollary of the supplied operational reduction and established Bollobás–Lee–Letzter Theorem 2; lost-superscript threshold corrected | EXACT_AXIS_SPECTRAL_REDUCTION.md |
 | Exact-axis asymptotic rate R_X(z)=h_2((1-sqrt(1-z^2))/2) | Derived and independently checked operational corollary; scalar curve and asymptotic cube spectrum are established prior results, also matching known dephasing-channel cost | EXACT_AXIS_RATE.md |
 | Exact rate C(x,z) for product-diagonal refined Kraus Grams | Derived and independently checked; arbitrary correlated spectra and branch-dependent local bases allowed; fixed-cap implementation from compatibility-disk and exact-axis generators | PRODUCT_DIAGONAL_PROFILE_RATE.md |
 | Complete constructive optimizer for C throughout the strict-saving phase | Derived and independently reconstructed: one scalar equation specifies the unique reduced two-generator mixture. No uniqueness of physical encoders or unrestricted rate claim | PRODUCT_DIAGONAL_PROFILE_RATE.md Section 5.1 |
@@ -302,8 +304,10 @@ The common-accuracy target and its entropy conjecture are not refuted.
 The graph optimization, star spectrum, local compatibility disk and local
 weight are prior ingredients. Combining the reduction with
 Bollobás–Lee–Letzter's established theorem gives an exact operational value
-`sqrt(D-1)/n` for `105<=D<=n`. The final author version uses 105; the earlier
-arXiv v1 uses 103. The stated common range avoids relying on the difference.
+`sqrt(D-1)/n` for `100000<=D<=n`. The final author version uses
+`10^5=100000`; arXiv v1 uses `10^3=1000`. The earlier transcription as
+105 and 103 lost the superscripts and overstated this corollary's range.
+The corrected common range avoids relying on the version difference.
 The n=31,D=32 example falls outside that theorem's range and is not claimed
 optimal. Other inspected partial-compatibility and distributed-sampling
 frameworks are distinguished at the theorem level in the proof note.
