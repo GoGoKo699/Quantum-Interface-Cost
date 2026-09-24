@@ -771,3 +771,15 @@ three-qubit conjugation family and individual fidelity roofs. The
 corrected version was checked. The supplied joint six-score purity
 inequality and its readout consequence are separate deductions;
 exhaustive originality and publication significance remain unresolved.
+
+## Every common antiunitary readout symmetry
+
+The [extension](audits/ANTIUNITARY_READOUT_BOUND.md) combines the preceding
+spin-flip result with an explicit Pauli-algebra reduction and Cheng–Hall's
+established independently optimized, mixed-three-qubit monogamy inequality
+(1610.09302v3, Eqs. (13)–(14), p. 3). It covers square +I and nonscalar
+squares, as well as general odd Hermitian contractions. The qubit theorem
+is invoked only after a valid reduction of the readouts or memory blocks.
+The supplied deduction is the resulting common-antiunitary bound; no new
+monogamy principle or exhaustive priority claim is made. The full balanced
+sector remains outside the conclusion.
