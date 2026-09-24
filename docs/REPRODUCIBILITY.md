@@ -1127,3 +1127,32 @@ and reproduced the recorded JSON byte-for-byte. These finite checks
 and exact coefficient calculations do not prove arbitrary-U(4)
 geometry, a complete remaining signature, unrestricted optimality,
 or originality. No optimizer or large simulation was used.
+
+## Local Bell-subspace stability
+
+The [local theorem](audits/BELL_SUBSPACE_LOCAL_STABILITY.md) is pinned to
+`6612c8fb66eed17be00b4df12b74663236e7a86e`. Run:
+
+```bash
+python tools/check_subsystem_local_stability.py --output results/subsystem_local_stability.json
+```
+
+The script reconstructs the five-qubit projectors with exact rational
+matrix arithmetic. It checks 27 identities, including the reduced
+resolvent and five Hessian substitutions. The curvature minor and
+determinant, rational Schur-remainder constant, and radius `1/1024`
+are checked exactly. The accompanying proof supplies the continuous
+symmetry, complete coordinate chart and inverse estimates; those steps
+are not consequences of finite sampling.
+
+Eight prescribed 32-dimensional constructions, four using general
+complex memory interactions, check the quantitative gap at radii
+`2^-10` or `2^-11`. They use NumPy seed 20260924 and tolerance `2e-12`,
+without optimization. All passed with Python 3.12.14 and NumPy 2.3.5.
+The repository script independently reproduced the author's JSON
+byte-for-byte. Its source SHA-256 is
+`90650b9814d37964d3b89f969ea588677b5397bbd9dfae08711f57a885144d38`.
+
+These checks support the stated local calculation. They do not prove
+the arbitrary-subsystem conjecture, classify remote equality cases,
+or establish publication originality.

@@ -934,3 +934,27 @@ This does not establish that either finite theorem is absent from all
 prior work. Arbitrary independent subsystem embeddings, all three
 complete remaining signatures, unrestricted equal-accuracy optimality,
 and publication originality remain open.
+
+## Individual subsystem recovery and local stability
+
+The [local stability report](audits/BELL_SUBSPACE_LOCAL_STABILITY.md)
+adds an exact eighteen-direction Hessian and an explicit neighborhood
+around the known Bell-subspace attainers. It also sharpens attribution:
+Zhao, *Phys. Rev. A* **91**, 012310 (2015), Eq. (17), already defines
+the individual optimized ququart-to-qubit subsystem-recovery objective.
+Gour–Wallach, arXiv:0704.0251v2, Proposition 3 and Corollary 4, supply
+the relevant maximally entangled subspace structure. The report gives
+the explicit dimension substitutions and primary-source links.
+
+König–Renner–Schaffner's Theorem 2 identifies general-channel recovery
+with conditional min-entropy. It does not supply the missing three-query
+dimension inequality; a proposed additive min-entropy shortcut is
+refuted by an exact state in the report. General-channel recovery is
+an enlargement of the unitary-plus-discard class.
+
+The new theorem proves local quadratic decay, without a claim that
+every nearly optimal configuration is close to the known orbit.
+It is not subsumed by the particular monogamy-game rigidity theorem
+compared in the report, but this focused comparison does not certify
+priority. Global arbitrary-subsystem optimality and publication
+originality remain open.
