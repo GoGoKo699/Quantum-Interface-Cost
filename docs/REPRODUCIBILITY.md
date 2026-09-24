@@ -47,6 +47,7 @@ python tools/certify_extended_core.py
 python tools/check_finite_tail_structure.py
 python tools/certify_curved_core.py
 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python tools/check_three_input_decoders.py --output results/three-input-rerun.json
+python tools/check_spin_flip_purity.py --output results/spin-flip-purity-rerun.json
 ```
 
 The bootstrap environment was Python 3.13.5 and NumPy 2.3.5. The audit
@@ -792,3 +793,40 @@ an exact GHZ counterexample refutes one proposed intermediate shortcut.
 Neither that failed shortcut nor finite search evidence is a claim about
 the unrestricted optimum. Local links, whitespace, LICENSE and the original
 audit blob were checked. Unchanged numerical certificates were not rerun.
+
+## Sharp spin-flip purity bound
+
+The [proof](audits/SPIN_FLIP_PURITY_BOUND.md) is pinned to main
+`e97d0d4a164c73c8ce1d945febadc1d267c0b6d5`. Independent internal
+reconstructions checked the Kramers-paired spectrum, rank-two completion,
+support determinant identity, every quadratic coefficient, the exact
+sum-of-squares certificate, sharpness at every allowed purity, the
+symmetry-fixed extremal eigenvector argument, and the complete Pauli-orbit
+instrument. The primary-source comparison checks the published Uhlmann
+paper and corrected arXiv version at the specified equation/page locators.
+This is internal review, not external peer review or a priority certificate.
+
+`tools/check_spin_flip_purity.py` records 47 constructions in
+`results/spin_flip_purity.json`: eight deterministic complex Kramers
+supports at five spectral imbalances, five members of the exact
+all-purity attaining family, one cyclic uniform attainer, and one
+deliberately nonsymmetric negative control. The 46 invariant states
+include rank-two endpoints. The negative control's squared-score sum is
+five against an inapplicable bound of four; it tests the scope of the
+hypothesis and is excluded from the theorem residual.
+
+The checks passed with Python 3.12.14, NumPy 2.3.5, random seed
+2026092403, tolerance 1e-10 and spectral-zero threshold 1e-14. The
+imbalances are -1, -0.37, 0, 0.4 and 1; the largest matrices have dimension
+eight. Square-root reconstruction is checked after clipping numerical
+zeros. Maximum identity error: 7.105427357601002e-15. Maximum positive
+inequality residual: 3.1086244689504383e-15. The source SHA-256 is
+`e5eff393daacd668fec2e7755bad97a2b221f4a137494741627df59e6d4160b9`.
+The parent workspace independently reran the script and reproduced the
+JSON byte-for-byte. No optimization or broad search is performed.
+
+Finite checks do not establish the symbolic theorem, unrestricted
+optimality, or publication novelty. Unchanged numerical certificates were
+not rerun. Local links, whitespace, LICENSE and the original audit blob
+were checked. No third-party PDF, extracted source text or private
+exploratory material is committed.

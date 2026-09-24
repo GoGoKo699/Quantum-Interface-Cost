@@ -1,7 +1,7 @@
 # Status and claim ledger
 
-Updated: 2026-09-24. Stage: the [weighted decoder theorem](audits/WEIGHTED_DECODER_ALLOCATION.md) proves the full retention accuracy region at every n,q for pairwise commuting/anticommuting reflection readouts, with unrestricted encoders. A threshold matching lemma and finite operator levels give all nonnegative weighted supports. The unrestricted three-input case still has ten continuous decoder sectors; no universal nonflat sector bound or violating seed was obtained. Unrestricted equal-accuracy optimality and publication originality remain open. The prior nonlinear-CHSH subsumption remains in force.
-Latest research base: `98fa6f4bb9849d6d8317cd93cc14626d288a9ec5`, the merge of PR #31.
+Updated: 2026-09-24. Stage: the [spin-flip purity theorem](audits/SPIN_FLIP_PURITY_BOUND.md) proves the sharp six-score bound 5-4 Tr(rho^2) for invariant three-qubit states of rank at most four, including nonuniform spectra. It also gives exact score 2sqrt(6) for the continuous common-Kramers-odd readout class. The earlier all-budget weighted theorem remains valid under its separate readout-algebra condition. Neither class exhausts arbitrary readouts: unrestricted equal-accuracy optimality and publication originality remain open. The prior nonlinear-CHSH subsumption remains in force.
+Latest research base: `e97d0d4a164c73c8ce1d945febadc1d267c0b6d5`, the merge of PR #32.
 
 Critical assessment base: `81bcfefb2b545742d513c4f51364a7f72972451e`, the
 merge of PR #11. The [publication and optimality assessment](audits/PUBLICATION_AND_OPTIMALITY_ASSESSMENT.md)
@@ -39,6 +39,8 @@ is asserted.
 | Exact equal-accuracy retention bound at every n,q with pairwise commuting/anticommuting reflection readouts | Derived and independently checked from prior graph-Clifford rank and elementary matching; arbitrary encoders, explicit decoder hypothesis | audits/DECODER_ALGEBRA_AND_THREE_INPUT.md |
 | Full region sum_i w(x_i,z_i)<=q under that readout hypothesis at every n,q | Derived and independently checked; threshold matching, finite operator levels, and retention attainment give every nonnegative weighted support | audits/WEIGHTED_DECODER_ALLOCATION.md |
 | Unrestricted Gamma(3,4) is the maximum of the subset value and ten nonscalar reflection-sector optima | Exact discrete reduction; the continuous optimizations remain unresolved. 248 bounded numerical starts found no violation | audits/DECODER_ALGEBRA_AND_THREE_INPUT.md; results/three_input_decoders.json |
+| Spin-flip invariant three-qubit rank-at-most-four states satisfy sum_j f_j^2<=5-4 Tr(rho^2) | Derived and independently checked by an exact sum-of-squares identity; equality at every allowed purity, and g<=2sqrt(6) excludes a finite-budget advantage in this class | audits/SPIN_FLIP_PURITY_BOUND.md |
+| Ququart readouts odd under a common antiunitary of square -I have norm bound 2||w||_2 and exact uniform score 2sqrt(6) | Derived and independently checked; no pairwise commutation assumption, arbitrary actual seeds; common symmetry is an explicit restriction | audits/SPIN_FLIP_PURITY_BOUND.md Section 5 |
 | Local incompatibility weight and orthogonal-qubit compatibility disk | Established resource measure and joint-measurability criterion; exact noisy-pair value derived geometrically | ONE_QUBIT_ALLOCATION_REGION.md Section 7 |
 | All maximizing one-qubit seeds retain one site and project the rest onto product bisectors, up to output unitaries | Derived equality characterization; independently checked | ONE_QUBIT_OPTIMALITY.md Section 5 |
 | g(L)<=sqrt(2)n+(2-sqrt(2))S(L^dagger L) for product-diagonal Gram matrices | Derived and independently checked; arbitrary correlated spectra and local bases allowed; restricted-family result | COMMUTING_SEED_BOUND.md |

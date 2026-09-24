@@ -20,6 +20,12 @@ weight decomposition give every weighted support, including unequal
 accuracies. The unrestricted three-input case still has ten continuous
 decoder sectors and remains open.
 
+A [sharp spin-flip purity bound](docs/audits/SPIN_FLIP_PURITY_BOUND.md)
+now excludes every invariant three-qubit seed of rank at most four,
+including nonuniform spectra. Its sum-of-squares proof also settles a
+continuous class of readouts sharing a common Kramers antiunitary.
+General readouts need not have that symmetry.
+
 **Status (24 September 2026): research in progress, not a manuscript or a
 novelty-certified result.** The baseline proofs and seed reduction have passed
 an independent workspace audit, including primary-source comparisons. Further
