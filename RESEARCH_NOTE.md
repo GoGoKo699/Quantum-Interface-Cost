@@ -1,9 +1,14 @@
 # Q1 — Delayed local readout through a bounded quantum interface
 
-**Version:** 0.25, 2026-09-24
+**Version:** 0.26, 2026-09-24
 
 **Project:** Falling / Q1  
 **Status:** Baseline proofs and seed reduction independently checked within the audit workspace. The full product-diagonal profile rate has a constructive optimizer and evaluates an established steering entanglement measure. It exceeds the inspected affine weighted-CHSH formation bounds, but the nonlinear-source follow-up now derives its full mixed-state support and joint-resource convex-hull characterization from prior inequalities. The candidate contribution is the explicit evaluation, equality analysis and operational consequences. The unrestricted rate equals regularized formation of a local-query assemblage, whose distinction from full tensor-product assemblages is explicit. The complete two-qubit entropy inequality, general common-accuracy rate evaluation and publication novelty remain unresolved. This is a research dossier, not external peer review or a claim of a new framework.
+
+The [short core argument](docs/CORE_ARGUMENT.md) isolates the exact one-qubit
+allocation theorem and a finite collective advantage for unequal accuracies,
+with self-contained proofs and primary-source attribution. This presentation
+does not change the theorem ledger or assert publication originality.
 
 ## 1. Origin, scope, and claim ledger
 

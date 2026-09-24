@@ -1,7 +1,7 @@
 # Status and claim ledger
 
-Updated: 2026-09-24. Stage: nonlinear weighted-CHSH prior bounds are shown to imply the full mixed-state support and joint-resource convex-hull characterization. The candidate novelty is narrowed to explicit evaluation, equality analysis and operational consequences. Unrestricted optimality and publication originality remain open.
-Latest research base: `ac0bf7cebd5a8a346d8b64371edab7b2c30ca271`, the merge of PR #28.
+Updated: 2026-09-24. Stage: a [short core argument](CORE_ARGUMENT.md) now presents the exact one-qubit allocation theorem and a finite collective advantage for unequal accuracies, with proofs and explicit prior attribution. The nonlinear weighted-CHSH subsumption remains in force: full mixed-state support and the abstract joint-resource hull follow from prior inequalities. Unrestricted equal-accuracy optimality and publication originality remain open.
+Latest research base: `e197699d87171635028d1639e025c8e5759e5c68`, the merge of PR #29.
 
 Critical assessment base: `81bcfefb2b545742d513c4f51364a7f72972451e`, the
 merge of PR #11. The [publication and optimality assessment](audits/PUBLICATION_AND_OPTIMALITY_ASSESSMENT.md)

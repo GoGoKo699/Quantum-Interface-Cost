@@ -7,6 +7,11 @@ for just one local X or Z readout, but the question is not known when the first
 module must release the input. How many qubits must cross that interface if
 classical records are free?
 
+**Read the [short core argument](docs/CORE_ARGUMENT.md):** one retained
+qubit has an exact allocation rule, while a five-qubit collective encoder
+beats original-site retention for unequal accuracies. The note supplies
+both proofs and identifies their established ingredients.
+
 **Status (24 September 2026): research in progress, not a manuscript or a
 novelty-certified result.** The baseline proofs and seed reduction have passed
 an independent workspace audit, including primary-source comparisons. Further
@@ -152,6 +157,7 @@ supplied evaluations.
 
 | Purpose | Read |
 |---|---|
+| Short theorem-led argument with proofs and prior attribution | [Core argument](docs/CORE_ARGUMENT.md) |
 | Exact assumptions and baseline proofs | [RESEARCH_NOTE.md](RESEARCH_NOTE.md), Sections 2–7 |
 | What is established, derived, or still a target | [STATUS](docs/STATUS.md) |
 | Unrestricted collective-encoding problem | [Seed reduction](docs/COLLECTIVE_ENCODING_REDUCTION.md) |
