@@ -1,7 +1,7 @@
 # Status and claim ledger
 
-Updated: 2026-09-23. Stage: sharp all-size parity readout bound, unequal parity-core entropy closure, and a sharper decoder classification. Unrestricted optimality and publication originality remain open.
-Latest research base: `ef3a6c9f62f7b9b591b56503ba5d24e0b10d2c12`, the merge of PR #24.
+Updated: 2026-09-24. Stage: short anticommutation decoder proof and a genuine small-tail extension to core score >13/4. Unrestricted optimality and publication originality remain open.
+Latest research base: `449984f346ed396f515c885cb0c5921cb7739735`, the merge of PR #25.
 
 Critical assessment base: `81bcfefb2b545742d513c4f51364a7f72972451e`, the
 merge of PR #11. The [publication and optimality assessment](audits/PUBLICATION_AND_OPTIMALITY_ASSESSMENT.md)
@@ -98,7 +98,8 @@ is asserted.
 | g_n<=n sqrt(2+8q(1-q)) for all states commuting with product parity of weight q | Sharp direct specialization of prior fidelity theory, independently checked; uniform parity blocks attain every individual local-query bound | audits/PARITY_READOUT_BOUND.md Section 1 |
 | Two-qubit entropy bound when a top-two spectral projector is a local product-parity sector | Derived and independently checked; unequal coherent cores allowed, residual-strip margin >1/16. Does not include every parity-commuting state | audits/PARITY_READOUT_BOUND.md Section 2 |
 | Coherent-transfer target on parity supports | Proved with the sharp envelope S_t<=2sqrt(2+2t^2) for 0<=t<=1, arbitrary core/tail spectra and coherences | audits/PARITY_READOUT_BOUND.md Section 3 |
-| Exact mixed-decoder operator envelope, with maximum below sqrt(21/2) | Derived and independently checked; improves decoder classification only. The later high-score tail certificate is not extended | audits/MIXED_DECODER_PATTERN_BOUND.md |
+| Exact mixed-decoder operator envelope, with maximum below sqrt(21/2) | Derived and independently checked; improves decoder classification only. A short prior-method corollary gives 13/4 without a characteristic polynomial | audits/MIXED_DECODER_PATTERN_BOUND.md; audits/EXTENDED_CORE_TRANSFER.md Section 2 |
+| Entropy bound for core score >13/4 and tail weight <=1/99 | Derived and independently checked; stronger angle inequality, finite inverse bounds and a 97-leaf exact scalar certificate. Entirely elementary through <=1/201; no full-strip extension | audits/EXTENDED_CORE_TRANSFER.md |
 | Quantitative stability of one-qubit maximizing seeds | Derived and independently checked; dimension-independent normalized-seed bounds and specified branch-weighted consequences | ONE_QUBIT_STABILITY.md |
 | Full noisy-X/Z average-rank profile D_M=W=w | Exact specialization of Cope–Uola SDPs; the already proved C-versus-w phase boundary supplies its full entropy comparison | audits/ROOF_PROVENANCE_AND_JOINT_SCORE.md Section 3 |
 | Collective readout can improve joint score per copy of a product seed | Incorrect: product additivity follows from Wallden–Dunjko–Andersson Theorem 3; an explicit f_2-j_2=(sqrt(2)-1)/8 gap persists under powers | audits/ROOF_PROVENANCE_AND_JOINT_SCORE.md Section 4 |
@@ -604,14 +605,26 @@ conjecture and publication originality remain unresolved.
 
 ## Publication gate
 
+The [extended-core continuation](audits/EXTENDED_CORE_TRANSFER.md) supplies
+a shorter decoder bound using three anticommuting sets and a genuinely
+larger entropy-valid region: `g(sigma)>13/4`, `epsilon<=1/99`.
+The decisive analytical improvement removes an unnecessary `1-u` factor
+from the coupled principal-angle estimate. The entirely elementary proof
+covers `epsilon<=1/201`; the sharper cutoff uses 97 exact scalar intervals.
+The source audit credits Kurzyński et al., 1010.2012v2 Eq. (1), for the
+anticommutation principle and grouping method. No priority claim follows.
+For the newly admitted cores, tails between `1/99` and `1/29` remain open;
+low-score cores and the all-n problem are also unresolved.
+
 The [parity continuation](audits/PARITY_READOUT_BOUND.md) supplies a short
 all-size score theorem from a binary symmetry witness and prior fidelity
 theory. It closes the full two-qubit family whose leading spectral
 subspace is a parity sector, including unequal complex cores. Any remaining
 witness must also avoid that support class. The exact
 [mixed-decoder envelope](audits/MIXED_DECODER_PATTERN_BOUND.md) improves
-the classification constant but does not lower the existing certified
-high-score tail threshold. Neither result establishes the general transfer
+the classification constant but by itself does not lower the certified
+high-score tail threshold. The later partial extension is stated above.
+Neither parity nor decoder classification establishes the general transfer
 bound. The first is an elementary prior-theorem specialization; originality
 of the auxiliary operator evaluation has not been established.
 

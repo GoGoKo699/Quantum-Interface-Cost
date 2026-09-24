@@ -1,6 +1,6 @@
 # Q1 — Delayed local readout through a bounded quantum interface
 
-**Version:** 0.21, 2026-09-23
+**Version:** 0.22, 2026-09-24
 
 **Project:** Falling / Q1  
 **Status:** Baseline proofs and seed reduction independently checked within the audit workspace. The full product-diagonal profile rate has a constructive optimizer. Its one-qubit cost is an established steering entanglement measure; a new theorem-level comparison proves strict separation from the full optimized weighted-CHSH bound family inspected, while crediting the prior mixture mechanism. The unrestricted rate equals regularized formation of a local-query assemblage, whose distinction from full tensor-product assemblages is explicit. Earlier converse and construction results remain as listed below. The complete two-qubit entropy inequality, general common-accuracy rate evaluation and publication novelty remain unresolved. This is a research dossier, not external peer review or a claim of a new framework.
@@ -61,7 +61,8 @@ The general compression problem below is already present in the dimensional meas
 | Sharp two-qubit subspace coupling and entropy bound whenever lambda_1=lambda_2 | Derived and independently checked; exact local-orbit coupling minimum, sharp 7/8 universal floor and 2/sqrt(3) anisotropy coefficient. One scalar majorant closes the remaining flat-core cases without interval partitions; unequal cores remain open. |
 | Sharp score at every fixed product-parity weight and every block size | Direct symmetry specialization of prior fidelity theory, with an explicit simultaneous attainer; g_n<=n sqrt(2+8q(1-q)). See the [parity proof](docs/audits/PARITY_READOUT_BOUND.md). |
 | Two-qubit entropy bound when the top-two spectral subspace is a local product-parity sector | Derived and independently checked; arbitrary unequal eigenvalues and complex intrablock coherences. This is not all parity-commuting states. |
-| Sharp operator envelope for a mixed scalar/traceless inactive decoder site | Derived and independently checked; classification threshold improves to below sqrt(21/2). The certified tail gate remains at core score >10/3; no automatic extension is claimed. |
+| Sharp operator envelope for a mixed scalar/traceless inactive decoder site | Derived and independently checked; classification threshold improves to below sqrt(21/2). A later short anticommutation corollary gives 13/4 without the sharp-envelope machinery. |
+| Two-qubit entropy bound when core score >13/4 and tail weight <=1/99 | Derived and independently checked; strengthened angle inequality and a 97-leaf exact scalar certificate. The entirely elementary version covers <=1/201; the larger-tail strip remains unresolved. See [the extension](docs/audits/EXTENDED_CORE_TRANSFER.md). |
 | Quantitative stability of the one-qubit optimum | Supplied deduction; normalized seeds and maximally-mixed-input branch weights, without a channel-distance claim. |
 | Sharp evaluation of the common-accuracy asymptotic memory rate, or a strict common-accuracy collective-coding improvement | Candidate research target; not solved here and not yet certified absent from the literature. |
 | Exponential sampling advantage or speedup for classical-data learning | Not established; the many-copy control in Section 9 is deliberately easy classically. |
@@ -686,6 +687,15 @@ Consequently any remaining witness has tail weight strictly between
 `2^-20` and `1/29`, core score at most `10/3`, and smaller normalized core
 eigenvalue greater than `1/5`. This does not cover every two-qubit state
 or supply an arbitrary-block converse.
+
+The [extended core theorem](docs/audits/EXTENDED_CORE_TRANSFER.md) now adds
+`g(sigma)<=13/4` as a necessary witness condition whenever the tail weight
+is at most `1/99`. It retains the stronger angular estimate
+`L>=m(sqrt(u)-sqrt(v))^2`; a three-set anticommutation proof supplies the
+decoder classification. An elementary argument proves the result through
+`1/201`, and an exact one-variable certificate sharpens it to `1/99`.
+It does not extend that threshold to all tails through `1/29`, or establish
+unrestricted optimality or priority of the full two-parameter profile.
 
 Finally, [one-qubit stability](docs/ONE_QUBIT_STABILITY.md) supplies a
 quantitative version of the equality characterization. A normalized seed

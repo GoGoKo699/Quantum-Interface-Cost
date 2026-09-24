@@ -1,0 +1,23 @@
+{
+  "certificate": "PASS",
+  "arithmetic": "integer endpoints / 2**80, outward rounded",
+  "domain": {
+    "m": [
+      "7/32",
+      "1/2"
+    ]
+  },
+  "claims": [
+    "U(m)<1/10",
+    "C(m)<49"
+  ],
+  "leaf_counts": {
+    "pass": 97,
+    "empty": 0
+  },
+  "maximum_depth": 8,
+  "minimum_angle_margin_numerator": 22610467235550810200,
+  "minimum_constant_margin_numerator": 14480460893618248359602,
+  "margin_denominator": 1208925819614629174706176,
+  "scope": "Scalar inequalities conditional on the supplied analytical reduction; not unrestricted optimality or novelty."
+}
