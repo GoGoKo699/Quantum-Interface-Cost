@@ -45,6 +45,14 @@ remains unrestricted. A separate sharp Bell-subspace bound proves
 an exact equality classification. These are continuous-family converses,
 not a full remaining-signature closure or an originality certification.
 
+The [local stability theorem](docs/audits/BELL_SUBSPACE_LOCAL_STABILITY.md)
+now covers every small change of the three memory subsystems around the
+known projector attainers. An explicit negative quadratic form in all
+eighteen transverse coordinates gives a quantitative open neighborhood
+with projector sum at most `5/2`. The report also identifies the individual
+recovery functional as prior work and disproves a proposed min-entropy
+shortcut. Distant subsystem configurations remain unresolved.
+
 The [spectral-budget extension](docs/audits/JORDAN_SPECTRAL_BUDGET.md)
 now retains every Jordan block and gives a scalar sufficient test for the
 benchmark, including families with two noncommuting blocks at every site.

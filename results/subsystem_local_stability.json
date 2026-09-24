@@ -1,0 +1,151 @@
+{
+  "exact": {
+    "arithmetic": "exact rational Fraction matrix arithmetic",
+    "coefficient_cases": [
+      {
+        "case": "G_only",
+        "direct": "-2/3",
+        "response": "11/30",
+        "total": "-3/10"
+      },
+      {
+        "case": "H_only",
+        "direct": "-1",
+        "response": "7/15",
+        "total": "-8/15"
+      },
+      {
+        "case": "same_direction",
+        "direct": "-5/3",
+        "response": "41/30",
+        "total": "-3/10"
+      },
+      {
+        "case": "orthogonal_directions",
+        "direct": "-5/3",
+        "response": "5/6",
+        "total": "-5/6"
+      },
+      {
+        "case": "H_half_G",
+        "direct": "-11/12",
+        "response": "3/4",
+        "total": "-1/6"
+      }
+    ],
+    "continuous_remainder_constant_upper_bound": 40,
+    "curvature_matrix": [
+      [
+        "3/10",
+        "-4/15"
+      ],
+      [
+        "-4/15",
+        "8/15"
+      ]
+    ],
+    "curvature_minus_I_over_8_determinant": "1/2880",
+    "curvature_minus_I_over_8_first_minor": "7/40",
+    "matrix_dimension": 32,
+    "matrix_identities_checked": 27,
+    "norm_gap_coefficient": "1/16",
+    "radius": "1/1024",
+    "rational_remainder_constant": "3940571/100000",
+    "status": "pass"
+  },
+  "floating": {
+    "construction_count": 8,
+    "random_seed_for_fixed_dense_constructions": 20260924,
+    "records": [
+      {
+        "case": "G_only",
+        "certified_upper": 2.4999999403953552,
+        "epsilon": 0.0009765625,
+        "lambda_max": 2.499999713897887,
+        "margin_below_claimed_upper": 2.2649746833636186e-07,
+        "prediction_residual": 1.816324868286756e-13,
+        "second_order_prediction": 2.4999997138977053,
+        "top_doublet_splitting": 4.440892098500626e-16
+      },
+      {
+        "case": "H_only",
+        "certified_upper": 2.499999985098839,
+        "epsilon": 0.00048828125,
+        "lambda_max": 2.4999998728434325,
+        "margin_below_claimed_upper": 1.1225540630377395e-07,
+        "prediction_residual": 7.993605777301127e-15,
+        "second_order_prediction": 2.4999998728434245,
+        "top_doublet_splitting": 1.3322676295501878e-15
+      },
+      {
+        "case": "same_direction",
+        "certified_upper": 2.4999999403953552,
+        "epsilon": 0.0009765625,
+        "lambda_max": 2.4999998569488966,
+        "margin_below_claimed_upper": 8.344645863189726e-08,
+        "prediction_residual": 4.39648317751562e-14,
+        "second_order_prediction": 2.4999998569488526,
+        "top_doublet_splitting": 0.0
+      },
+      {
+        "case": "H_half_G",
+        "certified_upper": 2.499999985098839,
+        "epsilon": 0.00048828125,
+        "lambda_max": 2.4999999682108562,
+        "margin_below_claimed_upper": 1.6887982567936888e-08,
+        "prediction_residual": 0.0,
+        "second_order_prediction": 2.4999999682108562,
+        "top_doublet_splitting": 1.7763568394002505e-15
+      },
+      {
+        "case": "dense_complex_0",
+        "certified_upper": 2.4999999403953552,
+        "epsilon": 0.0009765625,
+        "lambda_max": 2.499999426780931,
+        "margin_below_claimed_upper": 5.136144243245155e-07,
+        "prediction_residual": 2.078515137782233e-11,
+        "second_order_prediction": 2.4999994267601457,
+        "top_doublet_splitting": 4.1092018676636144e-11
+      },
+      {
+        "case": "dense_complex_1",
+        "certified_upper": 2.499999985098839,
+        "epsilon": 0.00048828125,
+        "lambda_max": 2.4999999165533593,
+        "margin_below_claimed_upper": 6.854547951462564e-08,
+        "prediction_residual": 3.0389024630039785e-12,
+        "second_order_prediction": 2.4999999165503204,
+        "top_doublet_splitting": 6.070699498650356e-12
+      },
+      {
+        "case": "dense_complex_2",
+        "certified_upper": 2.4999999403953552,
+        "epsilon": 0.0009765625,
+        "lambda_max": 2.4999996913113973,
+        "margin_below_claimed_upper": 2.4908395790390614e-07,
+        "prediction_residual": 2.397104736928668e-11,
+        "second_order_prediction": 2.4999996912874263,
+        "top_doublet_splitting": 4.773781370204233e-11
+      },
+      {
+        "case": "dense_complex_3",
+        "certified_upper": 2.499999985098839,
+        "epsilon": 0.00048828125,
+        "lambda_max": 2.4999998770725633,
+        "margin_below_claimed_upper": 1.0802627548045507e-07,
+        "prediction_residual": 1.4175327578413999e-12,
+        "second_order_prediction": 2.499999877071146,
+        "top_doublet_splitting": 2.8124169659804465e-12
+      }
+    ],
+    "status": "pass",
+    "tolerance": 2e-12
+  },
+  "limitations": "requires the report's continuous symmetry, gauge-chart and remainder arguments; does not prove the arbitrary-U(4) bound or classify remote equality cases",
+  "numpy_version": "2.3.5",
+  "python_version": "3.12.14",
+  "schema_version": 1,
+  "scope": "exact local curvature and prescribed nearby subsystem constructions",
+  "source_sha256": "90650b9814d37964d3b89f969ea588677b5397bbd9dfae08711f57a885144d38",
+  "verifier": "check_subsystem_local_stability.py"
+}
