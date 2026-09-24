@@ -1,6 +1,6 @@
 # Q1 — Delayed local readout through a bounded quantum interface
 
-**Version:** 0.37, 2026-09-24
+**Version:** 0.38, 2026-09-24
 
 **Project:** Falling / Q1  
 **Status:** Baseline proofs and seed reduction independently checked within the audit workspace. The full product-diagonal profile rate has a constructive optimizer and evaluates an established steering entanglement measure. It exceeds the inspected affine weighted-CHSH formation bounds, but the nonlinear-source follow-up now derives its full mixed-state support and joint-resource convex-hull characterization from prior inequalities. The candidate contribution is the explicit evaluation, equality analysis and operational consequences. The unrestricted rate equals regularized formation of a local-query assemblage, whose distinction from full tensor-product assemblages is explicit. The complete two-qubit entropy inequality, general common-accuracy rate evaluation and publication novelty remain unresolved. This is a research dossier, not external peer review or a claim of a new framework.
@@ -94,6 +94,16 @@ Hamiltonian. The remaining joint constraint on the earlier spectrum and
 its actual top marginal is unproved. An exact counterexample also refutes
 a proposed general logarithmic Bell-recovery budget without violating
 the original X/Z benchmark.
+
+The [joint-spectrum continuation](docs/audits/JOINT_SPECTRUM_NORMAL_FORM.md)
+gives a complete seven-parameter Cartan representation of two internally
+sharp anticommuting ququart pairs, and an eight-dimensional singular-value
+formula for their full spectrum and actual top memory marginal. A strictly
+positive synthetic spectrum passes the earlier spectral inequalities,
+SLD and six-Pauli constraints, and the known exact fixed-spectrum score
+bound, while failing the rank-one certificate. It supplies no realizable
+Hamiltonian with those joint data. Thus the sharp-pair target remains open;
+the normal form preserves the joint information needed to address it.
 
 ## 1. Origin, scope, and claim ledger
 

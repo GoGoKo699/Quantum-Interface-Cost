@@ -61,6 +61,14 @@ for a stated spectral upper bound; the missing relation between the earlier
 terms' spectrum and their top eigenvector remains explicit. A simple exact
 counterexample also rules out a proposed general Bell-recovery budget.
 
+The [joint-spectrum continuation](docs/audits/JOINT_SPECTRUM_NORMAL_FORM.md)
+now represents every two-sharp-pair ququart configuration using three
+Cartan angles and two sphere directions. An eight-dimensional singular-value
+problem retains both the full spectrum and the actual top memory marginal.
+An exact full-rank example shows why the available separate spectral and
+score bounds cannot replace this joint constraint. The reduction uses
+established Cartan decomposition; the sharp-pair converse remains unproved.
+
 The [spectral-budget extension](docs/audits/JORDAN_SPECTRAL_BUDGET.md)
 now retains every Jordan block and gives a scalar sufficient test for the
 benchmark, including families with two noncommuting blocks at every site.
