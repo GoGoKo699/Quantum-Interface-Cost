@@ -728,3 +728,21 @@ finite-tail envelope yielded no proof or admissible counterexample; they
 are not used in the report's deductions or any optimality claim. Local
 links, whitespace, LICENSE and the original audit identity were checked.
 No primary paper, extracted text or rendered page is committed.
+
+## Short core argument
+
+The [core argument](CORE_ARGUMENT.md) is pinned to main
+`e197699d87171635028d1639e025c8e5759e5c68`. It condenses existing results;
+it introduces no new optimality or originality claim. Separate workspace
+agents reconstructed the weighted one-qubit converse and its allocation
+geometry, the complete 31-input star instrument and the full stated
+retention-class converse, and the primary-source attribution. Review of
+the draft added an explicit minimality argument for w and specified the
+nonnegative weights in the retention bound.
+
+The construction is verified by symbolic operator identities, including
+completeness of all translated Kraus branches. No 31-qubit simulation was
+run or needed. Unchanged numerical certificates were not rerun. Local
+Markdown links, whitespace, LICENSE and the original audit identity were
+checked. This is internal independent proof reconstruction, not external
+peer review or certification of priority.
