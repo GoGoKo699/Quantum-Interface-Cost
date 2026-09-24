@@ -43,6 +43,7 @@ python tools/certify_two_qubit_core.py
 python tools/check_two_qubit_flat_core.py
 python tools/check_coherent_transfer.py
 python tools/check_parity_and_decoder.py
+python tools/certify_extended_core.py
 ```
 
 The bootstrap environment was Python 3.13.5 and NumPy 2.3.5. The audit
@@ -528,7 +529,7 @@ Its SHA-256 is
 `3f3538c0307f3a1131746d84410b21752b97aa0e87d8de1722392d3b114dd8ec`.
 The following three files were imported unchanged at bootstrap commit
 `eaf085a8cb299e6b297b11d2dc3c85e24f02779e`. These are historical hashes; the
-research note has subsequently been revised to version 0.21:
+research note has subsequently been revised to version 0.22:
 
 | File | SHA-256 |
 |---|---|
@@ -599,3 +600,31 @@ Normal and `python -O` runs on Python 3.12.14 produce identical
 floating-point acceptance or interval partition. These checks support the
 displayed analytical reductions; they do not certify unrestricted entropy
 optimality, extend the tail certificate, or establish publication novelty.
+
+## Extended core transfer
+
+The [extension](audits/EXTENDED_CORE_TRANSFER.md) reviews main
+`449984f346ed396f515c885cb0c5921cb7739735`, tree
+`9ee1a7d345d3fc574791cbf36cba90481dce1407`. Independent workspace
+reconstruction checked the three anticommuting sets, Young inequality,
+core-purification hypothesis, stronger sine estimate, quadratic minimization,
+elementary angle cutoff, and inverse-compression bounds on the larger domain.
+There is no new external review or hosted CI claim.
+
+`tools/certify_extended_core.py` imports the existing outward-rounded
+integer interval arithmetic from `certify_two_qubit_core.py`. It uses no
+logarithm evaluation in its scalar test, no floating-point decisions,
+no density-matrix sampling, and no solver. It certifies `U(m)<1/10` and
+`C(m)<49` throughout `m in [7/32,1/2]`, with positive-part extension
+where the high-score hypothesis is impossible. The 97 closed leaves cover
+the entire initial interval; their maximum depth is 8. Failure to resolve
+a box raises an exception, including under optimized Python.
+
+Normal and `python -O` executions on Python 3.12.14 reproduce the same
+[record](../results/extended_core_certificate.json). The minimum angle
+and constant margin numerators are `22610467235550810200` and
+`14480460893618248359602`, respectively, over `2^80`. These are exact
+scalar certificates conditional on the supplied proof, not tests of the
+unrestricted conjecture. The report separately gives an entirely elementary
+`1/201` tail cutoff. Local links, whitespace and protected file identities
+were checked; unrelated numerical construction diagnostics were not rerun.

@@ -7,7 +7,7 @@ for just one local X or Z readout, but the question is not known when the first
 module must release the input. How many qubits must cross that interface if
 classical records are free?
 
-**Status (23 September 2026): research in progress, not a manuscript or a
+**Status (24 September 2026): research in progress, not a manuscript or a
 novelty-certified result.** The baseline proofs and seed reduction have passed
 an independent workspace audit, including primary-source comparisons. Further
 analytical work proves the exact optimum with one retained qubit for every
@@ -59,6 +59,15 @@ every core with smaller normalized eigenvalue at most `1/5`. Thus a possible
 witness must meet all three complementary conditions stated in that report.
 These are further central-proof deductions; the remaining region is nonempty
 and unrestricted optimality is still open.
+
+A [shorter decoder proof and extended tail theorem](docs/audits/EXTENDED_CORE_TRANSFER.md)
+now lower the core-score threshold to `13/4` when bottom-two weight is
+at most `1/99`. Three anticommuting sets suffice for the decoder bound;
+an improved support-angle estimate transfers it to the entropy inequality.
+The entirely elementary version covers weight at most `1/201`; a small
+exact scalar certificate gives `1/99`. Larger tails and all-size optimality
+remain unresolved. The anticommutation method is established prior work,
+not an originality claim.
 
 The latest source comparison proves that the full asymmetric formula is
 strictly stronger than the entire optimized weighted-CHSH formation-bound

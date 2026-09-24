@@ -100,6 +100,13 @@ Therefore every such mixed inactive decoder pattern has score strictly below sqr
 
 This replaces the older 10/3 sufficient classification threshold. Extending the subsequent principal-angle/certified tail analysis to this larger core set requires additional work; the threshold alone does not prove the missing entropy inequality.
 
+**24 September continuation:** [EXTENDED_CORE_TRANSFER.md](EXTENDED_CORE_TRANSFER.md)
+gives a short alternative proof of `||H||<=13/4` using three anticommuting
+sets, credited to the prior correlation-complementarity method. It also
+supplies the additional angle and inverse analysis proving entropy validity
+for `g(sigma)>13/4` and tail weight at most `1/99`. This is not an extension
+over the old theorem's entire tail interval through `1/29`.
+
 ## 5. Verification and remaining novelty boundary
 
 Small 8x8 exploratory calculations motivated the bound. They are not the

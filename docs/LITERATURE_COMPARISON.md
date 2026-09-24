@@ -641,3 +641,23 @@ entropy bound. This is a scoped comparison, not an exhaustive novelty claim.
 The previously identified Tomassoli full-text comparison remains unresolved;
 renewed primary retrieval attempts returned HTTP 403, and neighboring theses
 do not determine that source's objective or formulas.
+
+## A shorter mixed-decoder proof from prior anticommutation
+
+Kurzyński–Paterek–Ramanathan–Laskowski–Kaszlikowski,
+*Correlation complementarity yields Bell monogamy relations*,
+[1010.2012v2](https://arxiv.org/html/1010.2012v2), 19 May 2011,
+Eq. (1), printed p. 2, bounds the sum of squared expectations within
+each set of anticommuting dichotomic observables. The following grouping
+method on pp. 2–3 is an established ingredient, not new monogamy here.
+The [extended-core report](audits/EXTENDED_CORE_TRANSFER.md), Section 2,
+applies it separately to three overlapping sets of Hermitian Pauli
+involutions and then uses Young's inequality. Every source hypothesis
+holds; arbitrary complex states and decoder directions remain allowed.
+This proves `||H||<=13/4` without computing the sharper envelope.
+
+The stronger angular estimate and the partial finite-tail exclusion are
+supplied deductions. The source does not state the task's full sharp
+mixed-decoder envelope or two-parameter formation evaluation; their
+historical priority remains unverified. This focused comparison closes
+neither the existing unread-source gap nor the all-n entropy conjecture.
