@@ -809,3 +809,15 @@ its interface application: all three-input rank-at-most-three seeds and
 four ququart signature patterns obey the two-site-retention benchmark.
 This is not a new general monogamy theorem. Exhaustive priority,
 publication significance, and unrestricted optimality remain open.
+
+## Double-block spectral certificate and closer dimension precedent
+
+The [continuation](audits/JORDAN_SPECTRAL_BUDGET.md), Section 5, maps the
+two-site operator to Bermejo Morán–Pozas-Kerstjens–Huber's PRL 131, 080201
+(2023), J_2, with exact PDF locators and numerical-status qualifications.
+Its pairwise bounds do not settle the three-site target. Gour–Wallach's
+2007 Proposition 3 and Corollary 4 already supply the double-Bell-subspace
+representation as a qubit subsystem; site-dependent subsystem choices
+remain unconstrained. The supplied all-block Gram application and exact
+failure of every finite negative-top penalty do not establish publication
+originality or unrestricted optimality.
