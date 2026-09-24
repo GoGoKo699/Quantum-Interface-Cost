@@ -1,0 +1,38 @@
+{
+  "environment": {
+    "numpy": "2.3.5",
+    "python": "3.12.14"
+  },
+  "exact_obstruction": {
+    "e_star": "196/225",
+    "exact_excess": "(587-412*sqrt(2))/(60*t*(t+2)); t=7/2-sqrt(2)",
+    "spectrum": [
+      "29/60",
+      "29/60",
+      "1/60",
+      "1/60"
+    ],
+    "status": "synthetic relaxation data; no Hamiltonian realization supplied",
+    "witness_approximation": 1.0084956046587878
+  },
+  "identities": {
+    "max_residuals": {
+      "angle_periodicity": 1.3322676295501878e-15,
+      "cartan_pauli_expansion": 4.442256323895656e-16,
+      "chiral_anticommutator": 1.336885555457667e-15,
+      "cross_partial_trace": 1.2412670766236366e-16,
+      "full_spectrum_from_singular_values": 7.105427357601002e-15,
+      "marginal_reconstruction": 1.6653345369377348e-16,
+      "normal_form_unitary_equivalence": 2.3714374201337737e-15,
+      "original_marginal_spectrum": 4.496403249731884e-15,
+      "physical_spectral_sum_saturation": 3.552713678800501e-15,
+      "reconstructed_eigenvector": 2.5176617391872307e-15,
+      "top_marginal_direct_diagonalization": 2.526528762433028e-14
+    },
+    "normal_form_cases": 40,
+    "simple_top_marginal_cases": 37,
+    "status": "finite identity diagnostics; no global inequality certificate",
+    "tolerance": 2e-10
+  },
+  "source_sha256": "253e9d0fc7c5be8fe76a3c20691dfbc38099fa0e8a3a51afb4995468680f3e96"
+}

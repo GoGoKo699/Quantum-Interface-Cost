@@ -1193,3 +1193,41 @@ were independently reconstructed using exact amplitudes, without expanding
 their large reference spaces. No complete remaining signature,
 unrestricted equal-accuracy optimum, or publication priority is certified.
 Unchanged diagnostics were not rerun.
+
+## Joint spectrum and complete sharp-pair normal form
+
+The [joint-data report](audits/JOINT_SPECTRUM_NORMAL_FORM.md) is pinned to
+main `0f10c57dec2f54a4a8d7e9293f0a1a19bc99c1f1`. Run:
+
+```bash
+python tools/check_joint_spectrum_normal_form.py --output results/joint_spectrum_normal_form.json
+```
+
+The full-rank relaxation obstruction is checked exactly in Q(sqrt(2)),
+using standard-library rational arithmetic. The checks include all stated
+scalar necessary conditions, the exact fixed-spectrum upper bound, and
+the strictly positive resolvent excess. This is synthetic joint data,
+with no Hamiltonian realization supplied.
+
+Forty fixed-seed small-matrix constructions check Cartan equivalence,
+the explicit Pauli expansion, angle periodicity, chiral anticommutation,
+the full singular spectrum, and top-vector/marginal reconstruction.
+The 37 simple-top cases additionally compare the marginal to direct
+Hermitian diagonalization and the original Hamiltonian. A separate
+explicit Pauli case verifies the physical spectral-sum saturation.
+Identity, SWAP and boundary-angle cases and complex local rotations are
+included. No optimizer or large simulation is used.
+
+All checks passed with Python 3.12.14, NumPy 2.3.5, seed 20260924,
+and tolerance 2e-10. Maximum absolute matrix residual: 2.526528762433028e-14.
+Source SHA-256: `253e9d0fc7c5be8fe76a3c20691dfbc38099fa0e8a3a51afb4995468680f3e96`.
+
+An independent internal reviewer reconstructed the proof and reran the
+checker into a separate scratch output, reproducing the recorded JSON
+byte-for-byte. Cross-platform floating results need only meet the stated
+tolerance.
+
+These finite identities supplement the supplied complete reduction and
+exact arithmetic proof. They certify no universal sharp-pair inequality,
+remaining signature closure, unrestricted optimum, or novelty.
+Unchanged diagnostics were not rerun.
