@@ -1,6 +1,6 @@
 # Q1 — Delayed local readout through a bounded quantum interface
 
-**Version:** 0.39, 2026-09-24
+**Version:** 0.40, 2026-09-26
 
 **Project:** Falling / Q1  
 **Status:** Baseline proofs and seed reduction independently checked within the audit workspace. The full product-diagonal profile rate has a constructive optimizer and evaluates an established steering entanglement measure. It exceeds the inspected affine weighted-CHSH formation bounds, but the nonlinear-source follow-up now derives its full mixed-state support and joint-resource convex-hull characterization from prior inequalities. The candidate contribution is the explicit evaluation, equality analysis and operational consequences. The unrestricted rate equals regularized formation of a local-query assemblage, whose distinction from full tensor-product assemblages is explicit. The complete two-qubit entropy inequality, general common-accuracy rate evaluation and publication novelty remain unresolved. This is a research dossier, not external peer review or a claim of a new framework.
@@ -127,6 +127,21 @@ the remaining inequality. The norm bound is attained. This closes the
 sharp-pair target, while arbitrary earlier Jordan angles and all three
 complete unresolved signatures still require further work.
 
+The [two-mode resolvent reduction](docs/audits/TWO_MODE_RESOLVENT.md)
+now covers the spectral setup for arbitrary earlier binary POVMs. Reference
+chirality and a second-moment bound give `lambda_3(H0)<=sqrt(32/3)`, so
+retaining two top modes always leaves a positive last-query resolvent.
+An exact physical double eigenvalue `U=m=2sqrt(3)` shows why the previous
+one-mode method cannot extend unchanged. The replacement is an exact
+4-by-4 matrix test for a stated spectral envelope, retaining all cross-mode
+memory operators. It is sufficient for the original Hamiltonian; its
+universal satisfaction is still unproved. An [exact nonclassical head
+channel](docs/audits/NONCLASSICAL_TWO_MODE_CHANNEL.md) has a negative
+partial-transpose Choi eigenvalue even when both leading energies exceed
+the one-mode threshold. Thus entanglement breaking is not a valid general
+shortcut. This changes the general proof target without asserting a
+converse for arbitrary Jordan angles.
+
 ## 1. Origin, scope, and claim ledger
 
 Page 24 of the user-supplied *【马兆】坠落.pdf* describes a fictional progression from a quantum solver to a quantum-resident workflow because repeated classical–quantum interfaces become costly. The present model is our proposed scientific extraction; its assumptions and conclusions are not claims made by the fiction.
@@ -153,6 +168,7 @@ The general compression problem below is already present in the dimensional meas
 | At n=3,D=4, any two commuting original query algebras forbid an advantage | Derived and independently checked by finite-dimensional commutant classification and the preceding factor/one-double-block converses; every violating optimal family must make all three algebras pairwise noncommuting. |
 | Two sharp internally anticommuting pairs with two mixed cross commutators zero forbid an advantage | Derived and independently checked: complete ququart algebra classification, a two-angle maximally entangled top eigenvector and the full third-pair resolvent; same-axis cross commutators may be nonzero. |
 | Any two sharp internally anticommuting ququart pairs plus an arbitrary third binary-POVM pair obey norm(H)<=4+sqrt(2) | Derived and independently checked, with no cross-commutation hypothesis. Joint spectral-tail constraints and a 400-cell exact rational certificate close the sharp-pair case; arbitrary earlier Jordan angles remain open. |
+| Two spectral modes always suffice for a positive last-query resolvent with arbitrary earlier binary POVMs | Derived and independently checked from the second moment; an exact double eigenvalue 2sqrt(3) rules out a universal one-mode setup. The full head channel gives an exact 4-by-4 envelope test, whose universal validity for physical data remains open. |
 | Three partial-SWAP Bell-subspace projectors sum to at most 5I/2 | Derived and independently checked, with exact equality classification; gives the retention converse for equal spectra within each site's two Jordan blocks. Arbitrary independent U(4) embeddings remain open. |
 | All small subsystem perturbations around the known Bell-subspace attainers lower the sum norm | Derived and independently checked in all eighteen transverse directions; exact negative Hessian and an explicit radius 2^-10. A local converse, not global optimality or global rigidity. |
 | Exact worst weighted last-site resolvent in every even memory dimension, including all binary POVMs | Derived and independently checked: extreme spectral pairing and a convex-quartic/cubic-root decision eliminate the added decoder. Exact for a stated spectral upper bound, not a solution of the full Hamiltonian problem. |
