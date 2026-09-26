@@ -88,6 +88,15 @@ also rules out treating every such channel as entanglement breaking.
 Proving the matrix test for every physical head channel remains the open
 step toward the unrestricted converse.
 
+The [compatibility obstruction](docs/audits/TWO_MODE_COMPATIBILITY_OBSTRUCTION.md)
+shows why the established spectral and compression bounds cannot prove that test.
+An exact synthetic Hamiltonian matches a physical example's full spectrum
+and every memory-valued polynomial moment, and satisfies the one- and
+two-dimensional memory compression bounds, yet its envelope fails.
+A short calculation with the four original readouts excludes its fixed
+leading eigenspace. The remaining proof must retain their compatibility
+with the actual reference Pauli operators; no physical violation is shown.
+
 The [spectral-budget extension](docs/audits/JORDAN_SPECTRAL_BUDGET.md)
 now retains every Jordan block and gives a scalar sufficient test for the
 benchmark, including families with two noncommuting blocks at every site.

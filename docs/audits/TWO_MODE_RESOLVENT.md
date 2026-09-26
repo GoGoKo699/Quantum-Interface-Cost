@@ -487,6 +487,14 @@ positive map is not asserted to satisfy the needed bound. The relation
 between the earlier Pauli readouts and their two-dimensional top space
 must be retained.
 
+The [compatibility follow-up](TWO_MODE_COMPATIBILITY_OBSTRUCTION.md)
+proves that the full spectrum, all memory-valued polynomial moments, and
+the established one- and two-dimensional memory compression bounds do
+not suffice to force (8). Its exact synthetic example fails the envelope
+test, but a support bound using the four trusted reference Pauli operators
+excludes its fixed leading eigenspace from the physical model. The uniform
+question for actual readouts remains open.
+
 The model remains one arbitrary unknown specimen, one delayed local
 X/Z query, unrestricted collective encoding, free finite classical
 records, and worst-case retained quantum dimension. The head space is

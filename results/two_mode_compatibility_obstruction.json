@@ -1,0 +1,123 @@
+{
+  "construction": {
+    "actual_third_eigenvalue": 1.1547005383792517,
+    "all_support_claim_basis": "analytical output-spectrum and chiral compression proof",
+    "forbidden_Pauli_coefficient": -0.5484827557301445,
+    "illustrative_supports_checked": 4,
+    "last_query_test_maximum": 1.001917305562883,
+    "local_Pauli_correlation_trace_norms": [
+      0.4358898943540672,
+      0.8999999999999997,
+      0.9499999999999995,
+      0.9499999999999995
+    ],
+    "matrix_moment_degrees_checked": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "maximum_physical_energy_of_fixed_head_mixture": 3.2358898943540657,
+    "maximum_relative_identity_residual": 1.5536018541121137e-15,
+    "pure_output_spectrum": [
+      0,
+      0.025,
+      0.475,
+      0.5
+    ],
+    "rank_one_all_support_analytic_cap": 2.3094010767585034,
+    "rank_two_all_support_analytic_cap": 3.406366588218792,
+    "relative_identity_residuals": {
+      "chiral_operator": 1.2412670766236368e-16,
+      "coherent_channel_matrix_unit_00": 2.777508439858666e-16,
+      "coherent_channel_matrix_unit_01": 2.35973408495737e-16,
+      "coherent_channel_matrix_unit_10": 2.35973408495737e-16,
+      "coherent_channel_matrix_unit_11": 2.777508439858666e-16,
+      "entire_spectrum": 3.4219371797089426e-16,
+      "fixed_chirality_commutation": 0.0,
+      "forbidden_reference_Pauli_coefficient": 0.0,
+      "four_by_four_resolvent": 5.233001612265891e-16,
+      "head_isometry": 3.330669073875469e-16,
+      "head_matrix_moment": 5.921189464667501e-16,
+      "involution_formula": 1.7554167342883506e-16,
+      "largest_test_eigenvalue": 4.432393845124481e-16,
+      "leading_eigenvectors": 1.323192803892039e-16,
+      "local_Pauli_support_score": 4.117159956136668e-16,
+      "local_correlation_X1": 5.551115123125783e-17,
+      "local_correlation_X2": 1.668583973270389e-16,
+      "local_correlation_Z1": 1.1102230246251565e-16,
+      "local_correlation_Z2": 1.7554167342883506e-16,
+      "physical_comparator_spectrum": 5.01907996276061e-16,
+      "physical_memory_moment_degree_0": 0.0,
+      "physical_memory_moment_degree_1": 0.0,
+      "physical_memory_moment_degree_2": 1.6653345369377346e-16,
+      "physical_memory_moment_degree_3": 1.208657738231572e-16,
+      "physical_memory_moment_degree_4": 3.385446558984676e-16,
+      "physical_memory_moment_degree_5": 1.6115436509754297e-16,
+      "physical_memory_moment_degree_6": 1.1056729302619388e-15,
+      "physical_memory_moment_degree_7": 1.07436243398362e-16,
+      "physical_memory_moment_degree_8": 1.5536018541121137e-15,
+      "physical_memory_moment_degree_9": 2.864966490622987e-16,
+      "positive_negative_orthogonality": 1.0037467169415352e-17,
+      "pure_output_spectrum_0": 2.777508439858666e-16,
+      "pure_output_spectrum_1": 4.779785235189128e-16,
+      "pure_output_spectrum_2": 5.935612988383983e-16,
+      "spectral_projector_decomposition": 2.002835730232023e-16,
+      "synthetic_memory_moment_degree_0": 0.0,
+      "synthetic_memory_moment_degree_1": 2.3111135221866398e-16,
+      "synthetic_memory_moment_degree_2": 8.326883116051726e-17,
+      "synthetic_memory_moment_degree_3": 3.10112005171921e-16,
+      "synthetic_memory_moment_degree_4": 3.5346396696994525e-18,
+      "synthetic_memory_moment_degree_5": 3.8490003498479036e-16,
+      "synthetic_memory_moment_degree_6": 5.637966293464704e-16,
+      "synthetic_memory_moment_degree_7": 5.69218193661207e-16,
+      "synthetic_memory_moment_degree_8": 6.840796323010938e-16,
+      "synthetic_memory_moment_degree_9": 8.884625472593195e-16,
+      "unitary": 1.111953484668029e-16
+    },
+    "tensor_order": [
+      "R1",
+      "R2",
+      "F",
+      "L"
+    ],
+    "top_eigenvalue": 3.4641016151377544
+  },
+  "exact_scalar_checks": {
+    "15_times_resolvent_numerator_coefficients": [
+      -1716,
+      -830,
+      1050,
+      438
+    ],
+    "field_basis": [
+      "1",
+      "sqrt(2)",
+      "sqrt(3)",
+      "sqrt(6)"
+    ],
+    "physical_head_energy_witness": "14/5+sqrt(19)/10 < 33/10 < 2sqrt(3)",
+    "radical_integer_witnesses": [
+      "1732^2 = 2999824 < 3000000",
+      "2449^2 = 5997601 < 6000000",
+      "1415^2 = 2002225 > 2000000"
+    ],
+    "rank_two_cap_integer_gap": 54239,
+    "strict_lower_bound_for_15_times_numerator": "203/250",
+    "strict_signs_use_floating_point": false
+  },
+  "maximum_matrix_dimension": 16,
+  "numpy": "2.3.5",
+  "python": "3.12.14",
+  "research_base": "5434c44c31f42143d4b1f3d32892744b443d6cd4",
+  "scope": "fails the spectral envelope; no physical Hamiltonian violation or universal proof",
+  "source_sha256": "38667760a866e2edf05ca7fcdc97f057da74bc0e11f5d71f02776cb67de803f9",
+  "status": "exact synthetic envelope obstruction verified; physical converse unresolved",
+  "tolerance": 3e-11
+}
