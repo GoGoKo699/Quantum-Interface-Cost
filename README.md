@@ -78,6 +78,16 @@ one scalar variable; 400 closed rational intervals certify the remaining
 inequality. This closes the sharp-pair target. General nonorthogonal pairs
 and all three complete reflection signatures remain open.
 
+The [two-mode reduction](docs/audits/TWO_MODE_RESOLVENT.md) supplies a
+general spectral setup for the remaining pairs. A second-moment argument
+shows that retaining two top modes always leaves a safe last-query
+resolvent. An exact physical double eigenvalue `2sqrt(3)` proves that one
+mode cannot suffice universally. The new 4-by-4 test keeps the coherence
+between the two modes. An [exact channel example](docs/audits/NONCLASSICAL_TWO_MODE_CHANNEL.md)
+also rules out treating every such channel as entanglement breaking.
+Proving the matrix test for every physical head channel remains the open
+step toward the unrestricted converse.
+
 The [spectral-budget extension](docs/audits/JORDAN_SPECTRAL_BUDGET.md)
 now retains every Jordan block and gives a scalar sufficient test for the
 benchmark, including families with two noncommuting blocks at every site.
@@ -97,7 +107,7 @@ six readouts, including nonscalar squares and general binary POVMs.
 Its exact classwide score is `2sqrt(6)`. A concrete balanced sextuple
 admits no such antiunitary, so the unrestricted problem remains open.
 
-**Status (24 September 2026): research in progress, not a manuscript or a
+**Status (26 September 2026): research in progress, not a manuscript or a
 novelty-certified result.** The baseline proofs and seed reduction have passed
 an independent workspace audit, including primary-source comparisons. Further
 analytical work proves the exact optimum with one retained qubit for every

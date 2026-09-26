@@ -1,0 +1,65 @@
+{
+  "exact_scalar_comparisons": {
+    "example_large_t_integer_witness": "289 > 288",
+    "example_strict_head_bound_integer_witness": "9 < 12",
+    "fixed_baseline_negative_secular_integer_witness": "288 < 529",
+    "fixed_kappa_comparison_integer_witness": "512 > 507",
+    "npt_example_energy_chain": "U > 86/25 > 2+sqrt(2)",
+    "npt_example_rational_angle": "39999^2 + 400^2 = 40001^2",
+    "rank_one_obstruction_integer_witness": "8 < 9",
+    "uniform_tail_gap_integer_witness": "72 > 49"
+  },
+  "fixed_tail_warning": {
+    "actual_three_query_norm": 4.828427124746193,
+    "scope": "failure of the fixed-baseline positive-head envelope, not the physical bound",
+    "test_value_at_baseline_13_over_4": 1.3601054248068671,
+    "test_value_at_fixed_kappa": 1.4530654744674691
+  },
+  "general_constructions": {
+    "earlier_pair_constructions": 28,
+    "maximum_residuals": {
+      "chiral_residual": 0.0,
+      "head_choi_trace_residual": 2.401779625492033e-15,
+      "head_unital_residual": 2.3003456964843175e-15,
+      "partial_trace_moment_residual": 5.452753719585193e-15,
+      "reflection_block_resolvent_residual": 4.384342257933952e-16,
+      "schur_compression_residual": 2.7462497097463154e-16,
+      "trace_moment_residual": 1.4210854715202004e-14
+    },
+    "maximum_third_eigenvalue_observed": 2.8284271247461907,
+    "minimum_channel_moment_gap": -2.0468317450044216e-14,
+    "minimum_resolvent_gap_observed": 0.5857864376269042,
+    "operator_convexity_checks": 8,
+    "reflection_block_checks": 14,
+    "schur_inertia_comparisons": 112
+  },
+  "maximum_matrix_dimension": 32,
+  "nonclassical_head_example": {
+    "exact_negative_eigenvalue": "-100sqrt(2)/(120003+39999sqrt(6))",
+    "minimum_partial_transpose_eigenvalue": -0.0006487809214800696,
+    "normalized_choi_partial_transpose_residual": 6.028954071338127e-16,
+    "scope": "actual two-mode channel is not entanglement breaking; no physical violation claimed",
+    "spectrum_residual": 3.764949453935611e-15,
+    "top_eigenvalue": 3.449454238385494,
+    "top_multiplicity": 2
+  },
+  "numpy": "2.3.5",
+  "physical_degenerate_head_example": {
+    "all_third_pair_head_supremum_exact": "2/(2sqrt(3)-1) < 1",
+    "coherent_head_norm": 0.8116548391159554,
+    "dephased_head_norm": 0.6093445472873633,
+    "full_channel_residual": 1.6768594809361232e-16,
+    "rank_one_baseline_above_safe_threshold": true,
+    "resolvent_parameter_above_three_sqrt_two": true,
+    "spectrum_residual": 4.015263970208488e-15,
+    "third_eigenvalue": 1.1547005383792517,
+    "top_eigenvalue": 3.4641016151377544,
+    "top_multiplicity": 2
+  },
+  "python": "3.12.14",
+  "seed": 2026092604,
+  "source_sha256": "89129668a84ffd7597fe63b63e67e832f2e00a576d96041557839c97b14d7b53",
+  "status": "all construction checks passed; universal head inequality unresolved",
+  "tolerance": 4e-10,
+  "uniform_resolvent_gap_display": 0.14822723866219079
+}
