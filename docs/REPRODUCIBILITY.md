@@ -1,5 +1,56 @@
 # Reproducibility and source provenance
 
+## A sharp spectral-layer comparison for the original score
+
+The [spectral-layer proof](audits/SPECTRAL_LAYER_SCORE_BOUND.md) is pinned
+to main `26a126a729fb483897c8a2e356dc733089c0d2a0`. Run its bounded checks:
+
+```bash
+python tools/check_spectral_layer_score_bound.py --output results/spectral_layer_score_bound.json
+```
+
+Independent internal reconstructions checked the common nested-flat
+decomposition, the nonnegative query-profile loss, its decoder-commutator
+bound, the weighted and conditional entropy consequences, and sharpness
+for the full one-qubit X/Z workload. Primary-source review checked the
+standard spectral-threshold and rounding ingredients in Slofstra–Vidick
+and Vidick. No external peer review or publication-priority conclusion is
+claimed, and the unrestricted retention and entropy conjectures stay open.
+
+The checker passed 11 exact Fraction comparisons and 562 matrix identities
+with 506 inequality checks, across seven fixed constructions and 30 original
+queries. Its rational Y-bias fixture has squared error-to-bound ratio
+`999/1001`, and attains the refined layer-affinity bound exactly. The
+analytical parameterized identity proves sharpness of the coefficient
+and exponent; the finite fixture alone does not prove a limit.
+
+Other fixtures cover a nonflat seed with identical spectral-block query
+profiles, singular complex support, a zero optimal-query eigenvalue,
+pure Y zero compressions, repeated eigenvalues, an arbitrary fixed
+complex spectrum, and the prior nonuniform rank-three example. Checks
+include the complete spectral-filter instrument, componentwise and
+weighted score bounds, entropy, and unchanged rank caps. No random
+sampling, parameter grid, optimizer, or large simulation is used.
+
+The run used Python 3.12.14 and NumPy 2.3.5 with tolerance `3e-9`.
+Matrix dimension was at most 16, relative identity residuals were below
+`3.45e-11`, and inequality margins were above `-1.34e-15`. These
+floating-point checks are diagnostics; the quantified theorem is proved
+analytically. The source protects itself and the proof note from output
+overwrite, and records both hashes in the report.
+
+One independent scratch rerun reproduced the complete report byte for
+byte and verified all three artifact hashes before and after execution.
+
+| Artifact | SHA-256 |
+|---|---|
+| Proof note | `a78cfa44198c35ed23ca6ca734a850f350453fa82834177fba336173cd2317ba` |
+| Checker source | `7710316d9fb5feb87eca9aaa4dc590ea0a6e77e50843444a67c18297930e0737` |
+| Report | `85ef83d509283641e6db286233e988278dc3f2c628e0ad50a36d9bde15c0cbd7` |
+
+Earlier frozen proofs, reports, audits, and the MIT license are preserved.
+Unchanged checkers were not rerun.
+
 ## The dimension-independent limit of the affinity method
 
 The [affinity-method proof](audits/AFFINITY_METHOD_LIMIT.md) is pinned to
