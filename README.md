@@ -44,10 +44,12 @@ The project is now in **scientific consolidation**. The
 [scope and completion gates](docs/SCIENTIFIC_SCOPE.md) select the paper's
 claims, distinguish supporting material, and stop further theorem
 exploration for this package. The general entropy inequality and
-asymptotic common-accuracy rate remain future work. Individual proofs
-have internal independent reconstructions; the integrated exposition
-still needs its final review. The framework and cited ingredients are
-prior work, and publication originality is not certified.
+asymptotic common-accuracy rate remain future work. The
+[integrated proof exposition](docs/CORE_ARGUMENT.md) now has a bounded
+[internal review](docs/audits/INTEGRATED_CORE_REVIEW.md), including its
+source attribution and finite-case boundaries. The final evidence freeze
+remains before manuscript drafting. The framework and cited ingredients
+are prior work; publication originality is not certified.
 
 ## Start here
 
