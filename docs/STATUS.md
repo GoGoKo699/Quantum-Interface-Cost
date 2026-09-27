@@ -1,7 +1,13 @@
 # Status and claim ledger
 
 Updated: 2026-09-27. Stage: the [half-rank converse](audits/HALF_RANK_RETENTION_CONVERSE.md) proves the unrestricted exact optima `Gamma(3,4)=4+sqrt(2)` and `Gamma(4,8)=6+sqrt(2)`, as part of one theorem for n=2,3,4. Positivity and the rank cap constrain the single-site Pauli coefficients of an arbitrary seed square root; one positive quadratic completes the proof. All maximizing normalized seeds are classified. This settles all three previously unresolved ququart reflection signatures without readout assumptions. The general entropy inequality, asymptotic common-accuracy rate, and publication originality remain unresolved.
-Latest research base: `3aad8227ed448eadfaa5ebc4d33bfc9845dd4f8c`, the merge of PR #50.
+Latest research base: `ecdfc7d6ad3ee16e66ba6f6de8802974bb558ee2`, the merge of PR #51.
+
+The [quarter-rank argument](audits/QUARTER_RANK_GEOMETRY.md) now advances
+the next block, four inputs and two retained qubits: the sharp squared
+query-score budget is six for arbitrary rank-at-most-four seeds, and the
+retention converse holds for every flat seed and every seed of rank at
+most three. The remaining finite target concerns nonflat rank-four seeds.
 
 Critical assessment base: `81bcfefb2b545742d513c4f51364a7f72972451e`, the
 merge of PR #11. The [publication and optimality assessment](audits/PUBLICATION_AND_OPTIMALITY_ASSESSMENT.md)
@@ -23,6 +29,9 @@ is asserted.
 |---|---|---|
 | Unrestricted Gamma(n,2^(n-1))=2(n-1)+sqrt(2), n=2,3,4 | Derived and independently reconstructed; stronger affinity bound for every positive half-rank square root, without a flat-spectrum or readout restriction | audits/HALF_RANK_RETENTION_CONVERSE.md |
 | Every maximizing half-rank normalized seed is a retention seed, n=2,3,4 | Derived with equality analysis: one pure X/Z bisector and n-1 maximally mixed sites, up to output isometries; not a uniqueness claim for physical instruments | audits/HALF_RANK_RETENTION_CONVERSE.md |
+| At four inputs and rank at most four, the sum of eight squared query scores is at most six | Sharp, derived and independently reconstructed for arbitrary spectra; the stronger sum-affinity budget has the same equality family: two pure X/Z-plane sites and two maximally mixed sites | audits/QUARTER_RANK_GEOMETRY.md |
+| Every flat four-input seed of rank at most four obeys the two-qubit retention bound | Derived and independently reconstructed from the top-quarter Pauli spectrum and a local block inequality; all equality seeds are two-site retention seeds | audits/QUARTER_RANK_GEOMETRY.md |
+| Every four-input seed of rank at most three has score at most sqrt(45) | Derived and independently reconstructed; strict exclusion from beating 4+2sqrt(2), without evaluating the rank-three optimum | audits/QUARTER_RANK_GEOMETRY.md |
 | General delayed measurement simulation with classical assistance | Established framework; also equivalent here to a prior postmeasurement-information discrimination task | Audit Sections 6.1–6.3 |
 | q=0 iff eta<=1/sqrt(2) | Established threshold; elementary derivation checked | Note Section 3; audit |
 | Random-subset achievable contrast | Explicit construction; checked through n=4 | Note Section 4; checks.json |
@@ -483,11 +492,14 @@ $$
 \Gamma(4,4)\stackrel{?}{=}4+2\sqrt2,
 $$
 
-with four inputs and two retained qubits. This is a quarter-rank seed
-constraint, outside the new half-rank proof. The general n,q optimum and
-the asymptotic common-accuracy rate remain open. The next structural
-question is whether the direct rank-sensitive Pauli argument extends to
-that constraint, before returning to detailed decoder classifications.
+with four inputs and two retained qubits. The
+[quarter-rank proof](audits/QUARTER_RANK_GEOMETRY.md) now gives the sharp
+squared-score budget six and excludes all flat spectra and all ranks at
+most three. Any seed beating the target must have rank four, a nonflat
+spectrum, and `(Tr sqrt(rho))^2/4>(4sqrt(2)-3)/3`. The next step is to
+control its nonuniform eigenvalues together with its support; replacing
+it by the uniform projector is not justified. The general n,q optimum
+and the asymptotic common-accuracy rate remain open.
 
 The earlier three-input channel and inverse methods remain useful
 independent results. The new theorem does not establish that every

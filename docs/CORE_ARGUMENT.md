@@ -275,6 +275,12 @@ instrument implementing the same effects. The case `n=2` also follows
 from the earlier one-qubit theorem. Beyond these results, the smallest
 unresolved equal-accuracy block is `n=4,q=2`, with memory dimension four.
 
+For that block, the [quarter-rank proof](audits/QUARTER_RANK_GEOMETRY.md)
+now bounds the sum of eight squared query scores by six, sharply, and
+proves the retention converse for every flat spectrum and every rank
+at most three. Only nonflat rank-four seeds remain possible witnesses;
+the squared-score budget alone does not settle the unsquared objective.
+
 ## 4. A collective advantage with five memory qubits
 
 Take `n=31`. Label the X-basis vectors by bit strings. Let

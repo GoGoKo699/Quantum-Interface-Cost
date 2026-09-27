@@ -41,12 +41,21 @@ keeps the rank constraint through the top half of the single-site Pauli
 spectrum, then proves the sharp sum using one positive quadratic.
 It does not introduce a new fidelity inequality or compression framework.
 
-The earlier [flat-seed source comparison](FLAT_SEED_PRIOR_COMPARISON.md)
-records the inspected quantum Boolean-function and uncertainty results.
-That scoped comparison does not certify priority for the new nonflat
-rank theorem. Independent proof reconstruction establishes internal
-mathematical support; a theorem-level priority and significance assessment
-of this exact strengthened statement remains open.
+The [nonflat source comparison](audits/HALF_RANK_PRIOR_COMPARISON.md)
+extends the earlier [flat-seed audit](FLAT_SEED_PRIOR_COMPARISON.md).
+Poincare plus the rank cap gives only `sqrt(2n(2n-1))`; Beigi's direct
+half-rank Faber--Krahn specialization is no stronger than that energy
+estimate. The displayed finite-size BB84 collision bound is vacuous
+at q=n-1. These are explicit comparisons with specified statements,
+not a completeness or novelty certificate. The n=2 optimum and its
+seed equality were already obtained from Cheng--Hall in the one-qubit
+note. Publication priority for the n=3,4 strengthening remains open.
+
+The [quarter-rank note](audits/QUARTER_RANK_GEOMETRY.md) uses the same
+established affinity comparison and trace inequalities. It proves the
+sharp squared-score budget and an exact flat-spectrum converse at
+`n=4,q=2`; it does not assert that either has established publication
+priority or that arbitrary spectra satisfy the unsquared converse.
 
 ## Direct precedents and exact implications
 

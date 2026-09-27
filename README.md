@@ -29,6 +29,13 @@ carries enough of them that a single positive quadratic proves the sharp
 bound. No readout classification or numerical partition is required.
 This closes all previously unresolved three-input reflection signatures.
 
+For **four inputs and two retained qubits**, the
+[quarter-rank argument](docs/audits/QUARTER_RANK_GEOMETRY.md) now proves
+the retention bound for every flat seed and every seed of rank at most
+three. For arbitrary rank-four seeds, the eight squared query scores
+sum to at most six, sharply. The unsquared optimum remains open for
+nonflat rank-four seeds.
+
 **Read the [short core argument](docs/CORE_ARGUMENT.md)** for this result,
 the exact allocation rule for one retained qubit at every input size, and
 a collective advantage for unequal accuracies. Together they separate
