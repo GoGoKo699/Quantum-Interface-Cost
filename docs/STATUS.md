@@ -1,7 +1,19 @@
 # Status and claim ledger
 
 Updated: 2026-09-27. Stage: the [nonflat quarter-rank converse](audits/NONFLAT_QUARTER_RANK_CONVERSE.md) proves `Gamma(4,4)=4+2sqrt(2)` and classifies every maximizing normalized seed. Together with the half-rank and all-n one-qubit results, this settles every integer quantum-memory budget through four inputs. The proof keeps arbitrary spectra and uses a sum-of-squares identity plus two exactly certified positive polynomials. The general entropy inequality, asymptotic common-accuracy rate, and publication originality remain unresolved.
-Latest research base: `18550b3b9ab5617a788b3b5d43d575dbf6e5a39e`, the merge of PR #55.
+Latest research base: `8e38f704b1d8e74344c87ee83748d1f4dc45fcaf`, the merge of PR #56.
+
+The [stability extension](audits/BALANCED_SPECTRUM_STABILITY.md)
+proves an explicit nonflat half-rank neighborhood at every n: if
+`rank(rho)<=k=2^(n-1)` and
+`sqrt(2(1-Tr(sqrt(rho))/sqrt(k)))<=1/(4096n)`, then
+`g(rho)<=2n-2+sqrt(2)`, with equality only at a retention seed.
+The criterion depends only on the spectrum and allows arbitrary complex
+supports. Its proof quantifies the balanced-spectrum equality theorem:
+a flat half-rank seed with score gap epsilon is within full trace norm
+`16sqrt(2epsilon)` of a retention seed. The constants are sufficient;
+the square-root gap exponent is necessary. Spectra outside the proved
+neighborhood and finite cases remain unresolved.
 
 The [balanced-spectrum theorem](audits/BALANCED_SPECTRUM_OPTIMALITY.md)
 proves a new all-size optimum: for eigenvalues `(1+t)/2^n` and
@@ -56,6 +68,9 @@ is asserted.
 
 | Claim | Status | Location |
 |---|---|---|
+| Near-optimal balanced seeds are quantitatively close to original-site X/Z bisectors | Derived: full trace norm <=16sqrt(2e_g)/t for bias t>0, with dimension-independent prefactor. The gap exponent and inverse-bias scaling are necessary; the prefactor is not claimed optimal | audits/BALANCED_SPECTRUM_STABILITY.md |
+| Any half-rank seed with at least three quarters of its square root's singleton X/Z mass on one site obeys retention at every n | Derived for arbitrary nonzero spectra and supports, with equality only at retention seeds; a sufficient Pauli coefficient condition | audits/BALANCED_SPECTRUM_STABILITY.md Section 4 |
+| An explicit nonflat half-rank spectral neighborhood obeys retention at every n | Derived for rank<=k=2^(n-1) when sqrt(2(1-Tr(sqrt(rho))/sqrt(k)))<=1/(4096n), with arbitrary supports and complete equality classification. A sufficient neighborhood, not an unrestricted converse | audits/BALANCED_SPECTRUM_STABILITY.md |
 | Every balanced two-level spectrum has exact optimum 2(n-1)+sqrt(4-2t^2), for every n | Derived and independently reconstructed with unrestricted eigenvectors; all t>0 maximizers are one original-site mixed X/Z bisector and maximally mixed spectators. The entire family obeys the sharp entropy inequality | audits/BALANCED_SPECTRUM_OPTIMALITY.md |
 | Every flat half-rank seed obeys retention at every n, with complete equality cases | Derived as t=1 of the balanced-spectrum theorem; removes the earlier singleton-site restriction. This does not prove the arbitrary-spectrum half-rank conjecture beyond the existing finite cases | audits/BALANCED_SPECTRUM_OPTIMALITY.md |
 | Original query profile is close to a common mixture of nested flat spectral profiles | Derived and independently reconstructed: nonnegative errors have squared sum at most twice the decoder mixing charge, hence at most 2Delta with Delta=sum_U(a_U-F_U^2). Rank caps are preserved; the square-root coefficient is sharp | audits/SPECTRAL_LAYER_SCORE_BOUND.md |

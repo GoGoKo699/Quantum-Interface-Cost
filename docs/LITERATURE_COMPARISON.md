@@ -28,6 +28,38 @@ and adds a prior CHSH derivation of the symmetric one-site entropy curve.
 Its convexity consequences and exact failed-tensorization example explain
 why the unrestricted rate question needs a new global argument.
 
+## Fixed-query stability and a nonflat spectral neighborhood
+
+The [stability extension](audits/BALANCED_SPECTRUM_STABILITY.md)
+quantifies the balanced-spectrum theorem using the gap in the prescribed
+local X/Z score. It gives an explicit dimension-independent distance to
+an original-site bisector and a sufficient nonflat spectral neighborhood
+at the half-rank cap. Its square-root gap exponent and inverse-bias
+scaling have one-qubit witnesses; its numerical constants are not
+claimed sharp.
+
+Quantum Fourier rigidity is established prior mathematics.
+Montanaro–Osborne, *Quantum Boolean functions*,
+[arXiv:0810.2435v5](https://arxiv.org/pdf/0810.2435v5), Section 9.3,
+Theorem 60, printed p. 32 (Theorem 9.7 in the published version), relates
+small Pauli mass above degree one to proximity to a one-qubit function
+or a constant. Blecher–Gao–Xu, *Geometric influences on quantum Boolean
+cubes*, [arXiv:2409.00224v1](https://arxiv.org/pdf/2409.00224v1), Section 6,
+Theorem 6.2, printed pp. 34–35, supplies an alternative proof addressing
+the issue identified in that section's introduction. Its conclusion is
+a bound by a universal constant times the high-degree mass in squared
+normalized Hilbert--Schmidt distance.
+
+Those theorems take Fourier concentration as their hypothesis and allow
+an arbitrary one-qubit direction. The present proof derives concentration
+from the original query-score gap and also selects the X/Z bisector
+orientation. For example, R=X_i has zero mass above degree one but
+squared normalized distance `2-sqrt(2)` from the closest X/Z bisector.
+The distinction is in the hypothesis and selected orientation; no new
+general quantum Fourier rigidity principle or exhaustive priority
+conclusion is asserted. The nonflat consequence additionally uses the
+rank-sensitive centered trace bound from the earlier half-rank proof.
+
 ## Balanced spectra at every input size
 
 The [balanced-spectrum theorem](audits/BALANCED_SPECTRUM_OPTIMALITY.md)

@@ -1,5 +1,61 @@
 # Reproducibility and source provenance
 
+## Balanced-spectrum stability and a nonflat spectral neighborhood
+
+The [stability proof](audits/BALANCED_SPECTRUM_STABILITY.md) is pinned
+to main `8e38f704b1d8e74344c87ee83748d1f4dc45fcaf`. Run its bounded
+checks with:
+
+```bash
+python tools/check_balanced_spectrum_stability.py --output results/balanced_spectrum_stability.json
+```
+
+Independent internal reconstructions checked the quantitative singleton
+and bisector bounds, the original-score and affinity distance transfers,
+the all-input nonflat dominant-site lemma, its equality cases, and the
+inverse-n spectral neighborhood. Reviews included rank-deficient
+completions, the one-input endpoint, and the necessary square-root gap
+and inverse-bias scaling. The neighborhood theorem concerns the original
+score; the dominant-site lemma separately proves the stronger affinity
+bound. Primary-source comparison checked the different hypotheses and
+conclusions of the Montanaro–Osborne and Blecher–Gao–Xu quantum FKN
+theorems. No external peer review or exhaustive priority claim is made.
+
+The checker passed 27 exact Fraction comparisons, 70 matrix identities
+and 145 inequalities across ten fixed constructions and 52 original
+queries. Six balanced reflections check concentration, orientation,
+trace-norm distance, equality, and both sharpness identities. Four
+spectral fixtures cover both branches of the neighborhood proof,
+nonflat dominant mass outside the neighborhood, and a rank-fifteen
+seed at a rank-sixteen cap. The five-qubit near-retention fixture has
+complex support and nonuniform eigenvalues; a complex majority support
+exercises the continuity branch outside the dominant-site condition.
+Nonzero imaginary parts of both support projectors are explicitly
+checked. No random sampling, parameter grid, optimizer or large
+simulation is used.
+
+The run used Python 3.12.14 and NumPy 2.3.5 with tolerance `3e-9`.
+Matrix dimension was at most 32, relative identity residuals were below
+`7.62e-16`, and inequality margins were above `-6.25e-19`. Exact
+arithmetic verifies the listed scalar comparisons. The floating-point
+matrix calculations are bounded diagnostics; the quantified theorems,
+equality classification and necessary scaling follow analytically.
+
+The source protects itself and the proof note from output overwrite.
+One independent scratch rerun reproduced the complete report byte for
+byte and verified all three artifact hashes before and after execution.
+
+| Artifact | SHA-256 |
+|---|---|
+| Proof note | `02474352d858fb80ed291e3b751f4d0f077a559cf806e391dbed2e35d7e561ff` |
+| Checker source | `d1c2641f99d0e8222a042ed11d5f0002c37f1006f81b391c562580741ba3bad9` |
+| Report | `ec8ce50a987662920cea160ae327891190b77ba0fed094a35c04a7a0541a3664` |
+
+Earlier frozen proofs, reports, audits and the MIT license are preserved;
+unchanged checkers were not rerun. The radius and stability prefactor
+are sufficient constants, not claimed optima. Nonflat spectra outside
+the proved conditions and finite cases remain unresolved.
+
 ## Exact balanced-spectrum optimality at every input size
 
 The [balanced-spectrum proof](audits/BALANCED_SPECTRUM_OPTIMALITY.md)

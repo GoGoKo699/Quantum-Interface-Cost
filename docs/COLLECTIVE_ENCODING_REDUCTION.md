@@ -171,6 +171,16 @@ therefore obeys retention, with all equality cases classified. For
 separate consequence. The original optimization continues to include
 all other spectra and all ranks below the cap.
 
+The [stability extension](audits/BALANCED_SPECTRUM_STABILITY.md) also
+excludes an explicit nonflat neighborhood at the half-rank cap. With
+`k=2^(n-1)`, every seed of rank at most k satisfies the retention bound
+if `sqrt(2(1-Tr(sqrt(rho))/sqrt(k)))<=1/(4096n)`. This is a spectral
+exclusion criterion for arbitrary supports and eigenvectors. It does not
+restrict the admissible encoders in the original optimization. Equality
+within the criterion forces a retention seed; the general half-rank
+optimization outside this neighborhood remains open beyond the proved
+finite cases.
+
 The [decoder-algebra theorem](audits/DECODER_ALGEBRA_AND_THREE_INPUT.md)
 proves the subset bound for every n,q when an optimal reflection decoder
 family pairwise commutes or anticommutes. This is an explicit sufficient
