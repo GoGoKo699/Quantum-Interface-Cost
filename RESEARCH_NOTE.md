@@ -1,6 +1,6 @@
 # Q1 — Delayed local readout through a bounded quantum interface
 
-**Version:** 0.45, 2026-09-27
+**Version:** 0.46, 2026-09-27
 
 **Project:** Falling / Q1  
 **Status:** Baseline proofs and seed reduction independently checked within the audit workspace. The full product-diagonal profile rate has a constructive optimizer and evaluates an established steering entanglement measure. It exceeds the inspected affine weighted-CHSH formation bounds, but the nonlinear-source follow-up now derives its full mixed-state support and joint-resource convex-hull characterization from prior inequalities. The candidate contribution is the explicit evaluation, equality analysis and operational consequences. The unrestricted rate equals regularized formation of a local-query assemblage, whose distinction from full tensor-product assemblages is explicit. The complete two-qubit entropy inequality, general common-accuracy rate evaluation and publication novelty remain unresolved. This is a research dossier, not external peer review or a claim of a new framework.
@@ -245,6 +245,37 @@ successful envelope for this same example. Thus the next step must retain
 more actual spectral information; the unrestricted retention conjecture
 is neither proved nor refuted.
 
+The [controlled-phase family theorem](docs/audits/CONTROLLED_PHASE_PAIR_CONVERSE.md)
+now proves the sharp three-query bound for queries on separate memory
+qubits, with the second query algebra conjugated by a controlled phase,
+arbitrary independent pair angles, and an
+arbitrary third binary-POVM pair. Four conserved parity sectors give the
+exact spectrum. A simple leading mode has flat memory marginal; when two
+modes are needed, their common copying sector gives an actual
+entanglement-breaking channel. Three spectral cases and two quadratic
+endpoint checks establish the entire continuous family, including all
+degeneracies and the product-memory equality corner.
+
+The [direct active-plane theorem](docs/audits/ACTIVE_PLANE_REVERSE_RESOLVENT.md)
+uses the full earlier Hamiltonian instead of flattening its spectrum.
+Writing `x=u-sqrt(2)` for the last active block's excess and `zeta_P` for
+the norm of the earlier readouts' normalized plane average, it proves
+`norm(H0+h)<=sqrt(2)+(x+sqrt(x^2+4U^2+4 zeta_P x))/2`.
+This works in every memory dimension and for any number of earlier query
+pairs. At three inputs, `U<=2sqrt(3)` permits every one-block last pair.
+The sharper actual-plane condition also repairs both preceding reflection
+obstructions, with a rational margin greater than `111/400`.
+
+The [one-axis channel lemma](docs/audits/ONE_AXIS_EB_REPAIR.md) constructs
+an explicit measure-and-prepare comparator from any qubit-input channel
+and the image of one Pauli observable. If that image has trace norm `2n`,
+the full diamond distance is at most `2n/(1+n)`. This is a supplied
+deduction from an established separability criterion, not a new
+separability principle. Its direct resolvent comparison yields a concrete
+high-m criterion: one Pauli image with trace norm at most `2/3` suffices.
+A cubic and a linear inequality prove that threshold. None of these results
+closes a complete remaining signature or establishes publication originality.
+
 ## 1. Origin, scope, and claim ledger
 
 Page 24 of the user-supplied *【马兆】坠落.pdf* describes a fictional progression from a quantum solver to a quantum-resident workflow because repeated classical–quantum interfaces become costly. The present model is our proposed scientific extraction; its assumptions and conclusions are not claims made by the fiction.
@@ -282,6 +313,10 @@ The general compression problem below is already present in the dimensional meas
 | Zero Pauli-conjugation gap implies an EB head or support at most 2+sqrt(2) | Derived and independently checked by exact flattening and complete coefficient classification. This requires zero gap; it is not a global approximation theorem for arbitrary heads. |
 | Exact last-query resolvent with any allowed Jordan-block count in odd or even dimension | Derived and independently checked: sum the nonnegative gains of the outermost eigenvalue pairs. One block uses only the extreme eigenvalues; fixed `(11)` ranks have a two-branch refinement. |
 | A defined inverse makes the actual one-mode envelope pass every one-block last pair | Incorrect even for reflections in `(22)^2(11)` and `(22)^2(12)`: both ordinary and signed-chiral tests exceed 33/32. The actual Hamiltonian stays below 21/4 for every third pair; its two-positive-mode envelope succeeds. |
+| Two controlled-phase-coupled query pairs with unequal original angles permit an arbitrary third pair | Derived and independently checked: the exact parity spectrum, flat marginal and actual copying-sector channel give the sharp norm bound 4+sqrt(2). This is a continuous family, not all ququart pairs. |
+| A one-block last query has a direct full-H0 norm bound in every memory dimension | Derived and independently checked by a spectral chord, exact plane inverse update and operator concavity. U<=2sqrt(3) suffices at three inputs; the actual-plane refinement also repairs the earlier reflection examples. |
+| One small Pauli image gives an explicit entanglement-breaking comparison channel | Derived and independently checked from the established qubit partial-transpose-invariance criterion: image trace norm 2n gives full diamond distance at most 2n/(1+n). No claim that every high-energy head has such an axis. |
+| Some Pauli image of trace norm at most 2/3 suffices throughout the high-m strip | Derived and independently checked through the direct EB repair resolvent comparison, with exact cubic and linear endpoint certificates. The actual channel's coherences are retained. |
 | Three partial-SWAP Bell-subspace projectors sum to at most 5I/2 | Derived and independently checked, with exact equality classification; gives the retention converse for equal spectra within each site's two Jordan blocks. Arbitrary independent U(4) embeddings remain open. |
 | All small subsystem perturbations around the known Bell-subspace attainers lower the sum norm | Derived and independently checked in all eighteen transverse directions; exact negative Hessian and an explicit radius 2^-10. A local converse, not global optimality or global rigidity. |
 | Exact worst weighted last-site resolvent in every even memory dimension, including all binary POVMs | Derived and independently checked: extreme spectral pairing and a convex-quartic/cubic-root decision eliminate the added decoder. Exact for a stated spectral upper bound, not a solution of the full Hamiltonian problem. |

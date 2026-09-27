@@ -1,7 +1,7 @@
 # Status and claim ledger
 
-Updated: 2026-09-27. Stage: the [exact block-budget resolvent](audits/JORDAN_BLOCK_BUDGET_RESOLVENT.md) evaluates the last-query optimization in odd or even memory dimension with any allowed number of active Jordan blocks. A separate [physical reflection example](audits/REFLECTION_ENVELOPE_OBSTRUCTION.md) refutes both ordinary and signed-chiral one-mode envelopes in `(22)^2(11)` and `(22)^2(12)`, despite a defined inverse and actual marginal. The same Hamiltonian stays below `21/4` for every third pair, and its two-positive-mode envelope succeeds. This invalidates the previous low-m proof target, not the retention conjecture. The high-m one-block, conserved-symmetry, and zero-Pauli-gap converses remain valid. All three complete remaining reflection signatures, unrestricted optimality and publication originality remain unresolved.
-Latest research base: `556df48950c2de3162171dd1d85c3df9e5937fc2`, the merge of PR #48.
+Updated: 2026-09-27. Stage: the [controlled-phase theorem](audits/CONTROLLED_PHASE_PAIR_CONVERSE.md) proves the sharp retention bound for an entire family with unequal query angles and an arbitrary third pair. A [direct active-plane bound](audits/ACTIVE_PLANE_REVERSE_RESOLVENT.md) retains the full earlier Hamiltonian, permits every one-block last pair when `U<=2sqrt(3)`, and repairs both previous one-mode obstruction examples through their actual plane means. An [explicit one-axis channel repair](audits/ONE_AXIS_EB_REPAIR.md) turns a small Pauli image into an entanglement-breaking comparator; image trace norm at most `2/3` suffices throughout the high-m regime. These are analytical family and sufficient-condition results. All three complete remaining reflection signatures, unrestricted optimality and publication originality remain unresolved.
+Latest research base: `7cb964b47b8aa13a604a3ab5df663d4f399fa6f4`, the merge of PR #49.
 
 Critical assessment base: `81bcfefb2b545742d513c4f51364a7f72972451e`, the
 merge of PR #11. The [publication and optimality assessment](audits/PUBLICATION_AND_OPTIMALITY_ASSESSMENT.md)
@@ -60,6 +60,10 @@ is asserted.
 | Zero Pauli-conjugation gap forces an EB head or support at most 2+sqrt(2) | Derived and independently checked; exact flattening and three coefficient forms, including flagged exceptions. No nonzero-gap neighborhood is claimed here | audits/ZERO_PAULI_GAP_DICHOTOMY.md |
 | Exact last-query resolvent with at most k active Jordan blocks, in odd or even dimension | Derived and independently checked from the exact block inverse and partial matching. Optimal blocks pair extreme marginal eigenvalues; the one-block and fixed `(11)` formulas eliminate all decoder variables | audits/JORDAN_BLOCK_BUDGET_RESOLVENT.md |
 | The actual rank-one envelope always passes a one-block last query below m=2+sqrt(2) | Incorrect even with six reflection readouts in `(22)^2(11)` and `(22)^2(12)`. Both ordinary and signed-chiral tests exceed 33/32, while every actual third-pair Hamiltonian has norm below 21/4. The two-positive-mode envelope passes for this example | audits/REFLECTION_ENVELOPE_OBSTRUCTION.md |
+| Two controlled-phase-coupled pairs with independent original angles permit any third pair with norm at most 4+sqrt(2) | Derived and independently checked; exact spectrum and actual flat/copying-channel structure cover the full phase and angle family, including degeneracies. The product-memory corner attains the bound | audits/CONTROLLED_PHASE_PAIR_CONVERSE.md |
+| One active last-query plane gives a direct norm bound for arbitrary earlier contractions in every memory dimension | Derived and independently checked by inverse chord, compressed update and concavity. At three inputs U<=2sqrt(3) suffices; the stronger actual-plane condition repairs the previous reflection obstructions with margin greater than 111/400 | audits/ACTIVE_PLANE_REVERSE_RESOLVENT.md |
+| A qubit-input channel has an explicit EB comparator at full diamond distance at most 2n/(1+n), where 2n is one Pauli image's trace norm | Derived and independently checked using an established separability implication; arbitrary output dimension and a constructive measure-and-prepare repair. No new separability principle or priority claim | audits/ONE_AXIS_EB_REPAIR.md |
+| A high-m actual head with some Pauli image of trace norm at most 2/3 obeys the converse | Derived and independently checked; a signed combination of two EB channels bounds the full coherent resolvent, and a cubic plus a linear comparison proves the uniform criterion. This is not assumed for every physical head | audits/ONE_AXIS_EB_REPAIR.md |
 | The synthetic partial-SWAP channel is excluded at U=m=2sqrt(3) in every reference orientation | Derived and independently checked from the equality conditions and a three-anticommuting-reflection obstruction in the reference X/Z space | audits/SHARP_TWO_MODE_SUPPORT.md Section 6 |
 | Three partial-SWAP Bell-subspace projectors obey the sharp sum bound 5/2 | Derived and independently checked, including all equality cases; the physical converse also assumes equal spectra within each site's two Jordan blocks | audits/NONCOMMUTING_QUERY_FAMILIES.md Sections 1–6 |
 | Every sufficiently small change of subsystem geometry around the known projector attainers obeys the 5/2 bound | Derived and independently checked in all eighteen transverse directions; exact negative quadratic form and radius 2^-10. No global optimality or global rigidity statement | audits/BELL_SUBSPACE_LOCAL_STABILITY.md Sections 1–5 |
@@ -482,16 +486,21 @@ potential violation must have `m<2+sqrt(2)`. A universal rank-one resolvent
 inequality is no longer a viable target: the actual reflection example
 disproves it, including the version retaining its negative chiral
 partner. The exact one-block formula remains useful wherever that sufficient
-test passes. The next target is a bound retaining the actual two-positive-mode
-channel and its compatibility with the original readouts, or a sharper
-spectral-tail comparison if that envelope also loses too much. The new
-example demonstrates a successful two-positive-mode repair, not its universal
-validity. There is no uniform one-mode resolvent gap as m approaches the
-threshold. For the fully double-block case, the conserved-symmetry family and zero-Pauli-gap
-classification identify exact safe structures; controlling departure from
-them globally remains open. The spectral/moment/compression relaxation
-alone remains insufficient, and a zero squared support deficit alone does
-not imply an entanglement-breaking channel at the scalar-pair endpoint.
+test passes. The direct active-plane theorem now additionally requires every
+possible violating one-block tuple to have `U>2sqrt(3)` and
+`U^2+(4+zeta_P)(u-sqrt(2))>16`, where u and zeta_P are its actual last-block
+energy and earlier plane-average norm. The full inverse argument explicitly
+repairs both preceding envelope obstructions.
+
+For the fully double-block case, the controlled-phase family is now closed
+for all unequal original angles and arbitrary third pairs. The explicit
+channel repair also excludes every high-m head with one Pauli image of
+trace norm at most `2/3`; a remaining high-m witness would have to preserve
+more than this along every head axis. A global relation between that channel
+property and the original readouts remains the next structural target.
+The two-positive-mode envelope has not been proved for all actual data.
+Spectral/moment/compression constraints alone remain insufficient, and the scalar endpoint shows why
+one cannot assume every high-m channel is close to EB.
 
 The [optimizer follow-up](audits/FORMATION_OPTIMIZERS_AND_PRIOR.md)
 strengthens the one-site equality result: every entropy optimum in the

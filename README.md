@@ -153,6 +153,29 @@ nevertheless stays below `21/4<4+sqrt(2)` for every third pair, and its
 two-positive-mode bound succeeds. The next proof must preserve more of the
 actual spectrum and channel; the full remaining signatures are still open.
 
+The [controlled-phase converse](docs/audits/CONTROLLED_PHASE_PAIR_CONVERSE.md)
+now proves the sharp bound `4+sqrt(2)` when two query algebras on separate
+memory qubits are coupled by a controlled phase. Their original query
+angles may differ and need not be orthogonal; the third binary-POVM pair
+is arbitrary. Conserved parities give a flat top marginal or a classical
+two-mode channel, and two quadratic checks complete the whole family.
+
+A [direct active-plane bound](docs/audits/ACTIVE_PLANE_REVERSE_RESOLVENT.md)
+keeps the full earlier Hamiltonian in its inverse. For any one-block last
+pair, earlier norm `U<=2sqrt(3)` suffices; a sharper condition uses the
+actual block angle and the earlier readouts' means on its memory plane.
+It also handles both explicit one-mode obstruction examples. The same
+argument gives a quantitative norm bound for any number of earlier queries
+and any memory dimension under the stated last-pair restriction.
+
+An [explicit channel repair](docs/audits/ONE_AXIS_EB_REPAIR.md) turns small
+output distinguishability along one input Pauli axis into a constructive
+entanglement-breaking comparison channel. This makes the earlier abstract
+distance criterion directly testable while retaining the actual coherent
+head. Throughout the high-second-mode region, one Pauli image with trace
+norm at most `2/3` suffices. The unrestricted converse and all three complete
+remaining signatures are still open.
+
 The [spectral-budget extension](docs/audits/JORDAN_SPECTRAL_BUDGET.md)
 now retains every Jordan block and gives a scalar sufficient test for the
 benchmark, including families with two noncommuting blocks at every site.
