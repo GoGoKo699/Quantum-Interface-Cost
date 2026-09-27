@@ -118,6 +118,25 @@ measurement-and-preparation channel. It closes the entire previously
 constructed nonclassical-head family, including its entangled Choi states.
 The argument preserves the coherent head channel throughout.
 
+Two structural arguments now go beyond a small stability neighborhood.
+The [one-block last-query theorem](docs/audits/HIGH_SECOND_MODE_ONE_BLOCK.md)
+closes the entire high-second-mode region when the last pair has at most
+one noncommuting Jordan block. Any possible violation in the two remaining
+signatures with such a pair must therefore have a valid one-mode resolvent.
+The [conserved-symmetry theorem](docs/audits/CONSERVED_SYMMETRY_CONVERSE.md)
+gives the stronger bound `||H||<=5` for four readouts in two explicit
+three-dimensional Pauli spaces, with an arbitrary third pair. Two exact
+symmetries force every isolated positive rank-two head channel to be a
+two-basis measurement with an orthogonal record. The bound five is not
+asserted optimal.
+
+An [exact Pauli-gap dichotomy](docs/audits/ZERO_PAULI_GAP_DICHOTOMY.md)
+also links support to channel structure: if the complementary square
+root has only the identity and four single-query Pauli components, the
+head is entanglement breaking or its support is at most `2+sqrt(2)`.
+This is an exact structural condition. The full remaining signatures and
+unrestricted converse remain open.
+
 The [spectral-budget extension](docs/audits/JORDAN_SPECTRAL_BUDGET.md)
 now retains every Jordan block and gives a scalar sufficient test for the
 benchmark, including families with two noncommuting blocks at every site.
@@ -289,6 +308,8 @@ supplied evaluations.
 | Two sharp ququart query pairs and an arbitrary third pair obey the retention bound | [Complete sharp-pair converse and exact scalar certificate](docs/audits/TWO_SHARP_PAIR_CONVERSE.md) |
 | Sharp sum of the two leading energies for arbitrary pairs, weighted support and equality | [Two-mode support theorem and boundary converse](docs/audits/SHARP_TWO_MODE_SUPPORT.md) |
 | Explicit stability near that boundary and a converse allowing nonclassical head channels | [Quantitative stability](docs/audits/QUANTITATIVE_TWO_MODE_STABILITY.md); [robust channel criterion](docs/audits/ROBUST_HEAD_CHANNEL_CONVERSE.md) |
+| High second mode with a one-block last query; conserved-symmetry readouts with any last query | [One-block theorem](docs/audits/HIGH_SECOND_MODE_ONE_BLOCK.md); [bound five](docs/audits/CONSERVED_SYMMETRY_CONVERSE.md) |
+| Exact link between Pauli support and coherent head structure | [Zero-gap dichotomy](docs/audits/ZERO_PAULI_GAP_DICHOTOMY.md) |
 | Exact optimum with one retained qubit | [One-qubit theorem and equality cases](docs/ONE_QUBIT_OPTIMALITY.md) |
 | Exact region for separate accuracies at every local query | [One-qubit allocation theorem](docs/ONE_QUBIT_ALLOCATION_REGION.md) |
 | Collective advantage for unequal X/Z accuracies | [Exact-axis spectral reduction](docs/EXACT_AXIS_SPECTRAL_REDUCTION.md) |
