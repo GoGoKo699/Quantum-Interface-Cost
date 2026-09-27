@@ -47,6 +47,22 @@ original rank cap, and no eigenvalue-spacing assumption is needed. This
 quantifies the cost of replacing a nonuniform spectrum; it does not yet
 prove the general retention or entropy conjecture.
 
+The [balanced-spectrum theorem](docs/audits/BALANCED_SPECTRUM_OPTIMALITY.md)
+now evaluates an entire family at **every input size**. For spectra with
+two equally sized eigenspaces, write `rho=(I+tR)/2^n`, where R is a
+traceless Hermitian reflection and `0<=t<=1`. The exact maximum original
+query score over all eigenvectors is
+
+$$
+2(n-1)+\sqrt{4-2t^2}.
+$$
+
+For t>0, every maximizing state is one original-site X/Z bisector with
+Bloch length t, tensored with maximally mixed spectators. At t=1 this
+proves the retention bound and all equality cases for **every flat
+half-rank seed, at arbitrary n**. The same family obeys the sharp entropy
+bound. Arbitrary nonflat half-rank spectra at larger n remain unresolved.
+
 **Read the [short core argument](docs/CORE_ARGUMENT.md)** for this result,
 the exact allocation rule for one retained qubit at every input size, and
 a collective advantage for unequal accuracies. Together they separate
@@ -76,6 +92,7 @@ results, including the obstructions to insufficient proof methods.
 | Exact four-input, two-qubit optimum, all maximizing seeds, and exact certificate | [Nonflat quarter-rank converse](docs/audits/NONFLAT_QUARTER_RANK_CONVERSE.md) |
 | Why the affinity proof cannot yield the general retention bound; exact relaxation profile and decoder gap | [Affinity method limit](docs/audits/AFFINITY_METHOD_LIMIT.md) |
 | Original-score comparison with nested flat seeds, with a sharp decoder-gap error | [Spectral-layer bound](docs/audits/SPECTRAL_LAYER_SCORE_BOUND.md) |
+| Exact all-size balanced-spectrum optimum and every flat half-rank equality seed | [Balanced-spectrum theorem](docs/audits/BALANCED_SPECTRUM_OPTIMALITY.md) |
 | Exact unrestricted half-rank optimum through four inputs and all maximizing seeds | [Half-rank converse](docs/audits/HALF_RANK_RETENTION_CONVERSE.md) |
 | Unrestricted collective-encoding problem | [Seed reduction](docs/COLLECTIVE_ENCODING_REDUCTION.md) |
 | Two sharp ququart query pairs and an arbitrary third pair obey the retention bound | [Complete sharp-pair converse and exact scalar certificate](docs/audits/TWO_SHARP_PAIR_CONVERSE.md) |
