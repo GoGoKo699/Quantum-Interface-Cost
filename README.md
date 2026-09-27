@@ -31,6 +31,14 @@ signs are certified by exact rational arithmetic on one rectangle, without
 subdivision or numerical optimization. Equality identifies exactly the
 two-site retention seeds.
 
+The [dimension-independent continuation](docs/audits/AFFINITY_METHOD_LIMIT.md)
+identifies the limit of that proof method. A weighted Hamming star on
+15 inputs has rank 16 and violates the proposed general root-affinity bound,
+while its actual query score remains below retention. More generally,
+the root-affinity sum cannot obey `sqrt(2)n+C log2(rank)` with a fixed C.
+The note evaluates the relaxation's asymptotic optimum using established
+Faber–Krahn theory and identifies the exact decoder terms it discards.
+
 **Read the [short core argument](docs/CORE_ARGUMENT.md)** for this result,
 the exact allocation rule for one retained qubit at every input size, and
 a collective advantage for unequal accuracies. Together they separate
@@ -58,6 +66,7 @@ results, including the obstructions to insufficient proof methods.
 | Exact assumptions and baseline proofs | [RESEARCH_NOTE.md](RESEARCH_NOTE.md), Sections 2–7 |
 | What is established, derived, or still a target | [STATUS](docs/STATUS.md) |
 | Exact four-input, two-qubit optimum, all maximizing seeds, and exact certificate | [Nonflat quarter-rank converse](docs/audits/NONFLAT_QUARTER_RANK_CONVERSE.md) |
+| Why the affinity proof cannot yield the general retention bound; exact relaxation profile and decoder gap | [Affinity method limit](docs/audits/AFFINITY_METHOD_LIMIT.md) |
 | Exact unrestricted half-rank optimum through four inputs and all maximizing seeds | [Half-rank converse](docs/audits/HALF_RANK_RETENTION_CONVERSE.md) |
 | Unrestricted collective-encoding problem | [Seed reduction](docs/COLLECTIVE_ENCODING_REDUCTION.md) |
 | Two sharp ququart query pairs and an arbitrary third pair obey the retention bound | [Complete sharp-pair converse and exact scalar certificate](docs/audits/TWO_SHARP_PAIR_CONVERSE.md) |
@@ -171,8 +180,10 @@ The main research target remains a sharp common-accuracy rate or a proven
 collective advantage for that task. Every integer-budget finite problem
 through four inputs is now settled. The smallest remaining finite
 diagnostic is `Gamma(5,4) ?= 4+3sqrt(2)`, corresponding to five inputs and
-two retained qubits. The next priority is a dimension-independent
-rank/positivity principle.
+two retained qubits. The next priority is a dimension-independent bound
+on the original trace norms, retaining the optimal decoder's interaction
+with the seed spectrum. The affinity-only extension is now explicitly
+ruled out; the original retention conjecture remains open.
 For the entropy route,
 even a two-input state of rank three could in principle certify a rate
 advantage: all rank-two states and all flat rank-three two-input states are

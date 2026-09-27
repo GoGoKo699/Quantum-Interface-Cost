@@ -1,6 +1,6 @@
 # Q1 — Delayed local readout through a bounded quantum interface
 
-**Version:** 0.49, 2026-09-27
+**Version:** 0.50, 2026-09-27
 
 **Project:** Falling / Q1  
 **Status:** The unrestricted equal-accuracy optimum is proved for every integer quantum-memory budget through four input qubits. The nonflat quarter-rank converse closes `(n,q)=(4,2)` and classifies all maximizing normalized seeds. The exact all-n one-qubit allocation result and the unequal-accuracy collective advantage remain separate results. The general two-qubit entropy inequality, common-accuracy asymptotic rate and publication originality are unresolved. The full product-diagonal profile evaluates an established steering entanglement measure; it is not a new resource framework. All proof review described here is internal, not external peer review.
@@ -18,6 +18,15 @@ spectral-spread bound, a sum-of-squares identity, and an exact two-polynomial
 certificate on one rectangle. It does not flatten a nonuniform seed.
 Equality at `(4,2)` requires two pure local X/Z bisectors and two maximally
 mixed retained sites, up to original-site permutations and output isometries.
+
+The [affinity-method continuation](docs/audits/AFFINITY_METHOD_LIMIT.md)
+now shows why this stronger surrogate cannot prove the general retention
+formula. An explicit weighted star at `(n,q)=(15,4)` violates the
+surrogate bound but satisfies the original benchmark. The star family
+rules out every universal linear logarithmic-rank charge for the surrogate.
+Its exact entropy optimum and asymptotic rank profile are elementary
+corollaries of established Faber–Krahn theory. An exact optimal-decoder gap
+identity identifies information needed for a direct trace-norm argument.
 
 The [half-rank converse](docs/audits/HALF_RANK_RETENTION_CONVERSE.md)
 now settles the unrestricted finite optima
@@ -72,6 +81,9 @@ The general compression problem below is already present in the dimensional meas
 | Unrestricted Gamma(n,2^(n-1))=2(n-1)+sqrt(2), n=2,3,4 | Derived and independently reconstructed from positivity, a rank-constrained Pauli-spectrum estimate and one positive quadratic. Arbitrary spectra and decoder algebras are included. |
 | Every maximizing half-rank normalized seed is a retention seed, n=2,3,4 | Derived with complete equality analysis: one pure X/Z bisector and n-1 maximally mixed reference sites, up to output isometries. This is not a classification of every physical instrument. |
 | Unrestricted Gamma(4,4)=4+2sqrt(2), including all maximizing normalized seeds | Derived and independently reconstructed for arbitrary spectra; exact rational Bernstein certificate supports the scalar positivity step. Equality consists of two original-site bisectors and two maximally mixed retained sites. |
+| General retention bound for the root-affinity surrogate | False: an exact rank-16 star on 15 inputs exceeds the surrogate benchmark; its original trace-norm score stays below retention. No finite C gives a universal surrogate bound sqrt(2)n+C log2(rank). |
+| Exact entropy and asymptotic rank profile of the root-affinity surrogate | Elementary deduction from Beigi's established entropy-energy and Faber–Krahn inequalities with matching product and truncated-product constructions; not the original interface optimum. |
+| Equality in every fidelity–affinity comparison | Each flat positive-eigenvalue block has exactly the same original query profile as the seed. A nonflat rank-at-most-2^q seed with this equality can therefore be replaced by a flat seed of rank at most 2^(q-1). |
 | Four-input, rank-at-most-four squared query-score budget | Exactly six, derived and independently reconstructed for arbitrary spectra. Equality fixes two pure X/Z-plane sites and two maximally mixed sites. This does not evaluate the unsquared score. |
 | Four-input, two-qubit retention converse for flat seeds and rank at most three | Derived and independently reconstructed; all flat equality seeds are retention seeds with two bisectors. The subsequent nonflat quarter-rank theorem removes the remaining spectrum restriction. |
 | Exact optimum and maximizing seeds with one retained qubit | Derived and independently checked from Cheng–Hall monogamy [11]; see Section 8 and the full proof. |

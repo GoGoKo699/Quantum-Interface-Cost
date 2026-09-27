@@ -1,5 +1,54 @@
 # Reproducibility and source provenance
 
+## The dimension-independent limit of the affinity method
+
+The [affinity-method proof](audits/AFFINITY_METHOD_LIMIT.md) is pinned to
+main `ced383d1a4ad8d9c13fbd4ebe1befd3c6284519a`. Run its bounded checks with:
+
+```bash
+python tools/check_affinity_method_limit.py --output results/affinity_method_limit.json
+```
+
+Independent internal readers reconstructed the weighted-star formulas,
+the exact 15-input, rank-16 surrogate violation and original-score
+nonviolation, the impossibility of any universal linear logarithmic-rank
+surrogate bound, the sharp entropy and asymptotic rank profiles, and the
+optimal-decoder gap and spectral-block equality. Primary-source review
+checked the Beigi and classical Faber–Krahn normalizations. The asymptotic
+profile is an elementary corollary of established inequalities with a
+matching construction; it is not the original interface rate.
+
+The verifier passed 21 exact rational comparisons and 416 matrix identities
+with 300 inequality checks, across five fixed constructions and 42 local
+queries. Fraction and integer-square-root arithmetic certify both strict
+score comparisons for the star. All 30 original star queries are represented
+by their 16-by-16 support compressions; no 32768-dimensional matrix is formed.
+Four additional qubit/two-qubit constructions check the exact mixed-bisector
+gap, a nonflat seed with identical flat-block profiles, complex singular
+seeds and the unitary extension of zero optimal-query eigenspaces.
+
+The run used Python 3.12.14 and NumPy 2.3.5 with tolerance `3e-9`.
+Matrix dimension was at most 16, relative identity residuals were below
+`7.78e-16`, and inequality margins were above `-2.23e-16`. The floating-point
+checks are diagnostics. The exact arithmetic establishes the listed finite
+comparisons; the analytical proof establishes the universal and asymptotic
+statements. There is no grid, random sampling, optimizer or large simulation.
+
+Both source reviews passed. One independent scratch rerun reproduced the
+complete report byte for byte and verified its provenance:
+
+| Artifact | SHA-256 |
+|---|---|
+| Proof note | `6f3f45518b3c5fef6f68fc12d6ae6cd5c7277979118426cbec78e7227480d1c2` |
+| Checker source | `0b7315cd4a95cca0c80ee4febd19630f549aeaf14a5f477a374807d469cc3b50` |
+| Report | `6c129eb8577efa953c57b23d1e12ca46f66a9b81a759a022c5d4956f9d2ad3c5` |
+
+Output guards protect the source and proof note. Cross-platform floating
+results need only meet the stated tolerance. Earlier frozen proofs,
+reports, audits and the license are preserved; unchanged diagnostics were
+not rerun. The original general retention and entropy conjectures remain
+open, and the valid finite optima through four inputs are unaffected.
+
 ## Unrestricted four-input, two-qubit optimum
 
 The [nonflat quarter-rank converse](audits/NONFLAT_QUARTER_RANK_CONVERSE.md)
