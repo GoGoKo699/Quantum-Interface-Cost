@@ -1,5 +1,56 @@
 # Reproducibility and source provenance
 
+## Direct active-plane bound, channel repair and controlled-phase converse
+
+The [active-plane theorem](audits/ACTIVE_PLANE_REVERSE_RESOLVENT.md),
+[one-axis channel repair](audits/ONE_AXIS_EB_REPAIR.md), and
+[controlled-phase converse](audits/CONTROLLED_PHASE_PAIR_CONVERSE.md) are
+pinned to main `7cb964b47b8aa13a604a3ab5df663d4f399fa6f4`. Run:
+
+```bash
+python tools/check_direct_resolvent_and_channel.py --output results/direct_resolvent_and_channel.json
+```
+
+Independent internal reviewers reconstructed all three analytical arguments.
+The direct inverse proof includes arbitrary earlier contractions and memory
+dimension, the exact compressed inverse update, and the actual-plane repair
+of the preceding reflection obstruction. The channel note credits the prior
+partial-transpose-invariance separability criterion and supplies an explicit
+repair, a direct resolvent comparison, and the `2/3` Pauli-image threshold.
+The controlled-phase proof covers all phase and pair angles, zero coefficients,
+and degenerate leading eigenvalues through exact spectral cases.
+
+The verifier passed 29 exact rational checks, 214 matrix identities, and
+52 matrix inequalities across 13 fixed constructions. Three active-plane
+cases use one, two, and three earlier queries in memory dimensions 3, 4,
+and 4. Four channels include zero and maximal axis distinguishability,
+amplitude damping, and a complex four-dimensional embedding. Six
+controlled-phase cases cover equality, both spectral branches, degeneracy,
+signed phases, unequal readout angles, and a zero coefficient. The checks
+retain the actual channel, including its coherent blocks.
+
+All passed with Python 3.12.14 and NumPy 2.3.5, at tolerance `3e-9`.
+Maximum matrix dimension was 64; relative identity residuals were below
+`1.74e-15`, and tested positive-matrix eigenvalues were above `-2.16e-15`.
+Checker SHA-256:
+`71ff73c42a458c0de9e88a4881bc85f5384b09719636722b6609fdd225c5b2e6`.
+The JSON pins all three proof-note hashes. Output guards protect the source
+and proof notes from accidental overwriting.
+
+An independent source audit and separate scratch rerun passed. The rerun
+reproduced the recorded JSON byte for byte, with SHA-256
+`663f0d0f038d2b057b301902b93cfd367fa20c454fdf62c071b9cfd3654955d5`,
+and verified all four provenance hashes. Cross-platform floating results
+need only meet the stated tolerance.
+
+The finite matrix checks supplement the analytical proofs. Floating-point
+eigenvalues and inverse comparisons are not interval certificates, and
+the recorded Choi trace distances are not diamond-norm computations. No
+parameter grid or optimizer is used by this verifier or as a proof step;
+no large simulation was used. These results do
+not settle a complete remaining reflection signature, the unrestricted
+optimum, or publication originality. Unchanged diagnostics were not rerun.
+
 ## Exact block-budget resolvent and physical envelope obstruction
 
 The [block-budget theorem](audits/JORDAN_BLOCK_BUDGET_RESOLVENT.md) and
