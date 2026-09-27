@@ -26,24 +26,24 @@ The original one-specimen, one-delayed-query model is unchanged.
 Let Q have dimension four and let R1,R2 be qubits. For i=1,2 let B_i,D_i
 be Hermitian reflections satisfying `{B_i,D_i}=0`. Put
 
-\[
+```math
 H_0=X_{R_1}\otimes B_1+Z_{R_1}\otimes D_1
     +X_{R_2}\otimes B_2+Z_{R_2}\otimes D_2.
-\]
+```
 
 Spectator identities are implicit. Define memory qubits A,B only as a
 coordinate identification of Q, and let
 
-\[
+```math
 V(\alpha)=\exp i(\alpha_x X_AX_B+\alpha_yY_AY_B+
                     \alpha_zZ_AZ_B),\qquad
 P(n)=I_3-nn^{\mathsf T},\quad n\in S^2.
-\]
+```
 
 Every H_0 is unitarily equivalent, by a common memory unitary and
 independent reference unitaries, to
 
-\[
+```math
 \boxed{
 \mathcal H(\alpha,n_1,n_2)=
 \sum_{a,b=x,y,z}P(n_1)_{ab}\,\sigma_{R_1}^{a}\sigma_A^b
@@ -52,15 +52,15 @@ independent reference unitaries, to
  V(\alpha)(\sigma_A^b\otimes I_B)V(\alpha)^\dagger.
 }
 \tag{NF1}
-\]
+```
 
 The domain
 
-\[
+```math
 (\alpha_x,\alpha_y,\alpha_z)\in[-\pi/2,\pi/2]^3,
 \qquad n_1,n_2\in S^2
 \tag{NF2}
-\]
+```
 
 covers every case, including degenerate gates and coincident/complementary
 memory subsystems. It has seven real parameters: three angles and two
@@ -88,10 +88,10 @@ An overall phase of U has no effect.
 
 The established two-qubit Cartan decomposition gives
 
-\[
+```math
 U=(a\otimes b)V(\alpha)(c\otimes d),
 \tag{NF3}
-\]
+```
 
 with a,b,c,d single-qubit unitaries. Conjugate the entire Hamiltonian on
 memory by `(a tensor b)^dagger`. The first memory pair becomes
@@ -104,10 +104,10 @@ Next conjugate R1 by a^dagger and R2 by c. In each term, the two orthogonal
 Bloch directions of the reference now equal the two pre-V memory Bloch
 directions. Define n1,n2 by
 
-\[
+```math
 n_1\cdot\sigma=a^\dagger Y a,\qquad
 n_2\cdot\sigma=cYc^\dagger.
-\]
+```
 
 For any orthonormal frame `(u,n,v)` obtained by rotating `(x,y,z)`,
 `u u^T+v v^T=I-nn^T`. Summing the X and Z terms therefore gives exactly
@@ -132,19 +132,19 @@ with unequal Jordan angles do not satisfy this hypothesis automatically.
 Set `c_a=cos(2 alpha_a)` and `s_a=sin(2 alpha_a)`. For each cyclic
 permutation `(a,b,c)` of `(x,y,z)`, put
 
-\[
+```math
 T_a=c_b c_c\,\sigma_a\otimes I
 +s_b s_c\,I\otimes\sigma_a
 +s_b c_c\,\sigma_c\otimes\sigma_b
 -c_b s_c\,\sigma_b\otimes\sigma_c.
 \tag{NF4}
-\]
+```
 
 Then `T_a=V(sigma_a tensor I)V^dagger`. For example,
 
-\[
+```math
 T_x=c_yc_z XI+s_ys_z IX+s_yc_z ZY-c_ys_z YZ.
-\]
+```
 
 This follows by two applications of
 `e^(itP) Q e^(-itP)=cos(2t)Q+i sin(2t)PQ` when P,Q are anticommuting
@@ -159,21 +159,21 @@ inequality over that domain.
 
 The normal form anticommutes with the reference-only involution
 
-\[
+```math
 \Gamma=(n_1\cdot\sigma_{R_1})(n_2\cdot\sigma_{R_2})\otimes I_Q.
 \tag{NF5}
-\]
+```
 
 Indeed, each reference vector selected by P(n_i) is perpendicular to n_i.
 The projectors E_+=(I+Gamma)/2 and E_-=(I-Gamma)/2 have rank eight on the
 full reference-memory space, and
 
-\[
+```math
 \mathcal H=\begin{pmatrix}0&C\\C^\dagger&0\end{pmatrix},
 \qquad C=E_+\mathcal H E_-:
 \operatorname{ran}E_-\longrightarrow\operatorname{ran}E_+.
 \tag{NF6}
-\]
+```
 
 Its spectrum consists of the positive and negative singular values of C,
 with zero multiplicities included. In particular U is the largest
@@ -183,7 +183,7 @@ the two largest eigenvalues of this Hamiltonian.
 For a simple U>0, choose unit singular vectors u,v with
 `Cv=Uu`, `C^dagger u=Uv`, and u in ran E_+, v in ran E_-. Then
 
-\[
+```math
 \Omega=(u+v)/\sqrt2,
 \qquad
 \boxed{\rho_Q=\tfrac12\left(
@@ -191,7 +191,7 @@ For a simple U>0, choose unit singular vectors u,v with
 +\operatorname{Tr}_{R_1R_2}|v\rangle\langle v|
 \right).}
 \tag{NF7}
-\]
+```
 
 The cross terms vanish under the partial trace because E_+ and E_- select
 orthogonal reference parity spaces. This is an exact reconstruction of
@@ -215,55 +215,55 @@ merely from failure of a spectral upper bound.
 
 Write `r=sqrt(2)` and choose
 
-\[
+```math
 \lambda=\frac1{60}(29,29,1,1),\qquad
 U=\frac72,\qquad m=\frac12+2r.
-\]
+```
 
 Then `2<m<U<4`, `U+m=4+2r`, and
 
-\[
+```math
 t=4+r-m=\frac72-r>2,\qquad
 c=U-m=3-2r=2(t-2)>0.
-\]
+```
 
 Both extreme eigenvalue pairs are `(x,y)=(29/60,1/60)`.
 Their combined imbalance is
 
-\[
+```math
 \delta=\frac{x-y}{x+y}=\frac{14}{15}.
-\]
+```
 
 For the kernel `k(a,b)=(a-b)^2/(a+b)`, the exact two-qubit SLD
 spectral minimum is
 
-\[
+```math
 E_*(\lambda)=k_{12}+k_{13}+k_{24}+k_{34}
 =2\frac{(28/60)^2}{30/60}
 =\frac{196}{225}=\delta^2.
-\]
+```
 
 The ordinary spectrum-dependent correlation condition holds strictly:
 
-\[
+```math
 E_* = \frac{196}{225}<\frac{15}{16}
 =4-\frac{U^2}{4}.
-\]
+```
 
 The stronger necessary condition derived in Section 6 also holds:
 
-\[
+```math
 E_* = \frac{196}{225}<\frac{29}{32}
 =2+U-\frac{3U^2}{8}.
-\]
+```
 
 Finally, Section 7 of `docs/ENTROPY_INEQUALITY_BOUNDARIES.md` proves
 the exact maximum score over all two-qubit eigenbases at this spectrum:
 
-\[
+```math
 g_{\max}(\lambda)=2+\sqrt{4-2\delta^2}
 =2+\frac{2\sqrt{127}}{15}>\frac72=U.
-\]
+```
 
 The strict final comparison follows from `508>2025/4` after squaring
 the positive quantities. Thus replacing the SLD bound by this exact
@@ -276,38 +276,38 @@ it does not assert realization by two sharp readout pairs.
 Use the allowed Jordan parameter `a=1`, hence `b=1`, in both
 extreme-eigenvalue pairs. The two scalar resolvent eigenvalues are
 
-\[
+```math
 f=\frac{t-1}{t(t-2)},\qquad
 g=\frac{t+1}{t(t+2)}.
-\]
+```
 
 Since Phi is the maximum over all allowed blocks,
 
-\[
+```math
 \begin{aligned}
 \sum_{j=1}^{2}\Phi_t(\lambda_j,\lambda_{5-j})
 &\ge 2\left(\frac{29}{60}f+\frac1{60}g\right)\\
 &=\frac{29}{30}f+\frac1{30}g\\
 &=\frac{t^2-2+(14/15)t}{t(t^2-4)}.
 \end{aligned}
-\]
+```
 
 Multiplying by `c=2(t-2)` gives
 
-\[
+```math
 \begin{aligned}
 c\sum_{j=1}^{2}\Phi_t(\lambda_j,\lambda_{5-j})-1
 &\ge \frac{t^2-(2/15)t-4}{t(t+2)}\\
 &=\boxed{\frac{587-412\sqrt2}{60t(t+2)}}>0.
 \end{aligned}
-\]
+```
 
 The denominator is positive. The numerator is strictly positive
 because `587>0`, `412>0`, and
 
-\[
+```math
 587^2-2\cdot412^2=5081>0.
-\]
+```
 
 The explicit lower witness is approximately `1.008495604658788`.
 The strict conclusion uses exact arithmetic, not that decimal.
@@ -316,9 +316,9 @@ For a general doubly repeated spectrum
 `((1+delta)/4,(1+delta)/4,(1-delta)/4,(1-delta)/4)` on the
 boundary `U+m=4+2r`, this same fixed `a=1` block already fails whenever
 
-\[
+```math
 \delta>1+\frac2t-\frac t2,\qquad t=U-r>2.
-\]
+```
 
 This is a sufficient failure condition for one explicit block, not an
 exact formula for the scalar-branch transition of Phi.
@@ -333,62 +333,62 @@ rho be its two-qubit reference marginal, with eigenvalues lambda.
 
 Set
 
-\[
+```math
 S_i=X_i\otimes B_i,\quad T_i=Z_i\otimes D_i,\quad
 s_i=\langle S_i+T_i\rangle_\Omega,
 \quad e_i=\langle S_iT_i\rangle_\Omega.
-\]
+```
 
 The two tensor reflections commute: the reference and memory factors
 each anticommute. Hence `(I-S_i)(I-T_i)` is positive, and
 
-\[
+```math
 e_i\ge s_i-1.
-\]
+```
 
 Also `s_i<=2` and `s_1+s_2=U`, so `s_i>=U-2>r>1`.
 In particular both lower bounds `s_i-1` are positive and may be
 squared. The product is itself a Pauli correlation:
 
-\[
+```math
 S_iT_i=Y_i\otimes F_i,\qquad F_i=-iB_iD_i,
-\]
+```
 
 where `F_i` is another Hermitian reflection.
 
 For any reference Pauli P and any memory contraction C, purification
 and trace-norm duality give
 
-\[
+```math
 |\langle P\otimes C\rangle_\Omega|
 \le\|\sqrt\rho P\sqrt\rho\|_1,
-\]
+```
 
 and the proved trace-norm/SLD estimate bounds the square of the right
 side by `1-I_rho(P)`. Put `x_i=<S_i>`, `z_i=<T_i>`. Summing this
 inequality for all six local reference Paulis and using
 `sum_{i,P=X,Y,Z} I_rho(P)=2J(rho)>=2E_*(lambda)` yields
 
-\[
+```math
 2E_*(\lambda)
 \le 6-\sum_i(x_i^2+z_i^2+e_i^2).
-\]
+```
 
 Now `x_i^2+z_i^2>=s_i^2/2` and `e_i^2>=(s_i-1)^2`, so
 
-\[
+```math
 \begin{aligned}
 \sum_i(x_i^2+z_i^2+e_i^2)
 &\ge\frac32\sum_i s_i^2-2U+2\\
 &\ge\frac34U^2-2U+2.
 \end{aligned}
-\]
+```
 
 Therefore every such actual Hamiltonian obeys
 
-\[
+```math
 \boxed{E_*(\lambda)\le 2+U-\frac38U^2.}
-\]
+```
 
 This condition is stronger than `E_*<=4-U^2/4` for `U<4`, with
 difference `(4-U)^2/8`. The example above obeys it and still fails

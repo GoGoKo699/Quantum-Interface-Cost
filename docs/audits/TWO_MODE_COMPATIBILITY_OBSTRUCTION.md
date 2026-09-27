@@ -23,30 +23,30 @@ unresolved.
 
 Let
 
-\[
+```math
 H_0=X_1B_1+Z_1D_1+X_2B_2+Z_2D_2,
 \qquad -I\le B_i,D_i\le I,
 \tag{1}
-\]
+```
 
 on reference qubits R1,R2 and a four-dimensional memory Q. Its chiral
 symmetry is `Gamma=Y_1Y_2 tensor I_Q`. Write its first three eigenvalues
 as U,m,ell, let `V e_a=Omega_a` select the first two eigenvectors, and put
 `Sigma=diag(U,m)`. The dual head channel is
 
-\[
+```math
 \mathcal E(A)=V^\dagger(I_R\otimes A)V,
 \qquad \Phi(\omega)=\operatorname{Tr}_R(V\omega V^\dagger).
-\]
+```
 
 Every rank-r memory projector Pi obeys
 
-\[
+```math
 \|\widehat\Pi H_0\widehat\Pi\|\le k_r,
 \qquad \widehat\Pi=I_R\otimes\Pi,
 \qquad k_1=2\sqrt2,\quad k_2=2+\sqrt2.
 \tag{2}
-\]
+```
 
 For r=1 each compressed reference field has norm at most sqrt(2).
 For r=2 this is the established
@@ -54,11 +54,11 @@ For r=2 this is the established
 
 For U>0 these full compression bounds imply the matrix inequality
 
-\[
+```math
 \boxed{\mathcal E(\Pi)\le
 (U+k_r)(\Sigma+UI_2)^{-1}.}
 \tag{3}
-\]
+```
 
 Indeed chirality gives `||H_0||=U`, and spectral ordering gives
 `H_0>=V(Sigma+UI_2)V^dagger-UI`. Combining its compression with (2)
@@ -72,11 +72,11 @@ The zero operator needs no inverse and is trivial.
 In particular every pure head superposition, not only the selected
 eigenbasis, satisfies
 
-\[
+```math
 \sum_{j=1}^r\lambda_j\bigl(\Phi(|z\rangle\langle z|)\bigr)
 \le\min\left\{1,\frac{U+k_r}{U+m}\right\}.
 \tag{4}
-\]
+```
 
 If `m>2+sqrt(2)`, every nonzero leading superposition therefore has
 Schmidt rank at least three across references versus memory. This rules
@@ -87,49 +87,49 @@ The next example nevertheless satisfies the stronger full bounds (2).
 
 Use tensor order R1,R2,F,L, with `Q=F tensor L`. Set
 
-\[
+```math
 u=2\sqrt3,\qquad \ell=2/\sqrt3,\qquad g=u-\ell=4/\sqrt3,
 \qquad p=1/20,\qquad q=19/20.
 \tag{5}
-\]
+```
 
 Let W swap the memory qubits F,L, and define
 
-\[
+```math
 V_0|\psi\rangle=|0\rangle_{R_1}|\Phi^+\rangle_{R_2F}|\psi\rangle_L,
 \quad P_0=V_0V_0^\dagger,\quad
 T=\sqrt q\,I-i\sqrt p\,Y_1W.
-\]
+```
 
 The unitary T commutes with Gamma. Begin with
 
-\[
+```math
 H_{\rm base}=\ell Z_1+g(P_0-\Gamma P_0\Gamma)
 =\frac{3Z_1+X_2X_F+Z_2Z_F-Z_1Y_2Y_F}{\sqrt3},
-\]
+```
 
 where identities on omitted factors are implicit. Put
 
-\[
+```math
 H=T H_{\rm base}T^\dagger,\quad V=TV_0,\quad P=VV^\dagger,
 \quad N=\Gamma P\Gamma,\quad
 J=T Z_1T^\dagger=(1-2p)Z_1+2\sqrt{pq}X_1W.
-\]
+```
 
 Then J is an involution, `JP=P`, `JN=-N`, and
 
-\[
+```math
 H=\ell J+g(P-N),\qquad \Gamma H\Gamma=-H.
 \tag{6}
-\]
+```
 
 Its spectrum, including multiplicity, is
 
-\[
+```math
 \boxed{\{+u\ (\times2),+\ell\ (\times6),
              -\ell\ (\times6),-u\ (\times2)\}.}
 \tag{7}
-\]
+```
 
 This is the complete spectrum of the actual balanced example in
 [the two-mode note, Section 5.1](TWO_MODE_RESOLVENT.md#51-an-actual-balanced-example-needs-both-leading-modes).
@@ -138,18 +138,18 @@ In particular the actual third eigenvalue is ell, and
 
 The leading isometry is the coherent sum
 
-\[
+```math
 V|\psi\rangle=\sqrt q\,|0\rangle_1|\Phi^+\rangle_{2F}|\psi\rangle_L
 +\sqrt p\,|1\rangle_1|\psi\rangle_F|\Phi^+\rangle_{2L}.
-\]
+```
 
 Its full channel, including off-diagonal head inputs, is
 
-\[
+```math
 \boxed{\Phi(\omega)=q\frac{I_F}{2}\otimes\omega_L
 +p\omega_F\otimes\frac{I_L}{2}.}
 \tag{8}
-\]
+```
 
 The specified reference space has dimension four, so four Kraus
 operators suffice. No head dephasing or independent-marginal replacement
@@ -161,11 +161,11 @@ Equation (8) gives `Phi(I_2)=I_4/2`, hence
 `Tr_R P=Tr_R N=I_4/2`. The absolute eigenvalues in (7) give, for every
 integer k>=0,
 
-\[
+```math
 \boxed{\operatorname{Tr}_R H^{2k}=(u^{2k}+3\ell^{2k})I_4,
 \qquad \operatorname{Tr}_R H^{2k+1}=0.}
 \tag{9}
-\]
+```
 
 The even identity follows by separating P+N from its orthogonal
 complement. The odd identity follows from reference-only chirality.
@@ -174,37 +174,37 @@ aggregate head marginal is also `I_4/2`. Thus every memory-valued
 polynomial moment agrees, not merely the scalar spectrum or second
 moment. In particular
 
-\[
+```math
 \operatorname{Tr}_R H^2=16I_4,\qquad
 \operatorname{Tr}H^2=64,\qquad
 \Phi(\operatorname{diag}(u^2,u^2))=6I_4\le8I_4.
 \tag{10}
-\]
+```
 
 For every pure head input, the output (8) has spectrum
 
-\[
+```math
 \{1/2,19/40,1/40,0\}.
 \tag{11}
-\]
+```
 
 To check this, rotate the input to `|0>` and apply the same unitary to
 F and L. Thus its largest eigenvalue is 1/2 and the sum of its largest
 two eigenvalues is 39/40. For every memory projector Pi of rank r,
 
-\[
+```math
 \|\widehat\Pi P\widehat\Pi\|
 =\|V^\dagger\widehat\Pi V\|
 \le\sup_{\|z\|=1}\sum_{j=1}^r
   \lambda_j\bigl(\Phi(|z\rangle\langle z|)\bigr).
-\]
+```
 
 Since `H<=ell I+gP`, this bounds the largest eigenvalue of every
 compression of H. Each compression remains chiral, because Gamma
 commutes with every memory Pi; its spectrum is therefore symmetric.
 Consequently the full operator norms satisfy, for every support,
 
-\[
+```math
 \boxed{\begin{aligned}
 \operatorname{rank}\Pi=1:\quad
 \|\widehat\Pi H\widehat\Pi\|
@@ -214,7 +214,7 @@ Consequently the full operator norms satisfy, for every support,
 &\le\ell+39g/40=59/(10\sqrt3)<2+\sqrt2.
 \end{aligned}}
 \tag{12}
-\]
+```
 
 The second strict comparison reduces by positive squaring to
 `1681<1200sqrt(2)`, certified by
@@ -226,37 +226,37 @@ The second strict comparison reduces by positive squaring to
 Take the allowed sharp last pair `B=I_F tensor X_L`,
 `D=I_F tensor Z_L`, and set
 
-\[
+```math
 \Lambda=4+\sqrt2,\quad t=\Lambda-\ell>2,\quad
 \alpha(t)=\frac{t^2-2}{t(t^2-4)}.
-\]
+```
 
 The envelope of H is `ell I+gP`; its head weight is `Delta=gI_2`.
 Using the coherent channel (8), the exact four-by-four test is
 
-\[
+```math
 \mathcal K_t=g\left[q(tI-X_3X_h-Z_3Z_h)^{-1}
 +p\alpha(t)I_4\right].
 \tag{13}
-\]
+```
 
 Here the first branch preserves the logical-qubit resolvent and the
 second takes its normalized logical partial trace. The largest
 eigenvalue is attained on the Bell vector, giving
 
-\[
+```math
 \boxed{\|\mathcal K_t\|
 =g\left[\frac{19}{20(t-2)}+
 \frac{t^2-2}{20t(t^2-4)}\right]>1.}
 \tag{14}
-\]
+```
 
 The strict sign has an exact rational certificate. Write
 `nu=t(t^2-4)(||K_t||-1)`. Expansion gives
 
-\[
+```math
 15\nu=1050\sqrt3+438\sqrt6-830\sqrt2-1716.
-\]
+```
 
 The bounds `sqrt(3)>1732/1000`, `sqrt(6)>2449/1000`, and
 `sqrt(2)<1415/1000` follow by integer squaring. They imply
@@ -268,13 +268,13 @@ the proof of its strict sign uses no floating-point inference.
 For a physical leading isometry V, any head density matrix omega must
 also satisfy
 
-\[
+```math
 \boxed{\operatorname{Tr}(\Sigma\omega)\le
 \sum_{A\in\{X_1,Z_1,X_2,Z_2\}}
 \left\|\operatorname{Tr}_R
  [(A\otimes I_Q)V\omega V^\dagger]\right\|_1.}
 \tag{15}
-\]
+```
 
 Indeed the left side equals `Tr(H_0 V omega V^dagger)`. Optimizing each
 of the four independent memory contractions in (1) gives the
@@ -284,23 +284,23 @@ because A acts only on the traced reference system.
 The specific isometry defining (8) cannot be an energy-u physical head. Take
 `sigma=V(I_2/2)V^dagger=P/2`. Its four partial correlations are
 
-\[
+```math
 \begin{aligned}
 C_{X_1}&=\sqrt{pq}\,W/2,&
 C_{Z_1}&=(q-p)I_4/4,\\
 C_{X_2}&=(qX_F\otimes I_L+pI_F\otimes X_L)/4,&
 C_{Z_2}&=(qZ_F\otimes I_L+pI_F\otimes Z_L)/4.
 \end{aligned}
-\]
+```
 
 Their trace norms sum to
 
-\[
+```math
 2\sqrt{pq}+(q-p)+2q
 =\frac{14}{5}+\frac{\sqrt{19}}{10}
 <\frac{33}{10}<2\sqrt3=u.
 \tag{16}
-\]
+```
 
 The strict comparisons use `19<25` and `1089<1200`. Thus (15)
 excludes this particular isometry with these head energies independently

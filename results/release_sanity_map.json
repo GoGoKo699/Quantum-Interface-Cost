@@ -1,0 +1,296 @@
+{
+  "schema_version": 1,
+  "release_base": "400490aad505948f1bd62969fc6ddeb246706f4e",
+  "meaning": "Presentation/status revisions after the commit-pinned scientific freeze. Historical manifests and reports are unchanged; this map is not a new proof certificate.",
+  "mechanical_repair_counts": {
+    "files": 28,
+    "display_pairs": 476,
+    "inline_pairs": 134,
+    "table_rows": 6,
+    "joined_inline_expressions": 1
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "before_sha256": "cb827bbc2b17dbdbf09621373067a0dcaca06e983da4f97e1a517f4a88a4f7f1",
+      "after_sha256": "38d0e33f33e355af4410b1a7c028acb0c5bfea5737b8f1f8c1609b3360242dd0",
+      "change_kind": "navigation, manuscript status, or reproduction guidance"
+    },
+    {
+      "path": "RESEARCH_NOTE.md",
+      "before_sha256": "4fb2b7a63b18f9160174520a82b29ee144f5010f9d3841f2bb22c413eb365a16",
+      "after_sha256": "1cfe6191abc49acea0a09bfd0ae448d67339622127e4210f585518f5348b1720",
+      "change_kind": "mechanical math or table formatting",
+      "display_pairs_converted": 32,
+      "inline_pairs_converted": 0,
+      "complete_reverse_transform_restores_original_bytes": true
+    },
+    {
+      "path": "docs/ASYMMETRIC_ENTROPIC_CONVERSE.md",
+      "before_sha256": "7841a402a6d05f3f6bba67116dc76a540dca1c7df71d72a7c36ff3bcc2b5933c",
+      "after_sha256": "42a65459fa68e59a228d36e37ddf44d3fb9f4594c708352f9fd3d4c028957544",
+      "change_kind": "mechanical math or table formatting",
+      "display_pairs_converted": 0,
+      "inline_pairs_converted": 0,
+      "complete_reverse_transform_restores_original_bytes": true
+    },
+    {
+      "path": "docs/CORE_PRIOR_COMPARISON.md",
+      "before_sha256": "29c93c2beaa0b7afd7ca8025fd245f5bb29a254ade8cd95874310b3115236098",
+      "after_sha256": "4b06dd3fb32093b052f8454eed46da16f1afb084bc3afb632fa7ee1432430557",
+      "change_kind": "mechanical math or table formatting",
+      "display_pairs_converted": 0,
+      "inline_pairs_converted": 0,
+      "complete_reverse_transform_restores_original_bytes": true
+    },
+    {
+      "path": "docs/ENTROPY_INEQUALITY_BOUNDARIES.md",
+      "before_sha256": "d9777b75f61a9bd68bcc746e5c467aedfb99b0dccdee2aeb97935fd03f7f7774",
+      "after_sha256": "37585a6f2e6ed27ca34703b5ae40ac77b4cf5850c337baac7e142cc3381e6c53",
+      "change_kind": "mechanical math or table formatting",
+      "display_pairs_converted": 0,
+      "inline_pairs_converted": 0,
+      "complete_reverse_transform_restores_original_bytes": true
+    },
+    {
+      "path": "docs/ENTROPY_TRADEOFF_PRIOR_AUDIT.md",
+      "before_sha256": "bca1cfdb3cc23c3d5dc9a664efe5c12b7474b0eb292a98947c0fea70328e7b9f",
+      "after_sha256": "27db414c605af3e180987ab46c216331eb3526ab6e695c46c4965cb9c7b95f82",
+      "change_kind": "mechanical math or table formatting",
+      "display_pairs_converted": 15,
+      "inline_pairs_converted": 46,
+      "complete_reverse_transform_restores_original_bytes": true
+    },
+    {
+      "path": "docs/PRODUCT_DIAGONAL_PROFILE_RATE.md",
+      "before_sha256": "99951b6327160d824c0316e6e147787acea02c3c35b32abd59bcc78656e1e3dc",
+      "after_sha256": "f592f571a6ebb3bdec61df8ed6b3e16cf5182ea948e428e6ce65fb1d84228da1",
+      "change_kind": "mechanical math or table formatting",
+      "display_pairs_converted": 15,
+      "inline_pairs_converted": 0,
+      "complete_reverse_transform_restores_original_bytes": true
+    },
+    {
+      "path": "docs/REPRODUCIBILITY.md",
+      "before_sha256": "a1e99fac06a8f9b494a4261347cb0fbfeae4345a709a6cc42fa9031699f385e3",
+      "after_sha256": "acc08c0c110532394d883e8a5dc2346133fab9b3b4da9e8c27f120bde841df98",
+      "change_kind": "navigation, manuscript status, or reproduction guidance"
+    },
+    {
+      "path": "docs/RESEARCH_INDEX.md",
+      "before_sha256": "f7777c1a9b4b7b3fff159900bc3a4cff7a7d991e56a7bf41e64acd32923575ac",
+      "after_sha256": "758c0730ca37dc4ef6b0649caad0c2b560cf3b1e9e1b4f2ab5e6a0e6392fa5f8",
+      "change_kind": "navigation, manuscript status, or reproduction guidance"
+    },
+    {
+      "path": "docs/SCIENTIFIC_SCOPE.md",
+      "before_sha256": "36200bd780b08a3778d5c618d8de5edc6e910affa58619d3bf33c976f8b8575b",
+      "after_sha256": "6be57b19ddb44103efa34ecf5cc09d64a4be6391e0487cbff39f240c39dae58c",
+      "change_kind": "navigation, manuscript status, or reproduction guidance"
+    },
+    {
+      "path": "docs/STATUS.md",
+      "before_sha256": "5e5d7d41354964d7ee4e8a1a49c7fed81efe84dcb2ab674af35058b12c8798b3",
+      "after_sha256": "68c71841807de2f5f22d6c258e29b6ccf5bb4ef140a7b79ddd300719355aadfd",
+      "change_kind": "navigation, manuscript status, or reproduction guidance"
+    },
+    {
+      "path": "docs/STRONG_ENTROPIC_CONVERSE.md",
+      "before_sha256": "e822f1bd67a9d3e2cd5cdd6f2e5e418e1a0e96b4f41d360e51c8e7d0fd3f6e6f",
+      "after_sha256": "c01dd030398d0078ba7c903bfce9cad1f9e67189e126e00382c1fccc727040e9",
+      "change_kind": "mechanical math or table formatting",
+      "display_pairs_converted": 0,
+      "inline_pairs_converted": 0,
+      "complete_reverse_transform_restores_original_bytes": true
+    },
+    {
+      "path": "docs/audits/COHERENT_TRANSFER_AUDIT.md",
+      "before_sha256": "6560655c2ad38c81e3d669c8664deba294b4615088928faa4ae0de64528bb110",
+      "after_sha256": "ee633d03ddd5bc9a711408532dfff4a3a5c4a6250e28a6e93d7420dc3229a0aa",
+      "change_kind": "mechanical math or table formatting",
+      "display_pairs_converted": 5,
+      "inline_pairs_converted": 0,
+      "complete_reverse_transform_restores_original_bytes": true
+    },
+    {
+      "path": "docs/audits/CONSERVED_SYMMETRY_CONVERSE.md",
+      "before_sha256": "6ca6c8ecb188f3b1e4fb97ef27eacddf241df7b2d895654098064843af54a3cb",
+      "after_sha256": "14bc833b44bcaddb45373190478db743897f083ad36e23ef0d5416594ad64ef0",
+      "change_kind": "mechanical math or table formatting",
+      "display_pairs_converted": 29,
+      "inline_pairs_converted": 0,
+      "complete_reverse_transform_restores_original_bytes": true
+    },
+    {
+      "path": "docs/audits/FINITE_TAIL_STRUCTURE.md",
+      "before_sha256": "155fa7a26b29beb06b198d5e452485b406726f1a331efcc95d1756d6629483b1",
+      "after_sha256": "7547d8edc113b6d77ae7a402eefbd5e9202c2c5feb50ea13701fb532c2c2b12e",
+      "change_kind": "mechanical math or table formatting",
+      "display_pairs_converted": 3,
+      "inline_pairs_converted": 0,
+      "complete_reverse_transform_restores_original_bytes": true
+    },
+    {
+      "path": "docs/audits/HIGH_SECOND_MODE_ONE_BLOCK.md",
+      "before_sha256": "19158b8aff75f6b5c4261046d7404a6fe17cdeb298d256e2cf253823c1f2fda9",
+      "after_sha256": "c7d948edeef7f55cd6f51ef2874fc8399800bde660a5fd1e126cfdd06264df0f",
+      "change_kind": "mechanical math or table formatting",
+      "display_pairs_converted": 21,
+      "inline_pairs_converted": 0,
+      "complete_reverse_transform_restores_original_bytes": true
+    },
+    {
+      "path": "docs/audits/JOINT_SPECTRUM_NORMAL_FORM.md",
+      "before_sha256": "847d73bebdc7822b7e561710b2aa6428e03bbe7522c336bd456c130e8b4ebd12",
+      "after_sha256": "063a29929303f61fa18237916a3ab1849cc9fd0fc1eb70f3365a7c39273c880f",
+      "change_kind": "mechanical math or table formatting",
+      "display_pairs_converted": 30,
+      "inline_pairs_converted": 0,
+      "complete_reverse_transform_restores_original_bytes": true
+    },
+    {
+      "path": "docs/audits/JORDAN_BLOCK_BUDGET_RESOLVENT.md",
+      "before_sha256": "8212239eb6b6a0d749bb98dc82a738d02d89df12a38600c5b3d9b209fe9736e8",
+      "after_sha256": "07a046ba4398bb990c62dfb4c4b6ee1dc94995694e19e3562f359c47b7292dca",
+      "change_kind": "mechanical math or table formatting",
+      "display_pairs_converted": 17,
+      "inline_pairs_converted": 0,
+      "complete_reverse_transform_restores_original_bytes": true
+    },
+    {
+      "path": "docs/audits/NONCLASSICAL_TWO_MODE_CHANNEL.md",
+      "before_sha256": "30f848a6fcda6cbbec66606e017b880c6e68e12d9f19c4595e67a9daef11173e",
+      "after_sha256": "bccae942da2b6cd02344f6125565c59bd46ae4aee8f96f3b541e12f629b32fa9",
+      "change_kind": "mechanical math or table formatting",
+      "display_pairs_converted": 17,
+      "inline_pairs_converted": 0,
+      "complete_reverse_transform_restores_original_bytes": true
+    },
+    {
+      "path": "docs/audits/NONCOMMUTING_QUERY_FAMILIES.md",
+      "before_sha256": "75b8f87de06ed91883e24ea95c2ecfeec22a5573e238b49de3b40caa6c0acf49",
+      "after_sha256": "97189fc078ad85474334bb234701866b87891cbb62f86edd0445574dbc236f43",
+      "change_kind": "mechanical math or table formatting",
+      "display_pairs_converted": 4,
+      "inline_pairs_converted": 0,
+      "complete_reverse_transform_restores_original_bytes": true
+    },
+    {
+      "path": "docs/audits/PARITY_READOUT_BOUND.md",
+      "before_sha256": "cc9f90d656657b5220c574cc8e0f32f7e1fbd20e47614df4ef3729b4e70636d5",
+      "after_sha256": "c5ad5759e8d991147e9a9398173cbe698e5b72b05b2b7b82576093e93e2605f6",
+      "change_kind": "mechanical math or table formatting",
+      "display_pairs_converted": 3,
+      "inline_pairs_converted": 0,
+      "complete_reverse_transform_restores_original_bytes": true
+    },
+    {
+      "path": "docs/audits/PUBLICATION_AND_OPTIMALITY_ASSESSMENT.md",
+      "before_sha256": "b652743d8ee7e84d310f6ef9cd2c3963181fd28c390a6053428ff3421c819aee",
+      "after_sha256": "3c2d4cec2231f1054d7d15493dd9efd095a4eabd5b897f1f01b132c8e421320e",
+      "change_kind": "mechanical math or table formatting",
+      "display_pairs_converted": 13,
+      "inline_pairs_converted": 0,
+      "complete_reverse_transform_restores_original_bytes": true
+    },
+    {
+      "path": "docs/audits/QUANTITATIVE_TWO_MODE_STABILITY.md",
+      "before_sha256": "ecd7f74b84f70d990a4dfc32ed45c1f6b548f32c44dc07287d2280ac7bf91b41",
+      "after_sha256": "66ac46251d3fe00f0e0e921f40e59893bd090ff92e58d9eb28d9b04d7e09fee4",
+      "change_kind": "mechanical math or table formatting",
+      "display_pairs_converted": 36,
+      "inline_pairs_converted": 0,
+      "complete_reverse_transform_restores_original_bytes": true
+    },
+    {
+      "path": "docs/audits/REFLECTION_ENVELOPE_OBSTRUCTION.md",
+      "before_sha256": "5ea929f436274e1cd8c5abd642adfa0f0466fc5a6244435a4dff7169556888d5",
+      "after_sha256": "b910058faf9d024b31939652409e5dbc797db93bb8cb3068449e2b4e7abe02a1",
+      "change_kind": "mechanical math or table formatting",
+      "display_pairs_converted": 28,
+      "inline_pairs_converted": 0,
+      "complete_reverse_transform_restores_original_bytes": true
+    },
+    {
+      "path": "docs/audits/ROBUST_HEAD_CHANNEL_CONVERSE.md",
+      "before_sha256": "32baa1e81e9cdfd485ed55b3a94d0c10133c11554a6ef69ea2fb608467c19115",
+      "after_sha256": "3b498cbf4d78bd5f73bf4e4db32b4b157e6aaa436358afa9150097c7a1bc8a3f",
+      "change_kind": "mechanical math or table formatting",
+      "display_pairs_converted": 37,
+      "inline_pairs_converted": 0,
+      "complete_reverse_transform_restores_original_bytes": true
+    },
+    {
+      "path": "docs/audits/SHARP_PAIR_SCHMIDT_TAIL.md",
+      "before_sha256": "a4efc0c47439552f8798045b8bf441e6dc4471f0beb9788a342fd22e5519873e",
+      "after_sha256": "f137d468f564a0d607b04ce6e791d1bb7718f034caca01338f14f07a2ed2903a",
+      "change_kind": "mechanical math or table formatting",
+      "display_pairs_converted": 33,
+      "inline_pairs_converted": 0,
+      "complete_reverse_transform_restores_original_bytes": true
+    },
+    {
+      "path": "docs/audits/SHARP_SUBSPACE_AND_FLAT_CORE.md",
+      "before_sha256": "870bb33cc6948d198f4f8999cf682a8f6d3a99c39344469d89e30d0c281ed2e3",
+      "after_sha256": "1f9bf9e0afda2a396987359d8b1f63d4ddb09b9edc7d7a85e9bc7f67570bceb1",
+      "change_kind": "mechanical math or table formatting",
+      "display_pairs_converted": 2,
+      "inline_pairs_converted": 0,
+      "complete_reverse_transform_restores_original_bytes": true
+    },
+    {
+      "path": "docs/audits/SHARP_TWO_MODE_SUPPORT.md",
+      "before_sha256": "811d99ecc0d3a93f66284990b7bbf293f06f8bae74ddefed6802058cd6c555e8",
+      "after_sha256": "614eff74b00b1afd6fd7984a928c3f187b2d5577dae7dbf4fd2d0c864d98be7e",
+      "change_kind": "mechanical math or table formatting",
+      "display_pairs_converted": 32,
+      "inline_pairs_converted": 0,
+      "complete_reverse_transform_restores_original_bytes": true
+    },
+    {
+      "path": "docs/audits/TWO_MODE_COMPATIBILITY_OBSTRUCTION.md",
+      "before_sha256": "3cef79d9b793c893ef0fe9ef9018cb571aa7a80cb93119c61e879bbc24443c9b",
+      "after_sha256": "ef1d8253c276f44664ea02c812bc510134db21dea8580c501207fb3436ed38c1",
+      "change_kind": "mechanical math or table formatting",
+      "display_pairs_converted": 25,
+      "inline_pairs_converted": 0,
+      "complete_reverse_transform_restores_original_bytes": true
+    },
+    {
+      "path": "docs/audits/TWO_MODE_RESOLVENT.md",
+      "before_sha256": "39d03a4eec49f7dce3830fb4c5378e7803685d551242add0e3fd0e9a372d0a04",
+      "after_sha256": "17aa409c82d1a4c67c206fa6010cff4ce051e0093b7eab73ed164cd490947428",
+      "change_kind": "mechanical math or table formatting",
+      "display_pairs_converted": 33,
+      "inline_pairs_converted": 0,
+      "complete_reverse_transform_restores_original_bytes": true
+    },
+    {
+      "path": "docs/audits/TWO_QUBIT_SPECTRAL_TAIL_GATE.md",
+      "before_sha256": "62eee46100e932e727fa31749cf1c9c6f69ee6976bbc9b209217c6c9cd8d959a",
+      "after_sha256": "1b9434d1f1f39edccc16fd66d19a5af753277a8038be8e1e31698927390f9b9c",
+      "change_kind": "mechanical math or table formatting",
+      "display_pairs_converted": 0,
+      "inline_pairs_converted": 88,
+      "complete_reverse_transform_restores_original_bytes": true
+    },
+    {
+      "path": "docs/audits/TWO_SHARP_PAIR_CONVERSE.md",
+      "before_sha256": "dcd8a1636209d55ec4f004fec604e2d9806ef3eca64ec2174740c292ca6b0d2f",
+      "after_sha256": "bc411913b0701f1f0dfd14d0795ed98988001db47901c43278536984d8c372ab",
+      "change_kind": "mechanical math or table formatting",
+      "display_pairs_converted": 28,
+      "inline_pairs_converted": 0,
+      "complete_reverse_transform_restores_original_bytes": true
+    },
+    {
+      "path": "docs/audits/ZERO_PAULI_GAP_DICHOTOMY.md",
+      "before_sha256": "6da0fd28faa87e04d413b7196ba94a1a0008651a1ece0bc97a9faf1b4ea37dc5",
+      "after_sha256": "87480920299abe129ffdcebb68e4f5e59039486ea243512f774498af0a01c93a",
+      "change_kind": "mechanical math or table formatting",
+      "display_pairs_converted": 18,
+      "inline_pairs_converted": 0,
+      "complete_reverse_transform_restores_original_bytes": true
+    }
+  ]
+}

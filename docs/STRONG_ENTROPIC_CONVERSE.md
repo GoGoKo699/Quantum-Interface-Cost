@@ -285,8 +285,7 @@ The converse therefore improves the earlier quadratic threshold bound by
 a logarithmic factor. It still leaves a gap to the subset rate, which is
 linear in t.
 
-For $\delta\downarrow0$, put $v=1-(2(1-\delta)^2-1)^2
-=8\delta+O(\delta^2)$. The expansion
+For $\delta\downarrow0$, put $v=1-(2(1-\delta)^2-1)^2 =8\delta+O(\delta^2)$. The expansion
 $h_2((1-\sqrt v)/2)=1-v/(2\ln2)+O(v^2)$ gives
 
 $$

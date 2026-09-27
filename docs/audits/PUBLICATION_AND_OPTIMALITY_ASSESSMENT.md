@@ -67,10 +67,10 @@ Zhu–Zhang–Ma, *Interplay among entanglement, measurement incompatibility,
 and nonlocality*, [2303.08407v2](https://arxiv.org/pdf/2303.08407v2),
 20 June 2025, Theorem 2 / Eq. (25), printed p. 14, gives
 
-\[
+```math
  E_F(\omega)\ge
  \frac{S_{\rm CHSH}-2\alpha}{2\sqrt{1+\alpha^2}-2\alpha}.
-\]
+```
 
 Their convention is Eq. (2), p. 5, with `alpha>=1`; the arbitrary-dimension
 reduction is Appendix A.1, pp. 28–29. We need only `alpha=1`.
@@ -81,10 +81,10 @@ entanglement of formation.
 Here is the full specialization, rather than an inference from titles.
 Let
 
-\[
+```math
  \sigma_{\pm|X}=\frac{I\pm\eta X}{4},\qquad
  \sigma_{\pm|Z}=\frac{I\pm\eta Z}{4}.
-\]
+```
 
 In any realization, the differences of the two outcome substates are
 `eta X/2` and `eta Z/2`. Give the trusted qubit observables
@@ -92,11 +92,11 @@ In any realization, the differences of the two outcome substates are
 therefore `2sqrt(2) eta`, independently of the untrusted dimension. The
 two cited theorems imply
 
-\[
+```math
  E_{FA}(\sigma_{\eta,\eta})\ge
  \left[\frac{\eta-1/\sqrt2}{1-1/\sqrt2}\right]_+.
 \tag{1}
-\]
+```
 
 The compatible assemblage at `eta_0=1/sqrt(2)` has a separable realization;
 the unit-contrast assemblage has a Bell realization. A classical flag on
@@ -133,11 +133,11 @@ has never appeared.
 
 Put `eta_0=1/sqrt(2)`, `c=2-sqrt(2)`, and
 
-\[
+```math
  H(\eta)=\frac{\eta-\eta_0}{1-\eta_0},\qquad
  g_n(\rho)=\sum_i\bigl(\|\sqrt\rho X_i\sqrt\rho\|_1+
                             \|\sqrt\rho Z_i\sqrt\rho\|_1\bigr).
-\]
+```
 
 The proved [entropy characterization](../ENTROPY_RATE_CHARACTERIZATION.md)
 states that R is convex, has endpoints `R(eta_0)=0`, `R(1)=1`, lies below H,
@@ -154,14 +154,14 @@ a new general convexity theorem.
 interior point. To see this, suppose at an interior `eta_*` that
 `delta=H(eta_*)-R(eta_*)>0`. Convexity and time-sharing with the endpoints give
 
-\[
+```math
  H(\eta)-R(\eta)\ge
  \begin{cases}
  \delta\dfrac{\eta-\eta_0}{\eta_*-\eta_0},&\eta_0\le\eta\le\eta_*,\\[4pt]
  \delta\dfrac{1-\eta}{1-\eta_*},&\eta_*\le\eta\le1.
  \end{cases}
 \tag{2}
-\]
+```
 
 Consequently, equality with the subset rate at even one interior accuracy
 would prove equality everywhere. A single strict advantage would instead
@@ -171,27 +171,27 @@ it does not say that one fixed small block works at all accuracies.
 
 **The exact onset slope is equally hard.** Convexity gives existence of
 
-\[
+```math
  \lambda=\lim_{t\downarrow0}\frac{R(\eta_0+t)}t
  =\inf_{\eta>\eta_0}\frac{R(\eta)}{\eta-\eta_0}.
-\]
+```
 
 Thus `lambda=2+sqrt(2)` forces `R>=H`, and hence `R=H` everywhere.
 Conversely that rate curve has exactly this slope. Define the dimension-free
 score-per-entropy constant
 
-\[
+```math
  K_* =\sup_{n,\rho:S(\rho)>0}
        \frac{[g_n(\rho)-\sqrt2 n]_+}{S(\rho)}.
-\]
+```
 
 The same characterization gives
 
-\[
+```math
  \boxed{\lambda=\frac2{K_*}},\qquad
  2-\sqrt2\le K_*\le\frac1{\log_2(1+\sqrt2)}.
 \tag{3}
-\]
+```
 
 Indeed every feasible seed implies `S/n>=2(eta-eta_0)/K_*`, so
 `lambda>=2/K_*`. Conversely a seed with positive excess and contrast
@@ -220,10 +220,10 @@ not rule it out.
 
 Current proved bounds are quantitatively separated:
 
-\[
+```math
  2.5431066063\le\lambda\le3.4142135624,
  \qquad 0.25293250\le R(0.8)\le0.31715729.
-\]
+```
 
 These are scalar evaluations of existing analytical bounds, not fitted
 simulation results. There is no basis for calling the gap a small missing
@@ -258,26 +258,26 @@ Here is a further exact obstruction, independently reconstructed for this
 assessment. Let `beta_+`, `beta_-` be the orthogonal eigenvectors of
 `(X+Z)/sqrt(2)` and let
 
-\[
+```math
  \rho_\epsilon=(1-\epsilon)|\beta_+\beta_+\rangle\langle\beta_+\beta_+|
  +\epsilon|\beta_-\beta_-\rangle\langle\beta_-\beta_-|.
-\]
+```
 
 Each compressed local X/Z is diagonal on this two-dimensional support,
 with diagonal entries `+1/sqrt(2),-1/sqrt(2)`. Thus
 
-\[
+```math
  g_2(\rho_\epsilon)=2\sqrt2,\quad
  g_1(\rho_A)=g_1(\rho_B)=\sqrt2\sqrt{1+4\epsilon-4\epsilon^2},\quad
  S(\rho_{AB})=S(\rho_A)=S(\rho_B)=h_2(\epsilon).
-\]
+```
 
 For `Delta_n=sqrt(2)n+c S-g_n`, it follows that
 
-\[
+```math
  \Delta_2(\rho_{AB})-\Delta_1(\rho_A)-\Delta_1(\rho_B)
  =2\sqrt2(\sqrt{1+4\epsilon-4\epsilon^2}-1)-c h_2(\epsilon).
-\]
+```
 
 At the exact value `epsilon=1/1024`, use `sqrt(1+x)<=1+x/2` and
 `h_2(epsilon)>=10epsilon`. The difference is at most
@@ -307,12 +307,12 @@ A useful bounded next attempt is a complete n=2 trace-norm theorem, not
 another list of neighborhoods. One explicit stronger candidate is the
 fixed-spectrum rearrangement statement, for ordered eigenvalues lambda:
 
-\[
+```math
  \max_U g_2(U\operatorname{diag}(\lambda)U^\dagger)
  \stackrel{?}{=}\sqrt2(K_{12}+K_{13}+K_{24}+K_{34}),
  \qquad K_{ij}=\sqrt{\lambda_i^2+6\lambda_i\lambda_j+\lambda_j^2}.
 \tag{4}
-\]
+```
 
 The right side is an explicit product-bisector eigenbasis attainer: each
 edge block contributes `sqrt(2)K_ij` to the two queries at that site.

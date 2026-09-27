@@ -532,10 +532,10 @@ is allowed by convexity over sign choices, which preserve all hypotheses.
 Let `h_i=X_i B_i+Z_i D_i` on distinct reference qubits and a
 four-dimensional memory. The pure-state variational identity is
 
-\[
+```math
  \sum_i\operatorname{Tr}(B_i L X_iL^\dagger+D_i L Z_iL^\dagger)
  =\langle\!\langle L|H|L\rangle\!\rangle,\qquad \|L\|_F=1.
-\]
+```
 
 Thus either applicable theorem bounds the **actual decoder score**
 by `4+sqrt(2)` for every normalized complex seed. A full trace-norm
@@ -546,17 +546,17 @@ legitimate to impose those hypotheses on an arbitrary optimum.
 For a general collective instrument, refine the classical record to
 a Kraus index `a`, discard zero Kraus operators, and set
 
-\[
+```math
 p_a=\|K_a\|_F^2/8,\qquad L_a=K_a/\|K_a\|_F,\qquad \sum_a p_a=1.
-\]
+```
 
 If each branch's actual readouts are covered by either theorem, even
 with branch-dependent memory coordinates and covered family, uniform
 contrast `eta` implies
 
-\[
+```math
 6\eta\le\sum_a p_a s_a\le4+\sqrt2.
-\]
+```
 
 This preserves one unknown specimen, one delayed original-site X/Z
 query, arbitrary entangled inputs and collective encoding, unlimited
@@ -625,11 +625,11 @@ proofs.
 
 The general projector conjecture remains
 
-\[
+```math
  \sum_{i=1}^3 U_i(\Phi_{R_iA}\otimes I_B)U_i^\dagger
  \stackrel{?}{\le}\frac52I
  \qquad\text{for independently arbitrary }U_i\in U(4).
-\]
+```
 
 Proving it would remove the partial-SWAP geometry condition from
 Section 6; unequal Jordan-block spectra would still require another

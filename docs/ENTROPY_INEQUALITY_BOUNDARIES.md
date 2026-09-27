@@ -26,7 +26,7 @@ arbitrarily correlated eigenvalues. Here are four further families:
 | Family | Result | Scope |
 |---|---|---|
 | Rank at most two, any eigenbasis | Exact maximum at each nonzero spectrum, implying (1) | All n; eigenvectors may be entangled |
-| Flat rank three on two qubits | Exact maximum over its missing eigenvector, strictly below (1) | Every state `(I-|v><v|)/3` |
+| Flat rank three on two qubits | Exact maximum over its missing eigenvector, strictly below (1) | Every state `(I-\|v><v\|)/3` |
 | Stabilizer eigenbasis | Stronger entropy-deficit bound with optimal coefficient `ln(2)` | Any fixed joint eigenbasis of a maximal commuting Pauli group; arbitrary eigenvalues |
 | Flat half-rank projector with one maximally mixed complementary marginal | Subset bound, hence (1) | `rho=P/2^(n-1)` and `Tr_i P=I` for at least one i |
 

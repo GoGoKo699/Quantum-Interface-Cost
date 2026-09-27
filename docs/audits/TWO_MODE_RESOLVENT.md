@@ -25,54 +25,54 @@ the original operator bound. Publication priority is unresolved.
 
 Let R1,R2 be reference qubits, let Q have dimension four, and put
 
-\[
+```math
 H_0=X_1\otimes B_1+Z_1\otimes D_1
     +X_2\otimes B_2+Z_2\otimes D_2,
 \qquad -I\le B_i,D_i\le I.
 \tag{1}
-\]
+```
 
 Write its three largest eigenvalues, with multiplicity, as U,m,ell.
 The involution `Gamma=Y_1 Y_2 tensor I_Q` anticommutes with H_0. Its two
 eigenspaces have dimension eight, so
 
-\[
+```math
 H_0=\begin{pmatrix}0&C\\C^\dagger&0\end{pmatrix},
 \qquad \operatorname{spec}(H_0)=\{\pm\sigma_j(C):1\le j\le8\}.
-\]
+```
 
 The four reference Pauli factors in (1) are trace-orthogonal. Hence
 
-\[
+```math
 \operatorname{Tr}H_0^2
 =4\operatorname{Tr}_Q(B_1^2+D_1^2+B_2^2+D_2^2)
 \le64.
 \tag{2}
-\]
+```
 
 There is equality in (2) when the four readouts are reflections.
 Chirality then gives
 
-\[
+```math
 \sum_{j=1}^8\sigma_j(C)^2\le32,
 \qquad
 \boxed{0\le\ell=\sigma_3(C)\le\kappa:=\sqrt{32/3}<2+\sqrt2.}
 \tag{3}
-\]
+```
 
 For the last strict inequality, squaring reduces to `6sqrt(2)>7`,
 which follows from `72>49`. Put
 
-\[
+```math
 \Lambda=4+\sqrt2,\qquad t=\Lambda-\ell.
-\]
+```
 
 Then, uniformly over all earlier readouts,
 
-\[
+```math
 \boxed{t-2\ge2+\sqrt2-\sqrt{32/3}>0.}
 \tag{4}
-\]
+```
 
 The lower gap is approximately 0.148227239. This is a moment argument,
 not a bound inferred from a sampled family of Jordan angles.
@@ -83,16 +83,16 @@ Choose orthonormal eigenvectors Omega_1,Omega_2 for U,m. Define the
 isometry V from a two-dimensional auxiliary head space to R1 R2 Q by
 `V e_a=Omega_a`, and set
 
-\[
+```math
 \Delta=\operatorname{diag}(U-\ell,m-\ell)\ge0.
-\]
+```
 
 Spectral ordering gives
 
-\[
+```math
 \boxed{H_0\le\ell I+V\Delta V^\dagger.}
 \tag{5}
-\]
+```
 
 If m=ell, the second weight vanishes. Degenerate leading eigenvalues
 cause no ambiguity in the envelope: choose any orthonormal basis of the
@@ -113,9 +113,9 @@ the baseline to beta and using the positive part of the head gives
 `beta I+(4-beta)|Omega><Omega|` when `2<beta<4`. In the regular range
 `2<beta<2+sqrt(2)`, the allowed third pair `B=X_A,D=Z_A` has test value
 
-\[
+```math
 (4-\beta)\frac{t^2-2}{t(t^2-4)},\qquad t=\Lambda-\beta.
-\]
+```
 
 At beta=13/4 this exceeds one: the positive denominator times
 `1-test_value` is
@@ -129,33 +129,33 @@ baseline choice; it does not rule out tighter adaptive alternatives.
 
 For a memory operator A define
 
-\[
+```math
 \mathcal E(A)=V^\dagger(I_{R_1R_2}\otimes A)V.
 \tag{6}
-\]
+```
 
 This is a unital completely positive map from four-by-four memory
 matrices to two-by-two head matrices. In a reference basis r, put
 `K_r=(<r| tensor I_Q)V`. Then
 
-\[
+```math
 \mathcal E(A)=\sum_{r=1}^4K_r^\dagger A K_r,
 \qquad \sum_rK_r^\dagger K_r=I_2.
-\]
+```
 
 Thus its Kraus rank is at most four. Define the cross marginals
 
-\[
+```math
 \rho_{ab}=\operatorname{Tr}_{R_1R_2}
 |\Omega_a\rangle\langle\Omega_b|.
-\]
+```
 
 The entries are
 
-\[
+```math
 \mathcal E(A)_{ab}=\operatorname{Tr}(\rho_{ba}A).
 \tag{7}
-\]
+```
 
 The block matrix `[rho_ab]` is positive and its partial trace over Q is
 `I_2`. It is the unnormalized Choi matrix of the trace-preserving dual
@@ -165,10 +165,10 @@ to two unrelated scalar marginals is made.
 
 For convenience also set
 
-\[
+```math
 \mathcal E_\Delta(A)=\sqrt\Delta\,\mathcal E(A)\sqrt\Delta,
 \qquad \mathcal E_\Delta(I_Q)=\Delta.
-\]
+```
 
 The weighted map is completely positive but need not be unital.
 
@@ -177,10 +177,10 @@ The weighted map is completely positive but need not be unital.
 Let Phi denote the trace-preserving dual of E, so
 `Phi(A)=Tr_R(V A V^dagger)`. Actual head channels satisfy
 
-\[
+```math
 \boxed{\Phi(\operatorname{diag}(U^2,m^2))\le8I_Q.}
 \tag{7a}
-\]
+```
 
 Indeed, partial tracing (1) squared gives
 `Tr_R H_0^2=4(B_1^2+D_1^2+B_2^2+D_2^2)<=16I_Q`. Each positive
@@ -196,47 +196,47 @@ from (1).
 Let R3 be the final reference qubit, and let B,D be arbitrary Hermitian
 contractions on Q. Write
 
-\[
+```math
 h=X_3\otimes B+Z_3\otimes D,\qquad
 R_t(B,D)=(tI-h)^{-1}.
-\]
+```
 
 The triangle inequality gives `||h||<=2`, so (4) makes the inverse
 strictly positive for every allowed last pair. With tensor factors
 ordered as R3 followed by the head, define
 
-\[
+```math
 \boxed{\mathcal K_t(B,D)
 =(\operatorname{id}_{R_3}\otimes\mathcal E_\Delta)
        [R_t(B,D)]\in M_4.}
 \tag{8}
-\]
+```
 
 Then the spectral envelope satisfies the exact equivalence
 
-\[
+```math
 \boxed{\ell I+V\Delta V^\dagger+h\le\Lambda I
 \quad\Longleftrightarrow\quad
 \mathcal K_t(B,D)\le I_4.}
 \tag{9}
-\]
+```
 
 Spectator identities and the natural tensor reordering are implicit on
 the left. To prove (9), let J insert `I_{R_3} tensor V` into R1 R2 R3 Q
 and let `W=J(I_{R_3} tensor sqrt(Delta))`. The left side is equivalent to
 
-\[
+```math
 P-WW^\dagger\ge0,
 \qquad P=I_{R_1R_2}\otimes(tI-h)>0.
-\]
+```
 
 Conjugating by `P^{-1/2}` and using the equality of the nonzero
 eigenvalues of `AA^dagger` and `A^dagger A` gives
 
-\[
+```math
 P-WW^\dagger\ge0
 \quad\Longleftrightarrow\quad W^\dagger P^{-1}W\le I_4.
-\]
+```
 
 The last matrix is precisely (8). In the R3 basis, its two-by-two
 blocks are `E_Delta((R_t)_{st})`. Equivalently, its head indices retain
@@ -256,11 +256,11 @@ Consequently (8) is operator convex separately in B and D. The extreme
 points of the Hermitian contraction ball are reflections. Decomposing
 each contraction into such extremes proves that
 
-\[
+```math
 \sup_{-I\le B,D\le I}\lambda_{\max}\mathcal K_t(B,D)
 =\sup_{B^2=D^2=I}\lambda_{\max}\mathcal K_t(B,D).
 \tag{10}
-\]
+```
 
 This does not force the two last reflections to anticommute. Their
 arbitrary one- and two-dimensional Jordan blocks remain allowed.
@@ -269,14 +269,14 @@ For an explicit block form when B,D are reflections, put
 `T=B+iD`. In a suitably phased Y3 eigenbasis, h has blocks
 `[[0,T],[T^dagger,0]]`. Therefore
 
-\[
+```math
 R_t(B,D)=
 \begin{pmatrix}
 t(t^2-TT^\dagger)^{-1}&T(t^2-T^\dagger T)^{-1}\\
 T^\dagger(t^2-TT^\dagger)^{-1}&t(t^2-T^\dagger T)^{-1}
 \end{pmatrix}.
 \tag{11}
-\]
+```
 
 Applying E_Delta entrywise gives an explicit four-by-four test. Here
 `TT^dagger=2I-i[B,D]` and `T^dagger T=2I+i[B,D]`; all inverses exist by
@@ -296,29 +296,29 @@ marginals.
 Let Q=A tensor B. After independent rotations of the two reference X/Z
 frames, consider
 
-\[
+```math
 H_0=aZ_1Z_A+bX_1X_A+cZ_2Z_B+dX_2Z_AX_B,
 \quad a^2+b^2=c^2+d^2=2.
 \tag{12}
-\]
+```
 
 This is an allowed original-query Hamiltonian: before those reference
 rotations its memory pairs are
 
-\[
+```math
 \begin{aligned}
 B_1&=(aZ_A+bX_A)/\sqrt2,&D_1&=(aZ_A-bX_A)/\sqrt2,\\
 B_2&=(cZ_B+dZ_AX_B)/\sqrt2,&D_2&=(cZ_B-dZ_AX_B)/\sqrt2.
 \end{aligned}
-\]
+```
 
 Each is a traceless reflection because its two Pauli summands
 anticommute. Thus each memory reflection has two positive and two
 negative eigenvalues. Put
 
-\[
+```math
 a=c=2/\sqrt3,\qquad b=d=\sqrt{2/3}.
-\]
+```
 
 The operators `Z_1 Z_A` and `Z_2 Z_B` commute with each other and with
 `X_1 X_A` and `X_2 Z_A X_B`; the latter two anticommute. Each joint
@@ -335,10 +335,10 @@ is therefore
 
 In particular
 
-\[
+```math
 U=m=2\sqrt3>2+\sqrt2,\qquad \ell=2/\sqrt3.
 \tag{13}
-\]
+```
 
 Any positive rank-at-most-one majorant `H_0<=b_0 I+A` requires
 `b_0>=m`: the two-dimensional top eigenspace contains a nonzero vector
@@ -349,12 +349,12 @@ This is a limitation of the method, not a physical violation of Lambda.
 
 The two-mode envelope instead has
 
-\[
+```math
 H_0\le\ell I+gVV^\dagger,
 \qquad \ell=2/\sqrt3,\quad g=4/\sqrt3,
 \quad \Delta=gI_2.
 \tag{14}
-\]
+```
 
 ### 5.2. The full head channel is explicit
 
@@ -362,28 +362,28 @@ Define the copying isometry J0 by
 `J0|ab>=|ab>_(R1 R2)|ab>_Q`. The two positive commuting constraints
 in (12) select its range. On that range the top projector becomes
 
-\[
+```math
 P_S=\frac12\left[I+\frac{X_A+Z_AX_B}{\sqrt2}\right].
-\]
+```
 
 An isometry onto this two-dimensional space is
 
-\[
+```math
 V_S=\exp(i\pi Y_AX_B/8)(|+\rangle_A\otimes I_B),
 \qquad V=J0 V_S.
-\]
+```
 
 Tracing out the references dephases the copying basis. The complete
 head-to-memory channel is consequently
 
-\[
+```math
 \Phi(\omega)=\sum_{a,b=0}^1
 \operatorname{Tr}(E_{ab}\omega)|ab\rangle\langle ab|,
 \qquad
 E_{ab}=\frac14\left[I+
 \frac{(-1)^aX_h+(-1)^bZ_h}{\sqrt2}\right].
 \tag{15}
-\]
+```
 
 For example, the A=a row of V_S is
 `[cos(pi/8)I+(-1)^a sin(pi/8)X]/sqrt(2)`. Sandwiching `|b><b|`
@@ -399,14 +399,14 @@ To see a strict change for the same last pair, choose `B=Z_A,D=Z_B`.
 Then `h^2=2I` and E obeys `E(Z_A)=X_h/sqrt(2)` and
 `E(Z_B)=Z_h/sqrt(2)`. With `t=4+sqrt(2)-2/sqrt(3)`, (8) is exactly
 
-\[
+```math
 \mathcal K_t=
 \frac{g}{t^2-2}\left[tI+
 \frac{X_3X_h+Z_3Z_h}{\sqrt2}\right],
 \qquad
 \|\mathcal K_t\|=\frac{g}{t-\sqrt2}.
 \tag{16}
-\]
+```
 
 Dephasing the head in its Y basis removes both correlations and gives
 the strictly smaller norm `gt/(t^2-2)`. This comparison fixes the same
@@ -422,9 +422,9 @@ For any `t>=3sqrt(2)`, the exact last-query theorem gives the pure-memory
 resolvent bound `1/(t-sqrt(2))`. It can also be checked directly on its
 block functions: for `1<=a<=sqrt(2)`,
 
-\[
+```math
 \frac{t-a}{(t-a)^2-(2-a^2)}\le\frac1{t-\sqrt2}
-\]
+```
 
 is equivalent to
 `(sqrt(2)-a)[t-sqrt(2)-2a]>=0`. The other block eigenvalue is no larger,
@@ -435,12 +435,12 @@ Thus every pure memory compression
 `<ab|R_t(B,D)|ab>` is at most `I/(t-sqrt(2))`. The positive effects
 E_ab in (15) sum to I, so their complete head compression obeys
 
-\[
+```math
 \boxed{\sup_{B,D}\|\mathcal K_t(B,D)\|
 =\frac{g}{t-\sqrt2}
 =\frac{2}{2\sqrt3-1}<1.}
 \tag{17}
-\]
+```
 
 The last pair in (16) attains the bound. Therefore this actual example
 needs two modes for the uniformly positive inverse, and its two-mode

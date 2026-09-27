@@ -8,8 +8,7 @@ Older notes retain the assumptions, dates and research bases recorded in
 them; an older open-case statement may have been settled by a later note.
 The [current status ledger](STATUS.md) records those changes.
 
-The following index preserves the broader research history. These notes
-are not all dependencies or proposed sections of the selected paper.
+These notes are not all dependencies of the selected results.
 
 | Purpose | Read |
 |---|---|

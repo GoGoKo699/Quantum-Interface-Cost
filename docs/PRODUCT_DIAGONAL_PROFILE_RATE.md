@@ -389,12 +389,12 @@ resource or an unrestricted converse.
 
 For `0<v<=1` define
 
-\[
+```math
  b(v)=f'(v),\qquad k(v)=v-\frac{f(v)}{f'(v)},\qquad
  u(v)=\frac{1-k(v)^2}{1+k(v)^2},\qquad
  s(v)=\frac{2k(v)}{1+k(v)^2}.
 \tag{17a}
-\]
+```
 
 Here s is the Z coordinate of a compatible profile, not an entropy.
 At zero use the continuous limits `k(0)=0`, `u(0)=1`, `s(0)=0`.
@@ -410,23 +410,23 @@ so that `x>=z`. The following cases evaluate C throughout the unit square:
 4. In the remaining strict-saving region, there is exactly one root
    `v in (z,1)` of
 
-   \[
+   ```math
    z=v-(1-x)\frac{v-s(v)}{1-u(v)}.
    \tag{17b}
-   \]
+   ```
 
    It satisfies `u(v)<x`. Set
 
-   \[
+   ```math
    p=\frac{x-u(v)}{1-u(v)}.
-   \]
+   ```
 
    Then `0<p<1`, and
 
-   \[
+   ```math
    \boxed{(x,z)=p(1,v)+(1-p)(u(v),s(v)),\qquad C(x,z)=p f(v).}
    \tag{17c}
-   \]
+   ```
 
 The generating profile-cost decomposition in case 4 is unique, up to
 repeated identical atoms and zero weights. This is not uniqueness of
@@ -438,19 +438,19 @@ instruments; it does not replace the dimension cap by a branch average.
 **Location and monotonicity of the contact point.** Strict convexity of f,
 with `f(0)=0`, gives `v f'(v)>f(v)>0`. In the interior,
 
-\[
+```math
  k'(v)=\frac{f(v)f''(v)}{f'(v)^2}>0.
 \tag{17d}
-\]
+```
 
 Consequently u strictly decreases and s strictly increases. To prove the
 additional fact `s(v)<v`, put `t=sqrt(1-v^2)`. Differentiation of binary
 entropy gives `f'(v)=v atanh(t)/(t ln2)`. The exact identity
 
-\[
+```math
  (\ln2)f(v)-(1-t)\operatorname{atanh}t
  =\ln\frac2{1+t}>0
-\]
+```
 
 implies `f(v)/f'(v)>v t/(1+t)` and hence
 `0<k(v)<v/(1+t)`. The increasing map `y -> 2y/(1+y^2)` sends
@@ -462,18 +462,18 @@ in particular `k(v)->0` at zero. These identities prove
 **Matching global support certificate.** For a fixed `0<v<=1`, abbreviate
 `b=b(v)`, `k=k(v)`, and put
 
-\[
+```math
  a=\frac{b(1-k^2)}{2k},\qquad
  R=\frac{b(1+k^2)}{2k}=\sqrt{a^2+b^2}.
-\]
+```
 
 Then `a>b>0`, `(a/R,b/R)=(u,s)`, and
 `R-a=bk=bv-f(v)`. The plane
 
-\[
+```math
  \text{cost}\ \ge ax+bz-R
 \tag{17e}
-\]
+```
 
 supports every generator of C. On the free disk this is Cauchy--Schwarz,
 with contact only at `(u,s,0)`. On exact-X atoms, convexity gives
@@ -494,9 +494,9 @@ uniqueness without restricting how either atom is physically realized.
 **Existence and uniqueness of the scalar root.** Let
 `M(v)=(v-s(v))/(1-u(v))>0`. At the upper endpoint,
 
-\[
+```math
  M(1)=\frac{(\ln2)^2}{2(1-\ln2)^2}=\frac1{\tau_*}.
-\]
+```
 
 The line `z=1-(1-x)/tau_*` intersects the positive compatibility-circle
 graph `sqrt(1-x^2)` at `x=u_*`. The line increases with x and the graph
@@ -505,24 +505,24 @@ decreases. A strict-saving point outside the disk must consequently have
 
 For fixed x and `v in [v_0,1]` define
 
-\[
+```math
  p_x(v)=\frac{x-u(v)}{1-u(v)},\qquad
  Z_x(v)=p_x(v)v+(1-p_x(v))s(v).
-\]
+```
 
 On this interval `p_x>=0`, `p_x<1` and
 `p_x'=-(1-x)u'/(1-u)^2>0`. Therefore
 
-\[
+```math
  Z_x'(v)=p_x+(1-p_x)s'+p_x'(v-s)>0.
-\]
+```
 
 Its endpoint values are exactly
 
-\[
+```math
  Z_x(v_0)=\sqrt{1-x^2},\qquad
  Z_x(1)=1-\frac{1-x}{\tau_*}.
-\]
+```
 
 These bracket precisely the strict-saving region, so the root exists and
 is unique in the physical interval. For `v<v_0`, one has `p_x<0` and
@@ -612,16 +612,16 @@ Theorem 3 replaces the convenient rational mixture above by the optimum
 over the entire product-diagonal class. For `(x,z)=(99/100,1/2)`, it gives
 the following rigorous decimal intervals (their endpoints are rationals):
 
-\[
+```math
  0.52576013296870 < v_* < 0.52576013296872,
-\]
+```
 
-\[
+```math
  \boxed{0.324848239185893024
  \le C(99/100,1/2)
  \le0.324848239186576377.}
 \tag{19}
-\]
+```
 
 The exact prescription is still (17a)–(17c), not the rounded numbers.
 Approximately, it uses weight `p=0.847805621235` of profile
@@ -636,11 +636,11 @@ Square roots are enclosed by integer square roots. Logarithms are reduced
 to `ln r=m ln2+2 atanh(t)`, `0<=t<=1/3`, with the explicit positive
 series remainder
 
-\[
+```math
  0\le 2\operatorname{atanh}t-
  2\sum_{j=0}^{N-1}\frac{t^{2j+1}}{2j+1}
  \le\frac{2t^{2N+1}}{(2N+1)(1-t^2)}.
-\]
+```
 
 Every arithmetic rounding is outward. The small
 [certificate](../results/profile_optimizer_certificate.json) records the

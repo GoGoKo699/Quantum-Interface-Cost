@@ -5,6 +5,38 @@ It gives the minimal proof dependencies, identifies which arithmetic
 certificate is proof evidence, and pins existing proof/checker/report hashes.
 The sections below preserve the complete historical verification record.
 
+The [release check](RELEASE_CHECK.md) records subsequent display repairs
+and maps the affected files' before/after fingerprints. Historical
+proof-note hashes identify the versions used for those checks; they need
+not match a later formatting revision. A new archive diagnostic may
+therefore differ in proof-hash metadata while retaining the same numerical
+conclusions. Checker sources and historical JSON reports are preserved.
+The essential quarter-rank proof and checker are unchanged, so its exact
+report comparison below remains valid.
+
+## Reproduce without changing the recorded evidence
+
+The essential certificate needs only Python's standard library. From the
+repository root, use a fresh output directory and compare the exact report:
+
+```bash
+qic_check_dir="$(mktemp -d)"
+python -E tools/check_nonflat_quarter_rank_certificate.py --output "$qic_check_dir/certificate.json"
+cmp results/nonflat_quarter_rank_certificate.json "$qic_check_dir/certificate.json"
+```
+
+Keep assertions enabled: do not add `-O` or `-OO`. The `-E` option ignores
+`PYTHONOPTIMIZE` and other Python environment overrides. A successful
+`cmp` produces no output. This exact scalar certificate is one component
+of the analytical proof, not a check of its entire argument.
+
+The optional matrix diagnostics require NumPy (`python -m pip install -r
+requirements.txt`). Use the commands in the historical sections below with
+`--output` redirected to a fresh path in your temporary directory. Their
+floating-point results must meet the stated tolerances; byte identity is
+not promised across Python, NumPy or platform versions. The tutorial figure
+generator additionally requires Matplotlib and is illustrative only.
+
 ## Final scientific evidence freeze
 
 The [freeze record](SCIENTIFIC_EVIDENCE_FREEZE.md) and

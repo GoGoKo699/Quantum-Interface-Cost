@@ -12,6 +12,9 @@ common-accuracy costs through four inputs, a complete allocation rule for
 one memory qubit at every input size, and a collective advantage for a
 specified unequal-accuracy task.
 
+**Manuscript writing is on hold.** Potential collaborators are welcome
+to contact **Ruge Lin** at [gogoko699@gmail.com](mailto:gogoko699@gmail.com).
+
 ## Start with one review
 
 The teaching anchor is Gühne, Haapasalo, Kraft, Pellonpää and Uola,
@@ -28,8 +31,6 @@ required by the path; the additional arguments are explained here.
 | The question | This page, then the [learning path](docs/LEARNING_PATH.md) and [first tutorial](docs/tutorial/MEASUREMENTS_TO_MEMORY.md) | Understand the memory task and work the two-input example |
 | The proof | [Memory to proofs](docs/tutorial/PROOF_BRIDGE.md), then the [core argument](docs/CORE_ARGUMENT.md) | Connect an arbitrary encoder to the exact memory bounds |
 | The evidence | [Scientific scope](docs/SCIENTIFIC_SCOPE.md), [prior comparison](docs/CORE_PRIOR_COMPARISON.md) and [evidence freeze](docs/SCIENTIFIC_EVIDENCE_FREEZE.md) | Check assumptions, attribution and proof evidence |
-
-The [research index](docs/RESEARCH_INDEX.md) maps the wider archive.
 
 ## A first example: two inputs, one memory qubit
 
@@ -141,8 +142,7 @@ Proof reconstructions are internal; no external peer-review or exhaustive
 publication-priority certification is claimed.
 
 The [scientific evidence freeze](docs/SCIENTIFIC_EVIDENCE_FREEZE.md) pins
-the reviewed scientific inputs. The tutorial layer explains those results;
-it does not change the frozen proof files or historical reports.
+the reviewed proof inputs, checker sources and historical reports.
 
 ## Reproduce the exact certificate
 
@@ -150,12 +150,14 @@ The essential quarter-rank scalar certificate uses Python's standard
 library only. From the repository root, reproduce it into a temporary file:
 
 ```bash
-python tools/check_nonflat_quarter_rank_certificate.py --output /tmp/qic-nonflat-quarter-rank-certificate.json
+python -E tools/check_nonflat_quarter_rank_certificate.py --output /tmp/qic-nonflat-quarter-rank-certificate.json
 ```
 
 That certificate proves two polynomial positivity statements used by the
 analytical proof. The [reproducibility record](docs/REPRODUCIBILITY.md)
 explains its role and the different scope of the archive's matrix diagnostics.
+Use ordinary Python without `-O`; `-E` ignores environment settings that
+could disable the checker's assertions.
 The tutorial figure is an illustration; its optional generator
 [`tools/plot_learning_geometry.py`](tools/plot_learning_geometry.py)
 requires Matplotlib.

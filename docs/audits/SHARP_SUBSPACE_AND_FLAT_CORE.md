@@ -27,10 +27,10 @@ encoder. Here epsilon denotes spectral tail weight, not operational error.
 
 All eigenvalues are ordered decreasingly. Write
 
-\[
+```math
 g(\rho)=\sum_{U\in\{X_A,Z_A,X_B,Z_B\}}
  \|\sqrt\rho U\sqrt\rho\|_1,\qquad c_0=2-\sqrt2.
-\]
+```
 
 The entropy target is `g(rho)<=2sqrt(2)+c_0 S(rho)`, with entropy in bits.
 The historical [initial audit](PROOF_AND_NOVELTY_AUDIT.md) remains unchanged.
@@ -394,10 +394,10 @@ an arbitrary core. Let
 
 One sufficient next lemma would be
 
-\[
+```math
 \boxed{g(\rho)\le qG(m)+\epsilon\Gamma+3\epsilon,
        \qquad 0\le\epsilon\le1/29.} \tag{C}
-\]
+```
 
 **Equation (C) is a conjectural sufficient bound, not a proved result.**
 A proof would close every remaining **two-qubit** case without further

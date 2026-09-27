@@ -16,7 +16,8 @@ structural companion. The
 36 file fingerprints are pinned to the reviewed base, the older map is
 reconciled, and one exact-certificate reproduction matches the historical
 report byte for byte. The selected scientific package is prepared for
-manuscript drafting. New theorem exploration remains paused. This freeze
+manuscript drafting; manuscript writing is on hold. New theorem exploration
+remains paused. This freeze
 changes evidence and readiness records, not the theorems.
 
 The [stability extension](audits/BALANCED_SPECTRUM_STABILITY.md)
@@ -160,7 +161,7 @@ is asserted.
 | At n=3,D=4, sum_i (x_i+y_i-x_i y_i)/(4-x_i-y_i)<=1 excludes a benchmark violation | Derived and independently checked; x_i,y_i are actual block excesses divided by 2-sqrt(2), padded by zero. Covers open double-block families beyond the triangle bound; this scalar test alone did not close a full sector | audits/JORDAN_SPECTRAL_BUDGET.md Section 3 |
 | Penalizing only the negative top Bell projectors can restore their sum bound two | Incorrect for every finite penalty kappa>=1; exact signed spectrum exceeds two while the actual physical Hamiltonian remains below the interface benchmark | audits/JORDAN_SPECTRAL_BUDGET.md Section 4 |
 | Spin-flip invariant three-qubit rank-at-most-four states satisfy sum_j f_j^2<=5-4 Tr(rho^2) | Derived and independently checked by an exact sum-of-squares identity; equality at every allowed purity, and g<=2sqrt(6) excludes a finite-budget advantage in this class | audits/SPIN_FLIP_PURITY_BOUND.md |
-| Ququart readouts odd under a common antiunitary of square -I have norm bound 2||w||_2 and exact uniform score 2sqrt(6) | Derived and independently checked; no pairwise commutation assumption, arbitrary actual seeds; common symmetry is an explicit restriction | audits/SPIN_FLIP_PURITY_BOUND.md Section 5 |
+| Ququart readouts odd under a common antiunitary of square -I have norm bound 2\|\|w\|\|_2 and exact uniform score 2sqrt(6) | Derived and independently checked; no pairwise commutation assumption, arbitrary actual seeds; common symmetry is an explicit restriction | audits/SPIN_FLIP_PURITY_BOUND.md Section 5 |
 | Same weighted bound and classwide uniform maximum for every common odd antiunitary, with arbitrary square and general binary POVMs | Derived and independently checked; +I factor algebra and qubit monogamy, nonscalar-square block reduction, and convexity cover the remaining cases. A concrete balanced sextuple admits no such symmetry | audits/ANTIUNITARY_READOUT_BOUND.md |
 | Local incompatibility weight and orthogonal-qubit compatibility disk | Established resource measure and joint-measurability criterion; exact noisy-pair value derived geometrically | ONE_QUBIT_ALLOCATION_REGION.md Section 7 |
 | All maximizing one-qubit seeds retain one site and project the rest onto product bisectors, up to output unitaries | Derived equality characterization; independently checked | ONE_QUBIT_OPTIMALITY.md Section 5 |
@@ -549,7 +550,7 @@ evaluation and operational deduction, not a new entropy resource. It does
 not identify complete-assemblage entanglement cost with the delayed-query
 rate. Prior subsumption of the full evaluated profile remains unresolved.
 
-## Research division and next target
+## Future research directions
 
 The finite problem is now settled for every integer quantum-memory budget
 through four input qubits. The smallest remaining finite common-accuracy
@@ -559,13 +560,12 @@ $$
 \Gamma(5,4)\stackrel{?}{=}4+3\sqrt2
 $$
 
-The next research priority is a dimension-independent bound on the original
+One open direction is a dimension-independent bound on the original
 trace-norm score. The weighted star rules out extending the finite proof
 through an affinity-only rank charge. The exact decoder-gap identity
 retains the interaction between optimal readout and unequal seed
 eigenvalues; a sharp aggregate bound on that information remains to be
-found. This replaces further size-by-size affinity classification as the
-general route. A spectrum-flattening assumption remains unjustified.
+found. A spectrum-flattening assumption remains unjustified.
 The general n,q optimum, seed entropy inequality, and asymptotic
 common-accuracy rate remain open.
 
@@ -706,16 +706,11 @@ three independent within-workspace reconstructions; the certificate had
 an independent byte-identical rerun. These are internal checks, not
 external peer review or novelty certification.
 
-Issue #1 records the proof-and-novelty audit. Issue #2 coordinates the
-unrestricted finite-block/rate investigation. The user subsequently authorized
-continued research and merging; audit PR #3 was integrated under that explicit
-authorization. Research changes still use a separate branch and pull request.
-The original repository contained only LICENSE at
-`310a0730a04ada47eeda41bada41412414442ee1`.
+Issue #1 records the proof-and-novelty audit. Issue #2 records the
+unrestricted finite-block/rate investigation.
 
-The half-rank and quarter-rank theorems now solve every integer memory
-budget through four inputs. The smallest remaining finite target is
-`n=5,q=2`, as stated above. The original one-qubit CHSH argument still
+For the remaining finite problem, see [future research directions](#future-research-directions).
+The original one-qubit CHSH argument still
 cannot treat four-dimensional memory as one qubit: two Bell pairs violate
 its key pair bound. The new proof instead uses positivity and rank directly.
 The all-contrast asymptotic subset-rate conjecture is equivalent to the seed
