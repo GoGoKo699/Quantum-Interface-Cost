@@ -495,6 +495,13 @@ test, but a support bound using the four trusted reference Pauli operators
 excludes its fixed leading eigenspace from the physical model. The uniform
 question for actual readouts remains open.
 
+The subsequent [sharp support theorem](SHARP_TWO_MODE_SUPPORT.md)
+proves `U+m<=4sqrt(3)` for arbitrary earlier pairs and classifies all
+equality cases as the balanced example (12). Thus Section 5's channel
+description holds on the entire maximal-sum boundary. A sharper
+last-query estimate there gives `norm(H0+h3)<=(4+2sqrt(5))/sqrt(3)`;
+the uniform question away from that boundary remains open.
+
 The model remains one arbitrary unknown specimen, one delayed local
 X/Z query, unrestricted collective encoding, free finite classical
 records, and worst-case retained quantum dimension. The head space is

@@ -1,5 +1,33 @@
 # Reproducibility and source provenance
 
+## Sharp two-mode support and equality boundary
+
+The [support theorem](audits/SHARP_TWO_MODE_SUPPORT.md) is pinned to
+main `5a9d0ae04ba0c3a8a782e39c9e853d934d30ed6b`. Run:
+
+```bash
+python tools/check_sharp_two_mode_support.py --output results/sharp_two_mode_support.json
+```
+
+The proof gives the universal squared trace-norm budget, exact weighted
+support and full equality classification. The targeted checker verifies
+the displayed balanced construction, weighted boundary constructions and
+exact radical identities for the strict third-query upper bound. These
+finite checks supplement the proofs; they do not establish the unrestricted
+three-query converse or publication originality. The recorded output
+contains source provenance. No optimizer or large simulation is used.
+
+The run uses Python 3.12.14 and NumPy 2.3.5, with tolerance `4e-11`.
+The canonical attainer and six fixed weighted constructions give 107
+reported identity residuals, all at most `4.45e-16`. The Pauli algebra
+uses exactly representable Gaussian integers; the radical comparisons
+use rational arithmetic in `Q(sqrt(3),sqrt(5))`. Checker SHA-256:
+`e87956b1265d24e2461907e73867e33dea149b5d338b7f940c903764babad2b9`.
+An independent internal source audit and rerun passed; the rerun reproduced
+the recorded JSON byte for byte and verified both file hashes. These are
+workspace checks, not external peer review. Unchanged diagnostics were
+not rerun.
+
 ## What was actually run at bootstrap
 
 On 2026-09-22, the original dossier's four manifest entries were verified

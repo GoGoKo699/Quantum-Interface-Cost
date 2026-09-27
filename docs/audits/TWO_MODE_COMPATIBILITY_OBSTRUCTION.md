@@ -308,6 +308,11 @@ of its completion outside the leading space. This statement concerns
 the specified placement in the trusted reference space: it does not
 exclude every alternative Stinespring realization of the same channel.
 
+The subsequent [sharp support theorem](SHARP_TWO_MODE_SUPPORT.md),
+Section 6, now excludes every such reference orientation at `U=m=2sqrt(3)`.
+Its equality analysis supplies the additional constraint; (16) alone
+remains a statement about the specified isometry.
+
 One can also see directly that the explicit H is outside (1): its
 Pauli coefficient on `Z_1 Y_2 Y_F tensor I_L` is
 `-19/(20sqrt(3))`, whereas (1) contains no word acting nontrivially on

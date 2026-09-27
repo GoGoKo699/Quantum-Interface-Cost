@@ -97,6 +97,16 @@ A short calculation with the four original readouts excludes its fixed
 leading eigenspace. The remaining proof must retain their compatibility
 with the actual reference Pauli operators; no physical violation is shown.
 
+The [sharp two-mode support theorem](docs/audits/SHARP_TWO_MODE_SUPPORT.md)
+now proves `U+m<=4sqrt(3)` for the two largest eigenvalues of any two
+ququart binary-POVM query pairs. A squared trace-norm budget also gives
+the exact support for every nonnegative query weighting. Equality forces
+the balanced readouts and square-POVM head channel; every such attainer,
+with any third pair, obeys `||H||<=(4+2sqrt(5))/sqrt(3)<4+sqrt(2)`.
+The earlier synthetic channel is excluded at its assigned energy in every
+reference orientation. This is a global constraint and a complete boundary
+classification; the general three-query converse remains open.
+
 The [spectral-budget extension](docs/audits/JORDAN_SPECTRAL_BUDGET.md)
 now retains every Jordan block and gives a scalar sufficient test for the
 benchmark, including families with two noncommuting blocks at every site.
@@ -116,7 +126,7 @@ six readouts, including nonscalar squares and general binary POVMs.
 Its exact classwide score is `2sqrt(6)`. A concrete balanced sextuple
 admits no such antiunitary, so the unrestricted problem remains open.
 
-**Status (26 September 2026): research in progress, not a manuscript or a
+**Status (27 September 2026): research in progress, not a manuscript or a
 novelty-certified result.** The baseline proofs and seed reduction have passed
 an independent workspace audit, including primary-source comparisons. Further
 analytical work proves the exact optimum with one retained qubit for every
@@ -266,6 +276,7 @@ supplied evaluations.
 | What is established, derived, or still a target | [STATUS](docs/STATUS.md) |
 | Unrestricted collective-encoding problem | [Seed reduction](docs/COLLECTIVE_ENCODING_REDUCTION.md) |
 | Two sharp ququart query pairs and an arbitrary third pair obey the retention bound | [Complete sharp-pair converse and exact scalar certificate](docs/audits/TWO_SHARP_PAIR_CONVERSE.md) |
+| Sharp sum of the two leading energies for arbitrary pairs, weighted support and equality | [Two-mode support theorem and boundary converse](docs/audits/SHARP_TWO_MODE_SUPPORT.md) |
 | Exact optimum with one retained qubit | [One-qubit theorem and equality cases](docs/ONE_QUBIT_OPTIMALITY.md) |
 | Exact region for separate accuracies at every local query | [One-qubit allocation theorem](docs/ONE_QUBIT_ALLOCATION_REGION.md) |
 | Collective advantage for unequal X/Z accuracies | [Exact-axis spectral reduction](docs/EXACT_AXIS_SPECTRAL_REDUCTION.md) |
