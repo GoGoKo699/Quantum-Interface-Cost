@@ -1,5 +1,65 @@
 # Reproducibility and source provenance
 
+## Unrestricted four-input, two-qubit optimum
+
+The [nonflat quarter-rank converse](audits/NONFLAT_QUARTER_RANK_CONVERSE.md)
+is pinned to main `c8b2e88d6721cb9208c797788f334d7f8b1e1848`. It proves
+`Gamma(4,4)=4+2sqrt(2)` for arbitrary spectra and classifies all maximizing
+normalized seeds. Run its exact scalar certificate and separate fixed
+matrix diagnostics with:
+
+```bash
+python tools/check_nonflat_quarter_rank_certificate.py --output results/nonflat_quarter_rank_certificate.json
+python tools/check_nonflat_quarter_rank.py --output results/nonflat_quarter_rank.json
+```
+
+Independent internal readers reconstructed the pair-branch root elimination
+and sum of squares, the coherent local spectral-spread bound, the fixed
+threshold in the other branch, both polynomial normalizations, grouped
+square-root comparisons, equality cases and operational transfer. The
+fixed threshold is held constant while the actual singleton mass varies;
+a moving threshold would not follow from the assumed deficit bound.
+
+The first checker uses only the Python standard library and exact integer
+and rational interval arithmetic. It certifies every Bernstein coefficient
+of two explicitly defined polynomials on `[0,9/25]^2`: 35 coefficients of C
+exceed `4/25` and 99 coefficients of P exceed `1/10000`. Positivity follows
+on the entire rectangle, with no subdivisions or sampled sign decisions.
+The script verifies the radical enclosures by integer squaring. This is
+a universal scalar certificate; the analytical reduction connects it to
+all positive rank-four seeds.
+
+The second checker passed 26 exact rational comparisons, 127 matrix
+identities and 621 inequalities across eight fixed constructions. These
+include retention equality, a physical obstruction to the former tangent
+approach, both nonflat branches, complex seeds, singular seeds and an
+attained local spectral envelope. Both the original trace-norm scores and
+the stronger root-affinity scores are checked. This run used Python
+3.12.14 and NumPy 2.3.5, tolerance `3e-9`, and matrix dimension at most 16.
+The maximum relative identity residual was below `1.14e-15`; inequality
+margins were above `-6.11e-16`. These floating-point checks are diagnostics,
+not interval proofs.
+
+Both sources passed independent review. Separate independent scratch
+reruns reproduced both reports byte for byte and verified the source and
+proof-note hashes. The reports pin the proof-note SHA-256
+`c761cb2e9835a59b0aa40ef5b27658724af6bd772cddf1cba8adcb43cf0e63a2`.
+
+| Artifact | SHA-256 |
+|---|---|
+| Exact checker source | `10cdb4c62ed2d0b8418abd189484c6d57cd06bd45443c2bd92b4523036d90ec9` |
+| Exact certificate report | `d9ddb1376188246bca676e0fc45b1ad8c4810a67b3c6ff2db1065d591880b639` |
+| Fixed-matrix checker source | `c028be07b5278d145d3a000e07ee6bedd093fa0c6882fbc16a3a1942c201aaa6` |
+| Fixed-matrix report | `0533454680f9536fc03a3e2cfb40eeb19fb87065221429677e62b1a6cb64b683` |
+
+Output guards protect the sources and proof note. Cross-platform floating
+results need only meet the stated tolerance; exact rational conclusions
+must reproduce. No random sampling, parameter grid, optimizer or large
+simulation is used. Historical proof notes and unchanged diagnostics are
+preserved. Their stage-specific open claims are superseded where the new
+theorem applies. The general entropy/rate conjecture and publication
+priority remain unresolved.
+
 ## Quarter-rank geometry and the flat-seed converse
 
 The [quarter-rank proof](audits/QUARTER_RANK_GEOMETRY.md) is pinned

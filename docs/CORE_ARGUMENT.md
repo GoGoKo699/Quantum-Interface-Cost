@@ -1,15 +1,16 @@
 # Exact finite-block retention and a collective advantage
 
 **Core argument, 27 September 2026.** Research base:
-`3aad8227ed448eadfaa5ebc4d33bfc9845dd4f8c`. The supplied proofs below
+`c8b2e88d6721cb9208c797788f334d7f8b1e1848`. The supplied proofs below
 were independently reconstructed within this workspace, not externally
 peer reviewed. Publication originality remains unresolved.
 
 **One qubit of memory can be allocated exactly:** every achievable local
 X/Z accuracy profile has an implementation that randomly retains at most
-one original qubit. **Retaining all but one input is optimal for equal
-accuracy through four inputs:** this holds for arbitrary collective
-encoders and nonuniform seed spectra. **Larger memories can benefit from
+one original qubit. **Random subset retention is optimal for every integer
+memory budget through four inputs:** this holds for equal accuracies,
+arbitrary collective encoders and nonuniform seed spectra.
+**Larger memories can benefit from
 collective encoding:** an explicit five-qubit memory beats the entire
 original-site-retention class for an unequal-accuracy task. These statements
 concern one unknown specimen and one query chosen after encoding.
@@ -168,7 +169,20 @@ that site is always retained and its discarded formula is unnecessary.
 This proves sufficiency explicitly. It characterizes the achievable
 queried effects, not every encoder realizing them.
 
-## 3. Exact retention with all but one input qubit
+## 3. Exact equal-accuracy retention through four inputs
+
+For integers `1<=n<=4` and `0<=q<=n`, the exact optimum is
+
+$$
+\boxed{\Gamma(n,2^q)=2q+\sqrt2(n-q),\qquad
+\eta_{\max}(n,q)=\frac{q+(n-q)/\sqrt2}{n}.}
+$$
+
+The classical and exact endpoints and the all-n one-qubit theorem above
+leave two kinds of nontrivial budget: all but one retained qubit, and
+two retained qubits out of four. The following arguments cover both.
+
+### 3.1 All but one input qubit
 
 **Theorem.** For `n=2,3,4`, an unrestricted encoder retaining at most
 `n-1` quantum bits has exact equal-accuracy optimum
@@ -272,14 +286,53 @@ where beta is an X/Z bisector: its Bloch Y component is zero and its
 X and Z components have magnitude `1/sqrt(2)`. The output unitary is
 arbitrary. This is equality of seeds, not a classification of every
 instrument implementing the same effects. The case `n=2` also follows
-from the earlier one-qubit theorem. Beyond these results, the smallest
-unresolved equal-accuracy block is `n=4,q=2`, with memory dimension four.
+from the earlier one-qubit theorem.
 
-For that block, the [quarter-rank proof](audits/QUARTER_RANK_GEOMETRY.md)
-now bounds the sum of eight squared query scores by six, sharply, and
-proves the retention converse for every flat spectrum and every rank
-at most three. Only nonflat rank-four seeds remain possible witnesses;
-the squared-score budget alone does not settle the unsquared objective.
+### 3.2 Two retained qubits out of four
+
+The [unrestricted quarter-rank converse](audits/NONFLAT_QUARTER_RANK_CONVERSE.md)
+proves, for every positive S on four qubits with `Tr S^2=1` and rank at
+most four,
+
+$$
+\sum_{A=X_1,Z_1,\ldots,X_4,Z_4}\sqrt{\operatorname{Tr}(SASA)}
+\le4+2\sqrt2.
+$$
+
+It follows that `Gamma(4,4)=4+2sqrt(2)`, with common contrast
+`(2+sqrt(2))/4` and worst-case binary error `(2-sqrt(2))/8`.
+Every maximizing normalized seed, up to an original-site permutation,
+has Gram matrix
+
+$$
+L^\dagger L=|\beta_1\rangle\langle\beta_1|\otimes
+|\beta_2\rangle\langle\beta_2|\otimes I_4/4,
+$$
+
+where both beta states are X/Z bisectors. Output isometries remain free.
+
+The [preceding geometry](audits/QUARTER_RANK_GEOMETRY.md) evaluates the
+top four eigenvalues of the singleton Pauli operator and sharply bounds
+the sum of affinities by six. The new argument retains the square roots
+and treats the two spectral branches separately. In the pair-dominant
+branch, a coupled rank constraint and a short sum of squares prove the
+curvature bound, with equality only at retention. In the other branch,
+the local block calculation retains coherence and the spectral spread:
+
+$$
+W_i\ge1-2\mu_i(\sqrt2v+\mu_i),\qquad
+v=\sqrt{1-(\operatorname{Tr}S/2)^2},\quad
+\mu_i=\operatorname{Tr}S/2-2b_i.
+$$
+
+Here b_i is the singleton X/Z coefficient length in the normalized
+Pauli basis and W_i is the sum of the two query deficits. This inequality
+and the exact rank circle reduce the remaining claim to two explicit
+polynomials on `[0,9/25]^2`. An exact rational Bernstein certificate proves
+both positive on that single rectangle: 134 coefficients, no subdivision
+or numerical sign decision. This branch has a strict gap. The full proof
+and certificate definitions are in the linked note; finite matrix checks
+serve only as diagnostics.
 
 ## 4. A collective advantage with five memory qubits
 
@@ -355,8 +408,9 @@ is optimal among unrestricted encoders.
 | The cube-star spectrum underlying the finite construction | [Avni–Samorodnitsky, arXiv:2411.14597v1](https://arxiv.org/pdf/2411.14597v1), Example 1.12, p. 8. The star eigenvector and eigenvalue are prior mathematics. |
 
 The supplied deductions are the exact all-n one-qubit allocation theorem,
-the unrestricted all-but-one-memory converse through four inputs with
-its seed equality classification, and the complete finite collective
+the unrestricted equal-accuracy optimum for every integer memory budget
+through four inputs with the nontrivial seed equality classifications,
+and the complete finite collective
 protocol with its retention-class separation.
 They are a focused candidate for theorem-level priority comparison;
 publication originality is not established by these proofs or by the
@@ -366,9 +420,11 @@ has substantial prior subsumption, detailed in the
 needed for this core argument.
 
 Unrestricted **equal-accuracy** optimality remains open outside the proved
-memory and input ranges, beginning at `n=4,q=2`. The unequal-accuracy
+memory and input ranges, beginning at `n=5,q=2`. The next general target
+is a dimension-independent rank/positivity principle. The unequal-accuracy
 separation does not decide it. Full supporting
 proofs are in the [allocation note](ONE_QUBIT_ALLOCATION_REGION.md),
 [half-rank converse](audits/HALF_RANK_RETENTION_CONVERSE.md),
+[quarter-rank converse](audits/NONFLAT_QUARTER_RANK_CONVERSE.md),
 [exact-axis note](EXACT_AXIS_SPECTRAL_REDUCTION.md), and
 [seed reduction](COLLECTIVE_ENCODING_REDUCTION.md).

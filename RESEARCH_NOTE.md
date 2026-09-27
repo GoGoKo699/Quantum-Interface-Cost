@@ -1,9 +1,23 @@
 # Q1 — Delayed local readout through a bounded quantum interface
 
-**Version:** 0.48, 2026-09-27
+**Version:** 0.49, 2026-09-27
 
 **Project:** Falling / Q1  
-**Status:** The unrestricted finite optima at `(n,q)=(3,2)` and `(4,3)` are proved, with a common half-rank argument and complete normalized-seed equality cases. The exact all-n one-qubit allocation result and the unequal-accuracy collective advantage remain separate results. The general two-qubit entropy inequality, common-accuracy asymptotic rate and publication originality are unresolved. The full product-diagonal profile evaluates an established steering entanglement measure; it is not a new resource framework. All proof review described here is internal, not external peer review.
+**Status:** The unrestricted equal-accuracy optimum is proved for every integer quantum-memory budget through four input qubits. The nonflat quarter-rank converse closes `(n,q)=(4,2)` and classifies all maximizing normalized seeds. The exact all-n one-qubit allocation result and the unequal-accuracy collective advantage remain separate results. The general two-qubit entropy inequality, common-accuracy asymptotic rate and publication originality are unresolved. The full product-diagonal profile evaluates an established steering entanglement measure; it is not a new resource framework. All proof review described here is internal, not external peer review.
+
+The [nonflat quarter-rank converse](docs/audits/NONFLAT_QUARTER_RANK_CONVERSE.md)
+proves `Gamma(4,4)=4+2sqrt(2)` for arbitrary spectra and decoders. Together
+with the earlier results, this gives
+
+$$
+\Gamma(n,2^q)=2q+\sqrt2(n-q),\qquad 1\le n\le4,\quad q=0,\ldots,n.
+$$
+
+The new proof combines the exact top-quarter Pauli spectrum, a local
+spectral-spread bound, a sum-of-squares identity, and an exact two-polynomial
+certificate on one rectangle. It does not flatten a nonuniform seed.
+Equality at `(4,2)` requires two pure local X/Z bisectors and two maximally
+mixed retained sites, up to original-site permutations and output isometries.
 
 The [half-rank converse](docs/audits/HALF_RANK_RETENTION_CONVERSE.md)
 now settles the unrestricted finite optima
@@ -30,14 +44,12 @@ supply the corresponding normalized Kraus seeds.
 
 The [short core argument](docs/CORE_ARGUMENT.md) combines this finite
 result with the exact all-n one-qubit allocation theorem and a collective
-advantage for unequal accuracies. The smallest remaining finite
-common-accuracy case is now `(n,q)=(4,2)`. The
-[quarter-rank argument](docs/audits/QUARTER_RANK_GEOMETRY.md) proves its
-retention bound for every flat seed and every rank-at-most-three seed,
-and proves the sharp squared-query-score budget six for arbitrary
-rank-four seeds. A finite-block advantage would require a nonflat
-rank-four seed. The general entropy inequality, asymptotic common-accuracy
-rate, and publication originality remain open.
+advantage for unequal accuracies. The earlier
+[quarter-rank geometry](docs/audits/QUARTER_RANK_GEOMETRY.md) supplies the
+sharp squared-query-score budget six; the new converse completes the
+unsquared optimization. The smallest remaining finite common-accuracy
+case is now `(n,q)=(5,2)`. The general entropy inequality, asymptotic
+common-accuracy rate, and publication originality remain open.
 
 Earlier readout, resolvent and channel theorems remain in the ledger and
 linked proof notes. Their former three-input scope restrictions describe
@@ -56,11 +68,12 @@ The general compression problem below is already present in the dimensional meas
 | Arbitrary quantum encoding, unlimited classical side information, delayed measurement choice | Established framework [1,2]. |
 | Classical simulability equals joint measurability | Established framework [1,2]; elementary qubit construction below. |
 | Exact preservation of all local X/Z readouts requires n retained qubits | Derived below; also subsumed by Ballester–Wehner–Winter [10], Lemma 5.1. |
-| Uniform-random-subset hybrid construction | Explicit elementary achievable strategy; optimal for q=1 at every n, for q=n-1 through n=4, and at the endpoints. General optimality unresolved. |
+| Uniform-random-subset hybrid construction | Explicit elementary achievable strategy; optimal for q=1 at every n, every integer budget through n=4, and at the endpoints. General optimality unresolved. |
 | Unrestricted Gamma(n,2^(n-1))=2(n-1)+sqrt(2), n=2,3,4 | Derived and independently reconstructed from positivity, a rank-constrained Pauli-spectrum estimate and one positive quadratic. Arbitrary spectra and decoder algebras are included. |
 | Every maximizing half-rank normalized seed is a retention seed, n=2,3,4 | Derived with complete equality analysis: one pure X/Z bisector and n-1 maximally mixed reference sites, up to output isometries. This is not a classification of every physical instrument. |
+| Unrestricted Gamma(4,4)=4+2sqrt(2), including all maximizing normalized seeds | Derived and independently reconstructed for arbitrary spectra; exact rational Bernstein certificate supports the scalar positivity step. Equality consists of two original-site bisectors and two maximally mixed retained sites. |
 | Four-input, rank-at-most-four squared query-score budget | Exactly six, derived and independently reconstructed for arbitrary spectra. Equality fixes two pure X/Z-plane sites and two maximally mixed sites. This does not evaluate the unsquared score. |
-| Four-input, two-qubit retention converse for flat seeds and rank at most three | Derived and independently reconstructed; all flat equality seeds are retention seeds with two bisectors. Any remaining witness must have a nonflat rank-four spectrum. |
+| Four-input, two-qubit retention converse for flat seeds and rank at most three | Derived and independently reconstructed; all flat equality seeds are retention seeds with two bisectors. The subsequent nonflat quarter-rank theorem removes the remaining spectrum restriction. |
 | Exact optimum and maximizing seeds with one retained qubit | Derived and independently checked from Cheng–Hall monogamy [11]; see Section 8 and the full proof. |
 | Exact complete local X/Z accuracy region with one retained qubit | Derived and independently checked: the sum of established local incompatibility weights is at most one; explicit matching allocation. |
 | Equal-accuracy optimum for pairwise commuting/anticommuting reflection readouts at all n,q | Derived and independently checked from prior graph-Clifford dimension algebra and an elementary matching argument; unrestricted encoders, explicit decoder restriction. |
@@ -515,9 +528,9 @@ The proof reduces extreme qubit decoders to scalar signs or Bloch observables, t
 
 The half-rank theorem now also settles `(n,q)=(3,2)` and `(4,3)` with
 `Gamma(n,2^(n-1))=2(n-1)+sqrt(2)` and complete normalized-seed equality
-cases. Combined with the one-qubit theorem and endpoints, every integer
-qubit-memory budget through three inputs is evaluated. The `(4,2)` case
-and the general entropy/rate problem remain open.
+cases. The quarter-rank theorem now closes `(4,2)`. Combined with the
+one-qubit theorem and endpoints, every integer qubit-memory budget through
+four inputs is evaluated. The general entropy/rate problem remains open.
 
 Thus the former n=2,q=1 diagnostic is settled, including the entire two-input-qubit memory function. For general n, the first nonclassical interval has exact memory one. The argument does not extend to a higher-dimensional central memory: two Bell pairs provide an explicit counterexample to its key pair inequality.
 
@@ -653,9 +666,10 @@ Equality requires a pure X/Z bisector projector on one site tensor the identity 
 
 The entropy inequality is also closed under [local classical flags and tensor products](docs/CLASSICAL_FLAG_ENTROPY_BOUND.md). In particular, all two-input states classical on either qubit are excluded, even with noncommuting conditional states. All [two-input states with both marginals maximally mixed](docs/LOCALLY_MIXED_TWO_QUBIT_BOUND.md) satisfy a stronger bound, including arbitrary local rotations of Bell-diagonal states. A [spectral theorem](docs/SPECTRAL_CONDITION_ENTROPY_BOUND.md) excludes every full-rank Gram matrix with `lambda_max/lambda_min <= 6.235819648070267`, in any dimension and any eigenbasis. That sufficient threshold is not asserted optimal. An explicit two-qubit counterexample refutes a proposed local conditional-entropy route; it does not refute the global inequality.
 
-The new half-rank theorem removes the flat-spectrum restriction and
-settles the finite `(3,2)` and `(4,3)` diagnostics, including all lower
-allowed ranks. The smallest remaining finite case is `(4,2)`. This does
+The half-rank theorem removes the flat-spectrum restriction and settles
+the finite `(3,2)` and `(4,3)` diagnostics, including all lower allowed
+ranks. The quarter-rank theorem closes `(4,2)`, so the smallest remaining
+finite case is `(5,2)`. This does
 not prove the entropy inequality: a two-input entropy witness must still
 be nonclassical on both sites. It cannot have both marginals maximally mixed
 and, if full rank, must exceed the stated condition-number threshold. The sharp
