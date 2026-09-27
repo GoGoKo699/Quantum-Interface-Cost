@@ -1,7 +1,7 @@
 # Status and claim ledger
 
-Updated: 2026-09-27. Stage: the [controlled-phase theorem](audits/CONTROLLED_PHASE_PAIR_CONVERSE.md) proves the sharp retention bound for an entire family with unequal query angles and an arbitrary third pair. A [direct active-plane bound](audits/ACTIVE_PLANE_REVERSE_RESOLVENT.md) retains the full earlier Hamiltonian, permits every one-block last pair when `U<=2sqrt(3)`, and repairs both previous one-mode obstruction examples through their actual plane means. An [explicit one-axis channel repair](audits/ONE_AXIS_EB_REPAIR.md) turns a small Pauli image into an entanglement-breaking comparator; image trace norm at most `2/3` suffices throughout the high-m regime. These are analytical family and sufficient-condition results. All three complete remaining reflection signatures, unrestricted optimality and publication originality remain unresolved.
-Latest research base: `7cb964b47b8aa13a604a3ab5df663d4f399fa6f4`, the merge of PR #49.
+Updated: 2026-09-27. Stage: the [half-rank converse](audits/HALF_RANK_RETENTION_CONVERSE.md) proves the unrestricted exact optima `Gamma(3,4)=4+sqrt(2)` and `Gamma(4,8)=6+sqrt(2)`, as part of one theorem for n=2,3,4. Positivity and the rank cap constrain the single-site Pauli coefficients of an arbitrary seed square root; one positive quadratic completes the proof. All maximizing normalized seeds are classified. This settles all three previously unresolved ququart reflection signatures without readout assumptions. The general entropy inequality, asymptotic common-accuracy rate, and publication originality remain unresolved.
+Latest research base: `3aad8227ed448eadfaa5ebc4d33bfc9845dd4f8c`, the merge of PR #50.
 
 Critical assessment base: `81bcfefb2b545742d513c4f51364a7f72972451e`, the
 merge of PR #11. The [publication and optimality assessment](audits/PUBLICATION_AND_OPTIMALITY_ASSESSMENT.md)
@@ -21,6 +21,8 @@ is asserted.
 
 | Claim | Status | Location |
 |---|---|---|
+| Unrestricted Gamma(n,2^(n-1))=2(n-1)+sqrt(2), n=2,3,4 | Derived and independently reconstructed; stronger affinity bound for every positive half-rank square root, without a flat-spectrum or readout restriction | audits/HALF_RANK_RETENTION_CONVERSE.md |
+| Every maximizing half-rank normalized seed is a retention seed, n=2,3,4 | Derived with equality analysis: one pure X/Z bisector and n-1 maximally mixed sites, up to output isometries; not a uniqueness claim for physical instruments | audits/HALF_RANK_RETENTION_CONVERSE.md |
 | General delayed measurement simulation with classical assistance | Established framework; also equivalent here to a prior postmeasurement-information discrimination task | Audit Sections 6.1–6.3 |
 | q=0 iff eta<=1/sqrt(2) | Established threshold; elementary derivation checked | Note Section 3; audit |
 | Random-subset achievable contrast | Explicit construction; checked through n=4 | Note Section 4; checks.json |
@@ -38,12 +40,12 @@ is asserted.
 | Complete 2n-contrast region for worst-case dimension two | Derived and independently checked; sum of local incompatibility weights <=1, with matching weighted support function and implementation | ONE_QUBIT_ALLOCATION_REGION.md |
 | Exact equal-accuracy retention bound at every n,q with pairwise commuting/anticommuting reflection readouts | Derived and independently checked from prior graph-Clifford rank and elementary matching; arbitrary encoders, explicit decoder hypothesis | audits/DECODER_ALGEBRA_AND_THREE_INPUT.md |
 | Full region sum_i w(x_i,z_i)<=q under that readout hypothesis at every n,q | Derived and independently checked; threshold matching, finite operator levels, and retention attainment give every nonnegative weighted support | audits/WEIGHTED_DECODER_ALLOCATION.md |
-| Unrestricted Gamma(3,4) is the maximum of the subset value and three remaining nonscalar reflection-sector optima | Exact discrete reduction followed by the analytical exclusion of seven patterns; (22)^2(11), (22)^2(12), and (22)^3 remain unresolved | audits/DECODER_ALGEBRA_AND_THREE_INPUT.md; audits/SINGLE_DOUBLE_BLOCK_CONVERSE.md |
+| Unrestricted Gamma(3,4) is the maximum of the subset value and three nonscalar reflection-sector optima | Earlier exact reduction and seven-pattern exclusion; the later half-rank theorem closes (22)^2(11), (22)^2(12), and (22)^3 simultaneously | audits/DECODER_ALGEBRA_AND_THREE_INPUT.md; audits/SINGLE_DOUBLE_BLOCK_CONVERSE.md |
 | Every three-input rank-at-most-three seed obeys Gamma(3,3)<=4+sqrt(2) | Derived and independently checked; arbitrary complex eigenvectors, nonuniform spectra and full trace norms. No symmetry assumption or evaluation of the optimal qutrit score | audits/JORDAN_BLOCK_CONVERSE.md |
 | One noncommuting Jordan block per original pair gives a weighted converse in every memory dimension | Derived and independently checked via a local Bell-projector majorant and weighted Gram bound; at n=3 it implies the full two-site-retention support. General contractions are included for dimension at most three | audits/JORDAN_BLOCK_CONVERSE.md Sections 1–3 |
 | At most one double-block pair among three ququart query pairs gives norm(H)<=4+sqrt(2) | Derived and independently checked for all complex orientations and unequal angles; a positive-spectrum resolvent argument closes three more entire signatures. The mixed-Choi ingredient is a prior-monogamy corollary | audits/SINGLE_DOUBLE_BLOCK_CONVERSE.md |
 | At n=q+1, q query pairs on separate memory qubits plus one arbitrary pair obey norm(H)<=2q+sqrt(2) | Derived and independently checked for every q>=1 and arbitrary binary POVMs; product-Bell spectral cap and full resolvent partial trace, with exact conditional uniform-accuracy attainment and unrestricted encoders | audits/COMMUTING_QUERY_ALGEBRAS.md Sections 1–3, 5 |
-| Any two commuting original query algebras at n=3,D=4 forbid a retention advantage | Derived and independently checked; commuting-algebra decomposition gives complementary factors or separate active blocks, covered by the factor and one-double-block theorems. All three full remaining signatures stay open | audits/COMMUTING_QUERY_ALGEBRAS.md Section 4 |
+| Any two commuting original query algebras at n=3,D=4 forbid a retention advantage | Derived and independently checked; commuting-algebra decomposition gives complementary factors or separate active blocks, covered by the factor and one-double-block theorems. The subsequent half-rank theorem removes the three-input readout restriction | audits/COMMUTING_QUERY_ALGEBRAS.md Section 4 |
 | Two sharp internally anticommuting pairs with two mixed cross commutators zero forbid an advantage | Derived and independently checked; complete ququart classification and a maximally entangled top vector permit an unrestricted third pair | audits/NONCOMMUTING_QUERY_FAMILIES.md Section 7 |
 | Any two sharp internally anticommuting ququart query pairs, plus any third binary-POVM pair, obey norm(H)<=4+sqrt(2) | Derived and independently checked without any cross-commutation hypothesis; actual spectral-tail constraints and the sharp spectral circle reduce the resolvent certificate to one variable, certified by 400 closed rational intervals. Does not cover arbitrary earlier Jordan angles | audits/TWO_SHARP_PAIR_CONVERSE.md |
 | Any two arbitrary ququart binary-POVM pairs have third Hamiltonian eigenvalue at most sqrt(32/3) | Derived and independently checked from reference chirality and the second moment. Two retained spectral modes always give a safe last-query resolvent; an exact double eigenvalue 2sqrt(3) proves one mode cannot do so universally | audits/TWO_MODE_RESOLVENT.md |
@@ -55,7 +57,7 @@ is asserted.
 | The maximal-support boundary has an explicit global safe neighborhood | Derived and independently checked; deficit at most 2^-32 gives norm(H0+h3)<16/3 for arbitrary third pairs, and at most 2^-24 suffices when m>=2+sqrt(2). Conservative, nonoptimal radii | audits/QUANTITATIVE_TWO_MODE_STABILITY.md |
 | A high-m head at full diamond distance at most 2/5 from an entanglement-breaking channel passes the coherent envelope test | Derived and independently checked by centering the resolvent and two elementary quadratic certificates; no dephasing of the actual head | audits/ROBUST_HEAD_CHANNEL_CONVERSE.md |
 | The full positive-quadrant physical nonclassical-head family obeys the converse | Derived and independently checked; explicit EB comparison controls its high-energy NPT heads, while a triangle bound covers the other angles | audits/ROBUST_HEAD_CHANNEL_CONVERSE.md |
-| A one-block last query obeys the strict converse throughout the high-m regime | Derived and independently checked; actual channel moment and one Bell projector give a monotone scalar certificate with endpoint margin 407/62500. Any remaining violating (22)^2(11)/(12) tuple has a valid rank-one resolvent | audits/HIGH_SECOND_MODE_ONE_BLOCK.md |
+| A one-block last query obeys the strict converse throughout the high-m regime | Derived and independently checked; actual channel moment and one Bell projector give a monotone scalar certificate with endpoint margin 407/62500. This partial exclusion is superseded for the benchmark by the unrestricted half-rank theorem | audits/HIGH_SECOND_MODE_ONE_BLOCK.md |
 | The conserved-symmetry readout family obeys norm(H)<=5 with any third pair | Derived and independently checked for four coefficient unit balls in the stated Pauli spaces. The actual positive rank-two head is a rectangular-POVM channel; five is not asserted sharp | audits/CONSERVED_SYMMETRY_CONVERSE.md |
 | Zero Pauli-conjugation gap forces an EB head or support at most 2+sqrt(2) | Derived and independently checked; exact flattening and three coefficient forms, including flagged exceptions. No nonzero-gap neighborhood is claimed here | audits/ZERO_PAULI_GAP_DICHOTOMY.md |
 | Exact last-query resolvent with at most k active Jordan blocks, in odd or even dimension | Derived and independently checked from the exact block inverse and partial matching. Optimal blocks pair extreme marginal eigenvalues; the one-block and fixed `(11)` formulas eliminate all decoder variables | audits/JORDAN_BLOCK_BUDGET_RESOLVENT.md |
@@ -405,7 +407,7 @@ is retained because it is stronger extremely close to eta=1.
 The state version yields the unrestricted bound
 `g(L)<=sqrt(2)n+S(L^dagger L)/log_2(1+sqrt(2))`. Its entropy coefficient
 .78643970 exceeds the desired .58578644, so the sharp entropy conjecture
-and the n=3,q=2 diagnostic remain open.
+remains open; the n=3,q=2 diagnostic is now settled by the half-rank theorem.
 
 The [exact-axis rate](EXACT_AXIS_RATE.md) is now completely evaluated:
 `R_X(z)=f(z)`. The finite heterogeneous converse is
@@ -471,36 +473,29 @@ rate. Prior subsumption of the full evaluated profile remains unresolved.
 
 ## Research division and next target
 
-For the three-input finite-budget target, the latest sharp support theorem
-confines the regime strictly above the one-mode threshold to
-`2+sqrt(2)<m<=2sqrt(3)` and `m<=U<=4sqrt(3)-m`.
-The entire maximal-sum boundary is now classified and lies strictly below
-the retention benchmark after every third pair. The later stability proof
-gives explicit radii `2^-32` globally and `2^-24` within the high-m strip;
-these remain much smaller than the full unresolved region. The channel
-criterion also handles the complete earlier NPT example family.
+The finite three-input problem is now settled for every integer quantum
+memory budget: the classical and exact endpoints, the all-n one-qubit
+theorem, and the new half-rank result cover q=0,1,2,3. At four inputs the
+new theorem also proves the q=3 optimum. The smallest remaining finite
+common-accuracy target is therefore
 
-The later one-block theorem removes the high-m obstruction from
-`(22)^2(11)` and `(22)^2(12)`: place the one-block query last, and every
-potential violation must have `m<2+sqrt(2)`. A universal rank-one resolvent
-inequality is no longer a viable target: the actual reflection example
-disproves it, including the version retaining its negative chiral
-partner. The exact one-block formula remains useful wherever that sufficient
-test passes. The direct active-plane theorem now additionally requires every
-possible violating one-block tuple to have `U>2sqrt(3)` and
-`U^2+(4+zeta_P)(u-sqrt(2))>16`, where u and zeta_P are its actual last-block
-energy and earlier plane-average norm. The full inverse argument explicitly
-repairs both preceding envelope obstructions.
+$$
+\Gamma(4,4)\stackrel{?}{=}4+2\sqrt2,
+$$
 
-For the fully double-block case, the controlled-phase family is now closed
-for all unequal original angles and arbitrary third pairs. The explicit
-channel repair also excludes every high-m head with one Pauli image of
-trace norm at most `2/3`; a remaining high-m witness would have to preserve
-more than this along every head axis. A global relation between that channel
-property and the original readouts remains the next structural target.
-The two-positive-mode envelope has not been proved for all actual data.
-Spectral/moment/compression constraints alone remain insufficient, and the scalar endpoint shows why
-one cannot assume every high-m channel is close to EB.
+with four inputs and two retained qubits. This is a quarter-rank seed
+constraint, outside the new half-rank proof. The general n,q optimum and
+the asymptotic common-accuracy rate remain open. The next structural
+question is whether the direct rank-sensitive Pauli argument extends to
+that constraint, before returning to detailed decoder classifications.
+
+The earlier three-input channel and inverse methods remain useful
+independent results. The new theorem does not establish that every
+physical two-mode spectral envelope passes: that stronger auxiliary
+claim is still open and is no longer needed for the finite converse.
+Failed one-mode or separate-data relaxations remain failed. Historical
+proof notes are preserved at their recorded bases; their former open-case
+statements do not override the current theorem.
 
 The [optimizer follow-up](audits/FORMATION_OPTIMIZERS_AND_PRIOR.md)
 strengthens the one-site equality result: every entropy optimum in the
@@ -638,16 +633,11 @@ authorization. Research changes still use a separate branch and pull request.
 The original repository contained only LICENSE at
 `310a0730a04ada47eeda41bada41412414442ee1`.
 
-The smallest unresolved block is now `n=3,q=2`: prove
-`Gamma(3,4)<=4+sqrt(2)` or construct a violating seed. Every allowed flat
-seed is now excluded from improving this finite-budget score. A witness
-must have rank three or four with nonuniform nonzero eigenvalues, outside
-the product-diagonal family. Every one of its six query compressions must
-be indefinite, and its support must lie outside the stated neighborhood
-of every subset support. A separate Ky Fan refinement also proves the
-sharper entropy inequality for every flat rank-three three-input state. The one-qubit
-CHSH argument cannot be extended by treating a four-dimensional memory as
-one qubit: two Bell pairs explicitly violate its key pair bound.
+The former smallest block `n=3,q=2` is now solved for every spectrum by
+the half-rank theorem, which also solves `n=4,q=3`. The next finite target
+is `n=4,q=2`, as stated above. The original one-qubit CHSH argument still
+cannot treat four-dimensional memory as one qubit: two Bell pairs violate
+its key pair bound. The new proof instead uses positivity and rank directly.
 The all-contrast asymptotic subset-rate conjecture is equivalent to the seed
 entropy inequality holding for every Gram matrix, including entangled
 eigenbases. The established entropy formula does not itself evaluate the rate.
@@ -667,7 +657,7 @@ eigenvalues sum to more than `28/29`. Also,
 a two-input witness cannot have a maximally entangled kernel vector or
 at most two distinct eigenvalues. The example `(t,b,b,0)` generally has
 three distinct eigenvalues and is not removed as a whole by that count.
-This is distinct from the n=3,q=2 finite-budget diagnostic:
+This is distinct from the now-settled n=3,q=2 finite-budget diagnostic:
 regularization can turn entropy below log(rank) into an asymptotic memory
 saving. No entropy witness or collective advantage for the original
 common-accuracy target has been found. The unequal-accuracy separation

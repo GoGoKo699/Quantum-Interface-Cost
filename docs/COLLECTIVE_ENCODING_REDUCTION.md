@@ -1,9 +1,9 @@
 # A normalized-seed formulation of the unrestricted interface
 
-Date: 2026-09-22. Status: derivation independently checked in the
+Updated: 2026-09-27. Status: derivation independently checked in the
 [commit-pinned audit](audits/PROOF_AND_NOVELTY_AUDIT.md), Section 5.
-This is an optimization reduction, not a solution of the optimization, and
-not asserted to be a novel theorem. Compare the established measurement
+This is an optimization reduction; the finite cases subsequently solved
+are recorded in Section 4. No novelty claim is made. Compare the established measurement
 simulability/steering framework in note references [1–2].
 
 ## 1. Statement
@@ -124,17 +124,28 @@ strategy's finite-size optimality. Finding a seed that violates it would
 construct a genuine collective advantage after the orbit completion above.
 The [one-qubit theorem](ONE_QUBIT_OPTIMALITY.md) now proves it for every n
 when q=1 and classifies all maximizing seeds. The
+[half-rank converse](audits/HALF_RANK_RETENTION_CONVERSE.md) now also proves
+
+$$
+\Gamma(n,2^{n-1})=2(n-1)+\sqrt2,\qquad n=2,3,4,
+$$
+
+for every allowed seed spectrum. It classifies every maximizing Gram
+matrix as a pure X/Z-bisector factor on one site tensored with the
+maximally mixed state on all remaining sites. In particular both
+`n=3,q=2` and `n=4,q=3` are settled, and the smallest remaining block
+is `n=4,q=2`, with target `g(L)=4+2sqrt(2)`. The
 [product-diagonal bound](COMMUTING_SEED_BOUND.md) proves it whenever
 `L^dagger L` is diagonal in a fixed local product basis, for arbitrary q.
-Neither statement restricts the encoders in the unresolved general problem.
-The smallest remaining block is n=3,q=2, with threshold $g(L)=4+\sqrt2$.
+These proved cases do not restrict the encoders in the unresolved general problem.
 
 The [decoder-algebra theorem](audits/DECODER_ALGEBRA_AND_THREE_INPUT.md)
 proves the subset bound for every n,q when an optimal reflection decoder
 family pairwise commutes or anticommutes. This is an explicit sufficient
 condition on readouts, not a restriction inserted into the unrestricted
-maximum above. It also reduces the unresolved three-input spectral
-optimization exactly to ten continuous nonscalar reflection sectors.
+maximum above. Its earlier reduction of the three-input spectral
+optimization to ten nonscalar reflection sectors is now superseded, for
+the equal-weight converse, by the unrestricted half-rank theorem.
 
 The [logarithmic-Sobolev converse](STRONG_ENTROPIC_CONVERSE.md) supplies a
 stronger global memory lower bound without evaluating this optimization.
@@ -143,12 +154,12 @@ score at every rank-two spectrum and exclude additional eigenbasis/projector
 families. They also distinguish the finite-block target from a possible
 two-input, nonuniform rank-three entropy witness for an asymptotic advantage.
 
-The [flat half-rank theorem](FLAT_HALF_RANK_OPTIMALITY.md) settles the
-restricted optimization over `rho=P/2^(n-1)` for n through four. At
-`n=3,q=2`, separate lower-rank estimates also exclude every other allowed
-flat seed. A witness must have rank three or four with nonuniform nonzero
-eigenvalues. The general optimization above still allows every
-spectrum. Further entropy exclusions are collected in the
+The [earlier flat half-rank theorem](FLAT_HALF_RANK_OPTIMALITY.md) settled
+the restricted optimization over `rho=P/2^(n-1)` for n through four.
+The new half-rank converse removes that spectral restriction rather than
+assuming that a general seed can be flattened. The general optimization
+above continues to allow every spectrum. Further entropy exclusions are
+collected in the
 [boundary note](ENTROPY_INEQUALITY_BOUNDARIES.md).
 
 The [support-inertia converse](SUPPORT_INERTIA_CONVERSE.md) applies without

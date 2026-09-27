@@ -1,6 +1,6 @@
 # Literature comparison and remaining novelty questions
 
-Updated: 2026-09-23. The [commit-pinned audit](audits/PROOF_AND_NOVELTY_AUDIT.md)
+Updated: 2026-09-27. The [commit-pinned audit](audits/PROOF_AND_NOVELTY_AUDIT.md)
 contains exact source versions, theorem/equation/page locators, resource maps,
 proof reconstructions, and counterexamples for the bootstrap dossier. The
 table below summarizes those completed targeted comparisons; subsequent
@@ -22,6 +22,31 @@ pinned to `81bcfefb2b545742d513c4f51364a7f72972451e`, narrows the paper claim
 and adds a prior CHSH derivation of the symmetric one-site entropy curve.
 Its convexity consequences and exact failed-tensorization example explain
 why the unrestricted rate question needs a new global argument.
+
+## Half-rank finite optimum: new scope, established ingredients
+
+The [half-rank converse](audits/HALF_RANK_RETENTION_CONVERSE.md) proves
+`Gamma(n,2^(n-1))=2(n-1)+sqrt(2)` for n=2,3,4, with complete normalized-seed
+equality cases. It removes the spectrum restriction of the earlier
+[flat-projector theorem](FLAT_HALF_RANK_OPTIMALITY.md). This is a finite
+worst-case-dimension result, not an entropy or asymptotic-rate theorem.
+
+Its ingredients have distinct roles. The normalized-seed reduction links
+the established measurement-simulation task to the trace-norm objective.
+The established squared-fidelity/affinity comparison, sourced and proved
+in [STRONG_ENTROPIC_CONVERSE, Section 3](STRONG_ENTROPIC_CONVERSE.md#3-root-fidelity-affinity-and-the-two-pauli-energy),
+bounds each query by an affinity. Pauli orthogonality, von Neumann's trace
+inequality, and Hilbert--Schmidt Cauchy are standard. The supplied argument
+keeps the rank constraint through the top half of the single-site Pauli
+spectrum, then proves the sharp sum using one positive quadratic.
+It does not introduce a new fidelity inequality or compression framework.
+
+The earlier [flat-seed source comparison](FLAT_SEED_PRIOR_COMPARISON.md)
+records the inspected quantum Boolean-function and uncertainty results.
+That scoped comparison does not certify priority for the new nonflat
+rank theorem. Independent proof reconstruction establishes internal
+mathematical support; a theorem-level priority and significance assessment
+of this exact strengthened statement remains open.
 
 ## Direct precedents and exact implications
 

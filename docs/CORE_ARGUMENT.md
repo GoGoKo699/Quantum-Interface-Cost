@@ -1,16 +1,18 @@
-# Exact allocation of one qubit and a finite collective advantage
+# Exact finite-block retention and a collective advantage
 
-**Core argument, 24 September 2026.** Synthesis of results on main at
-`e197699d87171635028d1639e025c8e5759e5c68`; no new optimality or originality
-claim. The proofs below were independently reconstructed within this
-workspace, not externally peer reviewed.
+**Core argument, 27 September 2026.** Research base:
+`3aad8227ed448eadfaa5ebc4d33bfc9845dd4f8c`. The supplied proofs below
+were independently reconstructed within this workspace, not externally
+peer reviewed. Publication originality remains unresolved.
 
 **One qubit of memory can be allocated exactly:** every achievable local
 X/Z accuracy profile has an implementation that randomly retains at most
-one original qubit. **Larger memories can benefit from collective encoding:**
-an explicit five-qubit memory beats the entire original-site-retention
-class for an unequal-accuracy task. These statements concern one unknown
-specimen and one query chosen after encoding.
+one original qubit. **Retaining all but one input is optimal for equal
+accuracy through four inputs:** this holds for arbitrary collective
+encoders and nonuniform seed spectra. **Larger memories can benefit from
+collective encoding:** an explicit five-qubit memory beats the entire
+original-site-retention class for an unequal-accuracy task. These statements
+concern one unknown specimen and one query chosen after encoding.
 
 ## 1. The task
 
@@ -166,7 +168,114 @@ that site is always retained and its discarded formula is unnecessary.
 This proves sufficiency explicitly. It characterizes the achievable
 queried effects, not every encoder realizing them.
 
-## 3. A collective advantage with five memory qubits
+## 3. Exact retention with all but one input qubit
+
+**Theorem.** For `n=2,3,4`, an unrestricted encoder retaining at most
+`n-1` quantum bits has exact equal-accuracy optimum
+
+$$
+\boxed{\Gamma(n,2^{n-1})=2(n-1)+\sqrt2,\qquad
+\eta_{\max}(n,n-1)=\frac{2(n-1)+\sqrt2}{2n}.}
+$$
+
+In particular, `Gamma(3,4)=4+sqrt(2)` and
+`Gamma(4,8)=6+sqrt(2)`. Randomly retaining all but one original site,
+with the four-outcome joint measurement
+`G_{s,t}=(I+(sX+tZ)/sqrt(2))/4` on the discarded site, attains the
+common contrast. Its two marginals have contrast `1/sqrt(2)`.
+The converse allows every collective encoder,
+every binary-POVM decoder, and every seed spectrum of the allowed rank.
+
+The [normalized-seed reduction](COLLECTIVE_ENCODING_REDUCTION.md) reduces
+the converse to positive S on n qubits with `Tr S^2=1` and
+`rank S<=2^(n-1)`. Its score is `sum_A ||SAS||_1`, over the local X/Z
+queries. The established root-fidelity/affinity comparison gives
+
+$$
+\|SAS\|_1^2\le a_A:=\operatorname{Tr}(SASA).
+$$
+
+The [full proof](audits/HALF_RANK_RETENTION_CONVERSE.md) bounds the
+stronger objective `sum_A sqrt(a_A)`. Its key constraint combines the
+rank bound with the direction of the single-site Pauli coefficients;
+it never replaces S by a flat-spectrum operator.
+
+To see the mechanism, expand S in the orthonormal Pauli basis, and let
+`J=sum_i b_i B_i/sqrt(2^n)` be its single-site X/Z part, where each B_i
+is a unit Pauli direction and `T=sum_i b_i^2`. The case T=0 follows
+directly by Cauchy--Schwarz. For T>0 put
+
+$$
+u=\frac{\operatorname{Tr}S}{\sqrt{2^{n-1}}},\quad
+v=\sqrt{1-u^2},\quad y=2T,\quad
+M=\mathbb E\left|\sum_i b_i\varepsilon_i\right|,\quad
+c=\frac{M}{\sqrt T}.
+$$
+
+Here the signs are independent and uniform. Positivity gives `0<=y<=1`;
+the rank bound gives `u<=1`. When T>0, pairing the eigenvalues of S with
+the positive half of J's symmetric spectrum gives
+
+$$
+\sqrt y\le uc+v\sqrt{1-c^2},\qquad
+\sum_A a_A\le2n-4+2u^2+y. \tag{2}
+$$
+
+The sign average is exact for at most four coefficients. Ordering them
+as `a>=b>=c_0>=d>=0`, with zeros appended if needed, gives
+
+$$
+M=\max\left\{a,\frac{3a+b+c_0+d}{4},
+                  \frac{a+b+c_0}{2}\right\}.
+$$
+
+Either the maximizing term has coefficient norm at most `sqrt(3)/2`,
+which gives a strict gap below the claimed score, or M is one site's
+coefficient. In the latter case define `d_A=1-a_A`, let W be the two
+deficits at that site, and let D be their total over all sites. After
+the elementary low-score cases are removed, (2) implies
+
+$$
+D\ge E:=4-2u^2-y,\qquad
+W\ge w:=y\left[u\sqrt y-v\sqrt{1-y}\right]^2.
+$$
+
+Separate Cauchy bounds for that site and the other sites, followed by
+concave tangents at W=1 and D-W=0, give
+
+$$
+\sum_A\sqrt{a_A}-[2(n-1)+\sqrt2]
+\le\frac{r(1-W)-(D-1)}2,
+\qquad r=\sqrt2-1.
+$$
+
+Writing `z=sqrt(1-y)`, the numerator is nonpositive because
+
+$$
+(E-1)-r(1-w)
+\ge(2-r)v^2-2rvz+(1-2r)z^2\ge0.
+$$
+
+The last quadratic is positive definite: its determinant is
+`10-7sqrt(2)>0`. This proves the stronger affinity bound and hence the
+original score bound.
+
+All maximizing normalized seeds have Gram matrix
+
+$$
+\boxed{L^\dagger L=
+\frac{|\beta\rangle\langle\beta|_i\otimes I_{\rm rest}}
+     {2^{n-1}},}
+$$
+
+where beta is an X/Z bisector: its Bloch Y component is zero and its
+X and Z components have magnitude `1/sqrt(2)`. The output unitary is
+arbitrary. This is equality of seeds, not a classification of every
+instrument implementing the same effects. The case `n=2` also follows
+from the earlier one-qubit theorem. Beyond these results, the smallest
+unresolved equal-accuracy block is `n=4,q=2`, with memory dimension four.
+
+## 4. A collective advantage with five memory qubits
 
 Take `n=31`. Label the X-basis vectors by bit strings. Let
 `S={0,e_1,...,e_n}`, and use 32 orthogonal output states labelled by S.
@@ -228,18 +337,21 @@ Thus it strictly exceeds that entire retention class at the same
 worst-case memory cap. No claim is made that this collective construction
 is optimal among unrestricted encoders.
 
-## 4. What is prior, and what is being claimed
+## 5. What is prior, and what is being claimed
 
 | Established ingredient | Primary source and precise locator |
 |---|---|
 | Dimension-constrained measurement simulation with classical records | [Ioannou et al., arXiv:2202.12980v1](https://arxiv.org/pdf/2202.12980v1), Eq. (1), p. 2. |
 | Independently optimized CHSH monogamy, including mixed states | [Cheng–Hall, arXiv:1610.09302v3](https://arxiv.org/pdf/1610.09302v3), Eq. (1), p. 1; Eqs. (13)–(14) and following paragraph, p. 3. |
+| Squared root fidelity is at most affinity | [Audenaert–Nussbaum–Szkoła–Verstraete, arXiv:0708.4282v1](https://arxiv.org/pdf/0708.4282v1), Appendix A, Theorem 6/Eq. (55), p. 32, at parameter `s=1/2`; a direct Schatten Hölder proof is reproduced in [the entropy converse](STRONG_ENTROPIC_CONVERSE.md#3-root-fidelity-affinity-and-the-two-pauli-energy). |
 | Orthogonal-qubit compatibility disk; incompatibility weight | [Yu–Liu–Li–Oh, arXiv:0805.1538v2](https://arxiv.org/pdf/0805.1538v2), Theorem 1/Eq. (5), pp. 1–2; [Pusey, arXiv:1502.03010v2](https://arxiv.org/pdf/1502.03010v2), Section III/Eq. (15), p. 4. The displayed w is an elementary evaluation of this prior resource. |
 | Related average compression cost | [Cope–Uola, arXiv:2207.05722v4](https://arxiv.org/pdf/2207.05722v4), Section IV.C/Eqs. (13)–(14), pp. 7–8. An average branch cost does not itself give a dimension-two cap on every branch. |
 | The cube-star spectrum underlying the finite construction | [Avni–Samorodnitsky, arXiv:2411.14597v1](https://arxiv.org/pdf/2411.14597v1), Example 1.12, p. 8. The star eigenvector and eigenvalue are prior mathematics. |
 
-The supplied deductions are the exact all-n allocation theorem and the
-complete finite collective protocol with its retention-class separation.
+The supplied deductions are the exact all-n one-qubit allocation theorem,
+the unrestricted all-but-one-memory converse through four inputs with
+its seed equality classification, and the complete finite collective
+protocol with its retention-class separation.
 They are a focused candidate for theorem-level priority comparison;
 publication originality is not established by these proofs or by the
 sources inspected so far. The broader two-parameter entanglement profile
@@ -247,8 +359,10 @@ has substantial prior subsumption, detailed in the
 [nonlinear-source audit](audits/NONLINEAR_CHSH_SUBSUMPTION.md), and is not
 needed for this core argument.
 
-Unrestricted **equal-accuracy** optimality for larger memories remains
-open. The unequal-accuracy separation does not decide it. Full supporting
+Unrestricted **equal-accuracy** optimality remains open outside the proved
+memory and input ranges, beginning at `n=4,q=2`. The unequal-accuracy
+separation does not decide it. Full supporting
 proofs are in the [allocation note](ONE_QUBIT_ALLOCATION_REGION.md),
+[half-rank converse](audits/HALF_RANK_RETENTION_CONVERSE.md),
 [exact-axis note](EXACT_AXIS_SPECTRAL_REDUCTION.md), and
 [seed reduction](COLLECTIVE_ENCODING_REDUCTION.md).

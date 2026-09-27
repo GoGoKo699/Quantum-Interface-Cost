@@ -7,334 +7,46 @@ for just one local X or Z readout, but the question is not known when the first
 module must release the input. How many qubits must cross that interface if
 classical records are free?
 
-**Read the [short core argument](docs/CORE_ARGUMENT.md):** one retained
-qubit has an exact allocation rule, while a five-qubit collective encoder
-beats original-site retention for unequal accuracies. The note supplies
-both proofs and identifies their established ingredients.
+**Retaining all but one input qubit is optimal for two, three, and four
+inputs.** The [half-rank converse](docs/audits/HALF_RANK_RETENTION_CONVERSE.md)
+allows every collective encoder, every nonuniform seed spectrum, and every
+query-dependent binary decoder. It proves
 
-The [weighted decoder theorem](docs/audits/WEIGHTED_DECODER_ALLOCATION.md)
-now proves the full retention accuracy region at every block size and memory budget
-when memory readout reflections pairwise commute or anticommute, with
-arbitrary collective encoders. A threshold matching argument and finite
-weight decomposition give every weighted support, including unequal
-accuracies. The unrestricted three-input case remains open.
+$$
+\Gamma(n,2^{n-1})=2(n-1)+\sqrt2,\qquad n=2,3,4.
+$$
 
-A [Jordan-block converse](docs/audits/JORDAN_BLOCK_CONVERSE.md) now
-excludes every three-input seed of rank at most three from beating the
-two-retained-qubit benchmark, without a symmetry or spectrum assumption.
-That proof closes four of the ten nonscalar ququart readout patterns.
-The [one-double-block converse](docs/audits/SINGLE_DOUBLE_BLOCK_CONVERSE.md)
-closes three more, for arbitrary complex orientations and unequal block
-angles. Any improvement in this block requires a nonflat rank-four seed
-and at least two optimal query pairs with two noncommuting Jordan blocks.
-Exactly three continuous signature patterns remain unresolved.
+Thus the best common contrast is
+`eta=(n-1+1/sqrt(2))/n`. Randomly retain n-1 original qubits and use the
+optimal joint X/Z measurement on the remaining one. No collective encoding improves
+this equal-accuracy performance at the same worst-case memory cap.
+The proof also identifies every maximizing normalized seed.
 
-The [separate-query theorem](docs/audits/COMMUTING_QUERY_ALGEBRAS.md)
-now proves the exact retention contrast for `n=q+1` whenever q query
-pairs address distinct memory qubits, with the remaining pair allowed
-arbitrary joint-memory readout. The encoder remains unrestricted.
-For three inputs, any two commuting query algebras already rule out
-an advantage. Thus a violation must make all three algebras pairwise
-noncommuting; all three complete signature patterns remain open.
+The argument works directly with the positive square root of a seed state.
+The rank cap constrains its single-site Pauli coefficients. Either those
+coefficients are spread across sites, giving a strict gap, or one site
+carries enough of them that a single positive quadratic proves the sharp
+bound. No readout classification or numerical partition is required.
+This closes all previously unresolved three-input reflection signatures.
 
-The [noncommuting-family continuation](docs/audits/NONCOMMUTING_QUERY_FAMILIES.md)
-now reaches beyond that commuting case. Two sharp complementary query
-pairs need only two mixed cross commutators to vanish; the third pair
-remains unrestricted. A separate sharp Bell-subspace bound proves
-`sum_i P_i<=5I/2` for arbitrary partial-SWAP subsystem choices, with
-an exact equality classification. These are continuous-family converses,
-not a full remaining-signature closure or an originality certification.
+**Read the [short core argument](docs/CORE_ARGUMENT.md)** for this result,
+the exact allocation rule for one retained qubit at every input size, and
+a collective advantage for unequal accuracies. Together they separate
+three questions:
 
-The [local stability theorem](docs/audits/BELL_SUBSPACE_LOCAL_STABILITY.md)
-now covers every small change of the three memory subsystems around the
-known projector attainers. An explicit negative quadratic form in all
-eighteen transverse coordinates gives a quantitative open neighborhood
-with projector sum at most `5/2`. The report also identifies the individual
-recovery functional as prior work and disproves a proposed min-entropy
-shortcut. Distant subsystem configurations remain unresolved.
+- **One retained qubit:** the entire local X/Z accuracy region is known.
+- **All but one retained qubit, through four inputs:** the equal-accuracy
+  optimum above is known, including nonflat seeds.
+- **General memories and the asymptotic common-accuracy rate:** still open.
+  The smallest remaining finite case is four inputs with two retained qubits.
 
-The [exact last-site readout reduction](docs/audits/EXACT_LAST_QUERY_RESOLVENT.md)
-now eliminates an entire decoder optimization in every even memory dimension,
-including arbitrary binary POVMs. Extreme eigenvalue pairing and a convex
-quartic replace the search over matrices and angles. Its application is exact
-for a stated spectral upper bound; the missing relation between the earlier
-terms' spectrum and their top eigenvector remains explicit. A simple exact
-counterexample also rules out a proposed general Bell-recovery budget.
-
-The [joint-spectrum continuation](docs/audits/JOINT_SPECTRUM_NORMAL_FORM.md)
-now represents every two-sharp-pair ququart configuration using three
-Cartan angles and two sphere directions. An eight-dimensional singular-value
-problem retains both the full spectrum and the actual top memory marginal.
-An exact full-rank example shows why the earlier separate spectral and
-score bounds cannot replace this joint constraint. The reduction uses
-established Cartan decomposition.
-
-The [two-sharp-pair converse](docs/audits/TWO_SHARP_PAIR_CONVERSE.md)
-now proves `||H||<=4+sqrt(2)` for any two internally anticommuting sharp
-ququart query pairs and an arbitrary third binary-POVM pair. No cross
-commutator is assumed to vanish. New joint spectral-tail constraints and
-the sharp circle `(U-2)^2+(m-2)^2<=4` reduce the exact resolvent test to
-one scalar variable; 400 closed rational intervals certify the remaining
-inequality. This closes the sharp-pair target. General nonorthogonal pairs
-and all three complete reflection signatures remain open.
-
-The [two-mode reduction](docs/audits/TWO_MODE_RESOLVENT.md) supplies a
-general spectral setup for the remaining pairs. A second-moment argument
-shows that retaining two top modes always leaves a safe last-query
-resolvent. An exact physical double eigenvalue `2sqrt(3)` proves that one
-mode cannot suffice universally. The new 4-by-4 test keeps the coherence
-between the two modes. An [exact channel example](docs/audits/NONCLASSICAL_TWO_MODE_CHANNEL.md)
-also rules out treating every such channel as entanglement breaking.
-Proving the matrix test for every physical head channel remains the open
-step toward the unrestricted converse.
-
-The [compatibility obstruction](docs/audits/TWO_MODE_COMPATIBILITY_OBSTRUCTION.md)
-shows why the established spectral and compression bounds cannot prove that test.
-An exact synthetic Hamiltonian matches a physical example's full spectrum
-and every memory-valued polynomial moment, and satisfies the one- and
-two-dimensional memory compression bounds, yet its envelope fails.
-A short calculation with the four original readouts excludes its fixed
-leading eigenspace. The remaining proof must retain their compatibility
-with the actual reference Pauli operators; no physical violation is shown.
-
-The [sharp two-mode support theorem](docs/audits/SHARP_TWO_MODE_SUPPORT.md)
-now proves `U+m<=4sqrt(3)` for the two largest eigenvalues of any two
-ququart binary-POVM query pairs. A squared trace-norm budget also gives
-the exact support for every nonnegative query weighting. Equality forces
-the balanced readouts and square-POVM head channel; every such attainer,
-with any third pair, obeys `||H||<=(4+2sqrt(5))/sqrt(3)<4+sqrt(2)`.
-The earlier synthetic channel is excluded at its assigned energy in every
-reference orientation. This is a global constraint and a complete boundary
-classification; the general three-query converse remains open.
-
-The [quantitative continuation](docs/audits/QUANTITATIVE_TWO_MODE_STABILITY.md)
-now replaces the qualitative neighborhood by an explicit one: if
-`4sqrt(3)-(U+m)<=2^-32`, every third pair gives `||H||<16/3<4+sqrt(2)`.
-The radius is conservative, not an estimate of the full safe region.
-A [robust channel criterion](docs/audits/ROBUST_HEAD_CHANNEL_CONVERSE.md)
-also proves the converse throughout the high-second-eigenvalue regime
-whenever the head channel is within full diamond distance `2/5` of a
-measurement-and-preparation channel. It closes the entire previously
-constructed nonclassical-head family, including its entangled Choi states.
-The argument preserves the coherent head channel throughout.
-
-Two structural arguments now go beyond a small stability neighborhood.
-The [one-block last-query theorem](docs/audits/HIGH_SECOND_MODE_ONE_BLOCK.md)
-closes the entire high-second-mode region when the last pair has at most
-one noncommuting Jordan block. Any possible violation in the two remaining
-signatures with such a pair must therefore have a defined one-mode resolvent;
-this does not imply that the corresponding spectral bound passes.
-The [conserved-symmetry theorem](docs/audits/CONSERVED_SYMMETRY_CONVERSE.md)
-gives the stronger bound `||H||<=5` for four readouts in two explicit
-three-dimensional Pauli spaces, with an arbitrary third pair. Two exact
-symmetries force every isolated positive rank-two head channel to be a
-two-basis measurement with an orthogonal record. The bound five is not
-asserted optimal.
-
-An [exact Pauli-gap dichotomy](docs/audits/ZERO_PAULI_GAP_DICHOTOMY.md)
-also links support to channel structure: if the complementary square
-root has only the identity and four single-query Pauli components, the
-head is entanglement breaking or its support is at most `2+sqrt(2)`.
-This is an exact structural condition. The full remaining signatures and
-unrestricted converse remain open.
-
-The [block-budget resolvent formula](docs/audits/JORDAN_BLOCK_BUDGET_RESOLVENT.md)
-now evaluates the last-query optimization for any allowed number of active
-Jordan blocks, in odd or even memory dimension. The optimal blocks pair
-the outermost marginal eigenvalues; with one block only the largest and
-smallest eigenvalues matter. A fixed `(11)` signature has a separate exact
-two-branch formula.
-
-An [actual reflection example](docs/audits/REFLECTION_ENVELOPE_OBSTRUCTION.md)
-shows that the proposed one-mode bound fails even below its inverse
-threshold, in both `(22)^2(11)` and `(22)^2(12)`. Retaining its negative
-chiral partner also fails, with both tests exceeding `33/32`. The physical Hamiltonian
-nevertheless stays below `21/4<4+sqrt(2)` for every third pair, and its
-two-positive-mode bound succeeds. The next proof must preserve more of the
-actual spectrum and channel; the full remaining signatures are still open.
-
-The [controlled-phase converse](docs/audits/CONTROLLED_PHASE_PAIR_CONVERSE.md)
-now proves the sharp bound `4+sqrt(2)` when two query algebras on separate
-memory qubits are coupled by a controlled phase. Their original query
-angles may differ and need not be orthogonal; the third binary-POVM pair
-is arbitrary. Conserved parities give a flat top marginal or a classical
-two-mode channel, and two quadratic checks complete the whole family.
-
-A [direct active-plane bound](docs/audits/ACTIVE_PLANE_REVERSE_RESOLVENT.md)
-keeps the full earlier Hamiltonian in its inverse. For any one-block last
-pair, earlier norm `U<=2sqrt(3)` suffices; a sharper condition uses the
-actual block angle and the earlier readouts' means on its memory plane.
-It also handles both explicit one-mode obstruction examples. The same
-argument gives a quantitative norm bound for any number of earlier queries
-and any memory dimension under the stated last-pair restriction.
-
-An [explicit channel repair](docs/audits/ONE_AXIS_EB_REPAIR.md) turns small
-output distinguishability along one input Pauli axis into a constructive
-entanglement-breaking comparison channel. This makes the earlier abstract
-distance criterion directly testable while retaining the actual coherent
-head. Throughout the high-second-mode region, one Pauli image with trace
-norm at most `2/3` suffices. The unrestricted converse and all three complete
-remaining signatures are still open.
-
-The [spectral-budget extension](docs/audits/JORDAN_SPECTRAL_BUDGET.md)
-now retains every Jordan block and gives a scalar sufficient test for the
-benchmark, including families with two noncommuting blocks at every site.
-An exact obstruction shows why any finite penalty on only the most negative
-Bell vectors cannot finish the proof. The scalar test still excludes
-continuous regions in each of the three remaining patterns.
-
-A [sharp spin-flip purity bound](docs/audits/SPIN_FLIP_PURITY_BOUND.md)
-now excludes every invariant three-qubit seed of rank at most four,
-including nonuniform spectra. Its sum-of-squares proof also settles a
-continuous class of readouts sharing a common Kramers antiunitary.
-General readouts need not have that symmetry.
-
-The [unified antiunitary bound](docs/audits/ANTIUNITARY_READOUT_BOUND.md)
-extends the readout result to every common antiunitary that negates the
-six readouts, including nonscalar squares and general binary POVMs.
-Its exact classwide score is `2sqrt(6)`. A concrete balanced sextuple
-admits no such antiunitary, so the unrestricted problem remains open.
-
-**Status (27 September 2026): research in progress, not a manuscript or a
-novelty-certified result.** The baseline proofs and seed reduction have passed
-an independent workspace audit, including primary-source comparisons. Further
-analytical work proves the exact optimum with one retained qubit for every
-input block size, an entropy bound for product-diagonal seeds, and a regularized
-entropy characterization of the asymptotic rate. Evaluating that rate remains
-unresolved. A further converse derived from quantum logarithmic-Sobolev theory
-improves the quantitative memory lower bounds. The model is established measurement
-simulability, not a new framework: see [the literature comparison](docs/LITERATURE_COMPARISON.md).
-An earlier finite-block result proves subset optimality for every flat
-half-rank seed on up to four input qubits, with exact equality cases.
-Further support and spectral-tail converses now exclude additional nonflat
-seeds. The unrestricted problem remains open; explicit examples show why
-replacing a seed by the uniform state on its support is not a valid shortcut.
-The one-qubit theorem now evaluates every separate local X/Z accuracy
-profile: the sum of the pairs' incompatibility weights must be at most one,
-and a mixture of strategies retaining at most one site attains the whole region.
-The latest continuation proves a collective advantage when X and Z have
-unequal requested accuracies, an exact spectral reduction when every X
-query is perfect, a two-qubit SLD entropy inequality, and quantitative
-stability of the one-qubit optimum. A new asymmetric entropy converse now
-proves that the common-accuracy rate turns on linearly above the classical
-threshold. The exact-X boundary has an evaluated asymptotic rate; the full
-common-accuracy rate remains open.
-
-The latest profile theorem evaluates the asymptotic rate for encoders with
-product-diagonal refined Gram matrices, including correlated eigenvalues.
-It gives an exact boundary between retention-optimal and strictly improved
-unequal-accuracy profiles within that class. The original optimization still
-allows every collective encoder. The associated one-qubit entropy quantity
-is an established steering entanglement of formation, now explicitly mapped
-in the source audit.
-
-The profile optimum is now constructive: in its strict-saving phase, a
-unique scalar root specifies the optimal mixture of one compatible profile
-and one exact-axis profile. See [the formula and proof](docs/PRODUCT_DIAGONAL_PROFILE_RATE.md#51-a-complete-constructive-optimizer-from-one-scalar-root).
-The bounded follow-up attempt on the full two-qubit entropy conjecture
-produced neither a proof nor a certified violation; its status is unchanged.
-The latest [spectral-tail converse](docs/audits/TWO_QUBIT_SPECTRAL_TAIL_GATE.md)
-now proves the target for every complex two-qubit state whose two smallest
-eigenvalues sum to at least `1/29`. Any remaining two-qubit counterexample
-must put more than `28/29` of its spectral weight in its top two eigenvectors.
-The low-tail region and the arbitrary-block problem remain unresolved.
-
-The [core-stability continuation](docs/audits/TWO_QUBIT_CORE_STABILITY.md)
-now proves an explicit uniform two-qubit neighborhood: bottom-two spectral
-weight at most `2^-20` always satisfies the target. It also excludes every
-remaining state whose normalized top-two core has score above `10/3`, and
-every core with smaller normalized eigenvalue at most `1/5`. Thus a possible
-witness must meet all three complementary conditions stated in that report.
-These are further central-proof deductions; the remaining region is nonempty
-and unrestricted optimality is still open.
-
-A [finite-tail theorem](docs/audits/CURVED_CORE_TRANSFER.md) now lowers
-the core-score threshold to `13/4` throughout bottom-two weight at most
-`1/29`. It retains the paired X/Z gains and uses the imbalance between
-the two sites in the spectral bound. This extends the earlier
-[small-tail proof](docs/audits/EXTENDED_CORE_TRANSFER.md), whose simple
-decoder argument uses three anticommuting sets. Generic lower-score cores
-and all-size optimality remain unresolved. A separate
-[matrix lemma](docs/audits/FINITE_TAIL_STRUCTURE.md) gives squared concavity
-and finite tangent bounds without singular compression inverses.
-
-The [2012 Bayes-rank source comparison](docs/audits/BAYES_RANK_PRIOR_COMPARISON.md)
-is now complete: that theorem's entire weighted certificate gives rank
-two under the natural reduction, whereas our joint-decoder result gives
-rank one. This closes one specific comparison, not publication originality.
-The user-supplied [Tomassoli thesis is now read](docs/audits/TOMASSOLI_FULL_TEXT_COMPARISON.md).
-Its fixed orthogonal two-qubit witness has a different optimum from our
-optimized-readout profile, even after extending it to two independent
-correlations. Its scalar boundary and exact-axis construction are prior
-ingredients; generic optimization from multiple witnesses is also prior.
-The comparison closes this source gap, not exhaustive originality.
-
-The full asymmetric formula is strictly stronger than the optimized
-**affine** weighted-CHSH formation-bound family in
-[the earlier comparison](docs/audits/PROFILE_NOVELTY_AND_STEERING_REDUCTION.md).
-The [nonlinear-source follow-up](docs/audits/NONLINEAR_CHSH_SUBSUMPTION.md)
-now proves a stronger prior implication: Zhu–Zhang–Ma's qubit negativity
-theorem yields our full mixed-state support and, with standard block and
-convexity arguments, the entire joint-resource convex-hull characterization.
-The candidate contribution is narrowed to its explicit evaluation,
-optimizer/equality analysis and operational consequences. A new support
-inequality or separation from all consequences of that source is not claimed.
-The unrestricted problem still has its precise local-query formation identity.
-
-A further [tensor-formation and channel comparison](docs/audits/TENSOR_FORMATION_AND_CHANNEL_COMPARISON.md)
-proves an exact task separation: at a specified two-input contrast, one
-delayed local query needs dimension two, while a joint product query needs
-dimension three. An explicit qutrit instrument attains the latter. It also
-proves a fixed-block dichotomy for full-tuple formation and distinguishes
-the complete profile from fixed qubit-output channel completion. The
-unrestricted local-query rate and exhaustive originality remain open.
-
-The [roof provenance and joint-score audit](docs/audits/ROOF_PROVENANCE_AND_JOINT_SCORE.md)
-identifies the symmetry method and abstract fixed-block dichotomy as direct
-applications of Vollbrecht–Werner. It maps Cope–Uola's average-rank cost to
-the full incompatibility-weight profile and proves an exact local/joint
-score gap that survives tensor repetition. The new two-qubit variational
-formula still leaves the all-state entropy bound unresolved.
-
-The [two-correlation audit](docs/audits/TWO_CORRELATION_FORMATION.md) now
-gives C an exact state-realization interpretation: for one trusted qubit,
-dimension three on the other side attains C with one fixed readout pair.
-Dimension two has a strictly larger cost throughout the noisy nonclassical
-interior, given by the prior Verstraete–Wolf theorem. This comparison counts
-classical flags in the realization dimension; it is not a new memory bound
-for the original interface, where classical records are free. The
-[optimizer and prior follow-up](docs/audits/FORMATION_OPTIMIZERS_AND_PRIOR.md)
-now proves that every entropy optimum in that interior must separate
-classical and entangled sectors, and classifies all qutrit optimizers.
-It also identifies Han et al.'s earlier weighted guessing theorem and
-product-plus-Bell qutrit construction. The full entropy profile strictly
-exceeds the scalar conversion of their complete concurrence bound in that
-interior. Unrestricted equal-accuracy optimality and publication originality
-remain open. The previously identified thesis comparison is now completed.
-
-The [resource-optimum and joint-decoder audit](docs/audits/RESOURCE_OPTIMA_AND_JOINT_DECODERS.md)
-adds a sharper distinction: the full minimum ordinary negativity is w/2,
-but any realization attaining it in the noisy nonclassical interior has
-formation entropy at least w. Therefore the phase C<w has no common
-minimizer for these two resources. It also proves that every full-rank
-two-input joint context optimum uses a projective readout; singular states
-admit one on the ambient four-dimensional space. Neither theorem evaluates
-the unrestricted memory rate. The general jointly optimized entanglement
-witness method is explicitly credited to the 2007 prior literature.
-
-The [joint-resource continuation](docs/audits/JOINT_RESOURCE_FRONTIER.md)
-now evaluates the complete formation-entropy/ordinary-negativity tradeoff
-at fixed X/Z correlations, including the minimum entropy under every
-negativity budget. Qutrit realizations attain the entire frontier, even
-when arbitrary finite Alice dimension is allowed. This is an auxiliary
-state-resource theorem, not a memory converse. The same report proves
-that real encoders have the unrestricted complex rate with at most one
-extra retained qubit at finite size, while preserving arbitrary complex
-inputs and uniform error. Neither result closes equal-accuracy optimality
-or publication originality. The sharp all-price support and abstract hull
-are now explicitly credited as short consequences of prior nonlinear
-CHSH bounds; the phase/root and conditional-budget formulas are further
-supplied evaluations.
+These are supplied analytical results with independent internal proof
+reconstruction. The measurement-simulation framework and the cited
+fidelity, monogamy, and entropy ingredients are established prior work;
+publication originality remains a separate question. The
+[claim ledger](docs/STATUS.md) records precise scope and provenance.
+Earlier decoder and channel arguments remain available as supporting
+results, including the obstructions to insufficient proof methods.
 
 ## Start here
 
@@ -343,6 +55,7 @@ supplied evaluations.
 | Short theorem-led argument with proofs and prior attribution | [Core argument](docs/CORE_ARGUMENT.md) |
 | Exact assumptions and baseline proofs | [RESEARCH_NOTE.md](RESEARCH_NOTE.md), Sections 2–7 |
 | What is established, derived, or still a target | [STATUS](docs/STATUS.md) |
+| Exact unrestricted half-rank optimum through four inputs and all maximizing seeds | [Half-rank converse](docs/audits/HALF_RANK_RETENTION_CONVERSE.md) |
 | Unrestricted collective-encoding problem | [Seed reduction](docs/COLLECTIVE_ENCODING_REDUCTION.md) |
 | Two sharp ququart query pairs and an arbitrary third pair obey the retention bound | [Complete sharp-pair converse and exact scalar certificate](docs/audits/TWO_SHARP_PAIR_CONVERSE.md) |
 | Sharp sum of the two leading energies for arbitrary pairs, weighted support and equality | [Two-mode support theorem and boundary converse](docs/audits/SHARP_TWO_MODE_SUPPORT.md) |
@@ -419,7 +132,8 @@ Cheng–Hall's established three-qubit CHSH monogamy theorem, including its
 independent-setting and mixed-state scope. It also characterizes all maximizing
 normalized seeds. The q=0 and q=n endpoints are established separately.
 
-For general `2<=q<n`, optimality remains unresolved. A separate entropy
+The new half-rank theorem also proves optimality at `(n,q)=(3,2)` and
+`(4,3)`. For the other general budgets `2<=q<n`, optimality remains unresolved. A separate entropy
 argument excludes every seed whose Gram matrix is diagonal in a fixed tensor
 product of local bases, allowing correlated spectra and arbitrary local axes.
 It does not assume that unrestricted optimizers have that form.
@@ -449,14 +163,12 @@ coefficient and full rate remain open. The full nonlinear lower bound
 improves on the displayed tangent bound. The earlier converse can be
 stronger extremely close to perfect accuracy, so both bounds are retained.
 
-The main research target is a sharp finite-accuracy rate, or a proven
-collective-coding advantage for the common-accuracy target with meaningful converse bounds. The smallest
-remaining diagnostic is n=3, q=2: can an unrestricted seed exceed the subset
-score `4+sqrt(2)` in the optimization `Gamma(3,4)`? Flat rank-four
-seeds now attain exactly that maximum, so a rank-four improvement would
-require a nonuniform spectrum. Separate lower-rank bounds show that any
-finite-block improvement must have rank three or four with nonuniform
-nonzero eigenvalues. For the entropy route,
+The main research target remains a sharp common-accuracy rate or a proven
+collective advantage for that task. The three-input finite problem is now
+settled, as is `(n,q)=(4,3)`. The smallest remaining finite diagnostic is
+`Gamma(4,4) ?= 4+2sqrt(2)`, corresponding to four inputs and two retained
+qubits. The half-rank proof does not cover this quarter-rank constraint.
+For the entropy route,
 even a two-input state of rank three could in principle certify a rate
 advantage: all rank-two states and all flat rank-three two-input states are
 now excluded, but nonuniform rank-three and general full-rank states remain
@@ -467,19 +179,10 @@ A full-rank witness must additionally have spectral condition number above
 rank-at-most-two set at that fixed input size. The latter exclusion is proved
 analytically; its uniform neighborhood size is existential.
 
-For the three-input finite-budget target, every compressed X/Z query of an
-improving seed must have both positive and negative eigenvalues. This excludes
-all spectra on supports within operator-norm distance `sin(pi/8)` of a
-rank-four subset support. Rank-three supports use the one-sided subspace
-distance stated in the proof. These are distinct finite-budget and entropy
-diagnostics. Publication novelty is not certified.
-
-Further exact spectrum optimizations establish the entropy inequality for
-every two-qubit state with at most two distinct eigenvalues, counting zeros.
-A separate kernel converse excludes every two-qubit seed whose kernel contains
-a maximally entangled vector, and supplies computable certificates for other
-rank-three spectra. These deductions still leave general rank-three and
-full-rank entropy witnesses unresolved.
+The earlier support and decoder converses remain useful independently,
+but their three-input exclusions are superseded by the unrestricted
+half-rank theorem. The finite rank theorem does not prove the entropy
+inequality or the general asymptotic rate. Publication novelty is not certified.
 
 ## Collective advantage for unequal accuracies
 
@@ -579,6 +282,7 @@ Python 3.10 or later and NumPy are sufficient. The bootstrap used Python
 
 ```bash
 python -m pip install -r requirements.txt
+python tools/check_half_rank_retention.py --output results/half-rank-rerun.json
 python checks.py --max-n 4 --output results/baseline-rerun.json
 python tools/check_seed_twirl.py --output results/seed-rerun.json
 python tools/check_one_qubit_tradeoff.py --output results/one-qubit-rerun.json
@@ -592,8 +296,11 @@ python tools/check_asymmetric_rate.py --output results/asymmetric-rate-rerun.jso
 python tools/check_profile_rate.py --output results/profile-rate-rerun.json
 ```
 
-The first command after installation checks 14 explicit subset constructions;
-the second checks 10 seed-to-interface constructions. The new scripts check
+The half-rank checker verifies exact scalar witnesses and fixed small matrix
+constructions for the new proof; its recorded run is described in
+[REPRODUCIBILITY](docs/REPRODUCIBILITY.md). The baseline command checks 14
+explicit subset constructions, and the seed command checks 10
+seed-to-interface constructions. The new scripts check
 43 one-qubit identities/examples, 10 product-diagonal cases, 22 entropy-bound
 and seed-family cases, 20 structure diagnostics, 16 nonuniform-seed
 diagnostics, 14 allocation, spectral, kernel, and obstruction cases, and
