@@ -47,9 +47,11 @@ exploration for this package. The general entropy inequality and
 asymptotic common-accuracy rate remain future work. The
 [integrated proof exposition](docs/CORE_ARGUMENT.md) now has a bounded
 [internal review](docs/audits/INTEGRATED_CORE_REVIEW.md), including its
-source attribution and finite-case boundaries. The final evidence freeze
-remains before manuscript drafting. The framework and cited ingredients
-are prior work; publication originality is not certified.
+source attribution and finite-case boundaries. The
+[scientific evidence freeze](docs/SCIENTIFIC_EVIDENCE_FREEZE.md) pins the
+reviewed package and records one successful exact-certificate reproduction.
+The selected package is prepared for manuscript drafting. The framework
+and cited ingredients are prior work; publication originality is not certified.
 
 ## Start here
 
@@ -59,6 +61,7 @@ are prior work; publication originality is not certified.
 | Theorem statements and the current proof narrative | [Core argument](docs/CORE_ARGUMENT.md) |
 | Closest sources and the precise contribution being compared | [Focused prior comparison](docs/CORE_PRIOR_COMPARISON.md) |
 | Minimal proof dependencies, frozen checks, and report hashes | [Core evidence map](docs/CORE_EVIDENCE_MAP.md) |
+| Commit-pinned package and final exact-certificate reproduction | [Scientific evidence freeze](docs/SCIENTIFIC_EVIDENCE_FREEZE.md) |
 | Full assumptions and accumulated claim status | [Research note](RESEARCH_NOTE.md), [status ledger](docs/STATUS.md) |
 
 ## Research record

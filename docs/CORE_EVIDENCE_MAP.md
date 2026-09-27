@@ -8,9 +8,11 @@ The subsequent [integrated-core review](audits/INTEGRATED_CORE_REVIEW.md)
 is based on `38fd9d3f2c3e38ef5e8a7c5d6b2c041955678d8a` and pins the
 revised `CORE_ARGUMENT.md` text separately. It closes the selected
 exposition and source-reconciliation gates. The 31 proof/checker/report
-fingerprints below remain pinned to this map's original base. Final
-release reconciliation and one essential certificate reproduction remain
-under G4; no new research script was run for the exposition review.
+fingerprints below remain pinned to this map's original base. The
+subsequent [scientific evidence freeze](SCIENTIFIC_EVIDENCE_FREEZE.md)
+reconciles them with the reviewed PR #59 base and records one essential
+certificate reproduction, closing G4. No new research script was run for
+the exposition review itself.
 
 ## 1. Coherent core and minimal dependencies
 
@@ -72,7 +74,8 @@ The review checked the model and
 normalizations, rank-deficient and zero-branch cases, all integer budget
 endpoints, analytical-to-polynomial substitutions, seed equality scope,
 and the asymmetric comparison class. It did not repeat every historical
-research review. The final evidence freeze remains pending.
+research review. The subsequent [evidence freeze](SCIENTIFIC_EVIDENCE_FREEZE.md)
+is now complete for the selected package.
 
 A separate internal reread at the preceding consolidation checkpoint checked the full asymmetric
 instrument, its effective effects and retention-class bound, and the
@@ -85,10 +88,12 @@ the n=31 collective example; or stronger stability constants.
 
 ## 5. Reproduction after the exposition freezes
 
-This map is the minimal manifest now. Verify its fingerprints against the
-pinned commit before using a later checkout. Preserve historical reports.
-For the final evidence freeze, plan one scoped reproduction of the
-essential exact certificate into a temporary output file:
+This map preserves its original fingerprint base. The final
+[machine-readable manifest](../results/scientific_evidence_freeze.json)
+pins the reconciled package to the reviewed PR #59 commit. One scoped
+reproduction of the essential exact certificate was completed at that
+base, into temporary output, and was byte-identical to the historical
+report. Historical reports remain unchanged. For a future reproduction:
 
 ```bash
 python tools/check_nonflat_quarter_rank_certificate.py --output /tmp/qic-nonflat-quarter-rank-certificate.json

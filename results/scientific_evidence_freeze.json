@@ -1,0 +1,481 @@
+{
+  "schema_version": 1,
+  "prepared_date_utc": "2026-09-27",
+  "status": "selected_scientific_evidence_frozen_for_manuscript_drafting",
+  "repository": "https://github.com/GoGoKo699/Quantum-Interface-Cost",
+  "frozen_scientific_base": {
+    "commit": "466bbb770d150fb8f43c4f9eca04bbadabe85188",
+    "tree": "8f6b04d5d5676d92183d33f0c4102370ec3d0da6",
+    "semantics": "Every file SHA-256 in files refers to bytes at this commit. This manifest and its accompanying freeze/review notes are subsequent records, not members of this base tree. Later overview edits do not alter these pinned versions."
+  },
+  "evidence_meaning": {
+    "proofs": "Supplied analytical arguments with internal reconstruction; no external peer-review claim.",
+    "exact_certificate": "Exact scalar positivity only; analytical reduction, branch coverage and equality require the separately reviewed proof.",
+    "other_checkers": "Historical finite diagnostics or fixed-construction checks; no universal optimality conclusion from their pass records.",
+    "source_comparison": "Bounded comparison with identified primary sources; not exhaustive publication-priority certification."
+  },
+  "model": {
+    "input": "One arbitrary unknown n-qubit specimen; internal entanglement allowed.",
+    "query": "One delayed local X_i or Z_i query.",
+    "memory": "At most q quantum qubits in every classical branch; unrestricted finite classical record.",
+    "operations": "Arbitrary collective encoder and query-dependent binary POVM decoder.",
+    "error": "Uniform arbitrary-input binary total-variation error epsilon=(1-eta)/2.",
+    "excluded_resources": [
+      "extra copies",
+      "source reaccess",
+      "free entanglement or quantum bypass",
+      "postselection",
+      "replacement of branchwise memory by average memory"
+    ]
+  },
+  "selected_claims": [
+    {
+      "id": "finite_common_accuracy",
+      "status": "derived_and_internally_reconstructed",
+      "statement": "Gamma(n,2^q)=2q+sqrt(2)(n-q) for every integer 1<=n<=4 and 0<=q<=n; 14 budgets.",
+      "scope": "Arbitrary spectra and collective encoders; maximizing-seed equality statements do not classify all physical instruments.",
+      "proof_paths": [
+        "docs/CORE_ARGUMENT.md",
+        "RESEARCH_NOTE.md",
+        "docs/COLLECTIVE_ENCODING_REDUCTION.md",
+        "docs/ONE_QUBIT_ALLOCATION_REGION.md",
+        "docs/STRONG_ENTROPIC_CONVERSE.md",
+        "docs/audits/HALF_RANK_RETENTION_CONVERSE.md",
+        "docs/audits/QUARTER_RANK_GEOMETRY.md",
+        "docs/audits/NONFLAT_QUARTER_RANK_CONVERSE.md"
+      ]
+    },
+    {
+      "id": "one_qubit_allocation",
+      "status": "derived_application_of_established_monogamy",
+      "statement": "At every n with q=1, sum_i w(x_i,z_i)<=1, where w(x,z)=max(0,x+z-1-sqrt(2(1-x)(1-z))) for x,z in [0,1].",
+      "scope": "Exact full allocation region; Cheng-Hall independently optimized CHSH monogamy is prior work.",
+      "proof_paths": [
+        "docs/ONE_QUBIT_OPTIMALITY.md",
+        "docs/ONE_QUBIT_ALLOCATION_REGION.md",
+        "docs/CORE_ARGUMENT.md"
+      ]
+    },
+    {
+      "id": "unequal_collective_separation",
+      "status": "explicit_construction_and_analytical_class_bound",
+      "statement": "A complete n=31,q=5 collective instrument has x_i=1 and z_i=1/sqrt(31), so sum_i z_i=sqrt(31)>5.",
+      "scope": "Separates instruments admitting a Kraus refinement K_c=M_c tensor <v_c| across a branch-dependent original subset T_c with |T_c|<=q, including joint measurements on discarded sites. Not an unrestricted optimum or a common-accuracy advantage.",
+      "proof_paths": [
+        "docs/EXACT_AXIS_SPECTRAL_REDUCTION.md",
+        "docs/CORE_ARGUMENT.md"
+      ]
+    },
+    {
+      "id": "balanced_spectral_companion",
+      "status": "derived_and_internally_reconstructed",
+      "statement": "For rho=(I+tR)/2^n with a traceless Hermitian reflection R and 0<=t<=1, max_R g(rho)=2n-2+sqrt(4-2t^2) at every n.",
+      "scope": "For t>0 every maximizing state is one original-site mixed X/Z bisector with maximally mixed spectators; t=1 covers all flat half-rank seeds, not arbitrary nonflat spectra.",
+      "proof_paths": [
+        "docs/audits/BALANCED_SPECTRUM_OPTIMALITY.md"
+      ]
+    },
+    {
+      "id": "supporting_stability",
+      "status": "derived_and_internally_reconstructed",
+      "statement": "A flat half-rank seed with score gap epsilon lies within full trace norm 16sqrt(2epsilon) of a retention seed. If rank(rho)<=k=2^(n-1) and sqrt(2(1-Tr(sqrt(rho))/sqrt(k)))<=1/(4096n), then g(rho)<=2n-2+sqrt(2), with equality only at retention.",
+      "scope": "Sufficient conservative neighborhood with arbitrary supports; constants are not claimed optimal.",
+      "proof_paths": [
+        "docs/audits/BALANCED_SPECTRUM_STABILITY.md"
+      ]
+    }
+  ],
+  "file_count": 36,
+  "files": [
+    {
+      "path": "RESEARCH_NOTE.md",
+      "sha256": "a3994c2e5a26fdef6e10d47201f020fb2073d2ccd75eb04ec2c5f1c4e7d7eb22",
+      "role": "proof_source",
+      "previous_map_sha256": "be10de868c505ae2edcb100280aa9a39d206097b7d2d82eba3318e2fedc76fa4",
+      "unchanged_since_previous_map_base": false
+    },
+    {
+      "path": "docs/COLLECTIVE_ENCODING_REDUCTION.md",
+      "sha256": "dce313c21d9942ee4d72183cc319aac440adc71eb1a31c066a925e6ccfe908c4",
+      "role": "proof_source",
+      "previous_map_sha256": "dce313c21d9942ee4d72183cc319aac440adc71eb1a31c066a925e6ccfe908c4",
+      "unchanged_since_previous_map_base": true
+    },
+    {
+      "path": "docs/ONE_QUBIT_OPTIMALITY.md",
+      "sha256": "2a34ee4050bd3591f73411e99a28f94e1f76be4c1881234f1d9189e88fd3291f",
+      "role": "proof_source",
+      "previous_map_sha256": "2a34ee4050bd3591f73411e99a28f94e1f76be4c1881234f1d9189e88fd3291f",
+      "unchanged_since_previous_map_base": true
+    },
+    {
+      "path": "docs/ONE_QUBIT_ALLOCATION_REGION.md",
+      "sha256": "9a973e4d89a8dc6177ee71dc10daf911a8fd8d534e6451363ed2b67b885d03b9",
+      "role": "proof_source",
+      "previous_map_sha256": "9a973e4d89a8dc6177ee71dc10daf911a8fd8d534e6451363ed2b67b885d03b9",
+      "unchanged_since_previous_map_base": true
+    },
+    {
+      "path": "docs/STRONG_ENTROPIC_CONVERSE.md",
+      "sha256": "e822f1bd67a9d3e2cd5cdd6f2e5e418e1a0e96b4f41d360e51c8e7d0fd3f6e6f",
+      "role": "proof_source",
+      "previous_map_sha256": "e822f1bd67a9d3e2cd5cdd6f2e5e418e1a0e96b4f41d360e51c8e7d0fd3f6e6f",
+      "unchanged_since_previous_map_base": true
+    },
+    {
+      "path": "docs/audits/HALF_RANK_RETENTION_CONVERSE.md",
+      "sha256": "69b5c179242fceed9f7af194a5884b3215ad6b01c38a20bb1f028ee540e694f5",
+      "role": "proof_source",
+      "previous_map_sha256": "69b5c179242fceed9f7af194a5884b3215ad6b01c38a20bb1f028ee540e694f5",
+      "unchanged_since_previous_map_base": true
+    },
+    {
+      "path": "docs/audits/QUARTER_RANK_GEOMETRY.md",
+      "sha256": "e923369b35807ff8dc89250d61ffd453c1fd4adb46b7176bab541b4c065a59cd",
+      "role": "proof_source",
+      "previous_map_sha256": "e923369b35807ff8dc89250d61ffd453c1fd4adb46b7176bab541b4c065a59cd",
+      "unchanged_since_previous_map_base": true
+    },
+    {
+      "path": "docs/audits/NONFLAT_QUARTER_RANK_CONVERSE.md",
+      "sha256": "c761cb2e9835a59b0aa40ef5b27658724af6bd772cddf1cba8adcb43cf0e63a2",
+      "role": "proof_source",
+      "previous_map_sha256": "c761cb2e9835a59b0aa40ef5b27658724af6bd772cddf1cba8adcb43cf0e63a2",
+      "unchanged_since_previous_map_base": true
+    },
+    {
+      "path": "docs/EXACT_AXIS_SPECTRAL_REDUCTION.md",
+      "sha256": "bfeb82fcbbb99d268a62e7ff69d5b6f8f0431629bce7fef5e594815340640df3",
+      "role": "proof_source",
+      "previous_map_sha256": "bfeb82fcbbb99d268a62e7ff69d5b6f8f0431629bce7fef5e594815340640df3",
+      "unchanged_since_previous_map_base": true
+    },
+    {
+      "path": "tools/check_seed_twirl.py",
+      "sha256": "f02c51cae96c5a6e8e77a05cbeac4c56d5151d2c21347767c3b1c493fabe52b4",
+      "role": "checker_source",
+      "previous_map_sha256": "f02c51cae96c5a6e8e77a05cbeac4c56d5151d2c21347767c3b1c493fabe52b4",
+      "unchanged_since_previous_map_base": true,
+      "execution_at_freeze": "not_rerun; historical_record_only"
+    },
+    {
+      "path": "results/seed_twirl.json",
+      "sha256": "4cf94b4d1b1b266c3e31e457fd9bb8003edecd9bb68d6e0aeebaa34a1844afcf",
+      "role": "historical_report",
+      "previous_map_sha256": "4cf94b4d1b1b266c3e31e457fd9bb8003edecd9bb68d6e0aeebaa34a1844afcf",
+      "unchanged_since_previous_map_base": true,
+      "execution_at_freeze": "not_rerun; historical_record_only"
+    },
+    {
+      "path": "tools/check_one_qubit_tradeoff.py",
+      "sha256": "77f2e2ca45a7703bb7f042d8f16027cdf4b6382181d44fc76bbc16d48f52edbf",
+      "role": "checker_source",
+      "previous_map_sha256": "77f2e2ca45a7703bb7f042d8f16027cdf4b6382181d44fc76bbc16d48f52edbf",
+      "unchanged_since_previous_map_base": true,
+      "execution_at_freeze": "not_rerun; historical_record_only"
+    },
+    {
+      "path": "results/one_qubit_tradeoff.json",
+      "sha256": "c0592e4452b47fde83ad332a1fffa479557d836a0002408d846229ff9ee2e8a3",
+      "role": "historical_report",
+      "previous_map_sha256": "c0592e4452b47fde83ad332a1fffa479557d836a0002408d846229ff9ee2e8a3",
+      "unchanged_since_previous_map_base": true,
+      "execution_at_freeze": "not_rerun; historical_record_only"
+    },
+    {
+      "path": "tools/check_allocation_and_kernels.py",
+      "sha256": "1ee642d0a11b1347ae9af0015b0f3597d6781feeee9aa5b75a3578f0bd10cdb3",
+      "role": "checker_source",
+      "previous_map_sha256": "1ee642d0a11b1347ae9af0015b0f3597d6781feeee9aa5b75a3578f0bd10cdb3",
+      "unchanged_since_previous_map_base": true,
+      "execution_at_freeze": "not_rerun; historical_record_only"
+    },
+    {
+      "path": "results/allocation_and_kernels.json",
+      "sha256": "22eb5a017f6e8692565dd2894e5977e8d5037db541b9ef1f804d3d4be5e70359",
+      "role": "historical_report",
+      "previous_map_sha256": "22eb5a017f6e8692565dd2894e5977e8d5037db541b9ef1f804d3d4be5e70359",
+      "unchanged_since_previous_map_base": true,
+      "execution_at_freeze": "not_rerun; historical_record_only"
+    },
+    {
+      "path": "tools/check_half_rank_retention.py",
+      "sha256": "c9d45e281d393cb6b4387b068de571f4440a96e17344312d49904eaecd9ff6e6",
+      "role": "checker_source",
+      "previous_map_sha256": "c9d45e281d393cb6b4387b068de571f4440a96e17344312d49904eaecd9ff6e6",
+      "unchanged_since_previous_map_base": true,
+      "execution_at_freeze": "not_rerun; historical_record_only"
+    },
+    {
+      "path": "results/half_rank_retention.json",
+      "sha256": "ba59605fe8cf0ebeb1b555702c1f3cb050674cab2e85134d7230de84d32b67d7",
+      "role": "historical_report",
+      "previous_map_sha256": "ba59605fe8cf0ebeb1b555702c1f3cb050674cab2e85134d7230de84d32b67d7",
+      "unchanged_since_previous_map_base": true,
+      "execution_at_freeze": "not_rerun; historical_record_only"
+    },
+    {
+      "path": "tools/check_quarter_rank_geometry.py",
+      "sha256": "8901e2b6d5a8730704a9d1a06402fee238491aeca69d83f091b261027df1d26f",
+      "role": "checker_source",
+      "previous_map_sha256": "8901e2b6d5a8730704a9d1a06402fee238491aeca69d83f091b261027df1d26f",
+      "unchanged_since_previous_map_base": true,
+      "execution_at_freeze": "not_rerun; historical_record_only"
+    },
+    {
+      "path": "results/quarter_rank_geometry.json",
+      "sha256": "71dbe369baec49b015c10fbd872ff78d36aca95d55a759ab2741259df78aef29",
+      "role": "historical_report",
+      "previous_map_sha256": "71dbe369baec49b015c10fbd872ff78d36aca95d55a759ab2741259df78aef29",
+      "unchanged_since_previous_map_base": true,
+      "execution_at_freeze": "not_rerun; historical_record_only"
+    },
+    {
+      "path": "tools/check_nonflat_quarter_rank_certificate.py",
+      "sha256": "10cdb4c62ed2d0b8418abd189484c6d57cd06bd45443c2bd92b4523036d90ec9",
+      "role": "checker_source",
+      "previous_map_sha256": "10cdb4c62ed2d0b8418abd189484c6d57cd06bd45443c2bd92b4523036d90ec9",
+      "unchanged_since_previous_map_base": true,
+      "execution_at_freeze": "executed_once"
+    },
+    {
+      "path": "results/nonflat_quarter_rank_certificate.json",
+      "sha256": "d9ddb1376188246bca676e0fc45b1ad8c4810a67b3c6ff2db1065d591880b639",
+      "role": "historical_report",
+      "previous_map_sha256": "d9ddb1376188246bca676e0fc45b1ad8c4810a67b3c6ff2db1065d591880b639",
+      "unchanged_since_previous_map_base": true,
+      "execution_at_freeze": "fresh_output_compared_byte_for_byte"
+    },
+    {
+      "path": "tools/check_nonflat_quarter_rank.py",
+      "sha256": "c028be07b5278d145d3a000e07ee6bedd093fa0c6882fbc16a3a1942c201aaa6",
+      "role": "checker_source",
+      "previous_map_sha256": "c028be07b5278d145d3a000e07ee6bedd093fa0c6882fbc16a3a1942c201aaa6",
+      "unchanged_since_previous_map_base": true,
+      "execution_at_freeze": "not_rerun; historical_record_only"
+    },
+    {
+      "path": "results/nonflat_quarter_rank.json",
+      "sha256": "0533454680f9536fc03a3e2cfb40eeb19fb87065221429677e62b1a6cb64b683",
+      "role": "historical_report",
+      "previous_map_sha256": "0533454680f9536fc03a3e2cfb40eeb19fb87065221429677e62b1a6cb64b683",
+      "unchanged_since_previous_map_base": true,
+      "execution_at_freeze": "not_rerun; historical_record_only"
+    },
+    {
+      "path": "tools/check_entropy_geometry.py",
+      "sha256": "494da25b678326af60977d305ae615056690df4d2304d0d89019540770aa19f4",
+      "role": "checker_source",
+      "previous_map_sha256": "494da25b678326af60977d305ae615056690df4d2304d0d89019540770aa19f4",
+      "unchanged_since_previous_map_base": true,
+      "execution_at_freeze": "not_rerun; historical_record_only"
+    },
+    {
+      "path": "results/entropy_geometry.json",
+      "sha256": "6adaeb809fa9a1eec83bf2c96eed21e6dd118c5d9683f5e8187521bdd8b07210",
+      "role": "historical_report",
+      "previous_map_sha256": "6adaeb809fa9a1eec83bf2c96eed21e6dd118c5d9683f5e8187521bdd8b07210",
+      "unchanged_since_previous_map_base": true,
+      "execution_at_freeze": "not_rerun; historical_record_only"
+    },
+    {
+      "path": "docs/audits/BALANCED_SPECTRUM_OPTIMALITY.md",
+      "sha256": "4c3da955567c0478e3300900ea680cffb18d32f9c7d79f8137ad89906d36f8f8",
+      "role": "proof_source",
+      "previous_map_sha256": "4c3da955567c0478e3300900ea680cffb18d32f9c7d79f8137ad89906d36f8f8",
+      "unchanged_since_previous_map_base": true
+    },
+    {
+      "path": "tools/check_balanced_spectrum_optimality.py",
+      "sha256": "9f095c451c27cb8696b8b13ae4dff2725389ca3b146ffc08be124c03dee686b6",
+      "role": "checker_source",
+      "previous_map_sha256": "9f095c451c27cb8696b8b13ae4dff2725389ca3b146ffc08be124c03dee686b6",
+      "unchanged_since_previous_map_base": true,
+      "execution_at_freeze": "not_rerun; historical_record_only"
+    },
+    {
+      "path": "results/balanced_spectrum_optimality.json",
+      "sha256": "9ba5b06663a200dfa732eab427a0641dd027d5643b683370d3f74a072ec6c6ec",
+      "role": "historical_report",
+      "previous_map_sha256": "9ba5b06663a200dfa732eab427a0641dd027d5643b683370d3f74a072ec6c6ec",
+      "unchanged_since_previous_map_base": true,
+      "execution_at_freeze": "not_rerun; historical_record_only"
+    },
+    {
+      "path": "docs/audits/BALANCED_SPECTRUM_STABILITY.md",
+      "sha256": "02474352d858fb80ed291e3b751f4d0f077a559cf806e391dbed2e35d7e561ff",
+      "role": "proof_source",
+      "previous_map_sha256": "02474352d858fb80ed291e3b751f4d0f077a559cf806e391dbed2e35d7e561ff",
+      "unchanged_since_previous_map_base": true
+    },
+    {
+      "path": "tools/check_balanced_spectrum_stability.py",
+      "sha256": "d1c2641f99d0e8222a042ed11d5f0002c37f1006f81b391c562580741ba3bad9",
+      "role": "checker_source",
+      "previous_map_sha256": "d1c2641f99d0e8222a042ed11d5f0002c37f1006f81b391c562580741ba3bad9",
+      "unchanged_since_previous_map_base": true,
+      "execution_at_freeze": "not_rerun; historical_record_only"
+    },
+    {
+      "path": "results/balanced_spectrum_stability.json",
+      "sha256": "ec8ce50a987662920cea160ae327891190b77ba0fed094a35c04a7a0541a3664",
+      "role": "historical_report",
+      "previous_map_sha256": "ec8ce50a987662920cea160ae327891190b77ba0fed094a35c04a7a0541a3664",
+      "unchanged_since_previous_map_base": true,
+      "execution_at_freeze": "not_rerun; historical_record_only"
+    },
+    {
+      "path": "docs/CORE_ARGUMENT.md",
+      "sha256": "15009f875db417d7926491376312cba8c0ac6cb56b68efcd29483c7eb9e12f45",
+      "role": "integrated_proof_exposition"
+    },
+    {
+      "path": "docs/audits/INTEGRATED_CORE_REVIEW.md",
+      "sha256": "b85c5ee2587cf3fc09a995631d60fcb4b52d0c06e449fe8fa5ab2570e81a3a1f",
+      "role": "internal_exact_text_review"
+    },
+    {
+      "path": "docs/CORE_PRIOR_COMPARISON.md",
+      "sha256": "29c93c2beaa0b7afd7ca8025fd245f5bb29a254ade8cd95874310b3115236098",
+      "role": "bounded_primary_source_comparison"
+    },
+    {
+      "path": "docs/SCIENTIFIC_SCOPE.md",
+      "sha256": "4093c02e605eef474d2e5a8dd7b8dfe796f446de8a2996007abd1aa5c49b1282",
+      "role": "selected_claims_and_limits_at_base"
+    },
+    {
+      "path": "docs/CORE_EVIDENCE_MAP.md",
+      "sha256": "dd5d350730ba463b630baa57fec1bffb5a453eff87f21a8c8efd523e13ed8bc6",
+      "role": "historical_dependency_and_fingerprint_map"
+    }
+  ],
+  "previous_map_reconciliation": {
+    "base_commit": "357a4dfd523e0b895dbeead46fb1e3190c7afd78",
+    "entries_checked_against_that_commit": 31,
+    "byte_unchanged_at_frozen_scientific_base": 30,
+    "changed_file": "RESEARCH_NOTE.md",
+    "change_scope": "Version and integrated-exposition overview changed. Model and endpoint Sections 2-4 are byte-identical.",
+    "sections_2_to_4_sha256": "2b0caabc4d413151742f7336f29b8305c87d8d728b1f58af97203941449c429f",
+    "fingerprints_not_retroactively_rewritten": true
+  },
+  "essential_certificate_reproduction": {
+    "status": "PASS",
+    "baseline_commit": "466bbb770d150fb8f43c4f9eca04bbadabe85188",
+    "invocation_count": 1,
+    "executed_command": {
+      "python_executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "script": "tools/check_nonflat_quarter_rank_certificate.py",
+      "output_option": "--output",
+      "output_destination": "Temporary JSON file outside the repository; exact bytes match the pinned historical report."
+    },
+    "portable_reproduction_command": "python tools/check_nonflat_quarter_rank_certificate.py --output /tmp/qic-nonflat-quarter-rank-certificate.json",
+    "start_utc": "2026-09-27T10:19:20.461150Z",
+    "end_utc": "2026-09-27T10:19:20.572907Z",
+    "elapsed_seconds": 0.11162324899851228,
+    "runtime": {
+      "dependencies": "Python standard library only; no NumPy/solver dependency",
+      "implementation": "CPython",
+      "machine": "x86_64",
+      "optimization_level": 0,
+      "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+      "python_executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]"
+    },
+    "exit_code": 0,
+    "exact_conclusions": {
+      "arithmetic": "exact rational intervals",
+      "box": {
+        "m": [
+          "0",
+          "9/25"
+        ],
+        "w": [
+          "0",
+          "9/25"
+        ]
+      },
+      "certificates": {
+        "C": {
+          "coefficient_count": 35,
+          "coefficient_lower_bound_denominator": 1000000,
+          "degree": [
+            6,
+            4
+          ],
+          "minimum_index": [
+            3,
+            3
+          ],
+          "strict_lower_bound": "4/25"
+        },
+        "P": {
+          "coefficient_count": 99,
+          "coefficient_lower_bound_denominator": 1000000,
+          "degree": [
+            10,
+            8
+          ],
+          "minimum_index": [
+            6,
+            6
+          ],
+          "strict_lower_bound": "1/10000"
+        }
+      },
+      "radical_denominator": 1000000000000000000,
+      "radical_enclosures": {
+        "2": [
+          "176776695296636881/125000000000000000",
+          "1414213562373095049/1000000000000000000"
+        ],
+        "3": [
+          "1732050807568877293/1000000000000000000",
+          "866025403784438647/500000000000000000"
+        ]
+      },
+      "scope": "Exact scalar positivity certificate; analytical reduction is in the proof note.",
+      "status": "passed",
+      "subdivisions": 0,
+      "total_bernstein_coefficients": 134
+    },
+    "comparison": {
+      "byte_equal": true,
+      "embedded_source_and_proof_hashes_match": true,
+      "historical_report": "results/nonflat_quarter_rank_certificate.json",
+      "semantic_equal": true
+    },
+    "report_sha256": "d9ddb1376188246bca676e0fc45b1ad8c4810a67b3c6ff2db1065d591880b639",
+    "report_byte_length": 4267,
+    "frozen_hashes_before": {
+      "docs/audits/NONFLAT_QUARTER_RANK_CONVERSE.md": "c761cb2e9835a59b0aa40ef5b27658724af6bd772cddf1cba8adcb43cf0e63a2",
+      "results/nonflat_quarter_rank_certificate.json": "d9ddb1376188246bca676e0fc45b1ad8c4810a67b3c6ff2db1065d591880b639",
+      "tools/check_nonflat_quarter_rank_certificate.py": "10cdb4c62ed2d0b8418abd189484c6d57cd06bd45443c2bd92b4523036d90ec9"
+    },
+    "frozen_hashes_after": {
+      "docs/audits/NONFLAT_QUARTER_RANK_CONVERSE.md": "c761cb2e9835a59b0aa40ef5b27658724af6bd772cddf1cba8adcb43cf0e63a2",
+      "results/nonflat_quarter_rank_certificate.json": "d9ddb1376188246bca676e0fc45b1ad8c4810a67b3c6ff2db1065d591880b639",
+      "tools/check_nonflat_quarter_rank_certificate.py": "10cdb4c62ed2d0b8418abd189484c6d57cd06bd45443c2bd92b4523036d90ec9"
+    },
+    "repository_clean_before_and_after": true,
+    "head_unchanged": true,
+    "stdout_bytes": 0,
+    "stderr_bytes": 0,
+    "other_research_checkers_executed_at_freeze": 0,
+    "historical_report_overwritten": false
+  },
+  "license": {
+    "path": "LICENSE",
+    "git_blob": "e17a781bf47c4aadf18b68fc593846a1193b86c1",
+    "sha256": "a92600540b1ab7a18301e2632a29334b3df227ad836e88df9967d69e3c86db66",
+    "copyright": "Copyright (c) 2026 Ruge Lin"
+  },
+  "unresolved_and_not_completion_blockers": [
+    "Unrestricted all-n intermediate-memory common-accuracy optimum; smallest remaining finite case (n,q)=(5,2).",
+    "Sharp general entropy inequality and asymptotic common-accuracy rate.",
+    "Arbitrary non-power-of-two output dimensions.",
+    "Unrestricted optimality or efficient implementation of the n=31 unequal-accuracy example.",
+    "Optimal stability constants and spectra outside the proved neighborhood.",
+    "Exhaustive publication originality; the source comparison remains bounded."
+  ]
+}
