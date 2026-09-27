@@ -1,0 +1,332 @@
+{
+  "canonical_equality_construction": {
+    "boundary_norm_attainment_claimed": false,
+    "boundary_norm_upper_bound_display": 4.891389974230115,
+    "correlation_eigenvalues_exact": [
+      "-sqrt(3)/8 twice",
+      "+sqrt(3)/8 twice"
+    ],
+    "correlation_trace_norms": [
+      0.8660254037844386,
+      0.8660254037844386,
+      0.8660254037844385,
+      0.8660254037844385
+    ],
+    "leading_eigenvalues": [
+      3.4641016151377544,
+      3.4641016151377544
+    ],
+    "relative_identity_residuals": {
+      "bisector_correlation_0": 0.0,
+      "bisector_correlation_1": 1.1102230246251565e-16,
+      "bisector_correlation_2": 0.0,
+      "bisector_correlation_3": 0.0,
+      "canonical_balanced_operator": 1.570092458683775e-16,
+      "complete_equality_spectrum": 2.924231343973887e-16,
+      "degenerate_leading_eigenvectors": 9.878281759274736e-17,
+      "flat_complement": 7.97218214573518e-17,
+      "flat_rank_two_support": 1.1836611953299303e-16,
+      "full_rank_correlation_spectrum_0": 0.0,
+      "full_rank_correlation_spectrum_1": 0.0,
+      "full_rank_correlation_spectrum_2": 5.551115123125783e-17,
+      "full_rank_correlation_spectrum_3": 5.551115123125783e-17,
+      "head_isometry": 2.2236827388371736e-16,
+      "memory_marginal": 0.0,
+      "purifying_qubit_marginal": 0.0,
+      "reflection_0": 1.3606722182672922e-17,
+      "reflection_1": 1.3606722182672922e-17,
+      "reflection_2": 1.3606722182672922e-17,
+      "reflection_3": 1.3606722182672922e-17,
+      "sharp_squared_support_sum": 2.9605947323337506e-16,
+      "square_POVM_channel_00": 8.092071311423672e-17,
+      "square_POVM_channel_01": 0.0,
+      "square_POVM_channel_10": 0.0,
+      "square_POVM_channel_11": 8.092071311423672e-17,
+      "unique_sign_readout_0": 1.7554167342883506e-16,
+      "unique_sign_readout_1": 1.7554167342883506e-16,
+      "unique_sign_readout_2": 2.482534153247273e-16,
+      "unique_sign_readout_3": 2.482534153247273e-16
+    },
+    "squared_support_sum": 2.999999999999999,
+    "third_eigenvalue": 1.1547005383792517
+  },
+  "exact_algebra": {
+    "Clifford_anticommutators_checked": 6,
+    "Clifford_generator_squares_checked": 4,
+    "boundary_constant": "(4+2sqrt(5))/sqrt(3)",
+    "opposite_axis_conjugations_checked": 16,
+    "positive_radical_identity": "sqrt(2t_star^2-4)=t_star+2/sqrt(3)",
+    "radical_field_basis": [
+      "1",
+      "sqrt(3)",
+      "sqrt(5)",
+      "sqrt(15)"
+    ],
+    "radical_identities_and_strict_signs_use_floating_point": false,
+    "reference_Pauli_superoperator_eigenvalues": {
+      "II": 4,
+      "IX": 2,
+      "IY": 0,
+      "IZ": 2,
+      "XI": 2,
+      "XX": 0,
+      "XY": -2,
+      "XZ": 0,
+      "YI": 0,
+      "YX": -2,
+      "YY": -4,
+      "YZ": -2,
+      "ZI": 2,
+      "ZX": 0,
+      "ZY": -2,
+      "ZZ": 0
+    },
+    "resolvent_certificate": "g/[2(sqrt(2t_star^2-4)-t_star)]=1",
+    "resolvent_parameter": "(2+2sqrt(5))/sqrt(3)",
+    "strict_range_and_gap_witnesses": [
+      "8>4",
+      "80<225",
+      "1280<1521",
+      "1<2"
+    ]
+  },
+  "maximum_matrix_dimension": 16,
+  "numpy": "2.3.5",
+  "proof_note_sha256": "811d99ecc0d3a93f66284990b7bbf293f06f8bae74ddefed6802058cd6c555e8",
+  "python": "3.12.14",
+  "research_base": "5a9d0ae04ba0c3a8a782e39c9e853d934d30ed6b",
+  "scope": "finite checks of supplied proofs; no parameter scan or unrestricted converse claim",
+  "source_sha256": "e87956b1265d24e2461907e73867e33dea149b5d338b7f940c903764babad2b9",
+  "status": "targeted algebra and construction checks passed",
+  "tolerance": 4e-11,
+  "weighted_frontier_constructions": [
+    {
+      "case": "balanced",
+      "relative_identity_residuals": {
+        "attained_profile": 6.409875621278547e-17,
+        "attained_weighted_Ky_Fan_sum": 1.2819751242557095e-16,
+        "attained_weighted_energy": 0.0,
+        "compression_square_0": 0.0,
+        "compression_square_1": 0.0,
+        "compression_square_2": 0.0,
+        "compression_square_3": 0.0,
+        "flat_rank_two_support": 1.0888153960364907e-16,
+        "head_isometry": 1.8155849605173506e-16,
+        "involution": 0.0,
+        "maximally_mixed_purifying_qubit": 0.0,
+        "rank_four_projection": 0.0,
+        "weighted_support_duality": 2.563950248511418e-16
+      },
+      "squared_Clifford_coefficients_exact": [
+        "1/4",
+        "1/4",
+        "1/4",
+        "1/4"
+      ],
+      "squared_profile_exact": [
+        "3/4",
+        "3/4",
+        "3/4",
+        "3/4"
+      ],
+      "sum_of_two_leading_eigenvalues": 6.92820323027551,
+      "weighted_support_value": 3.4641016151377544,
+      "weights": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "case": "rational_interior",
+      "relative_identity_residuals": {
+        "attained_profile": 2.866583523299506e-16,
+        "attained_weighted_Ky_Fan_sum": 0.0,
+        "attained_weighted_energy": 2.9605947323337506e-16,
+        "compression_square_0": 1.247569597900039e-16,
+        "compression_square_1": 1.499370715548158e-16,
+        "compression_square_2": 1.0365376086053739e-16,
+        "compression_square_3": 1.5882733569268473e-16,
+        "flat_rank_two_support": 1.2182870761503402e-16,
+        "head_isometry": 3.6471822202357575e-16,
+        "involution": 7.986537327223896e-17,
+        "maximally_mixed_purifying_qubit": 0.0,
+        "rank_four_projection": 8.562462825972894e-17,
+        "weighted_support_duality": 0.0
+      },
+      "squared_Clifford_coefficients_exact": [
+        "48/169",
+        "48/169",
+        "25/169",
+        "48/169"
+      ],
+      "squared_profile_exact": [
+        "121/169",
+        "121/169",
+        "121/169",
+        "144/169"
+      ],
+      "sum_of_two_leading_eigenvalues": 6.0,
+      "weighted_support_value": 3.0,
+      "weights": [
+        0.8461538461538461,
+        0.8461538461538461,
+        0.8461538461538461,
+        0.9230769230769231
+      ]
+    },
+    {
+      "case": "one_saturated_axis",
+      "relative_identity_residuals": {
+        "attained_profile": 0.0,
+        "attained_weighted_Ky_Fan_sum": 3.2596755352236417e-16,
+        "attained_weighted_energy": 1.6298377676118209e-16,
+        "compression_square_0": 1.7389838403618263e-16,
+        "compression_square_1": 4.438798536999407e-17,
+        "compression_square_2": 7.379580292192698e-17,
+        "compression_square_3": 6.096386152483065e-17,
+        "flat_rank_two_support": 1.4458754533678326e-16,
+        "head_isometry": 3.329544199825649e-16,
+        "involution": 1.1636389743614373e-16,
+        "maximally_mixed_purifying_qubit": 0.0,
+        "rank_four_projection": 7.446092577379523e-17,
+        "weighted_support_duality": 1.629837767611821e-16
+      },
+      "squared_Clifford_coefficients_exact": [
+        "1/3",
+        "0",
+        "1/3",
+        "1/3"
+      ],
+      "squared_profile_exact": [
+        "1",
+        "2/3",
+        "2/3",
+        "2/3"
+      ],
+      "sum_of_two_leading_eigenvalues": 10.898979485566354,
+      "weighted_support_value": 5.449489742783179,
+      "weights": [
+        3.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "case": "zero_weight_and_zero_correlation",
+      "relative_identity_residuals": {
+        "attained_profile": 2.220446049250313e-16,
+        "attained_weighted_Ky_Fan_sum": 2.220446049250313e-16,
+        "attained_weighted_energy": 4.440892098500626e-16,
+        "compression_square_0": 0.0,
+        "compression_square_1": 0.0,
+        "compression_square_2": 0.0,
+        "compression_square_3": 0.0,
+        "flat_rank_two_support": 1.5700924586837752e-16,
+        "head_isometry": 0.0,
+        "involution": 0.0,
+        "maximally_mixed_purifying_qubit": 0.0,
+        "rank_four_projection": 0.0,
+        "weighted_support_duality": 0.0
+      },
+      "squared_Clifford_coefficients_exact": [
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      "squared_profile_exact": [
+        "1",
+        "1",
+        "1",
+        "0"
+      ],
+      "sum_of_two_leading_eigenvalues": 7.999999999999998,
+      "weighted_support_value": 4.0,
+      "weights": [
+        2.0,
+        1.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "case": "single_nonzero_weight",
+      "relative_identity_residuals": {
+        "attained_profile": 2.220446049250313e-16,
+        "attained_weighted_Ky_Fan_sum": 2.220446049250313e-16,
+        "attained_weighted_energy": 4.440892098500626e-16,
+        "compression_square_0": 0.0,
+        "compression_square_1": 0.0,
+        "compression_square_2": 0.0,
+        "compression_square_3": 0.0,
+        "flat_rank_two_support": 1.5700924586837752e-16,
+        "head_isometry": 0.0,
+        "involution": 0.0,
+        "maximally_mixed_purifying_qubit": 0.0,
+        "rank_four_projection": 0.0,
+        "weighted_support_duality": 0.0
+      },
+      "squared_Clifford_coefficients_exact": [
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      "squared_profile_exact": [
+        "1",
+        "1",
+        "1",
+        "0"
+      ],
+      "sum_of_two_leading_eigenvalues": 1.9999999999999996,
+      "weighted_support_value": 1.0,
+      "weights": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "case": "all_zero_weights",
+      "relative_identity_residuals": {
+        "attained_profile": 2.220446049250313e-16,
+        "attained_weighted_Ky_Fan_sum": 0.0,
+        "attained_weighted_energy": 0.0,
+        "compression_square_0": 0.0,
+        "compression_square_1": 0.0,
+        "compression_square_2": 0.0,
+        "compression_square_3": 0.0,
+        "flat_rank_two_support": 1.5700924586837752e-16,
+        "head_isometry": 0.0,
+        "involution": 0.0,
+        "maximally_mixed_purifying_qubit": 0.0,
+        "rank_four_projection": 0.0,
+        "weighted_support_duality": 0.0
+      },
+      "squared_Clifford_coefficients_exact": [
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      "squared_profile_exact": [
+        "1",
+        "1",
+        "1",
+        "0"
+      ],
+      "sum_of_two_leading_eigenvalues": 0.0,
+      "weighted_support_value": 0.0,
+      "weights": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # Q1 — Delayed local readout through a bounded quantum interface
 
-**Version:** 0.41, 2026-09-26
+**Version:** 0.42, 2026-09-27
 
 **Project:** Falling / Q1  
 **Status:** Baseline proofs and seed reduction independently checked within the audit workspace. The full product-diagonal profile rate has a constructive optimizer and evaluates an established steering entanglement measure. It exceeds the inspected affine weighted-CHSH formation bounds, but the nonlinear-source follow-up now derives its full mixed-state support and joint-resource convex-hull characterization from prior inequalities. The candidate contribution is the explicit evaluation, equality analysis and operational consequences. The unrestricted rate equals regularized formation of a local-query assemblage, whose distinction from full tensor-product assemblages is explicit. The complete two-qubit entropy inequality, general common-accuracy rate evaluation and publication novelty remain unresolved. This is a research dossier, not external peer review or a claim of a new framework.
@@ -152,8 +152,25 @@ of its fixed leading eigenspace permit score only `14/5+sqrt(19)/10`, below
 its assigned energy `2sqrt(3)`, so no allowed readouts realize that particular
 eigenspace at that energy. This identifies a missing compatibility condition;
 it does not disprove the envelope for actual readouts or the physical norm
-bound. A different reference orientation realizing the same raw memory
-channel is not excluded by this calculation.
+bound. That calculation alone does not exclude a different reference
+orientation realizing the same raw memory channel; the following theorem
+now closes that gap.
+
+The [sharp two-mode support theorem](docs/audits/SHARP_TWO_MODE_SUPPORT.md)
+proves `U+m<=4sqrt(3)` for arbitrary two ququart binary-POVM pairs.
+For every flat rank-two state on the two references and memory, the four
+reference-Pauli correlations have squared trace norms summing to at most
+three. This also evaluates the exact nonnegative weighted Ky Fan support
+as twice the support of `0<=t_j<=1, sum_j t_j^2<=3`, with reflection
+readouts attaining every required boundary point. Equality at equal
+weights forces the balanced physical Hamiltonian, `U=m=2sqrt(3)`,
+`lambda_3=2/sqrt(3)`, and the square-POVM head channel. Every such attainer
+obeys `||H0+h3||<=(4+2sqrt(5))/sqrt(3)` for every third binary-POVM pair.
+This last upper bound is not claimed sharp. The equality classification
+also excludes every reference orientation of the preceding synthetic
+channel at its assigned energy. The proof uses standard fidelity-affinity
+and Hilbert-Schmidt inequalities; publication originality and the full
+three-query converse remain unresolved.
 
 ## 1. Origin, scope, and claim ledger
 
@@ -183,6 +200,8 @@ The general compression problem below is already present in the dimensional meas
 | Any two sharp internally anticommuting ququart pairs plus an arbitrary third binary-POVM pair obey norm(H)<=4+sqrt(2) | Derived and independently checked, with no cross-commutation hypothesis. Joint spectral-tail constraints and a 400-cell exact rational certificate close the sharp-pair case; arbitrary earlier Jordan angles remain open. |
 | Two spectral modes always suffice for a positive last-query resolvent with arbitrary earlier binary POVMs | Derived and independently checked from the second moment; an exact double eigenvalue 2sqrt(3) rules out a universal one-mode setup. The full head channel gives an exact 4-by-4 envelope test, whose universal validity for physical data remains open. |
 | A physical full spectrum, all memory-valued polynomial moments, and the established one-/two-dimensional memory compression caps suffice for the two-mode envelope test | Incorrect: an exact synthetic Hamiltonian satisfies all these constraints and fails the test. Its fixed head violates an explicit support bound from the four reference Pauli correlations; no physical counterexample is claimed. |
+| Arbitrary two ququart binary-POVM pairs obey the sharp bound U+m<=4sqrt(3) | Derived and independently checked: a squared trace-norm support budget also evaluates every nonnegative weighted Ky Fan support. Equality uniquely gives the balanced readout family up to the stated symmetries. |
+| Every equal-weight two-mode support attainer obeys norm(H0+h3)<=(4+2sqrt(5))/sqrt(3) for arbitrary third pairs | Derived and independently checked from equality rigidity and the pure-memory resolvent. This upper bound is below the retention benchmark; attainment is not asserted. The unrestricted converse remains open. |
 | Three partial-SWAP Bell-subspace projectors sum to at most 5I/2 | Derived and independently checked, with exact equality classification; gives the retention converse for equal spectra within each site's two Jordan blocks. Arbitrary independent U(4) embeddings remain open. |
 | All small subsystem perturbations around the known Bell-subspace attainers lower the sum norm | Derived and independently checked in all eighteen transverse directions; exact negative Hessian and an explicit radius 2^-10. A local converse, not global optimality or global rigidity. |
 | Exact worst weighted last-site resolvent in every even memory dimension, including all binary POVMs | Derived and independently checked: extreme spectral pairing and a convex-quartic/cubic-root decision eliminate the added decoder. Exact for a stated spectral upper bound, not a solution of the full Hamiltonian problem. |

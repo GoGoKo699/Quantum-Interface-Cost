@@ -1,7 +1,7 @@
 # Status and claim ledger
 
-Updated: 2026-09-26. Stage: the [two-mode compatibility obstruction](audits/TWO_MODE_COMPATIBILITY_OBSTRUCTION.md) refutes the proposed relaxation of the coherent 4-by-4 test. An exact synthetic Hamiltonian matches a valid earlier Hamiltonian's full spectrum and all memory-valued polynomial moments, and obeys the established bounds on every one- and two-dimensional memory compression, yet its spectral envelope fails the test. Its fixed leading eigenspace is excluded by a short support calculation using the four original reference Pauli operators. Spectral and compression information must therefore be supplemented by compatibility with those readouts. No failure of the test for actual earlier readouts, or of the physical norm bound, is proved. The preceding [two-mode reduction](audits/TWO_MODE_RESOLVENT.md) and [two-sharp-pair converse](audits/TWO_SHARP_PAIR_CONVERSE.md) remain valid. All three complete remaining reflection signatures, unrestricted optimality and publication originality remain unresolved.
-Latest research base: `5434c44c31f42143d4b1f3d32892744b443d6cd4`, the merge of PR #44.
+Updated: 2026-09-27. Stage: the [sharp two-mode support theorem](audits/SHARP_TWO_MODE_SUPPORT.md) proves `U+m<=4sqrt(3)` for arbitrary two ququart binary-POVM pairs and evaluates its full nonnegative weighted support. A squared trace-norm budget retains the four original reference Pauli operators. Equality is completely classified: the balanced Hamiltonian and square-POVM head channel are forced, so every attainer with an arbitrary third pair obeys `norm(H)<=(4+2sqrt(5))/sqrt(3)<4+sqrt(2)`. The boundary bound is not claimed attained. The earlier synthetic channel is excluded at its assigned energy in every reference orientation. The [compatibility obstruction](audits/TWO_MODE_COMPATIBILITY_OBSTRUCTION.md) still refutes the spectral/moment/compression relaxation, and no failure of the coherent test for actual readouts is proved. All three complete remaining reflection signatures, unrestricted optimality and publication originality remain unresolved.
+Latest research base: `5a9d0ae04ba0c3a8a782e39c9e853d934d30ed6b`, the merge of PR #45.
 
 Critical assessment base: `81bcfefb2b545742d513c4f51364a7f72972451e`, the
 merge of PR #11. The [publication and optimality assessment](audits/PUBLICATION_AND_OPTIMALITY_ASSESSMENT.md)
@@ -50,6 +50,9 @@ is asserted.
 | A two-mode spectral envelope has an exact 4-by-4 last-query test retaining the full head channel | Derived and independently checked by a positive-update Schur criterion; exact for the envelope and sufficient for the original Hamiltonian. Flat individual memory marginals do not justify removing cross-mode coherences. Universal satisfaction of the matrix test remains open | audits/TWO_MODE_RESOLVENT.md |
 | Actual two-mode channels above the one-mode energy threshold need not be entanglement breaking | Derived and independently checked: an allowed reflection family has an exactly negative Choi partial-transpose eigenvalue. This excludes a channel simplification, not the target norm bound | audits/NONCLASSICAL_TWO_MODE_CHANNEL.md |
 | Full spectrum, all memory-valued polynomial moments and the established caps on every one-/two-dimensional memory compression force the two-mode test | Incorrect: an exact synthetic Hamiltonian obeys these constraints while its spectral envelope fails. A reference-Pauli support calculation excludes its fixed head at the assigned energy; no physical violation is shown | audits/TWO_MODE_COMPATIBILITY_OBSTRUCTION.md |
+| Arbitrary two ququart binary-POVM pairs obey U+m<=4sqrt(3), sharply | Derived and independently checked; squared trace-norm budget at flat rank two, with exact nonnegative weighted support and matching reflection readouts | audits/SHARP_TWO_MODE_SUPPORT.md Sections 1–3 |
+| Every equal-weight support attainer is the balanced readout family and obeys norm(H0+h3)<=(4+2sqrt(5))/sqrt(3) for arbitrary third pairs | Derived and independently checked; full equality reconstruction and square-POVM channel. The boundary upper bound is not asserted sharp; the full converse is open | audits/SHARP_TWO_MODE_SUPPORT.md Sections 4–5 |
+| The synthetic partial-SWAP channel is excluded at U=m=2sqrt(3) in every reference orientation | Derived and independently checked from the equality conditions and a three-anticommuting-reflection obstruction in the reference X/Z space | audits/SHARP_TWO_MODE_SUPPORT.md Section 6 |
 | Three partial-SWAP Bell-subspace projectors obey the sharp sum bound 5/2 | Derived and independently checked, including all equality cases; the physical converse also assumes equal spectra within each site's two Jordan blocks | audits/NONCOMMUTING_QUERY_FAMILIES.md Sections 1–6 |
 | Every sufficiently small change of subsystem geometry around the known projector attainers obeys the 5/2 bound | Derived and independently checked in all eighteen transverse directions; exact negative quadratic form and radius 2^-10. No global optimality or global rigidity statement | audits/BELL_SUBSPACE_LOCAL_STABILITY.md Sections 1–5 |
 | Exact worst rho-weighted resolvent of one original site's X/Z decoder pair in every even memory dimension | Derived and independently checked for all Hermitian contractions: extreme eigenvalue pairing and a convex quartic eliminate the decoder optimization; the corresponding rank-one spectral criterion is sufficient for the original Hamiltonian | audits/EXACT_LAST_QUERY_RESOLVENT.md |
@@ -455,6 +458,16 @@ not identify complete-assemblage entanglement cost with the delayed-query
 rate. Prior subsumption of the full evaluated profile remains unresolved.
 
 ## Research division and next target
+
+For the three-input finite-budget target, the latest sharp support theorem
+confines the regime strictly above the one-mode threshold to
+`2+sqrt(2)<m<=2sqrt(3)` and `m<=U<=4sqrt(3)-m`.
+The entire maximal-sum boundary is now classified and lies strictly below
+the retention benchmark after every third pair. Compactness gives a safe
+neighborhood of that boundary, but no explicit radius has been proved.
+The next analytical target is quantitative control away from equality,
+retaining the actual readout equations and coherent head channel. The
+spectral/moment/compression relaxation alone remains insufficient.
 
 The [optimizer follow-up](audits/FORMATION_OPTIMIZERS_AND_PRIOR.md)
 strengthens the one-site equality result: every entropy optimum in the
