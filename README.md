@@ -107,6 +107,17 @@ The earlier synthetic channel is excluded at its assigned energy in every
 reference orientation. This is a global constraint and a complete boundary
 classification; the general three-query converse remains open.
 
+The [quantitative continuation](docs/audits/QUANTITATIVE_TWO_MODE_STABILITY.md)
+now replaces the qualitative neighborhood by an explicit one: if
+`4sqrt(3)-(U+m)<=2^-32`, every third pair gives `||H||<16/3<4+sqrt(2)`.
+The radius is conservative, not an estimate of the full safe region.
+A [robust channel criterion](docs/audits/ROBUST_HEAD_CHANNEL_CONVERSE.md)
+also proves the converse throughout the high-second-eigenvalue regime
+whenever the head channel is within full diamond distance `2/5` of a
+measurement-and-preparation channel. It closes the entire previously
+constructed nonclassical-head family, including its entangled Choi states.
+The argument preserves the coherent head channel throughout.
+
 The [spectral-budget extension](docs/audits/JORDAN_SPECTRAL_BUDGET.md)
 now retains every Jordan block and gives a scalar sufficient test for the
 benchmark, including families with two noncommuting blocks at every site.
@@ -277,6 +288,7 @@ supplied evaluations.
 | Unrestricted collective-encoding problem | [Seed reduction](docs/COLLECTIVE_ENCODING_REDUCTION.md) |
 | Two sharp ququart query pairs and an arbitrary third pair obey the retention bound | [Complete sharp-pair converse and exact scalar certificate](docs/audits/TWO_SHARP_PAIR_CONVERSE.md) |
 | Sharp sum of the two leading energies for arbitrary pairs, weighted support and equality | [Two-mode support theorem and boundary converse](docs/audits/SHARP_TWO_MODE_SUPPORT.md) |
+| Explicit stability near that boundary and a converse allowing nonclassical head channels | [Quantitative stability](docs/audits/QUANTITATIVE_TWO_MODE_STABILITY.md); [robust channel criterion](docs/audits/ROBUST_HEAD_CHANNEL_CONVERSE.md) |
 | Exact optimum with one retained qubit | [One-qubit theorem and equality cases](docs/ONE_QUBIT_OPTIMALITY.md) |
 | Exact region for separate accuracies at every local query | [One-qubit allocation theorem](docs/ONE_QUBIT_ALLOCATION_REGION.md) |
 | Collective advantage for unequal X/Z accuracies | [Exact-axis spectral reduction](docs/EXACT_AXIS_SPECTRAL_REDUCTION.md) |

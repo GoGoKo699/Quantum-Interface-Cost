@@ -1,0 +1,346 @@
+{
+  "NPT_family_points": [
+    {
+      "U_equals_m": 3.413800010441156,
+      "c_exact": "19/20",
+      "diamond_distance_upper_bound": 0.36224989991991996,
+      "minimum_Choi_PPT_eigenvalue": -0.020723989988977693,
+      "relative_identity_residuals": {
+        "Choi_partial_transpose_spectrum": 2.270301745069659e-16,
+        "Choi_trace": 4.440892098500626e-16,
+        "alpha_derivative_identity": 5.551115123125783e-17,
+        "channel_image_0": 3.928909327569637e-16,
+        "channel_image_1": 2.309724214262959e-16,
+        "channel_image_2": 9.89865180423555e-18,
+        "channel_image_3": 2.2286977581529993e-16,
+        "coefficient_cross_identity": 6.938893903907228e-18,
+        "coefficient_square_identity": 5.551115123125783e-17,
+        "full_spectrum": 3.242773118236043e-16,
+        "gamma_derivative_identity": 2.7755575615628914e-17,
+        "leading_eigenhead": 2.4724041890666336e-16,
+        "logical_commutator_0": 0.0,
+        "logical_commutator_1": 0.0,
+        "logical_commutator_2": 0.0,
+        "projector": 4.175211725763074e-16,
+        "projector_trace": 4.440892098500626e-16,
+        "simplified_alpha": 0.0,
+        "simplified_gamma": 0.0
+      },
+      "third_eigenvalue": 1.531655799686066
+    },
+    {
+      "U_equals_m": 3.449489742783178,
+      "c_exact": "1",
+      "diamond_distance_upper_bound": 0.0,
+      "minimum_Choi_PPT_eigenvalue": -0.0,
+      "relative_identity_residuals": {
+        "Choi_partial_transpose_spectrum": 9.702789278578327e-17,
+        "Choi_trace": 0.0,
+        "alpha_derivative_identity": 8.326672684688674e-17,
+        "channel_image_0": 0.0,
+        "channel_image_1": 0.0,
+        "channel_image_2": 1.2548013815718486e-18,
+        "channel_image_3": 0.0,
+        "coefficient_cross_identity": 0.0,
+        "coefficient_square_identity": 0.0,
+        "full_spectrum": 5.907440274120148e-16,
+        "gamma_derivative_identity": 2.7755575615628914e-17,
+        "leading_eigenhead": 1.1369876327841844e-16,
+        "logical_commutator_0": 0.0,
+        "logical_commutator_1": 0.0,
+        "logical_commutator_2": 0.0,
+        "projector": 6.179050910524731e-17,
+        "projector_trace": 0.0,
+        "simplified_alpha": 0.0,
+        "simplified_gamma": 0.0
+      },
+      "third_eigenvalue": 1.4494897427831783
+    },
+    {
+      "U_equals_m": 3.449454238385494,
+      "c_exact": "39999/40001",
+      "diamond_distance_upper_bound": 0.01004974875627751,
+      "minimum_Choi_PPT_eigenvalue": -0.0006487809214798248,
+      "relative_identity_residuals": {
+        "Choi_partial_transpose_spectrum": 1.2756899866862232e-16,
+        "Choi_trace": 0.0,
+        "alpha_derivative_identity": 8.326672684688674e-17,
+        "channel_image_0": 3.0665868333667484e-19,
+        "channel_image_1": 8.673617379884035e-19,
+        "channel_image_2": 9.495972251764344e-18,
+        "channel_image_3": 2.001483902210683e-16,
+        "coefficient_cross_identity": 2.168404344971009e-19,
+        "coefficient_square_identity": 5.551115123125783e-17,
+        "full_spectrum": 4.823404785853848e-16,
+        "gamma_derivative_identity": 1.3877787807814457e-17,
+        "leading_eigenhead": 6.133442664435744e-17,
+        "logical_commutator_0": 0.0,
+        "logical_commutator_1": 0.0,
+        "logical_commutator_2": 0.0,
+        "projector": 1.6019181769049557e-16,
+        "projector_trace": 0.0,
+        "simplified_alpha": 0.0,
+        "simplified_gamma": 0.0
+      },
+      "third_eigenvalue": 1.4495742331058288
+    }
+  ],
+  "exact_constants": {
+    "count": 39,
+    "uses_floating_point": false,
+    "witnesses": {
+      "Bloch_axes_147": "(99/70)(19/2+(51/25)46)<147",
+      "NPT_arc_distance": "29/80<2/5",
+      "NPT_arc_overlap": "567^2-2*400^2=1489;81<128;19/20<c_star<1",
+      "NPT_derivative_bounds": {
+        "alpha_upper": "125/578",
+        "gamma_upper": "256375/1414944"
+      },
+      "NPT_energy_bounds": "U>17/5;d>21/2 on c>=19/20",
+      "NPT_linear_coefficient_bounds": "|beta|<3s/10;|eta|<3s/20;|delta|<s/20",
+      "NPT_parameter_bounds": "6/5<a<5/4;b<3/4;ab<7/8",
+      "actual_decoder_18000": "52*343+7=17843<18000",
+      "actual_decoder_loss_7": "sqrt(32 epsilon)<6sqrt(epsilon)<7q",
+      "aligned_root_state_343": "3/4+1369/4=343",
+      "axis_alignment_range": "147/4096<1/2",
+      "boundary_norm_gap": "C_star<5;16/3<4+sqrt(2)",
+      "coefficient_commutator_42": "19(26/15)+9<42",
+      "coefficient_compression_35": "(19/2)(26/15)+18<35",
+      "coefficient_eigenvalue_interval": "(12/25)^2<1/4-45/4096<1/4+45/4096<(13/25)^2",
+      "coefficient_square_45": "43^2+42^2<61^2<(19/10)45^2",
+      "conditional_radius": "1500*5<2*4096",
+      "convex_quadratic_leading_coefficients": "q_low leading1/2;q_high leading23/70",
+      "definite_coefficient_exclusion": "2(12/25)^2(7/5)>(19/2)/4096",
+      "faithful_support_marginal": "2-9/4096>19/10",
+      "flattening_Young_coefficient": "907/600<49/32",
+      "flattening_cutoff": "9/100<49/512",
+      "flattening_final_coefficient": "1/2+(32/49)(9/100)<9/16",
+      "flattening_minimum_square": "1-9/100-3/10=61/100>9/16",
+      "high_quadratic_endpoints": [
+        "-234/175",
+        "-909/1400"
+      ],
+      "integrated_signed_compression_8": "2/(1/2-3/(4*4096))+2(26/15)+2/4096<8",
+      "low_quadratic_endpoints": [
+        "-7/100",
+        "-833/800"
+      ],
+      "rational_sqrt_bounds": "7/5<sqrt(2)<99/70;17/10<sqrt(3)<26/15;sqrt(5)<9/4",
+      "reflection_and_channel_constants": "1369+3=1372<1500",
+      "resolvent_radical_majorant": "(3t/2-7/10)^2-(2t^2-4)=(t-21/5)^2/4+2/25",
+      "rounding_projection_9": "2(99/70)+6+(9/2)/4096<9",
+      "rounding_square_19": "9(2+9/4096)<19",
+      "sign_divided_difference_13": "4/(1/8+1/5)=160/13<13",
+      "sign_rounding_46": "45/(49/50)<46",
+      "signed_compression_8": "2/(1/2-3/(4*4096))+2+26/15<8",
+      "strip_gap_integer": "6*1600^2-3919^2=1439",
+      "strip_tail_and_rectangle": "11<8sqrt(2);3sqrt(2)<17/4;sqrt(2)<10/7",
+      "unconditional_correlation_gap": "343/65536<1/64;17/80-1/32>1/8;17/80>1/5",
+      "unconditional_radius": "18000*3<65536"
+    }
+  },
+  "matrix_identity_count": 93,
+  "maximum_matrix_dimension": 16,
+  "maximum_relative_identity_residual": 1.957852283074324e-15,
+  "numpy": "2.3.5",
+  "proof_note_sha256": {
+    "docs/audits/QUANTITATIVE_TWO_MODE_STABILITY.md": "ecd7f74b84f70d990a4dfc32ed45c1f6b548f32c44dc07287d2280ac7bf91b41",
+    "docs/audits/ROBUST_HEAD_CHANNEL_CONVERSE.md": "32baa1e81e9cdfd485ed55b3a94d0c10133c11554a6ef69ea2fb608467c19115"
+  },
+  "python": "3.12.14",
+  "rank_two_head_constructions": [
+    {
+      "Pauli_projection_error": 5.680968964466591e-16,
+      "affinity_stability": [
+        {
+          "affinity_deficit": 0.0,
+          "compressed_sign_error": 7.164538280471865e-16,
+          "signed_congruence_error_squared": 1.1609919038391689e-31
+        },
+        {
+          "affinity_deficit": 0.0,
+          "compressed_sign_error": 1.3184730485321716e-15,
+          "signed_congruence_error_squared": 4.380829072005137e-31
+        },
+        {
+          "affinity_deficit": 0.0,
+          "compressed_sign_error": 6.121701823499908e-16,
+          "signed_congruence_error_squared": 4.835353340891508e-31
+        },
+        {
+          "affinity_deficit": 1.1102230246251565e-16,
+          "compressed_sign_error": 1.4790742663073575e-15,
+          "signed_congruence_error_squared": 5.088792509382669e-31
+        }
+      ],
+      "case": "balanced",
+      "complement_rank": 4,
+      "correlation_profile": [
+        0.8660254037844388,
+        0.8660254037844389,
+        0.8660254037844388,
+        0.8660254037844385
+      ],
+      "flatness_error": 2.662658764611957e-16,
+      "relative_identity_residuals": {
+        "chirality_overlap_deficit": 3.724321388696312e-17,
+        "flat_head_marginal": 1.6661999967996405e-16,
+        "head_isometry": 2.3594912466517916e-16,
+        "signed_Cauchy_inner_product_0": 4.440892098500626e-16,
+        "signed_Cauchy_inner_product_1": 1.1102230246251565e-16,
+        "signed_Cauchy_inner_product_2": 2.220446049250313e-16,
+        "signed_Cauchy_inner_product_3": 1.1102230246251565e-16,
+        "square_root": 5.081131662995997e-16,
+        "squared_chirality_identity": 3.961302036510695e-16
+      },
+      "rotation_angle": 0.0,
+      "squared_support_deficit": 0.0
+    },
+    {
+      "Pauli_projection_error": 0.00968240188636249,
+      "affinity_stability": [
+        {
+          "affinity_deficit": 0.00011246531475328503,
+          "compressed_sign_error": 0.00025977947315210595,
+          "signed_congruence_error_squared": 1.686881311383081e-08
+        },
+        {
+          "affinity_deficit": 1.250114587547646e-05,
+          "compressed_sign_error": 8.661047923571562e-05,
+          "signed_congruence_error_squared": 1.875062493204175e-09
+        },
+        {
+          "affinity_deficit": 3.332349587992223e-05,
+          "compressed_sign_error": 0.005775410442986703,
+          "signed_congruence_error_squared": 8.335507675665515e-06
+        },
+        {
+          "affinity_deficit": 3.332349588003325e-05,
+          "compressed_sign_error": 0.005775410442986708,
+          "signed_congruence_error_squared": 8.33550767566557e-06
+        }
+      ],
+      "case": "Pauli_XIYI",
+      "complement_rank": 4,
+      "correlation_profile": [
+        0.8658522044771073,
+        0.8660254037844386,
+        0.8659772954850898,
+        0.8659772954850896
+      ],
+      "flatness_error": 0.008660082621761414,
+      "relative_identity_residuals": {
+        "chirality_overlap_deficit": 1.854256765493334e-16,
+        "flat_head_marginal": 2.9898765565344177e-16,
+        "head_isometry": 1.7561415630975436e-16,
+        "signed_Cauchy_inner_product_0": 5.551115123125783e-16,
+        "signed_Cauchy_inner_product_1": 3.3306690738754696e-16,
+        "signed_Cauchy_inner_product_2": 2.220446049250313e-16,
+        "signed_Cauchy_inner_product_3": 2.220446049250313e-16,
+        "square_root": 4.656889607138176e-16,
+        "squared_chirality_identity": 3.3095062332174637e-16
+      },
+      "rotation_angle": 0.01,
+      "squared_support_deficit": 0.0004666074107926299
+    },
+    {
+      "Pauli_projection_error": 0.0223562817025415,
+      "affinity_stability": [
+        {
+          "affinity_deficit": 0.0001998034140868743,
+          "compressed_sign_error": 0.019992658597478976,
+          "signed_congruence_error_squared": 9.984674470640543e-05
+        },
+        {
+          "affinity_deficit": 0.0001998034300708662,
+          "compressed_sign_error": 0.02000865699809849,
+          "signed_congruence_error_squared": 0.00010000660608325379
+        },
+        {
+          "affinity_deficit": 0.00034969847079391325,
+          "compressed_sign_error": 0.028295808741651815,
+          "signed_congruence_error_squared": 0.0002000032348137614
+        },
+        {
+          "affinity_deficit": 0.00034969847079435734,
+          "compressed_sign_error": 0.02829580874165128,
+          "signed_congruence_error_squared": 0.00020000323481374937
+        }
+      ],
+      "case": "Pauli_ZYXZ",
+      "complement_rank": 4,
+      "correlation_profile": [
+        0.8657945560511596,
+        0.8655636467502849,
+        0.8653326758325263,
+        0.8653326758325257
+      ],
+      "flatness_error": 0.009997958158428154,
+      "relative_identity_residuals": {
+        "chirality_overlap_deficit": 1.957852283074324e-15,
+        "flat_head_marginal": 2.9937404753841396e-16,
+        "head_isometry": 2.367309698219686e-16,
+        "signed_Cauchy_inner_product_0": 1.887379141862766e-15,
+        "signed_Cauchy_inner_product_1": 1.6653345369377348e-15,
+        "signed_Cauchy_inner_product_2": 1.887379141862766e-15,
+        "signed_Cauchy_inner_product_3": 1.5543122344752192e-15,
+        "square_root": 9.589419783809807e-16,
+        "squared_chirality_identity": 1.9031499286806796e-15
+      },
+      "rotation_angle": 0.02,
+      "squared_support_deficit": 0.0035980804095641084
+    },
+    {
+      "Pauli_projection_error": 0.02999212045258106,
+      "affinity_stability": [
+        {
+          "affinity_deficit": 0.0006730779449107827,
+          "compressed_sign_error": 0.001556740991175079,
+          "signed_congruence_error_squared": 6.053157628454193e-07
+        },
+        {
+          "affinity_deficit": 0.0006730779449110047,
+          "compressed_sign_error": 0.0015567409911751947,
+          "signed_congruence_error_squared": 6.053157628453995e-07
+        },
+        {
+          "affinity_deficit": 0.0006734825195627847,
+          "compressed_sign_error": 0.0015572087849391623,
+          "signed_congruence_error_squared": 6.056796069083657e-07
+        },
+        {
+          "affinity_deficit": 0.0006742916688661227,
+          "compressed_sign_error": 0.0015581439511354203,
+          "signed_congruence_error_squared": 6.06407295033538e-07
+        }
+      ],
+      "case": "Pauli_IXYY",
+      "complement_rank": 4,
+      "correlation_profile": [
+        0.8647269503747027,
+        0.8647269503747025,
+        0.8649867969879462,
+        0.8655062561771188
+      ],
+      "flatness_error": 0.021206438076828753,
+      "relative_identity_residuals": {
+        "chirality_overlap_deficit": 3.0564281300662596e-16,
+        "flat_head_marginal": 3.0386236980557393e-16,
+        "head_isometry": 3.237081652352104e-16,
+        "signed_Cauchy_inner_product_0": 1.11982969640547e-16,
+        "signed_Cauchy_inner_product_1": 1.114990583334228e-16,
+        "signed_Cauchy_inner_product_2": 2.2517313056263946e-16,
+        "signed_Cauchy_inner_product_3": 2.0166160408230382e-17,
+        "square_root": 4.634257247989862e-16,
+        "squared_chirality_identity": 6.258705451639592e-16
+      },
+      "rotation_angle": 0.03,
+      "squared_support_deficit": 0.007191364146134305
+    }
+  ],
+  "research_base": "3d230411930a2ac198cdb7f2ef9ad86701face1a",
+  "scope": "Exact rational constant checks and seven fixed matrix constructions; universal proofs are analytical, with no scan, numerical optimality, or unrestricted converse claim.",
+  "source_sha256": "a11f7ee7bd89722fb773e2a5ca39e7942b993fd91998a6ab4f0e868a8e8ff23e",
+  "status": "exact scalar and fixed matrix checks passed",
+  "tolerance": 3e-10
+}
