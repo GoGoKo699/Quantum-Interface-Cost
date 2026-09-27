@@ -1,5 +1,49 @@
 # Reproducibility and source provenance
 
+## Exact block-budget resolvent and physical envelope obstruction
+
+The [block-budget theorem](audits/JORDAN_BLOCK_BUDGET_RESOLVENT.md) and
+[reflection obstruction](audits/REFLECTION_ENVELOPE_OBSTRUCTION.md) are pinned
+to main `556df48950c2de3162171dd1d85c3df9e5937fc2`. Run:
+
+```bash
+python tools/check_block_budget_and_envelopes.py --output results/block_budget_and_envelopes.json
+```
+
+The proofs supply the continuous block optimization, partial-matching
+argument, exact reflection construction, and uniform physical norm bound.
+The targeted verifier checks exact scalar witnesses and small explicit
+matrices. Its comparison of one-mode and two-positive-mode envelopes
+uses the same actual Hamiltonian and its own spectral subspaces.
+Independent internal reviewers reconstructed both arguments, including
+the fixed `(11)` sorting branches and the vanishing signed cross block.
+
+The verifier passed 19 exact rational checks and 112 matrix/matching
+identities, including 15 block-budget attaining constructions. Five fixed
+spectra in dimensions 3, 4, 4, 5, and 6 enumerate respectively 4, 10, 10,
+26, and 76 partial matchings. Cases include a zero eigenvalue, a flat
+marginal, a scalar optimum, and both fixed `(11)` branches. Three explicit
+third pairs check the actual reflection example: `(11)`, `(12)`, and a
+complex double-block pair.
+
+All passed with Python 3.12.14 and NumPy 2.3.5, at tolerance `3e-9`.
+The maximum relative identity residual was `2.30e-15`; matrix dimension
+was at most 32. Cubic-root and support bisections approximate the analytic
+decision rule; they are not rigorous interval certificates. No angle grid,
+matrix optimizer, or large simulation was used. Checker SHA-256:
+`85e17ef4dc8b679f61321a3942a8ae1273dc8671fb9f34245248e346a3729dea`.
+The result pins both proof-note hashes; the verifier's output guard
+prevents source/proof-note overwrites.
+
+An independent source review and separate scratch rerun passed. The rerun
+reproduced the final JSON byte for byte and verified all three provenance
+hashes. Cross-platform floating results need only meet the stated tolerance.
+
+The evidence distinguishes failure of a sufficient envelope from a
+violation of the original Hamiltonian bound. No complete remaining
+reflection signature, unrestricted optimum, or publication originality
+is established. Unchanged diagnostics were not rerun.
+
 ## Head structure: one-block, conserved-symmetry and zero-gap converses
 
 The [one-block theorem](audits/HIGH_SECOND_MODE_ONE_BLOCK.md),

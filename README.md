@@ -122,7 +122,8 @@ Two structural arguments now go beyond a small stability neighborhood.
 The [one-block last-query theorem](docs/audits/HIGH_SECOND_MODE_ONE_BLOCK.md)
 closes the entire high-second-mode region when the last pair has at most
 one noncommuting Jordan block. Any possible violation in the two remaining
-signatures with such a pair must therefore have a valid one-mode resolvent.
+signatures with such a pair must therefore have a defined one-mode resolvent;
+this does not imply that the corresponding spectral bound passes.
 The [conserved-symmetry theorem](docs/audits/CONSERVED_SYMMETRY_CONVERSE.md)
 gives the stronger bound `||H||<=5` for four readouts in two explicit
 three-dimensional Pauli spaces, with an arbitrary third pair. Two exact
@@ -136,6 +137,21 @@ root has only the identity and four single-query Pauli components, the
 head is entanglement breaking or its support is at most `2+sqrt(2)`.
 This is an exact structural condition. The full remaining signatures and
 unrestricted converse remain open.
+
+The [block-budget resolvent formula](docs/audits/JORDAN_BLOCK_BUDGET_RESOLVENT.md)
+now evaluates the last-query optimization for any allowed number of active
+Jordan blocks, in odd or even memory dimension. The optimal blocks pair
+the outermost marginal eigenvalues; with one block only the largest and
+smallest eigenvalues matter. A fixed `(11)` signature has a separate exact
+two-branch formula.
+
+An [actual reflection example](docs/audits/REFLECTION_ENVELOPE_OBSTRUCTION.md)
+shows that the proposed one-mode bound fails even below its inverse
+threshold, in both `(22)^2(11)` and `(22)^2(12)`. Retaining its negative
+chiral partner also fails, with both tests exceeding `33/32`. The physical Hamiltonian
+nevertheless stays below `21/4<4+sqrt(2)` for every third pair, and its
+two-positive-mode bound succeeds. The next proof must preserve more of the
+actual spectrum and channel; the full remaining signatures are still open.
 
 The [spectral-budget extension](docs/audits/JORDAN_SPECTRAL_BUDGET.md)
 now retains every Jordan block and gives a scalar sufficient test for the
