@@ -10,14 +10,14 @@ eigenvectors. They do not prove the unrestricted two-qubit entropy inequality.
 
 For a two-qubit density matrix rho, write
 
-$$
+```math
 \begin{aligned}
 g_2(\rho)&=\sum_{P\in\mathcal Q}F_P,
 &F_P&=\|\sqrt\rho P\sqrt\rho\|_1,\\
 \mathcal Q&=\{X_A,Z_A,X_B,Z_B\},
 &c&=2-\sqrt2.
 \end{aligned}
-$$
+```
 
 The proposed entropy bound is `g_2(rho)<=2sqrt(2)+cS(rho)`, with entropy
 in bits. This note bounds the score using the kernel of rho and its spectrum.
@@ -29,16 +29,16 @@ Let rho have rank three, with ordered positive eigenvalues
 `lambda_1>=lambda_2>=lambda_3>0`, and let its normalized kernel vector
 be v. Define
 
-$$
+```math
 M(v)=\sum_{P\in\mathcal Q}|\langle v|P|v\rangle|.
-$$
+```
 
 Both one-qubit marginals of the pure state v have the same Bloch-vector
 length r_v. Equivalently,
 
-$$
+```math
 r_v=\sqrt{1-C(v)^2},
-$$
+```
 
 where `C(v)=2|det V|` for the normalized coefficient matrix
 `|v>=sum_{a,b}V_{ab}|ab>`. The latter identity follows directly from
@@ -48,41 +48,41 @@ is maximally entangled, and `r_v=1` exactly when v is a product vector.
 For the Pauli correlation coefficients
 `T_ab=Tr(rho sigma_a tensor sigma_b)`, put
 
-$$
+```math
 \chi_Y(\rho)=T_{xy}^2+T_{zy}^2+T_{yx}^2+T_{yz}^2+2T_{yy}^2.
-$$
+```
 
 **Theorem 1.** Every such rank-three state satisfies
 
-$$
+```math
 \boxed{
  g_2(\rho)^2
  \le 8-4\chi_Y(\rho)+16\lambda_1\lambda_2 M(v)
  \le 8-4\chi_Y(\rho)+32\sqrt2\lambda_1\lambda_2 r_v.
 }
 \qquad\text{(1)}
-$$
+```
 
 The nonnegative correlation correction can be discarded when only the
 spectrum and kernel are known. Thus the readily checkable inequality
 
-$$
+```math
 8+16\lambda_1\lambda_2 M(v)
 \le \bigl(2\sqrt2+cS(\rho)\bigr)^2
 \qquad\text{(2)}
-$$
+```
 
 certifies the proposed entropy bound for every state with that spectrum
 and kernel. A condition using only the kernel's entanglement and the
 spectrum is
 
-$$
+```math
 \boxed{
 8\lambda_1\lambda_2 r_v
 \le cS(\rho)+\frac{c^2}{4\sqrt2}S(\rho)^2.
 }
 \qquad\text{(3)}
-$$
+```
 
 Strict inequality in either certificate implies a strict entropy bound.
 Setting `r_v=1` in (3) supplies a spectrum-only sufficient condition,
@@ -90,10 +90,10 @@ valid for all choices of kernel and supported eigenvectors. For example,
 the nonuniform spectrum `(1/2,1/4,1/4,0)` has entropy `3/2`; equation (1)
 gives
 
-$$
+```math
 g_2(\rho)\le\sqrt{8+4\sqrt2}
 <2\sqrt2+\frac32(2-\sqrt2).
-$$
+```
 
 Consequently every state with that spectrum obeys the entropy inequality,
 without a classicality or local-marginal hypothesis. The condition is
@@ -103,10 +103,10 @@ The strict squared-bound gap in the example is `3/2-sqrt(2)>0`.
 **Corollary 2.** If any two-qubit density matrix has a maximally entangled
 vector in its kernel, then
 
-$$
+```math
 \boxed{g_2(\rho)\le2\sqrt2.}
 \qquad\text{(4)}
-$$
+```
 
 This permits arbitrary spectra and local rotations of the kernel vector.
 The constant is sharp across this class: the product state
@@ -123,37 +123,37 @@ Gram matrices, not a restriction on admissible physical instruments.
 
 For any two-qubit density matrix, define
 
-$$
+```math
 Q_P=2\mathrm{Tr}(\rho P\rho P)
 -\bigl(\mathrm{Tr}(\rho P)\bigr)^2.
-$$
+```
 
 Then the following identity holds, without a rank assumption:
 
-$$
+```math
 \boxed{\sum_{P\in\mathcal Q}Q_P=2-\chi_Y(\rho).}
 \qquad\text{(5)}
-$$
+```
 
 To verify it, expand
 
-$$
+```math
 \rho=\frac14\left(I+\sum_a a_a\sigma_a\otimes I
 +\sum_b b_b I\otimes\sigma_b
 +\sum_{a,b}T_{ab}\sigma_a\otimes\sigma_b\right).
-$$
+```
 
 For a Pauli string W, let w(W) be the number of queries in Q that
 anticommute with W. The sum of its four conjugation signs is
 `4-2w(W)`. Pauli orthogonality therefore gives
 
-$$
+```math
 \begin{aligned}
 \sum_{P\in\mathcal Q}\mathrm{Tr}(\rho P\rho P)
 ={}&1+\frac12(a_x^2+a_z^2+b_x^2+b_z^2)\\
 &-\frac12(T_{xy}^2+T_{zy}^2+T_{yx}^2+T_{yz}^2)-T_{yy}^2.
 \end{aligned}
-$$
+```
 
 Here singleton X/Z strings have weight one, singleton Y and two-site
 X/Z strings have weight two, strings with exactly one Y and one X/Z
@@ -168,10 +168,10 @@ neither its score nor Q_P, so first choose its sign so that `m>=0`.
 Let `Pi=I-|v><v|` project onto the three-dimensional support. The
 compression `Pi P Pi`, restricted to that support, has eigenvalues
 
-$$
+```math
 1,\quad -1,\quad -m.
 \qquad\text{(6)}
-$$
+```
 
 Indeed, each of the full four-dimensional query's positive and negative
 eigenspaces has dimension two. Its intersection with v's orthogonal
@@ -184,20 +184,20 @@ Let sigma be the strictly positive restriction of rho to its support.
 Congruence by `sqrt(sigma)` preserves inertia, so the three supported
 eigenvalues of `sqrt(rho)P sqrt(rho)` can be written
 
-$$
+```math
 a,\quad -b,\quad -d,
 \qquad a>0,\quad b>0,\quad d\ge0.
-$$
+```
 
 One of b,d can be zero when m is zero. The determinant and trace
 identities give
 
-$$
+```math
 abd=\lambda_1\lambda_2\lambda_3 m,
 \qquad
 F_P^2=Q_P+4bd.
 \qquad\text{(7)}
-$$
+```
 
 For the second equality, substitute `F_P=a+b+d` and
 `Tr(rho P)=a-b-d` into Q_P. For m=0, the determinant identity forces
@@ -207,18 +207,18 @@ The lone positive eigenvalue also satisfies `a>=lambda_3`. To see this,
 choose a unit supported eigenvector u_+ of the compression with eigenvalue
 +1 and evaluate the Rayleigh quotient at `sigma^(-1/2)u_+`:
 
-$$
+```math
 a\ge\frac{1}{\langle u_+|\sigma^{-1}|u_+\rangle}
 \ge\lambda_3.
 \qquad\text{(8)}
-$$
+```
 
 Together with (7), this proves
 
-$$
+```math
 F_P^2\le Q_P+4\lambda_1\lambda_2 |\langle v|P|v\rangle|.
 \qquad\text{(9)}
-$$
+```
 
 Summing (9), using (5), and applying
 `(sum_P F_P)^2<=4 sum_P F_P^2` proves the first bound in (1).
@@ -241,23 +241,23 @@ a refinement computable from one three-dimensional kernel operator.
 For each P, put `m_P=|<v|P|v>|`, choose `P'=P` when its expectation
 is nonnegative and `P'=-P` otherwise, and let
 
-$$
+```math
 E_{P,+}=\frac{I+P'}{2},
 \qquad
 K_{P,+}=E_{P,+}
 -\frac{E_{P,+}|v\rangle\langle v|E_{P,+}}
 {(1+m_P)/2}.
 \qquad\text{(10)}
-$$
+```
 
 The denominator is positive, including when m_P=0. The matrix K_{P,+}
 is the rank-one orthogonal projector onto the intersection of the
 +1 eigenspace of P' with v's orthogonal complement. Thus it projects
 onto the vector u_+ used in (8). Define
 
-$$
+```math
 T_v=\sum_{P\in\mathcal Q}m_P K_{P,+},
-$$
+```
 
 and let `t_1>=t_2>=t_3>=0` be its three eigenvalues on v's orthogonal
 complement. This operator depends on the actual kernel and the fixed
@@ -266,21 +266,21 @@ query axes, but not on the supported eigenvectors of rho. Its trace is
 
 On the support, define the positive matrix
 
-$$
+```math
 D_\sigma=(\det\sigma)\sigma^{-1}.
-$$
+```
 
 Its ordered eigenvalues are
 `lambda_1 lambda_2`, `lambda_1 lambda_3`, and `lambda_2 lambda_3`.
 Equations (7) and (8) give the pointwise refinement
 
-$$
+```math
 bd\le m_P\langle u_+|D_\sigma|u_+\rangle.
-$$
+```
 
 Summing and using (5) as before gives
 
-$$
+```math
 \begin{aligned}
 g_2(\rho)^2
 &\le 8-4\chi_Y(\rho)+16\mathrm{Tr}(D_\sigma T_v)\\
@@ -289,7 +289,7 @@ g_2(\rho)^2
 +\lambda_1\lambda_3 t_2+\lambda_2\lambda_3 t_3\bigr).
 \end{aligned}
 \qquad\text{(11)}
-$$
+```
 
 The final step is the eigenvalue trace inequality: in eigenbases of the
 two positive matrices, their overlap-squared matrix is doubly stochastic,
@@ -302,14 +302,14 @@ because all eigenvalues of D_sigma are at most `lambda_1 lambda_2`
 and `Tr T_v=M(v)`. A sufficient entropy certificate depending only on
 the spectrum and the actual kernel is therefore
 
-$$
+```math
 \boxed{
 8+16\bigl(\lambda_1\lambda_2 t_1
 +\lambda_1\lambda_3 t_2+\lambda_2\lambda_3 t_3\bigr)
 \le\bigl(2\sqrt2+cS(\rho)\bigr)^2.
 }
 \qquad\text{(12)}
-$$
+```
 
 Dropping chi_Y makes this a uniform certificate for every supported
 eigenbasis with the specified spectrum and kernel. Retaining chi_Y

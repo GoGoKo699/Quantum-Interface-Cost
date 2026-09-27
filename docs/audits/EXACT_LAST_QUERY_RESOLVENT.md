@@ -27,13 +27,13 @@ sequence of queries on the same specimen.
 Let Q have even dimension `M=2d`, and let rho be a density matrix on Q
 with eigenvalues
 
-$$
+```math
 \lambda_1\ge\lambda_2\ge\cdots\ge\lambda_M\ge0.
-$$
+```
 
 For `t>2` and arbitrary Hermitian contractions B,D on Q define
 
-$$
+```math
 \begin{aligned}
 h&=X\otimes B+Z\otimes D,\\
 R_t(\rho;B,D)
@@ -42,37 +42,37 @@ R_t(\rho;B,D)
 \right].
 \end{aligned}
 \qquad\text{(1)}
-$$
+```
 
 This is a positive operator on a qubit. Put `r=sqrt(2)` and
 `s_0=1/(t-r)`. For `1<=a<=r`, set `b=sqrt(2-a^2)` and
 
-$$
+```math
 f_a=\frac{t-a}{(t-a)^2-b^2},\qquad
 g_a=\frac{t+a}{(t+a)^2-b^2}.
 \qquad\text{(2)}
-$$
+```
 
 For `x>=y>=0` define
 
-$$
+```math
 \Phi_t(x,y)=\max\left\{
 (x+y)s_0,\ \max_{1\le a\le r}(xf_a+yg_a)
 \right\},
 \qquad\text{(3)}
-$$
+```
 
 and extend Phi symmetrically to all nonnegative x,y.
 
 **Theorem.**
 
-$$
+```math
 \boxed{
 \sup_{-I\le B,D\le I}\|R_t(\rho;B,D)\|_\infty
 =\sum_{j=1}^{d}\Phi_t(\lambda_j,\lambda_{M+1-j}).
 }
 \qquad\text{(4)}
-$$
+```
 
 The supremum is attained by reflections on Q itself. No real-matrix
 condition, fixed memory plane, tensor factorization, or additional quantum
@@ -83,11 +83,11 @@ Phi; numerical angle optimization is unnecessary.
 
 For every positive definite A,
 
-$$
+```math
 v^\dagger A^{-1}v
 =\sup_z\left[2\mathrm{Re}(v^\dagger z)-z^\dagger Az\right].
 \qquad\text{(5)}
-$$
+```
 
 The right side is a supremum of affine functions of A. Hence inversion
 is operator convex. The inverse in (1) is well defined because
@@ -108,11 +108,11 @@ Jordan's lemma decomposes two reflections into scalar and traceless
 2D blocks. Set `S=(X+Z)/r` and `T=(X-Z)/r`. A memory rotation puts a
 2D block's Hamiltonian in the form
 
-$$
+```math
 h=aS\otimes Z+bT\otimes X,
 \qquad a\ge b\ge0,\quad a^2+b^2=2,
 \qquad\text{(6)}
-$$
+```
 
 possibly with S and T interchanged. For an upper bound, maximize the
 reference direction separately in each block. For attainment, choose
@@ -122,32 +122,32 @@ to leave a fixed Hamiltonian unchanged.
 
 In coordinates `S=Z_R,T=X_R`, put
 
-$$
+```math
 s=t^2-2,\qquad \Delta=s^2-4a^2b^2>0.
-$$
+```
 
 For a reference state with Bloch components `(z,x,y)`, the compressed
 resolvent `A_chi=<chi|(tI-h)^(-1)|chi>` has scalar coefficient
 `ts/Delta` and memory Bloch coefficients, up to the sign of its last
 component,
 
-$$
+```math
 \frac{za(s+2b^2)}\Delta,\qquad
 \frac{xb(s+2a^2)}\Delta,\qquad
 \frac{2taby}\Delta.
 \qquad\text{(7)}
-$$
+```
 
 This follows by multiplying `(tI+h)(t^2I-h^2)^(-1)`. The first scale
 is largest:
 
-$$
+```math
 \begin{aligned}
 a^2(s+2b^2)^2-b^2(s+2a^2)^2&=(a^2-b^2)\Delta\ge0,\\
 a^2(s+2b^2)^2-(2tab)^2&=a^2\Delta>0.
 \end{aligned}
 \qquad\text{(8)}
-$$
+```
 
 The trace is independent of the reference state, and the eigenvalue
 spread is maximal at `S=+1`. The two eigenvalues there are exactly
@@ -175,29 +175,29 @@ Phi is symmetric, convex and homogeneous of degree one: it is a maximum
 of the scalar linear form and the forms `xf_a+yg_a` and `xg_a+yf_a`.
 On positive arguments it is the perspective
 
-$$
+```math
 \Phi_t(x,y)=y\,k(x/y)
-$$
+```
 
 of a convex function k. At differentiability points,
 
-$$
+```math
 \partial_x\partial_y\Phi_t(x,y)
 =-\frac{x}{y^2}k''(x/y)\le0.
 \qquad\text{(9)}
-$$
+```
 
 The same decreasing-differences inequality follows for nonsmooth k
 by integrating its monotone one-sided slopes, or by convex smoothing
 and a limit. Thus, for `A>=B>=C>=E>0`,
 
-$$
+```math
 \begin{aligned}
 \Phi(A,E)+\Phi(B,C)&\ge\Phi(A,C)+\Phi(B,E),\\
 \Phi(A,E)+\Phi(B,C)&\ge\Phi(A,B)+\Phi(C,E).
 \end{aligned}
 \qquad\text{(10)}
-$$
+```
 
 These are rectangle inequalities, using symmetry in the second line.
 Continuity includes zeros.
@@ -215,43 +215,43 @@ in every even dimension.
 Fix `x>=y>=0`, put `w=x+y`, `delta=x-y`, and test a proposed upper
 bound K. First require
 
-$$
+```math
 K\ge\frac{w}{t-r}.
 \qquad\text{(11)}
-$$
+```
 
 For `w>0`, this implies K>0. Clearing the positive denominator in
 `xf_a+yg_a<=K` gives the exact equivalent condition
 
-$$
+```math
 P_K(a)\ge0\quad(1\le a\le r),
 \qquad\text{(12)}
-$$
+```
 
 where
 
-$$
+```math
 \begin{aligned}
 P_K(a)={}&4Ka^4+2\delta a^3-8Ka^2
 -\delta(t^2+2)a\\
 &+K(t^2-2)^2-wt(t^2-2).
 \end{aligned}
 \qquad\text{(13)}
-$$
+```
 
 The simplifying fact is strict convexity on the whole interval:
 
-$$
+```math
 P_K''(a)=48Ka^2+12\delta a-16K>0.
 \qquad\text{(14)}
-$$
+```
 
 Its derivative is the cubic
 
-$$
+```math
 16Ka^3+6\delta a^2-16Ka-\delta(t^2+2)=0.
 \qquad\text{(15)}
-$$
+```
 
 This cubic has exactly one positive root z, with `z>=1`. Its own
 first derivative increases strictly on the positive axis and crosses
@@ -260,10 +260,10 @@ then increases to infinity. For delta=0 its unique positive root is
 one. For delta>0, its value at one is `delta(4-t^2)<0`, so z>1.
 Therefore the unique minimum of P on the interval is at
 
-$$
+```math
 a_* = \min\{z,r\}.
 \qquad\text{(16)}
-$$
+```
 
 Equations (11) and `P_K(a_*)>=0` are an **exact algebraic decision rule**
 for `Phi_t(x,y)<=K`. For algebraic input parameters, the unique cubic root can be
@@ -274,9 +274,9 @@ endpoint assumption or an optimization over measurement matrices.
 If `2<t<=2+r`, (11) also gives `P_K'(r)>0`. For `t^2<=10` this is
 immediate. Otherwise
 
-$$
+```math
 P_K'(r)\ge\frac{16rw}{t-r}+w(10-t^2)>0
-$$
+```
 
 on this interval. Thus the delta>0 root is strictly interior in the
 interface application. For arbitrary `t>2`, the clipped rule (16)
@@ -292,23 +292,23 @@ Let H_0 act on earlier reference systems A and memory Q. Suppose it has
 a unique largest eigenvalue U, second eigenvalue m, and normalized top
 vector Omega. Put
 
-$$
+```math
 c=U-m>0,\qquad \rho=\mathrm{Tr}_A|\Omega\rangle\langle\Omega|.
-$$
+```
 
 Then `H_0<=mI+c|Omega><Omega|`. Let Lambda be the desired upper bound,
 `t=Lambda-m>2`, and
 `P=|Omega><Omega| tensor I_R` for one further reference qubit. Positivity
 of `tI-h` and the positive rank-update criterion give
 
-$$
+```math
 \begin{aligned}
 cP+h\le tI\text{ for every }B,D
 \quad\Longleftrightarrow\quad
 c\sum_{j=1}^{d}\Phi_t(\lambda_j,\lambda_{M+1-j})\le1.
 \end{aligned}
 \qquad\text{(17)}
-$$
+```
 
 The compression to Omega is exactly (1), with its actual, potentially
 nonflat memory marginal. Thus (17) is necessary and sufficient for
@@ -319,12 +319,12 @@ information. No flat-top-vector assumption remains.
 
 Equivalently, introduce scalar bounds K_j satisfying
 
-$$
+```math
 \sum_jK_j\le1/c,\qquad
 K_j\ge\frac{\lambda_j+\lambda_{M+1-j}}{t-r},\qquad
 P_{K_j}(a_{*,j})\ge0.
 \qquad\text{(18)}
-$$
+```
 
 Each nonzero-weight pair uses the unique clipped cubic root above.
 A zero-weight pair imposes only K_j>=0 and uses no cubic root. This
@@ -332,12 +332,12 @@ eliminates all additional-decoder matrices, orientations and Jordan
 angles. For M=4, set `K_1+K_2=1/c`; just one allocation variable remains,
 in the interval
 
-$$
+```math
 \frac{\lambda_1+\lambda_4}{t-r}
 \le K_1\le
 \frac1c-\frac{\lambda_2+\lambda_3}{t-r}.
 \qquad\text{(19)}
-$$
+```
 
 Two convex-quartic tests decide whether the spectral upper bound
 succeeds. A failed test need not indicate a physical interface advantage.
@@ -352,10 +352,10 @@ operator inequality.
 For two ququart pairs of sharp anticommuting readouts, set `H_0=h_1+h_2`.
 Their two greatest eigenvalues always obey
 
-$$
+```math
 m\ge2,\qquad U+m\le4+2\sqrt2,\qquad U\le4.
 \qquad\text{(20)}
-$$
+```
 
 For the first inequality, compress the second reference to a Y
 eigenstate. Its X,Z expectations vanish, leaving h_1 on `R_1 tensor Q`.
@@ -366,10 +366,10 @@ For the second, let Pi_i be h_i's positive-eigenvalue Bell projector,
 including the other reference's identity. It has rank four and
 `h_i<=2Pi_i`. Its partial trace over its own reference is `I_Q/2`, so
 
-$$
+```math
 \mathrm{Tr}(\Pi_1\Pi_2)
 =\mathrm{Tr}_Q[(I_Q/2)(I_Q/2)]=1.
-$$
+```
 
 The squared principal cosines between these two rank-four ranges sum
 to one. Their two largest cosines therefore sum to at most sqrt(2),
@@ -380,9 +380,9 @@ Neither argument assumes a common memory factorization for the pairs.
 If `U<=2+sqrt(2)`, the triangle bound with `||h_3||<=2` already proves
 the benchmark `4+sqrt(2)`. Otherwise (20) automatically implies
 
-$$
+```math
 m<U,\qquad 2<t=4+\sqrt2-m\le2+\sqrt2.
-$$
+```
 
 Thus the top vector is unique and all inverses above are valid in
 every case requiring further work. The interval (19) is nonempty,
@@ -398,10 +398,10 @@ There is an exact reason to retain the relation between eigenvalues and
 the marginal. Synthetic data `U=4,m=2,rho pure` satisfy all three
 inequalities (20), yet fail (17). At `t=2+r,c=2`,
 
-$$
+```math
 \Phi_t(1,0)=\frac1{2(\sqrt{2t^2-4}-t)}>\frac12.
 \qquad\text{(21)}
-$$
+```
 
 Here f_a is maximized at
 `a=t-sqrt((t^2-2)/2)`, which lies in `(1,r)`. The strict comparison is
@@ -422,12 +422,12 @@ For an arbitrary normalized collective seed L, the actual decoded score
 is the expectation of the corresponding virtual Hamiltonian. The full
 trace-norm score is
 
-$$
+```math
 g(L)=\sum_{i,U=X_i,Z_i}\|LUL^\dagger\|_1
 =\max_{\{B_{i,U}\}}\sum_{i,U}
 \mathrm{Tr}(B_{i,U}LUL^\dagger),
 \qquad \|L\|_F=1.
-$$
+```
 
 A Hamiltonian bound supplied by (17) bounds every seed for that fixed
 earlier readout family and every last-site pair. If the earlier readouts
@@ -494,13 +494,13 @@ LICENSE and the historical `PROOF_AND_NOVELTY_AUDIT.md` are unchanged.
 The preceding theorem concerns the actual X/Z Hamiltonian. A tempting
 alternative was a general Bell-recovery budget
 
-$$
+```math
 \sum_{i=1}^n P_i\stackrel{?}{\le}
 \frac{n+\log_2 M}{2}I,
 \qquad
 P_i=U_i(\Phi_{R_iA}\otimes I_{M/2})U_i^\dagger.
 \qquad\text{(22)}
-$$
+```
 
 It would imply the desired `n=3,M=4` projector bound, but the general
 statement is false, even with genuine subsystem projectors.
@@ -508,10 +508,10 @@ statement is false, even with genuine subsystem projectors.
 Take `n=64,M=128`, with memory basis `|0>,...,|127>` and reference
 single-excitation words e_i. The normalized state is
 
-$$
+```math
 |\psi\rangle=\frac1{\sqrt2}|0^{64}\rangle|0\rangle
 +\frac1{\sqrt{128}}\sum_{i=1}^{64}|e_i\rangle|i\rangle.
-$$
+```
 
 For query i, identify one qubit-factor plane with the ordered pair
 `(|0>,|i>)`. Pair each of the other 63 occupied memory labels with a
@@ -524,22 +524,22 @@ For its Bell-subspace projector, the vacuum and i-th excitation interfere
 in the first plane; the other 63 terms contribute on distinct spectator
 reference strings. Hence
 
-$$
+```math
 \langle P_i\rangle
 =\frac14(1+1/8)^2+\frac{63}{256}
 =\frac9{16},\qquad
 \left\langle\sum_iP_i\right\rangle=36>\frac{71}{2}.
 \qquad\text{(23)}
-$$
+```
 
 This is an operator-inequality counterexample, not an interface protocol
 beating retention. Its normalized seed maps the vacuum to `|0>/sqrt(2)`
 and e_i to `|i>/sqrt(128)`. Direct compression gives
 
-$$
+```math
 \|LZ_iL^\dagger\|_1=1,\qquad
 \|LX_iL^\dagger\|_1=\frac18,\qquad g(L)=72.
-$$
+```
 
 That is below `14+57sqrt(2)`, and even below the zero-memory benchmark
 `64sqrt(2)`. Thus the auxiliary Bell budget was stronger than the
@@ -561,11 +561,11 @@ It remains unproved. Its enlargement to arbitrary CPTP recovery is
 already false at `n=9,M=4`. Partition the nine sites into three groups
 of three, with group label c(i), and set
 
-$$
+```math
 |\chi\rangle=\frac15\left(
 4|0^9\rangle|0\rangle+\sum_{i=1}^9|e_i\rangle|c(i)\rangle
 \right).
-$$
+```
 
 For i in group a, use Kraus maps
 `A_0=|0><0|+|1><a|` and `A_b=|0><b|` for the other two group labels.
@@ -573,11 +573,11 @@ Their adjoint products sum to I_4. The coherent vacuum/i pair contributes
 `25/50` to Bell recovery; the six excitations in other groups contribute
 `6/50`. The remaining same-group terms contribute zero. Consequently
 
-$$
+```math
 F_i=\frac{31}{50},\qquad
 \sum_i(2F_i-1)=\frac{54}{25}>2=M/2.
 \qquad\text{(24)}
-$$
+```
 
 These maps send the maximally mixed ququart to `diag(3/4,1/4)`.
 They are not unitary-plus-discard decoders, whose output on that input

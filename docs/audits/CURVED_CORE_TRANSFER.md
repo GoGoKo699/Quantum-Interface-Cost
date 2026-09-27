@@ -13,10 +13,10 @@ The historical [proof audit](PROOF_AND_NOVELTY_AUDIT.md) is unchanged.
 
 For an arbitrary complex two-qubit state, let
 
-$$
+```math
 g(\rho)=\sum_{U=X_A,Z_A,X_B,Z_B}\|\sqrt\rho U\sqrt\rho\|_1,
 \qquad D_\rho=2\sqrt2+(2-\sqrt2)S(\rho)-g(\rho).
-$$
+```
 
 Entropy is in bits. Order the eigenvalues, put `e=lambda_3+lambda_4`, and
 let sigma be the normalized top-two spectral restriction.
@@ -41,10 +41,10 @@ joint execution of decoders, or average-memory convention is introduced.
 
 Write `rho=q sigma direct-sum e tau`, `q=1-e`, and use
 
-$$
+```math
 s=\sqrt2,\quad c=2-s,\quad p=1-m\ge m>0,\quad\kappa=p/m,
 \quad g_a=\sqrt{4-2(1-2m)^2},\quad G=s+g_a.
-$$
+```
 
 Define `d=G-g(sigma)>=0`, `delta=2s+c h_2(m)-G>=0`. The
 [rank-two theorem](../ENTROPY_INEQUALITY_BOUNDARIES.md) proves these
@@ -53,19 +53,19 @@ signs and `D_tau>=0`. The decoder classification in
 site A and two scalar decoders at B. Let `f_A,f_B` denote the two site
 scores and set
 
-$$
+```math
 \xi=s-f_B(\sigma),\quad L=g_a-f_A(\sigma),\quad d=\xi+L.
-$$
+```
 
 Let `u` be the larger squared principal-angle sine between
 `P=supp(sigma)` and its signed B-bisector subset support. That report
 proves `m>7/32`, `u<1/10`, and
 
-$$
+```math
 \xi\ge2smu,\qquad d\ge mB(m)u,\qquad
 B(m)=2s+\frac{2s\kappa}{2s\kappa+1},\qquad d<G-13/4.
 \qquad\text{(1)}
-$$
+```
 
 In particular all active compressions are invertible, while the signed
 scalar-query compressions are positive on P and negative on Q=I-P.
@@ -77,21 +77,23 @@ come from a physical state.
 
 Put
 
-$$
+```math
 r_0=1-2u,\quad t_0=2\sqrt{u(1-u)},\quad
 \ell=(r_0-t_0)/s,\quad h=(r_0+t_0)/s,
-$$
-$$
+```
+
+
+```math
 H_t(a,b)=\sqrt{(a-b)^2t^2+4ab}-(a+b)t.
-$$
+```
 
 The finite-tail scalar-site gain obeys
 
-$$
+```math
 \boxed{f_B(\rho)-qf_B(\sigma)-ef_B(\tau)
 \le H_\ell(q,e)+H_h(q,e)=:\mathcal B(e,u).}
 \qquad\text{(2)}
-$$
+```
 
 **Paired-mode reduction.** For either signed scalar query use its
 cosine-sine representation `U=[[T,S],[S,-T]]`, with
@@ -113,30 +115,30 @@ The Q statement follows with reversed signs.
 
 **Chord and concavity.** The function H is convex in t:
 
-$$
+```math
 \partial_t^2H_t=\frac{4ab(a-b)^2}{[(a-b)^2t^2+4ab]^{3/2}}\ge0.
-$$
+```
 
 It is jointly concave and homogeneous in a,b: with z=(a-b)/(a+b), it
 is the perspective of `sqrt(1-(1-t^2)z^2)-t`, a concave function of z.
 Apply the endpoint chord in t to all four modes of the two queries;
 then homogeneous concavity bounds their sum by
 
-$$
+```math
 H_\ell(A,B)+H_h(2q-A,2e-B),\quad
 A=\frac{q(2h-f_B(\sigma))}{h-\ell},\quad
 B=\frac{e(2h-f_B(\tau))}{h-\ell}.
-$$
+```
 
 Both site scores lie in `[s r_0,s]`, so `0<=A<=q` and `0<=B<=e`.
 The partial derivatives H_a,H_b decrease with t. For completeness,
 when a>=b>0 put z=(a-b)/(a+b) and
 `x=t(a-b)/sqrt((a-b)^2t^2+4ab)`, so `0<=x<=z<=1`. Directly,
 
-$$
+```math
 H_{at}=x\left[1+\frac{1-x^2}{1+z}\right]-1
 \le z(2-z)-1\le0.
-$$
+```
 
 The bracketed product increases in x on `[0,z]`; its derivative is
 at least `(2+z-3z^2)/(1+z)>=0`. For a<b the differentiated root term
@@ -148,20 +150,20 @@ u=0 follow by continuity. No singular tail inverse occurs.
 For stable scalar evaluation set `b=4qe`, `W=1-8u+8u^2`. Since
 `ell^2+h^2=1`, `ell h=W/2`, equation (2) becomes
 
-$$
+```math
 \mathcal B(e,u)=\sqrt{1+b+\sqrt{(1-b)^2W^2+4b}}-s(1-2u).
 \qquad\text{(3)}
-$$
+```
 
 ## 4. Active-site gain and the transfer certificate
 
 For an invertible Hermitian matrix M, put `F=Tr|M|` and
 `K=Tr(XX^dagger|M|^{-1})`. Weighted Hilbert--Schmidt Cauchy gives
 
-$$
+```math
 \mathrm{Tr}\sqrt{M^2+\alpha XX^\dagger}
 \le\sqrt{F(F+\alpha K)}.
-$$
+```
 
 Apply Cauchy to `Tr[|M|^(1/2)|M|^(-1/2)sqrt(M^2+alpha XX^dagger)]`;
 the squared second factor is `F+alpha K`, by cyclicity of trace.
@@ -169,16 +171,18 @@ Apply this after the established
 [coherent block-row bound](COHERENT_TRANSFER_AUDIT.md), then apply
 Cauchy across the two active queries. With `f=g_a-L`, the result is
 
-$$
+```math
 f_A(\rho)-qf_A(\sigma)-ef_A(\tau)\le\mathcal A,
 \quad\mathcal A=q\left[\sqrt{f^2+(4e/q)fK_A}-f\right],
-$$
-$$
+```
+
+
+```math
 K_A\le\min\left\{
 \frac{2\sqrt\kappa(2-g_a+L)}{m\sqrt{1-4u}},
 \frac{8\sqrt\kappa u}{\sqrt{1-4u}}\right\}.
 \qquad\text{(4)}
-$$
+```
 
 The two K_A bounds are from
 [TWO_QUBIT_CORE_STABILITY.md](TWO_QUBIT_CORE_STABILITY.md), Section 5;
@@ -186,10 +190,10 @@ their hypotheses hold at `u<1/10`. Use their minimum in (4), whose
 right side increases with K_A. The exact orthogonal-mixture entropy
 identity and `D_tau>=0` give
 
-$$
+```math
 -D_\rho\le T:=\mathcal A+\mathcal B-q(\delta+d_0)-c h_2(e).
 \qquad\text{(5)}
-$$
+```
 
 The tail's entropy stays paired with its actual score. Thus T<0 is
 a strict entropy certificate.
@@ -203,23 +207,23 @@ The fidelity-SLD inequality and two two-term Cauchy inequalities give
 concavity gives `a>=q f_A(sigma)+e f_A(tau)>=a_*=q(g_a-L)`.
 Maximizing a+b on that quarter disk yields
 
-$$
+```math
 g(\rho)\le\Phi(S,a_*),\qquad
 \Phi(S,a)=\begin{cases}2\sqrt S,&a\le\sqrt S,\\
 a+\sqrt{2S-a^2},&a\ge\sqrt S.
 \end{cases}
 \qquad\text{(6)}
-$$
+```
 
 The physical domain has `a^2<=2S`. No joint-decoder assumption enters.
 
 Write the tail spectrum as `((1+z)/2,(1-z)/2)` and y=e z^2. The
 spectral relaxation in the earlier core report, Section 8, gives
 
-$$
+```math
 E_*\ge(1-2e)^2+q(1-2m)^2+y,\quad
 S_0=4-(1-2e)^2-q(1-2m)^2.
-$$
+```
 
 Also `h_2((1+z)/2)>=1-z^2`. The gap is therefore at most
 `Phi(S_0-y,a_*)-2s-c[h_2(e)+q h_2(m)+e-y]`. On either branch,
@@ -230,11 +234,11 @@ Then use `y<=e` and the positive part of the derivative upper bound.
 The branch boundary is continuously differentiable; the outer disk
 boundary is handled by continuity. This gives the tail-independent bound
 
-$$
+```math
 -D_\rho\le J:=\Phi(S_0,a_*)-2s-c[h_2(e)+q h_2(m)+e]
 +e\max\{0,c-1/\sqrt{S_0}\}.
 \qquad\text{(7)}
-$$
+```
 
 Thus J<0 is a second strict certificate. This step uses the spectral
 ordering of the core and tail, explicitly retained in the theorem.
@@ -244,11 +248,11 @@ ordering of the core and tail, explicitly retained in the theorem.
 The [checker](../../tools/certify_curved_core.py) verifies `T<0` or
 `J<0` throughout the closed relaxation
 
-$$
+```math
 1/99\le e\le1/29,\quad7/32\le m\le1/2,\quad
 0\le u\le1/10,\quad0\le L\le1/6,\quad d_0\le G-13/4.
 \qquad\text{(8)}
-$$
+```
 
 Every physical state in the new strip lies here. In particular,
 `L<=d<G-13/4<=sqrt(2)-5/4<1/6`. The spectral split is separated:

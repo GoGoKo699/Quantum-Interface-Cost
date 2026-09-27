@@ -8,13 +8,13 @@ deductions. This is not an exhaustive assessment of publication priority.
 The [half-rank theorem](HALF_RANK_RETENTION_CONVERSE.md) proves, for
 n=2,3,4 and d=2^n,
 
-$$
+```math
 S\ge0,\quad \mathrm{Tr}S^2=1,\quad
 \mathrm{rank}S\le d/2
 \quad\Longrightarrow\quad
 \sum_{i,b=X,Z}\sqrt{\mathrm{Tr}(S P_{i,b}S P_{i,b})}
 \le2n-2+\sqrt2.
-$$
+```
 
 This affinity bound gives `Gamma(n,d/2)=2n-2+sqrt(2)` and classifies
 every maximizing normalized seed Gram state. It includes nonflat seeds
@@ -29,19 +29,19 @@ rank theorem directly.
 
 Put `tau(T)=Tr(T)/d`, `X=sqrt(d) S`, and expand in normalized Paulis:
 
-$$
+```math
 X=\sum_w x_w\sigma_w,\qquad \sum_wx_w^2=1,\qquad
 x_0=\tau(X),\qquad x_0^2\le\tfrac12.
-$$
+```
 
 The last step is rank Cauchy. For the depolarizing generator
 `K_n=sum_i(id-E_i)`, where E_i is normalized partial trace at site i
 with the local identity reinserted,
 
-$$
+```math
 \mathscr D(X)=\tau(XK_n(X))=\sum_w|w|x_w^2
 \ge1-x_0^2\ge\tfrac12.
-$$
+```
 
 This is the elementary Poincare proof. Its Boolean form appears in
 Montanaro--Osborne, *Quantum boolean functions*,
@@ -50,16 +50,16 @@ Eq. (163), printed p. 38. The displayed proof needs no Boolean or
 flat-spectrum hypothesis. Writing `a_(i,b)=Tr(S P_(i,b) S P_(i,b))`,
 Pauli conjugation gives the query-dependent identity
 
-$$
+```math
 \sum_{i,b=X,Z}a_{i,b}
 =2n-2\sum_w\bigl(|w|+N_Y(w)\bigr)x_w^2\le2n-1.
-$$
+```
 
 The established fidelity-affinity comparison and Cauchy therefore give
 
-$$
+```math
 \Gamma(n,d/2)\le\sqrt{2n(2n-1)}.
-$$
+```
 
 Its square exceeds the target square by
 `(n-1)(6-4sqrt(2))>0`. In particular it gives sqrt(30) instead of
@@ -73,20 +73,20 @@ Beigi, *Improved Quantum Hypercontractivity Inequality for the Qubit
 Depolarizing Channel*, [2105.00462v2](https://arxiv.org/pdf/2105.00462v2),
 9 December 2021, Theorem 4, printed p. 6, gives, when tau(X^2)=1,
 
-$$
+```math
 \mathscr D(X)\ge n\phi\!\left(\ln2-\frac{\ln R}{n}\right),
 \qquad
 \phi(\xi)=\frac12-
 \sqrt{h^{-1}(\ln2-\xi)\bigl(1-h^{-1}(\ln2-\xi)\bigr)},
-$$
+```
 
 where R is the rank and h is binary entropy with natural logarithms.
 Lemma 8, printed p. 10, states that phi is increasing and convex.
 Since phi(0)=0 and phi(ln2)=1/2, convexity gives
 
-$$
+```math
 n\phi(\ln2/n)\le\tfrac12.
-$$
+```
 
 Thus the uniform half-rank specialization is no stronger than Section 1.
 Smaller actual ranks or additional entropy information may strengthen
@@ -119,11 +119,11 @@ Dupuis--Fawzi--Wehner, *Entanglement sampling and applications*,
 [1305.1316v3](https://arxiv.org/pdf/1305.1316v3), Eq. (27), printed p. 18,
 combined with `H_2(A^n|QC)>=-q` as used in Theorem 15, gives at q=n-1
 
-$$
+```math
 2^{-H_2(X^n|QC\Theta^n)}
 \le\frac12\sum_{\ell=0}^{\ell_0}\binom n\ell
 +2^{-\ell_0-1}\mathbf1_{\ell_0<n}.
-$$
+```
 
 Here C is the free classical record. The best displayed cutoff is
 ell_0=0, giving exactly one; every ell_0>=1 gives a value greater than

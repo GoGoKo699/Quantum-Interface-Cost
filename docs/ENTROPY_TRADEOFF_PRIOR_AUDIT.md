@@ -43,8 +43,8 @@ C_i(p)=\sum_u\sqrt{p_up_{u+e_i}}.
 
 | Primary source and exact version | Locator and established ingredient |
 |---|---|
-| Liu–Ding–Tong, *Superadditivity of convex roof coherence measures*, [1809.05475v1](https://arxiv.org/pdf/1809.05475v1), 14 September 2018 | Unnumbered theorem, Section 3, pp. 4–5; Section 4.1, Eqs. (4.1)–(4.5), pp. 5–6: coherence of formation satisfies $C_f(\tau_{AB})\ge C_f(\tau_A)+C_f(\tau_B)$. |
-| Yuan–Zhou–Cao–Ma, *Intrinsic randomness as a measure of quantum coherence*, [1505.04032v1](https://arxiv.org/pdf/1505.04032v1), version stamp 15 May 2015 | Convex-roof definition Eq. (6), p. 3; qubit formula Eq. (8) and following text, p. 4: $C_f(\tau)=f(2\lvert\tau_{01}\rvert)$. Use the version stamp, not the PDF's later generated date header. |
+| Liu–Ding–Tong, *Superadditivity of convex roof coherence measures*, [1809.05475v1](https://arxiv.org/pdf/1809.05475v1), 14 September 2018 | Unnumbered theorem, Section 3, pp. 4–5; Section 4.1, Eqs. (4.1)–(4.5), pp. 5–6: coherence of formation satisfies $`C_f(\tau_{AB})\ge C_f(\tau_A)+C_f(\tau_B)`$. |
+| Yuan–Zhou–Cao–Ma, *Intrinsic randomness as a measure of quantum coherence*, [1505.04032v1](https://arxiv.org/pdf/1505.04032v1), version stamp 15 May 2015 | Convex-roof definition Eq. (6), p. 3; qubit formula Eq. (8) and following text, p. 4: $`C_f(\tau)=f(2\lvert\tau_{01}\rvert)`$. Use the version stamp, not the PDF's later generated date header. |
 | Winter–Yang, *Operational Resource Theory of Coherence*, [1506.07975v3](https://arxiv.org/pdf/1506.07975v3), 19 January 2016 | Theorem 9, p. 4, with proof p. 11 states tensor-product additivity. That statement alone is not the marginal superadditivity required here. |
 
 The following reduction was reconstructed for this audit. Set
@@ -54,7 +54,7 @@ The following reduction was reconstructed for this audit. Set
 \qquad \tau_i=\mathrm{Tr}_{-i}|\psi_p\rangle\langle\psi_p|.
 ```
 
-Then $C_f(\psi_p)=H(p)$ and $2|(\tau_i)_{01}|=C_i(p)$.
+Then $`C_f(\psi_p)=H(p)`$ and $`2|(\tau_i)_{01}|=C_i(p)`$.
 Iterating the first source's superadditivity and using the second source's
 qubit formula gives exactly
 
@@ -78,17 +78,17 @@ S((\rho+\sigma)/2)-\tfrac12S(\rho)-\tfrac12S(\sigma)
 \le h_2((1-F(\rho,\sigma))/2). \qquad\text{(2)}
 ```
 
-Here $F$ denotes **root** fidelity. Their notation $\sqrt F$ is our
-$F$, and their natural logarithms have been converted to bits.
+Here $`F`$ denotes **root** fidelity. Their notation $`\sqrt F`$ is our
+$`F`$, and their natural logarithms have been converted to bits.
 Hirche–Reeb [1706.09752v2](https://arxiv.org/pdf/1706.09752v2), Theorem V.3,
 Eq. (52), p. 8, and its proof p. 9 reproduce this ingredient and cite that
 earlier source.
 
 Here is the audit's application. Let
-$\Delta_i\rho=(\rho+X_i\rho X_i)/2$,
-$\Delta=\Delta_n\cdots\Delta_1$, and let $p$ be the diagonal of
-$\rho$ in the product X basis. Pinching gives
-$S(\Delta_i\rho)-S(\rho)=D(\rho\Vert\Delta_i\rho)$.
+$`\Delta_i\rho=(\rho+X_i\rho X_i)/2`$,
+$`\Delta=\Delta_n\cdots\Delta_1`$, and let $`p`$ be the diagonal of
+$`\rho`$ in the product X basis. Pinching gives
+$`S(\Delta_i\rho)-S(\rho)=D(\rho\Vert\Delta_i\rho)`$.
 The channels commute. Relative-entropy data processing followed by
 telescoping therefore gives
 
@@ -98,15 +98,15 @@ H(p)-S(\rho)
 \le\sum_i h_2((1-F_{X_i})/2), \qquad\text{(3)}
 ```
 
-where $F_P=F(\rho,P\rho P)$; the last step is (2).
-Fidelity data processing under $\Delta$, which commutes with conjugation
-by $Z_i$, gives
+where $`F_P=F(\rho,P\rho P)`$; the last step is (2).
+Fidelity data processing under $`\Delta`$, which commutes with conjugation
+by $`Z_i`$, gives
 
 ```math
 F_{Z_i}\le F(\Delta\rho,Z_i\Delta\rho Z_i)=C_i(p).
 ```
 
-Combining this with (1), (3), and monotonicity of $f$ recovers
+Combining this with (1), (3), and monotonicity of $`f`$ recovers
 
 ```math
 S(\rho)\ge\sum_i\left[f(F_{Z_i})-h_2((1-F_{X_i})/2)\right]. \qquad\text{(4)}
@@ -124,17 +124,17 @@ Wehner–Christandl–Doherty remains an equally valid route.
 
 Cope, *Entanglement cost for steering assemblages*,
 [2102.02333v2](https://arxiv.org/pdf/2102.02333v2), Eq. (10), p. 3, defines
-steering entanglement of formation $E_{FA}$; Theorem 2 on that page
+steering entanglement of formation $`E_{FA}`$; Theorem 2 on that page
 identifies it with minimum state entanglement of formation over compatible
 realizations. Its tensor-copy definition, Eqs. (28)–(31), pp. 8–9, requires
 complete setting and outcome tuples. Eqs. (25)–(27), pp. 5–6, optimize
 equal-entropy decompositions with one exact measurement; their orthogonal
-special case supplies the atom $(1,v)$ at cost $f(v)$. They are not an
+special case supplies the atom $`(1,v)`$ at cost $`f(v)`$. They are not an
 explicit evaluation of the entire two-contrast family below.
 
-Define $C_{\rm seed}(x,z)$ as the infimum of
-$\sum_a p_aS(\rho_a)$ over finite ensembles of normalized one-qubit seed
-Gram matrices, with average root-fidelity profiles at least $(x,z)$.
+Define $`C_{\rm seed}(x,z)`$ as the infimum of
+$`\sum_a p_aS(\rho_a)`$ over finite ensembles of normalized one-qubit seed
+Gram matrices, with average root-fidelity profiles at least $`(x,z)`$.
 It is the lower convex monotone envelope of all one-qubit seed entropy
 profiles. For the assemblage
 
@@ -152,8 +152,8 @@ the audit establishes the exact identification
 This equation is an independently supplied reduction, not a quoted formula
 from Cope's paper. The proof also fixes the relevant transpose convention.
 
-For a decomposition $\sigma=\sum_a p_a\tau^a$, write
-$\rho_a=\sum_s\tau^a_{s|j}$, independently of $j$. Define
+For a decomposition $`\sigma=\sum_a p_a\tau^a`$, write
+$`\rho_a=\sum_s\tau^a_{s|j}`$, independently of $`j`$. Define
 
 ```math
 K_a=\sqrt{2p_a}\sqrt{\rho_a^T},\qquad
@@ -161,8 +161,8 @@ N^a_{s|j}=\left(\rho_a^{-1/2}\tau^a_{s|j}\rho_a^{-1/2}\right)^T.
 ```
 
 Inverses act on the support; extend each POVM arbitrarily on its orthogonal
-complement. Since $\sum_a p_a\rho_a=I/2$, the Kraus maps satisfy
-$\sum_a K_a^\dagger K_a=I$, and
+complement. Since $`\sum_a p_a\rho_a=I/2`$, the Kraus maps satisfy
+$`\sum_a K_a^\dagger K_a=I`$, and
 
 ```math
 \sum_a K_a^\dagger N^a_{s|j}K_a=2\sigma_{s|j}^T=M_{s|j}.
@@ -181,20 +181,20 @@ Gram matrices, transposed, and have the same entropy. Restricting the
 assemblage infimum to extremal decompositions does not alter this argument:
 refinement can only lower the average marginal entropy, by concavity.
 
-Let $L_a=K_a/\sqrt{\mathrm{Tr}K_a^\dagger K_a}$.
+Let $`L_a=K_a/\sqrt{\mathrm{Tr}K_a^\dagger K_a}`$.
 Trace-norm duality bounds each branch's X/Z correlation by its
-$F_X,F_Z$. Therefore any exact target instrument has average seed profile
-at least $(x,z)$, so its average entropy is at least
-$C_{\rm seed}(x,z)$. In the reverse direction, apply the complete Pauli
+$`F_X,F_Z`$. Therefore any exact target instrument has average seed profile
+at least $`(x,z)`$, so its average entropy is at least
+$`C_{\rm seed}(x,z)`$. In the reverse direction, apply the complete Pauli
 orbit to every seed, choosing its separate trace-norm-optimal decoders.
-The orbit has exact unbiased Pauli contrasts $(F_X,F_Z)$, unchanged
-entropy, and total Kraus effect $I$. Convex mixing and independent output
+The orbit has exact unbiased Pauli contrasts $`(F_X,F_Z)`$, unchanged
+entropy, and total Kraus effect $`I`$. Convex mixing and independent output
 flips attain any dominated profile. This proves (5).
 
 The [profile theorem](PRODUCT_DIAGONAL_PROFILE_RATE.md) proves that the
-one-qubit envelope is generated by the free disk $x^2+z^2\le1$, at cost
-zero, and the exact-axis curves $(1,v),(v,1)$, at cost $f(v)$.
-It therefore explicitly evaluates the existing $E_{FA}$ on this family.
+one-qubit envelope is generated by the free disk $`x^2+z^2\le1`$, at cost
+zero, and the exact-axis curves $`(1,v),(v,1)`$, at cost $`f(v)`$.
+It therefore explicitly evaluates the existing $`E_{FA}`$ on this family.
 Its weighted support formula
 
 ```math
@@ -223,11 +223,11 @@ measurement-entropy theorem that the source does not state.
 
 An explicit distinction follows on the exact-X slice. Symmetry averaging
 the qubit SDP makes the free part scalar and yields
-$D_M(1,v)=v$. Indeed an exact X effect forces the free parent components
+$`D_M(1,v)=v`$. Indeed an exact X effect forces the free parent components
 into X eigenspaces, whose Z contrast is zero; the remaining component must
-carry at least weight $v$, and mixing exact X/classical Z with full memory
+carry at least weight $`v`$, and mixing exact X/classical Z with full memory
 attains that value. The entropy envelope instead has
-$C_{\rm seed}(1,v)=f(v)<v$ for $0<v<1$.
+$`C_{\rm seed}(1,v)=f(v)<v`$ for $`0<v<1`$.
 This is an audit-derived separation, not a quotation of an evaluated curve.
 
 ## 6. Conditional Mrs. Gerber and BB84 comparisons
@@ -244,7 +244,7 @@ still labels the sharp general formula conjectural. This note makes no
 claim that every later paper has been exhausted.
 
 A second concrete obstacle concerns ordinary entanglement of formation.
-For the pure three-qubit W state on $A_1A_2B$, Wootters' two-qubit
+For the pure three-qubit W state on $`A_1A_2B`$, Wootters' two-qubit
 concurrence formula ([quant-ph/9709029v2](https://arxiv.org/pdf/quant-ph/9709029v2),
 Eq. (9), p. 4) gives
 
@@ -254,10 +254,10 @@ S(B)=h_2(1/3)\simeq0.918296,
 ```
 
 Thus a proposed proof cannot simply sum local formation costs and bound
-them by $S(B)$. This is an independently calculated counterexample to
+them by $`S(B)`$. This is an independently calculated counterexample to
 that proof step, not to the global seed conjecture. Coherence
 superadditivity applies to the constructed amplitude state in Section 2
-and charges $H(p)$; it does not supply this false entanglement inequality.
+and charges $`H(p)`$; it does not supply this false entanglement inequality.
 
 ## 7. Narrow novelty boundary
 
@@ -276,8 +276,8 @@ The sharp unrestricted target remains a different claim:
 ```
 
 None of the precise reductions supplied here proves it. Equation (4) gives
-the weaker coefficient $1/\log_2(1+\sqrt2)$, approximately 0.78644,
-instead of $2-\sqrt2$, approximately 0.58579. Claims about the full
+the weaker coefficient $`1/\log_2(1+\sqrt2)`$, approximately 0.78644,
+instead of $`2-\sqrt2`$, approximately 0.58579. Claims about the full
 common-accuracy rate must continue to distinguish this unresolved
 unrestricted inequality from a proved formula in a Gram-matrix comparison
 class.

@@ -25,33 +25,33 @@ There are no extra specimens, postselection, or quantum bypasses. Require
 all X queries to be exact and the Z-query effective observables to be z_i Z_i,
 with 0 <= z_i <= 1. Define
 
-$$
+```math
 f(c)=h_2\!\left(\frac{1-\sqrt{1-c^2}}2\right),\qquad 0\le c\le1,
-$$
+```
 
 where h_2 is binary entropy in bits.
 
 **Finite converse.** Every admissible protocol satisfies
 
-$$
+```math
 \boxed{\log_2D\ge\sum_{i=1}^n f(z_i).}
 \qquad\text{(1)}
-$$
+```
 
 In particular, with common Z contrast z and D <= 2^q,
 
-$$
+```math
 q\ge n f(z),\qquad q\ge\lceil n f(z)\rceil.
 \qquad\text{(2)}
-$$
+```
 
 Let q_X(n,z) be the smallest integer q achieving exact X and common Z
 contrast z. Then the limit exists and is exactly
 
-$$
+```math
 \boxed{R_X(z):=\lim_{n\to\infty}\frac{q_X(n,z)}n=f(z).}
 \qquad\text{(3)}
-$$
+```
 
 These conclusions also hold if the Z requirement is formulated as a
 uniform total-variation error at most epsilon_i=(1-z_i)/2, rather than
@@ -68,63 +68,63 @@ error-free assumption is silently applied to noisy X protocols.
 
 For a probability distribution p on the Boolean cube put
 
-$$
+```math
 F_i(p)=\sum_x\sqrt{p_xp_{x+e_i}}.
-$$
+```
 
 The following refinement suffices:
 
-$$
+```math
 \boxed{H(p)\ge\sum_i f(F_i(p)).}
 \qquad\text{(4)}
-$$
+```
 
 To prove it, first check the binary function. For 0<c<1 and
 s=sqrt(1-c^2), differentiation gives
 
-$$
+```math
 f'(c)=\frac{c\mathrm{atanh}s}{s\ln2}>0,
 \qquad
 f''(c)=\frac{\mathrm{atanh}s-s}{s^3\ln2}>0.
 \qquad\text{(5)}
-$$
+```
 
 Together with continuity and f(0)=0,f(1)=1, this shows that f is increasing
 and strictly convex on [0,1]. Also, for every t in [0,1], symmetry of h_2 gives
 
-$$
+```math
 h_2(t)=f(2\sqrt{t(1-t)}).
 \qquad\text{(6)}
-$$
+```
 
 Fix i and write y for the other n-1 bits. Let m_y=p_(0,y)+p_(1,y).
 When m_y>0 put t_y=p_(1,y)/m_y; omit zero-mass y. Then
 
-$$
+```math
 H(X_i\mid X_{-i})
 =\sum_y m_y f(2\sqrt{t_y(1-t_y)})
 \ge f\!\left(\sum_y 2m_y\sqrt{t_y(1-t_y)}\right)
 =f(F_i(p)).
 \qquad\text{(7)}
-$$
+```
 
 Conditioning reduces Shannon entropy, so the chain rule implies
 
-$$
+```math
 \sum_i H(X_i\mid X_{-i})
 \le\sum_i H(X_i\mid X_1,\ldots,X_{i-1})=H(p).
 \qquad\text{(8)}
-$$
+```
 
 Combining (7) and (8) proves (4). This includes distributions with zeros;
 no full-support assumption or limiting regularization is needed.
 
 For common target z, (4) and Jensen imply
 
-$$
+```math
 H(p)\ge n f\!\left(\frac1n\sum_iF_i(p)\right).
 \qquad\text{(9)}
-$$
+```
 
 The scalar inequality is sharp at every entropy: take the product of
 Bernoulli distributions of parameter a=(1-sqrt(1-z^2))/2. Then
@@ -142,14 +142,14 @@ with support size at most D. With d=2^n and
 omega_b=Tr(K_b^dagger K_b)/d, completeness gives sum_b omega_b=1. The
 trace-norm decoder bound gives
 
-$$
+```math
 z_i\le\sum_b\omega_b F_i(p_b).
 \qquad\text{(10)}
-$$
+```
 
 Therefore monotonicity and convexity of f, followed by (4), give
 
-$$
+```math
 \begin{aligned}
 \sum_i f(z_i)
 &\le\sum_i f\!\left(\sum_b\omega_b F_i(p_b)\right)\\
@@ -157,7 +157,7 @@ $$
 &\le\sum_b\omega_b H(p_b)\le\log_2D.
 \end{aligned}
 \qquad\text{(11)}
-$$
+```
 
 The last bound holds branch by branch from the support cap. It therefore
 uses worst-case quantum dimension; it does not substitute average quantum
@@ -168,10 +168,10 @@ For the uniform-error formulation, let A_i be the actual Hermitian
 contraction for a Z query. The error condition is
 ||A_i-Z_i||_infinity <= 1-z_i. Consequently
 
-$$
+```math
 \frac1d\mathrm{Tr}(Z_iA_i)
 =1+\frac1d\mathrm{Tr}(Z_i(A_i-Z_i))\ge z_i.
-$$
+```
 
 Trace-norm duality bounds this coefficient above by the right side of (10).
 The same proof of (11) applies, even if A_i has components other than Z_i.
@@ -183,22 +183,22 @@ probability over input density matrices.
 
 For 0<a<1/2 and 0<t<=1/2-a, start with the auxiliary product distribution
 
-$$
+```math
 p(x)=a^{|x|}(1-a)^{n-|x|},\quad
 B=\{x:|x|\le\lfloor n(a+t)\rfloor\},\quad
 \epsilon=p(B^c).
-$$
+```
 
 The set B is nonempty. Define p'(x)=p(x)1_B(x)/(1-epsilon). This distribution
 is used to define the encoder's seed; no physical success event is selected.
 
 The support and tail estimates are
 
-$$
+```math
 |B|\le2^{n h_2(a+t)},\qquad
 \epsilon\le e^{-2nt^2}.
 \qquad\text{(12)}
-$$
+```
 
 For completeness, the support estimate follows by setting b=k/n with
 k=floor n(a+t): for each j<=k and b<=1/2,
@@ -215,43 +215,43 @@ sqrt(1-epsilon). For the coordinate-flip permutation T_i, which has norm one,
 F_i(p)=<v,T_i v> and F_i(p')=<v',T_i v'>. The trace norm of the difference of
 their pure-state projectors is 2sqrt(epsilon), so
 
-$$
+```math
 F_i(p')\ge2\sqrt{a(1-a)}-2\sqrt\epsilon
 \ge2\sqrt{a(1-a)}-2e^{-nt^2}.
 \qquad\text{(13)}
-$$
+```
 
 Both p and B are invariant under coordinate permutations. Thus all F_i(p')
 are equal, with no additional coordinate randomization needed.
 
 Use the complete translation instrument of the exact-axis note with seed
 
-$$
+```math
 L=\sum_{x\in B}\sqrt{p'_x}|u_x\rangle\langle x|_X,
 \quad K_s=LZ^s\quad(s\in\{0,1\}^n),
-$$
+```
 
 where the u_x are orthonormal output labels. There is no prefactor on K_s.
 The entire collection obeys sum_s K_s^dagger K_s=I. The established signed
 diagonal X decoders and matching-swap Z decoders implement
 
-$$
+```math
 A_{i,X}=X_i,\qquad A_{i,Z}=F_i(p')Z_i
-$$
+```
 
 as operator identities on every input. Every branch has dimension |B|,
 and the finite classical record has 2^n possibilities. If the right side
 of (13) is at least z, multiply each Z decoder by z/F_i(p') to obtain
 exact contrast z. Hence
 
-$$
+```math
 \boxed{
 q_X(n,z)\le\lceil n h_2(a+t)\rceil
 \quad\text{whenever}\quad
 z\le2\sqrt{a(1-a)}-2e^{-nt^2}.
 }
 \qquad\text{(14)}
-$$
+```
 
 The same reasoning with Chebyshev gives the entirely variance-based
 certificate z<=2sqrt(a(1-a))-2sqrt(a(1-a)/(nt^2)). Neither certificate
@@ -264,9 +264,9 @@ alpha=(1-sqrt(1-z^2))/2. By continuity choose alpha<a<1/2 and t>0 with
 a+t<1/2 and h_2(a+t)<f(z)+delta. Since c_a=2sqrt(a(1-a))>z,
 (14) applies to every
 
-$$
+```math
 n\ge t^{-2}\ln\frac{2}{c_a-z}.
-$$
+```
 
 Thus limsup q_X(n,z)/n<=f(z)+delta. Let delta decrease to zero.
 The finite converse supplies liminf>=f(z), proving (3).
@@ -281,9 +281,9 @@ endpoints need no continuity assertion or approximate exact-axis argument.
 The [original-site-retention theorem](EXACT_AXIS_SPECTRAL_REDUCTION.md),
 Section 3, uses the local weight
 
-$$
+```math
 w(x,z)=[x+z-1-\sqrt{2(1-x)(1-z)}]_+.
-$$
+```
 
 Its exact region is sum_i w(x_i,z_i)<=q. It restricts this face to
 nz<=q because w(1,z)=z. Its asymptotic memory rate is exactly z: select a
@@ -291,9 +291,9 @@ random q-element subset, measure X on discarded sites, and tune Z output
 noise to contrast z when q/n>=z. Since f is strictly convex and has values
 0 and 1 at the endpoints,
 
-$$
+```math
 \boxed{R_X(z)=f(z)<z=R_{X,\mathrm{retention}}(z),\qquad0<z<1.}
-$$
+```
 
 Thus collective encoding gives a strict asymptotic memory saving for every
 nontrivial Z accuracy when every X query must remain exact. This turns the
@@ -320,12 +320,12 @@ original-site-retention region requires rate at least w(x,z).
 
 For every 0<z<1, write r=f(z). Since r<z, elementary algebra gives
 
-$$
+```math
 w(x,z)>r
 \quad\Longleftrightarrow\quad
 x>r+\sqrt{(1-z)(1+z-2r)}.
 \qquad\text{(15)}
-$$
+```
 
 The threshold is strictly less than one. To check (15), set u=1-x and
 c=z-r>0. The condition is c-u>sqrt(2(1-z)u). At equality the permitted
@@ -337,30 +337,30 @@ must shrink with n.
 
 For example, take
 
-$$
+```math
 x=\frac{99}{100},\qquad z=\frac12,
 \qquad \epsilon_X=\frac1{200},\quad\epsilon_Z=\frac14.
 \qquad\text{(16)}
-$$
+```
 
 Here w(x,z)=39/100 exactly, while
 
-$$
+```math
 f(1/2)=h_2\!\left(\frac{2-\sqrt3}{4}\right)
 \approx0.3545789026652717<0.39.
 \qquad\text{(17)}
-$$
+```
 
 The strict inequality need not rely on this decimal. Put
 alpha=(2-sqrt(3))/4<7/100. The elementary bound
 h_2(alpha)<=alpha log_2(e/alpha), monotonicity of the last expression for
 0<alpha<1, and e<3 give
 
-$$
+```math
 f(1/2)<\frac7{100}\log_2\frac{300}{7}
 <\frac7{100}\frac{11}{2}=\frac{77}{200}
 <\frac{39}{100}.
-$$
+```
 
 The middle inequality follows by squaring 300/7<sqrt(2048). Hence for all
 sufficiently large n the collective construction uses strictly fewer qubits
@@ -391,7 +391,7 @@ The same curve also appears in asymptotic channel-simulation cost theory.
 Wilde, [arXiv:1807.11939v3](https://arxiv.org/pdf/1807.11939v3), revision
 31 October 2018 (PDF print date 2 November), Section IV.B, printed p. 10,
 Eqs. (62)--(65), evaluates the entanglement cost of a dephasing channel as
-$h_2(1/2+\sqrt{p(1-p)})$. With $p=(1-z)/2$ and Hadamard conjugation,
+$`h_2(1/2+\sqrt{p(1-p)})`$. With $`p=(1-z)/2`$ and Hadamard conjugation,
 this is exactly f(z) for a channel fixing X and contracting Z by z.
 Its simulation definitions, Section II.A, printed pp. 3--4, concern
 arbitrary inputs under uniform diamond-norm error and a fixed Schmidt-rank

@@ -17,8 +17,8 @@ No scientific release blocker was identified in this bounded pass.
 All 36 scientific-freeze fingerprints and all 31 earlier evidence-map
 fingerprints match their declared commits. At the release baseline, all
 47 source/proof fingerprints embedded in historical reports match their
-referenced files. All 49 computational Python files parse; the separate
-tutorial plotting helper was inspected. All 48 historical JSON reports
+referenced files. All 50 Python files parse, including the tutorial
+plotting helper. All 48 historical JSON reports
 parse. The MIT license and copyright are unchanged.
 
 The following baseline commands ran once each under CPython 3.12.14, with fresh
@@ -44,8 +44,9 @@ pseudorandom fixtures; the other checks use prescribed constructions.
 No optimizer or large simulation ran. No diagnostic pass certifies a
 universal theorem. The exact certificate's report hash is
 `d9ddb1376188246bca676e0fc45b1ad8c4810a67b3c6ff2db1065d591880b639`;
-its two polynomial inequalities remain conditional on the supplied
-analytical reduction, branch coverage and equality argument.
+its scalar inequalities hold on the stated rectangle. Applying them to
+the finite-block theorem still requires the supplied analytical reduction,
+branch coverage and equality argument.
 
 ## Presentation repairs and surgical reductions
 
@@ -75,6 +76,13 @@ preserves every equation identifier and named operation; it changes
 typesetting, not inequalities. The repaired research-note model and
 numbered error equation were visually checked on GitHub, and the Jones
 comparison's full table cells were checked in the rendered page.
+
+GitHub also stripped escaped braces in one dollar-delimited core equation.
+The final pass converts the remaining 1,478 dollar-delimited displays to
+math fences and protects 797 inline expressions with GitHub's backtick
+math delimiters. Their TeX bodies are unchanged. All 255 expressions in
+the repaired core page render without math warnings in the inspected
+GitHub preview, including set braces, norms and equation labels.
 
 After the repairs, all 856 local links and 78 heading anchors resolve.
 The Markdown parser retains all 670 data rows across 77 tables, with
@@ -116,8 +124,8 @@ archive command when byte-identical historical evidence is wanted.
 Specifically, 19 embedded proof-hash entries covering 18 proof notes now
 identify the earlier presentation bytes; the other 28 embedded
 fingerprints still match the current files. All 36 manifest fingerprints
-remain valid at their frozen commit. Of those, 22 also match the current
-checkout and 14 differ, including three pre-existing overview revisions.
+remain valid at their frozen commit. Of those, 21 also match the current
+checkout and 15 differ, including three pre-existing overview revisions.
 
 The general common-accuracy optimum, sharp entropy inequality, asymptotic
 rate and exhaustive originality assessment remain outside this release

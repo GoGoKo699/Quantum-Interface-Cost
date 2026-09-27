@@ -33,19 +33,19 @@ uses Hermitian unitary readout observables `B_1,...,B_(2n)` such that every
 pair either commutes or anticommutes. Then any attainable common contrast
 satisfies
 
-$$
+```math
 \boxed{\eta\le\frac1{\sqrt2}
  +\left(1-\frac1{\sqrt2}\right)\frac qn.}
 \qquad\text{(1)}
-$$
+```
 
 Random retention of q original sites attains equality within this decoder
 class. More generally, its separate contrasts obey
 
-$$
+```math
 \sum_{i=1}^n(x_i+z_i)\le2q+\sqrt2(n-q).
 \qquad\text{(2)}
-$$
+```
 
 There is no product, stabilizer, flat-spectrum, or eigenbasis restriction
 on the encoder. The explicit restriction is on the readout observables.
@@ -62,19 +62,19 @@ same pairwise relations.
 
 Let M be the binary commutation matrix of the memory reflections:
 
-$$
+```math
 B_jB_k=(-1)^{M_{jk}}B_kB_j,
 \qquad M\in\mathbb F_2^{2n\times2n}.
-$$
+```
 
 It is symmetric with zero diagonal, hence alternating over `F_2`.
 If its rank is `2r`, a nonzero representation on dimension D requires
 
-$$
+```math
 2^r\mid D,\qquad \mathrm{rank}_{\mathbb F_2}M\le2q
 \quad\text{when }D\le2^q.
 \qquad\text{(3)}
-$$
+```
 
 This is an established graph-Clifford-algebra fact; precise primary
 locators are in Section 8. A short proof makes the resource accounting
@@ -93,24 +93,24 @@ reducible representations and arbitrary degeneracies.
 Enumerate the reference observables as
 `P_1=X_1,P_2=Z_1,...,P_(2n)=Z_n`, and put
 
-$$
+```math
 T_j=P_j\otimes B_j,\qquad H=\sum_{j=1}^{2n}T_j.
-$$
+```
 
 The reference commutation matrix is
 
-$$
+```math
 J=\bigoplus_{i=1}^n
 \begin{pmatrix}0&1\\1&0\end{pmatrix},
 \qquad \mathrm{rank}J=2n.
-$$
+```
 
 The full terms have binary commutation matrix `A=J+M`, so
 
-$$
+```math
 \mathrm{rank}A\ge2n-\mathrm{rank}M\ge2(n-q).
 \qquad\text{(4)}
-$$
+```
 
 **Elementary matching lemma.** A graph whose adjacency matrix over
 `F_2` has rank `2s` contains s disjoint edges. To see this, an alternating
@@ -126,10 +126,10 @@ By (4), choose `n-q` disjoint anticommuting pairs of the T's. Each pair
 satisfies `(T_j+T_k)^2=2I`, while an unmatched T has norm one. The triangle
 inequality gives
 
-$$
+```math
 \boxed{\|H\|_\infty\le(n-q)\sqrt2+2q.}
 \qquad\text{(5)}
-$$
+```
 
 Different matched pairs need not commute; no such assumption was used.
 
@@ -138,10 +138,10 @@ For a normalized Kraus seed L, vectorization gives
 The reference X/Z matrices are real, so (5) bounds its decoded score.
 For arbitrary physical Kraus operators K_c, use
 
-$$
+```math
 p_c=\frac{\|K_c\|_F^2}{2^n},\qquad
 L_c=\frac{K_c}{\|K_c\|_F},\qquad\sum_c p_c=1.
-$$
+```
 
 Taking Pauli coefficients of the effective observables yields (2) by
 p-weighted averaging of the branch bounds. These weights are not assumed
@@ -168,17 +168,17 @@ For this budget the same decoder hypothesis gives the entire weighted
 retention support, including the three-input, two-qubit-memory case.
 For nonnegative a_i,b_i put
 
-$$
+```math
 \delta_i=a_i+b_i-\sqrt{a_i^2+b_i^2}.
-$$
+```
 
 **Corollary.** When `D<=2^(n-1)`,
 
-$$
+```math
 \left\|\sum_i(a_iX_i\otimes B_{i,X}+b_iZ_i\otimes B_{i,Z})\right\|_\infty
 \le\sum_i(a_i+b_i)-\min_i\delta_i.
 \qquad\text{(6)}
-$$
+```
 
 If A contains an original X/Z-pair edge, grouping that anticommuting
 pair saves its delta from the sum of the coefficients, proving (6).
@@ -202,11 +202,11 @@ compatible disk point to attain the support function. The
 [retention-region geometry](../EXACT_AXIS_SPECTRAL_REDUCTION.md) therefore
 gives exactly
 
-$$
+```math
 \sum_i w(x_i,z_i)\le n-1,\qquad
 w(x,z)=\left[x+z-1-\sqrt{2(1-x)(1-z)}\right]_+.
 \qquad\text{(7)}
-$$
+```
 
 This section proves the full-profile conclusion for `q=n-1`. The later
 [finite-level proof](WEIGHTED_DECODER_ALLOCATION.md) extends it to every
@@ -217,18 +217,18 @@ q under the identical readout hypothesis.
 It is false that every normalized seed admits trace-norm-optimal
 readouts of this form. For one input qubit take
 
-$$
+```math
 \rho=\frac12\left(I+\frac{X+Z}{2}\right),\qquad
 L=\sqrt\rho,\qquad s=1/\sqrt2.
-$$
+```
 
 Its invertible, indefinite compressed observables have unique optimal
 sign decoders
 
-$$
+```math
 B_X=\frac{(1+s)X+(1-s)Z}{\sqrt3},\qquad
 B_Z=\frac{(1-s)X+(1+s)Z}{\sqrt3}.
-$$
+```
 
 Their anticommutator is `(2/3)I`, and their commutator is nonzero.
 Thus they neither commute nor anticommute. The seed score is only
@@ -246,11 +246,11 @@ is necessary but not sufficient for an advantage.
 The existing [spectral seed reduction](../COLLECTIVE_ENCODING_REDUCTION.md)
 gives
 
-$$
+```math
 \Gamma(3,4)=\max_{B_j=B_j^\dagger,\ B_j^2=I_4}
 \lambda_{\max}\!\left(\sum_{j=1}^{6}P_j\otimes B_j\right).
 \qquad\text{(8)}
-$$
+```
 
 Extreme Hermitian contractions are reflections; dimension-smaller seeds
 are padded to four without losing any protocols.
@@ -265,18 +265,18 @@ so ranks 3 can be replaced by ranks 1 without changing the optimized
 spectrum. Local Hadamards exchange X/Z, and site permutations exchange
 the three pairs. Thus only multisets of three site-types remain:
 
-$$
+```math
 (1,1),\quad(1,2),\quad(2,2).
-$$
+```
 
 There are exactly ten. For each pattern t let M_t be the maximum in (8)
 with those ranks fixed. Each domain is a product of compact unitary
 orbits, so its maximum exists. Exactly,
 
-$$
+```math
 \boxed{\Gamma(3,4)=\max\{4+\sqrt2,\ \max_{t=1}^{10}M_t\}.}
 \qquad\text{(9)}
-$$
+```
 
 This retains every continuous decoder orientation. The ten-pattern
 reduction is not a finite enumeration of all physical encoders and is

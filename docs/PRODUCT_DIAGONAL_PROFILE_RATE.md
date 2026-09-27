@@ -27,20 +27,20 @@ the unrestricted task.
 
 Write
 
-$$
+```math
 f(v)=h_2\!\left(\frac{1-\sqrt{1-v^2}}2\right),\qquad 0\le v\le1.
 \qquad\text{(1)}
-$$
+```
 
 Define a scalar cost `C(x,z)` on `[0,1]^2` as follows. Available profile-cost
 points are
 
-$$
+```math
 (u,v,0)\quad(u,v\ge0,\ u^2+v^2\le1),
 \qquad
 (1,v,f(v)),\quad(v,1,f(v))\quad(0\le v\le1).
 \qquad\text{(2)}
-$$
+```
 
 Take convex combinations of these points, allow either profile coordinate
 to decrease, and minimize the cost needed to attain `(x,z)`. This minimum
@@ -51,20 +51,20 @@ nondecreasing envelope specified by (2). In particular `0<=C<=1`.
 **Theorem 1.** Every interface in the product-diagonal Gram class with
 profile `(x_i,z_i)` and worst-case output dimension D satisfies
 
-$$
+```math
 \boxed{\log_2D\ge\sum_{i=1}^n C(x_i,z_i).}
 \qquad\text{(3)}
-$$
+```
 
 Let `q_PD(n;x,z)` denote the minimum integer qubit budget in this class
 for a common X contrast x and common Z contrast z. Then
 
-$$
+```math
 \boxed{
 R_{\rm PD}(x,z):=\lim_{n\to\infty}\frac{q_{\rm PD}(n;x,z)}n=C(x,z).
 }
 \qquad\text{(4)}
-$$
+```
 
 Thus C is also an achievable upper bound for the unrestricted profile
 rate. It already includes the [exact-axis rate](EXACT_AXIS_RATE.md), but
@@ -81,20 +81,20 @@ physical branches.
 For a one-qubit state with Bloch vector r, direct two-by-two calculation
 gives
 
-$$
+```math
 F_X^2=\|\sqrt\rho X\sqrt\rho\|_1^2=1-r_y^2-r_z^2,
 \qquad
 F_Z^2=1-r_x^2-r_y^2.
 \qquad\text{(5)}
-$$
+```
 
 For a pair `(x,z)` outside the compatibility disk, the smallest entropy
 of a single-qubit state with these exact scores is therefore
 
-$$
+```math
 \gamma(x,z)=h_2\!\left(\frac{1-\sqrt{2-x^2-z^2}}2\right).
 \qquad\text{(6)}
-$$
+```
 
 Indeed, `|r|^2=2-x^2-z^2-r_y^2` is largest when `r_y=0`, and entropy
 decreases with Bloch length. Choose
@@ -106,41 +106,41 @@ Arbitrary rotations of a nonpure one-qubit seed do not add new extremal
 points to the convexified entropy tradeoff. To prove this constructively,
 put
 
-$$
+```math
 \phi(R)=h_2\!\left(\frac{1-\sqrt{2-R^2}}2\right),
 \qquad 1\le R\le\sqrt2.
-$$
+```
 
 This function is strictly concave. For `s=sqrt(2-R^2)` in `(0,1)`,
 
-$$
+```math
 \phi''(R)=-\frac{J(s)}{s^3\ln2},\qquad
 J(s)=\frac{s(2-s^2)}{1-s^2}-2\mathrm{atanh}s.
-$$
+```
 
 Here `J(0)=0` and
 
-$$
+```math
 J'(s)=\frac{s^2+s^4}{(1-s^2)^2}>0.
 \qquad\text{(7)}
-$$
+```
 
 Concavity extends to the endpoints by continuity. Suppose `x>=z`,
 `R=sqrt(x^2+z^2)>1`, and `x<1`. The ray through `(x,z)` joins the
 compatible point `u=(x,z)/R` to the exact-X point `e=(1,z/x)`. With
 
-$$
+```math
 p=\frac{R-1}{R/x-1},\qquad 0<p<1,
-$$
+```
 
 we have
 
-$$
+```math
 (x,z)=(1-p)u+p e,
 \qquad
 \gamma(x,z)=\phi(R)\ge p\phi(R/x)=p f(z/x).
 \qquad\text{(8)}
-$$
+```
 
 The inequality is strict for the indicated interior segment. At `x=1`
 the profile is already an exact-axis point; interchange X and Z when
@@ -155,62 +155,62 @@ Let rho be diagonal in a fixed local product basis with probability law
 `p(u_1,...,u_n)`. Its entropy is `H(p)`. Fix site i, condition on all other
 coordinates y, and write
 
-$$
+```math
 m_y=p(0,y)+p(1,y),\qquad
 \sigma_{i|y}=\frac{p(0,y)}{m_y}|0_i\rangle\langle0_i|
 +\frac{p(1,y)}{m_y}|1_i\rangle\langle1_i|.
-$$
+```
 
 Omit y with zero weight. Since each query acts on site i alone, its
 sandwiched matrix is a direct sum of these two-dimensional edge blocks.
 Therefore, for `b=X,Z`,
 
-$$
+```math
 F_i^b(\rho)=\|\sqrt\rho P_{i,b}\sqrt\rho\|_1
 =\sum_y m_y F_b(\sigma_{i|y}).
 \qquad\text{(9)}
-$$
+```
 
 The local eigenbasis is arbitrary, including axes with Y components.
 Convexity of C and the qubit result give
 
-$$
+```math
 \begin{aligned}
 C(F_i^X,F_i^Z)
 &\le\sum_y m_y C(F_X(\sigma_{i|y}),F_Z(\sigma_{i|y}))\\
 &\le\sum_y m_y S(\sigma_{i|y})
 =H(U_i\mid U_{-i}).
 \end{aligned}
-$$
+```
 
 The Shannon chain rule and conditioning imply
 
-$$
+```math
 \boxed{
 S(\rho)=H(p)\ge\sum_i H(U_i\mid U_{-i})
 \ge\sum_i C(F_i^X,F_i^Z).
 }
 \qquad\text{(10)}
-$$
+```
 
 Now refine an admissible instrument as in the
 [normalized-seed reduction](COLLECTIVE_ENCODING_REDUCTION.md). For nonzero
 Kraus branches put `omega_a=Tr(K_a^dagger K_a)/2^n`, so `sum_a omega_a=1`.
 Trace-norm duality gives
 
-$$
+```math
 x_i\le\sum_a\omega_a F_i^X(\rho_a),\qquad
 z_i\le\sum_a\omega_a F_i^Z(\rho_a).
-$$
+```
 
 Apply monotonicity and convexity of C, then (10), and finally the
 branchwise rank bound:
 
-$$
+```math
 \sum_i C(x_i,z_i)
 \le\sum_a\omega_a\sum_i C(F_i^X(\rho_a),F_i^Z(\rho_a))
 \le\sum_a\omega_a S(\rho_a)\le\log_2D.
-$$
+```
 
 This proves (3), even when each branch uses a different local product
 basis. The omega weights are only an algebraic averaging device on the
@@ -270,27 +270,27 @@ This completes (4) on the whole square.
 
 Let
 
-$$
+```math
 f^*(b)=\max_{0\le v\le1}\{bv-f(v)\},\qquad b\ge0.
 \qquad\text{(11)}
-$$
+```
 
 For weights `a>=b>=0`, the exact entropy-penalized support of (2) is
 
-$$
+```math
 \boxed{M(a,b)=\max\{\sqrt{a^2+b^2},\ a+f^*(b)\}.}
 \qquad\text{(12)}
-$$
+```
 
 Indeed, the disk has support `sqrt(a^2+b^2)`. At equal v the exact-X
 point has weighted score at least that of the exact-Z point, since
 `(a+bv)-(b+av)=(a-b)(1-v)>=0`. Maximizing the exact-X score minus entropy
 gives the second term. Interchange a,b otherwise. Consequently
 
-$$
+```math
 C(x,z)=\sup_{a,b\ge0}\{ax+bz-M(a,b)\},
 \qquad\text{(13)}
-$$
+```
 
 with the symmetric definition of M understood. This is ordinary convex
 duality for the closed, downward profile hull and upward cost epigraph.
@@ -300,18 +300,18 @@ The scalar maximization in (11) is unambiguous. The
 [exact-axis note](EXACT_AXIS_RATE.md) proves that f is strictly convex,
 `f'(0)=0`, and `f'(1)=1/ln2`. Hence
 
-$$
+```math
 f^*(b)=b-1\quad\text{if }b\ge1/\ln2;
-$$
+```
 
 for `0<b<1/ln2`, its unique maximizer lies in `(0,1)` and solves `f'(v)=b`.
 In that interval `f^*(b)>b-1`.
 
 Recall the exact original-site-retention cost
 
-$$
+```math
 w(x,z)=[x+z-1-\sqrt{2(1-x)(1-z)}]_+.
-$$
+```
 
 Its convex construction uses just the free disk and `(1,1,1)`, so
 `C(x,z)<=w(x,z)` everywhere. The following identifies exactly where
@@ -319,21 +319,21 @@ enlarging that construction to the full exact-axis curve improves it.
 
 **Theorem 2.** Put
 
-$$
+```math
 \tau_*=2(1/\ln2-1)^2\simeq0.391957798455362.
 \qquad\text{(14)}
-$$
+```
 
 For `0<z<=x<1` outside the compatibility disk,
 
-$$
+```math
 \boxed{
 C(x,z)<w(x,z)
 \quad\Longleftrightarrow\quad
 \frac{1-x}{1-z}<\tau_*.
 }
 \qquad\text{(15)}
-$$
+```
 
 There is equality at and above the threshold. Interchange x,z for the
 other half of the square. Both costs vanish inside and on the disk.
@@ -341,18 +341,18 @@ At `x=1, 0<z<1`, strictness is `f(z)<z`; at `(1,1)` both costs equal one.
 
 To prove (15), outside the disk the gradient of w is
 
-$$
+```math
 A=1+\sqrt{\frac{1-z}{2(1-x)}},\qquad
 B=1+\sqrt{\frac{1-x}{2(1-z)}},\qquad A\ge B.
-$$
+```
 
 Direct algebra gives
 
-$$
+```math
 \sqrt{A^2+B^2}=A+B-1,\qquad
 Ax+Bz-(A+B-1)=w(x,z).
 \qquad\text{(16)}
-$$
+```
 
 If `B>=1/ln2`, (12) has `M(A,B)=A+B-1`, so (13) proves `C>=w` at this
 point, and equality follows. This is exactly the weak inequality opposite
@@ -368,13 +368,13 @@ displayed exact-X atom. Thus `C<w`, proving strictness.
 
 For common accuracy the point lies in the equality region. In particular
 
-$$
+```math
 \boxed{
 C(\eta,\eta)
 =\left[\frac{2\eta-\sqrt2}{2-\sqrt2}\right]_+.
 }
 \qquad\text{(17)}
-$$
+```
 
 Thus all product-diagonal spectra, arbitrary rotations of qubit seeds,
 and their convex combinations give exactly the subset common-accuracy
@@ -544,14 +544,14 @@ Take a proportion `87/100` of exact-axis seed blocks with profile
 `(12/13,5/13)`. The latter lies exactly on the unit circle. Their averaged
 profile is exactly
 
-$$
+```math
 \frac{87}{100}(1,15/29)
 +\frac{13}{100}(12/13,5/13)=(99/100,1/2).
-$$
+```
 
 The fixed-dimension construction in Section 4 consequently gives
 
-$$
+```math
 \begin{aligned}
 R(99/100,1/2)
 &\le C(99/100,1/2)\\
@@ -559,7 +559,7 @@ R(99/100,1/2)
 \simeq0.325066020634.
 \end{aligned}
 \qquad\text{(18)}
-$$
+```
 
 Here R denotes the unrestricted common-across-sites profile rate. The
 exact expression in (18), rather than a numerical optimizer, specifies
@@ -575,30 +575,30 @@ is one conservative elementary certificate. For
 `a=(1-sqrt(1-(15/29)^2))/2`, squaring gives `a<721/10000=:a_0`.
 The entropy bound
 
-$$
+```math
 h_2(a)\le\frac{-a\ln a+a-a^2/2}{\ln2}
-$$
+```
 
 follows from the power series of `-(1-a)ln(1-a)`. Use
 `ln(1/a_0)<8/3` and `ln2>693/1000` to obtain
 
-$$
+```math
 \frac{87}{100}f(15/29)
 <\frac{87}{100}
 \frac{(11/3)a_0-a_0^2/2}{693/1000}
 =\frac{650679119}{1980000000}<\frac{33}{100}.
-$$
+```
 
 For the direct rotated seed, its smaller eigenvalue is greater than
 `p=153/2500`, again by squaring. Since `p<1/16`,
 `-log_2 p>4`. The inequalities `-ln(1-p)>=p+p^2/2` and `ln2<694/1000`
 then give
 
-$$
+```math
 \gamma(99/100,1/2)
 >4p+\frac{p-p^2/2-p^3/2}{694/1000}
 =\frac{7159495923}{21687500000}>\frac{33}{100}.
-$$
+```
 
 Also `gamma(99/100,1/2)<f(1/2)` by strict monotonicity of f, because its
 argument is `sqrt(2301)/100<1/2`. The elementary logarithm bounds used
@@ -674,10 +674,10 @@ resource, not a new formation measure or general convex-roof theorem.
 The one-qubit cost C also evaluates an established resource quantity.
 For the qubit steering assemblage
 
-$$
+```math
 \sigma_{\pm|X}=(I\pm xX)/4,\qquad
 \sigma_{\pm|Z}=(I\pm zZ)/4,
-$$
+```
 
 we have `C(x,z)=E_FA(sigma)`, where E_FA is Cope's entanglement of
 formation for assemblages,

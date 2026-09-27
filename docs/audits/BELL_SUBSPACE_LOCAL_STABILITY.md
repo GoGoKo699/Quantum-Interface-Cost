@@ -17,9 +17,9 @@ special continuous families in the
 
 The exact second-order loss is
 
-$$
+```math
 \frac16\|g\|_F^2+\frac8{15}\|h-g/2\|_F^2.
-$$
+```
 
 A controlled remainder proves a finite neighborhood, not just a
 negative Hessian. The general inequality for three independently
@@ -32,40 +32,40 @@ configuration must be near the known configurations.
 Let `Q=A tensor B`, where A and B are qubits, and let R1,R2,R3 be three
 distinct reference qubits. With spectator identities understood, set
 
-$$
+```math
 P_1=\Phi^-_{R_1A}\otimes I_B,\qquad
 P_2=\Phi^-_{R_2A}\otimes I_B,\qquad
 P_3=\Phi^-_{R_3B}\otimes I_A,
 \qquad K_0=P_1+P_2+P_3,
-$$
+```
 
 where `Phi^-` denotes the singlet projector. For real 3-by-3 matrices
 g,h, define memory interaction generators
 
-$$
+```math
 G=\sum_{a,b=x,y,z}g_{ab}\sigma_a^A\sigma_b^B,\qquad
 J=\sum_{a,b=x,y,z}h_{ab}\sigma_a^A\sigma_b^B,
 \qquad r^2=\|g\|_F^2+\|h\|_F^2,
-$$
+```
 
 and
 
-$$
+```math
 K(g,h)=P_1+e^{iG}P_2e^{-iG}+e^{iJ}P_3e^{-iJ}.
 \qquad\text{(1)}
-$$
+```
 
 The Pauli matrices have eigenvalues `+/-1`; the generator convention
 contains no additional factor of one half.
 
 **Theorem.**
 
-$$
+```math
 \boxed{r\le\frac1{1024}
 \quad\Longrightarrow\quad
 \lambda_{\max}K(g,h)\le\frac52-\frac{r^2}{16}.}
 \qquad\text{(2)}
-$$
+```
 
 The same statement holds after a common memory unitary, independent
 reference unitaries, and a permutation of the queries. These operations
@@ -80,35 +80,35 @@ is conservative; no optimal robustness constant is asserted.
 On R1,R2,A, the operator `A0=P1+P2` has eigenvalues 0, 1/2, 3/2 with
 multiplicities four, two, two. Its spectral projectors are
 
-$$
+```math
 E_{3/2}=\frac23A_0^2-\frac13A_0,\qquad
 E_{1/2}=-2A_0^2+3A_0,\qquad
 E_0=I-E_{3/2}-E_{1/2}.
-$$
+```
 
 P3 commutes with A0. The top eigenvalue of K0 is 5/2, its projector is
 `P=E_(3/2)P3`, and its multiplicity is two. The next eigenvalue is 3/2,
 so the spectral gap is one. A basis of the top doublet is the R3:B
 singlet tensored with
 
-$$
+```math
 \begin{aligned}
 \tau_+&=\sqrt{2/3}|00\rangle|1\rangle
        -( |01\rangle+|10\rangle)|0\rangle/\sqrt6,\\
 \tau_-&=\sqrt{2/3}|11\rangle|0\rangle
        -( |01\rangle+|10\rangle)|1\rangle/\sqrt6.
 \end{aligned}
-$$
+```
 
 The first two tensor factors here are R1,R2 and the last is A.
 The reduced resolvent at the top eigenvalue is
 
-$$
+```math
 R=E_0\left[\frac25(I-P_3)+\frac23P_3\right]
  +E_{1/2}\left[\frac12(I-P_3)+P_3\right]
  +E_{3/2}(I-P_3).
 \qquad\text{(3)}
-$$
+```
 
 It satisfies `RP=0`, `||R||=1`, and `(5I/2-K0)R=I-P`.
 
@@ -116,10 +116,10 @@ It satisfies `RP=0`, `||R||=1`, and `(5I/2-K0)R=I-P`.
 
 Expand along `K(tg,th)=K0+tD+t^2E+O(t^3)`, with
 
-$$
+```math
 D=i[G,P_2]+i[J,P_3],\qquad
 E=-\frac12\bigl([G,[G,P_2]]+[J,[J,P_3]]\bigr).
-$$
+```
 
 The first-order compression is zero. For the G term,
 `[G,P2]=sum_ab g_ab [sigma_a^A,P2] sigma_b^B` and
@@ -128,10 +128,10 @@ The first-order compression is zero. For the G term,
 
 The second-order effective operator on the top doublet is
 
-$$
+```math
 C=P(E+DRD)P.
 \qquad\text{(4)}
-$$
+```
 
 This operator is scalar. Indeed, ordinary five-qubit spin reversal
 `T=(iY)^(tensor 5) conjugation` preserves the initial singlet projectors
@@ -161,17 +161,17 @@ the following scalar compressions:
 Here each entry multiplies P. The coefficients can be obtained by hand
 in a three-dimensional space. On R1,R2,A, use
 
-$$
+```math
 \tau=(2|001\rangle-|010\rangle-|100\rangle)/\sqrt6,\quad
 s=(|010\rangle-|100\rangle)/\sqrt2,\quad
 q=(|001\rangle+|010\rangle+|100\rangle)/\sqrt3.
-$$
+```
 
 Their A0 eigenvalues are 3/2, 1/2, 0. Since `Z_B` sends the R3:B singlet
 to a triplet, the resolvent denominators for the first-order vectors
 are 1, 2, 5/2. Before their common factor i, those vectors are
 
-$$
+```math
 \begin{aligned}
 a&=[Z_A,P_2]\tau
  =(-|001\rangle-2|010\rangle)/\sqrt6
@@ -180,16 +180,16 @@ b&=Z_A\tau
  =(-2|001\rangle-|010\rangle-|100\rangle)/\sqrt6
  \quad\leftrightarrow\quad(-1/3,0,-2\sqrt2/3).
 \end{aligned}
-$$
+```
 
 Consequently
 
-$$
+```math
 \langle a,Ra\rangle=\frac{1/3}{2}+\frac{1/2}{5/2}
 =\frac{11}{30},\qquad
 \langle b,Rb\rangle=\frac19+\frac{8/9}{5/2}=\frac7{15},
 \qquad \mathrm{Re}\langle a,Rb\rangle=\frac{2/3}{5/2}=\frac4{15}.
-$$
+```
 
 For the direct terms, `PP2P=(3/4)P` and
 `sum_a sigma_a^A P2 sigma_a^A=I-P2`. Rotational covariance and the
@@ -200,22 +200,22 @@ This independently derives the table without numerical fitting.
 
 Combining the coefficients yields
 
-$$
+```math
 \boxed{
 C=-\left[\frac3{10}\|g\|_F^2+\frac8{15}\|h\|_F^2
 -\frac8{15}\langle g,h\rangle\right]P
 =-\left[\frac16\|g\|_F^2+\frac8{15}\|h-g/2\|_F^2\right]P.}
 \qquad\text{(5)}
-$$
+```
 
 In each of the nine component pairs the coefficient matrix is
 `(1/30)[[9,-8],[-8,16]]`. Subtracting `I/8` gives first principal
 minor `7/40` and determinant `1/2880`, both positive. In particular,
 
-$$
+```math
 C\le-\frac{r^2}{8}P.
 \qquad\text{(6)}
-$$
+```
 
 ## 4. A finite radius from a controlled remainder
 
@@ -227,10 +227,10 @@ For a Hermitian generator L and an orthogonal projector V,
 `||[L,V]||<=||L||`. Successive commutators and the integral Taylor
 remainder therefore give
 
-$$
+```math
 \|\Delta\|,\|D\|\le\sqrt6\,r,\qquad
 \|E\|\le3r^2,\qquad \|F\|\le2\sqrt3\,r^3.
-$$
+```
 
 For example the third-derivative norm for one conjugated projector
 is at most `4||L||^3`, and its remainder coefficient is `1/6`.
@@ -238,19 +238,19 @@ Unitary conjugation requires no exponential prefactor.
 
 For `r<=1/100`, convenient rational consequences are
 
-$$
+```math
 \|\Delta\|,\|D\|\le\frac52r,\qquad
 \|F\|\le\frac72r^3,\qquad
 \|\Delta-D\|\le\frac{31}{10}r^2.
-$$
+```
 
 Put `Q0=I-P` and `t=5/2-r^2/16`. On Q0, the operator
 `tQ0-Q0KQ0` is strictly positive: its gap is at least
 `1-(5/2)r-r^2/16`. Its inverse S, extended by zero on P, obeys
 
-$$
+```math
 \|S\|\le\frac{11}{10},\qquad \|S-R\|\le3r.
-$$
+```
 
 The latter follows from the resolvent identity. These conservative
 constants follow immediately from `r<=1/100` and the preceding gap.
@@ -258,7 +258,7 @@ Also `PKQ0=PDQ0+W`, with `||W||<=(31/10)r^2`. The error in replacing
 the exact Schur response by `PDRDP`, including the top-block remainder
 PFP, is at most
 
-$$
+```math
 \begin{aligned}
 &\|D\|^2\|S-R\|+2\|D\|\|S\|\|W\|
  +\|S\|\|W\|^2+\|F\|\\
@@ -267,14 +267,14 @@ $$
 +\frac{10571}{100000}+\frac72\right)r^3
 =\frac{3940571}{100000}r^3<40r^3.
 \end{aligned}
-$$
+```
 
 Using (6), the exact upper Schur block is bounded by
 
-$$
+```math
 PKP+PKQ_0SQ_0KP
 \le\left(\frac52-\frac{r^2}{8}+40r^3\right)P.
-$$
+```
 
 At `r<=1/1024`, `40r<=5/128<1/16`. The last expression is at most
 tP, so the positive Schur-complement criterion proves (2). All
@@ -290,9 +290,9 @@ direct sum of the six local Pauli generators and the nine interactions
 `sigma_a^A sigma_b^B`. The inverse function theorem applied at the
 identity gives the local analytic factorization
 
-$$
+```math
 U=e^{iG}(L_A\otimes L_B).
-$$
+```
 
 The right local factor on the unused auxiliary qubit commutes with the
 projector. Its other right local factor transfers to that projector's
@@ -320,9 +320,9 @@ reference qubits and a four-dimensional memory. Assume each reflection
 pair has two traceless Jordan blocks with the same nonnegative spectra
 u_i,v_i, where
 
-$$
+```math
 u_i^2+v_i^2=4,\qquad 2\ge u_i\ge\sqrt2\ge v_i\ge0.
-$$
+```
 
 Suppose its combined top Bell projectors are a triple covered by (2),
 allowing the unitary and permutation freedoms stated there. Set
@@ -331,24 +331,24 @@ allowing the unitary and permutation freedoms stated there. Set
 Then `p_i<=1` and `sum_i p_i<=5/2-r^2/16`. Subtracting the smallest
 coefficient before applying these bounds gives
 
-$$
+```math
 \begin{aligned}
 \langle H\rangle
 &\le\sum_i v_i+\sum_i(w_i-w_{\min})
 +w_{\min}\left(\frac52-\frac{r^2}{16}\right)\\
 &\le4+\sqrt2-\frac{r^2}{16}w_{\min}.
 \end{aligned}
-$$
+```
 
 For the second line, the zero coefficient identifies the site contributing
 `(u_i+v_i)/2<=sqrt(2)`; the other two contribute at most two each.
 Conjugating all references by Y sends H to -H. Therefore
 
-$$
+```math
 \boxed{\|H\|\le4+\sqrt2-
 \frac{r^2}{16}\min_i(u_i-v_i).}
 \qquad\text{(7)}
-$$
+```
 
 The loss is strictly positive when `r>0` and every `u_i>v_i`.
 Unequal spectra between sites are allowed. Equal spectra within each
@@ -364,21 +364,21 @@ optimal readouts satisfies those hypotheses.
 For an arbitrary collective instrument, refine the classical record to a
 Kraus index a, omit zero maps, and put
 
-$$
+```math
 p_a=\frac{\|K_a\|_F^2}{8},\qquad
 L_a=\frac{K_a}{\|K_a\|_F},\qquad \sum_a p_a=1.
-$$
+```
 
 These p_a are normalization weights, not asserted input-independent
 outcome probabilities. If every branch's actual readouts satisfy the
 theorem, branch-dependent coordinates and spectra are permitted, and
 uniform contrast eta obeys
 
-$$
+```math
 6\eta\le\sum_a p_a s(L_a)
 \le4+\sqrt2-\sum_a p_a\frac{r_a^2}{16}
 \min_i(u_{a,i}-v_{a,i}).
-$$
+```
 
 The task still uses one arbitrary unknown quantum specimen, exactly one
 delayed original-site X/Z query, unrestricted collective encoding,
@@ -394,9 +394,9 @@ Allowing all CPTP ququart-to-qubit decoders defines optimized Bell-test
 probabilities `F_i^CPTP`. The established conditional min-entropy identity
 is
 
-$$
+```math
 2F_i^{\mathrm{CPTP}}=2^{-H_{\min}(R_i|Q)}.
-$$
+```
 
 It relaxes the unitary-plus-discard decoder class. The desired relaxed
 sum inequality would be `sum_i 2^(-H_min(R_i|Q))<=5`; the identity itself
@@ -405,19 +405,19 @@ does not prove that joint constraint.
 In particular the plausible additive budget
 `sum_i H_min(R_i|Q)>=-log_2(dim Q)` is false. On R1,R2,A set
 
-$$
+```math
 |\psi\rangle=(2|000\rangle+|101\rangle+|011\rangle)/\sqrt6,
 \qquad
 |\omega\rangle=|\psi\rangle_{R_1R_2A}\otimes|\Phi\rangle_{R_3B}.
-$$
+```
 
 Recovering A for queries 1 and 2 gives Bell probabilities 3/4 each;
 recovering B for query 3 gives one. The min-entropy identity consequently
 implies
 
-$$
+```math
 \prod_i2^{-H_{\min}(R_i|Q)}\ge(3/2)^2\,2=9/2>4.
-$$
+```
 
 No claim that these particular recoveries maximize every CPTP objective
 is needed. Their sum is exactly 5/2: the example refutes the proposed
@@ -498,11 +498,11 @@ coordinating rerun record.
 
 The global independent-subsystem conjecture remains
 
-$$
+```math
 \sum_{i=1}^3U_i(\Phi_{R_iA}\otimes I_B)U_i^\dagger
 \stackrel{?}{\le}\frac52I,
 \qquad U_i\in U(4)\text{ independently arbitrary}.
-$$
+```
 
 A remote violation or different equality configuration is not excluded.
 Even a proof of this global projector statement would leave unequal

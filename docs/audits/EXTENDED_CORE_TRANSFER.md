@@ -20,10 +20,10 @@ its limitations below are preserved as the preceding result.
 
 For a complex two-qubit density matrix define
 
-$$
+```math
 g(\rho)=\sum_{U=X_A,Z_A,X_B,Z_B}\|\sqrt\rho U\sqrt\rho\|_1,
 \qquad \Delta(\rho)=2\sqrt2+(2-\sqrt2)S(\rho)-g(\rho).
-$$
+```
 
 Entropy is in bits. Let
 `rho=(1-epsilon)sigma direct-sum epsilon tau`, where the normalized
@@ -44,9 +44,9 @@ through `1/29` when `g(sigma)>10/3`.
 Thus, in addition to all earlier necessary conditions, a remaining
 two-qubit entropy witness must satisfy
 
-$$
+```math
 \epsilon\le1/99\quad\Longrightarrow\quad g(\sigma)\le13/4.
-$$
+```
 
 Neither the full two-qubit inequality nor its all-n analogue is proved.
 The original task still has one unknown specimen, one delayed local
@@ -62,40 +62,40 @@ This gives a shorter, weaker alternative to the existing
 [sharp operator envelope](MIXED_DECODER_PATTERN_BOUND.md). For a mixed
 scalar/traceless inactive site, its canonical Hamiltonian is
 
-$$
+```math
 H=aX_AX_M+bZ_AZ_M+X_B+Z_B(xX_M+yY_M+zZ_M),
 \quad 0\le a\le b,\quad a^2+b^2=2,\quad x^2+y^2+z^2=1.
-$$
+```
 
 Set `B_1=X_A X_B X_M`, `B_2=Z_A X_B Z_M`, `D=X_A Z_B`,
 `E=Z_A Z_B`, and `R=B_1 B_2=-Y_A Y_M`. Direct multiplication gives
 
-$$
+```math
 H^2=4I+2K,\qquad K=abR+aB_1+bB_2+axD+bzE.
-$$
+```
 
 In any state write the five expectations as `u,v,r,s,t`, respectively
 for `B_1,B_2,R,D,E`. Each of
 `{B_1,D}`, `{B_2,E}`, `{R,D,E}` anticommutes internally. The established
 expectation bound gives
 
-$$
+```math
 u^2+s^2\le1,\quad v^2+t^2\le1,\quad r^2+s^2+t^2\le1,
 \quad u^2+v^2+r^2+2s^2+2t^2\le3.
-$$
+```
 
 Apply `2pq<=p^2+q^2` to the vectors
 `(u,v,r,sqrt(2)s,sqrt(2)t)` and
 `(a,b,ab,ax/sqrt(2),bz/sqrt(2))`. Since `x^2+z^2<=1` and `a<=b`,
 
-$$
+```math
 \begin{aligned}
 \langle K\rangle
 &\le\tfrac12[3+a^2+b^2+a^2b^2+(a^2x^2+b^2z^2)/2]\\
 &\le3+\tfrac34a^2-\tfrac12a^4
 =\tfrac{105}{32}-\tfrac12(a^2-\tfrac34)^2\le\tfrac{105}{32}.
 \end{aligned}
-$$
+```
 
 Therefore `H^2<=169I/16` and `||H||<=13/4`. Arbitrary complex decoder
 directions remain included: no planar assumption was made. The zero-
@@ -117,10 +117,10 @@ corollary. The earlier sharp envelope's priority is not established.
 
 Use `s=sqrt(2)`, `c=2-s`, core spectrum `p=1-m>=m>0`, and
 
-$$
+```math
 G_{\rm act}=\sqrt{4-2(1-2m)^2},\quad G=s+G_{\rm act},\quad
 d=G-g(\sigma),\quad \delta=2s+c h_2(m)-G,\quad \kappa=p/m.
-$$
+```
 
 The prior [rank-two spectrum theorem](../ENTROPY_INEQUALITY_BOUNDARIES.md)
 gives `d,delta>=0` and `Delta(tau)>=0`. A rank-one core cannot have the
@@ -130,10 +130,10 @@ principal-angle sines between P and P_*; the expectations from Section 2
 are no longer in use. Put `xi=s-f_B`, `L=G_act-f_A`. The earlier
 [core proof](TWO_QUBIT_CORE_STABILITY.md), Section 4, gives
 
-$$
+```math
 d=\xi+L,\quad \xi\ge2s(mu+pv),\quad
 L\ge m(1-q^2),\qquad q=\cos(\alpha-\beta),
-$$
+```
 
 where `alpha=arcsin(sqrt(u))`, `beta=arcsin(sqrt(v))`. Its prior
 Cheng–Hall input, 1610.09302v3 Eqs. (10), (14), applies to the **core's**
@@ -144,17 +144,17 @@ For `0<=beta<=alpha<=pi/2`,
 `2sin((alpha-beta)/2)`, and
 `cos((alpha-beta)/2)>=cos((alpha+beta)/2)`. Therefore
 
-$$
+```math
 \boxed{L\ge m(\sqrt u-\sqrt v)^2.}
-$$
+```
 
 The earlier extra factor `1-u` was unnecessary. Minimize the resulting
 quadratic over all real sqrt(v), a safe relaxation, to obtain
 
-$$
+```math
 d\ge mu B(m),\qquad B(m)=2s+\frac{2s\kappa}{2s\kappa+1}>7/2.
 \qquad\text{(1)}
-$$
+```
 
 The last comparison follows from `kappa>=1` and `17>12sqrt(2)`.
 
@@ -169,18 +169,18 @@ Since `d<R`, (1) gives `u<U`. Concavity gives
 `R<=s-5/4-r^2/2`. For `D=2s(1+r)+1-r>0`, direct expansion of
 `20D[mB(m)/10-(s-5/4-r^2/2)]` gives
 
-$$
+```math
 P(r)=(34s-47)+(66s-105)r+(20s+2)r^2+(20s-10)r^3.
-$$
+```
 
 Using `s>140/99` and `r>=0`, bound its coefficients below by those of
 
-$$
+```math
 \begin{aligned}
 Q(r)&=27/25-(35/3)r+30r^2+18r^3\\
 &=18(r-1/6)^2(r+1/3)+30(r-61/360)^2+1123/21600>0.
 \end{aligned}
-$$
+```
 
 The coefficient gaps at `s=140/99` are
 `2/2475,0,28/99,28/99`. Thus `U<1/10` and **u<1/10**.
@@ -192,27 +192,27 @@ Active compressions have least singular value at least
 
 With `Q=I-P`, define on P
 
-$$
+```math
 C_U=\sqrt\sigma\,|\sqrt\sigma PUP\sqrt\sigma|^{-1}\sqrt\sigma,
 \qquad K=\sum_U\mathrm{Tr}(\tau QUP C_U PUQ).
-$$
+```
 
 All inverses exist by Section 4. The block Schur estimate and exact
 orthogonal-support entropy identity from the earlier proof give
 
-$$
+```math
 \Delta(\rho)\ge(1-\epsilon)(\delta+d)+c h_2(\epsilon)-2\epsilon K.
 \qquad\text{(2)}
-$$
+```
 
 Here the tail's entropy and score remain paired via `Delta(tau)>=0`.
 Section 5 of that proof gives the finite-angle bounds
 
-$$
+```math
 K_A\le\frac{8\sqrt\kappa\,u}{\sqrt{1-4u}},\qquad
 K_B\le A(u)=s(1-2u)\left[\frac2{1-8u+8u^2}-1\right].
 \qquad\text{(3)}
-$$
+```
 
 Their derivations require only `u<1/4` and the scalar definiteness
 condition, respectively, not the earlier final cutoff `u<1/20`.
@@ -221,20 +221,20 @@ being bounded; no Taylor remainder is dropped.
 
 Set, continuously at zero,
 
-$$
+```math
 J(u)=\frac{A(u)-s}{u}=
 \frac{s(14-32u+16u^2)}{1-8u+8u^2}.
-$$
+```
 
 Its derivative has positive numerator `16s(5-12u+8u^2)` on `[0,1/10]`.
 Thus `J(u)<=J(1/10)=274s/7<56`. Also
 `8sqrt(kappa)/sqrt(1-4u)<40sqrt(5/21)<20`. Equations (1), (3) imply
 
-$$
+```math
 K-s\le76u\le\frac{4864}{49}d\le100d,
 \qquad
 \Delta(\rho)\ge c h_2(\epsilon)-2s\epsilon+(1-201\epsilon)d.
-$$
+```
 
 Keep weak inequalities: `d=u=0` permits `K=s`. For
 `epsilon<=1/201`, the d coefficient is nonnegative, while
@@ -245,10 +245,10 @@ This proves the elementary theorem.
 
 Retaining the m dependence instead gives
 
-$$
+```math
 K-s\le C(m)d,\qquad
 C(m)=\frac{J(U(m))+8\sqrt\kappa/\sqrt{1-4U(m)}}{mB(m)}.
-$$
+```
 
 Where `R<0`, the high-score hypothesis is impossible. The
 [checker](../../tools/certify_extended_core.py) safely replaces R by
@@ -268,10 +268,10 @@ reduction, not unrestricted optimality or novelty.
 
 Consequently `K-s<=49d` and (2) gives
 
-$$
+```math
 \boxed{\Delta(\rho)\ge c h_2(\epsilon)-2s\epsilon
  +(1-99\epsilon)d>0,\qquad 0<\epsilon\le1/99.}
-$$
+```
 
 Strict positivity follows from
 `h_2(epsilon)/epsilon>log_2(99)>6` and `6c-2s=12-8s>0`.

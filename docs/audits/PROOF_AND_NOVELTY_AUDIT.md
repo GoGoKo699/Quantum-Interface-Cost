@@ -20,17 +20,17 @@ This is an independent reconstruction and source comparison of the pinned dossie
 
 Write `d=2^n`, `D=2^q`, with integer qubit budget `q>=0` and `n>=1`. An admissible encoder is a finite instrument `E_c: M_d -> M_D`, with `sum_c E_c` trace preserving. Smaller branch spaces can be embedded in the same D-dimensional output. The record alphabet is finite for each protocol but has no fixed bound. A binary decoder is a Hermitian contraction `B_(c,j)`; its effects are `(I ± B_(c,j))/2`. Thus its input observable is
 
-$$
+```math
 A_j=\sum_c\mathcal E_c^*(B_{c,j}).
-$$
+```
 
 Only one query `j=(i,X/Z)` is executed. The requirement is the operator identity `A_j=eta P_j`, equivalent to the prescribed statistics for **every density operator on the whole n-qubit input**, including internally entangled inputs. No assumption of independent input qubits is used. The virtual reference introduced in proofs is not an operational resource.
 
 The binary TV distance for a fixed input is `|Tr rho(A_j-P_j)|/2`; maximizing over states gives `||A_j-P_j||_infinity/2`. Pauli conjugation and matching sign relabeling project `A_j` onto `lambda_j P_j`, with
 
-$$
+```math
 \lambda_j=d^{-1}\mathrm{Tr}(P_jA_j)\ge1-2\epsilon.
-$$
+```
 
 The last inequality follows from trace/operator-norm duality and `||P_j||_1=d`. Permutations and independent local Hadamards act transitively on the query set. Recording their random choice makes every coefficient equal to the average lambda. It remains at least `1-2epsilon`, and output flips reduce it to that exact target. All randomness and instrument outcomes fit in a finite free record. Conversely, `eta P_j` has worst-case TV error `(1-eta)/2`, attained on an eigenstate. The equivalence holds for `0<=epsilon<=1/2`; it is an equivalence of optimal memory costs, not a claim that every approximate protocol was already a depolarizing channel.
 
@@ -61,25 +61,25 @@ No incorrect theorem in the pinned repository was identified. Source-proof cavea
 
 For `omega_RB=(id_R tensor E)(Phi_RS)` and `B=CQ`, channel duality gives
 
-$$
+```math
 \mathrm{Tr}\omega(P_{R_i}\otimes B_{i,P})
 =d^{-1}\mathrm{Tr}(P_i^T\mathcal E^*(B_{i,P}))=\eta.
-$$
+```
 
 Here X and Z are real. Measuring either reference Pauli and the corresponding binary decoder gives disagreement probability `epsilon=(1-eta)/2`. Data processing followed by binary Fano yields `H(X_i|B)<=h2(epsilon)` and the analogous Z bound. On the state obtained by measuring all reference qubits in X,
 
-$$
+```math
 H(\mathsf X^n|B)=\sum_i H(\mathsf X_i|B\mathsf X_{<i})
 \le\sum_i H(\mathsf X_i|B).
-$$
+```
 
 Its single-site marginals are the ones just bounded: tracing out the other measured reference outcomes is the same as tracing out those reference systems. This is strong subadditivity on states, not a simultaneous decoder construction. Repeat separately for Z.
 
 The two full reference bases have overlap `c=2^{-n}`. Applying Berta et al. [S4], Eq. (2), gives `H(X^n|B)+H(Z^n|B)>=n+H(R|B)`. Since C is classical,
 
-$$
+```math
 H(R|CQ)=\sum_c p_cH(R|Q)_{\omega^c}\ge-\log_2 D\ge-q.
-$$
+```
 
 Consequently `q>=n[1-2h2(epsilon)]`. Every branch is included. This proves the claimed bound and, with retention of the full input, `q_min(n,1)=n`.
 
@@ -89,29 +89,29 @@ For `W_i=X_(R_i) tensor B_(i,X)+Z_(R_i) tensor B_(i,Z)`, the actual expectation 
 
 The effect `T_i=I/2+W_i/4` is implemented by choosing X or Z uniformly, measuring R_i, sending basis and sign **from R_i to B**, and accepting agreement with the corresponding decoder. For `Delta=omega-sigma`, its trace is zero, and the binary measurement norm convention gives
 
-$$
+```math
 \|\Delta\|_{\mathrm{LOCC}\to}\ge2|\mathrm{Tr}T_i\Delta|
 \ge\eta-1/\sqrt2
-$$
+```
 
 when the final expression is positive. There is no extra factor of two. The corrected BCY Corollary 1 [S5] then gives `E_sq(R_i:B)>=(eta-eta0)^2/(16 ln2)`. The published erratum explicitly allows either one-way direction; an unrestricted-round LOCC norm must not replace it.
 
 For clarity, the needed monogamy direction follows directly, for every extension F, from
 
-$$
+```math
 \tfrac12 I(B:R_1\cdots R_n|F)
 =\tfrac12\sum_i I(B:R_i|FR_{<i})
 \ge\sum_i E_{\rm sq}(B:R_i).
-$$
+```
 
 Infimize over F and use symmetry. Each `FR_<i` is a legitimate extension of that marginal; reference independence is unnecessary. Koashi–Winter [S7] supplies the original monogamy theorem.
 
 Finally choose the extension copying the classical record:
 
-$$
+```math
 \widetilde\omega_{RCQF}=\sum_c p_c\omega^c_{RQ}
 \otimes|c\rangle\langle c|_C\otimes|c\rangle\langle c|_F.
-$$
+```
 
 Then `E_sq(R:CQ)<=I(R:CQ|F)/2=sum_c p_c I(R:Q)_c/2<=log2 D<=q`. In particular, one must not use `log dim(CQ)` as the charged resource. Combining the inequalities proves the positive-part bound in Eq. (12) of the note. This is a valid application of established ingredients; the audit does not certify novelty of the application.
 
@@ -127,36 +127,36 @@ For the many-copy control, `sqrt(2)a_i` and `sqrt(2)b_i` have range length `2sqr
 
 **Converse.** Finite input/output dimensions and a finite record allow finite Kraus refinement, with each `K_a` a D-by-d matrix. The old decoder can be retained on every refinement; permitting a better decoder only enlarges the optimization. Completeness gives `sum_a ||K_a||_F^2=d`. For nonzero branches put `L_a=K_a/||K_a||_F`. Taking the inner product of every effective-observable identity with its Pauli gives
 
-$$
+```math
 2n\eta=\frac1d\sum_{a,j}\mathrm{Tr}(B_{a,j}K_aP_jK_a^\dagger)
 \le\sum_a\frac{\|K_a\|_F^2}{d}g(L_a)\le\Gamma(n,D).
-$$
+```
 
 The weights really sum to one. No product, isometry, real-matrix, or flat-spectrum assumption has entered.
 
 **Completion.** Given any normalized complex L, let `m=4^n` and `K_U=sqrt(d/m)LU` over Pauli representatives. The Pauli average of `L^dagger L` is `I/d`, so these Kraus operators are complete. For `B_j=sign(LP_jL^dagger)`, including sign zero equal to zero, trace-norm duality gives `v_j=||LP_jL^dagger||_1`. Character orthogonality gives
 
-$$
+```math
 \frac1m\sum_U s_{U,j}U^\dagger A U
 =\frac{\mathrm{Tr}(P_jA)}d P_j.
-$$
+```
 
 Multiplying by the Kraus prefactor d cancels the denominator exactly, producing `v_jP_j`. Schatten Hölder gives `0<=v_j<=1`, so these are physical contrasts. The outcome U is an **instrument outcome**, whose probability generally depends on the input; it is not independent randomness or a success flag. Every outcome is retained.
 
 The additional independent permutation/Hadamard choice equalizes the v_j to `g(L)/(2n)`. This requires at most `4^n 2^n n!` classical labels, finite for each n, and quantum dimension at most D on every branch. Thus
 
-$$
+```math
 \eta_{\max}(n,q)=\Gamma(n,2^q)/(2n).
-$$
+```
 
 Compactness of the complex Frobenius unit sphere and continuity give an actual maximizing seed. The finite orbit therefore establishes attainment even though the original classical alphabet had no prescribed size.
 
 **Spectral form.** In input-then-output order define `|L>>=sum_(k,a) L_(a,k)|k>|a>`. Then
 
-$$
+```math
 \langle\!\langle L|(P_j^T\otimes B_j)|L\rangle\!\rangle
 =\mathrm{Tr}(B_jLP_jL^\dagger).
-$$
+```
 
 Both optimizations are maxima over compact independent domains, so they may be interchanged. Rayleigh–Ritz produces the displayed spectral expression. Real P_j does not justify restricting L or B_j to real matrices. A seesaw gives lower bounds on the maximum, not a global converse.
 
@@ -172,15 +172,15 @@ All locators below refer to the exact versions in Section 7. A source's memory-d
 
 **Reduction derived in this audit.** Choose uniform prior `p_(s,j)=1/(4n)` and states
 
-$$
+```math
 \rho_{s,j}=(I+sP_j)/d.
-$$
+```
 
 For any instrument and decoder with input observables A_j, the discrimination success is
 
-$$
+```math
 p_{\rm succ}=\frac12+\frac{1}{4nd}\sum_j\mathrm{Tr}(P_jA_j).
-$$
+```
 
 The Pauli/query symmetry twirls preserve this score and yield uniform contrast `eta=2p_succ-1`. Conversely a contrast-eta protocol attains `(1+eta)/2` on this ensemble. The optimal discrimination score is therefore exactly equivalent to our uniform-error optimization, with unchanged timing and worst-case dimension. The ensemble is a mathematical comparison, not a replacement promise on the operational input.
 
@@ -202,18 +202,18 @@ At perfect success, Lemma 5.1 forces every refined effect `K_a^dagger K_a` to co
 
 **Concrete obstruction derived here:** for `d=4,D=2`, Eq. (21) bounds that full-outcome visibility by
 
-$$
+```math
 \frac{5\sqrt2-1}{3(\sqrt2+1)}=\frac{11-6\sqrt2}{3}\simeq0.838240.
-$$
+```
 
 The local binary task attains `(1+1/sqrt(2))/2≈0.853553`. Thus the full-outcome bound cannot be imported into this task. Decoders for several local marginals need not form one executable joint decoder.
 
 **Source-proof repair:** after Eq. (11), the proof treats composition of a partially entanglement-breaking channel with transpose as a channel of the same kind. This is false in general: the identity channel composed with transpose is not CP. Transpose invariance of simulability nevertheless follows directly from
 
-$$
+```math
 M^T=\sum_a K_a^T N_a^T\overline K_a
 =\sum_a(\overline K_a)^\dagger N_a^T\overline K_a.
-$$
+```
 
 Conjugated Kraus operators preserve completeness and rank; transposed POVMs are valid. This repairs the shortcut without changing the theorem or the repository reduction. No novelty is claimed for the repair.
 
@@ -223,9 +223,9 @@ Conjugated Kraus operators preserve completeness and rank; transposed POVMs are 
 
 **Workload-specific obstruction derived here:** at `n=1,q=0`, a reconstructed-state channel is measure-and-prepare. Write its effects as `G_c=alpha_c(I+r_c·sigma)`, with `sum alpha_c=1`, `|r_c|<=1`, and prepared Bloch vectors t_c with `|t_c|<=1`. Equal X/Z transfer coefficients satisfy
 
-$$
+```math
 2\eta=\sum_c\alpha_c(r_{cx}t_{cx}+r_{cz}t_{cz})\le1.
-$$
+```
 
 This bound is attained by randomly measuring and repreparing X or Z. Our physical binary decoders attain `eta=1/sqrt(2)` instead. Thus even for the present observables, requiring a common reconstruction is a strict finite-accuracy restriction. The exact endpoint has a valid direct route through [S8]; no unjustified reconstruction assumption is needed.
 
@@ -235,16 +235,16 @@ This bound is attained by randomly measuring and repreparing X or Z. Our physica
 
 **Bridge derived here.** Let N be any actual finite-block reconstructed channel with input maximally mixed, fixed quantum bottleneck dimension D, and distortion
 
-$$
+```math
 \delta=\frac1n\sum_i\bigl(1-F_e(I/2,N_i)\bigr).
-$$
+```
 
 Define `t_(i,P)=d^{-1}Tr[P_i N^*(P_i)]`. For each marginal,
 `F_e=(1+t_(i,X)+t_(i,Y)+t_(i,Z))/4`. Pauli twirling removes unwanted input coefficients. Independent local Clifford twirls and site permutations equalize all the displayed diagonal coefficients. They can be implemented before encoding and in the decoder with a finite classical flag. The resulting effective X/Z observables are exactly
 
-$$
+```math
 \left(1-\frac{4\delta}{3}\right)P_j.
-$$
+```
 
 The operator identities hold on every input, including entangled inputs, and the bottleneck D is unchanged. Thus the achievable source curve gives `R(eta)<=f(3(1-eta)/4)` in particular for the nonclassical range of this project. For asymptotic distortion, use strict slack above the desired contrast and then output degradation; an expected branch entropy alone is not a fixed-dimensional protocol. Atypical outcomes must be handled by a trace-preserving fixed-cap code, not discarded or allowed extra memory. This is a legitimate achievable bound, not an identification of the optimum.
 
@@ -290,11 +290,11 @@ This is a targeted theorem-level audit of these sources and their relevant conne
 
 Keep the exact unrestricted finite-block problem in issue #2. The first concrete target is to determine whether
 
-$$
+```math
 \max_{L\in\mathbb C^{2\times4},\,\|L\|_F=1}
 \sum_{P\in\{X_1,Z_1,X_2,Z_2\}}\|LPL^\dagger\|_1
 =2+\sqrt2.
-$$
+```
 
 A strict violating seed must be explicit and completed by the audited instrument; a numerical seesaw value should first be treated as a candidate. A proof of equality must cover every complex seed and singular-value spectrum. The equivalent BWW ensemble gives an additional precise formulation for the next literature search. Solving only this block is a useful diagnostic, not a proof of the asymptotic curve.
 

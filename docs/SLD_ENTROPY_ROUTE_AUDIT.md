@@ -16,13 +16,13 @@ novelty remains unresolved.
 
 For any n-qubit density matrix rho, define
 
-$$
+```math
 I_\rho(P)=\frac12\sum_{a,b:\lambda_a+\lambda_b>0}
 \frac{(\lambda_a-\lambda_b)^2}{\lambda_a+\lambda_b}|P_{ab}|^2,
 \qquad
 \mathcal I_{XZ}(\rho)=\sum_{i=1}^n[I_\rho(X_i)+I_\rho(Z_i)].
 \qquad\text{(1)}
-$$
+```
 
 The entries are in an eigenbasis of rho. This is one quarter of the usual
 symmetric-logarithmic-derivative quantum Fisher information for each
@@ -30,29 +30,29 @@ unitary generator P. Entropies in this note are in bits.
 
 The proposed intermediate target is
 
-$$
+```math
 \boxed{\mathcal I_{XZ}(\rho)\ \stackrel{?}{\ge}\ n-S(\rho).}
 \qquad\text{(2)}
-$$
+```
 
 The [spectral-condition proof](SPECTRAL_CONDITION_ENTROPY_BOUND.md),
 Section 2, already proves by weighted Cauchy--Schwarz that
 
-$$
+```math
 F_P^2\le1-I_\rho(P),\qquad
 F_P=\|\sqrt\rho P\sqrt\rho\|_1.
 \qquad\text{(3)}
-$$
+```
 
 Thus (2), if proved, would imply
 
-$$
+```math
 \frac{g(\sqrt\rho)}{2n}
 \le\sqrt{\frac{1+S(\rho)/n}{2}},
 \qquad
 g(\sqrt\rho)=\sum_{i,b=X,Z}F_{P_{i,b}}.
 \qquad\text{(4)}
-$$
+```
 
 The seed reduction would then give
 `q >= n max(0,2 eta^2-1)` and the same necessary bound on the asymptotic
@@ -77,32 +77,32 @@ sharper linear seed entropy conjecture remain open.
 
 An apparently sufficient local claim is
 
-$$
+```math
 I_\rho(X_A)+I_\rho(Z_A)
 \stackrel{?}{\ge}1-S(A\mid B)_\rho.
 \qquad\text{(5)}
-$$
+```
 
 Consider the two-qubit pure state
 
-$$
+```math
 |\psi\rangle=\frac3{\sqrt{10}}|00\rangle
 +\frac1{\sqrt{10}}|11\rangle.
-$$
+```
 
 Its A marginal has Bloch coordinate `z=4/5` and `x=0`. Since the global
 state is pure,
 
-$$
+```math
 I_\psi(X_A)+I_\psi(Z_A)
 =1+\left(1-\frac{16}{25}\right)=\frac{34}{25}=1.36,
-$$
+```
 
 whereas
 
-$$
+```math
 1-S(A\mid B)_\psi=1+h_2(1/10)=1.4689955935\ldots.
-$$
+```
 
 This disproves (5). The same state satisfies (2): its two-site information
 sum is `68/25>2=n-S(psi)`. Entanglement does not supply a counterexample
@@ -116,19 +116,19 @@ pinching's entropy increase to `I_rho(P)` with unit coefficient.
 
 Take the single-qubit pure state
 
-$$
+```math
 |\phi\rangle=\frac3{\sqrt{10}}|0\rangle
 +\frac1{\sqrt{10}}|1\rangle,\qquad P=Z.
-$$
+```
 
 Then
 
-$$
+```math
 S(\mathcal E_Z(\phi))-S(\phi)=h_2(1/10)
 =0.4689955935\ldots
 >\frac9{25}=I_\phi(Z).
 \qquad\text{(6)}
-$$
+```
 
 This is an exact obstruction to that entropy-telescoping argument. The
 global one-qubit candidate again holds: `I_phi(X)+I_phi(Z)=1`.
@@ -151,10 +151,10 @@ local obstruction still does not refute (2).
 Sixia Yu, [arXiv:1302.5311v1](https://arxiv.org/pdf/1302.5311v1),
 21 February 2013, Eq. (1) and Eq. (4), printed p. 1, proves
 
-$$
+```math
 I_\rho(P)=\min_{\rho=\sum_kp_k\psi_k}
 \sum_kp_k\mathrm{Var}_{\psi_k}(P).
-$$
+```
 
 This supplies the established convex-roof interpretation of (1).
 Different observables can require different minimizing decompositions.
@@ -176,9 +176,9 @@ uses the weight `kappa(x)=x^(-1/2)`; their second case requires
 SLD instead corresponds to `kappa_SLD(x)=2/(1+x)`, the `kappa_min`
 identified in their Section 5.1, p. 17. Except at x=1,
 
-$$
+```math
 \frac2{1+x}<x^{-1/2}.
-$$
+```
 
 Neither hypothesis supplies an SLD tensorization theorem. Moreover,
 contraction of a divergence around a product reference is not the
@@ -191,11 +191,11 @@ Kaifeng Bu, Weichen Gu and Arthur Jaffe,
 [arXiv:2302.07841v3](https://arxiv.org/pdf/2302.07841v3),
 18 June 2023, Section IV.B, printed p. 5, define
 
-$$
+```math
 J(\rho;H)=\left.\frac{d^2}{d\theta^2}
 D(\rho\Vert e^{i\theta H}\rho e^{-i\theta H})\right|_{\theta=0}
 =\mathrm{Tr}\rho[H,[H,\log\rho]].
-$$
+```
 
 Their Eq. (12) sums this quantity over the spectral projectors of local
 X/Z operators. Theorem 15, Eq. (13), bounds its decrease under their
@@ -244,37 +244,37 @@ orbit substitution, not a many-copy physical encoding assumption.
 Let rho=P/r, where P is an orthogonal projection of rank r. For any
 Hermitian unitary U, (1) simplifies to
 
-$$
+```math
 I_{P/r}(U)=1-\frac{\mathrm{Tr}(PUPU)}r.
 \qquad\text{(7)}
-$$
+```
 
 Write `Tr_i` for the unnormalized partial trace. The local Pauli-twirl
 identity gives
 
-$$
+```math
 \frac12\sum_{i=1}^n\sum_{U=X,Y,Z}I_{P/r}(U_i)
 =2n-\frac1r\sum_i\mathrm{Tr}[(\mathrm{Tr}_iP)^2].
 \qquad\text{(8)}
-$$
+```
 
 For clarity, let `d=2^n`, expand `P=sum_w p_w sigma_w`, and let `N_Y(w)`
 count its Y factors. Pauli orthogonality then gives
 
-$$
+```math
 \mathcal I_{XZ}(P/r)
 -\frac12\sum_{i,U=X,Y,Z}I_{P/r}(U_i)
 =\frac{2d}{r}\sum_wN_Y(w)|p_w|^2\ge0.
 \qquad\text{(9)}
-$$
+```
 
 Consequently,
 
-$$
+```math
 \frac1r\sum_i\mathrm{Tr}[(\mathrm{Tr}_iP)^2]
 \stackrel{?}{\le}n+\log_2r
 \qquad\text{(10)}
-$$
+```
 
 would be sufficient for (2) on flat states. Equation (10) is equivalent
 to the three-Pauli energy bound from (8), not to the X/Z bound itself.
@@ -300,10 +300,10 @@ constants at p=2 give the Boolean-case coefficient 1/2. Substituting
 `A=2P-I` and `t=r/2^n`, for `0<t<1` its consequence in this note's
 normalization is
 
-$$
+```math
 \frac12\sum_{i,U=X,Y,Z}I_{P/r}(U_i)
 \ge(1-t)\left[1+\frac12\ln\frac1{4t(1-t)}\right].
-$$
+```
 
 This does not reach the requested `log_2(1/t)` coefficient; as t tends
 to zero, its leading logarithmic coefficient is 1/2 rather than `1/ln(2)`.
@@ -320,21 +320,21 @@ All Hilbert--Schmidt norms in this section use the unnormalized trace.
 
 For `a,b>=0` with `a+b>0`, direct integration gives
 
-$$
+```math
 \int_0^\infty(ae^{-ta}-be^{-tb})^2\,dt
 =\frac{a+b}{2}-\frac{2ab}{a+b}
 =\frac{(a-b)^2}{2(a+b)}.
 \qquad\text{(11)}
-$$
+```
 
 The integrand is zero when both a and b vanish. Define the positive
 Hermitian operator `f_t=rho exp(-t rho)`. Evaluating its commutator in an
 eigenbasis of rho and using (11) term by term proves
 
-$$
+```math
 \boxed{I_\rho(P)=\int_0^\infty\|[f_t,P]\|_2^2\,dt.}
 \qquad\text{(12)}
-$$
+```
 
 This includes singular rho without a full-rank approximation. Only finitely
 many nonnegative spectral terms occur.
@@ -342,22 +342,22 @@ many nonnegative spectral terms occur.
 For any Hermitian f, write `f=sum_w f_w sigma_w` in the n-qubit Pauli basis,
 where `f_w=Tr(sigma_w f)/d` and `d=2^n`. Pauli orthogonality gives
 
-$$
+```math
 \|[f,X_i]\|_2^2+\|[f,Z_i]\|_2^2-\|[f,Y_i]\|_2^2
 =8d\sum_{w:w_i=Y}|f_w|^2\ge0.
 \qquad\text{(13)}
-$$
+```
 
 Apply (13) inside (12), then sum over the sites. With `N_Y(w)` denoting
 the number of Y factors,
 
-$$
+```math
 \boxed{
 \mathcal I_{XZ}(\rho)-\frac12\sum_{i,U=X,Y,Z}I_\rho(U_i)
 =4d\int_0^\infty\sum_wN_Y(w)|f_w(t)|^2\,dt\ge0.
 }
 \qquad\text{(14)}
-$$
+```
 
 In particular, `I_rho(X_i)+I_rho(Z_i)>=I_rho(Y_i)` holds sitewise for
 arbitrary spectra and eigenvectors. For rho=P/r,
@@ -372,42 +372,42 @@ not a proof of that inequality or a substitution of the operational queries.
 Fix a full orthonormal eigenbasis `|a>` of rho, including its kernel, and
 put
 
-$$
+```math
 W_{ab}=\sum_{i=1}^n\sum_{U=X,Z}|\langle a|U_i|b\rangle|^2.
 \qquad\text{(15)}
-$$
+```
 
 Then W is symmetric and entrywise nonnegative, every row sums to 2n, and
 (2) is exactly the rational logarithmic-Sobolev inequality
 
-$$
+```math
 \frac12\sum_{a,b:\lambda_a+\lambda_b>0}
 W_{ab}\frac{(\lambda_a-\lambda_b)^2}{\lambda_a+\lambda_b}
 \ \stackrel{?}{\ge}\ \log_2d-H(\lambda).
 \qquad\text{(16)}
-$$
+```
 
 This must hold uniformly over the graphs induced by the conjugated local
 Paulis. It is not enough to establish it for one product eigenbasis.
 Two further necessary graph constraints are
 
-$$
+```math
 W_{aa}\le n,\qquad
 L:=2nI_d-W\succeq2\left(I_d-\frac Jd\right),
 \qquad\text{(17)}
-$$
+```
 
 where `I_d` is the d-dimensional identity matrix and J is the
 all-ones matrix. The diagonal bound follows from the Bloch-vector bound
 `<X_i>^2+<Z_i>^2<=1` on each pure eigenvector. To check the second bound,
 for any real vector x let `A=sum_a x_a|a><a|`. Then
 
-$$
+```math
 x^TLx=\frac12\sum_{i,U=X,Z}\|[A,U_i]\|_2^2
 \ge2\left(\mathrm{Tr}A^2-
 \frac{(\mathrm{Tr}A)^2}{d}\right).
 \qquad\text{(18)}
-$$
+```
 
 The last step follows by expanding A in Pauli words: each nonidentity
 word contributes at least two times its squared Hilbert--Schmidt norm.
@@ -416,11 +416,11 @@ These generic constraints do not imply (16). For an exact counterexample
 to that relaxation, take n=3, d=8, partition the vertices into four pairs,
 and set
 
-$$
+```math
 W_{aa}=3,\qquad W_{a,\mathrm{partner}(a)}=\frac32,
 \qquad W_{ab}=\frac14\quad\text{for the other six vertices }b.
 \qquad\text{(19)}
-$$
+```
 
 This symmetric nonnegative matrix has row sum 6 and diagonal 3. If K is
 the permutation matrix exchanging the members of each pair, then
@@ -429,12 +429,12 @@ the permutation matrix exchanging the members of each pair, then
 Let lambda be uniform on one pair and zero elsewhere. Each supported
 vertex has total weight 3/2 to the other pairs; hence
 
-$$
+```math
 \frac12\sum_{a,b}\!'
 W_{ab}\frac{(\lambda_a-\lambda_b)^2}{\lambda_a+\lambda_b}
 =\frac32<2=3-H(\lambda).
 \qquad\text{(20)}
-$$
+```
 
 The prime omits zero-denominator terms. This is a counterexample to using
 only symmetry, nonnegativity, row sums, the diagonal bound and the

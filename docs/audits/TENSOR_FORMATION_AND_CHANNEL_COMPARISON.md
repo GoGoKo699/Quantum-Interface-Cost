@@ -40,13 +40,13 @@ Write t=1/sqrt(2), delta=1-t, d=2^n, and let
 For S a subset of sites, put `s_S=product_(i in S) s_i` and
 `P_(S,b)=product_(i in S) P_(i,b_i)`. The full product assemblage is
 
-$$
+```math
 \Sigma^\eta_{\mathbf s|\mathbf b}
 =\bigotimes_{i=1}^n\frac{I+s_i\eta P_{b_i}}4
 =\frac1{d\,2^n}\sum_{S\subseteq[n]}
        \eta^{|S|}s_SP_{S,\mathbf b}.
 \qquad\text{(1)}
-$$
+```
 
 Set `B_n(eta)=E_FA(Sigma^eta)`, using the established assemblage formation
 entropy of Cope. A normalized seed is any collection of positive operators
@@ -60,20 +60,20 @@ there is a single untrusted party receiving the whole tuple.
 
 Define, for k=1,...,n,
 
-$$
+```math
 m_k(\Gamma)=\frac1{2^n\binom nk}
  \sum_{\mathbf b}\sum_{|S|=k}\sum_{\mathbf s}
  s_S\mathrm{Tr}(P_{S,\mathbf b}\Gamma_{\mathbf s|\mathbf b}).
 \qquad\text{(2)}
-$$
+```
 
 **Moment theorem.** Exactly,
 
-$$
+```math
 B_n(\eta)=\min\left\{\sum_a p_aS(\rho_a):
  \sum_a p_am_k(\Gamma^a)=\eta^k\quad(1\le k\le n)\right\}.
 \qquad\text{(3)}
-$$
+```
 
 At most n+1 seed orbits suffice. The finite symmetry orbit may itself have
 many flagged branches; no bound on classical records is being charged.
@@ -86,12 +86,12 @@ group eliminates every Y term and every mismatched character. Next twirl
 by local Hadamards with X/Z setting relabels, and then by site permutations.
 The result is
 
-$$
+```math
 \mathcal T(\Gamma)_{\mathbf s|\mathbf b}
 =\frac1{d\,2^n}\left[I+\sum_{S\ne\varnothing}
     m_{|S|}(\Gamma)s_SP_{S,\mathbf b}\right].
 \qquad\text{(4)}
-$$
+```
 
 Each group image retains its own flag and the same entropy S(rho).
 Charging the entropy of the averaged marginal I/d would be erroneous.
@@ -112,12 +112,12 @@ For clarity, this formulation does not silently make every component a
 multisite nonsignalling assemblage. For n>=2 and eta<1, choose
 `0<epsilon<(1-eta)^n`, and `h(X)=1,h(Z)=-1`. The two collections
 
-$$
+```math
 \Gamma^\pm_{\mathbf s|\mathbf b}
 =\Sigma^\eta_{\mathbf s|\mathbf b}
  \mathbin\pm\frac{\epsilon s_1h(b_2)}{4^n}I
 \qquad\text{(5)}
-$$
+```
 
 are strictly positive normalized quantum assemblages with marginal I/d.
 Their average is the target, while each first-site outcome marginal depends
@@ -130,20 +130,20 @@ does not exclude existence of a specially structured optimal decomposition.
 
 Define the jointly attainable first-moment score
 
-$$
+```math
 j_n(\rho)=\max_{\Gamma:\ \sum_{\mathbf s}
                   \Gamma_{\mathbf s|\mathbf b}=\rho}m_1(\Gamma).
 \qquad\text{(6)}
-$$
+```
 
 The unrestricted single-query score from the seed reduction is
 
-$$
+```math
 f_n(\rho)=\frac1{2n}\sum_{i,b_i}
  \|\sqrt\rho P_{i,b_i}\sqrt\rho\|_1,
 \qquad j_n(\rho)\le f_n(\rho).
 \qquad\text{(7)}
-$$
+```
 
 The inequality follows from trace-norm duality for every context-dependent
 marginal decoder. Equality is not assumed: separately optimal binary
@@ -155,10 +155,10 @@ decoders need not be marginals of a common tuple POVM.
 2. That equality holds for every eta in [t,1].
 3. Every n-qubit density matrix satisfies
 
-$$
+```math
 S(\rho)\ge\frac{n[j_n(\rho)-t]}\delta.
 \qquad\text{(8)}
-$$
+```
 
 If these statements fail, then `B_n(eta)<n(eta-t)/delta` for **every**
 eta in (t,1), at the same block size n. This is a stronger fixed-block
@@ -169,31 +169,31 @@ local-query rate. It is not a proof that either alternative occurs.
 and n-j pure bisector factors, with local optimal readout. Its entropy is j.
 Its symmetry orbit has moments
 
-$$
+```math
 v_{j,k}=\binom nk^{-1}\sum_\ell
        \binom j\ell\binom{n-j}{k-\ell}t^{k-\ell}.
 \qquad\text{(9)}
-$$
+```
 
 These n+1 vectors are affinely independent. Their generating polynomials,
 including v_(j,0)=1, are
 
-$$
+```math
 F_j(z)=\sum_{k=0}^n\binom nk v_{j,k}z^k
       =(1+z)^j(1+tz)^{n-j}.
 \qquad\text{(10)}
-$$
+```
 
 A vanishing linear combination, divided by (1+tz)^n near zero, becomes a
 polynomial in the nonconstant variable `(1+z)/(1+tz)`. All its coefficients
 must vanish. For eta=t+delta p, 0<p<1, the target moment vector
 `u=(eta,...,eta^n)` has strictly positive coordinates in this simplex:
 
-$$
+```math
 u=\sum_{j=0}^n\alpha_jv_j,\qquad
 \alpha_j=\binom njp^j(1-p)^{n-j}.
 \qquad\text{(11)}
-$$
+```
 
 This follows by expanding `(1+eta z)^n` using
 `1+eta z=p(1+z)+(1-p)(1+tz)`. The affine function
@@ -203,20 +203,20 @@ If a legal seed has moments w and entropy s<L(w), write its unique real
 barycentric coordinates `w=sum_j beta_j v_j`, `sum_j beta_j=1`.
 They need not be nonnegative. Choose
 
-$$
+```math
 0<\varepsilon<\min\left\{1,
              \min_{j:\beta_j>0}\frac{\alpha_j}{\beta_j}\right\}.
 \qquad\text{(12)}
-$$
+```
 
 Mix this seed with weight epsilon and product atom j with weight
 `alpha_j-epsilon beta_j`. These are nonnegative weights summing to one;
 all target moments are restored exactly, while the entropy becomes
 
-$$
+```math
 np+\varepsilon[s-L(w)]<np.
 \qquad\text{(13)}
-$$
+```
 
 Orbit completion in (4) makes this a full target decomposition. Failure
 of (8) supplies such a seed by maximizing (6), proving strict savings at
@@ -226,12 +226,12 @@ This proves all three equivalences.
 
 For n=2, compensation is completely explicit:
 
-$$
+```math
 \beta_0=\frac{w_2-2w_1+1}{\delta^2},\quad
 \beta_1=\frac{2[(1+t)w_1-w_2-t]}{\delta^2},\quad
 \beta_2=\frac{w_2-2tw_1+t^2}{\delta^2}.
 \qquad\text{(14)}
-$$
+```
 
 Consequently the eta^2 constraint cannot protect additivity from a seed
 violating (8). An exact affine supporting witness at an interior product
@@ -259,10 +259,10 @@ optimal retained dimension two. The full tuple task cannot be simulated
 with retained dimension at most two. In particular, for n=2 its exact
 minimum dimension is three, versus two for the local task, at
 
-$$
+```math
 \eta_*=(1+1/\sqrt2)/2.
 \qquad\text{(15)}
-$$
+```
 
 In integer-qubit units the two costs are two and one. A matching qutrit
 instrument is supplied below. The theorem makes no claim that B_2 exceeds
@@ -272,18 +272,18 @@ A_2.
 whose essential prior ingredient is Cheng–Hall's independently optimized
 three-qubit CHSH monogamy inequality. It gives
 
-$$
+```math
 f_n(\rho)\le t+\delta/n\quad(\mathrm{rank}\rho\le2),
 \qquad\text{(16)}
-$$
+```
 
 and every equality seed, up to an output unitary and retained site r, is
 
-$$
+```math
 L=\frac1{\sqrt2}U\left(I_r\otimes
                       \bigotimes_{i\ne r}\langle\beta_i|\right),
 \qquad\text{(17)}
-$$
+```
 
 where each beta_i has X and Z expectations `t a_(i,X),t a_(i,Z)` with
 signs a_(i,b)=+/-1. This rigidity includes arbitrary complex seeds.
@@ -304,11 +304,11 @@ the finite average are nonnegative. Rigidity therefore gives (17).
 
 For a discarded site i and a retained site r, respectively,
 
-$$
+```math
 LP_{i,b_i}L^\dagger=\frac{t a_{i,b_i}}2I,
 \qquad LP_{r,b_r}L^\dagger=\frac12UP_{b_r}U^\dagger.
 \qquad\text{(18)}
-$$
+```
 
 These matrices are invertible. Their unique optimizing contractions are
 `a_(i,b_i) I` and `U P_(b_r) U^dagger`. A scalar-sign marginal of a POVM
@@ -324,11 +324,11 @@ outputs cancel the beta expectations in the sandwiched Pauli product;
 the retained Pauli squared is I. Averaging over all pairs gives, on every
 branch independently of r,
 
-$$
+```math
 m_2=t^2+\frac2n(t-t^2)
     =\eta_n^2-\frac{\delta^2}{n^2}<\eta_n^2.
 \qquad\text{(19)}
-$$
+```
 
 This contradicts the target's second moment, proving impossibility.
 The random-subset local protocol attains eta_n, and eta_n>t excludes zero
@@ -338,11 +338,11 @@ quantum memory.
 `b=sqrt(a(1-a))=1/(2sqrt(2))`, and let `T=(X+Z)/sqrt(2)`. Define the
 four-by-four seed
 
-$$
+```math
 L=\frac12\left[aI+b(T\otimes I+I\otimes T)
                      -(1-a)T\otimes T\right].
 \qquad\text{(20)}
-$$
+```
 
 In the product T eigenbasis its eigenvalues are
 `(1/sqrt(2),1/2,1/2,0)`. Hence it has rank three and Frobenius norm one.
@@ -356,12 +356,12 @@ Writing `L=(1/2)sum_Q ell_Q Q`, Pauli character orthogonality gives
 coefficients are a^2 on II, a(1-a)/2 on XI,ZI,IX,IZ, and (1-a)^2/4 on
 XX,XZ,ZX,ZZ. The resulting channel is exactly
 
-$$
+```math
 \Lambda_a\otimes\Lambda_a,\qquad
 \Lambda_a(\omega)=a\omega+\frac{1-a}2(X\omega X+Z\omega Z),
 \quad\Lambda_a^*(X)=aX,\quad\Lambda_a^*(Z)=aZ.
 \qquad\text{(21)}
-$$
+```
 
 Only a qutrit crosses the interface: choose an isometry V_P from C^3
 onto the range of K_P and retain the output of `V_P^dagger K_P`, with
@@ -394,20 +394,20 @@ is one, using a mixture that includes rank-four branches.
 For 0<=x,z<=1 let C(x,z) be the already evaluated one-qubit formation roof
 in [the profile theorem](../PRODUCT_DIAGONAL_PROFILE_RATE.md), and put
 
-$$
+```math
 f(v)=h_2\!\left(\frac{1-\sqrt{1-v^2}}2\right).
 \qquad\text{(22)}
-$$
+```
 
 Consider the distinct completion problem
 
-$$
+```math
 G(x,z)=\min_{\substack{\Lambda:\text{qubit CPTP}\\
                   \Lambda^*(X)=xX,\ \Lambda^*(Z)=zZ}}
  E_F(J_\Lambda),\qquad
 J_\Lambda=(\mathrm{id}\otimes\Lambda)(\Phi_2).
 \qquad\text{(23)}
-$$
+```
 
 Here the output is a single qubit with fixed X,Z readouts; Phi_2 is the
 normalized Bell state. This is Choi formation entropy, not an asserted
@@ -415,19 +415,19 @@ unregularized formula for operational channel entanglement cost.
 
 **Channel comparison theorem.**
 
-$$
+```math
 G(x,z)=f([x+z-1]_+),\qquad C(x,z)\le G(x,z),
 \qquad\text{(24)}
-$$
+```
 
 with the complete equality set
 
-$$
+```math
 C(x,z)=G(x,z)
 \quad\Longleftrightarrow\quad
 x+z\le1\ \text{or}\ \max\{x,z\}=1.
 \qquad\text{(25)}
-$$
+```
 
 In particular, at (3/5,4/5), C=0 but G=f(2/5)>0. The fixed-output
 completion is inequivalent even at the zero-cost boundary, before any
@@ -439,11 +439,11 @@ readout constraints and makes its Choi state a mixture of local-unitary
 conjugates, so it cannot increase E_F. The resulting Pauli channel has
 Bloch multipliers (x,y,z), with Bell weights
 
-$$
+```math
 (p_I,p_X,p_Y,p_Z)=\tfrac14
 (1+x+y+z,\ 1+x-y-z,\ 1-x+y-z,\ 1-x-y+z).
 \qquad\text{(26)}
-$$
+```
 
 Complete positivity is exactly
 `x+z-1<=y<=1-|x-z|`. Wootters' established two-qubit formula gives
@@ -458,10 +458,10 @@ is C(1,v)=C(v,1)=f(v), equal to G. For every remaining point, set
 `v=x+z-1 in (0,1)`. On the segment with endpoints A=(1,v), B=(v,1),
 both endpoint costs equal f(v). The midpoint M has
 
-$$
+```math
 C(M)=\left[\frac{1+v-\sqrt2}{2-\sqrt2}\right]_+<f(v).
 \qquad\text{(27)}
-$$
+```
 
 For v<=sqrt(2)-1 this is immediate. Above that value, f is convex with
 `f'(v)<=f'(1)=1/ln(2)<1/(2-sqrt(2))`. The difference between f and the
@@ -529,12 +529,12 @@ historical initial audit remain unchanged.
 
 The exact remaining local-query gate is still
 
-$$
+```math
 \sum_{i,b}\|\sqrt\rho P_{i,b}\sqrt\rho\|_1
 \le\sqrt2\,n+(2-\sqrt2)S(\rho)
 \quad\text{for every n and every n-qubit density matrix.}
 \qquad\text{(28)}
-$$
+```
 
 A complete proof or a certified violation is needed. For the narrower
 full-tuple route, (8) is now an equivalent fixed-block gate; a certified

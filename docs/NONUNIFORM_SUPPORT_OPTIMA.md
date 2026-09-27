@@ -12,11 +12,11 @@ support, including matrices with coherences in the displayed basis.
 
 For a density matrix rho on n qubits, use the score
 
-$$
+```math
 g(\sqrt\rho)=\sum_{i=1}^n\sum_{U=X_i,Z_i}
 \|\sqrt\rho\,U\sqrt\rho\|_1.
 \qquad\text{(1)}
-$$
+```
 
 The [normalized-seed reduction](COLLECTIVE_ENCODING_REDUCTION.md) allows
 every Gram matrix rho of the permitted rank. Replacing rho by its normalized
@@ -28,9 +28,9 @@ unavailable.
 
 Let
 
-$$
+```math
 B=(X+Z)/\sqrt2,
-$$
+```
 
 and write `|0_B>`, `|1_B>` for its positive and negative eigenstates.
 Conjugation by B exchanges X and Z. Consequently the score is invariant
@@ -39,28 +39,28 @@ under every local B_i, and also under permutations of the input sites.
 The score is concave in rho. To give the needed reason explicitly, each
 summand is root fidelity:
 
-$$
+```math
 \|\sqrt\rho U\sqrt\rho\|_1
 =F(\rho,U\rho U),\qquad
 F(A,C)=\|\sqrt A\sqrt C\|_1.
-$$
+```
 
 Root fidelity has the variational expression
 
-$$
+```math
 F(A,C)=\frac12\inf_{H>0}
 \bigl[\mathrm{Tr}(AH)+\mathrm{Tr}(CH^{-1})\bigr].
 \qquad\text{(2)}
-$$
+```
 
 For completeness, trace-norm duality and Hilbert--Schmidt Cauchy--Schwarz
 give `F(A,C) <= sqrt(Tr(AH) Tr(CH^{-1}))`, which is at most the
 displayed arithmetic mean. For positive definite A and C, equality is
 attained at
 
-$$
+```math
 H=A^{-1/2}(A^{1/2}CA^{1/2})^{1/2}A^{-1/2},
-$$
+```
 
 since `HAH=C` and both traces equal F. For singular A or C, approximate
 them by `A+epsilon I`, `C+epsilon I`: the lower bound still holds, while
@@ -83,17 +83,17 @@ We will use the elementary two-weight formula from the
 product-bisector basis with probabilities p and r, either local query has
 the compressed matrix, up to signs,
 
-$$
+```math
 \frac1{\sqrt2}
 \begin{pmatrix}p&\sqrt{pr}\\ \sqrt{pr}&-r\end{pmatrix}.
-$$
+```
 
 Its determinant is `-pr`, and its trace norm is
 
-$$
+```math
 \frac1{\sqrt2}\sqrt{p^2+6pr+r^2}.
 \qquad\text{(3)}
-$$
+```
 
 The formula includes a zero weight. Summing over orthogonal edge blocks
 gives the full trace norm of each query.
@@ -102,48 +102,48 @@ gives the full trace norm of each query.
 
 Define
 
-$$
+```math
 V_2=\mathrm{span}\{|00_B\rangle,|10_B\rangle,|01_B\rangle\}.
-$$
+```
 
 **Proposition 1.** The exact fixed-support optimum is
 
-$$
+```math
 \boxed{\max_{\mathrm{supp}\rho\subseteq V_2}
 g(\sqrt\rho)=\frac{18\sqrt2}{7}.}
 \qquad\text{(4)}
-$$
+```
 
 It is attained by the diagonal state with probabilities
 
-$$
+```math
 p(00)=\frac37,\qquad p(10)=p(01)=\frac27.
 \qquad\text{(5)}
-$$
+```
 
 Indeed, Section 1 reduces the optimization to
 `p(00)=a`, `p(10)=p(01)=b=(1-a)/2`. At every site, one edge has weights
 (a,b), and the other has weights (b,0). Equation (3) therefore gives
 
-$$
+```math
 g_2(a)=2\sqrt2\bigl[\sqrt{a^2+6ab+b^2}+b\bigr]
 =\sqrt2\bigl[\sqrt{1+10a-7a^2}+1-a\bigr].
 \qquad\text{(6)}
-$$
+```
 
 For `0<a<1`, the derivative divided by `sqrt(2)` is
 
-$$
+```math
 \frac{5-7a}{\sqrt{1+10a-7a^2}}-1.
-$$
+```
 
 When `a>=5/7` it is negative. For `a<5/7`, both quantities being compared
 are nonnegative, and
 
-$$
+```math
 (5-7a)^2-(1+10a-7a^2)
 =8(7a-3)(a-1).
-$$
+```
 
 Thus the derivative is positive for `a<3/7` and negative for `a>3/7`.
 Substitution proves (4)--(5), including the endpoints by continuity.
@@ -154,21 +154,21 @@ Every rank-three projector on two qubits has the form
 `P=I-|v><v|`. For any local X or Z query U, its compression to the
 three-dimensional range of P has eigenvalues
 
-$$
+```math
 1,\quad -1,\quad-\langle v|U|v\rangle.
-$$
+```
 
 The first two eigenvalues follow because each two-dimensional eigenspace
 of U intersects the range of P in at least one dimension; the third follows
 from the trace. Consequently
 
-$$
+```math
 g(\sqrt{P/3})=
 \frac{8+\sum_{i=1}^2
 (|\langle X_i\rangle_v|+|\langle Z_i\rangle_v|)}3
 \le\frac{8+2\sqrt2}{3}.
 \qquad\text{(7)}
-$$
+```
 
 Each reduced Bloch vector has length at most one, proving the inequality.
 A product-bisector choice of v attains it. This independently reproduces
@@ -177,11 +177,11 @@ the exact flat-rank-three value from the
 
 The strict comparison is
 
-$$
+```math
 \frac{18\sqrt2}{7}-\frac{8+2\sqrt2}{3}
 =\frac{8(5\sqrt2-7)}{21}>0.
 \qquad\text{(8)}
-$$
+```
 
 Thus the following assertion is false: **at each fixed rank r, the global
 score maximum can be attained by a flat rank-r state.** Rank three on two
@@ -193,52 +193,52 @@ power-of-two ranks.
 
 Define
 
-$$
+```math
 V_3=\mathrm{span}\{
 |000_B\rangle,|100_B\rangle,|010_B\rangle,|001_B\rangle\}.
-$$
+```
 
 **Proposition 2.** The exact fixed-support optimum is
 
-$$
+```math
 \boxed{\max_{\mathrm{supp}\rho\subseteq V_3}
 g(\sqrt\rho)=3\sqrt3.}
 \qquad\text{(9)}
-$$
+```
 
 An attaining state has probabilities
 
-$$
+```math
 p(000)=1-\frac{\sqrt6}{4},\qquad
 p(100)=p(010)=p(001)=\frac{\sqrt6}{12}.
 \qquad\text{(10)}
-$$
+```
 
 Section 1 reduces the optimization to a central weight a and three equal
 weights `b=(1-a)/3`. At each site the nonzero edge blocks have weights
 (a,b), (b,0), and (b,0). Equation (3) gives
 
-$$
+```math
 \begin{aligned}
 g_3(a)
 &=3\sqrt2\bigl[\sqrt{a^2+6ab+b^2}+2b\bigr]\\
 &=\sqrt2\bigl[\sqrt{1+16a-8a^2}+2(1-a)\bigr].
 \end{aligned}
 \qquad\text{(11)}
-$$
+```
 
 The derivative divided by `sqrt(2)` is
 
-$$
+```math
 \frac{8(1-a)}{\sqrt{1+16a-8a^2}}-2.
-$$
+```
 
 Its sign is that of
 
-$$
+```math
 16(1-a)^2-(1+16a-8a^2)
 =24(1-a)^2-9,
-$$
+```
 
 since both sides in the unsquared comparison are nonnegative. It changes
 from positive to negative at `a=1-sqrt(6)/4`. At this point
@@ -248,10 +248,10 @@ All six individual query scores equal `sqrt(3)/2`.
 In contrast, the normalized projector onto this same support has
 `a=b=1/4`, and hence
 
-$$
+```math
 g(\sqrt{P_{V_3}/4})=3+\frac32\sqrt2<3\sqrt3.
 \qquad\text{(12)}
-$$
+```
 
 The strict inequality follows from `2sqrt(3)>2+sqrt(2)`, whose square
 reduces to `3>2sqrt(2)`. Therefore **replacing a seed by the normalized
@@ -262,9 +262,9 @@ unresolved block `n=3,q=2`.
 This is a statement about a fixed support. It does not exceed the global
 flat-rank-four optimum:
 
-$$
+```math
 3\sqrt3<4+\sqrt2.
-$$
+```
 
 For example, squaring this last comparison reduces to `9<8sqrt(2)`.
 The [flat half-rank theorem](FLAT_HALF_RANK_OPTIMALITY.md) and the

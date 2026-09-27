@@ -20,46 +20,46 @@ delayed query `(i,b)`, with `b=X,Z`. It may be collective, its finite
 classical record is unrestricted, and every branch retains a quantum
 system of dimension at most two. Require effective observables
 
-$$
+```math
 A_{i,X}=\eta_{i,X}X_i,\qquad A_{i,Z}=\eta_{i,Z}Z_i,
 \qquad 0\le\eta_{i,b}\le1,
-$$
+```
 
 uniformly for every input state, including internally entangled states.
 Define the following function on the unit square:
 
-$$
+```math
 w(x,y)=\max\{0,\ x+y-1-\sqrt{2(1-x)(1-y)}\}.
 \qquad\text{(1)}
-$$
+```
 
 **Theorem.** A contrast profile is feasible if and only if
 
-$$
+```math
 \boxed{\sum_{i=1}^n w(\eta_{i,X},\eta_{i,Z})\le1.}
 \qquad\text{(2)}
-$$
+```
 
 Equivalently, for arbitrary nonnegative weights a_i,b_i, put
 `r_i=sqrt(a_i^2+b_i^2)` and `delta_i=a_i+b_i-r_i`. The exact support
 function is
 
-$$
+```math
 \boxed{\max_{\text{feasible }\eta}
 \sum_i(a_i\eta_{i,X}+b_i\eta_{i,Z})
 =\sum_i r_i+\max_i\delta_i.}
 \qquad\text{(3)}
-$$
+```
 
 Define the quarter disk `D={(x,y) in [0,1]^2:x^2+y^2<=1}` and the
 square `S=[0,1]^2`. A third equivalent description is
 
-$$
+```math
 \boxed{\mathcal K_n=\mathrm{conv}
 \left(\bigcup_{k=1}^n
 \mathcal D^{k-1}\times\mathcal S\times\mathcal D^{n-k}\right).}
 \qquad\text{(4)}
-$$
+```
 
 The all-classical region `D^n` is already included. The full region
 need not be a polytope; its equal-pair slice in Section 6 is one.
@@ -68,37 +68,37 @@ need not be a polytope; its equal-pair slice in Section 6 is one.
 
 For a complex `2 by 2^n` matrix L with `||L||_F=1`, define
 
-$$
+```math
 f_i=a_i\|LX_iL^\dagger\|_1+b_i\|LZ_iL^\dagger\|_1.
-$$
+```
 
 Choose extreme Hermitian contraction decoders attaining these norms.
 In dimension two, an extreme is a scalar sign or a traceless Pauli
 direction. On the normalized vectorized seed, `f_i=<h_i>` with
 
-$$
+```math
 h_i=a_iX_i\otimes B_{i,X}+b_iZ_i\otimes B_{i,Z}.
-$$
+```
 
 Call a site active when both decoders are traceless. At an inactive site,
 one decoder is scalar and `h_i^2=r_i^2 I`, so `f_i<=r_i`.
 Ignore sites with `r_i=0`. At an active site the reference observables
 
-$$
+```math
 C_{i,0}=\frac{a_iX_i+b_iZ_i}{r_i},\qquad
 C_{i,1}=\frac{a_iX_i-b_iZ_i}{r_i}
-$$
+```
 
 are unit Pauli directions. They need not be orthogonal: CHSH permits
 arbitrary unit directions. Their CHSH operator with memory settings
 `B_{i,X},B_{i,Z}` is exactly `2h_i/r_i`. For two active sites,
 Cheng–Hall's independently optimized common-qubit bound gives
 
-$$
+```math
 \left(\frac{f_i}{r_i}\right)^2+
 \left(\frac{f_k}{r_k}\right)^2\le2.
 \qquad\text{(5)}
-$$
+```
 
 The common system is the retained qubit. The three-qubit marginal may
 be mixed, and different tests may use different settings on that qubit.
@@ -108,10 +108,10 @@ locators appear in [the earlier proof](ONE_QUBIT_OPTIMALITY.md), Section 2.
 Thus at most one site exceeds r_i. Every site also has `f_i<=a_i+b_i`,
 because each trace norm is at most one. Consequently every seed obeys
 
-$$
+```math
 \sum_i f_i\le\sum_i r_i+\max_i\delta_i.
 \qquad\text{(6)}
-$$
+```
 
 ## 3. Converse for arbitrary physical branches
 
@@ -123,10 +123,10 @@ Trace preservation gives `sum_a p_a=1`. The actual branch decoders
 `D_{a,i,b}` are Hermitian contractions. Taking the Hilbert–Schmidt
 inner products of the effective observables with the target Paulis gives
 
-$$
+```math
 \sum_i(a_i\eta_{i,X}+b_i\eta_{i,Z})
 =\sum_a p_a\sum_i h_{a,i},
-$$
+```
 
 where
 `h_{a,i}=a_i Tr(D_{a,i,X}L_aX_iL_a^dagger)`
@@ -141,10 +141,10 @@ worst-case branch dimension and the complete trace-preserving instrument.
 
 For any `(u,v)` in D, the four-outcome parent POVM
 
-$$
+```math
 G_{s,t}=\tfrac14(I+s u X+t v Z),\qquad s,t\in\{+1,-1\},
 \qquad\text{(7)}
-$$
+```
 
 is positive and sums to I. Reporting s for an X query or t for a Z
 query implements exactly the two noisy Pauli observables. Measuring a
@@ -172,25 +172,25 @@ The converse excludes all profiles outside K_n, proving (4).
 
 For a single pair `(x,y)`, the minimum fraction p for which
 
-$$
+```math
 (x,y)=p\,s+(1-p)d,\qquad s\in\mathcal S,\ d\in\mathcal D,
 \qquad\text{(8)}
-$$
+```
 
 is possible is w(x,y). Indeed, necessity follows from
 
-$$
+```math
 \|((x,y)-p(1,1))_+\|_2\le1-p,
 \qquad\text{(9)}
-$$
+```
 
 using `s<= (1,1)` coordinatewise. If `(x,y)` lies in D, p=0 suffices.
 Otherwise the smaller quadratic root of
 `(x-p)^2+(y-p)^2=(1-p)^2` is
 
-$$
+```math
 p_*=x+y-1-\sqrt{2(1-x)(1-y)}>0.
-$$
+```
 
 It obeys `p_*<=min(x,y)`. For `p<p_*`, the positive part in (9)
 does not change either coordinate and the quadratic inequality fails.
@@ -208,9 +208,9 @@ site i with probability p_i and use an all-classical branch with the
 remaining probability. At every discarded site with `p_i<1`, use (7)
 with the common classical pair
 
-$$
+```math
 (u_i,v_i)=\frac{(\eta_{i,X},\eta_{i,Z})-p_i(1,1)}{1-p_i}.
-$$
+```
 
 It lies in D by the calculation above, including the p_i=0 case.
 If p_i=1, both target contrasts are one and this site is always retained;
@@ -223,12 +223,12 @@ with memory dimension at most two in every branch and no postselection.
 Write `eta_{i,X}=eta_{i,Z}=eta_i`, `eta_0=1/sqrt(2)`.
 Direct substitution in (1) gives
 
-$$
+```math
 w(\eta_i,\eta_i)=\frac{(\eta_i-\eta_0)_+}{1-\eta_0},
 \qquad
 \boxed{\sum_i(\eta_i-\eta_0)_+\le1-\eta_0.}
 \qquad\text{(10)}
-$$
+```
 
 This slice is a polytope, with nonnegative support function
 `eta_0 sum_i w_i+(1-eta_0)max_i w_i`. Its converse also follows

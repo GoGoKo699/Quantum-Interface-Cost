@@ -67,7 +67,7 @@ not needed to understand or prove the three operational conclusions.
 | Compatible measurements | All requested statistics can be obtained by classical processing of one parent measurement; this is the zero-quantum-memory endpoint |
 | A quantum instrument | An encoding with both a classical outcome and a remaining quantum output |
 | Delayed query | The site and X/Z choice are revealed only after encoding; only one binary answer is required |
-| Quantum memory dimension | At most $D=2^q$ in every branch; the classical alphabet has no fixed size bound but is finite |
+| Quantum memory dimension | At most $`D=2^q`$ in every branch; the classical alphabet has no fixed size bound but is finite |
 | Normalized seed | An auxiliary operator describing a refined encoding branch; its Gram matrix is not the unknown physical input state |
 | Uniform error | A guarantee for every input state and each allowed query, including inputs entangled across sites |
 
@@ -88,8 +88,8 @@ For common contrast, random subset retention attains
 \left(1-\frac qn\right)\frac1{\sqrt2}.
 ```
 
-This is the unrestricted optimum for every integer $0\le q\le n\le4$
-with $n\ge1$, and for $q=1$ at every input size. The full one-qubit
+This is the unrestricted optimum for every integer $`0\le q\le n\le4`$
+with $`n\ge1`$, and for $`q=1`$ at every input size. The full one-qubit
 theorem also determines unequal local accuracies. A different complete
 protocol, with 31 inputs and five memory qubits, exceeds the precisely
 defined original-site-retention class when X and Z accuracies differ.

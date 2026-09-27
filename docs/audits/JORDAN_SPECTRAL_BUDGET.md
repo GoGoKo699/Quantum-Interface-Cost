@@ -24,47 +24,47 @@ algebra, not a new general monogamy principle or a novelty certificate.
 Let n reference qubits share a finite-dimensional memory Q, with
 Hermitian reflection readouts B_i,D_i and weights a_i,b_i>=0. Set
 
-$$
+```math
 H=\sum_i h_i,\qquad h_i=a_iX_i\otimes B_i+b_iZ_i\otimes D_i,
 \qquad r_i=\sqrt{a_i^2+b_i^2}.
-$$
+```
 
 For each noncommuting two-dimensional Jordan block k of pair i, let
 u_(i,k) be the largest eigenvalue of h_i on that reference-block space.
 Define its excess
 
-$$
+```math
 \alpha_{ik}=u_{ik}-r_i\ge0.
 \qquad\text{(1)}
-$$
+```
 
 Discard zero excesses. In particular, scalar blocks and zero-weight
 pairs need no correction. If theta_(i,k) is the angle between the
 block's two Pauli directions, then
 
-$$
+```math
 u_{ik}=\sqrt{r_i^2+2a_i b_i|\sin\theta_{ik}|},\qquad
 0\le\alpha_{ik}\le a_i+b_i-r_i.
 \qquad\text{(2)}
-$$
+```
 
 For any positive Lambda strictly larger than every retained alpha, define
 
-$$
+```math
 C_i(\Lambda)=\sum_k\frac{\alpha_{ik}}{\Lambda-\alpha_{ik}},
 \qquad
 \mathcal B(\Lambda)=\sum_i\frac{C_i(\Lambda)}{2+C_i(\Lambda)}.
 \qquad\text{(3)}
-$$
+```
 
 An empty sum is zero. **Theorem:**
 
-$$
+```math
 \boxed{\mathcal B(\Lambda)\le1
 \quad\Longrightarrow\quad
 \|H\|_\infty\le\sum_i r_i+\Lambda.}
 \qquad\text{(4)}
-$$
+```
 
 There is no common Jordan decomposition, common memory plane, or common
 antiunitary assumption. The theorem concerns reflection readouts.
@@ -79,10 +79,10 @@ maximally entangled between its reference and its two-dimensional memory
 plane. Denote its projector by Pi_(i,k), with spectator identities
 understood. The local spectral decomposition gives
 
-$$
+```math
 h_i\le r_i I+\sum_k\alpha_{ik}\Pi_{ik}.
 \qquad\text{(5)}
-$$
+```
 
 Use insertion isometries E_(i,k) with `Pi_(i,k)=E_(i,k)E_(i,k)^dagger`,
 as in the [preceding proof](JORDAN_BLOCK_CONVERSE.md), Section 3.
@@ -91,14 +91,14 @@ For k different from l at the same site, orthogonal memory blocks give
 one half, including arbitrary complex orientations of the memory planes.
 The weighted insertion map is therefore bounded by the scalar matrix G:
 
-$$
+```math
 G_{ik,jl}=\begin{cases}
 \alpha_{ik},&(i,k)=(j,l),\\
 0,&i=j,\ k\ne l,\\
 \tfrac12\sqrt{\alpha_{ik}\alpha_{jl}},&i\ne j.
 \end{cases}
 \qquad\text{(6)}
-$$
+```
 
 Taking norms of insertion-domain vector blocks, exactly as in the previous
 Gram proof, yields `||sum alpha Pi||<=lambda_max(G)`.
@@ -106,22 +106,22 @@ Gram proof, yields `||sum alpha Pi||<=lambda_max(G)`.
 Write v_i for the vector of square roots of the excesses at site i and
 v for their concatenation. Then
 
-$$
+```math
 \Lambda I-G=A-\frac12vv^T,\qquad
 A=\bigoplus_i\left[
 \mathrm{diag}_k(\Lambda-\alpha_{ik})+\frac12v_iv_i^T\right]>0.
 \qquad\text{(7)}
-$$
+```
 
 The rank-one positive-semidefinite criterion and the Sherman–Morrison
 identity give
 
-$$
+```math
 G\le\Lambda I
 \iff\frac12v^TA^{-1}v\le1
 \iff\sum_i\frac{C_i(\Lambda)}{2+C_i(\Lambda)}\le1.
 \qquad\text{(8)}
-$$
+```
 
 Summing (5) proves the upper spectral bound. Conjugating every reference
 by Y sends H to -H, proving (4). Equation (8) is an equivalence for G;
@@ -135,22 +135,22 @@ For unit weights put `r=sqrt(2)` and `delta=2-sqrt(2)`. At most two
 positive excesses occur per ququart pair. Write `x_(i,k)=alpha_(i,k)/delta`,
 so every x lies in (0,1]. Choose `Lambda=2 delta` in (3). The certificate is
 
-$$
+```math
 \boxed{\sum_{i=1}^3\frac{c_i}{2+c_i}\le1,
 \qquad c_i=\sum_k\frac{x_{ik}}{2-x_{ik}}
 \quad\Longrightarrow\quad \|H\|\le4+\sqrt2.}
 \qquad\text{(9)}
-$$
+```
 
 One block per site has `c_i<=1`, recovering the preceding converse.
 Padding missing blocks by zero, write the two strengths at site i as
 x_i,y_i. The same certificate has the particularly simple form
 
-$$
+```math
 \boxed{\sum_{i=1}^3
 \frac{x_i+y_i-x_i y_i}{4-x_i-y_i}\le1.}
 \qquad\text{(9a)}
-$$
+```
 
 Even more simply, total excess `sum_(i,k) alpha_(i,k)<=3 delta` suffices.
 To see this, restore all omitted nonnegative within-site entries of G.
@@ -162,21 +162,21 @@ nonnegative matrices, and the restored matrix is
 With one double-block pair of strengths a,b and two single-block pairs,
 even taking both single blocks at their maximum, it suffices that
 
-$$
+```math
 \boxed{\frac{a}{2-a}+\frac{b}{2-b}\le1
 \iff 4(a+b)-3ab\le4.}
 \qquad\text{(10)}
-$$
+```
 
 Thus two genuinely noncommuting blocks do not by themselves escape the
 converse. For example a=b=1/2 and the other two strengths equal to one
 give the stronger bound
 
-$$
+```math
 \|H\|\le3\sqrt2+\left(1+\frac{\sqrt3}{2}\right)(2-\sqrt2)
 <4+\sqrt2.
 \qquad\text{(11)}
-$$
+```
 
 Here (6) has largest eigenvalue `(1+sqrt(3)/2)delta`. The direct triangle
 bound is `4+(2+sqrt(2))/2`, above the benchmark, so (11) adds information.
@@ -184,10 +184,10 @@ bound is `4+(2+sqrt(2))/2`, above the benchmark, so (11) adds information.
 There are also exclusions in the fully balanced `(22)^3` sector. If
 each pair's two strengths are `(9/10,1/5)`, then `c_i=92/99` and
 
-$$
+```math
 \sum_i\frac{c_i}{2+c_i}=\frac{138}{145}<1.
 \qquad\text{(12)}
-$$
+```
 
 All three pairs have two noncommuting blocks, and their memory rotations
 may be chosen independently. Their direct triangle bound is
@@ -215,10 +215,10 @@ keeping the most negative Bell eigenvectors? At unit weights let
 `Pi_i^- = Y_i Pi_i^+ Y_i`, summing within each site's active blocks.
 The valid local bound
 
-$$
+```math
 h_i\le rI+\delta\Pi_i^+-2r\Pi_i^-
 \qquad\text{(13)}
-$$
+```
 
 would prove the benchmark if
 `lambda_max(sum_i(Pi_i^+-kappa Pi_i^-))<=2` at
@@ -229,29 +229,29 @@ Let `Q=A tensor B`, let Phi project onto `(00+11)/sqrt(2)`, let Psi
 project onto `(01-10)/sqrt(2)`, and put `F_kappa=Phi-kappa Psi`.
 Set
 
-$$
+```math
 S_\kappa=F_{R_1A}\otimes I_B+
 |0\rangle\langle0|_A\otimes T_\kappa,\qquad
 T_\kappa=F_{R_2B}+F_{R_3B}.
 \qquad\text{(14)}
-$$
+```
 
 These are the signed projectors from the preceding report's example.
 In a Y-eigenbasis put `d=(1-kappa)/2`, `c=(1+kappa)/2`. The zero- and
 three-excitation sectors of T are zero. Each of its other two sectors
 has, up to local phases, the matrix
 
-$$
+```math
 \begin{pmatrix}2d&c&c\\c&d&0\\c&0&d\end{pmatrix}.
-$$
+```
 
 Thus its maximum eigenvalue is
 
-$$
+```math
 t_\kappa=\frac{3(1-\kappa)+
 \sqrt{(1-\kappa)^2+8(1+\kappa)^2}}4>\frac43.
 \qquad\text{(15)}
-$$
+```
 
 For an exact check, the quadratic of its symmetric two-dimensional block
 is `p(t)=(t-2d)(t-d)-2c^2`; it satisfies `p(4/3)=-2/9` for every kappa.
@@ -260,18 +260,18 @@ Its smaller root is negative, proving the strict inequality.
 On a T eigenspace with eigenvalue t, the even computational-parity block
 of `R_1A` in (14) is
 
-$$
+```math
 \begin{pmatrix}t+1/2&1/2\\1/2&1/2\end{pmatrix}.
-$$
+```
 
 The odd block is at most `max(t,0)I`, since its other term is negative
 semidefinite. The largest eigenvalue of S is consequently exactly
 
-$$
+```math
 \boxed{\lambda_{\max}(S_\kappa)=
 \frac{t_\kappa+1+\sqrt{t_\kappa^2+1}}2>2.}
 \qquad\text{(16)}
-$$
+```
 
 At the coefficient in (13), this is approximately 2.023745905865038.
 The limit as kappa tends to infinity is two from above. This is an

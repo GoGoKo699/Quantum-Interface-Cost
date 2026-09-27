@@ -23,10 +23,10 @@ credited below; the supplied deduction is the resulting sector closure.
 Let `R_1,R_2,R_3` be reference qubits and let Q have dimension four.
 For arbitrary Hermitian reflection readouts on Q, put
 
-$$
+```math
 h_i=X_i\otimes B_i+Z_i\otimes D_i,\qquad H=h_1+h_2+h_3.
 \qquad\text{(1)}
-$$
+```
 
 Assume at most one original pair `(B_i,D_i)` has two noncommuting
 two-dimensional Jordan blocks. Every other pair has at most one such
@@ -34,10 +34,10 @@ block. Their memory planes need not coincide.
 
 **Theorem.**
 
-$$
+```math
 \boxed{\|H\|_\infty\le4+\sqrt2.}
 \qquad\text{(2)}
-$$
+```
 
 This is an unweighted three-input theorem. No extension to every
 weighted support or to arbitrary contractions preserving a block
@@ -46,13 +46,13 @@ condition is asserted.
 The [normalized-seed reduction](../COLLECTIVE_ENCODING_REDUCTION.md)
 uses the full trace-norm score
 
-$$
+```math
 g(L)=\sum_{i=1}^3
 \left(\|LX_iL^\dagger\|_1+\|LZ_iL^\dagger\|_1\right),
 \qquad L:\mathbb C^8\longrightarrow\mathbb C^4,\quad
 \|L\|_F=1.
 \qquad\text{(3)}
-$$
+```
 
 Each trace norm has a maximizing reflection, with arbitrary signs on a
 zero eigenspace. If one score-attaining family satisfies the theorem's
@@ -78,19 +78,19 @@ specimens or a free quantum channel.
 
 Write
 
-$$
+```math
 r=\sqrt2,\qquad \delta=2-r,\qquad T=4-r.
 \qquad\text{(4)}
-$$
+```
 
 Relabel sites so pairs 2 and 3 have at most one noncommuting block.
 The local spectral cap from the
 [one-block converse](JORDAN_BLOCK_CONVERSE.md), Section 2, gives
 
-$$
+```math
 h_2+h_3\le2rI+\delta K,\qquad K=\Pi_2+\Pi_3,
 \qquad\text{(5)}
-$$
+```
 
 where each Pi is a rank-one Bell projector between its reference and
 a memory plane. All spectator identities are understood. If a pair
@@ -102,21 +102,21 @@ already proves (2). Otherwise both its reflections are balanced:
 each of its two noncommuting blocks contributes one positive and one
 negative eigenvalue. Its two block spectra are
 
-$$
+```math
 \{\pm u_0,\pm v_0\},\quad \{\pm u_1,\pm v_1\},\qquad
 2\ge u_0\ge u_1=u\ge r,\qquad
 v_k=\sqrt{4-u_k^2},\quad v=v_1\ge v_0.
 \qquad\text{(6)}
-$$
+```
 
 Let P_0 and P_1 be their top Bell projectors, on orthogonal memory
 planes, and put P=P_0+P_1. All other eigenvalues are at most v. Hence
 
-$$
+```math
 h_1\le vI+C,\qquad
 C=(u_0-v)P_0+(u-v)P_1.
 \qquad\text{(7)}
-$$
+```
 
 P has rank two on `R_1 tensor Q`, and rank eight after the two
 spectator reference identities. The proof always preserves these
@@ -137,49 +137,49 @@ Bell insertion maps belonging to distinct references have overlap
 norm at most one half, including different complex memory planes.
 The two-projector Gram bound and its squared-overlap consequence give
 
-$$
+```math
 0\le K\le\tfrac32I,\qquad
 P_0KP_0\le\tfrac12P_0.
 \qquad\text{(8)}
-$$
+```
 
 For the second inequality each of the two summands is at most P_0/4.
 The same bound holds with P_1. On their combined subspace there is
 the further bound
 
-$$
+```math
 \boxed{PKP\le\tfrac34P.}
 \qquad\text{(9)}
-$$
+```
 
 To see it, write the two Bell vectors in a fixed reference basis
 as `sum_a |a> V_k|a>/sqrt(2)`. The isometries V_0,V_1 have
 orthogonal ranges, so the four vectors `V_k|a>` form an orthonormal
 basis of Q. Identifying these with `|a>_A|k>_B` gives
 
-$$
+```math
 Q=A\otimes B,\qquad P=\Phi_{R_1A}\otimes I_B,
 \qquad\text{(10)}
-$$
+```
 
 where A and B are qubits. No common subsystem choice for the other
 queries is being assumed. Under the insertion isometry with range P,
 
-$$
+```math
 P\Pi_jP\ \simeq\ \tfrac12\rho_{R_jB},\qquad
 \rho_{R_jB}=\mathrm{Tr}_A\Pi_j,\qquad
 \mathrm{Tr}_B\rho_{R_jB}=I_{R_j}/2.
 \qquad\text{(11)}
-$$
+```
 
 Here each Pi_j on the right is first expressed in the memory basis
 of (10). Each rho has trace one. For two such mixed Choi operators
 sharing a qubit B,
 
-$$
+```math
 \rho_{R_2B}+\rho_{R_3B}\le\tfrac32 I.
 \qquad\text{(12)}
-$$
+```
 
 This is a direct prior-monogamy corollary, not a new ingredient.
 For completeness, in equal dimension d use the output-first
@@ -189,10 +189,10 @@ Define CP maps by `J(S)=d rho` and `J(U)=d sigma`.
 The fixed leaf marginals give `S(I)=U(I)=I`, so both maps are unital.
 Apply `S tensor U tensor id` to
 
-$$
+```math
 \Phi_{R_2'B}+\Phi_{R_3'B}\le(1+1/d)I.
 \qquad\text{(13)}
-$$
+```
 
 The maps act on different leaves; a single positive unital map
 therefore preserves the entire inequality. At d=2 the result is
@@ -205,46 +205,46 @@ follows directly from the Bell-projector overlap 1/d.
 It remains to show `h_1+delta K<=T I`. Set
 `ell=3/2` and `z=T-v`. Since `v<=r`,
 
-$$
+```math
 z\ge T-r=2\delta>\ell\delta,\qquad T-u_k\ge\delta>0.
 \qquad\text{(14)}
-$$
+```
 
 The scalar convex function `x -> 1/(z-delta x)` lies below its
 endpoint chord on `[0,ell]`. Functional calculus with (8) yields
 
-$$
+```math
 (zI-\delta K)^{-1}
 \le \frac Iz+\frac{\delta K}{z(z-\ell\delta)}.
 \qquad\text{(15)}
-$$
+```
 
 The desired inequality `C+delta K<=zI` is equivalent by positive
 congruence and the equality of nonzero Gram spectra to
 
-$$
+```math
 C^{1/2}(zI-\delta K)^{-1}C^{1/2}\le I_P.
 \qquad\text{(16)}
-$$
+```
 
 Using (15), subtracting C/z, and conjugating by
 `(I_P-C/z)^(-1/2)` shows it suffices that
 
-$$
+```math
 \|\sqrt D(PKP)\sqrt D\|\le\frac{z-\ell\delta}{\delta},
 \quad
 D=d_0P_0+d_1P_1,\quad
 d_0=\frac{u_0-v}{T-u_0},\quad
 d_1=\frac{u-v}{T-u}.
 \qquad\text{(17)}
-$$
+```
 
 In particular `d_0>=d_1>=0`. No inverse of C or D is used, so
 zero coefficients and degeneracies are allowed.
 
 Put A=PKP. Both compression estimates are now needed:
 
-$$
+```math
 \begin{aligned}
 \|\sqrt D A\sqrt D\|
 &=\|\sqrt A D\sqrt A\|\\
@@ -253,27 +253,27 @@ $$
 =\tfrac12d_0+\tfrac14d_1.
 \end{aligned}
 \qquad\text{(18)}
-$$
+```
 
 The last line uses `||sqrt(A)P_0 sqrt(A)||=||P_0 A P_0||<=1/2`.
 For fixed v, d_0 increases with u_0; using `u_0<=2` gives
 `delta d_0<=2-v`. Also `u^2+v^2=4` implies `u+v<=2r`, and
 `T-u>=delta`, so
 
-$$
+```math
 \delta d_1\le u-v\le2(r-v).
 \qquad\text{(19)}
-$$
+```
 
 Consequently
 
-$$
+```math
 \delta(\tfrac12d_0+\tfrac14d_1)
 \le\frac{2-v}{2}+\frac{r-v}{2}
 =1+\frac r2-v
 =z-\tfrac32\delta.
 \qquad\text{(20)}
-$$
+```
 
 This proves (17), hence `h_1+delta K<=T I`.
 Adding the baseline in (5) gives
@@ -368,7 +368,7 @@ dimension. Suppose rho_AB and sigma_CB are density operators with
 `Tr_B rho=I_A/d` and `Tr_B sigma=I_C/d`. Choose vectorized Kraus
 representations
 
-$$
+```math
 \rho=\frac1d\sum_\alpha|K_\alpha\rangle\rangle
 \langle\langle K_\alpha|,\qquad
 \sigma=\frac1d\sum_\beta|L_\beta\rangle\rangle
@@ -376,18 +376,18 @@ $$
 \sum_\alpha K_\alpha^\dagger K_\alpha
 =\sum_\beta L_\beta^\dagger L_\beta=I_d.
 \qquad\text{(21)}
-$$
+```
 
 Let F insert `|K_alpha>>/sqrt(d)` on AB, leaving C untouched,
 and let G insert `|L_beta>>/sqrt(d)` on CB, leaving A untouched.
 Then `FF^dagger=rho_AB tensor I_C` and
 `GG^dagger=sigma_CB tensor I_A`, with cross entries
 
-$$
+```math
 (F^\dagger G)_{\alpha c,\beta a}
 =\frac1d\sum_b\overline{K_\alpha[b,a]}L_\beta[b,c].
 \qquad\text{(22)}
-$$
+```
 
 With the Stinespring isometries
 `V_K|a>=sum_(alpha,b) K_alpha[b,a]|alpha,b>` and similarly V_L,
@@ -398,10 +398,10 @@ It is an isometry followed by a coisometry, so
 most one, because rho and sigma are trace-one positive operators.
 The two-by-two scalar Gram estimate therefore gives
 
-$$
+```math
 \|\rho_{AB}\otimes I_C+\sigma_{CB}\otimes I_A\|\le1+1/d.
 \qquad\text{(23)}
-$$
+```
 
 This uses complex conjugation, not an unsupported partial-transpose
 norm identity. The interface proof only needs `dim B=d=2`,

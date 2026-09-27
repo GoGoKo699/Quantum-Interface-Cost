@@ -17,63 +17,63 @@ two-input, full-rank case left open by the rank-two theorem.
 
 For an n-qubit density matrix, write
 
-$$
+```math
 g(\rho)=\sum_{i=1}^n\sum_{b=X,Z}
 \|\sqrt\rho P_{i,b}\sqrt\rho\|_1,
 \qquad c=2-\sqrt2.
-$$
+```
 
 Suppose that rho is full rank, and define its spectral condition number
 and a coefficient by
 
-$$
+```math
 \kappa=\frac{\lambda_{\max}(\rho)}{\lambda_{\min}(\rho)},
 \qquad
 \alpha_\kappa=1+\frac{2\sqrt\kappa}{1+\kappa}.
-$$
+```
 
 All entropies below are in bits. The logarithm in `ln 2` is natural.
 
 **Theorem.** Every such state satisfies
 
-$$
+```math
 \boxed{
 g(\rho)\le
 2n-\frac{\alpha_\kappa\ln2}{2}\bigl(n-S(\rho)\bigr).
 }
 \qquad\text{(1)}
-$$
+```
 
 Consequently, put
 
-$$
+```math
 r_* = \frac{2(2-\sqrt2)}{\ln2}-1,
 \qquad
 \kappa_*=
 \left(\frac{1+\sqrt{1-r_*^2}}{r_*}\right)^2
 =6.235819648070267\ldots.
 \qquad\text{(2)}
-$$
+```
 
 Whenever `kappa <= kappa_*`,
 
-$$
+```math
 \boxed{
 g(\rho)\le\sqrt2 n+(2-\sqrt2)S(\rho).
 }
 \qquad\text{(3)}
-$$
+```
 
 For a nonmaximally mixed state satisfying the condition, (3) is strict.
 The threshold in (2) is sufficient; its optimality is not asserted.
 
 An easier operator-norm condition implying the hypothesis is
 
-$$
+```math
 \|2^n\rho-I\|_\infty
 \le\sqrt{1-r_*^2}=0.7235973120842801\ldots.
 \qquad\text{(4)}
-$$
+```
 
 Indeed, if the left side is at most t below one, then
 `kappa <= (1+t)/(1-t)`.
@@ -82,14 +82,14 @@ Indeed, if the left side is at most t below one, then
 
 For any Hermitian unitary P, define
 
-$$
+```math
 F_P=\|\sqrt\rho P\sqrt\rho\|_1,
 \qquad
 I_\rho(P)=\frac12\sum_{a,b}
 \frac{(\lambda_a-\lambda_b)^2}{\lambda_a+\lambda_b}
 |P_{ab}|^2,
 \qquad\text{(5)}
-$$
+```
 
 where matrix entries are taken in an eigenbasis of rho. This is one quarter
 of the usual symmetric-logarithmic-derivative quantum Fisher information
@@ -99,7 +99,7 @@ without importing a metrological operational model.
 Choose a Hermitian contraction B attaining trace-norm duality for
 `sqrt(rho) P sqrt(rho)`. Weighted Cauchy-Schwarz gives
 
-$$
+```math
 \begin{aligned}
 F_P^2
 &=\left|\sum_{a,b}\sqrt{\lambda_a\lambda_b}
@@ -112,23 +112,23 @@ P_{ab}B_{ba}\right|^2\\
 &\le 1-I_\rho(P).
 \end{aligned}
 \qquad\text{(6)}
-$$
+```
 
 For the last line, the second parenthesis is `Tr(rho B^2)<=1`. The first
 is `1-I_rho(P)`, because `P^2=I` and
 
-$$
+```math
 \frac{2\lambda_a\lambda_b}{\lambda_a+\lambda_b}
 =\frac{\lambda_a+\lambda_b}{2}
 -\frac{(\lambda_a-\lambda_b)^2}{2(\lambda_a+\lambda_b)}.
-$$
+```
 
 In particular, `0<=I_rho(P)<=1`, and
 
-$$
+```math
 F_P\le\sqrt{1-I_\rho(P)}\le1-\frac12 I_\rho(P).
 \qquad\text{(7)}
-$$
+```
 
 Equations (5)--(7) also hold for singular states when terms with two zero
 eigenvalues are assigned zero. Full rank is needed for the uniform
@@ -138,75 +138,75 @@ condition-number comparison in the next step.
 
 Let
 
-$$
+```math
 a_P=\mathrm{Tr}(\sqrt\rho P\sqrt\rho P).
-$$
+```
 
 Using `P^2=I` again,
 
-$$
+```math
 1-a_P=\frac12\sum_{a,b}
 (\sqrt{\lambda_a}-\sqrt{\lambda_b})^2|P_{ab}|^2.
 \qquad\text{(8)}
-$$
+```
 
 For each pair of positive eigenvalues,
 
-$$
+```math
 \frac{(\lambda_a-\lambda_b)^2}{\lambda_a+\lambda_b}
 =(\sqrt{\lambda_a}-\sqrt{\lambda_b})^2
 \left(1+\frac{2\sqrt{\lambda_a\lambda_b}}
 {\lambda_a+\lambda_b}\right).
-$$
+```
 
 Their ratio lies in `[1/kappa,kappa]`, so the parenthesis is at least
 `alpha_kappa`. Equal eigenvalues contribute zero to both sides. Therefore
 
-$$
+```math
 I_\rho(P)\ge\alpha_\kappa(1-a_P).
 \qquad\text{(9)}
-$$
+```
 
 Use the normalized trace and depolarizing Dirichlet form from
 [the unrestricted converse](STRONG_ENTROPIC_CONVERSE.md), Sections 2--3:
 
-$$
+```math
 d=2^n,\quad A=\sqrt{d\rho},\quad
 \tau(T)=\mathrm{Tr}(T)/d,\quad
 \mathscr D(A)=\tau\left(A\sum_i(\mathrm{id}-\mathcal E_i)(A)\right).
-$$
+```
 
 Here `E_i` is normalized partial trace on site i followed by reinsertion
 of the identity there. The Pauli expansion gives
 
-$$
+```math
 \sum_{i,b=X,Z}(1-a_{P_{i,b}})\ge2\mathscr D(A).
 \qquad\text{(10)}
-$$
+```
 
 The established qubit logarithmic-Sobolev inequality gives
 
-$$
+```math
 \mathscr D(A)\ge\frac{\ln2}{2}(n-S(\rho)).
 \qquad\text{(11)}
-$$
+```
 
 For exact provenance and normalization, Beigi,
 [arXiv:2105.00462v2](https://arxiv.org/pdf/2105.00462v2), Theorem 2,
 Eqs. (6)--(7), printed p. 4, supplies the stronger bound
 
-$$
+```math
 \mathscr D(A)\ge
 n\left(\frac12-\sqrt{u(1-u)}\right),
 \qquad h_2(u)=S(\rho)/n,\quad 0\le u\le\frac12.
 \qquad\text{(12)}
-$$
+```
 
 Equation (11) follows from (12) and the scalar inequality
 
-$$
+```math
 1-2\sqrt{u(1-u)}\ge(\ln2)(1-h_2(u)).
-$$
+```
 
 That scalar inequality is proved explicitly in
 [the stabilizer-basis argument](ENTROPY_INEQUALITY_BOUNDARIES.md),
@@ -215,11 +215,11 @@ a new logarithmic-Sobolev theorem is assumed here.
 
 Summing (9), (10), and (11) yields
 
-$$
+```math
 \sum_{i,b} I_\rho(P_{i,b})
 \ge\alpha_\kappa\ln2\,(n-S(\rho)).
 \qquad\text{(13)}
-$$
+```
 
 Summing (7) now proves (1). The function `alpha_kappa` decreases for
 `kappa>=1`; solving `alpha_kappa ln2/2 >= 2-sqrt(2)` gives (2), and
@@ -234,13 +234,13 @@ inequality in (7) is strict. This proves the stated strictness.
 
 Keeping (12), and applying Cauchy-Schwarz to the sum in (6), also gives
 
-$$
+```math
 \frac{g(\rho)}{2n}
 \le\sqrt{1-\alpha_\kappa
 \left(\frac12-\sqrt{u(1-u)}\right)},
 \qquad h_2(u)=S(\rho)/n.
 \qquad\text{(14)}
-$$
+```
 
 Its radicand is nonnegative for any state obeying the hypotheses, as
 follows already from (6), (9), and (10). Equation (14) can certify (3)

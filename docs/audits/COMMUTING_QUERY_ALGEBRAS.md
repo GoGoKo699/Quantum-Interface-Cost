@@ -24,18 +24,18 @@ a qubit. Let B_i,D_i be Hermitian contractions. For `i<=q` assume
 they act only on A_i. The last pair B_n,D_n is arbitrary on Q.
 On the n reference qubits and Q set
 
-$$
+```math
 H=\sum_{i=1}^{n}h_i,\qquad
 h_i=X_i\otimes B_i+Z_i\otimes D_i.
 \qquad\text{(1)}
-$$
+```
 
 **Theorem.**
 
-$$
+```math
 \boxed{\|H\|_\infty\le2q+\sqrt2.}
 \qquad\text{(2)}
-$$
+```
 
 The memory factorization can be any unitary identification with q
 qubits; it need not coincide with the encoder's circuit or input
@@ -63,32 +63,32 @@ norm at most two. The triangle inequality proves (2).
 Otherwise all the first q pairs are traceless qubit reflections.
 On reference i and memory qubit A_i their spectra are
 
-$$
+```math
 \{\pm u_i,\pm v_i\},\qquad
 2\ge u_i\ge r\ge v_i\ge0,\qquad u_i^2+v_i^2=4.
 \qquad\text{(3)}
-$$
+```
 
 Their top vectors are Bell vectors, by the two-Pauli singular-value
 decomposition used in the [one-block proof](JORDAN_BLOCK_CONVERSE.md).
 Let
 
-$$
+```math
 U=\sum_{i=1}^q u_i,\qquad
 u=\min_i u_i,\qquad v=\sqrt{4-u^2},\qquad
 c=u-v,\qquad m=U-c.
 \qquad\text{(4)}
-$$
+```
 
 The gap `u_i-v_i` increases with u_i. Since the first q terms act on
 disjoint reference-memory pairs, their sum H_0 has top eigenvalue U,
 with product-Bell vector Omega, and every other eigenvalue is at most m.
 Therefore
 
-$$
+```math
 H_0\le mI+cP,\qquad P=|\Omega\rangle\langle\Omega|\otimes I_{R_n}.
 \qquad\text{(5)}
-$$
+```
 
 Omega is maximally entangled between `R_1...R_q` and Q, each of
 dimension `D=2^q`. P has rank one before the last reference spectator
@@ -97,22 +97,22 @@ and rank two after it.
 If c=0, one local u_i equals r and the triangle argument again
 suffices. For c>0 define
 
-$$
+```math
 t_0=2+r-v>2,\qquad
 2q+r-m\ge t_0,
 \qquad\text{(6)}
-$$
+```
 
 where the inequality follows from `U-u<=2(q-1)`.
 It is enough to prove `cP+h_n<=t_0 I`. Positivity of `t_0 I-h_n`
 and the positive rank-update criterion give the equivalence
 
-$$
+```math
 cP+h_n\le t_0 I
 \quad\Longleftrightarrow\quad
 \frac cD\mathrm{Tr}_Q(t_0 I-h_n)^{-1}\le I_{R_n}.
 \qquad\text{(7)}
-$$
+```
 
 Indeed, compressing an operator on `R_n tensor Q` to the
 product-Bell vector gives its normalized partial trace over Q.
@@ -125,13 +125,13 @@ two-dimensional blocks and `D-2k` scalar blocks.
 On a two-dimensional block the local spectrum is `{+/-a,+/-b}`,
 where `a^2+b^2=4` and `2>=a>=r>=b>=0`. For t>2,
 
-$$
+```math
 \mathrm{Tr}_{\mathrm{block}}(tI-h_n)^{-1}
 =\left(\frac{t}{t^2-a^2}+\frac{t}{t^2-b^2}\right)I_{R_n}
 \le A(t)I_{R_n},
 \quad A(t)=\frac{t}{t^2-4}+\frac1t.
 \qquad\text{(8)}
-$$
+```
 
 For the equality, expand the resolvent as
 `(tI+h_n)(t^2I-h_n^2)^(-1)`. The square has the form
@@ -148,30 +148,30 @@ On a scalar block, `h_n=+/-X_n+/-Z_n` and hence
 `(tI-h_n)^(-1)<=I/(t-r)`.
 Thus at `t=t_0` the norm of the left side of (7) is at most
 
-$$
+```math
 \frac{2k}{D}\left[\frac{cA(t)}2\right]
 +\left(1-\frac{2k}{D}\right)\left[\frac{c}{t-r}\right].
 \qquad\text{(9)}
-$$
+```
 
 This is a convex combination of two quantities at most one.
 First, `c=u-v<=2-v=t-r`. Second, `u+v<=2r` gives
 `c<=2(r-v)=2(t-2)`. Applying these two bounds separately to
 the two terms of A yields
 
-$$
+```math
 cA(t)\le\frac{2t}{t+2}+1-\frac rt.
 \qquad\text{(10)}
-$$
+```
 
 The right side increases with t>0, and `t=2+r-v<=2+r`. Therefore
 
-$$
+```math
 cA(t)\le
 \frac{2(2+r)}{4+r}+1-\frac r{2+r}
 =\frac{5(4-r)}7<2.
 \qquad\text{(11)}
-$$
+```
 
 Equations (9)–(11) prove (7), so `H<=(2q+r)I`. Conjugating
 every reference by Y sends H to -H, proving (2).
@@ -186,11 +186,11 @@ factorization in advance.
 **Corollary.** For Hermitian contractions, if any two original query
 pairs commute crosswise,
 
-$$
+```math
 [B_i,B_j]=[B_i,D_j]=[D_i,B_j]=[D_i,D_j]=0
 \quad (i\ne j),
 \qquad\text{(12)}
-$$
+```
 
 then `||H||<=4+sqrt(2)`, with the third pair arbitrary.
 Internal commutation within either pair is not required.
@@ -205,7 +205,7 @@ Relabel the two commuting algebras as
 internally, the triangle inequality proves the claim. Otherwise,
 Jordan's lemma and the standard isotypic decomposition give
 
-$$
+```math
 Q=\bigoplus_\alpha
 \left(\mathbb C^{d_\alpha}\otimes\mathbb C^{m_\alpha}\right),
 \quad
@@ -214,7 +214,7 @@ Q=\bigoplus_\alpha
 \mathcal A'=\bigoplus_\alpha(I_{d_\alpha}\otimes M_{m_\alpha}),
 \quad d_\alpha\in\{1,2\}.
 \qquad\text{(13)}
-$$
+```
 
 Equivalent irreducible representations, including equal scalar
 characters, are grouped into the multiplicity spaces.
@@ -243,11 +243,11 @@ an advantage.
 For the original task, a refined branch has arbitrary Kraus map K_a
 and branch-dependent binary readouts. Put
 
-$$
+```math
 p_a=\frac{\|K_a\|_F^2}{2^n},\qquad
 L_a=\frac{K_a}{\|K_a\|_F},\qquad \sum_a p_a=1.
 \qquad\text{(14)}
-$$
+```
 
 Zero branches are omitted. The p_a are normalization weights, not
 asserted input-independent outcome probabilities.
@@ -257,11 +257,11 @@ Vectorization and (2) bound s_a for any normalized seed whenever
 that branch's readouts satisfy the factor condition. Standard Pauli
 coefficient averaging gives
 
-$$
+```math
 2n\eta\le\sum_a p_a s_a\le2q+\sqrt2,\qquad
 \boxed{\eta\le\frac{q+1/\sqrt2}{q+1}.}
 \qquad\text{(15)}
-$$
+```
 
 For each branch, the q dedicated queried sites, memory factorization,
 and readouts may differ. The encoder itself is unrestricted.
@@ -274,11 +274,11 @@ Uniform random retention attains (15) inside the class. Select which
 one of the n=q+1 sites to discard, uniformly. On that site use the
 four-outcome POVM
 
-$$
+```math
 F_{ab}=\frac14\left[I+\frac{aX+bZ}{\sqrt2}\right],
 \qquad a,b\in\{+1,-1\}.
 \qquad\text{(16)}
-$$
+```
 
 Retain the other q input qubits. Record the discarded site and a,b
 classically; answer its delayed X or Z query by a or b. All retained
@@ -301,12 +301,12 @@ top vector Omega has eigenvalue four and memory marginal I_4/4.
 For any rank-one Bell projector Pi between the third reference
 and a memory plane,
 
-$$
+```math
 P\Pi P=\tfrac18P,\qquad
 \lambda_{\max}(h_1+h_2+\delta\Pi)\ge4+\delta/8>4,
 \quad \delta=2-\sqrt2.
 \qquad\text{(17)}
-$$
+```
 
 Even when the third pair has at most one noncommuting Jordan block,
 its valid local cap `h_3<=sqrt(2)I+delta Pi` gives an upper-bound

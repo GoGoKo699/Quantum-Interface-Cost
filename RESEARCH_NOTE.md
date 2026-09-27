@@ -22,9 +22,9 @@ The [nonflat quarter-rank converse](docs/audits/NONFLAT_QUARTER_RANK_CONVERSE.md
 proves `Gamma(4,4)=4+2sqrt(2)` for arbitrary spectra and decoders. Together
 with the earlier results, this gives
 
-$$
+```math
 \Gamma(n,2^q)=2q+\sqrt2(n-q),\qquad 1\le n\le4,\quad q=0,\ldots,n.
-$$
+```
 
 The new proof combines the exact top-quarter Pauli spectrum, a local
 spectral-spread bound, a sum-of-squares identity, and an exact two-polynomial
@@ -76,17 +76,17 @@ claimed optimal.
 The [half-rank converse](docs/audits/HALF_RANK_RETENTION_CONVERSE.md)
 now settles the unrestricted finite optima
 
-$$
+```math
 \Gamma(3,4)=4+\sqrt2,\qquad \Gamma(4,8)=6+\sqrt2.
-$$
+```
 
 More generally, for n=2,3,4 every positive S with `Tr(S^2)=1` and
 `rank(S)<=2^(n-1)` obeys the stronger affinity inequality
 
-$$
+```math
 \sum_{A\in\{X_i,Z_i\}_{i=1}^n}
 \sqrt{\mathrm{Tr}(SASA)}\le2(n-1)+\sqrt2.
-$$
+```
 
 The established squared-fidelity/affinity comparison transfers this to
 all normalized seed scores. The proof retains the rank constraint through
@@ -494,19 +494,19 @@ L(\eta)=\max\left\{
 
 The new [logarithmic-Sobolev converse](docs/STRONG_ENTROPIC_CONVERSE.md) gives an additional bound. Set b(eta)=0 for eta<=eta_0 and, for eta>=eta_0, define
 
-$$
+```math
 b(\eta)=h_2\!\left(
 \frac{1-\sqrt{1-(2\eta^2-1)^2}}2
 \right).
-$$
+```
 
 The subsequent [asymmetric entropy converse](docs/ASYMMETRIC_ENTROPIC_CONVERSE.md)
 defines
 
-$$
+```math
 f(c)=h_2\!\left(\frac{1-\sqrt{1-c^2}}2\right),\qquad
 \ell(\eta)=\left[f(\eta)-h_2((1-\eta)/2)\right]_+.
-$$
+```
 
 It proves, for every normalized seed, the bound
 `S(L^dagger L)>=sum_i[f(F_(i,Z))-h_2((1-F_(i,X))/2)]`.
@@ -518,9 +518,9 @@ No extra copy, simultaneous decoder or source promise is introduced.
 
 Then, with `L_new(eta)=max{L(eta),b(eta),ell(eta)}`,
 
-$$
+```math
 q_{\min}(n,\eta)\ge\lceil n L_{\rm new}(\eta)\rceil.
-$$
+```
 
 The b term is obtained by applying Beigi's improved quantum logarithmic-Sobolev inequality [14, Theorem 2] to a normalized seed's square root, combining root fidelity squared with affinity [15, Appendix A, Theorem 6], and using a Pauli-Fourier comparison. Each refined branch has entropy at most q, so the proof preserves worst-case dimension and unrestricted collective encoding. No typical-input promise or additional specimen is used. The hybrid construction still gives (6).
 
@@ -557,17 +557,17 @@ Numerical evaluation of these proved formulas, not simulation data:
 
 For t down to zero, the earlier logarithmic-Sobolev bound has
 
-$$
+```math
 b(\eta_0+t)=4t^2\log_2(1/t)+O(t^2),
 \qquad b(1-t)=1-\frac4{\ln2}t+O(t^2).
-$$
+```
 
 The asymmetric converse strengthens the near-threshold scaling:
 
-$$
+```math
 \ell(\eta_0+t)=2\log_2(1+\sqrt2)t+O(t^2),\qquad
 2\log_2(1+\sqrt2)t\le R(\eta_0+t)\le(2+\sqrt2)t.
-$$
+```
 
 The latter bound holds for the entire allowed interval 0<=t<=1-eta_0;
 convexity supplies the lower supporting tangent. In particular
@@ -582,10 +582,10 @@ The corresponding unrestricted seed bound is
 
 The subsequent [one-qubit theorem](docs/ONE_QUBIT_OPTIMALITY.md) proves, for every n>=1,
 
-$$
+```math
 \eta_{\max}(n,1)=\frac1{\sqrt2}+\frac1n\left(1-\frac1{\sqrt2}\right),
 \qquad \Gamma(n,2)=2+\sqrt2(n-1).
-$$
+```
 
 The proof reduces extreme qubit decoders to scalar signs or Bloch observables, then uses Cheng–Hall's three-qubit CHSH monogamy [11]. Their theorem permits different measurement settings on the common qubit and mixed states, exactly as required for site-dependent decoders and three-qubit marginals. Equality forces every maximizing normalized seed to retain one site and project the rest onto product bisectors, up to output unitaries. This characterizes refined branch maps, without assuming that the retained site is chosen independently of the input.
 
@@ -600,9 +600,9 @@ Thus the former n=2,q=1 diagnostic is settled, including the entire two-input-qu
 The [allocation theorem](docs/ONE_QUBIT_ALLOCATION_REGION.md) strengthens
 this to the complete profile of separate local contrasts. With
 
-$$
+```math
 w(x,z)=\left[x+z-1-\sqrt{2(1-x)(1-z)}\right]_+,
-$$
+```
 
 an interface with worst-case quantum dimension at most two realizes the
 profile exactly if and only if `sum_i w(eta_(i,X),eta_(i,Z))<=1`.
@@ -615,10 +615,10 @@ not a decomposition of every physical encoder into product operations.
 
 A separate [entropy argument](docs/COMMUTING_SEED_BOUND.md) proves
 
-$$
+```math
 g(L)\le\sqrt2\,n+(2-\sqrt2)S(L^\dagger L)
 \le\sqrt2\,n+(2-\sqrt2)\log_2\mathrm{rank}(L)
-$$
+```
 
 whenever the Gram matrix is diagonal in a fixed product of local one-qubit bases. Its eigenvalues may be correlated and nonuniform, and the axes may have Y components. Consequently, this entire structured family cannot improve the common-accuracy subset benchmark. The unrestricted problem has not been narrowed by assumption. A proposed extension using a local quantum conditional-entropy inequality is false; the note gives a two-qubit counterexample, separately from the unresolved global inequality.
 
@@ -636,10 +636,10 @@ not asserted to be an unrestricted converse.
 For `0<z<=x<1` and `x^2+z^2>1`, the comparison with the exact retention
 cost w is
 
-$$
+```math
 C(x,z)<w(x,z)\quad\Longleftrightarrow\quad
 \frac{1-x}{1-z}<2\left(\frac1{\ln2}-1\right)^2.
-$$
+```
 
 At equality or above this boundary, C=w. In particular C(eta,eta) equals
 the subset rate. The explicit convex combination
@@ -699,31 +699,31 @@ quantum inequality, which remains open.
 
 The [entropy-rate characterization](docs/ENTROPY_RATE_CHARACTERIZATION.md) additionally proves
 
-$$
+```math
 R(\eta)=\inf_{n\ge1}\frac1n
 \min_{\rho:\ f_n(\rho)\ge\eta} S(\rho),
 \qquad
 f_n(\rho)=\frac1{2n}\sum_{i,b}
 \|\sqrt\rho P_{i,b}\sqrt\rho\|_1.
-$$
+```
 
 This is unrestricted and retains the original worst-case dimension and uniform-error quantifiers. Typical Schmidt truncation constructs a new normalized seed; its full orbit supplies a trace-preserving protocol. A continuity argument removes strict contrast slack. A single violation of the unrestricted entropy inequality above would therefore prove a collective asymptotic advantage. Conversely, that inequality holding for every Gram matrix would establish the subset rate for the whole nonclassical interval. Related asymptotic dimension/entropy methods are prior work [12,13]; the note compares their complete-assemblage demands and average-dimension quantities with this task.
 
 The [entropy-inequality boundaries](docs/ENTROPY_INEQUALITY_BOUNDARIES.md) further prove the exact maximum at any rank-two spectrum:
 
-$$
+```math
 \max_{\mathrm{spec}\rho=(\lambda,1-\lambda,0,\ldots)}g(\sqrt\rho)
 =\sqrt2(n-1)+\sqrt{2[1+4\lambda(1-\lambda)]}.
-$$
+```
 
 This holds for arbitrary entangled eigenvectors and implies the conjectured entropy inequality for every rank-two state. Also excluded are all states diagonal in a global Clifford stabilizer basis, all flat rank-three states on two inputs, and flat half-rank projectors with one maximally mixed complementary marginal. Each is a proved family inside the unrestricted optimization; none is an assumption about admissible encoders. The smallest possible entropy witness is therefore a two-input, nonuniform rank-three state, while general full-rank two-input states also remain unresolved. Such an entropy witness would certify an asymptotic advantage through regularization even though rank three consumes two qubits at that finite block size.
 
 The [flat half-rank theorem](docs/FLAT_HALF_RANK_OPTIMALITY.md) now proves
 
-$$
+```math
 \max_{\mathrm{rank}P=2^{n-1}}g\!\left(\sqrt{P/2^{n-1}}\right)
 =2(n-1)+\sqrt2,\qquad 1\le n\le4.
-$$
+```
 
 Equality requires a pure X/Z bisector projector on one site tensor the identity on the others. The proof also applies at arbitrary n when the singleton X/Z part of `2P-I` occupies at most four sites, without restricting higher-order Pauli terms. It uses a short signed-spectrum calculation and query-specific compression bounds. Its relation to established quantum Boolean-function results is audited in [the source comparison](docs/FLAT_SEED_PRIOR_COMPARISON.md).
 
@@ -742,9 +742,9 @@ The [support-inertia converse](docs/SUPPORT_INERTIA_CONVERSE.md) now treats
 every spectrum on a given support P. Let a(P) count the sites where both
 compressed X/Z operators have positive and negative eigenvalues. Then
 
-$$
+```math
 g(\sqrt\rho)\le\sqrt2 n+(2-\sqrt2)a(P).
-$$
+```
 
 Thus a(P)<=q excludes finite-budget advantage; equality in that class forces
 the flat subset seed. Every support with

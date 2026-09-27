@@ -556,9 +556,9 @@ The finite problem is now settled for every integer quantum-memory budget
 through four input qubits. The smallest remaining finite common-accuracy
 target is
 
-$$
+```math
 \Gamma(5,4)\stackrel{?}{=}4+3\sqrt2
-$$
+```
 
 One open direction is a dimension-independent bound on the original
 trace-norm score. The weighted star rules out extending the finite proof

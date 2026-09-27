@@ -19,21 +19,21 @@ Let `0<=q<=n` be an integer. On a memory of dimension `D<=2^q`, let
 `B_(i,X),B_(i,Z)` be Hermitian reflections, every two of which either
 commute or anticommute. Scalar signs are allowed. For `a_i,b_i>=0`, put
 
-$$
+```math
 H=\sum_i\bigl(a_iX_i\otimes B_{i,X}+b_iZ_i\otimes B_{i,Z}\bigr),
 \qquad
 \delta_i=a_i+b_i-\sqrt{a_i^2+b_i^2}.
-$$
+```
 
 Order the deficits as `delta_(1)<=...<=delta_(n)`. Then
 
-$$
+```math
 \boxed{\|H\|_\infty\le
 \sum_i(a_i+b_i)-\sum_{i=1}^{n-q}\delta_{(i)}
 =\sum_i\sqrt{a_i^2+b_i^2}
  +\sum_{i=n-q+1}^{n}\delta_{(i)}.}
 \qquad\text{(1)}
-$$
+```
 
 Empty sums vanish. Maximizing over the stated readout class and
 `D<=2^q` attains (1), using `D=2^q` if needed. Attainment is not asserted
@@ -57,10 +57,10 @@ Enumerate the `2m` queries on any chosen m sites, and let J be the binary
 adjacency matrix pairing their X and Z queries. If M is the memory
 commutation matrix, the full terms `T_j=P_j tensor B_j` have matrix
 
-$$
+```math
 A=J+M,\qquad \mathrm{rank}_{\mathbb F_2}M\le2q.
 \qquad\text{(2)}
-$$
+```
 
 The rank bound is prior graph-Clifford representation theory: rank `2r`
 requires a nonzero representation of dimension at least `2^r`. It also
@@ -79,46 +79,46 @@ matching of at least `m-q` edges with `d(c_j,c_k)>=t`, when `m>q`.
 
 To prove this, all coefficients exceed t, and squaring gives
 
-$$
+```math
 d(u,v)\ge t\quad\Longleftrightarrow\quad
 (u-t)(v-t)\ge t^2/2\qquad(u,v>t).
-$$
+```
 
 Set `s_j=sqrt(2)(c_j-t)/t>0`. Original partners satisfy
 `s_j s_(j*)>=1`. Split A into disjoint binary adjacency matrices `N+E`,
 with N containing the edges for which `s_j s_k<1`, and E the others.
 If `(JN)_(jk)=N_(j*,k)` is nonzero, then
 
-$$
+```math
 s_k<1/s_{j^*}\le s_j.
-$$
+```
 
 Ordering vertices by their labels makes JN strictly triangular, including
 when labels tie. Thus `J+N=J(I+JN)` is invertible over `F_2`. Since
 `M=(J+N)+E`,
 
-$$
+```math
 \mathrm{rank}E\ge2m-\mathrm{rank}M\ge2(m-q).
-$$
+```
 
 The matching fact supplies the claimed edges. Equality in the threshold
 belongs to E, which is essential to strict triangularity of JN.
 
 For each such edge, the two full reflections anticommute, so
 
-$$
+```math
 \|c_jT_j+c_kT_k\|_\infty=\sqrt{c_j^2+c_k^2}.
-$$
+```
 
 Grouping disjoint edges and bounding all remaining terms individually
 saves at least `(m-q)t`. Different groups need not commute. In particular,
 when every original deficit is one, the bound is
 
-$$
+```math
 \left\|\sum_j c_jT_j\right\|_\infty
 \le\sum_j c_j-(m-q)_+.
 \qquad\text{(3)}
-$$
+```
 
 For `m<=q`, (3) is simply triangle inequality.
 
@@ -128,35 +128,35 @@ Write H as `sum_i H_i` with the weighted site terms from Section 1.
 Let `0=d_0<d_1<...<d_k` be the distinct positive values among the deficits.
 For each level define
 
-$$
+```math
 S_\ell=\{i:\delta_i\ge d_\ell\},\qquad
 K_\ell=\sum_{i\in S_\ell}\frac{H_i}{\delta_i}.
-$$
+```
 
 Homogeneity makes every original deficit in `K_ell` exactly one. The
 restricted commutation matrix still obeys (2), so (3) gives
 
-$$
+```math
 \|K_\ell\|_\infty\le
 \sum_{i\in S_\ell}\frac{a_i+b_i}{\delta_i}
 -(|S_\ell|-q)_+.
-$$
+```
 
 The exact finite decomposition is
 
-$$
+```math
 H=H_0+\sum_{\ell=1}^k(d_\ell-d_{\ell-1})K_\ell,
 \qquad H_0=\sum_{i:\delta_i=0}H_i.
-$$
+```
 
 A site of deficit `d_j` appears in levels 1 through j; their coefficients
 sum to `d_j/d_j=1`. Zero deficit means `a_i b_i=0`, and
 `||H_0||<=sum_(delta_i=0)(a_i+b_i)`. Triangle inequality consequently gives
 
-$$
+```math
 \|H\|_\infty\le\sum_i(a_i+b_i)
 -\sum_{\ell=1}^k(d_\ell-d_{\ell-1})(|S_\ell|-q)_+.
-$$
+```
 
 The last sum is exactly `sum_(i=1)^(n-q) delta_(i)`: discard the q largest
 deficits; at each positive level, precisely `(|S_ell|-q)_+` of those
@@ -191,11 +191,11 @@ to the contrast formulation, as in the audited seed reduction.
 
 Thus, for nonnegative contrasts `0<=x_i,z_i<=1`, the region is exactly
 
-$$
+```math
 \boxed{\sum_i w(x_i,z_i)\le q,\qquad
 w(x,z)=\left[x+z-1-\sqrt{2(1-x)(1-z)}\right]_+.}
 \qquad\text{(4)}
-$$
+```
 
 Here the [existing retention-region proof](../EXACT_AXIS_SPECTRAL_REDUCTION.md)
 supplies the matching convex geometry and construction. The class permits
@@ -247,10 +247,10 @@ Koßmann, Schwonnek and Winter,
 [arXiv:2511.13531v1](https://arxiv.org/html/2511.13531v1), Section IX.1,
 Eq. (37), gives
 
-$$
+```math
 \left\|\sum_j c_jT_j\right\|_\infty
 \le\inf_{u_j>0}\sqrt{\left(\sum_jc_j^2/u_j\right)\beta(A,u)},
-$$
+```
 
 where Definition 1/Eq. (1) defines the weighted quadratic expectation
 parameter. Theorem 8 and Appendix A.3 give the minimum Pauli-string length

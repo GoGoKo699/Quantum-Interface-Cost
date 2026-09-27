@@ -401,9 +401,9 @@ state and the remainder of the Hamiltonian's spectrum.
 A uniformly smaller constant cannot replace `U+m<=4+2sqrt(2)`.
 On Q=A tensor B choose
 
-$$
+```math
 B_1=X_A,\quad D_1=Z_A,\qquad B_2=Z_B,\quad D_2=X_AX_B.
-$$
+```
 
 Both pairs are anticommuting reflections. Set
 `A=X_1X_A`, `C=X_2Z_B`, `B=Z_1Z_A`, `D=Z_2X_AX_B`.
@@ -412,9 +412,9 @@ Each simultaneous A,C eigenspace has dimension four. On it B,D are
 anticommuting reflections, so B+D has eigenvalues +/-sqrt(2), each twice.
 Therefore the complete H_0 spectrum is
 
-$$
+```math
 \{\,a+c+s\sqrt2:a,c,s\in\{-1,1\}\,\},
-$$
+```
 
 with each sign combination counted twice. Its top two eigenvalues are
 both `2+sqrt(2)`. This is a valid sharp-pair Hamiltonian at the already
@@ -459,9 +459,9 @@ The next target is now a statement on the complete domain (NF2): for
 `U>2+sqrt(2)`, compute U,m and the actual rho_Q by (NF6)–(NF7), set
 `c=U-m`, `t=4+sqrt(2)-m`, and prove or disprove
 
-$$
+```math
 c\sum_{j=1}^2\Phi_t(\lambda_j,\lambda_{5-j})\le1.
-$$
+```
 
 The preceding report proves that these t exceed two and U is simple in
 this range. Phi retains its exact quartic/cubic test there. A proof would

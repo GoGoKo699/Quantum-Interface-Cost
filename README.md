@@ -35,8 +35,8 @@ required by the path; the additional arguments are explained here.
 ## A first example: two inputs, one memory qubit
 
 With only classical memory, a single qubit can support later noisy X and
-Z measurements with contrasts $x,z$ precisely when $x^2+z^2\le1$.
-Equal contrasts therefore stop at $1/\sqrt2$.
+Z measurements with contrasts $`x,z`$ precisely when $`x^2+z^2\le1`$.
+Equal contrasts therefore stop at $`1/\sqrt2`$.
 
 For two inputs, keep one qubit chosen by a fair coin and measure the
 other with the compatible X/Z measurement. Record the choice and the
@@ -50,7 +50,7 @@ possible queries have contrast
 \end{aligned}
 ```
 
-Here $\varepsilon$ is the worst-case binary total-variation error, over
+Here $`\varepsilon`$ is the worst-case binary total-variation error, over
 all input states. The one-qubit theorem proves that an arbitrary collective
 encoder cannot improve this common accuracy.
 
@@ -69,9 +69,9 @@ disk, constructs this protocol and then treats unequal accuracies.
 
 | When | What happens |
 |---|---|
-| Before the query | An arbitrary collective encoder acts on one unknown $n$-qubit state, which may be entangled across its sites |
-| What survives | A quantum register of dimension at most $2^q$ in every branch, plus an unrestricted finite classical record |
-| After the query | A site $i$ and either $X_i$ or $Z_i$ are specified; a decoder using the memory and record returns one binary outcome |
+| Before the query | An arbitrary collective encoder acts on one unknown $`n`$-qubit state, which may be entangled across its sites |
+| What survives | A quantum register of dimension at most $`2^q`$ in every branch, plus an unrestricted finite classical record |
+| After the query | A site $`i`$ and either $`X_i`$ or $`Z_i`$ are specified; a decoder using the memory and record returns one binary outcome |
 
 The guarantee holds for every input and each allowed query. The quantum
 cap is branchwise, not an average. All branches are accepted; there are no
@@ -83,8 +83,8 @@ measurement statistics, not to reconstruct the whole input state.
 
 ### Exact finite common accuracy
 
-Retaining a random subset of $q$ sites and measuring the rest gives the
-unrestricted optimum for $1\le n\le4$ and integer $q=0,\ldots,n$:
+Retaining a random subset of $`q`$ sites and measuring the rest gives the
+unrestricted optimum for $`1\le n\le4`$ and integer $`q=0,\ldots,n`$:
 
 ```math
 \boxed{\eta_{\max}(n,q)
@@ -93,11 +93,11 @@ unrestricted optimum for $1\le n\le4$ and integer $q=0,\ldots,n$:
 
 The converse covers arbitrary collective encoders, spectra and binary
 decoders. These are all 14 integer-qubit budgets through four inputs.
-The same formula holds for $q=1$ at every $n$.
+The same formula holds for $`q=1`$ at every $`n`$.
 
 ### Complete one-qubit allocation
 
-For arbitrary local contrasts $(x_i,z_i)\in[0,1]^2$, the exact region
+For arbitrary local contrasts $`(x_i,z_i)\in[0,1]^2`$, the exact region
 with one memory qubit is
 
 ```math
@@ -110,7 +110,7 @@ where
 w(x,z)=\left[x+z-1-\sqrt{2(1-x)(1-z)}\right]_+.
 ```
 
-Here $[a]_+=\max(a,0)$. The tutorial explains $w$ as a required retention
+Here $`[a]_+=\max(a,0)`$. The tutorial explains $`w`$ as a required retention
 fraction. The converse applies established CHSH monogamy; every feasible
 profile has a random original-site-retention implementation.
 
@@ -131,7 +131,7 @@ accuracy.
 The [balanced-spectrum theorem and stability](docs/CORE_ARGUMENT.md#5-a-separate-all-size-structural-companion)
 are optional structural companions. The general common-accuracy optimum,
 sharp entropy bound and asymptotic rate remain open. The smallest remaining
-finite common-accuracy case is $(n,q)=(5,2)$.
+finite common-accuracy case is $`(n,q)=(5,2)`$.
 
 ## Proofs, sources and evidence
 

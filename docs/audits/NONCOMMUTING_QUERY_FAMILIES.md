@@ -33,18 +33,18 @@ do not evaluate unrestricted `Gamma(3,4)`.
 Let Q=A tensor B consist of two qubits and S be their SWAP. On each
 reference qubit R_i and Q, define
 
-$$
+```math
 P_i=e^{i\theta_i S}
   (|\mathrm{singlet}\rangle\langle\mathrm{singlet}|_{R_iA}
    \otimes I_B)e^{-i\theta_i S}.
-$$
+```
 
 All reference spectator identities are implicit. The three real angles
 are arbitrary and independent. Then
 
-$$
+```math
 \boxed{P_1+P_2+P_3\le \frac52 I.}
-$$
+```
 
 The constant is attained when two angles are zero and the third is pi/2:
 the two coincident A-subsystem Bell edges have norm 3/2, and the independent
@@ -68,7 +68,9 @@ For the memory, split A B into its triplet and singlet spaces. S is
 by exp(i theta_i S) preserves its two diagonal blocks and multiplies
 its upper-right off-diagonal block by
 
-$$z_i=e^{2i\theta_i}.$$
+```math
+z_i=e^{2i\theta_i}.
+```
 
 The all-symmetric total-spin-5/2 space has zero singlet projection and
 therefore contributes eigenvalue zero.
@@ -76,10 +78,10 @@ therefore contributes eigenvalue zero.
 The two remaining multiplicity matrices are given explicitly below.
 Their diagonal blocks can also be obtained from
 
-$$
+```math
 K_{\mathrm{triplet}}=\frac34 I-\frac12 J_R\cdot J_{AB},
 \qquad K_{\mathrm{singlet}}=\frac34 I.
-$$
+```
 
 Here K denotes the full sum, J_R is the total spin of the three
 references, and J_AB is the memory triplet spin.
@@ -90,37 +92,37 @@ Order the triplet-memory multiplicities first: the reference spin 3/2
 copy, then its two spin 1/2 copies. Put the reference-spin-3/2 times
 memory-singlet copy last. The matrix is
 
-$$
+```math
 K_{3/2}=
 \begin{pmatrix}
 \mathrm{diag}(5/4,1/2,1/2)&m\\
 m^\dagger&3/4
 \end{pmatrix},
-$$
+```
 
 where, in consistent reference bases,
 
-$$
+```math
 m=
 \begin{pmatrix}
 -\sqrt{5/48}(z_1+z_2+z_3)\\
 (-z_1+z_2)/4\\
 (-z_1-z_2+2z_3)/(4\sqrt3)
 \end{pmatrix}.
-$$
+```
 
 Writing Z=z_1+z_2+z_3, direct orthogonal decomposition of
 (z_1,z_2,z_3) gives
 
-$$
+```math
 |m_2|^2+|m_3|^2=\frac38-\frac{|Z|^2}{24}.
-$$
+```
 
 The positive Schur-complement criterion for K_(3/2)<=2I is
 
-$$
+```math
 \frac43|m_1|^2+\frac23(|m_2|^2+|m_3|^2)\le\frac54.
-$$
+```
 
 Its left side equals 1/4+|Z|^2/9, at most 5/4 since |Z|<=3.
 Thus this entire sector is bounded by two.
@@ -130,82 +132,82 @@ Thus this entire sector is bounded by two.
 Order triplet-memory multiplicities as reference spins 3/2, 1/2, 1/2;
 the two singlet-memory reference-spin-1/2 copies come last. Then
 
-$$
+```math
 K_{1/2}=
 \begin{pmatrix}
 \mathrm{diag}(2,5/4,5/4)&N\\
 N^\dagger&(3/4)I_2
 \end{pmatrix},
-$$
+```
 
 with
 
-$$
+```math
 N=
 \begin{pmatrix}
 (z_1-z_2)/(2\sqrt2)&(z_1+z_2-2z_3)/(2\sqrt6)\\
 \sqrt3 z_3/4&(-z_1+z_2)/4\\
 (-z_1+z_2)/4&(2z_1+2z_2-z_3)/(4\sqrt3)
 \end{pmatrix}.
-$$
+```
 
 A common phase of the z_i only changes the relative basis phase of
 the two diagonal sectors. Set z_3=1 and write
 
-$$
+```math
 z_1=e^{i(\alpha+\beta)},\quad z_2=e^{i(\alpha-\beta)},
 \quad c=\cos\beta,\quad x=\cos\alpha.
-$$
+```
 
 The Schur complement for K_(1/2)<=5I/2 says exactly that
 
-$$
+```math
 B=\frac74I_2-N^\dagger
        \mathrm{diag}(2,4/5,4/5)N\ge0.
-$$
+```
 
 With s=z_1+z_2 and t=z_1-z_2, its entries are
 
-$$
+```math
 B_{11}=\frac{4+3|s|^2}{10},\qquad
 B_{22}=\frac{12-|s|^2+4\mathrm{Re}s}{10},\qquad
 B_{12}=-\frac{\sqrt3}{20}\,[\bar t(s-3)-t].
-$$
+```
 
 In particular, B_11=2(1+3c^2)/5>0. Its determinant is
 
-$$
+```math
 \det B=\frac{F(c,x)}{25},
-$$
+```
 
-$$
+```math
 F(c,x)=9(1-c^2)x^2+2c(7+9c^2)x+c^2(41-9c^2).
-$$
+```
 
 The simultaneous substitution (c,x)->(-c,-x) preserves F, so take
 0<=c<=1 without loss of generality.
 
 For 0<=c<=2/3, completing the square gives
 
-$$
+```math
 F(c,x)=9(1-c^2)
   \left[x+\frac{c(7+9c^2)}{9(1-c^2)}\right]^2
   +\frac{64c^2(5-9c^2)}{9(1-c^2)}\ge0.
-$$
+```
 
 For 2/3<=c<=1, the derivative in x on [-1,1] is bounded below by
 
-$$
+```math
 \partial_x F(c,-1)
 =2(9c^3+9c^2+7c-9)\ge\frac{14}{3}>0.
-$$
+```
 
 Thus
 
-$$
+```math
 F(c,x)\ge F(c,-1)
 =(1-c)(9c^3+27c^2-5c+9)\ge0,
-$$
+```
 
 where the cubic is positive: 9c^3+27c^2>=0 and 9-5c>=4.
 Both pieces include their endpoints; c=1 uses the second case, so
@@ -229,43 +231,43 @@ uniform positive gap over triples approaching the equality set.
 Here is a fully specified basis for checking the Clebsch coefficients.
 Use |0> as spin-up. On R_1 R_2 R_3 set
 
-$$
+```math
 t_{3/2}=|000\rangle,\quad
 t_{1/2}=(|001\rangle+|010\rangle+|100\rangle)/\sqrt3,\quad
 t_{-1/2}=(|011\rangle+|101\rangle+|110\rangle)/\sqrt3,
-$$
+```
 
-$$
+```math
 a_+=(|010\rangle-|100\rangle)/\sqrt2,\quad
 a_-=(|011\rangle-|101\rangle)/\sqrt2,
-$$
+```
 
-$$
+```math
 b_+=(2|001\rangle-|010\rangle-|100\rangle)/\sqrt6,\quad
 b_-=(|011\rangle+|101\rangle-2|110\rangle)/\sqrt6.
-$$
+```
 
 On A B write w_+=|00>, w_0=(|01>+|10>)/sqrt(2), w_-=|11>,
 and w_s=(|01>-|10>)/sqrt(2).
 For highest-weight total spin 1/2 the five basis vectors are
 
-$$
+```math
 v_1=t_{3/2}w_-/\sqrt2-t_{1/2}w_0/\sqrt3
        +t_{-1/2}w_+/\sqrt6,
-$$
+```
 
-$$
+```math
 v_2=\sqrt{2/3}\,a_-w_+-a_+w_0/\sqrt3,\quad
 v_3=\sqrt{2/3}\,b_-w_+-b_+w_0/\sqrt3,\quad
 v_4=a_+w_s,\quad v_5=b_+w_s.
-$$
+```
 
 For highest-weight total spin 3/2 the four basis vectors are
 
-$$
+```math
 w_1=\sqrt{3/5}\,t_{3/2}w_0-\sqrt{2/5}\,t_{1/2}w_+,\quad
 w_2=a_+w_+,\quad w_3=b_+w_+,\quad w_4=t_{3/2}w_s.
-$$
+```
 
 Each unrotated projector is (I-SWAP_(R_i,A))/2. These real,
 orthonormal highest-weight vectors give the matrices in Sections 3–4
@@ -286,9 +288,9 @@ spectra u_i,v_i, with u_i^2+v_i^2=4 and
 2>=u_i>=sqrt(2)>=v_i>=0. Assume their combined top Bell subspaces
 admit the partial-SWAP geometry above. The local exact spectral cap is
 
-$$
+```math
 h_i\le v_i I+(u_i-v_i)P_i.
-$$
+```
 
 For any unit test vector put p_i=<P_i>. The theorem gives
 0<=p_i<=1 and sum p_i<=5/2. Maximizing a linear functional on
@@ -296,11 +298,11 @@ this polytope assigns unit weight to the two largest u_i-v_i and
 weight 1/2 to the remaining one. Therefore, for the corresponding
 ordering,
 
-$$
+```math
 \sum_i\langle h_i\rangle
 \le u_{(1)}+u_{(2)}+\frac{u_{(3)}+v_{(3)}}2
 \le4+\sqrt2.
-$$
+```
 
 Conjugating all references by Y gives the full operator norm bound.
 This permits arbitrary unequal spectra between sites, but equal

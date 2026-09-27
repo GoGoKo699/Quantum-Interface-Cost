@@ -6,10 +6,10 @@ Date: 24 September 2026. Reviewed main:
 **Verdict.** Every three-input normalized seed of rank at most three
 obeys the two-retained-qubit benchmark:
 
-$$
+```math
 \boxed{\Gamma(3,3)\le4+\sqrt2.}
 \qquad\text{(1)}
-$$
+```
 
 This covers arbitrary complex eigenvectors and nonuniform spectra, with
 no common antiunitary assumption. The same proof excludes four of the
@@ -31,16 +31,16 @@ score without solving the stronger quadratic conjecture.
 Consider n reference qubits and a finite-dimensional memory Q. For
 nonnegative weights a_i,b_i and Hermitian reflections B_i,D_i on Q set
 
-$$
+```math
 H=\sum_i h_i,\qquad h_i=a_iX_i\otimes B_i+b_iZ_i\otimes D_i,
-$$
+```
 
-$$
+```math
 r_i=\sqrt{a_i^2+b_i^2},\qquad
 \delta_i=a_i+b_i-r_i,\qquad v_i=\sqrt{\delta_i},\qquad
 G_\delta=\frac{\mathrm{diag}(\delta)+vv^T}{2}.
 \qquad\text{(2)}
-$$
+```
 
 Suppose each pair `(B_i,D_i)` admits a simultaneous Jordan decomposition
 with at most one noncommuting two-dimensional block. All other blocks
@@ -49,11 +49,11 @@ different decompositions and memory planes.
 
 **Theorem.** Under this readout condition,
 
-$$
+```math
 \boxed{\|H\|_\infty\le\sum_i r_i+\lambda_{\max}(G_\delta)
 \le\sum_i r_i+\frac{\sum_i\delta_i+\max_i\delta_i}{2}.}
 \qquad\text{(3)}
-$$
+```
 
 Every pair of qutrit reflections satisfies the condition. In dimension
 at most three, (3) consequently holds for all Hermitian contractions
@@ -63,12 +63,12 @@ of general contractions in larger memory dimension.
 
 For n=3, order the deficits as `delta_(1)>=delta_(2)>=delta_(3)`. Then
 
-$$
+```math
 \frac{\sum_i\delta_i+\max_i\delta_i}{2}
 =\delta_{(1)}+\frac{\delta_{(2)}+\delta_{(3)}}2
 \le\delta_{(1)}+\delta_{(2)}.
 \qquad\text{(4)}
-$$
+```
 
 The last bound is exactly the weighted support of retaining the two
 original sites with largest deficits. Thus all qutrit protocols obey
@@ -87,11 +87,11 @@ qubit observables.
 Independent local rotations on the reference and this memory plane put
 their bilinear Hamiltonian into
 
-$$
+```math
 s_1 X\otimes X+s_2 Z\otimes Z,\qquad
 s_1,s_2\ge0,\qquad s_1^2+s_2^2=r_i^2.
 \qquad\text{(5)}
-$$
+```
 
 This follows by singular-value decomposition of its real correlation
 matrix, whose rank is at most two. Its eigenvalues are
@@ -101,11 +101,11 @@ If `u_i>r_i`, the top eigenvector is unique and maximally entangled
 between the reference qubit and that memory plane. Denote its projector
 by Pi_i, with identity on all other references suppressed. Therefore
 
-$$
+```math
 h_i\le r_i I+(u_i-r_i)\Pi_i
 \le r_i I+\delta_i\Pi_i.
 \qquad\text{(6)}
-$$
+```
 
 If no positive excess exists, `h_i<=r_i I`; one can use any Bell
 projector in a memory plane in the weaker last bound. Dimension-one
@@ -121,12 +121,12 @@ It does not require a common block for different i.
 
 Write the normalized vector defining Pi_i as
 
-$$
+```math
 |\phi_i\rangle=\frac1{\sqrt2}\sum_{a=0}^1
 |a\rangle_{R_i}V_i|a\rangle_Q,
 \qquad V_i^\dagger V_i=I_2.
 \qquad\text{(7)}
-$$
+```
 
 A reference-basis rotation can be absorbed into the isometry V_i.
 Let E_i insert phi_i and leave all other reference qubits unchanged,
@@ -134,11 +134,11 @@ so `Pi_i=E_i E_i^dagger`. For i different from j, contraction of the
 memory index leaves, up to transposition and spectator identities,
 `V_i^dagger V_j/2`. Consequently
 
-$$
+```math
 \|E_i^\dagger E_j\|_\infty\le\frac12,
 \qquad \|\Pi_i\Pi_j\|_\infty\le\frac12.
 \qquad\text{(8)}
-$$
+```
 
 The estimate holds in any ambient memory dimension. Equal planes,
 real vectors, and simultaneous readout execution are unnecessary.
@@ -147,7 +147,7 @@ For arbitrary vectors x_i in the insertion domains put `y_i=||x_i||`.
 The Gram matrix of the column map with blocks `sqrt(delta_i) E_i`
 satisfies
 
-$$
+```math
 \begin{aligned}
 \left\|\sum_i\sqrt{\delta_i}E_i x_i\right\|^2
 &\le\sum_i\delta_i y_i^2+
@@ -155,16 +155,16 @@ $$
 &=y^T G_\delta y.
 \end{aligned}
 \qquad\text{(9)}
-$$
+```
 
 The nonzero spectra of the two Gram products agree. Hence
 
-$$
+```math
 \left\|\sum_i\delta_i\Pi_i\right\|_\infty
 \le\lambda_{\max}(G_\delta)
 \le\frac{\max_i\delta_i+\sum_i\delta_i}{2}.
 \qquad\text{(10)}
-$$
+```
 
 The final step bounds the diagonal and rank-one terms of G separately.
 Summing (6) proves the upper spectral bound in (3). Conjugating all
@@ -176,11 +176,11 @@ the reflections.
 
 The normalized-seed reduction gives
 
-$$
+```math
 g(L)=\sum_{i=1}^3\sum_{U=X_i,Z_i}\|LUL^\dagger\|_1,
 \qquad \|L\|_F=1.
 \qquad\text{(11)}
-$$
+```
 
 If L has rank at most three, choose an output isometry onto its image.
 The six compressed operators then live on a memory of dimension at
@@ -205,10 +205,10 @@ uses a direction of that minority eigenspace. Consequently the four
 unordered nonscalar patterns containing only pair types `(1,1)` and
 `(1,2)` obey (3):
 
-$$
+```math
 (11)^3,\qquad(11)^2(12),\qquad(11)(12)^2,\qquad(12)^3.
 \qquad\text{(12)}
-$$
+```
 
 Here the digits are the two minority ranks, as in the earlier
 [ten-sector reduction](DECODER_ALGEBRA_AND_THREE_INPUT.md), Section 6.
@@ -232,12 +232,12 @@ The tempting extension `||Pi_1+Pi_2+Pi_3||<=2` becomes false when even
 one local correction includes two Bell projectors. Let the memory be
 `Q=A tensor B`, with both factors qubits, and put
 
-$$
+```math
 \Pi_1=\Phi_{R_1A}\otimes I_B,\qquad
 \Pi_2=|0\rangle\langle0|_A\otimes\Phi_{R_2B},\qquad
 \Pi_3=|0\rangle\langle0|_A\otimes\Phi_{R_3B},
 \qquad\text{(13)}
-$$
+```
 
 where Phi is a Bell projector and unused reference identities are
 suppressed. The first edge projector has rank two on `R_1 tensor Q`.
@@ -245,19 +245,19 @@ For `T=Phi_(R_2B)+Phi_(R_3B)`, the maximum eigenvalue is 3/2, by the
 same two-projector overlap calculation. On a T-eigenspace with value t,
 the sum in (13) has the following block on `|00>,|11>` of `R_1A`:
 
-$$
+```math
 \begin{pmatrix}t+1/2&1/2\\1/2&1/2\end{pmatrix}.
-$$
+```
 
 The other two eigenvalues on `R_1A` are 0 and t. The largest eigenvalue
 of the displayed block dominates both and increases with t. Its maximum
 occurs at t=3/2, giving exactly
 
-$$
+```math
 \boxed{\|\Pi_1+\Pi_2+\Pi_3\|_\infty
 =\frac{5+\sqrt{13}}4>2.}
 \qquad\text{(14)}
-$$
+```
 
 This is a counterexample to an intermediate projector bound, not to
 the interface conjecture. For example, realize Pi_1 with X_A,Z_A and
