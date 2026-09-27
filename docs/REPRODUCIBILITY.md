@@ -1,5 +1,56 @@
 # Reproducibility and source provenance
 
+## Exact balanced-spectrum optimality at every input size
+
+The [balanced-spectrum proof](audits/BALANCED_SPECTRUM_OPTIMALITY.md)
+is pinned to main `18550b3b9ab5617a788b3b5d43d575dbf6e5a39e`. Run its
+bounded checks with:
+
+```bash
+python tools/check_balanced_spectrum_optimality.py --output results/balanced_spectrum_optimality.json
+```
+
+Independent internal reconstructions checked the Pauli energy bound,
+singleton trace duality, the factorized Rademacher majorant and tail
+bounds, the grouped response inequality, both exact spectral profiles,
+and their complete equality families. The entropy consequence uses the
+previously supplied strict scalar inequality. Primary-source review
+compared the relevant statements in König–Schütt–Tomczak-Jaegermann and
+Roga–Giampaolo–Illuminati. This is neither external peer review nor an
+exhaustive priority audit.
+
+The checker passed 25 exact Fraction comparisons and 524 matrix
+identities with 468 inequality checks, across ten fixed constructions
+and 60 original queries. Fixtures include mixed and pure bisector
+attainers, a five-qubit flat endpoint, complex and entangling reflections,
+a diffuse majority reflection, a Y reflection, and the maximally mixed
+state. Each uses one deliberate bias; there is no parameter grid,
+random sampling, optimizer, or large simulation.
+
+The run used Python 3.12.14 and NumPy 2.3.5 with tolerance `3e-9`.
+Matrix dimension was at most 32, relative identity residuals were below
+`3.47e-15`, and inequality margins were above `-3.11e-15`. Exact arithmetic
+checks the listed scalar algebra; floating-point matrix calculations
+are diagnostics. The all-size theorem and equality classification follow
+from the analytical proof.
+
+The source protects itself and the proof note from output overwrite,
+and the report records both hashes. One independent scratch rerun
+reproduced the complete report byte for byte and verified all three
+artifact hashes before and after execution.
+
+| Artifact | SHA-256 |
+|---|---|
+| Proof note | `4c3da955567c0478e3300900ea680cffb18d32f9c7d79f8137ad89906d36f8f8` |
+| Checker source | `9f095c451c27cb8696b8b13ae4dff2725389ca3b146ffc08be124c03dee686b6` |
+| Report | `9ba5b06663a200dfa732eab427a0641dd027d5643b683370d3f74a072ec6c6ec` |
+
+Earlier frozen proofs, reports, audits, and the MIT license are preserved;
+unchanged checkers were not rerun. The result covers balanced two-level
+spectra at every input size, including all flat half-rank seeds. Arbitrary
+nonflat half-rank seeds beyond the proved finite cases, and the unrestricted
+general conjectures, remain open.
+
 ## A sharp spectral-layer comparison for the original score
 
 The [spectral-layer proof](audits/SPECTRAL_LAYER_SCORE_BOUND.md) is pinned

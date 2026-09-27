@@ -28,6 +28,38 @@ and adds a prior CHSH derivation of the symmetric one-site entropy curve.
 Its convexity consequences and exact failed-tensorization example explain
 why the unrestricted rate question needs a new global argument.
 
+## Balanced spectra at every input size
+
+The [balanced-spectrum theorem](audits/BALANCED_SPECTRUM_OPTIMALITY.md)
+proves the exact original-score and affinity optima at every n when the
+spectrum has two equally repeated eigenvalues. Its flat endpoint extends
+the half-rank theorem to every input size. It retains arbitrary complex
+eigenvectors within this spectral family; arbitrary nonflat half-rank
+spectra remain outside the theorem.
+
+The proof uses standard Pauli expansion, trace duality, random-sign
+moments, and the weighted-Cauchy SLD estimate already supplied in
+[the spectral-condition proof](SPECTRAL_CONDITION_ENTROPY_BOUND.md),
+Section 2. The scalar entropy corollary uses the existing one-bit
+inequality in [COMMUTING_SEED_BOUND](COMMUTING_SEED_BOUND.md), Section 2.
+The polynomial majorant makes the required random-sign estimate
+self-contained; no new general Khintchine inequality is claimed.
+König–Schütt–Tomczak-Jaegermann, *J. reine angew. Math.* **511** (1999),
+1–42, [doi:10.1515/crll.1999.511.1](https://doi.org/10.1515/crll.1999.511.1),
+Theorem 2, equation (1.3), printed p. 3 of the author manuscript, already
+gives a quantitative upper first-moment bound involving the largest
+coefficient.
+
+Individual root-fidelity responses to local unitaries also have prior
+formulations. Roga–Giampaolo–Illuminati,
+[1401.8243v2](https://arxiv.org/pdf/1401.8243v2), equation (9), printed
+p. 3, optimizes one local response while holding the state fixed. The
+present theorem fixes all 2n original local X/Z queries and optimizes
+the state's global eigenbasis at a balanced spectrum. The inspected
+statement does not evaluate that sum. These comparisons identify prior
+ingredients and differing quantifiers; they do not certify priority
+for the supplied all-size profile and equality theorem.
+
 ## Spectral layers and the original score
 
 The [spectral-layer comparison](audits/SPECTRAL_LAYER_SCORE_BOUND.md)

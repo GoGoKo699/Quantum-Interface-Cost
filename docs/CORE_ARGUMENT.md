@@ -381,6 +381,48 @@ optimal decoder's commutator. A one-qubit family makes the coefficient
 sharp. The nonzero error term prevents an automatic extension of a flat
 converse to arbitrary spectra.
 
+### 3.4 Balanced spectra at every input size
+
+The [balanced-spectrum theorem](audits/BALANCED_SPECTRUM_OPTIMALITY.md)
+removes the input-size restriction for an entire spectral family. Let
+R be any traceless Hermitian reflection on n qubits and set
+`rho_t=(I+tR)/2^n`, with `0<=t<=1`. These are exactly the states with
+eigenvalues `(1+t)/2^n` and `(1-t)/2^n`, each repeated `2^(n-1)` times.
+Then
+
+$$
+\boxed{\max_R g(\rho_t)=2(n-1)+\sqrt{4-2t^2}.}
+$$
+
+For t>0, equality requires R to be an original-site X/Z bisector
+reflection, with identity on all other sites. Thus the maximizing state
+is a mixed bisector on one site and maximally mixed spectators. Its
+entropy is `n-1+h_2((1-t)/2)`. The established one-bit scalar inequality
+in [the product-diagonal proof](COMMUTING_SEED_BOUND.md#2-a-single-bit-inequality)
+therefore gives the sharp entropy bound for this entire family, with
+strict inequality for `0<t<1`.
+
+At t=1 this proves, for every n and every rank-`2^(n-1)` projector P,
+
+$$
+g\left(\frac{P}{2^{n-1}}\right)\le2(n-1)+\sqrt2.
+$$
+
+Equality is exactly a pure original-site bisector tensored with the
+maximally mixed state on the remaining sites. This all-size flat theorem does not
+assume that an unrestricted optimizer has a flat spectrum.
+
+The proof has one scalar reduction. Expand R in Pauli words, and let W
+be its total squared coefficient on the singleton X/Z words. The sum
+of local anticommuting weights is at least `2-W`. Reflection duality
+constrains W by the mean absolute value of a normalized random-sign sum
+whose coefficients are the singleton site amplitudes. A factorized
+degree-six majorant and a fourth-moment tail estimate handle all numbers
+of coefficients. Either total anticommuting weight already proves the
+bound, or one dominant site's two queries supply the required curvature.
+The same argument evaluates the root-affinity score within this
+balanced-spectrum family; the general affinity obstruction remains valid.
+
 ## 4. A collective advantage with five memory qubits
 
 Take `n=31`. Label the X-basis vectors by bit strings. Let

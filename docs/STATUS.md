@@ -1,7 +1,17 @@
 # Status and claim ledger
 
 Updated: 2026-09-27. Stage: the [nonflat quarter-rank converse](audits/NONFLAT_QUARTER_RANK_CONVERSE.md) proves `Gamma(4,4)=4+2sqrt(2)` and classifies every maximizing normalized seed. Together with the half-rank and all-n one-qubit results, this settles every integer quantum-memory budget through four inputs. The proof keeps arbitrary spectra and uses a sum-of-squares identity plus two exactly certified positive polynomials. The general entropy inequality, asymptotic common-accuracy rate, and publication originality remain unresolved.
-Latest research base: `26a126a729fb483897c8a2e356dc733089c0d2a0`, the merge of PR #54.
+Latest research base: `18550b3b9ab5617a788b3b5d43d575dbf6e5a39e`, the merge of PR #55.
+
+The [balanced-spectrum theorem](audits/BALANCED_SPECTRUM_OPTIMALITY.md)
+proves a new all-size optimum: for eigenvalues `(1+t)/2^n` and
+`(1-t)/2^n`, each with multiplicity `2^(n-1)`, the maximum original
+query score is `2(n-1)+sqrt(4-2t^2)`. Every t>0 maximizing state is one
+original-site mixed X/Z bisector tensored with maximally mixed spectators.
+The t=1 endpoint settles **all flat half-rank seeds at arbitrary n**,
+including their equality cases. The whole balanced-spectrum family obeys
+the sharp entropy inequality. Arbitrary nonflat spectra at larger blocks
+and the unrestricted asymptotic rate remain open.
 
 The [dimension-independent continuation](audits/AFFINITY_METHOD_LIMIT.md)
 proves that the affinity surrogate used in the finite converses cannot
@@ -19,8 +29,9 @@ original query score. The stronger bound
 uses only the decoder-commutator part of those gaps. Every layer stays
 within the original rank cap. The square-root order and constant are
 sharp even for one original X/Z pair; no spectral-spacing assumption is
-needed. The remaining task is to control the flat-layer scores and this
-nonzero mixing cost together.
+needed. The balanced-spectrum theorem now controls the actual score on
+one entire spectral family; general spectra still require their layer
+scores and nonzero mixing cost to be controlled together.
 
 The earlier [quarter-rank geometry](audits/QUARTER_RANK_GEOMETRY.md) and
 its sharp squared-score budget remain valid. Its former nonflat restriction
@@ -45,6 +56,8 @@ is asserted.
 
 | Claim | Status | Location |
 |---|---|---|
+| Every balanced two-level spectrum has exact optimum 2(n-1)+sqrt(4-2t^2), for every n | Derived and independently reconstructed with unrestricted eigenvectors; all t>0 maximizers are one original-site mixed X/Z bisector and maximally mixed spectators. The entire family obeys the sharp entropy inequality | audits/BALANCED_SPECTRUM_OPTIMALITY.md |
+| Every flat half-rank seed obeys retention at every n, with complete equality cases | Derived as t=1 of the balanced-spectrum theorem; removes the earlier singleton-site restriction. This does not prove the arbitrary-spectrum half-rank conjecture beyond the existing finite cases | audits/BALANCED_SPECTRUM_OPTIMALITY.md |
 | Original query profile is close to a common mixture of nested flat spectral profiles | Derived and independently reconstructed: nonnegative errors have squared sum at most twice the decoder mixing charge, hence at most 2Delta with Delta=sum_U(a_U-F_U^2). Rank caps are preserved; the square-root coefficient is sharp | audits/SPECTRAL_LAYER_SCORE_BOUND.md |
 | Root-affinity score obeys the retention bound for every n,q | Incorrect: rank-16, 15-input weighted star; the original trace-norm score stays strictly below retention | audits/AFFINITY_METHOD_LIMIT.md |
 | Root-affinity score is at most sqrt(2)n+C log2(rank) for some universal finite C | Incorrect: the star family's surrogate excess grows as sqrt(n/2), with rank n+1; its original-score excess stays below sqrt(2) | audits/AFFINITY_METHOD_LIMIT.md |

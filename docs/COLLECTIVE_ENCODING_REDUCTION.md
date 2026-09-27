@@ -162,6 +162,15 @@ spectrum-independent error estimate does not justify dropping a nonuniform
 spectrum from the optimization.
 It identifies a quantitative cost that a general converse must control.
 
+The [balanced-spectrum theorem](audits/BALANCED_SPECTRUM_OPTIMALITY.md)
+evaluates one such family at every n. For `rho=(I+tR)/2^n`, with R a
+traceless Hermitian reflection, the exact maximum is
+`2(n-1)+sqrt(4-2t^2)`. At t=1, every flat seed of rank exactly `2^(n-1)`
+therefore obeys retention, with all equality cases classified. For
+`0<t<1` these seeds have full rank; their sharp entropy bound is a
+separate consequence. The original optimization continues to include
+all other spectra and all ranks below the cap.
+
 The [decoder-algebra theorem](audits/DECODER_ALGEBRA_AND_THREE_INPUT.md)
 proves the subset bound for every n,q when an optimal reflection decoder
 family pairwise commutes or anticommutes. This is an explicit sufficient
