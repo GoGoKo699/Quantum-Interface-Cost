@@ -1,5 +1,54 @@
 # Reproducibility and source provenance
 
+## Quarter-rank geometry and the flat-seed converse
+
+The [quarter-rank proof](audits/QUARTER_RANK_GEOMETRY.md) is pinned
+to main `ecdfc7d6ad3ee16e66ba6f6de8802974bb558ee2`. Run:
+
+```bash
+python tools/check_quarter_rank_geometry.py --output results/quarter_rank_geometry.json
+```
+
+Independent internal readers reconstructed the exact top-four Pauli
+spectrum, the rank-sensitive trace bound, the sharp affinity and squared
+query-score budgets, both local deficit inequalities, both flat-spectrum
+branches, and the equality cases. The argument excludes arbitrary rank
+at most three and every flat rank-at-most-four seed. It does not prove
+the unsquared retention bound for arbitrary nonflat rank-four seeds.
+
+The bounded verifier passed 13 exact rational comparisons, 291 matrix
+identities and 559 inequalities across eight fixed constructions. These
+include two equality seeds with different local axes, both flat rank-four
+branches, flat and nonflat rank-three seeds, a nonflat Hamming star, and
+a complex entangled nonflat rank-four seed. It checks the original
+trace-norm scores separately from the affinity upper bounds. The remaining
+nonflat rank-four root scores are reported without assuming the open bound.
+
+The run used Python 3.12.14 and NumPy 2.3.5, at tolerance `3e-9`.
+Maximum matrix dimension was 16, relative identity residuals were below
+`6.11e-16`, and inequality margins were above `-1.78e-15`.
+Source SHA-256:
+`8901e2b6d5a8730704a9d1a06402fee238491aeca69d83f091b261027df1d26f`.
+The JSON pins the proof-note SHA-256
+`e923369b35807ff8dc89250d61ffd453c1fd4adb46b7176bab541b4c065a59cd`.
+Output guards protect the source and proof note.
+
+Two independent source reviews passed. A separate scratch rerun verified
+both provenance hashes and reproduced the final JSON byte for byte,
+with SHA-256
+`71dbe369baec49b015c10fbd872ff78d36aca95d55a759ab2741259df78aef29`.
+Cross-platform floating results need only meet the stated tolerance.
+
+The proof is analytical. These fixed floating-point diagnostics are not
+interval certificates, numerical optimization, or a novelty assessment.
+No random sampling, parameter grid, or large simulation is used.
+Historical proof notes and unchanged diagnostics are preserved.
+
+The separate [half-rank prior comparison](audits/HALF_RANK_PRIOR_COMPARISON.md)
+checks exact substitutions in the cited primary sources. It distinguishes
+the already-covered n=2 endpoint from the supplied n=3,4 result and leaves
+publication priority unresolved.
+
 ## Unrestricted half-rank retention through four inputs
 
 The [half-rank theorem](audits/HALF_RANK_RETENTION_CONVERSE.md) is pinned

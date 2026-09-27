@@ -1,6 +1,6 @@
 # Q1 — Delayed local readout through a bounded quantum interface
 
-**Version:** 0.47, 2026-09-27
+**Version:** 0.48, 2026-09-27
 
 **Project:** Falling / Q1  
 **Status:** The unrestricted finite optima at `(n,q)=(3,2)` and `(4,3)` are proved, with a common half-rank argument and complete normalized-seed equality cases. The exact all-n one-qubit allocation result and the unequal-accuracy collective advantage remain separate results. The general two-qubit entropy inequality, common-accuracy asymptotic rate and publication originality are unresolved. The full product-diagonal profile evaluates an established steering entanglement measure; it is not a new resource framework. All proof review described here is internal, not external peer review.
@@ -31,8 +31,13 @@ supply the corresponding normalized Kraus seeds.
 The [short core argument](docs/CORE_ARGUMENT.md) combines this finite
 result with the exact all-n one-qubit allocation theorem and a collective
 advantage for unequal accuracies. The smallest remaining finite
-common-accuracy case is now `(n,q)=(4,2)`. The general entropy inequality,
-asymptotic common-accuracy rate, and publication originality remain open.
+common-accuracy case is now `(n,q)=(4,2)`. The
+[quarter-rank argument](docs/audits/QUARTER_RANK_GEOMETRY.md) proves its
+retention bound for every flat seed and every rank-at-most-three seed,
+and proves the sharp squared-query-score budget six for arbitrary
+rank-four seeds. A finite-block advantage would require a nonflat
+rank-four seed. The general entropy inequality, asymptotic common-accuracy
+rate, and publication originality remain open.
 
 Earlier readout, resolvent and channel theorems remain in the ledger and
 linked proof notes. Their former three-input scope restrictions describe
@@ -54,6 +59,8 @@ The general compression problem below is already present in the dimensional meas
 | Uniform-random-subset hybrid construction | Explicit elementary achievable strategy; optimal for q=1 at every n, for q=n-1 through n=4, and at the endpoints. General optimality unresolved. |
 | Unrestricted Gamma(n,2^(n-1))=2(n-1)+sqrt(2), n=2,3,4 | Derived and independently reconstructed from positivity, a rank-constrained Pauli-spectrum estimate and one positive quadratic. Arbitrary spectra and decoder algebras are included. |
 | Every maximizing half-rank normalized seed is a retention seed, n=2,3,4 | Derived with complete equality analysis: one pure X/Z bisector and n-1 maximally mixed reference sites, up to output isometries. This is not a classification of every physical instrument. |
+| Four-input, rank-at-most-four squared query-score budget | Exactly six, derived and independently reconstructed for arbitrary spectra. Equality fixes two pure X/Z-plane sites and two maximally mixed sites. This does not evaluate the unsquared score. |
+| Four-input, two-qubit retention converse for flat seeds and rank at most three | Derived and independently reconstructed; all flat equality seeds are retention seeds with two bisectors. Any remaining witness must have a nonflat rank-four spectrum. |
 | Exact optimum and maximizing seeds with one retained qubit | Derived and independently checked from Cheng–Hall monogamy [11]; see Section 8 and the full proof. |
 | Exact complete local X/Z accuracy region with one retained qubit | Derived and independently checked: the sum of established local incompatibility weights is at most one; explicit matching allocation. |
 | Equal-accuracy optimum for pairwise commuting/anticommuting reflection readouts at all n,q | Derived and independently checked from prior graph-Clifford dimension algebra and an elementary matching argument; unrestricted encoders, explicit decoder restriction. |

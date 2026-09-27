@@ -135,6 +135,11 @@ matrix as a pure X/Z-bisector factor on one site tensored with the
 maximally mixed state on all remaining sites. In particular both
 `n=3,q=2` and `n=4,q=3` are settled, and the smallest remaining block
 is `n=4,q=2`, with target `g(L)=4+2sqrt(2)`. The
+[quarter-rank argument](audits/QUARTER_RANK_GEOMETRY.md) proves this bound
+for every flat Gram spectrum and every rank-at-most-three Gram matrix.
+It also proves the sharp sum-of-squared-query-scores budget six for
+arbitrary rank-four seeds. A remaining witness must therefore be nonflat
+and have rank four. The
 [product-diagonal bound](COMMUTING_SEED_BOUND.md) proves it whenever
 `L^dagger L` is diagonal in a fixed local product basis, for arbitrary q.
 These proved cases do not restrict the encoders in the unresolved general problem.
