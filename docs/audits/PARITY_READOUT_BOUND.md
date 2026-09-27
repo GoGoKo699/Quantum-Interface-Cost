@@ -25,7 +25,7 @@ separable, or real. For any local unit Pauli observable U_i, write
 
 ```math
 \boxed{\|\sqrt\rho U_i\sqrt\rho\|_1
-\leq\sqrt{1-r^2(1-z^2)}.} \tag{1}
+\leq\sqrt{1-r^2(1-z^2)}.} \qquad\text{(1)}
 ```
 
 The state `rho_q=(I+rR)/2^n`, uniform inside each parity sector, attains
@@ -35,7 +35,7 @@ exact envelope at fixed R and q, not merely an upper estimate.
 For the actual local X/Z queries this gives
 
 ```math
-\boxed{g_n(\rho)\leq n\sqrt{2+8q(1-q)}.} \tag{2}
+\boxed{g_n(\rho)\leq n\sqrt{2+8q(1-q)}.} \qquad\text{(2)}
 ```
 
 It is attained by rho_q when each R_i is an X/Z bisector. In particular,
@@ -148,7 +148,7 @@ two-qubit parity supports P,Q and arbitrary normalized sigma,tau,
 \mathcal S_t=\sum_U\left\|\begin{pmatrix}
 L_U&tX_U/2\\tX_U^\dagger/2&0
 \end{pmatrix}\right\|_1
-\leq2\sqrt{2+2t^2},\qquad 0\leq t\leq1. \tag{3}
+\leq2\sqrt{2+2t^2},\qquad 0\leq t\leq1. \qquad\text{(3)}
 ```
 
 This bound is sharp, attained by flat core and tail and bisector parity

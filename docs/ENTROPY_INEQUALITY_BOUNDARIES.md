@@ -15,7 +15,7 @@ $$
 g(\sqrt\rho):=\sum_{i=1}^n\sum_{b=X,Z}
 \|\sqrt\rho\,P_{i,b}\sqrt\rho\|_1
 \le \sqrt2\,n+(2-\sqrt2)S(\rho)
-\tag{1}
+\qquad\text{(1)}
 $$
 
 for every n-qubit density matrix rho. Entropies are in bits. The
@@ -62,7 +62,7 @@ $$
  g(\sqrt\rho)\le \sqrt2(n-1)
  +\sqrt2\sqrt{1+4\lambda(1-\lambda)}.
 }
-\tag{2}
+\qquad\text{(2)}
 $$
 
 For every lambda, equality is attained by
@@ -71,7 +71,7 @@ $$
 \rho=\left(\lambda|\beta_+\rangle\langle\beta_+|
  +(1-\lambda)|\beta_-\rangle\langle\beta_-|\right)
  \otimes(|\beta_+\rangle\langle\beta_+|)^{\otimes(n-1)},
-\tag{3}
+\qquad\text{(3)}
 $$
 
 where beta signs are the two eigenstates of `(X+Z)/sqrt(2)`. Thus (2) is
@@ -85,9 +85,9 @@ marginal. If `A_0,A_1` are orthogonal Pauli directions on A and
 `B_0,B_1` are unit traceless qubit observables on Q, then
 
 $$
-\operatorname{Tr}\sigma(A_0\otimes B_0+A_1\otimes B_1)
+\mathrm{Tr}\sigma(A_0\otimes B_0+A_1\otimes B_1)
 \le\sqrt{4-2|r|^2}.
-\tag{4}
+\qquad\text{(4)}
 $$
 
 For a pure two-qubit state, use Schmidt coefficients
@@ -116,7 +116,7 @@ Cauchy–Schwarz, and convexity of squared Euclidean norm give
 
 $$
 \begin{aligned}
-\operatorname{Tr}\sigma(A_0\otimes B_0+A_1\otimes B_1)
+\mathrm{Tr}\sigma(A_0\otimes B_0+A_1\otimes B_1)
 &\le\sum_s p_s\sqrt{4-2|r_s|^2}\\
 &\le\sqrt{4-2\sum_s p_s|r_s|^2}\\
 &\le\sqrt{4-2\left|\sum_s p_s r_s\right|^2}.
@@ -146,7 +146,7 @@ sites i,k, Cheng–Hall's three-qubit CHSH monogamy theorem gives
 
 $$
 f_i^2+f_k^2\le4.
-\tag{5}
+\qquad\text{(5)}
 $$
 
 The independently chosen common-qubit settings and mixed-state extension
@@ -208,7 +208,7 @@ eigenvalue -1 in the negative eigenspace. The last eigenvalue is fixed by
 trace:
 
 $$
-\operatorname{Tr}(PUP)=\operatorname{Tr}U-\langle v|U|v\rangle
+\mathrm{Tr}(PUP)=\mathrm{Tr}U-\langle v|U|v\rangle
 =-\langle v|U|v\rangle.
 $$
 
@@ -228,7 +228,7 @@ $$
  =\frac{8+\sum_{i,b}|\langle v|P_{i,b}|v\rangle|}{3}
  \le\frac{8+2\sqrt2}{3}.
 }
-\tag{6}
+\qquad\text{(6)}
 $$
 
 The last step uses the Bloch-ball inequality
@@ -249,7 +249,7 @@ nonzero eigenvalues.
 **Theorem.** Suppose
 
 $$
-\rho=C\operatorname{diag}(p)C^\dagger,
+\rho=C\mathrm{diag}(p)C^\dagger,
 $$
 
 where C is any global n-qubit Clifford unitary and p is any probability
@@ -261,7 +261,7 @@ $$
 \boxed{
  g(\sqrt\rho)\le2n-\ln(2)\,[n-S(\rho)].
 }
-\tag{7}
+\qquad\text{(7)}
 $$
 
 Since `ln(2)>2-sqrt(2)`, this implies (1), strictly whenever `S(rho)<n`.
@@ -283,7 +283,7 @@ so its singular values are `sqrt(p_x p_(x+v_j))`. Consequently
 $$
 F_j:=\|\sqrt\rho\,P_j\sqrt\rho\|_1
 =\sum_x\sqrt{p_xp_{x+v_j}}.
-\tag{8}
+\qquad\text{(8)}
 $$
 
 This number belongs to `[0,1]`; it is one when `v_j=0`.
@@ -304,7 +304,7 @@ For every `0<=lambda<=1`,
 $$
 1-2\sqrt{\lambda(1-\lambda)}
 \ge\ln(2)\,[1-h_2(\lambda)].
-\tag{9}
+\qquad\text{(9)}
 $$
 
 To prove it, put `t=|1-2lambda|`. The difference between the two sides is
@@ -317,7 +317,7 @@ $$
 We have `D(0)=0`, and
 
 $$
-D'(t)=\frac{t}{\sqrt{1-t^2}}-\operatorname{atanh}t,
+D'(t)=\frac{t}{\sqrt{1-t^2}}-\mathrm{atanh}t,
 \qquad
 D''(t)=(1-t^2)^{-3/2}-(1-t^2)^{-1}>0
 $$
@@ -365,7 +365,7 @@ which proves (7).
 Take `C=I` and
 
 $$
-\rho_t=\operatorname{diag}\left(\frac{1+t}2,\frac{1-t}2\right)
+\rho_t=\mathrm{diag}\left(\frac{1+t}2,\frac{1-t}2\right)
 \otimes(I/2)^{\otimes(n-1)}.
 $$
 
@@ -401,7 +401,7 @@ For every Hermitian unitary U,
 
 $$
 \|PUP\|_1=\frac14\|\{S,U\}\|_1.
-\tag{10}
+\qquad\text{(10)}
 $$
 
 Indeed, in the `P/(I-P)` decomposition write
@@ -422,7 +422,7 @@ i, then
 
 $$
 \boxed{g(\sqrt\rho)\le2(n-1)+\sqrt2.}
-\tag{11}
+\qquad\text{(11)}
 $$
 
 The hypothesis is equivalent to `Tr_i S=0`. Expand
@@ -434,9 +434,9 @@ $$
 Normalized partial trace of `S^2=I` gives `A^2+B^2+C^2=I`. By (10),
 
 $$
-\frac{\|PX_iP\|_1}{r}=\frac{\operatorname{Tr}|A|}{r},
+\frac{\|PX_iP\|_1}{r}=\frac{\mathrm{Tr}|A|}{r},
 \qquad
-\frac{\|PZ_iP\|_1}{r}=\frac{\operatorname{Tr}|C|}{r}.
+\frac{\|PZ_iP\|_1}{r}=\frac{\mathrm{Tr}|C|}{r}.
 $$
 
 Cauchy–Schwarz and `A^2+C^2<=I` bound their sum by `sqrt(2)`.
@@ -447,7 +447,7 @@ Equality holds precisely for
 
 $$
 P=|\beta\rangle\langle\beta|_i\otimes I_{\mathrm{rest}},
-\tag{12}
+\qquad\text{(12)}
 $$
 
 where beta is one of the four X/Z bisectors. To prove necessity, every
@@ -484,7 +484,7 @@ $$
 Then
 
 $$
-A_0=\operatorname{Tr}_i P-I,\qquad
+A_0=\mathrm{Tr}_i P-I,\qquad
 A_0^2+A_x^2+A_y^2+A_z^2=I.
 $$
 
@@ -492,12 +492,12 @@ Equation (10) and Hilbert–Schmidt Cauchy–Schwarz give
 
 $$
 \begin{aligned}
-g_{i,X}&\le\sqrt{\operatorname{Tr}(A_0^2+A_x^2)/r},\\
-g_{i,Z}&\le\sqrt{\operatorname{Tr}(A_0^2+A_z^2)/r},\\
+g_{i,X}&\le\sqrt{\mathrm{Tr}(A_0^2+A_x^2)/r},\\
+g_{i,Z}&\le\sqrt{\mathrm{Tr}(A_0^2+A_z^2)/r},\\
 g_{i,X}+g_{i,Z}
-&\le\sqrt{2\left[1+\operatorname{Tr}(A_0^2)/r\right]},
+&\le\sqrt{2\left[1+\mathrm{Tr}(A_0^2)/r\right]},
 \end{aligned}
-\tag{13}
+\qquad\text{(13)}
 $$
 
 where `g_{i,b}=||P P_(i,b)P||_1/r`. For example,
@@ -509,9 +509,9 @@ If a flat seed has score `g=2(n-1)+sqrt(2)+delta` with delta greater
 than zero, every site must therefore satisfy
 
 $$
-\frac{\operatorname{Tr}[(\operatorname{Tr}_iP-I)^2]}r
+\frac{\mathrm{Tr}[(\mathrm{Tr}_iP-I)^2]}r
 \ge\sqrt2\,\delta+\frac{\delta^2}{2}>0.
-\tag{14}
+\qquad\text{(14)}
 $$
 
 This follows because all the other sites together contribute at most
@@ -535,7 +535,7 @@ $$
 A direct trace expansion of `P=(I+S)/2` gives
 
 $$
-\frac{\operatorname{Tr}[(PU_jP)^2]}r=1-w_j,
+\frac{\mathrm{Tr}[(PU_jP)^2]}r=1-w_j,
 \qquad g_j\le\sqrt{1-w_j}.
 $$
 
@@ -545,7 +545,7 @@ query, so `sum_j w_j>=1`. Hence
 $$
 g(\sqrt\rho)\le\sqrt{2n\left(2n-\sum_jw_j\right)}
 \le\sqrt{2n(2n-1)}.
-\tag{15}
+\qquad\text{(15)}
 $$
 
 At n=3 the last bound is `sqrt(30)`, which is **above** `4+sqrt(2)` and
@@ -562,7 +562,7 @@ than
 
 $$
 2-\frac{4\sqrt2}{3}\simeq0.114382.
-\tag{16}
+\qquad\text{(16)}
 $$
 
 Conditions (14) and (16) narrow the flat-projector search. They neither
@@ -623,7 +623,7 @@ $$
 +b(I-|v\rangle\langle v|)}\right)
 =2n\left[(d-2)b+\sqrt{4tb+\frac{(t-b)^2}{2}}\right].
 }
-\tag{17}
+\qquad\text{(17)}
 $$
 
 In particular, every state in this spectral family satisfies the entropy
@@ -635,7 +635,7 @@ span of v and Uv is invariant under U. When `|m_U|<1`, choose its
 orthonormal basis to give
 
 $$
-U\big|_{\operatorname{span}\{v,Uv\}}
+U\big|_{\mathrm{span}\{v,Uv\}}
 =\begin{pmatrix}m_U&\sqrt{1-m_U^2}\\
 \sqrt{1-m_U^2}&-m_U\end{pmatrix}.
 $$
@@ -648,7 +648,7 @@ and U remains unitary, contributing `(d-2)b`. Consequently,
 $$
 \|\sqrt\rho U\sqrt\rho\|_1
 =(d-2)b+\sqrt{4tb+(t-b)^2m_U^2}.
-\tag{18}
+\qquad\text{(18)}
 $$
 
 The degenerate case `|m_U|=1` follows by continuity, or directly since
@@ -694,7 +694,7 @@ Then the exact maximum over all P is
 
 $$
 \boxed{\max_P g(\sqrt\rho)=2+\sqrt{4-2\delta^2}.}
-\tag{19}
+\qquad\text{(19)}
 $$
 
 The projector `P=|beta><beta|_i tensor I` attains (19), where beta
@@ -711,7 +711,7 @@ and its conjugate U rho U has the same eigenvalues with angle cosine
 `s_k`. The squared root fidelity of that block is
 
 $$
-\operatorname{Tr}(\rho_k(U\rho U)_k)
+\mathrm{Tr}(\rho_k(U\rho U)_k)
 +2\sqrt{\det\rho_k\det(U\rho U)_k}
 =4ab+(a-b)^2s_k^2.
 $$
@@ -722,7 +722,7 @@ over the blocks. Thus
 
 $$
 F_U=\frac12\sum_{k=1}^2\sqrt{1-z+zs_k^2}.
-\tag{20}
+\qquad\text{(20)}
 $$
 
 Degenerate angles and zero eigenvalues follow by continuity; equivalently,
@@ -734,7 +734,7 @@ let `w_U` be its squared Pauli weight on strings anticommuting with U.
 The trace identity from the [flat-projector proof](FLAT_HALF_RANK_OPTIMALITY.md),
 Section 2, gives `(s_1^2+s_2^2)/2=1-w_U`. Concavity in (20) yields
 
-$$F_U\le\sqrt{1-zw_U}.\tag{21}$$
+$$F_U\le\sqrt{1-zw_U}.\qquad\text{(21)}$$
 
 Let `T=beta_1^2+beta_2^2` be the total squared singleton X/Z Pauli
 weight of R, with beta_i the Euclidean norm of the two coefficients
@@ -751,7 +751,7 @@ signs. Every nonsingleton Pauli string anticommutes with at least two
 queries. Therefore, if W denotes the sum of w_U at the site with
 larger beta_i and V the sum at the other site, then
 
-$$W\ge T^2,\qquad W+V\ge2-T,\qquad 0\le T\le1.\tag{22}$$
+$$W\ge T^2,\qquad W+V\ge2-T,\qquad 0\le T\le1.\qquad\text{(22)}$$
 
 ### Maximizing the two groups
 

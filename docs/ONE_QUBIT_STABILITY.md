@@ -19,7 +19,7 @@ g(L)=\sum_{i=1}^n\bigl(\|LX_iL^\dagger\|_1+
                          \|LZ_iL^\dagger\|_1\bigr),
 \qquad G_n=2+(n-1)\sqrt2,
 \qquad \delta=G_n-g(L).
-\tag{1}
+\qquad\text{(1)}
 $$
 
 The [one-qubit theorem](ONE_QUBIT_OPTIMALITY.md) gives `delta>=0`.
@@ -28,7 +28,7 @@ Let `S_n` be the set of exact maximizing normalized seeds
 $$
 M=\frac1{\sqrt2}U\left(I_k\otimes
                  \bigotimes_{j\ne k}\langle\beta_j|\right),
-\tag{2}
+\qquad\text{(2)}
 $$
 
 after reordering tensor factors. Here U is any two-dimensional output
@@ -40,16 +40,16 @@ and U need not be real.
 **Theorem.** If `0<=delta<=1/48`, some `M in S_n` satisfies
 
 $$
-\boxed{\left|\operatorname{Tr}(M^\dagger L)\right|^2
+\boxed{\left|\mathrm{Tr}(M^\dagger L)\right|^2
              \ge1-\frac{2\delta}{3}.}
-\tag{3}
+\qquad\text{(3)}
 $$
 
 After choosing its phase, the same M satisfies
 
 $$
 \boxed{\|L-M\|_F^2\le\frac{4\delta}{3}.}
-\tag{4}
+\qquad\text{(4)}
 $$
 
 For every normalized L, without the small-deficit condition,
@@ -57,7 +57,7 @@ For every normalized L, without the small-deficit condition,
 $$
 \boxed{\inf_{M\in\mathcal S_n}\|L-M\|_F^2
                   \le\min\{2,96\delta\}.}
-\tag{5}
+\qquad\text{(5)}
 $$
 
 The constants in (3)–(4) do not depend on n. This is stability of
@@ -79,7 +79,7 @@ extreme Hermitian contraction B attaining
 
 $$
 \|LPL^\dagger\|_1
- =\operatorname{Tr}(B LPL^\dagger)
+ =\mathrm{Tr}(B LPL^\dagger)
  =\langle\psi|P\otimes B|\psi\rangle.
 $$
 
@@ -92,7 +92,7 @@ $$
 h_i=X_i\otimes B_{i,X}+Z_i\otimes B_{i,Z},
 \qquad f_i=\langle\psi|h_i|\psi\rangle,
 \qquad g(L)=\sum_i f_i.
-\tag{6}
+\qquad\text{(6)}
 $$
 
 A site is active when both its decoder extremes are traceless. At any
@@ -118,7 +118,7 @@ k. Every individual upper-bound deficit is nonnegative, so
 $$
 f_k\ge2-\delta,
 \qquad f_j\ge\sqrt2-\delta\quad(j\ne k).
-\tag{7}
+\qquad\text{(7)}
 $$
 
 ## 3. A Bell factor and exclusion of mixed decoder types
@@ -138,7 +138,7 @@ Each pair consists of anticommuting qubit Pauli observables. Consequently
 $$
 h_k=\sqrt{1+t}\,A_+\otimes D_+
       +\sqrt{1-t}\,A_-\otimes D_-.
-\tag{8}
+\qquad\text{(8)}
 $$
 
 The two tensor-product reflections commute. Their four joint eigenspaces
@@ -161,7 +161,7 @@ $$
 v\le2\sqrt\delta,\qquad
 u-v\ge2-\delta-2\sqrt\delta>\frac32
 \quad\left(0\le\delta\le\frac1{48}\right).
-\tag{9}
+\qquad\text{(9)}
 $$
 
 The strict inequality follows already from
@@ -171,7 +171,7 @@ eigenspace, including the other reference qubits. The gap and (7) give
 
 $$
 1-p\le\frac{u-f_k}{u-v}\le\frac{2\delta}{3}.
-\tag{10}
+\qquad\text{(10)}
 $$
 
 Projecting and normalizing produces a pure state
@@ -190,7 +190,7 @@ f_j\le1+2\sqrt2\sqrt{1-p}
      \le1+4\sqrt{\delta/3}
      \le\frac43
      <\sqrt2-\delta.
-\tag{11}
+\qquad\text{(11)}
 $$
 
 This contradicts (7). Hence **both decoders at every inactive site are
@@ -218,7 +218,7 @@ $$
 1-|\langle\Omega|\psi\rangle|^2
  \le\frac{\lambda_0-\langle\psi|H|\psi\rangle}{3/2}
  \le\frac{2\delta}{3}.
-\tag{12}
+\qquad\text{(12)}
 $$
 
 There is no accumulation of a separate error for each discarded site.
@@ -245,7 +245,7 @@ p_a=\frac{\|K_a\|_F^2}{2^n},\quad
 L_a=\frac{K_a}{\|K_a\|_F},\quad
 \delta_a=G_n-g(L_a),\quad
 \Delta=G_n-2n\eta.
-\tag{13}
+\qquad\text{(13)}
 $$
 
 Completeness gives `sum_a p_a=1`. The uniform operator identities
@@ -255,7 +255,7 @@ trace-norm dual bound, give
 $$
 2n\eta\le\sum_a p_a g(L_a),\qquad
 0\le\sum_a p_a\delta_a\le\Delta.
-\tag{14}
+\qquad\text{(14)}
 $$
 
 Indeed multiply each operator identity by its P, take the trace, sum
@@ -268,7 +268,7 @@ $$
 \sum_{a:d_a^2>4t/3}p_a
  \le\sum_{a:\delta_a>t}p_a
  \le\min\{1,\Delta/t\}.
-\tag{15}
+\qquad\text{(15)}
 $$
 
 Equation (5) also gives
@@ -277,7 +277,7 @@ $$
 \sum_a p_a d_a^2\le\min\{2,96\Delta\}
  =\min\{2,192n(\eta_{\rm opt}-\eta)\},
 \qquad \eta_{\rm opt}=\frac{G_n}{2n}.
-\tag{16}
+\qquad\text{(16)}
 $$
 
 These p_a equal the branch probabilities on the maximally mixed input.

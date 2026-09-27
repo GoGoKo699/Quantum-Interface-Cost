@@ -8,7 +8,7 @@ obeys the two-retained-qubit benchmark:
 
 $$
 \boxed{\Gamma(3,3)\le4+\sqrt2.}
-\tag{1}
+\qquad\text{(1)}
 $$
 
 This covers arbitrary complex eigenvectors and nonuniform spectra, with
@@ -38,8 +38,8 @@ $$
 $$
 r_i=\sqrt{a_i^2+b_i^2},\qquad
 \delta_i=a_i+b_i-r_i,\qquad v_i=\sqrt{\delta_i},\qquad
-G_\delta=\frac{\operatorname{diag}(\delta)+vv^T}{2}.
-\tag{2}
+G_\delta=\frac{\mathrm{diag}(\delta)+vv^T}{2}.
+\qquad\text{(2)}
 $$
 
 Suppose each pair `(B_i,D_i)` admits a simultaneous Jordan decomposition
@@ -52,7 +52,7 @@ different decompositions and memory planes.
 $$
 \boxed{\|H\|_\infty\le\sum_i r_i+\lambda_{\max}(G_\delta)
 \le\sum_i r_i+\frac{\sum_i\delta_i+\max_i\delta_i}{2}.}
-\tag{3}
+\qquad\text{(3)}
 $$
 
 Every pair of qutrit reflections satisfies the condition. In dimension
@@ -67,7 +67,7 @@ $$
 \frac{\sum_i\delta_i+\max_i\delta_i}{2}
 =\delta_{(1)}+\frac{\delta_{(2)}+\delta_{(3)}}2
 \le\delta_{(1)}+\delta_{(2)}.
-\tag{4}
+\qquad\text{(4)}
 $$
 
 The last bound is exactly the weighted support of retaining the two
@@ -90,7 +90,7 @@ their bilinear Hamiltonian into
 $$
 s_1 X\otimes X+s_2 Z\otimes Z,\qquad
 s_1,s_2\ge0,\qquad s_1^2+s_2^2=r_i^2.
-\tag{5}
+\qquad\text{(5)}
 $$
 
 This follows by singular-value decomposition of its real correlation
@@ -104,7 +104,7 @@ by Pi_i, with identity on all other references suppressed. Therefore
 $$
 h_i\le r_i I+(u_i-r_i)\Pi_i
 \le r_i I+\delta_i\Pi_i.
-\tag{6}
+\qquad\text{(6)}
 $$
 
 If no positive excess exists, `h_i<=r_i I`; one can use any Bell
@@ -125,7 +125,7 @@ $$
 |\phi_i\rangle=\frac1{\sqrt2}\sum_{a=0}^1
 |a\rangle_{R_i}V_i|a\rangle_Q,
 \qquad V_i^\dagger V_i=I_2.
-\tag{7}
+\qquad\text{(7)}
 $$
 
 A reference-basis rotation can be absorbed into the isometry V_i.
@@ -137,7 +137,7 @@ memory index leaves, up to transposition and spectator identities,
 $$
 \|E_i^\dagger E_j\|_\infty\le\frac12,
 \qquad \|\Pi_i\Pi_j\|_\infty\le\frac12.
-\tag{8}
+\qquad\text{(8)}
 $$
 
 The estimate holds in any ambient memory dimension. Equal planes,
@@ -154,7 +154,7 @@ $$
 \sum_{i<j}\sqrt{\delta_i\delta_j}\,y_i y_j\\
 &=y^T G_\delta y.
 \end{aligned}
-\tag{9}
+\qquad\text{(9)}
 $$
 
 The nonzero spectra of the two Gram products agree. Hence
@@ -163,7 +163,7 @@ $$
 \left\|\sum_i\delta_i\Pi_i\right\|_\infty
 \le\lambda_{\max}(G_\delta)
 \le\frac{\max_i\delta_i+\sum_i\delta_i}{2}.
-\tag{10}
+\qquad\text{(10)}
 $$
 
 The final step bounds the diagonal and rank-one terms of G separately.
@@ -179,7 +179,7 @@ The normalized-seed reduction gives
 $$
 g(L)=\sum_{i=1}^3\sum_{U=X_i,Z_i}\|LUL^\dagger\|_1,
 \qquad \|L\|_F=1.
-\tag{11}
+\qquad\text{(11)}
 $$
 
 If L has rank at most three, choose an output isometry onto its image.
@@ -207,7 +207,7 @@ unordered nonscalar patterns containing only pair types `(1,1)` and
 
 $$
 (11)^3,\qquad(11)^2(12),\qquad(11)(12)^2,\qquad(12)^3.
-\tag{12}
+\qquad\text{(12)}
 $$
 
 Here the digits are the two minority ranks, as in the earlier
@@ -236,7 +236,7 @@ $$
 \Pi_1=\Phi_{R_1A}\otimes I_B,\qquad
 \Pi_2=|0\rangle\langle0|_A\otimes\Phi_{R_2B},\qquad
 \Pi_3=|0\rangle\langle0|_A\otimes\Phi_{R_3B},
-\tag{13}
+\qquad\text{(13)}
 $$
 
 where Phi is a Bell projector and unused reference identities are
@@ -256,7 +256,7 @@ occurs at t=3/2, giving exactly
 $$
 \boxed{\|\Pi_1+\Pi_2+\Pi_3\|_\infty
 =\frac{5+\sqrt{13}}4>2.}
-\tag{14}
+\qquad\text{(14)}
 $$
 
 This is a counterexample to an intermediate projector bound, not to

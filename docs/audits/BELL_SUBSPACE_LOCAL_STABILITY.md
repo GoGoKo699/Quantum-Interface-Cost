@@ -52,7 +52,7 @@ and
 
 $$
 K(g,h)=P_1+e^{iG}P_2e^{-iG}+e^{iJ}P_3e^{-iJ}.
-\tag{1}
+\qquad\text{(1)}
 $$
 
 The Pauli matrices have eigenvalues `+/-1`; the generator convention
@@ -64,7 +64,7 @@ $$
 \boxed{r\le\frac1{1024}
 \quad\Longrightarrow\quad
 \lambda_{\max}K(g,h)\le\frac52-\frac{r^2}{16}.}
-\tag{2}
+\qquad\text{(2)}
 $$
 
 The same statement holds after a common memory unitary, independent
@@ -107,7 +107,7 @@ $$
 R=E_0\left[\frac25(I-P_3)+\frac23P_3\right]
  +E_{1/2}\left[\frac12(I-P_3)+P_3\right]
  +E_{3/2}(I-P_3).
-\tag{3}
+\qquad\text{(3)}
 $$
 
 It satisfies `RP=0`, `||R||=1`, and `(5I/2-K0)R=I-P`.
@@ -130,7 +130,7 @@ The second-order effective operator on the top doublet is
 
 $$
 C=P(E+DRD)P.
-\tag{4}
+\qquad\text{(4)}
 $$
 
 This operator is scalar. Indeed, ordinary five-qubit spin reversal
@@ -188,7 +188,7 @@ $$
 \langle a,Ra\rangle=\frac{1/3}{2}+\frac{1/2}{5/2}
 =\frac{11}{30},\qquad
 \langle b,Rb\rangle=\frac19+\frac{8/9}{5/2}=\frac7{15},
-\qquad \operatorname{Re}\langle a,Rb\rangle=\frac{2/3}{5/2}=\frac4{15}.
+\qquad \mathrm{Re}\langle a,Rb\rangle=\frac{2/3}{5/2}=\frac4{15}.
 $$
 
 For the direct terms, `PP2P=(3/4)P` and
@@ -205,7 +205,7 @@ $$
 C=-\left[\frac3{10}\|g\|_F^2+\frac8{15}\|h\|_F^2
 -\frac8{15}\langle g,h\rangle\right]P
 =-\left[\frac16\|g\|_F^2+\frac8{15}\|h-g/2\|_F^2\right]P.}
-\tag{5}
+\qquad\text{(5)}
 $$
 
 In each of the nine component pairs the coefficient matrix is
@@ -214,7 +214,7 @@ minor `7/40` and determinant `1/2880`, both positive. In particular,
 
 $$
 C\le-\frac{r^2}{8}P.
-\tag{6}
+\qquad\text{(6)}
 $$
 
 ## 4. A finite radius from a controlled remainder
@@ -347,7 +347,7 @@ Conjugating all references by Y sends H to -H. Therefore
 $$
 \boxed{\|H\|\le4+\sqrt2-
 \frac{r^2}{16}\min_i(u_i-v_i).}
-\tag{7}
+\qquad\text{(7)}
 $$
 
 The loss is strictly positive when `r>0` and every `u_i>v_i`.

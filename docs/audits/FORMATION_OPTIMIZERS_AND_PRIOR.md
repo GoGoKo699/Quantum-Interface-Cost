@@ -46,7 +46,7 @@ to one half plus one half of the bias, gives
 
 $$
 ax+bz\le (1-c)R+cT.
-\tag{1}
+\qquad\text{(1)}
 $$
 
 Taking all nonnegative weights characterizes the downward-closed convex
@@ -63,7 +63,7 @@ zero. Consequently
 $$
 K(x,z)=w(x,z)
 =\left[x+z-1-\sqrt{2(1-x)(1-z)}\right]_+.
-\tag{2}
+\qquad\text{(2)}
 $$
 
 For clarity, (1) gives the lower bound by separation. The product-plus-Bell
@@ -77,7 +77,7 @@ with a qubit B, convexity of f and its pure-state identity give
 
 $$
 E_F(\omega)\ge f(c(\omega))\ge f(w(x,z)).
-\tag{3}
+\qquad\text{(3)}
 $$
 
 The equality `E_F=f(c)` for two qubits cannot simply be imported into
@@ -87,7 +87,7 @@ $$
 C(x,z)>f(w(x,z))
 \quad\Longleftrightarrow\quad
 x^2+z^2>1,\quad \max(x,z)<1.
-\tag{4}
+\qquad\text{(4)}
 $$
 
 To prove strictness, use the evaluated optimizer of C: a weight p of an
@@ -124,7 +124,7 @@ B_c(a,b)=
 \sqrt{a^2+b^2}\sqrt{1+c^2},&0\le c\le b/a,\\
 a+bc,&b/a\le c\le1.
 \end{cases}
-\tag{5}
+\qquad\text{(5)}
 $$
 
 This piecewise evaluation is supplied here from the prior optimization.
@@ -137,7 +137,7 @@ Every exact-axis atom is feasible. Hence
 $$
 M(a,b)=\max\{\sqrt{a^2+b^2},\ a+f^*(b)\},
 \qquad f^*(b)=\max_{0\le v\le1}[bv-f(v)].
-\tag{6}
+\qquad\text{(6)}
 $$
 
 This is the existing profile dual, recovered from a close prior theorem.
@@ -160,7 +160,7 @@ be p,u,s,v, so
 $$
 (x,z)=(1-p)(u,s)+p(1,v),\qquad
 u^2+s^2=1,\quad C=p f(v),\quad0<p<1.
-\tag{7}
+\qquad\text{(7)}
 $$
 
 In the central phase v=1; in the strict-saving phase 0<v<1. All of u,s
@@ -186,7 +186,7 @@ A_0=\epsilon\oplus Z_A,\qquad A_1=\delta\oplus X_A,
 \qquad
 \omega=(1-p)|c\rangle\langle c|\otimes|\beta_{\epsilon\delta}\rangle
 \langle\beta_{\epsilon\delta}|\ \oplus\ p\tau_{v,m},
-\tag{8}
+\qquad\text{(8)}
 $$
 
 where, in the ordered basis `|0>_A|+>_B, |1>_A|->_B`,
@@ -194,7 +194,7 @@ where, in the ordered basis `|0>_A|+>_B, |1>_A|->_B`,
 $$
 \tau_{v,m}=\frac12\begin{pmatrix}1+m&v\\v&1-m\end{pmatrix},
 \qquad |m|\le\sqrt{1-v^2}.
-\tag{9}
+\qquad\text{(9)}
 $$
 
 All these states attain C. On the central phase v=1 the entangled block
@@ -230,7 +230,7 @@ $$
 E_k\ge\gamma(|x_k|,|z_k|)
 \ge a|x_k|+b|z_k|-R
 \ge ax_k+bz_k-R.
-\tag{10}
+\qquad\text{(10)}
 $$
 
 Their average is exactly C, so every positive-weight component saturates
@@ -317,9 +317,9 @@ Set `t=1/sqrt(2)` and `a=(1-t)/2`. For each context
 $$
 D_{s|b}=\frac{s_1P_{1,b_1}+s_2P_{2,b_2}}2,\qquad
 J_b(\rho)=\max_{\substack{\Gamma_{s|b}\succeq0\\
-\sum_s\Gamma_{s|b}=\rho}}\sum_s\operatorname{Tr}(D_{s|b}\Gamma_{s|b}),
+\sum_s\Gamma_{s|b}=\rho}}\sum_s\mathrm{Tr}(D_{s|b}\Gamma_{s|b}),
 \quad j_2=\frac14\sum_bJ_b.
-\tag{11}
+\qquad\text{(11)}
 $$
 
 **Equivalent certificate.** The inequality `j_2(rho)<=t+a S(rho)`
@@ -330,15 +330,15 @@ matrices Y_b satisfying
 $$
 Y_b\succeq D_{s|b}\quad\text{for every }b,s,\qquad
 \frac14\sum_bY_b\preceq tI-a\log_2\sigma.
-\tag{12}
+\qquad\text{(12)}
 $$
 
 For a proof, fix sigma and put K=-log_2 sigma. Maximize
 
 $$
-\frac14\sum_{b,s}\operatorname{Tr}(D_{s|b}\Gamma_{s|b})
--a\operatorname{Tr}(\rho K)
-\tag{13}
+\frac14\sum_{b,s}\mathrm{Tr}(D_{s|b}\Gamma_{s|b})
+-a\mathrm{Tr}(\rho K)
+\qquad\text{(13)}
 $$
 
 over the common state rho>=0 of trace one and the four positive
@@ -369,7 +369,7 @@ sigma forces the attained primal value in (13) to exceed t. Its state
 then satisfies
 
 $$
-j_2(\rho)>t+a\operatorname{Tr}(\rho K)\ge t+aS(\rho).
+j_2(\rho)>t+a\mathrm{Tr}(\rho K)\ge t+aS(\rho).
 $$
 
 This would be a genuine quantum violation. The positive operators

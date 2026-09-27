@@ -35,14 +35,14 @@ where h_2 is binary entropy in bits.
 
 $$
 \boxed{\log_2D\ge\sum_{i=1}^n f(z_i).}
-\tag{1}
+\qquad\text{(1)}
 $$
 
 In particular, with common Z contrast z and D <= 2^q,
 
 $$
 q\ge n f(z),\qquad q\ge\lceil n f(z)\rceil.
-\tag{2}
+\qquad\text{(2)}
 $$
 
 Let q_X(n,z) be the smallest integer q achieving exact X and common Z
@@ -50,7 +50,7 @@ contrast z. Then the limit exists and is exactly
 
 $$
 \boxed{R_X(z):=\lim_{n\to\infty}\frac{q_X(n,z)}n=f(z).}
-\tag{3}
+\qquad\text{(3)}
 $$
 
 These conclusions also hold if the Z requirement is formulated as a
@@ -76,17 +76,17 @@ The following refinement suffices:
 
 $$
 \boxed{H(p)\ge\sum_i f(F_i(p)).}
-\tag{4}
+\qquad\text{(4)}
 $$
 
 To prove it, first check the binary function. For 0<c<1 and
 s=sqrt(1-c^2), differentiation gives
 
 $$
-f'(c)=\frac{c\operatorname{atanh}s}{s\ln2}>0,
+f'(c)=\frac{c\mathrm{atanh}s}{s\ln2}>0,
 \qquad
-f''(c)=\frac{\operatorname{atanh}s-s}{s^3\ln2}>0.
-\tag{5}
+f''(c)=\frac{\mathrm{atanh}s-s}{s^3\ln2}>0.
+\qquad\text{(5)}
 $$
 
 Together with continuity and f(0)=0,f(1)=1, this shows that f is increasing
@@ -94,7 +94,7 @@ and strictly convex on [0,1]. Also, for every t in [0,1], symmetry of h_2 gives
 
 $$
 h_2(t)=f(2\sqrt{t(1-t)}).
-\tag{6}
+\qquad\text{(6)}
 $$
 
 Fix i and write y for the other n-1 bits. Let m_y=p_(0,y)+p_(1,y).
@@ -105,7 +105,7 @@ H(X_i\mid X_{-i})
 =\sum_y m_y f(2\sqrt{t_y(1-t_y)})
 \ge f\!\left(\sum_y 2m_y\sqrt{t_y(1-t_y)}\right)
 =f(F_i(p)).
-\tag{7}
+\qquad\text{(7)}
 $$
 
 Conditioning reduces Shannon entropy, so the chain rule implies
@@ -113,7 +113,7 @@ Conditioning reduces Shannon entropy, so the chain rule implies
 $$
 \sum_i H(X_i\mid X_{-i})
 \le\sum_i H(X_i\mid X_1,\ldots,X_{i-1})=H(p).
-\tag{8}
+\qquad\text{(8)}
 $$
 
 Combining (7) and (8) proves (4). This includes distributions with zeros;
@@ -123,7 +123,7 @@ For common target z, (4) and Jensen imply
 
 $$
 H(p)\ge n f\!\left(\frac1n\sum_iF_i(p)\right).
-\tag{9}
+\qquad\text{(9)}
 $$
 
 The scalar inequality is sharp at every entropy: take the product of
@@ -144,7 +144,7 @@ trace-norm decoder bound gives
 
 $$
 z_i\le\sum_b\omega_b F_i(p_b).
-\tag{10}
+\qquad\text{(10)}
 $$
 
 Therefore monotonicity and convexity of f, followed by (4), give
@@ -156,7 +156,7 @@ $$
 &\le\sum_b\omega_b\sum_i f(F_i(p_b))\\
 &\le\sum_b\omega_b H(p_b)\le\log_2D.
 \end{aligned}
-\tag{11}
+\qquad\text{(11)}
 $$
 
 The last bound holds branch by branch from the support cap. It therefore
@@ -169,8 +169,8 @@ contraction for a Z query. The error condition is
 ||A_i-Z_i||_infinity <= 1-z_i. Consequently
 
 $$
-\frac1d\operatorname{Tr}(Z_iA_i)
-=1+\frac1d\operatorname{Tr}(Z_i(A_i-Z_i))\ge z_i.
+\frac1d\mathrm{Tr}(Z_iA_i)
+=1+\frac1d\mathrm{Tr}(Z_i(A_i-Z_i))\ge z_i.
 $$
 
 Trace-norm duality bounds this coefficient above by the right side of (10).
@@ -197,7 +197,7 @@ The support and tail estimates are
 $$
 |B|\le2^{n h_2(a+t)},\qquad
 \epsilon\le e^{-2nt^2}.
-\tag{12}
+\qquad\text{(12)}
 $$
 
 For completeness, the support estimate follows by setting b=k/n with
@@ -218,7 +218,7 @@ their pure-state projectors is 2sqrt(epsilon), so
 $$
 F_i(p')\ge2\sqrt{a(1-a)}-2\sqrt\epsilon
 \ge2\sqrt{a(1-a)}-2e^{-nt^2}.
-\tag{13}
+\qquad\text{(13)}
 $$
 
 Both p and B are invariant under coordinate permutations. Thus all F_i(p')
@@ -250,7 +250,7 @@ q_X(n,z)\le\lceil n h_2(a+t)\rceil
 \quad\text{whenever}\quad
 z\le2\sqrt{a(1-a)}-2e^{-nt^2}.
 }
-\tag{14}
+\qquad\text{(14)}
 $$
 
 The same reasoning with Chebyshev gives the entirely variance-based
@@ -324,7 +324,7 @@ $$
 w(x,z)>r
 \quad\Longleftrightarrow\quad
 x>r+\sqrt{(1-z)(1+z-2r)}.
-\tag{15}
+\qquad\text{(15)}
 $$
 
 The threshold is strictly less than one. To check (15), set u=1-x and
@@ -340,7 +340,7 @@ For example, take
 $$
 x=\frac{99}{100},\qquad z=\frac12,
 \qquad \epsilon_X=\frac1{200},\quad\epsilon_Z=\frac14.
-\tag{16}
+\qquad\text{(16)}
 $$
 
 Here w(x,z)=39/100 exactly, while
@@ -348,7 +348,7 @@ Here w(x,z)=39/100 exactly, while
 $$
 f(1/2)=h_2\!\left(\frac{2-\sqrt3}{4}\right)
 \approx0.3545789026652717<0.39.
-\tag{17}
+\qquad\text{(17)}
 $$
 
 The strict inequality need not rely on this decimal. Put

@@ -26,7 +26,7 @@ Hermitian. Then
 
 $$
 \|M\|_1\le\|A\|_1+\|C\|_1+\frac{2\|B\|_2^2}{\mu}.
-\tag{1}
+\qquad\text{(1)}
 $$
 
 Here `||.||_2` is Hilbert--Schmidt norm, not operator norm.
@@ -38,9 +38,9 @@ To prove (1), choose an optimal Hermitian trace-norm dual contraction
 
 $$
 \begin{aligned}
-\|A\|_1-\operatorname{Tr}(AD)
-&\ge\mu\bigl(r-\operatorname{Tr}(JD)\bigr)\\
-&\ge\frac\mu2\operatorname{Tr}(I-D^2)
+\|A\|_1-\mathrm{Tr}(AD)
+&\ge\mu\bigl(r-\mathrm{Tr}(JD)\bigr)\\
+&\ge\frac\mu2\mathrm{Tr}(I-D^2)
 \ge\frac\mu2\|E\|_2^2.
 \end{aligned}
 $$
@@ -48,7 +48,7 @@ $$
 The middle inequality is `Tr(D-J)^2>=0`. Therefore
 
 $$
-\operatorname{Tr}(MT)
+\mathrm{Tr}(MT)
 \le\|A\|_1+\|C\|_1+2\|B\|_2\|E\|_2-\frac\mu2\|E\|_2^2
 \le\|A\|_1+\|C\|_1+2\|B\|_2^2/\mu.
 $$
@@ -60,21 +60,21 @@ Let sigma,tau be density matrices with orthogonal supports and let
 compression
 
 $$
-M_P=\sqrt\sigma P\sqrt\sigma\big|_{\operatorname{supp}\sigma}
+M_P=\sqrt\sigma P\sqrt\sigma\big|_{\mathrm{supp}\sigma}
 $$
 
 is invertible, and put `mu_P=min |spec(M_P)|`. Define
 
 $$
 K(\sigma)=\sum_P\left(1+\frac{2\|\sigma\|_\infty}{\mu_P}\right).
-\tag{2}
+\qquad\text{(2)}
 $$
 
 Then, irrespective of the tail eigenvectors,
 
 $$
 g_n(\rho)\le(1-\epsilon)g_n(\sigma)+\epsilon K(\sigma),
-\tag{3}
+\qquad\text{(3)}
 $$
 
 and consequently
@@ -84,7 +84,7 @@ $$
 (1-\epsilon)\Delta_n(\sigma)
 +c h_2(\epsilon)-[K(\sigma)-\sqrt2 n]\epsilon
 +c\epsilon S(\tau).
-\tag{4}
+\qquad\text{(4)}
 $$
 
 Indeed, the blocks of each sandwiched query are
@@ -111,7 +111,7 @@ Whenever `Delta_n(sigma)>=0`, a simple sufficient condition is
 $$
 0<\epsilon<
 2^{-[K(\sigma)-\sqrt2 n]/c}.
-\tag{5}
+\qquad\text{(5)}
 $$
 
 It makes (4) strictly positive, because
@@ -129,7 +129,7 @@ that any n-qubit density matrix with
 
 $$
 1-\lambda_1(\rho)-\lambda_2(\rho)<\delta_n
-\tag{6}
+\qquad\text{(6)}
 $$
 
 satisfies `Delta_n(rho)>=0`. The conclusion is strict when `rank(rho)>2`.
@@ -215,7 +215,7 @@ operator square-root estimate
 $$
 \|\sqrt\sigma P\sqrt\sigma-\sqrt{\sigma_*}P\sqrt{\sigma_*}\|_\infty
 \le (\sqrt{a_*+t}+\sqrt{a_*})\sqrt t.
-\tag{7}
+\qquad\text{(7)}
 $$
 
 The square-root estimate follows from `sigma<=sigma_*+t I`, operator
@@ -226,14 +226,14 @@ perturbation then proves
 
 $$
 \mu_P\ge m_*-(\sqrt{a_*+t}+\sqrt{a_*})\sqrt t.
-\tag{8}
+\qquad\text{(8)}
 $$
 
 If the right side is a positive number m, equation (2) gives
 
 $$
 K(\sigma)\le 2n\left(1+\frac{2(a_*+t)}{m}\right).
-\tag{9}
+\qquad\text{(9)}
 $$
 
 Equations (5) and (9) certify sufficiently small orthogonal spectral tails
@@ -268,7 +268,7 @@ $$
  g_n(\rho)\le (1-\epsilon)g_n(\sigma)
  +\epsilon g_n(\tau)+2\sqrt2\,\epsilon.
 }
-\tag{10}
+\qquad\text{(10)}
 $$
 
 Since `S(sigma)=q` and
@@ -280,7 +280,7 @@ $$
  \Delta_n(\rho)\ge
  \epsilon\Delta_n(\tau)+c h_2(\epsilon)-2\sqrt2\,\epsilon.
 }
-\tag{11}
+\qquad\text{(11)}
 $$
 
 ### Proof of the refined coefficient
@@ -307,8 +307,8 @@ Write `C_P=sqrt(sigma)P sqrt(tau)`. The off-diagonal block in (1) is
 $$
 \begin{aligned}
 \|C_P\|_2^2
-&=\frac1r\operatorname{Tr}(\tau P\Pi P)\\
-&=\frac{1}{2r}\operatorname{Tr}(\tau\Pi_i).
+&=\frac1r\mathrm{Tr}(\tau P\Pi P)\\
+&=\frac{1}{2r}\mathrm{Tr}(\tau\Pi_i).
 \end{aligned}
 $$
 
@@ -320,7 +320,7 @@ The gain term in (1) is thus at most
 
 $$
 \frac{2\epsilon\|C_P\|_2^2}{\mu_P}
-=\sqrt2\,\epsilon\operatorname{Tr}(\tau\Pi_i).
+=\sqrt2\,\epsilon\mathrm{Tr}(\tau\Pi_i).
 $$
 
 Summing both queries at each discarded site gives at most
@@ -337,7 +337,7 @@ $$
 0<\epsilon\le 2^{-(2+2\sqrt2)}
 =0.03519642908204362\ldots
 \quad\Longrightarrow\quad \Delta_n(\rho)>0.
-\tag{12}
+\qquad\text{(12)}
 $$
 
 Indeed, `2sqrt(2)/c=2+2sqrt(2)`, and
@@ -348,7 +348,7 @@ For an arbitrary tail, the elementary bounds `g_n(tau)<=2n` and
 $$
 0<\epsilon\le 2^{-n-(2+2\sqrt2)}
 \quad\Longrightarrow\quad \Delta_n(\rho)>0,
-\tag{13}
+\qquad\text{(13)}
 $$
 
 with no entropy-inequality assumption on tau. These are conservative
@@ -373,7 +373,7 @@ g_n(\rho)-[(1-\epsilon)g_n(\sigma)+\epsilon g_n(\tau)]
 &=\sqrt2\left(\sqrt{1+4\epsilon(1-\epsilon)}-1\right)\\
 &=2\sqrt2\,\epsilon+O(\epsilon^2).
 \end{aligned}
-\tag{14}
+\qquad\text{(14)}
 $$
 
 Thus a uniformly smaller linear coefficient cannot replace `2sqrt(2)`

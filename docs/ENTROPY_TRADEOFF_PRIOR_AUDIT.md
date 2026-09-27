@@ -51,7 +51,7 @@ The following reduction was reconstructed for this audit. Set
 
 ```math
 |\psi_p\rangle=\sum_u\sqrt{p_u}|u\rangle,
-\qquad \tau_i=\operatorname{Tr}_{-i}|\psi_p\rangle\langle\psi_p|.
+\qquad \tau_i=\mathrm{Tr}_{-i}|\psi_p\rangle\langle\psi_p|.
 ```
 
 Then $C_f(\psi_p)=H(p)$ and $2|(\tau_i)_{01}|=C_i(p)$.
@@ -59,7 +59,7 @@ Iterating the first source's superadditivity and using the second source's
 qubit formula gives exactly
 
 ```math
-H(p)\ge\sum_i f(C_i(p)). \tag{1}
+H(p)\ge\sum_i f(C_i(p)). \qquad\text{(1)}
 ```
 
 This is the coordinatewise inequality, including correlated and nonuniform
@@ -75,7 +75,7 @@ Lemma 5 and Eq. (26), p. 4, prove
 
 ```math
 S((\rho+\sigma)/2)-\tfrac12S(\rho)-\tfrac12S(\sigma)
-\le h_2((1-F(\rho,\sigma))/2). \tag{2}
+\le h_2((1-F(\rho,\sigma))/2). \qquad\text{(2)}
 ```
 
 Here $F$ denotes **root** fidelity. Their notation $\sqrt F$ is our
@@ -95,7 +95,7 @@ telescoping therefore gives
 ```math
 H(p)-S(\rho)
 \le\sum_i D(\rho\Vert\Delta_i\rho)
-\le\sum_i h_2((1-F_{X_i})/2), \tag{3}
+\le\sum_i h_2((1-F_{X_i})/2), \qquad\text{(3)}
 ```
 
 where $F_P=F(\rho,P\rho P)$; the last step is (2).
@@ -109,7 +109,7 @@ F_{Z_i}\le F(\Delta\rho,Z_i\Delta\rho Z_i)=C_i(p).
 Combining this with (1), (3), and monotonicity of $f$ recovers
 
 ```math
-S(\rho)\ge\sum_i\left[f(F_{Z_i})-h_2((1-F_{X_i})/2)\right]. \tag{4}
+S(\rho)\ge\sum_i\left[f(F_{Z_i})-h_2((1-F_{X_i})/2)\right]. \qquad\text{(4)}
 ```
 
 Thus both nontrivial entropy ingredients have precise prior sources. The
@@ -146,7 +146,7 @@ profiles. For the assemblage
 the audit establishes the exact identification
 
 ```math
-\boxed{C_{\rm seed}(x,z)=E_{FA}(\sigma^{x,z}).} \tag{5}
+\boxed{C_{\rm seed}(x,z)=E_{FA}(\sigma^{x,z}).} \qquad\text{(5)}
 ```
 
 This equation is an independently supplied reduction, not a quoted formula
@@ -171,9 +171,9 @@ $\sum_a K_a^\dagger K_a=I$, and
 Conversely any refined qubit-input instrument gives
 
 ```math
-p_a=\operatorname{Tr}(K_a^\dagger K_a)/2,\qquad
+p_a=\mathrm{Tr}(K_a^\dagger K_a)/2,\qquad
 \tau^a_{s|j}=\frac{(K_a^\dagger N^a_{s|j}K_a)^T}
-{\operatorname{Tr}(K_a^\dagger K_a)}.
+{\mathrm{Tr}(K_a^\dagger K_a)}.
 ```
 
 Zero-weight branches can be discarded. Their marginals are normalized
@@ -181,7 +181,7 @@ Gram matrices, transposed, and have the same entropy. Restricting the
 assemblage infimum to extremal decompositions does not alter this argument:
 refinement can only lower the average marginal entropy, by concavity.
 
-Let $L_a=K_a/\sqrt{\operatorname{Tr}K_a^\dagger K_a}$.
+Let $L_a=K_a/\sqrt{\mathrm{Tr}K_a^\dagger K_a}$.
 Trace-norm duality bounds each branch's X/Z correlation by its
 $F_X,F_Z$. Therefore any exact target instrument has average seed profile
 at least $(x,z)$, so its average entropy is at least

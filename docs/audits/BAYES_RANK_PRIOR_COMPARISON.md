@@ -37,9 +37,9 @@ extension, Eq. (14), printed p. 062305-3, allows every probability vector
 
 $$
 T_s(w)=\{t:C_{st}>0,\ C_{st}\ge\sum_{j\ne s}w_jC_{jt}\},\qquad
-\operatorname{rank}E_s\le
-\operatorname{rank}\sum_{t\in T_s(w)}C_{st}\rho_t.
-\tag{1}
+\mathrm{rank}E_s\le
+\mathrm{rank}\sum_{t\in T_s(w)}C_{st}\rho_t.
+\qquad\text{(1)}
 $$
 
 The proof transfers a small positive rank-one contribution between POVM
@@ -70,7 +70,7 @@ C_{st}=\frac{2-d_H(s,t)}4,
 4C=\begin{pmatrix}
 2&1&1&0\\1&2&0&1\\1&0&2&1\\0&1&1&2
 \end{pmatrix}.
-\tag{2}
+\qquad\text{(2)}
 $$
 
 Each unnormalized coefficient column sums to four, so the source's

@@ -120,7 +120,7 @@ orientation yields exactly `L_rad`. Furthermore,
 $$
 \boxed{C(x,z)>L_{\rm rad}(x,z)
 \quad\text{whenever }x\ne z\text{ and }x^2+z^2>1.}
-\tag{1}
+\qquad\text{(1)}
 $$
 
 This is a supplied deduction from the printed certificate, not a theorem
@@ -133,7 +133,7 @@ S_\alpha=\alpha\langle A_0(B_0+B_1)\rangle
              +\langle A_1(B_0-B_1)\rangle,
 \qquad
 E_F\ge\frac{S_\alpha-2\alpha}{2\sqrt{1+\alpha^2}-2\alpha}.
-\tag{2}
+\qquad\text{(2)}
 $$
 
 For any realization of our assemblage, the two trusted difference
@@ -154,7 +154,7 @@ $$
 \le\sqrt{\alpha^2+r^2-1}
 \le\alpha+(\sqrt{\alpha^2+1}-\alpha)
              \frac{r-1}{\sqrt2-1}.
-\tag{3}
+\qquad\text{(3)}
 $$
 
 The first inequality uses `x<=1`. The second is the endpoint chord bound
@@ -225,7 +225,7 @@ $$
 Writing `s=sqrt(1-t)` gives
 
 $$
-g''(t)=-\frac{s/(1-s^2)-\operatorname{atanh}s}
+g''(t)=-\frac{s/(1-s^2)-\mathrm{atanh}s}
                    {4s^3\ln2}<0.
 $$
 
@@ -279,7 +279,7 @@ $$
                          \sum_a p_aS(\rho_a),\qquad
 R(\eta)=\inf_n\frac{A_n(\eta)}n
        =\lim_{n\to\infty}\frac{A_n(\eta)}n.}
-\tag{4}
+\qquad\text{(4)}
 $$
 
 The ensemble in (4) is finite. Individual components need not meet eta.
@@ -353,7 +353,7 @@ decompositions supply the last inequality in
 
 $$
 \boxed{nR(\eta)\le A_n(\eta)\le B_n(\eta)\le nC_\eta.}
-\tag{5}
+\qquad\text{(5)}
 $$
 
 The unrestricted subset-rate conjecture is therefore equivalent to
@@ -390,11 +390,11 @@ so that `Z_1|r,t>=r|r,t>` and `Z_2|r,t>=t|r,t>`, and put
 `L=V^dagger/sqrt(2)`. Then
 
 $$
-\operatorname{Tr}L^\dagger L=1,\qquad LL^\dagger=I/2,
+\mathrm{Tr}L^\dagger L=1,\qquad LL^\dagger=I/2,
 \qquad
 LZ_1L^\dagger=\frac{X}{2\sqrt2},\qquad
 LZ_2L^\dagger=\frac{Z}{2\sqrt2}.
-\tag{6}
+\qquad\text{(6)}
 $$
 
 The last two equalities follow by summing `rG_{r,t}` and `tG_{r,t}`.

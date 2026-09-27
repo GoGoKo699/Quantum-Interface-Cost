@@ -31,7 +31,7 @@ $$
 
 $$
 \boxed{\min N(\omega)=\frac{w(x,z)}2.}
-\tag{1}
+\qquad\text{(1)}
 $$
 
 Dimension three suffices throughout. This supplies a full two-parameter
@@ -46,7 +46,7 @@ Fix a,b>=0 and put R=sqrt(a^2+b^2), T=a+b. We prove
 
 $$
 ax+bz\le R+2(T-R)N(\omega).
-\tag{2}
+\qquad\text{(2)}
 $$
 
 For each contraction use the reflection dilation on the same doubled
@@ -82,7 +82,7 @@ axes put it in the form `H=s_1 Z tensor Z+s_2 X tensor X`, where
 
 $$
 s_1\ge s_2\ge0,\qquad s_1^2+s_2^2=R^2,\qquad s_1+s_2\le T.
-\tag{3}
+\qquad\text{(3)}
 $$
 
 The first identity uses the orthogonality of the trusted X,Z columns;
@@ -102,11 +102,11 @@ give `Tr(Pi tau)<=||Pi^{T_B}||_infinity ||tau^{T_B}||_1=1/2+N(tau)`.
 Writing v=2N(tau) in [0,1], we obtain
 
 $$
-\operatorname{Tr}(H\tau)
+\mathrm{Tr}(H\tau)
 \le s_1+v s_2
 =(1-v)s_1+v(s_1+s_2)
 \le(1-v)R+vT.
-\tag{4}
+\qquad\text{(4)}
 $$
 
 Average (4) and the one-dimensional bounds over the blocks. Since
@@ -148,7 +148,7 @@ as established in [the two-correlation audit](TWO_CORRELATION_FORMATION.md).
 $$
 \boxed{\min_{\substack{\omega,A_0,A_1\text{ realize }(x,z)\\
 N(\omega)=w(x,z)/2}} E_F(\omega)=w(x,z).}
-\tag{5}
+\qquad\text{(5)}
 $$
 
 Thus a minimum-negativity realization and a minimum-formation-entropy
@@ -191,7 +191,7 @@ explicit optimizer incompatibility region
 
 $$
 \frac{1-x}{1-z}<2\left(\frac1{\ln2}-1\right)^2.
-\tag{6}
+\qquad\text{(6)}
 $$
 
 Exchange x,z on the other half of the square. For example, at
@@ -255,7 +255,7 @@ the supplied specialization is exactly the existing dual
 
 $$
 M(a,b)=\max\{\sqrt{a^2+b^2},\ a+f^*(b)\}.
-\tag{7}
+\qquad\text{(7)}
 $$
 
 The source theorem supplies the abstract tight transform. The block
@@ -294,8 +294,8 @@ $$
 D_{s|b}=\frac{s_1P_{1,b_1}+s_2P_{2,b_2}}2
 =\Pi_s-\Pi_{-s},\qquad
 J_b(\rho)=\max_{\Gamma_s\succeq0,\ \sum_s\Gamma_s=\rho}
-\sum_s\operatorname{Tr}(D_{s|b}\Gamma_s).
-\tag{8}
+\sum_s\mathrm{Tr}(D_{s|b}\Gamma_s).
+\qquad\text{(8)}
 $$
 
 Each Pi_s is a rank-one basis projector. This is the existing joint
@@ -311,8 +311,8 @@ the support of rho can be a general POVM.
 Gamma_s=rho/4. Its dual has an attained minimum
 
 $$
-\min_Y\operatorname{Tr}(\rho Y),\qquad Y\succeq D_{s|b}\quad\forall s.
-\tag{9}
+\min_Y\mathrm{Tr}(\rho Y),\qquad Y\succeq D_{s|b}\quad\forall s.
+\qquad\text{(9)}
 $$
 
 A scalar Y>I is strictly dual feasible. For an optimal Y, the paired
@@ -350,8 +350,8 @@ Theorem 3 shows that its maximum can always be attained at
 
 $$
 F=\sqrt\rho\,\Pi\sqrt\rho,\qquad \Pi^2=\Pi=\Pi^\dagger,
-\quad\operatorname{rank}\Pi=2.
-\tag{10}
+\quad\mathrm{rank}\Pi=2.
+\qquad\text{(10)}
 $$
 
 Indeed take Pi to be the sum of the two equal-sign projectors in the
@@ -380,7 +380,7 @@ The sharp original target remains
 $$
 g_n(\rho)=\sum_{i,b}\|\sqrt\rho P_{i,b}\sqrt\rho\|_1
 \le\sqrt2 n+(2-\sqrt2)S(\rho).
-\tag{11}
+\qquad\text{(11)}
 $$
 
 Theorems 1–2 concern a single trusted site. Ordinary negativity supplies

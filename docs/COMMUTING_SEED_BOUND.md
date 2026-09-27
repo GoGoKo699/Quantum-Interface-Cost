@@ -33,7 +33,7 @@ eigenbasis of the local bisectors B_i=(X_i+Z_i)/sqrt(2). Then
 
 $$
 \boxed{g(L)\le\sqrt2\,n+(2-\sqrt2)S(\rho).}
-\tag{1}
+\qquad\text{(1)}
 $$
 
 The eigenvalues of rho may have arbitrary correlations and zeros. They do
@@ -44,7 +44,7 @@ Since S(rho)<=log_2 rank(rho)<=log_2 D, this gives
 
 $$
 g(L)\le\sqrt2\,n+(2-\sqrt2)\log_2 D.
-\tag{2}
+\qquad\text{(2)}
 $$
 
 Section 5 extends (1) to any fixed tensor product of one-qubit bases. It
@@ -57,7 +57,7 @@ For every 0<=lambda<=1,
 $$
 \sqrt{1+4\lambda(1-\lambda)}
 \le 1+(\sqrt2-1)h_2(\lambda).
-\tag{3}
+\qquad\text{(3)}
 $$
 
 Equality holds for lambda=0, 1/2, 1. To prove this, symmetry lets us take
@@ -73,7 +73,7 @@ K-H(t), where
 
 $$
 K=\frac{\ln2}{\sqrt2-1},\qquad
-H(t)=\frac{\sqrt{2-t^2}}{t}\operatorname{atanh}t.
+H(t)=\frac{\sqrt{2-t^2}}{t}\mathrm{atanh}t.
 $$
 
 In detail,
@@ -85,7 +85,7 @@ $$
 The derivative H'(t) is strictly positive exactly when
 
 $$
-J(t):=\frac{t(2-t^2)}{1-t^2}-2\operatorname{atanh}t>0.
+J(t):=\frac{t(2-t^2)}{1-t^2}-2\mathrm{atanh}t>0.
 $$
 
 This follows from J(0)=0 and
@@ -106,7 +106,7 @@ The polar decomposition L=V sqrt(rho), with V a partial isometry, gives
 $$
 \|L P L^\dagger\|_1
 =\|\sqrt\rho\,P\sqrt\rho\|_1
-\tag{4}
+\qquad\text{(4)}
 $$
 
 for every Hermitian P: the operator on the right is supported on the initial
@@ -144,7 +144,7 @@ blocks gives the exact site score
 $$
 g_i(L)=\sqrt2\sum_y w_y
 \sqrt{1+4\lambda_y(1-\lambda_y)}.
-\tag{5}
+\qquad\text{(5)}
 $$
 
 Using (3) in each block, and interpreting p(x) as the probability law of
@@ -152,7 +152,7 @@ classical variables U_1,...,U_n, gives
 
 $$
 g_i(L)\le\sqrt2+(2-\sqrt2)H(U_i\mid U_{-i}).
-\tag{6}
+\qquad\text{(6)}
 $$
 
 These variables label a spectral decomposition used in the proof. This is
@@ -166,7 +166,7 @@ $$
 \sum_{i=1}^n H(U_i\mid U_{-i})
 \le\sum_{i=1}^n H(U_i\mid U_1,...,U_{i-1})
 =H(U_1,...,U_n)=S(\rho).
-\tag{7}
+\qquad\text{(7)}
 $$
 
 Combining (6) and (7) proves (1). Zero probabilities cause no problem;
@@ -241,11 +241,11 @@ For a pure vectorization of L on R_1...R_n Q, one might try to establish
 the single-site inequality
 
 $$
-\|\operatorname{Tr}_A(X_A\sigma_{AB})\|_1
-+\|\operatorname{Tr}_A(Z_A\sigma_{AB})\|_1
+\|\mathrm{Tr}_A(X_A\sigma_{AB})\|_1
++\|\mathrm{Tr}_A(Z_A\sigma_{AB})\|_1
 \stackrel{?}{\le}
 \sqrt2-(2-\sqrt2)H(A\mid B)_\sigma,
-\tag{8}
+\qquad\text{(8)}
 $$
 
 then use entropy duality and strong subadditivity to sum it. Equation (8)

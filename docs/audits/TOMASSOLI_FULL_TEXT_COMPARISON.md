@@ -65,7 +65,7 @@ $$
 \min c=[|s|-1]_+,\qquad
 \min N=\tfrac12[|s|-1]_+,\qquad
 \min E_F=f([|s|-1]_+).
-\tag{1}
+\qquad\text{(1)}
 $$
 
 For XX+YY, bilateral Pauli twirling is a random local-unitary channel
@@ -86,7 +86,7 @@ $$
 c_{\rm cal}=V_{\rm cal}=[|x|+|z|-1]_+,\qquad
 N_{\rm cal}=c_{\rm cal}/2,\qquad
 G(x,z):=E_{F,\rm cal}=f(c_{\rm cal}).
-\tag{2}
+\qquad\text{(2)}
 $$
 
 Independent Pauli sign changes reduce to x,z>=0. Twirling preserves
@@ -96,7 +96,7 @@ the Bell probabilities in the order (Phi+,Phi-,Psi+,Psi-) given by
 
 $$
 \left(\frac{x+z}{2},\frac{1-x}{2},\frac{1-z}{2},0\right)
-\tag{3}
+\qquad\text{(3)}
 $$
 
 are nonnegative, sum to one, give the prescribed separate correlations,
@@ -125,7 +125,7 @@ $$
 E_2(x,z)=\gamma(x,z)
 =f\!\left(\sqrt{[x^2+z^2-1]_+}\right),\qquad
 E_d(x,z)=C(x,z)\quad(d\ge3).
-\tag{4}
+\qquad\text{(4)}
 $$
 
 The first equality is already a consequence of Verstraete–Wolf; it is

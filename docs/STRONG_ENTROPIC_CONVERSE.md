@@ -30,7 +30,7 @@ b(\eta)=
 h_2\!\left(\dfrac{1-\sqrt{1-(2\eta^2-1)^2}}2\right),
 &\eta_0<\eta\le1.
 \end{cases}
-\tag{1}
+\qquad\text{(1)}
 $$
 
 **Theorem.** Every admissible protocol of contrast $\eta$ retaining at most
@@ -38,7 +38,7 @@ q qubits on every branch satisfies
 
 $$
 \boxed{q\ge n b(\eta).}
-\tag{2}
+\qquad\text{(2)}
 $$
 
 Thus $q_{\min}(n,\eta)\ge\lceil n b(\eta)\rceil$ and
@@ -59,7 +59,7 @@ where the inverse uses the interval $[0,1/2]$. Then
 
 $$
 \boxed{f_n(\rho)^2\le\frac12+\sqrt{u(1-u)}.}
-\tag{3}
+\qquad\text{(3)}
 $$
 
 This is weaker than the conjectured linear entropy bound that would prove
@@ -68,7 +68,7 @@ without resolving that conjecture.
 
 ## 2. The prior entropy-energy theorem and normalization
 
-Let $d=2^n$, $\tau(T)=\operatorname{Tr}(T)/d$, and
+Let $d=2^n$, $\tau(T)=\mathrm{Tr}(T)/d$, and
 $A=\sqrt{d\rho}$. Thus $\tau(A^2)=1$. For site i, define the conditional
 expectation $\mathcal E_i$ by normalized partial trace at i and reinsertion
 of the local identity. Put
@@ -76,7 +76,7 @@ of the local identity. Put
 $$
 \mathcal K_n=\sum_i(\mathrm{id}-\mathcal E_i),
 \qquad \mathscr D(A)=\tau(A\mathcal K_n(A)).
-\tag{4}
+\qquad\text{(4)}
 $$
 
 These are exactly the tensor-product depolarizing generator and Dirichlet
@@ -86,20 +86,20 @@ p. 4**, applies to every positive semidefinite A. In its natural-logarithm
 convention,
 
 $$
-\operatorname{Ent}(A^2)
+\mathrm{Ent}(A^2)
 =\tau(A^2\ln A^2)-\tau(A^2)\ln\tau(A^2)
 =(n-S(\rho))\ln2.
 $$
 
 The source's parameter is therefore
-$\xi=\operatorname{Ent}(A^2)/(n\tau(A^2))=(1-s)\ln2$.
+$\xi=\mathrm{Ent}(A^2)/(n\tau(A^2))=(1-s)\ln2$.
 Its inverse binary entropy at $\ln2-\xi$ is our $u=h_2^{-1}(s)$.
 Substitution gives the established inequality in the form needed here:
 
 $$
 \frac{\mathscr D(A)}n
 \ge\frac12-\sqrt{u(1-u)}.
-\tag{5}
+\qquad\text{(5)}
 $$
 
 All subsequent steps are the supplied deduction connecting this energy
@@ -111,7 +111,7 @@ For each local Pauli P define
 
 $$
 F_P=\|\sqrt\rho P\sqrt\rho\|_1,
-\qquad a_P=\operatorname{Tr}(\sqrt\rho P\sqrt\rho P)
+\qquad a_P=\mathrm{Tr}(\sqrt\rho P\sqrt\rho P)
 =\tau(A P A P).
 $$
 
@@ -120,7 +120,7 @@ and $P\rho P$. The number $a_P$ is their affinity. The needed comparison is
 
 $$
 F_P^2\le a_P.
-\tag{6}
+\qquad\text{(6)}
 $$
 
 Audenaert–Nussbaum–Szkoła–Verstraete,
@@ -137,7 +137,7 @@ $$
 &\le\|\rho^{1/4}\|_4
 \|\rho^{1/4}\sigma^{1/4}\|_2
 \|\sigma^{1/4}\|_4\\
-&=\sqrt{\operatorname{Tr}(\sqrt\rho\sqrt\sigma)}.
+&=\sqrt{\mathrm{Tr}(\sqrt\rho\sqrt\sigma)}.
 \end{aligned}
 $$
 
@@ -166,7 +166,7 @@ $$
 &=2\mathscr D(A)+2\sum_w N_Y(w)c_w^2
 \ge2\mathscr D(A).
 \end{aligned}
-\tag{7}
+\qquad\text{(7)}
 $$
 
 Cauchy–Schwarz, (6), and (7) now give
@@ -179,7 +179,7 @@ f_n(\rho)^2
 &\le1-\frac{\mathscr D(A)}n
 \le\frac12+\sqrt{u(1-u)}.
 \end{aligned}
-\tag{8}
+\qquad\text{(8)}
 $$
 
 This proves (3). If $f_n(\rho)\ge\eta\ge\eta_0$, then
@@ -207,19 +207,19 @@ $$
 Omit zero Kraus maps and define
 
 $$
-L_a=\frac{K_a}{\sqrt{\operatorname{Tr}K_a^\dagger K_a}},
-\qquad p_a=\frac{\operatorname{Tr}K_a^\dagger K_a}{d}.
+L_a=\frac{K_a}{\sqrt{\mathrm{Tr}K_a^\dagger K_a}},
+\qquad p_a=\frac{\mathrm{Tr}K_a^\dagger K_a}{d}.
 $$
 
-Then $\sum_a p_a=1$ and $\operatorname{Tr}L_a^\dagger L_a=1$.
+Then $\sum_a p_a=1$ and $\mathrm{Tr}L_a^\dagger L_a=1$.
 Trace-norm duality implies
 
 $$
 2n\eta
-=\frac1d\sum_j\operatorname{Tr}
+=\frac1d\sum_j\mathrm{Tr}
 \left(P_j\sum_aK_a^\dagger B_{a,j}K_a\right)
 \le\sum_a p_a\sum_j\|L_aP_jL_a^\dagger\|_1.
-\tag{9}
+\qquad\text{(9)}
 $$
 
 At least one normalized seed has score at least $2n\eta$. For its Gram
@@ -227,7 +227,7 @@ matrix $\rho=L_a^\dagger L_a$, polar decomposition preserves the relevant
 nonzero singular values, so $f_n(\rho)\ge\eta$, while
 
 $$
-S(\rho)\le\log_2\operatorname{rank}\rho\le\log_2D\le q.
+S(\rho)\le\log_2\mathrm{rank}\rho\le\log_2D\le q.
 $$
 
 Combining this with (3) proves (2). The weights $p_a$ are an algebraic
@@ -238,7 +238,7 @@ converse. The reduction from uniform total-variation error to contrast in
 the research note preserves the same cap.
 
 Alternatively, Beigi's **Theorem 4, printed p. 6**, supplies (5) with
-$u=h_2^{-1}(\log_2\operatorname{rank}\rho/n)$ directly. Equations (6)–(8)
+$u=h_2^{-1}(\log_2\mathrm{rank}\rho/n)$ directly. Equations (6)–(8)
 then prove the dimension bound without first passing through entropy.
 Neither route uses the repository's asymptotic entropy characterization.
 
@@ -278,7 +278,7 @@ $2t^2+O(t^3)$. Hence
 
 $$
 b(\eta_0+t)=4t^2\log_2(1/t)+O(t^2).
-\tag{10}
+\qquad\text{(10)}
 $$
 
 The converse therefore improves the earlier quadratic threshold bound by
@@ -290,7 +290,7 @@ $h_2((1-\sqrt v)/2)=1-v/(2\ln2)+O(v^2)$ gives
 
 $$
 b(1-\delta)=1-\frac{4\delta}{\ln2}+O(\delta^2).
-\tag{11}
+\qquad\text{(11)}
 $$
 
 Thus, with $\varepsilon_0=(1-\eta_0)/2$ and

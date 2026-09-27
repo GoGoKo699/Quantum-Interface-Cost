@@ -23,16 +23,16 @@ Let `R=R1 tensor R2`, let Q have dimension at most four, and let
 and set `rho=Tr_Q |Psi><Psi|` and `S=sqrt(rho)`. Then
 
 ```math
-\operatorname{rank}\rho\le4,\qquad \rho_E=I_E/2.
+\mathrm{rank}\rho\le4,\qquad \rho_E=I_E/2.
 ```
 
 Suppose S has only reference Pauli components `I,X1,Z1,X2,Z2`.
 Equivalently, equality holds in the Pauli-conjugation estimate
 
 ```math
-\sum_{A\in\{X_1,Z_1,X_2,Z_2\}}\operatorname{Tr}(SASA)
-\le 2+\frac12\operatorname{Tr}[(\operatorname{Tr}_R S)^2].
-\tag{1}
+\sum_{A\in\{X_1,Z_1,X_2,Z_2\}}\mathrm{Tr}(SASA)
+\le 2+\frac12\mathrm{Tr}[(\mathrm{Tr}_R S)^2].
+\qquad\text{(1)}
 ```
 
 Let Phi be the head-to-Q channel determined by the purification, and put
@@ -44,7 +44,7 @@ Pi, and
 ```math
 \boxed{\Phi\text{ is entanglement breaking}
 \quad\text{or}\quad \sum_A f_A\le2+\sqrt2.}
-\tag{2}
+\qquad\text{(2)}
 ```
 
 For an actual earlier Hamiltonian
@@ -64,7 +64,7 @@ Put `T=Tr_R S` and `Gamma=Y1 Y2`. The assumed Pauli support gives
 
 ```math
 S+\Gamma S\Gamma=I_R\otimes T/2.
-\tag{3}
+\qquad\text{(3)}
 ```
 
 T is positive definite: a kernel direction would support neither S nor
@@ -82,7 +82,7 @@ Thus `F=4C-I` is a reflection. Its reference support is
 
 ```math
 F=\sum_A A\otimes M_A.
-\tag{4}
+\qquad\text{(4)}
 ```
 
 The identity `F^2=I` imposes same-site commutation, cross-site
@@ -97,7 +97,7 @@ into `Tr_R S^2=I/2` gives exactly
 
 ```math
 T+L(T)=2T^{-1}.
-\tag{5}
+\qquad\text{(5)}
 ```
 
 Let l and u be the minimum and maximum eigenvalues of T. Positivity and
@@ -125,7 +125,7 @@ anticommutation makes the two site axes perpendicular. Thus
 F=(aX_1+bZ_1)\otimes\boldsymbol n\cdot\boldsymbol\sigma_E
  +(cX_2+dZ_2)\otimes\boldsymbol n'\cdot\boldsymbol\sigma_E,
 \quad a^2+b^2+c^2+d^2=1,
-\tag{6}
+\qquad\text{(6)}
 ```
 
 with perpendicular unit axes n,n'. Zero sites are allowed. Diagonalize
@@ -135,7 +135,7 @@ the two commuting reference factors. In their product eigenvectors
 ```math
 \rho=\frac14\sum_{r,s}|rs\rangle\langle rs|_R
  \otimes|\chi_{rs}\rangle\langle\chi_{rs}|_E.
-\tag{7}
+\qquad\text{(7)}
 ```
 
 Purifying with orthogonal memory labels gives
@@ -144,7 +144,7 @@ Purifying with orthogonal memory labels gives
 \Phi(\omega)=\frac12\sum_{r,s}
  \langle\chi_{rs}^{*}|\omega|\chi_{rs}^{*}\rangle
  |rs\rangle\langle rs|_Q.
-\tag{8}
+\qquad\text{(8)}
 ```
 
 The rank-one effects sum to I because `rho_E=I/2`. Equation (8) is
@@ -158,7 +158,7 @@ coefficients can be diagonalized on E:
 F=(a_+X_1+b_+Z_1)\otimes P_+
  +(a_-X_1+b_-Z_1)\otimes P_-,
 \quad a_\pm^2+b_\pm^2=1.
-\tag{9}
+\qquad\text{(9)}
 ```
 
 Its fidelity profile is
@@ -166,7 +166,7 @@ Its fidelity profile is
 ```math
 \left(\frac{|a_+|+|a_-|}{2},
 \frac{|b_+|+|b_-|}{2},1,1\right).
-\tag{10}
+\qquad\text{(10)}
 ```
 
 The sum is at most `2+sqrt(2)`. This channel need not be EB.
@@ -185,14 +185,14 @@ the other line. Therefore
 F=(aX_1+bZ_1)\otimes P
  +(cX_2+dZ_2)\otimes(I-P),
 \quad a^2+b^2=c^2+d^2=1.
-\tag{11}
+\qquad\text{(11)}
 ```
 
 The profile is
 
 ```math
 \frac12(1+|a|,1+|b|,1+|c|,1+|d|),
-\tag{12}
+\qquad\text{(12)}
 ```
 
 again with sum at most `2+sqrt(2)`. The formulas (10) and (12) follow
@@ -224,7 +224,7 @@ top doublet. For `0<tau<=1/1000`, the allowed contraction operator
 ```math
 U=(1-\tau)2\sqrt3+\tau,
 \qquad m=(1-\tau)2\sqrt3-\tau>2+\sqrt2.
-\tag{13}
+\qquad\text{(13)}
 ```
 
 The original site-one readouts have norms at most

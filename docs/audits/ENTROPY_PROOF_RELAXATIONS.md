@@ -19,7 +19,7 @@ The conjectured sharp local-query entropy inequality is
 
 $$
 f_n(\rho)\le t+(1-t)S(\rho)/n.
-\tag{1}
+\qquad\text{(1)}
 $$
 
 The joint score j_n, defined in the
@@ -70,7 +70,7 @@ For every pair of integers `1<=q<n`, take
 $$
 \rho_{n,q}=\left(\frac I2\right)^{\otimes q}
 \otimes|\beta\rangle\langle\beta|^{\otimes(n-q)}.
-\tag{2}
+\qquad\text{(2)}
 $$
 
 Its entropy is q. In every basis tuple the label consists of q independent
@@ -86,7 +86,7 @@ decoding the uniform bits and outputting zero on all other bits. Thus
 $$
 j_n(\rho_{n,q})=f_n(\rho_{n,q})
 =1-\frac{2(n-q)p}{n}=t+(1-t)\frac qn.
-\tag{3}
+\qquad\text{(3)}
 $$
 
 ### 2.2 A classical channel with less information and lower risk
@@ -116,7 +116,7 @@ biased bits. Independence gives
 
 $$
 I(X:Y)=q-h_2(e)+h_2(p)-h_2(p-2e).
-\tag{4}
+\qquad\text{(4)}
 $$
 
 This is strictly below q by elementary exact bounds. Since t<3/4, p>1/8,
@@ -130,7 +130,7 @@ Consequently `h_2(p)-h_2(p-2e)<6e`, while `h_2(e)>=10e`, so
 
 $$
 I(X:Y)<q-4e<q=S(\rho_{n,q}).
-\tag{5}
+\qquad\text{(5)}
 $$
 
 Nevertheless its total Hamming risk is
@@ -144,7 +144,7 @@ and its normalized score is
 $$
 1-\frac{2\mathbb E d_H(X,Y)}n
 =t+(1-t)\frac qn+\frac{2e}{n}.
-\tag{6}
+\qquad\text{(6)}
 $$
 
 This strictly exceeds the conjectured line. The same classical channel
@@ -176,7 +176,7 @@ The genuine two-input Hamiltonians have the form
 $$
 H_{\rm QIC}=\sum_{i=1}^2\sum_{b=X,Z} A_{i,b}\otimes P_{i,b},
 \qquad -I\le A_{i,b}\le I,
-\tag{7}
+\qquad\text{(7)}
 $$
 
 with the trusted operators restricted to X_1,Z_1,X_2,Z_2. They have norm
@@ -185,7 +185,7 @@ p,q is at most
 
 $$
 \sqrt2+\sqrt2\sqrt{1+4pq},\qquad p+q=1,
-\tag{8}
+\qquad\text{(8)}
 $$
 
 by the established rank-two seed theorem. The following H meets the norm
@@ -199,7 +199,7 @@ On C^4 tensor C^4 let `Pi=sum_i |ii><ii|` and
 $$
 H=\frac{67}{21}\Pi+\frac37|\Omega\rangle\langle\Omega|
 -\frac{19}{21}I_{16}.
-\tag{9}
+\qquad\text{(9)}
 $$
 
 Both partial traces vanish. Its eigenvalues are four on Omega/2, 16/7
@@ -210,7 +210,7 @@ For a normalized bipartite vector with coefficient matrix C,
 
 $$
 \langle H\rangle=\frac{67}{21}\sum_i|C_{ii}|^2
-+\frac37|\operatorname{Tr}C|^2-\frac{19}{21}.
++\frac37|\mathrm{Tr}C|^2-\frac{19}{21}.
 $$
 
 Since `sum_i |C_ii|^2<=||C||_F^2=1` and
@@ -218,7 +218,7 @@ Since `sum_i |C_ii|^2<=||C||_F^2=1` and
 
 $$
 \langle H\rangle\le\frac{19}7+\frac67\sqrt{pq}.
-\tag{10}
+\qquad\text{(10)}
 $$
 
 Put r=2sqrt(pq), a=19/7 and b=3/7. The inequality
@@ -240,7 +240,7 @@ probabilities `lambda=(9/10,1/30,1/30,1/30)`. Direct substitution gives
 
 $$
 \langle H\rangle=\frac{98+9\sqrt3}{35}.
-\tag{11}
+\qquad\text{(11)}
 $$
 
 Its entropy obeys
@@ -256,7 +256,7 @@ would therefore be strictly less than
 $$
 2\sqrt2+(2-\sqrt2)\frac{13}{20}
 =\frac{26+27\sqrt2}{20}.
-\tag{12}
+\qquad\text{(12)}
 $$
 
 But (11) exceeds (12): cross multiplication reduces this to
@@ -270,9 +270,9 @@ H is outside (7). In its trusted Pauli expansion the coefficient of
 Z_1 Z_2 is
 
 $$
-\frac14\operatorname{Tr}_{B}
+\frac14\mathrm{Tr}_{B}
 [(I\otimes Z_1Z_2)H]=\frac{19}{21}Z_1Z_2\ne0.
-\tag{13}
+\qquad\text{(13)}
 $$
 
 It is identically zero for every genuine Hamiltonian (7). The norm,

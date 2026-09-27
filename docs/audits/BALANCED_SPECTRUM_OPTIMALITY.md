@@ -21,14 +21,14 @@ original queries U in {X_i,Z_i}, put
 $$
 g(\rho)=\sum_U\|\sqrt\rho U\sqrt\rho\|_1,\qquad
 \mathcal A(\rho)=\sum_U
-\sqrt{\operatorname{Tr}(\sqrt\rho U\sqrt\rho U)}.
+\sqrt{\mathrm{Tr}(\sqrt\rho U\sqrt\rho U)}.
 $$
 
 **Theorem.** Over all complex eigenbases at this fixed spectrum,
 
 $$
 \boxed{\max_R g(\rho_t)=2n-2+2\sqrt{1-t^2/2}.}
-\tag{1}
+\qquad\text{(1)}
 $$
 
 At t>0, equality holds precisely when R is an original-site bisector
@@ -41,7 +41,7 @@ The affinity profile at the same fixed spectrum is also exact:
 $$
 \boxed{\max_R\mathcal A(\rho_t)
 =2n-2+\sqrt{2+2\sqrt{1-t^2}}.}
-\tag{2}
+\qquad\text{(2)}
 $$
 
 Its equality family is the same for t>0. In particular, every rank-d/2
@@ -49,7 +49,7 @@ orthogonal projector P satisfies
 
 $$
 \boxed{g(P/(d/2))\le2n-2+\sqrt2,}
-\tag{3}
+\qquad\text{(3)}
 $$
 
 with equality exactly at a pure original-site bisector times the
@@ -61,7 +61,7 @@ Every state in (1) also satisfies the sharp seed entropy inequality
 
 $$
 g(\rho_t)\le\sqrt2\,n+(2-\sqrt2)S(\rho_t).
-\tag{4}
+\qquad\text{(4)}
 $$
 
 It is strict for 0<t<1. At t=1 equality has the bisector family in (3),
@@ -82,7 +82,7 @@ The main geometric statement is
 $$
 \boxed{\mathcal R_z(R)\le2n-2+2\sqrt{1-z/2},
 \qquad 0\le z\le1.}
-\tag{5}
+\qquad\text{(5)}
 $$
 
 For z>0 its equality cases are precisely the bisector reflections from
@@ -95,7 +95,7 @@ Consequently
 
 $$
 E_R:=\sum_U q_U\ge2-W.
-\tag{6}
+\qquad\text{(6)}
 $$
 
 If W>0, put b=max_i(r_{X_i}^2+r_{Z_i}^2), A=b/W, and
@@ -107,7 +107,7 @@ terms on distinct sites, so
 $$
 W=\tau(RH)\le\tau|H|=\sqrt W\,m,
 \qquad W\le m^2.
-\tag{7}
+\qquad\text{(7)}
 $$
 
 The following elementary estimates are proved in Section 3. Put
@@ -117,7 +117,7 @@ $$
 A\le3/4\ \Longrightarrow\ m<9/10,
 \qquad
 A\ge3/4\ \Longrightarrow\ m^2(1-rA)\le c.
-\tag{8}
+\qquad\text{(8)}
 $$
 
 The second inequality is strict when A<1.
@@ -130,7 +130,7 @@ for z>0,
 $$
 \sum_U f_z(q_U)\ge\frac z2(2-W)>cz
 \ge2f_z(1/2).
-\tag{9}
+\qquad\text{(9)}
 $$
 
 The last inequality follows from convexity in z and the endpoint
@@ -146,7 +146,7 @@ $$
 \sum_U f_z(q_U)
 \ge\frac z2(E_R-b)+f_z(u^2)+f_z(v^2)
 \ge\frac z2(2-W-b)+2f_z(b/2).
-\tag{10}
+\qquad\text{(10)}
 $$
 
 Subtract 2f_z(1/2) and divide by z>0. The resulting lower bound
@@ -162,7 +162,7 @@ The tangent inequality 2sqrt(1-b/2)<=(3-b)/sqrt(2) gives
 
 $$
 H(1)\ge\frac{c-W+rb}{2}\ge0,
-\tag{11}
+\qquad\text{(11)}
 $$
 
 because W-rb=W(1-rA)<=m^2(1-rA)<=c. This proves (5).
@@ -189,7 +189,7 @@ $$
 P(x)-x=
 \frac{(x-3/4)^2(x-2)^2(x^2+2sx+s^2+p)}{2s^3p}\ge0,
 \qquad 2s^3p=3993/64.
-\tag{12}
+\qquad\text{(12)}
 $$
 
 Evenness handles x<0. For X=sum_i a_i epsilon_i, put
@@ -201,7 +201,7 @@ m\le\mathbb E P(X)
 \le\frac{14365}{15972}
 +\frac{(16A-35/4)K}{3993/64}
 \le\frac{14365}{15972}<\frac9{10}.
-\tag{13}
+\qquad\text{(13)}
 $$
 
 For the remaining intervals choose a_1=sqrt(A) and
@@ -220,7 +220,7 @@ $$
 m\le\frac{1+3A}{4\sqrt A},\qquad
 m\le H_4(A):=\sqrt A+
 \frac{81(1-A)^2}{256A^{3/2}}.
-\tag{14}
+\qquad\text{(14)}
 $$
 
 On [1/2,9/16], the first bound is increasing and is at most
@@ -243,7 +243,7 @@ $$
 (1-rA)\left(\frac{2kx}{A}+\frac{k^2x^3}{A^3}\right)
 <\frac7{10}\left(\frac29+\frac1{243}\right)
 =\frac{77}{486}<\frac4{25}<r^2.
-\tag{15}
+\qquad\text{(15)}
 $$
 
 Here x/A<=1/3 and 1-rA<7/10 follow from A>=3/4 and r>2/5.
@@ -271,7 +271,7 @@ response bound supplies necessity without any restriction on decoders.
 Similarly, writing sqrt(rho_t)=alpha I+beta R gives directly
 
 $$
-\operatorname{Tr}(\sqrt{\rho_t}U\sqrt{\rho_t}U)
+\mathrm{Tr}(\sqrt{\rho_t}U\sqrt{\rho_t}U)
 =1-\bigl(1-\sqrt{1-t^2}\bigr)q_U.
 $$
 
@@ -288,7 +288,7 @@ Section 2, equation (3), applied with lambda=(1-t)/2, gives
 
 $$
 2\bigl(1-\sqrt{1-t^2/2}\bigr)\ge c\,e(t).
-\tag{16}
+\qquad\text{(16)}
 $$
 
 That scalar inequality is strict for 0<t<1. Applying it to the exact

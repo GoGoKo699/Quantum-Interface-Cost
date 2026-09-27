@@ -39,12 +39,12 @@ For either requested observable $U$, the ideal measurement has effects
 ```math
 \begin{aligned}
 E^{\mathrm{ideal}}_{\pm|U}&=\frac{I\pm U}{2},\\
-p^{\mathrm{ideal}}_\pm&=\frac{1\pm\operatorname{Tr}(\omega U)}{2}.
+p^{\mathrm{ideal}}_\pm&=\frac{1\pm\mathrm{Tr}(\omega U)}{2}.
 \end{aligned}
 ```
 
 We aim to reproduce these **outcome probabilities**. We are not trying
-to estimate $\operatorname{Tr}(\omega U)$ numerically from one specimen.
+to estimate $\mathrm{Tr}(\omega U)$ numerically from one specimen.
 Even a perfect implementation returns a random outcome when the ideal
 measurement itself is random.
 
@@ -69,8 +69,8 @@ For two binary distributions, total-variation distance is simply the
 absolute difference of their probabilities for the $+1$ outcome. Thus
 
 ```math
-\operatorname{TV}(p^{\mathrm{ideal}},p)
-=\frac{1-\eta}{2}|\operatorname{Tr}(\omega U)|
+\mathrm{TV}(p^{\mathrm{ideal}},p)
+=\frac{1-\eta}{2}|\mathrm{Tr}(\omega U)|
 \le\frac{1-\eta}{2}.
 ```
 

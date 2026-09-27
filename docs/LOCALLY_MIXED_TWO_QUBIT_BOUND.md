@@ -25,7 +25,7 @@ $$
  g_2(\rho)\le4-\kappa\,[2-S(\rho)],
  \qquad \kappa=2(2-\sqrt2)\ln2\simeq0.8120724353.
 }
-\tag{1}
+\qquad\text{(1)}
 $$
 
 Since `kappa>2-sqrt(2)`, every such state satisfies the proposed global
@@ -33,7 +33,7 @@ entropy inequality
 
 $$
 g_2(\rho)\le2\sqrt2+(2-\sqrt2)S(\rho),
-\tag{2}
+\qquad\text{(2)}
 $$
 
 strictly unless `rho=I/4`. This excludes nonuniform rank-three and general
@@ -63,7 +63,7 @@ unitaries. After this change of basis, rho therefore has the form
 $$
 \rho_{\mathrm{Bell}}=
 \frac14\left(I\otimes I+\sum_a t_a\,\sigma_a\otimes\sigma_a\right).
-\tag{3}
+\qquad\text{(3)}
 $$
 
 The three displayed Pauli products commute and have the Bell basis as a
@@ -93,7 +93,7 @@ $$
  \|\sqrt\rho\,(v\cdot\sigma\otimes I)\sqrt\rho\|_1^2
  =\sum_a v_a^2F_a^2.
 }
-\tag{4}
+\qquad\text{(4)}
 $$
 
 The same formula, with the same three numbers F_a, holds for queries on B.
@@ -120,8 +120,8 @@ of the local Pauli query, acting on four dimensions, is +1, so
 
 $$
 \|M_v\|_1^2
-=2\operatorname{Tr}(M_v^2)+8\sqrt{\det\rho}.
-\tag{5}
+=2\mathrm{Tr}(M_v^2)+8\sqrt{\det\rho}.
+\qquad\text{(5)}
 $$
 
 The argument works for singular rho as written; alternatively the same
@@ -130,7 +130,7 @@ identity follows by continuity from positive definite states.
 For distinct a,b,
 
 $$
-\operatorname{Tr}\left[
+\mathrm{Tr}\left[
  \rho(\sigma_a\otimes I)\rho(\sigma_b\otimes I)\right]=0.
 $$
 
@@ -154,9 +154,9 @@ $$
 F(v)+F(w)
 &\le\sqrt{2\left(v^TDv+w^TDw\right)}\\
 &\le\sqrt{2(F_1^2+F_2^2)},
-\qquad D=\operatorname{diag}(F_x^2,F_y^2,F_z^2).
+\qquad D=\mathrm{diag}(F_x^2,F_y^2,F_z^2).
 \end{aligned}
-\tag{6}
+\qquad\text{(6)}
 $$
 
 For the second step, `vv^T+ww^T` is a rank-two orthogonal projector; its
@@ -165,7 +165,7 @@ trace against D is at most the sum of D's two largest eigenvalues. Applying
 
 $$
 g_2(\rho)\le2\sqrt2\sqrt{F_1^2+F_2^2}.
-\tag{7}
+\qquad\text{(7)}
 $$
 
 Thus arbitrary rotations are controlled explicitly, rather than treated
@@ -180,7 +180,7 @@ fidelity is
 
 $$
 F_v=\sum_{x\in\mathbb F_2^2}\sqrt{\lambda_x\lambda_{x+v}}.
-\tag{8}
+\qquad\text{(8)}
 $$
 
 The two translations corresponding to F_1 and F_2 are distinct nonzero
@@ -192,7 +192,7 @@ The binary inequality
 
 $$
 1-2\sqrt{t(1-t)}\ge\ln2\,[1-h_2(t)]
-\tag{9}
+\qquad\text{(9)}
 $$
 
 is proved explicitly in
@@ -215,7 +215,7 @@ we obtain
 
 $$
 2-F_1-F_2\ge\ln2\,[2-S(\rho)].
-\tag{10}
+\qquad\text{(10)}
 $$
 
 Zeros in lambda are allowed; conditional edges of zero weight contribute
@@ -228,7 +228,7 @@ For all `0<=a,b<=1` and `c=2-sqrt(2)`, the elementary inequality
 
 $$
 \sqrt2\sqrt{a^2+b^2}\le2-c(2-a-b)
-\tag{11}
+\qquad\text{(11)}
 $$
 
 holds. To verify it, the convex function

@@ -18,7 +18,7 @@ contractions B_j on C^4 admit one antiunitary Theta such that
 
 $$
 \Theta B_j\Theta^{-1}=-B_j\quad\text{for all }j.
-\tag{1}
+\qquad\text{(1)}
 $$
 
 No condition on `Theta^2`, no pairwise commutation condition, and no
@@ -31,15 +31,15 @@ pairs its positive and negative eigenspaces.
 $$
 \boxed{\left\|\sum_{j=1}^{6}w_j U_j\otimes B_j\right\|_\infty
 \le2\|w\|_2.}
-\tag{2}
+\qquad\text{(2)}
 $$
 
 Equivalently, for every state omega on the reference and memory,
 
 $$
-\sum_{j=1}^{6}\bigl[\operatorname{Tr}\omega(U_j\otimes B_j)\bigr]^2
+\sum_{j=1}^{6}\bigl[\mathrm{Tr}\omega(U_j\otimes B_j)\bigr]^2
 \le4.
-\tag{3}
+\qquad\text{(3)}
 $$
 
 The exact equal-weight maximum over the entire class (1) is `2sqrt(6)`.
@@ -61,7 +61,7 @@ mixed three-qubit states the established Cheng–Hall inequality is
 
 $$
 M_{AB}+M_{AC}\le2.
-\tag{4}
+\qquad\text{(4)}
 $$
 
 The settings for the two pairs may differ. Consequently two fixed
@@ -97,7 +97,7 @@ imaginary. The six-dimensional space of such 4-by-4 matrices has basis
 $$
 L=(X\otimes Y,\ Y\otimes I,\ Z\otimes Y),\qquad
 R=(Y\otimes X,\ I\otimes Y,\ Y\otimes Z).
-\tag{5}
+\qquad\text{(5)}
 $$
 
 Each triple obeys the Pauli algebra, and the two triples commute with
@@ -105,7 +105,7 @@ one another. Write `B=x dot L+y dot R`, with real x,y. Then
 
 $$
 B^2=(|x|^2+|y|^2)I+2\sum_{a,b}x_a y_b L_aR_b.
-\tag{6}
+\qquad\text{(6)}
 $$
 
 The nine products L_a R_b are linearly independent traceless Pauli
@@ -140,7 +140,7 @@ there is a stronger, not asserted sharp, upper bound:
 $$
 \left\|\sum_jU_j\otimes B_j\right\|_\infty
 \le2\sqrt3+\sqrt2<2\sqrt6.
-\tag{7}
+\qquad\text{(7)}
 $$
 
 Only the last case above requires this larger constant. Put
@@ -215,7 +215,7 @@ coordinates. For example the six balanced reflections
 $$
 X\otimes I,\ Z\otimes I,\ Y\otimes I,\ I\otimes X,\ I\otimes Z,
 \ X\otimes X
-\tag{8}
+\qquad\text{(8)}
 $$
 
 admit no antiunitary that negates all of them: negating `X tensor I`
@@ -229,7 +229,7 @@ For any normalized 4-by-8 seed L and `C_j=L U_j L^dagger`, let
 $$
 \beta_j=\lambda_1(C_j)+\lambda_2(C_j)-\lambda_3(C_j)-\lambda_4(C_j)
 =\min_{t\in\mathbb R}\|C_j-tI\|_1,
-\tag{9}
+\qquad\text{(9)}
 $$
 
 with eigenvalues in descending order. The unproved weighted bound for
@@ -239,8 +239,8 @@ fidelities. For rank-three seeds one may use 3-by-3 compressions C and
 the exact identity
 
 $$
-\beta(C\oplus0)=\|(\operatorname{Tr}C)I_3-2C\|_\infty.
-\tag{10}
+\beta(C\oplus0)=\|(\mathrm{Tr}C)I_3-2C\|_\infty.
+\qquad\text{(10)}
 $$
 
 It follows by listing the three eigenvalues and zero. Optimal readouts

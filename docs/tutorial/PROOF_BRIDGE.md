@@ -46,12 +46,12 @@ p_c=\frac{\|K_c\|_F^2}{d},\qquad
 L_c=\frac{K_c}{\|K_c\|_F},\qquad \rho_c=L_c^\dagger L_c.
 ```
 
-Here $\|K\|_F^2=\operatorname{Tr}(K^\dagger K)$.
+Here $\|K\|_F^2=\mathrm{Tr}(K^\dagger K)$.
 Completeness implies $\sum_cp_c=1$, while each $\rho_c$ is positive,
 has trace one, and has rank at most D. Zero Kraus operators contribute
 nothing and are omitted. The weights $p_c$ are the branch probabilities
 only for $\omega=I/d$. In general the physical probability is
-$\operatorname{Tr}(K_c\omega K_c^\dagger)$ and depends on $\omega$.
+$\mathrm{Tr}(K_c\omega K_c^\dagger)$ and depends on $\omega$.
 
 The matrix $\rho=L^\dagger L$ describes a normalized encoding operator.
 It is called a **seed Gram matrix**. Optimizing over $\rho$ does not
@@ -65,7 +65,7 @@ $B=E_+-E_-$, so $-I\le B\le I$. Conversely any Hermitian contraction B
 defines the effects $(I\pm B)/2$. For a Hermitian matrix H,
 
 ```math
-\max_{-I\le B\le I}\operatorname{Tr}(BH)=\|H\|_1
+\max_{-I\le B\le I}\mathrm{Tr}(BH)=\|H\|_1
 =\sum_j|\lambda_j(H)|.
 ```
 
@@ -89,7 +89,7 @@ is its largest absolute eigenvalue. An error at most $\varepsilon_U\le1/2$ there
 gives the Pauli coefficient
 
 ```math
-\kappa_U=\frac{\operatorname{Tr}(UA_U)}d
+\kappa_U=\frac{\mathrm{Tr}(UA_U)}d
 \ge1-2\varepsilon_U.
 ```
 
@@ -106,7 +106,7 @@ Now suppose the complete instrument implements the effective observable
 $\eta_UU$. Taking its Hilbert–Schmidt coefficient along U gives
 
 ```math
-\eta_U=\frac1d\sum_c\operatorname{Tr}(B_{c,U}K_cUK_c^\dagger)
+\eta_U=\frac1d\sum_c\mathrm{Tr}(B_{c,U}K_cUK_c^\dagger)
 \le\sum_cp_cF_U(\rho_c).
 ```
 
@@ -117,8 +117,8 @@ Define
 ```math
 \begin{aligned}
 g(\rho)&=\sum_{i=1}^n[F_{X_i}(\rho)+F_{Z_i}(\rho)],\\
-\Gamma(n,D)&=\max_{\substack{\rho\ge0,\,\operatorname{Tr}\rho=1\\
-\operatorname{rank}\rho\le D}}g(\rho).
+\Gamma(n,D)&=\max_{\substack{\rho\ge0,\,\mathrm{Tr}\rho=1\\
+\mathrm{rank}\rho\le D}}g(\rho).
 \end{aligned}
 ```
 
@@ -136,12 +136,12 @@ K_P=\sqrt{d/m}\,LP,\qquad
 ```
 
 The last equality uses $m^{-1}\sum_PP^\dagger\rho P=I/d$.
-Store P classically. Choose $B_U=\operatorname{sign}(LUL^\dagger)$,
+Store P classically. Choose $B_U=\mathrm{sign}(LUL^\dagger)$,
 zero on its kernel. If $PUP^\dagger=s_{P,U}U$, where $s_{P,U}=\pm1$,
 use the decoder $s_{P,U}B_U$. The character identity
 
 ```math
-\frac1m\sum_Ps_{P,U}P^\dagger AP=\frac{\operatorname{Tr}(UA)}d\,U
+\frac1m\sum_Ps_{P,U}P^\dagger AP=\frac{\mathrm{Tr}(UA)}d\,U
 ```
 
 then makes the effective observable exactly $F_U(\rho)U$.
@@ -208,7 +208,7 @@ L means forming
 ```math
 \begin{aligned}
 |L\rangle\!\rangle&=\sum_{a=0}^{d-1}|a\rangle_R\otimes L|a\rangle,\\
-\langle\!\langle L|L\rangle\!\rangle&=\operatorname{Tr}(L^\dagger L)=1.
+\langle\!\langle L|L\rangle\!\rangle&=\mathrm{Tr}(L^\dagger L)=1.
 \end{aligned}
 ```
 
@@ -252,25 +252,25 @@ for the precise Cheng–Hall attribution. The ingredient is prior work.
 The root-fidelity convention is
 $F(\rho,\sigma)=\|\sqrt\rho\sqrt\sigma\|_1$, without squaring.
 For a queried reflection U, $F_U(\rho)=F(\rho,U\rho U)$.
-The affinity $a_U=\operatorname{Tr}(SUSU)$ is easier to expand in Pauli
+The affinity $a_U=\mathrm{Tr}(SUSU)$ is easier to expand in Pauli
 coefficients, and the established inequality is $F_U^2\le a_U$.
 Here is a short proof that also covers singular S. Put $A=USU\ge0$;
-then $\operatorname{Tr}A^2=\operatorname{Tr}S^2=1$. Schatten Hölder gives
+then $\mathrm{Tr}A^2=\mathrm{Tr}S^2=1$. Schatten Hölder gives
 
 ```math
 \begin{aligned}
 F_U=\|SA\|_1
 &\le\|S^{1/2}\|_4\|S^{1/2}A^{1/2}\|_2\|A^{1/2}\|_4\\
-&=\sqrt{\operatorname{Tr}(SA)}=\sqrt{a_U}.
+&=\sqrt{\mathrm{Tr}(SA)}=\sqrt{a_U}.
 \end{aligned}
 ```
 
 The exponents satisfy $1/4+1/2+1/4=1$, with
-$\|M\|_p=(\operatorname{Tr}|M|^p)^{1/p}$ and
+$\|M\|_p=(\mathrm{Tr}|M|^p)^{1/p}$ and
 $|M|=\sqrt{M^\dagger M}$. The
 [sourced fidelity–affinity lemma](../STRONG_ENTROPIC_CONVERSE.md#3-root-fidelity-affinity-and-the-two-pauli-energy)
 supplies its prior attribution. The finite converses bound the stronger
-sum $\sum_U\sqrt{a_U}$, but keep $\operatorname{rank}S\le D$ throughout.
+sum $\sum_U\sqrt{a_U}$, but keep $\mathrm{rank}S\le D$ throughout.
 
 Rank enters through spectral rearrangement: only D eigenvalues of S can
 pair with the largest eigenvalues of a chosen linear combination of

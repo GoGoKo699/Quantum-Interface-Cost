@@ -51,7 +51,7 @@ independent reference unitaries, to
 \sum_{a,b=x,y,z}P(n_2)_{ab}\,\sigma_{R_2}^{a}
  V(\alpha)(\sigma_A^b\otimes I_B)V(\alpha)^\dagger.
 }
-\tag{NF1}
+\qquad\text{(NF1)}
 ```
 
 The domain
@@ -59,7 +59,7 @@ The domain
 ```math
 (\alpha_x,\alpha_y,\alpha_z)\in[-\pi/2,\pi/2]^3,
 \qquad n_1,n_2\in S^2
-\tag{NF2}
+\qquad\text{(NF2)}
 ```
 
 covers every case, including degenerate gates and coincident/complementary
@@ -90,7 +90,7 @@ The established two-qubit Cartan decomposition gives
 
 ```math
 U=(a\otimes b)V(\alpha)(c\otimes d),
-\tag{NF3}
+\qquad\text{(NF3)}
 ```
 
 with a,b,c,d single-qubit unitaries. Conjugate the entire Hamiltonian on
@@ -137,7 +137,7 @@ T_a=c_b c_c\,\sigma_a\otimes I
 +s_b s_c\,I\otimes\sigma_a
 +s_b c_c\,\sigma_c\otimes\sigma_b
 -c_b s_c\,\sigma_b\otimes\sigma_c.
-\tag{NF4}
+\qquad\text{(NF4)}
 ```
 
 Then `T_a=V(sigma_a tensor I)V^dagger`. For example,
@@ -161,7 +161,7 @@ The normal form anticommutes with the reference-only involution
 
 ```math
 \Gamma=(n_1\cdot\sigma_{R_1})(n_2\cdot\sigma_{R_2})\otimes I_Q.
-\tag{NF5}
+\qquad\text{(NF5)}
 ```
 
 Indeed, each reference vector selected by P(n_i) is perpendicular to n_i.
@@ -171,8 +171,8 @@ full reference-memory space, and
 ```math
 \mathcal H=\begin{pmatrix}0&C\\C^\dagger&0\end{pmatrix},
 \qquad C=E_+\mathcal H E_-:
-\operatorname{ran}E_-\longrightarrow\operatorname{ran}E_+.
-\tag{NF6}
+\mathrm{ran}E_-\longrightarrow\mathrm{ran}E_+.
+\qquad\text{(NF6)}
 ```
 
 Its spectrum consists of the positive and negative singular values of C,
@@ -187,10 +187,10 @@ For a simple U>0, choose unit singular vectors u,v with
 \Omega=(u+v)/\sqrt2,
 \qquad
 \boxed{\rho_Q=\tfrac12\left(
-\operatorname{Tr}_{R_1R_2}|u\rangle\langle u|
-+\operatorname{Tr}_{R_1R_2}|v\rangle\langle v|
+\mathrm{Tr}_{R_1R_2}|u\rangle\langle u|
++\mathrm{Tr}_{R_1R_2}|v\rangle\langle v|
 \right).}
-\tag{NF7}
+\qquad\text{(NF7)}
 ```
 
 The cross terms vanish under the partial trace because E_+ and E_- select

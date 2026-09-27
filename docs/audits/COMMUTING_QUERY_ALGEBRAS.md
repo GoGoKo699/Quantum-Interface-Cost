@@ -27,14 +27,14 @@ On the n reference qubits and Q set
 $$
 H=\sum_{i=1}^{n}h_i,\qquad
 h_i=X_i\otimes B_i+Z_i\otimes D_i.
-\tag{1}
+\qquad\text{(1)}
 $$
 
 **Theorem.**
 
 $$
 \boxed{\|H\|_\infty\le2q+\sqrt2.}
-\tag{2}
+\qquad\text{(2)}
 $$
 
 The memory factorization can be any unitary identification with q
@@ -66,7 +66,7 @@ On reference i and memory qubit A_i their spectra are
 $$
 \{\pm u_i,\pm v_i\},\qquad
 2\ge u_i\ge r\ge v_i\ge0,\qquad u_i^2+v_i^2=4.
-\tag{3}
+\qquad\text{(3)}
 $$
 
 Their top vectors are Bell vectors, by the two-Pauli singular-value
@@ -77,7 +77,7 @@ $$
 U=\sum_{i=1}^q u_i,\qquad
 u=\min_i u_i,\qquad v=\sqrt{4-u^2},\qquad
 c=u-v,\qquad m=U-c.
-\tag{4}
+\qquad\text{(4)}
 $$
 
 The gap `u_i-v_i` increases with u_i. Since the first q terms act on
@@ -87,7 +87,7 @@ Therefore
 
 $$
 H_0\le mI+cP,\qquad P=|\Omega\rangle\langle\Omega|\otimes I_{R_n}.
-\tag{5}
+\qquad\text{(5)}
 $$
 
 Omega is maximally entangled between `R_1...R_q` and Q, each of
@@ -100,7 +100,7 @@ suffices. For c>0 define
 $$
 t_0=2+r-v>2,\qquad
 2q+r-m\ge t_0,
-\tag{6}
+\qquad\text{(6)}
 $$
 
 where the inequality follows from `U-u<=2(q-1)`.
@@ -110,8 +110,8 @@ and the positive rank-update criterion give the equivalence
 $$
 cP+h_n\le t_0 I
 \quad\Longleftrightarrow\quad
-\frac cD\operatorname{Tr}_Q(t_0 I-h_n)^{-1}\le I_{R_n}.
-\tag{7}
+\frac cD\mathrm{Tr}_Q(t_0 I-h_n)^{-1}\le I_{R_n}.
+\qquad\text{(7)}
 $$
 
 Indeed, compressing an operator on `R_n tensor Q` to the
@@ -126,11 +126,11 @@ On a two-dimensional block the local spectrum is `{+/-a,+/-b}`,
 where `a^2+b^2=4` and `2>=a>=r>=b>=0`. For t>2,
 
 $$
-\operatorname{Tr}_{\mathrm{block}}(tI-h_n)^{-1}
+\mathrm{Tr}_{\mathrm{block}}(tI-h_n)^{-1}
 =\left(\frac{t}{t^2-a^2}+\frac{t}{t^2-b^2}\right)I_{R_n}
 \le A(t)I_{R_n},
 \quad A(t)=\frac{t}{t^2-4}+\frac1t.
-\tag{8}
+\qquad\text{(8)}
 $$
 
 For the equality, expand the resolvent as
@@ -151,7 +151,7 @@ Thus at `t=t_0` the norm of the left side of (7) is at most
 $$
 \frac{2k}{D}\left[\frac{cA(t)}2\right]
 +\left(1-\frac{2k}{D}\right)\left[\frac{c}{t-r}\right].
-\tag{9}
+\qquad\text{(9)}
 $$
 
 This is a convex combination of two quantities at most one.
@@ -161,7 +161,7 @@ the two terms of A yields
 
 $$
 cA(t)\le\frac{2t}{t+2}+1-\frac rt.
-\tag{10}
+\qquad\text{(10)}
 $$
 
 The right side increases with t>0, and `t=2+r-v<=2+r`. Therefore
@@ -170,7 +170,7 @@ $$
 cA(t)\le
 \frac{2(2+r)}{4+r}+1-\frac r{2+r}
 =\frac{5(4-r)}7<2.
-\tag{11}
+\qquad\text{(11)}
 $$
 
 Equations (9)–(11) prove (7), so `H<=(2q+r)I`. Conjugating
@@ -189,7 +189,7 @@ pairs commute crosswise,
 $$
 [B_i,B_j]=[B_i,D_j]=[D_i,B_j]=[D_i,D_j]=0
 \quad (i\ne j),
-\tag{12}
+\qquad\text{(12)}
 $$
 
 then `||H||<=4+sqrt(2)`, with the third pair arbitrary.
@@ -213,7 +213,7 @@ Q=\bigoplus_\alpha
 \quad
 \mathcal A'=\bigoplus_\alpha(I_{d_\alpha}\otimes M_{m_\alpha}),
 \quad d_\alpha\in\{1,2\}.
-\tag{13}
+\qquad\text{(13)}
 $$
 
 Equivalent irreducible representations, including equal scalar
@@ -246,7 +246,7 @@ and branch-dependent binary readouts. Put
 $$
 p_a=\frac{\|K_a\|_F^2}{2^n},\qquad
 L_a=\frac{K_a}{\|K_a\|_F},\qquad \sum_a p_a=1.
-\tag{14}
+\qquad\text{(14)}
 $$
 
 Zero branches are omitted. The p_a are normalization weights, not
@@ -260,7 +260,7 @@ coefficient averaging gives
 $$
 2n\eta\le\sum_a p_a s_a\le2q+\sqrt2,\qquad
 \boxed{\eta\le\frac{q+1/\sqrt2}{q+1}.}
-\tag{15}
+\qquad\text{(15)}
 $$
 
 For each branch, the q dedicated queried sites, memory factorization,
@@ -277,7 +277,7 @@ four-outcome POVM
 $$
 F_{ab}=\frac14\left[I+\frac{aX+bZ}{\sqrt2}\right],
 \qquad a,b\in\{+1,-1\}.
-\tag{16}
+\qquad\text{(16)}
 $$
 
 Retain the other q input qubits. Record the discarded site and a,b
@@ -305,7 +305,7 @@ $$
 P\Pi P=\tfrac18P,\qquad
 \lambda_{\max}(h_1+h_2+\delta\Pi)\ge4+\delta/8>4,
 \quad \delta=2-\sqrt2.
-\tag{17}
+\qquad\text{(17)}
 $$
 
 Even when the third pair has at most one noncommuting Jordan block,

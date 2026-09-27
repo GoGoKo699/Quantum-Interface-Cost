@@ -45,7 +45,7 @@ The invariant assemblages are
 $$
 \sigma_{s|X}^{x,z}=(I+sxX)/4,\qquad
 \sigma_{s|Z}^{x,z}=(I+szZ)/4.
-\tag{1}
+\qquad\text{(1)}
 $$
 
 Use the full signed square for the group-invariant set and then restrict
@@ -76,8 +76,8 @@ $$
 0,&x^2+z^2\le1,\\
 f(\sqrt{x^2+z^2-1}),&x^2+z^2>1.
 \end{cases}
-\qquad C=\operatorname{co}\varepsilon.
-\tag{2}
+\qquad C=\mathrm{co}\varepsilon.
+\qquad\text{(2)}
 $$
 
 The last identity is a specialization of the prior roof theorem. The
@@ -126,7 +126,7 @@ $$
 D_M(M^{x,z})=W(M^{x,z})=
  w(x,z)=\left[x+z-1-\sqrt{2(1-x)(1-z)}\right]_+,
 \quad M^{x,z}=2\sigma^{x,z}.
-\tag{3}
+\qquad\text{(3)}
 $$
 
 **Proof preserving the worst-input maximization.** In the D_M SDP let
@@ -160,7 +160,7 @@ $$
 C(x,z)<D_M(M^{x,z})
 \quad\Longleftrightarrow\quad
 \frac{1-x}{1-z}<2(1/\ln2-1)^2.
-\tag{4}
+\qquad\text{(4)}
 $$
 
 There is equality in the complementary central region and on the disk.
@@ -184,9 +184,9 @@ For a full setting tuple b let
 $$
 J_b(\rho)=\max_{\substack{\Gamma_{s|b}\ge0\\
                       \sum_s\Gamma_{s|b}=\rho}}
- \frac1n\sum_{s,i}s_i\operatorname{Tr}(P_{i,b_i}\Gamma_{s|b}),
+ \frac1n\sum_{s,i}s_i\mathrm{Tr}(P_{i,b_i}\Gamma_{s|b}),
 \qquad j_n=2^{-n}\sum_b J_b.
-\tag{5}
+\qquad\text{(5)}
 $$
 
 Each context may use an arbitrary joint POVM on a purification; no
@@ -205,7 +205,7 @@ allowing collective measurements. Our product-seed specialization is
 $$
 (n+m)j_{n+m}(\rho\otimes\tau)
  =n j_n(\rho)+m j_m(\tau).
-\tag{6}
+\qquad\text{(6)}
 $$
 
 A direct proof checks every quantifier. For fixed contexts b,c, marginalize
@@ -222,7 +222,7 @@ Put delta=1-t and define
 $$
 D_f(\rho)=n(f_n(\rho)-t)-\delta S(\rho),\qquad
 D_j(\rho)=n(j_n(\rho)-t)-\delta S(\rho).
-\tag{7}
+\qquad\text{(7)}
 $$
 
 Both excesses are additive on products. Tensor powers scale them; pure
@@ -241,7 +241,7 @@ Let c=cos(pi/8), s=sin(pi/8), and take the normalized two-input seed
 $$
 L=\frac12\begin{pmatrix}c&s&c&s\\s&c&-s&-c\end{pmatrix},
 \qquad \rho=L^\dagger L=\frac{I+t(IX+XZ)}4.
-\tag{8}
+\qquad\text{(8)}
 $$
 
 IX and XZ anticommute. Hence rho has spectrum (1/2,1/2,0,0) and S=1.
@@ -269,7 +269,7 @@ Consequently
 $$
 f_2=\frac{1+3t}4,\qquad j_2=\frac{3+4t}8,\qquad
 f_2-j_2=\frac{\sqrt2-1}8>0.
-\tag{9}
+\qquad\text{(9)}
 $$
 
 Equation (6) proves that this normalized gap persists for every tensor
@@ -300,7 +300,7 @@ J_b(\rho)=\max_{0\le F\le\rho}\bigg\{&
  &+\sqrt{((\rho-F)_{01,01}+(\rho-F)_{10,10})^2
                         -4|(\rho-F)_{01,10}|^2}\bigg\}.
 \end{split}
-\tag{10}
+\qquad\text{(10)}
 $$
 
 Indeed for H>=0 the only potentially nonzero eigenvalues of
@@ -361,7 +361,7 @@ still
 $$
 \sum_{i,b}\|\sqrt\rho P_{i,b}\sqrt\rho\|_1
 \le\sqrt2\,n+(2-\sqrt2)S(\rho).
-\tag{11}
+\qquad\text{(11)}
 $$
 
 The weaker joint-query target is

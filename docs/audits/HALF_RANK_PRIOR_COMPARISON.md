@@ -9,10 +9,10 @@ The [half-rank theorem](HALF_RANK_RETENTION_CONVERSE.md) proves, for
 n=2,3,4 and d=2^n,
 
 $$
-S\ge0,\quad \operatorname{Tr}S^2=1,\quad
-\operatorname{rank}S\le d/2
+S\ge0,\quad \mathrm{Tr}S^2=1,\quad
+\mathrm{rank}S\le d/2
 \quad\Longrightarrow\quad
-\sum_{i,b=X,Z}\sqrt{\operatorname{Tr}(S P_{i,b}S P_{i,b})}
+\sum_{i,b=X,Z}\sqrt{\mathrm{Tr}(S P_{i,b}S P_{i,b})}
 \le2n-2+\sqrt2.
 $$
 

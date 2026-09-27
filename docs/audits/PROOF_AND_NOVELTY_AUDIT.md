@@ -29,7 +29,7 @@ Only one query `j=(i,X/Z)` is executed. The requirement is the operator identity
 The binary TV distance for a fixed input is `|Tr rho(A_j-P_j)|/2`; maximizing over states gives `||A_j-P_j||_infinity/2`. Pauli conjugation and matching sign relabeling project `A_j` onto `lambda_j P_j`, with
 
 $$
-\lambda_j=d^{-1}\operatorname{Tr}(P_jA_j)\ge1-2\epsilon.
+\lambda_j=d^{-1}\mathrm{Tr}(P_jA_j)\ge1-2\epsilon.
 $$
 
 The last inequality follows from trace/operator-norm duality and `||P_j||_1=d`. Permutations and independent local Hadamards act transitively on the query set. Recording their random choice makes every coefficient equal to the average lambda. It remains at least `1-2epsilon`, and output flips reduce it to that exact target. All randomness and instrument outcomes fit in a finite free record. Conversely, `eta P_j` has worst-case TV error `(1-eta)/2`, attained on an eigenstate. The equivalence holds for `0<=epsilon<=1/2`; it is an equivalence of optimal memory costs, not a claim that every approximate protocol was already a depolarizing channel.
@@ -62,8 +62,8 @@ No incorrect theorem in the pinned repository was identified. Source-proof cavea
 For `omega_RB=(id_R tensor E)(Phi_RS)` and `B=CQ`, channel duality gives
 
 $$
-\operatorname{Tr}\omega(P_{R_i}\otimes B_{i,P})
-=d^{-1}\operatorname{Tr}(P_i^T\mathcal E^*(B_{i,P}))=\eta.
+\mathrm{Tr}\omega(P_{R_i}\otimes B_{i,P})
+=d^{-1}\mathrm{Tr}(P_i^T\mathcal E^*(B_{i,P}))=\eta.
 $$
 
 Here X and Z are real. Measuring either reference Pauli and the corresponding binary decoder gives disagreement probability `epsilon=(1-eta)/2`. Data processing followed by binary Fano yields `H(X_i|B)<=h2(epsilon)` and the analogous Z bound. On the state obtained by measuring all reference qubits in X,
@@ -90,7 +90,7 @@ For `W_i=X_(R_i) tensor B_(i,X)+Z_(R_i) tensor B_(i,Z)`, the actual expectation 
 The effect `T_i=I/2+W_i/4` is implemented by choosing X or Z uniformly, measuring R_i, sending basis and sign **from R_i to B**, and accepting agreement with the corresponding decoder. For `Delta=omega-sigma`, its trace is zero, and the binary measurement norm convention gives
 
 $$
-\|\Delta\|_{\mathrm{LOCC}\to}\ge2|\operatorname{Tr}T_i\Delta|
+\|\Delta\|_{\mathrm{LOCC}\to}\ge2|\mathrm{Tr}T_i\Delta|
 \ge\eta-1/\sqrt2
 $$
 
@@ -128,7 +128,7 @@ For the many-copy control, `sqrt(2)a_i` and `sqrt(2)b_i` have range length `2sqr
 **Converse.** Finite input/output dimensions and a finite record allow finite Kraus refinement, with each `K_a` a D-by-d matrix. The old decoder can be retained on every refinement; permitting a better decoder only enlarges the optimization. Completeness gives `sum_a ||K_a||_F^2=d`. For nonzero branches put `L_a=K_a/||K_a||_F`. Taking the inner product of every effective-observable identity with its Pauli gives
 
 $$
-2n\eta=\frac1d\sum_{a,j}\operatorname{Tr}(B_{a,j}K_aP_jK_a^\dagger)
+2n\eta=\frac1d\sum_{a,j}\mathrm{Tr}(B_{a,j}K_aP_jK_a^\dagger)
 \le\sum_a\frac{\|K_a\|_F^2}{d}g(L_a)\le\Gamma(n,D).
 $$
 
@@ -138,7 +138,7 @@ The weights really sum to one. No product, isometry, real-matrix, or flat-spectr
 
 $$
 \frac1m\sum_U s_{U,j}U^\dagger A U
-=\frac{\operatorname{Tr}(P_jA)}d P_j.
+=\frac{\mathrm{Tr}(P_jA)}d P_j.
 $$
 
 Multiplying by the Kraus prefactor d cancels the denominator exactly, producing `v_jP_j`. Schatten Hölder gives `0<=v_j<=1`, so these are physical contrasts. The outcome U is an **instrument outcome**, whose probability generally depends on the input; it is not independent randomness or a success flag. Every outcome is retained.
@@ -155,7 +155,7 @@ Compactness of the complex Frobenius unit sphere and continuity give an actual m
 
 $$
 \langle\!\langle L|(P_j^T\otimes B_j)|L\rangle\!\rangle
-=\operatorname{Tr}(B_jLP_jL^\dagger).
+=\mathrm{Tr}(B_jLP_jL^\dagger).
 $$
 
 Both optimizations are maxima over compact independent domains, so they may be interchanged. Rayleigh–Ritz produces the displayed spectral expression. Real P_j does not justify restricting L or B_j to real matrices. A seesaw gives lower bounds on the maximum, not a global converse.
@@ -179,7 +179,7 @@ $$
 For any instrument and decoder with input observables A_j, the discrimination success is
 
 $$
-p_{\rm succ}=\frac12+\frac{1}{4nd}\sum_j\operatorname{Tr}(P_jA_j).
+p_{\rm succ}=\frac12+\frac{1}{4nd}\sum_j\mathrm{Tr}(P_jA_j).
 $$
 
 The Pauli/query symmetry twirls preserve this score and yield uniform contrast `eta=2p_succ-1`. Conversely a contrast-eta protocol attains `(1+eta)/2` on this ensemble. The optimal discrimination score is therefore exactly equivalent to our uniform-error optimization, with unchanged timing and worst-case dimension. The ensemble is a mathematical comparison, not a replacement promise on the operational input.

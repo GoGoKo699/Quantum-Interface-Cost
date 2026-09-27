@@ -65,8 +65,8 @@ Trace-norm duality and optimization over K therefore give exactly
 ```math
 \left\|\begin{pmatrix}L&tX/2\\tX^\dagger/2&0\end{pmatrix}\right\|_1
 =\max_{-I\le A\le I}
-\left\{\operatorname{Tr}(LA)+t\|X^\dagger\sqrt{I-A^2}\|_1\right\},
-\quad t\ge0.                                                  \tag{3}
+\left\{\mathrm{Tr}(LA)+t\|X^\dagger\sqrt{I-A^2}\|_1\right\},
+\quad t\ge0.                                                  \qquad\text{(3)}
 ```
 
 Thus `I-A^2` is exactly the available cross-block budget. A compressed
@@ -146,7 +146,7 @@ The infimum is attained at
 
 ```math
 y(s)=\inf_{z>0}R_z(s),\qquad
-R_z(s)=\frac{sC_z-b+\sqrt{(b-sC_z)^2+4sD_z}}2.                 \tag{8}
+R_z(s)=\frac{sC_z-b+\sqrt{(b-sC_z)^2+4sD_z}}2.                 \qquad\text{(8)}
 ```
 
 To check the direction, (7) gives
@@ -193,7 +193,7 @@ The squared-concavity tangent is consequently
 
 ```math
 S(s)^2\le S_0^2+
-\frac{S_0(S_0-a_0)}{s_0}(s-s_0),\qquad s\ge0.                 \tag{11}
+\frac{S_0(S_0-a_0)}{s_0}(s-s_0),\qquad s\ge0.                 \qquad\text{(11)}
 ```
 
 All quantities are finite; no singular core compression is inverted.

@@ -21,7 +21,7 @@ referenced files. All 49 computational Python files parse; the separate
 tutorial plotting helper was inspected. All 48 historical JSON reports
 parse. The MIT license and copyright are unchanged.
 
-The following commands ran once each under CPython 3.12.14, with fresh
+The following baseline commands ran once each under CPython 3.12.14, with fresh
 outputs outside the repository. Matrix diagnostics used NumPy 2.3.5.
 
 | Checker in `tools/` | Outcome | Comparison with historical report |
@@ -63,9 +63,24 @@ comparison again displays the full scope distinction.
 
 The formatting pass converts 476 legacy display delimiters and 134 inline
 delimiter pairs in 24 documents to GitHub-native math, and joins one
-multiline inline expression. Formula bodies are preserved; one absolute
-value is written with equivalent `\lvert` and `\rvert` commands to protect
-its table cell. These are presentation changes, not revised inequalities.
+multiline inline expression. One absolute value is written with equivalent
+`\lvert` and `\rvert` commands to protect its table cell.
+
+Live GitHub inspection then exposed rejected operator-name macros and
+numbered equations collapsing into narrow columns. The second pass
+replaces 410 operator-name macros with the same names in roman type and
+1,089 equation tags with the same visible parenthesized labels. No
+automatic label references are used in these documents. The replacement
+preserves every equation identifier and named operation; it changes
+typesetting, not inequalities. The repaired research-note model and
+numbered error equation were visually checked on GitHub, and the Jones
+comparison's full table cells were checked in the rendered page.
+
+After the repairs, all 856 local links and 78 heading anchors resolve.
+The Markdown parser retains all 670 data rows across 77 tables, with
+consistent column counts. This combines repository-wide static checks
+with representative live rendering, not a pixel-by-pixel review of every
+page or device.
 
 The reductions remove a duplicate archive link, a repeated index
 introduction, a repeated finite-case status summary and obsolete workflow
@@ -82,21 +97,27 @@ evidence. Historical commands remain part of their original run records.
 ## Version and evidence boundary
 
 The [formatting and release map](../results/release_sanity_map.json) gives
-before/after SHA-256 fingerprints and change categories. The 28 documents
-with exclusively mechanical math/table repairs were checked by reversing
-the recorded transformations and by a separate comparison of their
-mathematical content. The other edited documents change navigation,
+before/after SHA-256 fingerprints and change categories. Mechanical
+math/table repairs were checked by reversing the recorded transformations
+and by a separate comparison of their mathematical content. Other edits change navigation,
 reproduction guidance or manuscript status.
 
 The scientific freeze remains pinned to
 `466bbb770d150fb8f43c4f9eca04bbadabe85188`. Neither its manifest nor any
-historical JSON report is rewritten. The integrated core, essential
-half/quarter-rank proof files and every checker source remain unchanged.
-Older reports for block budgets, head structure, two-mode stability and
-two-mode support embed hashes of notes whose display syntax is now
-repaired. Those hashes identify the old proof text; the release map
-connects it to the displayed revision. Reproducing these archive checks
-may change proof-hash metadata without changing their numerical results.
+historical JSON report is rewritten. Every checker source remains
+unchanged. Display repairs also affect the integrated core and proof
+appendices. Their historical hashes identify the exact text reviewed at
+the recorded base; the release map connects that text to the displayed
+revision without changing its mathematical content. Rerunning a checker
+on this checkout can change embedded proof-hash metadata without changing
+its numerical results. The reproduction guide supplies an exact-version
+archive command when byte-identical historical evidence is wanted.
+
+Specifically, 19 embedded proof-hash entries covering 18 proof notes now
+identify the earlier presentation bytes; the other 28 embedded
+fingerprints still match the current files. All 36 manifest fingerprints
+remain valid at their frozen commit. Of those, 22 also match the current
+checkout and 14 differ, including three pre-existing overview revisions.
 
 The general common-accuracy optimum, sharp entropy inequality, asymptotic
 rate and exhaustive originality assessment remain outside this release

@@ -60,7 +60,7 @@ $$
  \le 8-4\chi_Y(\rho)+16\lambda_1\lambda_2 M(v)
  \le 8-4\chi_Y(\rho)+32\sqrt2\lambda_1\lambda_2 r_v.
 }
-\tag{1}
+\qquad\text{(1)}
 $$
 
 The nonnegative correlation correction can be discarded when only the
@@ -69,7 +69,7 @@ spectrum and kernel are known. Thus the readily checkable inequality
 $$
 8+16\lambda_1\lambda_2 M(v)
 \le \bigl(2\sqrt2+cS(\rho)\bigr)^2
-\tag{2}
+\qquad\text{(2)}
 $$
 
 certifies the proposed entropy bound for every state with that spectrum
@@ -81,7 +81,7 @@ $$
 8\lambda_1\lambda_2 r_v
 \le cS(\rho)+\frac{c^2}{4\sqrt2}S(\rho)^2.
 }
-\tag{3}
+\qquad\text{(3)}
 $$
 
 Strict inequality in either certificate implies a strict entropy bound.
@@ -105,7 +105,7 @@ vector in its kernel, then
 
 $$
 \boxed{g_2(\rho)\le2\sqrt2.}
-\tag{4}
+\qquad\text{(4)}
 $$
 
 This permits arbitrary spectra and local rotations of the kernel vector.
@@ -124,15 +124,15 @@ Gram matrices, not a restriction on admissible physical instruments.
 For any two-qubit density matrix, define
 
 $$
-Q_P=2\operatorname{Tr}(\rho P\rho P)
--\bigl(\operatorname{Tr}(\rho P)\bigr)^2.
+Q_P=2\mathrm{Tr}(\rho P\rho P)
+-\bigl(\mathrm{Tr}(\rho P)\bigr)^2.
 $$
 
 Then the following identity holds, without a rank assumption:
 
 $$
 \boxed{\sum_{P\in\mathcal Q}Q_P=2-\chi_Y(\rho).}
-\tag{5}
+\qquad\text{(5)}
 $$
 
 To verify it, expand
@@ -149,7 +149,7 @@ anticommute with W. The sum of its four conjugation signs is
 
 $$
 \begin{aligned}
-\sum_{P\in\mathcal Q}\operatorname{Tr}(\rho P\rho P)
+\sum_{P\in\mathcal Q}\mathrm{Tr}(\rho P\rho P)
 ={}&1+\frac12(a_x^2+a_z^2+b_x^2+b_z^2)\\
 &-\frac12(T_{xy}^2+T_{zy}^2+T_{yx}^2+T_{yz}^2)-T_{yy}^2.
 \end{aligned}
@@ -170,7 +170,7 @@ compression `Pi P Pi`, restricted to that support, has eigenvalues
 
 $$
 1,\quad -1,\quad -m.
-\tag{6}
+\qquad\text{(6)}
 $$
 
 Indeed, each of the full four-dimensional query's positive and negative
@@ -196,7 +196,7 @@ $$
 abd=\lambda_1\lambda_2\lambda_3 m,
 \qquad
 F_P^2=Q_P+4bd.
-\tag{7}
+\qquad\text{(7)}
 $$
 
 For the second equality, substitute `F_P=a+b+d` and
@@ -210,14 +210,14 @@ choose a unit supported eigenvector u_+ of the compression with eigenvalue
 $$
 a\ge\frac{1}{\langle u_+|\sigma^{-1}|u_+\rangle}
 \ge\lambda_3.
-\tag{8}
+\qquad\text{(8)}
 $$
 
 Together with (7), this proves
 
 $$
 F_P^2\le Q_P+4\lambda_1\lambda_2 |\langle v|P|v\rangle|.
-\tag{9}
+\qquad\text{(9)}
 $$
 
 Summing (9), using (5), and applying
@@ -247,7 +247,7 @@ E_{P,+}=\frac{I+P'}{2},
 K_{P,+}=E_{P,+}
 -\frac{E_{P,+}|v\rangle\langle v|E_{P,+}}
 {(1+m_P)/2}.
-\tag{10}
+\qquad\text{(10)}
 $$
 
 The denominator is positive, including when m_P=0. The matrix K_{P,+}
@@ -283,12 +283,12 @@ Summing and using (5) as before gives
 $$
 \begin{aligned}
 g_2(\rho)^2
-&\le 8-4\chi_Y(\rho)+16\operatorname{Tr}(D_\sigma T_v)\\
+&\le 8-4\chi_Y(\rho)+16\mathrm{Tr}(D_\sigma T_v)\\
 &\le 8-4\chi_Y(\rho)
 +16\bigl(\lambda_1\lambda_2 t_1
 +\lambda_1\lambda_3 t_2+\lambda_2\lambda_3 t_3\bigr).
 \end{aligned}
-\tag{11}
+\qquad\text{(11)}
 $$
 
 The final step is the eigenvalue trace inequality: in eigenbases of the
@@ -308,7 +308,7 @@ $$
 +\lambda_1\lambda_3 t_2+\lambda_2\lambda_3 t_3\bigr)
 \le\bigl(2\sqrt2+cS(\rho)\bigr)^2.
 }
-\tag{12}
+\qquad\text{(12)}
 $$
 
 Dropping chi_Y makes this a uniform certificate for every supported

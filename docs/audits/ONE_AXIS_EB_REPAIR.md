@@ -25,7 +25,7 @@ Choose an input Pauli observable A, so `A=A^dagger`, `A^2=I`, and
 
 $$
 M=\Phi(A),\qquad n=\frac12\|M\|_1.
-\tag{1}
+\qquad\text{(1)}
 $$
 
 Trace preservation and trace-norm contraction give `Tr M=0` and
@@ -34,9 +34,9 @@ When n>0, each has trace n. Let `P_+=(I+A)/2`, `P_-=(I-A)/2`, and define
 
 $$
 \Theta_A(\omega)=
- \operatorname{Tr}(P_-\omega)\frac{M_+}{n}
- +\operatorname{Tr}(P_+\omega)\frac{M_-}{n}.
-\tag{2}
+ \mathrm{Tr}(P_-\omega)\frac{M_+}{n}
+ +\mathrm{Tr}(P_+\omega)\frac{M_-}{n}.
+\qquad\text{(2)}
 $$
 
 This is an EB channel: measure the input axis and prepare the indicated
@@ -45,7 +45,7 @@ state with the **opposite** output sign. In particular
 
 $$
 \boxed{\Psi_A=\frac{\Phi+n\Theta_A}{1+n}}
-\tag{3}
+\qquad\text{(3)}
 $$
 
 kills A. Every qubit-input channel that kills one Pauli observable is EB;
@@ -54,11 +54,11 @@ Thus (3) is an explicit EB comparator. Since two channels have full
 diamond distance at most two,
 
 $$
-\boxed{\operatorname{dist}_\diamond(\Phi,\mathrm{EB})
+\boxed{\mathrm{dist}_\diamond(\Phi,\mathrm{EB})
 \le\|\Phi-\Psi_A\|_\diamond
 \le\frac{2n}{1+n}
 =\frac{\|\Phi(A)\|_1}{1+\|\Phi(A)\|_1/2}.}
-\tag{4}
+\qquad\text{(4)}
 $$
 
 For n=0, Phi itself kills A and is EB; set `Psi_A=Phi`. Any input axis
@@ -81,7 +81,7 @@ convention,
 $$
 J_\Phi=\frac14\bigl[I\otimes\Phi(I)+X\otimes\Phi(X)
  -Y\otimes\Phi(Y)+Z\otimes\Phi(Z)\bigr].
-\tag{5}
+\qquad\text{(5)}
 $$
 
 When `Phi(Y)=0`, J is invariant under partial transpose on its input
@@ -115,7 +115,7 @@ $$
 \begin{pmatrix}I&B\\B&B^2\end{pmatrix}
 =\sum_j (|0\rangle+b_j|1\rangle)
  (\langle0|+b_j\langle1|)\otimes|v_j\rangle\langle v_j|
-\tag{6}
+\qquad\text{(6)}
 $$
 
 is separable, as is the remaining positive term
@@ -134,14 +134,14 @@ Still use A=Y and set `M=Phi(Y)`. Define
 $$
 N=\frac14(I\otimes|M|+Y\otimes M)
  =\frac12\bigl(P_+^Y\otimes M_++P_-^Y\otimes M_-\bigr).
-\tag{7}
+\qquad\text{(7)}
 $$
 
 This is positive and separable, with
 
 $$
-\operatorname{Tr}N=n,\qquad
-\operatorname{Tr}_Q N=nI_2/2.
+\mathrm{Tr}N=n,\qquad
+\mathrm{Tr}_Q N=nI_2/2.
 $$
 
 Hence N/n is the normalized Choi state of the EB channel Theta_Y.
@@ -153,7 +153,7 @@ The repaired Choi state is
 
 $$
 J_{\Psi_Y}=\frac{J_\Phi+N}{1+n}.
-\tag{8}
+\qquad\text{(8)}
 $$
 
 Its Y component cancels, it remains positive, and its input marginal is
@@ -171,8 +171,8 @@ diamond norm, proving
 
 $$
 \boxed{\inf_{\Psi\in\mathrm{EB}}
- \|\operatorname{id}_2-\Psi\|_\diamond=1.}
-\tag{9}
+ \|\mathrm{id}_2-\Psi\|_\diamond=1.}
+\qquad\text{(9)}
 $$
 
 Thus the bound is sharp at n=1. This does not prove that the function
@@ -191,16 +191,16 @@ F(t)=\begin{cases}
 \displaystyle\frac1{2(\sqrt{2t^2-4}-t)},&2<t\le3\sqrt2,\\[5pt]
 \displaystyle\frac1{t-\sqrt2},&t\ge3\sqrt2.
 \end{cases}
-\tag{10}
+\qquad\text{(10)}
 $$
 
 Every EB channel Xi satisfies both inequalities
 
 $$
 \frac{I}{t+\sqrt2}
-\le(\operatorname{id}_2\otimes\Xi^*)(R_t)
+\le(\mathrm{id}_2\otimes\Xi^*)(R_t)
 \le F(t)I.
-\tag{11}
+\qquad\text{(11)}
 $$
 
 For the upper bound, apply (10) to each prepared memory state of Xi.
@@ -216,8 +216,8 @@ and taking its Schur complement gives
 
 $$
 \mathcal C_\tau(R_t)
-\ge(tI-X\operatorname{Tr}(\tau B)
-        -Z\operatorname{Tr}(\tau D_3))^{-1}
+\ge(tI-X\mathrm{Tr}(\tau B)
+        -Z\mathrm{Tr}(\tau D_3))^{-1}
 \ge\frac{I}{t+\sqrt2}.
 $$
 
@@ -231,9 +231,9 @@ channels are EB, use the upper bound for Psi_A and the lower bound for
 Theta_A to obtain
 
 $$
-\boxed{(\operatorname{id}_2\otimes\Phi^*)(R_t)
+\boxed{(\mathrm{id}_2\otimes\Phi^*)(R_t)
 \le\left[(1+n)F(t)-\frac{n}{t+\sqrt2}\right]I.}
-\tag{12}
+\qquad\text{(12)}
 $$
 
 For n=0 the same inequality follows directly because Phi is EB.
@@ -246,7 +246,7 @@ $$
 \boxed{\mathcal K_t\le
 (U-\ell)\left[(1+n)F(\Lambda-\ell)
  -\frac{n}{\Lambda-\ell+\sqrt2}\right]I.}
-\tag{13}
+\qquad\text{(13)}
 $$
 
 Thus a right side at most I is another sufficient converse condition,
@@ -265,14 +265,14 @@ $$
 
 $$
 D\ge19/10,\qquad12/5\le t\le\Lambda.
-\tag{14}
+\qquad\text{(14)}
 $$
 
 If an input Pauli axis A satisfies
 
 $$
 \boxed{\|\Phi(A)\|_1\le\frac23,}
-\tag{15}
+\qquad\text{(15)}
 $$
 
 then the coherent two-mode envelope passes strictly for every third
@@ -285,7 +285,7 @@ and `U-ell=t-D`. It therefore suffices to prove
 
 $$
 (t-19/10)\left[\frac43F(t)-\frac1{3(t+\sqrt2)}\right]<1
-\tag{16}
+\qquad\text{(16)}
 $$
 
 on (14). First suppose `t<=3sqrt(2)`. The positive-square identity
@@ -301,7 +301,7 @@ gives `sqrt(2t^2-4)<=3t/2-7/10`. Rationalizing (10) and using
 $$
 \frac{P(t)}{3(t^2-4)(t+10/7)},\qquad
 P(t)=t^3-\frac{43}{7}t^2+\frac{1081}{350}t+\frac{467}{35}.
-\tag{17}
+\qquad\text{(17)}
 $$
 
 The branch lies in `[12/5,17/4]`. There `P''(t)>=74/35>0`, while
@@ -319,7 +319,7 @@ branch of F. Clearing the positive denominator `3(t^2-2)` reduces
 
 $$
 L(t):=(5r-57/10)t-19r/2+6<0.
-\tag{18}
+\qquad\text{(18)}
 $$
 
 The slope is positive. At the upper endpoint,

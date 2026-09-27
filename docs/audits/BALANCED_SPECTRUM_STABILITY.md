@@ -19,15 +19,15 @@ Let n>=1, d=2^n, k=d/2 and K_n=2n-2+sqrt(2). For a density matrix rho
 of rank at most k, define
 
 $$
-\eta^2=2\left(1-\frac{\operatorname{Tr}\sqrt\rho}{\sqrt k}\right).
-\tag{1}
+\eta^2=2\left(1-\frac{\mathrm{Tr}\sqrt\rho}{\sqrt k}\right).
+\qquad\text{(1)}
 $$
 
 **Theorem.** If
 
 $$
 \boxed{\eta\le\frac1{4096n},}
-\tag{2}
+\qquad\text{(2)}
 $$
 
 then the original query score obeys
@@ -35,7 +35,7 @@ then the original query score obeys
 $$
 \boxed{g(\rho):=\sum_{i,U=X,Z}\|\sqrt\rho U_i\sqrt\rho\|_1
 \le K_n.}
-\tag{3}
+\qquad\text{(3)}
 $$
 
 Equality holds exactly for a pure original-site X/Z bisector tensored
@@ -47,7 +47,7 @@ containing supp(rho), then
 
 $$
 \eta=\|\sqrt\rho-P/\sqrt k\|_2.
-\tag{4}
+\qquad\text{(4)}
 $$
 
 Thus eta measures distance from a flat half-rank root and is independent
@@ -70,7 +70,7 @@ $$
 
 $$
 \epsilon_z=2n-2+2\sqrt{1-z/2}-\mathcal R_z(R),\qquad 0<z\le1.
-\tag{5}
+\qquad\text{(5)}
 $$
 
 Expand R in Pauli words and write
@@ -80,14 +80,14 @@ Its proof gives the stronger estimates
 
 $$
 \boxed{\epsilon_z\ge\frac z{128}(1-b),}
-\tag{6}
+\qquad\text{(6)}
 $$
 
 and, for a site attaining b, with singleton coefficients u,v,
 
 $$
 \epsilon_z\ge\frac{z^2}{16}(u^2-v^2)^2.
-\tag{7}
+\qquad\text{(7)}
 $$
 
 To prove (6), retain r=sqrt(2)-1 and c=2-sqrt(2). In the diffuse
@@ -97,7 +97,7 @@ deficit estimate therefore gives
 $$
 \epsilon_z>z\left(\sqrt2-\frac{281}{200}\right)
 >\frac z{128}\ge\frac z{128}(1-b).
-\tag{8}
+\qquad\text{(8)}
 $$
 
 For the second strict inequality, sqrt(2)>1413/1000 and 1/125>1/128
@@ -109,7 +109,7 @@ m^2\le1-x+x\left(\frac{2ax}{A}+\frac{a^2x^3}{A^3}\right)
 \le1-\kappa x,\qquad
 \kappa=1-\frac{2a}{3}-\frac{a^2}{27}
 =\frac{51469}{65536}\ge\frac{25}{32}.
-\tag{9}
+\qquad\text{(9)}
 $$
 
 Here m is the normalized Rademacher first moment and W<=m^2, as in
@@ -121,7 +121,7 @@ c-W+rb&=c\delta-rWx\ge(c-r/\kappa)\delta\\
 &\ge\frac{c\kappa-r}{1+\kappa}(1-b)
 \ge\frac5{256}(1-b).
 \end{aligned}
-\tag{10}
+\qquad\text{(10)}
 $$
 
 For the middle step, 1-b=delta+Wx<=delta+x<=delta(1+1/kappa).
@@ -143,7 +143,7 @@ The proof of the grouped bound gives
 $$
 \epsilon_z-J_z
 \ge\frac z2(2-W-b)+2f_z(b/2)-2f_z(1/2)\ge0.
-\tag{11}
+\qquad\text{(11)}
 $$
 
 The final inequality is the established dominant gate when A>=3/4.
@@ -156,7 +156,7 @@ aligning the signs of u and v. Then
 
 $$
 \boxed{\tau((R-B)^2)\le\frac{512\epsilon_z}{z^2}.}
-\tag{12}
+\qquad\text{(12)}
 $$
 
 Indeed, its overlap with R is ell=(|u|+|v|)/sqrt(2). If b>=1/2,
@@ -182,7 +182,7 @@ balanced-spectrum optima. Here the root-affinity score is
 
 $$
 \mathcal A(\rho)=\sum_U
-\sqrt{\operatorname{Tr}(\sqrt\rho U\sqrt\rho U)}.
+\sqrt{\mathrm{Tr}(\sqrt\rho U\sqrt\rho U)}.
 $$
 
 Put
@@ -204,13 +204,13 @@ Schatten Cauchy gives
 $$
 \boxed{\|\rho_t-\rho_{t,B}\|_1
 \le\frac{16\sqrt2}{t}\sqrt{e_g},}
-\tag{13}
+\qquad\text{(13)}
 $$
 
 $$
 \|\rho_t-\rho_{t,B}\|_1
 \le\frac{16\sqrt2(1+\sqrt{1-t^2})}{t}\sqrt{e_{\mathcal A}}.
-\tag{14}
+\qquad\text{(14)}
 $$
 
 These are full trace norms. The convention of trace distance with a
@@ -233,14 +233,14 @@ pairs, and put T=sum_i b_i^2. If T>0 and
 
 $$
 A:=\frac{\max_i b_i^2}{T}\ge\frac34,
-\tag{15}
+\qquad\text{(15)}
 $$
 
 then
 
 $$
 \mathcal A(S^2)\le K_n.
-\tag{16}
+\qquad\text{(16)}
 $$
 
 Equality is exactly a retention seed. This is a sufficient local
@@ -256,7 +256,7 @@ of S, padded by zeros, gives
 
 $$
 \sqrt y\le um+v\sqrt{1-m^2}.
-\tag{17}
+\qquad\text{(17)}
 $$
 
 In particular y<=1. If d_U=1-Tr(SUSU), the Pauli energy decomposition
@@ -283,7 +283,7 @@ r=sqrt(2)-1 and c=1-r,
 $$
 \mathcal A(S^2)
 \le K_n+\frac{2u^2+(1-rA)y-(2+c)}2.
-\tag{18}
+\qquad\text{(18)}
 $$
 
 When n=1 the complementary group is empty and contributes zero;
@@ -304,7 +304,7 @@ Its largest eigenvalue is at most 2+c whenever
 $$
 m^2\le\Psi(A):=
 \frac{c(2-r+rA)}{2(1-rA)}.
-\tag{19}
+\qquad\text{(19)}
 $$
 
 Indeed, subtracting the matrix from (2+c)I gives positive trace and
@@ -399,7 +399,7 @@ $$
 g(\rho_\theta)=\sqrt2\cos\theta,\qquad
 \|\rho_\theta-\rho_B\|_1^2
 =2(1-\cos\theta)=\sqrt2\,e_g.
-\tag{20}
+\qquad\text{(20)}
 $$
 
 The factor 1/t in (13) is also necessary in its order as t tends to
@@ -410,7 +410,7 @@ $$
 e_g=2\sqrt{1-t^2/2}-1-\sqrt{1-t^2}
 =\frac{(1-v)^2}{2\sqrt{(1+v^2)/2}+1+v}
 =\frac{t^4}{16}+O(t^6).
-\tag{21}
+\qquad\text{(21)}
 $$
 
 Thus a bound proportional to sqrt(e_g) with a constant independent of

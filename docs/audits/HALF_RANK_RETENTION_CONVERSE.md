@@ -13,7 +13,7 @@ collective encoding and unrestricted binary-POVM readouts:
 
 $$
 \boxed{\Gamma(n,2^{n-1})=2n-2+\sqrt2\qquad(n=2,3,4).}
-\tag{1}
+\qquad\text{(1)}
 $$
 
 The [normalized-seed reduction](../COLLECTIVE_ENCODING_REDUCTION.md)
@@ -23,7 +23,7 @@ sampling error at these memory budgets:
 $$
 \boxed{\eta_{\max}(n,n-1)=\frac{2n-2+\sqrt2}{2n},\qquad
 \varepsilon_{\min}(n,n-1)=\frac{2-\sqrt2}{4n}.}
-\tag{2}
+\qquad\text{(2)}
 $$
 
 In particular `Gamma(3,4)=4+sqrt(2)` and `Gamma(4,8)=6+sqrt(2)`.
@@ -46,14 +46,14 @@ n-qubit density matrix of rank at most k. Set `S=sqrt(rho)` and write
 
 $$
 \mathcal A=\{X_i,Z_i:1\le i\le n\},\qquad
-a_A=\operatorname{Tr}(SASA).
+a_A=\mathrm{Tr}(SASA).
 $$
 
 We will prove the stronger bound
 
 $$
 \boxed{\sum_{A\in\mathcal A}\sqrt{a_A}\le2n-2+\sqrt2.}
-\tag{3}
+\qquad\text{(3)}
 $$
 
 The standard squared-root-fidelity/affinity comparison gives
@@ -71,8 +71,8 @@ Positivity and Hilbert--Schmidt Cauchy--Schwarz imply `0<=a_A<=1`.
 Use the orthonormal Pauli basis `sigma_p/sqrt(d)`. Define
 
 $$
-t=\operatorname{Tr}S,\qquad u=t/\sqrt k,\qquad v=\sqrt{1-u^2}.
-\tag{4}
+t=\mathrm{Tr}S,\qquad u=t/\sqrt k,\qquad v=\sqrt{1-u^2}.
+\qquad\text{(4)}
 $$
 
 The rank bound gives `0<u<=1`. The identity coefficient is
@@ -87,9 +87,9 @@ $$
 and put
 
 $$
-T=\sum_i b_i^2=\operatorname{Tr}(L^2)=\operatorname{Tr}(SL),
+T=\sum_i b_i^2=\mathrm{Tr}(L^2)=\mathrm{Tr}(SL),
 \qquad y=2T.
-\tag{5}
+\qquad\text{(5)}
 $$
 
 When `b_i=0`, the unit X/Z-plane direction B_i may be chosen arbitrarily.
@@ -98,8 +98,8 @@ The B_i commute, and the spectrum of L consists of all d sign sums
 part satisfies `Tr(L_+^2)=T/2`. Positivity of S now gives
 
 $$
-T=\operatorname{Tr}(SL)
-\le\operatorname{Tr}(SL_+)
+T=\mathrm{Tr}(SL)
+\le\mathrm{Tr}(SL_+)
 \le\|S\|_2\|L_+\|_2=\sqrt{T/2}.
 $$
 
@@ -112,7 +112,7 @@ to one. Therefore
 
 $$
 \sum_A a_A\le2n-4+4\frac{t^2}{d}+2T=2n-4+2u^2+y.
-\tag{6}
+\qquad\text{(6)}
 $$
 
 If `T=0`, Cauchy--Schwarz gives
@@ -133,7 +133,7 @@ $$
 M:=\mathbb E\left|\sum_{i=1}^4 b_i\epsilon_i\right|
 =\max\left\{b_1,\frac{3b_1+b_2+b_3+b_4}{4},
                  \frac{b_1+b_2+b_3}{2}\right\}.
-\tag{7}
+\qquad\text{(7)}
 $$
 
 Indeed, averaging first over the first sign gives
@@ -149,7 +149,7 @@ centered squared sum are
 $$
 \mu=\frac1k\sum_{j=1}^k l_j=\frac{M}{\sqrt d},\qquad
 \sum_{j=1}^k(l_j-\mu)^2=\frac{T-M^2}{2}.
-\tag{8}
+\qquad\text{(8)}
 $$
 
 Let `lambda_1,...,lambda_k` be the eigenvalues of S in decreasing
@@ -159,7 +159,7 @@ Cauchy--Schwarz, yields
 
 $$
 \begin{aligned}
-T=\operatorname{Tr}(SL)
+T=\mathrm{Tr}(SL)
 &\le\sum_{j=1}^k\lambda_j l_j\\
 &\le t\mu+
 \sqrt{1-t^2/k}\sqrt{(T-M^2)/2}.
@@ -170,7 +170,7 @@ With `c=M/sqrt(T)`, divide by `sqrt(T/2)` to obtain
 
 $$
 \boxed{\sqrt y\le uc+v\sqrt{1-c^2}.}
-\tag{9}
+\qquad\text{(9)}
 $$
 
 This is the rank-sensitive step. It keeps the direction of the local
@@ -201,7 +201,7 @@ $$
 \sum_A\sqrt{a_A}
 \le\sqrt{2n\left(2n-4+\frac{3+\sqrt7}{2}\right)}
 <2n-2+\sqrt2.
-\tag{10}
+\qquad\text{(10)}
 $$
 
 The squared gap in the final strict comparison is
@@ -225,7 +225,7 @@ therefore imply
 
 $$
 W\ge2b_i^2=yc^2,\qquad D\ge4-2u^2-y=:E.
-\tag{11}
+\qquad\text{(11)}
 $$
 
 If `u^2+y<1`, (6) gives `sum_A a_A<2n-3+u^2<=2n-2`, which already proves
@@ -236,7 +236,7 @@ $$
 c\ge u\sqrt y-v\sqrt{1-y}\ge0,
 \qquad
 W\ge w:=y\bigl[u\sqrt y-v\sqrt{1-y}\bigr]^2.
-\tag{12}
+\qquad\text{(12)}
 $$
 
 For completeness, write `u=cos(theta)`, `c=cos(phi)` and
@@ -258,7 +258,7 @@ $$
 &=2n-2+\sqrt2+
 \frac{(\sqrt2-1)(1-W)-(D-1)}2.
 \end{aligned}
-\tag{13}
+\qquad\text{(13)}
 $$
 
 Put `r=sqrt(2)-1` and `z=sqrt(1-y)`. In the notation above,
@@ -280,7 +280,7 @@ $$
 &\ge(2-r)v^2-2rvz+(1-2r)z^2\\
 &\ge0.
 \end{aligned}
-\tag{14}
+\qquad\text{(14)}
 $$
 
 The quadratic form is positive definite: its diagonal entries are
@@ -316,7 +316,7 @@ Gram states is
 $$
 \boxed{\rho=|\beta\rangle\langle\beta|_i\otimes
 \frac{I_{\mathrm{rest}}}{2^{n-1}},}
-\tag{15}
+\qquad\text{(15)}
 $$
 
 where i is any original input site and beta is an X/Z bisector, with

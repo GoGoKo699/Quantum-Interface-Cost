@@ -29,16 +29,16 @@ Let Q have dimension four and let
 ```math
 H_0=X_1B_1+Z_1D_1+X_2B_2+Z_2D_2,
 \qquad -I\le B_i,D_i\le I.
-\tag{1}
+\qquad\text{(1)}
 ```
 
 Write its first three eigenvalues as U,m,ell. Choose an isometry V
 onto its first two eigenvectors and define
 
 ```math
-\Phi(\omega)=\operatorname{Tr}_{R_1R_2}(V\omega V^\dagger),
+\Phi(\omega)=\mathrm{Tr}_{R_1R_2}(V\omega V^\dagger),
 \qquad \mathcal E=\Phi^*,\qquad
-\Delta=\operatorname{diag}(U-\ell,m-\ell).
+\Delta=\mathrm{diag}(U-\ell,m-\ell).
 ```
 
 The [two-mode reduction](TWO_MODE_RESOLVENT.md) gives
@@ -46,7 +46,7 @@ The [two-mode reduction](TWO_MODE_RESOLVENT.md) gives
 
 ```math
 \Lambda=4+\sqrt2,\qquad D=\Lambda-U,\qquad t=\Lambda-\ell.
-\tag{2}
+\qquad\text{(2)}
 ```
 
 For a third pair of Hermitian contractions, let
@@ -56,16 +56,16 @@ four-by-four envelope test is
 
 ```math
 \mathcal K_t=(I\otimes\sqrt\Delta)
-  (\operatorname{id}_2\otimes\mathcal E)(R_t)
+  (\mathrm{id}_2\otimes\mathcal E)(R_t)
   (I\otimes\sqrt\Delta)\le I_4.
-\tag{3}
+\qquad\text{(3)}
 ```
 
 **Theorem.** Suppose the actual spectral parameters obey
 
 ```math
 \boxed{D\ge19/10,\qquad 12/5\le t\le11/2.}
-\tag{4}
+\qquad\text{(4)}
 ```
 
 If there is an entanglement-breaking channel Psi from the head qubit
@@ -73,7 +73,7 @@ to Q such that
 
 ```math
 \boxed{\|\Phi-\Psi\|_\diamond\le2/5,}
-\tag{5}
+\qquad\text{(5)}
 ```
 
 then (3) holds strictly for every third pair. Consequently
@@ -91,7 +91,7 @@ Since `||h||<=2` and t>2, its resolvent satisfies
 ```math
 \left\|R_t-\frac{t}{t^2-4}I\right\|
 \le\frac2{t^2-4}.
-\tag{6}
+\qquad\text{(6)}
 ```
 
 Both dual channels are unital, so their difference kills the scalar
@@ -99,9 +99,9 @@ term. Duality between the completely bounded trace norm and operator
 norm gives, with `epsilon=||Phi-Psi||_diamond`,
 
 ```math
-\left\|(\operatorname{id}_2\otimes(\Phi^*-\Psi^*))(R_t)\right\|
+\left\|(\mathrm{id}_2\otimes(\Phi^*-\Psi^*))(R_t)\right\|
 \le\frac{2\epsilon}{t^2-4}.
-\tag{7}
+\qquad\text{(7)}
 ```
 
 The [exact last-query theorem](EXACT_LAST_QUERY_RESOLVENT.md#1-the-readout-elimination-theorem)
@@ -113,7 +113,7 @@ F(t)=\begin{cases}
 \displaystyle\frac1{2(\sqrt{2t^2-4}-t)},&2<t\le3\sqrt2,\\[5pt]
 \displaystyle\frac1{t-\sqrt2},&t\ge3\sqrt2.
 \end{cases}
-\tag{8}
+\qquad\text{(8)}
 ```
 
 Write an entanglement-breaking channel as
@@ -125,7 +125,7 @@ gives ` (id_2 tensor Psi^*)(R_t)<=F(t)I`. Thus (7) and
 ```math
 \boxed{\mathcal K_t\le
 (U-\ell)\left[F(t)+\frac{2\epsilon}{t^2-4}\right]I.}
-\tag{9}
+\qquad\text{(9)}
 ```
 
 The comparison permits mixed and nonorthogonal prepared states. It
@@ -153,7 +153,7 @@ This is strictly below one when
 
 ```math
 q_{\rm low}(t)=\frac{t^2}{2}-\frac{77t}{20}+\frac{629}{100}<0.
-\tag{10}
+\qquad\text{(10)}
 ```
 
 The branch interval is contained in `[12/5,17/4]`, because
@@ -170,7 +170,7 @@ Next suppose `t>=3sqrt(2)>4`. Using `sqrt(2)<10/7`, the bound
 ```math
 q_{\rm high}(t)=\frac45(t-19/10)(t-10/7)
  -(19/10-10/7)(t^2-4)<0.
-\tag{11}
+\qquad\text{(11)}
 ```
 
 This quadratic is convex, with leading coefficient 23/70. On the
@@ -194,7 +194,7 @@ Let `k=2+sqrt(2)` and suppose m>=k. The
 
 ```math
 D\ge6+2\sqrt2-4\sqrt3>19/10.
-\tag{12}
+\qquad\text{(12)}
 ```
 
 The strict comparison follows by positive squaring from
@@ -205,7 +205,7 @@ The positive-eigenvalue square budget from the two-mode reduction gives
 
 ```math
 \ell^2\le32-U^2-m^2\le20-8\sqrt2<9.
-\tag{13}
+\qquad\text{(13)}
 ```
 
 The last inequality uses `121<128`. Since `7/5<sqrt(2)<3/2`,
@@ -232,7 +232,7 @@ and let
 ```math
 H_0(c)=a\,ZIZI+b\,XIXI+c\,IZIZ+s\,IZYY
              +c\,IXZX-s\,IXXI.
-\tag{14}
+\qquad\text{(14)}
 ```
 
 As in that construction, the first reference is written in bisector
@@ -246,7 +246,7 @@ Hermitian contractions,
 
 ```math
 \boxed{\|H_0(c)+X_3B_3+Z_3D_3\|\le4+\sqrt2.}
-\tag{15}
+\qquad\text{(15)}
 ```
 
 The earlier exact spectral calculation gives
@@ -254,7 +254,7 @@ The earlier exact spectral calculation gives
 ```math
 U=m=\sqrt{7+4ac},\qquad
 \ell=L=\sqrt{7-4ac},\qquad d=U^2-1=6+4ac.
-\tag{16}
+\qquad\text{(16)}
 ```
 
 At c=0 the two displayed positive levels coincide; the subsequent
@@ -271,7 +271,7 @@ In the fixed logical Pauli frame of the exact construction,
 \Phi_c(Y)&=\eta XY,&
 \Phi_c(Z)&=\gamma IZ+\delta YY,
 \end{aligned}
-\tag{17}
+\qquad\text{(17)}
 ```
 
 where
@@ -282,7 +282,7 @@ where
 \eta&=-2bs/d,&\gamma&=\frac{8b+6abc}{Ud},&
 \delta&=\frac{2abs}{Ud}.
 \end{aligned}
-\tag{18}
+\qquad\text{(18)}
 ```
 
 At c=1 the last three coefficients beta,eta,delta vanish, while
@@ -293,10 +293,10 @@ For a qubit-input map Theta with **Theta(I)=0**, Pauli expansion gives
 
 ```math
 \Theta(A)=\frac12\sum_{\sigma=X,Y,Z}
- \operatorname{Tr}(\sigma A)\Theta(\sigma),\qquad
+ \mathrm{Tr}(\sigma A)\Theta(\sigma),\qquad
 \|\Theta\|_\diamond\le\frac12\sum_\sigma
  \|\Theta(\sigma)\|_1.
-\tag{19}
+\qquad\text{(19)}
 ```
 
 The second assertion uses that the completely bounded trace norm of
@@ -308,7 +308,7 @@ Pauli has trace norm four, hence
 \|\Phi_c-\Phi_1\|_\diamond\le
 2\bigl(|\alpha(c)-\alpha(1)|+|\gamma(c)-\gamma(1)|
        +|\beta|+|\eta|+|\delta|\bigr).
-\tag{20}
+\qquad\text{(20)}
 ```
 
 For `19/20<=c<=1`, use
@@ -318,7 +318,7 @@ For `19/20<=c<=1`, use
 ```math
 |\beta|\le3s/10,\qquad |\eta|\le3s/20,
 \qquad |\delta|\le s/20.
-\tag{21}
+\qquad\text{(21)}
 ```
 
 The sharper intermediate coefficients are 5/17, 1/7, and 5/102.
@@ -332,7 +332,7 @@ To control the two remaining terms, simplify and differentiate:
 ```math
 \gamma'(c)=-\frac{ab(17+30ac+12a^2c^2)}
                     {U^3(3+2ac)^2}.
-\tag{22}
+\qquad\text{(22)}
 ```
 
 Writing z=ac, we have `1<z<5/4`. In the last expression the numerator
@@ -348,7 +348,7 @@ Equations (20)--(22) yield a uniform bound in the full diamond norm:
 ```math
 \boxed{\|\Phi_c-\Phi_1\|_\diamond\le s+1-c
 \le\frac{29}{80}<\frac25.}
-\tag{23}
+\qquad\text{(23)}
 ```
 
 Indeed `s^2<=39/400<25/256`, so `s<=5/16`, and `1-c<=1/20`.
@@ -365,7 +365,7 @@ For the remaining angles define
 
 ```math
 c_*:=\frac{4\sqrt2-1}{2\sqrt6}.
-\tag{24}
+\qquad\text{(24)}
 ```
 
 When c<=c_*, (16) gives `U<=2+sqrt(2)`. Thus the triangle inequality
@@ -386,7 +386,7 @@ the normalized Choi partial transpose of Phi_c has eigenvalue
 
 ```math
 -\frac{bs}{6+4ac}<0.
-\tag{25}
+\qquad\text{(25)}
 ```
 
 Thus the converse includes a full continuous set of actual non-EB
@@ -414,7 +414,7 @@ difference of their two dilation channels gives
 ```math
 \|\Phi-\Psi\|_\diamond\le4\sqrt{1-f}
 \le2\sqrt2\,q,
-\tag{26}
+\qquad\text{(26)}
 ```
 
 where Psi is a memory-unitary conjugate of Psi0 and is still EB.
@@ -424,7 +424,7 @@ rectangle (4), the sufficient root-state distance is
 
 ```math
 q\le\sqrt2/10.
-\tag{27}
+\qquad\text{(27)}
 ```
 
 This continuity criterion is conditional. The additional construction in

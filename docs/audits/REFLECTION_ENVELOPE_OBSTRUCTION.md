@@ -35,7 +35,7 @@ Thus a^2+b^2=2 and C^2+S^2=1. Define
 H_0={}&aZ_1Z_A+bX_1X_A+aC Z_2Z_B-bS Z_2Z_AZ_B\\
  &+bC X_2Z_AX_B+aS X_2X_B.
 \end{aligned}
-\tag{1}
+\qquad\text{(1)}
 ```
 
 The original reference X/Z readouts before rewriting them in bisector
@@ -49,7 +49,7 @@ D_1=(aZ_A-bX_A)/\sqrt2,
 ```math
 B_2=\frac{(aC-bS Z_A)Z_B+(bC Z_A+aS I)X_B}{\sqrt2},\quad
 D_2=\frac{(aC-bS Z_A)Z_B-(bC Z_A+aS I)X_B}{\sqrt2}.
-\tag{2}
+\qquad\text{(2)}
 ```
 
 Each readout is a reflection. For the second pair, fix Z_A=z. The two
@@ -86,7 +86,7 @@ Hence all sixteen eigenvalues are
 ```math
 \lambda_{\alpha\beta r\pm}
 =a\alpha+aC\beta+aSr\pm b\sqrt{1+(rC-\beta S)^2}.
-\tag{3}
+\qquad\text{(3)}
 ```
 
 The two largest come from alpha=beta=+1, the positive square-root branch,
@@ -95,7 +95,7 @@ and respectively r=+1,-1:
 ```math
 U=\frac{1680+2\sqrt{144841}}{401\sqrt3},\qquad
 m=\frac{1520+2\sqrt{176761}}{401\sqrt3}.
-\tag{4}
+\qquad\text{(4)}
 ```
 
 For ordering, when alpha,beta are not both positive the largest possible
@@ -124,7 +124,7 @@ They give
 ```math
 \boxed{\frac{679}{200}<m<\frac{17}{5},\qquad
 c:=U-m>\frac{11}{100}.}
-\tag{5}
+\qquad\text{(5)}
 ```
 
 For explicit rational witnesses,
@@ -149,7 +149,7 @@ numbers. Since 7/5<sqrt(2)<283/200, (5) implies
 ```math
 m<2+\sqrt2,\qquad
 0<t-2<\frac1{50},\quad t:=4+\sqrt2-m.
-\tag{6}
+\qquad\text{(6)}
 ```
 
 Numerically, U is about 3.51472363 and m about 3.39910880. These decimal
@@ -170,7 +170,7 @@ with actual memory marginal
 
 ```math
 \boxed{\rho_Q=\frac{I+qZ_A}{4},\qquad q>\frac12.}
-\tag{7}
+\qquad\text{(7)}
 ```
 
 The last inequality is equivalent to 3*359^2>401^2. In particular this
@@ -178,10 +178,10 @@ marginal is full rank. Define Gamma=Y1Y2 and Omega_-=Gamma Omega. The exact
 cross marginal is
 
 ```math
-\boxed{\tau_Q:=\operatorname{Tr}_{R_1R_2}
+\boxed{\tau_Q:=\mathrm{Tr}_{R_1R_2}
 |\Omega\rangle\langle\Omega_-|
 =\frac{Y_AY_B}{4\sqrt{1+d^2}}.}
-\tag{8}
+\qquad\text{(8)}
 ```
 
 Indeed each local cross marginal equals minus the product of its two
@@ -195,7 +195,7 @@ Let P_+=(I+Z_A)/2 and P_-=(I-Z_A)/2. Take
 ```math
 B_3=P_+Z_B+P_-I_B,\qquad
 D_3=P_+X_B+P_-I_B.
-\tag{9}
+\qquad\text{(9)}
 ```
 
 On A=+ this is one sharp anticommuting pair; on A=- both readouts are
@@ -224,7 +224,7 @@ c\langle\Omega|(tI-h_3)^{-1}|\Omega\rangle
 \ge\frac{c(1+q)}{8(t-2)}I_{R_3}
 >\frac{(11/100)(3/2)}{8/50}I
 =\boxed{\frac{33}{32}I>I.}
-\tag{10}
+\qquad\text{(10)}
 ```
 
 Therefore the ordinary actual one-mode envelope
@@ -236,7 +236,7 @@ partner,
 ```math
 H_0\le mI+c|\Omega\rangle\langle\Omega|
  -(U+m)|\Omega_-\rangle\langle\Omega_-|.
-\tag{11}
+\qquad\text{(11)}
 ```
 
 The final resolvent is block diagonal in Z_A, whereas (8) is off-diagonal.
@@ -287,7 +287,7 @@ computational basis, including its off-diagonal input blocks. It is EB.
 Section 2 showed all other eigenvalues are less than two. Hence
 
 ```math
-H_0\le2I+V\operatorname{diag}(U-2,m-2)V^*.
+H_0\le2I+V\mathrm{diag}(U-2,m-2)V^*.
 ```
 
 At Lambda the scalar resolvent parameter is t=k=2+sqrt(2). The [exact pure-memory resolvent bound](ROBUST_HEAD_CHANNEL_CONVERSE.md#11-center-the-resolvent-before-comparing-channels),

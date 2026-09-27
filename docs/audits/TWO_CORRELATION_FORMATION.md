@@ -36,10 +36,10 @@ Let B be a trusted qubit with fixed Pauli X,Z. For d>=1 define
 $$
 E_d(x,z)=\min_{\substack{\omega_{AB}\text{ on }\mathbb C^d\otimes\mathbb C^2\\
  -I\le A_0,A_1\le I\\
- \operatorname{Tr}(\omega A_0\otimes X)=x\\
- \operatorname{Tr}(\omega A_1\otimes Z)=z}}
+ \mathrm{Tr}(\omega A_0\otimes X)=x\\
+ \mathrm{Tr}(\omega A_1\otimes Z)=z}}
  E_F(\omega_{AB}),\qquad 0\le x,z\le1.
-\tag{1}
+\qquad\text{(1)}
 $$
 
 The observables represent arbitrary binary POVMs. They are fixed for the
@@ -53,7 +53,7 @@ Use the existing notation
 $$
 f(v)=h_2\!\left(\frac{1-\sqrt{1-v^2}}2\right),\qquad
 \gamma(x,z)=f\!\left(\sqrt{[x^2+z^2-1]_+}\right).
-\tag{2}
+\qquad\text{(2)}
 $$
 
 Here C is the evaluated convex profile in
@@ -66,14 +66,14 @@ with cost f(v).
 $$
 E_2(x,z)=\gamma(x,z),\qquad
 E_d(x,z)=C(x,z)\quad(d\ge3).
-\tag{3}
+\qquad\text{(3)}
 $$
 
 One fixed qutrit pair attains the latter minimum throughout the square:
 
 $$
 A_0=1\oplus Z_A,\qquad A_1=1\oplus X_A.
-\tag{4}
+\qquad\text{(4)}
 $$
 
 Moreover
@@ -81,7 +81,7 @@ Moreover
 $$
 E_2>E_3\quad\Longleftrightarrow\quad
 x^2+z^2>1\ \text{and}\ \max(x,z)<1.
-\tag{5}
+\qquad\text{(5)}
 $$
 
 The least A dimension attaining the unrestricted minimum C is exactly
@@ -144,7 +144,7 @@ $$
 \ge\sum_k p_k C(|x_k|,|z_k|)
 \ge C\!\left(\sum_k p_k|x_k|,\sum_k p_k|z_k|\right)
 \ge C(x,z).
-\tag{6}
+\qquad\text{(6)}
 $$
 
 Infimize over pure decompositions. This proves E_d>=C for every d and
@@ -157,7 +157,7 @@ boundary point (u,s), u^2+s^2=1, and one exact-axis atom, say (1,v), with
 
 $$
 (x,z)=(1-p)(u,s)+p(1,v),\qquad C(x,z)=p f(v).
-\tag{7}
+\qquad\text{(7)}
 $$
 
 In the central region take v=1 and p=w(x,z); the supporting point is
@@ -181,7 +181,7 @@ state
 $$
 \omega=(1-p)|c\rangle\langle c|\otimes|\beta\rangle\langle\beta|
        +p|\psi_v^X\rangle\langle\psi_v^X|
-\tag{8}
+\qquad\text{(8)}
 $$
 
 has the desired correlations. Its displayed decomposition gives E_F<=p f(v),
@@ -205,7 +205,7 @@ Along any fixed ray outside the disk, the raw entropy
 For completeness, putting y=sqrt(2-r^2) gives the sign expression
 
 $$
-g''(r)=\frac{2\operatorname{atanh}y-y(2-y^2)/(1-y^2)}{y^3\ln2}<0.
+g''(r)=\frac{2\mathrm{atanh}y-y(2-y^2)/(1-y^2)}{y^3\ln2}<0.
 $$
 
 The numerator vanishes at y=0 and has derivative
@@ -226,7 +226,7 @@ then gives
 
 $$
 G(x,z)=f([x+z-1]_+).
-\tag{9}
+\qquad\text{(9)}
 $$
 
 This is the same evaluated function as the fixed-output-channel comparison
@@ -262,7 +262,7 @@ and Bob's X/Z measurements is
 $$
 P(a,b\mid i,j)=\frac{1+ab\,\delta_{ij}c_i}{4},
 \quad c_X=x,\quad c_Z=z.
-\tag{10}
+\qquad\text{(10)}
 $$
 
 It is Bell local throughout the entire square. Let shared independent
@@ -318,7 +318,7 @@ The original unresolved all-state gate remains
 $$
 \sum_{i,b}\|\sqrt\rho P_{i,b}\sqrt\rho\|_1
 \le\sqrt2\,n+(2-\sqrt2)S(\rho).
-\tag{11}
+\qquad\text{(11)}
 $$
 
 Neither (3) nor a sum of single-site formation costs proves (11): the

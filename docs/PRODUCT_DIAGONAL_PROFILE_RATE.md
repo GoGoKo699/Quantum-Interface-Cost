@@ -29,7 +29,7 @@ Write
 
 $$
 f(v)=h_2\!\left(\frac{1-\sqrt{1-v^2}}2\right),\qquad 0\le v\le1.
-\tag{1}
+\qquad\text{(1)}
 $$
 
 Define a scalar cost `C(x,z)` on `[0,1]^2` as follows. Available profile-cost
@@ -39,7 +39,7 @@ $$
 (u,v,0)\quad(u,v\ge0,\ u^2+v^2\le1),
 \qquad
 (1,v,f(v)),\quad(v,1,f(v))\quad(0\le v\le1).
-\tag{2}
+\qquad\text{(2)}
 $$
 
 Take convex combinations of these points, allow either profile coordinate
@@ -53,7 +53,7 @@ profile `(x_i,z_i)` and worst-case output dimension D satisfies
 
 $$
 \boxed{\log_2D\ge\sum_{i=1}^n C(x_i,z_i).}
-\tag{3}
+\qquad\text{(3)}
 $$
 
 Let `q_PD(n;x,z)` denote the minimum integer qubit budget in this class
@@ -63,7 +63,7 @@ $$
 \boxed{
 R_{\rm PD}(x,z):=\lim_{n\to\infty}\frac{q_{\rm PD}(n;x,z)}n=C(x,z).
 }
-\tag{4}
+\qquad\text{(4)}
 $$
 
 Thus C is also an achievable upper bound for the unrestricted profile
@@ -85,7 +85,7 @@ $$
 F_X^2=\|\sqrt\rho X\sqrt\rho\|_1^2=1-r_y^2-r_z^2,
 \qquad
 F_Z^2=1-r_x^2-r_y^2.
-\tag{5}
+\qquad\text{(5)}
 $$
 
 For a pair `(x,z)` outside the compatibility disk, the smallest entropy
@@ -93,7 +93,7 @@ of a single-qubit state with these exact scores is therefore
 
 $$
 \gamma(x,z)=h_2\!\left(\frac{1-\sqrt{2-x^2-z^2}}2\right).
-\tag{6}
+\qquad\text{(6)}
 $$
 
 Indeed, `|r|^2=2-x^2-z^2-r_y^2` is largest when `r_y=0`, and entropy
@@ -115,14 +115,14 @@ This function is strictly concave. For `s=sqrt(2-R^2)` in `(0,1)`,
 
 $$
 \phi''(R)=-\frac{J(s)}{s^3\ln2},\qquad
-J(s)=\frac{s(2-s^2)}{1-s^2}-2\operatorname{atanh}s.
+J(s)=\frac{s(2-s^2)}{1-s^2}-2\mathrm{atanh}s.
 $$
 
 Here `J(0)=0` and
 
 $$
 J'(s)=\frac{s^2+s^4}{(1-s^2)^2}>0.
-\tag{7}
+\qquad\text{(7)}
 $$
 
 Concavity extends to the endpoints by continuity. Suppose `x>=z`,
@@ -139,7 +139,7 @@ $$
 (x,z)=(1-p)u+p e,
 \qquad
 \gamma(x,z)=\phi(R)\ge p\phi(R/x)=p f(z/x).
-\tag{8}
+\qquad\text{(8)}
 $$
 
 The inequality is strict for the indicated interior segment. At `x=1`
@@ -168,7 +168,7 @@ Therefore, for `b=X,Z`,
 $$
 F_i^b(\rho)=\|\sqrt\rho P_{i,b}\sqrt\rho\|_1
 =\sum_y m_y F_b(\sigma_{i|y}).
-\tag{9}
+\qquad\text{(9)}
 $$
 
 The local eigenbasis is arbitrary, including axes with Y components.
@@ -190,7 +190,7 @@ $$
 S(\rho)=H(p)\ge\sum_i H(U_i\mid U_{-i})
 \ge\sum_i C(F_i^X,F_i^Z).
 }
-\tag{10}
+\qquad\text{(10)}
 $$
 
 Now refine an admissible instrument as in the
@@ -272,14 +272,14 @@ Let
 
 $$
 f^*(b)=\max_{0\le v\le1}\{bv-f(v)\},\qquad b\ge0.
-\tag{11}
+\qquad\text{(11)}
 $$
 
 For weights `a>=b>=0`, the exact entropy-penalized support of (2) is
 
 $$
 \boxed{M(a,b)=\max\{\sqrt{a^2+b^2},\ a+f^*(b)\}.}
-\tag{12}
+\qquad\text{(12)}
 $$
 
 Indeed, the disk has support `sqrt(a^2+b^2)`. At equal v the exact-X
@@ -289,7 +289,7 @@ gives the second term. Interchange a,b otherwise. Consequently
 
 $$
 C(x,z)=\sup_{a,b\ge0}\{ax+bz-M(a,b)\},
-\tag{13}
+\qquad\text{(13)}
 $$
 
 with the symmetric definition of M understood. This is ordinary convex
@@ -321,7 +321,7 @@ enlarging that construction to the full exact-axis curve improves it.
 
 $$
 \tau_*=2(1/\ln2-1)^2\simeq0.391957798455362.
-\tag{14}
+\qquad\text{(14)}
 $$
 
 For `0<z<=x<1` outside the compatibility disk,
@@ -332,7 +332,7 @@ C(x,z)<w(x,z)
 \quad\Longleftrightarrow\quad
 \frac{1-x}{1-z}<\tau_*.
 }
-\tag{15}
+\qquad\text{(15)}
 $$
 
 There is equality at and above the threshold. Interchange x,z for the
@@ -351,7 +351,7 @@ Direct algebra gives
 $$
 \sqrt{A^2+B^2}=A+B-1,\qquad
 Ax+Bz-(A+B-1)=w(x,z).
-\tag{16}
+\qquad\text{(16)}
 $$
 
 If `B>=1/ln2`, (12) has `M(A,B)=A+B-1`, so (13) proves `C>=w` at this
@@ -373,7 +373,7 @@ $$
 C(\eta,\eta)
 =\left[\frac{2\eta-\sqrt2}{2-\sqrt2}\right]_+.
 }
-\tag{17}
+\qquad\text{(17)}
 $$
 
 Thus all product-diagonal spectra, arbitrary rotations of qubit seeds,
@@ -393,7 +393,7 @@ For `0<v<=1` define
  b(v)=f'(v),\qquad k(v)=v-\frac{f(v)}{f'(v)},\qquad
  u(v)=\frac{1-k(v)^2}{1+k(v)^2},\qquad
  s(v)=\frac{2k(v)}{1+k(v)^2}.
-\tag{17a}
+\qquad\text{(17a)}
 ```
 
 Here s is the Z coordinate of a compatible profile, not an entropy.
@@ -412,7 +412,7 @@ so that `x>=z`. The following cases evaluate C throughout the unit square:
 
    ```math
    z=v-(1-x)\frac{v-s(v)}{1-u(v)}.
-   \tag{17b}
+   \qquad\text{(17b)}
    ```
 
    It satisfies `u(v)<x`. Set
@@ -425,7 +425,7 @@ so that `x>=z`. The following cases evaluate C throughout the unit square:
 
    ```math
    \boxed{(x,z)=p(1,v)+(1-p)(u(v),s(v)),\qquad C(x,z)=p f(v).}
-   \tag{17c}
+   \qquad\text{(17c)}
    ```
 
 The generating profile-cost decomposition in case 4 is unique, up to
@@ -440,7 +440,7 @@ with `f(0)=0`, gives `v f'(v)>f(v)>0`. In the interior,
 
 ```math
  k'(v)=\frac{f(v)f''(v)}{f'(v)^2}>0.
-\tag{17d}
+\qquad\text{(17d)}
 ```
 
 Consequently u strictly decreases and s strictly increases. To prove the
@@ -448,7 +448,7 @@ additional fact `s(v)<v`, put `t=sqrt(1-v^2)`. Differentiation of binary
 entropy gives `f'(v)=v atanh(t)/(t ln2)`. The exact identity
 
 ```math
- (\ln2)f(v)-(1-t)\operatorname{atanh}t
+ (\ln2)f(v)-(1-t)\mathrm{atanh}t
  =\ln\frac2{1+t}>0
 ```
 
@@ -472,7 +472,7 @@ Then `a>b>0`, `(a/R,b/R)=(u,s)`, and
 
 ```math
  \text{cost}\ \ge ax+bz-R
-\tag{17e}
+\qquad\text{(17e)}
 ```
 
 supports every generator of C. On the free disk this is Cauchy--Schwarz,
@@ -558,7 +558,7 @@ R(99/100,1/2)
 &\le\frac{87}{100}f(15/29)
 \simeq0.325066020634.
 \end{aligned}
-\tag{18}
+\qquad\text{(18)}
 $$
 
 Here R denotes the unrestricted common-across-sites profile rate. The
@@ -620,7 +620,7 @@ the following rigorous decimal intervals (their endpoints are rationals):
  \boxed{0.324848239185893024
  \le C(99/100,1/2)
  \le0.324848239186576377.}
-\tag{19}
+\qquad\text{(19)}
 ```
 
 The exact prescription is still (17a)–(17c), not the rounded numbers.
@@ -637,7 +637,7 @@ to `ln r=m ln2+2 atanh(t)`, `0<=t<=1/3`, with the explicit positive
 series remainder
 
 ```math
- 0\le 2\operatorname{atanh}t-
+ 0\le 2\mathrm{atanh}t-
  2\sum_{j=0}^{N-1}\frac{t^{2j+1}}{2j+1}
  \le\frac{2t^{2N+1}}{(2N+1)(1-t^2)}.
 ```

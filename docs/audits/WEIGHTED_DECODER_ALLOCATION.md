@@ -32,7 +32,7 @@ $$
 \sum_i(a_i+b_i)-\sum_{i=1}^{n-q}\delta_{(i)}
 =\sum_i\sqrt{a_i^2+b_i^2}
  +\sum_{i=n-q+1}^{n}\delta_{(i)}.}
-\tag{1}
+\qquad\text{(1)}
 $$
 
 Empty sums vanish. Maximizing over the stated readout class and
@@ -58,8 +58,8 @@ adjacency matrix pairing their X and Z queries. If M is the memory
 commutation matrix, the full terms `T_j=P_j tensor B_j` have matrix
 
 $$
-A=J+M,\qquad \operatorname{rank}_{\mathbb F_2}M\le2q.
-\tag{2}
+A=J+M,\qquad \mathrm{rank}_{\mathbb F_2}M\le2q.
+\qquad\text{(2)}
 $$
 
 The rank bound is prior graph-Clifford representation theory: rank `2r`
@@ -98,7 +98,7 @@ when labels tie. Thus `J+N=J(I+JN)` is invertible over `F_2`. Since
 `M=(J+N)+E`,
 
 $$
-\operatorname{rank}E\ge2m-\operatorname{rank}M\ge2(m-q).
+\mathrm{rank}E\ge2m-\mathrm{rank}M\ge2(m-q).
 $$
 
 The matching fact supplies the claimed edges. Equality in the threshold
@@ -117,7 +117,7 @@ when every original deficit is one, the bound is
 $$
 \left\|\sum_j c_jT_j\right\|_\infty
 \le\sum_j c_j-(m-q)_+.
-\tag{3}
+\qquad\text{(3)}
 $$
 
 For `m<=q`, (3) is simply triangle inequality.
@@ -194,7 +194,7 @@ Thus, for nonnegative contrasts `0<=x_i,z_i<=1`, the region is exactly
 $$
 \boxed{\sum_i w(x_i,z_i)\le q,\qquad
 w(x,z)=\left[x+z-1-\sqrt{2(1-x)(1-z)}\right]_+.}
-\tag{4}
+\qquad\text{(4)}
 $$
 
 Here the [existing retention-region proof](../EXACT_AXIS_SPECTRAL_REDUCTION.md)

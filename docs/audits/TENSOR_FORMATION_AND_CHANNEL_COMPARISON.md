@@ -45,7 +45,7 @@ $$
 =\bigotimes_{i=1}^n\frac{I+s_i\eta P_{b_i}}4
 =\frac1{d\,2^n}\sum_{S\subseteq[n]}
        \eta^{|S|}s_SP_{S,\mathbf b}.
-\tag{1}
+\qquad\text{(1)}
 $$
 
 Set `B_n(eta)=E_FA(Sigma^eta)`, using the established assemblage formation
@@ -63,8 +63,8 @@ Define, for k=1,...,n,
 $$
 m_k(\Gamma)=\frac1{2^n\binom nk}
  \sum_{\mathbf b}\sum_{|S|=k}\sum_{\mathbf s}
- s_S\operatorname{Tr}(P_{S,\mathbf b}\Gamma_{\mathbf s|\mathbf b}).
-\tag{2}
+ s_S\mathrm{Tr}(P_{S,\mathbf b}\Gamma_{\mathbf s|\mathbf b}).
+\qquad\text{(2)}
 $$
 
 **Moment theorem.** Exactly,
@@ -72,7 +72,7 @@ $$
 $$
 B_n(\eta)=\min\left\{\sum_a p_aS(\rho_a):
  \sum_a p_am_k(\Gamma^a)=\eta^k\quad(1\le k\le n)\right\}.
-\tag{3}
+\qquad\text{(3)}
 $$
 
 At most n+1 seed orbits suffice. The finite symmetry orbit may itself have
@@ -90,7 +90,7 @@ $$
 \mathcal T(\Gamma)_{\mathbf s|\mathbf b}
 =\frac1{d\,2^n}\left[I+\sum_{S\ne\varnothing}
     m_{|S|}(\Gamma)s_SP_{S,\mathbf b}\right].
-\tag{4}
+\qquad\text{(4)}
 $$
 
 Each group image retains its own flag and the same entropy S(rho).
@@ -116,7 +116,7 @@ $$
 \Gamma^\pm_{\mathbf s|\mathbf b}
 =\Sigma^\eta_{\mathbf s|\mathbf b}
  \mathbin\pm\frac{\epsilon s_1h(b_2)}{4^n}I
-\tag{5}
+\qquad\text{(5)}
 $$
 
 are strictly positive normalized quantum assemblages with marginal I/d.
@@ -133,7 +133,7 @@ Define the jointly attainable first-moment score
 $$
 j_n(\rho)=\max_{\Gamma:\ \sum_{\mathbf s}
                   \Gamma_{\mathbf s|\mathbf b}=\rho}m_1(\Gamma).
-\tag{6}
+\qquad\text{(6)}
 $$
 
 The unrestricted single-query score from the seed reduction is
@@ -142,7 +142,7 @@ $$
 f_n(\rho)=\frac1{2n}\sum_{i,b_i}
  \|\sqrt\rho P_{i,b_i}\sqrt\rho\|_1,
 \qquad j_n(\rho)\le f_n(\rho).
-\tag{7}
+\qquad\text{(7)}
 $$
 
 The inequality follows from trace-norm duality for every context-dependent
@@ -157,7 +157,7 @@ decoders need not be marginals of a common tuple POVM.
 
 $$
 S(\rho)\ge\frac{n[j_n(\rho)-t]}\delta.
-\tag{8}
+\qquad\text{(8)}
 $$
 
 If these statements fail, then `B_n(eta)<n(eta-t)/delta` for **every**
@@ -172,7 +172,7 @@ Its symmetry orbit has moments
 $$
 v_{j,k}=\binom nk^{-1}\sum_\ell
        \binom j\ell\binom{n-j}{k-\ell}t^{k-\ell}.
-\tag{9}
+\qquad\text{(9)}
 $$
 
 These n+1 vectors are affinely independent. Their generating polynomials,
@@ -181,7 +181,7 @@ including v_(j,0)=1, are
 $$
 F_j(z)=\sum_{k=0}^n\binom nk v_{j,k}z^k
       =(1+z)^j(1+tz)^{n-j}.
-\tag{10}
+\qquad\text{(10)}
 $$
 
 A vanishing linear combination, divided by (1+tz)^n near zero, becomes a
@@ -192,7 +192,7 @@ must vanish. For eta=t+delta p, 0<p<1, the target moment vector
 $$
 u=\sum_{j=0}^n\alpha_jv_j,\qquad
 \alpha_j=\binom njp^j(1-p)^{n-j}.
-\tag{11}
+\qquad\text{(11)}
 $$
 
 This follows by expanding `(1+eta z)^n` using
@@ -206,7 +206,7 @@ They need not be nonnegative. Choose
 $$
 0<\varepsilon<\min\left\{1,
              \min_{j:\beta_j>0}\frac{\alpha_j}{\beta_j}\right\}.
-\tag{12}
+\qquad\text{(12)}
 $$
 
 Mix this seed with weight epsilon and product atom j with weight
@@ -215,7 +215,7 @@ all target moments are restored exactly, while the entropy becomes
 
 $$
 np+\varepsilon[s-L(w)]<np.
-\tag{13}
+\qquad\text{(13)}
 $$
 
 Orbit completion in (4) makes this a full target decomposition. Failure
@@ -230,7 +230,7 @@ $$
 \beta_0=\frac{w_2-2w_1+1}{\delta^2},\quad
 \beta_1=\frac{2[(1+t)w_1-w_2-t]}{\delta^2},\quad
 \beta_2=\frac{w_2-2tw_1+t^2}{\delta^2}.
-\tag{14}
+\qquad\text{(14)}
 $$
 
 Consequently the eta^2 constraint cannot protect additivity from a seed
@@ -261,7 +261,7 @@ minimum dimension is three, versus two for the local task, at
 
 $$
 \eta_*=(1+1/\sqrt2)/2.
-\tag{15}
+\qquad\text{(15)}
 $$
 
 In integer-qubit units the two costs are two and one. A matching qutrit
@@ -273,8 +273,8 @@ whose essential prior ingredient is Cheng–Hall's independently optimized
 three-qubit CHSH monogamy inequality. It gives
 
 $$
-f_n(\rho)\le t+\delta/n\quad(\operatorname{rank}\rho\le2),
-\tag{16}
+f_n(\rho)\le t+\delta/n\quad(\mathrm{rank}\rho\le2),
+\qquad\text{(16)}
 $$
 
 and every equality seed, up to an output unitary and retained site r, is
@@ -282,7 +282,7 @@ and every equality seed, up to an output unitary and retained site r, is
 $$
 L=\frac1{\sqrt2}U\left(I_r\otimes
                       \bigotimes_{i\ne r}\langle\beta_i|\right),
-\tag{17}
+\qquad\text{(17)}
 $$
 
 where each beta_i has X and Z expectations `t a_(i,X),t a_(i,Z)` with
@@ -307,7 +307,7 @@ For a discarded site i and a retained site r, respectively,
 $$
 LP_{i,b_i}L^\dagger=\frac{t a_{i,b_i}}2I,
 \qquad LP_{r,b_r}L^\dagger=\frac12UP_{b_r}U^\dagger.
-\tag{18}
+\qquad\text{(18)}
 $$
 
 These matrices are invertible. Their unique optimizing contractions are
@@ -327,7 +327,7 @@ branch independently of r,
 $$
 m_2=t^2+\frac2n(t-t^2)
     =\eta_n^2-\frac{\delta^2}{n^2}<\eta_n^2.
-\tag{19}
+\qquad\text{(19)}
 $$
 
 This contradicts the target's second moment, proving impossibility.
@@ -341,7 +341,7 @@ four-by-four seed
 $$
 L=\frac12\left[aI+b(T\otimes I+I\otimes T)
                      -(1-a)T\otimes T\right].
-\tag{20}
+\qquad\text{(20)}
 $$
 
 In the product T eigenbasis its eigenvalues are
@@ -360,7 +360,7 @@ $$
 \Lambda_a\otimes\Lambda_a,\qquad
 \Lambda_a(\omega)=a\omega+\frac{1-a}2(X\omega X+Z\omega Z),
 \quad\Lambda_a^*(X)=aX,\quad\Lambda_a^*(Z)=aZ.
-\tag{21}
+\qquad\text{(21)}
 $$
 
 Only a qutrit crosses the interface: choose an isometry V_P from C^3
@@ -396,7 +396,7 @@ in [the profile theorem](../PRODUCT_DIAGONAL_PROFILE_RATE.md), and put
 
 $$
 f(v)=h_2\!\left(\frac{1-\sqrt{1-v^2}}2\right).
-\tag{22}
+\qquad\text{(22)}
 $$
 
 Consider the distinct completion problem
@@ -406,7 +406,7 @@ G(x,z)=\min_{\substack{\Lambda:\text{qubit CPTP}\\
                   \Lambda^*(X)=xX,\ \Lambda^*(Z)=zZ}}
  E_F(J_\Lambda),\qquad
 J_\Lambda=(\mathrm{id}\otimes\Lambda)(\Phi_2).
-\tag{23}
+\qquad\text{(23)}
 $$
 
 Here the output is a single qubit with fixed X,Z readouts; Phi_2 is the
@@ -417,7 +417,7 @@ unregularized formula for operational channel entanglement cost.
 
 $$
 G(x,z)=f([x+z-1]_+),\qquad C(x,z)\le G(x,z),
-\tag{24}
+\qquad\text{(24)}
 $$
 
 with the complete equality set
@@ -426,7 +426,7 @@ $$
 C(x,z)=G(x,z)
 \quad\Longleftrightarrow\quad
 x+z\le1\ \text{or}\ \max\{x,z\}=1.
-\tag{25}
+\qquad\text{(25)}
 $$
 
 In particular, at (3/5,4/5), C=0 but G=f(2/5)>0. The fixed-output
@@ -442,7 +442,7 @@ Bloch multipliers (x,y,z), with Bell weights
 $$
 (p_I,p_X,p_Y,p_Z)=\tfrac14
 (1+x+y+z,\ 1+x-y-z,\ 1-x+y-z,\ 1-x-y+z).
-\tag{26}
+\qquad\text{(26)}
 $$
 
 Complete positivity is exactly
@@ -460,7 +460,7 @@ both endpoint costs equal f(v). The midpoint M has
 
 $$
 C(M)=\left[\frac{1+v-\sqrt2}{2-\sqrt2}\right]_+<f(v).
-\tag{27}
+\qquad\text{(27)}
 $$
 
 For v<=sqrt(2)-1 this is immediate. Above that value, f is convex with
@@ -533,7 +533,7 @@ $$
 \sum_{i,b}\|\sqrt\rho P_{i,b}\sqrt\rho\|_1
 \le\sqrt2\,n+(2-\sqrt2)S(\rho)
 \quad\text{for every n and every n-qubit density matrix.}
-\tag{28}
+\qquad\text{(28)}
 $$
 
 A complete proof or a certified violation is needed. For the narrower

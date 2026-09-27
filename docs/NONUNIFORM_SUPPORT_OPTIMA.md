@@ -15,7 +15,7 @@ For a density matrix rho on n qubits, use the score
 $$
 g(\sqrt\rho)=\sum_{i=1}^n\sum_{U=X_i,Z_i}
 \|\sqrt\rho\,U\sqrt\rho\|_1.
-\tag{1}
+\qquad\text{(1)}
 $$
 
 The [normalized-seed reduction](COLLECTIVE_ENCODING_REDUCTION.md) allows
@@ -49,8 +49,8 @@ Root fidelity has the variational expression
 
 $$
 F(A,C)=\frac12\inf_{H>0}
-\bigl[\operatorname{Tr}(AH)+\operatorname{Tr}(CH^{-1})\bigr].
-\tag{2}
+\bigl[\mathrm{Tr}(AH)+\mathrm{Tr}(CH^{-1})\bigr].
+\qquad\text{(2)}
 $$
 
 For completeness, trace-norm duality and Hilbert--Schmidt Cauchy--Schwarz
@@ -92,7 +92,7 @@ Its determinant is `-pr`, and its trace norm is
 
 $$
 \frac1{\sqrt2}\sqrt{p^2+6pr+r^2}.
-\tag{3}
+\qquad\text{(3)}
 $$
 
 The formula includes a zero weight. Summing over orthogonal edge blocks
@@ -103,22 +103,22 @@ gives the full trace norm of each query.
 Define
 
 $$
-V_2=\operatorname{span}\{|00_B\rangle,|10_B\rangle,|01_B\rangle\}.
+V_2=\mathrm{span}\{|00_B\rangle,|10_B\rangle,|01_B\rangle\}.
 $$
 
 **Proposition 1.** The exact fixed-support optimum is
 
 $$
-\boxed{\max_{\operatorname{supp}\rho\subseteq V_2}
+\boxed{\max_{\mathrm{supp}\rho\subseteq V_2}
 g(\sqrt\rho)=\frac{18\sqrt2}{7}.}
-\tag{4}
+\qquad\text{(4)}
 $$
 
 It is attained by the diagonal state with probabilities
 
 $$
 p(00)=\frac37,\qquad p(10)=p(01)=\frac27.
-\tag{5}
+\qquad\text{(5)}
 $$
 
 Indeed, Section 1 reduces the optimization to
@@ -128,7 +128,7 @@ Indeed, Section 1 reduces the optimization to
 $$
 g_2(a)=2\sqrt2\bigl[\sqrt{a^2+6ab+b^2}+b\bigr]
 =\sqrt2\bigl[\sqrt{1+10a-7a^2}+1-a\bigr].
-\tag{6}
+\qquad\text{(6)}
 $$
 
 For `0<a<1`, the derivative divided by `sqrt(2)` is
@@ -167,7 +167,7 @@ g(\sqrt{P/3})=
 \frac{8+\sum_{i=1}^2
 (|\langle X_i\rangle_v|+|\langle Z_i\rangle_v|)}3
 \le\frac{8+2\sqrt2}{3}.
-\tag{7}
+\qquad\text{(7)}
 $$
 
 Each reduced Bloch vector has length at most one, proving the inequality.
@@ -180,7 +180,7 @@ The strict comparison is
 $$
 \frac{18\sqrt2}{7}-\frac{8+2\sqrt2}{3}
 =\frac{8(5\sqrt2-7)}{21}>0.
-\tag{8}
+\qquad\text{(8)}
 $$
 
 Thus the following assertion is false: **at each fixed rank r, the global
@@ -194,16 +194,16 @@ power-of-two ranks.
 Define
 
 $$
-V_3=\operatorname{span}\{
+V_3=\mathrm{span}\{
 |000_B\rangle,|100_B\rangle,|010_B\rangle,|001_B\rangle\}.
 $$
 
 **Proposition 2.** The exact fixed-support optimum is
 
 $$
-\boxed{\max_{\operatorname{supp}\rho\subseteq V_3}
+\boxed{\max_{\mathrm{supp}\rho\subseteq V_3}
 g(\sqrt\rho)=3\sqrt3.}
-\tag{9}
+\qquad\text{(9)}
 $$
 
 An attaining state has probabilities
@@ -211,7 +211,7 @@ An attaining state has probabilities
 $$
 p(000)=1-\frac{\sqrt6}{4},\qquad
 p(100)=p(010)=p(001)=\frac{\sqrt6}{12}.
-\tag{10}
+\qquad\text{(10)}
 $$
 
 Section 1 reduces the optimization to a central weight a and three equal
@@ -224,7 +224,7 @@ g_3(a)
 &=3\sqrt2\bigl[\sqrt{a^2+6ab+b^2}+2b\bigr]\\
 &=\sqrt2\bigl[\sqrt{1+16a-8a^2}+2(1-a)\bigr].
 \end{aligned}
-\tag{11}
+\qquad\text{(11)}
 $$
 
 The derivative divided by `sqrt(2)` is
@@ -250,7 +250,7 @@ In contrast, the normalized projector onto this same support has
 
 $$
 g(\sqrt{P_{V_3}/4})=3+\frac32\sqrt2<3\sqrt3.
-\tag{12}
+\qquad\text{(12)}
 $$
 
 The strict inequality follows from `2sqrt(3)>2+sqrt(2)`, whose square

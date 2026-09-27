@@ -31,14 +31,14 @@ with `1<=n<=4`. For `rho=P/2^(n-1)`,
 
 $$
 \boxed{g(\sqrt\rho)\le 2(n-1)+\sqrt2.}
-\tag{1}
+\qquad\text{(1)}
 $$
 
 Equality holds if and only if, for some input site i,
 
 $$
 P=|\beta\rangle\langle\beta|_i\otimes I_{\mathrm{rest}},
-\tag{2}
+\qquad\text{(2)}
 $$
 
 where beta is a pure X/Z bisector: its Bloch vector has zero Y component
@@ -85,7 +85,7 @@ $$
 S=\sum_{a\ne I}s_a\sigma_a,
 \qquad s_a\in\mathbb R,
 \qquad \sum_a s_a^2=1.
-\tag{3}
+\qquad\text{(3)}
 $$
 
 For each of the 2n local X/Z queries U, define its anticommuting weight
@@ -98,21 +98,21 @@ The associated score term satisfies
 
 $$
 F_U:=\frac1r\|PUP\|_1\le\sqrt{1-w_U}.
-\tag{4}
+\qquad\text{(4)}
 $$
 
 Indeed, `PUP` acts on an r-dimensional subspace. Trace-norm versus
 Hilbert--Schmidt Cauchy--Schwarz gives
 
 $$
-F_U\le\sqrt{\frac{\operatorname{Tr}[(PUP)^2]}r}.
+F_U\le\sqrt{\frac{\mathrm{Tr}[(PUP)^2]}r}.
 $$
 
 Since `tau(SUSU)=1-2w_U`, cyclicity of trace gives
 
 $$
-\operatorname{Tr}[(PUP)^2]
-=\operatorname{Tr}(PUPU)
+\mathrm{Tr}[(PUP)^2]
+=\mathrm{Tr}(PUPU)
 =\frac d4\bigl[1+\tau(SUSU)\bigr]
 =r(1-w_U),
 $$
@@ -124,7 +124,7 @@ strings:
 
 $$
 T=\sum_{i=1}^n(s_{X_i}^2+s_{Z_i}^2),\qquad 0\le T\le1.
-\tag{5}
+\qquad\text{(5)}
 $$
 
 Each of those strings anticommutes with exactly one query. Every other
@@ -134,14 +134,14 @@ Therefore
 
 $$
 \sum_U w_U\ge T+2(1-T)=2-T.
-\tag{6}
+\qquad\text{(6)}
 $$
 
 For any specified site i, its two-query deficit obeys
 
 $$
 w_{X_i}+w_{Z_i}\ge s_{X_i}^2+s_{Z_i}^2.
-\tag{7}
+\qquad\text{(7)}
 $$
 
 These estimates alone do not give (1). The additional constraint on the
@@ -156,7 +156,7 @@ L=\sum_{i=1}^n(s_{X_i}X_i+s_{Z_i}Z_i)
 =\sum_{i=1}^n\beta_i B_i,
 \qquad
 \beta_i=\sqrt{s_{X_i}^2+s_{Z_i}^2}\ge0.
-\tag{8}
+\qquad\text{(8)}
 $$
 
 When `beta_i>0`, `B_i` is the corresponding unit Pauli direction in
@@ -167,7 +167,7 @@ and the trace-norm duality inequality imply
 
 $$
 T=\tau(SL)\le\tau|L|,
-\tag{9}
+\qquad\text{(9)}
 $$
 
 because `||S||_infinity=1`.
@@ -183,7 +183,7 @@ $$
 &=\frac{\max(a,b+c+d)+\max(a,b+c-d)+2a}{4}\\
 &=\max\left\{a,\frac{3a+b+c+d}{4},\frac{a+b+c}{2}\right\}.
 \end{aligned}
-\tag{10}
+\qquad\text{(10)}
 $$
 
 To verify it, first average over the first sign, using
@@ -204,7 +204,7 @@ Equations (9)--(10) consequently force
 
 $$
 \boxed{\beta_{\max}\ge T\qquad(T>3/4).}
-\tag{11}
+\qquad\text{(11)}
 $$
 
 In particular, one site carries singleton squared weight at least
@@ -245,7 +245,7 @@ g(\sqrt\rho)
 \le\sqrt{m(m-2+T)}
 \le\sqrt{m(m-5/4)}
 <m-2+\sqrt2.
-\tag{12}
+\qquad\text{(12)}
 $$
 
 The strict final inequality follows by squaring: with `c=2-sqrt(2)`,
@@ -258,7 +258,7 @@ Equations (6)--(7) and (11) give
 
 $$
 W\ge T^2,\qquad W+V\ge2-T.
-\tag{13}
+\qquad\text{(13)}
 $$
 
 Cauchy--Schwarz separately on the two groups gives
@@ -266,7 +266,7 @@ Cauchy--Schwarz separately on the two groups gives
 $$
 g(\sqrt\rho)
 \le\sqrt{2(2-W)}+\sqrt{(m-2)(m-2-V)}.
-\tag{14}
+\qquad\text{(14)}
 $$
 
 The right side decreases with either group deficit. Its maximum subject
@@ -292,7 +292,7 @@ $$
 g(\sqrt\rho)\le B_n(T):=
 2\sqrt{1-T^2/2}
 +\sqrt{(m-2)(m-4+T+T^2)}.
-\tag{15}
+\qquad\text{(15)}
 $$
 
 The function `B_n` is strictly increasing on `[0,1]`. Since
@@ -316,7 +316,7 @@ $$
 &\quad=1+4T-\frac12T^2-2T^3-2T^4\\
 &\quad\ge1+4T-\frac92T^2\ge\frac12>0.
 \end{aligned}
-\tag{16}
+\qquad\text{(16)}
 $$
 
 The first inequality uses `T^3,T^4<=T^2`; the second follows because
@@ -365,7 +365,7 @@ calculation changes to
 
 $$
 \begin{aligned}
-\operatorname{Tr}[(PUP)^2]
+\mathrm{Tr}[(PUP)^2]
 &=\frac d4\left[1+2s_0+\tau(SUSU)\right]\\
 &=r-\frac d2w_U.
 \end{aligned}
@@ -387,7 +387,7 @@ $$
 g(\sqrt{P/r})
 \le\sqrt{2n\left(2n-2+\frac{2r}{d}\right)}.
 }
-\tag{17}
+\qquad\text{(17)}
 $$
 
 At n=3 and `r<=3` this is at most `sqrt(57/2)`, strictly below
@@ -406,7 +406,7 @@ coefficients of L as `a>=b>=c>=0`. Its three largest eigenvalues are
 `a+b+c`, `a+b-c`, and `a-b+c`. Since `Tr L=0`,
 
 $$
-T=\tau(SL)=\frac14\operatorname{Tr}(PL)
+T=\tau(SL)=\frac14\mathrm{Tr}(PL)
 \le\frac{3a+b+c}{4}
 \le\frac{\sqrt{11T}}4,
 $$
@@ -429,7 +429,7 @@ g(\sqrt{P/3})\le\sqrt{6\left(6-\frac43\frac{19}{16}\right)}
 =\sqrt{\frac{53}{2}}
 <3\sqrt2+(2-\sqrt2)\log_2 3.
 }
-\tag{18}
+\qquad\text{(18)}
 $$
 
 The strict entropy comparison is exact: `3^7>2^11` gives
@@ -454,7 +454,7 @@ $$
 For each singleton axis `B_i` in (8), its coefficient obeys
 
 $$
-\beta_i=\tau(SB_i)=\frac{2\operatorname{Tr}(PB_i)}{16}
+\beta_i=\tau(SB_i)=\frac{2\mathrm{Tr}(PB_i)}{16}
 \le\frac{2r}{16}=\frac78.
 $$
 
@@ -476,7 +476,7 @@ $$
 g(\sqrt{P/7})
 \le\sqrt{8\left(8-\frac87\sum_Uw_U\right)}
 \le\sqrt{54}<6+\sqrt2.
-\tag{19}
+\qquad\text{(19)}
 $$
 
 For n=2, the only smaller flat rank is r=1, and (17) gives

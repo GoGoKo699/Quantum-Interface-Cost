@@ -30,7 +30,7 @@ Equation (2), p. 5, uses alpha>=1 and the weighted CHSH score
 $$
 S_\alpha=\alpha\langle A_0(B_0+B_1)\rangle
 +\langle A_1(B_0-B_1)\rangle.
-\tag{1}
+\qquad\text{(1)}
 $$
 
 Corollary 1 starts on p. 15. Equation (30), p. 16, bounds **ordinary
@@ -38,7 +38,7 @@ negativity** for every two-qubit state when S_alpha>2alpha:
 
 $$
 2N\ge\sqrt{S_\alpha^2/4-\alpha^2}.
-\tag{2}
+\qquad\text{(2)}
 $$
 
 Equation (31) on that page supplies Bell-diagonal saturators. Corollary
@@ -67,7 +67,7 @@ t_\alpha=\sqrt{a^2/\alpha^2+b^2},\quad
 \cos\theta=\frac{a}{\alpha t_\alpha},\quad
 \sin\theta=\frac{b}{t_\alpha},\quad
 B_\pm=\cos\theta X\pm\sin\theta Z.
-\tag{3}
+\qquad\text{(3)}
 $$
 
 The cosine and sine are normalized. Anticommutation of X,Z makes B_+
@@ -76,7 +76,7 @@ S_alpha=2(ax+bz)/t_alpha. Therefore (2) implies
 
 $$
 ax+bz\le\sqrt{(a^2/\alpha^2+b^2)(\alpha^2+v^2)}.
-\tag{4}
+\qquad\text{(4)}
 $$
 
 This also holds when S_alpha<=2alpha: the right side is at least
@@ -97,7 +97,7 @@ $$
 R\sqrt{1+v^2},&0\le v\le b/a,\\
 a+bv,&b/a\le v\le1.
 \end{cases}}
-\tag{5}
+\qquad\text{(5)}
 $$
 
 For b=0 the statement is simply ax<=a. Exchanging the weights gives
@@ -135,7 +135,7 @@ $$
 E_F\!\left(\bigoplus_jp_j\rho_j\right)
 =\sum_jp_jE_F(\rho_j),\qquad
 V\!\left(\bigoplus_jp_j\rho_j\right)=\sum_jp_jV(\rho_j).
-\tag{6}
+\qquad\text{(6)}
 $$
 
 The first identity follows from convexity and local-measurement
@@ -154,7 +154,7 @@ incorrectly: a+bv<=B_v(a,b) everywhere by Cauchy–Schwarz. Thus
 $$
 \max_{0\le v\le1}[B_v(a,b)-q(v)]
 =\max\left\{R,\ a+\max_{0\le v\le1}[bv-\mu f(v)-\lambda v]\right\}.
-\tag{7}
+\qquad\text{(7)}
 $$
 
 This bound is attained; a=b=0 is immediate. Otherwise a product state
@@ -169,7 +169,7 @@ $$
 \boxed{\sup[ax+bz-\mu E-\lambda V]
 =\max\left\{\sqrt{a^2+b^2},\ a+
 \max_{0\le v\le1}[bv-\mu f(v)-\lambda v]\right\}.}
-\tag{8}
+\qquad\text{(8)}
 $$
 
 Taking mu=1 gives every scalarization E+lambda V. Standard convex

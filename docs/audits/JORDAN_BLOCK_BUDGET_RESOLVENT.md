@@ -28,7 +28,7 @@ Extend Phi and the gain G below symmetrically to unordered arguments.
 Define the rho-weighted last-query resolvent on a reference qubit by
 
 ```math
-R_t(\rho;B,D)=\operatorname{Tr}_Q\left[
+R_t(\rho;B,D)=\mathrm{Tr}_Q\left[
 (I\otimes\sqrt\rho)(tI-X\otimes B-Z\otimes D)^{-1}
 (I\otimes\sqrt\rho)\right].
 ```
@@ -48,7 +48,7 @@ Then its exact optimal resolvent is
 ```math
 \boxed{F_k(t,\rho)=s+
 \sum_{j=1}^{k}G_t(\lambda_j,\lambda_{M+1-j}).}
-\tag{1}
+\qquad\text{(1)}
 ```
 
 The k outermost eigenvalue pairs are optimal. This works in odd and even
@@ -71,7 +71,7 @@ signs on its complement and allowing commuting pairs. Then
 F_{\rm one}(t,\rho)
 =(1-\lambda_1-\lambda_M)s+\Phi_t(\lambda_1,\lambda_M).
 }
-\tag{2}
+\qquad\text{(2)}
 ```
 
 The formula is valid in odd and even memory dimension. It depends only
@@ -242,7 +242,7 @@ F_{11}(t,\rho)=\max\left\{
 (\lambda_2+\lambda_3)s+\Psi_t(\lambda_1,\lambda_4),\quad
 (\lambda_1+\lambda_2)s+\Psi_t(\lambda_3,\lambda_4)
 \right\}.}
-\tag{3}
+\qquad\text{(3)}
 ```
 
 The derivation is the same spectrum sorting, but the all-scalar value is
@@ -278,8 +278,8 @@ In the frequent range 2<t<=2+sqrt(2), one has f_a>=s throughout and only
 the first term in (3) is needed. Indeed
 
 ```math
-\operatorname{sign}(f_a-s)
-=\operatorname{sign}[(\sqrt2-a)(\sqrt2+2a-t)].
+\mathrm{sign}(f_a-s)
+=\mathrm{sign}[(\sqrt2-a)(\sqrt2+2a-t)].
 ```
 
 For a flat ququart marginal,

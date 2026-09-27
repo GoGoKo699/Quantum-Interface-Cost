@@ -30,14 +30,14 @@ Define the following function on the unit square:
 
 $$
 w(x,y)=\max\{0,\ x+y-1-\sqrt{2(1-x)(1-y)}\}.
-\tag{1}
+\qquad\text{(1)}
 $$
 
 **Theorem.** A contrast profile is feasible if and only if
 
 $$
 \boxed{\sum_{i=1}^n w(\eta_{i,X},\eta_{i,Z})\le1.}
-\tag{2}
+\qquad\text{(2)}
 $$
 
 Equivalently, for arbitrary nonnegative weights a_i,b_i, put
@@ -48,17 +48,17 @@ $$
 \boxed{\max_{\text{feasible }\eta}
 \sum_i(a_i\eta_{i,X}+b_i\eta_{i,Z})
 =\sum_i r_i+\max_i\delta_i.}
-\tag{3}
+\qquad\text{(3)}
 $$
 
 Define the quarter disk `D={(x,y) in [0,1]^2:x^2+y^2<=1}` and the
 square `S=[0,1]^2`. A third equivalent description is
 
 $$
-\boxed{\mathcal K_n=\operatorname{conv}
+\boxed{\mathcal K_n=\mathrm{conv}
 \left(\bigcup_{k=1}^n
 \mathcal D^{k-1}\times\mathcal S\times\mathcal D^{n-k}\right).}
-\tag{4}
+\qquad\text{(4)}
 $$
 
 The all-classical region `D^n` is already included. The full region
@@ -97,7 +97,7 @@ Cheng–Hall's independently optimized common-qubit bound gives
 $$
 \left(\frac{f_i}{r_i}\right)^2+
 \left(\frac{f_k}{r_k}\right)^2\le2.
-\tag{5}
+\qquad\text{(5)}
 $$
 
 The common system is the retained qubit. The three-qubit marginal may
@@ -110,7 +110,7 @@ because each trace norm is at most one. Consequently every seed obeys
 
 $$
 \sum_i f_i\le\sum_i r_i+\max_i\delta_i.
-\tag{6}
+\qquad\text{(6)}
 $$
 
 ## 3. Converse for arbitrary physical branches
@@ -143,7 +143,7 @@ For any `(u,v)` in D, the four-outcome parent POVM
 
 $$
 G_{s,t}=\tfrac14(I+s u X+t v Z),\qquad s,t\in\{+1,-1\},
-\tag{7}
+\qquad\text{(7)}
 $$
 
 is positive and sums to I. Reporting s for an X query or t for a Z
@@ -174,14 +174,14 @@ For a single pair `(x,y)`, the minimum fraction p for which
 
 $$
 (x,y)=p\,s+(1-p)d,\qquad s\in\mathcal S,\ d\in\mathcal D,
-\tag{8}
+\qquad\text{(8)}
 $$
 
 is possible is w(x,y). Indeed, necessity follows from
 
 $$
 \|((x,y)-p(1,1))_+\|_2\le1-p,
-\tag{9}
+\qquad\text{(9)}
 $$
 
 using `s<= (1,1)` coordinatewise. If `(x,y)` lies in D, p=0 suffices.
@@ -227,7 +227,7 @@ $$
 w(\eta_i,\eta_i)=\frac{(\eta_i-\eta_0)_+}{1-\eta_0},
 \qquad
 \boxed{\sum_i(\eta_i-\eta_0)_+\le1-\eta_0.}
-\tag{10}
+\qquad\text{(10)}
 $$
 
 This slice is a polytope, with nonnegative support function

@@ -30,8 +30,8 @@ that subspace. Thus
 $$
 \rho=(1-\epsilon)\sigma+\epsilon\tau,
 \qquad \sigma\tau=0,
-\qquad \operatorname{rank}\sigma,\operatorname{rank}\tau\le2.
-\tag{1}
+\qquad \mathrm{rank}\sigma,\mathrm{rank}\tau\le2.
+\qquad\text{(1)}
 $$
 
 **Theorem.** If `0<epsilon<=1/29` and `g(sigma)>10/3`, then
@@ -49,7 +49,7 @@ $$
 \boxed{2^{-20}<\lambda_3+\lambda_4<\frac1{29},\qquad
 \frac{\lambda_2}{\lambda_1+\lambda_2}>\frac15,\qquad
 g(\sigma)\le\frac{10}{3}.}
-\tag{2}
+\qquad\text{(2)}
 $$
 
 The top-two subspace is unique for every state to which the new high-score
@@ -84,7 +84,7 @@ d&=G(m)-g(\sigma),&
 a_0&=2-G_{\rm act}(m),\\
 \delta(m)&=2\sqrt2+c h_2(m)-G(m).
 \end{aligned}
-\tag{3}
+\qquad\text{(3)}
 $$
 
 The [rank-two spectrum theorem](../ENTROPY_INEQUALITY_BOUNDARIES.md),
@@ -109,7 +109,7 @@ $$
 g(\sigma)&\le\sqrt{4-b^2}+\sqrt{1-b^2}+|b|\\
 &\le3+|b|-\frac34 b^2\le\frac{10}{3}.
 \end{aligned}
-\tag{4}
+\qquad\text{(4)}
 $$
 
 Thus the inactive site has **two scalar decoders**. Relabel it B and the
@@ -120,7 +120,7 @@ B_0=\frac{X_B+Z_B}{\sqrt2},\quad
 C_0=\frac{X_B-Z_B}{\sqrt2},\quad
 P_* = I_A\otimes|\beta_+\rangle\langle\beta_+|,
 \quad Q_*=I-P_*.
-\tag{5}
+\qquad\text{(5)}
 $$
 
 Here beta_+ is the positive eigenstate of the signed bisector B_0;
@@ -134,9 +134,9 @@ matrix `M=[[A,B],[B^dagger,D]]` satisfies
 
 $$
 \|M\|_1\le\|A\|_1+
-\operatorname{Tr}(B^\dagger|A|^{-1}B)
+\mathrm{Tr}(B^\dagger|A|^{-1}B)
 +\|D-B^\dagger A^{-1}B\|_1.
-\tag{6}
+\qquad\text{(6)}
 $$
 
 Indeed, write M as
@@ -160,11 +160,11 @@ All these compressions will be shown invertible below. Applying (6) to
 $$
 \begin{aligned}
 g(\rho)&\le(1-\epsilon)g(\sigma)+\epsilon g(\tau)+2\epsilon K,\\
-K&=\sum_U\operatorname{Tr}(\tau QUP C_U PUQ),\\
+K&=\sum_U\mathrm{Tr}(\tau QUP C_U PUQ),\\
 \Delta(\rho)&\ge(1-\epsilon)[\delta(m)+d]
 +c h_2(\epsilon)-2\epsilon K.
 \end{aligned}
-\tag{7}
+\qquad\text{(7)}
 $$
 
 The entropy identity for orthogonal supports in (1) is exact, and
@@ -175,7 +175,7 @@ Generally, with `kappa=p/m`,
 
 $$
 \|C_U\|_\infty\le\frac{\sqrt\kappa}{s_{\min}(T_U)}.
-\tag{8}
+\qquad\text{(8)}
 $$
 
 To prove (8), direct multiplication gives `C_U T_U sigma T_U C_U=sigma`.
@@ -195,9 +195,9 @@ The rank-two correlation bound gives `L>=0`, while the scalar B decoders
 give the exact identity and lower bound
 
 $$
-\xi=2\sqrt2\operatorname{Tr}(\sigma P Q_*P)
+\xi=2\sqrt2\mathrm{Tr}(\sigma P Q_*P)
 \ge2\sqrt2(m u+p v).
-\tag{9}
+\qquad\text{(9)}
 $$
 
 The final inequality pairs the larger principal-angle eigenvalue with
@@ -226,7 +226,7 @@ Since `sigma>=mP`, partial trace and the minimum-eigenvalue bound imply
 
 $$
 r_B(\sigma)\le R:=1-2m(1-q).
-\tag{10}
+\qquad\text{(10)}
 $$
 
 The required stronger active-score estimate is a consequence of an
@@ -246,7 +246,7 @@ sqrt(2), is an admissible CHSH value, and `r_Q=p-m`. Hence
 
 $$
 f_A^2\le2M_{AQ}\le2(1+r_B^2-(p-m)^2).
-\tag{11}
+\qquad\text{(11)}
 $$
 
 The pure three-qubit hypothesis holds because the **core**, not the full
@@ -260,7 +260,7 @@ $$
 L\ge\frac{1-r_B^2}{G_{\rm act}}
 \ge m(1-q^2)
 \ge m(1-u)(\sqrt u-\sqrt v)^2.
-\tag{12}
+\qquad\text{(12)}
 $$
 
 Here `G_act<=2` and `1-R^2>=2m(1-q^2)` because `m<=1/2`.
@@ -292,7 +292,7 @@ For the last inequality, complete the square in r. Its largest possible
 difference is less than
 `17/210-7/80+49/12800=-731/268800`. Therefore
 
-$$\boxed{u<\frac1{20}.}\tag{13}$$
+$$\boxed{u<\frac1{20}.}\qquad\text{(13)}$$
 
 ## 5. Exact finite-angle bounds for K
 
@@ -302,9 +302,9 @@ For either active-site query V, `[V,P_*]=0`, so
 `s_min(PVP)>=sqrt(1-4u)>0`. Trace-norm Cauchy--Schwarz also gives
 
 $$
-F_V(\sigma)^2\le\operatorname{Tr}(\sigma(PVP)^2),
+F_V(\sigma)^2\le\mathrm{Tr}(\sigma(PVP)^2),
 \qquad
-1-F_V(\sigma)\ge\tfrac12\operatorname{Tr}(\sigma PVQVP).
+1-F_V(\sigma)\ge\tfrac12\mathrm{Tr}(\sigma PVQVP).
 $$
 
 Using (8), `tau<=I_Q` and `sigma>=mP`, the two active terms satisfy
@@ -313,7 +313,7 @@ $$
 K_A\le\min\left\{
 B(u,m)[a_0+L],\frac{8\sqrt\kappa u}{\sqrt{1-4u}}\right\},
 \qquad B(u,m)=\frac{2\sqrt\kappa}{m\sqrt{1-4u}}.
-\tag{14}
+\qquad\text{(14)}
 $$
 
 The term `a_0+L=2-f_A` must not be replaced by L alone.
@@ -341,7 +341,7 @@ Consequently
 $$
 K_B\le A(u):=
 \sqrt2(1-2u)\left[\frac{2}{1-8u+8u^2}-1\right].
-\tag{15}
+\qquad\text{(15)}
 $$
 
 Here is the operator step preserving the finite-angle cancellation. The
@@ -360,7 +360,7 @@ On `0<=u<=1/20`,
 $$
 A(u)-\sqrt2\le29u,\qquad
 B(u,m)\le\frac{\sqrt5\sqrt\kappa}{m}.
-\tag{16}
+\qquad\text{(16)}
 $$
 
 For the first, the difference of numerator polynomials decreases on that
@@ -377,7 +377,7 @@ Equations (9), (12), (14)--(16) yield the two useful bounds
 $$
 \boxed{K-\sqrt2\le
 \min\{C_1d+B_*a_0,\ C_2d\}.}
-\tag{17}
+\qquad\text{(17)}
 $$
 
 For the second, (14) is at most `4sqrt(5)sqrt(kappa)u` and
@@ -408,7 +408,7 @@ For `epsilon<=1/100`, (7), (17) and `delta>=0` give
 $$
 \Delta(\rho)\ge c h_2(\epsilon)-2\sqrt2\epsilon
 +(1-\epsilon-2\epsilon C_2)d>0.
-\tag{18}
+\qquad\text{(18)}
 $$
 
 The coefficient of d is positive because `C_2<41`. The remaining term
@@ -437,7 +437,7 @@ $$
 \frac{57}{2}u+\frac{11}{2}L\le19(\xi+L)=19d,
 \qquad
 K\le\sqrt2+19d+\frac{11}{2}a_0.
-\tag{19}
+\qquad\text{(19)}
 $$
 
 For an explicit verification, the quadratic matrix has off-diagonal
@@ -467,7 +467,7 @@ $$
 F(\epsilon)=c h_2(\epsilon)-2\sqrt2\epsilon
 +(1-39\epsilon)d_{\rm flat}+27\epsilon a_0
 -c(1-\epsilon)[1-h_2(m)].
-\tag{20}
+\qquad\text{(20)}
 $$
 
 It is concave in epsilon. The scalar inequalities
@@ -503,7 +503,7 @@ It remains to consider
 $$
 \frac1{100}\le\epsilon\le\frac1{29},
 \qquad \frac3{10}\le m\le\frac9{20}.
-\tag{21}
+\qquad\text{(21)}
 $$
 
 The [exact two-qubit SLD minimum](../TWO_QUBIT_SLD_SPECTRUM.md) gives
@@ -516,7 +516,7 @@ D(\epsilon,m)={}&2\sqrt{A-z}-(2+\sqrt2)-c h_2(\epsilon)\\
 &+c(1-\epsilon)[1-h_2(m)]
 +\epsilon\max\{0,c-1/\sqrt A\}.
 \end{aligned}
-\tag{22}
+\qquad\text{(22)}
 $$
 
 If the exact spectral SLD bound fails to certify the entropy target,
@@ -555,7 +555,7 @@ or at `d_*=b/(C_2-C_1)` if that point lies between them. Equations
 $$
 \boxed{c h_2(\epsilon)-2\sqrt2\epsilon
 +(1-\epsilon)\delta(m)-\Lambda(\epsilon,m)>0.}
-\tag{23}
+\qquad\text{(23)}
 $$
 
 This is an optimization over two real scalars, not over quantum states.
@@ -622,7 +622,7 @@ calculation. Here the scalar expression satisfies
 
 $$D(\epsilon,m)\le0,\qquad
 0\le\epsilon\le1/29,\quad 0\le m\le1/5,
-\tag{24}$$
+\qquad\text{(24)}$$
 
 and is strictly negative when epsilon is positive. We prove this by
 reducing the rectangle to four endpoints.
@@ -729,7 +729,7 @@ completing a quantitative step that was only existential in
 
 First, every rank-two core satisfying `m>=1/5` and `g(sigma)<=10/3` has
 
-$$\boxed{\Delta(\sigma)>\frac1{100}.}\tag{25}$$
+$$\boxed{\Delta(\sigma)>\frac1{100}.}\qquad\text{(25)}$$
 
 This is a gap on the specified low-score core set. It is not a positive
 gap for arbitrary rank-two states, which include equality states.
@@ -740,7 +740,7 @@ endpoint. Indeed, with `r=1-2m`,
 
 $$
 \delta'(m)=2r\left[
-\frac{c}{\ln2}\frac{\operatorname{atanh}r}{r}
+\frac{c}{\ln2}\frac{\mathrm{atanh}r}{r}
 -\frac2{G_{\rm act}(m)}\right].
 $$
 
@@ -791,7 +791,7 @@ g(\rho)&\le(1-\epsilon)g(\sigma)+\epsilon g(\tau)
 +\epsilon\Delta(\tau)+c h_2(\epsilon)
 -8\sqrt{\epsilon(1-\epsilon)}.
 \end{aligned}
-\tag{26}
+\qquad\text{(26)}
 $$
 
 Both cores and tails have rank at most two, so the old rank-two theorem

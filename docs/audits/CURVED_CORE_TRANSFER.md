@@ -64,7 +64,7 @@ proves `m>7/32`, `u<1/10`, and
 $$
 \xi\ge2smu,\qquad d\ge mB(m)u,\qquad
 B(m)=2s+\frac{2s\kappa}{2s\kappa+1},\qquad d<G-13/4.
-\tag{1}
+\qquad\text{(1)}
 $$
 
 In particular all active compressions are invertible, while the signed
@@ -90,7 +90,7 @@ The finite-tail scalar-site gain obeys
 $$
 \boxed{f_B(\rho)-qf_B(\sigma)-ef_B(\tau)
 \le H_\ell(q,e)+H_h(q,e)=:\mathcal B(e,u).}
-\tag{2}
+\qquad\text{(2)}
 $$
 
 **Paired-mode reduction.** For either signed scalar query use its
@@ -150,7 +150,7 @@ For stable scalar evaluation set `b=4qe`, `W=1-8u+8u^2`. Since
 
 $$
 \mathcal B(e,u)=\sqrt{1+b+\sqrt{(1-b)^2W^2+4b}}-s(1-2u).
-\tag{3}
+\qquad\text{(3)}
 $$
 
 ## 4. Active-site gain and the transfer certificate
@@ -159,7 +159,7 @@ For an invertible Hermitian matrix M, put `F=Tr|M|` and
 `K=Tr(XX^dagger|M|^{-1})`. Weighted Hilbert--Schmidt Cauchy gives
 
 $$
-\operatorname{Tr}\sqrt{M^2+\alpha XX^\dagger}
+\mathrm{Tr}\sqrt{M^2+\alpha XX^\dagger}
 \le\sqrt{F(F+\alpha K)}.
 $$
 
@@ -177,7 +177,7 @@ $$
 K_A\le\min\left\{
 \frac{2\sqrt\kappa(2-g_a+L)}{m\sqrt{1-4u}},
 \frac{8\sqrt\kappa u}{\sqrt{1-4u}}\right\}.
-\tag{4}
+\qquad\text{(4)}
 $$
 
 The two K_A bounds are from
@@ -188,7 +188,7 @@ identity and `D_tau>=0` give
 
 $$
 -D_\rho\le T:=\mathcal A+\mathcal B-q(\delta+d_0)-c h_2(e).
-\tag{5}
+\qquad\text{(5)}
 $$
 
 The tail's entropy stays paired with its actual score. Thus T<0 is
@@ -208,7 +208,7 @@ g(\rho)\le\Phi(S,a_*),\qquad
 \Phi(S,a)=\begin{cases}2\sqrt S,&a\le\sqrt S,\\
 a+\sqrt{2S-a^2},&a\ge\sqrt S.
 \end{cases}
-\tag{6}
+\qquad\text{(6)}
 $$
 
 The physical domain has `a^2<=2S`. No joint-decoder assumption enters.
@@ -233,7 +233,7 @@ boundary is handled by continuity. This gives the tail-independent bound
 $$
 -D_\rho\le J:=\Phi(S_0,a_*)-2s-c[h_2(e)+q h_2(m)+e]
 +e\max\{0,c-1/\sqrt{S_0}\}.
-\tag{7}
+\qquad\text{(7)}
 $$
 
 Thus J<0 is a second strict certificate. This step uses the spectral
@@ -247,7 +247,7 @@ The [checker](../../tools/certify_curved_core.py) verifies `T<0` or
 $$
 1/99\le e\le1/29,\quad7/32\le m\le1/2,\quad
 0\le u\le1/10,\quad0\le L\le1/6,\quad d_0\le G-13/4.
-\tag{8}
+\qquad\text{(8)}
 $$
 
 Every physical state in the new strip lies here. In particular,

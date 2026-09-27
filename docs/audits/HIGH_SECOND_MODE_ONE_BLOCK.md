@@ -50,7 +50,7 @@ Let V:C^2 -> R1 R2 Q be an isometry onto the two leading modes,
 Phi(A)=Tr_(R1 R2)(V A V^dagger), and E=Phi^*. The [two-mode theorem](TWO_MODE_RESOLVENT.md), Section 3.1, gives
 
 ```math
-\Phi(\operatorname{diag}(U^2,m^2))\le8I_Q.
+\Phi(\mathrm{diag}(U^2,m^2))\le8I_Q.
 ```
 
 Complete positivity therefore implies Phi(I_2) <= (8/m^2) I_Q.
@@ -58,9 +58,9 @@ For any Bell vector supported on R3 and a memory plane, let Pi denote
 its rank-one projector. If W:C^2 -> Q is its defining isometry, then
 
 ```math
-T=(\operatorname{id}_2\otimes\mathcal E)(\Pi)\ge0,
+T=(\mathrm{id}_2\otimes\mathcal E)(\Pi)\ge0,
 \qquad
-\operatorname{Tr}_{\rm head}T
+\mathrm{Tr}_{\rm head}T
 =\frac12[W^\dagger\Phi(I_2)W]^T
 \le\frac4{m^2}I_2.
 ```
@@ -71,9 +71,9 @@ for rank-one summands using a Schmidt decomposition and Cauchy--Schwarz,
 then sum. With d=2 this proves
 
 ```math
-\boxed{(\operatorname{id}_2\otimes\mathcal E)(\Pi)
+\boxed{(\mathrm{id}_2\otimes\mathcal E)(\Pi)
 \le\frac8{m^2}I_4.}
-\tag{1}
+\qquad\text{(1)}
 ```
 
 The transpose depends on the chosen Bell-vector basis and does not affect
@@ -98,7 +98,7 @@ Let t=Lambda-ell > 2. Operator monotonicity of inversion gives
 (tI-h_3)^{-1}
 \le\frac I{t-r}
 +\frac{\delta}{(t-r)(t-2)}\Pi.
-\tag{2}
+\qquad\text{(2)}
 ```
 
 With Delta=diag(U-ell,m-ell), sandwich the E-compression by sqrt(Delta)
@@ -108,7 +108,7 @@ and use (1). The exact two-mode envelope test obeys
 K\le
 \frac{U-\ell}{t-r}
 \left(1+\frac{8\delta}{m^2(t-2)}\right)I_4.
-\tag{3}
+\qquad\text{(3)}
 ```
 
 It is enough to prove the displayed scalar strictly below one.
@@ -140,7 +140,7 @@ Replacing 8delta/m^2 by C in (3), the desired inequality is exactly
 
 ```math
 (4-U)(k-\ell)-C(U-\ell)>0.
-\tag{4}
+\qquad\text{(4)}
 ```
 
 All denominators previously multiplied are positive. The coefficient
@@ -158,7 +158,7 @@ On the entire interval [k,u_*], the following safe rational bounds hold:
 \frac25<C<\frac{403}{1000},\quad
 U<\frac{1757}{500}<\frac{18}5,\quad
 \frac{14}5<e(U)<3.
-\tag{5}
+\qquad\text{(5)}
 ```
 
 In particular 4-U-C > 83/1000. Differentiating gives
@@ -187,7 +187,7 @@ H(u_*)>
 -\frac{403}{1000}
 \left(\frac{1757}{500}-\frac{57}{20}\right)
 =\frac{407}{62500}>0.
-\tag{6}
+\qquad\text{(6)}
 ```
 
 For fully elementary verification of the radical bounds, use

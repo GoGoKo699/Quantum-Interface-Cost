@@ -17,7 +17,7 @@ I_\rho(P)=\frac12\sum_{a,b}k(\lambda_a,\lambda_b)
 \qquad
 k(x,y)=\begin{cases}(x-y)^2/(x+y),&x+y>0,\\0,&x=y=0.
 \end{cases}
-\tag{1}
+\qquad\text{(1)}
 $$
 
 This is one quarter of the usual SLD quantum Fisher information for the
@@ -27,7 +27,7 @@ $$
 \mathcal I_{XZ}(\rho)=\sum_{i=1}^2
 [I_\rho(X_i)+I_\rho(Z_i)],\qquad
 J(\rho)=\frac12\sum_{i=1}^2\sum_{P=X,Y,Z}I_\rho(P_i).
-\tag{2}
+\qquad\text{(2)}
 $$
 
 Order the four eigenvalues as
@@ -36,12 +36,12 @@ Order the four eigenvalues as
 
 $$
 \boxed{
-\min_{U\in U(4)}J(U\operatorname{diag}(\lambda)U^\dagger)
+\min_{U\in U(4)}J(U\mathrm{diag}(\lambda)U^\dagger)
 =\min_{U\in U(4)}\mathcal I_{XZ}
-(U\operatorname{diag}(\lambda)U^\dagger)
+(U\mathrm{diag}(\lambda)U^\dagger)
 =E_*(\lambda):=k_{12}+k_{13}+k_{24}+k_{34}.
 }
-\tag{3}
+\qquad\text{(3)}
 $$
 
 Both minima are attained by the diagonal state with the ordered eigenvalues
@@ -51,7 +51,7 @@ two-qubit state obeys
 $$
 \boxed{\mathcal I_{XZ}(\rho)\ge J(\rho)
 \ge E_*(\lambda)\ge 2-S(\rho).}
-\tag{4}
+\qquad\text{(4)}
 $$
 
 The state is unrestricted: the diagonal state is an attainer of the
@@ -65,8 +65,8 @@ All transposes and complex conjugates below use the computational basis.
 For a two-by-two matrix A,
 
 $$
-Y A^T Y=(\operatorname{Tr}A)I-A.
-\tag{5}
+Y A^T Y=(\mathrm{Tr}A)I-A.
+\qquad\text{(5)}
 $$
 
 Applying this identity on both tensor factors, with `V=Y tensor Y`, gives
@@ -75,7 +75,7 @@ the established two-qubit inversion formula
 $$
 \widetilde\sigma:=V\overline\sigma V
 =I-\sigma_A\otimes I-I\otimes\sigma_B+\sigma
-\tag{6}
+\qquad\text{(6)}
 $$
 
 for a density matrix sigma. For a pure state `sigma=|b><b|`, define
@@ -94,7 +94,7 @@ Adding and substituting (6) proves
 $$
 \sum_{i=1}^2\sum_{P=X,Y,Z}P_i|b\rangle\langle b|P_i
 =2(I-|\widetilde b\rangle\langle\widetilde b|).
-\tag{7}
+\qquad\text{(7)}
 $$
 
 Let U have the four eigenvectors `|a>` as its columns, including any
@@ -102,7 +102,7 @@ zero-eigenvalue vectors, and set
 
 $$
 K=U^\dagger V\overline U,\qquad B_{ab}=|K_{ab}|^2.
-\tag{8}
+\qquad\text{(8)}
 $$
 
 Since V is symmetric and unitary, K is symmetric and unitary. Thus B is
@@ -112,7 +112,7 @@ matrix element of (7) in `|a>` gives the exact transition formula
 $$
 W^{XYZ}_{ab}:=\sum_{i=1}^2\sum_{P=X,Y,Z}
 |\langle a|P_i|b\rangle|^2=2(1-B_{ab}).
-\tag{9}
+\qquad\text{(9)}
 $$
 
 Here the number 1 on the right occurs for every entry, including a=b;
@@ -121,7 +121,7 @@ it is not a Kronecker delta. Consequently (1) and (2) give
 $$
 J(\rho)=\frac14\sum_{a,b}k_{ab}W^{XYZ}_{ab}
 =\sum_{a<b}k_{ab}-\frac12\sum_{a,b}k_{ab}B_{ab}.
-\tag{10}
+\qquad\text{(10)}
 $$
 
 The factor one quarter includes both the SLD normalization and the
@@ -135,14 +135,14 @@ For x,y>0 direct differentiation gives
 $$
 \frac{\partial^2 k}{\partial x\partial y}(x,y)
 =-\frac{8xy}{(x+y)^3}\le0.
-\tag{11}
+\qquad\text{(11)}
 $$
 
 Integrating over a rectangle with `x>=x'` and `y>=y'` proves
 
 $$
 k(x,y)+k(x',y')\le k(x,y')+k(x',y).
-\tag{12}
+\qquad\text{(12)}
 $$
 
 Continuity extends this to nonnegative arguments, including the origin,
@@ -156,7 +156,7 @@ giving the reversal `pi(a)=5-a`. Thus
 
 $$
 \max_\pi\sum_a k_{a,\pi(a)}=2(k_{14}+k_{23}).
-\tag{13}
+\qquad\text{(13)}
 $$
 
 Every doubly stochastic matrix is a convex combination of permutation
@@ -164,7 +164,7 @@ matrices. Applying (13) to each term gives
 
 $$
 \sum_{a,b}k_{ab}B_{ab}\le2(k_{14}+k_{23}).
-\tag{14}
+\qquad\text{(14)}
 $$
 
 Substituting (14) into (10) proves `J(rho)>=E_*(lambda)`. Relaxing B to
@@ -181,7 +181,7 @@ $$
 \int_0^\infty(ae^{-ta}-be^{-tb})^2\,dt
 =\frac{(a-b)^2}{2(a+b)},\qquad
 I_\rho(P)=\int_0^\infty\|[f_t,P]\|_2^2\,dt,
-\tag{15}
+\qquad\text{(15)}
 $$
 
 with the zero-zero term interpreted as zero. Write
@@ -191,7 +191,7 @@ using the unnormalized Hilbert--Schmidt norm. Pauli orthogonality gives
 $$
 \|[f_t,X_i]\|_2^2+\|[f_t,Z_i]\|_2^2-\|[f_t,Y_i]\|_2^2
 =8d\sum_{w:w_i=Y}|f_w(t)|^2\ge0.
-\tag{16}
+\qquad\text{(16)}
 $$
 
 After integration and summation, (16) is exactly
@@ -210,7 +210,7 @@ The elementary binary inequality needed here is
 
 $$
 1-h_2(p)\le(2p-1)^2,\qquad 0\le p\le1.
-\tag{17}
+\qquad\text{(17)}
 $$
 
 One proof puts `t=2p-1` and expands
@@ -218,7 +218,7 @@ One proof puts `t=2p-1` and expands
 $$
 1-h_2((1+t)/2)=\frac1{\ln2}
 \sum_{m=1}^\infty\frac{t^{2m}}{(2m)(2m-1)}.
-\tag{18}
+\qquad\text{(18)}
 $$
 
 All coefficients are nonnegative and their sum is one, as follows by
@@ -227,7 +227,7 @@ including the endpoints by continuity. Hence, for a,b>=0,
 
 $$
 k(a,b)\ge(a+b)\left[1-h_2\!\left(\frac a{a+b}\right)\right],
-\tag{19}
+\qquad\text{(19)}
 $$
 
 where a zero-weight pair contributes zero.
@@ -242,7 +242,7 @@ $$
 k_{12}+k_{34}&\ge1-H(B\mid A),\\
 k_{13}+k_{24}&\ge1-H(A\mid B).
 \end{aligned}
-\tag{20}
+\qquad\text{(20)}
 $$
 
 Classical subadditivity gives
@@ -251,7 +251,7 @@ Classical subadditivity gives
 $$
 E_*(\lambda)\ge2-H(A\mid B)-H(B\mid A)
 \ge2-H(\lambda)=2-S(\rho).
-\tag{21}
+\qquad\text{(21)}
 $$
 
 The use of a classical distribution in this step is a scalar spectral
@@ -278,7 +278,7 @@ is `F_P^2<=1-I_rho(P)`. Cauchy--Schwarz and (3)--(4) therefore imply
 $$
 \boxed{g(\sqrt\rho)\le2\sqrt{4-E_*(\lambda)}
 \le2\sqrt{2+S(\rho)}.}
-\tag{22}
+\qquad\text{(22)}
 $$
 
 This is a spectrum-dependent seed bound with a weaker entropy-only
@@ -287,7 +287,7 @@ consequence. It does not prove the sharp target
 $$
 g(\sqrt\rho)\stackrel{?}{\le}
 2\sqrt2+(2-\sqrt2)S(\rho).
-\tag{23}
+\qquad\text{(23)}
 $$
 
 Indeed, the square-root curve in (22) is strictly above the line in

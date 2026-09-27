@@ -26,7 +26,7 @@ Let
 ```math
 H_0=X_1B_1+Z_1D_1+X_2B_2+Z_2D_2,
 \qquad -I\le B_i,D_i\le I,
-\tag{1}
+\qquad\text{(1)}
 ```
 
 on reference qubits R1,R2 and a four-dimensional memory Q. Its chiral
@@ -36,7 +36,7 @@ as U,m,ell, let `V e_a=Omega_a` select the first two eigenvectors, and put
 
 ```math
 \mathcal E(A)=V^\dagger(I_R\otimes A)V,
-\qquad \Phi(\omega)=\operatorname{Tr}_R(V\omega V^\dagger).
+\qquad \Phi(\omega)=\mathrm{Tr}_R(V\omega V^\dagger).
 ```
 
 Every rank-r memory projector Pi obeys
@@ -45,7 +45,7 @@ Every rank-r memory projector Pi obeys
 \|\widehat\Pi H_0\widehat\Pi\|\le k_r,
 \qquad \widehat\Pi=I_R\otimes\Pi,
 \qquad k_1=2\sqrt2,\quad k_2=2+\sqrt2.
-\tag{2}
+\qquad\text{(2)}
 ```
 
 For r=1 each compressed reference field has norm at most sqrt(2).
@@ -57,7 +57,7 @@ For U>0 these full compression bounds imply the matrix inequality
 ```math
 \boxed{\mathcal E(\Pi)\le
 (U+k_r)(\Sigma+UI_2)^{-1}.}
-\tag{3}
+\qquad\text{(3)}
 ```
 
 Indeed chirality gives `||H_0||=U`, and spectral ordering gives
@@ -75,7 +75,7 @@ eigenbasis, satisfies
 ```math
 \sum_{j=1}^r\lambda_j\bigl(\Phi(|z\rangle\langle z|)\bigr)
 \le\min\left\{1,\frac{U+k_r}{U+m}\right\}.
-\tag{4}
+\qquad\text{(4)}
 ```
 
 If `m>2+sqrt(2)`, every nonzero leading superposition therefore has
@@ -90,7 +90,7 @@ Use tensor order R1,R2,F,L, with `Q=F tensor L`. Set
 ```math
 u=2\sqrt3,\qquad \ell=2/\sqrt3,\qquad g=u-\ell=4/\sqrt3,
 \qquad p=1/20,\qquad q=19/20.
-\tag{5}
+\qquad\text{(5)}
 ```
 
 Let W swap the memory qubits F,L, and define
@@ -120,7 +120,7 @@ Then J is an involution, `JP=P`, `JN=-N`, and
 
 ```math
 H=\ell J+g(P-N),\qquad \Gamma H\Gamma=-H.
-\tag{6}
+\qquad\text{(6)}
 ```
 
 Its spectrum, including multiplicity, is
@@ -128,7 +128,7 @@ Its spectrum, including multiplicity, is
 ```math
 \boxed{\{+u\ (\times2),+\ell\ (\times6),
              -\ell\ (\times6),-u\ (\times2)\}.}
-\tag{7}
+\qquad\text{(7)}
 ```
 
 This is the complete spectrum of the actual balanced example in
@@ -148,7 +148,7 @@ Its full channel, including off-diagonal head inputs, is
 ```math
 \boxed{\Phi(\omega)=q\frac{I_F}{2}\otimes\omega_L
 +p\omega_F\otimes\frac{I_L}{2}.}
-\tag{8}
+\qquad\text{(8)}
 ```
 
 The specified reference space has dimension four, so four Kraus
@@ -162,9 +162,9 @@ Equation (8) gives `Phi(I_2)=I_4/2`, hence
 integer k>=0,
 
 ```math
-\boxed{\operatorname{Tr}_R H^{2k}=(u^{2k}+3\ell^{2k})I_4,
-\qquad \operatorname{Tr}_R H^{2k+1}=0.}
-\tag{9}
+\boxed{\mathrm{Tr}_R H^{2k}=(u^{2k}+3\ell^{2k})I_4,
+\qquad \mathrm{Tr}_R H^{2k+1}=0.}
+\qquad\text{(9)}
 ```
 
 The even identity follows by separating P+N from its orthogonal
@@ -175,17 +175,17 @@ polynomial moment agrees, not merely the scalar spectrum or second
 moment. In particular
 
 ```math
-\operatorname{Tr}_R H^2=16I_4,\qquad
-\operatorname{Tr}H^2=64,\qquad
-\Phi(\operatorname{diag}(u^2,u^2))=6I_4\le8I_4.
-\tag{10}
+\mathrm{Tr}_R H^2=16I_4,\qquad
+\mathrm{Tr}H^2=64,\qquad
+\Phi(\mathrm{diag}(u^2,u^2))=6I_4\le8I_4.
+\qquad\text{(10)}
 ```
 
 For every pure head input, the output (8) has spectrum
 
 ```math
 \{1/2,19/40,1/40,0\}.
-\tag{11}
+\qquad\text{(11)}
 ```
 
 To check this, rotate the input to `|0>` and apply the same unitary to
@@ -206,14 +206,14 @@ Consequently the full operator norms satisfy, for every support,
 
 ```math
 \boxed{\begin{aligned}
-\operatorname{rank}\Pi=1:\quad
+\mathrm{rank}\Pi=1:\quad
 \|\widehat\Pi H\widehat\Pi\|
 &\le\ell+g/2=4/\sqrt3<2\sqrt2,\\
-\operatorname{rank}\Pi=2:\quad
+\mathrm{rank}\Pi=2:\quad
 \|\widehat\Pi H\widehat\Pi\|
 &\le\ell+39g/40=59/(10\sqrt3)<2+\sqrt2.
 \end{aligned}}
-\tag{12}
+\qquad\text{(12)}
 ```
 
 The second strict comparison reduces by positive squaring to
@@ -237,7 +237,7 @@ Using the coherent channel (8), the exact four-by-four test is
 ```math
 \mathcal K_t=g\left[q(tI-X_3X_h-Z_3Z_h)^{-1}
 +p\alpha(t)I_4\right].
-\tag{13}
+\qquad\text{(13)}
 ```
 
 Here the first branch preserves the logical-qubit resolvent and the
@@ -248,7 +248,7 @@ eigenvalue is attained on the Bell vector, giving
 \boxed{\|\mathcal K_t\|
 =g\left[\frac{19}{20(t-2)}+
 \frac{t^2-2}{20t(t^2-4)}\right]>1.}
-\tag{14}
+\qquad\text{(14)}
 ```
 
 The strict sign has an exact rational certificate. Write
@@ -269,11 +269,11 @@ For a physical leading isometry V, any head density matrix omega must
 also satisfy
 
 ```math
-\boxed{\operatorname{Tr}(\Sigma\omega)\le
+\boxed{\mathrm{Tr}(\Sigma\omega)\le
 \sum_{A\in\{X_1,Z_1,X_2,Z_2\}}
-\left\|\operatorname{Tr}_R
+\left\|\mathrm{Tr}_R
  [(A\otimes I_Q)V\omega V^\dagger]\right\|_1.}
-\tag{15}
+\qquad\text{(15)}
 ```
 
 Indeed the left side equals `Tr(H_0 V omega V^dagger)`. Optimizing each
@@ -299,7 +299,7 @@ Their trace norms sum to
 2\sqrt{pq}+(q-p)+2q
 =\frac{14}{5}+\frac{\sqrt{19}}{10}
 <\frac{33}{10}<2\sqrt3=u.
-\tag{16}
+\qquad\text{(16)}
 ```
 
 The strict comparisons use `19<25` and `1089<1200`. Thus (15)

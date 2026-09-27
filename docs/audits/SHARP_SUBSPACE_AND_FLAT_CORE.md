@@ -396,7 +396,7 @@ One sufficient next lemma would be
 
 ```math
 \boxed{g(\rho)\le qG(m)+\epsilon\Gamma+3\epsilon,
-       \qquad 0\le\epsilon\le1/29.} \tag{C}
+       \qquad 0\le\epsilon\le1/29.} \qquad\text{(C)}
 ```
 
 **Equation (C) is a conjectural sufficient bound, not a proved result.**

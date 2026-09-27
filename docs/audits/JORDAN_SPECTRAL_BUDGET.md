@@ -35,7 +35,7 @@ Define its excess
 
 $$
 \alpha_{ik}=u_{ik}-r_i\ge0.
-\tag{1}
+\qquad\text{(1)}
 $$
 
 Discard zero excesses. In particular, scalar blocks and zero-weight
@@ -45,7 +45,7 @@ block's two Pauli directions, then
 $$
 u_{ik}=\sqrt{r_i^2+2a_i b_i|\sin\theta_{ik}|},\qquad
 0\le\alpha_{ik}\le a_i+b_i-r_i.
-\tag{2}
+\qquad\text{(2)}
 $$
 
 For any positive Lambda strictly larger than every retained alpha, define
@@ -54,7 +54,7 @@ $$
 C_i(\Lambda)=\sum_k\frac{\alpha_{ik}}{\Lambda-\alpha_{ik}},
 \qquad
 \mathcal B(\Lambda)=\sum_i\frac{C_i(\Lambda)}{2+C_i(\Lambda)}.
-\tag{3}
+\qquad\text{(3)}
 $$
 
 An empty sum is zero. **Theorem:**
@@ -63,7 +63,7 @@ $$
 \boxed{\mathcal B(\Lambda)\le1
 \quad\Longrightarrow\quad
 \|H\|_\infty\le\sum_i r_i+\Lambda.}
-\tag{4}
+\qquad\text{(4)}
 $$
 
 There is no common Jordan decomposition, common memory plane, or common
@@ -81,7 +81,7 @@ understood. The local spectral decomposition gives
 
 $$
 h_i\le r_i I+\sum_k\alpha_{ik}\Pi_{ik}.
-\tag{5}
+\qquad\text{(5)}
 $$
 
 Use insertion isometries E_(i,k) with `Pi_(i,k)=E_(i,k)E_(i,k)^dagger`,
@@ -97,7 +97,7 @@ G_{ik,jl}=\begin{cases}
 0,&i=j,\ k\ne l,\\
 \tfrac12\sqrt{\alpha_{ik}\alpha_{jl}},&i\ne j.
 \end{cases}
-\tag{6}
+\qquad\text{(6)}
 $$
 
 Taking norms of insertion-domain vector blocks, exactly as in the previous
@@ -109,8 +109,8 @@ v for their concatenation. Then
 $$
 \Lambda I-G=A-\frac12vv^T,\qquad
 A=\bigoplus_i\left[
-\operatorname{diag}_k(\Lambda-\alpha_{ik})+\frac12v_iv_i^T\right]>0.
-\tag{7}
+\mathrm{diag}_k(\Lambda-\alpha_{ik})+\frac12v_iv_i^T\right]>0.
+\qquad\text{(7)}
 $$
 
 The rank-one positive-semidefinite criterion and the Sherman–Morrison
@@ -120,7 +120,7 @@ $$
 G\le\Lambda I
 \iff\frac12v^TA^{-1}v\le1
 \iff\sum_i\frac{C_i(\Lambda)}{2+C_i(\Lambda)}\le1.
-\tag{8}
+\qquad\text{(8)}
 $$
 
 Summing (5) proves the upper spectral bound. Conjugating every reference
@@ -139,7 +139,7 @@ $$
 \boxed{\sum_{i=1}^3\frac{c_i}{2+c_i}\le1,
 \qquad c_i=\sum_k\frac{x_{ik}}{2-x_{ik}}
 \quad\Longrightarrow\quad \|H\|\le4+\sqrt2.}
-\tag{9}
+\qquad\text{(9)}
 $$
 
 One block per site has `c_i<=1`, recovering the preceding converse.
@@ -149,7 +149,7 @@ x_i,y_i. The same certificate has the particularly simple form
 $$
 \boxed{\sum_{i=1}^3
 \frac{x_i+y_i-x_i y_i}{4-x_i-y_i}\le1.}
-\tag{9a}
+\qquad\text{(9a)}
 $$
 
 Even more simply, total excess `sum_(i,k) alpha_(i,k)<=3 delta` suffices.
@@ -165,7 +165,7 @@ even taking both single blocks at their maximum, it suffices that
 $$
 \boxed{\frac{a}{2-a}+\frac{b}{2-b}\le1
 \iff 4(a+b)-3ab\le4.}
-\tag{10}
+\qquad\text{(10)}
 $$
 
 Thus two genuinely noncommuting blocks do not by themselves escape the
@@ -175,7 +175,7 @@ give the stronger bound
 $$
 \|H\|\le3\sqrt2+\left(1+\frac{\sqrt3}{2}\right)(2-\sqrt2)
 <4+\sqrt2.
-\tag{11}
+\qquad\text{(11)}
 $$
 
 Here (6) has largest eigenvalue `(1+sqrt(3)/2)delta`. The direct triangle
@@ -186,7 +186,7 @@ each pair's two strengths are `(9/10,1/5)`, then `c_i=92/99` and
 
 $$
 \sum_i\frac{c_i}{2+c_i}=\frac{138}{145}<1.
-\tag{12}
+\qquad\text{(12)}
 $$
 
 All three pairs have two noncommuting blocks, and their memory rotations
@@ -217,7 +217,7 @@ The valid local bound
 
 $$
 h_i\le rI+\delta\Pi_i^+-2r\Pi_i^-
-\tag{13}
+\qquad\text{(13)}
 $$
 
 would prove the benchmark if
@@ -233,7 +233,7 @@ $$
 S_\kappa=F_{R_1A}\otimes I_B+
 |0\rangle\langle0|_A\otimes T_\kappa,\qquad
 T_\kappa=F_{R_2B}+F_{R_3B}.
-\tag{14}
+\qquad\text{(14)}
 $$
 
 These are the signed projectors from the preceding report's example.
@@ -250,7 +250,7 @@ Thus its maximum eigenvalue is
 $$
 t_\kappa=\frac{3(1-\kappa)+
 \sqrt{(1-\kappa)^2+8(1+\kappa)^2}}4>\frac43.
-\tag{15}
+\qquad\text{(15)}
 $$
 
 For an exact check, the quadratic of its symmetric two-dimensional block
@@ -270,7 +270,7 @@ semidefinite. The largest eigenvalue of S is consequently exactly
 $$
 \boxed{\lambda_{\max}(S_\kappa)=
 \frac{t_\kappa+1+\sqrt{t_\kappa^2+1}}2>2.}
-\tag{16}
+\qquad\text{(16)}
 $$
 
 At the coefficient in (13), this is approximately 2.023745905865038.

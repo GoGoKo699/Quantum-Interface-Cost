@@ -36,7 +36,7 @@ For i=1,2 suppose B_i,D_i are Hermitian reflections with
 
 ```math
 \boxed{\|H\|\le4+\sqrt2.}
-\tag{1}
+\qquad\text{(1)}
 ```
 
 The constant is attained: identify Q=A tensor B, use X_A,Z_A for
@@ -71,14 +71,14 @@ Define
 
 ```math
 M(U)=2+\sqrt{4-(U-2)^2}.
-\tag{2}
+\qquad\text{(2)}
 ```
 
 Then `m<=M(U)<U`, so the top vector Omega is unique, and
 
 ```math
 H_0\le M I+(U-M)|\Omega\rangle\langle\Omega|.
-\tag{3}
+\qquad\text{(3)}
 ```
 
 This is an operator ordering: increasing the lower-spectrum cap from m
@@ -95,7 +95,7 @@ proved necessary conditions imply
 \lambda_1&\le\frac{2+M}{U+M},\\
 E_*(\lambda)&\le e(U):=2+U-\frac38U^2.
 \end{aligned}
-\tag{4}
+\qquad\text{(4)}
 ```
 
 The first lower bound becomes weaker when m increases to M; the second
@@ -108,7 +108,7 @@ Set
 
 ```math
 c=U-M>0,\qquad t=\Lambda-M\in(2,2+r].
-\tag{5}
+\qquad\text{(5)}
 ```
 
 By the [exact last-readout theorem](EXACT_LAST_QUERY_RESOLVENT.md),
@@ -117,7 +117,7 @@ Section 6, it suffices to prove
 ```math
 c\left[\Phi_t(\lambda_1,\lambda_4)
        +\Phi_t(\lambda_2,\lambda_3)\right]\le1.
-\tag{6}
+\qquad\text{(6)}
 ```
 
 That theorem permits all third-pair Hermitian contractions. Equation (6)
@@ -131,7 +131,7 @@ For the block functions in the last-readout theorem define
 s=\frac1{t-r},\qquad
 F=\frac1{2(\sqrt{2t^2-4}-t)},\qquad
 G=\frac{t+1}{t(t+2)}.
-\tag{7}
+\qquad\text{(7)}
 ```
 
 On `1<=a<=r`, with b=sqrt(2-a^2), the exact block eigenvalues are
@@ -139,8 +139,8 @@ On `1<=a<=r`, with b=sqrt(2-a^2), the exact block eigenvalues are
 `g_a=(t+a)/((t+a)^2-b^2)`. Differentiation gives
 
 ```math
-\operatorname{sign}f_a'
-=\operatorname{sign}(t^2-4ta+2a^2+2),\qquad g_a'<0.
+\mathrm{sign}f_a'
+=\mathrm{sign}(t^2-4ta+2a^2+2),\qquad g_a'<0.
 ```
 
 The unique maximum of f_a occurs at
@@ -150,7 +150,7 @@ of g_a occurs at a=1 and equals G. In particular F>=s>G, since
 
 ```math
 \Phi_t(x,y)\le\max\{s(x+y),Fx+Gy\}\qquad(x\ge y\ge0).
-\tag{8}
+\qquad\text{(8)}
 ```
 
 Put alpha=F-s>=0 and beta=s-G>0. Expanding the two maxima in
@@ -162,7 +162,7 @@ Put alpha=F-s>=0 and beta=s-G>0. Expanding the two maxima in
 \le\max\{&s,\ F(1-\tau)+G\tau,\\
           &s+\alpha\lambda_1-\beta\lambda_4\}.
 \end{aligned}
-\tag{9}
+\qquad\text{(9)}
 ```
 
 Indeed, if exactly one pair uses its block branch, choosing the outer
@@ -173,7 +173,7 @@ The scalar branch causes no problem:
 
 ```math
 cs=\frac{U-M}{4-M}\le1,
-\tag{10}
+\qquad\text{(10)}
 ```
 
 because U<=4. The remaining two branches have useful spectral bounds.
@@ -192,7 +192,7 @@ with a zero-over-zero term defined as zero. Cauchy--Schwarz on the
 
 ```math
 E_*\ge k_{13}+k_{24}\ge(1-2\tau)^2.
-\tag{11}
+\qquad\text{(11)}
 ```
 
 Together with (4), this yields
@@ -200,21 +200,21 @@ Together with (4), this yields
 ```math
 \tau\ge T(U):=\max\left\{
 0,\frac{U-3}{U+M},\frac{1-\sqrt e}{2}\right\}.
-\tag{12}
+\qquad\text{(12)}
 ```
 
 Since F>G, the block-block branch in (9), multiplied by c, is at most
 
 ```math
 \mathcal A(U)=c\,[F-(F-G)T(U)].
-\tag{13}
+\qquad\text{(13)}
 ```
 
 For the mixed branch, (4) immediately gives
 
 ```math
 \mathcal B_1(U)=c\left[s+\alpha\frac{2+M}{U+M}\right].
-\tag{14}
+\qquad\text{(14)}
 ```
 
 There is also a bound that is useful near U=4. Since each pair sum is
@@ -224,7 +224,7 @@ two on the subspace of zero-sum vectors. Consequently
 
 ```math
 E_*\ge2\sum_{j=1}^4(\lambda_j-1/4)^2.
-\tag{15}
+\qquad\text{(15)}
 ```
 
 Projecting the coefficient vector `(alpha,0,0,-beta)` onto that subspace
@@ -236,7 +236,7 @@ s+\frac{\alpha-\beta}{4}
 \,+\sqrt{\frac e2}
 \sqrt{\alpha^2+\beta^2-\frac{(\alpha-\beta)^2}{4}}
 \right].
-\tag{16}
+\qquad\text{(16)}
 ```
 
 Thus (6) follows from the two one-variable inequalities
@@ -245,7 +245,7 @@ Thus (6) follows from the two one-variable inequalities
 \boxed{\mathcal A(U)\le1,\qquad
 \min\{\mathcal B_1(U),\mathcal B_2(U)\}\le1}
 \quad(2+r<U\le4).
-\tag{17}
+\qquad\text{(17)}
 ```
 
 ## 5. Exact scalar certification
@@ -259,7 +259,7 @@ parameterization of the spectral circle. Put
 x\in[0,1],\quad z=(r-1)x,\quad
 U=\frac4{1+z^2},\quad M=2+\frac{4z}{1+z^2},\quad
 t=2+r-\frac{4z}{1+z^2}.
-\tag{18}
+\qquad\text{(18)}
 ```
 
 This covers the full arc from `(U,M)=(4,2)` to `(2+r,2+r)`.
@@ -268,7 +268,7 @@ For stable nonnegative interval factors use
 ```math
 c=\frac{2(r-1)(1-x)(r+1+z)}{1+z^2},\qquad
 L=\frac{r(r+1+z)}{r+1-z}.
-\tag{19}
+\qquad\text{(19)}
 ```
 
 For x<1, `L=c/(t-2)`; the displayed expression supplies its continuous
@@ -281,7 +281,7 @@ endpoint value. The scaled quantities are
 \widehat S&=\frac c{t-r}=cs,\\
 e&=\frac{4z^2}{1+z^2}\frac{3U+4}{8}.
 \end{aligned}
-\tag{20}
+\qquad\text{(20)}
 ```
 
 The last identity uses `e=(4-U)(3U+4)/8`, avoiding subtraction at U=4.
@@ -301,7 +301,7 @@ to certify are exactly
 \mathcal B_2&=\frac{\widehat F+2\widehat S+\widehat G}{4}
  +\sqrt{e/2}\sqrt{\frac34(a^2+b^2)+\frac12ab}.
 \end{aligned}
-\tag{21}
+\qquad\text{(21)}
 ```
 
 The [exact verifier](../../tools/check_two_sharp_pair_converse.py)
@@ -333,7 +333,7 @@ Every cell passes the exact rational assertions
 ```math
 \mathcal A\le999/1000,\qquad
 \min(\mathcal B_1,\mathcal B_2)\le999/1000.
-\tag{22}
+\qquad\text{(22)}
 ```
 
 The [recorded result](../../results/two_sharp_pair_converse.json) gives

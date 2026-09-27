@@ -14,7 +14,7 @@ readouts, put
 H_0=X_1\otimes B_1+Z_1\otimes D_1+
     X_2\otimes B_2+Z_2\otimes D_2,
 \qquad \epsilon=4\sqrt3-(U+m),
-\tag{1}
+\qquad\text{(1)}
 ```
 
 where `U>=m` are the two largest eigenvalues and the four memory
@@ -25,7 +25,7 @@ operators are Hermitian contractions. For every third such pair,
 \boxed{\epsilon\le2^{-32}
 \quad\Longrightarrow\quad
 \|H_0+h_3\|<\frac{16}{3}<4+\sqrt2.}
-\tag{2}
+\qquad\text{(2)}
 ```
 
 A larger sufficient width is available when the second eigenvalue is
@@ -35,7 +35,7 @@ above the one-mode threshold:
 \boxed{m\ge2+\sqrt2,\quad\epsilon\le2^{-24}
 \quad\Longrightarrow\quad
 \|H_0+h_3\|<4+\sqrt2.}
-\tag{3}
+\qquad\text{(3)}
 ```
 
 Both widths are conservative constants, not optimal stability radii.
@@ -49,7 +49,7 @@ and set `sigma=VV^*/2`. Purify sigma by a qubit E and trace out Q to
 obtain `rho` on `R_1 R_2 E`. Thus
 
 ```math
-\operatorname{rank}\rho\le4,\qquad
+\mathrm{rank}\rho\le4,\qquad
 \rho_E=I_E/2.
 ```
 
@@ -58,7 +58,7 @@ Write `S=sqrt(rho)`, let Pi be its support projection, and let
 The Schmidt-transpose identity from the support theorem gives
 
 ```math
-C_A=\operatorname{Tr}_R(A\sigma),\qquad
+C_A=\mathrm{Tr}_R(A\sigma),\qquad
 f_A=\|C_A\|_1=\|SAS\|_1.
 ```
 
@@ -67,7 +67,7 @@ Set
 ```math
 \eta=3-\sum_A f_A^2,\qquad
 \eta_0=\frac{\sqrt3}{2}\epsilon,\qquad q=\sqrt{\eta_0}.
-\tag{4}
+\qquad\text{(4)}
 ```
 
 The actual energy and the squared support budget imply
@@ -76,7 +76,7 @@ The actual energy and the squared support budget imply
 \sum_A f_A\ge2\sqrt3-\epsilon/2,\quad
 0\le\eta\le\eta_0-\epsilon^2/16\le\eta_0,\quad
 \sum_A(f_A-\sqrt3/2)^2\le\eta_0.
-\tag{5}
+\qquad\text{(5)}
 ```
 
 The middle bound follows by Cauchy--Schwarz; for the last, expand the
@@ -94,10 +94,10 @@ For any flat rank-two head as above, independently of its readouts,
 ```math
 \eta\le\frac9{100}
 \quad\Longrightarrow\quad
-\operatorname{rank}\rho=4,\qquad
+\mathrm{rank}\rho=4,\qquad
 d:=\|S-\Pi/2\|_2\le\frac34\sqrt\eta,
 \qquad \|\rho-\Pi/4\|_1\le\frac32\sqrt\eta.
-\tag{6}
+\qquad\text{(6)}
 ```
 
 Here and below `||.||_2` is the Hilbert--Schmidt norm. To prove (6),
@@ -106,10 +106,10 @@ and marginal AM--GM steps of the support proof give the exact
 nonnegative decomposition
 
 ```math
-\eta=\sum_A\bigl[\operatorname{Tr}(SASA)-f_A^2\bigr]
- +\left[2+\frac12\operatorname{Tr}T^2
-              -\sum_A\operatorname{Tr}(SASA)\right]+d_0.
-\tag{7}
+\eta=\sum_A\bigl[\mathrm{Tr}(SASA)-f_A^2\bigr]
+ +\left[2+\frac12\mathrm{Tr}T^2
+              -\sum_A\mathrm{Tr}(SASA)\right]+d_0.
+\qquad\text{(7)}
 ```
 
 The marginal step gives `Tr(T^2)<=rank(rho)/2`, hence
@@ -119,7 +119,7 @@ Let `Gamma=Y_1Y_2 tensor I_E`, `S'=Gamma S Gamma`, and
 
 ```math
 E_0=(S+S')/2-I_R\otimes T/4,\qquad
-a_0=2\|E_0\|_2^2,\qquad o=\operatorname{Tr}(SS').
+a_0=2\|E_0\|_2^2,\qquad o=\mathrm{Tr}(SS').
 ```
 
 The nonidentity reference words in E_0 have Pauli-conjugation gap at
@@ -127,16 +127,16 @@ least two. Orthogonality of the reference Pauli coefficients gives
 
 ```math
 \eta\ge a_0+d_0,\qquad o=a_0-d_0\ge0.
-\tag{8}
+\qquad\text{(8)}
 ```
 
 Squaring `S+S'=I_R tensor T/2+2E_0` and partially tracing over R
 is useful because `Tr_R E_0=0`. The mixed terms vanish exactly:
 
 ```math
-T^2+4\operatorname{Tr}_R E_0^2
- =I_E+\operatorname{Tr}_R(SS'+S'S).
-\tag{9}
+T^2+4\mathrm{Tr}_R E_0^2
+ =I_E+\mathrm{Tr}_R(SS'+S'S).
+\qquad\text{(9)}
 ```
 
 Squared root fidelity is at most affinity, so
@@ -144,7 +144,7 @@ Squared root fidelity is at most affinity, so
 
 ```math
 \|T^2-I\|_1\le2a_0+2\sqrt o.
-\tag{10}
+\qquad\text{(10)}
 ```
 
 Write the eigenvalues of `T^2` as `1-d_0+r,1-d_0-r`, where `r>=0`.
@@ -154,11 +154,11 @@ Consequently `lambda_min(T^2)>=1-eta-sqrt(eta)>=61/100>9/16`,
 so `T>=3I/4` for the stated range. Since the rank is four,
 
 ```math
-d^2=2-\operatorname{Tr}T
+d^2=2-\mathrm{Tr}T
  =d_0+\frac12\|T-I\|_2^2
  \le d_0+\frac{16}{49}
        \left[d_0^2+(a_0+\sqrt o)^2\right].
-\tag{11}
+\qquad\text{(11)}
 ```
 
 For fixed o the last expression increases with d_0, with
@@ -199,7 +199,7 @@ It follows that
 \qquad
 \|\Pi A\Pi-fW\Pi\|_2
  \le\frac{\sqrt\delta}{s_{\min}(S)}.
-\tag{12}
+\qquad\text{(12)}
 ```
 
 The second step is congruence by `S^(-1/2)` on its support.
@@ -211,7 +211,7 @@ in (12) to compare squares yields
 \left\|(\Pi A\Pi)^2-\frac34\Pi\right\|_2
  \le\left[\frac{2}{1/2-3q/4}+2\sqrt3+2q\right]q
  <8q.
-\tag{13}
+\qquad\text{(13)}
 ```
 
 The factor two in the scalar-square term is `||Pi||_2=2`.
@@ -225,7 +225,7 @@ the actual head channel `Phi(omega)=Tr_R(V omega V^*)` satisfies
 
 ```math
 \inf_{\Psi\ \mathrm{EB}}\|\Phi-\Psi\|_\diamond\le1500q.
-\tag{14}
+\qquad\text{(14)}
 ```
 
 The diamond norm is not divided by two. The approximating channel
@@ -248,7 +248,7 @@ Writing `Delta=S-Pi/2`, exact marginal normalization gives
 ```math
 a\le4\|N\|_2+8d+8d^2\le9q,\qquad
 b:=\|L^2-I\|_2\le a(2+a)\le19q.
-\tag{15}
+\qquad\text{(15)}
 ```
 
 Each `M_A=(1/4)Tr_R(AF)` is a Hermitian contraction: its expectation
@@ -259,7 +259,7 @@ coefficients of `L^2-I` give
 ```math
 \|[M_{X_i},M_{Z_i}]\|_2\le b/2,\qquad
 \|\{M_A,M_B\}\|_2\le b/2\quad(A,B\text{ on different sites}).
-\tag{16}
+\qquad\text{(16)}
 ```
 
 For a query A let `D=A_opp tensor M_opp`, the opposite-axis term
@@ -281,7 +281,7 @@ also control the commutator with `M_opp^2`; explicitly they give
 \|[\Pi,I_R\otimes M_{\rm opp}^2]\|_2
  &\le\sqrt3 b+a\le42q.
 \end{split}
-\tag{17}
+\qquad\text{(17)}
 ```
 
 For clarity, in the second line one expands `[L,M_opp^2]` and uses
@@ -305,7 +305,7 @@ Taking the partial trace in `||K_0Pi||_2^2` therefore gives
 
 ```math
 \|M_A^2-I/4\|_2\le45q\qquad\text{for every A}.
-\tag{18}
+\qquad\text{(18)}
 ```
 
 The numerical comparisons used here are
@@ -317,7 +317,7 @@ for a coefficient M_B on the other site, definiteness would imply
 Thus each M_A has one eigenvalue of each sign. Define
 
 ```math
-N_A=\tfrac12\operatorname{sign}(M_A)
+N_A=\tfrac12\mathrm{sign}(M_A)
     =\tfrac12\boldsymbol n_A\cdot\boldsymbol\sigma_E.
 ```
 
@@ -333,7 +333,7 @@ anticommutators have Hilbert--Schmidt norms respectively
 \qquad
 |\boldsymbol n_A\cdot\boldsymbol n_B|\le147q
 \quad(A,B\text{ on different sites}).
-\tag{19}
+\qquad\text{(19)}
 ```
 
 Here `(19/2+2.04*46)sqrt(2)<147`. Choose the first site's axis
@@ -348,7 +348,7 @@ Consequently `F^*=sum_A A tensor M_A^*` is a balanced reflection and
 ```math
 \|F-F^*\|_2
  \le9q+4(46+294)q=1369q.
-\tag{20}
+\qquad\text{(20)}
 ```
 
 The factor four here is the Hilbert--Schmidt norm of the four-term
@@ -365,7 +365,7 @@ at most
 ```math
 x:=\|\sqrt\rho-\sqrt{\rho^*}\|_2
  \le d+\|F-F^*\|_2/4\le343q.
-\tag{21}
+\qquad\text{(21)}
 ```
 
 Both complements have rank four, so the memory alignment uses Q itself.
@@ -383,7 +383,7 @@ Trace-norm duality for the reference partial trace therefore yields
 
 ```math
 \|C_A-C_A^*\|_2\le\|C_A-C_A^*\|_1\le2x.
-\tag{22}
+\qquad\text{(22)}
 ```
 
 The balanced construction in Section 4 of the sharp support theorem has
@@ -396,9 +396,9 @@ We use an elementary Hermitian sign estimate. If invertible Hermitian
 C and C' have minimum eigenvalue magnitudes mu and mu', then
 
 ```math
-\|\operatorname{sign}C-\operatorname{sign}C'\|_2
+\|\mathrm{sign}C-\mathrm{sign}C'\|_2
  \le\frac{2}{\mu+\mu'}\|C-C'\|_2.
-\tag{23}
+\qquad\text{(23)}
 ```
 
 In eigenbases of C and C', each matrix entry satisfies this divided
@@ -414,9 +414,9 @@ contraction B_A and `W_A=sign C_A`, expansion of the square gives
 
 ```math
 \frac18\|B_A-W_A\|_2^2
- \le\operatorname{Tr}|C_A|(B_A-W_A)^2
+ \le\mathrm{Tr}|C_A|(B_A-W_A)^2
  \le2\delta_A.
-\tag{24}
+\qquad\text{(24)}
 ```
 
 The last inequality uses `B_A^2<=I` and that W_A commutes with
@@ -430,7 +430,7 @@ decoders classified in the sharp support theorem. Combining (21)--(24),
 ```math
 \|H_0-H_0^*\|
  \le52x+7q\le17843q<18000q<\frac13.
-\tag{25}
+\qquad\text{(25)}
 ```
 
 The last comparison uses `54000<65536`. The same arbitrary h_3 is
@@ -466,7 +466,7 @@ There is a simple exact dichotomy:
 \eta=0\quad\Longrightarrow\quad
 \Phi\text{ is entanglement breaking}
 \quad\text{or}\quad \sum_A f_A\le2+\sqrt2.
-\tag{26}
+\qquad\text{(26)}
 ```
 
 Indeed (6) makes `rho=Pi/4`, and the vanishing Pauli gap makes
@@ -480,7 +480,7 @@ Since `Tr_R Pi=2I`, faithfulness gives
 
 ```math
 M_{\rm opp}^2=(1-f_A^2)I.
-\tag{27}
+\qquad\text{(27)}
 ```
 
 Every nonzero Hermitian qubit coefficient is therefore scalar or

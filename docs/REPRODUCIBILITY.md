@@ -11,24 +11,33 @@ proof-note hashes identify the versions used for those checks; they need
 not match a later formatting revision. A new archive diagnostic may
 therefore differ in proof-hash metadata while retaining the same numerical
 conclusions. Checker sources and historical JSON reports are preserved.
-The essential quarter-rank proof and checker are unchanged, so its exact
-report comparison below remains valid.
+The recipe below extracts the exact recorded proof and checker versions
+when byte-for-byte reproduction is wanted.
 
 ## Reproduce without changing the recorded evidence
 
 The essential certificate needs only Python's standard library. From the
-repository root, use a fresh output directory and compare the exact report:
+repository root, extract its three recorded files into a fresh directory:
 
 ```bash
 qic_check_dir="$(mktemp -d)"
-python -E tools/check_nonflat_quarter_rank_certificate.py --output "$qic_check_dir/certificate.json"
-cmp results/nonflat_quarter_rank_certificate.json "$qic_check_dir/certificate.json"
+git archive 466bbb770d150fb8f43c4f9eca04bbadabe85188 \
+  tools/check_nonflat_quarter_rank_certificate.py \
+  docs/audits/NONFLAT_QUARTER_RANK_CONVERSE.md \
+  results/nonflat_quarter_rank_certificate.json | tar -x -C "$qic_check_dir"
+python -E "$qic_check_dir/tools/check_nonflat_quarter_rank_certificate.py" --output "$qic_check_dir/reproduced.json"
+cmp "$qic_check_dir/results/nonflat_quarter_rank_certificate.json" "$qic_check_dir/reproduced.json"
 ```
 
 Keep assertions enabled: do not add `-O` or `-OO`. The `-E` option ignores
 `PYTHONOPTIMIZE` and other Python environment overrides. A successful
 `cmp` produces no output. This exact scalar certificate is one component
 of the analytical proof, not a check of its entire argument.
+
+Running the unchanged checker directly on the current checkout, as in
+the README, gives the same scalar certificate with the displayed proof's
+new fingerprint. That provenance field is expected to differ from the
+historical report after a formatting revision.
 
 The optional matrix diagnostics require NumPy (`python -m pip install -r
 requirements.txt`). Use the commands in the historical sections below with

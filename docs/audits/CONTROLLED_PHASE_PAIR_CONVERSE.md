@@ -40,7 +40,7 @@ $$
 $$
 B_2=(cZ_B+dW_\theta)/\sqrt2,\qquad
 D_2=(cZ_B-dW_\theta)/\sqrt2.
-\tag{1}
+\qquad\text{(1)}
 $$
 
 They are reflections because Z_A anticommutes with X_A, and Z_B
@@ -54,7 +54,7 @@ conjugates obey the same conclusion.
 $$
 \boxed{\left\|\sum_{i=1}^3(X_i\otimes B_i+Z_i\otimes D_i)\right\|
 \le4+\sqrt2.}
-\tag{2}
+\qquad\text{(2)}
 $$
 
 The constant is attained at a=b=c=d=1, theta=0, B3=D3=I.
@@ -68,7 +68,7 @@ Then the earlier Hamiltonian is
 
 $$
 H_0=aZ_1Z_A+bX_1X_A+cZ_2Z_B+dX_2W_\theta.
-\tag{3}
+\qquad\text{(3)}
 $$
 
 Signs of a,b,c,d can be absorbed by independent reference-axis sign
@@ -98,7 +98,7 @@ $$
 J_{\alpha\beta}^\dagger H_0J_{\alpha\beta}
 =(\alpha a+\beta c)I+F,
 \qquad F=bX_A+dW_\theta.
-\tag{4}
+\qquad\text{(4)}
 $$
 
 The square-loop hopping operator F obeys
@@ -127,7 +127,7 @@ The top two energies and the main scalar identity are
 $$
 \boxed{U=A+q,\qquad m=\max\{A+p,D+q\},\qquad
 A^2+D^2+p^2+q^2=8.}
-\tag{5}
+\qquad\text{(5)}
 $$
 
 The U>k assumption implies a,c>0. Indeed, if c=0, then d=r and
@@ -148,7 +148,7 @@ computational basis vector. Copying and tracing the references yields
 
 $$
 \boxed{\rho_Q=I_4/4.}
-\tag{6}
+\qquad\text{(6)}
 $$
 
 This is valid for either sign of cos(theta), with the corresponding K
@@ -162,7 +162,7 @@ For a flat ququart marginal, the
 $$
 F_{\rm flat}(t)=
 \max\left\{\frac1{t-r},\frac{t^2-2}{t(t^2-4)}\right\},\qquad t>2.
-\tag{7}
+\qquad\text{(7)}
 $$
 
 This also follows directly from its scalar pair formula: equal active
@@ -171,7 +171,7 @@ give 1/(t-r). The [rank-one spectral envelope](EXACT_LAST_QUERY_RESOLVENT.md#6-e
 
 $$
 (U-m)F_{\rm flat}(\Lambda-m)\le1.
-\tag{8}
+\qquad\text{(8)}
 $$
 
 ### 3.1. The second eigenvalue is at most three
@@ -202,7 +202,7 @@ Consequently
 
 $$
 \gamma:=k-m\ge r-\sqrt{2-w^2}+w\ge w>0.
-\tag{9}
+\qquad\text{(9)}
 $$
 
 The top is simple in this case. A tie A+p=D+q with m>3 is impossible:
@@ -228,7 +228,7 @@ the same (+,+) copying sector, including the degeneracy q=p. For any
 isometry V onto their span, tracing out the reference copy makes
 
 $$
-\Phi(\omega)=\operatorname{Tr}_R(V\omega V^\dagger)
+\Phi(\omega)=\mathrm{Tr}_R(V\omega V^\dagger)
 $$
 
 diagonal in the memory computational basis for every input omega.
@@ -239,14 +239,14 @@ The third energy is
 
 $$
 \ell=\max\{A-p,D+q\}.
-\tag{10}
+\qquad\text{(10)}
 $$
 
 The identity (5) gives useful coarse bounds with no phase dependence:
 
 $$
 \boxed{0\le\ell<\sqrt7<3,\qquad U+\ell<6,\qquad U<79/20.}
-\tag{11}
+\qquad\text{(11)}
 $$
 
 For the first, both candidate tails have squared value at most 16-m^2:
@@ -276,7 +276,7 @@ U<4sqrt(3)-3<79/20; the last comparison follows from
 Use the actual-tail envelope
 
 $$
-H_0\le\ell I+V\operatorname{diag}(U-\ell,m-\ell)V^\dagger.
+H_0\le\ell I+V\mathrm{diag}(U-\ell,m-\ell)V^\dagger.
 $$
 
 Since its actual head is EB, the
@@ -291,7 +291,7 @@ F_{\rm pure}(t)=
 [2(\sqrt{2t^2-4}-t)]^{-1},&2<t\le3r,\\
 (t-r)^{-1},&t\ge3r.
 \end{cases}
-\tag{12}
+\qquad\text{(12)}
 $$
 
 Here t=Lambda-ell>Lambda-3=1+r>2. If t>=3r, (12) follows from U<4.

@@ -29,7 +29,7 @@ and consider, for c,s positive,
 ```math
 H_0=a\,ZIZI+b\,XIXI+c\,IZIZ+s\,IZYY
        +c\,IXZX-s\,IXXI.
-\tag{1}
+\qquad\text{(1)}
 ```
 
 After a reference bisector rotation, the first site's original memory
@@ -58,7 +58,7 @@ Its spectrum, including multiplicities, is
 ```math
 \{+U\ (\times2),+L\ (\times2),+1\ (\times4),
    -1\ (\times4),-L\ (\times2),-U\ (\times2)\}.
-\tag{2}
+\qquad\text{(2)}
 ```
 
 Here is a direct reduction proving (2). The Pauli P=ZZZZ commutes with
@@ -86,7 +86,7 @@ the two-dimensional top projector is exactly
 
 ```math
 P_+=\frac{(I+ZZZZ)(H_0^2-I)(I+H_0/U)}{4d}.
-\tag{3}
+\qquad\text{(3)}
 ```
 
 ## 2. The complete channel and its Choi spectrum
@@ -114,7 +114,7 @@ Choose its isometry V accordingly. For the head-to-memory channel
 \eta&=-\frac{2bs}{d},&\gamma&=\frac{8b+6abc}{Ud},\\
 \delta&=\frac{2abs}{Ud}.&&
 \end{aligned}
-\tag{4}
+\qquad\text{(4)}
 ```
 
 Use the normalized Choi matrix, with trace one. Its partial transpose
@@ -124,7 +124,7 @@ on the head is
 J_\Phi^{T_h}=
 \frac14\left[I\otimes\Phi(I)+X\otimes\Phi(X)
               +Y\otimes\Phi(Y)+Z\otimes\Phi(Z)\right].
-\tag{5}
+\qquad\text{(5)}
 ```
 
 On the three tensor factors head,A,B, the Pauli C=YXY commutes with
@@ -143,7 +143,7 @@ each with multiplicity two. Substitution in (4) gives the exact identities
 ```math
 \alpha^2+\beta^2+\gamma^2+\delta^2=\frac14+\eta^2,
 \qquad 2(\alpha\delta+\beta\gamma)=\eta.
-\tag{6}
+\qquad\text{(6)}
 ```
 
 For example, after multiplication by U²d², the first identity reduces
@@ -152,9 +152,9 @@ on both sides to `77+100c²+128ac+16ac³`; the second follows from
 `1/2-q eta`, which is positive since d>=6 and `|eta|<1/2`. Therefore
 
 ```math
-\boxed{\operatorname{spec}(J_\Phi^{T_h})
+\boxed{\mathrm{spec}(J_\Phi^{T_h})
  =\{\tfrac14\ (\times4),+bs/d\ (\times2),-bs/d\ (\times2)\}.}
-\tag{7}
+\qquad\text{(7)}
 ```
 
 Every positive s in this construction gives a negative eigenvalue.
@@ -175,7 +175,7 @@ Then
 ```math
 U=m=\sqrt{7+2\sqrt6\frac{39999}{40001}}
  >\frac{86}{25}>2+\sqrt2,
-\tag{8}
+\qquad\text{(8)}
 ```
 
 while
@@ -183,7 +183,7 @@ while
 ```math
 \lambda_{\min}(J_\Phi^{T_h})
  =-\frac{100\sqrt2}{120003+39999\sqrt6}<0.
-\tag{9}
+\qquad\text{(9)}
 ```
 
 For (8), use `c>999/1000` and `sqrt(6)>61/25`, then square;

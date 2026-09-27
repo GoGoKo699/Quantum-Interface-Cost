@@ -21,13 +21,13 @@ Write h for binary entropy in bits, and define
 
 $$
 f(c)=h\!\left(\frac{1-\sqrt{1-c^2}}2\right),\qquad 0\le c\le1,
-\tag{1}
+\qquad\text{(1)}
 $$
 
 $$
 a(x,z)=f(z)-h\!\left(\frac{1-x}2\right),\qquad
 \kappa(x,z)=\max\{0,a(x,z),a(z,x)\}.
-\tag{2}
+\qquad\text{(2)}
 $$
 
 **Theorem 1.** Every admissible interface whose quantum output dimension
@@ -35,7 +35,7 @@ is at most D on every refined branch satisfies
 
 $$
 \boxed{\log_2D\ge\sum_{i=1}^n\kappa(x_i,z_i).}
-\tag{3}
+\qquad\text{(3)}
 $$
 
 In particular, q retained qubits require
@@ -52,9 +52,9 @@ The function f is increasing and convex. To verify convexity directly,
 put `s=sqrt(1-c^2)` for `0<c<1`. Differentiation gives
 
 $$
-f'(c)=\frac{c}{s\ln2}\operatorname{artanh}(s),\qquad
-f''(c)=\frac{\operatorname{artanh}(s)-s}{s^3\ln2}\ge0.
-\tag{4}
+f'(c)=\frac{c}{s\ln2}\mathrm{artanh}(s),\qquad
+f''(c)=\frac{\mathrm{artanh}(s)-s}{s^3\ln2}\ge0.
+\qquad\text{(4)}
 $$
 
 The last inequality follows by integrating `1/(1-s^2)>=1` from zero to s.
@@ -66,14 +66,14 @@ with zeros allowed, and let
 
 $$
 C_i(p)=\sum_{u\in\{0,1\}^n}\sqrt{p_u p_{u+e_i}}.
-\tag{5}
+\qquad\text{(5)}
 $$
 
 Then
 
 $$
 \boxed{H(p)\ge\sum_i f(C_i(p)).}
-\tag{6}
+\qquad\text{(6)}
 $$
 
 To prove this, condition bit i on all other coordinates. If a conditioning
@@ -111,7 +111,7 @@ Each F belongs to [0,1]. We claim
 $$
 \boxed{S(\rho)\ge
 \sum_i\left[f(F_i^Z)-h\!\left(\frac{1-F_i^X}2\right)\right].}
-\tag{7}
+\qquad\text{(7)}
 $$
 
 Choose the simultaneous product X eigenbasis, so
@@ -122,7 +122,7 @@ The following classical-quantum state is an auxiliary mathematical object:
 $$
 \omega_{U^nQ}=\sum_{u:p_u>0}p_u|u\rangle\langle u|
 \otimes|v_u\rangle\langle v_u|.
-\tag{8}
+\qquad\text{(8)}
 $$
 
 Its conditional signal states are pure because they are individual matrix
@@ -132,7 +132,7 @@ rho. Thus
 
 $$
 H(U^n\mid Q)_\omega=H(p)-S(\rho).
-\tag{9}
+\qquad\text{(9)}
 $$
 
 For bit i, the difference of its two subnormalized signal states is
@@ -148,7 +148,7 @@ binary Fano give
 
 $$
 H(U_i\mid Q)\le H(U_i\mid\widehat U_i)\le h(e_i).
-\tag{10}
+\qquad\text{(10)}
 $$
 
 For completeness, the last step follows by setting the binary error
@@ -160,7 +160,7 @@ $$
 H(U^n\mid Q)=\sum_i H(U_i\mid U_{<i}Q)
 \le\sum_i H(U_i\mid Q)
 \le\sum_i h\!\left(\frac{1-F_i^X}2\right).
-\tag{11}
+\qquad\text{(11)}
 $$
 
 The entropy-discrimination step (9)–(11) is already contained in
@@ -175,7 +175,7 @@ trace norm of rank-one operators gives
 
 $$
 F_i^Z\le\sum_u\|l_u\|\,\|l_{u+e_i}\|=C_i(p).
-\tag{12}
+\qquad\text{(12)}
 $$
 
 Combining (6), (9), (11), (12), and monotonicity of f proves (7).
@@ -209,7 +209,7 @@ with its Pauli and using trace-norm duality gives
 $$
 x_i\le\overline F_i^X:=\sum_a\omega_aF_i^X(L_a),\qquad
 z_i\le\overline F_i^Z:=\sum_a\omega_aF_i^Z(L_a).
-\tag{13}
+\qquad\text{(13)}
 $$
 
 Convexity of f and concavity of h applied to (7) now yield
@@ -222,7 +222,7 @@ $$
 -h\!\left(\frac{1-\overline F_i^X}2\right)\right]\\
 &\ge\sum_i\left[f(z_i)-h\!\left(\frac{1-x_i}2\right)\right].
 \end{aligned}
-\tag{14}
+\qquad\text{(14)}
 $$
 
 The last inequality uses monotonicity: f increases, whereas
@@ -252,7 +252,7 @@ For common contrast eta define
 
 $$
 \ell(\eta)=\left[f(\eta)-h\!\left(\frac{1-\eta}2\right)\right]_+.
-\tag{15}
+\qquad\text{(15)}
 $$
 
 Then
@@ -260,7 +260,7 @@ Then
 $$
 q_{\min}(n,\eta)\ge\lceil n\ell(\eta)\rceil,
 \qquad R(\eta)\ge\ell(\eta).
-\tag{16}
+\qquad\text{(16)}
 $$
 
 The bracket in (15) vanishes at `eta_0=1/sqrt2`, is negative below it,
@@ -274,14 +274,14 @@ there the derivative
 $$
 c_0=\log_2\!\left(\frac{1+1/\sqrt2}{1-1/\sqrt2}\right)
 =2\log_2(1+\sqrt2)\simeq2.5431066063.
-\tag{17}
+\qquad\text{(17)}
 $$
 
 Its supporting tangent gives the global bound
 
 $$
 \ell(\eta)\ge c_0(\eta-\eta_0),\qquad \eta_0\le\eta\le1.
-\tag{18}
+\qquad\text{(18)}
 $$
 
 Together with the existing random-subset construction this implies, for
@@ -289,7 +289,7 @@ Together with the existing random-subset construction this implies, for
 
 $$
 \boxed{c_0t\le R(\eta_0+t)\le(2+\sqrt2)t.}
-\tag{19}
+\qquad\text{(19)}
 $$
 
 More precisely `ell(eta_0+t)=c_0t+O(t^2)`. Hence the optimal memory rate
@@ -317,7 +317,7 @@ everywhere. An admissible combined lower coefficient is
 $$
 \max\left\{0,\ell(\eta),b(\eta),
 1-2h((1-\eta)/2),\frac{(\eta-\eta_0)_+^2}{16\ln2}\right\}.
-\tag{20}
+\qquad\text{(20)}
 $$
 
 ### An unrestricted seed-score consequence
@@ -328,7 +328,7 @@ version and applying convexity of the unclipped function
 
 $$
 S(L^\dagger L)\ge n\ell\!\left(\frac{g(L)}{2n}\right).
-\tag{21}
+\qquad\text{(21)}
 $$
 
 Indeed the averaged right side is one half the sum of that unclipped
@@ -340,7 +340,7 @@ inequality
 $$
 \boxed{g(L)\le\sqrt2 n+
 \frac{S(L^\dagger L)}{\log_2(1+\sqrt2)}.}
-\tag{22}
+\qquad\text{(22)}
 $$
 
 The entropy coefficient is approximately `0.78643970`; it is weaker than

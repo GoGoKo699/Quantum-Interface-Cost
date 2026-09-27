@@ -14,7 +14,7 @@ For a complex $D$-by-$d$ matrix $L$ with Frobenius norm one, set
 
 $$
 g(L)=\sum_{j=1}^{2n}\|L P_j L^\dagger\|_1,
-\qquad \Gamma(n,D)=\max_{\operatorname{Tr}(L^\dagger L)=1}g(L).
+\qquad \Gamma(n,D)=\max_{\mathrm{Tr}(L^\dagger L)=1}g(L).
 $$
 
 Here the norm is the trace norm. All matrices L are allowed, not merely
@@ -47,7 +47,7 @@ product with P_j, divide by d, and sum over j:
 
 $$
 2n\eta=\frac1d\sum_{a,j}
-\operatorname{Tr}(B_{a,j}K_aP_jK_a^\dagger).
+\mathrm{Tr}(B_{a,j}K_aP_jK_a^\dagger).
 $$
 
 For nonzero K_a define $L_a=K_a/\|K_a\|_F$. Trace-norm duality gives
@@ -63,8 +63,8 @@ instruments and branch-dependent decoders; it does not assume a kept subset.
 ## 3. Constructing a deterministic interface from any seed
 
 For each j choose the Hermitian contraction
-$B_j=\operatorname{sign}(LP_jL^\dagger)$, with sign(0)=0. Then
-$v_j=\operatorname{Tr}(B_jLP_jL^\dagger)=\|LP_jL^\dagger\|_1$.
+$B_j=\mathrm{sign}(LP_jL^\dagger)$, with sign(0)=0. Then
+$v_j=\mathrm{Tr}(B_jLP_jL^\dagger)=\|LP_jL^\dagger\|_1$.
 Let U run over the n-qubit Pauli representatives, a set of size m=4^n,
 and define
 
@@ -88,7 +88,7 @@ For completeness, the character projection used here is
 
 $$
 \frac1m\sum_U s_{U,j}U^\dagger A U
-=\frac{\operatorname{Tr}(P_jA)}d P_j.
+=\frac{\mathrm{Tr}(P_jA)}d P_j.
 $$
 
 Thus this interface has possibly unequal local contrasts v_j. Randomize the

@@ -24,7 +24,7 @@ Let S be positive on four qubits, with `Tr(S^2)=1` and `rank(S)<=4`.
 Write
 
 $$
-u=\frac{\operatorname{Tr}S}{2}\le1,\qquad v=\sqrt{1-u^2}.
+u=\frac{\mathrm{Tr}S}{2}\le1,\qquad v=\sqrt{1-u^2}.
 $$
 
 Use the orthonormal Pauli basis `sigma/4`. Rotate each local X/Z plane so
@@ -33,7 +33,7 @@ that the singleton part of S is
 $$
 L=\frac{aB_1+bB_2+cB_3+dB_4}{4},\qquad
 a\ge b\ge c\ge d\ge0,\qquad
-T=a^2+b^2+c^2+d^2=\operatorname{Tr}(SL).
+T=a^2+b^2+c^2+d^2=\mathrm{Tr}(SL).
 $$
 
 The B_i are unit local X/Z directions. Sorting their lengths only relabels
@@ -56,7 +56,7 @@ Their mean and centered squared sum are exactly
 $$
 \mu=\frac{a+R}{4},\qquad
 \sum_{j=1}^4(\lambda_j(L)-\mu)^2=\frac{T-a^2-R^2}{4}.
-\tag{1}
+\qquad\text{(1)}
 $$
 
 Indeed their uncentered square sum is `(T+2ab)/4` when `b>=c+d`,
@@ -67,7 +67,7 @@ by zeros, then centered Cauchy--Schwarz. Equation (1) gives
 
 $$
 \boxed{2T\le u(a+R)+v\sqrt{T-a^2-R^2}.}
-\tag{2}
+\qquad\text{(2)}
 $$
 
 Here `R^2<=b^2+c^2+d^2`. Cauchy--Schwarz on the three coordinates
@@ -75,7 +75,7 @@ Here `R^2<=b^2+c^2+d^2`. Cauchy--Schwarz on the three coordinates
 
 $$
 \boxed{T\le\frac{1+u^2}{4}.}
-\tag{3}
+\qquad\text{(3)}
 $$
 
 When T=0 this is immediate; otherwise divide
@@ -86,7 +86,7 @@ When T=0 this is immediate; otherwise divide
 For the eight local queries A define
 
 $$
-a_A=\operatorname{Tr}(SASA),\qquad F_A=\|SAS\|_1.
+a_A=\mathrm{Tr}(SASA),\qquad F_A=\|SAS\|_1.
 $$
 
 The established fidelity--affinity comparison gives `F_A^2<=a_A`;
@@ -98,7 +98,7 @@ coefficient is u/2. Equations (2)--(3) therefore prove
 $$
 \boxed{\sum_A F_A^2\le\sum_A a_A
 \le4+u^2+2T\le\frac92+\frac32u^2\le6.}
-\tag{4}
+\qquad\text{(4)}
 $$
 
 Both maxima are exactly six. Equality in the affinity budget forces
@@ -115,7 +115,7 @@ the complete equality family is
 $$
 \boxed{\rho=S^2=|\beta_1\rangle\langle\beta_1|\otimes
 |\beta_2\rangle\langle\beta_2|\otimes\frac{I_4}{4},}
-\tag{5}
+\qquad\text{(5)}
 $$
 
 up to original-site permutations. The two pure states have arbitrary unit
@@ -130,7 +130,7 @@ arbitrary-spectrum exclusion
 
 $$
 \sum_A F_A\le\sum_A\sqrt{a_A}\le\sqrt{45}<4+2\sqrt2.
-\tag{6}
+\qquad\text{(6)}
 $$
 
 For general rank four, (4) alone gives `sqrt(48)`, which exceeds the
@@ -143,15 +143,15 @@ The following statements hold in any dimension `d_0=2^n`. Let S be positive,
 put `b_i=sqrt(s_Xi^2+s_Zi^2)` and define
 
 $$
-W_i=2-\operatorname{Tr}(SX_iSX_i)-\operatorname{Tr}(SZ_iSZ_i).
+W_i=2-\mathrm{Tr}(SX_iSX_i)-\mathrm{Tr}(SZ_iSZ_i).
 $$
 
 Then
 
 $$
 \boxed{W_i\ge\frac{d_0}{r}b_i^2,\qquad
-W_i\ge1-\kappa\bigl(\operatorname{Tr}S-\sqrt{d_0}\,b_i\bigr).}
-\tag{7}
+W_i\ge1-\kappa\bigl(\mathrm{Tr}S-\sqrt{d_0}\,b_i\bigr).}
+\qquad\text{(7)}
 $$
 
 An orthogonal rotation of the X/Z plane preserves both b_i and W_i:
@@ -161,7 +161,7 @@ bias and write
 
 $$
 S=\begin{pmatrix}A&C\\C^*&D\end{pmatrix},\qquad
-\operatorname{Tr}(A-D)=\sqrt{d_0}\,b_i\ge0.
+\mathrm{Tr}(A-D)=\sqrt{d_0}\,b_i\ge0.
 $$
 
 The positive blocks A,D have rank at most r and satisfy `A<=kappa I`.
@@ -169,18 +169,18 @@ Direct expansion gives the two equivalent identities
 
 $$
 \begin{aligned}
-W_i&=\|A-D\|_2^2+6\|C\|_2^2-2\operatorname{Re}\operatorname{Tr}(C^2)\\
-&=1-2\operatorname{Tr}(AD)+4\|C\|_2^2
-       -2\operatorname{Re}\operatorname{Tr}(C^2).
+W_i&=\|A-D\|_2^2+6\|C\|_2^2-2\mathrm{Re}\mathrm{Tr}(C^2)\\
+&=1-2\mathrm{Tr}(AD)+4\|C\|_2^2
+       -2\mathrm{Re}\mathrm{Tr}(C^2).
 \end{aligned}
-\tag{8}
+\qquad\text{(8)}
 $$
 
 Since `Re Tr(C^2)<=||C||_2^2`, the first line is at least `||A-D||_2^2`.
 The positive inertia of A-D is at most `rank(A)<=r`; consequently
 
 $$
-\operatorname{Tr}(A-D)\le\operatorname{Tr}(A-D)_+
+\mathrm{Tr}(A-D)\le\mathrm{Tr}(A-D)_+
 \le\sqrt r\,\|(A-D)_+\|_2\le\sqrt r\,\|A-D\|_2.
 $$
 
@@ -203,7 +203,7 @@ length at most `Tr(S)/4=1/2`, while (7) becomes
 
 $$
 W_i\ge2b_i.
-\tag{9}
+\qquad\text{(9)}
 $$
 
 Write `y=2T`, `s=a+b+c+d`, and `D_0=sum_i W_i`. Equation (4) gives
@@ -223,7 +223,7 @@ Its excess numerator is at most
 
 $$
 2r_0(1-p)-(1-y)\le(2r_0-1)(1-p)\le0.
-\tag{10}
+\qquad\text{(10)}
 $$
 
 Second suppose `R=(b+c+d)/2`. Equation (2) gives `y<=(a+s)/2`.
@@ -238,7 +238,7 @@ Thus this branch has the strict bound
 
 $$
 \sum_A\sqrt{a_A}\le\sqrt{\frac{232}{5}}<4+2\sqrt2,
-\tag{11}
+\qquad\text{(11)}
 $$
 
 where the last comparison uses `sqrt(2)>7/5`. Either branch may handle a
@@ -272,8 +272,8 @@ rank-four seeds. The squared budget gives the valid upper bound
 `sum_A F_A<=sqrt(36+12u^2)`, so a possible violation must satisfy
 
 $$
-u^2>\frac{4\sqrt2-3}{3},\qquad u=\frac{\operatorname{Tr}\sqrt\rho}{2}.
-\tag{12}
+u^2>\frac{4\sqrt2-3}{3},\qquad u=\frac{\mathrm{Tr}\sqrt\rho}{2}.
+\qquad\text{(12)}
 $$
 
 No marginal-rank tensorization is assumed: a global

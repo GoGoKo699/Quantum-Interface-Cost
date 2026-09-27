@@ -93,7 +93,7 @@ memory-singlet copy last. The matrix is
 $$
 K_{3/2}=
 \begin{pmatrix}
-\operatorname{diag}(5/4,1/2,1/2)&m\\
+\mathrm{diag}(5/4,1/2,1/2)&m\\
 m^\dagger&3/4
 \end{pmatrix},
 $$
@@ -133,7 +133,7 @@ the two singlet-memory reference-spin-1/2 copies come last. Then
 $$
 K_{1/2}=
 \begin{pmatrix}
-\operatorname{diag}(2,5/4,5/4)&N\\
+\mathrm{diag}(2,5/4,5/4)&N\\
 N^\dagger&(3/4)I_2
 \end{pmatrix},
 $$
@@ -161,14 +161,14 @@ The Schur complement for K_(1/2)<=5I/2 says exactly that
 
 $$
 B=\frac74I_2-N^\dagger
-       \operatorname{diag}(2,4/5,4/5)N\ge0.
+       \mathrm{diag}(2,4/5,4/5)N\ge0.
 $$
 
 With s=z_1+z_2 and t=z_1-z_2, its entries are
 
 $$
 B_{11}=\frac{4+3|s|^2}{10},\qquad
-B_{22}=\frac{12-|s|^2+4\operatorname{Re}s}{10},\qquad
+B_{22}=\frac{12-|s|^2+4\mathrm{Re}s}{10},\qquad
 B_{12}=-\frac{\sqrt3}{20}\,[\bar t(s-3)-t].
 $$
 
@@ -533,7 +533,7 @@ Let `h_i=X_i B_i+Z_i D_i` on distinct reference qubits and a
 four-dimensional memory. The pure-state variational identity is
 
 ```math
- \sum_i\operatorname{Tr}(B_i L X_iL^\dagger+D_i L Z_iL^\dagger)
+ \sum_i\mathrm{Tr}(B_i L X_iL^\dagger+D_i L Z_iL^\dagger)
  =\langle\!\langle L|H|L\rangle\!\rangle,\qquad \|L\|_F=1.
 ```
 

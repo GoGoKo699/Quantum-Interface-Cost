@@ -35,7 +35,7 @@ the zero operator is both.
 
 $$
 \boxed{g(\rho)\le\sqrt2 n+c\,a(P).}
-\tag{1}
+\qquad\text{(1)}
 $$
 
 In particular, when `rank(rho)<=2^q` and `a(P)<=q`, the seed cannot
@@ -66,7 +66,7 @@ $$
 F_{i,b}=\|\sqrt\rho P_{i,b}\sqrt\rho\|_1
 =\langle\psi|P_{i,b}\otimes B_{i,b}|\psi\rangle,
 \qquad B_{i,b}^2=I.
-\tag{2}
+\qquad\text{(2)}
 $$
 
 For example, take the canonical purification in the computational basis
@@ -82,7 +82,7 @@ Then
 $$
 h_i=sX_i\otimes I+Z_i\otimes B_{i,Z},
 \qquad h_i^2=2I.
-\tag{3}
+\qquad\text{(3)}
 $$
 
 The cross terms vanish because `X_i Z_i+Z_i X_i=0`; no dimension
@@ -104,7 +104,7 @@ $$
 \rho=\frac{I_T}{2^q}\otimes
 \bigotimes_{i\notin T}|\beta_i\rangle\langle\beta_i|,
 \qquad |T|=q,
-\tag{4}
+\qquad\text{(4)}
 $$
 
 where each beta_i is an X/Z bisector, allowing independent signs of its
@@ -120,7 +120,7 @@ then gives
 
 $$
 \rho=\frac{I_T}{2^q}\otimes\sigma_{T^c}.
-\tag{5}
+\qquad\text{(5)}
 $$
 
 The rank cap forces sigma to have rank one. For this pure remaining
@@ -154,7 +154,7 @@ $$
 
 $$
 \boxed{\|(I-P_0)P\|_\infty\le\sin(\pi/8),}
-\tag{6}
+\qquad\text{(6)}
 $$
 
 then `a(P)<=q`, so rho obeys the subset bound. Its nonzero eigenvalues
@@ -173,7 +173,7 @@ $$
 |v\rangle=\cos\alpha\,|\beta_i\rangle|u\rangle
 +\sin\alpha\,|\beta_i^\perp\rangle|w\rangle,
 \qquad 0\le\alpha\le\pi/8,
-\tag{7}
+\qquad\text{(7)}
 $$
 
 with normalized u,w whenever their coefficient is nonzero. Select signs
@@ -189,7 +189,7 @@ $$
 -2\cos\alpha\sin\alpha}{\sqrt2}\\
 &=\frac{\cos(2\alpha)-\sin(2\alpha)}{\sqrt2}\ge0.
 \end{aligned}
-\tag{8}
+\qquad\text{(8)}
 $$
 
 Thus both signed compressed queries are positive semidefinite at every
@@ -209,7 +209,7 @@ the subset subspace can be as large as
 $$
 \sin^2(\pi/8)=\frac{2-\sqrt2}{4}
 =0.1464466094\ldots.
-\tag{9}
+\qquad\text{(9)}
 $$
 
 This is a nonzero neighborhood in support geometry for all spectra. It
@@ -234,7 +234,7 @@ $$
 |0\rangle_A|\beta(t_0+\theta)\rangle_B,
 \qquad
 |1\rangle_A|\beta(t_0-\theta)\rangle_B,
-\tag{10}
+\qquad\text{(10)}
 $$
 
 and let `P_0=I_A tensor |beta(t_0)><beta(t_0)|`. Both principal angles
@@ -244,13 +244,13 @@ support basis the B-site compressions are diagonal:
 $$
 \begin{aligned}
 P_\theta X_B P_\theta&\cong
-\operatorname{diag}\bigl(\sin(\pi/4+2\theta),
+\mathrm{diag}\bigl(\sin(\pi/4+2\theta),
                          \sin(\pi/4-2\theta)\bigr),\\
 P_\theta Z_B P_\theta&\cong
-\operatorname{diag}\bigl(\cos(\pi/4+2\theta),
+\mathrm{diag}\bigl(\cos(\pi/4+2\theta),
                          \cos(\pi/4-2\theta)\bigr).
 \end{aligned}
-\tag{11}
+\qquad\text{(11)}
 $$
 
 For every `pi/8<theta<pi/4`, both have one positive and one negative
@@ -273,7 +273,7 @@ Moreover, for every site i and every one-site X/Z bisector beta,
 $$
 \|(I-I_{\rm rest}\otimes|\beta\rangle\langle\beta|)P\|_\infty
 >\sin(\pi/8).
-\tag{12}
+\qquad\text{(12)}
 $$
 
 For rank four, this is an operator-norm distance condition from every

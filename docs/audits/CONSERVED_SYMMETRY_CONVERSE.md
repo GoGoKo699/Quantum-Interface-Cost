@@ -11,8 +11,8 @@ publication priority.
 On memory Q=A tensor B define the real symmetric Pauli subspaces
 
 ```math
-\mathcal L_1=\operatorname{span}_{\mathbb R}\{X_A,Z_A,Y_AY_B\},\qquad
-\mathcal L_2=\operatorname{span}_{\mathbb R}\{Z_B,X_AX_B,Z_AX_B\}.
+\mathcal L_1=\mathrm{span}_{\mathbb R}\{X_A,Z_A,Y_AY_B\},\qquad
+\mathcal L_2=\mathrm{span}_{\mathbb R}\{Z_B,X_AX_B,Z_AX_B\}.
 ```
 
 Let B1,D1 be arbitrary Hermitian contractions in L1 and B2,D2 arbitrary
@@ -100,7 +100,7 @@ relations
 ```math
 \Phi(X_h\omega X_h)=Q_1\Phi(\omega)Q_1,\qquad
 \Phi(Z_h\omega Z_h)=Q_2\Phi(\omega)Q_2.
-\tag{A}
+\qquad\text{(A)}
 ```
 
 ### 2.1. The average output is flat
@@ -117,7 +117,7 @@ zero coefficient in the real symmetric Phi(I). Since Phi preserves trace,
 
 ```math
 \boxed{\Phi(I)=I_Q/2.}
-\tag{B}
+\qquad\text{(B)}
 ```
 
 ### 2.2. The third head Pauli is killed
@@ -136,8 +136,8 @@ S_1S_2=-i\Gamma Y_AX_B,\qquad X_hZ_h=-iY_h,
 It follows that
 
 ```math
-4c=\operatorname{Tr}[Y_AX_B\Phi(Y_h)]
-=\operatorname{Tr}(P\Gamma)=0.
+4c=\mathrm{Tr}[Y_AX_B\Phi(Y_h)]
+=\mathrm{Tr}(P\Gamma)=0.
 ```
 
 The final equality uses positivity of the selected eigenvalue: Gamma
@@ -146,7 +146,7 @@ Thus
 
 ```math
 \boxed{\Phi(Y_h)=0.}
-\tag{C}
+\qquad\text{(C)}
 ```
 
 ### 2.3. Rank four forces the two remaining outputs to commute
@@ -158,7 +158,7 @@ give
 ```math
 J=\frac{I_8}{8}+\frac14\left[X_h\otimes\Phi(X_h)+
  Z_h\otimes\Phi(Z_h)\right].
-\tag{D}
+\qquad\text{(D)}
 ```
 
 Conjugating by Y_h changes J to I_8/4-J. Thus eigenvalues pair as
@@ -173,7 +173,7 @@ Write M=Phi(X_h),N=Phi(Z_h). Substituting (D) into J^2=J/4 gives
 
 ```math
 M^2+N^2=I_Q/4,\qquad [M,N]=0.
-\tag{E}
+\qquad\text{(E)}
 ```
 
 These commuting Hermitian matrices have a common orthonormal eigenbasis
@@ -181,7 +181,7 @@ These commuting Hermitian matrices have a common orthonormal eigenbasis
 positive operators E_j=Phi^*(|v_j><v_j|) sum to I_h, and
 
 ```math
-\Phi(\omega)=\sum_j\operatorname{Tr}(E_j\omega)
+\Phi(\omega)=\sum_j\mathrm{Tr}(E_j\omega)
  |v_j\rangle\langle v_j|.
 ```
 
@@ -209,7 +209,7 @@ fills Q with multiplicity two. After permuting a real common eigenbasis,
 
 ```math
 \boxed{\Phi(\omega)=\sum_{a,b=\pm1}
- \operatorname{Tr}(E_{ab}\omega)|ab\rangle\langle ab|,
+ \mathrm{Tr}(E_{ab}\omega)|ab\rangle\langle ab|,
 \quad E_{ab}=\frac{I+a\alpha X_h+b\beta Z_h}{4},
 \quad \alpha,\beta\ge0,\quad\alpha^2+\beta^2=1.}
 ```

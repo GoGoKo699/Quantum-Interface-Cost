@@ -29,7 +29,7 @@ Let R1,R2 be reference qubits, let Q have dimension four, and put
 H_0=X_1\otimes B_1+Z_1\otimes D_1
     +X_2\otimes B_2+Z_2\otimes D_2,
 \qquad -I\le B_i,D_i\le I.
-\tag{1}
+\qquad\text{(1)}
 ```
 
 Write its three largest eigenvalues, with multiplicity, as U,m,ell.
@@ -38,16 +38,16 @@ eigenspaces have dimension eight, so
 
 ```math
 H_0=\begin{pmatrix}0&C\\C^\dagger&0\end{pmatrix},
-\qquad \operatorname{spec}(H_0)=\{\pm\sigma_j(C):1\le j\le8\}.
+\qquad \mathrm{spec}(H_0)=\{\pm\sigma_j(C):1\le j\le8\}.
 ```
 
 The four reference Pauli factors in (1) are trace-orthogonal. Hence
 
 ```math
-\operatorname{Tr}H_0^2
-=4\operatorname{Tr}_Q(B_1^2+D_1^2+B_2^2+D_2^2)
+\mathrm{Tr}H_0^2
+=4\mathrm{Tr}_Q(B_1^2+D_1^2+B_2^2+D_2^2)
 \le64.
-\tag{2}
+\qquad\text{(2)}
 ```
 
 There is equality in (2) when the four readouts are reflections.
@@ -57,7 +57,7 @@ Chirality then gives
 \sum_{j=1}^8\sigma_j(C)^2\le32,
 \qquad
 \boxed{0\le\ell=\sigma_3(C)\le\kappa:=\sqrt{32/3}<2+\sqrt2.}
-\tag{3}
+\qquad\text{(3)}
 ```
 
 For the last strict inequality, squaring reduces to `6sqrt(2)>7`,
@@ -71,7 +71,7 @@ Then, uniformly over all earlier readouts,
 
 ```math
 \boxed{t-2\ge2+\sqrt2-\sqrt{32/3}>0.}
-\tag{4}
+\qquad\text{(4)}
 ```
 
 The lower gap is approximately 0.148227239. This is a moment argument,
@@ -84,14 +84,14 @@ isometry V from a two-dimensional auxiliary head space to R1 R2 Q by
 `V e_a=Omega_a`, and set
 
 ```math
-\Delta=\operatorname{diag}(U-\ell,m-\ell)\ge0.
+\Delta=\mathrm{diag}(U-\ell,m-\ell)\ge0.
 ```
 
 Spectral ordering gives
 
 ```math
 \boxed{H_0\le\ell I+V\Delta V^\dagger.}
-\tag{5}
+\qquad\text{(5)}
 ```
 
 If m=ell, the second weight vanishes. Degenerate leading eigenvalues
@@ -131,7 +131,7 @@ For a memory operator A define
 
 ```math
 \mathcal E(A)=V^\dagger(I_{R_1R_2}\otimes A)V.
-\tag{6}
+\qquad\text{(6)}
 ```
 
 This is a unital completely positive map from four-by-four memory
@@ -146,15 +146,15 @@ matrices to two-by-two head matrices. In a reference basis r, put
 Thus its Kraus rank is at most four. Define the cross marginals
 
 ```math
-\rho_{ab}=\operatorname{Tr}_{R_1R_2}
+\rho_{ab}=\mathrm{Tr}_{R_1R_2}
 |\Omega_a\rangle\langle\Omega_b|.
 ```
 
 The entries are
 
 ```math
-\mathcal E(A)_{ab}=\operatorname{Tr}(\rho_{ba}A).
-\tag{7}
+\mathcal E(A)_{ab}=\mathrm{Tr}(\rho_{ba}A).
+\qquad\text{(7)}
 ```
 
 The block matrix `[rho_ab]` is positive and its partial trace over Q is
@@ -178,8 +178,8 @@ Let Phi denote the trace-preserving dual of E, so
 `Phi(A)=Tr_R(V A V^dagger)`. Actual head channels satisfy
 
 ```math
-\boxed{\Phi(\operatorname{diag}(U^2,m^2))\le8I_Q.}
-\tag{7a}
+\boxed{\Phi(\mathrm{diag}(U^2,m^2))\le8I_Q.}
+\qquad\text{(7a)}
 ```
 
 Indeed, partial tracing (1) squared gives
@@ -207,9 +207,9 @@ ordered as R3 followed by the head, define
 
 ```math
 \boxed{\mathcal K_t(B,D)
-=(\operatorname{id}_{R_3}\otimes\mathcal E_\Delta)
+=(\mathrm{id}_{R_3}\otimes\mathcal E_\Delta)
        [R_t(B,D)]\in M_4.}
-\tag{8}
+\qquad\text{(8)}
 ```
 
 Then the spectral envelope satisfies the exact equivalence
@@ -218,7 +218,7 @@ Then the spectral envelope satisfies the exact equivalence
 \boxed{\ell I+V\Delta V^\dagger+h\le\Lambda I
 \quad\Longleftrightarrow\quad
 \mathcal K_t(B,D)\le I_4.}
-\tag{9}
+\qquad\text{(9)}
 ```
 
 Spectator identities and the natural tensor reordering are implicit on
@@ -259,7 +259,7 @@ each contraction into such extremes proves that
 ```math
 \sup_{-I\le B,D\le I}\lambda_{\max}\mathcal K_t(B,D)
 =\sup_{B^2=D^2=I}\lambda_{\max}\mathcal K_t(B,D).
-\tag{10}
+\qquad\text{(10)}
 ```
 
 This does not force the two last reflections to anticommute. Their
@@ -275,7 +275,7 @@ R_t(B,D)=
 t(t^2-TT^\dagger)^{-1}&T(t^2-T^\dagger T)^{-1}\\
 T^\dagger(t^2-TT^\dagger)^{-1}&t(t^2-T^\dagger T)^{-1}
 \end{pmatrix}.
-\tag{11}
+\qquad\text{(11)}
 ```
 
 Applying E_Delta entrywise gives an explicit four-by-four test. Here
@@ -299,7 +299,7 @@ frames, consider
 ```math
 H_0=aZ_1Z_A+bX_1X_A+cZ_2Z_B+dX_2Z_AX_B,
 \quad a^2+b^2=c^2+d^2=2.
-\tag{12}
+\qquad\text{(12)}
 ```
 
 This is an allowed original-query Hamiltonian: before those reference
@@ -337,7 +337,7 @@ In particular
 
 ```math
 U=m=2\sqrt3>2+\sqrt2,\qquad \ell=2/\sqrt3.
-\tag{13}
+\qquad\text{(13)}
 ```
 
 Any positive rank-at-most-one majorant `H_0<=b_0 I+A` requires
@@ -353,7 +353,7 @@ The two-mode envelope instead has
 H_0\le\ell I+gVV^\dagger,
 \qquad \ell=2/\sqrt3,\quad g=4/\sqrt3,
 \quad \Delta=gI_2.
-\tag{14}
+\qquad\text{(14)}
 ```
 
 ### 5.2. The full head channel is explicit
@@ -378,11 +378,11 @@ head-to-memory channel is consequently
 
 ```math
 \Phi(\omega)=\sum_{a,b=0}^1
-\operatorname{Tr}(E_{ab}\omega)|ab\rangle\langle ab|,
+\mathrm{Tr}(E_{ab}\omega)|ab\rangle\langle ab|,
 \qquad
 E_{ab}=\frac14\left[I+
 \frac{(-1)^aX_h+(-1)^bZ_h}{\sqrt2}\right].
-\tag{15}
+\qquad\text{(15)}
 ```
 
 For example, the A=a row of V_S is
@@ -405,7 +405,7 @@ Then `h^2=2I` and E obeys `E(Z_A)=X_h/sqrt(2)` and
 \frac{X_3X_h+Z_3Z_h}{\sqrt2}\right],
 \qquad
 \|\mathcal K_t\|=\frac{g}{t-\sqrt2}.
-\tag{16}
+\qquad\text{(16)}
 ```
 
 Dephasing the head in its Y basis removes both correlations and gives
@@ -439,7 +439,7 @@ E_ab in (15) sum to I, so their complete head compression obeys
 \boxed{\sup_{B,D}\|\mathcal K_t(B,D)\|
 =\frac{g}{t-\sqrt2}
 =\frac{2}{2\sqrt3-1}<1.}
-\tag{17}
+\qquad\text{(17)}
 ```
 
 The last pair in (16) attains the bound. Therefore this actual example

@@ -23,7 +23,7 @@ P_k project onto the first k vectors. Define
 $$
 \sigma_k=\frac{P_k}{k},\qquad
 w_k=k(\lambda_k-\lambda_{k+1}).
-\tag{1}
+\qquad\text{(1)}
 $$
 
 Then w_k >= 0, sum_k w_k=1, and rho=sum_k w_k sigma_k. Choices inside
@@ -37,9 +37,9 @@ B=PUP on ran(P), and
 
 $$
 F_U=\|SBS\|_1,\quad
-a_U=\operatorname{Tr}(SBSB),\quad
+a_U=\mathrm{Tr}(SBSB),\quad
 \delta_U=a_U-F_U^2.
-\tag{2}
+\qquad\text{(2)}
 $$
 
 Choose a Hermitian unitary extension J_U of sign(SBS), including its
@@ -49,7 +49,7 @@ identity gives
 $$
 0<b_U\le1,\qquad F_U^2\le a_U b_U,\qquad
 1-b_U=\frac12\|[S,J_U]\|_2^2.
-\tag{3}
+\qquad\text{(3)}
 $$
 
 **Theorem.** For every original query, its loss under the spectral-layer
@@ -59,7 +59,7 @@ $$
 \boxed{
 0\le d_U:=F_U(\rho)-\sum_k w_k F_U(\sigma_k)
 \le\sqrt{2a_U(1-b_U)}\le\sqrt{2\delta_U}.}
-\tag{4}
+\qquad\text{(4)}
 $$
 
 Consequently, with g(rho)=sum_U F_U(rho),
@@ -69,7 +69,7 @@ $$
 \sum_U d_U^2\le2E\le2\Delta,\qquad
 0\le g(\rho)-\sum_k w_k g(\sigma_k)
 \le2\sqrt{nE}\le2\sqrt{n\Delta}.
-\tag{5}
+\qquad\text{(5)}
 $$
 
 The constants and square-root order in (4) and (5) are sharp, already
@@ -88,9 +88,9 @@ of H into its positive and negative parts give
 
 $$
 \sum_k\|A_k H A_k^*\|_1
-\le\sum_k\operatorname{Tr}(A_k|H|A_k^*)
+\le\sum_k\mathrm{Tr}(A_k|H|A_k^*)
 =\|H\|_1.
-\tag{6}
+\qquad\text{(6)}
 $$
 
 Taking H=SBS yields A_kHA_k^*=(lambda_k-lambda_{k+1})P_kBP_k.
@@ -106,8 +106,8 @@ duality therefore gives
 $$
 \sum_k w_kF_U(\sigma_k)
 \ge L:=\sum_k(\lambda_k-\lambda_{k+1})
-\operatorname{Tr}(P_kBP_kJ).
-\tag{7}
+\mathrm{Tr}(P_kBP_kJ).
+\qquad\text{(7)}
 $$
 
 For indices i,j, summing the layer weights in (7) gives
@@ -118,7 +118,7 @@ $$
 F-L=\sum_{i,j}
 \bigl(s_i s_j-\min(s_i^2,s_j^2)\bigr)B_{ij}J_{ji}
 =\sum_{i,j}\min(s_i,s_j)|s_i-s_j|B_{ij}J_{ji}.
-\tag{8}
+\qquad\text{(8)}
 $$
 
 This expression is real; applying complex Cauchy--Schwarz to its
@@ -133,7 +133,7 @@ $$
 \|[S,J]\|_2^2
 =2a(1-b).
 \end{aligned}
-\tag{9}
+\qquad\text{(9)}
 $$
 
 Equations (7)--(9) imply d_U<=sqrt(2a_U(1-b_U)). By (3),
@@ -147,7 +147,7 @@ $$
 c_U:=\sum_k w_k a_U(\sigma_k)
 =\sum_{i,j}\min(\lambda_i,\lambda_j)|B_{ij}|^2\le a_U,
 \qquad d_U^2\le2c_U(1-b_U).
-\tag{9a}
+\qquad\text{(9a)}
 $$
 
 The same proof gives the weighted version. For any nonnegative query
@@ -159,7 +159,7 @@ $$
 \le\sum_U \omega_U\sqrt{2\delta_U}
 \le\sqrt{2\Bigl(\sum_U \omega_U\Bigr)
 \Bigl(\sum_U \omega_U\delta_U\Bigr)}.
-\tag{10}
+\qquad\text{(10)}
 $$
 
 ## 3. Sharpness at one qubit
@@ -173,7 +173,7 @@ $$
 F_U(\rho_\epsilon)=a_U=b_U=t,\qquad
 \delta_U=t(1-t),\qquad
 \sum_k w_k F_U(\sigma_k)=1-2\epsilon.
-\tag{11}
+\qquad\text{(11)}
 $$
 
 Indeed, U interchanges the two Y eigenvectors, and SBS is
@@ -187,7 +187,7 @@ $$
 \lim_{\epsilon\downarrow0}
 \frac{g(\rho_\epsilon)-\sum_k w_k g(\sigma_k)}
 {2\sqrt{\Delta}}=1.
-\tag{12}
+\qquad\text{(12)}
 $$
 
 In this family c_U=1-2 epsilon and
@@ -204,7 +204,7 @@ epsilon=v/(1+v^2), 0<v<1, gives t=(1-v^2)/(1+v^2) and
 $$
 \frac{d_U^2}{2\delta_U}=\frac{1-v}{1+v}\longrightarrow1
 \quad\text{as }v\downarrow0.
-\tag{12a}
+\qquad\text{(12a)}
 $$
 
 These states satisfy the already established one-qubit converse; the
@@ -217,7 +217,7 @@ projectors Q of rank at most r. Equation (5) immediately gives
 
 $$
 g(\rho)\le M_n(r)+2\sqrt{n\Delta}.
-\tag{13}
+\qquad\text{(13)}
 $$
 
 Thus a seed with a small total fidelity--affinity gap is close in score
@@ -232,7 +232,7 @@ holds for every projector of rank at most r, then
 $$
 g(\rho)\le\sqrt2\,n+c\sum_k w_k\log_2 k+2\sqrt{n\Delta}
 \le\sqrt2\,n+cS(\rho)+2\sqrt{n\Delta}.
-\tag{14}
+\qquad\text{(14)}
 $$
 
 For the last step, choose K with probabilities w_k and then choose I

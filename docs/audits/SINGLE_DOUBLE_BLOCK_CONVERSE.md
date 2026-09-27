@@ -25,7 +25,7 @@ For arbitrary Hermitian reflection readouts on Q, put
 
 $$
 h_i=X_i\otimes B_i+Z_i\otimes D_i,\qquad H=h_1+h_2+h_3.
-\tag{1}
+\qquad\text{(1)}
 $$
 
 Assume at most one original pair `(B_i,D_i)` has two noncommuting
@@ -36,7 +36,7 @@ block. Their memory planes need not coincide.
 
 $$
 \boxed{\|H\|_\infty\le4+\sqrt2.}
-\tag{2}
+\qquad\text{(2)}
 $$
 
 This is an unweighted three-input theorem. No extension to every
@@ -51,7 +51,7 @@ g(L)=\sum_{i=1}^3
 \left(\|LX_iL^\dagger\|_1+\|LZ_iL^\dagger\|_1\right),
 \qquad L:\mathbb C^8\longrightarrow\mathbb C^4,\quad
 \|L\|_F=1.
-\tag{3}
+\qquad\text{(3)}
 $$
 
 Each trace norm has a maximizing reflection, with arbitrary signs on a
@@ -80,7 +80,7 @@ Write
 
 $$
 r=\sqrt2,\qquad \delta=2-r,\qquad T=4-r.
-\tag{4}
+\qquad\text{(4)}
 $$
 
 Relabel sites so pairs 2 and 3 have at most one noncommuting block.
@@ -89,7 +89,7 @@ The local spectral cap from the
 
 $$
 h_2+h_3\le2rI+\delta K,\qquad K=\Pi_2+\Pi_3,
-\tag{5}
+\qquad\text{(5)}
 $$
 
 where each Pi is a rank-one Bell projector between its reference and
@@ -106,7 +106,7 @@ $$
 \{\pm u_0,\pm v_0\},\quad \{\pm u_1,\pm v_1\},\qquad
 2\ge u_0\ge u_1=u\ge r,\qquad
 v_k=\sqrt{4-u_k^2},\quad v=v_1\ge v_0.
-\tag{6}
+\qquad\text{(6)}
 $$
 
 Let P_0 and P_1 be their top Bell projectors, on orthogonal memory
@@ -115,7 +115,7 @@ planes, and put P=P_0+P_1. All other eigenvalues are at most v. Hence
 $$
 h_1\le vI+C,\qquad
 C=(u_0-v)P_0+(u-v)P_1.
-\tag{7}
+\qquad\text{(7)}
 $$
 
 P has rank two on `R_1 tensor Q`, and rank eight after the two
@@ -140,7 +140,7 @@ The two-projector Gram bound and its squared-overlap consequence give
 $$
 0\le K\le\tfrac32I,\qquad
 P_0KP_0\le\tfrac12P_0.
-\tag{8}
+\qquad\text{(8)}
 $$
 
 For the second inequality each of the two summands is at most P_0/4.
@@ -149,7 +149,7 @@ the further bound
 
 $$
 \boxed{PKP\le\tfrac34P.}
-\tag{9}
+\qquad\text{(9)}
 $$
 
 To see it, write the two Bell vectors in a fixed reference basis
@@ -159,7 +159,7 @@ basis of Q. Identifying these with `|a>_A|k>_B` gives
 
 $$
 Q=A\otimes B,\qquad P=\Phi_{R_1A}\otimes I_B,
-\tag{10}
+\qquad\text{(10)}
 $$
 
 where A and B are qubits. No common subsystem choice for the other
@@ -167,9 +167,9 @@ queries is being assumed. Under the insertion isometry with range P,
 
 $$
 P\Pi_jP\ \simeq\ \tfrac12\rho_{R_jB},\qquad
-\rho_{R_jB}=\operatorname{Tr}_A\Pi_j,\qquad
-\operatorname{Tr}_B\rho_{R_jB}=I_{R_j}/2.
-\tag{11}
+\rho_{R_jB}=\mathrm{Tr}_A\Pi_j,\qquad
+\mathrm{Tr}_B\rho_{R_jB}=I_{R_j}/2.
+\qquad\text{(11)}
 $$
 
 Here each Pi_j on the right is first expressed in the memory basis
@@ -178,7 +178,7 @@ sharing a qubit B,
 
 $$
 \rho_{R_2B}+\rho_{R_3B}\le\tfrac32 I.
-\tag{12}
+\qquad\text{(12)}
 $$
 
 This is a direct prior-monogamy corollary, not a new ingredient.
@@ -191,7 +191,7 @@ Apply `S tensor U tensor id` to
 
 $$
 \Phi_{R_2'B}+\Phi_{R_3'B}\le(1+1/d)I.
-\tag{13}
+\qquad\text{(13)}
 $$
 
 The maps act on different leaves; a single positive unital map
@@ -207,7 +207,7 @@ It remains to show `h_1+delta K<=T I`. Set
 
 $$
 z\ge T-r=2\delta>\ell\delta,\qquad T-u_k\ge\delta>0.
-\tag{14}
+\qquad\text{(14)}
 $$
 
 The scalar convex function `x -> 1/(z-delta x)` lies below its
@@ -216,7 +216,7 @@ endpoint chord on `[0,ell]`. Functional calculus with (8) yields
 $$
 (zI-\delta K)^{-1}
 \le \frac Iz+\frac{\delta K}{z(z-\ell\delta)}.
-\tag{15}
+\qquad\text{(15)}
 $$
 
 The desired inequality `C+delta K<=zI` is equivalent by positive
@@ -224,7 +224,7 @@ congruence and the equality of nonzero Gram spectra to
 
 $$
 C^{1/2}(zI-\delta K)^{-1}C^{1/2}\le I_P.
-\tag{16}
+\qquad\text{(16)}
 $$
 
 Using (15), subtracting C/z, and conjugating by
@@ -236,7 +236,7 @@ $$
 D=d_0P_0+d_1P_1,\quad
 d_0=\frac{u_0-v}{T-u_0},\quad
 d_1=\frac{u-v}{T-u}.
-\tag{17}
+\qquad\text{(17)}
 $$
 
 In particular `d_0>=d_1>=0`. No inverse of C or D is used, so
@@ -252,7 +252,7 @@ $$
 &\le\tfrac34d_1+\tfrac12(d_0-d_1)
 =\tfrac12d_0+\tfrac14d_1.
 \end{aligned}
-\tag{18}
+\qquad\text{(18)}
 $$
 
 The last line uses `||sqrt(A)P_0 sqrt(A)||=||P_0 A P_0||<=1/2`.
@@ -262,7 +262,7 @@ For fixed v, d_0 increases with u_0; using `u_0<=2` gives
 
 $$
 \delta d_1\le u-v\le2(r-v).
-\tag{19}
+\qquad\text{(19)}
 $$
 
 Consequently
@@ -272,7 +272,7 @@ $$
 \le\frac{2-v}{2}+\frac{r-v}{2}
 =1+\frac r2-v
 =z-\tfrac32\delta.
-\tag{20}
+\qquad\text{(20)}
 $$
 
 This proves (17), hence `h_1+delta K<=T I`.
@@ -375,7 +375,7 @@ $$
 \langle\langle L_\beta|,\qquad
 \sum_\alpha K_\alpha^\dagger K_\alpha
 =\sum_\beta L_\beta^\dagger L_\beta=I_d.
-\tag{21}
+\qquad\text{(21)}
 $$
 
 Let F insert `|K_alpha>>/sqrt(d)` on AB, leaving C untouched,
@@ -386,7 +386,7 @@ Then `FF^dagger=rho_AB tensor I_C` and
 $$
 (F^\dagger G)_{\alpha c,\beta a}
 =\frac1d\sum_b\overline{K_\alpha[b,a]}L_\beta[b,c].
-\tag{22}
+\qquad\text{(22)}
 $$
 
 With the Stinespring isometries
@@ -400,7 +400,7 @@ The two-by-two scalar Gram estimate therefore gives
 
 $$
 \|\rho_{AB}\otimes I_C+\sigma_{CB}\otimes I_A\|\le1+1/d.
-\tag{23}
+\qquad\text{(23)}
 $$
 
 This uses complex conjugation, not an unsupported partial-transpose

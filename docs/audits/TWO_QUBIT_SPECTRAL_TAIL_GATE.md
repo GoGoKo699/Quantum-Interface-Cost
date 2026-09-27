@@ -23,7 +23,7 @@ $$
 $a\ge b\ge c\ge d\ge0$, if $\epsilon=c+d\ge1/29$, then
 
 $$
-\boxed{g_2(\rho)\le2\sqrt2+c_0S(\rho).}                 \tag{1}
+\boxed{g_2(\rho)\le2\sqrt2+c_0S(\rho).}                 \qquad\text{(1)}
 $$
 
 No eigenbasis restriction is imposed. Both rank-three and full-rank states
@@ -43,7 +43,7 @@ The only seed inequality used as input is the already proved
 
 $$
 g_2(\rho)\le2\sqrt{4-E_*(a,b,c,d)},\qquad
-E_*=k(a,b)+k(a,c)+k(b,d)+k(c,d),                         \tag{2}
+E_*=k(a,b)+k(a,c)+k(b,d)+k(c,d),                         \qquad\text{(2)}
 $$
 
 where $k(x,y)=(x-y)^2/(x+y)$ and $k(0,0)=0$.
@@ -67,7 +67,7 @@ Here $0\le t,s\le1$. The ordering $b\ge c$ also gives
 $$
 (1-\epsilon)(1-t)\ge\epsilon(1+s),\qquad
 t\le t_{\max}=\frac{1-2\epsilon}{1-\epsilon},\qquad
-s\le\min\!\left(1,\frac{1-2\epsilon}{\epsilon}\right).    \tag{3}
+s\le\min\!\left(1,\frac{1-2\epsilon}{\epsilon}\right).    \qquad\text{(3)}
 $$
 
 Define $\delta(u)=1-h_2((1+u)/2)$,
@@ -75,12 +75,12 @@ $H_0=1+h_2(\epsilon)$, and $E_0=(1-2\epsilon)^2$.
 The entropy chain rule and direct algebra yield
 
 $$
-S(\rho)=H_0-[(1-\epsilon)\delta(t)+\epsilon\delta(s)],    \tag{4}
+S(\rho)=H_0-[(1-\epsilon)\delta(t)+\epsilon\delta(s)],    \qquad\text{(4)}
 $$
 
 $$
 E_*=E_0+(1-\epsilon)t^2+\epsilon s^2+
-\frac{4\epsilon^2(1-\epsilon)^2(t-s)^2}{1-m^2}.          \tag{5}
+\frac{4\epsilon^2(1-\epsilon)^2(t-s)^2}{1-m^2}.          \qquad\text{(5)}
 $$
 
 For clarity, the within-row terms in (2) are
@@ -111,7 +111,7 @@ The convergent positive series
 
 $$
 \delta(u)=\frac1{\ln2}\sum_{j=1}^{\infty}
-\frac{u^{2j}}{2j(2j-1)}                               \tag{6}
+\frac{u^{2j}}{2j(2j-1)}                               \qquad\text{(6)}
 $$
 
 shows that $r$ increases on $[0,1]$ and $r(1)=1$.
@@ -119,7 +119,7 @@ Using (3)--(5), together with $1/(1-m^2)\ge1$, gives
 
 $$
 (E_*-E_0)-\alpha(H_0-S)
-\ge A t^2+B s^2+K(t-s)^2,                              \tag{7}
+\ge A t^2+B s^2+K(t-s)^2,                              \qquad\text{(7)}
 $$
 
 where $A=(1-\epsilon)[1-\alpha r(t_{\max})]$ and
@@ -127,7 +127,7 @@ $B=\epsilon(1-\alpha)$. Section 5 gives an exact rational certificate
 that the matrix
 
 $$
-M(\epsilon)=\begin{pmatrix}A+K&-K\\-K&B+K\end{pmatrix}  \tag{8}
+M(\epsilon)=\begin{pmatrix}A+K&-K\\-K&B+K\end{pmatrix}  \qquad\text{(8)}
 $$
 
 is positive semidefinite for every $\epsilon\in[1/29,9/25]$.
@@ -145,14 +145,14 @@ give $E_*-E_0\ge\alpha(H_0-S)$ directly in this remaining interval,
 without its nonnegative cross term. Combining both regions proves
 
 $$
-E_*-E_0\ge\alpha(\epsilon)(H_0-S).                     \tag{9}
+E_*-E_0\ge\alpha(\epsilon)(H_0-S).                     \qquad\text{(9)}
 $$
 
 Concavity of $x\mapsto2\sqrt{4-x}$ now yields
 
 $$
 2\sqrt{4-E_*}\le2\sqrt{4-E_0}-\frac{E_*-E_0}{\sqrt{4-E_0}}
-\le2\sqrt{4-E_0}-c_0(H_0-S).                           \tag{10}
+\le2\sqrt{4-E_0}-c_0(H_0-S).                           \qquad\text{(10)}
 $$
 
 It remains to prove the desired bound for the balanced spectrum
@@ -165,7 +165,7 @@ $2\sqrt{4-x^2}\le4-c_0\delta(x)$. It is equality at $x=0$.
 For $x>0$, rationalization makes it equivalent to
 
 $$
-c_0r(x)[2+\sqrt{4-x^2}]\le2.                          \tag{11}
+c_0r(x)[2+\sqrt{4-x^2}]\le2.                          \qquad\text{(11)}
 $$
 
 The product $q(x)=r(x)[2+\sqrt{4-x^2}]$ is increasing. Indeed (6)
@@ -196,12 +196,12 @@ $$
 L=2\sum_{j=0}^{23}\frac1{(2j+1)3^{2j+1}}<\ln2
 $$
 
-from $\ln2=2\operatorname{atanh}(1/3)$. For rational $0\le u\le1$,
+from $\ln2=2\mathrm{atanh}(1/3)$. For rational $0\le u\le1$,
 (6) implies
 
 $$
 r(u)\le R_N(u):=u^{2N}+\frac1L\sum_{j=1}^N
-\frac{u^{2j-2}-u^{2N}}{2j(2j-1)}.                      \tag{12}
+\frac{u^{2j-2}-u^{2N}}{2j(2j-1)}.                      \qquad\text{(12)}
 $$
 
 Every omitted power is at most $u^{2N}$, and the full coefficient sum
@@ -222,18 +222,18 @@ r_+&=R_{40}\!\left(\frac{1-2\ell}{1-\ell}\right),&
 A_-&=(1-h)(1-\alpha_+r_+),\\
 B_-&=h(1-\alpha_+),&
 K_-&=4\ell^2(1-\ell)^2.
-\end{aligned}                                        \tag{13}
+\end{aligned}                                        \qquad\text{(13)}
 $$
 
 For every cell the code verifies
 
 $$
 A_-\ge0,\qquad B_-+K_-\ge0,\qquad
-A_-B_-+K_-(A_-+B_-)\ge0.                              \tag{14}
+A_-B_-+K_-(A_-+B_-)\ge0.                              \qquad\text{(14)}
 $$
 
 These are sufficient principal-minor conditions for
-$M_- = \operatorname{diag}(A_-,B_-)+K_-\begin{pmatrix}1&-1\\-1&1\end{pmatrix}$
+$M_- = \mathrm{diag}(A_-,B_-)+K_-\begin{pmatrix}1&-1\\-1&1\end{pmatrix}$
 to be positive semidefinite. They are lower bounds throughout the cell:
 $\alpha$ increases, $t_{\max}$ decreases, and $r$ increases.
 The checked sign $A_-\ge0$ permits multiplication by

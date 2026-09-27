@@ -64,7 +64,7 @@ the fidelity is not squared in this convention.
 $$
 \boxed{R(\eta)=E(\eta)
 =\lim_{n\to\infty}\frac{e_n(\eta)}n.}
-\tag{1}
+\qquad\text{(1)}
 $$
 
 The function E is nondecreasing, convex, and continuous on $(0,1)$.
@@ -91,7 +91,7 @@ $$
 If L has output dimension $D\le2^q$, then
 
 $$
-S(\rho)\le\log_2\operatorname{rank}\rho\le q.
+S(\rho)\le\log_2\mathrm{rank}\rho\le q.
 $$
 
 The exact seed reduction implies that any admissible q-qubit protocol at
@@ -100,7 +100,7 @@ at most $2^q$. Consequently
 
 $$
 e_n(\eta)\le q_{\min}(n,\eta),\qquad E(\eta)\le R(\eta).
-\tag{2}
+\qquad\text{(2)}
 $$
 
 This uses the worst-case dimension of the physical interface. It does not
@@ -109,14 +109,14 @@ replace that resource by an average over classical branches.
 ## 3. Tensor products, convexity, and contrast slack
 
 For states $\rho$ on n sites and $\sigma$ on m sites, trace-norm
-multiplicativity and $\operatorname{Tr}\rho=\operatorname{Tr}\sigma=1$
+multiplicativity and $\mathrm{Tr}\rho=\mathrm{Tr}\sigma=1$
 give
 
 $$
 (n+m)f_{n+m}(\rho\otimes\sigma)
 =nf_n(\rho)+mf_m(\sigma),
 \qquad S(\rho\otimes\sigma)=S(\rho)+S(\sigma).
-\tag{3}
+\qquad\text{(3)}
 $$
 
 At fixed contrast, $e_{n+m}\le e_n+e_m$. Fekete's lemma therefore proves
@@ -130,7 +130,7 @@ $S(\rho)/(2n)+S(\sigma)/(2m)$. Taking the two independent infima yields
 
 $$
 E\!\left(\frac{a+b}{2}\right)\le\frac{E(a)+E(b)}2.
-\tag{4}
+\qquad\text{(4)}
 $$
 
 A locally bounded midpoint-convex function is continuous and convex on
@@ -162,7 +162,7 @@ least $2^{-M(S(\rho)+\tau)}$. If $D_M$ is their number, then
 
 $$
 D_M\le2^{M(S(\rho)+\tau)}.
-\tag{5}
+\qquad\text{(5)}
 $$
 
 Let $p_M$ be the discarded probability. The law of large numbers applied
@@ -175,7 +175,7 @@ $$
 |\psi\rangle\langle\psi|^{\otimes M}
 -|\psi'_M\rangle\langle\psi'_M|
 \right\|_1=2\sqrt{p_M}.
-\tag{6}
+\qquad\text{(6)}
 $$
 
 For each original local query choose a trace-norm-optimal Hermitian
@@ -193,7 +193,7 @@ $$
 f_{nM}(L_M^\dagger L_M)
 \ge f_n(\rho)-2\sqrt{p_M}
 \ge\eta'-2\sqrt{p_M}.
-\tag{7}
+\qquad\text{(7)}
 $$
 
 For all sufficiently large M this score is at least $\eta$. Apply the
@@ -207,7 +207,7 @@ at most $D_M$, and hence uses at most
 $$
 q_M=\lceil\log_2 D_M\rceil
 \le\lceil M(S(\rho)+\tau)\rceil
-\tag{8}
+\qquad\text{(8)}
 $$
 
 qubits. The classical orbit and randomization labels are finite for each
@@ -264,7 +264,7 @@ The random-subset construction proves $R(\eta)\le H(\eta)$.
    \boxed{
    g(\sqrt\rho)\le\sqrt2\,n+(2-\sqrt2)S(\rho).
    }
-   \tag{9}
+   \qquad\text{(9)}
    $$
 
 To prove the implication from (9), divide by $2n$. For every state feasible

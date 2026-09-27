@@ -21,7 +21,7 @@ I_\rho(P)=\frac12\sum_{a,b:\lambda_a+\lambda_b>0}
 \frac{(\lambda_a-\lambda_b)^2}{\lambda_a+\lambda_b}|P_{ab}|^2,
 \qquad
 \mathcal I_{XZ}(\rho)=\sum_{i=1}^n[I_\rho(X_i)+I_\rho(Z_i)].
-\tag{1}
+\qquad\text{(1)}
 $$
 
 The entries are in an eigenbasis of rho. This is one quarter of the usual
@@ -32,7 +32,7 @@ The proposed intermediate target is
 
 $$
 \boxed{\mathcal I_{XZ}(\rho)\ \stackrel{?}{\ge}\ n-S(\rho).}
-\tag{2}
+\qquad\text{(2)}
 $$
 
 The [spectral-condition proof](SPECTRAL_CONDITION_ENTROPY_BOUND.md),
@@ -41,7 +41,7 @@ Section 2, already proves by weighted Cauchy--Schwarz that
 $$
 F_P^2\le1-I_\rho(P),\qquad
 F_P=\|\sqrt\rho P\sqrt\rho\|_1.
-\tag{3}
+\qquad\text{(3)}
 $$
 
 Thus (2), if proved, would imply
@@ -51,7 +51,7 @@ $$
 \le\sqrt{\frac{1+S(\rho)/n}{2}},
 \qquad
 g(\sqrt\rho)=\sum_{i,b=X,Z}F_{P_{i,b}}.
-\tag{4}
+\qquad\text{(4)}
 $$
 
 The seed reduction would then give
@@ -80,7 +80,7 @@ An apparently sufficient local claim is
 $$
 I_\rho(X_A)+I_\rho(Z_A)
 \stackrel{?}{\ge}1-S(A\mid B)_\rho.
-\tag{5}
+\qquad\text{(5)}
 $$
 
 Consider the two-qubit pure state
@@ -127,7 +127,7 @@ $$
 S(\mathcal E_Z(\phi))-S(\phi)=h_2(1/10)
 =0.4689955935\ldots
 >\frac9{25}=I_\phi(Z).
-\tag{6}
+\qquad\text{(6)}
 $$
 
 This is an exact obstruction to that entropy-telescoping argument. The
@@ -153,7 +153,7 @@ Sixia Yu, [arXiv:1302.5311v1](https://arxiv.org/pdf/1302.5311v1),
 
 $$
 I_\rho(P)=\min_{\rho=\sum_kp_k\psi_k}
-\sum_kp_k\operatorname{Var}_{\psi_k}(P).
+\sum_kp_k\mathrm{Var}_{\psi_k}(P).
 $$
 
 This supplies the established convex-roof interpretation of (1).
@@ -194,7 +194,7 @@ Kaifeng Bu, Weichen Gu and Arthur Jaffe,
 $$
 J(\rho;H)=\left.\frac{d^2}{d\theta^2}
 D(\rho\Vert e^{i\theta H}\rho e^{-i\theta H})\right|_{\theta=0}
-=\operatorname{Tr}\rho[H,[H,\log\rho]].
+=\mathrm{Tr}\rho[H,[H,\log\rho]].
 $$
 
 Their Eq. (12) sums this quantity over the spectral projectors of local
@@ -245,8 +245,8 @@ Let rho=P/r, where P is an orthogonal projection of rank r. For any
 Hermitian unitary U, (1) simplifies to
 
 $$
-I_{P/r}(U)=1-\frac{\operatorname{Tr}(PUPU)}r.
-\tag{7}
+I_{P/r}(U)=1-\frac{\mathrm{Tr}(PUPU)}r.
+\qquad\text{(7)}
 $$
 
 Write `Tr_i` for the unnormalized partial trace. The local Pauli-twirl
@@ -254,8 +254,8 @@ identity gives
 
 $$
 \frac12\sum_{i=1}^n\sum_{U=X,Y,Z}I_{P/r}(U_i)
-=2n-\frac1r\sum_i\operatorname{Tr}[(\operatorname{Tr}_iP)^2].
-\tag{8}
+=2n-\frac1r\sum_i\mathrm{Tr}[(\mathrm{Tr}_iP)^2].
+\qquad\text{(8)}
 $$
 
 For clarity, let `d=2^n`, expand `P=sum_w p_w sigma_w`, and let `N_Y(w)`
@@ -265,15 +265,15 @@ $$
 \mathcal I_{XZ}(P/r)
 -\frac12\sum_{i,U=X,Y,Z}I_{P/r}(U_i)
 =\frac{2d}{r}\sum_wN_Y(w)|p_w|^2\ge0.
-\tag{9}
+\qquad\text{(9)}
 $$
 
 Consequently,
 
 $$
-\frac1r\sum_i\operatorname{Tr}[(\operatorname{Tr}_iP)^2]
+\frac1r\sum_i\mathrm{Tr}[(\mathrm{Tr}_iP)^2]
 \stackrel{?}{\le}n+\log_2r
-\tag{10}
+\qquad\text{(10)}
 $$
 
 would be sufficient for (2) on flat states. Equation (10) is equivalent
@@ -324,7 +324,7 @@ $$
 \int_0^\infty(ae^{-ta}-be^{-tb})^2\,dt
 =\frac{a+b}{2}-\frac{2ab}{a+b}
 =\frac{(a-b)^2}{2(a+b)}.
-\tag{11}
+\qquad\text{(11)}
 $$
 
 The integrand is zero when both a and b vanish. Define the positive
@@ -333,7 +333,7 @@ eigenbasis of rho and using (11) term by term proves
 
 $$
 \boxed{I_\rho(P)=\int_0^\infty\|[f_t,P]\|_2^2\,dt.}
-\tag{12}
+\qquad\text{(12)}
 $$
 
 This includes singular rho without a full-rank approximation. Only finitely
@@ -345,7 +345,7 @@ where `f_w=Tr(sigma_w f)/d` and `d=2^n`. Pauli orthogonality gives
 $$
 \|[f,X_i]\|_2^2+\|[f,Z_i]\|_2^2-\|[f,Y_i]\|_2^2
 =8d\sum_{w:w_i=Y}|f_w|^2\ge0.
-\tag{13}
+\qquad\text{(13)}
 $$
 
 Apply (13) inside (12), then sum over the sites. With `N_Y(w)` denoting
@@ -356,7 +356,7 @@ $$
 \mathcal I_{XZ}(\rho)-\frac12\sum_{i,U=X,Y,Z}I_\rho(U_i)
 =4d\int_0^\infty\sum_wN_Y(w)|f_w(t)|^2\,dt\ge0.
 }
-\tag{14}
+\qquad\text{(14)}
 $$
 
 In particular, `I_rho(X_i)+I_rho(Z_i)>=I_rho(Y_i)` holds sitewise for
@@ -374,7 +374,7 @@ put
 
 $$
 W_{ab}=\sum_{i=1}^n\sum_{U=X,Z}|\langle a|U_i|b\rangle|^2.
-\tag{15}
+\qquad\text{(15)}
 $$
 
 Then W is symmetric and entrywise nonnegative, every row sums to 2n, and
@@ -384,7 +384,7 @@ $$
 \frac12\sum_{a,b:\lambda_a+\lambda_b>0}
 W_{ab}\frac{(\lambda_a-\lambda_b)^2}{\lambda_a+\lambda_b}
 \ \stackrel{?}{\ge}\ \log_2d-H(\lambda).
-\tag{16}
+\qquad\text{(16)}
 $$
 
 This must hold uniformly over the graphs induced by the conjugated local
@@ -394,7 +394,7 @@ Two further necessary graph constraints are
 $$
 W_{aa}\le n,\qquad
 L:=2nI_d-W\succeq2\left(I_d-\frac Jd\right),
-\tag{17}
+\qquad\text{(17)}
 $$
 
 where `I_d` is the d-dimensional identity matrix and J is the
@@ -404,9 +404,9 @@ for any real vector x let `A=sum_a x_a|a><a|`. Then
 
 $$
 x^TLx=\frac12\sum_{i,U=X,Z}\|[A,U_i]\|_2^2
-\ge2\left(\operatorname{Tr}A^2-
-\frac{(\operatorname{Tr}A)^2}{d}\right).
-\tag{18}
+\ge2\left(\mathrm{Tr}A^2-
+\frac{(\mathrm{Tr}A)^2}{d}\right).
+\qquad\text{(18)}
 $$
 
 The last step follows by expanding A in Pauli words: each nonidentity
@@ -417,9 +417,9 @@ to that relaxation, take n=3, d=8, partition the vertices into four pairs,
 and set
 
 $$
-W_{aa}=3,\qquad W_{a,\operatorname{partner}(a)}=\frac32,
+W_{aa}=3,\qquad W_{a,\mathrm{partner}(a)}=\frac32,
 \qquad W_{ab}=\frac14\quad\text{for the other six vertices }b.
-\tag{19}
+\qquad\text{(19)}
 $$
 
 This symmetric nonnegative matrix has row sum 6 and diagonal 3. If K is
@@ -433,7 +433,7 @@ $$
 \frac12\sum_{a,b}\!'
 W_{ab}\frac{(\lambda_a-\lambda_b)^2}{\lambda_a+\lambda_b}
 =\frac32<2=3-H(\lambda).
-\tag{20}
+\qquad\text{(20)}
 $$
 
 The prime omits zero-denominator terms. This is a counterexample to using

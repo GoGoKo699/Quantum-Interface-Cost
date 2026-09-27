@@ -12,7 +12,7 @@ P on three qubits,
 $$
 g(P/2)=\frac14\sum_{i=1}^3\sum_{b=X,Z}\|P P_{i,b}P\|_1
 \le 4+\sqrt2.
-\tag{1}
+\qquad\text{(1)}
 $$
 
 Here the normalized seed is $L=P/2$, its Gram matrix is $\rho=P/4$,
@@ -45,7 +45,7 @@ retrieved. These dates agree with the
 | No Fourier mass above degree one implies a single-site operator or constant | Proposition 57, p. 31 | Proposition 59, p. 31 |
 | Tail mass below $\varepsilon$ implies $K\varepsilon$ closeness to that family, for universal K | Theorem 58, p. 31 | Theorem 60, p. 32 |
 | $\delta$ closeness means squared normalized Hilbert–Schmidt distance at most $4\delta$ | Definition 11, p. 11 | Definition 11, p. 11 |
-| $\operatorname{Var}(S)\le I(S)$ | Proposition 71, Eq. (163), p. 37 | Proposition 72, Eq. (163), p. 38 |
+| $\mathrm{Var}(S)\le I(S)$ | Proposition 71, Eq. (163), p. 37 | Proposition 72, Eq. (163), p. 38 |
 
 All page numbers are printed pages. The relevant conclusions agree across
 these versions; v5 does not add an exact local-X/Z compression optimum.
@@ -69,7 +69,7 @@ form. These statements concern all Pauli directions, not only X and Z.
 ## 2. Mapping the quantities exactly
 
 For the remainder let $d=2^n$, $r=d/2$, $P$ be a rank-r projector,
-$S=2P-I$, and $\tau(A)=\operatorname{Tr}(A)/d$. Then
+$S=2P-I$, and $\tau(A)=\mathrm{Tr}(A)/d$. Then
 
 $$
 S=S^\dagger,\qquad S^2=I,\qquad \tau(S)=0.
@@ -91,7 +91,7 @@ I_i(S)=\|S-\mathcal E_i(S)\|_{2,\tau}^2
 =\sum_{w:w_i\ne I}s_w^2,
 \qquad
 I(S)=\sum_w |w|s_w^2.
-\tag{2}
+\qquad\text{(2)}
 $$
 
 For a queried local Pauli U define instead
@@ -99,7 +99,7 @@ For a queried local Pauli U define instead
 $$
 w_U=\left\|\frac{S-USU}{2}\right\|_{2,\tau}^2
 =\sum_{w:\sigma_wU=-U\sigma_w}s_w^2.
-\tag{3}
+\qquad\text{(3)}
 $$
 
 At a given site, X anticommutes with Y and Z, and Z anticommutes with
@@ -115,7 +115,7 @@ and, summing sites,
 $$
 \boxed{\sum_{i,b=X,Z}w_{P_{i,b}}
 =I(S)+\sum_w N_Y(w)s_w^2.}
-\tag{4}
+\qquad\text{(4)}
 $$
 
 The queried energy counts a Y letter twice and an X or Z letter once.
@@ -133,12 +133,12 @@ $$
 Direct expansion of $P=(I+S)/2$ gives
 
 $$
-\frac1r\operatorname{Tr}(PUPU)
+\frac1r\mathrm{Tr}(PUPU)
 =\frac{1+\tau(SUSU)}2=1-w_U.
 $$
 
 If $t_1,\ldots,t_r\in[0,1]$ are the singular values of the compression
-of U to $\operatorname{ran}P$, then
+of U to $\mathrm{ran}P$, then
 
 $$
 F_U=\frac1r\sum_k t_k,\qquad
@@ -151,7 +151,7 @@ $$
 1-w_U\le F_U\le\sqrt{1-w_U},
 \qquad
 \frac{w_U}{2}\le1-F_U\le w_U.
-\tag{5}
+\qquad\text{(5)}
 $$
 
 No identity equating a fidelity deficit with the standard influence is
@@ -167,7 +167,7 @@ $$
 g(\sqrt\rho)=\sum_U F_U
 \le\sqrt{2n\left(2n-\sum_Uw_U\right)}
 \le\sqrt{2n(2n-1)}.
-\tag{6}
+\qquad\text{(6)}
 $$
 
 For three qubits this is $\sqrt{30}\simeq5.477226$, whereas the sharp
@@ -185,14 +185,14 @@ squared coefficient in (4). Hence $\sum_Uw_U\ge2-T$ and
 
 $$
 g(\sqrt\rho)^2\le6(4+T).
-\tag{7}
+\qquad\text{(7)}
 $$
 
 A putative score exceeding $4+\sqrt2$ would require
 
 $$
 T>\frac{4\sqrt2}{3}-1\simeq0.885618.
-\tag{8}
+\qquad\text{(8)}
 $$
 
 The usual FKN tail is instead
@@ -217,7 +217,7 @@ $T=\tau(SL)\le\tau|L|$. Evaluating the eight signed eigenvalues gives
 $$
 \tau|L|=\max\left\{\max_i\beta_i,
 \frac{\beta_1+\beta_2+\beta_3}{2}\right\}.
-\tag{9}
+\qquad\text{(9)}
 $$
 
 Since $T=\sum_i\beta_i^2$, the second alternative is at most

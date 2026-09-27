@@ -18,9 +18,9 @@ For a positive seed root S with Tr(S²)=1 write
 
 $$
 G(S)=\sum_{i=1}^n\sum_{U=X_i,Z_i}
-\sqrt{\operatorname{Tr}(SUSU)},\qquad
+\sqrt{\mathrm{Tr}(SUSU)},\qquad
 g(S)=\sum_{i=1}^n\sum_{U=X_i,Z_i}\|SUS\|_1.
-\tag{1}
+\qquad\text{(1)}
 $$
 
 The established fidelity–affinity comparison gives g≤G. The sharp
@@ -35,7 +35,7 @@ n-fold product basis define
 $$
 S_n=\frac1{\sqrt2}|0^n\rangle_B\langle0^n|
 +\frac1{\sqrt{2n}}\sum_{i=1}^n|e_i\rangle_B\langle e_i|.
-\tag{2}
+\qquad\text{(2)}
 $$
 
 This is positive, has rank n+1, and satisfies Tr(S_n²)=1. The star
@@ -47,7 +47,7 @@ graph extremal theorem is asserted.
 For a diagonal S with amplitudes s_x, both original local queries satisfy
 
 $$
-\operatorname{Tr}(SX_iSX_i)=\operatorname{Tr}(SZ_iSZ_i)
+\mathrm{Tr}(SX_iSX_i)=\mathrm{Tr}(SZ_iSZ_i)
 =\frac12\left(\sum_xs_x^2+\sum_xs_xs_{x\oplus e_i}\right).
 $$
 
@@ -56,7 +56,7 @@ Only the center/leaf edge contributes to the second sum in (2), so
 $$
 a_{X_i}=a_{Z_i}=\frac12\left(1+\frac1{\sqrt n}\right),
 \qquad G(S_n)=n\sqrt{2+\frac2{\sqrt n}}.
-\tag{3}
+\qquad\text{(3)}
 $$
 
 At n=15 the rank is 16=2⁴, and
@@ -64,16 +64,16 @@ At n=15 the rank is 16=2⁴, and
 $$
 G(S_{15})^2-(8+11\sqrt2)^2
 =144+30\sqrt{15}-176\sqrt2>\frac{46}{7}>0.
-\tag{4}
+\qquad\text{(4)}
 $$
 
 The exact witnesses are √15>19/5 and √2<10/7, verified by
 15·25−19²=14 and 10²−2·7²=2. Thus the proposed implication
 
 $$
-\operatorname{rank}S\le2^q\quad\Longrightarrow\quad
+\mathrm{rank}S\le2^q\quad\Longrightarrow\quad
 G(S)\le2q+\sqrt2(n-q)
-\tag{5}
+\qquad\text{(5)}
 $$
 
 fails at (n,q)=(15,4). No minimality of n is claimed.
@@ -92,7 +92,7 @@ has a²=1/2,b²=1/(2n), while the other n−1 leaves each contribute
 $$
 g(S_n)=\frac{\sqrt{n^2+6n+1}+n-1}{\sqrt2},\qquad
 g(S_{15})=\sqrt2(7+\sqrt{79})<16\sqrt2<8+11\sqrt2.
-\tag{6}
+\qquad\text{(6)}
 $$
 
 The last comparisons use 79<81 and 50<64. The existing
@@ -108,8 +108,8 @@ The general star formulas give the stronger obstruction
 $$
 G(S_n)-\sqrt2n\sim\sqrt{n/2},\qquad
 g(S_n)-\sqrt2n\longrightarrow\sqrt2,\qquad
-\log_2\operatorname{rank}S_n=\log_2(n+1).
-\tag{6a}
+\log_2\mathrm{rank}S_n=\log_2(n+1).
+\qquad\text{(6a)}
 $$
 
 Indeed, the exact rationalizations are
@@ -138,18 +138,18 @@ $$
 For every n and 0≤R≤1, the exact fixed-entropy surrogate optimum is
 
 $$
-\max_{\substack{S\ge0,\ \operatorname{Tr}S^2=1\\
+\max_{\substack{S\ge0,\ \mathrm{Tr}S^2=1\\
 S_{\rm vN}(S^2)=nR}}G(S)=2n\Phi(R).
-\tag{7}
+\qquad\text{(7)}
 $$
 
 Its exact asymptotic rank-rate profile is
 
 $$
 \boxed{\lim_{n\to\infty}\frac1{2n}
-\max_{\substack{S\ge0,\ \operatorname{Tr}S^2=1\\
-\operatorname{rank}S\le2^{\lfloor Rn\rfloor}}}G(S)=\Phi(R).}
-\tag{8}
+\max_{\substack{S\ge0,\ \mathrm{Tr}S^2=1\\
+\mathrm{rank}S\le2^{\lfloor Rn\rfloor}}}G(S)=\Phi(R).}
+\qquad\text{(8)}
 $$
 
 These are elementary corollaries of Beigi's established inequalities and
@@ -162,7 +162,7 @@ identity reinsertion. Beigi's Theorem 2 gives
 $$
 \mathcal D:=\tau(AK(A))\ge
 n\left(\frac12-\sqrt{p(1-p)}\right),
-\tag{9}
+\qquad\text{(9)}
 $$
 
 where p=h₂⁻¹(S_vN(S²)/n). His Theorem 4 gives the same bound with
@@ -170,7 +170,7 @@ p=h₂⁻¹(log₂(rank S)/n). Expanding A=Σ_wc_wσ_w, with Σ_wc_w²=1,
 direct Pauli conjugation gives
 
 $$
-\sum_{i,U=X_i,Z_i}\operatorname{Tr}(SUSU)
+\sum_{i,U=X_i,Z_i}\mathrm{Tr}(SUSU)
 =2n-2\mathcal D-2\sum_wN_Y(w)c_w^2\le2n-2\mathcal D.
 $$
 
@@ -187,9 +187,9 @@ $$
 Its entropy is n h₂(p), and all 2n affinities equal
 
 $$
-\operatorname{Tr}(\sqrt{\rho_p}U\sqrt{\rho_p}U)
+\mathrm{Tr}(\sqrt{\rho_p}U\sqrt{\rho_p}U)
 =\frac12+\sqrt{p(1-p)},\qquad U=X,Z.
-\tag{10}
+\qquad\text{(10)}
 $$
 
 There is no Pauli Y contribution, and scalar Cauchy is an equality.
@@ -199,9 +199,9 @@ For the rank lower bound, fix 0<p<a<1/2 with h₂(a)<R. In the B product
 basis let Π_n retain strings of weight at most r_n=⌊an⌋, and set
 
 $$
-Z_n=\Pr\{\operatorname{Bin}(n,p)\le r_n\},\qquad
+Z_n=\Pr\{\mathrm{Bin}(n,p)\le r_n\},\qquad
 T_n=\frac{\Pi_n S_n^{\rm prod}}{\sqrt{Z_n}}.
-\tag{11}
+\qquad\text{(11)}
 $$
 
 This is positive and normalized. Its exact rank is
@@ -209,7 +209,7 @@ This is positive and normalized. Its exact rank is
 $$
 \sum_{k=0}^{r_n}\binom nk\le2^{n h_2(a)}\le2^{\lfloor Rn\rfloor}
 \quad\hbox{whenever }n(R-h_2(a))\ge1.
-\tag{12}
+\qquad\text{(12)}
 $$
 
 Indeed, every included string has Bernoulli(a) probability at least
@@ -218,11 +218,11 @@ deterministic rank cap, not an average memory allowance or a physical
 postselection protocol. Pairing strings across a local edge gives
 
 $$
-\operatorname{Tr}(T_n X_iT_n X_i)
-=\operatorname{Tr}(T_n Z_iT_n Z_i)
+\mathrm{Tr}(T_n X_iT_n X_i)
+=\mathrm{Tr}(T_n Z_iT_n Z_i)
 =\frac12+\sqrt{p(1-p)}\,
-\frac{\Pr\{\operatorname{Bin}(n-1,p)\le r_n-1\}}{Z_n}.
-\tag{13}
+\frac{\Pr\{\mathrm{Bin}(n-1,p)\le r_n-1\}}{Z_n}.
+\qquad\text{(13)}
 $$
 
 Both probabilities tend to one. For example, Chebyshev gives
@@ -239,7 +239,7 @@ $$
 \qquad
 \frac{|G(T_n)-G(S_n^{\rm prod})|}{2n}
 \le2^{3/4}(1-Z_n)^{1/4}.
-\tag{14}
+\qquad\text{(14)}
 $$
 
 The second inequality follows from |Tr(SUSU)−Tr(TUTU)|≤2||S−T||₂
@@ -251,7 +251,7 @@ Let ρ=S² have support projector P. Work on ran(P), so S is invertible,
 and compress an original query U to B_U=PUP. Put
 
 $$
-F=\|S B_U S\|_1,\qquad a=\operatorname{Tr}(S B_U S B_U).
+F=\|S B_U S\|_1,\qquad a=\mathrm{Tr}(S B_U S B_U).
 $$
 
 Choose a Hermitian unitary J extending sign(S B_U S) on its zero
@@ -260,7 +260,7 @@ Weighted Hilbert–Schmidt Cauchy, for the positive inner product
 ⟨C,D⟩_S=Tr(S C* S D), gives
 
 $$
-b:=\operatorname{Tr}(SJSJ)>0,\qquad
+b:=\mathrm{Tr}(SJSJ)>0,\qquad
 F^2\le ab,\qquad b=1-\frac12\|[S,J]\|_2^2\le1.
 $$
 
@@ -270,7 +270,7 @@ $$
 \boxed{a-F^2=a(1-b)+(ab-F^2),\qquad
 ab-F^2=b\left\|S^{1/2}
 \left(B_U-\frac FbJ\right)S^{1/2}\right\|_2^2.}
-\tag{15}
+\qquad\text{(15)}
 $$
 
 In particular, a−F²≥(a/2)||[S,J]||₂². The first term records the
@@ -283,7 +283,7 @@ Otherwise F>0 and
 $$
 F^2=a\quad\Longleftrightarrow\quad
 [B_U,\rho]=0\quad\hbox{and}\quad B_U^2=F^2P.
-\tag{16}
+\qquad\text{(16)}
 $$
 
 For necessity, equality in (15) forces b=1, [S,J]=0 and B_U=FJ.
@@ -296,7 +296,7 @@ $$
 (P_kUP_k)^2=F_U^2P_k,\qquad
 \|\sqrt{\sigma_k}U\sqrt{\sigma_k}\|_1=F_U
 \quad\hbox{for every }k,U.
-\tag{16a}
+\qquad\text{(16a)}
 $$
 
 Every flat spectral block therefore has exactly the same entire query
@@ -318,7 +318,7 @@ $$
 a-F^2=\frac{t(1-t)}2,
 \quad a(1-b)=\frac{t^2(1-t^2)}{2(1+t^2)},
 \quad ab-F^2=\frac{t(1-t)^2}{2(1+t^2)}.
-\tag{17}
+\qquad\text{(17)}
 $$
 
 At p=1/10, a=4/5, F²=17/25, b=76/85, and

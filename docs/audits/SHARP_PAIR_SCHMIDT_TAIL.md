@@ -32,15 +32,15 @@ Let Q be a qubit and let E on R1 tensor Q and F on R2 tensor Q satisfy
 
 ```math
 E,F\ge0,\qquad
-\operatorname{Tr}_{R_1}E=\operatorname{Tr}_{R_2}F=I_Q/2.
-\tag{1}
+\mathrm{Tr}_{R_1}E=\mathrm{Tr}_{R_2}F=I_Q/2.
+\qquad\text{(1)}
 ```
 
 Spectator identities are implicit. Then
 
 ```math
 \boxed{E+F\le\tfrac32 I.}
-\tag{2}
+\qquad\text{(2)}
 ```
 
 The leaves may have arbitrary finite dimensions; only qubit leaves are
@@ -55,18 +55,18 @@ other eigenvalues of E are at most 1-p, and likewise for F, so
 E\le(1-p)I+(2p-1)|v\rangle\langle v|,
 \quad
 F\le(1-q)I+(2q-1)|w\rangle\langle w|.
-\tag{3}
+\qquad\text{(3)}
 ```
 
 Let P and R be those rank-one projectors with their respective spectator
 identities inserted. Partial tracing `p|v><v|<=E` and its counterpart gives
 
 ```math
-\|\operatorname{Tr}_{R_1}|v\rangle\langle v|\|
+\|\mathrm{Tr}_{R_1}|v\rangle\langle v|\|
 \le\frac1{2p},\qquad
-\|\operatorname{Tr}_{R_2}|w\rangle\langle w|\|
+\|\mathrm{Tr}_{R_2}|w\rangle\langle w|\|
 \le\frac1{2q}.
-\tag{4}
+\qquad\text{(4)}
 ```
 
 Write V and W for their coefficient matrices, with leaf indices as rows
@@ -76,7 +76,7 @@ indices. Consequently
 
 ```math
 \|PR\|\le\|V\|\|W\|\le\frac1{2\sqrt{pq}}.
-\tag{5}
+\qquad\text{(5)}
 ```
 
 For positive a,b, the two-projection Gram bound is
@@ -84,7 +84,7 @@ For positive a,b, the two-projection Gram bound is
 ```math
 \|aP+bR\|\le
 \frac{a+b+\sqrt{(a-b)^2+4ab\|PR\|^2}}2.
-\tag{6}
+\qquad\text{(6)}
 ```
 
 For completeness, use the insertion maps to express the nonzero spectrum
@@ -98,7 +98,7 @@ baseline in (3). This gives
 ```math
 \|E+F\|\le 1+\frac12
 \sqrt{4(p-q)^2+(2-1/p)(2-1/q)}\le\frac32.
-\tag{7}
+\qquad\text{(7)}
 ```
 
 The last inequality is elementary. Set x=2p-1 and y=2q-1 in [0,1]
@@ -109,7 +109,7 @@ and assume x>=y by symmetry. Both summands below increase with x on
 (x-y)^2+\frac{4xy}{(1+x)(1+y)}
 \le(1-y)^2+\frac{2y}{1+y}
 =1-\frac{y^2(1-y)}{1+y}\le1.
-\tag{8}
+\qquad\text{(8)}
 ```
 
 This proves (2), including the endpoint cases already separated above.
@@ -123,7 +123,7 @@ Now let memory Q have dimension four, and let
 ```math
 H_0=h_1+h_2,\qquad
 h_i=X_i\otimes B_i+Z_i\otimes D_i,
-\tag{9}
+\qquad\text{(9)}
 ```
 
 where B_i,D_i are anticommuting Hermitian reflections. The operators
@@ -138,8 +138,8 @@ Examining their four possible joint signs and tracing the reference gives
 
 ```math
 h_i=S_i+T_i\le2\Pi_i,\qquad
-\operatorname{Tr}_{R_i}\Pi_i=I_Q/2.
-\tag{10}
+\mathrm{Tr}_{R_i}\Pi_i=I_Q/2.
+\qquad\text{(10)}
 ```
 
 The second identity follows because S_i, T_i and S_iT_i each have a
@@ -156,7 +156,7 @@ satisfy (1) on the same compressed center. Thus (2) and (10) imply
 
 ```math
 \boxed{(I_R\otimes W^\dagger)H_0(I_R\otimes W)\le3I.}
-\tag{11}
+\qquad\text{(11)}
 ```
 
 Every normalized state of Schmidt rank at most two across `(R1 R2):Q`
@@ -233,14 +233,14 @@ Let Pi be an orthogonal projection commuting with Gamma. If
 
 ```math
 \|\Pi H\Pi\|\le k,\qquad U-m\le k,
-\tag{12}
+\qquad\text{(12)}
 ```
 
 and `w=<Omega|Pi|Omega>`, `tau=1-w`, then
 
 ```math
 \boxed{Uw-m\tau\le k.}
-\tag{13}
+\qquad\text{(13)}
 ```
 
 To prove this, write `a=||Pi u||^2=w+z` and
@@ -260,7 +260,7 @@ by sqrt(ab) bounds the normalized C' contribution. Consequently
 ```math
 k\ge U\sqrt{ab}-m\sqrt{(1-a)(1-b)}
 =U\sqrt{w^2-z^2}-m\sqrt{\tau^2-z^2}.
-\tag{14}
+\qquad\text{(14)}
 ```
 
 If `mw>=U tau`, then w>=tau and the right side of (14) is
@@ -312,7 +312,7 @@ symmetry give `||Pi H_0 Pi||<=3`. Applying (13) with k=3 yields
 ```math
 \boxed{\lambda_3+\lambda_4\ge
 \max\left\{0,\frac{U-3}{U+m}\right\}.}
-\tag{15}
+\qquad\text{(15)}
 ```
 
 In particular an actual top state at U>3 has Schmidt rank at least
@@ -330,7 +330,7 @@ Apply (13) with k=2 to the leading memory Schmidt vector to obtain
 
 ```math
 \boxed{\lambda_1\le\frac{2+m}{U+m}.}
-\tag{16}
+\qquad\text{(16)}
 ```
 
 The hypothesis `U-m<=k` holds in both applications. No simplicity of U
@@ -346,15 +346,15 @@ bound:
 
 ```math
 \boxed{(U-2)^2+(m-2)^2\le4.}
-\tag{17}
+\qquad\text{(17)}
 ```
 
 Use the two projectors Pi_i from (10), now with their spectator reference
 identities. Each has rank four on the 16-dimensional full space, and
 
 ```math
-\operatorname{Tr}(\Pi_1\Pi_2)
-=\operatorname{Tr}_Q[(I_Q/2)(I_Q/2)]=1.
+\mathrm{Tr}(\Pi_1\Pi_2)
+=\mathrm{Tr}_Q[(I_Q/2)(I_Q/2)]=1.
 ```
 
 The squared principal cosines c_1^2,...,c_4^2 of their ranges therefore
@@ -393,7 +393,7 @@ Schmidt bounds alone supplied the missing constraint:
 ```math
 \lambda=(87,87,13,13)/200,\quad U=37/10,\quad m=3/10+2r,
 \qquad r=\sqrt2.
-\tag{18}
+\qquad\text{(18)}
 ```
 
 It passes (15)--(16), since tau=13/100 and

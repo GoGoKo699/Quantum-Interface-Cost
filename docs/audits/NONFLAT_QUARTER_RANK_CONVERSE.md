@@ -11,8 +11,8 @@ Tr(S^2)=1,
 
 $$
 \boxed{\sum_{A=X_1,Z_1,\ldots,X_4,Z_4}
-\sqrt{\operatorname{Tr}(SASA)}\le4+2\sqrt2.}
-\tag{1}
+\sqrt{\mathrm{Tr}(SASA)}\le4+2\sqrt2.}
+\qquad\text{(1)}
 $$
 
 Consequently the original unrestricted interface problem has
@@ -21,7 +21,7 @@ $$
 \boxed{\Gamma(4,4)=4+2\sqrt2,\qquad
 \eta_{4,4}=\frac{2+\sqrt2}{4},\qquad
 \epsilon_{4,4}=\frac{2-\sqrt2}{8}.}
-\tag{2}
+\qquad\text{(2)}
 $$
 
 Every maximizing normalized seed is, up to a permutation of the original
@@ -30,7 +30,7 @@ sites,
 $$
 \rho=S^2=|\beta_1\rangle\langle\beta_1|\otimes
 |\beta_2\rangle\langle\beta_2|\otimes\frac{I_4}{4},
-\tag{3}
+\qquad\text{(3)}
 $$
 
 where both pure states are X/Z bisectors. Output isometries remain free;
@@ -52,13 +52,13 @@ coefficient in each local X/Z plane and order the four lengths as
 $$
 a\ge b\ge c\ge d\ge0,\quad
 T=a^2+b^2+c^2+d^2,\quad y=2T,\quad
-u=\frac{\operatorname{Tr}S}{2},\quad v=\sqrt{1-u^2}.
+u=\frac{\mathrm{Tr}S}{2},\quad v=\sqrt{1-u^2}.
 $$
 
 For the original eight queries set
 
 $$
-a_A=\operatorname{Tr}(SASA),\qquad
+a_A=\mathrm{Tr}(SASA),\qquad
 W_i=2-a_{X_i}-a_{Z_i},\qquad D=\sum_iW_i.
 $$
 
@@ -69,7 +69,7 @@ $$
 y\le u(a+R)+v\sqrt{T-a^2-R^2},\qquad
 y\le\frac{1+u^2}{2},\qquad
 D\ge4-u^2-y.
-\tag{4}
+\qquad\text{(4)}
 $$
 
 In particular sum_A a_A<=9/2+3u^2/2. To prove (1), it suffices to
@@ -79,7 +79,7 @@ Cauchy--Schwarz then forces
 $$
 u^2\ge\alpha:=\frac{4\sqrt2-3}{3},\qquad
 \delta:=v^2+1-y\le r^2,\qquad r=\sqrt2-1.
-\tag{5}
+\qquad\text{(5)}
 $$
 
 Thus u>15/16, y>=2r+v^2, and rank(S)=4. The first strict comparison
@@ -98,7 +98,7 @@ The local block inequality from the preceding note therefore gives
 $$
 W_i\ge1-(u+\sqrt3v)(u-2b_i),
 \quad (b_1,b_2,b_3,b_4)=(a,b,c,d).
-\tag{6}
+\qquad\text{(6)}
 $$
 
 ## 2. The pair-dominant branch: a sum of squares
@@ -109,7 +109,7 @@ and elementary Cauchy give
 $$
 y\le up+v\sqrt Q,\qquad
 p^2+2Q\le y,\qquad Q\le y(1-y)\le1-y.
-\tag{7}
+\qquad\text{(7)}
 $$
 
 For the last inequality, square the first by uncentered Cauchy to obtain
@@ -140,7 +140,7 @@ the preceding strict inequality. Therefore
 
 $$
 \sum_A\sqrt{a_A}\le2\sqrt{2+x}+2\sqrt{4-\delta-x}.
-\tag{8}
+\qquad\text{(8)}
 $$
 
 The coupled inequalities (7) also imply
@@ -158,7 +158,7 @@ $$
 \delta\ge\frac74v^2+uw-
 \frac v4\sqrt{v^2+8uw-8w^2}
 \ge\frac32v^2+h^2-\frac{vh}{\sqrt2}.
-\tag{9}
+\qquad\text{(9)}
 $$
 
 The second inequality uses sqrt(v^2+8uw-8w^2)<=v+2sqrt(2)h.
@@ -171,7 +171,7 @@ H(x)&=2(2+\sqrt2)(\sqrt{2+x}-\sqrt2)-2x\\
 &=rx-\frac{(1+\sqrt2)x^2}{(\sqrt{2+x}+\sqrt2)^2}
 \le rx-\frac6{25}x^2.
 \end{aligned}
-\tag{10}
+\qquad\text{(10)}
 $$
 
 All squaring is legitimate because 2+sqrt(2)-sqrt(2+x)>0. For the last
@@ -196,7 +196,7 @@ $$
  +\frac8{15}h^2\left(h-\frac1{2\sqrt2}\right)^2
  +\frac{h^2}{60}\ge0.
 \end{aligned}
-\tag{11}
+\qquad\text{(11)}
 $$
 
 This proves (1) in this branch. Equality forces h=v=0, hence u=p=1.
@@ -212,8 +212,8 @@ smallest positive eigenvalue of S. Then
 $$
 \begin{aligned}
 W_i
-&=1-2\operatorname{Tr}(AE)+4\|C\|_2^2
- -2\operatorname{Re}\operatorname{Tr}(C^2)\\
+&=1-2\mathrm{Tr}(AE)+4\|C\|_2^2
+ -2\mathrm{Re}\mathrm{Tr}(C^2)\\
 &\ge1-2\kappa\mu+2\|C\|_2^2.
 \end{aligned}
 $$
@@ -230,7 +230,7 @@ gap by sqrt(2)v. Therefore, throughout (5),
 
 $$
 \boxed{W_i\ge1-2(u-2b_i)(\sqrt2v+u-2b_i).}
-\tag{12}
+\qquad\text{(12)}
 $$
 
 This argument keeps the off-diagonal block C. It requires neither a
@@ -250,7 +250,7 @@ Equations (4), (6) and (12) give
 $$
 D\ge4-u^2-y,\qquad
 D\ge4-3uk-k\mu+2kq,\qquad W_1\ge1-x.
-\tag{13}
+\qquad\text{(13)}
 $$
 
 The exact top-four inequality becomes
@@ -258,7 +258,7 @@ The exact top-four inequality becomes
 $$
 H\le uq+v\sqrt{J-q^2},\quad
 H=2y-u(u-\mu),\quad J=2y-(u-\mu)^2.
-\tag{14}
+\qquad\text{(14)}
 $$
 
 Define
@@ -267,7 +267,7 @@ $$
 \lambda=\frac{2(\sqrt2-1)}3,\qquad
 B=4-\frac{4\sqrt2}3,\qquad
 D_*=B+\lambda x(1-x),\qquad Y=4-u^2-D_*.
-\tag{15}
+\qquad\text{(15)}
 $$
 
 We prove the strict bound D>D_*. If y<Y the first inequality in (13)
@@ -276,7 +276,7 @@ in (13) imply the fixed threshold
 
 $$
 q\le q_0:=\frac{3u+\mu}{2}-\frac{u^2+Y}{2k}.
-\tag{16}
+\qquad\text{(16)}
 $$
 
 The threshold q0 is held fixed as y varies; replacing Y by y in (16)
@@ -288,7 +288,7 @@ below proves
 $$
 C_0:=uH_0-q_0>0,\qquad
 F_0:=C_0^2-v^2(J_0-H_0^2)>0.
-\tag{17}
+\qquad\text{(17)}
 $$
 
 Moreover H0>1/2. Indeed, (5) and ordering give a>5/16, mu<3/8 and
@@ -297,7 +297,7 @@ sqrt(2)v<1/2, hence 0<=x<21/32<1. Thus x(1-x)<=1/4 and
 $$
 H_0=2Y-u^2+u\mu
 \ge\frac{7\sqrt2-8}{3}>\frac12.
-\tag{18}
+\qquad\text{(18)}
 $$
 
 The lower bound a>5/16 uses a^2>=y/8>=r/4>1/10>25/256.
@@ -332,7 +332,7 @@ Every potentially extremal seed in (5) lies in the single closed box
 
 $$
 0\le\tau,m\le\frac9{25}.
-\tag{19}
+\qquad\text{(19)}
 $$
 
 For tau, use alpha>625/706, equivalent to
@@ -354,7 +354,7 @@ C&=2h_0[2Z-(1-m)d_0]-d_0Q_0,\\
 P&=A_0^2-\tau^2\left\{
 4h_0^2[2Zd_0-(1-m)^2d_0^2]-Q_0^2\right\}.
 \end{aligned}
-\tag{20}
+\qquad\text{(20)}
 $$
 
 Their relation to the preceding section is exactly
@@ -363,7 +363,7 @@ $$
 Y=Z/d_0^2,\qquad
 C_0=\frac{C}{2h_0d_0^{5/2}},\qquad
 F_0=\frac{P}{4h_0^2d_0^4}.
-\tag{21}
+\qquad\text{(21)}
 $$
 
 The checker expands C and P, converts them to the tensor Bernstein basis
@@ -372,7 +372,7 @@ bounds
 
 $$
 C:\ \frac4{25},\qquad P:\ \frac1{10000}.
-\tag{22}
+\qquad\text{(22)}
 $$
 
 C has bidegree (6,4), and P has bidegree (10,8): there are 35 and 99
@@ -388,7 +388,7 @@ $$
 \sum_{i\le k,\ j\le l}
 p_{ij}L^{i+j}\frac{\binom{k}{i}}{\binom{N}{i}}
 \frac{\binom{l}{j}}{\binom{M}{j}},\qquad L=9/25.
-\tag{23}
+\qquad\text{(23)}
 $$
 
 The script uses integer and Fraction arithmetic. Each algebraic coefficient
@@ -415,7 +415,7 @@ $$
 D_{\rm crit}(x)=B+\lambda x-
 \frac{2(1+\sqrt2)x^2}{3(\sqrt{1+x}+1)^2}
 \le B+\lambda x-\lambda x^2=D_*.
-\tag{24}
+\qquad\text{(24)}
 $$
 
 The last comparison holds for 0<=x<=1, with its coefficient minimum

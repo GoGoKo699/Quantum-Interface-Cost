@@ -30,8 +30,8 @@ $$
 **Theorem.** If `rank(rho)<=4` and `Theta rho Theta^-1=rho`, then
 
 $$
-\boxed{\mathcal F(\rho)\le5-4\operatorname{Tr}\rho^2\le4.}
-\tag{1}
+\boxed{\mathcal F(\rho)\le5-4\mathrm{Tr}\rho^2\le4.}
+\qquad\text{(1)}
 $$
 
 Every purity in `[1/4,1/2]` is possible and has an attaining state.
@@ -40,9 +40,9 @@ Cauchy–Schwarz consequently gives the interface seed exclusion
 
 $$
 g(\rho)=\sum_U f_U(\rho)
-\le\sqrt{6(5-4\operatorname{Tr}\rho^2)}
+\le\sqrt{6(5-4\mathrm{Tr}\rho^2)}
 \le2\sqrt6<4+\sqrt2.
-\tag{2}
+\qquad\text{(2)}
 $$
 
 Thus an unrestricted three-input, two-qubit-memory advantage would
@@ -58,8 +58,8 @@ is an invariant Hermitian S such that
 
 $$
 \rho_r=\frac{P+rS}{4},\quad -1\le r\le1,\qquad
-S^2=P,\quad PS=SP=S,\quad\operatorname{Tr}S=0.
-\tag{3}
+S^2=P,\quad PS=SP=S,\quad\mathrm{Tr}S=0.
+\qquad\text{(3)}
 $$
 
 The eigenvalues on P are `(1+r)/4` twice and `(1-r)/4` twice. Rank-two
@@ -73,14 +73,14 @@ identity. Write
 
 $$
 R=\sum_w r_w W_w,\qquad S=\sum_w s_w W_w,
-\qquad \operatorname{Tr}(W_vW_w)=8\delta_{vw}.
+\qquad \mathrm{Tr}(W_vW_w)=8\delta_{vw}.
 $$
 
 Let `e_w` count Y factors in the weight-two word w, and define
 
 $$
 u=\sum_w e_w r_w^2,\qquad v=\sum_w e_w s_w^2.
-\tag{4}
+\qquad\text{(4)}
 $$
 
 These are nonnegative scalar quantities. No restriction to real matrices
@@ -94,19 +94,19 @@ with `alpha,beta>=0`. The same pairing holds for
 `C_U(r)=sqrt(rho_r) U sqrt(rho_r)` on P. Such a Hermitian matrix satisfies
 
 $$
-\|C\|_1^2=2\operatorname{Tr}C^2+8\sqrt{\det C}.
-\tag{5}
+\|C\|_1^2=2\mathrm{Tr}C^2+8\sqrt{\det C}.
+\qquad\text{(5)}
 $$
 
 All determinants here are on P. Since `sqrt(det rho_r)=(1-r^2)/16`,
 
 $$
 f_U(\rho_r)^2=
-\frac{\operatorname{Tr}K_U^2
-+2r\operatorname{Tr}(S K_U^2)
-+r^2\operatorname{Tr}(S K_U S K_U)}8
+\frac{\mathrm{Tr}K_U^2
++2r\mathrm{Tr}(S K_U^2)
++r^2\mathrm{Tr}(S K_U S K_U)}8
 +\frac{1-r^2}{2}\sqrt{\det K_U}.
-\tag{6}
+\qquad\text{(6)}
 $$
 
 The identity includes singular compressions and the rank-two endpoints
@@ -125,11 +125,11 @@ Compression and Pauli orthogonality give
 
 $$
 \sum_U K_U^2=4P-PV_RP,\qquad
-\sum_U\operatorname{Tr}K_U^2=16-4u,
+\sum_U\mathrm{Tr}K_U^2=16-4u,
 $$
 
 $$
-\sum_U\operatorname{Tr}(S K_U S K_U)=8-16v.
+\sum_U\mathrm{Tr}(S K_U S K_U)=8-16v.
 $$
 
 Writing `d=sum_U sqrt(det K_U)`, the coefficients in (6) are therefore
@@ -137,14 +137,14 @@ Writing `d=sum_U sqrt(det K_U)`, the coefficients in (6) are therefore
 $$
 F_0=2-u/2+d/2,\qquad b=-2\sum_w e_w r_w s_w,
 \qquad c=3-F_0-u/2-2v.
-\tag{7}
+\qquad\text{(7)}
 $$
 
 At the flat point, four-dimensional Hilbert–Schmidt Cauchy–Schwarz gives
 
 $$
 F_0=\sum_U\frac{\|K_U\|_1^2}{16}
-\le\frac14\sum_U\operatorname{Tr}K_U^2=4-u.
+\le\frac14\sum_U\mathrm{Tr}K_U^2=4-u.
 $$
 
 Consequently `delta=4-F_0>=u`. Substitution into (7) gives the exact
@@ -155,7 +155,7 @@ $$
 4-r^2-\mathcal F(\rho_r)
 =\left(\delta-\frac u2\right)(1-r^2)
 +2\sum_w e_w\left(r s_w+\frac{r_w}{2}\right)^2\ge0.}
-\tag{8}
+\qquad\text{(8)}
 $$
 
 This proves (1). It neither replaces a nonuniform spectrum by a flat one
@@ -174,7 +174,7 @@ and put `P=(I+A)/2`, `S=(B+AB)/2`. Then `S^2=P`, `PS=S`, and
 
 $$
 \rho_r=\frac{I+A+r(B+AB)}8
-\tag{9}
+\qquad\text{(9)}
 $$
 
 is an invariant density matrix with the spectrum in Section 2. Its scores
@@ -197,7 +197,7 @@ Suppose six four-dimensional reflection readouts share one antiunitary
 
 $$
 \Theta_Q^2=-I,\qquad \Theta_Q B_U\Theta_Q^{-1}=-B_U.
-\tag{10}
+\qquad\text{(10)}
 $$
 
 They are automatically balanced: each has two positive and two negative
@@ -207,7 +207,7 @@ For every real weight vector w,
 $$
 \boxed{\left\|\sum_U w_U U\otimes B_U\right\|_\infty
 \le2\left(\sum_Uw_U^2\right)^{1/2}.}
-\tag{11}
+\qquad\text{(11)}
 $$
 
 **Proof.** Write `Theta=U_R K`. The joint antiunitary
@@ -247,7 +247,7 @@ attains it explicitly. Let V be an isometry from C^4 onto ran P and
 
 $$
 K_W=LW/\sqrt8,\qquad
-D_{W,U}=\chi_W(U)\operatorname{sign}(LUL^\dagger),
+D_{W,U}=\chi_W(U)\mathrm{sign}(LUL^\dagger),
 \qquad WUW^\dagger=\chi_W(U)U.
 $$
 

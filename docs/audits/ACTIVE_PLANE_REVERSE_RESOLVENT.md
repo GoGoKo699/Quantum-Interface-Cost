@@ -34,11 +34,11 @@ $$
 Define the scalar coefficients and their reference-field norm
 
 $$
-\beta_i=\tfrac12\operatorname{Tr}_Q(PB_i),\qquad
-\delta_i=\tfrac12\operatorname{Tr}_Q(PD_i),\qquad
+\beta_i=\tfrac12\mathrm{Tr}_Q(PB_i),\qquad
+\delta_i=\tfrac12\mathrm{Tr}_Q(PD_i),\qquad
 \zeta_P=\sum_{i=1}^N\sqrt{\beta_i^2+\delta_i^2}
 \le\min\{U,Nr\}.
-\tag{1}
+\qquad\text{(1)}
 $$
 
 **Theorem.** For arbitrary earlier Hermitian contractions and every such
@@ -47,7 +47,7 @@ last reflection pair,
 $$
 \boxed{\|H_0+h\|\le r+
 \frac{x+\sqrt{x^2+4U^2+4\zeta_Px}}2.}
-\tag{2}
+\qquad\text{(2)}
 $$
 
 If the last pair is commuting, set x=0; the right side is U+r and no
@@ -58,7 +58,7 @@ In particular, the exact plane-dependent sufficient condition
 
 $$
 \boxed{U^2+(2N+\zeta_P)(u-r)\le4N^2}
-\tag{3}
+\qquad\text{(3)}
 $$
 
 implies `||H0+h||<=2N+r`. The following simpler condition suffices
@@ -66,7 +66,7 @@ without computing the plane means:
 
 $$
 \boxed{U^2+N(2+r)(u-r)\le4N^2.}
-\tag{4}
+\qquad\text{(4)}
 $$
 
 Since u<=2, the all-angle cutoff is
@@ -74,7 +74,7 @@ Since u<=2, the all-angle cutoff is
 $$
 \boxed{U\le\sqrt{4N^2-2N}
 \quad\Longrightarrow\quad\|H_0+h\|\le2N+\sqrt2.}
-\tag{5}
+\qquad\text{(5)}
 $$
 
 For the three-input problem N=2, this gives **U<=2sqrt(3)**, strictly
@@ -90,7 +90,7 @@ The complete active-block spectrum and the scalar complement give
 
 $$
 h\le rI-aP+b\Pi,\qquad a=r-v,\quad b=u-v.
-\tag{6}
+\qquad\text{(6)}
 $$
 
 Reference spectator identities are implicit. On the active plane the
@@ -110,7 +110,7 @@ To prove H0+h<=(A+r)I it suffices, by (6), to establish
 
 $$
 K+aP-b\Pi\ge0.
-\tag{7}
+\qquad\text{(7)}
 $$
 
 The inverse used below is the inverse of the full earlier Hamiltonian
@@ -124,7 +124,7 @@ below its endpoint chord, so functional calculus gives
 
 $$
 K^{-1}\le\frac{2AI-K}{c}=\frac{AI+H_0}{c}.
-\tag{8}
+\qquad\text{(8)}
 $$
 
 When U=0 this is equality. Let J insert the earlier reference space
@@ -139,7 +139,7 @@ Then 0<T<=D_P. The exact inverse-update identity gives
 $$
 J^*(K+aP)^{-1}J=f_a(T),\qquad
 f_a(y)=\frac{y}{1+ay}.
-\tag{9}
+\qquad\text{(9)}
 $$
 
 For example, the left side is
@@ -151,7 +151,7 @@ for a=0 it is linear. Hence
 
 $$
 J^*(K+aP)^{-1}J\le f_a(D_P).
-\tag{10}
+\qquad\text{(10)}
 $$
 
 ## 4. Bell compression is a normalized plane trace
@@ -160,7 +160,7 @@ Let E_P(M)=(1/2)Tr_(C^2) M, a unital completely positive map. Concavity gives
 
 $$
 E_P[f_a(D_P)]\le f_a[E_P(D_P)].
-\tag{11}
+\qquad\text{(11)}
 $$
 
 This Jensen step also follows directly by averaging the four active-qubit
@@ -183,7 +183,7 @@ Thus, with L=A+zeta_P, (10)--(11) imply
 $$
 E_P\left[J^*(K+aP)^{-1}J\right]
 \le\frac{L}{c+aL}I.
-\tag{12}
+\qquad\text{(12)}
 $$
 
 Inserting Pi while leaving the earlier references untouched gives exactly
@@ -195,7 +195,7 @@ $$
 b\frac{L}{c+aL}\le1
 \quad\Longleftrightarrow\quad
 A^2-U^2\ge(A+\zeta_P)(u-r).
-\tag{13}
+\qquad\text{(13)}
 $$
 
 Here b-a=u-r. Set A to the positive root of equality in (13):

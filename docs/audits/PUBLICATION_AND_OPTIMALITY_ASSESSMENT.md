@@ -95,7 +95,7 @@ two cited theorems imply
 ```math
  E_{FA}(\sigma_{\eta,\eta})\ge
  \left[\frac{\eta-1/\sqrt2}{1-1/\sqrt2}\right]_+.
-\tag{1}
+\qquad\text{(1)}
 ```
 
 The compatible assemblage at `eta_0=1/sqrt(2)` has a separable realization;
@@ -160,7 +160,7 @@ interior point. To see this, suppose at an interior `eta_*` that
  \delta\dfrac{\eta-\eta_0}{\eta_*-\eta_0},&\eta_0\le\eta\le\eta_*,\\[4pt]
  \delta\dfrac{1-\eta}{1-\eta_*},&\eta_*\le\eta\le1.
  \end{cases}
-\tag{2}
+\qquad\text{(2)}
 ```
 
 Consequently, equality with the subset rate at even one interior accuracy
@@ -190,7 +190,7 @@ The same characterization gives
 ```math
  \boxed{\lambda=\frac2{K_*}},\qquad
  2-\sqrt2\le K_*\le\frac1{\log_2(1+\sqrt2)}.
-\tag{3}
+\qquad\text{(3)}
 ```
 
 Indeed every feasible seed implies `S/n>=2(eta-eta_0)/K_*`, so
@@ -308,10 +308,10 @@ another list of neighborhoods. One explicit stronger candidate is the
 fixed-spectrum rearrangement statement, for ordered eigenvalues lambda:
 
 ```math
- \max_U g_2(U\operatorname{diag}(\lambda)U^\dagger)
+ \max_U g_2(U\mathrm{diag}(\lambda)U^\dagger)
  \stackrel{?}{=}\sqrt2(K_{12}+K_{13}+K_{24}+K_{34}),
  \qquad K_{ij}=\sqrt{\lambda_i^2+6\lambda_i\lambda_j+\lambda_j^2}.
-\tag{4}
+\qquad\text{(4)}
 ```
 
 The right side is an explicit product-bisector eigenbasis attainer: each

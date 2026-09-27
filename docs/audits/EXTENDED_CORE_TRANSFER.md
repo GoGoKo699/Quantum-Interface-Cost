@@ -153,7 +153,7 @@ quadratic over all real sqrt(v), a safe relaxation, to obtain
 
 $$
 d\ge mu B(m),\qquad B(m)=2s+\frac{2s\kappa}{2s\kappa+1}>7/2.
-\tag{1}
+\qquad\text{(1)}
 $$
 
 The last comparison follows from `kappa>=1` and `17>12sqrt(2)`.
@@ -194,7 +194,7 @@ With `Q=I-P`, define on P
 
 $$
 C_U=\sqrt\sigma\,|\sqrt\sigma PUP\sqrt\sigma|^{-1}\sqrt\sigma,
-\qquad K=\sum_U\operatorname{Tr}(\tau QUP C_U PUQ).
+\qquad K=\sum_U\mathrm{Tr}(\tau QUP C_U PUQ).
 $$
 
 All inverses exist by Section 4. The block Schur estimate and exact
@@ -202,7 +202,7 @@ orthogonal-support entropy identity from the earlier proof give
 
 $$
 \Delta(\rho)\ge(1-\epsilon)(\delta+d)+c h_2(\epsilon)-2\epsilon K.
-\tag{2}
+\qquad\text{(2)}
 $$
 
 Here the tail's entropy and score remain paired via `Delta(tau)>=0`.
@@ -211,7 +211,7 @@ Section 5 of that proof gives the finite-angle bounds
 $$
 K_A\le\frac{8\sqrt\kappa\,u}{\sqrt{1-4u}},\qquad
 K_B\le A(u)=s(1-2u)\left[\frac2{1-8u+8u^2}-1\right].
-\tag{3}
+\qquad\text{(3)}
 $$
 
 Their derivations require only `u<1/4` and the scalar definiteness

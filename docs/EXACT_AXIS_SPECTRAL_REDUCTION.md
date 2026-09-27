@@ -23,7 +23,7 @@ the effective observables to be
 
 $$
 A_{i,X}=X_i,\qquad A_{i,Z}=zZ_i\quad(1\le i\le n).
-\tag{1}
+\qquad\text{(1)}
 $$
 
 For a nonempty set `S` of vertices of the Boolean cube, let `A_S` be
@@ -39,7 +39,7 @@ $$
 
 $$
 \boxed{z_{\max}(n,D\mid X\text{ exact})=\frac{\Lambda(n,D)}n.}
-\tag{2}
+\qquad\text{(2)}
 $$
 
 The converse allows every collective encoder and every finite classical
@@ -64,7 +64,7 @@ $$
 &=\sum_aK_a^\dagger B_{a,i}^2K_a-I_d\\
 &\le0.
 \end{aligned}
-\tag{3}
+\qquad\text{(3)}
 $$
 
 Every summand on the left is positive semidefinite, so each vanishes.
@@ -74,7 +74,7 @@ $$
 B_{a,i}K_a=K_aX_i,
 \qquad [K_a^\dagger K_a,X_i]=0
 \quad\text{for every }a,i.
-\tag{4}
+\qquad\text{(4)}
 $$
 
 The second statement follows by multiplying the first identity by
@@ -88,7 +88,7 @@ $$
 \omega_a=\frac{\|K_a\|_F^2}{d},\qquad
 L_a=\frac{K_a}{\|K_a\|_F},\qquad
 \rho_a=L_a^\dagger L_a.
-\tag{5}
+\qquad\text{(5)}
 $$
 
 Then `sum_a omega_a=1`. The simultaneous X eigenbasis is nondegenerate:
@@ -97,8 +97,8 @@ write `X_i|x>_X=(-1)^{x_i}|x>_X`. Equation (4) implies
 $$
 \rho_a=\sum_x p_{a,x}|x\rangle_X\langle x|,
 \qquad p_{a,x}\ge0,\quad\sum_xp_{a,x}=1,
-\qquad|\operatorname{supp}p_a|\le D.
-\tag{6}
+\qquad|\mathrm{supp}p_a|\le D.
+\qquad\text{(6)}
 $$
 
 Indeed, the nonzero columns of `L_a` in this basis are mutually
@@ -121,7 +121,7 @@ off-diagonal blocks. Therefore
 $$
 F_i(p):=\|LZ_iL^\dagger\|_1
 =\sum_{x\in\{0,1\}^n}\sqrt{p_xp_{x+e_i}}.
-\tag{7}
+\qquad\text{(7)}
 $$
 
 Here p is extended by zero outside S. Both orientations of each edge
@@ -130,7 +130,7 @@ With `v_x=sqrt(p_x)`,
 
 $$
 \sum_iF_i(p)=v^TA_Sv\le\lambda_{\max}(A_S)\le\Lambda(n,D).
-\tag{8}
+\qquad\text{(8)}
 $$
 
 Let `C_{a,i}` be the actual Z decoder, another Hermitian contraction.
@@ -138,9 +138,9 @@ Taking the normalized Hilbert--Schmidt inner product of its effective
 observable with `Z_i` gives
 
 $$
-z_i=\frac1d\sum_a\operatorname{Tr}(C_{a,i}K_aZ_iK_a^\dagger)
+z_i=\frac1d\sum_a\mathrm{Tr}(C_{a,i}K_aZ_iK_a^\dagger)
 \le\sum_a\omega_aF_i(p_a).
-\tag{9}
+\qquad\text{(9)}
 $$
 
 This also proves the stronger necessary condition `sum_i z_i<=Lambda`
@@ -157,7 +157,7 @@ t, let `Z^t=product_i Z_i^{t_i}` and define
 
 $$
 \boxed{K_t=LZ^t,\qquad t\in\{0,1\}^n.}
-\tag{10}
+\qquad\text{(10)}
 $$
 
 There is **no additional scalar prefactor** in (10). Since `Z^t`
@@ -168,7 +168,7 @@ $$
 =\sum_tZ^t\rho Z^t
 =\sum_y\left(\sum_t p_{y+t}\right)|y\rangle_X\langle y|
 =I_d.
-\tag{11}
+\qquad\text{(11)}
 $$
 
 Thus the complete collection is a trace-preserving instrument. Its
@@ -182,7 +182,7 @@ D_i=\sum_{x\in S}(-1)^{x_i}|u_x\rangle\langle u_x|,
 \qquad
 C_i=\sum_{\substack{x\in S\\x+e_i\in S}}
 |u_x\rangle\langle u_{x+e_i}|.
-\tag{12}
+\qquad\text{(12)}
 $$
 
 The second operator swaps the endpoints of each matching edge and is
@@ -192,7 +192,7 @@ For an X query in branch t, use `(-1)^{t_i}D_i`. Because
 
 $$
 \sum_tK_t^\dagger((-1)^{t_i}D_i)K_t=X_i.
-\tag{13}
+\qquad\text{(13)}
 $$
 
 For a Z query use `C_i` in every branch. Directly,
@@ -208,7 +208,7 @@ $$
 \sum_tK_t^\dagger C_iK_t
 =F_i(p)\sum_y|y\rangle_X\langle y+e_i|
 =F_i(p)Z_i.
-\tag{14}
+\qquad\text{(14)}
 $$
 
 Choose S maximizing Lambda and a nonnegative unit top eigenvector of
@@ -236,7 +236,7 @@ nonzero branch has the form
 $$
 K_a=M_a\otimes\langle v_a|,
 \qquad T_a\subseteq[n],\quad |T_a|\le q.
-\tag{15}
+\qquad\text{(15)}
 $$
 
 The tensor decomposition in (15) is across the original input sites
@@ -259,7 +259,7 @@ Set
 $$
 w(x,z)=\bigl[x+z-1-\sqrt{2(1-x)(1-z)}\bigr]_+,
 \quad (x,z)\in[0,1]^2.
-\tag{16}
+\qquad\text{(16)}
 $$
 
 **Theorem 2.** The exact nonnegative contrast region of this entire
@@ -267,7 +267,7 @@ subclass is
 
 $$
 \boxed{\sum_{i=1}^n w(\eta_{i,X},\eta_{i,Z})\le q.}
-\tag{17}
+\qquad\text{(17)}
 $$
 
 Equivalently, for `a_i,b_i>=0`, write
@@ -278,7 +278,7 @@ function is
 $$
 \max\sum_i(a_i\eta_{i,X}+b_i\eta_{i,Z})
 =\sum_i r_i+\sum_{j=1}^q d_{(j)}.
-\tag{18}
+\qquad\text{(18)}
 $$
 
 An empty last sum is zero. For q=1 this agrees with the previously
@@ -298,7 +298,7 @@ expectations of its reduced state in `|v>`. Its Bloch vector gives
 $$
 a_i\|LX_iL^\dagger\|_1+b_i\|LZ_iL^\dagger\|_1
 \le\begin{cases}a_i+b_i,&i\in T,\\r_i,&i\notin T.\end{cases}
-\tag{19}
+\qquad\text{(19)}
 $$
 
 This uses no product assumption on v. Weighted trace-norm duality,
@@ -313,7 +313,7 @@ and `D_0` outside T. In fact the four-outcome local POVM
 $$
 G_{s,t}=\tfrac14(I+s uX+t vZ),\qquad s,t\in\{\pm1\},
 \quad(u,v)\in D_0
-\tag{20}
+\qquad\text{(20)}
 $$
 
 has the required two marginals. Its spectral Kraus refinement has
@@ -338,7 +338,7 @@ Necessity follows from
 
 $$
 \|((x,z)-p(1,1))_+\|_2\le1-p.
-\tag{21}
+\qquad\text{(21)}
 $$
 
 Inside the disk p=0 works. Outside it the smaller quadratic root of
@@ -379,7 +379,7 @@ Take the star support
 $$
 S=\{0,e_1,\ldots,e_n\},\qquad
 p_0=\tfrac12,\quad p_{e_i}=\tfrac1{2n}.
-\tag{22}
+\qquad\text{(22)}
 $$
 
 Its square-root probability vector is a top eigenvector of the star,
@@ -389,7 +389,7 @@ The complete instrument in Section 2 has dimension n+1 and implements
 
 $$
 \eta_{i,X}=1,\qquad\eta_{i,Z}=1/\sqrt n.
-\tag{23}
+\qquad\text{(23)}
 $$
 
 For `n=31`, the dimension is exactly `32=2^5`. But
@@ -403,7 +403,7 @@ Both contrasts are now strictly between zero and one:
 
 $$
 x=\frac{9999}{10000},\qquad z=\frac1{\sqrt{31}}.
-\tag{24}
+\qquad\text{(24)}
 $$
 
 The corresponding uniform per-query errors are
@@ -417,7 +417,7 @@ w(x,z)=z-\frac1{10000}
 -\sqrt{\frac2{10000}(1-z)}
 >\frac{1665}{10000},\qquad
 31w(x,z)>5.1615>5.
-\tag{25}
+\qquad\text{(25)}
 $$
 
 The numerical value `31w(x,z)` is approximately `5.167575127329441`,
@@ -449,7 +449,7 @@ for induced subgraphs with m vertices in an n-dimensional cube when
 $$
 \boxed{z_{\max}(n,D\mid X\text{ exact})=\frac{\sqrt{D-1}}n,
 \qquad100000\le D\le n.}
-\tag{26}
+\qquad\text{(26)}
 $$
 
 For completeness, a support smaller than D can be padded to D vertices.

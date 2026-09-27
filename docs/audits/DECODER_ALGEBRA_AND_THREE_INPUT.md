@@ -36,7 +36,7 @@ satisfies
 $$
 \boxed{\eta\le\frac1{\sqrt2}
  +\left(1-\frac1{\sqrt2}\right)\frac qn.}
-\tag{1}
+\qquad\text{(1)}
 $$
 
 Random retention of q original sites attains equality within this decoder
@@ -44,7 +44,7 @@ class. More generally, its separate contrasts obey
 
 $$
 \sum_{i=1}^n(x_i+z_i)\le2q+\sqrt2(n-q).
-\tag{2}
+\qquad\text{(2)}
 $$
 
 There is no product, stabilizer, flat-spectrum, or eigenbasis restriction
@@ -71,9 +71,9 @@ It is symmetric with zero diagonal, hence alternating over `F_2`.
 If its rank is `2r`, a nonzero representation on dimension D requires
 
 $$
-2^r\mid D,\qquad \operatorname{rank}_{\mathbb F_2}M\le2q
+2^r\mid D,\qquad \mathrm{rank}_{\mathbb F_2}M\le2q
 \quad\text{when }D\le2^q.
-\tag{3}
+\qquad\text{(3)}
 $$
 
 This is an established graph-Clifford-algebra fact; precise primary
@@ -102,14 +102,14 @@ The reference commutation matrix is
 $$
 J=\bigoplus_{i=1}^n
 \begin{pmatrix}0&1\\1&0\end{pmatrix},
-\qquad \operatorname{rank}J=2n.
+\qquad \mathrm{rank}J=2n.
 $$
 
 The full terms have binary commutation matrix `A=J+M`, so
 
 $$
-\operatorname{rank}A\ge2n-\operatorname{rank}M\ge2(n-q).
-\tag{4}
+\mathrm{rank}A\ge2n-\mathrm{rank}M\ge2(n-q).
+\qquad\text{(4)}
 $$
 
 **Elementary matching lemma.** A graph whose adjacency matrix over
@@ -128,7 +128,7 @@ inequality gives
 
 $$
 \boxed{\|H\|_\infty\le(n-q)\sqrt2+2q.}
-\tag{5}
+\qquad\text{(5)}
 $$
 
 Different matched pairs need not commute; no such assumption was used.
@@ -177,7 +177,7 @@ $$
 $$
 \left\|\sum_i(a_iX_i\otimes B_{i,X}+b_iZ_i\otimes B_{i,Z})\right\|_\infty
 \le\sum_i(a_i+b_i)-\min_i\delta_i.
-\tag{6}
+\qquad\text{(6)}
 $$
 
 If A contains an original X/Z-pair edge, grouping that anticommuting
@@ -205,7 +205,7 @@ gives exactly
 $$
 \sum_i w(x_i,z_i)\le n-1,\qquad
 w(x,z)=\left[x+z-1-\sqrt{2(1-x)(1-z)}\right]_+.
-\tag{7}
+\qquad\text{(7)}
 $$
 
 This section proves the full-profile conclusion for `q=n-1`. The later
@@ -249,7 +249,7 @@ gives
 $$
 \Gamma(3,4)=\max_{B_j=B_j^\dagger,\ B_j^2=I_4}
 \lambda_{\max}\!\left(\sum_{j=1}^{6}P_j\otimes B_j\right).
-\tag{8}
+\qquad\text{(8)}
 $$
 
 Extreme Hermitian contractions are reflections; dimension-smaller seeds
@@ -275,7 +275,7 @@ orbits, so its maximum exists. Exactly,
 
 $$
 \boxed{\Gamma(3,4)=\max\{4+\sqrt2,\ \max_{t=1}^{10}M_t\}.}
-\tag{9}
+\qquad\text{(9)}
 $$
 
 This retains every continuous decoder orientation. The ten-pattern

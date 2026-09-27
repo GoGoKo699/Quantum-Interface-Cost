@@ -37,11 +37,11 @@ $$
 \begin{aligned}
 h&=X\otimes B+Z\otimes D,\\
 R_t(\rho;B,D)
-&=\operatorname{Tr}_Q\!\left[
+&=\mathrm{Tr}_Q\!\left[
 (I\otimes\sqrt\rho)(tI-h)^{-1}(I\otimes\sqrt\rho)
 \right].
 \end{aligned}
-\tag{1}
+\qquad\text{(1)}
 $$
 
 This is a positive operator on a qubit. Put `r=sqrt(2)` and
@@ -50,7 +50,7 @@ This is a positive operator on a qubit. Put `r=sqrt(2)` and
 $$
 f_a=\frac{t-a}{(t-a)^2-b^2},\qquad
 g_a=\frac{t+a}{(t+a)^2-b^2}.
-\tag{2}
+\qquad\text{(2)}
 $$
 
 For `x>=y>=0` define
@@ -59,7 +59,7 @@ $$
 \Phi_t(x,y)=\max\left\{
 (x+y)s_0,\ \max_{1\le a\le r}(xf_a+yg_a)
 \right\},
-\tag{3}
+\qquad\text{(3)}
 $$
 
 and extend Phi symmetrically to all nonnegative x,y.
@@ -71,7 +71,7 @@ $$
 \sup_{-I\le B,D\le I}\|R_t(\rho;B,D)\|_\infty
 =\sum_{j=1}^{d}\Phi_t(\lambda_j,\lambda_{M+1-j}).
 }
-\tag{4}
+\qquad\text{(4)}
 $$
 
 The supremum is attained by reflections on Q itself. No real-matrix
@@ -85,8 +85,8 @@ For every positive definite A,
 
 $$
 v^\dagger A^{-1}v
-=\sup_z\left[2\operatorname{Re}(v^\dagger z)-z^\dagger Az\right].
-\tag{5}
+=\sup_z\left[2\mathrm{Re}(v^\dagger z)-z^\dagger Az\right].
+\qquad\text{(5)}
 $$
 
 The right side is a supremum of affine functions of A. Hence inversion
@@ -111,7 +111,7 @@ Jordan's lemma decomposes two reflections into scalar and traceless
 $$
 h=aS\otimes Z+bT\otimes X,
 \qquad a\ge b\ge0,\quad a^2+b^2=2,
-\tag{6}
+\qquad\text{(6)}
 $$
 
 possibly with S and T interchanged. For an upper bound, maximize the
@@ -135,7 +135,7 @@ $$
 \frac{za(s+2b^2)}\Delta,\qquad
 \frac{xb(s+2a^2)}\Delta,\qquad
 \frac{2taby}\Delta.
-\tag{7}
+\qquad\text{(7)}
 $$
 
 This follows by multiplying `(tI+h)(t^2I-h^2)^(-1)`. The first scale
@@ -146,7 +146,7 @@ $$
 a^2(s+2b^2)^2-b^2(s+2a^2)^2&=(a^2-b^2)\Delta\ge0,\\
 a^2(s+2b^2)^2-(2tab)^2&=a^2\Delta>0.
 \end{aligned}
-\tag{8}
+\qquad\text{(8)}
 $$
 
 The trace is independent of the reference state, and the eigenvalue
@@ -184,7 +184,7 @@ of a convex function k. At differentiability points,
 $$
 \partial_x\partial_y\Phi_t(x,y)
 =-\frac{x}{y^2}k''(x/y)\le0.
-\tag{9}
+\qquad\text{(9)}
 $$
 
 The same decreasing-differences inequality follows for nonsmooth k
@@ -196,7 +196,7 @@ $$
 \Phi(A,E)+\Phi(B,C)&\ge\Phi(A,C)+\Phi(B,E),\\
 \Phi(A,E)+\Phi(B,C)&\ge\Phi(A,B)+\Phi(C,E).
 \end{aligned}
-\tag{10}
+\qquad\text{(10)}
 $$
 
 These are rectangle inequalities, using symmetry in the second line.
@@ -217,7 +217,7 @@ bound K. First require
 
 $$
 K\ge\frac{w}{t-r}.
-\tag{11}
+\qquad\text{(11)}
 $$
 
 For `w>0`, this implies K>0. Clearing the positive denominator in
@@ -225,7 +225,7 @@ For `w>0`, this implies K>0. Clearing the positive denominator in
 
 $$
 P_K(a)\ge0\quad(1\le a\le r),
-\tag{12}
+\qquad\text{(12)}
 $$
 
 where
@@ -236,21 +236,21 @@ P_K(a)={}&4Ka^4+2\delta a^3-8Ka^2
 -\delta(t^2+2)a\\
 &+K(t^2-2)^2-wt(t^2-2).
 \end{aligned}
-\tag{13}
+\qquad\text{(13)}
 $$
 
 The simplifying fact is strict convexity on the whole interval:
 
 $$
 P_K''(a)=48Ka^2+12\delta a-16K>0.
-\tag{14}
+\qquad\text{(14)}
 $$
 
 Its derivative is the cubic
 
 $$
 16Ka^3+6\delta a^2-16Ka-\delta(t^2+2)=0.
-\tag{15}
+\qquad\text{(15)}
 $$
 
 This cubic has exactly one positive root z, with `z>=1`. Its own
@@ -262,7 +262,7 @@ Therefore the unique minimum of P on the interval is at
 
 $$
 a_* = \min\{z,r\}.
-\tag{16}
+\qquad\text{(16)}
 $$
 
 Equations (11) and `P_K(a_*)>=0` are an **exact algebraic decision rule**
@@ -293,7 +293,7 @@ a unique largest eigenvalue U, second eigenvalue m, and normalized top
 vector Omega. Put
 
 $$
-c=U-m>0,\qquad \rho=\operatorname{Tr}_A|\Omega\rangle\langle\Omega|.
+c=U-m>0,\qquad \rho=\mathrm{Tr}_A|\Omega\rangle\langle\Omega|.
 $$
 
 Then `H_0<=mI+c|Omega><Omega|`. Let Lambda be the desired upper bound,
@@ -307,7 +307,7 @@ cP+h\le tI\text{ for every }B,D
 \quad\Longleftrightarrow\quad
 c\sum_{j=1}^{d}\Phi_t(\lambda_j,\lambda_{M+1-j})\le1.
 \end{aligned}
-\tag{17}
+\qquad\text{(17)}
 $$
 
 The compression to Omega is exactly (1), with its actual, potentially
@@ -323,7 +323,7 @@ $$
 \sum_jK_j\le1/c,\qquad
 K_j\ge\frac{\lambda_j+\lambda_{M+1-j}}{t-r},\qquad
 P_{K_j}(a_{*,j})\ge0.
-\tag{18}
+\qquad\text{(18)}
 $$
 
 Each nonzero-weight pair uses the unique clipped cubic root above.
@@ -336,7 +336,7 @@ $$
 \frac{\lambda_1+\lambda_4}{t-r}
 \le K_1\le
 \frac1c-\frac{\lambda_2+\lambda_3}{t-r}.
-\tag{19}
+\qquad\text{(19)}
 $$
 
 Two convex-quartic tests decide whether the spectral upper bound
@@ -354,7 +354,7 @@ Their two greatest eigenvalues always obey
 
 $$
 m\ge2,\qquad U+m\le4+2\sqrt2,\qquad U\le4.
-\tag{20}
+\qquad\text{(20)}
 $$
 
 For the first inequality, compress the second reference to a Y
@@ -367,8 +367,8 @@ including the other reference's identity. It has rank four and
 `h_i<=2Pi_i`. Its partial trace over its own reference is `I_Q/2`, so
 
 $$
-\operatorname{Tr}(\Pi_1\Pi_2)
-=\operatorname{Tr}_Q[(I_Q/2)(I_Q/2)]=1.
+\mathrm{Tr}(\Pi_1\Pi_2)
+=\mathrm{Tr}_Q[(I_Q/2)(I_Q/2)]=1.
 $$
 
 The squared principal cosines between these two rank-four ranges sum
@@ -400,7 +400,7 @@ inequalities (20), yet fail (17). At `t=2+r,c=2`,
 
 $$
 \Phi_t(1,0)=\frac1{2(\sqrt{2t^2-4}-t)}>\frac12.
-\tag{21}
+\qquad\text{(21)}
 $$
 
 Here f_a is maximized at
@@ -425,7 +425,7 @@ trace-norm score is
 $$
 g(L)=\sum_{i,U=X_i,Z_i}\|LUL^\dagger\|_1
 =\max_{\{B_{i,U}\}}\sum_{i,U}
-\operatorname{Tr}(B_{i,U}LUL^\dagger),
+\mathrm{Tr}(B_{i,U}LUL^\dagger),
 \qquad \|L\|_F=1.
 $$
 
@@ -499,7 +499,7 @@ $$
 \frac{n+\log_2 M}{2}I,
 \qquad
 P_i=U_i(\Phi_{R_iA}\otimes I_{M/2})U_i^\dagger.
-\tag{22}
+\qquad\text{(22)}
 $$
 
 It would imply the desired `n=3,M=4` projector bound, but the general
@@ -529,7 +529,7 @@ $$
 =\frac14(1+1/8)^2+\frac{63}{256}
 =\frac9{16},\qquad
 \left\langle\sum_iP_i\right\rangle=36>\frac{71}{2}.
-\tag{23}
+\qquad\text{(23)}
 $$
 
 This is an operator-inequality counterexample, not an interface protocol
@@ -576,7 +576,7 @@ Their adjoint products sum to I_4. The coherent vacuum/i pair contributes
 $$
 F_i=\frac{31}{50},\qquad
 \sum_i(2F_i-1)=\frac{54}{25}>2=M/2.
-\tag{24}
+\qquad\text{(24)}
 $$
 
 These maps send the maximally mixed ququart to `diag(3/4,1/4)`.

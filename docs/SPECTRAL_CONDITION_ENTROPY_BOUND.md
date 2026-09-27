@@ -41,7 +41,7 @@ $$
 g(\rho)\le
 2n-\frac{\alpha_\kappa\ln2}{2}\bigl(n-S(\rho)\bigr).
 }
-\tag{1}
+\qquad\text{(1)}
 $$
 
 Consequently, put
@@ -52,7 +52,7 @@ r_* = \frac{2(2-\sqrt2)}{\ln2}-1,
 \kappa_*=
 \left(\frac{1+\sqrt{1-r_*^2}}{r_*}\right)^2
 =6.235819648070267\ldots.
-\tag{2}
+\qquad\text{(2)}
 $$
 
 Whenever `kappa <= kappa_*`,
@@ -61,7 +61,7 @@ $$
 \boxed{
 g(\rho)\le\sqrt2 n+(2-\sqrt2)S(\rho).
 }
-\tag{3}
+\qquad\text{(3)}
 $$
 
 For a nonmaximally mixed state satisfying the condition, (3) is strict.
@@ -72,7 +72,7 @@ An easier operator-norm condition implying the hypothesis is
 $$
 \|2^n\rho-I\|_\infty
 \le\sqrt{1-r_*^2}=0.7235973120842801\ldots.
-\tag{4}
+\qquad\text{(4)}
 $$
 
 Indeed, if the left side is at most t below one, then
@@ -88,7 +88,7 @@ F_P=\|\sqrt\rho P\sqrt\rho\|_1,
 I_\rho(P)=\frac12\sum_{a,b}
 \frac{(\lambda_a-\lambda_b)^2}{\lambda_a+\lambda_b}
 |P_{ab}|^2,
-\tag{5}
+\qquad\text{(5)}
 $$
 
 where matrix entries are taken in an eigenbasis of rho. This is one quarter
@@ -111,7 +111,7 @@ P_{ab}B_{ba}\right|^2\\
 |B_{ba}|^2\right)\\
 &\le 1-I_\rho(P).
 \end{aligned}
-\tag{6}
+\qquad\text{(6)}
 $$
 
 For the last line, the second parenthesis is `Tr(rho B^2)<=1`. The first
@@ -127,7 +127,7 @@ In particular, `0<=I_rho(P)<=1`, and
 
 $$
 F_P\le\sqrt{1-I_\rho(P)}\le1-\frac12 I_\rho(P).
-\tag{7}
+\qquad\text{(7)}
 $$
 
 Equations (5)--(7) also hold for singular states when terms with two zero
@@ -139,7 +139,7 @@ condition-number comparison in the next step.
 Let
 
 $$
-a_P=\operatorname{Tr}(\sqrt\rho P\sqrt\rho P).
+a_P=\mathrm{Tr}(\sqrt\rho P\sqrt\rho P).
 $$
 
 Using `P^2=I` again,
@@ -147,7 +147,7 @@ Using `P^2=I` again,
 $$
 1-a_P=\frac12\sum_{a,b}
 (\sqrt{\lambda_a}-\sqrt{\lambda_b})^2|P_{ab}|^2.
-\tag{8}
+\qquad\text{(8)}
 $$
 
 For each pair of positive eigenvalues,
@@ -164,7 +164,7 @@ Their ratio lies in `[1/kappa,kappa]`, so the parenthesis is at least
 
 $$
 I_\rho(P)\ge\alpha_\kappa(1-a_P).
-\tag{9}
+\qquad\text{(9)}
 $$
 
 Use the normalized trace and depolarizing Dirichlet form from
@@ -172,7 +172,7 @@ Use the normalized trace and depolarizing Dirichlet form from
 
 $$
 d=2^n,\quad A=\sqrt{d\rho},\quad
-\tau(T)=\operatorname{Tr}(T)/d,\quad
+\tau(T)=\mathrm{Tr}(T)/d,\quad
 \mathscr D(A)=\tau\left(A\sum_i(\mathrm{id}-\mathcal E_i)(A)\right).
 $$
 
@@ -181,14 +181,14 @@ of the identity there. The Pauli expansion gives
 
 $$
 \sum_{i,b=X,Z}(1-a_{P_{i,b}})\ge2\mathscr D(A).
-\tag{10}
+\qquad\text{(10)}
 $$
 
 The established qubit logarithmic-Sobolev inequality gives
 
 $$
 \mathscr D(A)\ge\frac{\ln2}{2}(n-S(\rho)).
-\tag{11}
+\qquad\text{(11)}
 $$
 
 For exact provenance and normalization, Beigi,
@@ -199,7 +199,7 @@ $$
 \mathscr D(A)\ge
 n\left(\frac12-\sqrt{u(1-u)}\right),
 \qquad h_2(u)=S(\rho)/n,\quad 0\le u\le\frac12.
-\tag{12}
+\qquad\text{(12)}
 $$
 
 Equation (11) follows from (12) and the scalar inequality
@@ -218,7 +218,7 @@ Summing (9), (10), and (11) yields
 $$
 \sum_{i,b} I_\rho(P_{i,b})
 \ge\alpha_\kappa\ln2\,(n-S(\rho)).
-\tag{13}
+\qquad\text{(13)}
 $$
 
 Summing (7) now proves (1). The function `alpha_kappa` decreases for
@@ -239,7 +239,7 @@ $$
 \le\sqrt{1-\alpha_\kappa
 \left(\frac12-\sqrt{u(1-u)}\right)},
 \qquad h_2(u)=S(\rho)/n.
-\tag{14}
+\qquad\text{(14)}
 $$
 
 Its radicand is nonnegative for any state obeying the hypotheses, as
