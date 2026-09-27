@@ -201,3 +201,10 @@ This obstruction excludes a general entanglement-breaking or
 positive-partial-transpose shortcut. It leaves open the actual matrix
 inequality in the two-mode resolvent report, all three remaining full
 reflection signatures, and the unrestricted retention conjecture.
+
+The later [robust channel converse](ROBUST_HEAD_CHANNEL_CONVERSE.md)
+proves the retention bound for this entire positive-quadrant family,
+including every high-energy NPT head, with an arbitrary third pair.
+It compares the coherent channel with an entanglement-breaking channel
+and controls their full diamond distance. The nonclassicality obstruction
+above remains valid; it does not itself imply a failure of the converse.

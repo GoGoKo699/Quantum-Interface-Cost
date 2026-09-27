@@ -1,7 +1,7 @@
 # Status and claim ledger
 
-Updated: 2026-09-27. Stage: the [sharp two-mode support theorem](audits/SHARP_TWO_MODE_SUPPORT.md) proves `U+m<=4sqrt(3)` for arbitrary two ququart binary-POVM pairs and evaluates its full nonnegative weighted support. A squared trace-norm budget retains the four original reference Pauli operators. Equality is completely classified: the balanced Hamiltonian and square-POVM head channel are forced, so every attainer with an arbitrary third pair obeys `norm(H)<=(4+2sqrt(5))/sqrt(3)<4+sqrt(2)`. The boundary bound is not claimed attained. The earlier synthetic channel is excluded at its assigned energy in every reference orientation. The [compatibility obstruction](audits/TWO_MODE_COMPATIBILITY_OBSTRUCTION.md) still refutes the spectral/moment/compression relaxation, and no failure of the coherent test for actual readouts is proved. All three complete remaining reflection signatures, unrestricted optimality and publication originality remain unresolved.
-Latest research base: `5a9d0ae04ba0c3a8a782e39c9e853d934d30ed6b`, the merge of PR #45.
+Updated: 2026-09-27. Stage: [quantitative two-mode stability](audits/QUANTITATIVE_TWO_MODE_STABILITY.md) replaces the preceding compactness neighborhood by explicit conservative radii. For arbitrary earlier binary POVMs, `4sqrt(3)-(U+m)<=2^-32` implies `norm(H0+h3)<16/3` for every third pair. Within `m>=2+sqrt(2)`, deficit at most `2^-24` suffices. The [robust head-channel criterion](audits/ROBUST_HEAD_CHANNEL_CONVERSE.md) permits full diamond distance `2/5` from any entanglement-breaking channel throughout that high-m regime and closes the entire earlier positive-quadrant NPT-head family. A chirality identity and signed Cauchy--Schwarz stability retain the actual reference Pauli structure; the actual channel is not dephased. These radii are not optimal and do not cover the full remaining region. The sharp support theorem and prior obstruction remain valid. All three complete remaining reflection signatures, unrestricted optimality and publication originality remain unresolved.
+Latest research base: `3d230411930a2ac198cdb7f2ef9ad86701face1a`, the merge of PR #46.
 
 Critical assessment base: `81bcfefb2b545742d513c4f51364a7f72972451e`, the
 merge of PR #11. The [publication and optimality assessment](audits/PUBLICATION_AND_OPTIMALITY_ASSESSMENT.md)
@@ -52,6 +52,9 @@ is asserted.
 | Full spectrum, all memory-valued polynomial moments and the established caps on every one-/two-dimensional memory compression force the two-mode test | Incorrect: an exact synthetic Hamiltonian obeys these constraints while its spectral envelope fails. A reference-Pauli support calculation excludes its fixed head at the assigned energy; no physical violation is shown | audits/TWO_MODE_COMPATIBILITY_OBSTRUCTION.md |
 | Arbitrary two ququart binary-POVM pairs obey U+m<=4sqrt(3), sharply | Derived and independently checked; squared trace-norm budget at flat rank two, with exact nonnegative weighted support and matching reflection readouts | audits/SHARP_TWO_MODE_SUPPORT.md Sections 1–3 |
 | Every equal-weight support attainer is the balanced readout family and obeys norm(H0+h3)<=(4+2sqrt(5))/sqrt(3) for arbitrary third pairs | Derived and independently checked; full equality reconstruction and square-POVM channel. The boundary upper bound is not asserted sharp; the full converse is open | audits/SHARP_TWO_MODE_SUPPORT.md Sections 4–5 |
+| The maximal-support boundary has an explicit global safe neighborhood | Derived and independently checked; deficit at most 2^-32 gives norm(H0+h3)<16/3 for arbitrary third pairs, and at most 2^-24 suffices when m>=2+sqrt(2). Conservative, nonoptimal radii | audits/QUANTITATIVE_TWO_MODE_STABILITY.md |
+| A high-m head at full diamond distance at most 2/5 from an entanglement-breaking channel passes the coherent envelope test | Derived and independently checked by centering the resolvent and two elementary quadratic certificates; no dephasing of the actual head | audits/ROBUST_HEAD_CHANNEL_CONVERSE.md |
+| The full positive-quadrant physical nonclassical-head family obeys the converse | Derived and independently checked; explicit EB comparison controls its high-energy NPT heads, while a triangle bound covers the other angles | audits/ROBUST_HEAD_CHANNEL_CONVERSE.md |
 | The synthetic partial-SWAP channel is excluded at U=m=2sqrt(3) in every reference orientation | Derived and independently checked from the equality conditions and a three-anticommuting-reflection obstruction in the reference X/Z space | audits/SHARP_TWO_MODE_SUPPORT.md Section 6 |
 | Three partial-SWAP Bell-subspace projectors obey the sharp sum bound 5/2 | Derived and independently checked, including all equality cases; the physical converse also assumes equal spectra within each site's two Jordan blocks | audits/NONCOMMUTING_QUERY_FAMILIES.md Sections 1–6 |
 | Every sufficiently small change of subsystem geometry around the known projector attainers obeys the 5/2 bound | Derived and independently checked in all eighteen transverse directions; exact negative quadratic form and radius 2^-10. No global optimality or global rigidity statement | audits/BELL_SUBSPACE_LOCAL_STABILITY.md Sections 1–5 |
@@ -463,11 +466,15 @@ For the three-input finite-budget target, the latest sharp support theorem
 confines the regime strictly above the one-mode threshold to
 `2+sqrt(2)<m<=2sqrt(3)` and `m<=U<=4sqrt(3)-m`.
 The entire maximal-sum boundary is now classified and lies strictly below
-the retention benchmark after every third pair. Compactness gives a safe
-neighborhood of that boundary, but no explicit radius has been proved.
-The next analytical target is quantitative control away from equality,
-retaining the actual readout equations and coherent head channel. The
-spectral/moment/compression relaxation alone remains insufficient.
+the retention benchmark after every third pair. The later stability proof
+gives explicit radii `2^-32` globally and `2^-24` within the high-m strip;
+these remain much smaller than the full unresolved region. The channel
+criterion also handles the complete earlier NPT example family. The next
+analytical target is a stronger global relation between readout support
+and the coherent head channel, rather than further optimization of the
+conservative rounding constants. The spectral/moment/compression relaxation
+alone remains insufficient, and squared support deficit zero alone does
+not imply an entanglement-breaking channel at the scalar-pair endpoint.
 
 The [optimizer follow-up](audits/FORMATION_OPTIMIZERS_AND_PRIOR.md)
 strengthens the one-site equality result: every entropy optimum in the

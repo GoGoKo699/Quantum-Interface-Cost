@@ -1,5 +1,39 @@
 # Reproducibility and source provenance
 
+## Quantitative two-mode stability and robust channel converse
+
+The [stability proof](audits/QUANTITATIVE_TWO_MODE_STABILITY.md) and
+[channel criterion](audits/ROBUST_HEAD_CHANNEL_CONVERSE.md) are pinned to
+main `3d230411930a2ac198cdb7f2ef9ad86701face1a`. Run:
+
+```bash
+python tools/check_quantitative_two_mode.py --output results/quantitative_two_mode.json
+```
+
+The verifier checks 39 scalar comparisons using exact rational arithmetic.
+These cover the flattening and rounding constants, both explicit radii,
+the two resolvent quadratics, and the nonclassical-family bounds. Seven
+fixed constructions check 93 matrix identities: three prescribed points
+of the nonclassical family, the balanced head, and three head perturbations
+with nonflat complementary states. The checks include the channel and
+partial-transpose formulas, signed Cauchy--Schwarz identities, and squared
+chirality identity. Matrix dimension is at most 16; no parameter scan,
+optimizer, or large simulation is used.
+
+All passed with Python 3.12.14 and NumPy 2.3.5, at tolerance `3e-10`.
+The maximum relative identity residual was `1.96e-15`. Source SHA-256:
+`a11f7ee7bd89722fb773e2a5ca39e7942b993fd91998a6ab4f0e868a8e8ff23e`.
+The JSON also records both proof-note hashes. An independent internal
+source review and separate scratch rerun reproduced the recorded JSON
+byte for byte; cross-platform floating results need only meet the stated
+tolerance. Output guards preserve the verifier and both proof notes.
+
+The continuous stability and channel theorems are supplied analytical
+proofs, not consequences of the finite checks. Their conservative radii
+do not settle a full remaining signature or the unrestricted converse.
+Internal review does not establish publication originality. Unchanged
+diagnostics were not rerun.
+
 ## Sharp two-mode support and equality boundary
 
 The [support theorem](audits/SHARP_TWO_MODE_SUPPORT.md) is pinned to

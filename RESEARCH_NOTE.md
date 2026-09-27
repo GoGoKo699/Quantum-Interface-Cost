@@ -1,6 +1,6 @@
 # Q1 — Delayed local readout through a bounded quantum interface
 
-**Version:** 0.42, 2026-09-27
+**Version:** 0.43, 2026-09-27
 
 **Project:** Falling / Q1  
 **Status:** Baseline proofs and seed reduction independently checked within the audit workspace. The full product-diagonal profile rate has a constructive optimizer and evaluates an established steering entanglement measure. It exceeds the inspected affine weighted-CHSH formation bounds, but the nonlinear-source follow-up now derives its full mixed-state support and joint-resource convex-hull characterization from prior inequalities. The candidate contribution is the explicit evaluation, equality analysis and operational consequences. The unrestricted rate equals regularized formation of a local-query assemblage, whose distinction from full tensor-product assemblages is explicit. The complete two-qubit entropy inequality, general common-accuracy rate evaluation and publication novelty remain unresolved. This is a research dossier, not external peer review or a claim of a new framework.
@@ -172,6 +172,29 @@ channel at its assigned energy. The proof uses standard fidelity-affinity
 and Hilbert-Schmidt inequalities; publication originality and the full
 three-query converse remain unresolved.
 
+The [quantitative stability theorem](docs/audits/QUANTITATIVE_TWO_MODE_STABILITY.md)
+now controls the entire coherent head channel and the actual readouts
+from the deficit `epsilon=4sqrt(3)-(U+m)`. A chirality identity bounds
+the complementary state's departure from a flat spectrum, and a signed
+Cauchy--Schwarz estimate gives stable Pauli compressions. Coefficient
+rounding and the small actual decoder loss yield an explicit global
+neighborhood: `epsilon<=2^-32` implies `||H0+h3||<16/3` for every third
+binary-POVM pair. Within `m>=2+sqrt(2)`, the sufficient radius improves
+to `2^-24`. Both radii are conservative and do not cover the full remaining
+region.
+
+The companion [robust channel theorem](docs/audits/ROBUST_HEAD_CHANNEL_CONVERSE.md)
+proves a direct sufficient condition throughout that high-m regime:
+full diamond distance at most `2/5` from an entanglement-breaking channel.
+Centering the last-query resolvent gives this tolerance through two
+elementary quadratic comparisons. The resulting estimate closes the
+whole positive-quadrant physical family from the earlier nonclassical-head
+example, including all its high-energy NPT channels. This does not assume
+that the actual head is entanglement breaking. An exact scalar-pair
+endpoint shows why the squared support deficit alone cannot force that
+property. The three complete remaining signatures, unrestricted converse
+and publication originality remain open.
+
 ## 1. Origin, scope, and claim ledger
 
 Page 24 of the user-supplied *【马兆】坠落.pdf* describes a fictional progression from a quantum solver to a quantum-resident workflow because repeated classical–quantum interfaces become costly. The present model is our proposed scientific extraction; its assumptions and conclusions are not claims made by the fiction.
@@ -202,6 +225,8 @@ The general compression problem below is already present in the dimensional meas
 | A physical full spectrum, all memory-valued polynomial moments, and the established one-/two-dimensional memory compression caps suffice for the two-mode envelope test | Incorrect: an exact synthetic Hamiltonian satisfies all these constraints and fails the test. Its fixed head violates an explicit support bound from the four reference Pauli correlations; no physical counterexample is claimed. |
 | Arbitrary two ququart binary-POVM pairs obey the sharp bound U+m<=4sqrt(3) | Derived and independently checked: a squared trace-norm support budget also evaluates every nonnegative weighted Ky Fan support. Equality uniquely gives the balanced readout family up to the stated symmetries. |
 | Every equal-weight two-mode support attainer obeys norm(H0+h3)<=(4+2sqrt(5))/sqrt(3) for arbitrary third pairs | Derived and independently checked from equality rigidity and the pure-memory resolvent. This upper bound is below the retention benchmark; attainment is not asserted. The unrestricted converse remains open. |
+| An explicit global neighborhood of the maximal two-mode support obeys the converse | Derived and independently checked: deficit at most 2^-32 gives norm(H0+h3)<16/3 for every third pair; within m>=2+sqrt(2), deficit at most 2^-24 suffices. Conservative radii, not the whole remaining region. |
+| High-m heads within full diamond distance 2/5 of an entanglement-breaking channel obey the converse | Derived and independently checked by a centered resolvent estimate and two quadratic comparisons. The complete positive-quadrant nonclassical-head example family is covered, including NPT channels. |
 | Three partial-SWAP Bell-subspace projectors sum to at most 5I/2 | Derived and independently checked, with exact equality classification; gives the retention converse for equal spectra within each site's two Jordan blocks. Arbitrary independent U(4) embeddings remain open. |
 | All small subsystem perturbations around the known Bell-subspace attainers lower the sum norm | Derived and independently checked in all eighteen transverse directions; exact negative Hessian and an explicit radius 2^-10. A local converse, not global optimality or global rigidity. |
 | Exact worst weighted last-site resolvent in every even memory dimension, including all binary POVMs | Derived and independently checked: extreme spectral pairing and a convex-quartic/cubic-root decision eliminate the added decoder. Exact for a stated spectral upper bound, not a solution of the full Hamiltonian problem. |
