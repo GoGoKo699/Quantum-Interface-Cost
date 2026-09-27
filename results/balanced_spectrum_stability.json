@@ -1,0 +1,964 @@
+{
+  "constructions": [
+    {
+      "affinity_gap": 0.0,
+      "affinity_score": 1.8973665961010275,
+      "ambient_qubits": 1,
+      "bias": 0.6,
+      "family": "balanced reflection",
+      "inequality_margins": {
+        "affinity_imbalance_rigidity": 0.0,
+        "affinity_mass_rigidity": -3.4694469519536134e-19,
+        "affinity_nonnegative_response_gap": 0.0,
+        "affinity_reflection_distance": 0.0,
+        "affinity_trace_norm_transfer": 0.0,
+        "original_gap_dominates_response_gap": 4.440892098500626e-16,
+        "original_imbalance_rigidity": 0.0,
+        "original_mass_rigidity": -6.245004513516505e-19,
+        "original_nonnegative_response_gap": 0.0,
+        "original_reflection_distance": 0.0,
+        "original_trace_norm_transfer": 7.947285970052086e-07,
+        "q0X_lower": 0.4999999999999999,
+        "q0X_upper": 0.5000000000000001,
+        "q0Z_lower": 0.4999999999999999,
+        "q0Z_upper": 0.5000000000000001
+      },
+      "matrix_dimension": 2,
+      "maximum_site_mass": 0.9999999999999998,
+      "name": "one_qubit_bisector_equality",
+      "normalized_reflection_squared_distance": 0.0,
+      "original_gap": 4.440892098500626e-16,
+      "original_score": 1.811077027627483,
+      "query_data": [
+        {
+          "affinity": 0.8999999999999999,
+          "axis": "X",
+          "original_score": 0.9055385138137415,
+          "root_singleton_coefficient": 0.2236067977499789,
+          "site": 0
+        },
+        {
+          "affinity": 0.8999999999999999,
+          "axis": "Z",
+          "original_score": 0.9055385138137416,
+          "root_singleton_coefficient": 0.2236067977499789,
+          "site": 0
+        }
+      ],
+      "relative_identity_residuals": {
+        "affinity_gap_equals_response_gap": 0.0,
+        "aligned_bisector_overlap": 0.0,
+        "bisector_zero_distance": 0.0,
+        "bisector_zero_gap": 4.440892098500626e-16,
+        "reflection_Hermitian": 0.0,
+        "reflection_balanced": 0.0,
+        "reflection_square": 2.231687133607212e-16,
+        "state_root": 1.2412670766236366e-16
+      },
+      "response_data": [
+        {
+          "gap": 0.0,
+          "kind": "original",
+          "response": 1.8110770276274835,
+          "z": 0.36
+        },
+        {
+          "gap": 0.0,
+          "kind": "affinity",
+          "response": 1.8973665961010275,
+          "z": 0.19999999999999996
+        }
+      ],
+      "selected_site": 0,
+      "selected_squared_imbalance": 0.0,
+      "singleton_mass": 0.9999999999999998,
+      "state_trace_norm_distance": 0.0
+    },
+    {
+      "affinity_gap": 0.23966104351686535,
+      "affinity_score": 1.5491933384829664,
+      "ambient_qubits": 1,
+      "bias": 0.8,
+      "family": "balanced reflection",
+      "inequality_margins": {
+        "affinity_imbalance_rigidity": 0.23966104351686512,
+        "affinity_mass_rigidity": 0.23653604351686514,
+        "affinity_nonnegative_response_gap": 0.23966104351686512,
+        "affinity_reflection_distance": 764.9153392539679,
+        "affinity_trace_norm_transfer": 21.02321822601399,
+        "original_gap_dominates_response_gap": 2.220446049250313e-16,
+        "original_imbalance_rigidity": 0.4492422502470643,
+        "original_mass_rigidity": 0.4442422502470643,
+        "original_nonnegative_response_gap": 0.4492422502470643,
+        "original_reflection_distance": 559.5528128088301,
+        "original_trace_norm_transfer": 17.82631361307462,
+        "q0X_lower": 1.0,
+        "q0X_upper": 0.0,
+        "q0Z_lower": 1.0,
+        "q0Z_upper": 0.0
+      },
+      "matrix_dimension": 2,
+      "maximum_site_mass": 0.0,
+      "name": "one_qubit_Y_diffuse",
+      "normalized_reflection_squared_distance": 2.0,
+      "original_gap": 0.44924225024706455,
+      "original_score": 1.1999999999999995,
+      "query_data": [
+        {
+          "affinity": 0.5999999999999998,
+          "axis": "X",
+          "original_score": 0.5999999999999998,
+          "root_singleton_coefficient": 0.0,
+          "site": 0
+        },
+        {
+          "affinity": 0.5999999999999998,
+          "axis": "Z",
+          "original_score": 0.5999999999999998,
+          "root_singleton_coefficient": 0.0,
+          "site": 0
+        }
+      ],
+      "relative_identity_residuals": {
+        "affinity_gap_equals_response_gap": 2.220446049250313e-16,
+        "aligned_bisector_overlap": 0.0,
+        "reflection_Hermitian": 0.0,
+        "reflection_balanced": 0.0,
+        "reflection_square": 0.0,
+        "state_root": 2.1499376424746292e-16
+      },
+      "response_data": [
+        {
+          "gap": 0.4492422502470643,
+          "kind": "original",
+          "response": 1.1999999999999997,
+          "z": 0.6400000000000001
+        },
+        {
+          "gap": 0.23966104351686512,
+          "kind": "affinity",
+          "response": 1.5491933384829666,
+          "z": 0.40000000000000013
+        }
+      ],
+      "selected_site": 0,
+      "selected_squared_imbalance": 0.0,
+      "singleton_mass": 0.0,
+      "state_trace_norm_distance": 1.131370849898476
+    },
+    {
+      "affinity_gap": 0.056568542494923824,
+      "affinity_score": 1.3576450198781713,
+      "ambient_qubits": 1,
+      "bias": 1.0,
+      "family": "balanced reflection",
+      "inequality_margins": {
+        "affinity_imbalance_rigidity": 0.03850518249492382,
+        "affinity_mass_rigidity": 0.056568542494923824,
+        "affinity_nonnegative_response_gap": 0.056568542494923824,
+        "affinity_reflection_distance": 28.883093757401,
+        "affinity_trace_norm_transfer": 5.098894345149155,
+        "original_gap_dominates_response_gap": 2.220446049250313e-16,
+        "original_imbalance_rigidity": 0.03850518249492382,
+        "original_mass_rigidity": 0.056568542494923824,
+        "original_nonnegative_response_gap": 0.056568542494923824,
+        "original_reflection_distance": 28.883093757401,
+        "original_trace_norm_transfer": 5.098894345149166,
+        "q0X_lower": 0.23119999999999996,
+        "q0X_upper": 0.7688,
+        "q0Z_lower": 0.7688,
+        "q0Z_upper": 0.23119999999999996
+      },
+      "matrix_dimension": 2,
+      "maximum_site_mass": 1.0,
+      "name": "one_qubit_rotated_bisector_sharpness",
+      "normalized_reflection_squared_distance": 0.08000000000000002,
+      "original_gap": 0.056568542494924046,
+      "original_score": 1.357645019878171,
+      "query_data": [
+        {
+          "affinity": 0.7687999999999999,
+          "axis": "X",
+          "original_score": 0.8768124086713188,
+          "root_singleton_coefficient": 0.6199999999999999,
+          "site": 0
+        },
+        {
+          "affinity": 0.23120000000000002,
+          "axis": "Z",
+          "original_score": 0.4808326112068522,
+          "root_singleton_coefficient": 0.3399999999999999,
+          "site": 0
+        }
+      ],
+      "relative_identity_residuals": {
+        "affinity_gap_equals_response_gap": 0.0,
+        "aligned_bisector_overlap": 1.6653345369377348e-16,
+        "reflection_Hermitian": 0.0,
+        "reflection_balanced": 0.0,
+        "reflection_square": 7.196697709212446e-18,
+        "square_root_sharpness_distance": 3.191891195797325e-16,
+        "square_root_sharpness_gap": 1.8735013540549517e-16,
+        "state_root": 1.4686870114880517e-16
+      },
+      "response_data": [
+        {
+          "gap": 0.056568542494923824,
+          "kind": "original",
+          "response": 1.3576450198781713,
+          "z": 1.0
+        },
+        {
+          "gap": 0.056568542494923824,
+          "kind": "affinity",
+          "response": 1.3576450198781713,
+          "z": 1.0
+        }
+      ],
+      "selected_site": 0,
+      "selected_squared_imbalance": 0.28901376000000006,
+      "singleton_mass": 1.0,
+      "state_trace_norm_distance": 0.28284271247461906
+    },
+    {
+      "affinity_gap": 0.0029394051011120137,
+      "affinity_score": 1.8944271909999155,
+      "ambient_qubits": 1,
+      "bias": 0.6,
+      "family": "balanced reflection",
+      "inequality_margins": {
+        "affinity_imbalance_rigidity": 0.0004394051011117929,
+        "affinity_mass_rigidity": 0.0029394051011117917,
+        "affinity_nonnegative_response_gap": 0.0029394051011117917,
+        "affinity_reflection_distance": 37.03859885660405,
+        "affinity_trace_norm_transfer": 3.221103060710689,
+        "original_gap_dominates_response_gap": 6.661338147750939e-16,
+        "original_imbalance_rigidity": 0.002977027627483416,
+        "original_mass_rigidity": 0.011077027627483416,
+        "original_nonnegative_response_gap": 0.011077027627483416,
+        "original_reflection_distance": 43.17531036230758,
+        "original_trace_norm_transfer": 3.509910119385043,
+        "q0X_lower": 0.0,
+        "q0X_upper": 1.0,
+        "q0Z_lower": 1.0,
+        "q0Z_upper": 0.0
+      },
+      "matrix_dimension": 2,
+      "maximum_site_mass": 1.0,
+      "name": "one_qubit_X_bias_scaling",
+      "normalized_reflection_squared_distance": 0.5857864376269049,
+      "original_gap": 0.011077027627484082,
+      "original_score": 1.7999999999999994,
+      "query_data": [
+        {
+          "affinity": 0.9999999999999997,
+          "axis": "X",
+          "original_score": 0.9999999999999997,
+          "root_singleton_coefficient": 0.3162277660168379,
+          "site": 0
+        },
+        {
+          "affinity": 0.7999999999999997,
+          "axis": "Z",
+          "original_score": 0.7999999999999997,
+          "root_singleton_coefficient": 0.0,
+          "site": 0
+        }
+      ],
+      "relative_identity_residuals": {
+        "affinity_gap_equals_response_gap": 2.220446049250313e-16,
+        "aligned_bisector_overlap": 0.0,
+        "bias_gap_rationalization": 7.615436059538183e-16,
+        "bias_trace_norm_formula": 1.1102230246251565e-16,
+        "reflection_Hermitian": 0.0,
+        "reflection_balanced": 0.0,
+        "reflection_square": 0.0,
+        "state_root": 2.482534153247273e-16
+      },
+      "response_data": [
+        {
+          "gap": 0.011077027627483416,
+          "kind": "original",
+          "response": 1.8,
+          "z": 0.36
+        },
+        {
+          "gap": 0.0029394051011117917,
+          "kind": "affinity",
+          "response": 1.8944271909999157,
+          "z": 0.19999999999999996
+        }
+      ],
+      "selected_site": 0,
+      "selected_squared_imbalance": 1.0,
+      "singleton_mass": 1.0,
+      "state_trace_norm_distance": 0.45922011883810776
+    },
+    {
+      "affinity_gap": 0.10557280900008426,
+      "affinity_score": 3.6832815729997472,
+      "ambient_qubits": 2,
+      "bias": 0.8,
+      "family": "balanced reflection",
+      "inequality_margins": {
+        "affinity_imbalance_rigidity": 0.10307280900008425,
+        "affinity_mass_rigidity": 0.10401030900008426,
+        "affinity_nonnegative_response_gap": 0.10557280900008426,
+        "affinity_reflection_distance": 336.8329888002694,
+        "affinity_trace_norm_transfer": 14.138501490081884,
+        "original_gap_dominates_response_gap": 4.440892098500626e-16,
+        "original_imbalance_rigidity": 0.16897887487646798,
+        "original_mass_rigidity": 0.17287887487646797,
+        "original_nonnegative_response_gap": 0.17537887487646797,
+        "original_reflection_distance": 218.22359359558487,
+        "original_trace_norm_transfer": 11.279275524803815,
+        "q0X_lower": 0.4999999999999999,
+        "q0X_upper": 0.5000000000000001,
+        "q0Z_lower": 0.4999999999999999,
+        "q0Z_upper": 0.5000000000000001,
+        "q1X_lower": 0.0,
+        "q1X_upper": 1.0,
+        "q1Z_lower": 0.4999999999999999,
+        "q1Z_upper": 0.5000000000000001
+      },
+      "matrix_dimension": 4,
+      "maximum_site_mass": 0.4999999999999999,
+      "name": "two_qubit_entangling_reflection",
+      "normalized_reflection_squared_distance": 0.9999999999999998,
+      "original_gap": 0.17537887487646842,
+      "original_score": 3.4738633753705956,
+      "query_data": [
+        {
+          "affinity": 0.8,
+          "axis": "X",
+          "original_score": 0.8246211251235318,
+          "root_singleton_coefficient": 0.0,
+          "site": 0
+        },
+        {
+          "affinity": 0.7999999999999999,
+          "axis": "Z",
+          "original_score": 0.824621125123532,
+          "root_singleton_coefficient": 0.3162277660168379,
+          "site": 0
+        },
+        {
+          "affinity": 1.0,
+          "axis": "X",
+          "original_score": 1.0,
+          "root_singleton_coefficient": 0.0,
+          "site": 1
+        },
+        {
+          "affinity": 0.7999999999999999,
+          "axis": "Z",
+          "original_score": 0.824621125123532,
+          "root_singleton_coefficient": 0.0,
+          "site": 1
+        }
+      ],
+      "relative_identity_residuals": {
+        "affinity_gap_equals_response_gap": 0.0,
+        "aligned_bisector_overlap": 2.220446049250313e-16,
+        "reflection_Hermitian": 0.0,
+        "reflection_balanced": 0.0,
+        "reflection_square": 2.231687133607212e-16,
+        "state_root": 1.962615573354719e-17
+      },
+      "response_data": [
+        {
+          "gap": 0.17537887487646797,
+          "kind": "original",
+          "response": 3.473863375370596,
+          "z": 0.6400000000000001
+        },
+        {
+          "gap": 0.10557280900008426,
+          "kind": "affinity",
+          "response": 3.6832815729997472,
+          "z": 0.40000000000000013
+        }
+      ],
+      "selected_site": 0,
+      "selected_squared_imbalance": 0.2499999999999999,
+      "singleton_mass": 0.4999999999999999,
+      "state_trace_norm_distance": 0.5656854249492382
+    },
+    {
+      "affinity_gap": 0.04729473566128295,
+      "affinity_score": 5.913866615720558,
+      "ambient_qubits": 3,
+      "bias": 0.38461538461538464,
+      "family": "balanced reflection",
+      "inequality_margins": {
+        "affinity_imbalance_rigidity": 0.04724645725631866,
+        "affinity_mass_rigidity": 0.04691411420195246,
+        "affinity_nonnegative_response_gap": 0.04729473566128295,
+        "affinity_reflection_distance": 4091.245138744274,
+        "affinity_trace_norm_transfer": 24.240948343828773,
+        "original_gap_dominates_response_gap": 0.0016551219091072156,
+        "original_imbalance_rigidity": 0.09171341485048672,
+        "original_mass_rigidity": 0.09115999490267768,
+        "original_nonnegative_response_gap": 0.09189195924754401,
+        "original_reflection_distance": 2148.9381538629873,
+        "original_trace_norm_transfer": 17.630450455486894,
+        "q0X_lower": 0.8508981626938051,
+        "q0X_upper": 0.14910183730619486,
+        "q0Z_lower": 0.16392322928761704,
+        "q0Z_upper": 0.836076770712383,
+        "q1X_lower": 0.25312478655829523,
+        "q1X_upper": 0.7468752134417047,
+        "q1Z_lower": 0.39423536643671886,
+        "q1Z_upper": 0.6057646335632811,
+        "q2X_lower": 0.15845912164469644,
+        "q2X_upper": 0.8415408783553036,
+        "q2Z_lower": 0.3960795027662045,
+        "q2Z_upper": 0.6039204972337955
+      },
+      "matrix_dimension": 8,
+      "maximum_site_mass": 0.36664589167406597,
+      "name": "three_qubit_complex_Householder",
+      "normalized_reflection_squared_distance": 1.0737485552225803,
+      "original_gap": 0.09354708115665122,
+      "original_score": 5.831067688565934,
+      "query_data": [
+        {
+          "affinity": 0.9345462951773995,
+          "axis": "X",
+          "original_score": 0.9348536422700561,
+          "root_singleton_coefficient": 0.010129965657964056,
+          "site": 0
+        },
+        {
+          "affinity": 0.9873905208240294,
+          "axis": "Z",
+          "original_score": 0.9875663073673708,
+          "root_singleton_coefficient": 0.11831799888502013,
+          "site": 0
+        },
+        {
+          "affinity": 0.9805288625724388,
+          "axis": "X",
+          "original_score": 0.9808117437864274,
+          "root_singleton_coefficient": -0.018639136810653857,
+          "site": 1
+        },
+        {
+          "affinity": 0.9696742025817908,
+          "axis": "Z",
+          "original_score": 0.9699333949188638,
+          "root_singleton_coefficient": 0.004862383515822729,
+          "site": 1
+        },
+        {
+          "affinity": 0.9878108367965618,
+          "axis": "X",
+          "original_score": 0.9881118070027192,
+          "root_singleton_coefficient": 0.008103972526371244,
+          "site": 2
+        },
+        {
+          "affinity": 0.9695323459410612,
+          "axis": "Z",
+          "original_score": 0.9697907932204965,
+          "root_singleton_coefficient": 0.0024311917579113644,
+          "site": 2
+        }
+      ],
+      "relative_identity_residuals": {
+        "affinity_gap_equals_response_gap": 0.0,
+        "aligned_bisector_overlap": 0.0,
+        "reflection_Hermitian": 0.0,
+        "reflection_balanced": 3.469446951953614e-17,
+        "reflection_square": 2.7699487715526774e-16,
+        "state_root": 5.603789832049464e-17
+      },
+      "response_data": [
+        {
+          "gap": 0.09189195924754401,
+          "kind": "original",
+          "response": 5.832722810475041,
+          "z": 0.14792899408284024
+        },
+        {
+          "gap": 0.04729473566128295,
+          "kind": "affinity",
+          "response": 5.913866615720558,
+          "z": 0.07692307692307687
+        }
+      ],
+      "selected_site": 0,
+      "selected_squared_imbalance": 0.13054480702344332,
+      "singleton_mass": 0.37815466839696743,
+      "state_trace_norm_distance": 0.36337274951622683
+    },
+    {
+      "Rademacher_first_moment": 0.9999999999813736,
+      "affinity_score": 9.414139886759575,
+      "ambient_qubits": 5,
+      "family": "arbitrary spectrum at half-rank cap",
+      "flat_comparison_gap": 7.367557626913879e-05,
+      "flat_comparison_score": 9.414139886796827,
+      "inequality_margins": {
+        "complex_support_imaginary_norm": 0.02209586212957353,
+        "dominant_Rademacher_gate": 3.1956659540810506e-12,
+        "dominant_affinity_converse": 7.367561352111807e-05,
+        "dominant_original_converse": 7.367565077309735e-05,
+        "half_rank_centered_circle": 6.103391449707729e-05,
+        "near_flat_score_branch": 0.0009028869237308612,
+        "nearflat_dominant_direction": 0.24999999996274713,
+        "nearflat_original_converse": 7.367565077309735e-05,
+        "nearflat_radius": 4.2724609374816286e-05,
+        "nearflat_reflection_site_mass": 0.12493896608550292,
+        "nearflat_selected_root_mass": 0.05708520209669643,
+        "nearflat_total_root_mass": 0.012914797890132945,
+        "positive_root_singleton_cap": 3.0516957248538645e-05,
+        "score_continuity": 0.00012207023799971572,
+        "state_probability_nonnegative": 0.06249923706054687
+      },
+      "matrix_dimension": 32,
+      "name": "five_qubit_nonflat_complex_near_retention",
+      "nearflat_hypothesis": true,
+      "nearflat_radius": 4.8828125e-05,
+      "normalized_maximum_site_mass": 0.9999999999627471,
+      "original_score": 9.414139886722323,
+      "proof_branch": "near",
+      "query_data": [
+        {
+          "affinity": 0.49996948304275135,
+          "axis": "X",
+          "original_score": 0.7070852021098673,
+          "root_singleton_coefficient": 0.4999847412792344,
+          "site": 0
+        },
+        {
+          "affinity": 0.49996948304275146,
+          "axis": "Z",
+          "original_score": 0.7070852021098673,
+          "root_singleton_coefficient": 0.4999847412792346,
+          "site": 0
+        },
+        {
+          "affinity": 0.9999999999254939,
+          "axis": "X",
+          "original_score": 0.9999999999254942,
+          "root_singleton_coefficient": 0.0,
+          "site": 1
+        },
+        {
+          "affinity": 0.9999389660855031,
+          "axis": "Z",
+          "original_score": 0.9999694825770948,
+          "root_singleton_coefficient": 4.315705579393111e-06,
+          "site": 1
+        },
+        {
+          "affinity": 0.9999999999999998,
+          "axis": "X",
+          "original_score": 0.9999999999999998,
+          "root_singleton_coefficient": 0.0,
+          "site": 2
+        },
+        {
+          "affinity": 0.9999999999999998,
+          "axis": "Z",
+          "original_score": 1.0,
+          "root_singleton_coefficient": 0.0,
+          "site": 2
+        },
+        {
+          "affinity": 0.9999999999999998,
+          "axis": "X",
+          "original_score": 0.9999999999999997,
+          "root_singleton_coefficient": 0.0,
+          "site": 3
+        },
+        {
+          "affinity": 0.9999999999999998,
+          "axis": "Z",
+          "original_score": 0.9999999999999997,
+          "root_singleton_coefficient": 0.0,
+          "site": 3
+        },
+        {
+          "affinity": 0.9999999999999998,
+          "axis": "X",
+          "original_score": 1.0,
+          "root_singleton_coefficient": 0.0,
+          "site": 4
+        },
+        {
+          "affinity": 0.9999999999999998,
+          "axis": "Z",
+          "original_score": 0.9999999999999999,
+          "root_singleton_coefficient": 0.0,
+          "site": 4
+        }
+      ],
+      "rank_cap": 16,
+      "relative_identity_residuals": {
+        "flat_isometry": 2.220446049250313e-16,
+        "flat_support_contains_state": 2.5814468948356736e-16,
+        "spectral_root_distance": 4.085598304583192e-16,
+        "state_probabilities_sum": 0.0,
+        "state_root_square": 3.6717855596167035e-17,
+        "state_trace": 0.0,
+        "support_isometry": 2.220446049250313e-16
+      },
+      "retention_bound": 9.414213562373096,
+      "root_distance": 6.103515625183714e-06,
+      "singleton_mass": 0.49996948304275146,
+      "state_rank": 16,
+      "support_imaginary_frobenius_norm": 0.02209686212957353,
+      "trace_root_over_sqrt_rank_cap": 0.9999999999813733
+    },
+    {
+      "Rademacher_first_moment": 0.866015785579711,
+      "affinity_score": 7.184716604304188,
+      "ambient_qubits": 4,
+      "family": "arbitrary spectrum at half-rank cap",
+      "flat_comparison_gap": 0.30698827679416407,
+      "flat_comparison_score": 7.107225285578931,
+      "inequality_margins": {
+        "complex_support_imaginary_norm": 0.2433182439940503,
+        "far_branch_continuity_margin": 0.30686620648165847,
+        "far_branch_outside_dominant_direction": 0.4122158729505146,
+        "far_flat_score_branch": 0.30601171429416407,
+        "half_rank_centered_circle": 0.00986098812307612,
+        "nearflat_original_converse": 0.30699256824083054,
+        "nearflat_radius": 5.3405761718398786e-05,
+        "positive_root_singleton_cap": 0.12993551994134994,
+        "score_continuity": 0.00011777886583914826,
+        "state_probability_nonnegative": 0.12499809265136719
+      },
+      "matrix_dimension": 16,
+      "name": "four_qubit_nonflat_complex_majority_support",
+      "nearflat_hypothesis": true,
+      "nearflat_radius": 6.103515625e-05,
+      "normalized_maximum_site_mass": 0.3377841270494854,
+      "original_score": 7.107220994132264,
+      "proof_branch": "far",
+      "query_data": [
+        {
+          "affinity": 0.740132774785462,
+          "axis": "X",
+          "original_score": 0.8465059505066103,
+          "root_singleton_coefficient": 0.24501477512453207,
+          "site": 0
+        },
+        {
+          "affinity": 0.7499999999708964,
+          "axis": "Z",
+          "original_score": 0.8535533905641701,
+          "root_singleton_coefficient": 0.2499980926440912,
+          "site": 0
+        },
+        {
+          "affinity": 0.740132774785462,
+          "axis": "X",
+          "original_score": 0.8465059505066099,
+          "root_singleton_coefficient": 0.24501477512453207,
+          "site": 1
+        },
+        {
+          "affinity": 0.7499999999708964,
+          "axis": "Z",
+          "original_score": 0.85355339056417,
+          "root_singleton_coefficient": 0.2499980926440912,
+          "site": 1
+        },
+        {
+          "affinity": 0.7499961853027344,
+          "axis": "X",
+          "original_score": 0.8535511559953519,
+          "root_singleton_coefficient": 0.25000190734135685,
+          "site": 2
+        },
+        {
+          "affinity": 0.7499961853027346,
+          "axis": "Z",
+          "original_score": 0.853551155995352,
+          "root_singleton_coefficient": 0.25000190734135697,
+          "site": 2
+        },
+        {
+          "affinity": 1.0,
+          "axis": "X",
+          "original_score": 1.0,
+          "root_singleton_coefficient": 0.0,
+          "site": 3
+        },
+        {
+          "affinity": 1.0,
+          "axis": "Z",
+          "original_score": 1.0000000000000004,
+          "root_singleton_coefficient": 0.0,
+          "site": 3
+        }
+      ],
+      "rank_cap": 8,
+      "relative_identity_residuals": {
+        "flat_isometry": 8.711184543650087e-17,
+        "flat_support_contains_state": 1.202647604869504e-16,
+        "spectral_root_distance": 5.35912224297207e-21,
+        "state_probabilities_sum": 0.0,
+        "state_root_square": 8.580452105980844e-17,
+        "state_trace": 1.0408340855860843e-17,
+        "support_isometry": 8.711184543650087e-17
+      },
+      "retention_bound": 7.414213562373095,
+      "root_distance": 7.629394531601215e-06,
+      "singleton_mass": 0.37006448005865006,
+      "state_rank": 8,
+      "support_imaginary_frobenius_norm": 0.2433192439940503,
+      "trace_root_over_sqrt_rank_cap": 0.9999999999708962
+    },
+    {
+      "Rademacher_first_moment": 0.8944271909999159,
+      "affinity_score": 5.188810231614578,
+      "ambient_qubits": 3,
+      "family": "arbitrary spectrum at half-rank cap",
+      "flat_comparison_gap": 0.0,
+      "flat_comparison_score": 5.414213562373095,
+      "inequality_margins": {
+        "dominant_Rademacher_gate": 0.039811379491479726,
+        "dominant_affinity_converse": 0.2254033307585166,
+        "dominant_direction_hypothesis": 0.050000000000000044,
+        "dominant_original_converse": 0.40000000000000124,
+        "dominant_outside_radius": 0.459424460886389,
+        "half_rank_centered_circle": 2.220446049250313e-16,
+        "positive_root_singleton_cap": 1.1102230246251565e-16,
+        "score_continuity": 5.114070093136666,
+        "state_probability_nonnegative": 0.05
+      },
+      "matrix_dimension": 8,
+      "name": "three_qubit_nonflat_dominant_outside_radius",
+      "nearflat_hypothesis": false,
+      "nearflat_radius": 8.138020833333333e-05,
+      "normalized_maximum_site_mass": 0.8,
+      "original_score": 5.014213562373094,
+      "proof_branch": "dominant",
+      "query_data": [
+        {
+          "affinity": 0.49999999999999983,
+          "axis": "X",
+          "original_score": 0.7071067811865472,
+          "root_singleton_coefficient": 0.4472135954999578,
+          "site": 0
+        },
+        {
+          "affinity": 0.5000000000000001,
+          "axis": "Z",
+          "original_score": 0.7071067811865474,
+          "root_singleton_coefficient": 0.4472135954999579,
+          "site": 0
+        },
+        {
+          "affinity": 0.6,
+          "axis": "X",
+          "original_score": 0.6,
+          "root_singleton_coefficient": 0.0,
+          "site": 1
+        },
+        {
+          "affinity": 0.9999999999999998,
+          "axis": "Z",
+          "original_score": 0.9999999999999997,
+          "root_singleton_coefficient": 0.31622776601683794,
+          "site": 1
+        },
+        {
+          "affinity": 0.9999999999999998,
+          "axis": "X",
+          "original_score": 0.9999999999999999,
+          "root_singleton_coefficient": 0.0,
+          "site": 2
+        },
+        {
+          "affinity": 0.9999999999999998,
+          "axis": "Z",
+          "original_score": 0.9999999999999998,
+          "root_singleton_coefficient": 0.0,
+          "site": 2
+        }
+      ],
+      "rank_cap": 4,
+      "relative_identity_residuals": {
+        "flat_isometry": 1.1102230246251565e-16,
+        "flat_support_contains_state": 4.046035655711836e-17,
+        "spectral_root_distance": 1.1102230246251565e-16,
+        "state_probabilities_sum": 0.0,
+        "state_root_square": 9.023897465126852e-17,
+        "state_trace": 1.1102230246251565e-16,
+        "support_isometry": 1.1102230246251565e-16
+      },
+      "retention_bound": 5.414213562373095,
+      "root_distance": 0.4595058410947223,
+      "singleton_mass": 0.4999999999999999,
+      "state_rank": 4,
+      "support_imaginary_frobenius_norm": 0.0,
+      "trace_root_over_sqrt_rank_cap": 0.8944271909999159
+    },
+    {
+      "Rademacher_first_moment": 0.9912279006826348,
+      "affinity_score": 9.278580694690278,
+      "ambient_qubits": 5,
+      "family": "arbitrary spectrum at half-rank cap",
+      "flat_comparison_gap": 0.0,
+      "flat_comparison_score": 9.414213562373096,
+      "inequality_margins": {
+        "dominant_Rademacher_gate": 0.0016932806557982127,
+        "dominant_affinity_converse": 0.13563286768281735,
+        "dominant_direction_hypothesis": 0.23253275109170313,
+        "dominant_original_converse": 0.26666666666666927,
+        "dominant_outside_radius": 0.25195975684045613,
+        "half_rank_centered_circle": 0.031471706906599284,
+        "positive_root_singleton_cap": 0.02291666666666703,
+        "score_continuity": 4.773505032642453,
+        "state_probability_nonnegative": 0.06666666666666667
+      },
+      "matrix_dimension": 32,
+      "name": "five_qubit_rank_fifteen_dominant",
+      "nearflat_hypothesis": false,
+      "nearflat_radius": 4.8828125e-05,
+      "normalized_maximum_site_mass": 0.9825327510917031,
+      "original_score": 9.147546895706427,
+      "proof_branch": "dominant",
+      "query_data": [
+        {
+          "affinity": 0.4999999999999998,
+          "axis": "X",
+          "original_score": 0.7071067811865472,
+          "root_singleton_coefficient": 0.484122918275927,
+          "site": 0
+        },
+        {
+          "affinity": 0.49999999999999967,
+          "axis": "Z",
+          "original_score": 0.7071067811865472,
+          "root_singleton_coefficient": 0.48412291827592685,
+          "site": 0
+        },
+        {
+          "affinity": 0.9333333333333331,
+          "axis": "X",
+          "original_score": 0.9333333333333333,
+          "root_singleton_coefficient": 0.0,
+          "site": 1
+        },
+        {
+          "affinity": 0.9999999999999998,
+          "axis": "Z",
+          "original_score": 0.9999999999999996,
+          "root_singleton_coefficient": 0.04564354645876383,
+          "site": 1
+        },
+        {
+          "affinity": 0.9333333333333331,
+          "axis": "X",
+          "original_score": 0.9333333333333333,
+          "root_singleton_coefficient": 0.0,
+          "site": 2
+        },
+        {
+          "affinity": 0.9999999999999998,
+          "axis": "Z",
+          "original_score": 0.9999999999999996,
+          "root_singleton_coefficient": 0.04564354645876383,
+          "site": 2
+        },
+        {
+          "affinity": 0.9333333333333331,
+          "axis": "X",
+          "original_score": 0.9333333333333331,
+          "root_singleton_coefficient": 0.0,
+          "site": 3
+        },
+        {
+          "affinity": 0.9999999999999998,
+          "axis": "Z",
+          "original_score": 0.9999999999999996,
+          "root_singleton_coefficient": 0.04564354645876381,
+          "site": 3
+        },
+        {
+          "affinity": 0.9333333333333331,
+          "axis": "X",
+          "original_score": 0.9333333333333331,
+          "root_singleton_coefficient": 0.0,
+          "site": 4
+        },
+        {
+          "affinity": 0.9999999999999998,
+          "axis": "Z",
+          "original_score": 0.9999999999999996,
+          "root_singleton_coefficient": 0.04564354645876381,
+          "site": 4
+        }
+      ],
+      "rank_cap": 16,
+      "relative_identity_residuals": {
+        "flat_isometry": 1.1102230246251565e-16,
+        "flat_support_contains_state": 1.1080524985517892e-16,
+        "spectral_root_distance": 1.8041124150158794e-16,
+        "state_probabilities_sum": 1.1102230246251565e-16,
+        "state_root_square": 8.913170603436999e-17,
+        "state_trace": 0.0,
+        "support_isometry": 1.1102230246251565e-16
+      },
+      "retention_bound": 9.414213562373096,
+      "root_distance": 0.25200858496545614,
+      "singleton_mass": 0.47708333333333297,
+      "state_rank": 15,
+      "support_imaginary_frobenius_norm": 0.0,
+      "trace_root_over_sqrt_rank_cap": 0.9682458365518541
+    }
+  ],
+  "exact_comparison_count": 27,
+  "exact_comparisons": {
+    "bias_gap_rationalization": "[2sqrt((1+v^2)/2)]^2-(1+v)^2=(1-v)^2",
+    "bias_rational_unit_circle": "t=3/5 and v=4/5 satisfy t^2+v^2=1",
+    "concentration_lower_bound": "c0>=25/32",
+    "concentration_upper_bound": "1+c0<=2",
+    "diffuse_gap_comparison": "1/125>1/128",
+    "diffuse_gap_constant": "1413/1000-281/200=1/125",
+    "diffuse_radical_lower_bound": "sqrt(2)>1413/1000",
+    "dominant_concentration_constant": "1-2(81/256)/3-(81/256)^2/27=51469/65536",
+    "dominant_deficit_constant": "5/512>1/128",
+    "dominant_radical_upper_bound": "sqrt(2)-1<5/12 and 2-sqrt(2)>7/12",
+    "dominant_slack_constant": "(7/12)(25/32)-5/12=5/128",
+    "imbalance_to_distance_constant": "2(1-b)+2(u^2-v^2)^2<=288 epsilon/z^2",
+    "low_b_distance_constant": "b<1/2 yields constant512",
+    "nearflat_continuity_budget": "4n/[4096n]=1/1024",
+    "nearflat_dominant_ratio": "(.65/.72)^2>3/4",
+    "nearflat_root_radius": "eta<=1/(4096n)<1/100",
+    "nearflat_selected_coefficient": "sqrt(7)/4>66/100",
+    "nearflat_singleton_weight": "flat gap<=1/1024 implies b_R>=7/8",
+    "nearflat_total_coefficient": "1/sqrt(2)<71/100",
+    "nonflat_concavity_right_positive": "51469*1085-843*65536=597017>0",
+    "nonflat_concavity_right_rational_bound": "(34sqrt(2)-24)/31<843/1085",
+    "nonflat_concavity_zero_endpoint": "3/2-sqrt(2)>0",
+    "nonflat_endpoint_radical_upper": "sqrt(2)<99/70",
+    "nonflat_tail_quadratic_coefficient": "2k/A<=27/32 for A>=3/4",
+    "nonflat_tail_quartic_coefficient": "k^2/A^3<=243/1024 for A>=3/4",
+    "rotation_positive_bisector_signs": "theta<pi/4 for the fixed sharpness rotation",
+    "rotation_rational_unit_circle": "(24/25)^2+(7/25)^2=1"
+  },
+  "fixed_construction_count": 10,
+  "inequality_count": 145,
+  "matrix_identity_count": 70,
+  "maximum_matrix_dimension": 32,
+  "maximum_relative_identity_residual": 7.615436059538183e-16,
+  "minimum_inequality_margin": -6.245004513516505e-19,
+  "numpy": "2.3.5",
+  "proof_note_sha256": {
+    "docs/audits/BALANCED_SPECTRUM_STABILITY.md": "02474352d858fb80ed291e3b751f4d0f077a559cf806e391dbed2e35d7e561ff"
+  },
+  "python": "3.12.14",
+  "query_count": 52,
+  "research_base": "8e38f704b1d8e74344c87ee83748d1f4dc45fcaf",
+  "scope": "Exact Fraction comparisons verify the displayed rigidity, dominant-direction and near-flat constants. Six balanced reflections and four nonflat/rank-deficient seeds check original-query scores, affinity and response gaps, bisector distances, sharpness identities, the centered half-rank circle, and both branches of the near-flat argument. The five-qubit near-flat seed has a complex support and genuinely nonuniform eigenvalues; the complex majority-support fixture exercises the continuity branch outside the dominant-direction hypothesis. Matrices have dimension at most 32; no grid, random sampling or optimization is used. These bounded diagnostics do not prove the quantified all-dimension results or publication novelty.",
+  "source_sha256": "d1c2641f99d0e8222a042ed11d5f0002c37f1006f81b391c562580741ba3bad9",
+  "status": "exact scalar comparisons and fixed constructions passed",
+  "tolerance": 3e-09
+}

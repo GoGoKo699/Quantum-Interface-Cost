@@ -1,6 +1,6 @@
 # Q1 — Delayed local readout through a bounded quantum interface
 
-**Version:** 0.52, 2026-09-27
+**Version:** 0.53, 2026-09-27
 
 **Project:** Falling / Q1  
 **Status:** The unrestricted equal-accuracy optimum is proved for every integer quantum-memory budget through four input qubits. The nonflat quarter-rank converse closes `(n,q)=(4,2)` and classifies all maximizing normalized seeds. The exact all-n one-qubit allocation result and the unequal-accuracy collective advantage remain separate results. The general two-qubit entropy inequality, common-accuracy asymptotic rate and publication originality are unresolved. The full product-diagonal profile evaluates an established steering entanglement measure; it is not a new resource framework. All proof review described here is internal, not external peer review.
@@ -48,6 +48,17 @@ removing the earlier restriction on the number of active singleton sites.
 The entire balanced-spectrum family satisfies the sharp seed entropy
 inequality. This does not settle arbitrary nonflat half-rank spectra or
 the unrestricted common-accuracy rate.
+
+The [stability extension](docs/audits/BALANCED_SPECTRUM_STABILITY.md)
+gives a quantitative form of this equality theorem and a nonflat
+consequence at every n. A flat half-rank seed with original-score gap
+epsilon is within full trace norm `16sqrt(2epsilon)` of a retention
+seed. For any density matrix of rank at most `k=2^(n-1)`, the spectral
+condition `sqrt(2(1-Tr(sqrt(rho))/sqrt(k)))<=1/(4096n)` also guarantees
+retention, with equality only at a retention seed. This criterion allows
+arbitrary supports and eigenvectors. It leaves spectra outside that
+sufficient neighborhood unresolved; neither displayed constant is
+claimed optimal.
 
 The [half-rank converse](docs/audits/HALF_RANK_RETENTION_CONVERSE.md)
 now settles the unrestricted finite optima
@@ -108,6 +119,9 @@ The general compression problem below is already present in the dimensional meas
 | Quantitative original-score comparison with nested flat spectral seeds | One common rank-preserving mixture has nonnegative query-profile errors with squared sum at most 2Delta, where Delta=sum_U(a_U-F_U^2). The resulting score error 2sqrt(n Delta) is sharp; general retention and entropy converses remain open. |
 | Exact original-score optimum for every balanced two-level spectrum, at every n | Derived and independently reconstructed: max g=2(n-1)+sqrt(4-2t^2). For t>0 equality requires one original-site mixed X/Z bisector and maximally mixed spectators. The family obeys the sharp entropy inequality. |
 | Every flat half-rank seed obeys retention at every n | The t=1 balanced-spectrum endpoint gives g<=2(n-1)+sqrt(2), with equality exactly at one discarded original-site bisector. No restriction on singleton sites or eigenvectors; arbitrary nonflat half-rank spectra remain open beyond the proved finite cases. |
+| Near-optimal balanced seeds are close to original-site bisectors | Derived with explicit dimension-independent bounds: full trace norm at most 16sqrt(2e_g)/t for bias t>0 and original-score gap e_g. The square-root gap exponent and inverse-bias scaling are necessary; the prefactor is not claimed optimal. |
+| Dominant singleton mass excludes arbitrary nonflat half-rank improvements at every n | Derived when at least three quarters of the square root's nonzero singleton X/Z mass lies on one original site, with equality only at retention seeds. This is a sufficient coefficient condition, not an assumption on allowed encoders. |
+| An explicit nonflat half-rank spectral neighborhood obeys retention for every n | Derived for rank<=k=2^(n-1) when sqrt(2(1-Tr(sqrt(rho))/sqrt(k)))<=1/(4096n), with arbitrary supports and all equality cases. The radius is sufficient, not an unrestricted half-rank converse. |
 | Four-input, rank-at-most-four squared query-score budget | Exactly six, derived and independently reconstructed for arbitrary spectra. Equality fixes two pure X/Z-plane sites and two maximally mixed sites. This does not evaluate the unsquared score. |
 | Four-input, two-qubit retention converse for flat seeds and rank at most three | Derived and independently reconstructed; all flat equality seeds are retention seeds with two bisectors. The subsequent nonflat quarter-rank theorem removes the remaining spectrum restriction. |
 | Exact optimum and maximizing seeds with one retained qubit | Derived and independently checked from Cheng–Hall monogamy [11]; see Section 8 and the full proof. |

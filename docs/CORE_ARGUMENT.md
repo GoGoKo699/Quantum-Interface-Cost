@@ -423,6 +423,55 @@ bound, or one dominant site's two queries supply the required curvature.
 The same argument evaluates the root-affinity score within this
 balanced-spectrum family; the general affinity obstruction remains valid.
 
+### 3.5 Stability gives a nonflat spectral neighborhood
+
+The [stability extension](audits/BALANCED_SPECTRUM_STABILITY.md) makes
+the previous equality classification quantitative. For a flat half-rank
+seed sigma, let `epsilon=2n-2+sqrt(2)-g(sigma)`. There is a retention
+seed sigma_0 such that
+
+$$
+\|\sigma-\sigma_0\|_1\le16\sqrt{2\epsilon}.
+$$
+
+The constant is independent of n. The square-root exponent cannot be
+improved: rotating a single pure bisector through angle theta gives
+`||sigma-sigma_0||_1^2=sqrt(2) epsilon` exactly for sufficiently small
+theta. For a balanced mixed spectrum of bias t>0, the corresponding
+bound is `16sqrt(2e_g)/t`, where e_g is the gap from its exact spectral
+optimum. The inverse-bias scaling is also necessary as t tends to zero.
+
+This yields a sufficient spectral condition without a flatness
+assumption. Put `k=2^(n-1)` and suppose `rank(rho)<=k`. Then
+
+$$
+\boxed{\sqrt{2\left(1-\frac{\operatorname{Tr}\sqrt\rho}{\sqrt k}\right)}
+\le\frac1{4096n}
+\quad\Longrightarrow\quad
+g(\rho)\le2n-2+\sqrt2.}
+$$
+
+Equality requires a retention seed. The expression on the left is
+the Hilbert--Schmidt distance between sqrt(rho) and the square root of
+any flat rank-k state whose support contains rho's support. Thus the
+condition depends only on the eigenvalues; all support orientations are
+included, as are lower ranks satisfying the same inequality.
+
+The proof separates two possibilities for that flat comparison state.
+If its score is bounded away from optimum, trace-norm continuity absorbs
+the spectral perturbation. If its score is close to optimum, quantitative
+concentration on one original site persists under the perturbation.
+A rank-sensitive two-dimensional matrix estimate then proves retention
+for the nonflat seed. The radius is sufficient and is not claimed
+optimal; arbitrary spectra outside this neighborhood remain open.
+
+The intermediate estimate also gives a broader sufficient condition:
+retention holds for any half-rank seed when at least three quarters of
+the local X/Z Pauli coefficient mass of sqrt(rho) lies on one original
+site. Its nonzero spectrum is otherwise unrestricted. Any remaining
+counterexample must avoid this concentration condition as well as the
+spectral neighborhood above.
+
 ## 4. A collective advantage with five memory qubits
 
 Take `n=31`. Label the X-basis vectors by bit strings. Let
