@@ -72,6 +72,35 @@ settle the general entropy or rate question. A theorem-level prior
 comparison of this new finite converse remains outstanding; publication
 priority is not established.
 
+## The general affinity relaxation: a prior sharp profile and a method limit
+
+The [affinity-method note](audits/AFFINITY_METHOD_LIMIT.md) identifies a
+specific obstruction to generalizing the finite converses. Beigi,
+[2105.00462v2](https://arxiv.org/pdf/2105.00462v2), Theorem 2, Eqs. (6)–(7),
+printed p. 4, and Remark 3, p. 5, already supply the sharp entropy-energy
+profile and product saturation. Theorem 4, p. 6, supplies the rank bound
+and explicitly states its asymptotic sharpness in the commuting case.
+Local bisector rotation, the Pauli energy identity and equal-query Cauchy
+transfer those results to the exact affinity profiles in the new note.
+The deterministic truncated-product construction verifies the precise
+worst-case rank cap. This is a supplied corollary, not a new Faber–Krahn
+inequality.
+
+Samorodnitsky, [0807.1679](https://arxiv.org/pdf/0807.1679), Eq. (4),
+printed p. 3, and Theorem 1.4, pp. 6–7, distinguishes supported functions
+from set indicators and gives the classical fractional-boundary profile.
+Nonconstant spectral amplitudes cannot be replaced by a uniform support
+projector. The weighted cube-star spectrum is also established, as already
+credited in the exact-axis note. The new finite comparison rotates that
+same structure to the X/Z bisector basis: at 15 inputs and rank 16, the
+affinity score exceeds retention while the true trace-norm score does not.
+
+The elementary optimal-decoder gap decomposition and its spectral-block
+equality consequence specify what the relaxation loses. They do not
+prove a sharp general rank or entropy converse. The finite optima through
+four inputs remain intact; publication priority for those deductions is
+still a separate question.
+
 ## Direct precedents and exact implications
 
 | Primary source | Checked locator and relationship | Consequence |

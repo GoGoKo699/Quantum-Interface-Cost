@@ -1,7 +1,7 @@
 # Exact finite-block retention and a collective advantage
 
 **Core argument, 27 September 2026.** Research base:
-`c8b2e88d6721cb9208c797788f334d7f8b1e1848`. The supplied proofs below
+`ced383d1a4ad8d9c13fbd4ebe1befd3c6284519a`. The supplied proofs below
 were independently reconstructed within this workspace, not externally
 peer reviewed. Publication originality remains unresolved.
 
@@ -334,6 +334,32 @@ or numerical sign decision. This branch has a strict gap. The full proof
 and certificate definitions are in the linked note; finite matrix checks
 serve only as diagnostics.
 
+### 3.3 The general proof must retain the original score
+
+The [affinity-method limit](audits/AFFINITY_METHOD_LIMIT.md) gives an exact
+reason the preceding stronger inequality cannot extend to all budgets.
+In the product X/Z-bisector basis, use the weighted star with probabilities
+`p_0=1/2`, `p_(e_i)=1/(2n)`, and zero elsewhere. It has rank n+1. Its
+root-affinity score G and original trace-norm score g are
+
+$$
+G=\sqrt2\,n\sqrt{1+1/\sqrt n},\qquad
+g=\frac{n-1+\sqrt{n^2+6n+1}}{\sqrt2}.
+$$
+
+At `n=15,q=4`, G exceeds the retention value `8+11sqrt(2)`, while
+g is strictly smaller. As n grows, `G-sqrt(2)n` grows as `sqrt(n/2)`,
+whereas `g-sqrt(2)n` stays below `sqrt(2)`. Thus no fixed coefficient
+of `log2(rank)` can repair the proposed general affinity bound.
+
+The linked note also evaluates the relaxation's exact entropy and
+asymptotic rank profiles as corollaries of established Faber–Krahn theory.
+An exact gap decomposition keeps the optimal decoder's commutator with
+the seed square root and a nonnegative weighted Cauchy residual. If every
+query comparison is tight, every flat spectral block realizes the same
+original query profile. The unresolved general task therefore requires
+control of the actual trace norms and their decoder dependence.
+
 ## 4. A collective advantage with five memory qubits
 
 Take `n=31`. Label the X-basis vectors by bit strings. Let
@@ -421,7 +447,8 @@ needed for this core argument.
 
 Unrestricted **equal-accuracy** optimality remains open outside the proved
 memory and input ranges, beginning at `n=5,q=2`. The next general target
-is a dimension-independent rank/positivity principle. The unequal-accuracy
+is a dimension-independent bound on the original trace norms; the
+affinity-only rank extension is false. The unequal-accuracy
 separation does not decide it. Full supporting
 proofs are in the [allocation note](ONE_QUBIT_ALLOCATION_REGION.md),
 [half-rank converse](audits/HALF_RANK_RETENTION_CONVERSE.md),

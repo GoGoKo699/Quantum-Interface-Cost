@@ -1,7 +1,15 @@
 # Status and claim ledger
 
 Updated: 2026-09-27. Stage: the [nonflat quarter-rank converse](audits/NONFLAT_QUARTER_RANK_CONVERSE.md) proves `Gamma(4,4)=4+2sqrt(2)` and classifies every maximizing normalized seed. Together with the half-rank and all-n one-qubit results, this settles every integer quantum-memory budget through four inputs. The proof keeps arbitrary spectra and uses a sum-of-squares identity plus two exactly certified positive polynomials. The general entropy inequality, asymptotic common-accuracy rate, and publication originality remain unresolved.
-Latest research base: `c8b2e88d6721cb9208c797788f334d7f8b1e1848`, the merge of PR #52.
+Latest research base: `ced383d1a4ad8d9c13fbd4ebe1befd3c6284519a`, the merge of PR #53.
+
+The [dimension-independent continuation](audits/AFFINITY_METHOD_LIMIT.md)
+proves that the affinity surrogate used in the finite converses cannot
+satisfy the general retention formula. A rank-16 weighted star on 15
+inputs gives an exact separation; its actual trace-norm score remains
+below the benchmark. The continuation evaluates the surrogate's exact
+entropy and asymptotic rank profiles as corollaries of established theory,
+and gives the exact optimal-decoder gap and its equality structure.
 
 The earlier [quarter-rank geometry](audits/QUARTER_RANK_GEOMETRY.md) and
 its sharp squared-score budget remain valid. Its former nonflat restriction
@@ -26,6 +34,10 @@ is asserted.
 
 | Claim | Status | Location |
 |---|---|---|
+| Root-affinity score obeys the retention bound for every n,q | Incorrect: rank-16, 15-input weighted star; the original trace-norm score stays strictly below retention | audits/AFFINITY_METHOD_LIMIT.md |
+| Root-affinity score is at most sqrt(2)n+C log2(rank) for some universal finite C | Incorrect: the star family's surrogate excess grows as sqrt(n/2), with rank n+1; its original-score excess stays below sqrt(2) | audits/AFFINITY_METHOD_LIMIT.md |
+| Exact root-affinity optimum at fixed entropy and asymptotic rank rate | Derived corollary of Beigi's established entropy-energy/Faber–Krahn results with matching constructions; fixed rank rate, not fixed codimension or the original interface rate | audits/AFFINITY_METHOD_LIMIT.md |
+| All-query fidelity–affinity equality preserves the query profile on every flat spectral block | Derived by weighted Hilbert–Schmidt equality; a nonflat rank-at-most-2^q seed with all comparisons tight admits the same profile at rank at most 2^(q-1) | audits/AFFINITY_METHOD_LIMIT.md |
 | Unrestricted Gamma(4,4)=4+2sqrt(2), with all maximizing normalized seeds | Derived and independently reconstructed for arbitrary spectra and decoders; one sum-of-squares identity and an exact unsplit-box Bernstein certificate. Equality is exactly two original-site bisectors and two maximally mixed sites, up to output isometries | audits/NONFLAT_QUARTER_RANK_CONVERSE.md |
 | Every integer memory budget through four inputs obeys Gamma(n,2^q)=2q+sqrt(2)(n-q) | Corollary of the quarter-rank, half-rank and all-n one-qubit theorems, together with the classical and exact endpoints | CORE_ARGUMENT.md |
 | Unrestricted Gamma(n,2^(n-1))=2(n-1)+sqrt(2), n=2,3,4 | Derived and independently reconstructed; stronger affinity bound for every positive half-rank square root, without a flat-spectrum or readout restriction | audits/HALF_RANK_RETENTION_CONVERSE.md |
@@ -491,12 +503,15 @@ $$
 \Gamma(5,4)\stackrel{?}{=}4+3\sqrt2
 $$
 
-The next research priority is a dimension-independent rank-and-positivity
-principle, before expanding the decoder classification or repeating each
-input size separately. The four-input proof shows why exact square-root
-curvature and coherent block penalties matter; a spectrum-flattening
-assumption is still unjustified. The general n,q optimum, seed entropy
-inequality, and asymptotic common-accuracy rate remain open.
+The next research priority is a dimension-independent bound on the original
+trace-norm score. The weighted star rules out extending the finite proof
+through an affinity-only rank charge. The exact decoder-gap identity
+retains the interaction between optimal readout and unequal seed
+eigenvalues; a sharp aggregate bound on that information remains to be
+found. This replaces further size-by-size affinity classification as the
+general route. A spectrum-flattening assumption remains unjustified.
+The general n,q optimum, seed entropy inequality, and asymptotic
+common-accuracy rate remain open.
 
 The earlier three-input channel and inverse methods remain useful
 independent results. The new theorem does not establish that every

@@ -144,6 +144,15 @@ unsquared converse. The smallest remaining finite block is `n=5,q=2`. The
 `L^dagger L` is diagonal in a fixed local product basis, for arbitrary q.
 These proved cases do not restrict the encoders in the unresolved general problem.
 
+The [affinity-method limit](audits/AFFINITY_METHOD_LIMIT.md) rules out one
+generalization of the finite converses: replacing every trace norm by the
+square root of its affinity does not preserve the retention rank bound.
+An exact rank-16 weighted star on 15 inputs violates that surrogate bound
+while obeying the original benchmark. The surrogate's entropy and
+asymptotic rank profiles follow from established Faber–Krahn theory.
+The original objective above remains the unresolved target; the note's
+optimal-decoder gap records the information lost in the relaxation.
+
 The [decoder-algebra theorem](audits/DECODER_ALGEBRA_AND_THREE_INPUT.md)
 proves the subset bound for every n,q when an optimal reflection decoder
 family pairwise commutes or anticommutes. This is an explicit sufficient
