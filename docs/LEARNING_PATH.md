@@ -83,10 +83,10 @@ not definitions of this task.
 
 For common contrast, random subset retention attains
 
-$$
+```math
 \eta_{\mathrm{ret}}(n,q)=\frac qn+
 \left(1-\frac qn\right)\frac1{\sqrt2}.
-$$
+```
 
 This is the unrestricted optimum for every integer $0\le q\le n\le4$
 with $n\ge1$, and for $q=1$ at every input size. The full one-qubit
