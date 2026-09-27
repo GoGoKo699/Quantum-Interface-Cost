@@ -1,6 +1,6 @@
 # Q1 — Delayed local readout through a bounded quantum interface
 
-**Version:** 0.44, 2026-09-27
+**Version:** 0.45, 2026-09-27
 
 **Project:** Falling / Q1  
 **Status:** Baseline proofs and seed reduction independently checked within the audit workspace. The full product-diagonal profile rate has a constructive optimizer and evaluates an established steering entanglement measure. It exceeds the inspected affine weighted-CHSH formation bounds, but the nonlinear-source follow-up now derives its full mixed-state support and joint-resource convex-hull characterization from prior inequalities. The candidate contribution is the explicit evaluation, equality analysis and operational consequences. The unrestricted rate equals regularized formation of a local-query assemblage, whose distinction from full tensor-product assemblages is explicit. The complete two-qubit entropy inequality, general common-accuracy rate evaluation and publication novelty remain unresolved. This is a research dossier, not external peer review or a claim of a new framework.
@@ -202,8 +202,8 @@ channel moment controls its single positive Bell projector, and a
 monotone scalar comparison has a positive rational endpoint margin.
 Consequently any violating tuple in `(22)^2(11)` or `(22)^2(12)`, with
 the one-block query placed last, must satisfy `m<2+sqrt(2)`. Its rank-one
-resolvent is therefore defined, although the required inequality remains
-unproved in general.
+resolvent is therefore defined. The later reflection obstruction below
+shows that its envelope inequality is false in general.
 
 The [conserved-symmetry theorem](docs/audits/CONSERVED_SYMMETRY_CONVERSE.md)
 proves `||H||<=5` when the first two readout pairs lie in two specified
@@ -224,6 +224,26 @@ A complete coefficient classification gives either an entanglement-breaking
 channel or total support at most `2+sqrt(2)`. The latter has both single-site
 and flagged two-site exceptions. No stability estimate for nonzero gap
 is inferred, and none of these results closes a full remaining signature.
+
+The [Jordan-block-budget formula](docs/audits/JORDAN_BLOCK_BUDGET_RESOLVENT.md)
+eliminates the last-query decoder with at most k active blocks in every
+memory dimension: its value is the scalar baseline plus the gains from
+the k outermost eigenvalue pairs. With one block only the largest and
+smallest marginal eigenvalues enter. The fixed minority-rank `(11)`
+variant requires at most two cubic-root comparisons. These formulas
+extend the prior block calculation and matching argument; no priority
+claim is made.
+
+The [physical reflection obstruction](docs/audits/REFLECTION_ENVELOPE_OBSTRUCTION.md)
+then refutes uniform one-mode-envelope success even with a defined inverse
+and actual top-vector marginal. All six readouts are reflections, with
+last-pair choices giving `(22)^2(11)` and `(22)^2(12)`. Both the ordinary
+envelope and its signed-chiral refinement fail by a rational margin,
+while the actual Hamiltonian has norm below
+`21/4` for every third pair. Keeping the second positive mode gives a
+successful envelope for this same example. Thus the next step must retain
+more actual spectral information; the unrestricted retention conjecture
+is neither proved nor refuted.
 
 ## 1. Origin, scope, and claim ledger
 
@@ -260,6 +280,8 @@ The general compression problem below is already present in the dimensional meas
 | A one-block last pair obeys the strict converse throughout m>=2+sqrt(2) | Derived and independently checked from the actual channel moment, Bell compression and a rational endpoint certificate. Possible violations in the two corresponding remaining signatures must have m below that threshold. |
 | Four readouts in the stated conserved-symmetry Pauli spaces permit any third pair with norm(H)<=5 | Derived and independently checked; all contraction coefficient balls are included. The actual isolated positive head is a rectangular-POVM channel. The bound five is not asserted optimal. |
 | Zero Pauli-conjugation gap implies an EB head or support at most 2+sqrt(2) | Derived and independently checked by exact flattening and complete coefficient classification. This requires zero gap; it is not a global approximation theorem for arbitrary heads. |
+| Exact last-query resolvent with any allowed Jordan-block count in odd or even dimension | Derived and independently checked: sum the nonnegative gains of the outermost eigenvalue pairs. One block uses only the extreme eigenvalues; fixed `(11)` ranks have a two-branch refinement. |
+| A defined inverse makes the actual one-mode envelope pass every one-block last pair | Incorrect even for reflections in `(22)^2(11)` and `(22)^2(12)`: both ordinary and signed-chiral tests exceed 33/32. The actual Hamiltonian stays below 21/4 for every third pair; its two-positive-mode envelope succeeds. |
 | Three partial-SWAP Bell-subspace projectors sum to at most 5I/2 | Derived and independently checked, with exact equality classification; gives the retention converse for equal spectra within each site's two Jordan blocks. Arbitrary independent U(4) embeddings remain open. |
 | All small subsystem perturbations around the known Bell-subspace attainers lower the sum norm | Derived and independently checked in all eighteen transverse directions; exact negative Hessian and an explicit radius 2^-10. A local converse, not global optimality or global rigidity. |
 | Exact worst weighted last-site resolvent in every even memory dimension, including all binary POVMs | Derived and independently checked: extreme spectral pairing and a convex-quartic/cubic-root decision eliminate the added decoder. Exact for a stated spectral upper bound, not a solution of the full Hamiltonian problem. |

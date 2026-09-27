@@ -1,7 +1,7 @@
 # Status and claim ledger
 
-Updated: 2026-09-27. Stage: the [one-block last-query theorem](audits/HIGH_SECOND_MODE_ONE_BLOCK.md) closes the entire high-second-mode region for a last pair with at most one active Jordan block. A possible violation in `(22)^2(11)` or `(22)^2(12)` must therefore have a valid rank-one resolvent. The [conserved-symmetry theorem](audits/CONSERVED_SYMMETRY_CONVERSE.md) gives `norm(H)<=5` for four readouts in two explicit three-dimensional Pauli spaces and an arbitrary third pair; each isolated positive rank-two head channel is a rectangular-POVM measurement with an orthogonal record. The [zero-Pauli-gap dichotomy](audits/ZERO_PAULI_GAP_DICHOTOMY.md) proves an exact support/channel alternative without assuming fidelity-affinity saturation. These are structural results, not extensions of the small stability radii to the whole parameter space. All three complete remaining reflection signatures, unrestricted optimality and publication originality remain unresolved.
-Latest research base: `eb88f82db5bfd4acd7b687ca209fc094fc5df2ea`, the merge of PR #47.
+Updated: 2026-09-27. Stage: the [exact block-budget resolvent](audits/JORDAN_BLOCK_BUDGET_RESOLVENT.md) evaluates the last-query optimization in odd or even memory dimension with any allowed number of active Jordan blocks. A separate [physical reflection example](audits/REFLECTION_ENVELOPE_OBSTRUCTION.md) refutes both ordinary and signed-chiral one-mode envelopes in `(22)^2(11)` and `(22)^2(12)`, despite a defined inverse and actual marginal. The same Hamiltonian stays below `21/4` for every third pair, and its two-positive-mode envelope succeeds. This invalidates the previous low-m proof target, not the retention conjecture. The high-m one-block, conserved-symmetry, and zero-Pauli-gap converses remain valid. All three complete remaining reflection signatures, unrestricted optimality and publication originality remain unresolved.
+Latest research base: `556df48950c2de3162171dd1d85c3df9e5937fc2`, the merge of PR #48.
 
 Critical assessment base: `81bcfefb2b545742d513c4f51364a7f72972451e`, the
 merge of PR #11. The [publication and optimality assessment](audits/PUBLICATION_AND_OPTIMALITY_ASSESSMENT.md)
@@ -58,6 +58,8 @@ is asserted.
 | A one-block last query obeys the strict converse throughout the high-m regime | Derived and independently checked; actual channel moment and one Bell projector give a monotone scalar certificate with endpoint margin 407/62500. Any remaining violating (22)^2(11)/(12) tuple has a valid rank-one resolvent | audits/HIGH_SECOND_MODE_ONE_BLOCK.md |
 | The conserved-symmetry readout family obeys norm(H)<=5 with any third pair | Derived and independently checked for four coefficient unit balls in the stated Pauli spaces. The actual positive rank-two head is a rectangular-POVM channel; five is not asserted sharp | audits/CONSERVED_SYMMETRY_CONVERSE.md |
 | Zero Pauli-conjugation gap forces an EB head or support at most 2+sqrt(2) | Derived and independently checked; exact flattening and three coefficient forms, including flagged exceptions. No nonzero-gap neighborhood is claimed here | audits/ZERO_PAULI_GAP_DICHOTOMY.md |
+| Exact last-query resolvent with at most k active Jordan blocks, in odd or even dimension | Derived and independently checked from the exact block inverse and partial matching. Optimal blocks pair extreme marginal eigenvalues; the one-block and fixed `(11)` formulas eliminate all decoder variables | audits/JORDAN_BLOCK_BUDGET_RESOLVENT.md |
+| The actual rank-one envelope always passes a one-block last query below m=2+sqrt(2) | Incorrect even with six reflection readouts in `(22)^2(11)` and `(22)^2(12)`. Both ordinary and signed-chiral tests exceed 33/32, while every actual third-pair Hamiltonian has norm below 21/4. The two-positive-mode envelope passes for this example | audits/REFLECTION_ENVELOPE_OBSTRUCTION.md |
 | The synthetic partial-SWAP channel is excluded at U=m=2sqrt(3) in every reference orientation | Derived and independently checked from the equality conditions and a three-anticommuting-reflection obstruction in the reference X/Z space | audits/SHARP_TWO_MODE_SUPPORT.md Section 6 |
 | Three partial-SWAP Bell-subspace projectors obey the sharp sum bound 5/2 | Derived and independently checked, including all equality cases; the physical converse also assumes equal spectra within each site's two Jordan blocks | audits/NONCOMMUTING_QUERY_FAMILIES.md Sections 1–6 |
 | Every sufficiently small change of subsystem geometry around the known projector attainers obeys the 5/2 bound | Derived and independently checked in all eighteen transverse directions; exact negative quadratic form and radius 2^-10. No global optimality or global rigidity statement | audits/BELL_SUBSPACE_LOCAL_STABILITY.md Sections 1–5 |
@@ -476,10 +478,16 @@ criterion also handles the complete earlier NPT example family.
 
 The later one-block theorem removes the high-m obstruction from
 `(22)^2(11)` and `(22)^2(12)`: place the one-block query last, and every
-potential violation must have `m<2+sqrt(2)`. The next concrete target is
-the actual rank-one resolvent inequality in those remaining low-m regions.
-There is no uniform resolvent gap as m approaches the threshold. For the
-fully double-block case, the conserved-symmetry family and zero-Pauli-gap
+potential violation must have `m<2+sqrt(2)`. A universal rank-one resolvent
+inequality is no longer a viable target: the actual reflection example
+disproves it, including the version retaining its negative chiral
+partner. The exact one-block formula remains useful wherever that sufficient
+test passes. The next target is a bound retaining the actual two-positive-mode
+channel and its compatibility with the original readouts, or a sharper
+spectral-tail comparison if that envelope also loses too much. The new
+example demonstrates a successful two-positive-mode repair, not its universal
+validity. There is no uniform one-mode resolvent gap as m approaches the
+threshold. For the fully double-block case, the conserved-symmetry family and zero-Pauli-gap
 classification identify exact safe structures; controlling departure from
 them globally remains open. The spectral/moment/compression relaxation
 alone remains insufficient, and a zero squared support deficit alone does

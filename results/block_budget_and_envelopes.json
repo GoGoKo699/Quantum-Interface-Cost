@@ -1,0 +1,389 @@
+{
+  "block_budget_attainment_count": 15,
+  "block_budget_constructions": [
+    {
+      "budget_values": [
+        {
+          "active_blocks": 0,
+          "budget": 0,
+          "value": 1.1289402925146188
+        },
+        {
+          "active_blocks": 1,
+          "budget": 1,
+          "value": 1.5031791833170454
+        }
+      ],
+      "case": "odd_three",
+      "dimension": 3,
+      "fixed_minority_rank11_candidates": [
+        1.5031791833170454,
+        1.2761723445378537
+      ],
+      "fixed_minority_rank11_value": 1.5031791833170454,
+      "outer_pair_gains": [
+        0.37423889080242656
+      ],
+      "partial_matchings_checked": 4,
+      "relative_identity_residuals": {
+        "B_reflection_budget_0": 0.0,
+        "B_reflection_budget_1": 1.8266190528375876e-16,
+        "D_reflection_budget_0": 0.0,
+        "D_reflection_budget_1": 1.8266190528375876e-16,
+        "attained_norm_budget_0": 5.900522987724509e-16,
+        "attained_norm_budget_1": 8.862999463645383e-16,
+        "common_reference_budget_0": 5.9045563922525865e-16,
+        "common_reference_budget_1": 7.442737021548195e-16,
+        "finite_matching_budget_0": 0.0,
+        "finite_matching_budget_1": 0.0,
+        "fixed_rank11_attainment": 4.4314997318226915e-16,
+        "fixed_rank11_finite_plane_choices": 0.0
+      },
+      "spectrum_exact": [
+        "3/5",
+        "3/10",
+        "1/10"
+      ],
+      "t_exact": "23/10"
+    },
+    {
+      "budget_values": [
+        {
+          "active_blocks": 0,
+          "budget": 0,
+          "value": 1.4581799013996246
+        },
+        {
+          "active_blocks": 1,
+          "budget": 1,
+          "value": 2.128625374625479
+        },
+        {
+          "active_blocks": 2,
+          "budget": 2,
+          "value": 2.7990708478513335
+        }
+      ],
+      "case": "flat_four",
+      "dimension": 4,
+      "fixed_minority_rank11_candidates": [
+        2.128625374625479,
+        2.128625374625479
+      ],
+      "fixed_minority_rank11_value": 2.128625374625479,
+      "outer_pair_gains": [
+        0.6704454732258545,
+        0.6704454732258545
+      ],
+      "partial_matchings_checked": 10,
+      "relative_identity_residuals": {
+        "B_reflection_budget_0": 0.0,
+        "B_reflection_budget_1": 1.5780411056604287e-16,
+        "B_reflection_budget_2": 2.231687133607212e-16,
+        "D_reflection_budget_0": 0.0,
+        "D_reflection_budget_1": 1.5780411056604287e-16,
+        "D_reflection_budget_2": 2.231687133607212e-16,
+        "attained_norm_budget_0": 1.5227517860581073e-16,
+        "attained_norm_budget_1": 8.34508909165283e-16,
+        "attained_norm_budget_2": 1.4279034386423808e-15,
+        "common_reference_budget_0": 3.0455035721162147e-16,
+        "common_reference_budget_1": 8.507491583255397e-16,
+        "common_reference_budget_2": 1.7873705481029733e-15,
+        "finite_matching_budget_0": 0.0,
+        "finite_matching_budget_1": 0.0,
+        "finite_matching_budget_2": 0.0,
+        "fixed_rank11_attainment": 2.2948995002045283e-15,
+        "fixed_rank11_finite_plane_choices": 0.0,
+        "fixed_rank11_flat_formula": 2.086272272913207e-16
+      },
+      "spectrum_exact": [
+        "1/4",
+        "1/4",
+        "1/4",
+        "1/4"
+      ],
+      "t_exact": "21/10"
+    },
+    {
+      "budget_values": [
+        {
+          "active_blocks": 0,
+          "budget": 0,
+          "value": 0.27887885053796063
+        },
+        {
+          "active_blocks": 0,
+          "budget": 1,
+          "value": 0.27887885053796063
+        },
+        {
+          "active_blocks": 0,
+          "budget": 2,
+          "value": 0.27887885053796063
+        }
+      ],
+      "case": "scalar_branch_four",
+      "dimension": 4,
+      "fixed_minority_rank11_candidates": [
+        0.2604325866809203,
+        0.2609294810908581
+      ],
+      "fixed_minority_rank11_value": 0.2609294810908581,
+      "outer_pair_gains": [
+        0.0,
+        0.0
+      ],
+      "partial_matchings_checked": 10,
+      "relative_identity_residuals": {
+        "B_reflection_budget_0": 0.0,
+        "B_reflection_budget_1": 0.0,
+        "B_reflection_budget_2": 0.0,
+        "D_reflection_budget_0": 0.0,
+        "D_reflection_budget_1": 0.0,
+        "D_reflection_budget_2": 0.0,
+        "attained_norm_budget_0": 0.0,
+        "attained_norm_budget_1": 0.0,
+        "attained_norm_budget_2": 0.0,
+        "common_reference_budget_0": 7.961569973966573e-34,
+        "common_reference_budget_1": 7.961569973966573e-34,
+        "common_reference_budget_2": 7.961569973966573e-34,
+        "finite_matching_budget_0": 0.0,
+        "finite_matching_budget_1": 0.0,
+        "finite_matching_budget_2": 0.0,
+        "fixed_rank11_attainment": 5.551115123125783e-17,
+        "fixed_rank11_finite_plane_choices": 0.0
+      },
+      "spectrum_exact": [
+        "9/20",
+        "1/4",
+        "3/20",
+        "3/20"
+      ],
+      "t_exact": "5"
+    },
+    {
+      "budget_values": [
+        {
+          "active_blocks": 0,
+          "budget": 0,
+          "value": 0.7216119113652562
+        },
+        {
+          "active_blocks": 1,
+          "budget": 1,
+          "value": 0.7565992184467826
+        },
+        {
+          "active_blocks": 1,
+          "budget": 2,
+          "value": 0.7565992184467826
+        }
+      ],
+      "case": "odd_five",
+      "dimension": 5,
+      "fixed_minority_rank11_candidates": [
+        0.7565992184467826,
+        0.7196711367853889
+      ],
+      "fixed_minority_rank11_value": 0.7565992184467826,
+      "outer_pair_gains": [
+        0.03498730708152642,
+        0.0
+      ],
+      "partial_matchings_checked": 26,
+      "relative_identity_residuals": {
+        "B_reflection_budget_0": 0.0,
+        "B_reflection_budget_1": 1.117162022524075e-16,
+        "B_reflection_budget_2": 1.117162022524075e-16,
+        "D_reflection_budget_0": 0.0,
+        "D_reflection_budget_1": 1.117162022524075e-16,
+        "D_reflection_budget_2": 1.117162022524075e-16,
+        "attained_norm_budget_0": 2.220446049250313e-16,
+        "attained_norm_budget_1": 1.1102230246251565e-16,
+        "attained_norm_budget_2": 1.1102230246251565e-16,
+        "common_reference_budget_0": 2.22132778834759e-16,
+        "common_reference_budget_1": 1.110223523311483e-16,
+        "common_reference_budget_2": 1.110223523311483e-16,
+        "finite_matching_budget_0": 0.0,
+        "finite_matching_budget_1": 0.0,
+        "finite_matching_budget_2": 0.0,
+        "fixed_rank11_attainment": 1.1102230246251565e-16,
+        "fixed_rank11_finite_plane_choices": 0.0
+      },
+      "spectrum_exact": [
+        "1/2",
+        "1/4",
+        "3/20",
+        "2/25",
+        "1/50"
+      ],
+      "t_exact": "14/5"
+    },
+    {
+      "budget_values": [
+        {
+          "active_blocks": 0,
+          "budget": 0,
+          "value": 0.9209914264407283
+        },
+        {
+          "active_blocks": 1,
+          "budget": 1,
+          "value": 1.0904600302326448
+        },
+        {
+          "active_blocks": 2,
+          "budget": 2,
+          "value": 1.122313155600687
+        },
+        {
+          "active_blocks": 2,
+          "budget": 3,
+          "value": 1.122313155600687
+        }
+      ],
+      "case": "even_six",
+      "dimension": 6,
+      "fixed_minority_rank11_candidates": [
+        1.0904600302326448,
+        0.9322893333601894
+      ],
+      "fixed_minority_rank11_value": 1.0904600302326448,
+      "outer_pair_gains": [
+        0.16946860379191653,
+        0.03185312536804205,
+        0.0
+      ],
+      "partial_matchings_checked": 76,
+      "relative_identity_residuals": {
+        "B_reflection_budget_0": 0.0,
+        "B_reflection_budget_1": 1.6346216575808816e-16,
+        "B_reflection_budget_2": 2.311602508448146e-16,
+        "B_reflection_budget_3": 2.311602508448146e-16,
+        "D_reflection_budget_0": 0.0,
+        "D_reflection_budget_1": 1.6346216575808816e-16,
+        "D_reflection_budget_2": 2.311602508448146e-16,
+        "D_reflection_budget_3": 2.311602508448146e-16,
+        "attained_norm_budget_0": 3.3306690738754696e-16,
+        "attained_norm_budget_1": 4.072494154190302e-16,
+        "attained_norm_budget_2": 1.9784549777124203e-16,
+        "attained_norm_budget_3": 1.9784549777124203e-16,
+        "common_reference_budget_0": 2.2212861435077406e-16,
+        "common_reference_budget_1": 4.0844946432255466e-16,
+        "common_reference_budget_2": 2.4371732043363833e-17,
+        "common_reference_budget_3": 2.4371732043363833e-17,
+        "finite_matching_budget_0": 0.0,
+        "finite_matching_budget_1": 0.0,
+        "finite_matching_budget_2": 0.0,
+        "finite_matching_budget_3": 0.0,
+        "fixed_rank11_attainment": 6.108741231285453e-16,
+        "fixed_rank11_finite_plane_choices": 0.0
+      },
+      "spectrum_exact": [
+        "3/5",
+        "1/5",
+        "1/10",
+        "3/50",
+        "1/25",
+        "0"
+      ],
+      "t_exact": "5/2"
+    }
+  ],
+  "exact_constants": {
+    "count": 19,
+    "uses_floating_point": false,
+    "witnesses": {
+      "actual_norm_perturbation": "84/401<1/4;21/4<4+sqrt2",
+      "envelope_failure_margin": "33/32",
+      "excluded_sector_bounds": "all excluded sector eigenvalues<2",
+      "noncommuting_blocks": "sqrt2*S<C from60<399",
+      "quartic_identity_0": "P_K=positive_denominators*(K-x f_a-y g_a)",
+      "quartic_identity_1": "P_K=positive_denominators*(K-x f_a-y g_a)",
+      "quartic_identity_2": "P_K=positive_denominators*(K-x f_a-y g_a)",
+      "reflection_angle": "399^2+40^2=401^2",
+      "second_lower": "140493/138986600",
+      "second_radical_bracket": "420<sqrt176761<841/2",
+      "second_upper": "-511/868165",
+      "small_pole_gap": "7/5<sqrt2<283/200;2+283/200-679/200=1/50",
+      "sqrt3_bracket": "1732/1000<sqrt3<1733/1000",
+      "top_gap": "255737/69493300",
+      "top_marginal_bias": "q>1/2 from3*359^2>401^2",
+      "top_radical_bracket": "380<sqrt144841<381",
+      "top_upper": "2442000/694532<18/5",
+      "two_mode_product": "(18/5-2)(5/8)=1 with both actual factors strict",
+      "two_mode_radical_comparison": "(8+8sqrt2)-(14/5+sqrt2)^2=(60sqrt2-46)/25>38/25"
+    }
+  },
+  "matrix_and_matching_identity_count": 112,
+  "maximum_matrix_dimension": 32,
+  "maximum_relative_identity_residual": 2.2948995002045283e-15,
+  "numpy": "2.3.5",
+  "proof_note_sha256": {
+    "docs/audits/JORDAN_BLOCK_BUDGET_RESOLVENT.md": "8212239eb6b6a0d749bb98dc82a738d02d89df12a38600c5b3d9b209fe9736e8",
+    "docs/audits/REFLECTION_ENVELOPE_OBSTRUCTION.md": "5ea929f436274e1cd8c5abd642adfa0f0466fc5a6244435a4dff7169556888d5"
+  },
+  "python": "3.12.14",
+  "reflection_envelope_obstruction": {
+    "U": 3.514723631452288,
+    "actual_and_two_mode_checks": [
+      {
+        "actual_full_norm": 4.791231144668541,
+        "last_pair": "one_block_failure_pair",
+        "two_mode_test_maximum": 0.704074357677319
+      },
+      {
+        "actual_full_norm": 4.716743763615717,
+        "last_pair": "one_block_rank12_pair",
+        "one_mode_test_minimum": 1.6343481697875155,
+        "two_mode_test_maximum": 0.683891268458608
+      },
+      {
+        "actual_full_norm": 4.4422054176584895,
+        "last_pair": "complex_full_pair",
+        "two_mode_test_maximum": 0.6528402870289053
+      }
+    ],
+    "m": 3.399108797904224,
+    "one_mode_test_maximum": 1.6569001194008077,
+    "one_mode_test_minimum": 1.630478866949784,
+    "pole_distance": 0.01510476446887088,
+    "relative_identity_residuals": {
+      "chiral_cross_marginal": 1.564933074143539e-16,
+      "complete_sector_spectrum": 4.3753564023070306e-16,
+      "copying_head_diagonal_output_0": 3.356925027488775e-16,
+      "copying_head_diagonal_output_1": 3.864383218958475e-16,
+      "copying_head_diagonal_output_2": 2.9029549105884163e-16,
+      "copying_head_diagonal_output_3": 2.8090910424113787e-16,
+      "earlier_balanced_trace_0": 0.0,
+      "earlier_balanced_trace_1": 0.0,
+      "earlier_balanced_trace_2": 0.0,
+      "earlier_balanced_trace_3": 0.0,
+      "earlier_reflection_0": 8.140380495146938e-17,
+      "earlier_reflection_1": 8.140380495146938e-17,
+      "earlier_reflection_2": 8.081494259871692e-17,
+      "earlier_reflection_3": 8.081494259871692e-17,
+      "last_reflection_B": 0.0,
+      "last_reflection_D": 0.0,
+      "leading_eigenvalues": 6.092729727766459e-16,
+      "negative_eigenvector": 6.014133356594421e-17,
+      "original_vs_bisector_coordinates": 1.824050195052458e-16,
+      "rank12_B_reflection": 0.0,
+      "rank12_D_reflection": 0.0,
+      "rank12_signed_cross_zero": 7.091090751791462e-16,
+      "signed_cross_block_zero": 7.102108428608383e-16,
+      "signed_equals_unsigned_test": 0.0,
+      "top_eigenvector": 9.410294806833519e-17,
+      "top_memory_marginal": 2.3796713826925966e-16
+    },
+    "signed_envelope_maximum": 5.424772140665234,
+    "third_eigenvalue": 1.3315901281877578,
+    "top_marginal_bias": 0.667012070982905,
+    "unsigned_envelope_maximum": 5.424772140665229
+  },
+  "research_base": "556df48950c2de3162171dd1d85c3df9e5937fc2",
+  "scope": "Five fixed spectra, finite partial matchings and explicit attainment; one exact physical reflection example with three third-pair diagnostics, including minority ranks (11) and (12). Scalar cubic-root and support bisections use floating-point approximations, not rigorous interval certificates. Universal proofs are analytical. No angle grid, matrix optimizer, unrestricted converse, or priority claim.",
+  "source_sha256": "85e17ef4dc8b679f61321a3942a8ae1273dc8671fb9f34245248e346a3729dea",
+  "status": "exact scalar and fixed construction checks passed",
+  "tolerance": 3e-09
+}
