@@ -1,7 +1,17 @@
 # Status and claim ledger
 
 Updated: 2026-09-27. Stage: the [nonflat quarter-rank converse](audits/NONFLAT_QUARTER_RANK_CONVERSE.md) proves `Gamma(4,4)=4+2sqrt(2)` and classifies every maximizing normalized seed. Together with the half-rank and all-n one-qubit results, this settles every integer quantum-memory budget through four inputs. The proof keeps arbitrary spectra and uses a sum-of-squares identity plus two exactly certified positive polynomials. The general entropy inequality, asymptotic common-accuracy rate, and publication originality remain unresolved.
-Latest research base: `8e38f704b1d8e74344c87ee83748d1f4dc45fcaf`, the merge of PR #56.
+Latest research base: `357a4dfd523e0b895dbeead46fb1e3190c7afd78`, the merge of PR #57.
+
+**Consolidation stage.** The [scientific scope](SCIENTIFIC_SCOPE.md) selects
+finite memory optimality, all-n one-qubit allocation, and the explicit
+unequal-accuracy collective separation as the core, with balanced spectra
+as a structural companion. The [focused prior comparison](CORE_PRIOR_COMPARISON.md)
+and [core evidence map](CORE_EVIDENCE_MAP.md) provide bounded entry points.
+The next task is to consolidate and review the integrated proof exposition,
+then freeze its claim and evidence records before manuscript drafting.
+New theorem exploration is paused; the general conjectures are future work.
+This checkpoint adds organization and source comparison, not a new theorem.
 
 The [stability extension](audits/BALANCED_SPECTRUM_STABILITY.md)
 proves an explicit nonflat half-rank neighborhood at every n: if

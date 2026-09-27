@@ -1,5 +1,10 @@
 # Reproducibility and source provenance
 
+For the selected scientific package, use the [core evidence map](CORE_EVIDENCE_MAP.md).
+It gives the minimal proof dependencies, identifies which arithmetic
+certificate is proof evidence, and pins existing proof/checker/report hashes.
+The sections below preserve the complete historical verification record.
+
 ## Balanced-spectrum stability and a nonflat spectral neighborhood
 
 The [stability proof](audits/BALANCED_SPECTRUM_STABILITY.md) is pinned

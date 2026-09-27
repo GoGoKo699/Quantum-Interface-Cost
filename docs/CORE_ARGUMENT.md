@@ -1,9 +1,14 @@
 # Exact finite-block retention and a collective advantage
 
 **Core argument, 27 September 2026.** Research base:
-`ced383d1a4ad8d9c13fbd4ebe1befd3c6284519a`. The supplied proofs below
+`357a4dfd523e0b895dbeead46fb1e3190c7afd78`. The supplied proofs below
 were independently reconstructed within this workspace, not externally
-peer reviewed. Publication originality remains unresolved.
+peer reviewed. Publication originality remains unresolved. The
+[scientific scope](SCIENTIFIC_SCOPE.md) selects the claims for the integrated
+exposition; [the focused comparison](CORE_PRIOR_COMPARISON.md) and
+[evidence map](CORE_EVIDENCE_MAP.md) track attribution and dependencies.
+The structural continuations below remain available while that exposition
+is consolidated.
 
 **One qubit of memory can be allocated exactly:** every achievable local
 X/Z accuracy profile has an implementation that randomly retains at most
@@ -558,8 +563,8 @@ has substantial prior subsumption, detailed in the
 needed for this core argument.
 
 Unrestricted **equal-accuracy** optimality remains open outside the proved
-memory and input ranges, beginning at `n=5,q=2`. The next general target
-is a dimension-independent bound on the original trace norms; the
+memory and input ranges, beginning at `n=5,q=2`. A future general proof would need
+a dimension-independent bound on the original trace norms; the
 affinity-only rank extension is false. The unequal-accuracy
 separation does not decide it. Full supporting
 proofs are in the [allocation note](ONE_QUBIT_ALLOCATION_REGION.md),

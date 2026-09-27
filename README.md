@@ -2,97 +2,67 @@
 
 ## How much must remain quantum when the readout is chosen later?
 
-A first module receives one unknown quantum register. A later module will ask
-for just one local X or Z readout, but the question is not known when the first
-module must release the input. How many qubits must cross that interface if
-classical records are free?
+An encoder receives one unknown quantum register. After it releases the
+input, a decoder is asked for one local X or Z readout. Classical records
+are free. How much quantum memory is needed, and when is retaining
+original qubits optimal?
 
-**Randomly retaining original qubits is optimal for equal accuracy at
-every integer memory budget through four input qubits.** The
-[nonflat quarter-rank converse](docs/audits/NONFLAT_QUARTER_RANK_CONVERSE.md)
-closes the last four-input case. Together with the one-qubit and half-rank
-theorems, it gives
+The selected scientific core has three results:
 
-$$
-\boxed{\Gamma(n,2^q)=2q+\sqrt2(n-q),\qquad
-1\le n\le4,\quad q=0,\ldots,n.}
-$$
+- **Exact finite memory costs.** For every integer memory budget through
+  four input qubits, arbitrary collective encoding achieves no better
+  common accuracy than random original-site retention:
 
-The best common contrast is `eta=q/n+(1-q/n)/sqrt(2)`. Randomly retain q
-original qubits and use the optimal joint X/Z measurement on every discarded
-site. The converse allows arbitrary collective encoders, nonuniform seed
-spectra, and query-dependent binary decoders at the same worst-case memory cap.
+  $$
+  \Gamma(n,2^q)=2q+\sqrt2(n-q),\qquad
+  1\le n\le4,\quad q=0,\ldots,n.
+  $$
 
-For four inputs and two retained qubits, the new proof keeps the actual
-eigenvalues throughout. Positivity and the rank cap constrain the local
-Pauli coefficients; a sum-of-squares identity handles one branch, and two
-polynomials with positive Bernstein coefficients handle the other. Their
-signs are certified by exact rational arithmetic on one rectangle, without
-subdivision or numerical optimization. Equality identifies exactly the
-two-site retention seeds.
-
-The [dimension-independent continuation](docs/audits/AFFINITY_METHOD_LIMIT.md)
-identifies the limit of that proof method. A weighted Hamming star on
-15 inputs has rank 16 and violates the proposed general root-affinity bound,
-while its actual query score remains below retention. More generally,
-the root-affinity sum cannot obey `sqrt(2)n+C log2(rank)` with a fixed C.
-The note evaluates the relaxation's asymptotic optimum using established
-Faber–Krahn theory and identifies the exact decoder terms it discards.
-
-A [spectral-layer comparison](docs/audits/SPECTRAL_LAYER_SCORE_BOUND.md)
-now controls the original score directly: every seed has one common mixture
-of nested flat spectral seeds whose query profile differs by at most a
-sharp square-root function of the decoder gap. Every layer respects the
-original rank cap, and no eigenvalue-spacing assumption is needed. This
-quantifies the cost of replacing a nonuniform spectrum; it does not yet
-prove the general retention or entropy conjecture.
+  The optimum contrast is `eta=q/n+(1-q/n)/sqrt(2)` and the uniform
+  binary total-variation error is `(1-eta)/2`. The converse permits
+  arbitrary spectra and query-dependent decoders.
+- **Complete one-qubit allocation.** At every input size, every feasible
+  local X/Z accuracy profile with one memory qubit has an implementation
+  that randomly retains at most one original site. The exact region
+  follows from established CHSH monogamy and an explicit convex argument.
+- **A collective advantage for unequal accuracies.** A complete encoder
+  for 31 inputs using five memory qubits preserves every X query and
+  achieves Z contrast `1/sqrt(31)` at every site. It exceeds the full
+  original-site-retention class defined in the proof, including joint
+  measurements of discarded sites. Its unrestricted optimality is not
+  asserted.
 
 The [balanced-spectrum theorem](docs/audits/BALANCED_SPECTRUM_OPTIMALITY.md)
-now evaluates an entire family at **every input size**. For spectra with
-two equally sized eigenspaces, write `rho=(I+tR)/2^n`, where R is a
-traceless Hermitian reflection and `0<=t<=1`. The exact maximum original
-query score over all eigenvectors is
+supplies an all-size structural companion: for
+`rho=(I+tR)/2^n`, with `0<=t<=1` and R any traceless Hermitian reflection,
+`max_R g(rho)=2(n-1)+sqrt(4-2t^2)`. Its flat half-rank endpoint and
+[stability extension](docs/audits/BALANCED_SPECTRUM_STABILITY.md)
+identify retention seeds and a sufficient nonflat spectral neighborhood.
+These spectral statements do not settle the unrestricted all-size problem.
 
-$$
-2(n-1)+\sqrt{4-2t^2}.
-$$
-
-For t>0, every maximizing state is one original-site X/Z bisector with
-Bloch length t, tensored with maximally mixed spectators. At t=1 this
-proves the retention bound and all equality cases for **every flat
-half-rank seed, at arbitrary n**. The same family obeys the sharp entropy
-bound. Arbitrary nonflat half-rank spectra at larger n remain unresolved.
-
-The [stability extension](docs/audits/BALANCED_SPECTRUM_STABILITY.md)
-now controls nonflat seeds in an explicit spectral neighborhood, at every n.
-For rank at most `k=2^(n-1)`, the retention bound holds whenever
-`sqrt(2(1-Tr(sqrt(rho))/sqrt(k)))<=1/(4096n)`, with equality only at
-the retention seeds. Eigenvectors and supports are unrestricted. The
-proof also shows that a flat half-rank seed within score gap epsilon
-of optimum is within full trace norm `16sqrt(2epsilon)` of a retention
-seed. This stability constant and the sufficient neighborhood radius
-are not claimed optimal; the square-root gap exponent is necessary.
-
-**Read the [short core argument](docs/CORE_ARGUMENT.md)** for this result,
-the exact allocation rule for one retained qubit at every input size, and
-a collective advantage for unequal accuracies. Together they separate
-three questions:
-
-- **One retained qubit:** the entire local X/Z accuracy region is known.
-- **Every integer budget through four inputs:** the equal-accuracy
-  optimum above is known, including nonflat seeds.
-- **General memories and the asymptotic common-accuracy rate:** still open.
-  The smallest remaining finite case is five inputs with two retained qubits.
-
-These are supplied analytical results with independent internal proof
-reconstruction. The measurement-simulation framework and the cited
-fidelity, monogamy, and entropy ingredients are established prior work;
-publication originality remains a separate question. The
-[claim ledger](docs/STATUS.md) records precise scope and provenance.
-Earlier decoder and channel arguments remain available as supporting
-results, including the obstructions to insufficient proof methods.
+The project is now in **scientific consolidation**. The
+[scope and completion gates](docs/SCIENTIFIC_SCOPE.md) select the paper's
+claims, distinguish supporting material, and stop further theorem
+exploration for this package. The general entropy inequality and
+asymptotic common-accuracy rate remain future work. Individual proofs
+have internal independent reconstructions; the integrated exposition
+still needs its final review. The framework and cited ingredients are
+prior work, and publication originality is not certified.
 
 ## Start here
+
+| Purpose | Read |
+|---|---|
+| Selected claims, exact boundaries, and finite completion plan | [Scientific scope](docs/SCIENTIFIC_SCOPE.md) |
+| Theorem statements and the current proof narrative | [Core argument](docs/CORE_ARGUMENT.md) |
+| Closest sources and the precise contribution being compared | [Focused prior comparison](docs/CORE_PRIOR_COMPARISON.md) |
+| Minimal proof dependencies, frozen checks, and report hashes | [Core evidence map](docs/CORE_EVIDENCE_MAP.md) |
+| Full assumptions and accumulated claim status | [Research note](RESEARCH_NOTE.md), [status ledger](docs/STATUS.md) |
+
+## Research record
+
+The following index preserves the broader research history. These notes
+are not all dependencies or proposed sections of the selected paper.
 
 | Purpose | Read |
 |---|---|
@@ -147,8 +117,8 @@ results, including the obstructions to insufficient proof methods.
 | Run the small checks and understand their limits | [Reproducibility](docs/REPRODUCIBILITY.md) |
 | Instructions for the independent workspace | [Review brief](docs/WORKSPACE_REVIEW_BRIEF.md) |
 
-For a first reading, use this page, then Sections 2, 4, 5, 8, and 9 of the
-research note. Proof reviewers should also read Section 6 in full.
+For a first reading, follow the five entries under **Start here**. The
+research note and historical audits retain their stated model and scope.
 
 ## The resource contract
 
