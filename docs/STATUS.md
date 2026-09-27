@@ -1,7 +1,7 @@
 # Status and claim ledger
 
 Updated: 2026-09-27. Stage: the [nonflat quarter-rank converse](audits/NONFLAT_QUARTER_RANK_CONVERSE.md) proves `Gamma(4,4)=4+2sqrt(2)` and classifies every maximizing normalized seed. Together with the half-rank and all-n one-qubit results, this settles every integer quantum-memory budget through four inputs. The proof keeps arbitrary spectra and uses a sum-of-squares identity plus two exactly certified positive polynomials. The general entropy inequality, asymptotic common-accuracy rate, and publication originality remain unresolved.
-Latest research base: `ced383d1a4ad8d9c13fbd4ebe1befd3c6284519a`, the merge of PR #53.
+Latest research base: `26a126a729fb483897c8a2e356dc733089c0d2a0`, the merge of PR #54.
 
 The [dimension-independent continuation](audits/AFFINITY_METHOD_LIMIT.md)
 proves that the affinity surrogate used in the finite converses cannot
@@ -10,6 +10,17 @@ inputs gives an exact separation; its actual trace-norm score remains
 below the benchmark. The continuation evaluates the surrogate's exact
 entropy and asymptotic rank profiles as corollaries of established theory,
 and gives the exact optimal-decoder gap and its equality structure.
+
+The [spectral-layer continuation](audits/SPECTRAL_LAYER_SCORE_BOUND.md)
+uses that gap to bound the actual trace-norm score. A common mixture of
+nested flat seeds loses at most `2sqrt(n Delta)` in total score, where
+`Delta=sum_U(a_U-F_U^2)` is the total gap between affinity and squared
+original query score. The stronger bound
+uses only the decoder-commutator part of those gaps. Every layer stays
+within the original rank cap. The square-root order and constant are
+sharp even for one original X/Z pair; no spectral-spacing assumption is
+needed. The remaining task is to control the flat-layer scores and this
+nonzero mixing cost together.
 
 The earlier [quarter-rank geometry](audits/QUARTER_RANK_GEOMETRY.md) and
 its sharp squared-score budget remain valid. Its former nonflat restriction
@@ -34,6 +45,7 @@ is asserted.
 
 | Claim | Status | Location |
 |---|---|---|
+| Original query profile is close to a common mixture of nested flat spectral profiles | Derived and independently reconstructed: nonnegative errors have squared sum at most twice the decoder mixing charge, hence at most 2Delta with Delta=sum_U(a_U-F_U^2). Rank caps are preserved; the square-root coefficient is sharp | audits/SPECTRAL_LAYER_SCORE_BOUND.md |
 | Root-affinity score obeys the retention bound for every n,q | Incorrect: rank-16, 15-input weighted star; the original trace-norm score stays strictly below retention | audits/AFFINITY_METHOD_LIMIT.md |
 | Root-affinity score is at most sqrt(2)n+C log2(rank) for some universal finite C | Incorrect: the star family's surrogate excess grows as sqrt(n/2), with rank n+1; its original-score excess stays below sqrt(2) | audits/AFFINITY_METHOD_LIMIT.md |
 | Exact root-affinity optimum at fixed entropy and asymptotic rank rate | Derived corollary of Beigi's established entropy-energy/Faber–Krahn results with matching constructions; fixed rank rate, not fixed codimension or the original interface rate | audits/AFFINITY_METHOD_LIMIT.md |

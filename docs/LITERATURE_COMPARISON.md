@@ -28,6 +28,27 @@ and adds a prior CHSH derivation of the symmetric one-site entropy curve.
 Its convexity consequences and exact failed-tensorization example explain
 why the unrestricted rate question needs a new global argument.
 
+## Spectral layers and the original score
+
+The [spectral-layer comparison](audits/SPECTRAL_LAYER_SCORE_BOUND.md)
+uses the standard nested-projector decomposition of a density matrix.
+Vidick, [2103.02468v3](https://arxiv.org/pdf/2103.02468v3), Section 2.4,
+printed p. 10, Lemmas 2.11–2.12, records the threshold identity and
+spectral-projection rounding estimate. Slofstra–Vidick,
+[1711.10676v2](https://arxiv.org/pdf/1711.10676v2), printed pp. 20–21,
+Lemmas 5.5–5.6, supplies the finite-dimensional proof and explicitly
+attributes the rounding ingredient to Connes, Lemma 1.2.6. Approximate
+flat-strategy reduction is also the subject of Vidick's Theorem 3.1.
+The decomposition and rounding methodology are established ingredients.
+
+The supplied application bounds the original query profile's loss under
+this particular decomposition by its optimal-decoder commutator gap.
+It gives a sharp square-root constant and a self-contained proof by
+trace-norm contraction and an eigenbasis Cauchy estimate. The cited
+statements do not directly state this score comparison, but this scoped
+check is not a publication-priority conclusion. The result retains a
+nonzero error term and does not establish the general retention bound.
+
 ## Half-rank finite optimum: new scope, established ingredients
 
 The [half-rank converse](audits/HALF_RANK_RETENTION_CONVERSE.md) proves

@@ -360,6 +360,27 @@ query comparison is tight, every flat spectral block realizes the same
 original query profile. The unresolved general task therefore requires
 control of the actual trace norms and their decoder dependence.
 
+The [spectral-layer comparison](audits/SPECTRAL_LAYER_SCORE_BOUND.md)
+gives a quantitative step in that direction. If rho has descending
+positive eigenvalues lambda_k, put
+`w_k=k(lambda_k-lambda_(k+1))` and let `sigma_k=P_k/k` be the flat state
+on its top k eigenvectors. Then `rho=sum_k w_k sigma_k`, and for every
+original query U,
+
+$$
+0\le F_U(\rho)-\sum_k w_k F_U(\sigma_k)
+\le\sqrt{2\delta_U},\qquad
+\delta_U=\operatorname{Tr}(\sqrt\rho U\sqrt\rho U)-F_U(\rho)^2.
+$$
+
+Consequently `g(rho)<=sum_k w_k g(sigma_k)+2sqrt(n sum_U delta_U)`.
+One common mixture controls all queries, without increasing rank or
+requiring a positive eigenvalue gap. The proof compares the coefficients
+`sqrt(lambda_i lambda_j)` and `min(lambda_i,lambda_j)` and retains the
+optimal decoder's commutator. A one-qubit family makes the coefficient
+sharp. The nonzero error term prevents an automatic extension of a flat
+converse to arbitrary spectra.
+
 ## 4. A collective advantage with five memory qubits
 
 Take `n=31`. Label the X-basis vectors by bit strings. Let

@@ -153,6 +153,15 @@ asymptotic rank profiles follow from established Faber–Krahn theory.
 The original objective above remains the unresolved target; the note's
 optimal-decoder gap records the information lost in the relaxation.
 
+The [spectral-layer bound](audits/SPECTRAL_LAYER_SCORE_BOUND.md) now
+compares the original objective with a common mixture of nested flat
+spectral seeds. The mixture never increases rank, and its total score
+loss is at most `2sqrt(n Delta)`, with `Delta=sum_U(a_U-F_U^2)` the gap
+between affinities and squared original query scores. This sharp,
+spectrum-independent error estimate does not justify dropping a nonuniform
+spectrum from the optimization.
+It identifies a quantitative cost that a general converse must control.
+
 The [decoder-algebra theorem](audits/DECODER_ALGEBRA_AND_THREE_INPUT.md)
 proves the subset bound for every n,q when an optimal reflection decoder
 family pairwise commutes or anticommutes. This is an explicit sufficient
