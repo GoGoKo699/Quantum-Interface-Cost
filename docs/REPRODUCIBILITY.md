@@ -1,5 +1,47 @@
 # Reproducibility and source provenance
 
+## Head structure: one-block, conserved-symmetry and zero-gap converses
+
+The [one-block theorem](audits/HIGH_SECOND_MODE_ONE_BLOCK.md),
+[conserved-symmetry theorem](audits/CONSERVED_SYMMETRY_CONVERSE.md), and
+[zero-gap dichotomy](audits/ZERO_PAULI_GAP_DICHOTOMY.md) are pinned to
+main `eb88f82db5bfd4acd7b687ca209fc094fc5df2ea`. Run:
+
+```bash
+python tools/check_head_structure_converses.py --output results/head_structure_converses.json
+```
+
+The verifier checks 21 exact rational comparisons, including the
+bound-five quadratic endpoints and the one-block margin `407/62500`.
+Twelve fixed constructions check 137 matrix identities: five symmetry
+cases, three high-m one-block cases, all three zero-gap coefficient
+forms, and one unequal weighted-boundary purification. They include
+nonplanar reflection directions, interior contractions, degenerate and
+zero endpoints, an NPT head, a split EB head with U unequal to m, and
+arbitrary complex last-pair examples. The checks retain the actual
+channel and verify its covariance, Choi identities, Bell compression,
+resolvent comparison, and displayed correlation formulas.
+
+All passed with Python 3.12.14 and NumPy 2.3.5, at tolerance `4e-10`.
+The maximum relative identity residual was `3.22e-15`; the largest matrix
+dimension was 32. No optimizer, parameter scan, or large simulation was
+used. Source SHA-256:
+`a6f4a5a0bab308dc24cb216ff913667d9a28496f70398516f8f2331a0fc8acd8`.
+The JSON pins all three proof-note hashes. Output guards prevent
+overwriting the source or proof notes.
+
+An independent source audit and separate scratch rerun passed. The rerun
+reproduced the recorded JSON byte for byte and verified all four provenance
+hashes. Cross-platform floating results need only meet the stated tolerance.
+
+Independent internal reviews reconstructed all three analytical proofs.
+The conserved-symmetry note credits the established partial-transpose
+invariance separability theorem separately from its readout application
+and rectangular-channel calculation. The finite checks supplement the
+supplied universal arguments; they do not establish a whole remaining
+signature, unrestricted optimality, or publication originality.
+Unchanged diagnostics were not rerun.
+
 ## Quantitative two-mode stability and robust channel converse
 
 The [stability proof](audits/QUANTITATIVE_TWO_MODE_STABILITY.md) and

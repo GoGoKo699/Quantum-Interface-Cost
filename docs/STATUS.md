@@ -1,7 +1,7 @@
 # Status and claim ledger
 
-Updated: 2026-09-27. Stage: [quantitative two-mode stability](audits/QUANTITATIVE_TWO_MODE_STABILITY.md) replaces the preceding compactness neighborhood by explicit conservative radii. For arbitrary earlier binary POVMs, `4sqrt(3)-(U+m)<=2^-32` implies `norm(H0+h3)<16/3` for every third pair. Within `m>=2+sqrt(2)`, deficit at most `2^-24` suffices. The [robust head-channel criterion](audits/ROBUST_HEAD_CHANNEL_CONVERSE.md) permits full diamond distance `2/5` from any entanglement-breaking channel throughout that high-m regime and closes the entire earlier positive-quadrant NPT-head family. A chirality identity and signed Cauchy--Schwarz stability retain the actual reference Pauli structure; the actual channel is not dephased. These radii are not optimal and do not cover the full remaining region. The sharp support theorem and prior obstruction remain valid. All three complete remaining reflection signatures, unrestricted optimality and publication originality remain unresolved.
-Latest research base: `3d230411930a2ac198cdb7f2ef9ad86701face1a`, the merge of PR #46.
+Updated: 2026-09-27. Stage: the [one-block last-query theorem](audits/HIGH_SECOND_MODE_ONE_BLOCK.md) closes the entire high-second-mode region for a last pair with at most one active Jordan block. A possible violation in `(22)^2(11)` or `(22)^2(12)` must therefore have a valid rank-one resolvent. The [conserved-symmetry theorem](audits/CONSERVED_SYMMETRY_CONVERSE.md) gives `norm(H)<=5` for four readouts in two explicit three-dimensional Pauli spaces and an arbitrary third pair; each isolated positive rank-two head channel is a rectangular-POVM measurement with an orthogonal record. The [zero-Pauli-gap dichotomy](audits/ZERO_PAULI_GAP_DICHOTOMY.md) proves an exact support/channel alternative without assuming fidelity-affinity saturation. These are structural results, not extensions of the small stability radii to the whole parameter space. All three complete remaining reflection signatures, unrestricted optimality and publication originality remain unresolved.
+Latest research base: `eb88f82db5bfd4acd7b687ca209fc094fc5df2ea`, the merge of PR #47.
 
 Critical assessment base: `81bcfefb2b545742d513c4f51364a7f72972451e`, the
 merge of PR #11. The [publication and optimality assessment](audits/PUBLICATION_AND_OPTIMALITY_ASSESSMENT.md)
@@ -55,6 +55,9 @@ is asserted.
 | The maximal-support boundary has an explicit global safe neighborhood | Derived and independently checked; deficit at most 2^-32 gives norm(H0+h3)<16/3 for arbitrary third pairs, and at most 2^-24 suffices when m>=2+sqrt(2). Conservative, nonoptimal radii | audits/QUANTITATIVE_TWO_MODE_STABILITY.md |
 | A high-m head at full diamond distance at most 2/5 from an entanglement-breaking channel passes the coherent envelope test | Derived and independently checked by centering the resolvent and two elementary quadratic certificates; no dephasing of the actual head | audits/ROBUST_HEAD_CHANNEL_CONVERSE.md |
 | The full positive-quadrant physical nonclassical-head family obeys the converse | Derived and independently checked; explicit EB comparison controls its high-energy NPT heads, while a triangle bound covers the other angles | audits/ROBUST_HEAD_CHANNEL_CONVERSE.md |
+| A one-block last query obeys the strict converse throughout the high-m regime | Derived and independently checked; actual channel moment and one Bell projector give a monotone scalar certificate with endpoint margin 407/62500. Any remaining violating (22)^2(11)/(12) tuple has a valid rank-one resolvent | audits/HIGH_SECOND_MODE_ONE_BLOCK.md |
+| The conserved-symmetry readout family obeys norm(H)<=5 with any third pair | Derived and independently checked for four coefficient unit balls in the stated Pauli spaces. The actual positive rank-two head is a rectangular-POVM channel; five is not asserted sharp | audits/CONSERVED_SYMMETRY_CONVERSE.md |
+| Zero Pauli-conjugation gap forces an EB head or support at most 2+sqrt(2) | Derived and independently checked; exact flattening and three coefficient forms, including flagged exceptions. No nonzero-gap neighborhood is claimed here | audits/ZERO_PAULI_GAP_DICHOTOMY.md |
 | The synthetic partial-SWAP channel is excluded at U=m=2sqrt(3) in every reference orientation | Derived and independently checked from the equality conditions and a three-anticommuting-reflection obstruction in the reference X/Z space | audits/SHARP_TWO_MODE_SUPPORT.md Section 6 |
 | Three partial-SWAP Bell-subspace projectors obey the sharp sum bound 5/2 | Derived and independently checked, including all equality cases; the physical converse also assumes equal spectra within each site's two Jordan blocks | audits/NONCOMMUTING_QUERY_FAMILIES.md Sections 1–6 |
 | Every sufficiently small change of subsystem geometry around the known projector attainers obeys the 5/2 bound | Derived and independently checked in all eighteen transverse directions; exact negative quadratic form and radius 2^-10. No global optimality or global rigidity statement | audits/BELL_SUBSPACE_LOCAL_STABILITY.md Sections 1–5 |
@@ -469,11 +472,17 @@ The entire maximal-sum boundary is now classified and lies strictly below
 the retention benchmark after every third pair. The later stability proof
 gives explicit radii `2^-32` globally and `2^-24` within the high-m strip;
 these remain much smaller than the full unresolved region. The channel
-criterion also handles the complete earlier NPT example family. The next
-analytical target is a stronger global relation between readout support
-and the coherent head channel, rather than further optimization of the
-conservative rounding constants. The spectral/moment/compression relaxation
-alone remains insufficient, and squared support deficit zero alone does
+criterion also handles the complete earlier NPT example family.
+
+The later one-block theorem removes the high-m obstruction from
+`(22)^2(11)` and `(22)^2(12)`: place the one-block query last, and every
+potential violation must have `m<2+sqrt(2)`. The next concrete target is
+the actual rank-one resolvent inequality in those remaining low-m regions.
+There is no uniform resolvent gap as m approaches the threshold. For the
+fully double-block case, the conserved-symmetry family and zero-Pauli-gap
+classification identify exact safe structures; controlling departure from
+them globally remains open. The spectral/moment/compression relaxation
+alone remains insufficient, and a zero squared support deficit alone does
 not imply an entanglement-breaking channel at the scalar-pair endpoint.
 
 The [optimizer follow-up](audits/FORMATION_OPTIMIZERS_AND_PRIOR.md)

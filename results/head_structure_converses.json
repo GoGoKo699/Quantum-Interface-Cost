@@ -1,0 +1,427 @@
+{
+  "exact_constants": {
+    "count": 21,
+    "uses_floating_point": false,
+    "witnesses": {
+      "one_block_C_bounds": "2/5<C<403/1000",
+      "one_block_C_identity": "(40-28sqrt2)(6+4sqrt2)=8(2-sqrt2)",
+      "one_block_U_bounds": "351/100<u_star<1757/500",
+      "one_block_coefficient_bounds": "83/1000<4-U-C<1/5",
+      "one_block_decreasing_scalar": "-4/5+(1/5)(18/5)/(14/5)=-19/35",
+      "one_block_endpoint_margin": "407/62500",
+      "one_block_k_bounds": "1707/500<k<683/200",
+      "one_block_radical_bounds": "141421/100000<sqrt2<99/70;433/250<sqrt3<1732051/1000000",
+      "one_block_tail_below_three": "32-2(17/5)^2<9",
+      "one_block_tail_lower": "149579/1000000",
+      "one_block_tail_upper": "707/10000",
+      "split_EB_head_high_m": "(999/1000)2sqrt3-1/1000>2+sqrt2",
+      "symmetry_derivative_first": "20-16-10/3=2/3",
+      "symmetry_derivative_second": "20-16=4",
+      "symmetry_endpoint_ellipse": "768<784",
+      "symmetry_endpoint_zero": "4800<5184",
+      "symmetry_high_resolvent_branch": "2sqrt3<7/2 and sqrt2<3/2",
+      "symmetry_squared_quadratic": "(U+10-3ell)^2-4(46-20ell+2ell^2)=U^2+20U-84+(20-6U)ell+ell^2",
+      "symmetry_tail_radicals": "2<sqrt7<8/3",
+      "symmetry_top_multiplicity": "36>32",
+      "zero_gap_support_scalar": "3-4-5 unit vectors give support17/5<2+sqrt2"
+    }
+  },
+  "matrix_identity_count": 137,
+  "maximum_matrix_dimension": 32,
+  "maximum_relative_identity_residual": 3.21976744677803e-15,
+  "numpy": "2.3.5",
+  "one_block_constructions": [
+    {
+      "Bell_compression_cap": 0.6666666666666671,
+      "Bell_compression_maximum": 0.2370065621906906,
+      "Choi_partial_transpose_minimum": -8.996367247231601e-17,
+      "U": 3.4641016151377544,
+      "case": "balanced",
+      "channel_moment_minimum_gap": 1.9999999999999962,
+      "ell": 1.1547005383792528,
+      "full_head_test_maximum": 0.7742477711771493,
+      "full_norm": 4.734941956166601,
+      "m": 3.4641016151377535,
+      "relative_identity_residuals": {
+        "Bell_projector": 1.7880278822442367e-16,
+        "Bell_reference_marginal": 2.1205516165211213e-16,
+        "head_isometry": 5.708515500747099e-16
+      },
+      "scalar_certificate": 0.9519376911404072
+    },
+    {
+      "Bell_compression_cap": 0.6751060725623484,
+      "Bell_compression_maximum": 0.23671473002266824,
+      "Choi_partial_transpose_minimum": -0.009193528248391133,
+      "U": 3.4423813982054186,
+      "case": "non_EB_head",
+      "channel_moment_minimum_gap": 2.075005154644654,
+      "ell": 1.46629134529578,
+      "full_head_test_maximum": 0.735258733003112,
+      "full_norm": 4.690924926116536,
+      "m": 3.4423813982054154,
+      "relative_identity_residuals": {
+        "Bell_projector": 1.7880278822442367e-16,
+        "Bell_reference_marginal": 2.1205516165211213e-16,
+        "head_isometry": 1.8533692622024223e-16
+      },
+      "scalar_certificate": 0.9382596833088679
+    },
+    {
+      "Bell_compression_cap": 0.6683882272627575,
+      "Bell_compression_maximum": 0.23700656219069097,
+      "Choi_partial_transpose_minimum": -8.523813119413633e-17,
+      "U": 3.461637513522616,
+      "case": "split_EB_head",
+      "channel_moment_minimum_gap": 2.009546459746956,
+      "ell": 1.154545837840873,
+      "full_head_test_maximum": 0.773304097757744,
+      "full_norm": 4.732155655867405,
+      "m": 3.459637513522614,
+      "relative_identity_residuals": {
+        "Bell_projector": 1.7880278822442367e-16,
+        "Bell_reference_marginal": 2.1205516165211213e-16,
+        "head_isometry": 3.510942770161966e-16,
+        "split_top_gap": 2.0001361678012586e-15
+      },
+      "scalar_certificate": 0.9512863081980432
+    }
+  ],
+  "proof_note_sha256": {
+    "docs/audits/CONSERVED_SYMMETRY_CONVERSE.md": "6ca6c8ecb188f3b1e4fb97ef27eacddf241df7b2d895654098064843af54a3cb",
+    "docs/audits/HIGH_SECOND_MODE_ONE_BLOCK.md": "19158b8aff75f6b5c4261046d7404a6fe17cdeb298d256e2cf253823c1f2fda9",
+    "docs/audits/ZERO_PAULI_GAP_DICHOTOMY.md": "6da0fd28faa87e04d413b7196ba94a1a0008651a1ece0bc97a9faf1b4ea37dc5"
+  },
+  "python": "3.12.14",
+  "research_base": "eb88f82db5bfd4acd7b687ca209fc094fc5df2ea",
+  "scope": "Exact rational constants and twelve fixed constructions; no scan, optimization, universal numerical proof, or publication-priority claim.",
+  "source_sha256": "a6f4a5a0bab308dc24cb216ff913667d9a28496f70398516f8f2331a0fc8acd8",
+  "status": "exact scalar and fixed matrix checks passed",
+  "symmetry_constructions": [
+    {
+      "U_equals_m": 3.4641016151377557,
+      "case": "balanced",
+      "rectangular_POVM_axis_magnitudes": [
+        0.7071067811865476,
+        0.7071067811865474
+      ],
+      "relative_identity_residuals": {
+        "Choi_Y_pairing": 1.0571993397935228e-15,
+        "Choi_flat_spectrum": 7.195595710126268e-16,
+        "Choi_projection_identity": 1.8566860114423924e-16,
+        "S1_commutes": 0.0,
+        "S1_head_X": 0.0,
+        "S2_commutes": 0.0,
+        "S2_head_Z": 1.7273525888891141e-15,
+        "aligned_head_isometry": 1.582429744301133e-15,
+        "aligned_head_projector": 1.3545336598281242e-15,
+        "chirality": 0.0,
+        "commuting_head_outputs": 3.28481696802569e-16,
+        "covariance_X_0": 9.888399045538493e-17,
+        "covariance_X_1": 4.171383024668509e-17,
+        "covariance_X_2": 4.2445156380570175e-17,
+        "covariance_X_3": 1.1443916996305594e-16,
+        "covariance_Z_0": 2.90559728791403e-15,
+        "covariance_Z_1": 3.21976744677803e-15,
+        "covariance_Z_2": 3.2754926897665897e-16,
+        "covariance_Z_3": 1.045032013939933e-15,
+        "even_eigenvalue_multiplicity": 5.913957033160809e-16,
+        "flat_average_output": 1.4554520411192519e-15,
+        "head_output_square": 1.4450236142377193e-15,
+        "real_H0": 0.0,
+        "rectangular_X_square": 1.1242721300918844e-15,
+        "rectangular_Z_square": 3.676959098167723e-16,
+        "symmetries_anticommute": 0.0,
+        "zero_head_Y": 3.1389230675975914e-16
+      },
+      "third_eigenvalue": 1.1547005383792521,
+      "third_pair_checks": [
+        {
+          "full_norm": 4.791690435008166,
+          "last_pair": "commuting_scalar",
+          "norm_five_envelope_maximum": 0.9157254442462938
+        },
+        {
+          "full_norm": 4.793516495782602,
+          "last_pair": "one_active_block",
+          "norm_five_envelope_maximum": 0.9207256826040444
+        },
+        {
+          "full_norm": 4.488176744100521,
+          "last_pair": "complex_full_pair",
+          "norm_five_envelope_maximum": 0.8281417646436315
+        }
+      ]
+    },
+    {
+      "U_equals_m": 3.3993854851982164,
+      "case": "three_generator_reflections",
+      "rectangular_POVM_axis_magnitudes": [
+        0.6909869649517966,
+        0.7228672175902744
+      ],
+      "relative_identity_residuals": {
+        "Choi_Y_pairing": 2.3633021048361517e-16,
+        "Choi_flat_spectrum": 2.399591472256063e-16,
+        "Choi_projection_identity": 3.4476154706642995e-17,
+        "S1_commutes": 0.0,
+        "S1_head_X": 0.0,
+        "S2_commutes": 0.0,
+        "S2_head_Z": 5.24609749292687e-16,
+        "aligned_head_isometry": 5.018716556435025e-16,
+        "aligned_head_projector": 7.310610154998909e-16,
+        "chirality": 0.0,
+        "commuting_head_outputs": 9.903618817133615e-17,
+        "covariance_X_0": 4.5560234244964405e-17,
+        "covariance_X_1": 9.412373634839028e-17,
+        "covariance_X_2": 4.6611910679540193e-17,
+        "covariance_X_3": 1.1527756336890508e-16,
+        "covariance_Z_0": 4.997897311700872e-16,
+        "covariance_Z_1": 8.356687129687289e-16,
+        "covariance_Z_2": 6.041984209985018e-17,
+        "covariance_Z_3": 5.73036696484635e-16,
+        "even_eigenvalue_multiplicity": 9.356963998639931e-16,
+        "flat_average_output": 3.3460583439139035e-16,
+        "head_output_square": 3.1117007326479554e-16,
+        "real_H0": 0.0,
+        "rectangular_X_square": 2.9114333096769013e-16,
+        "rectangular_Z_square": 1.9856486114816575e-16,
+        "symmetries_anticommute": 0.0,
+        "zero_head_Y": 7.12451666505883e-17
+      },
+      "third_eigenvalue": 1.6773809103062742,
+      "third_pair_checks": [
+        {
+          "full_norm": 4.710014478118843,
+          "last_pair": "commuting_scalar",
+          "norm_five_envelope_maximum": 0.8615310993124105
+        },
+        {
+          "full_norm": 4.679830042812442,
+          "last_pair": "one_active_block",
+          "norm_five_envelope_maximum": 0.859659636385496
+        },
+        {
+          "full_norm": 4.4483082575087485,
+          "last_pair": "complex_full_pair",
+          "norm_five_envelope_maximum": 0.7956327400862049
+        }
+      ]
+    },
+    {
+      "U_equals_m": 3.3318642653466957,
+      "case": "three_generator_interior",
+      "rectangular_POVM_axis_magnitudes": [
+        0.6849149437058683,
+        0.728623030028826
+      ],
+      "relative_identity_residuals": {
+        "Choi_Y_pairing": 4.104665137954933e-16,
+        "Choi_flat_spectrum": 3.5097753060949744e-16,
+        "Choi_projection_identity": 6.16488226452028e-17,
+        "S1_commutes": 0.0,
+        "S1_head_X": 0.0,
+        "S2_commutes": 0.0,
+        "S2_head_Z": 6.247317049982923e-16,
+        "aligned_head_isometry": 1.8498571160172343e-16,
+        "aligned_head_projector": 8.584803066407898e-16,
+        "chirality": 0.0,
+        "commuting_head_outputs": 3.6960614945242597e-16,
+        "covariance_X_0": 1.556727064599067e-17,
+        "covariance_X_1": 8.032350411739543e-17,
+        "covariance_X_2": 5.513434711187726e-17,
+        "covariance_X_3": 8.326672684688674e-17,
+        "covariance_Z_0": 9.727457299510043e-16,
+        "covariance_Z_1": 3.925844416168177e-16,
+        "covariance_Z_2": 3.170250351961294e-16,
+        "covariance_Z_3": 8.715427528620302e-16,
+        "even_eigenvalue_multiplicity": 1.0490348441805813e-15,
+        "flat_average_output": 4.864287516154895e-16,
+        "head_output_square": 3.4751167385193064e-16,
+        "real_H0": 0.0,
+        "rectangular_X_square": 1.4484376463344305e-16,
+        "rectangular_Z_square": 2.7242102805689015e-16,
+        "symmetries_anticommute": 0.0,
+        "zero_head_Y": 3.3279195493065087e-16
+      },
+      "third_eigenvalue": 1.6416067224176036,
+      "third_pair_checks": [
+        {
+          "full_norm": 4.642398313222681,
+          "last_pair": "commuting_scalar",
+          "norm_five_envelope_maximum": 0.8298653787774574
+        },
+        {
+          "full_norm": 4.613641828258741,
+          "last_pair": "one_active_block",
+          "norm_five_envelope_maximum": 0.8277209571815592
+        },
+        {
+          "full_norm": 4.390943550955827,
+          "last_pair": "complex_full_pair",
+          "norm_five_envelope_maximum": 0.7665075135487256
+        }
+      ]
+    },
+    {
+      "U_equals_m": 2.8284271247461907,
+      "case": "degenerate_commuting_endpoint",
+      "relative_identity_residuals": {
+        "S1_commutes": 0.0,
+        "S2_commutes": 0.0,
+        "chirality": 0.0,
+        "even_eigenvalue_multiplicity": 1.8305880589384962e-16,
+        "real_H0": 0.0,
+        "symmetries_anticommute": 0.0
+      },
+      "third_eigenvalue": 2.82842712474619,
+      "third_pair_checks": [
+        {
+          "full_norm": 4.2426406871192865,
+          "last_pair": "commuting_scalar"
+        },
+        {
+          "full_norm": 4.242640687119286,
+          "last_pair": "one_active_block"
+        },
+        {
+          "full_norm": 4.002540826136287,
+          "last_pair": "complex_full_pair"
+        }
+      ]
+    },
+    {
+      "U_equals_m": 0.0,
+      "case": "zero_endpoint",
+      "relative_identity_residuals": {
+        "S1_commutes": 0.0,
+        "S2_commutes": 0.0,
+        "chirality": 0.0,
+        "even_eigenvalue_multiplicity": 0.0,
+        "real_H0": 0.0,
+        "symmetries_anticommute": 0.0
+      },
+      "third_eigenvalue": 0.0,
+      "third_pair_checks": [
+        {
+          "full_norm": 1.4142135623730951,
+          "last_pair": "commuting_scalar"
+        },
+        {
+          "full_norm": 1.897366596101028,
+          "last_pair": "one_active_block"
+        },
+        {
+          "full_norm": 1.9046671397714272,
+          "last_pair": "complex_full_pair"
+        }
+      ]
+    }
+  ],
+  "tolerance": 4e-10,
+  "weighted_polar_construction": [
+    {
+      "case": "weights_1_2_3_4_over_sqrt30",
+      "relative_identity_residuals": {
+        "weighted_correlation_0": 5.807782132745683e-17,
+        "weighted_correlation_1": 4.8087850712834393e-17,
+        "weighted_correlation_2": 8.330546617931482e-17,
+        "weighted_correlation_3": 1.0215952287358081e-16,
+        "weighted_head_isometry": 7.853875222568277e-17,
+        "weighted_profile": 1.433291761649753e-16,
+        "weighted_squared_budget": 0.0
+      },
+      "support_profile": [
+        0.9309493362512627,
+        0.9831920802501751,
+        0.6831300510639733,
+        0.8366600265340753
+      ],
+      "third_pair_checks": [
+        {
+          "full_norm": 4.818938160829094,
+          "last_pair": "commuting_scalar"
+        },
+        {
+          "full_norm": 4.8020587018477014,
+          "last_pair": "one_active_block"
+        },
+        {
+          "full_norm": 4.386653487710536,
+          "last_pair": "complex_full_pair"
+        }
+      ]
+    }
+  ],
+  "zero_gap_constructions": [
+    {
+      "Choi_partial_transpose_minimum": -7.855879947425788e-17,
+      "case": "traceless_two_site",
+      "relative_identity_residuals": {
+        "EB_commuting_outputs_1_2": 2.0589721963781348e-16,
+        "EB_commuting_outputs_1_3": 1.9667612690634741e-16,
+        "EB_commuting_outputs_2_3": 1.2907110989480137e-16,
+        "classified_support_profile": 1.433291761649753e-16,
+        "complement_flat_marginal": 0.0,
+        "complement_projector": 7.850645947915438e-17,
+        "complement_reflection": 2.908349837961618e-18,
+        "purified_head_isometry": 3.322784596776247e-16,
+        "root_marginal": 0.0,
+        "root_square": 3.925322973957719e-17,
+        "zero_Pauli_gap": 2.9605947323337506e-16
+      },
+      "squared_support_deficit": -4.440892098500626e-16,
+      "support_profile": [
+        0.7745966692414835,
+        0.948683298050514,
+        0.7745966692414834,
+        0.9486832980505138
+      ],
+      "support_sum": 3.446559934583995
+    },
+    {
+      "Choi_partial_transpose_minimum": -0.1767766952966369,
+      "case": "one_site_distinct_axes",
+      "relative_identity_residuals": {
+        "classified_support_profile": 2.227884750318713e-16,
+        "complement_flat_marginal": 0.0,
+        "complement_projector": 1.2138106967135507e-16,
+        "complement_reflection": 2.2208900940601215e-16,
+        "purified_head_isometry": 0.0,
+        "root_marginal": 0.0,
+        "root_square": 6.069053483567753e-17,
+        "zero_Pauli_gap": 0.0
+      },
+      "squared_support_deficit": 0.01999999999999913,
+      "support_profile": [
+        0.7000000000000002,
+        0.7000000000000002,
+        1.0,
+        1.0000000000000002
+      ],
+      "support_sum": 3.4000000000000004
+    },
+    {
+      "Choi_partial_transpose_minimum": -0.25,
+      "case": "flagged_disjoint_axes",
+      "relative_identity_residuals": {
+        "classified_support_profile": 1.5969335903155991e-16,
+        "complement_flat_marginal": 0.0,
+        "complement_projector": 1.2138106967135507e-16,
+        "complement_reflection": 2.2208900940601215e-16,
+        "purified_head_isometry": 0.0,
+        "root_marginal": 0.0,
+        "root_square": 6.069053483567753e-17,
+        "zero_Pauli_gap": 1.4802973661668753e-16
+      },
+      "squared_support_deficit": 0.09999999999999876,
+      "support_profile": [
+        0.8,
+        0.9000000000000001,
+        0.9000000000000001,
+        0.8000000000000003
+      ],
+      "support_sum": 3.4000000000000004
+    }
+  ]
+}

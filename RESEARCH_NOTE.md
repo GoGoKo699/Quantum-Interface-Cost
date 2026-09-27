@@ -1,6 +1,6 @@
 # Q1 — Delayed local readout through a bounded quantum interface
 
-**Version:** 0.43, 2026-09-27
+**Version:** 0.44, 2026-09-27
 
 **Project:** Falling / Q1  
 **Status:** Baseline proofs and seed reduction independently checked within the audit workspace. The full product-diagonal profile rate has a constructive optimizer and evaluates an established steering entanglement measure. It exceeds the inspected affine weighted-CHSH formation bounds, but the nonlinear-source follow-up now derives its full mixed-state support and joint-resource convex-hull characterization from prior inequalities. The candidate contribution is the explicit evaluation, equality analysis and operational consequences. The unrestricted rate equals regularized formation of a local-query assemblage, whose distinction from full tensor-product assemblages is explicit. The complete two-qubit entropy inequality, general common-accuracy rate evaluation and publication novelty remain unresolved. This is a research dossier, not external peer review or a claim of a new framework.
@@ -195,6 +195,36 @@ endpoint shows why the squared support deficit alone cannot force that
 property. The three complete remaining signatures, unrestricted converse
 and publication originality remain open.
 
+The [one-block last-query theorem](docs/audits/HIGH_SECOND_MODE_ONE_BLOCK.md)
+now proves the strict converse throughout `m>=2+sqrt(2)` when the last
+pair has at most one active two-dimensional Jordan block. The actual
+channel moment controls its single positive Bell projector, and a
+monotone scalar comparison has a positive rational endpoint margin.
+Consequently any violating tuple in `(22)^2(11)` or `(22)^2(12)`, with
+the one-block query placed last, must satisfy `m<2+sqrt(2)`. Its rank-one
+resolvent is therefore defined, although the required inequality remains
+unproved in general.
+
+The [conserved-symmetry theorem](docs/audits/CONSERVED_SYMMETRY_CONVERSE.md)
+proves `||H||<=5` when the first two readout pairs lie in two specified
+three-dimensional real Pauli spaces, allowing arbitrary contraction
+coefficients and an arbitrary complex third pair. Two anticommuting
+conserved symmetries force even spectral multiplicities. Reality,
+chirality and the Choi rank then force a rectangular-POVM channel for
+each isolated positive rank-two eigenspace.
+This exact channel structure and the stronger repeated-eigenvalue moment
+bound give the norm estimate through an elementary quadratic comparison.
+The constant five is not claimed sharp.
+
+The [zero-Pauli-gap theorem](docs/audits/ZERO_PAULI_GAP_DICHOTOMY.md)
+supplies a separate exact support/channel dichotomy. With only the identity
+and four original-query Pauli components in the complementary square root, positivity,
+rank and the flat head marginal force a flat complementary spectrum.
+A complete coefficient classification gives either an entanglement-breaking
+channel or total support at most `2+sqrt(2)`. The latter has both single-site
+and flagged two-site exceptions. No stability estimate for nonzero gap
+is inferred, and none of these results closes a full remaining signature.
+
 ## 1. Origin, scope, and claim ledger
 
 Page 24 of the user-supplied *【马兆】坠落.pdf* describes a fictional progression from a quantum solver to a quantum-resident workflow because repeated classical–quantum interfaces become costly. The present model is our proposed scientific extraction; its assumptions and conclusions are not claims made by the fiction.
@@ -227,6 +257,9 @@ The general compression problem below is already present in the dimensional meas
 | Every equal-weight two-mode support attainer obeys norm(H0+h3)<=(4+2sqrt(5))/sqrt(3) for arbitrary third pairs | Derived and independently checked from equality rigidity and the pure-memory resolvent. This upper bound is below the retention benchmark; attainment is not asserted. The unrestricted converse remains open. |
 | An explicit global neighborhood of the maximal two-mode support obeys the converse | Derived and independently checked: deficit at most 2^-32 gives norm(H0+h3)<16/3 for every third pair; within m>=2+sqrt(2), deficit at most 2^-24 suffices. Conservative radii, not the whole remaining region. |
 | High-m heads within full diamond distance 2/5 of an entanglement-breaking channel obey the converse | Derived and independently checked by a centered resolvent estimate and two quadratic comparisons. The complete positive-quadrant nonclassical-head example family is covered, including NPT channels. |
+| A one-block last pair obeys the strict converse throughout m>=2+sqrt(2) | Derived and independently checked from the actual channel moment, Bell compression and a rational endpoint certificate. Possible violations in the two corresponding remaining signatures must have m below that threshold. |
+| Four readouts in the stated conserved-symmetry Pauli spaces permit any third pair with norm(H)<=5 | Derived and independently checked; all contraction coefficient balls are included. The actual isolated positive head is a rectangular-POVM channel. The bound five is not asserted optimal. |
+| Zero Pauli-conjugation gap implies an EB head or support at most 2+sqrt(2) | Derived and independently checked by exact flattening and complete coefficient classification. This requires zero gap; it is not a global approximation theorem for arbitrary heads. |
 | Three partial-SWAP Bell-subspace projectors sum to at most 5I/2 | Derived and independently checked, with exact equality classification; gives the retention converse for equal spectra within each site's two Jordan blocks. Arbitrary independent U(4) embeddings remain open. |
 | All small subsystem perturbations around the known Bell-subspace attainers lower the sum norm | Derived and independently checked in all eighteen transverse directions; exact negative Hessian and an explicit radius 2^-10. A local converse, not global optimality or global rigidity. |
 | Exact worst weighted last-site resolvent in every even memory dimension, including all binary POVMs | Derived and independently checked: extreme spectral pairing and a convex-quartic/cubic-root decision eliminate the added decoder. Exact for a stated spectral upper bound, not a solution of the full Hamiltonian problem. |
