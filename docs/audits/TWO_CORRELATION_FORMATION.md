@@ -33,14 +33,14 @@ cap does not. No qutrit lower bound for the original interface follows.
 
 Let B be a trusted qubit with fixed Pauli X,Z. For d>=1 define
 
-$$
+```math
 E_d(x,z)=\min_{\substack{\omega_{AB}\text{ on }\mathbb C^d\otimes\mathbb C^2\\
  -I\le A_0,A_1\le I\\
- \operatorname{Tr}(\omega A_0\otimes X)=x\\
- \operatorname{Tr}(\omega A_1\otimes Z)=z}}
+ \mathrm{Tr}(\omega A_0\otimes X)=x\\
+ \mathrm{Tr}(\omega A_1\otimes Z)=z}}
  E_F(\omega_{AB}),\qquad 0\le x,z\le1.
-\tag{1}
-$$
+\qquad\text{(1)}
+```
 
 The observables represent arbitrary binary POVMs. They are fixed for the
 chosen realization; any locally accessible preparation label controlling
@@ -50,11 +50,11 @@ assumption on omega_B or the unreported correlations is imposed.
 
 Use the existing notation
 
-$$
+```math
 f(v)=h_2\!\left(\frac{1-\sqrt{1-v^2}}2\right),\qquad
 \gamma(x,z)=f\!\left(\sqrt{[x^2+z^2-1]_+}\right).
-\tag{2}
-$$
+\qquad\text{(2)}
+```
 
 Here C is the evaluated convex profile in
 [PRODUCT_DIAGONAL_PROFILE_RATE.md](../PRODUCT_DIAGONAL_PROFILE_RATE.md),
@@ -63,26 +63,26 @@ with cost f(v).
 
 **Theorem.**
 
-$$
+```math
 E_2(x,z)=\gamma(x,z),\qquad
 E_d(x,z)=C(x,z)\quad(d\ge3).
-\tag{3}
-$$
+\qquad\text{(3)}
+```
 
 One fixed qutrit pair attains the latter minimum throughout the square:
 
-$$
+```math
 A_0=1\oplus Z_A,\qquad A_1=1\oplus X_A.
-\tag{4}
-$$
+\qquad\text{(4)}
+```
 
 Moreover
 
-$$
+```math
 E_2>E_3\quad\Longleftrightarrow\quad
 x^2+z^2>1\ \text{and}\ \max(x,z)<1.
-\tag{5}
-$$
+\qquad\text{(5)}
+```
 
 The least A dimension attaining the unrestricted minimum C is exactly
 one on the compatibility disk, two on the nonclassical exact-axis edges,
@@ -101,10 +101,10 @@ For any realization in (1), choose the auxiliary trusted observables
 `B_+=cos(theta)X+sin(theta)Z` and
 `B_-=cos(theta)X-sin(theta)Z`. Its normalized CHSH expectation is
 
-$$
+```math
 \tfrac12\langle A_0(B_++B_-)+A_1(B_+-B_-)\rangle
 =\cos\theta\,x+\sin\theta\,z.
-$$
+```
 
 Maximizing theta gives sqrt(x^2+z^2). The prior theorem consequently
 forces `c>=sqrt([x^2+z^2-1]_+)`, proving E_2>=gamma.
@@ -118,9 +118,9 @@ measured data assumed in (1).
 
 For attainment outside the disk, purify the qubit marginal with Bloch vector
 
-$$
+```math
 r=(\sqrt{1-z^2},0,\sqrt{1-x^2}).
-$$
+```
 
 Its entropy is gamma. On its qubit purification, the separate optimal
 binary contractions attain correlations
@@ -139,13 +139,13 @@ x_k,z_k, its entanglement is at least gamma(|x_k|,|z_k|), by the preceding
 bound on its Schmidt support; compressed observables remain contractions.
 Since C<=gamma, and C is convex and coordinatewise nondecreasing,
 
-$$
+```math
 \sum_k p_k S(\omega_B^k)
 \ge\sum_k p_k C(|x_k|,|z_k|)
 \ge C\!\left(\sum_k p_k|x_k|,\sum_k p_k|z_k|\right)
 \ge C(x,z).
-\tag{6}
-$$
+\qquad\text{(6)}
+```
 
 Infimize over pure decompositions. This proves E_d>=C for every d and
 also handles negative component correlations. No Jordan decomposition,
@@ -155,10 +155,10 @@ For the upper bound use the evaluated two-atom optimizer of C. Every
 nonclassical profile can be written as a mixture of one compatible
 boundary point (u,s), u^2+s^2=1, and one exact-axis atom, say (1,v), with
 
-$$
+```math
 (x,z)=(1-p)(u,s)+p(1,v),\qquad C(x,z)=p f(v).
-\tag{7}
-$$
+\qquad\text{(7)}
+```
 
 In the central region take v=1 and p=w(x,z); the supporting point is
 `((x-p)/(1-p),(z-p)/(1-p))`. In the strict-saving region the unique
@@ -168,21 +168,21 @@ corner use p=1; use the exchanged construction if z>x.
 Embed a classical state |c> in the one-dimensional block of (4), and choose
 Bob's pure |beta> with Bloch vector (u,0,s). On the other block put
 
-$$
+```math
 |\psi_v^X\rangle
 =\sqrt\lambda\,|0\rangle_A|+\rangle_{X,B}
  +\sqrt{1-\lambda}\,|1\rangle_A|-\rangle_{X,B},
 \qquad \lambda=(1+\sqrt{1-v^2})/2.
-$$
+```
 
 It has entropy f(v) and correlations (1,v) for (4). Thus the qutrit-qubit
 state
 
-$$
+```math
 \omega=(1-p)|c\rangle\langle c|\otimes|\beta\rangle\langle\beta|
        +p|\psi_v^X\rangle\langle\psi_v^X|
-\tag{8}
-$$
+\qquad\text{(8)}
+```
 
 has the desired correlations. Its displayed decomposition gives E_F<=p f(v),
 and (6) gives the reverse bound. Equivalently, measuring A's orthogonal
@@ -204,9 +204,9 @@ Along any fixed ray outside the disk, the raw entropy
 `g(r)=h_2((1-sqrt(2-r^2))/2)`, 1<r<sqrt(2), is strictly concave.
 For completeness, putting y=sqrt(2-r^2) gives the sign expression
 
-$$
-g''(r)=\frac{2\operatorname{atanh}y-y(2-y^2)/(1-y^2)}{y^3\ln2}<0.
-$$
+```math
+g''(r)=\frac{2\mathrm{atanh}y-y(2-y^2)/(1-y^2)}{y^3\ln2}<0.
+```
 
 The numerator vanishes at y=0 and has derivative
 `-y^2(1+y^2)/(1-y^2)^2<0`. Hence a point with both coordinates below one
@@ -224,10 +224,10 @@ readouts on both sides and those same two correlations. Bilateral Pauli
 twirling preserves the data and cannot increase E_F; Wootters' formula
 then gives
 
-$$
+```math
 G(x,z)=f([x+z-1]_+).
-\tag{9}
-$$
+\qquad\text{(9)}
+```
 
 This is the same evaluated function as the fixed-output-channel comparison
 in [the earlier audit](TENSOR_FORMATION_AND_CHANNEL_COMPARISON.md), Section 5.
@@ -245,9 +245,9 @@ The whole ordering is C<=gamma<=G. If x+z<=1 all three vanish. If
 x+z>1 but x^2+z^2<=1, then C=gamma=0<G. Outside the disk with both
 coordinates below one,
 
-$$
+```math
 C<\gamma<G,
-$$
+```
 
 where the second inequality follows from
 `(x+z-1)^2-(x^2+z^2-1)=2(1-x)(1-z)>0` and strict increase of f.
@@ -259,11 +259,11 @@ These complete equality sets make the prior-resource comparisons explicit.
 The complete probability table obtained from the noisy-Pauli assemblage
 and Bob's X/Z measurements is
 
-$$
+```math
 P(a,b\mid i,j)=\frac{1+ab\,\delta_{ij}c_i}{4},
 \quad c_X=x,\quad c_Z=z.
-\tag{10}
-$$
+\qquad\text{(10)}
+```
 
 It is Bell local throughout the entire square. Let shared independent
 uniform signs U,V determine Alice's outputs for X,Z. Bob outputs U N_X
@@ -315,11 +315,11 @@ originality verdict.
 
 The original unresolved all-state gate remains
 
-$$
+```math
 \sum_{i,b}\|\sqrt\rho P_{i,b}\sqrt\rho\|_1
 \le\sqrt2\,n+(2-\sqrt2)S(\rho).
-\tag{11}
-$$
+\qquad\text{(11)}
+```
 
 Neither (3) nor a sum of single-site formation costs proves (11): the
 same retained system serves all local queries, and the required sharp

@@ -56,10 +56,10 @@ Even a complete n=2 entropy proof would not establish the all-n conjecture.
 
 For any Hermitian block matrix, including singular and complex blocks,
 
-\[
+```math
 \left\|\begin{pmatrix}A&B\\B^\dagger&D\end{pmatrix}\right\|_1
-\leq \operatorname{Tr}\sqrt{A^2+4BB^\dagger}+\|D\|_1. \tag{1}
-\]
+\leq \mathrm{Tr}\sqrt{A^2+4BB^\dagger}+\|D\|_1. \qquad\text{(1)}
+```
 
 Indeed set `N=[[A/2,B],[0,0]]`. The matrix on the left is
 `N+N^dagger+diag(0,D)`. The triangle inequality gives
@@ -74,10 +74,10 @@ For one query define maps in the P,Q support bases,
 The query matrix is `[[q L_U,sqrt(q epsilon) X_U],
 [sqrt(q epsilon) X_U^dagger,epsilon T_U]]`. Thus
 
-\[
+```math
 g(\rho)\leq\epsilon g(\tau)+q\sum_U
-\operatorname{Tr}\sqrt{L_U^2+(4\epsilon/q)X_UX_U^\dagger}. \tag{2}
-\]
+\mathrm{Tr}\sqrt{L_U^2+(4\epsilon/q)X_UX_U^\dagger}. \qquad\text{(2)}
+```
 
 At zero tail, the sum is exactly `g(sigma)`. No pinching of sigma, inverse
 compression, or replacement of its eigenvalues by 1/2 occurs. In particular,
@@ -93,9 +93,9 @@ Suppose a bound of the form
 
 is available. The exact orthogonal-mixture entropy identity gives
 
-\[
-\Delta(\rho)\geq q\delta_m+c h_2(\epsilon)-K(\epsilon). \tag{3}
-\]
+```math
+\Delta(\rho)\geq q\delta_m+c h_2(\epsilon)-K(\epsilon). \qquad\text{(3)}
+```
 
 This keeps the tail entropy and score paired. Using `g(tau)<=2+sqrt(2)`
 while independently replacing `S(tau)` by zero loses `c epsilon` of slack.
@@ -107,13 +107,13 @@ the tail's actual score.
 
 The following finite support-function inequality would suffice:
 
-\[
+```math
 \boxed{\mathcal S_t(\sigma,\tau):=
 \sum_U\left\|\begin{pmatrix}
 L_U&(t/2)X_U\\(t/2)X_U^\dagger&0
 \end{pmatrix}\right\|_1
-\leq G(m)+\frac38\bigl(1-\sqrt{1-4t^2}\bigr).} \tag{4}
-\]
+\leq G(m)+\frac38\bigl(1-\sqrt{1-4t^2}\bigr).} \qquad\text{(4)}
+```
 
 **Equation (4) is unproved.** Its sufficient domain is
 `0<=t<=1/sqrt(7)`, `1/5<=m<=1/2`, arbitrary orthogonal rank-two supports
@@ -143,9 +143,9 @@ The logarithmic bounds use `29^7>2^34`, `ln(29/28)>1/29` and
 `exp(7/10)>2`. The bound on c uses `sqrt(2)<99/70`.
 Consequently (4) would prove the strict margin
 
-\[
-\Delta(\rho)>q\delta_m+\frac{3}{220}\epsilon. \tag{5}
-\]
+```math
+\Delta(\rho)>q\delta_m+\frac{3}{220}\epsilon. \qquad\text{(5)}
+```
 
 Together with the existing spectral gates, this would settle n=2. This
 conditional conclusion is not entered as a proved entropy theorem.

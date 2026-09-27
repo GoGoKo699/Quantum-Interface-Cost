@@ -21,29 +21,29 @@ Let `Theta=(Y tensor Y tensor Y)K`, where K is computational complex
 conjugation. It has `Theta^2=-I` and negates every local Pauli under
 conjugation. For a normalized density matrix rho define
 
-$$
+```math
 f_U(\rho)=\|\sqrt\rho\,U\sqrt\rho\|_1
 =F_{\rm root}(\rho,U\rho U),\qquad
 \mathcal F(\rho)=\sum_{i=1}^3\sum_{U=X_i,Z_i}f_U(\rho)^2.
-$$
+```
 
 **Theorem.** If `rank(rho)<=4` and `Theta rho Theta^-1=rho`, then
 
-$$
-\boxed{\mathcal F(\rho)\le5-4\operatorname{Tr}\rho^2\le4.}
-\tag{1}
-$$
+```math
+\boxed{\mathcal F(\rho)\le5-4\mathrm{Tr}\rho^2\le4.}
+\qquad\text{(1)}
+```
 
 Every purity in `[1/4,1/2]` is possible and has an attaining state.
 The six individual scores need not be equal in that construction.
 Cauchy–Schwarz consequently gives the interface seed exclusion
 
-$$
+```math
 g(\rho)=\sum_U f_U(\rho)
-\le\sqrt{6(5-4\operatorname{Tr}\rho^2)}
+\le\sqrt{6(5-4\mathrm{Tr}\rho^2)}
 \le2\sqrt6<4+\sqrt2.
-\tag{2}
-$$
+\qquad\text{(2)}
+```
 
 Thus an unrestricted three-input, two-qubit-memory advantage would
 require a seed that breaks this symmetry. This is a necessary condition,
@@ -56,11 +56,11 @@ Hermitian operator. Every eigenspace of rho therefore has even dimension.
 Choose an invariant rank-four projector P containing its support. There
 is an invariant Hermitian S such that
 
-$$
+```math
 \rho_r=\frac{P+rS}{4},\quad -1\le r\le1,\qquad
-S^2=P,\quad PS=SP=S,\quad\operatorname{Tr}S=0.
-\tag{3}
-$$
+S^2=P,\quad PS=SP=S,\quad\mathrm{Tr}S=0.
+\qquad\text{(3)}
+```
 
 The eigenvalues on P are `(1+r)/4` twice and `(1-r)/4` twice. Rank-two
 states are the endpoints, with an additional invariant pair completing P.
@@ -71,17 +71,17 @@ qubits this means that their Pauli expansions contain only weight-two
 words: invariance removes odd weights and tracelessness removes the
 identity. Write
 
-$$
+```math
 R=\sum_w r_w W_w,\qquad S=\sum_w s_w W_w,
-\qquad \operatorname{Tr}(W_vW_w)=8\delta_{vw}.
-$$
+\qquad \mathrm{Tr}(W_vW_w)=8\delta_{vw}.
+```
 
 Let `e_w` count Y factors in the weight-two word w, and define
 
-$$
+```math
 u=\sum_w e_w r_w^2,\qquad v=\sum_w e_w s_w^2.
-\tag{4}
-$$
+\qquad\text{(4)}
+```
 
 These are nonnegative scalar quantities. No restriction to real matrices
 or to Pauli words without Y is made.
@@ -93,21 +93,21 @@ restricted antiunitary, so its eigenvalues are `alpha,beta,-beta,-alpha`,
 with `alpha,beta>=0`. The same pairing holds for
 `C_U(r)=sqrt(rho_r) U sqrt(rho_r)` on P. Such a Hermitian matrix satisfies
 
-$$
-\|C\|_1^2=2\operatorname{Tr}C^2+8\sqrt{\det C}.
-\tag{5}
-$$
+```math
+\|C\|_1^2=2\mathrm{Tr}C^2+8\sqrt{\det C}.
+\qquad\text{(5)}
+```
 
 All determinants here are on P. Since `sqrt(det rho_r)=(1-r^2)/16`,
 
-$$
+```math
 f_U(\rho_r)^2=
-\frac{\operatorname{Tr}K_U^2
-+2r\operatorname{Tr}(S K_U^2)
-+r^2\operatorname{Tr}(S K_U S K_U)}8
+\frac{\mathrm{Tr}K_U^2
++2r\mathrm{Tr}(S K_U^2)
++r^2\mathrm{Tr}(S K_U S K_U)}8
 +\frac{1-r^2}{2}\sqrt{\det K_U}.
-\tag{6}
-$$
+\qquad\text{(6)}
+```
 
 The identity includes singular compressions and the rank-two endpoints
 by continuity. Hence `mathcal F(r)=F_0+b r+c r^2` exactly.
@@ -116,47 +116,47 @@ A weight-two word with `e_w` Y factors anticommutes with `2+e_w` of the
 six queried Paulis. Define `V_R=sum_w e_w r_w W_w` and similarly V_S.
 Then
 
-$$
+```math
 \sum_U U R U=2R-2V_R,\qquad
 \sum_U U S U=2S-2V_S.
-$$
+```
 
 Compression and Pauli orthogonality give
 
-$$
+```math
 \sum_U K_U^2=4P-PV_RP,\qquad
-\sum_U\operatorname{Tr}K_U^2=16-4u,
-$$
+\sum_U\mathrm{Tr}K_U^2=16-4u,
+```
 
-$$
-\sum_U\operatorname{Tr}(S K_U S K_U)=8-16v.
-$$
+```math
+\sum_U\mathrm{Tr}(S K_U S K_U)=8-16v.
+```
 
 Writing `d=sum_U sqrt(det K_U)`, the coefficients in (6) are therefore
 
-$$
+```math
 F_0=2-u/2+d/2,\qquad b=-2\sum_w e_w r_w s_w,
 \qquad c=3-F_0-u/2-2v.
-\tag{7}
-$$
+\qquad\text{(7)}
+```
 
 At the flat point, four-dimensional Hilbert–Schmidt Cauchy–Schwarz gives
 
-$$
+```math
 F_0=\sum_U\frac{\|K_U\|_1^2}{16}
-\le\frac14\sum_U\operatorname{Tr}K_U^2=4-u.
-$$
+\le\frac14\sum_U\mathrm{Tr}K_U^2=4-u.
+```
 
 Consequently `delta=4-F_0>=u`. Substitution into (7) gives the exact
 certificate
 
-$$
+```math
 \boxed{
 4-r^2-\mathcal F(\rho_r)
 =\left(\delta-\frac u2\right)(1-r^2)
 +2\sum_w e_w\left(r s_w+\frac{r_w}{2}\right)^2\ge0.}
-\tag{8}
-$$
+\qquad\text{(8)}
+```
 
 This proves (1). It neither replaces a nonuniform spectrum by a flat one
 nor invokes the conjectured entropy bound. The flat estimate controls a
@@ -166,24 +166,24 @@ coefficient of the full nonuniform polynomial.
 
 Take the independent commuting Paulis
 
-$$
+```math
 A=X_1Z_2,\qquad B=X_1X_3,\qquad AB=Z_2X_3,
-$$
+```
 
 and put `P=(I+A)/2`, `S=(B+AB)/2`. Then `S^2=P`, `PS=S`, and
 
-$$
+```math
 \rho_r=\frac{I+A+r(B+AB)}8
-\tag{9}
-$$
+\qquad\text{(9)}
+```
 
 is an invariant density matrix with the spectrum in Section 2. Its scores
 are
 
-$$
+```math
 f_{X_1}=f_{Z_2}=f_{X_3}=1,\qquad
 f_{Z_1}=f_{X_2}=0,\qquad f_{Z_3}=\sqrt{1-r^2}.
-$$
+```
 
 The zero scores follow from anticommutation with A. The three unit scores
 follow from commuting with rho. Finally Z_3 preserves P and exchanges
@@ -195,20 +195,20 @@ every permitted purity.
 Suppose six four-dimensional reflection readouts share one antiunitary
 `Theta_Q=U_Q K` satisfying
 
-$$
+```math
 \Theta_Q^2=-I,\qquad \Theta_Q B_U\Theta_Q^{-1}=-B_U.
-\tag{10}
-$$
+\qquad\text{(10)}
+```
 
 They are automatically balanced: each has two positive and two negative
 eigenvalues. No pairwise commute/anticommute hypothesis is imposed.
 For every real weight vector w,
 
-$$
+```math
 \boxed{\left\|\sum_U w_U U\otimes B_U\right\|_\infty
 \le2\left(\sum_Uw_U^2\right)^{1/2}.}
-\tag{11}
-$$
+\qquad\text{(11)}
+```
 
 **Proof.** Write `Theta=U_R K`. The joint antiunitary
 `T=(U_R tensor U_Q)K` has square +I and commutes with the Hamiltonian H
@@ -217,10 +217,10 @@ every T-invariant eigenspace has such a vector. Its reference reduction
 rho is invariant under Theta and has rank at most four. Schmidt
 decomposition and trace-norm duality imply
 
-$$
+```math
 |\lambda|\le\sum_U|w_U|f_U(\rho)
 \le\|w\|_2\sqrt{\mathcal F(\rho)}\le2\|w\|_2.
-$$
+```
 
 This bounds the operator norm. The actual protocol seed need not possess
 the symmetry: the argument chooses a symmetry-fixed extremal eigenvector
@@ -228,9 +228,9 @@ to bound H on every vector.
 
 The exact equal-weight maximum for (10) is `2sqrt(6)`. For attainment set
 
-$$
+```math
 R=\frac{X_1Z_2+X_2Z_3+X_3Z_1}{\sqrt3},\qquad P=(I+R)/2.
-$$
+```
 
 Its three Pauli terms anticommute, and each query anticommutes with
 exactly one of them. Therefore `(PUP)^2=(2/3)P` and `Tr(PUP)=0`.
@@ -245,18 +245,18 @@ and finite classical mixtures. Their common contrast is at most
 attains it explicitly. Let V be an isometry from C^4 onto ran P and
 `L=V^dagger/2`. For all 64 three-qubit Pauli words W, set
 
-$$
+```math
 K_W=LW/\sqrt8,\qquad
-D_{W,U}=\chi_W(U)\operatorname{sign}(LUL^\dagger),
+D_{W,U}=\chi_W(U)\mathrm{sign}(LUL^\dagger),
 \qquad WUW^\dagger=\chi_W(U)U.
-$$
+```
 
 Pauli averaging and `(PUP)^2=(2/3)P` give
 
-$$
+```math
 \sum_WK_W^\dagger K_W=I,\qquad
 \sum_WK_W^\dagger D_{W,U}K_W=\sqrt{2/3}\,U.
-$$
+```
 
 Each branch readout remains odd under the inherited antiunitary on C^4.
 The construction accepts every branch with the same quantum dimension
@@ -271,10 +271,10 @@ and uniform input/query errors retain their original meanings.
 Balanced spectrum does not imply a common antiunitary. For example, the
 six balanced ququart reflections
 
-$$
+```math
 X\otimes I,\quad Z\otimes I,\quad Y\otimes I,\quad
 I\otimes X,\quad I\otimes Z,\quad X\otimes X
-$$
+```
 
 cannot all be odd under any common antiunitary. Negating `X tensor I`
 and `I tensor X` preserves their product `X tensor X`, a contradiction.

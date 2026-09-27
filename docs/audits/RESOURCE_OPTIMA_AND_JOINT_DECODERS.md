@@ -22,17 +22,17 @@ with x,z in [0,1]. No marginals or cross-correlations are imposed.
 Use ordinary negativity, not logarithmic negativity or convex-roof
 concurrence:
 
-$$
+```math
 N(\omega)=\frac{\|\omega^{T_B}\|_1-1}{2},\qquad
 w(x,z)=\left[x+z-1-\sqrt{2(1-x)(1-z)}\right]_+.
-$$
+```
 
 **Theorem 1.** Over all such realizations,
 
-$$
+```math
 \boxed{\min N(\omega)=\frac{w(x,z)}2.}
-\tag{1}
-$$
+\qquad\text{(1)}
+```
 
 Dimension three suffices throughout. This supplies a full two-parameter
 ordinary-negativity comparison. The concurrence benchmark w and attaining
@@ -44,19 +44,19 @@ the weighted proof and the optimizer consequence below are supplied here.
 
 Fix a,b>=0 and put R=sqrt(a^2+b^2), T=a+b. We prove
 
-$$
+```math
 ax+bz\le R+2(T-R)N(\omega).
-\tag{2}
-$$
+\qquad\text{(2)}
+```
 
 For each contraction use the reflection dilation on the same doubled
 Alice space,
 
-$$
+```math
 \widetilde A_j=
 \begin{pmatrix}A_j&\sqrt{I-A_j^2}\\
 \sqrt{I-A_j^2}&-A_j\end{pmatrix}.
-$$
+```
 
 Embed the state in the first summand. This local isometry preserves both
 correlations, N, and E_F. Jordan's lemma for two reflections decomposes
@@ -73,17 +73,17 @@ On a one-dimensional block the weighted score is at most R and N=0.
 On an irreducible two-dimensional block both reflections are traceless
 Pauli directions. The weighted Hamiltonian
 
-$$
+```math
 H=aA_0\otimes X+bA_1\otimes Z
-$$
+```
 
 has a real rank-at-most-two correlation matrix. Local unitary changes of
 axes put it in the form `H=s_1 Z tensor Z+s_2 X tensor X`, where
 
-$$
+```math
 s_1\ge s_2\ge0,\qquad s_1^2+s_2^2=R^2,\qquad s_1+s_2\le T.
-\tag{3}
-$$
+\qquad\text{(3)}
+```
 
 The first identity uses the orthogonality of the trusted X,Z columns;
 the last inequality is the nuclear-norm triangle inequality for their
@@ -93,21 +93,21 @@ coefficients to be positive using physical local rotations.
 Let Pi be the Bell projector at the maximal eigenvalue s_1+s_2. The
 remaining eigenvalues are at most s_1-s_2, hence
 
-$$
+```math
 H\preceq(s_1-s_2)I+2s_2\Pi.
-$$
+```
 
 For any two-qubit state tau, partial transposition and trace-norm duality
 give `Tr(Pi tau)<=||Pi^{T_B}||_infinity ||tau^{T_B}||_1=1/2+N(tau)`.
 Writing v=2N(tau) in [0,1], we obtain
 
-$$
-\operatorname{Tr}(H\tau)
+```math
+\mathrm{Tr}(H\tau)
 \le s_1+v s_2
 =(1-v)s_1+v(s_1+s_2)
 \le(1-v)R+vT.
-\tag{4}
-$$
+\qquad\text{(4)}
+```
 
 Average (4) and the one-dimensional bounds over the blocks. Since
 N(omega')<=N(omega) and T>=R, this proves (2), including arbitrary binary
@@ -120,9 +120,9 @@ Outside the disk x^2+z^2<=1, excluding the Bell corner, let q=w and set
 `u=(x-q)/(1-q)`, `s=(z-q)/(1-q)`. Then u,s>=0 and u^2+s^2=1.
 Choose a=u,b=s in (2). Since
 
-$$
+```math
 ux+sz=1+q(u+s-1),
-$$
+```
 
 it follows that N>=q/2 whenever u+s>1. This covers the noisy interior.
 On x=1, taking a/b to infinity in (2) gives N>=z/2; interchange the
@@ -145,11 +145,11 @@ as established in [the two-correlation audit](TWO_CORRELATION_FORMATION.md).
 
 **Theorem 2.** If x^2+z^2>1 and max(x,z)<1, then
 
-$$
+```math
 \boxed{\min_{\substack{\omega,A_0,A_1\text{ realize }(x,z)\\
 N(\omega)=w(x,z)/2}} E_F(\omega)=w(x,z).}
-\tag{5}
-$$
+\qquad\text{(5)}
+```
 
 Thus a minimum-negativity realization and a minimum-formation-entropy
 realization can coincide exactly when C=w in this interior. Throughout
@@ -189,10 +189,10 @@ that boundary. On the classical disk a product realization minimizes both.
 For 0<z<=x<1 outside the disk, the existing phase theorem now gives the
 explicit optimizer incompatibility region
 
-$$
+```math
 \frac{1-x}{1-z}<2\left(\frac1{\ln2}-1\right)^2.
-\tag{6}
-$$
+\qquad\text{(6)}
+```
 
 Exchange x,z on the other half of the square. For example, at
 (x,z)=(.99,.5), minimum negativity is .195, but every realization
@@ -253,10 +253,10 @@ the established two-qubit pure correlation singular values (1,v,v)
 and their entropy f(v); alignment attains a+bv at fixed v. Therefore
 the supplied specialization is exactly the existing dual
 
-$$
+```math
 M(a,b)=\max\{\sqrt{a^2+b^2},\ a+f^*(b)\}.
-\tag{7}
-$$
+\qquad\text{(7)}
+```
 
 The source theorem supplies the abstract tight transform. The block
 evaluation, the full phase/contact calculation, and the proof that this
@@ -290,13 +290,13 @@ route. It does not require a product eigenbasis or any restriction on
 collective encoding. Fix one context b in {XX,XZ,ZX,ZZ}. In its four-vector
 product basis write
 
-$$
+```math
 D_{s|b}=\frac{s_1P_{1,b_1}+s_2P_{2,b_2}}2
 =\Pi_s-\Pi_{-s},\qquad
 J_b(\rho)=\max_{\Gamma_s\succeq0,\ \sum_s\Gamma_s=\rho}
-\sum_s\operatorname{Tr}(D_{s|b}\Gamma_s).
-\tag{8}
-$$
+\sum_s\mathrm{Tr}(D_{s|b}\Gamma_s).
+\qquad\text{(8)}
+```
 
 Each Pi_s is a rank-one basis projector. This is the existing joint
 Hamming-score optimization; `j_2=(1/4)sum_b J_b` and `j_2<=f_2`.
@@ -310,10 +310,10 @@ the support of rho can be a general POVM.
 **Proof.** For rho>0 the primal in (8) is strictly feasible at
 Gamma_s=rho/4. Its dual has an attained minimum
 
-$$
-\min_Y\operatorname{Tr}(\rho Y),\qquad Y\succeq D_{s|b}\quad\forall s.
-\tag{9}
-$$
+```math
+\min_Y\mathrm{Tr}(\rho Y),\qquad Y\succeq D_{s|b}\quad\forall s.
+\qquad\text{(9)}
+```
 
 A scalar Y>I is strictly dual feasible. For an optimal Y, the paired
 constraints Y>=±D_{++} and Y>=±D_{+-} imply Y>=0. If Yv=0,
@@ -348,11 +348,11 @@ the caveat established in the preceding audit remains in force.
 The earlier one-effect formula groups the two equal-sign guesses into F.
 Theorem 3 shows that its maximum can always be attained at
 
-$$
+```math
 F=\sqrt\rho\,\Pi\sqrt\rho,\qquad \Pi^2=\Pi=\Pi^\dagger,
-\quad\operatorname{rank}\Pi=2.
-\tag{10}
-$$
+\quad\mathrm{rank}\Pi=2.
+\qquad\text{(10)}
+```
 
 Indeed take Pi to be the sum of the two equal-sign projectors in the
 steering representation of an optimal readout. Conversely every (10) is
@@ -377,11 +377,11 @@ statement has not been certified.
 
 The sharp original target remains
 
-$$
+```math
 g_n(\rho)=\sum_{i,b}\|\sqrt\rho P_{i,b}\sqrt\rho\|_1
 \le\sqrt2 n+(2-\sqrt2)S(\rho).
-\tag{11}
-$$
+\qquad\text{(11)}
+```
 
 Theorems 1–2 concern a single trusted site. Ordinary negativity supplies
 no established linear monogamy statement that turns (1) into (11).
@@ -401,9 +401,9 @@ proof or novelty claim. They are not new regression tests.
 One precise sufficient spectral statement remains open. For ordered
 eigenvalues l_1>=l_2>=l_3>=l_4 and `h(r,s)=sqrt(r^2+6rs+s^2)`, define
 
-$$
+```math
 B(l)=\sqrt2[h(l_1,l_2)+h(l_1,l_3)+h(l_2,l_4)+h(l_3,l_4)].
-$$
+```
 
 This is the exact maximum among product-bisector eigenbases with that
 spectrum: the cube edges exclude the opposite pairing (1,4),(2,3),

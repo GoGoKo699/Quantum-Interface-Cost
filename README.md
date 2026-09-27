@@ -12,6 +12,9 @@ common-accuracy costs through four inputs, a complete allocation rule for
 one memory qubit at every input size, and a collective advantage for a
 specified unequal-accuracy task.
 
+**Manuscript writing is on hold.** Potential collaborators are welcome
+to contact **Ruge Lin** at [gogoko699@gmail.com](mailto:gogoko699@gmail.com).
+
 ## Start with one review
 
 The teaching anchor is Gühne, Haapasalo, Kraft, Pellonpää and Uola,
@@ -29,13 +32,11 @@ required by the path; the additional arguments are explained here.
 | The proof | [Memory to proofs](docs/tutorial/PROOF_BRIDGE.md), then the [core argument](docs/CORE_ARGUMENT.md) | Connect an arbitrary encoder to the exact memory bounds |
 | The evidence | [Scientific scope](docs/SCIENTIFIC_SCOPE.md), [prior comparison](docs/CORE_PRIOR_COMPARISON.md) and [evidence freeze](docs/SCIENTIFIC_EVIDENCE_FREEZE.md) | Check assumptions, attribution and proof evidence |
 
-The [research index](docs/RESEARCH_INDEX.md) maps the wider archive.
-
 ## A first example: two inputs, one memory qubit
 
 With only classical memory, a single qubit can support later noisy X and
-Z measurements with contrasts $x,z$ precisely when $x^2+z^2\le1$.
-Equal contrasts therefore stop at $1/\sqrt2$.
+Z measurements with contrasts $`x,z`$ precisely when $`x^2+z^2\le1`$.
+Equal contrasts therefore stop at $`1/\sqrt2`$.
 
 For two inputs, keep one qubit chosen by a fair coin and measure the
 other with the compatible X/Z measurement. Record the choice and the
@@ -49,7 +50,7 @@ possible queries have contrast
 \end{aligned}
 ```
 
-Here $\varepsilon$ is the worst-case binary total-variation error, over
+Here $`\varepsilon`$ is the worst-case binary total-variation error, over
 all input states. The one-qubit theorem proves that an arbitrary collective
 encoder cannot improve this common accuracy.
 
@@ -68,9 +69,9 @@ disk, constructs this protocol and then treats unequal accuracies.
 
 | When | What happens |
 |---|---|
-| Before the query | An arbitrary collective encoder acts on one unknown $n$-qubit state, which may be entangled across its sites |
-| What survives | A quantum register of dimension at most $2^q$ in every branch, plus an unrestricted finite classical record |
-| After the query | A site $i$ and either $X_i$ or $Z_i$ are specified; a decoder using the memory and record returns one binary outcome |
+| Before the query | An arbitrary collective encoder acts on one unknown $`n`$-qubit state, which may be entangled across its sites |
+| What survives | A quantum register of dimension at most $`2^q`$ in every branch, plus an unrestricted finite classical record |
+| After the query | A site $`i`$ and either $`X_i`$ or $`Z_i`$ are specified; a decoder using the memory and record returns one binary outcome |
 
 The guarantee holds for every input and each allowed query. The quantum
 cap is branchwise, not an average. All branches are accepted; there are no
@@ -82,8 +83,8 @@ measurement statistics, not to reconstruct the whole input state.
 
 ### Exact finite common accuracy
 
-Retaining a random subset of $q$ sites and measuring the rest gives the
-unrestricted optimum for $1\le n\le4$ and integer $q=0,\ldots,n$:
+Retaining a random subset of $`q`$ sites and measuring the rest gives the
+unrestricted optimum for $`1\le n\le4`$ and integer $`q=0,\ldots,n`$:
 
 ```math
 \boxed{\eta_{\max}(n,q)
@@ -92,11 +93,11 @@ unrestricted optimum for $1\le n\le4$ and integer $q=0,\ldots,n$:
 
 The converse covers arbitrary collective encoders, spectra and binary
 decoders. These are all 14 integer-qubit budgets through four inputs.
-The same formula holds for $q=1$ at every $n$.
+The same formula holds for $`q=1`$ at every $`n`$.
 
 ### Complete one-qubit allocation
 
-For arbitrary local contrasts $(x_i,z_i)\in[0,1]^2$, the exact region
+For arbitrary local contrasts $`(x_i,z_i)\in[0,1]^2`$, the exact region
 with one memory qubit is
 
 ```math
@@ -109,7 +110,7 @@ where
 w(x,z)=\left[x+z-1-\sqrt{2(1-x)(1-z)}\right]_+.
 ```
 
-Here $[a]_+=\max(a,0)$. The tutorial explains $w$ as a required retention
+Here $`[a]_+=\max(a,0)`$. The tutorial explains $`w`$ as a required retention
 fraction. The converse applies established CHSH monogamy; every feasible
 profile has a random original-site-retention implementation.
 
@@ -130,7 +131,7 @@ accuracy.
 The [balanced-spectrum theorem and stability](docs/CORE_ARGUMENT.md#5-a-separate-all-size-structural-companion)
 are optional structural companions. The general common-accuracy optimum,
 sharp entropy bound and asymptotic rate remain open. The smallest remaining
-finite common-accuracy case is $(n,q)=(5,2)$.
+finite common-accuracy case is $`(n,q)=(5,2)`$.
 
 ## Proofs, sources and evidence
 
@@ -141,8 +142,7 @@ Proof reconstructions are internal; no external peer-review or exhaustive
 publication-priority certification is claimed.
 
 The [scientific evidence freeze](docs/SCIENTIFIC_EVIDENCE_FREEZE.md) pins
-the reviewed scientific inputs. The tutorial layer explains those results;
-it does not change the frozen proof files or historical reports.
+the reviewed proof inputs, checker sources and historical reports.
 
 ## Reproduce the exact certificate
 
@@ -150,12 +150,14 @@ The essential quarter-rank scalar certificate uses Python's standard
 library only. From the repository root, reproduce it into a temporary file:
 
 ```bash
-python tools/check_nonflat_quarter_rank_certificate.py --output /tmp/qic-nonflat-quarter-rank-certificate.json
+python -E tools/check_nonflat_quarter_rank_certificate.py --output /tmp/qic-nonflat-quarter-rank-certificate.json
 ```
 
 That certificate proves two polynomial positivity statements used by the
 analytical proof. The [reproducibility record](docs/REPRODUCIBILITY.md)
 explains its role and the different scope of the archive's matrix diagnostics.
+Use ordinary Python without `-O`; `-E` ignores environment settings that
+could disable the checker's assertions.
 The tutorial figure is an illustration; its optional generator
 [`tools/plot_learning_geometry.py`](tools/plot_learning_geometry.py)
 requires Matplotlib.

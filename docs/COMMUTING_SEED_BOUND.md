@@ -22,19 +22,19 @@ eigenbasis is outside this condition.
 
 Let L be a complex D-by-2^n matrix with Tr(L^dagger L)=1, and put
 
-$$
+```math
 \rho=L^\dagger L,\qquad
 g(L)=\sum_{i=1}^n
 \bigl(\|L X_iL^\dagger\|_1+\|L Z_iL^\dagger\|_1\bigr).
-$$
+```
 
 Logarithms and entropies are in bits. Suppose rho is diagonal in the product
 eigenbasis of the local bisectors B_i=(X_i+Z_i)/sqrt(2). Then
 
-$$
+```math
 \boxed{g(L)\le\sqrt2\,n+(2-\sqrt2)S(\rho).}
-\tag{1}
-$$
+\qquad\text{(1)}
+```
 
 The eigenvalues of rho may have arbitrary correlations and zeros. They do
 not have to factorize or be uniform. L itself need not be real, square,
@@ -42,10 +42,10 @@ positive, an isometry, or a tensor product.
 
 Since S(rho)<=log_2 rank(rho)<=log_2 D, this gives
 
-$$
+```math
 g(L)\le\sqrt2\,n+(2-\sqrt2)\log_2 D.
-\tag{2}
-$$
+\qquad\text{(2)}
+```
 
 Section 5 extends (1) to any fixed tensor product of one-qubit bases. It
 still makes no claim for a general collective seed.
@@ -54,45 +54,45 @@ still makes no claim for a general collective seed.
 
 For every 0<=lambda<=1,
 
-$$
+```math
 \sqrt{1+4\lambda(1-\lambda)}
 \le 1+(\sqrt2-1)h_2(\lambda).
-\tag{3}
-$$
+\qquad\text{(3)}
+```
 
 Equality holds for lambda=0, 1/2, 1. To prove this, symmetry lets us take
 lambda=(1-t)/2 with 0<=t<=1. Define
 
-$$
+```math
 F(t)=h_2\!\left(\frac{1-t}{2}\right)
 -\frac{\sqrt{2-t^2}-1}{\sqrt2-1}.
-$$
+```
 
 Both endpoint values are zero. For 0<t<1, its derivative has the sign of
 K-H(t), where
 
-$$
+```math
 K=\frac{\ln2}{\sqrt2-1},\qquad
-H(t)=\frac{\sqrt{2-t^2}}{t}\operatorname{atanh}t.
-$$
+H(t)=\frac{\sqrt{2-t^2}}{t}\mathrm{atanh}t.
+```
 
 In detail,
 
-$$
+```math
 F'(t)=\frac{t}{\ln2\sqrt{2-t^2}}\bigl(K-H(t)\bigr).
-$$
+```
 
 The derivative H'(t) is strictly positive exactly when
 
-$$
-J(t):=\frac{t(2-t^2)}{1-t^2}-2\operatorname{atanh}t>0.
-$$
+```math
+J(t):=\frac{t(2-t^2)}{1-t^2}-2\mathrm{atanh}t>0.
+```
 
 This follows from J(0)=0 and
 
-$$
+```math
 J'(t)=\frac{t^2+t^4}{(1-t^2)^2}>0.
-$$
+```
 
 Moreover, H(0+)=sqrt(2)<K and H(1-)=infinity. Thus F' changes sign
 exactly once, from positive to negative. With both endpoint values zero,
@@ -103,57 +103,57 @@ F is nonnegative and is strictly positive in the interior. This proves
 
 The polar decomposition L=V sqrt(rho), with V a partial isometry, gives
 
-$$
+```math
 \|L P L^\dagger\|_1
 =\|\sqrt\rho\,P\sqrt\rho\|_1
-\tag{4}
-$$
+\qquad\text{(4)}
+```
 
 for every Hermitian P: the operator on the right is supported on the initial
 space of V, where V preserves its nonzero singular values.
 
 Write
 
-$$
+```math
 \rho=\sum_{x\in\{0,1\}^n}p(x)|x_B\rangle\langle x_B|
-$$
+```
 
 in the product bisector basis. Fix i and all other coordinates y=x_-i.
 Let p=p(0,y), r=p(1,y), w=p+r. In this two-dimensional block the matrices
 sqrt(rho) X_i sqrt(rho) and sqrt(rho) Z_i sqrt(rho) have the forms
 
-$$
+```math
 \frac1{\sqrt2}
 \begin{pmatrix}p&\sqrt{pr}\\\sqrt{pr}&-r\end{pmatrix},
 \qquad
 \frac1{\sqrt2}
 \begin{pmatrix}p&-\sqrt{pr}\\-\sqrt{pr}&-r\end{pmatrix},
-$$
+```
 
 up to an irrelevant exchange of signs or axes. Their determinants are -pr
 and their traces are (p-r)/sqrt(2). Each trace norm is consequently
 
-$$
+```math
 \frac1{\sqrt2}\sqrt{(p+r)^2+4pr}.
-$$
+```
 
 The formula also holds when p or r vanishes. If w>0, set lambda_y=p/w;
 blocks with w=0 contribute zero. Additivity of trace norm on orthogonal
 blocks gives the exact site score
 
-$$
+```math
 g_i(L)=\sqrt2\sum_y w_y
 \sqrt{1+4\lambda_y(1-\lambda_y)}.
-\tag{5}
-$$
+\qquad\text{(5)}
+```
 
 Using (3) in each block, and interpreting p(x) as the probability law of
 classical variables U_1,...,U_n, gives
 
-$$
+```math
 g_i(L)\le\sqrt2+(2-\sqrt2)H(U_i\mid U_{-i}).
-\tag{6}
-$$
+\qquad\text{(6)}
+```
 
 These variables label a spectral decomposition used in the proof. This is
 not an assumption that the physical input specimen is classical.
@@ -162,38 +162,38 @@ not an assumption that the physical input specimen is classical.
 
 Conditioning reduces classical entropy, so, for the fixed ordering 1,...,n,
 
-$$
+```math
 \sum_{i=1}^n H(U_i\mid U_{-i})
 \le\sum_{i=1}^n H(U_i\mid U_1,...,U_{i-1})
 =H(U_1,...,U_n)=S(\rho).
-\tag{7}
-$$
+\qquad\text{(7)}
+```
 
 Combining (6) and (7) proves (1). Zero probabilities cause no problem;
 conditional terms on zero-probability events are assigned weight zero.
 
 For any integer 0<=q<=n, choose
 
-$$
+```math
 \rho=(I/2)^{\otimes q}\otimes
 \bigl(|0_B\rangle\langle0_B|\bigr)^{\otimes(n-q)}.
-$$
+```
 
 Its entropy is q, its rank is 2^q, and its site scores are 2 at each mixed
 factor and sqrt(2) at each pure bisector factor. Thus
 
-$$
+```math
 g(L)=2q+\sqrt2(n-q)
-$$
+```
 
 for a seed with this Gram matrix. The Pauli-orbit completion and symmetry
 equalization in the seed-reduction note turn it into a deterministic
 interface with uniform contrast
 
-$$
+```math
 \eta=\frac1{\sqrt2}
 +\frac qn\left(1-\frac1{\sqrt2}\right).
-$$
+```
 
 Hence the subset benchmark is optimal within the product-diagonal seed
 family when D=2^q. This conclusion is about that family, not unrestricted
@@ -210,14 +210,14 @@ coefficient in this basis: a=nu_i dot e_P. The off-diagonal coefficient of
 P has squared modulus 1-a^2. Thus the corresponding edge matrix has trace
 a(p-r), determinant -pr, and trace norm
 
-$$
+```math
 \sqrt{4pr+(p-r)^2a^2}.
-$$
+```
 
 Put a=nu_i dot e_X and b=nu_i dot e_Z. Since a^2+b^2<=1, concavity and
 monotonicity of the square root give
 
-$$
+```math
 \begin{aligned}
 &\sqrt{4pr+(p-r)^2a^2}
 +\sqrt{4pr+(p-r)^2b^2}\\
@@ -225,7 +225,7 @@ $$
 2\sqrt{4pr+\frac12(p-r)^2}
 =\sqrt2\sqrt{(p+r)^2+4pr}.
 \end{aligned}
-$$
+```
 
 Therefore (5) becomes an upper bound, and the rest of the proof applies
 unchanged. Arbitrary correlations among eigenvalues and arbitrary choices
@@ -240,29 +240,29 @@ matrices, or all Gram matrices, is proved here.
 For a pure vectorization of L on R_1...R_n Q, one might try to establish
 the single-site inequality
 
-$$
-\|\operatorname{Tr}_A(X_A\sigma_{AB})\|_1
-+\|\operatorname{Tr}_A(Z_A\sigma_{AB})\|_1
+```math
+\|\mathrm{Tr}_A(X_A\sigma_{AB})\|_1
++\|\mathrm{Tr}_A(Z_A\sigma_{AB})\|_1
 \stackrel{?}{\le}
 \sqrt2-(2-\sqrt2)H(A\mid B)_\sigma,
-\tag{8}
-$$
+\qquad\text{(8)}
+```
 
 then use entropy duality and strong subadditivity to sum it. Equation (8)
 is false even when A and B are qubits. Consider
 
-$$
+```math
 \sigma_{AB}=\frac45|\Phi^+\rangle\langle\Phi^+|
 +\frac15\frac{I_{AB}}4.
-$$
+```
 
 The two trace norms on the left are both 4/5. The state has eigenvalues
 17/20,1/20,1/20,1/20 and a maximally mixed B marginal, so
 
-$$
+```math
 H(A\mid B)=H(17/20,1/20,1/20,1/20)-1
 \simeq-0.15241532.
-$$
+```
 
 The right-hand side of (8) is approximately 1.50350, strictly below the
 left-hand side 1.6. This counterexample rules out that local

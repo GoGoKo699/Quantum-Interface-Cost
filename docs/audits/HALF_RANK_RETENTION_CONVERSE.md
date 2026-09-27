@@ -11,20 +11,20 @@ For two, three or four unknown input qubits, retaining all but one site
 is optimal at quantum memory dimension `2^(n-1)`, even with arbitrary
 collective encoding and unrestricted binary-POVM readouts:
 
-$$
+```math
 \boxed{\Gamma(n,2^{n-1})=2n-2+\sqrt2\qquad(n=2,3,4).}
-\tag{1}
-$$
+\qquad\text{(1)}
+```
 
 The [normalized-seed reduction](../COLLECTIVE_ENCODING_REDUCTION.md)
 therefore gives the exact common contrast and minimum uniform binary
 sampling error at these memory budgets:
 
-$$
+```math
 \boxed{\eta_{\max}(n,n-1)=\frac{2n-2+\sqrt2}{2n},\qquad
 \varepsilon_{\min}(n,n-1)=\frac{2-\sqrt2}{4n}.}
-\tag{2}
-$$
+\qquad\text{(2)}
+```
 
 In particular `Gamma(3,4)=4+sqrt(2)` and `Gamma(4,8)=6+sqrt(2)`.
 At three inputs, the contrast is `(4+sqrt(2))/6` and the error is
@@ -44,17 +44,17 @@ statistics. It does not evaluate the general asymptotic memory rate.
 Fix `n in {2,3,4}`, put `d=2^n` and `k=d/2`, and let rho be any
 n-qubit density matrix of rank at most k. Set `S=sqrt(rho)` and write
 
-$$
+```math
 \mathcal A=\{X_i,Z_i:1\le i\le n\},\qquad
-a_A=\operatorname{Tr}(SASA).
-$$
+a_A=\mathrm{Tr}(SASA).
+```
 
 We will prove the stronger bound
 
-$$
+```math
 \boxed{\sum_{A\in\mathcal A}\sqrt{a_A}\le2n-2+\sqrt2.}
-\tag{3}
-$$
+\qquad\text{(3)}
+```
 
 The standard squared-root-fidelity/affinity comparison gives
 `||SAS||_1^2<=a_A`. Its primary-source attribution and a supplied proof
@@ -70,38 +70,38 @@ Positivity and Hilbert--Schmidt Cauchy--Schwarz imply `0<=a_A<=1`.
 
 Use the orthonormal Pauli basis `sigma_p/sqrt(d)`. Define
 
-$$
-t=\operatorname{Tr}S,\qquad u=t/\sqrt k,\qquad v=\sqrt{1-u^2}.
-\tag{4}
-$$
+```math
+t=\mathrm{Tr}S,\qquad u=t/\sqrt k,\qquad v=\sqrt{1-u^2}.
+\qquad\text{(4)}
+```
 
 The rank bound gives `0<u<=1`. The identity coefficient is
 `t/sqrt(d)=u/sqrt(2)`. Write the part of S on the 2n queried Pauli words as
 
-$$
+```math
 L=\frac1{\sqrt d}\sum_{i=1}^n b_i B_i,\qquad
 b_i=\sqrt{s_{X_i}^2+s_{Z_i}^2},\qquad
 B_i=\frac{s_{X_i}X_i+s_{Z_i}Z_i}{b_i},
-$$
+```
 
 and put
 
-$$
-T=\sum_i b_i^2=\operatorname{Tr}(L^2)=\operatorname{Tr}(SL),
+```math
+T=\sum_i b_i^2=\mathrm{Tr}(L^2)=\mathrm{Tr}(SL),
 \qquad y=2T.
-\tag{5}
-$$
+\qquad\text{(5)}
+```
 
 When `b_i=0`, the unit X/Z-plane direction B_i may be chosen arbitrarily.
 The B_i commute, and the spectrum of L consists of all d sign sums
 `(sum_i +-b_i)/sqrt(d)`. It is symmetric, so the positive
 part satisfies `Tr(L_+^2)=T/2`. Positivity of S now gives
 
-$$
-T=\operatorname{Tr}(SL)
-\le\operatorname{Tr}(SL_+)
+```math
+T=\mathrm{Tr}(SL)
+\le\mathrm{Tr}(SL_+)
 \le\|S\|_2\|L_+\|_2=\sqrt{T/2}.
-$$
+```
 
 Thus `0<=T<=1/2`, or `0<=y<=1`.
 
@@ -110,10 +110,10 @@ on the identity, `2n-2` on these local X/Z words, and at most `2n-4`
 on every other Pauli word. The squared Pauli coefficients of S sum
 to one. Therefore
 
-$$
+```math
 \sum_A a_A\le2n-4+4\frac{t^2}{d}+2T=2n-4+2u^2+y.
-\tag{6}
-$$
+\qquad\text{(6)}
+```
 
 If `T=0`, Cauchy--Schwarz gives
 `sum_A sqrt(a_A)<=sqrt(2n(2n-2))`.
@@ -129,12 +129,12 @@ Order the b_i and pad by zeros to four entries
 `b_1>=b_2>=b_3>=b_4>=0`. For four independent uniform signs, the
 exact mean is
 
-$$
+```math
 M:=\mathbb E\left|\sum_{i=1}^4 b_i\epsilon_i\right|
 =\max\left\{b_1,\frac{3b_1+b_2+b_3+b_4}{4},
                  \frac{b_1+b_2+b_3}{2}\right\}.
-\tag{7}
-$$
+\qquad\text{(7)}
+```
 
 Indeed, averaging first over the first sign gives
 `[2b_1+max(b_1,b_2+b_3+b_4)+max(b_1,b_2+b_3-b_4)]/4`.
@@ -146,32 +146,32 @@ Let `l_1>=...>=l_k` be the k largest eigenvalues of L. They form
 its nonnegative half, including zeros when necessary. Their mean and
 centered squared sum are
 
-$$
+```math
 \mu=\frac1k\sum_{j=1}^k l_j=\frac{M}{\sqrt d},\qquad
 \sum_{j=1}^k(l_j-\mu)^2=\frac{T-M^2}{2}.
-\tag{8}
-$$
+\qquad\text{(8)}
+```
 
 Let `lambda_1,...,lambda_k` be the eigenvalues of S in decreasing
 order, padded by zero if its rank is smaller than k. The standard
 Hermitian trace rearrangement inequality, followed by centered
 Cauchy--Schwarz, yields
 
-$$
+```math
 \begin{aligned}
-T=\operatorname{Tr}(SL)
+T=\mathrm{Tr}(SL)
 &\le\sum_{j=1}^k\lambda_j l_j\\
 &\le t\mu+
 \sqrt{1-t^2/k}\sqrt{(T-M^2)/2}.
 \end{aligned}
-$$
+```
 
 With `c=M/sqrt(T)`, divide by `sqrt(T/2)` to obtain
 
-$$
+```math
 \boxed{\sqrt y\le uc+v\sqrt{1-c^2}.}
-\tag{9}
-$$
+\qquad\text{(9)}
+```
 
 This is the rank-sensitive step. It keeps the direction of the local
 Pauli coefficients together with the spectral nonuniformity v.
@@ -184,25 +184,25 @@ including a tie.
 Then `c<=sqrt(3)/2`. Since `u>sqrt(3)/2`, the right side of (9)
 increases with c on that interval. Hence
 
-$$
+```math
 y\le\frac{(\sqrt3u+v)^2}{4}.
-$$
+```
 
 Using `u^2+v^2=1`, the largest eigenvalue of
 
-$$
+```math
 \begin{pmatrix}11/4&\sqrt3/4\\\sqrt3/4&1/4\end{pmatrix}
-$$
+```
 
 is `(3+sqrt(7))/2`. Thus (6) and Cauchy--Schwarz give
 
-$$
+```math
 2u^2+y\le\frac{3+\sqrt7}{2},\qquad
 \sum_A\sqrt{a_A}
 \le\sqrt{2n\left(2n-4+\frac{3+\sqrt7}{2}\right)}
 <2n-2+\sqrt2.
-\tag{10}
-$$
+\qquad\text{(10)}
+```
 
 The squared gap in the final strict comparison is
 `n(4sqrt(2)-3-sqrt(7))+6-4sqrt(2)>0`.
@@ -214,30 +214,30 @@ Its first coefficient is positive because
 It remains that `M=b_i` for a chosen site i. Define the actual
 affinity deficits
 
-$$
+```math
 d_A=1-a_A,\qquad W=d_{X_i}+d_{Z_i},\qquad D=\sum_A d_A.
-$$
+```
 
 For each A, `1-a_A` equals twice the total squared Pauli coefficient
 mass of S on words anticommuting with A. The local mass at site i
 contributes to exactly one of its two queries. Equations (5)--(6)
 therefore imply
 
-$$
+```math
 W\ge2b_i^2=yc^2,\qquad D\ge4-2u^2-y=:E.
-\tag{11}
-$$
+\qquad\text{(11)}
+```
 
 If `u^2+y<1`, (6) gives `sum_A a_A<2n-3+u^2<=2n-2`, which already proves
 the strict bound. Assume instead `u^2+y>=1`. The unit-circle constraint
 (9) implies
 
-$$
+```math
 c\ge u\sqrt y-v\sqrt{1-y}\ge0,
 \qquad
 W\ge w:=y\bigl[u\sqrt y-v\sqrt{1-y}\bigr]^2.
-\tag{12}
-$$
+\qquad\text{(12)}
+```
 
 For completeness, write `u=cos(theta)`, `c=cos(phi)` and
 `sqrt(y)=cos(alpha)`, with angles in `[0,pi/2]`. Equation (9) says
@@ -250,7 +250,7 @@ other `2n-2`. Here `0<=W<=2` and `0<=D-W<=2n-2`.
 The concave square-root tangents at `W=1` and `D-W=0`
 then give
 
-$$
+```math
 \begin{aligned}
 \sum_A\sqrt{a_A}
 &\le\sqrt{2(2-W)}+\sqrt{(2n-2)(2n-2-D+W)}\\
@@ -258,37 +258,37 @@ $$
 &=2n-2+\sqrt2+
 \frac{(\sqrt2-1)(1-W)-(D-1)}2.
 \end{aligned}
-\tag{13}
-$$
+\qquad\text{(13)}
+```
 
 Put `r=sqrt(2)-1` and `z=sqrt(1-y)`. In the notation above,
 `w=y cos^2(theta+alpha)`, so
 
-$$
+```math
 1-w=z^2+y\sin^2(\theta+\alpha)
 \le z^2+(v+z)^2=v^2+2vz+2z^2,
 \qquad E-1=2v^2+z^2.
-$$
+```
 
 The middle estimate follows explicitly from
 `sqrt(y) sin(theta+alpha)=vy+u sqrt(y)z<=v+z`.
 Consequently
 
-$$
+```math
 \begin{aligned}
 (E-1)-r(1-w)
 &\ge(2-r)v^2-2rvz+(1-2r)z^2\\
 &\ge0.
 \end{aligned}
-\tag{14}
-$$
+\qquad\text{(14)}
+```
 
 The quadratic form is positive definite: its diagonal entries are
 positive and its determinant is
 
-$$
+```math
 (2-r)(1-2r)-r^2=3-7r=10-7\sqrt2>0,
-$$
+```
 
 where the final sign follows from `100>98`. Since `D>=E` and
 `W>=w`, equation (14) makes the excess in (13) nonpositive.
@@ -303,21 +303,21 @@ and `T=1/2`. The identity and local X/Z coefficients then exhaust
 forces `c=1`. In the dominant branch this means only the selected
 site has a nonzero coefficient. It follows that
 
-$$
+```math
 S=\frac{I+B_i}{\sqrt{2d}},\qquad
 B_i=xX_i+zZ_i,\qquad x^2+z^2=1.
-$$
+```
 
 Equality in the two-query Cauchy--Schwarz step in (13) requires
 `x^2=z^2=1/2`. Conversely these choices attain both (3) and the
 original fidelity score. Thus the complete set of maximizing normalized
 Gram states is
 
-$$
+```math
 \boxed{\rho=|\beta\rangle\langle\beta|_i\otimes
 \frac{I_{\mathrm{rest}}}{2^{n-1}},}
-\tag{15}
-$$
+\qquad\text{(15)}
+```
 
 where i is any original input site and beta is an X/Z bisector, with
 either sign of each Bloch component and zero Y component. Every

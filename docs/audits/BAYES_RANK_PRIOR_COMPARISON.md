@@ -35,12 +35,12 @@ of a selected sum of original hypotheses. The explicitly weighted
 extension, Eq. (14), printed p. 062305-3, allows every probability vector
 `w_j` on competing decisions `j!=s`:
 
-$$
+```math
 T_s(w)=\{t:C_{st}>0,\ C_{st}\ge\sum_{j\ne s}w_jC_{jt}\},\qquad
-\operatorname{rank}E_s\le
-\operatorname{rank}\sum_{t\in T_s(w)}C_{st}\rho_t.
-\tag{1}
-$$
+\mathrm{rank}E_s\le
+\mathrm{rank}\sum_{t\in T_s(w)}C_{st}\rho_t.
+\qquad\text{(1)}
+```
 
 The proof transfers a small positive rank-one contribution between POVM
 effects and uses a kernel-dimension contradiction. This rank theorem
@@ -53,10 +53,10 @@ require geometrically uniform or cyclic ensembles.
 Fix one joint two-input context and `rho>0`. In its four-vector product
 basis use the prior-weighted hypotheses
 
-$$
+```math
 \rho_t=\sqrt\rho\,|t\rangle\langle t|\sqrt\rho,
 \quad t\in\{00,01,10,11\}.
-$$
+```
 
 All have positive trace, their traces sum to one, and their four defining
 vectors are linearly independent. The reward in the
@@ -64,14 +64,14 @@ vectors are linearly independent. The reward in the
 is `1-d_H(s,t)`. Minimizing Hamming distance is equivalent. Remark 1,
 Eqs. (4)–(6), printed p. 062305-2, therefore gives
 
-$$
+```math
 C_{st}=\frac{2-d_H(s,t)}4,
 \qquad
 4C=\begin{pmatrix}
 2&1&1&0\\1&2&0&1\\1&0&2&1\\0&1&1&2
 \end{pmatrix}.
-\tag{2}
-$$
+\qquad\text{(2)}
+```
 
 Each unnormalized coefficient column sums to four, so the source's
 normalization is precisely `1/4`. Equivalently
@@ -80,15 +80,15 @@ normalization is precisely `1/4`. Equivalently
 For `s=00`, the hypothesis `00` always belongs to `T_00(w)`, and `11`
 never belongs because its coefficient is zero. Excluding `01` requires
 
-$$
+```math
 1<2w_{01}+w_{11}=1+w_{01}-w_{10},
-$$
+```
 
 whereas excluding `10` requires
 
-$$
+```math
 1<2w_{10}+w_{11}=1+w_{10}-w_{01}.
-$$
+```
 
 These are incompatible strict inequalities. At least one neighbor stays
 in the selected set. Taking `w_01=1` gives exactly `T_00={00,10}`.

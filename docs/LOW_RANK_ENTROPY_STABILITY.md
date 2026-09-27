@@ -10,24 +10,26 @@ fixed block size; it does not settle the unrestricted entropy inequality.
 
 Put `c=2-sqrt(2)` and
 
-$$
+```math
 \Delta_n(\rho)=\sqrt2 n+cS(\rho)-g_n(\rho),\qquad
  g_n(\rho)=\sum_{P\in\{X_i,Z_i\}}\|\sqrt\rho P\sqrt\rho\|_1.
-$$
+```
 
 ## Block trace-norm lemma
 
 Let A be an invertible Hermitian matrix on a finite-dimensional subspace,
 let `mu=min |spec(A)|>0`, and let B,C be matrices making
 
-$$M=\begin{pmatrix}A&B\\B^\dagger&C\end{pmatrix}$$
+```math
+M=\begin{pmatrix}A&B\\B^\dagger&C\end{pmatrix}
+```
 
 Hermitian. Then
 
-$$
+```math
 \|M\|_1\le\|A\|_1+\|C\|_1+\frac{2\|B\|_2^2}{\mu}.
-\tag{1}
-$$
+\qquad\text{(1)}
+```
 
 Here `||.||_2` is Hilbert--Schmidt norm, not operator norm.
 
@@ -36,22 +38,22 @@ To prove (1), choose an optimal Hermitian trace-norm dual contraction
 `D^2+EE^dagger<=I`. With `J=sign(A)`, the matrix
 `I-(JD+DJ)/2` is positive semidefinite. Because `|A|` commutes with J,
 
-$$
+```math
 \begin{aligned}
-\|A\|_1-\operatorname{Tr}(AD)
-&\ge\mu\bigl(r-\operatorname{Tr}(JD)\bigr)\\
-&\ge\frac\mu2\operatorname{Tr}(I-D^2)
+\|A\|_1-\mathrm{Tr}(AD)
+&\ge\mu\bigl(r-\mathrm{Tr}(JD)\bigr)\\
+&\ge\frac\mu2\mathrm{Tr}(I-D^2)
 \ge\frac\mu2\|E\|_2^2.
 \end{aligned}
-$$
+```
 
 The middle inequality is `Tr(D-J)^2>=0`. Therefore
 
-$$
-\operatorname{Tr}(MT)
+```math
+\mathrm{Tr}(MT)
 \le\|A\|_1+\|C\|_1+2\|B\|_2\|E\|_2-\frac\mu2\|E\|_2^2
 \le\|A\|_1+\|C\|_1+2\|B\|_2^2/\mu.
-$$
+```
 
 ## Quantitative spectral-tail criterion
 
@@ -59,60 +61,60 @@ Let sigma,tau be density matrices with orthogonal supports and let
 `rho=(1-epsilon)sigma+epsilon tau`, `0<epsilon<1`. Suppose each query
 compression
 
-$$
-M_P=\sqrt\sigma P\sqrt\sigma\big|_{\operatorname{supp}\sigma}
-$$
+```math
+M_P=\sqrt\sigma P\sqrt\sigma\big|_{\mathrm{supp}\sigma}
+```
 
 is invertible, and put `mu_P=min |spec(M_P)|`. Define
 
-$$
+```math
 K(\sigma)=\sum_P\left(1+\frac{2\|\sigma\|_\infty}{\mu_P}\right).
-\tag{2}
-$$
+\qquad\text{(2)}
+```
 
 Then, irrespective of the tail eigenvectors,
 
-$$
+```math
 g_n(\rho)\le(1-\epsilon)g_n(\sigma)+\epsilon K(\sigma),
-\tag{3}
-$$
+\qquad\text{(3)}
+```
 
 and consequently
 
-$$
+```math
 \Delta_n(\rho)\ge
 (1-\epsilon)\Delta_n(\sigma)
 +c h_2(\epsilon)-[K(\sigma)-\sqrt2 n]\epsilon
 +c\epsilon S(\tau).
-\tag{4}
-$$
+\qquad\text{(4)}
+```
 
 Indeed, the blocks of each sandwiched query are
 
-$$
+```math
 A=(1-\epsilon)M_P,\quad
 B=\sqrt{\epsilon(1-\epsilon)}\sqrt\sigma P\sqrt\tau,
 \quad C=\epsilon\sqrt\tau P\sqrt\tau.
-$$
+```
 
 They obey `||C||_1<=epsilon` and
 `||B||_2^2<=epsilon(1-epsilon)||sigma||_infty`. Applying (1), whose
 minimum absolute eigenvalue is `(1-epsilon)mu_P`, proves (3).
 Orthogonality gives the exact entropy identity
 
-$$
+```math
 S(\rho)=h_2(\epsilon)+(1-\epsilon)S(\sigma)+\epsilon S(\tau),
-$$
+```
 
 which yields (4).
 
 Whenever `Delta_n(sigma)>=0`, a simple sufficient condition is
 
-$$
+```math
 0<\epsilon<
 2^{-[K(\sigma)-\sqrt2 n]/c}.
-\tag{5}
-$$
+\qquad\text{(5)}
+```
 
 It makes (4) strictly positive, because
 `h_2(epsilon)>epsilon log_2(1/epsilon)` for `0<epsilon<1`.
@@ -127,10 +129,10 @@ rank-two entropy theorem then certifies `Delta_n(sigma)>=0`.
 **Theorem.** For every fixed `n>=2`, there is a number `delta_n>0` such
 that any n-qubit density matrix with
 
-$$
+```math
 1-\lambda_1(\rho)-\lambda_2(\rho)<\delta_n
-\tag{6}
-$$
+\qquad\text{(6)}
+```
 
 satisfies `Delta_n(rho)>=0`. The conclusion is strict when `rank(rho)>2`.
 No explicit universal value of delta_n, or dimension-independent
@@ -201,9 +203,9 @@ The following separate, conservative estimate gives a directly checkable
 local criterion. Let sigma_* be a rank-r equality state, with r=1 or 2,
 and let sigma be a rank-r density matrix obeying
 
-$$
+```math
 \|\sigma-\sigma_*\|_\infty\le t.
-$$
+```
 
 Set `a_*=||sigma_*||_infty` and
 `m_*=min_P min |spec(sqrt(sigma_*)P sqrt(sigma_*))|` on its support.
@@ -212,11 +214,11 @@ The values are `(a_*,m_*)=(1,1/sqrt(2))` at a pure optimizer and
 operator square-root estimate
 `||sqrt(sigma)-sqrt(sigma_*)||_infty<=sqrt(t)` gives
 
-$$
+```math
 \|\sqrt\sigma P\sqrt\sigma-\sqrt{\sigma_*}P\sqrt{\sigma_*}\|_\infty
 \le (\sqrt{a_*+t}+\sqrt{a_*})\sqrt t.
-\tag{7}
-$$
+\qquad\text{(7)}
+```
 
 The square-root estimate follows from `sigma<=sigma_*+t I`, operator
 monotonicity of the square root, and
@@ -224,17 +226,17 @@ monotonicity of the square root, and
 reverse inequality obtained by exchanging the two states. Singular-value
 perturbation then proves
 
-$$
+```math
 \mu_P\ge m_*-(\sqrt{a_*+t}+\sqrt{a_*})\sqrt t.
-\tag{8}
-$$
+\qquad\text{(8)}
+```
 
 If the right side is a positive number m, equation (2) gives
 
-$$
+```math
 K(\sigma)\le 2n\left(1+\frac{2(a_*+t)}{m}\right).
-\tag{9}
-$$
+\qquad\text{(9)}
+```
 
 Equations (5) and (9) certify sufficiently small orthogonal spectral tails
 uniformly over all such support rotations. They allow arbitrary tail
@@ -253,35 +255,35 @@ whose extra score coefficient is independent of n.
 
 Let J be a set of q retained sites, with `0<=q<n`, let r=`2^q`, and put
 
-$$
+```math
 \Pi=I_J\otimes\bigotimes_{i\notin J}
  |\beta_i\rangle\langle\beta_i|,
 \qquad \sigma=\Pi/r,
-$$
+```
 
 where each beta_i is an X/Z bisector state. Let tau be any density matrix
 supported in the orthogonal complement of Pi, and set
 `rho=(1-epsilon)sigma+epsilon tau`, with `0<epsilon<1`. Then
 
-$$
+```math
 \boxed{
  g_n(\rho)\le (1-\epsilon)g_n(\sigma)
  +\epsilon g_n(\tau)+2\sqrt2\,\epsilon.
 }
-\tag{10}
-$$
+\qquad\text{(10)}
+```
 
 Since `S(sigma)=q` and
 `g_n(sigma)=2q+sqrt(2)(n-q)`, the core satisfies `Delta_n(sigma)=0`.
 The exact orthogonal-mixture entropy identity therefore gives
 
-$$
+```math
 \boxed{
  \Delta_n(\rho)\ge
  \epsilon\Delta_n(\tau)+c h_2(\epsilon)-2\sqrt2\,\epsilon.
 }
-\tag{11}
-$$
+\qquad\text{(11)}
+```
 
 ### Proof of the refined coefficient
 
@@ -296,21 +298,21 @@ bound used in (3). A retained-site query preserves the core support and
 has zero off-diagonal block. At a discarded site i, either query P has
 supported compression gap
 
-$$
+```math
 \mu_P=\frac{1}{\sqrt2\,r}.
-$$
+```
 
 Write `C_P=sqrt(sigma)P sqrt(tau)`. The off-diagonal block in (1) is
 `sqrt(epsilon(1-epsilon)) C_P`, and its leading-block gap is
 `(1-epsilon)mu_P`. Because tau is supported outside Pi,
 
-$$
+```math
 \begin{aligned}
 \|C_P\|_2^2
-&=\frac1r\operatorname{Tr}(\tau P\Pi P)\\
-&=\frac{1}{2r}\operatorname{Tr}(\tau\Pi_i).
+&=\frac1r\mathrm{Tr}(\tau P\Pi P)\\
+&=\frac{1}{2r}\mathrm{Tr}(\tau\Pi_i).
 \end{aligned}
-$$
+```
 
 The second identity uses
 `(I-Pi)P Pi P(I-Pi)=Pi_i/2`: either X or Z takes a bisector into its
@@ -318,10 +320,10 @@ original direction and its orthogonal bisector with equal squared
 amplitudes. The cross terms vanish against tau's support condition.
 The gain term in (1) is thus at most
 
-$$
+```math
 \frac{2\epsilon\|C_P\|_2^2}{\mu_P}
-=\sqrt2\,\epsilon\operatorname{Tr}(\tau\Pi_i).
-$$
+=\sqrt2\,\epsilon\mathrm{Tr}(\tau\Pi_i).
+```
 
 Summing both queries at each discarded site gives at most
 `2sqrt(2)epsilon sum_i Tr(tau Pi_i)<=2sqrt(2)epsilon`.
@@ -333,23 +335,23 @@ entropy identity proves (11).
 
 If the tail itself satisfies `Delta_n(tau)>=0`, then
 
-$$
+```math
 0<\epsilon\le 2^{-(2+2\sqrt2)}
 =0.03519642908204362\ldots
 \quad\Longrightarrow\quad \Delta_n(\rho)>0.
-\tag{12}
-$$
+\qquad\text{(12)}
+```
 
 Indeed, `2sqrt(2)/c=2+2sqrt(2)`, and
 `h_2(epsilon)>epsilon log_2(1/epsilon)` for `0<epsilon<1`.
 For an arbitrary tail, the elementary bounds `g_n(tau)<=2n` and
 `S(tau)>=0` give `Delta_n(tau)>=-cn`. Consequently
 
-$$
+```math
 0<\epsilon\le 2^{-n-(2+2\sqrt2)}
 \quad\Longrightarrow\quad \Delta_n(\rho)>0,
-\tag{13}
-$$
+\qquad\text{(13)}
+```
 
 with no entropy-inequality assumption on tau. These are conservative
 sufficient cutoffs, not sharp transition values. They require the exact
@@ -367,14 +369,14 @@ then differs from the core only by mixing the two orthogonal bisectors
 on that site, while `g_n(tau)=g_n(sigma)`. The single-qubit score formula
 gives the exact gain
 
-$$
+```math
 \begin{aligned}
 g_n(\rho)-[(1-\epsilon)g_n(\sigma)+\epsilon g_n(\tau)]
 &=\sqrt2\left(\sqrt{1+4\epsilon(1-\epsilon)}-1\right)\\
 &=2\sqrt2\,\epsilon+O(\epsilon^2).
 \end{aligned}
-\tag{14}
-$$
+\qquad\text{(14)}
+```
 
 Thus a uniformly smaller linear coefficient cannot replace `2sqrt(2)`
 in (10). This sharpness statement concerns the score estimate; it does

@@ -18,25 +18,25 @@ conjecture remain unresolved.
 Let n>=1, d=2^n, k=d/2 and K_n=2n-2+sqrt(2). For a density matrix rho
 of rank at most k, define
 
-$$
-\eta^2=2\left(1-\frac{\operatorname{Tr}\sqrt\rho}{\sqrt k}\right).
-\tag{1}
-$$
+```math
+\eta^2=2\left(1-\frac{\mathrm{Tr}\sqrt\rho}{\sqrt k}\right).
+\qquad\text{(1)}
+```
 
 **Theorem.** If
 
-$$
+```math
 \boxed{\eta\le\frac1{4096n},}
-\tag{2}
-$$
+\qquad\text{(2)}
+```
 
 then the original query score obeys
 
-$$
+```math
 \boxed{g(\rho):=\sum_{i,U=X,Z}\|\sqrt\rho U_i\sqrt\rho\|_1
 \le K_n.}
-\tag{3}
-$$
+\qquad\text{(3)}
+```
 
 Equality holds exactly for a pure original-site X/Z bisector tensored
 with the maximally mixed state of the other n-1 sites.
@@ -45,10 +45,10 @@ The hypothesis is purely spectral. Equivalently,
 Tr(sqrt(rho))/sqrt(k)>=1-1/(2^25 n^2). If P is any rank-k projector
 containing supp(rho), then
 
-$$
+```math
 \eta=\|\sqrt\rho-P/\sqrt k\|_2.
-\tag{4}
-$$
+\qquad\text{(4)}
+```
 
 Thus eta measures distance from a flat half-rank root and is independent
 of the choice of completion when rank(rho)<k. No local basis, support
@@ -63,66 +63,66 @@ nonflat dominant-site lemma. Both ingredients are supplied below.
 
 Let R be a traceless Hermitian unitary, tau=Tr/d, and use
 
-$$
+```math
 q_U=\frac14\tau([R,U]^*[R,U]),\qquad
 \mathcal R_z(R)=\sum_U\sqrt{1-zq_U},
-$$
+```
 
-$$
+```math
 \epsilon_z=2n-2+2\sqrt{1-z/2}-\mathcal R_z(R),\qquad 0<z\le1.
-\tag{5}
-$$
+\qquad\text{(5)}
+```
 
 Expand R in Pauli words and write
 W=sum_i(r_{X_i}^2+r_{Z_i}^2), b=max_i(r_{X_i}^2+r_{Z_i}^2).
 When W>0 put A=b/W. The balanced-spectrum theorem proves epsilon_z>=0.
 Its proof gives the stronger estimates
 
-$$
+```math
 \boxed{\epsilon_z\ge\frac z{128}(1-b),}
-\tag{6}
-$$
+\qquad\text{(6)}
+```
 
 and, for a site attaining b, with singleton coefficients u,v,
 
-$$
+```math
 \epsilon_z\ge\frac{z^2}{16}(u^2-v^2)^2.
-\tag{7}
-$$
+\qquad\text{(7)}
+```
 
 To prove (6), retain r=sqrt(2)-1 and c=2-sqrt(2). In the diffuse
 case W=0 or A<=3/4, the preceding theorem gives W<81/100. Its linear
 deficit estimate therefore gives
 
-$$
+```math
 \epsilon_z>z\left(\sqrt2-\frac{281}{200}\right)
 >\frac z{128}\ge\frac z{128}(1-b).
-\tag{8}
-$$
+\qquad\text{(8)}
+```
 
 For the second strict inequality, sqrt(2)>1413/1000 and 1/125>1/128
 suffice. In the dominant case A>=3/4, set x=1-A and a=81/256. The
 fourth-moment tail bound from the preceding note yields
 
-$$
+```math
 m^2\le1-x+x\left(\frac{2ax}{A}+\frac{a^2x^3}{A^3}\right)
 \le1-\kappa x,\qquad
 \kappa=1-\frac{2a}{3}-\frac{a^2}{27}
 =\frac{51469}{65536}\ge\frac{25}{32}.
-\tag{9}
-$$
+\qquad\text{(9)}
+```
 
 Here m is the normalized Rademacher first moment and W<=m^2, as in
 the preceding proof. Put delta=1-W. Then delta>=kappa x, and
 
-$$
+```math
 \begin{aligned}
 c-W+rb&=c\delta-rWx\ge(c-r/\kappa)\delta\\
 &\ge\frac{c\kappa-r}{1+\kappa}(1-b)
 \ge\frac5{256}(1-b).
 \end{aligned}
-\tag{10}
-$$
+\qquad\text{(10)}
+```
 
 For the middle step, 1-b=delta+Wx<=delta+x<=delta(1+1/kappa).
 The last step uses r<5/12, c>7/12, kappa>=25/32 and kappa<=1.
@@ -133,18 +133,18 @@ For (7), put f_z(x)=1-sqrt(1-zx). Its second derivative is at least
 z^2/4 on the interior of [0,1]; the corresponding strong-convexity
 inequality extends to the endpoints by continuity. Therefore
 
-$$
+```math
 J_z:=f_z(u^2)+f_z(v^2)-2f_z(b/2)
 \ge\frac{z^2}{16}(u^2-v^2)^2.
-$$
+```
 
 The proof of the grouped bound gives
 
-$$
+```math
 \epsilon_z-J_z
 \ge\frac z2(2-W-b)+2f_z(b/2)-2f_z(1/2)\ge0.
-\tag{11}
-$$
+\qquad\text{(11)}
+```
 
 The final inequality is the established dominant gate when A>=3/4.
 In the diffuse case, 2f_z(b/2)>=zb/2 makes its first two terms at
@@ -154,22 +154,22 @@ is justified in both branches, including W=0. This proves (7).
 Choose the signed original-site bisector B at this maximizing site,
 aligning the signs of u and v. Then
 
-$$
+```math
 \boxed{\tau((R-B)^2)\le\frac{512\epsilon_z}{z^2}.}
-\tag{12}
-$$
+\qquad\text{(12)}
+```
 
 Indeed, its overlap with R is ell=(|u|+|v|)/sqrt(2). If b>=1/2,
 the inequality 1-ell<=1-ell^2 gives
 
-$$
+```math
 \begin{aligned}
 \tau((R-B)^2)&=2(1-\ell)
 \le2(1-b)+(|u|-|v|)^2\\
 &\le2(1-b)+2(u^2-v^2)^2
 \le\frac{288\epsilon_z}{z^2}.
 \end{aligned}
-$$
+```
 
 If b<1/2, (6) gives epsilon_z>z/256, while the squared distance is
 at most two. This proves (12). The chosen site and aligned signs do
@@ -180,20 +180,20 @@ not depend on z.
 For 0<t<=1 let rho_t=(I+tR)/d, and define its gaps from the established
 balanced-spectrum optima. Here the root-affinity score is
 
-$$
+```math
 \mathcal A(\rho)=\sum_U
-\sqrt{\operatorname{Tr}(\sqrt\rho U\sqrt\rho U)}.
-$$
+\sqrt{\mathrm{Tr}(\sqrt\rho U\sqrt\rho U)}.
+```
 
 Put
 
-$$
+```math
 e_g=2n-2+2\sqrt{1-t^2/2}-g(\rho_t),
-$$
+```
 
-$$
+```math
 e_{\mathcal A}=2n-2+\sqrt{2+2\sqrt{1-t^2}}-\mathcal A(\rho_t).
-$$
+```
 
 The preceding theorem proves
 epsilon_{t^2}<=e_g and epsilon_{1-sqrt(1-t^2)}=e_A. For the same
@@ -201,17 +201,17 @@ signed bisector B chosen above, put rho_{t,B}=(I+tB)/d. Normalized
 Schatten Cauchy gives
 ||rho_t-rho_{t,B}||_1=t tau(|R-B|)<=t sqrt(tau((R-B)^2)). Hence
 
-$$
+```math
 \boxed{\|\rho_t-\rho_{t,B}\|_1
 \le\frac{16\sqrt2}{t}\sqrt{e_g},}
-\tag{13}
-$$
+\qquad\text{(13)}
+```
 
-$$
+```math
 \|\rho_t-\rho_{t,B}\|_1
 \le\frac{16\sqrt2(1+\sqrt{1-t^2})}{t}\sqrt{e_{\mathcal A}}.
-\tag{14}
-$$
+\qquad\text{(14)}
+```
 
 These are full trace norms. The convention of trace distance with a
 factor 1/2 halves the right sides. At t=0 the state is already maximally
@@ -231,17 +231,17 @@ Let S>=0, Tr(S^2)=1, rank(S)<=k. Expand S in the orthonormal basis
 sigma_p/sqrt(d), let b_i be the lengths of its local X/Z coefficient
 pairs, and put T=sum_i b_i^2. If T>0 and
 
-$$
+```math
 A:=\frac{\max_i b_i^2}{T}\ge\frac34,
-\tag{15}
-$$
+\qquad\text{(15)}
+```
 
 then
 
-$$
+```math
 \mathcal A(S^2)\le K_n.
-\tag{16}
-$$
+\qquad\text{(16)}
+```
 
 Equality is exactly a retention seed. This is a sufficient local
 coefficient condition, not a hypothesis imposed on the main theorem.
@@ -254,18 +254,18 @@ sqrt(T)m/sqrt(d) and centered squared sum T(1-m^2)/2. Applying
 Hermitian trace rearrangement and centered Cauchy to the k eigenvalues
 of S, padded by zeros, gives
 
-$$
+```math
 \sqrt y\le um+v\sqrt{1-m^2}.
-\tag{17}
-$$
+\qquad\text{(17)}
+```
 
 In particular y<=1. If d_U=1-Tr(SUSU), the Pauli energy decomposition
 gives, for a site attaining the maximum in (15),
 
-$$
+```math
 D:=\sum_Ud_U\ge4-2u^2-y,\qquad
 d_{X_i}+d_{Z_i}\ge yA.
-$$
+```
 
 The zero-singleton case T=0 is also strictly below retention: the same
 Pauli energy bound gives D>=4-2u^2>=2, so its affinity score is at most
@@ -280,11 +280,11 @@ each remaining query bounds their sum by 2n-2-(D-w)/2. Combining
 these inequalities and the preceding bounds on D,w gives, with
 r=sqrt(2)-1 and c=1-r,
 
-$$
+```math
 \mathcal A(S^2)
 \le K_n+\frac{2u^2+(1-rA)y-(2+c)}2.
-\tag{18}
-$$
+\qquad\text{(18)}
+```
 
 When n=1 the complementary group is empty and contributes zero;
 the same pair tangent applies.
@@ -292,52 +292,52 @@ the same pair tangent applies.
 By (17), the expression 2u^2+(1-rA)y is at most the largest eigenvalue
 of the two-by-two matrix
 
-$$
+```math
 \begin{pmatrix}2&0\\0&0\end{pmatrix}
 +(1-rA)
 \begin{pmatrix}m\\\sqrt{1-m^2}\end{pmatrix}
 \begin{pmatrix}m&\sqrt{1-m^2}\end{pmatrix}.
-$$
+```
 
 Its largest eigenvalue is at most 2+c whenever
 
-$$
+```math
 m^2\le\Psi(A):=
 \frac{c(2-r+rA)}{2(1-rA)}.
-\tag{19}
-$$
+\qquad\text{(19)}
+```
 
 Indeed, subtracting the matrix from (2+c)I gives positive trace and
 determinant c(2+c)-(1-rA)(c+2m^2). It remains to verify (19) on
 [3/4,1]. The fourth-moment tail bound gives, with x=1-A in [0,1/4],
 
-$$
+```math
 m^2\le1-x+\frac{27}{32}x^2+\frac{243}{1024}x^4,
 \qquad
 \Psi(1-x)=\frac{1-rx/2}{1+x/\sqrt2}.
-$$
+```
 
 The difference between the latter expression and the former bound
 is x f(x), where
 
-$$
+```math
 f(x)=1-\frac{\sqrt2-1/2}{1+x/\sqrt2}
 -\frac{27}{32}x-\frac{243}{1024}x^3.
-$$
+```
 
 This function is strictly concave on [0,1/4], since
 
-$$
+```math
 f''(x)=-\frac{\sqrt2-1/2}{(1+x/\sqrt2)^3}
 -\frac{1458}{1024}x<0.
-$$
+```
 
 Both endpoint values are positive:
 
-$$
+```math
 f(0)=\frac32-\sqrt2>0,\qquad
 f(1/4)=\frac{51469}{65536}-\frac{34\sqrt2-24}{31}>0.
-$$
+```
 
 For the last comparison, sqrt(2)<99/70 makes the second term less
 than 843/1085, and
@@ -359,9 +359,9 @@ inner product of S and S_0.
 
 If epsilon>1/1024, trace-norm continuity gives
 
-$$
+```math
 g(\rho)\le g(\sigma)+4n\eta<K_n,
-$$
+```
 
 because 4n eta<=1/1024. For each query this continuity bound follows
 by expanding SUS-S_0US_0 into two terms and applying Schatten Holder;
@@ -375,12 +375,12 @@ the coefficient-pair length for S is therefore at least
 sqrt(7)/4-eta; its total singleton coefficient norm is at most
 1/sqrt(2)+eta. Since eta<=1/(4096n)<1/100,
 
-$$
+```math
 \sqrt7/4-\eta>\frac{13}{20},\qquad
 1/\sqrt2+\eta<\frac{18}{25},\qquad
 \left(\frac{13/20}{18/25}\right)^2
 =\left(\frac{65}{72}\right)^2>\frac34.
-$$
+```
 
 Thus S satisfies (15), and the nonflat dominant-site lemma proves
 g(rho)<=K_n. Its equality classification gives exactly the family
@@ -395,23 +395,23 @@ B=(X+Z)/sqrt(2), C=(X-Z)/sqrt(2) and
 R_theta=cos(theta)B+sin(theta)C for 0<theta<pi/4. The nearest bisector
 is B, and
 
-$$
+```math
 g(\rho_\theta)=\sqrt2\cos\theta,\qquad
 \|\rho_\theta-\rho_B\|_1^2
 =2(1-\cos\theta)=\sqrt2\,e_g.
-\tag{20}
-$$
+\qquad\text{(20)}
+```
 
 The factor 1/t in (13) is also necessary in its order as t tends to
 zero. Take R=X at one qubit. Then the distance to the nearest balanced
 bisector state is t sqrt(2-sqrt(2)), whereas, putting v=sqrt(1-t^2),
 
-$$
+```math
 e_g=2\sqrt{1-t^2/2}-1-\sqrt{1-t^2}
 =\frac{(1-v)^2}{2\sqrt{(1+v^2)/2}+1+v}
 =\frac{t^4}{16}+O(t^6).
-\tag{21}
-$$
+\qquad\text{(21)}
+```
 
 Thus a bound proportional to sqrt(e_g) with a constant independent of
 t is impossible, and any uniform prefactor must grow at least as 1/t.

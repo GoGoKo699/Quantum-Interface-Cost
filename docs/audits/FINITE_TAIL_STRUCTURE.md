@@ -62,12 +62,12 @@ compressed by `diag(I,K)` gives the required D with
 
 Trace-norm duality and optimization over K therefore give exactly
 
-\[
+```math
 \left\|\begin{pmatrix}L&tX/2\\tX^\dagger/2&0\end{pmatrix}\right\|_1
 =\max_{-I\le A\le I}
-\left\{\operatorname{Tr}(LA)+t\|X^\dagger\sqrt{I-A^2}\|_1\right\},
-\quad t\ge0.                                                  \tag{3}
-\]
+\left\{\mathrm{Tr}(LA)+t\|X^\dagger\sqrt{I-A^2}\|_1\right\},
+\quad t\ge0.                                                  \qquad\text{(3)}
+```
 
 Thus `I-A^2` is exactly the available cross-block budget. A compressed
 decoder need not be a scalar or traceless reflection; applying the
@@ -144,10 +144,10 @@ The arithmetic-geometric mean variational identity rewrites this as
 The infimum is attained at
 `z=sqrt[(d^2+4ey)/(a^2+4y)]`. Thus
 
-\[
+```math
 y(s)=\inf_{z>0}R_z(s),\qquad
-R_z(s)=\frac{sC_z-b+\sqrt{(b-sC_z)^2+4sD_z}}2.                 \tag{8}
-\]
+R_z(s)=\frac{sC_z-b+\sqrt{(b-sC_z)^2+4sD_z}}2.                 \qquad\text{(8)}
+```
 
 To check the direction, (7) gives
 `y^2+(b-sC_z)y-sD_z<=0` for every z, so positive y is at most the
@@ -191,10 +191,10 @@ persistent kernel. Direct differentiation gives
 
 The squared-concavity tangent is consequently
 
-\[
+```math
 S(s)^2\le S_0^2+
-\frac{S_0(S_0-a_0)}{s_0}(s-s_0),\qquad s\ge0.                 \tag{11}
-\]
+\frac{S_0(S_0-a_0)}{s_0}(s-s_0),\qquad s\ge0.                 \qquad\text{(11)}
+```
 
 All quantities are finite; no singular core compression is inverted.
 This is a state-specific bound. A supremum over core/tail states need not

@@ -18,18 +18,18 @@ space. For 0<=t<=1, define rho_t=(I+tR)/d. These are exactly the states
 with eigenvalues (1+t)/d and (1-t)/d, each repeated d/2 times. For the
 original queries U in {X_i,Z_i}, put
 
-$$
+```math
 g(\rho)=\sum_U\|\sqrt\rho U\sqrt\rho\|_1,\qquad
 \mathcal A(\rho)=\sum_U
-\sqrt{\operatorname{Tr}(\sqrt\rho U\sqrt\rho U)}.
-$$
+\sqrt{\mathrm{Tr}(\sqrt\rho U\sqrt\rho U)}.
+```
 
 **Theorem.** Over all complex eigenbases at this fixed spectrum,
 
-$$
+```math
 \boxed{\max_R g(\rho_t)=2n-2+2\sqrt{1-t^2/2}.}
-\tag{1}
-$$
+\qquad\text{(1)}
+```
 
 At t>0, equality holds precisely when R is an original-site bisector
 reflection, tensored with the identity on all other sites:
@@ -38,19 +38,19 @@ At t=0 all choices give the same maximally mixed state.
 
 The affinity profile at the same fixed spectrum is also exact:
 
-$$
+```math
 \boxed{\max_R\mathcal A(\rho_t)
 =2n-2+\sqrt{2+2\sqrt{1-t^2}}.}
-\tag{2}
-$$
+\qquad\text{(2)}
+```
 
 Its equality family is the same for t>0. In particular, every rank-d/2
 orthogonal projector P satisfies
 
-$$
+```math
 \boxed{g(P/(d/2))\le2n-2+\sqrt2,}
-\tag{3}
-$$
+\qquad\text{(3)}
+```
 
 with equality exactly at a pure original-site bisector times the
 maximally mixed state of the remaining n-1 sites. This extends the
@@ -59,10 +59,10 @@ its finite input sizes; it does not remove the flat-spectrum assumption.
 
 Every state in (1) also satisfies the sharp seed entropy inequality
 
-$$
+```math
 g(\rho_t)\le\sqrt2\,n+(2-\sqrt2)S(\rho_t).
-\tag{4}
-$$
+\qquad\text{(4)}
+```
 
 It is strict for 0<t<1. At t=1 equality has the bisector family in (3),
 and at t=0 it is the maximally mixed state.
@@ -71,19 +71,19 @@ and at t=0 it is the maximally mixed state.
 
 Write tau=Tr/d and set
 
-$$
+```math
 C_U=\frac14[R,U]^*[R,U],\qquad
 q_U=\tau(C_U)\in[0,1],\qquad
 \mathcal R_z(R)=\sum_U\sqrt{1-zq_U}.
-$$
+```
 
 The main geometric statement is
 
-$$
+```math
 \boxed{\mathcal R_z(R)\le2n-2+2\sqrt{1-z/2},
 \qquad 0\le z\le1.}
-\tag{5}
-$$
+\qquad\text{(5)}
+```
 
 For z>0 its equality cases are precisely the bisector reflections from
 Section 1. To prove it, expand R in the orthonormal Pauli-word basis.
@@ -93,10 +93,10 @@ X or Z letter contributes one to sum_U q_U, and each Y letter contributes
 two. All remaining nonidentity words have contribution at least two.
 Consequently
 
-$$
+```math
 E_R:=\sum_U q_U\ge2-W.
-\tag{6}
-$$
+\qquad\text{(6)}
+```
 
 If W>0, put b=max_i(r_{X_i}^2+r_{Z_i}^2), A=b/W, and
 a_i=sqrt(r_{X_i}^2+r_{Z_i}^2)/sqrt(W). Then sum_i a_i^2=1 and
@@ -104,21 +104,21 @@ max_i a_i^2=A. For independent Rademacher signs epsilon_i, let
 m=E|sum_i a_i epsilon_i|. The singleton part H of R has commuting
 terms on distinct sites, so
 
-$$
+```math
 W=\tau(RH)\le\tau|H|=\sqrt W\,m,
 \qquad W\le m^2.
-\tag{7}
-$$
+\qquad\text{(7)}
+```
 
 The following elementary estimates are proved in Section 3. Put
 r=sqrt(2)-1 and c=2-sqrt(2)=1-r. Then
 
-$$
+```math
 A\le3/4\ \Longrightarrow\ m<9/10,
 \qquad
 A\ge3/4\ \Longrightarrow\ m^2(1-rA)\le c.
-\tag{8}
-$$
+\qquad\text{(8)}
+```
 
 The second inequality is strict when A<1.
 
@@ -127,11 +127,11 @@ f_z(x)>=zx/2. If W=0 or A<=3/4, (6)--(8) give W<2r; indeed
 81/100<2r follows, for example, from sqrt(2)>141/100. Therefore,
 for z>0,
 
-$$
+```math
 \sum_U f_z(q_U)\ge\frac z2(2-W)>cz
 \ge2f_z(1/2).
-\tag{9}
-$$
+\qquad\text{(9)}
+```
 
 The last inequality follows from convexity in z and the endpoint
 2f_1(1/2)=c. This proves (5), strictly, in this case.
@@ -142,28 +142,28 @@ q_Z>=u^2. The function f_z(x)-zx/2 is increasing. Applying it to these
 two queries, using the linear tangent for all others, and then convexity
 at the selected site gives
 
-$$
+```math
 \sum_U f_z(q_U)
 \ge\frac z2(E_R-b)+f_z(u^2)+f_z(v^2)
 \ge\frac z2(2-W-b)+2f_z(b/2).
-\tag{10}
-$$
+\qquad\text{(10)}
+```
 
 Subtract 2f_z(1/2) and divide by z>0. The resulting lower bound
 H(z) is nonincreasing in z: for h_z(x)=f_z(x)/z,
 
-$$
+```math
 \partial_z h_z(x)
 =\frac{x^2}{2\sqrt{1-zx}(1+\sqrt{1-zx})^2}
-$$
+```
 
 is increasing in x on [0,1/2], and b<=1. It suffices to evaluate H(1).
 The tangent inequality 2sqrt(1-b/2)<=(3-b)/sqrt(2) gives
 
-$$
+```math
 H(1)\ge\frac{c-W+rb}{2}\ge0,
-\tag{11}
-$$
+\qquad\text{(11)}
+```
 
 because W-rb=W(1-rA)<=m^2(1-rA)<=c. This proves (5).
 If A<1, (8) makes (11) strict. If A=1 but W<1, then
@@ -179,49 +179,49 @@ This section supplies a self-contained proof of (8).
 
 First suppose A<=1/2. Define s=11/4 and p=3/2. The even polynomial
 
-$$
+```math
 P(x)=\frac{x^6-(85/8)x^4+(13465/256)x^2+1305/64}{3993/64}
-$$
+```
 
 majorizes |x|. For x>=0, the exact factorization is
 
-$$
+```math
 P(x)-x=
 \frac{(x-3/4)^2(x-2)^2(x^2+2sx+s^2+p)}{2s^3p}\ge0,
 \qquad 2s^3p=3993/64.
-\tag{12}
-$$
+\qquad\text{(12)}
+```
 
 Evenness handles x<0. For X=sum_i a_i epsilon_i, put
 K=sum_i a_i^4 and L=sum_i a_i^6. The exact moments are
 E X^2=1, E X^4=3-2K and E X^6=15-30K+16L. Since L<=AK,
 
-$$
+```math
 m\le\mathbb E P(X)
 \le\frac{14365}{15972}
 +\frac{(16A-35/4)K}{3993/64}
 \le\frac{14365}{15972}<\frac9{10}.
-\tag{13}
-$$
+\qquad\text{(13)}
+```
 
 For the remaining intervals choose a_1=sqrt(A) and
 Y=sum_{i>1}a_i epsilon_i. Averaging the first sign gives
 m=E max(sqrt(A),|Y|). The pointwise bounds
 
-$$
+```math
 (x-a)_+\le\frac{x^2}{4a},\qquad
 (x-a)_+\le\frac{27x^4}{256a^3}
 \quad(x\ge0,\ a>0)
-$$
+```
 
 and E Y^2=1-A, E Y^4<=3(1-A)^2 imply
 
-$$
+```math
 m\le\frac{1+3A}{4\sqrt A},\qquad
 m\le H_4(A):=\sqrt A+
 \frac{81(1-A)^2}{256A^{3/2}}.
-\tag{14}
-$$
+\qquad\text{(14)}
+```
 
 On [1/2,9/16], the first bound is increasing and is at most
 43/48<9/10. On [9/16,3/4], the sign of H_4'(A) is the sign of
@@ -233,18 +233,18 @@ For A>=3/4, put x=1-A and k=81/256<1/3. Equation (14) gives
 m<=sqrt(A)(1+kx^2/A^2). At A=1 the desired bound is equality.
 For x>0, the available slack is
 
-$$
+```math
 c-A(1-rA)=r^2x+rx^2.
-$$
+```
 
 The correction from the squared bracket, divided by x, is bounded by
 
-$$
+```math
 (1-rA)\left(\frac{2kx}{A}+\frac{k^2x^3}{A^3}\right)
 <\frac7{10}\left(\frac29+\frac1{243}\right)
 =\frac{77}{486}<\frac4{25}<r^2.
-\tag{15}
-$$
+\qquad\text{(15)}
+```
 
 Here x/A<=1/3 and 1-rA<7/10 follow from A>=3/4 and r>2/5.
 The rational comparison is 1925<1944, and r>2/5 follows from
@@ -255,27 +255,27 @@ sqrt(2)>7/5. This proves the second part of (8), strictly for A<1.
 For rho_t, the established direct weighted-Cauchy inequality
 F_U(rho)^2<=1-I_rho(U), where
 
-$$
+```math
 I_\rho(U)=\frac12\sum_{a,b}
 \frac{(\lambda_a-\lambda_b)^2}{\lambda_a+\lambda_b}|U_{ab}|^2,
-$$
+```
 
 is proved in [SPECTRAL_CONDITION_ENTROPY_BOUND](../SPECTRAL_CONDITION_ENTROPY_BOUND.md),
 Section 2. Terms with zero denominator are zero. At the present binary
 spectrum, direct substitution gives I_{rho_t}(U)=t^2q_U. Therefore
-$g(\rho_t)\le\mathcal R_{t^2}(R)$, and (5) proves the upper bound in (1).
+$`g(\rho_t)\le\mathcal R_{t^2}(R)`$, and (5) proves the upper bound in (1).
 The bisector reflection gives a one-qubit state times maximally mixed
 spectators, and directly attains the displayed value. Equality in the
 response bound supplies necessity without any restriction on decoders.
 
 Similarly, writing sqrt(rho_t)=alpha I+beta R gives directly
 
-$$
-\operatorname{Tr}(\sqrt{\rho_t}U\sqrt{\rho_t}U)
+```math
+\mathrm{Tr}(\sqrt{\rho_t}U\sqrt{\rho_t}U)
 =1-\bigl(1-\sqrt{1-t^2}\bigr)q_U.
-$$
+```
 
-Thus $\mathcal A(\rho_t)=\mathcal R_{1-\sqrt{1-t^2}}(R)$, proving (2)
+Thus $`\mathcal A(\rho_t)=\mathcal R_{1-\sqrt{1-t^2}}(R)`$, proving (2)
 and its equality cases. At t=1, R=2P-I runs over every rank-d/2
 projector, giving (3).
 
@@ -286,10 +286,10 @@ attainer in (1) is product diagonal. The already proved scalar
 inequality in [COMMUTING_SEED_BOUND](../COMMUTING_SEED_BOUND.md),
 Section 2, equation (3), applied with lambda=(1-t)/2, gives
 
-$$
+```math
 2\bigl(1-\sqrt{1-t^2/2}\bigr)\ge c\,e(t).
-\tag{16}
-$$
+\qquad\text{(16)}
+```
 
 That scalar inequality is strict for 0<t<1. Applying it to the exact
 maximum in (1) proves (4), including its equality statements.
@@ -301,11 +301,11 @@ results. König--Schütt--Tomczak-Jaegermann, *Projection constants of
 symmetric spaces and variants of Khintchine's inequality*, J. reine
 angew. Math. 511 (1999), Theorem 2, equation (1.3), gives
 
-$$
+```math
 \left|\mathbb E\left|\sum_i a_i\epsilon_i\right|
 -\sqrt{2/\pi}\,\|a\|_2\right|
 \le(1-\sqrt{2/\pi})\|a\|_\infty.
-$$
+```
 
 See the [author-uploaded text](https://www.researchgate.net/publication/238882030_Projection_constants_of_symmetric_spaces_and_variants_of_Khintchine%27s_inequality)
 and [DOI record](https://doi.org/10.1515/crll.1999.511.1). The elementary

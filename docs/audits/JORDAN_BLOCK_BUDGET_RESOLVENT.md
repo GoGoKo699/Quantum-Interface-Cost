@@ -11,27 +11,27 @@ Let rho be a density matrix on memory Q of dimension M>=2, with ordered
 eigenvalues lambda_1>=...>=lambda_M. For t>2 write r=sqrt(2), s=1/(t-r).
 For 1<=a<=r set b=sqrt(2-a^2),
 
-\[
+```math
 f_a=\frac{t-a}{(t-a)^2-b^2},\qquad
 g_a=\frac{t+a}{(t+a)^2-b^2},
-\]
+```
 
 and use the [previously proved scalar function](EXACT_LAST_QUERY_RESOLVENT.md#1-the-readout-elimination-theorem)
 
-\[
+```math
 \Phi_t(x,y)=\max\left\{s(x+y),\max_{1\le a\le r}(xf_a+yg_a)\right\},
 \qquad x\ge y\ge0.
-\]
+```
 
 Extend Phi and the gain G below symmetrically to unordered arguments.
 
 Define the rho-weighted last-query resolvent on a reference qubit by
 
-\[
-R_t(\rho;B,D)=\operatorname{Tr}_Q\left[
+```math
+R_t(\rho;B,D)=\mathrm{Tr}_Q\left[
 (I\otimes\sqrt\rho)(tI-X\otimes B-Z\otimes D)^{-1}
 (I\otimes\sqrt\rho)\right].
-\]
+```
 
 The structural theorem fixes how many noncommuting two-dimensional Jordan
 blocks the last reflection pair may use. For an integer
@@ -39,17 +39,17 @@ blocks the last reflection pair may use. For an integer
 all reflection pairs with at most k such blocks, allowing arbitrary scalar
 signs on the complement. Define the nonnegative block gain
 
-\[
+```math
 G_t(x,y)=\Phi_t(x,y)-s(x+y).
-\]
+```
 
 Then its exact optimal resolvent is
 
-\[
+```math
 \boxed{F_k(t,\rho)=s+
 \sum_{j=1}^{k}G_t(\lambda_j,\lambda_{M+1-j}).}
-\tag{1}
-\]
+\qquad\text{(1)}
+```
 
 The k outermost eigenvalue pairs are optimal. This works in odd and even
 memory dimension, and each added block has no larger gain than the
@@ -66,13 +66,13 @@ Take the supremum over all reflection pairs (B,D) with at most one
 noncommuting two-dimensional Jordan block, allowing arbitrary scalar
 signs on its complement and allowing commuting pairs. Then
 
-\[
+```math
 \boxed{
 F_{\rm one}(t,\rho)
 =(1-\lambda_1-\lambda_M)s+\Phi_t(\lambda_1,\lambda_M).
 }
-\tag{2}
-\]
+\qquad\text{(2)}
+```
 
 The formula is valid in odd and even memory dimension. It depends only
 on the largest and smallest memory eigenvalues. Both orientations and
@@ -87,10 +87,10 @@ For a reference pure state chi, compress the full resolvent to its
 expectation on chi. A scalar Jordan block has readout signs (epsilon,eta)
 and contributes
 
-\[
+```math
 \frac{t+\epsilon\langle X\rangle_\chi+
 \eta\langle Z\rangle_\chi}{t^2-2}\le s.
-\]
+```
 
 On a noncommuting two-dimensional block, the
 [exact block calculation](EXACT_LAST_QUERY_RESOLVENT.md#3-one-jordan-block-has-an-exact-two-eigenvalue-description)
@@ -105,9 +105,9 @@ Increasing every scalar complement eigenvalue to s and maximizing the
 active eigenvalue spread gives an upper bound under trace rearrangement
 against ordered nonnegative lambda. The resulting full spectrum is
 
-\[
+```math
 \{f_a,g_a,s,\ldots,s\}.
-\]
+```
 
 Always g_a<1/t<s: the first inequality is equivalent to
 a(t+a)>b^2, which follows from a>=1, t>2, and b^2<=1.
@@ -116,18 +116,18 @@ weighted sum is at most the all-scalar value s. If f_a>=s, rearrangement
 assigns lambda_1 to f_a and lambda_M to g_a; all other weights receive s.
 Hence the largest possible gain above s is exactly
 
-\[
+```math
 \max\{0,\max_a[\lambda_1(f_a-s)+\lambda_M(g_a-s)]\},
-\]
+```
 
 which is (2).
 
 For attainment of a positive gain, choose the active plane spanned by
 eigenvectors for lambda_1 and lambda_M, use active readouts
 
-\[
+```math
 B=(aZ+bX)/\sqrt2,\qquad D=(aZ-bX)/\sqrt2,
-\]
+```
 
 and put B=D=I on the scalar complement. At the single common reference
 state (X+Z)/sqrt(2)=+1, the active eigenvalues are f_a,g_a and all scalar
@@ -193,18 +193,18 @@ K=T-(1-x-y)s. The [exact scalar test](EXACT_LAST_QUERY_RESOLVENT.md#5-exact-alge
 first K>=s(x+y), equivalently T>=s, and then minimize the strictly convex
 quartic
 
-\[
+```math
 P_K(a)=4Ka^4+2da^3-8Ka^2-d(t^2+2)a
 +K(t^2-2)^2-wt(t^2-2),
 \quad w=x+y,\quad d=x-y.
-\]
+```
 
 The quartic's unique minimum on [1,r] occurs at min{z,r}, where z>=1 is the unique
 positive root of
 
-\[
+```math
 16Kz^3+6dz^2-16Kz-d(t^2+2)=0.
-\]
+```
 
 Since lambda_1>0 for a density operator, the scalar-branch condition gives
 K>0 and strict convexity is automatic. There is no memory-matrix
@@ -215,15 +215,15 @@ For an earlier Hamiltonian with unique leading eigenvalue U, second
 eigenvalue m<Lambda-2, and actual top-vector memory marginal rho, the
 [rank-one envelope](EXACT_LAST_QUERY_RESOLVENT.md#6-exact-test-for-a-rank-one-spectral-upper-bound)
 
-\[
+```math
 H_0\le mI+(U-m)|\Omega\rangle\langle\Omega|
-\]
+```
 
 passes every one-block last pair exactly when
 
-\[
+```math
 (U-m)F_{\rm one}(\Lambda-m,\rho)\le1.
-\]
+```
 
 This equivalence concerns the envelope, not the original Hamiltonian.
 Strictly positive denominators alone do not imply that it passes.
@@ -236,14 +236,14 @@ complement necessarily has B=D=I. Define Psi_t(x,y)=max_a(xf_a+yg_a),
 omitting the all-scalar branch from Phi. Then the exact fixed-signature
 value is
 
-\[
+```math
 \boxed{
 F_{11}(t,\rho)=\max\left\{
 (\lambda_2+\lambda_3)s+\Psi_t(\lambda_1,\lambda_4),\quad
 (\lambda_1+\lambda_2)s+\Psi_t(\lambda_3,\lambda_4)
 \right\}.}
-\tag{3}
-\]
+\qquad\text{(3)}
+```
 
 The derivation is the same spectrum sorting, but the all-scalar value is
 no longer freely available. When f_a>=s the active large eigenvalue gets
@@ -277,17 +277,17 @@ two cubic-root comparisons.
 In the frequent range 2<t<=2+sqrt(2), one has f_a>=s throughout and only
 the first term in (3) is needed. Indeed
 
-\[
-\operatorname{sign}(f_a-s)
-=\operatorname{sign}[(\sqrt2-a)(\sqrt2+2a-t)].
-\]
+```math
+\mathrm{sign}(f_a-s)
+=\mathrm{sign}[(\sqrt2-a)(\sqrt2+2a-t)].
+```
 
 For a flat ququart marginal,
 
-\[
+```math
 F_{11}(t,I_4/4)
 =\frac1{2(t-\sqrt2)}+\frac{t^2-2}{2t(t^2-4)}.
-\]
+```
 
 The active trace is maximized at a=b=1. Equation (3) remains finite for
 every t>2 but diverges as t decreases to two, just as its single active

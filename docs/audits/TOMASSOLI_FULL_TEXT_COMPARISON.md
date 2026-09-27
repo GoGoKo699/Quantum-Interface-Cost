@@ -51,9 +51,9 @@ proof for the correctly normalized result.
 
 Write c for concurrence, V=2N, and
 
-$$
+```math
 f(v)=h_2\!\left(\frac{1-\sqrt{1-v^2}}2\right).
-$$
+```
 
 The relation E_F=f(c) for every two-qubit state is Wootters' prior
 theorem, [quant-ph/9709029](https://arxiv.org/abs/quant-ph/9709029).
@@ -61,12 +61,12 @@ The reductions below are elementary consequences, not proposed novelties.
 
 **Scalar benchmark.** For W=XX+YY or XX+ZZ and -2<=s<=2,
 
-$$
+```math
 \min c=[|s|-1]_+,\qquad
 \min N=\tfrac12[|s|-1]_+,\qquad
 \min E_F=f([|s|-1]_+).
-\tag{1}
-$$
+\qquad\text{(1)}
+```
 
 For XX+YY, bilateral Pauli twirling is a random local-unitary channel
 that preserves both correlations and cannot increase any of these
@@ -82,22 +82,22 @@ Local unitary equivalence gives XX+ZZ.
 **Two independent calibrated correlations.** Fix x=<XX> and z=<ZZ>.
 For every (x,z) in [-1,1]^2 the exact simultaneous minima are
 
-$$
+```math
 c_{\rm cal}=V_{\rm cal}=[|x|+|z|-1]_+,\qquad
 N_{\rm cal}=c_{\rm cal}/2,\qquad
 G(x,z):=E_{F,\rm cal}=f(c_{\rm cal}).
-\tag{2}
-$$
+\qquad\text{(2)}
+```
 
 Independent Pauli sign changes reduce to x,z>=0. Twirling preserves
 both constraints. For any resulting Bell probabilities,
 x+z=2(p_{Phi+}-p_{Psi-}), implying p_max>=(x+z)/2. If x+z>=1,
 the Bell probabilities in the order (Phi+,Phi-,Psi+,Psi-) given by
 
-$$
+```math
 \left(\frac{x+z}{2},\frac{1-x}{2},\frac{1-z}{2},0\right)
-\tag{3}
-$$
+\qquad\text{(3)}
+```
 
 are nonnegative, sum to one, give the prescribed separate correlations,
 and attain all three minima. If x+z<=1, the separable mixture
@@ -121,12 +121,12 @@ Our [two-correlation theorem](TWO_CORRELATION_FORMATION.md) fixes only
 Bob's qubit X,Z, allows Alice arbitrary binary contractions A_0,A_1,
 and minimizes E_F at <A_0 X>=x and <A_1 Z>=z. It gives
 
-$$
+```math
 E_2(x,z)=\gamma(x,z)
 =f\!\left(\sqrt{[x^2+z^2-1]_+}\right),\qquad
 E_d(x,z)=C(x,z)\quad(d\ge3).
-\tag{4}
-$$
+\qquad\text{(4)}
+```
 
 The first equality is already a consequence of Verstraete–Wolf; it is
 not claimed new. The candidate evaluation is the full profile C and
@@ -153,10 +153,10 @@ our problem, even before any dimension-three flag advantage is used.
 Conversely, the overlap on the axes is exact. The positive branch of
 Eq. (2.14), p. 15,
 
-$$
+```math
 |\psi_\theta\rangle=\cos\theta|\Phi^+\rangle
 +\sin\theta|\Psi^+\rangle,\qquad 0\le\theta\le\pi/4,
-$$
+```
 
 has x=1, z=cos(2theta)=v, E_F=f(v), V=v. This is precisely the
 (1,v,f(v),v) atom in our formation/negativity construction. It is
@@ -241,10 +241,10 @@ entropy inequality and unrestricted equal-accuracy rate. Nothing here
 allows summing single-site formation costs when sites share one quantum
 register. The remaining central proof target is still
 
-$$
+```math
 \sum_{i,b}\|\sqrt\rho P_{i,b}\sqrt\rho\|_1
 \le\sqrt2\,n+(2-\sqrt2)S(\rho).
-$$
+```
 
 The original contract remains one unknown specimen, encoding before
 one delayed local query, unrestricted collective encoding, unlimited

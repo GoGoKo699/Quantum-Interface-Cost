@@ -22,9 +22,9 @@ The [nonflat quarter-rank converse](docs/audits/NONFLAT_QUARTER_RANK_CONVERSE.md
 proves `Gamma(4,4)=4+2sqrt(2)` for arbitrary spectra and decoders. Together
 with the earlier results, this gives
 
-$$
+```math
 \Gamma(n,2^q)=2q+\sqrt2(n-q),\qquad 1\le n\le4,\quad q=0,\ldots,n.
-$$
+```
 
 The new proof combines the exact top-quarter Pauli spectrum, a local
 spectral-spread bound, a sum-of-squares identity, and an exact two-polynomial
@@ -76,17 +76,17 @@ claimed optimal.
 The [half-rank converse](docs/audits/HALF_RANK_RETENTION_CONVERSE.md)
 now settles the unrestricted finite optima
 
-$$
+```math
 \Gamma(3,4)=4+\sqrt2,\qquad \Gamma(4,8)=6+\sqrt2.
-$$
+```
 
 More generally, for n=2,3,4 every positive S with `Tr(S^2)=1` and
 `rank(S)<=2^(n-1)` obeys the stronger affinity inequality
 
-$$
+```math
 \sum_{A\in\{X_i,Z_i\}_{i=1}^n}
-\sqrt{\operatorname{Tr}(SASA)}\le2(n-1)+\sqrt2.
-$$
+\sqrt{\mathrm{Tr}(SASA)}\le2(n-1)+\sqrt2.
+```
 
 The established squared-fidelity/affinity comparison transfers this to
 all normalized seed scores. The proof retains the rank constraint through
@@ -143,7 +143,7 @@ The general compression problem below is already present in the dimensional meas
 | Full accuracy region for the same readout class at all n,q | Derived and independently checked: threshold matching and finite operator levels give sum_i w(x_i,z_i)<=q, with sharp support for every nonnegative query weighting. |
 | Sharp three-qubit spin-flip purity bound at rank at most four | Derived and independently checked: sum of six squared root fidelities is at most 5-4 Tr(rho^2), with equality at every allowed purity; all nonuniform invariant seeds are covered. |
 | Common Kramers-odd ququart readout class has exact uniform score 2sqrt(6) | Derived and independently checked via a symmetry-fixed extremal eigenvector; arbitrary original seeds allowed, but not every balanced readout family shares this symmetry. |
-| Every common antiunitary-odd ququart binary-readout class obeys 2||w||_2, with classwide uniform maximum 2sqrt(6) | Derived and independently checked: +I reduces to two commuting Pauli algebras and qubit monogamy; nonscalar squares reduce to blocks of dimension at most two. General Hermitian contractions are included; the full three-input bound is now supplied by the half-rank theorem. |
+| Every common antiunitary-odd ququart binary-readout class obeys 2\|\|w\|\|_2, with classwide uniform maximum 2sqrt(6) | Derived and independently checked: +I reduces to two commuting Pauli algebras and qubit monogamy; nonscalar squares reduce to blocks of dimension at most two. General Hermitian contractions are included; the full three-input bound is now supplied by the half-rank theorem. |
 | Every three-input seed of rank at most three obeys Gamma(3,3)<=4+sqrt(2) | Derived and independently checked for arbitrary spectra and full trace norms, with no antiunitary condition; the complete weighted two-site-retention support is an upper bound, not an evaluated qutrit optimum. |
 | Seven of ten nonscalar ququart signature patterns obey the retention benchmark | Derived and independently checked: the one-block theorem excludes four, and the positive-spectrum resolvent argument excludes three more. The later half-rank theorem closes the other three without classifying their readouts. |
 | At most one double-block query pair obeys the three-input retention benchmark | Derived and independently checked for arbitrary complex orientations and unequal angles; uses an established mixed-Choi monogamy corollary plus two simultaneous compression bounds. |
@@ -230,11 +230,11 @@ Let S consist of n qubits. The encoder receives **one** arbitrary, unknown densi
 
 Before the query is known, the encoder applies a quantum instrument
 
-\[
+```math
 \mathcal E(\rho)=\sum_c |c\rangle\langle c|_C\otimes\mathcal E_c(\rho),
 \qquad \sum_c\mathcal E_c\text{ is trace preserving},
 \qquad \dim Q\le 2^q.
-\]
+```
 
 The classical alphabet is finite for each protocol, but there is no a priori bound on its size. Thus the number of classical bits is free. The bound q is a **worst-case quantum dimension**, not an average over branches. Arbitrary global encoding is allowed. All systems carrying quantum information across the interface count in Q. There is no uncharged quantum bypass, source reaccess, or preshared entanglement link. Independent decoder ancillas and unlimited classical computation are allowed.
 
@@ -242,20 +242,20 @@ After encoding, a query j=(i,b) arrives, with i in {1,...,n} and b in {X,Z}. A q
 
 For P_(i,X)=X_i and P_(i,Z)=Z_i, require
 
-\[
-\Pr(s\mid i,b,\rho)=\operatorname{Tr}[M^{\eta}_{s\mid i,b}\rho],
+```math
+\Pr(s\mid i,b,\rho)=\mathrm{Tr}[M^{\eta}_{s\mid i,b}\rho],
 \qquad M^{\eta}_{s\mid i,b}=\tfrac12(I+s\eta P_{i,b}),
-\tag{1}
-\]
+\qquad\text{(1)}
+```
 
 for **every** input rho and every query. Contrast eta ranges from 0 to 1. It specifies the allowed output statistics, not a particular microscopic noise channel. Let q_min(n,eta) be the minimum q.
 
 Relative to the ideal binary measurement, the worst-case total-variation error is
 
-\[
+```math
 \epsilon=\frac{1-\eta}{2}.
-\tag{2}
-\]
+\qquad\text{(2)}
+```
 
 On a corresponding Pauli eigenstate this is the probability of returning the opposite sign. On a general state, it is a distribution error, not disagreement with a preexisting hidden outcome.
 
@@ -265,9 +265,9 @@ Define an alternative problem demanding at most epsilon total-variation error fo
 
 Twirling an admissible protocol by the n-qubit Pauli group, with the random seed stored in C and the appropriate output-sign correction, replaces A_j by lambda_j P_j. Specifically,
 
-\[
-\lambda_j=2^{-n}\operatorname{Tr}(P_j A_j)\ge 1-2\epsilon.
-\]
+```math
+\lambda_j=2^{-n}\mathrm{Tr}(P_j A_j)\ge 1-2\epsilon.
+```
 
 Permutations and independent local Hadamards act transitively on the 2n queries. Averaging over these symmetries equalizes the coefficients to a common lambda >= 1-2 epsilon. All these transformations preserve q because their seeds are classical. Independent random output flips then reduce lambda to eta=1-2 epsilon.
 
@@ -277,34 +277,34 @@ Conversely, (1) has worst-case error (2). Therefore the two minimum-memory formu
 
 Set
 
-\[
+```math
 \eta_0=1/\sqrt2,\qquad
 \epsilon_0=(1-1/\sqrt2)/2\simeq0.1464466094.
-\]
+```
 
 For one input qubit, use the four-outcome POVM
 
-\[
+```math
 G_{a,b}=\frac14\left(I+\frac{aX+bZ}{\sqrt2}\right),
 \qquad a,b\in\{+1,-1\}.
-\tag{3}
-\]
+\qquad\text{(3)}
+```
 
 Every effect has eigenvalues 0 and 1/2, and they sum to I. Its two marginals are
 
-\[
+```math
 \sum_bG_{a,b}=\tfrac12(I+a\eta_0X),\qquad
 \sum_aG_{a,b}=\tfrac12(I+b\eta_0Z).
-\]
+```
 
 Apply the product POVM across all n sites, store all pairs (a_i,b_i) in C, and answer the selected query with the corresponding sign. This works on arbitrary entangled inputs because it is an operator identity, not a product-state argument. Extra random output flips give any eta <= eta_0.
 
 For necessity, a purely classical encoding is a parent measurement followed by query-dependent classical postprocessing. Alternatively, Section 6 gives a separable-state witness implying eta <= eta_0 whenever q=0. Thus
 
-\[
+```math
 \boxed{q_{\min}(n,\eta)=0\ \Longleftrightarrow\ \eta\le\eta_0.}
-\tag{4}
-\]
+\qquad\text{(4)}
+```
 
 This threshold is the familiar joint-measurability threshold of equally noisy orthogonal Pauli measurements; it is not a new quantum phenomenon [1,2].
 
@@ -314,20 +314,20 @@ Choose a uniformly random subset K of exactly q input sites. Keep those q qubits
 
 If the queried site is in K, perform the requested ideal Pauli measurement. Otherwise return the relevant recorded sign. Every site is retained with probability q/n, so its effective contrast is
 
-\[
+```math
 \eta_q=\eta_0+\frac qn(1-\eta_0).
-\tag{5}
-\]
+\qquad\text{(5)}
+```
 
 This is valid for all input states. Measurement of the discarded sites can condition the retained subsystem, but averaging over their outcomes is trace preserving; hence it does not alter the retained site's unconditional marginal.
 
 For eta > eta_0, this gives
 
-\[
+```math
 q_{\min}(n,\eta)\le
 \left\lceil n\frac{\eta-\eta_0}{1-\eta_0}\right\rceil.
-\tag{6}
-\]
+\qquad\text{(6)}
+```
 
 The rounded-up construction can be degraded by random output flips to the exact target eta. The classical record can contain the subset tag plus 2(n-q) signs. Its size is not charged in this model.
 
@@ -337,10 +337,10 @@ No lower bound in this note assumes that the optimum retains individual input qu
 
 **Proposition.** Every admissible protocol satisfies
 
-\[
+```math
 q\ge n\left[1-2h_2\!\left(\frac{1-\eta}{2}\right)\right],
-\tag{7}
-\]
+\qquad\text{(7)}
+```
 
 where h_2 is binary entropy, with logarithms to base two. The useful bound is its maximum with zero.
 
@@ -348,49 +348,49 @@ where h_2 is binary entropy, with logarithms to base two. The useful bound is it
 
 Let D_(i,b) be the decoder's Hermitian contraction on B. Equation (1) implies E*(D_(i,b))=eta P_(i,b). Since X and Z are real,
 
-\[
+```math
 \langle X_{R_i}\otimes D_{i,X}\rangle_\omega
 =\langle Z_{R_i}\otimes D_{i,Z}\rangle_\omega=\eta.
-\tag{8}
-\]
+\qquad\text{(8)}
+```
 
 Bob can therefore guess the outcome of X or Z on R_i, once the basis and site are given, with error epsilon=(1-eta)/2. Fano's inequality and data processing give
 
-\[
+```math
 H(\mathsf X_i\mid B)\le h_2(\epsilon),\qquad
 H(\mathsf Z_i\mid B)\le h_2(\epsilon).
-\]
+```
 
 Here the sans-serif variables denote classical measurement outcomes. Applying conditional-entropy subadditivity to the reference outcomes yields
 
-\[
+```math
 H(\mathsf X^n\mid B)+H(\mathsf Z^n\mid B)
 \le 2nh_2(\epsilon).
-\tag{9}
-\]
+\qquad\text{(9)}
+```
 
 This does not assume that all the site-specific decoders can be executed on the same Q. Each individual entropy bound is a property of a marginal state; the entropy inequality combines these bounds without implementing their measurements jointly.
 
 The two full product bases are mutually unbiased, so Berta et al.'s uncertainty relation with quantum memory [4, Eq. (2)] gives
 
-\[
+```math
 H(\mathsf X^n\mid B)+H(\mathsf Z^n\mid B)
 \ge n+H(R\mid B).
-\]
+```
 
 Because C is classical,
 
-\[
+```math
 H(R\mid CQ)=\sum_c p_c H(R\mid Q)_{\omega^c}\ge -\log_2\dim Q\ge-q.
-\tag{10}
-\]
+\qquad\text{(10)}
+```
 
 Combining (9)-(10) proves (7). In particular,
 
-\[
+```math
 \boxed{q_{\min}(n,1)=n.}
-\tag{11}
-\]
+\qquad\text{(11)}
+```
 
 The exact endpoint is also a direct corollary of the earlier postmeasurement-information result [10], Lemma 5.1: all local X/Z support projectors generate the full matrix algebra. See the [audit](docs/audits/PROOF_AND_NOVELTY_AUDIT.md), Section 6.1. This proof is an application of established uncertainty and entropy results, not a new uncertainty relation. The entropic coefficient is positive only in the smaller-error part of the nonclassical region; a different argument is needed immediately above eta_0.
 
@@ -398,68 +398,68 @@ The exact endpoint is also a direct corollary of the earlier postmeasurement-inf
 
 **Proposition.** Every admissible protocol satisfies
 
-\[
+```math
 q\ge \frac{n(\eta-\eta_0)_+^2}{16\ln2}.
-\tag{12}
-\]
+\qquad\text{(12)}
+```
 
 **Proof.** Use the same virtual encoded state and decoders as in Section 5. For each site define
 
-\[
+```math
 W_i=X_{R_i}\otimes D_{i,X}+Z_{R_i}\otimes D_{i,Z}.
-\]
+```
 
 Its expectation on omega is 2 eta. On a product state across R_i:B, let x,z denote the reference Bloch coordinates and u,v the decoder expectations. Since x^2+z^2 <= 1 and |u|,|v| <= 1,
 
-\[
+```math
 xu+zv\le\sqrt{x^2+z^2}\sqrt{u^2+v^2}\le\sqrt2.
-\]
+```
 
 Convexity extends this to every separable state sigma_RiB. Thus the actual state's witness gap is at least 2 eta - sqrt(2).
 
 The witness can be implemented as a **one-way LOCC test from R_i to B**: choose the X or Z basis with equal probability, measure the reference, communicate the basis and sign to B, measure the corresponding decoder, and accept if the signs agree. The accept effect is
 
-\[
+```math
 T_i=I/2+W_i/4.
-\]
+```
 
 Use the convention ||rho-sigma||_(1-LOCC)=4(P_success-1/2), as in the corrected version of [5]. For every separable sigma,
 
-\[
+```math
 \|\omega_{R_iB}-\sigma\|_{1\text{-LOCC}}
-\ge 2\operatorname{Tr}[T_i(\omega-\sigma)]
+\ge 2\mathrm{Tr}[T_i(\omega-\sigma)]
 \ge\eta-\eta_0.
-\tag{13}
-\]
+\qquad\text{(13)}
+```
 
 The corrected one-way-LOCC faithfulness bound [5, Corollary 1, Eq. (12)] is
 
-\[
+```math
 E_{\rm sq}(R_i:B)_\omega
 \ge\frac{1}{16\ln2}
-\operatorname{dist}_{1\text{-LOCC}}(\omega_{R_iB},\mathrm{SEP})^2.
-\tag{14}
-\]
+\mathrm{dist}_{1\text{-LOCC}}(\omega_{R_iB},\mathrm{SEP})^2.
+\qquad\text{(14)}
+```
 
 The direction of communication matters: an earlier version of [5] claimed a stronger full-LOCC statement with a flawed proof. Our test is one-way, so (14) uses exactly the corrected theorem.
 
 Squashed entanglement is monogamous [5, Eq. (16); 6], giving
 
-\[
+```math
 E_{\rm sq}(R_1\cdots R_n:B)_\omega
 \ge\sum_i E_{\rm sq}(R_i:B)_\omega.
-\tag{15}
-\]
+\qquad\text{(15)}
+```
 
 Unlimited classical C does not invalidate the quantum-dimension upper bound. Introduce an extension F containing a copy of C. By the definition of squashed entanglement,
 
-\[
+```math
 E_{\rm sq}(R:CQ)_\omega
 \le\tfrac12 I(R:CQ\mid F)
 =\tfrac12\sum_c p_c I(R:Q)_{\omega^c}
 \le\log_2\dim Q\le q.
-\tag{16}
-\]
+\qquad\text{(16)}
+```
 
 Equations (13)-(16) prove (12). No assumption of product encoding or input independence was used. QED.
 
@@ -469,15 +469,15 @@ This derivation was independently reconstructed in the [commit-pinned audit](doc
 
 For fixed eta,
 
-\[
+```math
 \boxed{
 q_{\min}(n,\eta)=
 \begin{cases}
 0,&0\le\eta\le1/\sqrt2,\\
 \Theta(n),&1/\sqrt2<\eta\le1.
 \end{cases}}
-\tag{17}
-\]
+\qquad\text{(17)}
+```
 
 The constants in Theta(n) depend on eta. In particular, q=o(n) cannot sustain a fixed positive contrast advantage over the best purely classical interface. This is a resource threshold, not a thermodynamic phase transition. It does not state that every site must be kept quantum, or that the optimal constant fraction has been found.
 
@@ -485,28 +485,28 @@ The constants in Theta(n) depend on eta. In particular, q=o(n) cannot sustain a 
 
 Combine the lower bounds by defining
 
-\[
+```math
 L(\eta)=\max\left\{
 0,\ 1-2h_2((1-\eta)/2),\
 \frac{(\eta-\eta_0)_+^2}{16\ln2}
 \right\}.
-\]
+```
 
 The new [logarithmic-Sobolev converse](docs/STRONG_ENTROPIC_CONVERSE.md) gives an additional bound. Set b(eta)=0 for eta<=eta_0 and, for eta>=eta_0, define
 
-$$
+```math
 b(\eta)=h_2\!\left(
 \frac{1-\sqrt{1-(2\eta^2-1)^2}}2
 \right).
-$$
+```
 
 The subsequent [asymmetric entropy converse](docs/ASYMMETRIC_ENTROPIC_CONVERSE.md)
 defines
 
-$$
+```math
 f(c)=h_2\!\left(\frac{1-\sqrt{1-c^2}}2\right),\qquad
 \ell(\eta)=\left[f(\eta)-h_2((1-\eta)/2)\right]_+.
-$$
+```
 
 It proves, for every normalized seed, the bound
 `S(L^dagger L)>=sum_i[f(F_(i,Z))-h_2((1-F_(i,X))/2)]`.
@@ -518,31 +518,31 @@ No extra copy, simultaneous decoder or source promise is introduced.
 
 Then, with `L_new(eta)=max{L(eta),b(eta),ell(eta)}`,
 
-$$
+```math
 q_{\min}(n,\eta)\ge\lceil n L_{\rm new}(\eta)\rceil.
-$$
+```
 
 The b term is obtained by applying Beigi's improved quantum logarithmic-Sobolev inequality [14, Theorem 2] to a normalized seed's square root, combining root fidelity squared with affinity [15, Appendix A, Theorem 6], and using a Pauli-Fourier comparison. Each refined branch has entropy at most q, so the proof preserves worst-case dimension and unrestricted collective encoding. No typical-input promise or additional specimen is used. The hybrid construction still gives (6).
 
 For fixed eta, product encoding of two blocks yields
 
-\[
+```math
 q_{\min}(n+m,\eta)\le q_{\min}(n,\eta)+q_{\min}(m,\eta).
-\]
+```
 
 This remains valid on states entangled across the two blocks, because only one local query is asked and each block identity is valid for all density matrices. Subadditivity therefore ensures that
 
-\[
+```math
 R(\eta)=\lim_{n\to\infty}\frac{q_{\min}(n,\eta)}n
 =\inf_n\frac{q_{\min}(n,\eta)}n
-\]
+```
 
 exists. For eta > eta_0,
 
-\[
+```math
 L_{\rm new}(\eta)\le R(\eta)\le\frac{\eta-\eta_0}{1-\eta_0}.
-\tag{18}
-\]
+\qquad\text{(18)}
+```
 
 Numerical evaluation of these proved formulas, not simulation data:
 
@@ -557,17 +557,17 @@ Numerical evaluation of these proved formulas, not simulation data:
 
 For t down to zero, the earlier logarithmic-Sobolev bound has
 
-$$
+```math
 b(\eta_0+t)=4t^2\log_2(1/t)+O(t^2),
 \qquad b(1-t)=1-\frac4{\ln2}t+O(t^2).
-$$
+```
 
 The asymmetric converse strengthens the near-threshold scaling:
 
-$$
+```math
 \ell(\eta_0+t)=2\log_2(1+\sqrt2)t+O(t^2),\qquad
 2\log_2(1+\sqrt2)t\le R(\eta_0+t)\le(2+\sqrt2)t.
-$$
+```
 
 The latter bound holds for the entire allowed interval 0<=t<=1-eta_0;
 convexity supplies the lower supporting tangent. In particular
@@ -582,10 +582,10 @@ The corresponding unrestricted seed bound is
 
 The subsequent [one-qubit theorem](docs/ONE_QUBIT_OPTIMALITY.md) proves, for every n>=1,
 
-$$
+```math
 \eta_{\max}(n,1)=\frac1{\sqrt2}+\frac1n\left(1-\frac1{\sqrt2}\right),
 \qquad \Gamma(n,2)=2+\sqrt2(n-1).
-$$
+```
 
 The proof reduces extreme qubit decoders to scalar signs or Bloch observables, then uses Cheng–Hall's three-qubit CHSH monogamy [11]. Their theorem permits different measurement settings on the common qubit and mixed states, exactly as required for site-dependent decoders and three-qubit marginals. Equality forces every maximizing normalized seed to retain one site and project the rest onto product bisectors, up to output unitaries. This characterizes refined branch maps, without assuming that the retained site is chosen independently of the input.
 
@@ -600,9 +600,9 @@ Thus the former n=2,q=1 diagnostic is settled, including the entire two-input-qu
 The [allocation theorem](docs/ONE_QUBIT_ALLOCATION_REGION.md) strengthens
 this to the complete profile of separate local contrasts. With
 
-$$
+```math
 w(x,z)=\left[x+z-1-\sqrt{2(1-x)(1-z)}\right]_+,
-$$
+```
 
 an interface with worst-case quantum dimension at most two realizes the
 profile exactly if and only if `sum_i w(eta_(i,X),eta_(i,Z))<=1`.
@@ -615,10 +615,10 @@ not a decomposition of every physical encoder into product operations.
 
 A separate [entropy argument](docs/COMMUTING_SEED_BOUND.md) proves
 
-$$
+```math
 g(L)\le\sqrt2\,n+(2-\sqrt2)S(L^\dagger L)
-\le\sqrt2\,n+(2-\sqrt2)\log_2\operatorname{rank}(L)
-$$
+\le\sqrt2\,n+(2-\sqrt2)\log_2\mathrm{rank}(L)
+```
 
 whenever the Gram matrix is diagonal in a fixed product of local one-qubit bases. Its eigenvalues may be correlated and nonuniform, and the axes may have Y components. Consequently, this entire structured family cannot improve the common-accuracy subset benchmark. The unrestricted problem has not been narrowed by assumption. A proposed extension using a local quantum conditional-entropy inequality is false; the note gives a two-qubit counterexample, separately from the unresolved global inequality.
 
@@ -636,10 +636,10 @@ not asserted to be an unrestricted converse.
 For `0<z<=x<1` and `x^2+z^2>1`, the comparison with the exact retention
 cost w is
 
-$$
+```math
 C(x,z)<w(x,z)\quad\Longleftrightarrow\quad
 \frac{1-x}{1-z}<2\left(\frac1{\ln2}-1\right)^2.
-$$
+```
 
 At equality or above this boundary, C=w. In particular C(eta,eta) equals
 the subset rate. The explicit convex combination
@@ -699,31 +699,31 @@ quantum inequality, which remains open.
 
 The [entropy-rate characterization](docs/ENTROPY_RATE_CHARACTERIZATION.md) additionally proves
 
-$$
+```math
 R(\eta)=\inf_{n\ge1}\frac1n
 \min_{\rho:\ f_n(\rho)\ge\eta} S(\rho),
 \qquad
 f_n(\rho)=\frac1{2n}\sum_{i,b}
 \|\sqrt\rho P_{i,b}\sqrt\rho\|_1.
-$$
+```
 
 This is unrestricted and retains the original worst-case dimension and uniform-error quantifiers. Typical Schmidt truncation constructs a new normalized seed; its full orbit supplies a trace-preserving protocol. A continuity argument removes strict contrast slack. A single violation of the unrestricted entropy inequality above would therefore prove a collective asymptotic advantage. Conversely, that inequality holding for every Gram matrix would establish the subset rate for the whole nonclassical interval. Related asymptotic dimension/entropy methods are prior work [12,13]; the note compares their complete-assemblage demands and average-dimension quantities with this task.
 
 The [entropy-inequality boundaries](docs/ENTROPY_INEQUALITY_BOUNDARIES.md) further prove the exact maximum at any rank-two spectrum:
 
-$$
-\max_{\operatorname{spec}\rho=(\lambda,1-\lambda,0,\ldots)}g(\sqrt\rho)
+```math
+\max_{\mathrm{spec}\rho=(\lambda,1-\lambda,0,\ldots)}g(\sqrt\rho)
 =\sqrt2(n-1)+\sqrt{2[1+4\lambda(1-\lambda)]}.
-$$
+```
 
 This holds for arbitrary entangled eigenvectors and implies the conjectured entropy inequality for every rank-two state. Also excluded are all states diagonal in a global Clifford stabilizer basis, all flat rank-three states on two inputs, and flat half-rank projectors with one maximally mixed complementary marginal. Each is a proved family inside the unrestricted optimization; none is an assumption about admissible encoders. The smallest possible entropy witness is therefore a two-input, nonuniform rank-three state, while general full-rank two-input states also remain unresolved. Such an entropy witness would certify an asymptotic advantage through regularization even though rank three consumes two qubits at that finite block size.
 
 The [flat half-rank theorem](docs/FLAT_HALF_RANK_OPTIMALITY.md) now proves
 
-$$
-\max_{\operatorname{rank}P=2^{n-1}}g\!\left(\sqrt{P/2^{n-1}}\right)
+```math
+\max_{\mathrm{rank}P=2^{n-1}}g\!\left(\sqrt{P/2^{n-1}}\right)
 =2(n-1)+\sqrt2,\qquad 1\le n\le4.
-$$
+```
 
 Equality requires a pure X/Z bisector projector on one site tensor the identity on the others. The proof also applies at arbitrary n when the singleton X/Z part of `2P-I` occupies at most four sites, without restricting higher-order Pauli terms. It uses a short signed-spectrum calculation and query-specific compression bounds. Its relation to established quantum Boolean-function results is audited in [the source comparison](docs/FLAT_SEED_PRIOR_COMPARISON.md).
 
@@ -742,9 +742,9 @@ The [support-inertia converse](docs/SUPPORT_INERTIA_CONVERSE.md) now treats
 every spectrum on a given support P. Let a(P) count the sites where both
 compressed X/Z operators have positive and negative eigenvalues. Then
 
-$$
+```math
 g(\sqrt\rho)\le\sqrt2 n+(2-\sqrt2)a(P).
-$$
+```
 
 Thus a(P)<=q excludes finite-budget advantage; equality in that class forces
 the flat subset seed. Every support with
@@ -894,18 +894,18 @@ certifies neither publication originality nor unrestricted optimality.
 
 Suppose instead that the source can provide T independent copies of the same rho, and the desired outputs are estimates of the 2n expectation values. Apply the product POVM (3) to each copy. The estimators
 
-\[
+```math
 \widehat x_i=\sqrt2 a_i,\qquad \widehat z_i=\sqrt2 b_i
-\]
+```
 
 are unbiased, and each has second moment 2. Within one copy the different sites' outcomes may be correlated; independence between copies suffices.
 
 Hoeffding's inequality and a union bound imply that
 
-\[
+```math
 T\ge\frac4{\alpha^2}\ln\frac{4n}{\delta}
-\tag{19}
-\]
+\qquad\text{(19)}
+```
 
 copies suffice to estimate all 2n means to additive accuracy alpha with total failure probability at most delta. No quantum memory need remain after the measurements. This elementary example lies in the broader measurement-record reuse territory of classical shadows [7]; general Pauli estimation and memory tradeoffs also have detailed existing theory [8].
 

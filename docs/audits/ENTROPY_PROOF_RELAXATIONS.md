@@ -10,17 +10,17 @@ counterexample. No all-state proof or violating admissible seed was found.
 
 For a normalized seed Gram state rho on n qubits, write
 
-$$
+```math
 g_n(\rho)=\sum_{i,b}\|\sqrt\rho P_{i,b}\sqrt\rho\|_1,
 \qquad f_n(\rho)=g_n(\rho)/(2n),\qquad t=1/\sqrt2.
-$$
+```
 
 The conjectured sharp local-query entropy inequality is
 
-$$
+```math
 f_n(\rho)\le t+(1-t)S(\rho)/n.
-\tag{1}
-$$
+\qquad\text{(1)}
+```
 
 The joint score j_n, defined in the
 [joint-score audit](ROOF_PROVENANCE_AND_JOINT_SCORE.md), averages the
@@ -43,11 +43,11 @@ changes the allowed encoder, specimen, error or memory model.
 
 For a fixed product X/Z basis b, the filtered pure-state ensemble is
 
-$$
+```math
 v_x=\sqrt\rho\,|x_b\rangle,\qquad
 p_x=\|v_x\|^2,\qquad
 \sum_x|v_x\rangle\langle v_x|=\rho.
-$$
+```
 
 Every measurement output Y satisfies the established Holevo bound
 `I(X:Y)<=S(rho)` in bits. The proposed relaxation retains the exact prior
@@ -67,11 +67,11 @@ theorem.
 Put `p=(1-t)/2`, and let beta be the positive eigenstate of `(X+Z)/sqrt(2)`.
 For every pair of integers `1<=q<n`, take
 
-$$
+```math
 \rho_{n,q}=\left(\frac I2\right)^{\otimes q}
 \otimes|\beta\rangle\langle\beta|^{\otimes(n-q)}.
-\tag{2}
-$$
+\qquad\text{(2)}
+```
 
 Its entropy is q. In every basis tuple the label consists of q independent
 uniform bits and n-q independent Bernoulli(p) bits, with bit one denoting
@@ -83,11 +83,11 @@ unnormalized vector by a scalar.
 The exact minimum total Hamming risk is therefore `(n-q)p`, attained by
 decoding the uniform bits and outputting zero on all other bits. Thus
 
-$$
+```math
 j_n(\rho_{n,q})=f_n(\rho_{n,q})
 =1-\frac{2(n-q)p}{n}=t+(1-t)\frac qn.
-\tag{3}
-$$
+\qquad\text{(3)}
+```
 
 ### 2.2 A classical channel with less information and lower risk
 
@@ -99,53 +99,53 @@ binary channels:
 - Y_2 is Bernoulli(r), N_2 is independent Bernoulli(D), and
   X_2=Y_2 xor N_2, where
 
-$$
+```math
 r=\frac{p-D}{1-2D}=\frac{2e}{t+4e}.
-$$
+```
 
 The pairs are independent, X_1 is uniform and X_2 is exactly Bernoulli(p).
 All parameters are in (0,1), and this is a valid forward classical
 channel by Bayes' rule. Its two Hamming distortions are e and D, while
 
-$$
+```math
 I(X_1X_2:Y_1Y_2)=1-h_2(e)+h_2(p)-h_2(p-2e).
-$$
+```
 
 Output the other q-1 uniform bits exactly and zero on the other n-q-1
 biased bits. Independence gives
 
-$$
+```math
 I(X:Y)=q-h_2(e)+h_2(p)-h_2(p-2e).
-\tag{4}
-$$
+\qquad\text{(4)}
+```
 
 This is strictly below q by elementary exact bounds. Since t<3/4, p>1/8,
 and hence p-2e>1/9. On the interval [p-2e,p],
 
-$$
+```math
 h_2'(u)=\log_2\frac{1-u}{u}<3.
-$$
+```
 
 Consequently `h_2(p)-h_2(p-2e)<6e`, while `h_2(e)>=10e`, so
 
-$$
+```math
 I(X:Y)<q-4e<q=S(\rho_{n,q}).
-\tag{5}
-$$
+\qquad\text{(5)}
+```
 
 Nevertheless its total Hamming risk is
 
-$$
+```math
 e+(p-2e)+(n-q-1)p=(n-q)p-e,
-$$
+```
 
 and its normalized score is
 
-$$
+```math
 1-\frac{2\mathbb E d_H(X,Y)}n
 =t+(1-t)\frac qn+\frac{2e}{n}.
-\tag{6}
-$$
+\qquad\text{(6)}
+```
 
 This strictly exceeds the conjectured line. The same classical channel
 works for every basis tuple, since all the priors are identical with the
@@ -173,20 +173,20 @@ interface or advantage over subset encoding has been constructed.
 
 The genuine two-input Hamiltonians have the form
 
-$$
+```math
 H_{\rm QIC}=\sum_{i=1}^2\sum_{b=X,Z} A_{i,b}\otimes P_{i,b},
 \qquad -I\le A_{i,b}\le I,
-\tag{7}
-$$
+\qquad\text{(7)}
+```
 
 with the trusted operators restricted to X_1,Z_1,X_2,Z_2. They have norm
 at most four. Their expectation on a pure vector of Schmidt probabilities
 p,q is at most
 
-$$
+```math
 \sqrt2+\sqrt2\sqrt{1+4pq},\qquad p+q=1,
-\tag{8}
-$$
+\qquad\text{(8)}
+```
 
 by the established rank-two seed theorem. The following H meets the norm
 and every rank-two bound (8), and even has both partial traces zero, but
@@ -196,11 +196,11 @@ are identified explicitly below.
 On C^4 tensor C^4 let `Pi=sum_i |ii><ii|` and
 `|Omega>=sum_i |ii>` be unnormalized. Set
 
-$$
+```math
 H=\frac{67}{21}\Pi+\frac37|\Omega\rangle\langle\Omega|
 -\frac{19}{21}I_{16}.
-\tag{9}
-$$
+\qquad\text{(9)}
+```
 
 Both partial traces vanish. Its eigenvalues are four on Omega/2, 16/7
 on the other three maximally correlated directions, and -19/21 on the
@@ -208,26 +208,26 @@ twelve off-diagonal product directions. Thus `||H||_infinity=4`.
 
 For a normalized bipartite vector with coefficient matrix C,
 
-$$
+```math
 \langle H\rangle=\frac{67}{21}\sum_i|C_{ii}|^2
-+\frac37|\operatorname{Tr}C|^2-\frac{19}{21}.
-$$
++\frac37|\mathrm{Tr}C|^2-\frac{19}{21}.
+```
 
 Since `sum_i |C_ii|^2<=||C||_F^2=1` and
 `|Tr C|<=||C||_1=sqrt(p)+sqrt(q)` for Schmidt rank at most two,
 
-$$
+```math
 \langle H\rangle\le\frac{19}7+\frac67\sqrt{pq}.
-\tag{10}
-$$
+\qquad\text{(10)}
+```
 
 Put r=2sqrt(pq), a=19/7 and b=3/7. The inequality
 `a<=sqrt(2)+sqrt(2-b^2)` reduces to `185<=133 sqrt(2)`, true by squaring.
 Cauchy–Schwarz then gives
 
-$$
+```math
 a+br\le\sqrt2+\sqrt2\sqrt{1+r^2}.
-$$
+```
 
 Hence H satisfies the established rank-two spectral upper bound for all
 rank-two vectors, including arbitrary complex Schmidt bases and rank-one
@@ -238,26 +238,26 @@ limits. It need not saturate that bound.
 Choose `C=diag(sqrt(lambda_1),...,sqrt(lambda_4))` with Schmidt
 probabilities `lambda=(9/10,1/30,1/30,1/30)`. Direct substitution gives
 
-$$
+```math
 \langle H\rangle=\frac{98+9\sqrt3}{35}.
-\tag{11}
-$$
+\qquad\text{(11)}
+```
 
 Its entropy obeys
 
-$$
+```math
 S=\frac9{10}\log_2\frac{10}9+\frac1{10}\log_2 30
 <\frac{13}{20},
-$$
+```
 
 using `(10/9)^6<2` and `30<32`. The proposed affine entropy-energy bound
 would therefore be strictly less than
 
-$$
+```math
 2\sqrt2+(2-\sqrt2)\frac{13}{20}
 =\frac{26+27\sqrt2}{20}.
-\tag{12}
-$$
+\qquad\text{(12)}
+```
 
 But (11) exceeds (12): cross multiplication reduces this to
 `70+12 sqrt(3)>63 sqrt(2)`, which follows from
@@ -269,11 +269,11 @@ without a numerical logarithm or optimization certificate.
 H is outside (7). In its trusted Pauli expansion the coefficient of
 Z_1 Z_2 is
 
-$$
-\frac14\operatorname{Tr}_{B}
+```math
+\frac14\mathrm{Tr}_{B}
 [(I\otimes Z_1Z_2)H]=\frac{19}{21}Z_1Z_2\ne0.
-\tag{13}
-$$
+\qquad\text{(13)}
+```
 
 It is identically zero for every genuine Hamiltonian (7). The norm,
 zero partial traces and complete rank-two bound cannot imply the desired

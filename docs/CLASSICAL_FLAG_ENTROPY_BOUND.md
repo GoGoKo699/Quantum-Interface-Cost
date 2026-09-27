@@ -10,18 +10,18 @@ inequality nor establishes publication novelty.
 
 Write
 
-$$
+```math
 g_n(\rho)=\sum_{i=1}^n\sum_{b=X,Z}
 \|\sqrt\rho\,P_{i,b}\sqrt\rho\|_1,
 \qquad c=2-\sqrt2.
-$$
+```
 
 The target inequality is
 
-$$
+```math
 g_n(\rho)\le\sqrt2\,n+cS(\rho),
-\tag{1}
-$$
+\qquad\text{(1)}
+```
 
 where entropy is measured in bits. The
 [product-diagonal proof](COMMUTING_SEED_BOUND.md) assumes a fixed tensor
@@ -41,58 +41,58 @@ is imposed on that operational optimization.
 
 Use root fidelity
 
-$$
+```math
 F(A,B)=\|\sqrt A\sqrt B\|_1
-$$
+```
 
 for positive semidefinite matrices. If U is a Hermitian unitary, then
 
-$$
+```math
 F(\rho,U\rho U)=\|\sqrt\rho\,U\sqrt\rho\|_1.
-\tag{2}
-$$
+\qquad\text{(2)}
+```
 
 Indeed, `sqrt(U rho U)=U sqrt(rho) U`, and multiplication by the rightmost
 U preserves trace norm.
 
 The established monotonicity of fidelity under partial trace gives
 
-$$
+```math
 F(\rho_{AB},\sigma_{AB})\le F(\rho_A,\sigma_A).
-\tag{3}
-$$
+\qquad\text{(3)}
+```
 
 For completeness, the following elementary argument proves the exact
 special case used here without importing an external theorem. The
 variational formula is
 
-$$
+```math
 F(A,B)=\frac12\inf_{H>0}
-\left(\operatorname{Tr}(AH)+\operatorname{Tr}(BH^{-1})\right).
-\tag{4}
-$$
+\left(\mathrm{Tr}(AH)+\mathrm{Tr}(BH^{-1})\right).
+\qquad\text{(4)}
+```
 
 For every positive definite H, trace-norm duality and Hilbert--Schmidt
 Cauchy--Schwarz give
 
-$$
+```math
 \begin{aligned}
 F(A,B)
 &=\max_{V\ \mathrm{unitary}}
- |\operatorname{Tr}(\sqrt A V\sqrt B)|\\
-&\le\sqrt{\operatorname{Tr}(AH)\operatorname{Tr}(BH^{-1})}\\
-&\le\tfrac12\left(\operatorname{Tr}(AH)+\operatorname{Tr}(BH^{-1})\right).
+ |\mathrm{Tr}(\sqrt A V\sqrt B)|\\
+&\le\sqrt{\mathrm{Tr}(AH)\mathrm{Tr}(BH^{-1})}\\
+&\le\tfrac12\left(\mathrm{Tr}(AH)+\mathrm{Tr}(BH^{-1})\right).
 \end{aligned}
-$$
+```
 
 To see the middle step, cycle the trace into the product
 `(H^(1/2) sqrt(A) V)(sqrt(B) H^(-1/2))`; the two squared
 Hilbert--Schmidt norms are the two traces displayed. When A and B are
 positive definite, the choice
 
-$$
+```math
 H=A^{-1/2}(A^{1/2}BA^{1/2})^{1/2}A^{-1/2}
-$$
+```
 
 makes both traces equal to `F(A,B)`, proving (4). For semidefinite A and B,
 apply this construction to `A+epsilon I,B+epsilon I`: their minimizing H
@@ -105,11 +105,11 @@ Apply (4) to the joint matrices and restrict its minimization to
 and another application of (4) proves (3). In particular, for a local
 query U on A,
 
-$$
+```math
 \|\sqrt\rho\,(U\otimes I)\sqrt\rho\|_1
 \le\|\sqrt{\rho_A}\,U\sqrt{\rho_A}\|_1.
-\tag{5}
-$$
+\qquad\text{(5)}
+```
 
 The direction of this inequality is essential: discarding B increases
 fidelity and therefore supplies an upper bound on the joint seed score.
@@ -119,20 +119,20 @@ fidelity and therefore supplies an upper bound on the joint seed score.
 **Theorem.** Let i be one of n input qubits, let
 `{|0_N>,|1_N>}` be any orthonormal basis on that qubit, and suppose
 
-$$
+```math
 \rho=\sum_{a=0}^1p_a|a_N\rangle\langle a_N|_i\otimes\sigma_a,
 \qquad p_0+p_1=1.
-\tag{6}
-$$
+\qquad\text{(6)}
+```
 
 The conditional states sigma_a on the other n-1 sites may be noncommuting,
 entangled, or rank deficient. Assume that every positive-weight branch
 satisfies
 
-$$
+```math
 g_{n-1}(\sigma_a)\le\sqrt2(n-1)+cS(\sigma_a).
-\tag{7}
-$$
+\qquad\text{(7)}
+```
 
 Then rho satisfies (1).
 
@@ -140,33 +140,33 @@ Then rho satisfies (1).
 block diagonal in the flag basis. Trace norm is additive on these orthogonal
 blocks, so summing all those queries gives exactly
 
-$$
+```math
 \sum_{j\ne i}\sum_{b=X,Z}
 \|\sqrt\rho\,P_{j,b}\sqrt\rho\|_1
 =\sum_a p_a g_{n-1}(\sigma_a)
 \le\sqrt2(n-1)+c\sum_a p_aS(\sigma_a).
-\tag{8}
-$$
+\qquad\text{(8)}
+```
 
 For the two queries on i, apply (5). The flag marginal has eigenvalues
 `p_0,p_1`. The single-qubit entropy inequality, proved in
 [COMMUTING_SEED_BOUND.md](COMMUTING_SEED_BOUND.md), Sections 2 and 5,
 gives
 
-$$
+```math
 \sum_{b=X,Z}\|\sqrt\rho\,P_{i,b}\sqrt\rho\|_1
 \le g_1(\rho_i)\le\sqrt2+c h_2(p_0).
-\tag{9}
-$$
+\qquad\text{(9)}
+```
 
 That scalar inequality allows any local eigenbasis, including an axis
 with a Y component. Finally, the eigenvalues of rho are the eigenvalues
 of the blocks `p_a sigma_a`; hence
 
-$$
+```math
 S(\rho)=h_2(p_0)+\sum_a p_aS(\sigma_a).
-\tag{10}
-$$
+\qquad\text{(10)}
+```
 
 Adding (8) and (9) proves (1). A zero-weight branch contributes zero and
 requires no definition of its conditional state. This completes the proof.
@@ -190,21 +190,21 @@ then so does `rho tensor sigma`.
 
 For a query on the rho factor,
 
-$$
+```math
 \|\sqrt{\rho\otimes\sigma}\,(P\otimes I)
 \sqrt{\rho\otimes\sigma}\|_1
 =\|(\sqrt\rho P\sqrt\rho)\otimes\sigma\|_1
 =\|\sqrt\rho P\sqrt\rho\|_1,
-$$
+```
 
 since `||sigma||_1=1`. The analogous identity holds for the other factor.
 Therefore
 
-$$
+```math
 g_{n+m}(\rho\otimes\sigma)=g_n(\rho)+g_m(\sigma),
 \qquad S(\rho\otimes\sigma)=S(\rho)+S(\sigma),
-\tag{11}
-$$
+\qquad\text{(11)}
+```
 
 and the claimed closure follows. These tensor powers and classical-flag
 extensions cannot create an entropy witness from seeds that already satisfy
@@ -214,17 +214,17 @@ extensions cannot create an entropy witness from seeds that already satisfy
 
 **Corollary.** Every two-qubit state of the form
 
-$$
+```math
 \rho_{AB}=p|0_N\rangle\langle0_N|\otimes\sigma_0
  +(1-p)|1_N\rangle\langle1_N|\otimes\sigma_1
-\tag{12}
-$$
+\qquad\text{(12)}
+```
 
 satisfies
 
-$$
+```math
 g_2(\rho_{AB})\le2\sqrt2+cS(\rho_{AB}).
-$$
+```
 
 The conditional qubit states are arbitrary, so this follows directly from
 the theorem and the one-qubit bound. The same statement holds with A and B
@@ -232,11 +232,11 @@ interchanged.
 
 A concrete example beyond every fixed tensor product eigenbasis is
 
-$$
+```math
 \rho_{AB}=\frac12|0\rangle\langle0|\otimes|0\rangle\langle0|
  +\frac12|1\rangle\langle1|\otimes\frac{I+X/2}{2}.
-\tag{13}
-$$
+\qquad\text{(13)}
+```
 
 Its spectrum is `(1/2,3/8,1/8,0)`: this is a nonuniform rank-three case.
 If rho were diagonal in a fixed product basis, it would commute with some
@@ -266,11 +266,11 @@ stated factors. Every such product attains (1), by (11).
 A tempting stronger statement would replace the marginal entropy in (9)
 by conditional entropy:
 
-$$
+```math
 \sum_{b=X,Z}\|\sqrt\rho\,P_{A,b}\sqrt\rho\|_1
 \stackrel{?}{\le}\sqrt2+cH(A\mid B)_\rho.
-\tag{14}
-$$
+\qquad\text{(14)}
+```
 
 Summing such inequalities would imply the desired global result. However,
 (14) is false even for a two-qubit state of rank two, classical on A.
@@ -280,30 +280,30 @@ only a single qubit in the complementary reference system B.
 
 For `1/2<=p<=1`, put
 
-$$
+```math
 |b_\pm\rangle=\sqrt p\,|0\rangle\pm\sqrt{1-p}\,|1\rangle,
 \qquad
 \rho_{AB}=\frac12|0\rangle\langle0|\otimes|b_+\rangle\langle b_+|
  +\frac12|1\rangle\langle1|\otimes|b_-\rangle\langle b_-|.
-\tag{15}
-$$
+\qquad\text{(15)}
+```
 
 The two branches are orthogonal on A, so `S(AB)=1`. Its B marginal is
 `diag(p,1-p)`, whence `H(A|B)=1-h_2(p)`. The Z_A query commutes with
 rho and has score one. The X_A query exchanges the A branches; its two
 nonzero singular values are each `|<b_+|b_->|/2`. Therefore
 
-$$
+```math
 F_{A,Z}=1,\qquad F_{A,X}=2p-1,
 \qquad F_{A,X}+F_{A,Z}=2p.
-\tag{16}
-$$
+\qquad\text{(16)}
+```
 
 At `p=9/10`, the proposed inequality would require
 
-$$
+```math
 1.8\le2-c h_2(9/10)\simeq1.725268742,
-$$
+```
 
 which is false. Every dimension, probability, and trace norm here is exact;
 no optimization or numerical certificate is involved in the counterexample.

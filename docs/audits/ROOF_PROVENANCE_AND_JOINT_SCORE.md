@@ -42,21 +42,21 @@ E_FA: refinement to extremal assemblages cannot increase average marginal
 entropy. Use Pauli conjugation with the matching outcome relabeling.
 The invariant assemblages are
 
-$$
+```math
 \sigma_{s|X}^{x,z}=(I+sxX)/4,\qquad
 \sigma_{s|Z}^{x,z}=(I+szZ)/4.
-\tag{1}
-$$
+\qquad\text{(1)}
+```
 
 Use the full signed square for the group-invariant set and then restrict
 to x,z>=0. Here is the orbit minimum, reconstructed for this task. For a
 qubit marginal with Bloch vector r, the available X/Z correlations are
 bounded by
 
-$$
+```math
 F_X=\sqrt{1-r_y^2-r_z^2},\qquad
 F_Z=\sqrt{1-r_x^2-r_y^2}.
-$$
+```
 
 Thus a seed whose orbit gives (x,z) has
 `|r|^2<=2-x^2-z^2`. Outside the unit disk this is attained by
@@ -64,21 +64,21 @@ Thus a seed whose orbit gives (x,z) has
 Inside the disk a pure vector `r=(x,sqrt(1-x^2-z^2),z)` attains the profile
 at zero entropy. Writing
 
-$$
+```math
 f(v)=h_2\!\left(\frac{1-\sqrt{1-v^2}}2\right),
-$$
+```
 
 the exact orbit minimum is therefore
 
-$$
+```math
 \varepsilon(x,z)=
 \begin{cases}
 0,&x^2+z^2\le1,\\
 f(\sqrt{x^2+z^2-1}),&x^2+z^2>1.
 \end{cases}
-\qquad C=\operatorname{co}\varepsilon.
-\tag{2}
-$$
+\qquad C=\mathrm{co}\varepsilon.
+\qquad\text{(2)}
+```
 
 The last identity is a specialization of the prior roof theorem. The
 [profile note](../PRODUCT_DIAGONAL_PROFILE_RATE.md) performs the additional
@@ -122,12 +122,12 @@ Section IV.B uses Pauli symmetry; Section IV.C, Eqs. (12)–(14), pp. 7–8,
 gives the qubit D_M and incompatibility-weight SDPs. They are not equal for
 all measurement families. For (1), however, the exact specialization is
 
-$$
+```math
 D_M(M^{x,z})=W(M^{x,z})=
  w(x,z)=\left[x+z-1-\sqrt{2(1-x)(1-z)}\right]_+,
 \quad M^{x,z}=2\sigma^{x,z}.
-\tag{3}
-$$
+\qquad\text{(3)}
+```
 
 **Proof preserving the worst-input maximization.** In the D_M SDP let
 `B_0=sum_lambda G_lambda` be the total jointly measurable component.
@@ -144,9 +144,9 @@ For completeness the weight formula also follows geometrically. Twirl a
 weight decomposition `M=pN+(1-p)G`. The compatible G has contrast in the
 unit disk and N in the signed square. For p<min(x,z), feasibility requires
 
-$$
+```math
 (x-p)^2+(z-p)^2\le(1-p)^2.
-$$
+```
 
 Outside the disk its first nonnegative solution is the w in (3), which is
 at most min(x,z). It is attained by N=(1,1) and
@@ -156,12 +156,12 @@ Inside the disk take w=0. Larger p cannot improve the minimum.
 Thus the profile note's existing phase theorem already gives the complete
 comparison with this prior resource. For 0<z<=x<1 outside the disk,
 
-$$
+```math
 C(x,z)<D_M(M^{x,z})
 \quad\Longleftrightarrow\quad
 \frac{1-x}{1-z}<2(1/\ln2-1)^2.
-\tag{4}
-$$
+\qquad\text{(4)}
+```
 
 There is equality in the complementary central region and on the disk.
 On x=1, C(1,z)=f(z)<z=D_M for 0<z<1; use symmetry for the other half of
@@ -174,20 +174,20 @@ maximum quantum dimension by this prior average-rank cost.
 
 Define the independently optimized local score
 
-$$
+```math
 f_n(\rho)=\frac1{2n}\sum_{i,b\in\{X,Z\}}
 \|\sqrt\rho P_{i,b}\sqrt\rho\|_1.
-$$
+```
 
 For a full setting tuple b let
 
-$$
+```math
 J_b(\rho)=\max_{\substack{\Gamma_{s|b}\ge0\\
                       \sum_s\Gamma_{s|b}=\rho}}
- \frac1n\sum_{s,i}s_i\operatorname{Tr}(P_{i,b_i}\Gamma_{s|b}),
+ \frac1n\sum_{s,i}s_i\mathrm{Tr}(P_{i,b_i}\Gamma_{s|b}),
 \qquad j_n=2^{-n}\sum_b J_b.
-\tag{5}
-$$
+\qquad\text{(5)}
+```
 
 Each context may use an arbitrary joint POVM on a purification; no
 no-signalling condition between its internal output sites is imposed.
@@ -202,11 +202,11 @@ information*, [1312.5205v1](https://arxiv.org/abs/1312.5205v1), 18 December
 optimality for product ensembles with independent priors and additive loss,
 allowing collective measurements. Our product-seed specialization is
 
-$$
+```math
 (n+m)j_{n+m}(\rho\otimes\tau)
  =n j_n(\rho)+m j_m(\tau).
-\tag{6}
-$$
+\qquad\text{(6)}
+```
 
 A direct proof checks every quantifier. For fixed contexts b,c, marginalize
 any collective tuple assemblage over the second output block and trace its
@@ -219,11 +219,11 @@ factor for correlated rho, so (6) is no all-state entropy theorem.
 
 Put delta=1-t and define
 
-$$
+```math
 D_f(\rho)=n(f_n(\rho)-t)-\delta S(\rho),\qquad
 D_j(\rho)=n(j_n(\rho)-t)-\delta S(\rho).
-\tag{7}
-$$
+\qquad\text{(7)}
+```
 
 Both excesses are additive on products. Tensor powers scale them; pure
 bisector or maximally mixed one-qubit padding contributes zero. Keeping
@@ -238,19 +238,19 @@ is a different operation and is not covered by the averaging assertion.
 
 Let c=cos(pi/8), s=sin(pi/8), and take the normalized two-input seed
 
-$$
+```math
 L=\frac12\begin{pmatrix}c&s&c&s\\s&c&-s&-c\end{pmatrix},
 \qquad \rho=L^\dagger L=\frac{I+t(IX+XZ)}4.
-\tag{8}
-$$
+\qquad\text{(8)}
+```
 
 IX and XZ anticommute. Hence rho has spectrum (1/2,1/2,0,0) and S=1.
 Direct multiplication gives
 
-$$
+```math
 LX_1L^\dagger=Z/2,\quad LZ_1L^\dagger=tX/2,\quad
 LX_2L^\dagger=tI/2,\quad LZ_2L^\dagger=tZ/2.
-$$
+```
 
 For compressed observables A,B, maximize
 `sum_(r,u) Tr[(rA+uB)N_(r,u)]`. A dual Y satisfying Y>=rA+uB for all
@@ -266,11 +266,11 @@ and attaining POVMs prove exact optimality in every context.
 
 Consequently
 
-$$
+```math
 f_2=\frac{1+3t}4,\qquad j_2=\frac{3+4t}8,\qquad
 f_2-j_2=\frac{\sqrt2-1}8>0.
-\tag{9}
-$$
+\qquad\text{(9)}
+```
 
 Equation (6) proves that this normalized gap persists for every tensor
 power even under collective tuple readout. Nevertheless
@@ -293,15 +293,15 @@ Group the even guesses into `F=Gamma_00+Gamma_11` and the odd guesses
 into rho-F. Each binary optimization is a trace norm. Thus, for arbitrary
 complex or singular rho,
 
-$$
+```math
 \begin{split}
 J_b(\rho)=\max_{0\le F\le\rho}\bigg\{&
  \sqrt{(F_{00,00}+F_{11,11})^2-4|F_{00,11}|^2}\\
  &+\sqrt{((\rho-F)_{01,01}+(\rho-F)_{10,10})^2
                         -4|(\rho-F)_{01,10}|^2}\bigg\}.
 \end{split}
-\tag{10}
-$$
+\qquad\text{(10)}
+```
 
 Indeed for H>=0 the only potentially nonzero eigenvalues of
 `sqrt(H)(|a><a|-|c><c|)sqrt(H)` have sum H_aa-H_cc and product
@@ -326,11 +326,11 @@ Its four optimal local decoders are one common logical Z, so j_2=f_2=t.
 Both marginals have `j_1=sqrt(t^2+2e-2e^2)` and entropy h_2(e), as does
 the joint state. With `Delta_n=S-n(j_n-t)/delta`,
 
-$$
+```math
 \Delta_2-\Delta_1-\Delta_1
 =-h_2(e)+2[\sqrt{t^2+2e-2e^2}-t]/\delta<0
 \quad(e=1/1024).
-$$
+```
 
 For this explicit value use `h_2(e)>=10e` and the square-root increment
 `<=sqrt(2)e`; the expression is at most `(4sqrt(2)-6)e<0`.
@@ -358,11 +358,11 @@ fixed-cap operational theorem. Its originality remains unverified.
 For unrestricted equal-accuracy optimality the required all-state bound is
 still
 
-$$
+```math
 \sum_{i,b}\|\sqrt\rho P_{i,b}\sqrt\rho\|_1
 \le\sqrt2\,n+(2-\sqrt2)S(\rho).
-\tag{11}
-$$
+\qquad\text{(11)}
+```
 
 The weaker joint-query target is
 `j_n<=t+delta S(rho)/n`; (10) does not prove it even for all two-qubit

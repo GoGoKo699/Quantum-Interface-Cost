@@ -30,18 +30,18 @@ remain open.
 
 Let Q be a qubit and let E on R1 tensor Q and F on R2 tensor Q satisfy
 
-\[
+```math
 E,F\ge0,\qquad
-\operatorname{Tr}_{R_1}E=\operatorname{Tr}_{R_2}F=I_Q/2.
-\tag{1}
-\]
+\mathrm{Tr}_{R_1}E=\mathrm{Tr}_{R_2}F=I_Q/2.
+\qquad\text{(1)}
+```
 
 Spectator identities are implicit. Then
 
-\[
+```math
 \boxed{E+F\le\tfrac32 I.}
-\tag{2}
-\]
+\qquad\text{(2)}
+```
 
 The leaves may have arbitrary finite dimensions; only qubit leaves are
 needed below. The proof depends on the center dimension through (1).
@@ -51,41 +51,41 @@ is at most 1/2, (2) follows from the other's norm being at most one.
 Otherwise p,q>1/2, and their top eigenvectors v,w are unique. All
 other eigenvalues of E are at most 1-p, and likewise for F, so
 
-\[
+```math
 E\le(1-p)I+(2p-1)|v\rangle\langle v|,
 \quad
 F\le(1-q)I+(2q-1)|w\rangle\langle w|.
-\tag{3}
-\]
+\qquad\text{(3)}
+```
 
 Let P and R be those rank-one projectors with their respective spectator
 identities inserted. Partial tracing `p|v><v|<=E` and its counterpart gives
 
-\[
-\|\operatorname{Tr}_{R_1}|v\rangle\langle v|\|
+```math
+\|\mathrm{Tr}_{R_1}|v\rangle\langle v|\|
 \le\frac1{2p},\qquad
-\|\operatorname{Tr}_{R_2}|w\rangle\langle w|\|
+\|\mathrm{Tr}_{R_2}|w\rangle\langle w|\|
 \le\frac1{2q}.
-\tag{4}
-\]
+\qquad\text{(4)}
+```
 
 Write V and W for their coefficient matrices, with leaf indices as rows
 and the common center as columns. The cross matrix of the two insertion
 isometries is `W V^dagger`, up to the ordering of its input and output
 indices. Consequently
 
-\[
+```math
 \|PR\|\le\|V\|\|W\|\le\frac1{2\sqrt{pq}}.
-\tag{5}
-\]
+\qquad\text{(5)}
+```
 
 For positive a,b, the two-projection Gram bound is
 
-\[
+```math
 \|aP+bR\|\le
 \frac{a+b+\sqrt{(a-b)^2+4ab\|PR\|^2}}2.
-\tag{6}
-\]
+\qquad\text{(6)}
+```
 
 For completeness, use the insertion maps to express the nonzero spectrum
 as that of a two-by-two block Gram matrix with diagonal blocks aI,bI
@@ -95,22 +95,22 @@ the corresponding scalar two-by-two matrix, giving (6).
 Substitute (5) into (6), with `a=2p-1,b=2q-1`, and add the scalar
 baseline in (3). This gives
 
-\[
+```math
 \|E+F\|\le 1+\frac12
 \sqrt{4(p-q)^2+(2-1/p)(2-1/q)}\le\frac32.
-\tag{7}
-\]
+\qquad\text{(7)}
+```
 
 The last inequality is elementary. Set x=2p-1 and y=2q-1 in [0,1]
 and assume x>=y by symmetry. Both summands below increase with x on
 [y,1], so
 
-\[
+```math
 (x-y)^2+\frac{4xy}{(1+x)(1+y)}
 \le(1-y)^2+\frac{2y}{1+y}
 =1-\frac{y^2(1-y)}{1+y}\le1.
-\tag{8}
-\]
+\qquad\text{(8)}
+```
 
 This proves (2), including the endpoint cases already separated above.
 Two Bell projectors attain 3/2. A Bell projector together with
@@ -120,27 +120,27 @@ Two Bell projectors attain 3/2. A Bell projector together with
 
 Now let memory Q have dimension four, and let
 
-\[
+```math
 H_0=h_1+h_2,\qquad
 h_i=X_i\otimes B_i+Z_i\otimes D_i,
-\tag{9}
-\]
+\qquad\text{(9)}
+```
 
 where B_i,D_i are anticommuting Hermitian reflections. The operators
 `S_i=X_i tensor B_i` and `T_i=Z_i tensor D_i` are commuting reflections.
 Their joint positive projector is
 
-\[
+```math
 \Pi_i=\frac{(I+S_i)(I+T_i)}4.
-\]
+```
 
 Examining their four possible joint signs and tracing the reference gives
 
-\[
+```math
 h_i=S_i+T_i\le2\Pi_i,\qquad
-\operatorname{Tr}_{R_i}\Pi_i=I_Q/2.
-\tag{10}
-\]
+\mathrm{Tr}_{R_i}\Pi_i=I_Q/2.
+\qquad\text{(10)}
+```
 
 The second identity follows because S_i, T_i and S_iT_i each have a
 traceless reference Pauli factor. No subsystem representation is needed.
@@ -148,16 +148,16 @@ traceless reference Pauli factor. No subsystem representation is needed.
 Choose any two-dimensional memory subspace, with isometry
 `W:C^2 -> Q`. Its compressed Bell operators
 
-\[
+```math
 E_i=(I_{R_i}\otimes W^\dagger)\Pi_i(I_{R_i}\otimes W)
-\]
+```
 
 satisfy (1) on the same compressed center. Thus (2) and (10) imply
 
-\[
+```math
 \boxed{(I_R\otimes W^\dagger)H_0(I_R\otimes W)\le3I.}
-\tag{11}
-\]
+\qquad\text{(11)}
+```
 
 Every normalized state of Schmidt rank at most two across `(R1 R2):Q`
 lies in such a subspace. Hence its expectation of H_0 is at most three.
@@ -168,9 +168,9 @@ for the two readout pairs is assumed.
 The constant is attained: choose Q=A tensor B, both readout pairs to be
 the X/Z Paulis on their respective memory qubits, and use
 
-\[
+```math
 |\Phi^+\rangle_{R_1A}\otimes|0\rangle_{R_2}\otimes|0\rangle_B.
-\]
+```
 
 The first pair contributes two and the second contributes one. The state
 has Schmidt rank two across references versus memory. This attaining
@@ -183,10 +183,10 @@ The pure states attaining score three have a simple form. Identify their
 occupied two-dimensional memory with a logical qubit. Up to interchanging
 the references, they are
 
-\[
+```math
 |\mathrm{Bell}\rangle_{R_1,\mathrm{logical}}\otimes|\chi\rangle_{R_2},
 \qquad \langle\chi|Y|\chi\rangle=0.
-\]
+```
 
 The Bell vector is matched to the first pair's compressed Pauli frame.
 In particular the two nonzero Schmidt eigenvalues are both 1/2.
@@ -222,63 +222,63 @@ The following linear-algebra statement transfers compression bounds to
 actual top eigenvectors. Suppose a Hermitian H anticommutes with an
 involution Gamma and has chiral block form
 
-\[
+```math
 H=\begin{pmatrix}0&C\\C^\dagger&0\end{pmatrix}.
-\]
+```
 
 Let U>0 be the largest singular value of C and m the second largest,
 counted with multiplicity. Choose unit singular vectors u,v with
 `Cv=Uu`, `C^dagger u=Uv`, so `Omega=(u+v)/sqrt(2)` is a top eigenvector.
 Let Pi be an orthogonal projection commuting with Gamma. If
 
-\[
+```math
 \|\Pi H\Pi\|\le k,\qquad U-m\le k,
-\tag{12}
-\]
+\qquad\text{(12)}
+```
 
 and `w=<Omega|Pi|Omega>`, `tau=1-w`, then
 
-\[
+```math
 \boxed{Uw-m\tau\le k.}
-\tag{13}
-\]
+\qquad\text{(13)}
+```
 
 To prove this, write `a=||Pi u||^2=w+z` and
 `b=||Pi v||^2=w-z`. Necessarily `|z|<=min(w,tau)`. Remove one top
 singular component:
 
-\[
+```math
 C=U|u\rangle\langle v|+C',\quad
 C'v=0,\quad C'^\dagger u=0,\quad \|C'\|\le m.
-\]
+```
 
 If a,b>0, test the compressed C between the normalized vectors Pi u
 and Pi v. The unnormalized residuals `Pi u-a u` and `Pi v-b v`
 have norms `sqrt(a(1-a))` and `sqrt(b(1-b))`. Dividing their product
 by sqrt(ab) bounds the normalized C' contribution. Consequently
 
-\[
+```math
 k\ge U\sqrt{ab}-m\sqrt{(1-a)(1-b)}
 =U\sqrt{w^2-z^2}-m\sqrt{\tau^2-z^2}.
-\tag{14}
-\]
+\qquad\text{(14)}
+```
 
 If `mw>=U tau`, then w>=tau and the right side of (14) is
 nondecreasing in z^2: its derivative is
 
-\[
+```math
 \frac12\left[\frac{m}{\sqrt{\tau^2-z^2}}
 -\frac{U}{\sqrt{w^2-z^2}}\right]\ge0.
-\]
+```
 
 Indeed the ratio of the square roots is at least w/tau, with zero
 endpoints handled by continuity. Thus (14) is at least `Uw-m tau`,
 proving (13) in this case. If `mw<U tau`, then
 `tau>m/(U+m)`, and directly
 
-\[
+```math
 Uw-m\tau=U-(U+m)\tau<U-m\le k.
-\]
+```
 
 If a or b is zero, w<=1/2 and therefore
 `Uw-m tau <= (U-m)/2 <= k`. This covers the cases in which the
@@ -302,18 +302,18 @@ Let Omega be a normalized top eigenvector and let its ordered memory
 marginal eigenvalues be lambda_1,...,lambda_4. Choose Pi on memory as
 the projector onto its two leading Schmidt vectors, so
 
-\[
+```math
 \tau=\lambda_3+\lambda_4,\qquad w=1-\tau.
-\]
+```
 
 This memory projection commutes with Gamma. Equation (11) and chiral
 symmetry give `||Pi H_0 Pi||<=3`. Applying (13) with k=3 yields
 
-\[
+```math
 \boxed{\lambda_3+\lambda_4\ge
 \max\left\{0,\frac{U-3}{U+m}\right\}.}
-\tag{15}
-\]
+\qquad\text{(15)}
+```
 
 In particular an actual top state at U>3 has Schmidt rank at least
 three. In the nontrivial interface range U>2+sqrt(2), the bound forces
@@ -328,10 +328,10 @@ The compressed pair is therefore a reference-qubit field of norm at
 most one. The two sites together have compressed norm at most two.
 Apply (13) with k=2 to the leading memory Schmidt vector to obtain
 
-\[
+```math
 \boxed{\lambda_1\le\frac{2+m}{U+m}.}
-\tag{16}
-\]
+\qquad\text{(16)}
+```
 
 The hypothesis `U-m<=k` holds in both applications. No simplicity of U
 or nondegeneracy of the memory spectrum is required. Any corresponding
@@ -344,18 +344,18 @@ are not constraints on an unrelated state with the same eigenvalues.
 There is also a stronger replacement for the earlier linear spectral-sum
 bound:
 
-\[
+```math
 \boxed{(U-2)^2+(m-2)^2\le4.}
-\tag{17}
-\]
+\qquad\text{(17)}
+```
 
 Use the two projectors Pi_i from (10), now with their spectator reference
 identities. Each has rank four on the 16-dimensional full space, and
 
-\[
-\operatorname{Tr}(\Pi_1\Pi_2)
-=\operatorname{Tr}_Q[(I_Q/2)(I_Q/2)]=1.
-\]
+```math
+\mathrm{Tr}(\Pi_1\Pi_2)
+=\mathrm{Tr}_Q[(I_Q/2)(I_Q/2)]=1.
+```
 
 The squared principal cosines c_1^2,...,c_4^2 of their ranges therefore
 sum to one, with c_1>=c_2>=...>=0. The two greatest eigenvalues of
@@ -373,15 +373,15 @@ No claim is made here that every point on the circular arc is realizable.
 
 The preceding report's synthetic tuple
 
-\[
+```math
 \lambda=(29,29,1,1)/60,\quad U=7/2,\quad m=1/2+2\sqrt2
-\]
+```
 
 cannot arise as actual top data. It has tau=1/30, while (15) requires
 
-\[
+```math
 \tau\ge\frac{1/2}{4+2\sqrt2}>\frac1{30}.
-\]
+```
 
 For example the weaker consequence `U(1-2tau)<=3`, following from
 (15) because m<=U, already fails with left side 49/15. The circle
@@ -390,20 +390,20 @@ also excludes it: its left side minus four is `(17-12sqrt(2))/2>0`.
 A second full-rank synthetic tuple was found while testing whether the
 Schmidt bounds alone supplied the missing constraint:
 
-\[
+```math
 \lambda=(87,87,13,13)/200,\quad U=37/10,\quad m=3/10+2r,
 \qquad r=\sqrt2.
-\tag{18}
-\]
+\qquad\text{(18)}
+```
 
 It passes (15)--(16), since tau=13/100 and
 
-\[
+```math
 \begin{aligned}
 (U+m)\tau-(U-3)&=(13r-9)/50>0,\\
 (2+m)-(U+m)\lambda_1&=14/25+(113/100)r>0.
 \end{aligned}
-\]
+```
 
 It also passes the preceding six-Pauli condition, with
 `E_*=1369/2500` and gap `453/800-E_*=373/20000>0`, and the exact
@@ -412,19 +412,19 @@ unrestricted fixed-spectrum score bound, since
 
 Nevertheless the circle excludes this tuple as well:
 
-\[
+```math
 (U-2)^2+(m-2)^2-4=\frac{489-340r}{50}>0,
 \qquad 489^2-2(340)^2=7921>0.
-\]
+```
 
 For completeness it really does fail the resolvent criterion before
 this exclusion. With `t=37/10-r`, `c=U-m=2(t-2)`, the fixed allowed
 block `a=b=1` in both extreme eigenvalue pairs gives
 
-\[
+```math
 c\sum_j\Phi_t(\lambda_j,\lambda_{5-j})-1
 \ge\frac{4883-3440r}{500t(t+2)}>0,
-\]
+```
 
 where `4883^2-2(3440)^2=176489>0`. The explicit lower witness is
 approximately `1.0036963291152832`; all strict signs above have exact

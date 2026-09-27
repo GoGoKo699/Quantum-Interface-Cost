@@ -27,19 +27,19 @@ The official primary PDF was read; pages below are printed PDF pages.
 
 Equation (2), p. 5, uses alpha>=1 and the weighted CHSH score
 
-$$
+```math
 S_\alpha=\alpha\langle A_0(B_0+B_1)\rangle
 +\langle A_1(B_0-B_1)\rangle.
-\tag{1}
-$$
+\qquad\text{(1)}
+```
 
 Corollary 1 starts on p. 15. Equation (30), p. 16, bounds **ordinary
 negativity** for every two-qubit state when S_alpha>2alpha:
 
-$$
+```math
 2N\ge\sqrt{S_\alpha^2/4-\alpha^2}.
-\tag{2}
-$$
+\qquad\text{(2)}
+```
 
 Equation (31) on that page supplies Bell-diagonal saturators. Corollary
 2 / Eq. (32) then convexifies the scalar certificate for arbitrary
@@ -53,31 +53,31 @@ before discarding the qubit-block information.
 
 Fix Bob's qubit X,Z and write
 
-$$
+```math
 x=\langle A_0\otimes X\rangle,\quad
 z=\langle A_1\otimes Z\rangle,\quad
 v=2N,\quad a\ge b>0,\quad R=\sqrt{a^2+b^2}.
-$$
+```
 
 First consider a two-qubit block with binary projective Alice readouts.
 For any alpha>=1 define
 
-$$
+```math
 t_\alpha=\sqrt{a^2/\alpha^2+b^2},\quad
 \cos\theta=\frac{a}{\alpha t_\alpha},\quad
 \sin\theta=\frac{b}{t_\alpha},\quad
 B_\pm=\cos\theta X\pm\sin\theta Z.
-\tag{3}
-$$
+\qquad\text{(3)}
+```
 
 The cosine and sine are normalized. Anticommutation of X,Z makes B_+
 and B_- valid qubit reflections, and (1) is exactly
 S_alpha=2(ax+bz)/t_alpha. Therefore (2) implies
 
-$$
+```math
 ax+bz\le\sqrt{(a^2/\alpha^2+b^2)(\alpha^2+v^2)}.
-\tag{4}
-$$
+\qquad\text{(4)}
+```
 
 This also holds when S_alpha<=2alpha: the right side is at least
 alpha t_alpha, and the claimed upper bound is then immediate. Thus no
@@ -85,20 +85,20 @@ violation condition or imaginary square root is silently omitted.
 
 Put r=alpha^2>=1. The square on the right of (4) is
 
-$$
+```math
 a^2+b^2v^2+b^2r+\frac{a^2v^2}{r}.
-$$
+```
 
 Its minimizer is r=max(1,av/b), including v=0. Hence
 
-$$
+```math
 \boxed{ax+bz\le B_v(a,b):=
 \begin{cases}
 R\sqrt{1+v^2},&0\le v\le b/a,\\
 a+bv,&b/a\le v\le1.
 \end{cases}}
-\tag{5}
-$$
+\qquad\text{(5)}
+```
 
 For b=0 the statement is simply ax<=a. Exchanging the weights gives
 the other ordering. This is exactly Eq. (9) in the
@@ -115,10 +115,10 @@ necessary; the overlooked prior corollary already handles it.
 
 Let E=E_F in bits, V=2N and
 
-$$
+```math
 f(v)=h_2\!\left(\frac{1-\sqrt{1-v^2}}2\right),\quad
 q(v)=\mu f(v)+\lambda v,\qquad\mu,\lambda\ge0.
-$$
+```
 
 On every two-qubit state E>=f(V). For example, in any pure-state
 decomposition convexity of V and convexity and monotonicity of f give
@@ -131,12 +131,12 @@ Jordan decomposition and pinching produce one- or two-dimensional
 Alice blocks while retaining Bob's qubit and both correlations. The
 pinching decreases both resources. Orthogonal flags satisfy
 
-$$
+```math
 E_F\!\left(\bigoplus_jp_j\rho_j\right)
 =\sum_jp_jE_F(\rho_j),\qquad
 V\!\left(\bigoplus_jp_j\rho_j\right)=\sum_jp_jV(\rho_j).
-\tag{6}
-$$
+\qquad\text{(6)}
+```
 
 The first identity follows from convexity and local-measurement
 monotonicity; the second is the trace norm of a direct sum. Scalar
@@ -151,11 +151,11 @@ radial interval occurs at an endpoint. The other branch is a+bv-q(v).
 Extending that branch to all 0<=v<=1 cannot increase the result
 incorrectly: a+bv<=B_v(a,b) everywhere by Cauchy–Schwarz. Thus
 
-$$
+```math
 \max_{0\le v\le1}[B_v(a,b)-q(v)]
 =\max\left\{R,\ a+\max_{0\le v\le1}[bv-\mu f(v)-\lambda v]\right\}.
-\tag{7}
-$$
+\qquad\text{(7)}
+```
 
 This bound is attained; a=b=0 is immediate. Otherwise a product state
 with Alice's readouts both +1
@@ -165,12 +165,12 @@ term. Such states and their orthogonal-flag mixtures are already prior
 ingredients, as recorded in the [Tomassoli comparison](TOMASSOLI_FULL_TEXT_COMPARISON.md).
 Therefore, over **all** finite-dimensional realizations,
 
-$$
+```math
 \boxed{\sup[ax+bz-\mu E-\lambda V]
 =\max\left\{\sqrt{a^2+b^2},\ a+
 \max_{0\le v\le1}[bv-\mu f(v)-\lambda v]\right\}.}
-\tag{8}
-$$
+\qquad\text{(8)}
+```
 
 Taking mu=1 gives every scalarization E+lambda V. Standard convex
 duality and the physical flagged generators identify its minimum
@@ -192,9 +192,9 @@ it is not inferred just from the existence of arbitrary finite flags.
 For example, choose mu=0 and lambda=a+b-R in (8). This gives the
 entire weighted negativity inequality
 
-$$
+```math
 ax+bz\le R+(a+b-R)V,
-$$
+```
 
 used in the [separate-resource report](RESOURCE_OPTIMA_AND_JOINT_DECODERS.md).
 Its subsequent geometric evaluation yields min V=w. The inequality
@@ -205,9 +205,9 @@ itself is another direct prior consequence, not a new negativity witness.
 The earlier comparison optimized the dimension-independent **affine**
 formation certificate in Eq. (25). Its best value is the radial bound
 
-$$
+```math
 L_{\rm rad}(x,z)=\left[\frac{\sqrt{x^2+z^2}-1}{\sqrt2-1}\right]_+,
-$$
+```
 
 strictly below C at every asymmetric point outside the disk. That
 theorem and its proof remain correct.
