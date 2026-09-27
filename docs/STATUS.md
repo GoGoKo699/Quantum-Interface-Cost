@@ -1,17 +1,20 @@
 # Status and claim ledger
 
 Updated: 2026-09-27. Stage: the [nonflat quarter-rank converse](audits/NONFLAT_QUARTER_RANK_CONVERSE.md) proves `Gamma(4,4)=4+2sqrt(2)` and classifies every maximizing normalized seed. Together with the half-rank and all-n one-qubit results, this settles every integer quantum-memory budget through four inputs. The proof keeps arbitrary spectra and uses a sum-of-squares identity plus two exactly certified positive polynomials. The general entropy inequality, asymptotic common-accuracy rate, and publication originality remain unresolved.
-Latest research base: `357a4dfd523e0b895dbeead46fb1e3190c7afd78`, the merge of PR #57.
+Latest research base: `38fd9d3f2c3e38ef5e8a7c5d6b2c041955678d8a`, the merge of PR #58.
 
-**Consolidation stage.** The [scientific scope](SCIENTIFIC_SCOPE.md) selects
-finite memory optimality, all-n one-qubit allocation, and the explicit
-unequal-accuracy collective separation as the core, with balanced spectra
-as a structural companion. The [focused prior comparison](CORE_PRIOR_COMPARISON.md)
-and [core evidence map](CORE_EVIDENCE_MAP.md) provide bounded entry points.
-The next task is to consolidate and review the integrated proof exposition,
-then freeze its claim and evidence records before manuscript drafting.
-New theorem exploration is paused; the general conjectures are future work.
-This checkpoint adds organization and source comparison, not a new theorem.
+**Integration complete for the selected exposition.** The
+[core argument](CORE_ARGUMENT.md) now supplies one proof narrative for
+finite memory optimality, all-n one-qubit allocation and the explicit
+unequal-accuracy collective separation. Its
+[bounded internal review](audits/INTEGRATED_CORE_REVIEW.md) covers the
+connecting lemmas, all 14 integer budgets through four inputs, the
+comparison class and source reconciliation. The
+[scientific scope](SCIENTIFIC_SCOPE.md) retains balanced spectra as a
+structural companion. The next bounded task is the final evidence freeze,
+including one scoped reproduction of the essential exact certificate,
+before manuscript drafting. New theorem exploration remains paused.
+This integration changes exposition and review evidence, not the theorems.
 
 The [stability extension](audits/BALANCED_SPECTRUM_STABILITY.md)
 proves an explicit nonflat half-rank neighborhood at every n: if

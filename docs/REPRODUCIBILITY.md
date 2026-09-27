@@ -5,6 +5,19 @@ It gives the minimal proof dependencies, identifies which arithmetic
 certificate is proof evidence, and pins existing proof/checker/report hashes.
 The sections below preserve the complete historical verification record.
 
+## Integrated core exposition
+
+The [bounded integration review](audits/INTEGRATED_CORE_REVIEW.md) records
+the revised core's SHA-256 and the checked proof dependencies. It covers
+operational normalization, singular and zero-branch cases, the one-qubit
+allocation argument, all 14 integer budgets through four inputs, the
+analytical-to-polynomial conditions, and the collective comparison class.
+Source reconciliation was limited to the selected exposition and the
+existing focused source map. This was an internal analytical review;
+no frozen checker was imported or executed. Historical proofs, checkers
+and reports remain unchanged. The final evidence freeze and one scoped
+exact-certificate reproduction are still pending.
+
 ## Balanced-spectrum stability and a nonflat spectral neighborhood
 
 The [stability proof](audits/BALANCED_SPECTRUM_STABILITY.md) is pinned

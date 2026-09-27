@@ -1,9 +1,10 @@
 # Scientific scope and completion gates
 
 Consolidation checkpoint: 27 September 2026. Research base:
-`357a4dfd523e0b895dbeead46fb1e3190c7afd78` (PR #57).
+`38fd9d3f2c3e38ef5e8a7c5d6b2c041955678d8a` (PR #58).
 This document selects a bounded scientific package from the research
-record. It changes neither theorem statements nor their proof status.
+record and tracks its integration. The mathematical theorem statements
+are unchanged.
 Internal proof reconstruction is not external peer review; the focused
 source comparison does not certify the absence of all prior results.
 
@@ -118,17 +119,19 @@ general problem if needed; they are not additional headline claims.
 
 ## 5. Bounded completion gates
 
-| Gate | State at this checkpoint | Completion condition |
+| Gate | State at this checkpoint | Evidence or next action |
 |---|---|---|
-| G1. Scope and attribution | Claim map selected; focused comparisons recorded, including the recent bottleneck-dimension framework | Reconcile every selected claim and citation with the integrated proof exposition; narrow any claim if the source comparison requires it |
-| G2. Integrated proof exposition | Individual proof notes and internal reconstructions exist; the core argument is readable but still contains research continuations | Produce one consistent exposition of the selected theorems with complete assumptions, notation, equality scope and essential arithmetic appendices; internally review that exact version |
-| G3. Asymmetric comparison | Full comparison class and construction are explicitly recorded | Retain this class definition beside the separation wherever it is stated; do not replace it with an unrestricted-optimality claim |
-| G4. Evidence freeze | Minimal proof/checker/report map pinned to the research base; historical reports preserved | Freeze the integrated claim ledger and evidence manifest at one reviewed commit, resolving discrepancies before manuscript drafting |
+| G1. Scope and attribution | Completed for the selected repository exposition | [Focused source map](CORE_PRIOR_COMPARISON.md) reconciled with the integrated argument; established frameworks and ingredients remain explicitly credited. This is a bounded comparison, not exhaustive priority certification |
+| G2. Integrated proof exposition | Completed and internally reviewed | [Core argument](CORE_ARGUMENT.md) and [exact-text review](audits/INTEGRATED_CORE_REVIEW.md); consistent model and notation, connecting lemmas, all finite-case boundaries, and links to essential frozen proof appendices |
+| G3. Asymmetric comparison | Completed in the integrated statement | The complete instrument, existence of a factorizing Kraus refinement for the comparison class, and strict separation are stated together in Section 4; no unrestricted optimum is asserted |
+| G4. Evidence freeze | Pending | Pin the integrated exposition and minimal evidence manifest to one reviewed commit; perform one scoped reproduction of the essential exact certificate into temporary output, preserving historical reports |
 
-The next task is G2: consolidate and review the selected proof exposition,
-using G1's source map while doing so. This is an editorial and verification
-pass over proved results. Manuscript drafting follows the completed gates.
-Passing diagnostics is not a substitute for proof review or prior comparison.
+The next task is G4. The current [evidence map](CORE_EVIDENCE_MAP.md)
+preserves its base-version fingerprints; the integration review separately
+pins the revised core text. The final freeze will bring those records
+together and resolve any discrepancy. Manuscript drafting follows that
+freeze. The manuscript must preserve the reviewed claims and source
+boundaries; no further exploratory theorem campaign is a prerequisite.
 
 ## 6. Stopping rule and future work
 

@@ -4,6 +4,14 @@ Base: `357a4dfd523e0b895dbeead46fb1e3190c7afd78`. Prepared 27 September 2026. Pa
 
 This is a dependency and readiness inventory. Sources and existing JSON records were read and SHA-256 hashes checked at the pinned base; no frozen checker was imported or executed for this map. Existing “independent” review means internal reconstruction, not external peer review. No publication-originality conclusion is made. The [scientific scope](SCIENTIFIC_SCOPE.md) governs the completion gates. Overview documents may change after this base; all fingerprints below refer to the base version, not automatically to a later working copy.
 
+The subsequent [integrated-core review](audits/INTEGRATED_CORE_REVIEW.md)
+is based on `38fd9d3f2c3e38ef5e8a7c5d6b2c041955678d8a` and pins the
+revised `CORE_ARGUMENT.md` text separately. It closes the selected
+exposition and source-reconciliation gates. The 31 proof/checker/report
+fingerprints below remain pinned to this map's original base. Final
+release reconciliation and one essential certificate reproduction remain
+under G4; no new research script was run for the exposition review.
+
 ## 1. Coherent core and minimal dependencies
 
 Use three operational conclusions: (i) the exact all-n one-qubit allocation region, with the common-accuracy formula as a corollary; (ii) exact common-accuracy tradeoff for every integer 0<=q<=n<=4; (iii) one explicit unequal-accuracy collective protocol outside the precisely defined original-site-retention class. These are compatible claims, not a claim that retention is globally optimal for all accuracy profiles.
@@ -59,14 +67,14 @@ These reports record existing exact-comparison/fixed-construction passes, with s
 Already supplied and internally checked: arbitrary-input uniform-error/contrast conversion; Kraus normalization and complete finite twirl; q=1 CHSH source qualifications (independent memory settings and mixed marginals); half-rank branch coverage and equality; quarter-rank analytical reduction plus exact certificate; complete translation-instrument normalization; strict star-versus-retention separation. The n=31 numerical diagnostic checks its 32-vertex support and scalars, not a full 31-qubit instrument. The analytical note supplies the latter operator identities.
 
 The [completion gates](SCIENTIFIC_SCOPE.md#5-bounded-completion-gates) now
-require one integrated exposition and its review, source reconciliation,
-and a final evidence freeze. That review must preserve the model and
+record the integrated exposition and source reconciliation as complete.
+The review checked the model and
 normalizations, rank-deficient and zero-branch cases, all integer budget
 endpoints, analytical-to-polynomial substitutions, seed equality scope,
-and the asymmetric comparison class. It does not require another review
-of every historical research branch.
+and the asymmetric comparison class. It did not repeat every historical
+research review. The final evidence freeze remains pending.
 
-A separate internal reread at this checkpoint checked the full asymmetric
+A separate internal reread at the preceding consolidation checkpoint checked the full asymmetric
 instrument, its effective effects and retention-class bound, and the
 exhaustive finite-budget assembly. This was an analytical review, not a
 new checker run or review of a not-yet-written manuscript.
@@ -87,7 +95,8 @@ python tools/check_nonflat_quarter_rank_certificate.py --output /tmp/qic-nonflat
 ```
 
 Compare exact rational conclusions and the embedded source fingerprints.
-The analytical reduction still needs review. Other fixed-construction
+The analytical reduction has been internally reviewed; certificate
+execution alone does not establish that reduction. Other fixed-construction
 checks are useful when an edit changes a relevant identity or a concrete
 discrepancy appears; there is no need to rerun the full research archive.
 Floating-point report bytes need not be identical across runtimes.

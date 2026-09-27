@@ -1,574 +1,559 @@
 # Exact finite-block retention and a collective advantage
 
-**Core argument, 27 September 2026.** Research base:
-`357a4dfd523e0b895dbeead46fb1e3190c7afd78`. The supplied proofs below
-were independently reconstructed within this workspace, not externally
-peer reviewed. Publication originality remains unresolved. The
-[scientific scope](SCIENTIFIC_SCOPE.md) selects the claims for the integrated
-exposition; [the focused comparison](CORE_PRIOR_COMPARISON.md) and
-[evidence map](CORE_EVIDENCE_MAP.md) track attribution and dependencies.
-The structural continuations below remain available while that exposition
-is consolidated.
+**Integrated proof exposition, 27 September 2026.** Research base:
+`38fd9d3f2c3e38ef5e8a7c5d6b2c041955678d8a`. This note connects the three
+operational results selected in [SCIENTIFIC_SCOPE](SCIENTIFIC_SCOPE.md).
+Its component proofs have been independently reconstructed internally;
+its integration review is recorded in [the review note](audits/INTEGRATED_CORE_REVIEW.md).
+It is not a manuscript, external peer review, or a publication-priority claim. The
+[focused prior comparison](CORE_PRIOR_COMPARISON.md) and
+[evidence map](CORE_EVIDENCE_MAP.md) give source and verification details.
 
-**One qubit of memory can be allocated exactly:** every achievable local
-X/Z accuracy profile has an implementation that randomly retains at most
-one original qubit. **Random subset retention is optimal for every integer
-memory budget through four inputs:** this holds for equal accuracies,
-arbitrary collective encoders and nonuniform seed spectra.
-**Larger memories can benefit from
-collective encoding:** an explicit five-qubit memory beats the entire
-original-site-retention class for an unequal-accuracy task. These statements
-concern one unknown specimen and one query chosen after encoding.
+One qubit of memory has an exact allocation rule: every feasible local
+X/Z accuracy profile admits an implementation that randomly retains at
+most one original qubit. For equal accuracies, random subset retention
+is optimal at every integer memory budget through four inputs, including
+arbitrary collective encoders and nonuniform seed spectra. At larger
+budgets, collective encoding can help: a complete five-qubit-memory
+instrument strictly exceeds the original-site-retention class for an
+unequal-accuracy task. All three statements concern one unknown specimen
+and one query chosen after encoding.
 
-## 1. The task
+## 1. The task and the normalized-seed reduction
 
-An encoder receives an arbitrary unknown state of n qubits, possibly
-entangled internally. It produces a quantum register Q and an unlimited
-finite classical record. Only then is one query `(i, X)` or `(i, Z)` revealed;
-the decoder returns one binary outcome. Every branch obeys `dim Q <= 2^q`.
-The encoder may act collectively on all n inputs. There are no additional
-copies, source reaccess, free quantum bypass, preshared entanglement, or
-postselected success.
+An encoder receives an arbitrary unknown n-qubit state, including states
+entangled across the inputs. It outputs a quantum register and an
+unrestricted finite classical record. Only then is one query
+$U\in\mathcal U=\{X_i,Z_i:1\le i\le n\}$ revealed, and its decoder
+returns a binary outcome. Write $d=2^n$ for the input dimension and
+$D=2^q$ for the maximum quantum dimension on **every** branch.
+There are no extra copies, source reaccess, free quantum bypass,
+preshared entanglement, or postselected success. Decoders are arbitrary
+binary POVMs, equivalently Hermitian contractions.
 
-Write the requested effective observables as
+The requested effective observables are $x_iX_i,z_iZ_i$, with
+$0\le x_i,z_i\le1$; their effects are $(I\pm x_iX_i)/2$ and
+$(I\pm z_iZ_i)/2$. Their uniform binary total-variation errors are
+$(1-x_i)/2,(1-z_i)/2$. Conversely, a protocol meeting these error
+tolerances can be put in this exact form: finite Pauli twirling removes
+unwanted coefficients, and classical output noise attenuates excess
+contrast. The coefficient along U is at least its requested contrast
+because the uniform error bounds the effective observable's operator-norm
+distance from U. This preserves the arbitrary-input quantifiers.
 
-\[
-x_iX_i,\qquad z_iZ_i,\qquad 0\le x_i,z_i\le1.
-\]
+### 1.1 From physical instruments to one density matrix
 
-Their binary effects are `(I ± x_i X_i)/2` and `(I ± z_i Z_i)/2`.
-They approximate ideal readout uniformly over all input states with total
-variation errors `(1-x_i)/2` and `(1-z_i)/2`.
-Conversely, any protocol meeting these error tolerances can be converted
-to these exact observables without increasing memory: finite Pauli
-twirling removes unwanted coefficients, and classical output noise
-attenuates any excess contrast. Thus the exact-contrast formulation retains
-the original uniform-error quantifiers. It is an outcome-sampling task.
+Refine the instrument into Kraus operators $K_c:\mathbb C^d\to\mathbb C^D$.
+For every nonzero branch set
+
+$$
+p_c=\|K_c\|_F^2/d,\qquad L_c=K_c/\|K_c\|_F,\qquad
+\rho_c=L_c^\dagger L_c,\qquad S_c=\sqrt{\rho_c}.
+$$
+
+Completeness gives $\sum_cp_c=1$. These are proof weights, equal to
+branch probabilities on the maximally mixed input; physical branch
+probabilities need not be input independent. Each $\rho_c$ has trace
+one and rank at most D. For any such density matrix set $S=\sqrt\rho$ and define
+
+$$
+F_U(\rho)=\|SUS\|_1,\qquad g(\rho)=\sum_{U\in\mathcal U}F_U(\rho),
+\qquad \Gamma(n,D)=\max_{\operatorname{rank}\rho\le D}g(\rho).
+\tag{1}
+$$
+
+The polar decomposition $L=VS$ preserves each trace norm:
+$\|LUL^\dagger\|_1=\|SUS\|_1$. Here V is an isometry on the support
+of $\rho$, also when its rank is smaller than D. If the effective
+observable for U is $\eta_UU$, trace-norm duality gives
+
+$$
+\eta_U=\frac1d\sum_c\operatorname{Tr}(B_{c,U}K_cUK_c^\dagger)
+\le\sum_cp_c F_U(\rho_c).
+\tag{2}
+$$
+
+The same inequality holds after summing with any nonnegative query weights.
+Thus seed inequalities bound arbitrary instruments, without a flat-spectrum
+assumption or a restriction on how their classical records are organized.
+
+### 1.2 Every seed gives a complete protocol
+
+Every density matrix of rank at most D admits $L=V_0\sqrt\rho$, with $V_0$
+an isometry from its support into $\mathbb C^D$. Conversely take any
+normalized $D\times d$ seed L, put $\rho=L^\dagger L$, and let V
+range over the $m=4^n$ Pauli representatives. Set
+$K_V=\sqrt{d/m}\,LV$. Pauli averaging gives $\sum_VK_V^\dagger K_V=I$.
+Choose $B_U=\operatorname{sign}(LUL^\dagger)$, with zero on its kernel;
+zero is a fair binary output. If $VUV^\dagger=s_{V,U}U$, decode with
+$s_{V,U}B_U$. The Pauli character identity
+
+$$
+\frac1m\sum_Vs_{V,U}V^\dagger AV=\frac{\operatorname{Tr}(UA)}d\,U
+$$
+
+shows that the effective observable is exactly $F_U(\rho)U$.
+All branches are accepted and have dimension at most D. Finite random
+site permutations and independent local Hadamards, recorded classically,
+equalize the 2n contrasts without changing their sum. Therefore
+
+$$
+\eta_{\max}(n,q)=\Gamma(n,2^q)/(2n),\qquad
+\varepsilon_{\min}(n,q)=(1-\eta_{\max}(n,q))/2.
+\tag{3}
+$$
+
+The [seed-reduction note](COLLECTIVE_ENCODING_REDUCTION.md) gives the
+full instrument argument. Equality classifications below concern normalized
+seed Grams $\rho=L^\dagger L$, up to output isometry, not every physical
+encoder implementing an optimal profile.
 
 ## 2. The exact one-qubit theorem
 
-Define the local weight
+Define
 
-\[
+$$
 w(x,z)=\left[x+z-1-\sqrt{2(1-x)(1-z)}\right]_+,
-\qquad [t]_+=\max\{t,0\}.
-\]
+\qquad [a]_+=\max\{a,0\}.
+$$
 
-**Theorem.** An unrestricted encoder with `dim Q <= 2` on every branch
-realizes the requested profile if and only if
+**Theorem.** An unrestricted encoder with $D\le2$ realizes a requested
+profile if and only if $\sum_iw(x_i,z_i)\le1$. In particular,
 
-\[
-\boxed{\displaystyle\sum_{i=1}^{n}w(x_i,z_i)\le1.}
-\]
+$$
+\eta_{\max}(n,1)=\frac1{\sqrt2}+\frac{1-1/\sqrt2}{n}.
+\tag{4}
+$$
 
-For equal contrasts this gives, for every n,
+This covers every n, with arbitrary site-dependent X and Z accuracies.
 
-\[
-\eta_{\max}(n,1)=\frac1{\sqrt2}
- +\frac{1-1/\sqrt2}{n}.
-\]
+### 2.1 The weighted converse
 
-### Why every collective encoder obeys the bound
+For nonnegative $\alpha_i,\beta_i$, put
+$r_i=\sqrt{\alpha_i^2+\beta_i^2}$ and
+$\delta_i=\alpha_i+\beta_i-r_i$. The sharp support inequality is
 
-Fix nonnegative weights `a_i,b_i`, and put
+$$
+\sum_i(\alpha_ix_i+\beta_iz_i)\le\sum_i r_i+\max_i\delta_i.
+\tag{5}
+$$
 
-\[
-r_i=\sqrt{a_i^2+b_i^2},\qquad
-\delta_i=a_i+b_i-r_i.
-\]
+By (2), it suffices to bound a normalized dimension-two seed. Choose
+extreme Hermitian contractions attaining its trace norms; on a qubit
+these are scalar signs or traceless Pauli observables. Vectorizing L
+gives a normalized virtual state of n reference qubits and the memory
+qubit, on which the site's weighted score is
 
-The key is the sharp weighted inequality
-
-\[
-\sum_i(a_ix_i+b_iz_i)\le\sum_i r_i+\max_i\delta_i. \tag{1}
-\]
-
-Refine an instrument into Kraus operators `K_c` with output dimension at
-most two. For each nonzero operator set
-
-\[
-L_c=K_c/\|K_c\|_F,\qquad p_c=\|K_c\|_F^2/2^n.
-\]
-
-Completeness gives `sum_c p_c=1`. These are proof weights; physical branch
-probabilities can depend on the input state. Trace-norm duality bounds the
-left side of (1) by the p-weighted average of the normalized-seed scores
-
-\[
-\sum_i f_i,\qquad
-f_i=a_i\|LX_iL^\dagger\|_1+b_i\|LZ_iL^\dagger\|_1.
-\]
-
-Choose extreme Hermitian contractions attaining the two trace norms.
-On a qubit each such decoder is a scalar sign or a traceless Pauli
-observable. Vectorizing L gives a normalized *virtual* state of n reference
-qubits and the memory qubit, on which
-
-\[
+$$
 f_i=\langle h_i\rangle,\qquad
-h_i=a_iX_i\otimes B_{i,X}+b_iZ_i\otimes B_{i,Z}.
-\]
+h_i=\alpha_iX_i\otimes B_{i,X}+\beta_iZ_i\otimes B_{i,Z}.
+$$
 
-If either decoder is scalar, anticommutation gives `h_i^2=r_i^2 I`, hence
-`f_i <= r_i`. If both are traceless, the reference directions
-`(a_i X_i ± b_i Z_i)/r_i` make `2h_i/r_i` a CHSH operator.
-Cheng–Hall's established monogamy theorem, allowing independently chosen
-memory directions and mixed three-qubit marginals, then implies for any
-two such sites
+If either decoder is scalar, anticommutation gives $h_i^2=r_i^2I$,
+so $f_i\le r_i$. Otherwise the two reference directions
+$(\alpha_iX_i\pm\beta_iZ_i)/r_i$ make $2h_i/r_i$ a CHSH operator.
+Cheng–Hall's monogamy inequality, allowing independently chosen memory
+directions and mixed three-qubit marginals, implies
+$(f_i/r_i)^2+(f_j/r_j)^2\le2$ for any two such sites.
+Zero-weight sites are omitted. At most one site exceeds its r-value,
+and always $f_i\le\alpha_i+\beta_i$. Summing proves (5).
+The reference is a proof device; no two delayed decoders are executed together.
 
-\[
-(f_i/r_i)^2+(f_k/r_k)^2\le2.
-\]
+### 2.2 Attainment and the local weight
 
-Zero-weight sites can be omitted. At most one site exceeds its r-value;
-always `f_i <= a_i+b_i`. Summing proves (1) for each seed, then for the
-physical instrument. The reference is only a proof device, and no two
-delayed decoders are executed together.
+The compatible disk $\mathcal D=\{(x,z)\ge0:x^2+z^2\le1\}$ is
+achievable with classical memory: measure
+$G_{s,t}=(I+s xX+t zZ)/4$, store $(s,t)$, and answer the later query.
+Retaining a site realizes the square $[0,1]^2$ there; every other site
+can realize a disk point. These product instruments are valid also on
+entangled inputs. Their convex hull has support function (5), obtained
+by retaining a site maximizing $\delta_i$. The hull is compact and
+downward closed, so its nonnegative support directions characterize it.
+The converse therefore identifies the entire unrestricted feasible region.
 
-### Why random retention attains the whole region
-
-The compatible disk
-
-\[
-D=\{(x,z)\ge0:x^2+z^2\le1\}
-\]
-
-is achievable using only classical memory: measure the four-outcome POVM
-`G_{s,t}=(I+s x X+t z Z)/4`, store `(s,t)`, and answer the later query.
-Retaining one site realizes any point of `[0,1]^2` there; every other site
-can independently realize a disk point. These product instruments are
-valid on entangled inputs as well.
-
-Their convex hull has support function exactly the right side of (1):
-retain a site maximizing `delta_i`. This hull is compact and downward
-closed, so nonnegative support directions suffice. Thus (1) proves that
-this hull is the entire unrestricted feasible region.
-
-The least retained fraction needed for one pair is w. Outside the disk,
-solve
-
-\[
-(x-p)^2+(z-p)^2=(1-p)^2
-\]
-
-for its smaller root; it is w and lies between zero and `min(x,z)`.
-Any decomposition `(x,z)=p s+(1-p)d`, with `s` in the square and `d` in D,
-necessarily satisfies
-
-\[
-\|((x,z)-p(1,1))_+\|_2\le1-p.
-\]
-
-For `p<w`, both coordinates are nonnegative and this quadratic inequality
-fails. Thus w is the minimum p in `p[0,1]^2+(1-p)D`.
-Consequently every retention mixture satisfies `sum_i w <= 1`.
-Conversely, choose site i with probability `p_i=w(x_i,z_i)`, retain it
-perfectly, and whenever it is discarded use the disk point
-
-\[
-\frac{(x_i,z_i)-p_i(1,1)}{1-p_i}.
-\]
-
-Use an all-classical branch with the remaining probability. If `p_i=1`,
-that site is always retained and its discarded formula is unnecessary.
-This proves sufficiency explicitly. It characterizes the achievable
-queried effects, not every encoder realizing them.
+For one pair, w is the least p with
+$(x,z)\in p[0,1]^2+(1-p)\mathcal D$. Outside the disk it is the
+smaller root of $(x-p)^2+(z-p)^2=(1-p)^2$, lying in $[0,\min(x,z)]$.
+Necessity follows because every such decomposition obeys
+$\|((x,z)-p(1,1))_+\|_2\le1-p$, which fails when $p<w$.
+Inside the disk the minimum is zero. Thus any retention mixture has
+$\sum_iw_i\le1$. Conversely choose site i with probability
+$p_i=w(x_i,z_i)$ and retain it perfectly. Whenever it is discarded,
+use the disk point $((x_i,z_i)-p_i(1,1))/(1-p_i)$; use an all-classical
+branch with the remaining probability. If $p_i=1$, that site's
+discarded formula is unnecessary. This proves the complete allocation
+rule. It guarantees an attaining retention implementation, not that
+every optimal encoder must physically retain a site. See the
+[allocation proof](ONE_QUBIT_ALLOCATION_REGION.md) for its convex details.
 
 ## 3. Exact equal-accuracy retention through four inputs
 
-For integers `1<=n<=4` and `0<=q<=n`, the exact optimum is
+**Theorem.** For integers $1\le n\le4$, $0\le q\le n$,
 
 $$
 \boxed{\Gamma(n,2^q)=2q+\sqrt2(n-q),\qquad
 \eta_{\max}(n,q)=\frac{q+(n-q)/\sqrt2}{n}.}
+\tag{6}
 $$
 
-The classical and exact endpoints and the all-n one-qubit theorem above
-leave two kinds of nontrivial budget: all but one retained qubit, and
-two retained qubits out of four. The following arguments cover both.
+Retain q original sites and use the compatible bisector POVM on the
+others; randomize the subset to attain equal contrasts. The corresponding
+seed is a tensor product of pure X/Z bisectors on discarded sites and
+$I/2^q$ on retained sites. At $q=0$, a rank-one seed's score is
+$\sum_i(|\langle X_i\rangle|+|\langle Z_i\rangle|)\le\sqrt2n$
+by the local Bloch bound. At $q=n$, each $F_U\le1$, and $I/d$
+attains $2n$. Together with (4), the only additional budgets to prove
+are $(n,q)=(3,2),(4,2),(4,3)$. The following two converses include
+all allowed ranks and spectra. This is every **integer q** through four
+inputs, not a claim about every non-power-of-two dimension D.
 
 ### 3.1 All but one input qubit
 
-**Theorem.** For `n=2,3,4`, an unrestricted encoder retaining at most
-`n-1` quantum bits has exact equal-accuracy optimum
+Fix $n\in\{2,3,4\}$, $k=d/2$, $\operatorname{rank}\rho\le k$,
+and $S=\sqrt\rho$. Write $a_U=\operatorname{Tr}(SUSU)$.
+The established squared-root-fidelity/affinity inequality
+$F_U(\rho)^2\le a_U$ follows directly from Schatten Hölder:
+put $A=USU$, so $\operatorname{Tr}A^2=\operatorname{Tr}S^2=1$, and
 
 $$
-\boxed{\Gamma(n,2^{n-1})=2(n-1)+\sqrt2,\qquad
-\eta_{\max}(n,n-1)=\frac{2(n-1)+\sqrt2}{2n}.}
+F_U(\rho)=\|SA\|_1
+\le\|S^{1/2}\|_4\|S^{1/2}A^{1/2}\|_2\|A^{1/2}\|_4
+=\sqrt{\operatorname{Tr}(SA)}.
 $$
 
-In particular, `Gamma(3,4)=4+sqrt(2)` and
-`Gamma(4,8)=6+sqrt(2)`. Randomly retaining all but one original site,
-with the four-outcome joint measurement
-`G_{s,t}=(I+(sX+tZ)/sqrt(2))/4` on the discarded site, attains the
-common contrast. Its two marginals have contrast `1/sqrt(2)`.
-The converse allows every collective encoder,
-every binary-POVM decoder, and every seed spectrum of the allowed rank.
-
-The [normalized-seed reduction](COLLECTIVE_ENCODING_REDUCTION.md) reduces
-the converse to positive S on n qubits with `Tr S^2=1` and
-`rank S<=2^(n-1)`. Its score is `sum_A ||SAS||_1`, over the local X/Z
-queries. The established root-fidelity/affinity comparison gives
+The [sourced lemma](STRONG_ENTROPIC_CONVERSE.md#3-root-fidelity-affinity-and-the-two-pauli-energy)
+therefore reduces the claim to the stronger bound
+$\sum_U\sqrt{a_U}\le2n-2+\sqrt2$.
+Expand S in the orthonormal Pauli basis $\sigma/\sqrt d$, and write
+its singleton X/Z part as $J=\sum_i b_iB_i/\sqrt d$, where
+$b_i\ge0$ and each $B_i$ is a unit X/Z-plane Pauli direction. Put
 
 $$
-\|SAS\|_1^2\le a_A:=\operatorname{Tr}(SASA).
+u=\operatorname{Tr}S/\sqrt k,\quad v=\sqrt{1-u^2},\quad
+T=\sum_i b_i^2,\quad y=2T,\quad
+M=\mathbb E\left|\sum_i b_i\epsilon_i\right|.
 $$
 
-The [full proof](audits/HALF_RANK_RETENTION_CONVERSE.md) bounds the
-stronger objective `sum_A sqrt(a_A)`. Its key constraint combines the
-rank bound with the direction of the single-site Pauli coefficients;
-it never replaces S by a flat-spectrum operator.
-
-To see the mechanism, expand S in the orthonormal Pauli basis, and let
-`J=sum_i b_i B_i/sqrt(2^n)` be its single-site X/Z part, where each B_i
-is a unit Pauli direction and `T=sum_i b_i^2`. The case T=0 follows
-directly by Cauchy--Schwarz. For T>0 put
+The independent signs are uniform. Rank gives $u\le1$; positivity
+gives $T=\operatorname{Tr}(SJ)\le\|J_+\|_2=\sqrt{T/2}$, hence
+$y\le1$. For $T>0$, put $m=M/\sqrt T$. Pauli conjugation
+has eigenvalue $2n$ on the identity,
+$2n-2$ on singleton X/Z words and at most $2n-4$ elsewhere, so
 
 $$
-u=\frac{\operatorname{Tr}S}{\sqrt{2^{n-1}}},\quad
-v=\sqrt{1-u^2},\quad y=2T,\quad
-M=\mathbb E\left|\sum_i b_i\varepsilon_i\right|,\quad
-c=\frac{M}{\sqrt T}.
+\sum_Ua_U\le2n-4+2u^2+y,\qquad
+\sqrt y\le um+v\sqrt{1-m^2}.                         \tag{7}
 $$
 
-Here the signs are independent and uniform. Positivity gives `0<=y<=1`;
-the rank bound gives `u<=1`. When T>0, pairing the eigenvalues of S with
-the positive half of J's symmetric spectrum gives
+For the second inequality, the largest k eigenvalues of J have mean
+$M/\sqrt d$ and centered squared sum $(T-M^2)/2$. Pair them with
+the eigenvalues of S, padded by zeros, and apply trace rearrangement
+then centered Cauchy–Schwarz. Thus (7) retains spectral nonuniformity.
+The cases $T=0$ or $u\le\sqrt3/2$ are already strictly below
+the target by the first inequality and Cauchy–Schwarz.
+
+Order and pad the b's to four entries. Their exact sign mean is
 
 $$
-\sqrt y\le uc+v\sqrt{1-c^2},\qquad
-\sum_A a_A\le2n-4+2u^2+y. \tag{2}
+M=\max\left\{b_1,\frac{3b_1+b_2+b_3+b_4}{4},
+                       \frac{b_1+b_2+b_3}{2}\right\}.       \tag{8}
 $$
 
-The sign average is exact for at most four coefficients. Ordering them
-as `a>=b>=c_0>=d>=0`, with zeros appended if needed, gives
+If either latter form attains M, including a tie, $m\le\sqrt3/2$.
+Equation (7) gives $2u^2+y\le(3+\sqrt7)/2$, so
+$\sum_U\sqrt{a_U}\le\sqrt{2n(2n-4+(3+\sqrt7)/2)}<2n-2+\sqrt2$.
+Otherwise $M=b_i$ at one site. Let $\Delta=\sum_U(1-a_U)$
+and $W=(1-a_{X_i})+(1-a_{Z_i})$. The elementary case $u^2+y<1$
+is strict by (7); in the remaining case its circle constraint yields
 
 $$
-M=\max\left\{a,\frac{3a+b+c_0+d}{4},
-                  \frac{a+b+c_0}{2}\right\}.
-$$
-
-Either the maximizing term has coefficient norm at most `sqrt(3)/2`,
-which gives a strict gap below the claimed score, or M is one site's
-coefficient. In the latter case define `d_A=1-a_A`, let W be the two
-deficits at that site, and let D be their total over all sites. After
-the elementary low-score cases are removed, (2) implies
-
-$$
-D\ge E:=4-2u^2-y,\qquad
-W\ge w:=y\left[u\sqrt y-v\sqrt{1-y}\right]^2.
+\Delta\ge E:=4-2u^2-y,\qquad
+W\ge w:=y[u\sqrt y-v\sqrt{1-y}]^2.
 $$
 
 Separate Cauchy bounds for that site and the other sites, followed by
-concave tangents at W=1 and D-W=0, give
+concave tangents at $W=1,\Delta-W=0$, give, with $r=\sqrt2-1$,
 
 $$
-\sum_A\sqrt{a_A}-[2(n-1)+\sqrt2]
-\le\frac{r(1-W)-(D-1)}2,
-\qquad r=\sqrt2-1.
+\sum_U\sqrt{a_U}-(2n-2+\sqrt2)
+\le\{r(1-W)-(\Delta-1)\}/2\le0.                         \tag{9}
 $$
 
-Writing `z=sqrt(1-y)`, the numerator is nonpositive because
+Indeed, writing $z=\sqrt{1-y}$,
+$(E-1)-r(1-w)\ge(2-r)v^2-2rvz+(1-2r)z^2\ge0$.
+The quadratic is positive definite, with determinant $10-7\sqrt2>0$.
+Equality forces $u=y=m=1$, then Pauli equality gives
 
 $$
-(E-1)-r(1-w)
-\ge(2-r)v^2-2rvz+(1-2r)z^2\ge0.
+\rho=|\beta\rangle\langle\beta|_i\otimes I_{\rm rest}/2^{n-1},
+\tag{10}
 $$
 
-The last quadratic is positive definite: its determinant is
-`10-7sqrt(2)>0`. This proves the stronger affinity bound and hence the
-original score bound.
-
-All maximizing normalized seeds have Gram matrix
-
-$$
-\boxed{L^\dagger L=
-\frac{|\beta\rangle\langle\beta|_i\otimes I_{\rm rest}}
-     {2^{n-1}},}
-$$
-
-where beta is an X/Z bisector: its Bloch Y component is zero and its
-X and Z components have magnitude `1/sqrt(2)`. The output unitary is
-arbitrary. This is equality of seeds, not a classification of every
-instrument implementing the same effects. The case `n=2` also follows
-from the earlier one-qubit theorem.
+where beta has zero Bloch Y component and X,Z magnitudes $1/\sqrt2$.
+These seeds attain equality in the original score too. The
+[full half-rank proof](audits/HALF_RANK_RETENTION_CONVERSE.md) supplies
+the equality steps and the elementary comparisons at the strict branches.
 
 ### 3.2 Two retained qubits out of four
 
-The [unrestricted quarter-rank converse](audits/NONFLAT_QUARTER_RANK_CONVERSE.md)
-proves, for every positive S on four qubits with `Tr S^2=1` and rank at
-most four,
+Here $d=16$, $\operatorname{rank}S\le4$, $\operatorname{Tr}S^2=1$.
+We prove $\sum_U\sqrt{a_U}\le4+2\sqrt2$, so $\Gamma(4,4)=4+2\sqrt2$.
+Order the four singleton lengths as $a\ge b\ge c\ge e\ge0$, put
+$T=a^2+b^2+c^2+e^2$, $y=2T$, $u=\operatorname{Tr}S/2$,
+$v=\sqrt{1-u^2}$, and $W_i=2-a_{X_i}-a_{Z_i}$,
+$\Delta=\sum_iW_i$. Evaluation of the four largest eigenvalues of J,
+followed by the same centered rearrangement, gives
 
 $$
-\sum_{A=X_1,Z_1,\ldots,X_4,Z_4}\sqrt{\operatorname{Tr}(SASA)}
-\le4+2\sqrt2.
+R=\max\{b,(b+c+e)/2\},\qquad
+y\le u(a+R)+v\sqrt{T-a^2-R^2},\quad
+y\le(1+u^2)/2,\quad \Delta\ge4-u^2-y.                  \tag{11}
 $$
 
-It follows that `Gamma(4,4)=4+2sqrt(2)`, with common contrast
-`(2+sqrt(2))/4` and worst-case binary error `(2-sqrt(2))/8`.
-Every maximizing normalized seed, up to an original-site permutation,
-has Gram matrix
+If the target is reached or exceeded, these inequalities imply
+$u^2\ge\alpha=(4\sqrt2-3)/3$, $v^2+1-y\le r^2$,
+$u>15/16$, $y\ge2r+v^2$, and every singleton length is at most
+$u/2$. In particular rank is exactly four: rank at most three would
+give $u^2\le3/4<\alpha$. For $\kappa=\|S\|$, spectral Cauchy
+gives $\kappa\le(u+\sqrt3v)/2$. A local two-block calculation gives
+$W_i\ge1-(u+\sqrt3v)(u-2b_i)$, where $b_i$ denotes that site's
+singleton length. These reductions are derived in the
+[quarter-rank geometry](audits/QUARTER_RANK_GEOMETRY.md) and
+[nonflat converse, Sections 1–2](audits/NONFLAT_QUARTER_RANK_CONVERSE.md).
+
+**Pair-dominant branch, $b\ge c+e$.** Set $p=a+b$,
+$Q=c^2+e^2$, $w=u-p\ge0$, $\delta=v^2+1-y$,
+$x=2(u+\sqrt3v)w$, and $h=\sqrt{uw}$. Equation (11) gives
+$y\le up+v\sqrt Q$, $p^2+2Q\le y$,
+$Q\le y(1-y)$, and $\delta\ge3v^2/2+h^2-vh/\sqrt2$.
+Also $\Delta\ge2+\delta$, $W_1+W_2\ge2-x$, $0\le x<9/10$.
+Grouped Cauchy and its monotonicity therefore give
 
 $$
-L^\dagger L=|\beta_1\rangle\langle\beta_1|\otimes
-|\beta_2\rangle\langle\beta_2|\otimes I_4/4,
+\sum_U\sqrt{a_U}\le2\sqrt{2+x}+2\sqrt{4-\delta-x}.
 $$
 
-where both beta states are X/Z bisectors. Output isometries remain free.
-
-The [preceding geometry](audits/QUARTER_RANK_GEOMETRY.md) evaluates the
-top four eigenvalues of the singleton Pauli operator and sharply bounds
-the sum of affinities by six. The new argument retains the square roots
-and treats the two spectral branches separately. In the pair-dominant
-branch, a coupled rank constraint and a short sum of squares prove the
-curvature bound, with equality only at retention. In the other branch,
-the local block calculation retains coherence and the spectral spread:
+This is at most $4+2\sqrt2$ when
+$\delta\ge H(x)=2(2+\sqrt2)(\sqrt{2+x}-\sqrt2)-2x$.
+Rationalizing gives $H(x)\le rx-6x^2/25$; the required bound follows
+from the explicit sum of squares
 
 $$
-W_i\ge1-2\mu_i(\sqrt2v+\mu_i),\qquad
-v=\sqrt{1-(\operatorname{Tr}S/2)^2},\quad
-\mu_i=\operatorname{Tr}S/2-2b_i.
+\delta-rx+\frac6{25}x^2\ge
+\frac32\left(v-\frac h{3\sqrt2}-\frac8{15}h^2\right)^2
++\frac8{15}h^2\left(h-\frac1{2\sqrt2}\right)^2+\frac{h^2}{60}\ge0.
+\tag{12}
 $$
 
-Here b_i is the singleton X/Z coefficient length in the normalized
-Pauli basis and W_i is the sum of the two query deficits. This inequality
-and the exact rank circle reduce the remaining claim to two explicit
-polynomials on `[0,9/25]^2`. An exact rational Bernstein certificate proves
-both positive on that single rectangle: 134 coefficients, no subdivision
-or numerical sign decision. This branch has a strict gap. The full proof
-and certificate definitions are in the linked note; finite matrix checks
-serve only as diagnostics.
+Equality forces $u=y=1$, $a=b=1/2$, $c=e=0$.
 
-### 3.3 The general proof must retain the original score
-
-The [affinity-method limit](audits/AFFINITY_METHOD_LIMIT.md) gives an exact
-reason the preceding stronger inequality cannot extend to all budgets.
-In the product X/Z-bisector basis, use the weighted star with probabilities
-`p_0=1/2`, `p_(e_i)=1/(2n)`, and zero elsewhere. It has rank n+1. Its
-root-affinity score G and original trace-norm score g are
+**Other branch, $b\le c+e$.** In local blocks
+$S=\left(\begin{smallmatrix}A&C\\C^\dagger&E\end{smallmatrix}\right)$,
+retaining $\|C\|_2^2$ and the smallest positive eigenvalue $m_0$
+improves the local bound: $\kappa-m_0\le\sqrt2v$ gives
+$W_i\ge1-2(u-2b_i)(\sqrt2v+u-2b_i)$.
+Put $\mu=u-2a$, $\zeta=b+c+e$, $k_0=u+\sqrt3v$,
+$x=2\mu(\sqrt2v+\mu)$, $\lambda=2r/3$, and $B=4-4\sqrt2/3$.
+The actual deficits and the top-four constraint imply
 
 $$
-G=\sqrt2\,n\sqrt{1+1/\sqrt n},\qquad
-g=\frac{n-1+\sqrt{n^2+6n+1}}{\sqrt2}.
+\begin{gathered}
+W_1\ge1-x,\quad \Delta\ge4-u^2-y,\quad
+\Delta\ge4-3uk_0-k_0\mu+2k_0\zeta,\\
+H\le u\zeta+v\sqrt{J-\zeta^2},\qquad
+H=2y-u(u-\mu),\quad J=2y-(u-\mu)^2.
+\end{gathered}                                                    \tag{13}
 $$
 
-At `n=15,q=4`, G exceeds the retention value `8+11sqrt(2)`, while
-g is strictly smaller. As n grows, `G-sqrt(2)n` grows as `sqrt(n/2)`,
-whereas `g-sqrt(2)n` stays below `sqrt(2)`. Thus no fixed coefficient
-of `log2(rank)` can repair the proposed general affinity bound.
-
-The linked note also evaluates the relaxation's exact entropy and
-asymptotic rank profiles as corollaries of established Faber–Krahn theory.
-An exact gap decomposition keeps the optimal decoder's commutator with
-the seed square root and a nonnegative weighted Cauchy residual. If every
-query comparison is tight, every flat spectral block realizes the same
-original query profile. The unresolved general task therefore requires
-control of the actual trace norms and their decoder dependence.
-
-The [spectral-layer comparison](audits/SPECTRAL_LAYER_SCORE_BOUND.md)
-gives a quantitative step in that direction. If rho has descending
-positive eigenvalues lambda_k, put
-`w_k=k(lambda_k-lambda_(k+1))` and let `sigma_k=P_k/k` be the flat state
-on its top k eigenvectors. Then `rho=sum_k w_k sigma_k`, and for every
-original query U,
+Set $\Delta_*=B+\lambda x(1-x)$, $Y=4-u^2-\Delta_*$.
+If $y<Y$, already $\Delta>\Delta_*$. Otherwise a putative
+$\Delta\le\Delta_*$ forces the fixed upper bound
+$\zeta\le\zeta_0=(3u+\mu)/2-(u^2+Y)/(2k_0)$.
+At $y=Y$, write $H_0,J_0$ for H,J. Analytically $H_0>1/2$;
+the exact certificate gives
 
 $$
-0\le F_U(\rho)-\sum_k w_k F_U(\sigma_k)
-\le\sqrt{2\delta_U},\qquad
-\delta_U=\operatorname{Tr}(\sqrt\rho U\sqrt\rho U)-F_U(\rho)^2.
+C_0=uH_0-\zeta_0>0,\qquad
+C_0^2-v^2(J_0-H_0^2)>0.                               \tag{14}
 $$
 
-Consequently `g(rho)<=sum_k w_k g(sigma_k)+2sqrt(n sum_U delta_U)`.
-One common mixture controls all queries, without increasing rank or
-requiring a positive eigenvalue gap. The proof compares the coefficients
-`sqrt(lambda_i lambda_j)` and `min(lambda_i,lambda_j)` and retains the
-optimal decoder's commutator. A one-qubit family makes the coefficient
-sharp. The nonzero error term prevents an automatic extension of a flat
-converse to arbitrary spectra.
+As y increases, H increases and $J-H^2$ decreases. If
+$J_0-H_0^2<0$, no $y\ge Y$ is feasible. Otherwise (14) gives
+$\zeta_0<uH_0-v\sqrt{J_0-H_0^2}$, the lower feasible circle root.
+That root increases until its radicand becomes negative, after which
+feasibility fails. Holding $\zeta_0$ at Y is essential. Equation (13)
+is incompatible with its proposed upper bound, proving $\Delta>\Delta_*$.
 
-### 3.4 Balanced spectra at every input size
+For precision, (14)'s two positivity claims reduce under
+$\tau=v/u,m=\mu/u$ to the polynomials C,P in
+[the certificate definition](audits/NONFLAT_QUARTER_RANK_CONVERSE.md#5-the-exact-rational-certificate),
+on the single box $[0,9/25]^2$. Their denominators are positive.
+Their 35 and 99 tensor Bernstein coefficients are bounded below by
+$4/25$ and $1/10000$, respectively, using rational arithmetic and
+integer-verified radical enclosures. Nonnegative Bernstein basis functions
+sum to one, so these are whole-box proofs, not sampled sign checks.
+The reproducible [exact checker](../tools/check_nonflat_quarter_rank_certificate.py)
+and [certificate report](../results/nonflat_quarter_rank_certificate.json)
+are essential parts of this finite reduction; the full note derives
+$H_0>1/2$ and the box bounds before applying the certificate.
 
-The [balanced-spectrum theorem](audits/BALANCED_SPECTRUM_OPTIMALITY.md)
-removes the input-size restriction for an entire spectral family. Let
-R be any traceless Hermitian reflection on n qubits and set
-`rho_t=(I+tR)/2^n`, with `0<=t<=1`. These are exactly the states with
-eigenvalues `(1+t)/2^n` and `(1-t)/2^n`, each repeated `2^(n-1)` times.
-Then
-
-$$
-\boxed{\max_R g(\rho_t)=2(n-1)+\sqrt{4-2t^2}.}
-$$
-
-For t>0, equality requires R to be an original-site X/Z bisector
-reflection, with identity on all other sites. Thus the maximizing state
-is a mixed bisector on one site and maximally mixed spectators. Its
-entropy is `n-1+h_2((1-t)/2)`. The established one-bit scalar inequality
-in [the product-diagonal proof](COMMUTING_SEED_BOUND.md#2-a-single-bit-inequality)
-therefore gives the sharp entropy bound for this entire family, with
-strict inequality for `0<t<1`.
-
-At t=1 this proves, for every n and every rank-`2^(n-1)` projector P,
-
-$$
-g\left(\frac{P}{2^{n-1}}\right)\le2(n-1)+\sqrt2.
-$$
-
-Equality is exactly a pure original-site bisector tensored with the
-maximally mixed state on the remaining sites. This all-size flat theorem does not
-assume that an unrestricted optimizer has a flat spectrum.
-
-The proof has one scalar reduction. Expand R in Pauli words, and let W
-be its total squared coefficient on the singleton X/Z words. The sum
-of local anticommuting weights is at least `2-W`. Reflection duality
-constrains W by the mean absolute value of a normalized random-sign sum
-whose coefficients are the singleton site amplitudes. A factorized
-degree-six majorant and a fourth-moment tail estimate handle all numbers
-of coefficients. Either total anticommuting weight already proves the
-bound, or one dominant site's two queries supply the required curvature.
-The same argument evaluates the root-affinity score within this
-balanced-spectrum family; the general affinity obstruction remains valid.
-
-### 3.5 Stability gives a nonflat spectral neighborhood
-
-The [stability extension](audits/BALANCED_SPECTRUM_STABILITY.md) makes
-the previous equality classification quantitative. For a flat half-rank
-seed sigma, let `epsilon=2n-2+sqrt(2)-g(sigma)`. There is a retention
-seed sigma_0 such that
+Finally grouped Cauchy gives
+$\sum_U\sqrt{a_U}\le\sqrt{4-2W_1}+\sqrt{36-6\Delta+6W_1}$.
+For $x<1-1/\sqrt2$, monotonicity allows $W_1=1-x$ and
+$\Delta=\Delta_*$; its exact target threshold is
+$B+\lambda x-2(1+\sqrt2)x^2/[3(\sqrt{1+x}+1)^2]\le\Delta_*$.
+For $1-1/\sqrt2\le x<21/32$, instead
+$\Delta_*\ge5-2\sqrt2$, and Cauchy over all eight queries suffices.
+Strict $\Delta>\Delta_*$ makes this branch strict. Only the first
+branch can attain equality; its Pauli equality conditions give precisely
 
 $$
-\|\sigma-\sigma_0\|_1\le16\sqrt{2\epsilon}.
+\rho=|\beta_1\rangle\langle\beta_1|\otimes
+|\beta_2\rangle\langle\beta_2|\otimes I_4/4,             \tag{15}
 $$
 
-The constant is independent of n. The square-root exponent cannot be
-improved: rotating a single pure bisector through angle theta gives
-`||sigma-sigma_0||_1^2=sqrt(2) epsilon` exactly for sufficiently small
-theta. For a balanced mixed spectrum of bias t>0, the corresponding
-bound is `16sqrt(2e_g)/t`, where e_g is the gap from its exact spectral
-optimum. The inverse-bias scaling is also necessary as t tends to zero.
-
-This yields a sufficient spectral condition without a flatness
-assumption. Put `k=2^(n-1)` and suppose `rank(rho)<=k`. Then
-
-$$
-\boxed{\sqrt{2\left(1-\frac{\operatorname{Tr}\sqrt\rho}{\sqrt k}\right)}
-\le\frac1{4096n}
-\quad\Longrightarrow\quad
-g(\rho)\le2n-2+\sqrt2.}
-$$
-
-Equality requires a retention seed. The expression on the left is
-the Hilbert--Schmidt distance between sqrt(rho) and the square root of
-any flat rank-k state whose support contains rho's support. Thus the
-condition depends only on the eigenvalues; all support orientations are
-included, as are lower ranks satisfying the same inequality.
-
-The proof separates two possibilities for that flat comparison state.
-If its score is bounded away from optimum, trace-norm continuity absorbs
-the spectral perturbation. If its score is close to optimum, quantitative
-concentration on one original site persists under the perturbation.
-A rank-sensitive two-dimensional matrix estimate then proves retention
-for the nonflat seed. The radius is sufficient and is not claimed
-optimal; arbitrary spectra outside this neighborhood remain open.
-
-The intermediate estimate also gives a broader sufficient condition:
-retention holds for any half-rank seed when at least three quarters of
-the local X/Z Pauli coefficient mass of sqrt(rho) lies on one original
-site. Its nonzero spectrum is otherwise unrestricted. Any remaining
-counterexample must avoid this concentration condition as well as the
-spectral neighborhood above.
+up to original-site permutation, with both pure states X/Z bisectors.
+Equations (1)–(3) now finish (6), including its arbitrary-instrument scope.
 
 ## 4. A collective advantage with five memory qubits
 
-Take `n=31`. Label the X-basis vectors by bit strings. Let
-`S={0,e_1,...,e_n}`, and use 32 orthogonal output states labelled by S.
-Set
+Take $n=31,q=5,D=32$. Label the X-basis by bit strings, put
+$\mathcal C=\{0,e_1,\ldots,e_n\}$, and use orthogonal output labels
+for its 32 elements. Set
 
-\[
+$$
 p_0=\tfrac12,\quad p_{e_i}=\tfrac1{2n},\qquad
-L=\sum_{u\in S}\sqrt{p_u}\,|u\rangle_Q\langle u|_X.
-\]
+L=\sum_{u\in\mathcal C}\sqrt{p_u}\,|u\rangle_Q\langle u|_X,
+\qquad K_s=LZ^s\quad(s\in\{0,1\}^n).
+\tag{16}
+$$
 
-The **complete** instrument is
+Store s classically. No normalization factor is missing: translating the
+diagonal seed gives $\sum_sK_s^\dagger K_s=I$, since $\sum_up_u=1$.
+All outcomes are accepted and every branch has quantum dimension 32.
+For X use the diagonal output signs $(-1)^{u_i+s_i}$. For Z use
+$|0\rangle\langle e_i|+|e_i\rangle\langle0|$, zero on the other
+output states. This is a Hermitian contraction; zero means a fair output,
+not a discarded event. Direct translation sums give
 
-\[
-K_s=LZ^s,\qquad s\in\{0,1\}^n,
-\]
-
-with s stored classically. No extra normalization factor is needed:
-translations of the diagonal seed give `sum_s K_s^dagger K_s=I`, since
-`sum_u p_u=1`. All outcomes are accepted; every branch uses dimension 32.
-
-For X, decode with the diagonal signs `(-1)^(u_i+s_i)`. For Z, decode with
-`|0><e_i|+|e_i><0|`, a Hermitian contraction that is zero on the other
-output states. Zero means a fair binary output, not a discarded event.
-Direct summation gives the effective observables
-
-\[
+$$
 \sum_sK_s^\dagger B_{s,i,X}K_s=X_i,\qquad
-\sum_sK_s^\dagger B_{s,i,Z}K_s
-=2\sqrt{p_0p_{e_i}}\,Z_i=\frac{Z_i}{\sqrt{31}}.
-\]
+\sum_sK_s^\dagger B_{s,i,Z}K_s=2\sqrt{p_0p_{e_i}}Z_i=Z_i/\sqrt{31}.
+\tag{17}
+$$
 
-These operator identities establish uniform performance without a
-31-qubit numerical simulation.
+These operator identities establish the advertised arbitrary-input
+statistics without a 31-qubit numerical simulation.
 
-For comparison, define **original-site retention** precisely: every refined
-Kraus branch factors as `K_c=M_c ⊗ <v_c|` across original sites
-`T_c` and their complement, with `|T_c| <= q`. The retained-site operation,
-the selected sites, and the discarded-site vector may depend on c; the
-discarded sites may be measured jointly. This is a substantial comparison
-class, although it does not include every collective encoder.
+For comparison, an **original-site-retention** instrument admits a Kraus
+refinement in which every nonzero branch factors as
+$K_c=M_c\otimes\langle v_c|$ across original sites $T_c$ and their
+complement, with $|T_c|\le q$ and output dimension at most $2^q$.
+All factors and the retained set may depend on c, and the refined
+operators obey $\sum_cK_c^\dagger K_c=I$. The vectors $v_c$ may be
+entangled across discarded sites, so their measurement may be joint.
+Decoders are arbitrary contractions, and outcome probabilities may
+depend on the input. This definition includes random subset retention
+and joint processing of discarded sites, but not all collective encoders.
 
-Its normalized Gram matrices factor across that split. Retained-site
-scores are at most `a+b`; discarded-site scores are at most
-`sqrt(a^2+b^2)` by the Bloch disk. For `a,b >= 0`, the same Kraus averaging gives
+Normalize $v_c$ and absorb its norm into $M_c$. Each normalized Gram
+is then $\tau_{T_c}\otimes|v_c\rangle\langle v_c|$, with
+$\operatorname{Tr}\tau_{T_c}=1$ and $\langle v_c|v_c\rangle=1$.
+For uniform nonnegative weights $a,b$, a retained site's weighted
+score is at most $a+b$. A discarded site's is at most
+$\sqrt{a^2+b^2}$, by its reduced Bloch vector even when $v_c$ is
+entangled. Equation (2) therefore gives the class-wide bound
 
-\[
-\sum_i(a x_i+b z_i)
-\le q(a+b)+(n-q)\sqrt{a^2+b^2}.
-\]
+$$
+\sum_i(ax_i+bz_i)\le q(a+b)+(n-q)\sqrt{a^2+b^2}.          \tag{18}
+$$
 
-With every `x_i=1`, set `b=1` and let a tend to infinity to obtain
-`sum_i z_i <= q`. The collective construction instead gives
+With all $x_i=1$, set $b=1$ and let a tend to infinity: (18)
+implies $\sum_i z_i\le q$. The complete collective instrument (16)
+instead has $\sum_i z_i=\sqrt{31}>5$. It strictly separates the
+entire stated class under the same branch cap. The
+[exact-axis note](EXACT_AXIS_SPECTRAL_REDUCTION.md) gives the broader
+weighted class region $\sum_iw(x_i,z_i)\le q$ and the spectral context.
+The separation does not establish an unrestricted optimum at (31,32),
+an equal-accuracy improvement, or an efficient implementation.
 
-\[
-\sum_i z_i=\sqrt{31}>5=q.
-\]
+## 5. A separate all-size structural companion
 
-Thus it strictly exceeds that entire retention class at the same
-worst-case memory cap. No claim is made that this collective construction
-is optimal among unrestricted encoders.
+The [balanced-spectrum theorem](audits/BALANCED_SPECTRUM_OPTIMALITY.md)
+fixes the spectrum rather than the memory rank. For every n, every
+traceless Hermitian reflection R, and $0\le t\le1$, set
+$\rho_t=(I+tR)/d$. Then
 
-## 5. What is prior, and what is being claimed
+$$
+\max_R g(\rho_t)=2n-2+\sqrt{4-2t^2}.                    \tag{19}
+$$
 
-| Established ingredient | Primary source and precise locator |
+For $t>0$, maximizers are exactly
+$\rho_t=(I+tB_i)/2\otimes I_{\rm rest}/2^{n-1}$, where
+$B_i=(\pm X_i\pm Z_i)/\sqrt2$ acts on the chosen site; at $t=1$
+its local state is pure. At $t=0$ there is just the maximally mixed
+state. In particular, every flat rank-$d/2$ seed
+obeys the retention converse for every n. This does not assert that
+an unrestricted half-rank optimizer has a flat spectrum.
+
+The [stability theorem](audits/BALANCED_SPECTRUM_STABILITY.md) gives a
+dimension-independent statement: a flat half-rank seed with score gap
+$\epsilon$ from $2n-2+\sqrt2$ lies within full trace-norm distance
+$16\sqrt{2\epsilon}$ of a seed (10). Its square-root exponent is
+necessary. It also gives an arbitrary-support spectral neighborhood:
+for $k=d/2$, $\operatorname{rank}\rho\le k$,
+
+$$
+\sqrt{2\left(1-\frac{\operatorname{Tr}\sqrt\rho}{\sqrt k}\right)}
+\le\frac1{4096n}\quad\Longrightarrow\quad g(\rho)\le2n-2+\sqrt2.
+\tag{20}
+$$
+
+Equality requires retention. The radius is sufficient, not optimal.
+These companion results supply all-size structure and limited nonflat
+control; they are not prerequisites for the three operational theorems.
+
+## 6. Attribution and the remaining boundary
+
+The framework is established. Ioannou et al.'s dimension-constrained
+measurement simulation and Jones et al.'s steering/Schmidt correspondence
+precede this analysis. Sekatski's *The bottleneck dimension of quantum
+operations*, arXiv:2608.25010v1, Definition 3 and Sections III.B–IV.A,
+also contains this model as measurement d-simulability with classical
+records. Its universal noisy-channel converse concerns quantum outputs;
+it does not automatically give the present restricted-readout thresholds.
+
+Ballester–Wehner–Winter's postmeasurement-information framework is
+equivalent here: for the uniform ensemble $(I+sU)/d$, delaying U
+until after storage gives $p_{\rm success}=(1+\eta)/2$ after the
+same symmetries. The site label is part of our delayed query. Bluhm–Rauber–Wolf
+also study approximate measurement-relative compression. Their common
+CPTP reconstruction requirement differs from query-dependent binary
+readout; their Section 9.1 explicitly discusses unrestricted compressed
+effects. Neither framework is claimed as new. Exact source locators are
+in [CORE_PRIOR_COMPARISON](CORE_PRIOR_COMPARISON.md); the BWW reduction is
+derived in [the original audit, Section 6.1](audits/PROOF_AND_NOVELTY_AUDIT.md#61-ballesterwehnerwinter-direct-earlier-problem-and-exact-endpoint).
+
+| Proof ingredient | Established source and use here |
 |---|---|
-| Dimension-constrained measurement simulation with classical records | [Ioannou et al., arXiv:2202.12980v1](https://arxiv.org/pdf/2202.12980v1), Eq. (1), p. 2. |
-| Independently optimized CHSH monogamy, including mixed states | [Cheng–Hall, arXiv:1610.09302v3](https://arxiv.org/pdf/1610.09302v3), Eq. (1), p. 1; Eqs. (13)–(14) and following paragraph, p. 3. |
-| Squared root fidelity is at most affinity | [Audenaert–Nussbaum–Szkoła–Verstraete, arXiv:0708.4282v1](https://arxiv.org/pdf/0708.4282v1), Appendix A, Theorem 6/Eq. (55), p. 32, at parameter `s=1/2`; a direct Schatten Hölder proof is reproduced in [the entropy converse](STRONG_ENTROPIC_CONVERSE.md#3-root-fidelity-affinity-and-the-two-pauli-energy). |
-| Orthogonal-qubit compatibility disk; incompatibility weight | [Yu–Liu–Li–Oh, arXiv:0805.1538v2](https://arxiv.org/pdf/0805.1538v2), Theorem 1/Eq. (5), pp. 1–2; [Pusey, arXiv:1502.03010v2](https://arxiv.org/pdf/1502.03010v2), Section III/Eq. (15), p. 4. The displayed w is an elementary evaluation of this prior resource. |
-| Related average compression cost | [Cope–Uola, arXiv:2207.05722v4](https://arxiv.org/pdf/2207.05722v4), Section IV.C/Eqs. (13)–(14), pp. 7–8. An average branch cost does not itself give a dimension-two cap on every branch. |
-| The cube-star spectrum underlying the finite construction | [Avni–Samorodnitsky, arXiv:2411.14597v1](https://arxiv.org/pdf/2411.14597v1), Example 1.12, p. 8. The star eigenvector and eigenvalue are prior mathematics. |
+| Independent-setting CHSH monogamy | Cheng–Hall, arXiv:1610.09302v3, Eqs. (13)–(14): the weighted dimension-two converse. |
+| Orthogonal-qubit compatibility; incompatibility weight | Yu–Liu–Li–Oh, arXiv:0805.1538v2, Theorem 1 gives the disk; Pusey, arXiv:1502.03010v2, Section III defines the weight. The local disk geometry evaluates w here. |
+| Squared root fidelity bounded by affinity | Audenaert–Nussbaum–Szkoła–Verstraete, arXiv:0708.4282v1, Appendix A, Theorem 6 at s=1/2: the finite half/quarter-rank relaxation. |
+| Cube-star spectrum | Avni–Samorodnitsky, arXiv:2411.14597v1, Example 1.12: prior spectral mathematics underlying (16). |
 
-The supplied deductions are the exact all-n one-qubit allocation theorem,
-the unrestricted equal-accuracy optimum for every integer memory budget
-through four inputs with the nontrivial seed equality classifications,
-and the complete finite collective
-protocol with its retention-class separation.
-They are a focused candidate for theorem-level priority comparison;
-publication originality is not established by these proofs or by the
-sources inspected so far. The broader two-parameter entanglement profile
-has substantial prior subsumption, detailed in the
-[nonlinear-source audit](audits/NONLINEAR_CHSH_SUBSUMPTION.md), and is not
-needed for this core argument.
+The supplied deductions are the complete all-n one-qubit allocation
+rule, the unrestricted integer-budget optimum through four inputs,
+and the complete collective instrument with its precise retention-class
+separation. The focused source comparison is not an exhaustive priority
+search. The balanced and stability notes separately locate their
+fidelity-response and quantum-FKN antecedents.
 
-Unrestricted **equal-accuracy** optimality remains open outside the proved
-memory and input ranges, beginning at `n=5,q=2`. A future general proof would need
-a dimension-independent bound on the original trace norms; the
-affinity-only rank extension is false. The unequal-accuracy
-separation does not decide it. Full supporting
-proofs are in the [allocation note](ONE_QUBIT_ALLOCATION_REGION.md),
-[half-rank converse](audits/HALF_RANK_RETENTION_CONVERSE.md),
-[quarter-rank converse](audits/NONFLAT_QUARTER_RANK_CONVERSE.md),
-[exact-axis note](EXACT_AXIS_SPECTRAL_REDUCTION.md), and
-[seed reduction](COLLECTIVE_ENCODING_REDUCTION.md).
+Unrestricted equal-accuracy retention remains open outside the proved
+ranges, beginning at $(n,q)=(5,2)$; the unequal-accuracy separation
+does not decide it. The general sharp entropy bound and asymptotic
+common-accuracy rate also remain open. The
+[affinity-method limit](audits/AFFINITY_METHOD_LIMIT.md) proves that the
+finite proof's stronger affinity bound cannot extend universally, while
+the [spectral-layer comparison](audits/SPECTRAL_LAYER_SCORE_BOUND.md)
+retains decoder information with a nonzero error term. These are future
+research boundaries, not missing premises of the operational results above.

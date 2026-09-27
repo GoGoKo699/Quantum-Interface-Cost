@@ -2,6 +2,11 @@
 
 Checked 27 September 2026 against main `357a4dfd523e0b895dbeead46fb1e3190c7afd78`. Focused consolidation comparison; no external review or exhaustive priority claim. See the [scientific scope](SCIENTIFIC_SCOPE.md) for the selected claims and bounded completion gates. The existing proof-and-novelty audit, publication assessment, half-rank comparison and current claim ledger were read before the bounded primary-source check.
 
+The integrated [core exposition](CORE_ARGUMENT.md) has now been reconciled
+with this map in the [bounded review](audits/INTEGRATED_CORE_REVIEW.md).
+That pass checked attribution and the selected claim boundaries; it did
+not enlarge the source search or certify publication priority.
+
 The model is one arbitrary unknown n-qubit specimen, one delayed original local X/Z binary query, arbitrary collective instruments, a free finite classical record, and quantum dimension at most 2^q on every branch. It is already an instance of dimensional measurement simulability. The candidate contribution is an exact evaluation for this particular family, not a new compression framework.
 
 ## Main claims and their boundaries
@@ -36,6 +41,6 @@ The model is one arbitrary unknown n-qubit specimen, one delayed original local 
 
 Within the inspected statements, this focused comparison found no direct evaluation supplying the three higher-memory finite values, the complete operational retention-class separation, or the balanced fixed-spectrum profile. It does identify substantial exact prior overlap, especially the framework, endpoint and q=1 proof ingredient. Final scientific presentation should claim those supplied evaluations and their equality structure, not independent invention of the underlying resources or a settled general optimum. Further priority beyond this inspected set remains unestablished; an unsuccessful search is not evidence of originality.
 
-The remaining consolidation gate is bounded: carry the 2026 bottleneck comparison into the integrated exposition, preserve the finite classical record and branchwise dimension cap in its terminology, and check that the eventual abstract and theorem summaries retain the four boundaries above. This does not require extending the search into a general priority audit.
+The integrated exposition now includes the 2026 bottleneck comparison and preserves the finite classical record and branchwise dimension cap. The eventual manuscript abstract and theorem summaries must retain the four boundaries above. This is an ongoing presentation requirement, not a new general priority-audit gate.
 
 For the moment bounds used by the balanced-spectrum proof and further source qualifications, see the [balanced-spectrum section of the literature record](LITERATURE_COMPARISON.md#balanced-spectra-at-every-input-size). This focused map does not replace the source locators in individual proof notes.
