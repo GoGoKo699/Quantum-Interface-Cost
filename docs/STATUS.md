@@ -1,7 +1,7 @@
 # Status and claim ledger
 
 Updated: 2026-09-27. Stage: the [nonflat quarter-rank converse](audits/NONFLAT_QUARTER_RANK_CONVERSE.md) proves `Gamma(4,4)=4+2sqrt(2)` and classifies every maximizing normalized seed. Together with the half-rank and all-n one-qubit results, this settles every integer quantum-memory budget through four inputs. The proof keeps arbitrary spectra and uses a sum-of-squares identity plus two exactly certified positive polynomials. The general entropy inequality, asymptotic common-accuracy rate, and publication originality remain unresolved.
-Latest research base: `38fd9d3f2c3e38ef5e8a7c5d6b2c041955678d8a`, the merge of PR #58.
+Frozen scientific base: `466bbb770d150fb8f43c4f9eca04bbadabe85188`, the merge of PR #59.
 
 **Integration complete for the selected exposition.** The
 [core argument](CORE_ARGUMENT.md) now supplies one proof narrative for
@@ -11,10 +11,13 @@ unequal-accuracy collective separation. Its
 connecting lemmas, all 14 integer budgets through four inputs, the
 comparison class and source reconciliation. The
 [scientific scope](SCIENTIFIC_SCOPE.md) retains balanced spectra as a
-structural companion. The next bounded task is the final evidence freeze,
-including one scoped reproduction of the essential exact certificate,
-before manuscript drafting. New theorem exploration remains paused.
-This integration changes exposition and review evidence, not the theorems.
+structural companion. The
+[scientific evidence freeze](SCIENTIFIC_EVIDENCE_FREEZE.md) closes G4:
+36 file fingerprints are pinned to the reviewed base, the older map is
+reconciled, and one exact-certificate reproduction matches the historical
+report byte for byte. The selected scientific package is prepared for
+manuscript drafting. New theorem exploration remains paused. This freeze
+changes evidence and readiness records, not the theorems.
 
 The [stability extension](audits/BALANCED_SPECTRUM_STABILITY.md)
 proves an explicit nonflat half-rank neighborhood at every n: if

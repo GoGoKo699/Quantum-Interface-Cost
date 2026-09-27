@@ -1,6 +1,6 @@
 # Q1 — Delayed local readout through a bounded quantum interface
 
-**Version:** 0.55, 2026-09-27
+**Version:** 0.56, 2026-09-27
 
 **Project:** Falling / Q1  
 **Status:** The unrestricted equal-accuracy optimum is proved for every integer quantum-memory budget through four input qubits. The nonflat quarter-rank converse closes `(n,q)=(4,2)` and classifies all maximizing normalized seeds. The exact all-n one-qubit allocation result and the unequal-accuracy collective advantage remain separate results. The general two-qubit entropy inequality, common-accuracy asymptotic rate and publication originality are unresolved. The full product-diagonal profile evaluates an established steering entanglement measure; it is not a new resource framework. All proof review described here is internal, not external peer review.
@@ -11,9 +11,12 @@ one-qubit allocation, finite converses and the collective separation in
 one notation. Its [bounded internal review](docs/audits/INTEGRATED_CORE_REVIEW.md)
 checks the connecting arguments, rank and budget boundaries, comparison
 class, and source attribution. The [scientific scope](docs/SCIENTIFIC_SCOPE.md)
-records the completed integration gates. A final evidence freeze remains
-before manuscript drafting; no additional theorem is required for this
-selected package. The underlying frozen proofs and reports are unchanged.
+records the completed integration gates. The
+[scientific evidence freeze](docs/SCIENTIFIC_EVIDENCE_FREEZE.md) now pins
+the reviewed package and records one successful exact-certificate
+reproduction. The selected package is prepared for manuscript drafting;
+no additional theorem is required. The underlying frozen proofs and
+reports are unchanged.
 
 The [nonflat quarter-rank converse](docs/audits/NONFLAT_QUARTER_RANK_CONVERSE.md)
 proves `Gamma(4,4)=4+2sqrt(2)` for arbitrary spectra and decoders. Together

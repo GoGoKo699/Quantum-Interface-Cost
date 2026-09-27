@@ -1,6 +1,6 @@
 # Scientific scope and completion gates
 
-Consolidation checkpoint: 27 September 2026. Research base:
+Consolidation checkpoint: 27 September 2026. Initial consolidation base:
 `38fd9d3f2c3e38ef5e8a7c5d6b2c041955678d8a` (PR #58).
 This document selects a bounded scientific package from the research
 record and tracks its integration. The mathematical theorem statements
@@ -124,14 +124,16 @@ general problem if needed; they are not additional headline claims.
 | G1. Scope and attribution | Completed for the selected repository exposition | [Focused source map](CORE_PRIOR_COMPARISON.md) reconciled with the integrated argument; established frameworks and ingredients remain explicitly credited. This is a bounded comparison, not exhaustive priority certification |
 | G2. Integrated proof exposition | Completed and internally reviewed | [Core argument](CORE_ARGUMENT.md) and [exact-text review](audits/INTEGRATED_CORE_REVIEW.md); consistent model and notation, connecting lemmas, all finite-case boundaries, and links to essential frozen proof appendices |
 | G3. Asymmetric comparison | Completed in the integrated statement | The complete instrument, existence of a factorizing Kraus refinement for the comparison class, and strict separation are stated together in Section 4; no unrestricted optimum is asserted |
-| G4. Evidence freeze | Pending | Pin the integrated exposition and minimal evidence manifest to one reviewed commit; perform one scoped reproduction of the essential exact certificate into temporary output, preserving historical reports |
+| G4. Evidence freeze | Completed for the selected scientific package | [Freeze record](SCIENTIFIC_EVIDENCE_FREEZE.md) and [manifest](../results/scientific_evidence_freeze.json) pin 36 files to the reviewed PR #59 base; one essential exact-certificate reproduction is byte-identical to the historical report, which remains unchanged |
 
-The next task is G4. The current [evidence map](CORE_EVIDENCE_MAP.md)
-preserves its base-version fingerprints; the integration review separately
-pins the revised core text. The final freeze will bring those records
-together and resolve any discrepancy. Manuscript drafting follows that
-freeze. The manuscript must preserve the reviewed claims and source
-boundaries; no further exploratory theorem campaign is a prerequisite.
+All four gates are complete for this repository's selected scientific
+package. The [freeze record](SCIENTIFIC_EVIDENCE_FREEZE.md) reconciles the
+older evidence-map fingerprints and the exact-text integration review at
+one scientific base. The package is prepared for manuscript drafting.
+The manuscript must preserve the reviewed claims and source boundaries;
+no further exploratory theorem campaign is a prerequisite. Internal
+review and a successful reproduction do not certify publication originality
+or preapprove the eventual manuscript.
 
 ## 6. Stopping rule and future work
 

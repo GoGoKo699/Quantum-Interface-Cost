@@ -5,6 +5,28 @@ It gives the minimal proof dependencies, identifies which arithmetic
 certificate is proof evidence, and pins existing proof/checker/report hashes.
 The sections below preserve the complete historical verification record.
 
+## Final scientific evidence freeze
+
+The [freeze record](SCIENTIFIC_EVIDENCE_FREEZE.md) and
+[machine-readable manifest](../results/scientific_evidence_freeze.json)
+pin 36 scientific input files to commit
+`466bbb770d150fb8f43c4f9eca04bbadabe85188`. The manifest reconciles all
+31 earlier fingerprints: 30 files are unchanged and the research note's
+model and endpoint Sections 2–4 remain byte-identical despite its updated
+overview. The integrated core matches its exact-text review.
+
+One essential quarter-rank certificate run at that clean base passed
+under CPython 3.12.14. Its 4,267-byte output is byte-identical and
+semantically identical to the historical report. It certifies 35 C
+coefficients strictly above 4/25 and 99 P coefficients strictly above
+1/10000 on one unsplit rectangle. The analytical reduction remains a
+separate proof dependency. No other research checker ran for this freeze;
+historical reports were preserved. Runtime, timestamps, input hashes and
+exact conclusions are recorded in the manifest. G4 is complete and the
+selected package is prepared for manuscript drafting. The
+[independent internal consistency review](audits/SCIENTIFIC_EVIDENCE_FREEZE_REVIEW.md)
+pins the manifest and freeze-note bytes and records its bounded checks.
+
 ## Integrated core exposition
 
 The [bounded integration review](audits/INTEGRATED_CORE_REVIEW.md) records
@@ -15,8 +37,8 @@ analytical-to-polynomial conditions, and the collective comparison class.
 Source reconciliation was limited to the selected exposition and the
 existing focused source map. This was an internal analytical review;
 no frozen checker was imported or executed. Historical proofs, checkers
-and reports remain unchanged. The final evidence freeze and one scoped
-exact-certificate reproduction are still pending.
+and reports remain unchanged. The subsequent evidence freeze and scoped
+reproduction are recorded above.
 
 ## Balanced-spectrum stability and a nonflat spectral neighborhood
 
