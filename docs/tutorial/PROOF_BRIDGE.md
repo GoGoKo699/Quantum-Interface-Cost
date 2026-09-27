@@ -18,6 +18,16 @@ memory results below are those in the repository's
 [reviewed core argument](../CORE_ARGUMENT.md), with their own credited
 ingredients. They are not theorems attributed to the review article.
 
+By the end, you should be able to follow the reduction from a physical
+encoder to a bounded-rank seed, and locate the converse for each result.
+
+| Read this part | Role in the argument |
+|---|---|
+| [Input and seed](#1-separate-the-unknown-input-from-the-optimization-variable), [decoder](#2-why-a-decoder-disappears-into-a-trace-norm) and [completion](#3-why-a-seed-really-gives-a-complete-protocol) | Turn the operational task into an exact matrix optimization |
+| [Retention](#4-calculate-what-retaining-a-site-means-in-seed-notation) and [one-qubit monogamy](#5-why-one-memory-qubit-brings-in-chsh) | Construct the benchmark and prove the allocation rule |
+| [Rank constraint](#6-fidelity-affinity-and-the-constraint-that-cannot-be-dropped) and [finite budgets](#7-locate-every-finite-budget-and-the-exact-certificate) | Locate the sharp finite converses and their certificate |
+| [Collective example](#8-a-small-support-explains-the-31-input-collective-example) and [boundary](#9-continue-with-the-proof-keeping-its-boundary-visible) | Understand the separation and what remains open |
+
 ## 1. Separate the unknown input from the optimization variable
 
 Call the physical input $\omega$. It is one arbitrary unknown n-qubit
@@ -31,10 +41,10 @@ Refine the encoder into Kraus operators $K_c:\mathbb C^d\to\mathbb C^D$
 with $\sum_cK_c^\dagger K_c=I$. Recording the Kraus label only adds
 classical information. For each nonzero branch define
 
-$$
+```math
 p_c=\frac{\|K_c\|_F^2}{d},\qquad
 L_c=\frac{K_c}{\|K_c\|_F},\qquad \rho_c=L_c^\dagger L_c.
-$$
+```
 
 Here $\|K\|_F^2=\operatorname{Tr}(K^\dagger K)$.
 Completeness implies $\sum_cp_c=1$, while each $\rho_c$ is positive,
@@ -54,10 +64,10 @@ A binary decoder has effects $E_+,E_-$ and observable
 $B=E_+-E_-$, so $-I\le B\le I$. Conversely any Hermitian contraction B
 defines the effects $(I\pm B)/2$. For a Hermitian matrix H,
 
-$$
+```math
 \max_{-I\le B\le I}\operatorname{Tr}(BH)=\|H\|_1
 =\sum_j|\lambda_j(H)|.
-$$
+```
 
 To see this, diagonalize H. Choosing B to have eigenvalue +1 on positive
 eigenvectors and −1 on negative ones attains the sum of absolute values.
@@ -67,9 +77,9 @@ This event remains part of the protocol; it is not rejected.
 Set $S=\sqrt\rho$. The polar decomposition $L=VS$ has V isometric on
 the support of $\rho$, even if its rank is less than D. Thus
 
-$$
+```math
 F_U(\rho):=\|LUL^\dagger\|_1=\|SUS\|_1.
-$$
+```
 
 Why may we use an exact noisy Pauli when the original request only
 specified an error tolerance? If a protocol's effective binary observable
@@ -78,10 +88,10 @@ $\|A_U-U\|_\infty/2$, where the operator norm of a Hermitian matrix
 is its largest absolute eigenvalue. An error at most $\varepsilon_U\le1/2$ therefore
 gives the Pauli coefficient
 
-$$
+```math
 \kappa_U=\frac{\operatorname{Tr}(UA_U)}d
 \ge1-2\varepsilon_U.
-$$
+```
 
 Choose a uniformly random Pauli before encoding, record it, and correct
 the decoded sign according to its commutation with U. This averages
@@ -95,20 +105,22 @@ does not restrict the general uniform-error problem.
 Now suppose the complete instrument implements the effective observable
 $\eta_UU$. Taking its Hilbert–Schmidt coefficient along U gives
 
-$$
+```math
 \eta_U=\frac1d\sum_c\operatorname{Tr}(B_{c,U}K_cUK_c^\dagger)
 \le\sum_cp_cF_U(\rho_c).
-$$
+```
 
 This is the converse bridge: a bound on every rank-at-most-D seed bounds
 every physical instrument. Nonnegative weighted sums obey the same rule.
 Define
 
-$$
-g(\rho)=\sum_{i=1}^n[F_{X_i}(\rho)+F_{Z_i}(\rho)],\qquad
-\Gamma(n,D)=\max_{\rho\ge0,\,\operatorname{Tr}\rho=1,\,
-\operatorname{rank}\rho\le D}g(\rho).
-$$
+```math
+\begin{aligned}
+g(\rho)&=\sum_{i=1}^n[F_{X_i}(\rho)+F_{Z_i}(\rho)],\\
+\Gamma(n,D)&=\max_{\substack{\rho\ge0,\,\operatorname{Tr}\rho=1\\
+\operatorname{rank}\rho\le D}}g(\rho).
+\end{aligned}
+```
 
 ## 3. Why a seed really gives a complete protocol
 
@@ -118,19 +130,19 @@ Given $\rho$ of rank at most D, choose $L=V\sqrt\rho$ with V an isometry
 from the support of $\rho$ into the memory. Let P range over the
 $m=4^n$ Pauli representatives $\{I,X,Y,Z\}^{\otimes n}$, and set
 
-$$
+```math
 K_P=\sqrt{d/m}\,LP,\qquad
 \sum_PK_P^\dagger K_P=\frac dm\sum_PP^\dagger\rho P=I.
-$$
+```
 
 The last equality uses $m^{-1}\sum_PP^\dagger\rho P=I/d$.
 Store P classically. Choose $B_U=\operatorname{sign}(LUL^\dagger)$,
 zero on its kernel. If $PUP^\dagger=s_{P,U}U$, where $s_{P,U}=\pm1$,
 use the decoder $s_{P,U}B_U$. The character identity
 
-$$
+```math
 \frac1m\sum_Ps_{P,U}P^\dagger AP=\frac{\operatorname{Tr}(UA)}d\,U
-$$
+```
 
 then makes the effective observable exactly $F_U(\rho)U$.
 Every branch is included; every output dimension is at most D. The seed
@@ -140,10 +152,15 @@ Finally randomize the sites and independently exchange X with Z using
 local Hadamards, recording these choices. This equalizes all 2n query
 contrasts while preserving their sum. The exact common-accuracy optimum is
 
-$$
-\eta_{\max}(n,q)=\frac{\Gamma(n,2^q)}{2n},\qquad
+```math
+\boxed{\eta_{\max}(n,q)=\frac{\Gamma(n,2^q)}{2n},}
+```
+
+with uniform error
+
+```math
 \varepsilon_{\min}(n,q)=\frac{1-\eta_{\max}(n,q)}2.
-$$
+```
 
 For arbitrary input $\omega$, the effective effect $(I+\eta U)/2$
 differs from $(I+U)/2$ by at most $(1-\eta)/2$ in outcome probability,
@@ -156,19 +173,19 @@ binary total-variation error. The full argument is in the
 For one retained site, use the Gram factor $\rho_{r}=I/2$. Its square
 root is $I/\sqrt2$, so for $U=X$ or Z,
 
-$$
+```math
 F_U(\rho_{r})=\|U/2\|_1=1.
-$$
+```
 
 For a discarded site, use a pure X/Z bisector
 $\rho_{d}=|\beta\rangle\langle\beta|$, with
 $|\langle X\rangle_\beta|=|\langle Z\rangle_\beta|=1/\sqrt2$. Then
 
-$$
+```math
 \sqrt{\rho_{d}}U\sqrt{\rho_{d}}
 =\langle\beta|U|\beta\rangle\rho_{d},\qquad
 F_U(\rho_{d})=1/\sqrt2.
-$$
+```
 
 Spectator factors have trace norm one and do not change these local
 scores. A product seed with q retained factors therefore has rank $2^q$
@@ -188,10 +205,12 @@ For $D=2$, choose extreme decoder contractions attaining the trace norms.
 Each is a scalar sign or a traceless qubit Pauli observable. Vectorizing
 L means forming
 
-$$
-|L\rangle\!\rangle=\sum_{a=0}^{d-1}|a\rangle_R\otimes L|a\rangle,
-\qquad \langle\!\langle L|L\rangle\!\rangle=\operatorname{Tr}(L^\dagger L)=1.
-$$
+```math
+\begin{aligned}
+|L\rangle\!\rangle&=\sum_{a=0}^{d-1}|a\rangle_R\otimes L|a\rangle,\\
+\langle\!\langle L|L\rangle\!\rangle&=\operatorname{Tr}(L^\dagger L)=1.
+\end{aligned}
+```
 
 This is a normalized **virtual** pure state of n reference qubits and
 the memory qubit. The references are a mathematical representation of L,
@@ -215,10 +234,10 @@ marginals. It implies $(f_i/r_i)^2+(f_j/r_j)^2\le2$ for the two weighted
 site scores. Hence at most one site exceeds its compatible-disk value.
 Since always $f_i\le\alpha_i+\beta_i$, the support bound is
 
-$$
+```math
 \sum_i(\alpha_ix_i+\beta_iz_i)
 \le\sum_ir_i+\max_i(\alpha_i+\beta_i-r_i).
-$$
+```
 
 This is a qubit-memory argument, not a monogamy theorem for arbitrary
 memory dimension. Its matching retention construction yields the exact
@@ -238,11 +257,13 @@ coefficients, and the established inequality is $F_U^2\le a_U$.
 Here is a short proof that also covers singular S. Put $A=USU\ge0$;
 then $\operatorname{Tr}A^2=\operatorname{Tr}S^2=1$. Schatten Hölder gives
 
-$$
+```math
+\begin{aligned}
 F_U=\|SA\|_1
-\le\|S^{1/2}\|_4\|S^{1/2}A^{1/2}\|_2\|A^{1/2}\|_4
-=\sqrt{\operatorname{Tr}(SA)}=\sqrt{a_U}.
-$$
+&\le\|S^{1/2}\|_4\|S^{1/2}A^{1/2}\|_2\|A^{1/2}\|_4\\
+&=\sqrt{\operatorname{Tr}(SA)}=\sqrt{a_U}.
+\end{aligned}
+```
 
 The exponents satisfy $1/4+1/2+1/4=1$, with
 $\|M\|_p=(\operatorname{Tr}|M|^p)^{1/p}$ and
@@ -304,11 +325,13 @@ Since $X_i$ is diagonal, $LX_iL^\dagger$ has entries $\pm p_u$, giving
 $F_{X_i}=\sum_up_u=1$. Since $Z_i$ flips the ith X-basis bit, its only
 pair wholly inside this support is $0\leftrightarrow e_i$. Thus
 
-$$
-LZ_iL^\dagger=\sqrt{p_0p_{e_i}}
-(|0\rangle\langle e_i|+|e_i\rangle\langle0|),\qquad
-F_{Z_i}=2\sqrt{p_0p_{e_i}}=1/\sqrt n.
-$$
+```math
+\begin{aligned}
+LZ_iL^\dagger&=\sqrt{p_0p_{e_i}}
+(|0\rangle\langle e_i|+|e_i\rangle\langle0|),\\
+F_{Z_i}&=2\sqrt{p_0p_{e_i}}=1/\sqrt n.
+\end{aligned}
+```
 
 For $n=31$ the required dimension is $D=32=2^5$. The particularly simple
 complete instrument is $K_s=LZ^s$ for all bit strings s, with s stored
@@ -327,9 +350,9 @@ be entangled, allowing joint measurements of discarded sites; all branches
 obey the same output cap and global completeness. Retained and discarded
 site scores respectively give, for $a,b\ge0$,
 
-$$
+```math
 \sum_i(ax_i+bz_i)\le q(a+b)+(n-q)\sqrt{a^2+b^2}.
-$$
+```
 
 When all $x_i=1$, taking $b=1$ and $a\to\infty$ gives $\sum_i z_i\le q$.
 The collective example instead gives $\sqrt{31}>5$. This separates the

@@ -14,6 +14,15 @@ Read its Sections II.A–B and III.A alongside Sections 1–3 here;
 Section III.B.2 supplies the incompatibility-weight viewpoint used later.
 The explanations and worked examples below are written for this project.
 
+By the end, you should be able to construct the two-input protocol and
+explain how unequal local accuracies share one quantum-memory slot.
+
+| Read this part | Question it answers |
+|---|---|
+| [The task](#1-the-specimen-arrives-before-the-question) and [contrast](#2-contrast-measures-the-accuracy-of-a-binary-answer) | What must the delayed answer reproduce? |
+| [Classical memory](#3-what-can-one-qubit-leave-in-purely-classical-memory) and [retaining qubits](#4-keeping-quantum-information-leaves-a-choice-for-later) | How is the two-input protocol built? |
+| [Unequal allocation](#5-one-retained-qubit-can-be-allocated-unevenly) and [operational distinctions](#6-keep-the-operational-distinctions-visible) | Which accuracy profiles fit one memory qubit? |
+
 ## 1. The specimen arrives before the question
 
 We receive one unknown $n$-qubit state, written $\omega$. It may be mixed,
@@ -27,10 +36,12 @@ There is only one question in each use of the protocol.
 
 For either requested observable $U$, the ideal measurement has effects
 
-$$
-E^{\mathrm{ideal}}_{\pm|U}=\frac{I\pm U}{2},\qquad
-p^{\mathrm{ideal}}_\pm=\frac{1\pm\operatorname{Tr}(\omega U)}{2}.
-$$
+```math
+\begin{aligned}
+E^{\mathrm{ideal}}_{\pm|U}&=\frac{I\pm U}{2},\\
+p^{\mathrm{ideal}}_\pm&=\frac{1\pm\operatorname{Tr}(\omega U)}{2}.
+\end{aligned}
+```
 
 We aim to reproduce these **outcome probabilities**. We are not trying
 to estimate $\operatorname{Tr}(\omega U)$ numerically from one specimen.
@@ -46,9 +57,9 @@ may both extract a classical record and leave a quantum system to query.
 
 The noisy measurement of $U$ with contrast $\eta\in[0,1]$ has effects
 
-$$
+```math
 E_{\pm|U}=\frac{I\pm\eta U}{2}.
-$$
+```
 
 At $\eta=1$ it is the desired measurement. At $\eta=0$ it is a fair
 coin, independent of the specimen. Intermediate contrast shrinks the
@@ -57,11 +68,11 @@ dependence of the answer on the input state.
 For two binary distributions, total-variation distance is simply the
 absolute difference of their probabilities for the $+1$ outcome. Thus
 
-$$
+```math
 \operatorname{TV}(p^{\mathrm{ideal}},p)
 =\frac{1-\eta}{2}|\operatorname{Tr}(\omega U)|
 \le\frac{1-\eta}{2}.
-$$
+```
 
 An eigenstate of $U$ attains this bound. The uniform error, maximized
 over every allowed input, is therefore $\varepsilon=(1-\eta)/2$.
@@ -81,32 +92,32 @@ First consider a single input qubit and retain no quantum system.
 We must measure it before learning whether the question will be X or Z.
 A useful measurement has four outcomes $(s,t)\in\{+1,-1\}^2$:
 
-$$
+```math
 G_{s,t}=\frac{I+s xX+t zZ}{4}.
-$$
+```
 
 Store $(s,t)$. If the later question is X, answer $s$; if it is Z,
 answer $t$. Summing over the unused coordinate gives
 
-$$
+```math
 \sum_tG_{s,t}=\frac{I+s xX}{2},\qquad
 \sum_sG_{s,t}=\frac{I+t zZ}{2}.
-$$
+```
 
 These are the required noisy measurements. Because $X$ and $Z$
 anticommute, $(s xX+t zZ)^2=(x^2+z^2)I$. Each $G_{s,t}$ consequently
 has eigenvalues
 
-$$
+```math
 \frac{1+\sqrt{x^2+z^2}}4,\qquad
 \frac{1-\sqrt{x^2+z^2}}4.
-$$
+```
 
 The four effects sum to $I$ and are positive precisely when
 
-$$
+```math
 \boxed{x^2+z^2\le1.}
-$$
+```
 
 This proves that the quarter disk is **achievable**. Positivity of this
 particular construction alone does not prove that every other parent
@@ -119,18 +130,20 @@ Here is a short necessity argument. Any joint implementation of the
 two binary POVMs has four positive effects $H_{s,t}$ with the same
 marginals. Write their Bloch expansions as
 
-$$
+```math
 H_{s,t}=\frac{g_{s,t}I+\mathbf v_{s,t}\cdot\boldsymbol\sigma}{2}.
-$$
+```
 
 Positivity implies $\|\mathbf v_{s,t}\|\le g_{s,t}$; normalization
 implies $\sum_{s,t}g_{s,t}=2$ and $\sum_{s,t}\mathbf v_{s,t}=0$.
 The two positive-outcome marginals imply
 
-$$
-x\mathbf e_X+z\mathbf e_Z=\mathbf v_{++}-\mathbf v_{--},\qquad
-x\mathbf e_X-z\mathbf e_Z=\mathbf v_{+-}-\mathbf v_{-+}.
-$$
+```math
+\begin{aligned}
+x\mathbf e_X+z\mathbf e_Z&=\mathbf v_{++}-\mathbf v_{--},\\
+x\mathbf e_X-z\mathbf e_Z&=\mathbf v_{+-}-\mathbf v_{-+}.
+\end{aligned}
+```
 
 Applying the triangle inequality to both equations gives
 $2\sqrt{x^2+z^2}\le\sum_{s,t}\|\mathbf v_{s,t}\|\le2$.
@@ -166,10 +179,10 @@ The simplest construction does retain original sites:
 Each site is retained with probability $q/n$. Its effective contrast is
 the mixture of a perfect answer and a compatible classical answer:
 
-$$
+```math
 \boxed{\eta_{\mathrm{ret}}(n,q)
 =\frac qn+\left(1-\frac qn\right)\frac1{\sqrt2}.}
-$$
+```
 
 The construction works on entangled inputs too. Its effective queried
 observable is the stated local Pauli multiplied by the stated contrast,
@@ -179,15 +192,19 @@ on the other sites preserves the requested marginal distribution.
 For two inputs and one retained qubit, keep either site with probability
 $1/2$. Every X or Z question then has
 
-$$
-\eta_{\mathrm{ret}}(2,1)=\frac{1+1/\sqrt2}{2}\approx0.8536,
-\qquad \varepsilon=\frac{1-1/\sqrt2}{4}\approx0.0732.
-$$
+```math
+\begin{aligned}
+\eta_{\mathrm{ret}}(2,1)&=\frac{1+1/\sqrt2}{2}\approx0.8536,\\
+\varepsilon&=\frac{1-1/\sqrt2}{4}\approx0.0732.
+\end{aligned}
+```
 
-![A quarter disk shows the classical region. The equal-contrast boundary point A and the perfect-retention point B have midpoint C, the per-site accuracy obtained by retaining either of two sites with equal probability.](../figures/retention_geometry.svg)
+<p align="center">
+  <img src="../figures/retention_geometry.svg" width="720" alt="A quarter disk shows the classical region. Its equal-contrast boundary point A and perfect-retention point B have midpoint C, the per-site accuracy from retaining either of two sites with equal probability." />
+</p>
 
-The line joins two possible treatments of a single site. Point C averages
-them with equal weights. Across the two-site protocol, exactly one site
+**Reading the figure.** The line joins two possible treatments of a single
+site. Point C averages them with equal weights. Across the two-site protocol, exactly one site
 is retained in every branch; each site is retained half the time.
 
 This construction establishes a performance that is possible. Proving
@@ -201,10 +218,11 @@ The same common-accuracy assertion for arbitrary $n,q$ remains open.
 Equal accuracy is only one possible request. For a site with desired
 contrasts $(x,z)$, define
 
-$$
-w(x,z)=\left[x+z-1-\sqrt{2(1-x)(1-z)}\right]_+,
-\qquad [a]_+=\max\{a,0\}.
-$$
+```math
+w(x,z)=\left[x+z-1-\sqrt{2(1-x)(1-z)}\right]_+.
+```
+
+Here $[a]_+=\max\{a,0\}$.
 
 Its geometric meaning is a minimum mixing fraction. Classical storage
 provides the disk $\mathcal D=\{(x,z)\ge0:x^2+z^2\le1\}$.
@@ -212,16 +230,16 @@ Retaining the qubit provides the square $[0,1]^2$, since either later
 measurement can be performed and then independently degraded by output
 noise. The smallest $p$ for which
 
-$$
+```math
 (x,z)\in p[0,1]^2+(1-p)\mathcal D
-$$
+```
 
 is $w(x,z)$. Inside the disk it is zero. Outside the disk, mix the
 perfect point $(1,1)$ with a disk-boundary point. The boundary equation
 
-$$
+```math
 (x-p)^2+(z-p)^2=(1-p)^2
-$$
+```
 
 has the displayed expression for $w$ as its smaller root. The
 [allocation proof](../ONE_QUBIT_ALLOCATION_REGION.md) also establishes
@@ -230,12 +248,12 @@ The anchor's incompatibility weight supplies the prior resource concept;
 the local evaluation and its use as a memory-allocation rule are developed
 in the repository, with attribution in the [prior comparison](../CORE_PRIOR_COMPARISON.md).
 
-The exact one-qubit allocation theorem is
+The exact one-qubit allocation theorem says that a profile
+$(x_i,z_i)_{i=1}^n$ is feasible with $q=1$ if and only if
 
-$$
-\boxed{(x_i,z_i)_{i=1}^n\text{ is feasible with }q=1
-\quad\Longleftrightarrow\quad\sum_i w(x_i,z_i)\le1.}
-$$
+```math
+\boxed{\sum_i w(x_i,z_i)\le1.}
+```
 
 The sufficiency construction is tangible. Set $p_i=w(x_i,z_i)$ and
 retain site $i$ with probability $p_i$. The remaining probability is an
@@ -245,10 +263,13 @@ If $p_i=1$, that site is always retained and needs no discarded rule.
 
 For example, take three sites and request
 
-$$
-(x_1,z_1)=(1,1/2),\quad (x_2,z_2)=(1,1/2),\quad
-(x_3,z_3)=(1/\sqrt2,1/\sqrt2).
-$$
+```math
+\begin{aligned}
+(x_1,z_1)&=(1,1/2),\\
+(x_2,z_2)&=(1,1/2),\\
+(x_3,z_3)&=(1/\sqrt2,1/\sqrt2).
+\end{aligned}
+```
 
 Their weights are $1/2,1/2,0$. Keep site 1 or site 2 with equal
 probability. Measure X on whichever of those two is discarded: it
