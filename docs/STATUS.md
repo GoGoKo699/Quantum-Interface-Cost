@@ -1,13 +1,12 @@
 # Status and claim ledger
 
-Updated: 2026-09-27. Stage: the [half-rank converse](audits/HALF_RANK_RETENTION_CONVERSE.md) proves the unrestricted exact optima `Gamma(3,4)=4+sqrt(2)` and `Gamma(4,8)=6+sqrt(2)`, as part of one theorem for n=2,3,4. Positivity and the rank cap constrain the single-site Pauli coefficients of an arbitrary seed square root; one positive quadratic completes the proof. All maximizing normalized seeds are classified. This settles all three previously unresolved ququart reflection signatures without readout assumptions. The general entropy inequality, asymptotic common-accuracy rate, and publication originality remain unresolved.
-Latest research base: `ecdfc7d6ad3ee16e66ba6f6de8802974bb558ee2`, the merge of PR #51.
+Updated: 2026-09-27. Stage: the [nonflat quarter-rank converse](audits/NONFLAT_QUARTER_RANK_CONVERSE.md) proves `Gamma(4,4)=4+2sqrt(2)` and classifies every maximizing normalized seed. Together with the half-rank and all-n one-qubit results, this settles every integer quantum-memory budget through four inputs. The proof keeps arbitrary spectra and uses a sum-of-squares identity plus two exactly certified positive polynomials. The general entropy inequality, asymptotic common-accuracy rate, and publication originality remain unresolved.
+Latest research base: `c8b2e88d6721cb9208c797788f334d7f8b1e1848`, the merge of PR #52.
 
-The [quarter-rank argument](audits/QUARTER_RANK_GEOMETRY.md) now advances
-the next block, four inputs and two retained qubits: the sharp squared
-query-score budget is six for arbitrary rank-at-most-four seeds, and the
-retention converse holds for every flat seed and every seed of rank at
-most three. The remaining finite target concerns nonflat rank-four seeds.
+The earlier [quarter-rank geometry](audits/QUARTER_RANK_GEOMETRY.md) and
+its sharp squared-score budget remain valid. Its former nonflat restriction
+is removed by the new converse. The smallest unresolved finite block is
+now five inputs with two retained qubits.
 
 Critical assessment base: `81bcfefb2b545742d513c4f51364a7f72972451e`, the
 merge of PR #11. The [publication and optimality assessment](audits/PUBLICATION_AND_OPTIMALITY_ASSESSMENT.md)
@@ -27,6 +26,8 @@ is asserted.
 
 | Claim | Status | Location |
 |---|---|---|
+| Unrestricted Gamma(4,4)=4+2sqrt(2), with all maximizing normalized seeds | Derived and independently reconstructed for arbitrary spectra and decoders; one sum-of-squares identity and an exact unsplit-box Bernstein certificate. Equality is exactly two original-site bisectors and two maximally mixed sites, up to output isometries | audits/NONFLAT_QUARTER_RANK_CONVERSE.md |
+| Every integer memory budget through four inputs obeys Gamma(n,2^q)=2q+sqrt(2)(n-q) | Corollary of the quarter-rank, half-rank and all-n one-qubit theorems, together with the classical and exact endpoints | CORE_ARGUMENT.md |
 | Unrestricted Gamma(n,2^(n-1))=2(n-1)+sqrt(2), n=2,3,4 | Derived and independently reconstructed; stronger affinity bound for every positive half-rank square root, without a flat-spectrum or readout restriction | audits/HALF_RANK_RETENTION_CONVERSE.md |
 | Every maximizing half-rank normalized seed is a retention seed, n=2,3,4 | Derived with equality analysis: one pure X/Z bisector and n-1 maximally mixed sites, up to output isometries; not a uniqueness claim for physical instruments | audits/HALF_RANK_RETENTION_CONVERSE.md |
 | At four inputs and rank at most four, the sum of eight squared query scores is at most six | Sharp, derived and independently reconstructed for arbitrary spectra; the stronger sum-affinity budget has the same equality family: two pure X/Z-plane sites and two maximally mixed sites | audits/QUARTER_RANK_GEOMETRY.md |
@@ -482,24 +483,20 @@ rate. Prior subsumption of the full evaluated profile remains unresolved.
 
 ## Research division and next target
 
-The finite three-input problem is now settled for every integer quantum
-memory budget: the classical and exact endpoints, the all-n one-qubit
-theorem, and the new half-rank result cover q=0,1,2,3. At four inputs the
-new theorem also proves the q=3 optimum. The smallest remaining finite
-common-accuracy target is therefore
+The finite problem is now settled for every integer quantum-memory budget
+through four input qubits. The smallest remaining finite common-accuracy
+target is
 
 $$
-\Gamma(4,4)\stackrel{?}{=}4+2\sqrt2,
+\Gamma(5,4)\stackrel{?}{=}4+3\sqrt2
 $$
 
-with four inputs and two retained qubits. The
-[quarter-rank proof](audits/QUARTER_RANK_GEOMETRY.md) now gives the sharp
-squared-score budget six and excludes all flat spectra and all ranks at
-most three. Any seed beating the target must have rank four, a nonflat
-spectrum, and `(Tr sqrt(rho))^2/4>(4sqrt(2)-3)/3`. The next step is to
-control its nonuniform eigenvalues together with its support; replacing
-it by the uniform projector is not justified. The general n,q optimum
-and the asymptotic common-accuracy rate remain open.
+The next research priority is a dimension-independent rank-and-positivity
+principle, before expanding the decoder classification or repeating each
+input size separately. The four-input proof shows why exact square-root
+curvature and coherent block penalties matter; a spectrum-flattening
+assumption is still unjustified. The general n,q optimum, seed entropy
+inequality, and asymptotic common-accuracy rate remain open.
 
 The earlier three-input channel and inverse methods remain useful
 independent results. The new theorem does not establish that every
@@ -645,9 +642,9 @@ authorization. Research changes still use a separate branch and pull request.
 The original repository contained only LICENSE at
 `310a0730a04ada47eeda41bada41412414442ee1`.
 
-The former smallest block `n=3,q=2` is now solved for every spectrum by
-the half-rank theorem, which also solves `n=4,q=3`. The next finite target
-is `n=4,q=2`, as stated above. The original one-qubit CHSH argument still
+The half-rank and quarter-rank theorems now solve every integer memory
+budget through four inputs. The smallest remaining finite target is
+`n=5,q=2`, as stated above. The original one-qubit CHSH argument still
 cannot treat four-dimensional memory as one qubit: two Bell pairs violate
 its key pair bound. The new proof instead uses positivity and rank directly.
 The all-contrast asymptotic subset-rate conjecture is equivalent to the seed

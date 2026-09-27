@@ -7,6 +7,11 @@ table below summarizes those completed targeted comparisons; subsequent
 sections cover the later one-qubit and spectral results. It is not an
 exhaustive certification of publication novelty.
 
+Later sections preserve the scope of earlier research stages. Their
+finite-block open claims are superseded where the half-rank and
+quarter-rank theorems below apply; the general entropy/rate claims remain
+unresolved.
+
 The [coherent-transfer continuation](audits/COHERENT_TRANSFER_AUDIT.md)
 compares Holevo–Shirokov, [2609.12667v1](https://arxiv.org/abs/2609.12667v1),
 Proposition 1, Eqs. (14)–(15), printed p. 6. Its same-support rank-two
@@ -51,11 +56,21 @@ not a completeness or novelty certificate. The n=2 optimum and its
 seed equality were already obtained from Cheng--Hall in the one-qubit
 note. Publication priority for the n=3,4 strengthening remains open.
 
-The [quarter-rank note](audits/QUARTER_RANK_GEOMETRY.md) uses the same
-established affinity comparison and trace inequalities. It proves the
-sharp squared-score budget and an exact flat-spectrum converse at
-`n=4,q=2`; it does not assert that either has established publication
-priority or that arbitrary spectra satisfy the unsquared converse.
+The [quarter-rank geometry](audits/QUARTER_RANK_GEOMETRY.md) uses the same
+established affinity comparison and trace inequalities. Its sharp affinity
+budget and exact top-four spectrum feed the
+[unrestricted quarter-rank converse](audits/NONFLAT_QUARTER_RANK_CONVERSE.md),
+which proves `Gamma(4,4)=4+2sqrt(2)` for arbitrary spectra and classifies
+all maximizing normalized seeds. One branch closes with a sum of squares;
+the other uses a coherent local spectral-spread bound and two exact
+polynomial inequalities. Rational interval arithmetic certifies all
+Bernstein coefficients on one rectangle. The Bernstein positivity
+criterion is standard; the supplied deduction is the particular reduction
+and its evaluated finite optimum. Together with the earlier results,
+this settles every integer memory budget through four inputs. It does not
+settle the general entropy or rate question. A theorem-level prior
+comparison of this new finite converse remains outstanding; publication
+priority is not established.
 
 ## Direct precedents and exact implications
 
@@ -554,9 +569,9 @@ The new all-n one-qubit optimum is a short consequence of an established
 monogamy theorem, so the novelty question concerns the task-specific theorem
 and rigidity statement, not a new correlation inequality.
 
-The remaining finite-block question starts at `n=3,q=2`. Search for a genuine
-collective advantage or a converse that handles higher-dimensional global
-decoders. A settling prior theorem would be a useful research result.
+The remaining finite-block question now starts at `n=5,q=2`. A general
+rank/positivity converse, a genuine common-accuracy collective advantage,
+or a settling prior theorem would resolve the next research question.
 The [resource-optimum continuation](audits/RESOURCE_OPTIMA_AND_JOINT_DECODERS.md)
 adds two closer primary comparisons. Pusey 1305.1767v1, Section IV / Figure 1,
 p. 4, already presents the equal-weight negativity line and its flagged

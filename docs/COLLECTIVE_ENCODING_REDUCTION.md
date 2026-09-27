@@ -132,14 +132,14 @@ $$
 
 for every allowed seed spectrum. It classifies every maximizing Gram
 matrix as a pure X/Z-bisector factor on one site tensored with the
-maximally mixed state on all remaining sites. In particular both
-`n=3,q=2` and `n=4,q=3` are settled, and the smallest remaining block
-is `n=4,q=2`, with target `g(L)=4+2sqrt(2)`. The
-[quarter-rank argument](audits/QUARTER_RANK_GEOMETRY.md) proves this bound
-for every flat Gram spectrum and every rank-at-most-three Gram matrix.
-It also proves the sharp sum-of-squared-query-scores budget six for
-arbitrary rank-four seeds. A remaining witness must therefore be nonflat
-and have rank four. The
+maximally mixed state on all remaining sites. The
+[nonflat quarter-rank converse](audits/NONFLAT_QUARTER_RANK_CONVERSE.md)
+also proves `Gamma(4,4)=4+2sqrt(2)` for every allowed spectrum and
+classifies every maximizing seed. Thus all integer qubit-memory budgets
+through four inputs are settled. The earlier
+[quarter-rank geometry](audits/QUARTER_RANK_GEOMETRY.md) supplies its sharp
+squared-score budget; no flat-spectrum assumption remains in the new
+unsquared converse. The smallest remaining finite block is `n=5,q=2`. The
 [product-diagonal bound](COMMUTING_SEED_BOUND.md) proves it whenever
 `L^dagger L` is diagonal in a fixed local product basis, for arbitrary q.
 These proved cases do not restrict the encoders in the unresolved general problem.

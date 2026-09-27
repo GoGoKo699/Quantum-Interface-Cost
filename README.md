@@ -7,34 +7,29 @@ for just one local X or Z readout, but the question is not known when the first
 module must release the input. How many qubits must cross that interface if
 classical records are free?
 
-**Retaining all but one input qubit is optimal for two, three, and four
-inputs.** The [half-rank converse](docs/audits/HALF_RANK_RETENTION_CONVERSE.md)
-allows every collective encoder, every nonuniform seed spectrum, and every
-query-dependent binary decoder. It proves
+**Randomly retaining original qubits is optimal for equal accuracy at
+every integer memory budget through four input qubits.** The
+[nonflat quarter-rank converse](docs/audits/NONFLAT_QUARTER_RANK_CONVERSE.md)
+closes the last four-input case. Together with the one-qubit and half-rank
+theorems, it gives
 
 $$
-\Gamma(n,2^{n-1})=2(n-1)+\sqrt2,\qquad n=2,3,4.
+\boxed{\Gamma(n,2^q)=2q+\sqrt2(n-q),\qquad
+1\le n\le4,\quad q=0,\ldots,n.}
 $$
 
-Thus the best common contrast is
-`eta=(n-1+1/sqrt(2))/n`. Randomly retain n-1 original qubits and use the
-optimal joint X/Z measurement on the remaining one. No collective encoding improves
-this equal-accuracy performance at the same worst-case memory cap.
-The proof also identifies every maximizing normalized seed.
+The best common contrast is `eta=q/n+(1-q/n)/sqrt(2)`. Randomly retain q
+original qubits and use the optimal joint X/Z measurement on every discarded
+site. The converse allows arbitrary collective encoders, nonuniform seed
+spectra, and query-dependent binary decoders at the same worst-case memory cap.
 
-The argument works directly with the positive square root of a seed state.
-The rank cap constrains its single-site Pauli coefficients. Either those
-coefficients are spread across sites, giving a strict gap, or one site
-carries enough of them that a single positive quadratic proves the sharp
-bound. No readout classification or numerical partition is required.
-This closes all previously unresolved three-input reflection signatures.
-
-For **four inputs and two retained qubits**, the
-[quarter-rank argument](docs/audits/QUARTER_RANK_GEOMETRY.md) now proves
-the retention bound for every flat seed and every seed of rank at most
-three. For arbitrary rank-four seeds, the eight squared query scores
-sum to at most six, sharply. The unsquared optimum remains open for
-nonflat rank-four seeds.
+For four inputs and two retained qubits, the new proof keeps the actual
+eigenvalues throughout. Positivity and the rank cap constrain the local
+Pauli coefficients; a sum-of-squares identity handles one branch, and two
+polynomials with positive Bernstein coefficients handle the other. Their
+signs are certified by exact rational arithmetic on one rectangle, without
+subdivision or numerical optimization. Equality identifies exactly the
+two-site retention seeds.
 
 **Read the [short core argument](docs/CORE_ARGUMENT.md)** for this result,
 the exact allocation rule for one retained qubit at every input size, and
@@ -42,10 +37,10 @@ a collective advantage for unequal accuracies. Together they separate
 three questions:
 
 - **One retained qubit:** the entire local X/Z accuracy region is known.
-- **All but one retained qubit, through four inputs:** the equal-accuracy
+- **Every integer budget through four inputs:** the equal-accuracy
   optimum above is known, including nonflat seeds.
 - **General memories and the asymptotic common-accuracy rate:** still open.
-  The smallest remaining finite case is four inputs with two retained qubits.
+  The smallest remaining finite case is five inputs with two retained qubits.
 
 These are supplied analytical results with independent internal proof
 reconstruction. The measurement-simulation framework and the cited
@@ -62,6 +57,7 @@ results, including the obstructions to insufficient proof methods.
 | Short theorem-led argument with proofs and prior attribution | [Core argument](docs/CORE_ARGUMENT.md) |
 | Exact assumptions and baseline proofs | [RESEARCH_NOTE.md](RESEARCH_NOTE.md), Sections 2–7 |
 | What is established, derived, or still a target | [STATUS](docs/STATUS.md) |
+| Exact four-input, two-qubit optimum, all maximizing seeds, and exact certificate | [Nonflat quarter-rank converse](docs/audits/NONFLAT_QUARTER_RANK_CONVERSE.md) |
 | Exact unrestricted half-rank optimum through four inputs and all maximizing seeds | [Half-rank converse](docs/audits/HALF_RANK_RETENTION_CONVERSE.md) |
 | Unrestricted collective-encoding problem | [Seed reduction](docs/COLLECTIVE_ENCODING_REDUCTION.md) |
 | Two sharp ququart query pairs and an arbitrary third pair obey the retention bound | [Complete sharp-pair converse and exact scalar certificate](docs/audits/TWO_SHARP_PAIR_CONVERSE.md) |
@@ -139,8 +135,9 @@ Cheng–Hall's established three-qubit CHSH monogamy theorem, including its
 independent-setting and mixed-state scope. It also characterizes all maximizing
 normalized seeds. The q=0 and q=n endpoints are established separately.
 
-The new half-rank theorem also proves optimality at `(n,q)=(3,2)` and
-`(4,3)`. For the other general budgets `2<=q<n`, optimality remains unresolved. A separate entropy
+The half-rank theorem proves optimality at `(n,q)=(3,2)` and `(4,3)`;
+the quarter-rank theorem closes `(4,2)`. Other budgets at larger input sizes
+remain unresolved. A separate entropy
 argument excludes every seed whose Gram matrix is diagonal in a fixed tensor
 product of local bases, allowing correlated spectra and arbitrary local axes.
 It does not assume that unrestricted optimizers have that form.
@@ -171,10 +168,11 @@ improves on the displayed tangent bound. The earlier converse can be
 stronger extremely close to perfect accuracy, so both bounds are retained.
 
 The main research target remains a sharp common-accuracy rate or a proven
-collective advantage for that task. The three-input finite problem is now
-settled, as is `(n,q)=(4,3)`. The smallest remaining finite diagnostic is
-`Gamma(4,4) ?= 4+2sqrt(2)`, corresponding to four inputs and two retained
-qubits. The half-rank proof does not cover this quarter-rank constraint.
+collective advantage for that task. Every integer-budget finite problem
+through four inputs is now settled. The smallest remaining finite
+diagnostic is `Gamma(5,4) ?= 4+3sqrt(2)`, corresponding to five inputs and
+two retained qubits. The next priority is a dimension-independent
+rank/positivity principle.
 For the entropy route,
 even a two-input state of rank three could in principle certify a rate
 advantage: all rank-two states and all flat rank-three two-input states are
