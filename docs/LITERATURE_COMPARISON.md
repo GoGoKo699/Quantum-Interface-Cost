@@ -1,5 +1,10 @@
 # Literature comparison and remaining novelty questions
 
+For the selected paper, begin with the [focused core comparison](CORE_PRIOR_COMPARISON.md)
+and its versioned primary-source locators. It includes the recent
+bottleneck-dimension framework and the distinctions needed for the finite
+memory theorem. The sections below preserve the broader research history.
+
 Updated: 2026-09-27. The [commit-pinned audit](audits/PROOF_AND_NOVELTY_AUDIT.md)
 contains exact source versions, theorem/equation/page locators, resource maps,
 proof reconstructions, and counterexamples for the bootstrap dossier. The
