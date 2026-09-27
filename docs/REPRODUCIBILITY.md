@@ -1,5 +1,53 @@
 # Reproducibility and source provenance
 
+## Unrestricted half-rank retention through four inputs
+
+The [half-rank theorem](audits/HALF_RANK_RETENTION_CONVERSE.md) is pinned
+to main `3aad8227ed448eadfaa5ebc4d33bfc9845dd4f8c`. Run:
+
+```bash
+python tools/check_half_rank_retention.py --output results/half_rank_retention.json
+```
+
+Independent internal readers reconstructed the full analytical proof for
+n=2,3,4. Reviews checked the positive single-site Pauli spectrum, exact
+four-sign average, centered top-half eigenvalue bound, both scalar branches,
+the positive quadratic, singular/lower-rank cases, equality classification,
+and the original operational reduction. The general spectrum is retained
+throughout. The attaining instrument uses the four-outcome joint X/Z
+measurement on the discarded site; one fixed bisector PVM alone would
+not reproduce both noisy query observables.
+
+The bounded verifier passed 20 exact rational checks, 257 matrix
+identities and 479 scalar inequalities across 13 fixed constructions.
+Cases include equality at each input size, nonflat dominant-site seeds,
+majority seeds in the nondominant branch, lower ranks, complex coefficients,
+zero single-site X/Z mass, and four active sites. It checks both the original
+trace-norm score and the stronger affinity score, together with the
+intermediate rank and Pauli constraints used in the proof.
+
+The run used Python 3.12.14 and NumPy 2.3.5, at tolerance `3e-9`.
+Matrix dimension was at most 16. Relative identity residuals were below
+`7.36e-16`; inequality margins were above `-8.89e-16`. Checker SHA-256:
+`c9d45e281d393cb6b4387b068de571f4440a96e17344312d49904eaecd9ff6e6`.
+The JSON records the source and proof-note hashes. Output guards prevent
+overwriting those files.
+
+Two independent source reviews passed. A separate scratch rerun reproduced
+the final JSON byte for byte, with SHA-256
+`ba59605fe8cf0ebeb1b555702c1f3cb050674cab2e85134d7230de84d32b67d7`.
+It verified the source hash above and the frozen proof-note hash
+`69b5c179242fceed9f7af194a5884b3215ad6b01c38a20bb1f028ee540e694f5`.
+Cross-platform floating results need only meet the stated tolerance.
+
+The analytical argument proves the universal optimum and its equality
+cases. Finite floating-point checks are diagnostic supplements, not interval
+certificates or numerical optimization proofs. The verifier uses no random
+sampling, parameter grid or optimizer. This result does not evaluate
+`Gamma(4,4)`, the general common-accuracy rate, or publication originality.
+Historical proof notes and their recorded checks are preserved; unchanged
+diagnostics were not rerun.
+
 ## Direct active-plane bound, channel repair and controlled-phase converse
 
 The [active-plane theorem](audits/ACTIVE_PLANE_REVERSE_RESOLVENT.md),
