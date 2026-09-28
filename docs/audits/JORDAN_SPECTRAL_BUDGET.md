@@ -322,7 +322,7 @@ factor is unjustified. This subsystem representation is an established
 ingredient, not a new structural theorem.
 
 These comparisons narrow provenance and identify a close physical
-precedent. They certify neither exhaustive originality nor PRL significance.
+precedent. They certify neither exhaustive originality nor scientific significance.
 Unrestricted `Gamma(3,4)`, the balanced quadratic conjecture, and the
 equal-accuracy entropy/rate questions remain unresolved.
 

@@ -1153,4 +1153,4 @@ The next proof target is the joint relation between the earlier operator's
 spectrum and its top-vector memory marginal. Separate bounds permit
 unrealizable data that fail the new certificate. This isolates an obstacle
 without resolving a complete remaining signature or certifying publication
-priority, significance, or PRL suitability.
+priority or scientific significance.

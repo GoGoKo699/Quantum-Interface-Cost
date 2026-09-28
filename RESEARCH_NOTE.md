@@ -1,8 +1,9 @@
-# Q1 — Delayed local readout through a bounded quantum interface
+# Quantum Interface Cost — Delayed local readout through a bounded quantum interface
 
 **Version:** 0.56, 2026-09-27
 
-**Project:** Falling / Q1  
+**Project:** Quantum Interface Cost
+
 **Status:** The unrestricted equal-accuracy optimum is proved for every integer quantum-memory budget through four input qubits. The nonflat quarter-rank converse closes `(n,q)=(4,2)` and classifies all maximizing normalized seeds. The exact all-n one-qubit allocation result and the unequal-accuracy collective advantage remain separate results. The general two-qubit entropy inequality, common-accuracy asymptotic rate and publication originality are unresolved. The full product-diagonal profile evaluates an established steering entanglement measure; it is not a new resource framework. All proof review described here is internal, not external peer review.
 
 **Integrated exposition.** The [core argument](docs/CORE_ARGUMENT.md)

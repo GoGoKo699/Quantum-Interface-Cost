@@ -1,6 +1,6 @@
 # Repository working rules
 
-This is the Quantum Interface Cost / Falling Q1 project. Keep it separate
+This is the Quantum Interface Cost project. Keep it separate
 from the classical Objective-Revision-Memory project and the other fiction
 research branches. Shared motivation is not permission to transfer theorems.
 

@@ -326,7 +326,7 @@ constraint, or an explicit violating normalized seed.
 | Required mixed qubit-Choi bound (12) | Elementary separate-leaf unital CP pullback of that established operator bound. It is a prior-theorem corollary, even though a direct proof is short. |
 | Independent recovery-monogamy route to (12) | Renes, *Better bounds on optimal measurement and entanglement recovery, with applications to uncertainty and monogamy relations*, PRA 96, 042328 (2017), [1707.01114v1](https://arxiv.org/pdf/1707.01114), Section 3.2, Eqs. (17)–(18), printed p. 4; recovery convention in Section 2.2/Eq. (6), p. 2. Choose the recovery channels to be the adjoints of S and U above and apply to an arbitrary tripartite test state. Its two fixed recovery fidelities are the two Choi expectations. The stronger optimized-recovery region implies their sum is at most `1+1/d`. |
 | Equations (7), (9), (17)–(20) and three complete sector exclusions | Supplied deduction, independently reconstructed within this workspace. The source comparisons identify ingredients, not an exhaustive priority determination for their interface application. |
-| Unrestricted optimum, sharp entropy inequality, equal-accuracy rate, publication priority/significance | Unresolved. No human peer review, journal acceptance judgment, or exhaustive literature claim is asserted. |
+| Unrestricted optimum, sharp entropy inequality, equal-accuracy rate, publication priority/significance | Unresolved. No external peer review or exhaustive literature claim is asserted. |
 
 The earlier nonlinear-CHSH subsumption of the profile-support
 characterization remains in force. This finite-block deduction does not

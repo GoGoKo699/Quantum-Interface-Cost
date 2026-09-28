@@ -839,5 +839,5 @@ A proof for cores with `g(sigma)<=10/3` and `m>1/5` in the remaining
 tail window `2^(-20)<epsilon<1/29`, or an admissible violating state
 there, is still required. Even a full two-qubit proof would leave the
 all-n extension. Publication originality remains a separate unresolved
-comparison, and this localization is not itself asserted to meet a journal's
-novelty threshold. LICENSE and the historical initial audit are unchanged.
+comparison; this localization alone does not establish a distinct original
+contribution. LICENSE and the historical initial audit are unchanged.
