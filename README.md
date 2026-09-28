@@ -168,6 +168,14 @@ The tutorial figure is an illustration; its optional generator
 [`tools/plot_learning_geometry.py`](tools/plot_learning_geometry.py)
 requires Matplotlib.
 
+## Search and AI-assisted reading
+
+For questions about delayed Pauli measurements, bounded quantum memory,
+measurement simulability or collective encoding versus qubit retention,
+the [AI reading guide](llms.txt) maps relevant questions and search terms
+to the proofs, tutorial, primary-source comparisons and evidence.
+It includes the model assumptions and the limits of each result.
+
 ## Research record and license
 
 The [research index](docs/RESEARCH_INDEX.md) preserves access to the wider
