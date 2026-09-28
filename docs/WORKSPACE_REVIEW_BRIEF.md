@@ -3,6 +3,16 @@
 Repository: https://github.com/GoGoKo699/Quantum-Interface-Cost
 Research owner: Ruge Lin. Originating workspace: Research Lead.
 
+**Historical assignment; closed 28 September 2026.** The bounded internal
+audit in [issue #1](https://github.com/GoGoKo699/Quantum-Interface-Cost/issues/1)
+has been delivered and integrated. The broader research coordination in
+[issue #2](https://github.com/GoGoKo699/Quantum-Interface-Cost/issues/2)
+is closed with exploration paused; its remaining general questions are
+[future work](SCIENTIFIC_SCOPE.md#6-stopping-rule-and-future-work).
+The sections below preserve the original assignment, not an active work
+request. Consult the [current scope](SCIENTIFIC_SCOPE.md) and
+[release check](RELEASE_CHECK.md) for the selected package and evidence.
+
 ## Assignment
 
 Independently audit the model, supplied baseline proofs, and candidate

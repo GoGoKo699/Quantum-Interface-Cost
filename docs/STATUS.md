@@ -1,6 +1,6 @@
 # Status and claim ledger
 
-Updated: 2026-09-27. Stage: the [nonflat quarter-rank converse](audits/NONFLAT_QUARTER_RANK_CONVERSE.md) proves `Gamma(4,4)=4+2sqrt(2)` and classifies every maximizing normalized seed. Together with the half-rank and all-n one-qubit results, this settles every integer quantum-memory budget through four inputs. The proof keeps arbitrary spectra and uses a sum-of-squares identity plus two exactly certified positive polynomials. The general entropy inequality, asymptotic common-accuracy rate, and publication originality remain unresolved.
+Updated: 2026-09-28. Stage: the [nonflat quarter-rank converse](audits/NONFLAT_QUARTER_RANK_CONVERSE.md) proves `Gamma(4,4)=4+2sqrt(2)` and classifies every maximizing normalized seed. Together with the half-rank and all-n one-qubit results, this settles every integer quantum-memory budget through four inputs. The proof keeps arbitrary spectra and uses a sum-of-squares identity plus two exactly certified positive polynomials. The general entropy inequality, asymptotic common-accuracy rate, and publication originality remain unresolved.
 Frozen scientific base: `466bbb770d150fb8f43c4f9eca04bbadabe85188`, the merge of PR #59.
 
 **Integration complete for the selected exposition.** The
@@ -706,8 +706,13 @@ three independent within-workspace reconstructions; the certificate had
 an independent byte-identical rerun. These are internal checks, not
 external peer review or novelty certification.
 
-Issue #1 records the proof-and-novelty audit. Issue #2 records the
-unrestricted finite-block/rate investigation.
+Closed [issue #1](https://github.com/GoGoKo699/Quantum-Interface-Cost/issues/1)
+records the completed bounded internal audit. Closed
+[issue #2](https://github.com/GoGoKo699/Quantum-Interface-Cost/issues/2)
+preserves the exploratory finite-block/rate investigation. Its initial
+finite question is resolved; the remaining general questions are paused
+future work, not completed theorems. Both coordination threads were closed
+on 28 September 2026.
 
 For the remaining finite problem, see [future research directions](#future-research-directions).
 The original one-qubit CHSH argument still
