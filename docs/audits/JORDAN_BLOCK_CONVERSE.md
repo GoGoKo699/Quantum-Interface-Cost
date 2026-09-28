@@ -295,7 +295,7 @@ or sum-of-squares theorem is asserted.
 The supplied deduction is the local spectral majorant applied to this
 interface task, including arbitrary qutrit spectra and the four ququart
 sectors. It is not a new singlet-monogamy principle. A scoped comparison
-does not certify exhaustive originality or PRL-level significance.
+does not certify exhaustive originality or scientific significance.
 
 Independent internal reconstructions checked the local Bell eigenvector,
 degenerate and zero-weight cases, arbitrary complex memory planes,

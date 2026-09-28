@@ -624,7 +624,7 @@ The specific deduction is the block support function, simultaneous
 common-reference attainment, and resulting exact spectral formula over
 all binary readouts, together with its algebraic decision rule. The
 inspected ingredient statements do not state that formula. This focused
-comparison does not establish publication priority or PRL significance.
+comparison does not establish publication priority or scientific significance.
 
 The next central target is a joint constraint on the spectrum of the
 earlier query Hamiltonian and the memory marginal of its actual top

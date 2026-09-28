@@ -613,7 +613,7 @@ Schur complements, Jordan's lemma and maximally entangled resolvent
 compression. The supplied deductions are the continuous partial-SWAP
 bound and its equality classification, and the two-mixed-commutator
 classification plus converse. This focused comparison establishes no
-exhaustive originality or PRL-level significance.
+exhaustive originality or scientific significance.
 
 ## 10. Review outcome and remaining target
 

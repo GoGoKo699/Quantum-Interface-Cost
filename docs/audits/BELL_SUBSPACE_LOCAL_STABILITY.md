@@ -473,7 +473,7 @@ established ingredients. The supplied deductions are the full
 eighteen-direction curvature (5), the controlled-radius converse (2),
 its conditional physical consequence (7), and the false entropy-budget
 counterexample. The source check is bounded and does not certify
-exhaustive originality or PRL-level significance.
+exhaustive originality or scientific significance.
 
 ## 9. Verification, provenance and remaining scope
 
