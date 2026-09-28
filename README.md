@@ -143,6 +143,8 @@ publication-priority certification is claimed.
 
 The [scientific evidence freeze](docs/SCIENTIFIC_EVIDENCE_FREEZE.md) pins
 the reviewed proof inputs, checker sources and historical reports.
+The [release check](docs/RELEASE_CHECK.md) records the subsequent
+reproduction checks, display repairs and version mapping.
 
 ## Reproduce the exact certificate
 
@@ -158,6 +160,10 @@ analytical proof. The [reproducibility record](docs/REPRODUCIBILITY.md)
 explains its role and the different scope of the archive's matrix diagnostics.
 Use ordinary Python without `-O`; `-E` ignores environment settings that
 could disable the checker's assertions.
+Display repairs changed the proof file's fingerprint, so a fresh report
+differs from the historical JSON in that metadata field. For a
+byte-identical historical report, use the
+[exact-version recipe](docs/REPRODUCIBILITY.md#reproduce-without-changing-the-recorded-evidence).
 The tutorial figure is an illustration; its optional generator
 [`tools/plot_learning_geometry.py`](tools/plot_learning_geometry.py)
 requires Matplotlib.

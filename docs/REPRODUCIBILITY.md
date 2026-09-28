@@ -16,8 +16,19 @@ when byte-for-byte reproduction is wanted.
 
 ## Reproduce without changing the recorded evidence
 
-The essential certificate needs only Python's standard library. From the
-repository root, extract its three recorded files into a fresh directory:
+The essential certificate needs only Python's standard library. The
+README's current-checkout command also works from a downloaded source ZIP.
+The historical recipe below additionally needs Git and a clone containing
+commit `466bbb770d150fb8f43c4f9eca04bbadabe85188`; a source ZIP contains no
+Git history. If starting from a ZIP or without a checkout, make a full clone:
+
+```bash
+git clone https://github.com/GoGoKo699/Quantum-Interface-Cost.git
+cd Quantum-Interface-Cost
+```
+
+From that repository root, extract the three recorded files into a fresh
+directory:
 
 ```bash
 qic_check_dir="$(mktemp -d)"
