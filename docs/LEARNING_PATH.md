@@ -116,3 +116,41 @@ without changing them. Internal reconstruction is not external peer review.
 For other derived results, limitations and earlier proof routes, use the
 [research index](RESEARCH_INDEX.md). None of that entire archive is assumed
 as background for this reading path.
+
+## 6. Single-source alternatives, reassessed 30 September 2026
+
+Gühne et al. remains the recommended and selected anchor. Each row below
+is an alternative **single** external source, not an additional reading
+requirement. The comparison uses the current finite-memory core rather
+than the whole research archive.
+
+| One source | Most useful selections | Fit to this project |
+|---|---|---|
+| **Gühne et al. (2023), recommended** — linked above | II.A–B; III.A, III.B.2, III.C.1; IV.A | Shortest route through instruments, compatibility, local weight and CHSH. The local proof bridge adds the memory cap, seed reduction and sharp inequalities. |
+| **Heinosaari, Miyadera and Ziman, [An Invitation to Quantum Incompatibility](https://arxiv.org/pdf/1511.07548v1)**, *J. Phys. A* **49**, 123001 (2016) | 2.1–2.3; 3.1, 3.3–3.4, 3.6; 4.3; 5.1–5.2 | Strong operational alternative, especially for instruments, postprocessing and the difference between informational completeness and one-outcome simulation. Less direct for the local-weight allocation narrative. |
+| **Watrous, [The Theory of Quantum Information](https://cs.uwaterloo.ca/~watrous/TQI/)** (2018), author's text | 1.1.3; 2.1.3, 2.2.2, 2.3; 3.1.1, 3.2; optionally 4.3.2 and 6.3.2 | Best for matrix-method preparation: norms, channels, instruments, binary discrimination, fidelity and spectral tools. More incompatibility background must then be supplied locally. |
+
+None supplies the repository's selected memory theorems as a ready-made
+chapter. “Closest” means the smallest remaining conceptual gap, which the
+existing tutorials are designed to fill. The
+[manuscript background guide](MANUSCRIPT_BACKGROUND.md) separately maps
+the primary research citations to those missing steps.
+
+## 7. Check readiness for the core argument
+
+Before starting the core proof, try to explain these points in your own words:
+
+1. Why does classical delayed X/Z readout give a compatibility disk?
+   See the [first tutorial](tutorial/MEASUREMENTS_TO_MEMORY.md).
+2. Why is the seed Gram matrix different from the unknown physical input,
+   and why can a Kraus label be recorded without increasing quantum memory?
+   See [proof bridge, Section 1](tutorial/PROOF_BRIDGE.md#1-separate-the-unknown-input-from-the-optimization-variable).
+3. Why does optimizing a binary decoder give a trace norm, and how does
+   Pauli averaging complete a seed into an instrument that accepts every
+   branch? See [Sections 2–3](tutorial/PROOF_BRIDGE.md#2-why-a-decoder-disappears-into-a-trace-norm).
+4. Which ingredient limits one memory qubit, and which extra inequalities
+   are needed at higher finite budgets? See
+   [Sections 5–7](tutorial/PROOF_BRIDGE.md#5-why-one-memory-qubit-brings-in-chsh).
+5. Why does the collective example concern unequal accuracies and a
+   specified retention class? See
+   [Section 8](tutorial/PROOF_BRIDGE.md#8-a-small-support-explains-the-31-input-collective-example).

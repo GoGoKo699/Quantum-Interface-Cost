@@ -138,6 +138,9 @@ finite common-accuracy case is $`(n,q)=(5,2)`$.
 The [core argument](docs/CORE_ARGUMENT.md) connects the selected proofs.
 The [focused source map](docs/CORE_PRIOR_COMPARISON.md) distinguishes
 established frameworks and ingredients from the supplied evaluations.
+The [manuscript background guide](docs/MANUSCRIPT_BACKGROUND.md) connects
+the required concepts to those sources and the selected results; its
+[BibTeX bibliography](references.bib) is ready for citation reuse.
 Proof reconstructions are internal; no external peer-review or exhaustive
 publication-priority certification is claimed.
 

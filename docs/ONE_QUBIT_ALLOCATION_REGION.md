@@ -250,8 +250,11 @@ No general boundary-rigidity claim is made. For example,
 sites 2,3 in an entangled basis before returning random signs for their
 queries. The original single-specimen, single-query model, collective
 encoders, unlimited finite classical records, worst-case quantum dimension,
-and uniform arbitrary-input statistics remain unchanged. Higher-memory
-allocation and `Gamma(3,4)` remain open in general. The later
+and uniform arbitrary-input statistics remain unchanged. General
+higher-memory allocation remains unresolved. The later
+[half-rank converse](audits/HALF_RANK_RETENTION_CONVERSE.md) proves
+`Gamma(3,4)=4+sqrt(2)`; the [current scope](SCIENTIFIC_SCOPE.md) records
+all finite-case boundaries. The later
 [exact-axis reduction](EXACT_AXIS_SPECTRAL_REDUCTION.md) evaluates the
 boundary with exact X queries in graph-spectral terms and shows that
 `sum_i w<=q` describes the complete original-site-retention class at any q,
