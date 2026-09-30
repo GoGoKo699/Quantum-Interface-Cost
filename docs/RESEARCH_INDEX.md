@@ -13,6 +13,7 @@ These notes are not all dependencies of the selected results.
 | Purpose | Read |
 |---|---|
 | Short theorem-led argument with proofs and prior attribution | [Core argument](CORE_ARGUMENT.md) |
+| Required manuscript background, source roles and reusable citations | [Background guide](MANUSCRIPT_BACKGROUND.md), [BibTeX](../references.bib) |
 | Exact assumptions and baseline proofs | [RESEARCH_NOTE.md](../RESEARCH_NOTE.md), Sections 2–7 |
 | What is established, derived, or still a target | [STATUS](STATUS.md) |
 | Exact four-input, two-qubit optimum, all maximizing seeds, and exact certificate | [Nonflat quarter-rank converse](audits/NONFLAT_QUARTER_RANK_CONVERSE.md) |

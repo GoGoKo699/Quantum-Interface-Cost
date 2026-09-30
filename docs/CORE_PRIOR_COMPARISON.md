@@ -9,6 +9,14 @@ not enlarge the source search or certify publication priority.
 
 The model is one arbitrary unknown n-qubit specimen, one delayed original local X/Z binary query, arbitrary collective instruments, a free finite classical record, and quantum dimension at most 2^q on every branch. It is already an instance of dimensional measurement simulability. The candidate contribution is an exact evaluation for this particular family, not a new compression framework.
 
+**Background update, 30 September 2026:** the
+[manuscript background guide](MANUSCRIPT_BACKGROUND.md) connects this map
+to the selected teaching source and [bibliography](../references.bib).
+A focused primary-text recheck retained the comparisons below and added
+the multimeter-factorization reference. Locators for Ioannou et al. refer
+to the published version: its Claim 5/Eq. (16) is Claim 5/Eq. (17) in the
+linked arXiv v1. The two numberings must not be interchanged.
+
 ## Main claims and their boundaries
 
 | Claim to assess | Established overlap | Precise supplied increment and limit |
@@ -33,10 +41,22 @@ The model is one arbitrary unknown n-qubit specimen, one delayed original local 
 
 ## Supporting source boundaries
 
+- Achenbach, Bluhm, Leppäjärvi, Nechita and Plávala,
+  **Factorization of multimeters: a unified view on nonclassical quantum
+  phenomena**, [published LMP 116, 56 (2026)](https://doi.org/10.1007/s11005-026-02088-2),
+  Section 4.1, Definition 4.1/Eq. (4.1) and Theorem 4.2;
+  [arXiv:2504.19865v2](https://arxiv.org/abs/2504.19865v2).
+  This gives a general factorization through an intermediate state space
+  and a finite classical register. Quantum encoders here must remain
+  completely positive; the source's general probabilistic maps are positive
+  maps. The inspected statements do not evaluate this local-Pauli memory
+  task. The [4 July correction](https://doi.org/10.1007/s11005-026-02101-8)
+  replaces Figure 1.
+
 - Yu–Liu–Li–Oh, **Joint measurement of two unsharp observables of a qubit**, [arXiv:0805.1538v2](https://arxiv.org/pdf/0805.1538v2), Theorem 1/Eq. (5) p. 1 and its unbiased specialization p. 2, gives the orthogonal-observable compatibility disk and credits that special case to Busch (1986). Pusey, **Verifying the quantumness of a channel with an untrusted device**, [arXiv:1502.03010v2](https://arxiv.org/pdf/1502.03010v2), Section III/Eq. (15) p. 4, defines incompatibility weight. The supplied [global allocation theorem](ONE_QUBIT_ALLOCATION_REGION.md#7-established-local-weight-and-the-global-deduction) uses these established local resources.
 - Avni–Samorodnitsky, **Eigenvalues and eigenfunctions of a Hamming ball**, [arXiv:2411.14597v1](https://arxiv.org/pdf/2411.14597v1), Example 1.12 p. 8, gives the star eigenvalues +/-sqrt(n),0. Credit this geometry explicitly in the unequal-accuracy construction; do not call the star spectrum new or its n=31 support globally optimal.
 - Audenaert–Nussbaum–Szkola–Verstraete, **Asymptotic Error Rates in Quantum Hypothesis Testing**, [arXiv:0708.4282v1](https://arxiv.org/pdf/0708.4282v1), Appendix A, Theorem 6/Eq. (55) p. 32, supplies squared root fidelity <= affinity at s=1/2. The finite rank-sensitive sum and equality analysis are the additional arguments.
-- Roga–Giampaolo–Illuminati, **Discord of response**, [arXiv:1401.8243v2](https://arxiv.org/pdf/1401.8243v2), Eq. (9) p. 3, optimizes one local-unitary response at a fixed state; it does not evaluate our fixed 2n-query sum over global eigenbases at a balanced spectrum.
+- Roga–Giampaolo–Illuminati, **Discord of response**, [arXiv:1401.8243v2](https://arxiv.org/pdf/1401.8243v2), Eq. (9) p. 3 and Eq. (20) p. 6, optimizes one local-unitary response at a fixed state and gives its qubit trace-norm expression; it does not evaluate our fixed 2n-query sum over global eigenbases at a balanced spectrum.
 - Montanaro–Osborne, **Quantum Boolean functions**, [author PDF](https://people.maths.bris.ac.uk/~csxam/papers/qboolean_toc.pdf), Section 9.3, Theorem 60 p. 32 (published Theorem 9.7); Blecher–Gao–Xu, **Geometric influences on quantum Boolean cubes**, [arXiv:2409.00224v1](https://arxiv.org/pdf/2409.00224v1), Section 6, Theorem 6.2 pp. 34–35, give Fourier-based single-qubit rigidity. The latter supplies an alternative proof addressing the issue described in that section. They do not assume our score deficit or select an original X/Z bisector in their stated conclusions: R=X_i has zero higher-degree mass but distance squared 2-sqrt(2) from that family.
 
 Within the inspected statements, this focused comparison found no direct evaluation supplying the three higher-memory finite values, the complete operational retention-class separation, or the balanced fixed-spectrum profile. It does identify substantial exact prior overlap, especially the framework, endpoint and q=1 proof ingredient. Final scientific presentation should claim those supplied evaluations and their equality structure, not independent invention of the underlying resources or a settled general optimum. Further priority beyond this inspected set remains unestablished; an unsuccessful search is not evidence of originality.

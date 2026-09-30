@@ -1,6 +1,6 @@
 # Status and claim ledger
 
-Updated: 2026-09-28. Stage: the [nonflat quarter-rank converse](audits/NONFLAT_QUARTER_RANK_CONVERSE.md) proves `Gamma(4,4)=4+2sqrt(2)` and classifies every maximizing normalized seed. Together with the half-rank and all-n one-qubit results, this settles every integer quantum-memory budget through four inputs. The proof keeps arbitrary spectra and uses a sum-of-squares identity plus two exactly certified positive polynomials. The general entropy inequality, asymptotic common-accuracy rate, and publication originality remain unresolved.
+Updated: 2026-09-30. Stage: the [nonflat quarter-rank converse](audits/NONFLAT_QUARTER_RANK_CONVERSE.md) proves `Gamma(4,4)=4+2sqrt(2)` and classifies every maximizing normalized seed. Together with the half-rank and all-n one-qubit results, this settles every integer quantum-memory budget through four inputs. The proof keeps arbitrary spectra and uses a sum-of-squares identity plus two exactly certified positive polynomials. The general entropy inequality, asymptotic common-accuracy rate, and publication originality remain unresolved.
 Frozen scientific base: `466bbb770d150fb8f43c4f9eca04bbadabe85188`, the merge of PR #59.
 
 **Integration complete for the selected exposition.** The
@@ -73,6 +73,22 @@ identifies further prior subsumption, proves the asymptotic rate dichotomy
 and rules out a direct deficit-superadditivity argument. Its judgment is
 a credible narrower paper candidate, with no proof of unrestricted optimality
 or certification of publication novelty.
+
+## Manuscript background preparation — 30 September 2026
+
+The [background guide](MANUSCRIPT_BACKGROUND.md) now maps the selected
+results to their required concepts, primary-source roles and
+[reusable bibliography](../references.bib). A focused source recheck adds
+the 2026 multimeter-factorization framework, distinguishes asymptotic
+measurement compression, and retains Gühne et al. as the sole teaching
+anchor after comparing two alternatives. The
+[learning path](LEARNING_PATH.md) includes that comparison and readiness
+questions. An outdated open-case sentence in the one-qubit allocation
+note now points to the established three-input half-rank converse.
+The selected theorem statements, proof arguments and historical evidence
+reports are unchanged; manuscript writing and new theorem exploration
+remain on hold. This preparation is a bounded source synthesis, not an
+exhaustive priority certification.
 
 ## Evidence labels
 

@@ -47,6 +47,8 @@ specific proof note and the commit used; credit its cited primary sources.
 - [Reproducibility](https://github.com/GoGoKo699/Quantum-Interface-Cost/blob/main/docs/REPRODUCIBILITY.md): Standard-library exact certificate, optional bounded matrix diagnostics and historical-version reproduction.
 - [Release check](https://github.com/GoGoKo699/Quantum-Interface-Cost/blob/main/docs/RELEASE_CHECK.md): Recorded sanity checks, rendering repairs and the mapping between current presentation and historical proof fingerprints.
 
+- [Manuscript background](https://github.com/GoGoKo699/Quantum-Interface-Cost/blob/main/docs/MANUSCRIPT_BACKGROUND.md): Required concepts, source roles, distinctions from reconstruction and estimation, and a reusable BibTeX bibliography.
+
 ## Optional
 
 - [Balanced-spectrum optimum](https://github.com/GoGoKo699/Quantum-Interface-Cost/blob/main/docs/audits/BALANCED_SPECTRUM_OPTIMALITY.md): All-size structural companion within a specified spectral family, including flat half-rank seeds.
