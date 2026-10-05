@@ -129,9 +129,7 @@ general problem if needed; they are not additional headline claims.
 All four gates are complete for this repository's selected scientific
 package. The [freeze record](SCIENTIFIC_EVIDENCE_FREEZE.md) reconciles the
 older evidence-map fingerprints and the exact-text integration review at
-one scientific base. The package is prepared for manuscript drafting;
-**manuscript writing is on hold**. The [repository overview](../README.md)
-provides the collaboration contact.
+one scientific base. The package is prepared for manuscript drafting.
 The manuscript must preserve the reviewed claims and source boundaries;
 no further exploratory theorem campaign is a prerequisite. Internal
 review and a successful reproduction do not certify publication originality
@@ -140,12 +138,17 @@ or preapprove the eventual manuscript.
 ## 6. Stopping rule and future work
 
 Exploratory theorem development for this package is paused. Corrections
-to the selected claims and their sources remain in scope while manuscript
-writing is on hold. No additional input size, spectral
-neighborhood, or decoder family is needed merely to enlarge the result list.
+to the selected claims and their sources remain in scope. No additional input size,
+spectral neighborhood, or decoder family is needed merely to enlarge the result list.
 
 The unrestricted all-n retention conjecture, the sharp general entropy
 inequality, and the asymptotic common-accuracy rate remain open. The
 smallest unresolved equal-accuracy case is `(n,q)=(5,2)`. They are future
 work rather than prerequisites for this bounded paper. The failed general
 root-affinity bound cannot be reused as a proof of any of them.
+
+## Purpose and contact
+
+This repository serves as a record of the work and a guide for the author’s
+self-directed learning. For discussion or potential collaboration, please
+contact Ruge Lin at [gogoko699@gmail.com](mailto:gogoko699@gmail.com).

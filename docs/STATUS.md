@@ -16,8 +16,7 @@ structural companion. The
 36 file fingerprints are pinned to the reviewed base, the older map is
 reconciled, and one exact-certificate reproduction matches the historical
 report byte for byte. The selected scientific package is prepared for
-manuscript drafting; manuscript writing is on hold. New theorem exploration
-remains paused. This freeze
+manuscript drafting. New theorem exploration remains paused. This freeze
 changes evidence and readiness records, not the theorems.
 
 The [stability extension](audits/BALANCED_SPECTRUM_STABILITY.md)
@@ -73,6 +72,12 @@ identifies further prior subsumption, proves the asymptotic rate dichotomy
 and rules out a direct deficit-superadditivity argument. Its judgment is
 a credible narrower paper candidate, with no proof of unrestricted optimality
 or certification of publication novelty.
+
+## Purpose and contact
+
+This repository serves as a record of the work and a guide for the author’s
+self-directed learning. For discussion or potential collaboration, please
+contact Ruge Lin at [gogoko699@gmail.com](mailto:gogoko699@gmail.com).
 
 ## Manuscript background preparation — 30 September 2026
 
