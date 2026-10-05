@@ -5,11 +5,17 @@
 Prepared 30 September 2026 against main
 `a6b183cc31bbc4b94c271ff3d25766440576aba4`.
 This is a background and citation guide for the bounded package in
-[Scientific scope](SCIENTIFIC_SCOPE.md). Manuscript writing remains on hold.
+[Scientific scope](SCIENTIFIC_SCOPE.md).
 It consolidates the existing source audits and a focused primary-text
 update; it does not assert an exhaustive literature search or external
 validation. The proof statements and historical evidence freeze remain
 the scientific basis.
+
+## Purpose and contact
+
+This repository serves as a record of the work and a guide for the author’s
+self-directed learning. For discussion or potential collaboration, please
+contact Ruge Lin at [gogoko699@gmail.com](mailto:gogoko699@gmail.com).
 
 ## 1. The scientific question in its existing setting
 

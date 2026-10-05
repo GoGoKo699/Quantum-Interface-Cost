@@ -4,8 +4,6 @@
 
 Canonical repository: https://github.com/GoGoKo699/Quantum-Interface-Cost
 Research owner: Ruge Lin. License: MIT, copyright (c) 2026 Ruge Lin.
-Manuscript writing is on hold; potential collaborators can contact
-gogoko699@gmail.com.
 
 Relevant search phrases: delayed local Pauli measurements; bounded quantum
 memory with classical side information; measurement compression;
@@ -31,6 +29,12 @@ a defined retention class; it does not establish unrestricted optimality
 or an equal-accuracy collective advantage. Follow the linked scope and
 source comparisons when summarizing results. For citation, identify the
 specific proof note and the commit used; credit its cited primary sources.
+
+## Purpose and contact
+
+This repository serves as a record of the work and a guide for the author’s
+self-directed learning. For discussion or potential collaboration, please
+contact Ruge Lin at [gogoko699@gmail.com](mailto:gogoko699@gmail.com).
 
 ## Questions and results
 

@@ -12,8 +12,11 @@ common-accuracy costs through four inputs, a complete allocation rule for
 one memory qubit at every input size, and a collective advantage for a
 specified unequal-accuracy task.
 
-**Manuscript writing is on hold.** Potential collaborators are welcome
-to contact **Ruge Lin** at [gogoko699@gmail.com](mailto:gogoko699@gmail.com).
+## Purpose and contact
+
+This repository serves as a record of the work and a guide for the author’s
+self-directed learning. For discussion or potential collaboration, please
+contact Ruge Lin at [gogoko699@gmail.com](mailto:gogoko699@gmail.com).
 
 ## Start with one review
 
