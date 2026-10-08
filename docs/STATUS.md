@@ -91,9 +91,9 @@ anchor after comparing two alternatives. The
 questions. An outdated open-case sentence in the one-qubit allocation
 note now points to the established three-input half-rank converse.
 The selected theorem statements, proof arguments and historical evidence
-reports are unchanged; manuscript writing and new theorem exploration
-remain on hold. This preparation is a bounded source synthesis, not an
-exhaustive priority certification.
+reports are unchanged. New theorem exploration remains paused. This
+preparation is a bounded source synthesis, not an exhaustive priority
+certification.
 
 ## Evidence labels
 
