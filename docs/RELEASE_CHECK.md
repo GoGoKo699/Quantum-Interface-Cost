@@ -93,9 +93,9 @@ page or device.
 The reductions remove a duplicate archive link, a repeated index
 introduction, a repeated finite-case status summary and obsolete workflow
 authorization prose. The remaining open problem is labeled future work.
-The overview and current scope explicitly place manuscript writing on hold
-and provide the collaboration contact. Repeated worked examples across
-the overview, tutorial and proof bridge serve different reading stages;
+The overview and current scope provide the collaboration contact. Repeated
+worked examples across the overview, tutorial and proof bridge serve different
+reading stages;
 the proof appendices and historical reports remain available.
 
 The [current reproduction instructions](REPRODUCIBILITY.md#reproduce-without-changing-the-recorded-evidence)
